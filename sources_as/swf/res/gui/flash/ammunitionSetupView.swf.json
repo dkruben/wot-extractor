@@ -1,0 +1,129 @@
+{
+ "source": "sources/res/gui/flash/ammunitionSetupView.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 2487,
+ "actual_length": 2487,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 3,
+  "ShowFrame": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 3,
+  "DefineShape3": 1,
+  "DefineSprite": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 1,
+  "sprites": 2,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "vehicleParametersCmp.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 3,
+   "class": "AmmunitionSetupViewUI"
+  },
+  {
+   "id": 2,
+   "class": "AmmunitionSetupViewInjectUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2156,
+   "classes": 6,
+   "methods": 30,
+   "bodies": 30,
+   "code_bytes": 704
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Regular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quadratic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AmmunitionSetupViewInjectUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.tank_setup.AmmunitionSetupViewInject",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AmmunitionSetupViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.tank_setup.AmmunitionSetupView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/item_defs/customization/priceGroups/inscriptions_nonASIA.xml -->
+<root>
+	<priceGroup>
+		<id>135</id>
+		<name>inscriptions usa 50g nonASIA</name>
+		<tags>inscriptions usa</tags>
+		<price>50<gold />
+		</price>
+		<notInShop>False</notInShop>
+	</priceGroup>
+</root>

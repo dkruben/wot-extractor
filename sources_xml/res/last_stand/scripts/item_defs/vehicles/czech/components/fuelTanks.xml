@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/item_defs/vehicles/czech/components/fuelTanks.xml -->
+<root>
+	<ids>
+		<Large_LS_BOT>5999</Large_LS_BOT>
+	</ids>
+	<shared>
+		<Large_LS_BOT>
+			<tags />
+			<price>100</price>
+			<notInShop>true</notInShop>
+			<weight>300</weight>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>80</maxRegenHealth>
+			<repairCost>1.0</repairCost>
+		</Large_LS_BOT>
+	</shared>
+</root>

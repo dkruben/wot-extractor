@@ -1,0 +1,1 @@
+var a=3800,s="new_skill";export{a as n,s as t};

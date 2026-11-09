@@ -1,0 +1,175 @@
+{
+ "source": "sources/res/gui/flash/minimap.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 35370,
+ "actual_length": 35370,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 19,
+  "ShowFrame": 36,
+  "DefineShape": 7,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 71,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 7,
+  "DefineSprite": 18,
+  "FrameLabel": 3,
+  "FileAttributes": 1,
+  "PlaceObject3": 13,
+  "ImportAssets2": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 7,
+  "shapes": 12,
+  "sprites": 18,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 8,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "minimapEntriesLibrary.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 37,
+   "class": "ScenarioLayerUI"
+  },
+  {
+   "id": 35,
+   "class": "minimapUI"
+  },
+  {
+   "id": 32,
+   "class": "MinimapHint"
+  },
+  {
+   "id": 31,
+   "class": "hintRMBMC"
+  },
+  {
+   "id": 28,
+   "class": "hintLMBMC"
+  },
+  {
+   "id": 25,
+   "class": "MinimapIconCollection"
+  },
+  {
+   "id": 4,
+   "class": "MinimapEntriesContainer"
+  },
+  {
+   "id": 3,
+   "class": "backgrnd"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1768,
+   "classes": 8,
+   "methods": 26,
+   "bodies": 26,
+   "code_bytes": 467
+  }
+ ],
+ "classes": [
+  {
+   "name": "MinimapEntriesContainer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.containers.MinimapEntriesContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MinimapIconCollection",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.MinimapIconCollection",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScenarioLayerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.ScenarioLayer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MinimapHint",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.MinimapHint",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hintLMBMC",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.MinimapHintIconInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hintRMBMC",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.MinimapHintIconInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "backgrnd",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UILoaderAlt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.Minimap",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

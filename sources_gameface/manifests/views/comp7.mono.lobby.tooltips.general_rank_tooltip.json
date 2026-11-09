@@ -1,0 +1,148 @@
+{
+  "rid": "R.views.comp7.mono.lobby.tooltips.general_rank_tooltip",
+  "rid_source": "sources/res/comp7/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "general_rank_tooltip",
+  "dir": "comp7/gui/gameface/_dist/production/mono/lobby/tooltips/general_rank_tooltip",
+  "feature": "comp7",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/general_rank_tooltip/bundle.js",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/general_rank_tooltip/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "general_rank_tooltip.html",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/general_rank_tooltip/general_rank_tooltip.html",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/general_rank_tooltip/general_rank_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/tooltip_decorator.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/tooltip_decorator.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/tooltips.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/tooltips.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/tooltips/general_rank_tooltip/bundle.js",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/general_rank_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.comp7.mono.lobby.tooltips.general_rank_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "6 referencia(s) R.views.comp7.mono.lobby.tooltips.general_rank_tooltip no Python",
+      "ViewModel CustomizationTasksModel (model=... no Python da view): 1/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/progression_page.py",
+        126
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/rank_rewards_page.py",
+        96
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/shop_page.py",
+        164
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/yearly_rewards_page.py",
+        106
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/platoon/view/platoon_members_view.py",
+        62
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/tooltips/general_rank_tooltip.py",
+        15
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/progression_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/rank_rewards_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/shop_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/yearly_rewards_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/platoon/view/platoon_members_view.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/tooltips/general_rank_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/lobby/meta_view/pages/customization_tasks_model.py",
+      "class": "CustomizationTasksModel",
+      "chain": [
+        "CustomizationTasksModel"
+      ],
+      "properties": [
+        [
+          "iconKey",
+          "String"
+        ],
+        [
+          "description",
+          "String"
+        ],
+        [
+          "currentProgress",
+          "Number"
+        ],
+        [
+          "delta",
+          "Number"
+        ],
+        [
+          "maxProgress",
+          "Number"
+        ],
+        [
+          "customizationId",
+          "Number"
+        ],
+        [
+          "progressionLevel",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 7,
+        "missing": [
+          "currentProgress",
+          "customizationId",
+          "delta",
+          "iconKey",
+          "maxProgress",
+          "progressionLevel"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/lobby/tooltips/general_rank_tooltip_model.py"
+      ]
+    }
+  }
+}

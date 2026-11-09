@@ -1,0 +1,123 @@
+{
+  "rid": "R.views.battle_modifiers.lobby.tooltips.ModifiersDomainTooltipView",
+  "rid_source": "sources/res/battle_modifiers/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ModifiersDomainTooltipView",
+  "dir": "battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView",
+  "feature": "battle_modifiers",
+  "files": [
+    {
+      "name": "ModifiersDomainTooltipView.css",
+      "effective": "res/battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView/ModifiersDomainTooltipView.css",
+      "all": [
+        "res/battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView/ModifiersDomainTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ModifiersDomainTooltipView.html",
+      "effective": "res/battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView/ModifiersDomainTooltipView.html",
+      "all": [
+        "res/battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView/ModifiersDomainTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ModifiersDomainTooltipView.js",
+      "effective": "res/battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView/ModifiersDomainTooltipView.js",
+      "all": [
+        "res/battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView/ModifiersDomainTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView/ModifiersDomainTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "battle_modifiers/gui/gameface/_dist/production/lib/battle_modifiers.vendors.js",
+      "key": "res/battle_modifiers/gui/gameface/_dist/production/lib/battle_modifiers.vendors.js"
+    },
+    {
+      "virtual": "battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView/ModifiersDomainTooltipView.css",
+      "key": "res/battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView/ModifiersDomainTooltipView.css"
+    },
+    {
+      "virtual": "battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView/ModifiersDomainTooltipView.js",
+      "key": "res/battle_modifiers/gui/gameface/_dist/production/lobby/tooltips/ModifiersDomainTooltipView/ModifiersDomainTooltipView.js"
+    },
+    {
+      "virtual": "battle_modifiers/gui/gameface/styles/default.css",
+      "key": "res/battle_modifiers/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle_modifiers.lobby.tooltips.ModifiersDomainTooltipView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "5 referencia(s) R.views.battle_modifiers.lobby.tooltips.ModifiersDomainTooltipView no Python",
+      "ViewModel ModifiersDomainTooltipViewModel (model=... no Python da view): 2/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_modifiers/scripts/client/battle_modifiers/gui/impl/lobby/tooltips/modifiers_domain_tooltip_view.py",
+        19
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/season_modifier_presenter.py",
+        30
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/season_modifier_presenter.py",
+        29
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/hangar/presenters/fun_random_modifiers_presenter.py",
+        20
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/mode_selector/fun_sub_selector_view.py",
+        95
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_modifiers/scripts/client/battle_modifiers/gui/impl/lobby/tooltips/modifiers_domain_tooltip_view.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/season_modifier_presenter.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/season_modifier_presenter.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/hangar/presenters/fun_random_modifiers_presenter.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/mode_selector/fun_sub_selector_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/battle_modifiers/scripts/client/battle_modifiers/gui/impl/gen/view_models/views/lobby/tooltips/modifiers_domain_tooltip_view_model.py",
+      "class": "ModifiersDomainTooltipViewModel",
+      "chain": [
+        "ModifiersDomainTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "modifiersDomain",
+          "String"
+        ],
+        [
+          "modifiers",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 2,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

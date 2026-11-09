@@ -1,0 +1,18 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/07_lakeville/zones.xml -->
+<root>
+	<path>
+		<id>991654998</id>
+		<name>path</name>
+		<node>
+			<name>07_lakeville_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>52061112</id>
+			<transform>
+				<row0>79.66931 0 0</row0>
+				<row1>0 47.784214 0</row1>
+				<row2>0 0 52.615864</row2>
+				<row3>-24.785423 5.023669 -299.15237</row3>
+			</transform>
+		</node>
+	</path>
+</root>

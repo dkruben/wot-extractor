@@ -1,0 +1,341 @@
+/* wot-extractor: JavaScript FORMATADO a partir de sources/res/gui/gameface/_dist/production/mono/dialogs/chunks/vendor.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
+import{
+  n as e,t
+}
+from"./rolldown-runtime.js";
+import{
+  D as n,E as r,S as i,b as o,x as a,y as s
+}
+from"./lib.js";
+var u=e(n());
+if(!u.useState)throw new Error("mobx-react-lite requires React with Hooks support");
+if(!i)throw new Error("mobx-react-lite@3 requires mobx at least version 6 to be available");
+var l=r();
+function c(e){
+  e()
+}
+function f(e){
+  return a(e)
+}
+var p,y,d=function(){
+  function e(e){
+    var t=this;
+    Object.defineProperty(this,"finalize",{
+      enumerable:!0,configurable:!0,writable:!0,value:e
+    }),Object.defineProperty(this,"registrations",{
+      enumerable:!0,configurable:!0,writable:!0,value:new Map
+    }),Object.defineProperty(this,"sweepTimeout",{
+      enumerable:!0,configurable:!0,writable:!0,value:void 0
+    }),Object.defineProperty(this,"sweep",{
+      enumerable:!0,configurable:!0,writable:!0,value:function(e){
+        void 0===e&&(e=1e4),clearTimeout(t.sweepTimeout),t.sweepTimeout=void 0;
+        var n=Date.now();
+        t.registrations.forEach(function(r,i){
+          n-r.registeredAt>=e&&(t.finalize(r.value),t.registrations.delete(i))
+        }),t.registrations.size>0&&t.scheduleSweep()
+      }
+    }),Object.defineProperty(this,"finalizeAllImmediately",{
+      enumerable:!0,configurable:!0,writable:!0,value:function(){
+        t.sweep(0)
+      }
+    })
+  }
+  return Object.defineProperty(e.prototype,"register",{
+    enumerable:!1,configurable:!0,writable:!0,value:function(e,t,n){
+      this.registrations.set(n,{
+        value:t,registeredAt:Date.now()
+      }),this.scheduleSweep()
+    }
+  }),Object.defineProperty(e.prototype,"unregister",{
+    enumerable:!1,configurable:!0,writable:!0,value:function(e){
+      this.registrations.delete(e)
+    }
+  }),Object.defineProperty(e.prototype,"scheduleSweep",{
+    enumerable:!1,configurable:!0,writable:!0,value:function(){
+      void 0===this.sweepTimeout&&(this.sweepTimeout=setTimeout(this.sweep,1e4))
+    }
+  }),e
+}(),v=new("undefined"!=typeof FinalizationRegistry?FinalizationRegistry:d)(function(e){
+  var t;
+  null===(t=e.reaction)||void 0===t||t.dispose(),e.reaction=null
+}),b=t(e=>{
+  var t=n();
+  var r="function"==typeof Object.is?Object.is:function(e,t){
+    return e===t&&(0!==e||1/e==1/t)||e!=e&&t!=t
+  },
+  i=t.useState,o=t.useEffect,a=t.useLayoutEffect,s=t.useDebugValue;
+  function u(e){
+    var t=e.getSnapshot;
+    e=e.value;
+    try{
+      var n=t();
+      return!r(e,n)
+    }catch(i){
+      return!0
+    }
+  }
+  var l="undefined"==typeof window||void 0===window.document||void 0===window.document.createElement?function(e,t){
+    return t()
+  }:function(e,t){
+    var n=t(),r=i({
+      inst:{
+        value:n,getSnapshot:t
+      }
+    }),l=r[0].inst,c=r[1];
+    return a(function(){
+      l.value=n,l.getSnapshot=t,u(l)&&c({
+        inst:l
+      })
+    },[e,n,t]),o(function(){
+      return u(l)&&c({
+        inst:l
+      }),e(function(){
+        u(l)&&c({
+          inst:l
+        })
+      })
+    },[e]),s(n),n
+  };
+  e.useSyncExternalStore=void 0!==t.useSyncExternalStore?t.useSyncExternalStore:l
+}),h=t((e,t)=>{
+  t.exports=b()
+})();
+function m(e){
+  e.reaction=new s("observer".concat(e.name),function(){
+    var t;
+    e.stateVersion=Symbol(),null===(t=e.onStoreChange)||void 0===t||t.call(e)
+  })
+}
+function g(e,t){
+  void 0===t&&(t="observed");
+  var n=u.useRef(null);
+  if(!n.current){
+    var r={
+      reaction:null,onStoreChange:null,stateVersion:Symbol(),name:t,subscribe:function(e){
+        return v.unregister(r),r.onStoreChange=e,r.reaction||(m(r),r.stateVersion=Symbol()),function(){
+          var e;
+          r.onStoreChange=null,null===(e=r.reaction)||void 0===e||e.dispose(),r.reaction=null
+        }
+      },
+      getSnapshot:function(){
+        return r.stateVersion
+      }
+    };
+    n.current=r
+  }
+  var i,o,a=n.current;
+  if(a.reaction||(m(a),v.register(n,a,a)),u.useDebugValue(a.reaction,f),(0,h.useSyncExternalStore)(a.subscribe,a.getSnapshot,a.getSnapshot),a.reaction.track(function(){
+    try{
+      i=e()
+    }catch(t){
+      o=t
+    }
+  }),o)throw o;
+  return i
+}
+var w="function"==typeof Symbol&&Symbol.for,S=null!==(y=null===(p=Object.getOwnPropertyDescriptor(function(){},"name"))||void 0===p?void 0:p.configurable)&&void 0!==y&&y,k=w?Symbol.for("react.forward_ref"):"function"==typeof u.forwardRef&&(0,u.forwardRef)(function(e){
+  return null
+}).$$typeof,E=w?Symbol.for("react.memo"):"function"==typeof u.memo&&(0,u.memo)(function(e){
+  return null
+}).$$typeof;
+function j(e,t){
+  var n;
+  if(E&&e.$$typeof===E)throw new Error("[mobx-react-lite] You are trying to use `observer` on a function component wrapped in either another `observer` or `React.memo`. The observer already applies 'React.memo' for you.");
+  var r=null!==(n=null==t?void 0:t.forwardRef)&&void 0!==n&&n,i=e,o=e.displayName||e.name;
+  if(k&&e.$$typeof===k&&(r=!0,"function"!=typeof(i=e.render)))throw new Error("[mobx-react-lite] `render` property of ForwardRef was not a function");
+  var a,s,l=function(e,t){
+    return g(function(){
+      return i(e,t)
+    },o)
+  };
+  return l.displayName=e.displayName,S&&Object.defineProperty(l,"name",{
+    value:e.name,writable:!0,configurable:!0
+  }),e.contextTypes&&(l.contextTypes=e.contextTypes),r&&(l=(0,u.forwardRef)(l)),l=(0,u.memo)(l),a=e,s=l,Object.keys(a).forEach(function(e){
+    $[e]||Object.defineProperty(s,e,Object.getOwnPropertyDescriptor(a,e))
+  }),l
+}
+var x,O,$={
+  $$typeof:!0,render:!0,compare:!0,type:!0,displayName:!0
+};
+(O=l.unstable_batchedUpdates)||(O=c),o({
+  reactionScheduler:O
+});
+x=v.finalizeAllImmediately;
+function P(e){
+  return{
+    lang:e?.lang??undefined,message:e?.message,abortEarly:e?.abortEarly??undefined,abortPipeEarly:e?.abortPipeEarly??undefined
+  }
+}
+function R(e){
+  const t=typeof e;
+  return"string"===t?`"${e}"`:"number"===t||"bigint"===t||"boolean"===t?`${e}`:"object"===t||"function"===t?(e&&Object.getPrototypeOf(e)?.constructor?.name)??"null":t
+}
+function T(e,t,n,r,i){
+  const o=i&&"input"in i?i.input:n.value,a=i?.expected??e.expects??null,s=i?.received??R(o),u={
+    kind:e.kind,type:e.type,input:o,expected:a,received:s,message:`Invalid ${t}: ${a?`Expected ${a} but r`:"R"}eceived ${s}`,requirement:e.requirement,path:i?.path,issues:i?.issues,lang:r.lang,abortEarly:r.abortEarly,abortPipeEarly:r.abortPipeEarly
+  },
+  l="schema"===e.kind,c=i?.message??e.message??(e.reference,void u.lang)??(l?void u.lang:null)??r.message??void u.lang;
+  void 0!==c&&(u.message="function"==typeof c?c(u):c),l&&(n.typed=!1),n.issues?n.issues.push(u):n.issues=[u]
+}
+function _(e){
+  return{
+    version:1,vendor:"valibot",validate:t=>e["~run"]({
+      value:t
+    },P())
+  }
+}
+function z(e,t){
+  return Object.hasOwn(e,t)&&"__proto__"!==t&&"prototype"!==t&&"constructor"!==t
+}
+var A=class extends Error{
+  constructor(e){
+    super(e[0].message),this.name="ValiError",this.issues=e
+  }
+};
+function D(e,t,n){
+  return"function"==typeof e.fallback?e.fallback(t,n):e.fallback
+}
+function V(e,t,n){
+  return"function"==typeof e.default?e.default(t,n):e.default
+}
+function q(e,t){
+  return{
+    kind:"schema",type:"array",reference:q,expects:"Array",async:!1,item:e,message:t,get"~standard"(){
+      return _(this)
+    },
+    "~run"(e,t){
+      const n=e.value;
+      if(Array.isArray(n)){
+        e.typed=!0,e.value=[];
+        for(let r=0;r<n.length;r++){
+          const i=n[r],o=this.item["~run"]({
+            value:i
+          },t);
+          if(o.issues){
+            const a={
+              type:"array",origin:"value",input:n,key:r,value:i
+            };
+            for(const t of o.issues)t.path?t.path.unshift(a):t.path=[a],e.issues?.push(t);
+            if(e.issues||(e.issues=o.issues),t.abortEarly){
+              e.typed=!1;
+              break
+            }
+          }
+          o.typed||(e.typed=!1),e.value.push(o.value)
+        }
+      }else T(this,"type",e,t);
+      return e
+    }
+  }
+}
+function C(e,t){
+  return{
+    kind:"schema",type:"object",reference:C,expects:"Object",async:!1,entries:e,message:t,get"~standard"(){
+      return _(this)
+    },
+    "~run"(e,t){
+      const n=e.value;
+      if(n&&"object"==typeof n){
+        e.typed=!0,e.value={};
+        for(const r in this.entries){
+          const i=this.entries[r];
+          if(r in n||("exact_optional"===i.type||"optional"===i.type||"nullish"===i.type)&&void 0!==i.default){
+            const o=r in n?n[r]:V(i),a=i["~run"]({
+              value:o
+            },t);
+            if(a.issues){
+              const i={
+                type:"object",origin:"value",input:n,key:r,value:o
+              };
+              for(const t of a.issues)t.path?t.path.unshift(i):t.path=[i],e.issues?.push(t);
+              if(e.issues||(e.issues=a.issues),t.abortEarly){
+                e.typed=!1;
+                break
+              }
+            }
+            a.typed||(e.typed=!1),e.value[r]=a.value
+          }else if(void 0!==i.fallback)e.value[r]=D(i);
+          else if("exact_optional"!==i.type&&"optional"!==i.type&&"nullish"!==i.type&&(T(this,"key",e,t,{
+            input:void 0,expected:`"${r}"`,path:[{
+              type:"object",origin:"key",input:n,key:r,value:n[r]
+            }]
+          }),t.abortEarly))break
+        }
+      }else T(this,"type",e,t);
+      return e
+    }
+  }
+}
+function N(e,t){
+  return{
+    kind:"schema",type:"optional",reference:N,expects:`(${e.expects} | undefined)`,async:!1,wrapped:e,default:t,get"~standard"(){
+      return _(this)
+    },
+    "~run"(e,t){
+      return void 0===e.value&&(void 0!==this.default&&(e.value=V(this,e,t)),void 0===e.value)?(e.typed=!0,e):this.wrapped["~run"](e,t)
+    }
+  }
+}
+function F(e,t,n){
+  return{
+    kind:"schema",type:"record",reference:F,expects:"Object",async:!1,key:e,value:t,message:n,get"~standard"(){
+      return _(this)
+    },
+    "~run"(e,t){
+      const n=e.value;
+      if(n&&"object"==typeof n){
+        e.typed=!0,e.value={};
+        for(const r in n)if(z(n,r)){
+          const i=n[r],o=this.key["~run"]({
+            value:r
+          },t);
+          if(o.issues){
+            const a={
+              type:"object",origin:"key",input:n,key:r,value:i
+            };
+            for(const t of o.issues)t.path=[a],e.issues?.push(t);
+            if(e.issues||(e.issues=o.issues),t.abortEarly){
+              e.typed=!1;
+              break
+            }
+          }
+          const a=this.value["~run"]({
+            value:i
+          },t);
+          if(a.issues){
+            const o={
+              type:"object",origin:"value",input:n,key:r,value:i
+            };
+            for(const t of a.issues)t.path?t.path.unshift(o):t.path=[o],e.issues?.push(t);
+            if(e.issues||(e.issues=a.issues),t.abortEarly){
+              e.typed=!1;
+              break
+            }
+          }
+          o.typed&&a.typed||(e.typed=!1),o.typed&&(e.value[o.value]=a.value)
+        }
+      }else T(this,"type",e,t);
+      return e
+    }
+  }
+}
+function I(e){
+  return{
+    kind:"schema",type:"string",reference:I,expects:"string",async:!1,message:e,get"~standard"(){
+      return _(this)
+    },
+    "~run"(e,t){
+      return"string"==typeof e.value?e.typed=!0:T(this,"type",e,t),e
+    }
+  }
+}
+function H(e,t,n){
+  const r=e["~run"]({
+    value:t
+  },P(n));
+  if(r.issues)throw new A(r.issues);
+  return r.value
+}
+export{
+  F as a,H as i,C as n,I as o,N as r,j as s,q as t
+};

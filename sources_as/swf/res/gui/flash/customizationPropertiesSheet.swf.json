@@ -1,0 +1,374 @@
+{
+ "source": "sources/res/gui/flash/customizationPropertiesSheet.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 355292,
+ "actual_length": 355292,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 47,
+  "ShowFrame": 400,
+  "DefineShape": 43,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 6,
+  "PlaceObject2": 156,
+  "RemoveObject2": 9,
+  "DefineBitsLossless2": 24,
+  "DefineEditText": 4,
+  "DefineSprite": 46,
+  "FrameLabel": 35,
+  "FileAttributes": 1,
+  "PlaceObject3": 20,
+  "ImportAssets2": 2,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 3,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 30,
+  "shapes": 43,
+  "sprites": 46,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 27,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 123,
+   "class": "CustomizationPropertiesSheetUI"
+  },
+  {
+   "id": 122,
+   "class": "CustomizationInscriptionControllerUI"
+  },
+  {
+   "id": 120,
+   "class": "customizationPropertiesSheet_fla.linesImage_4"
+  },
+  {
+   "id": 113,
+   "class": "CustomizationInscriptionHintUI"
+  },
+  {
+   "id": 108,
+   "class": "CustomizationImageGroupUI"
+  },
+  {
+   "id": 107,
+   "class": "CustomizationElementControlsUI"
+  },
+  {
+   "id": 106,
+   "class": "ContentRendererFirstUI"
+  },
+  {
+   "id": 101,
+   "class": "customizationPropertiesSheet_fla.ContentRendererDisabledUI_13"
+  },
+  {
+   "id": 92,
+   "class": "customizationPropertiesSheet_fla.ContentRendererHoverUI_12"
+  },
+  {
+   "id": 84,
+   "class": "customizationPropertiesSheet_fla.ContentRendererBackgroundUI_11"
+  },
+  {
+   "id": 74,
+   "class": "CustomizationAnchorSwitchersUI"
+  },
+  {
+   "id": 73,
+   "class": "CustomizationSwitchButtonUI"
+  },
+  {
+   "id": 56,
+   "class": "CustomizationSheetBtnRendererUI"
+  },
+  {
+   "id": 55,
+   "class": "CustomizationSheetScaleColorsRendererUI"
+  },
+  {
+   "id": 54,
+   "class": "CircleBtnUI"
+  },
+  {
+   "id": 52,
+   "class": "ToggleIndicatorUI"
+  },
+  {
+   "id": 41,
+   "class": "customizationPropertiesSheet_fla.CircleStatesUI_30"
+  },
+  {
+   "id": 27,
+   "class": "CustomizationSheetSwitchRendererUI"
+  },
+  {
+   "id": 26,
+   "class": "ArrawBtnUI"
+  },
+  {
+   "id": 17,
+   "class": "IconsContainerUI"
+  },
+  {
+   "id": 15,
+   "class": "TextFieldAnimationUI"
+  },
+  {
+   "id": 14,
+   "class": "TextWrapperUI"
+  },
+  {
+   "id": 12,
+   "class": "customizationPropertiesSheet_fla.SwitchSeparatorUI_44"
+  },
+  {
+   "id": 5,
+   "class": "CustomizationHintImageWrapperUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 7717,
+   "classes": 27,
+   "methods": 131,
+   "bodies": 131,
+   "code_bytes": 2478
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Quintic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Exponential",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Sine",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "customizationPropertiesSheet_fla.CircleStatesUI_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "customizationPropertiesSheet_fla.ContentRendererBackgroundUI_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "customizationPropertiesSheet_fla.ContentRendererDisabledUI_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "customizationPropertiesSheet_fla.ContentRendererHoverUI_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "customizationPropertiesSheet_fla.SwitchSeparatorUI_44",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "customizationPropertiesSheet_fla.linesImage_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextWrapperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.TextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ContentRendererFirstUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetContentRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationAnchorSwitchersUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.CustomizationAnchorSwitchers",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationElementControlsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetElementControls",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationHintImageWrapperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.inscriptionController.CustomizationHintImageWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationInscriptionHintUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.inscriptionController.CustomizationInscriptionHint",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetIconAnimated",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextFieldAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.TextFieldAnimated",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToggleIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ToggleIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationImageGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationSheetBtnRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetBtnRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArrawBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationSwitchButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationSheetSwitchRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetSwitchRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationSheetScaleColorsRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationSheetScaleColorsRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationInscriptionControllerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.inscriptionController.CustomizationInscriptionController",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationPropertiesSheetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationPropertiesSheet",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CircleBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.CustomizationRadialButton",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

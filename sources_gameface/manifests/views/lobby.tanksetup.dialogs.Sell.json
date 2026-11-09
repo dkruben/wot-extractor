@@ -1,0 +1,159 @@
+{
+  "rid": "R.views.lobby.tanksetup.dialogs.Sell",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Sell",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell",
+  "feature": null,
+  "files": [
+    {
+      "name": "Sell.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell/Sell.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell/Sell.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Sell.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell/Sell.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell/Sell.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Sell.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell/Sell.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell/Sell.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell/Sell.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell/Sell.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell/Sell.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell/Sell.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/Sell/Sell.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow"
+  ],
+  "commands": [
+    "onClose",
+    "onSell"
+  ],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.dialogs.Sell",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.tanksetup.dialogs.Sell no Python",
+      "ViewModel SellViewModel (model=... no Python da view): 9/14 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tank_setup/dialogs/opt_device_sell_dialog.py",
+        44
+      ],
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        1455
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/tank_setup/dialogs/opt_device_sell_dialog.py",
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/tank_setup/dialogs/sell_view_model.py",
+      "class": "SellViewModel",
+      "chain": [
+        "SellViewModel",
+        "DialogTemplateViewModel"
+      ],
+      "properties": [
+        [
+          "equipmentPrice",
+          "ViewModel"
+        ],
+        [
+          "equipment",
+          "ViewModel"
+        ],
+        [
+          "moduleType",
+          "String"
+        ],
+        [
+          "balance",
+          "Array"
+        ],
+        [
+          "focus",
+          "ViewModel"
+        ],
+        [
+          "buttons",
+          "Array"
+        ],
+        [
+          "placeHolders",
+          "Array"
+        ],
+        [
+          "background",
+          "Resource"
+        ],
+        [
+          "dimmerAlpha",
+          "Real"
+        ],
+        [
+          "displayFlags",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onSell",
+        "onClose",
+        "onButtonClicked",
+        "onCloseClicked"
+      ],
+      "coverage": {
+        "found": 9,
+        "total": 14,
+        "missing": [
+          "background",
+          "dimmerAlpha",
+          "onButtonClicked",
+          "onCloseClicked",
+          "placeHolders"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

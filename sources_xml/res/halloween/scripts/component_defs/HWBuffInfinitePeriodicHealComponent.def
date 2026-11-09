@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/component_defs/HWBuffInfinitePeriodicHealComponent.def -->
+<root>
+	<Properties>
+		<isActive>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<default>TRUE</default>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</isActive>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+</root>

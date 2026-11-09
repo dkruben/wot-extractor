@@ -1,0 +1,301 @@
+{
+ "source": "sources/res/gui/flash/vehicleSellDialog.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 143801,
+ "actual_length": 143801,
+ "frame_size_px": [
+  0.0,
+  502.0,
+  0.0,
+  305.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 32,
+  "ShowFrame": 210,
+  "DefineShape": 13,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 68,
+  "RemoveObject2": 4,
+  "DefineShape3": 6,
+  "DefineBitsLossless2": 13,
+  "DefineEditText": 17,
+  "DefineSprite": 31,
+  "FrameLabel": 18,
+  "FileAttributes": 1,
+  "PlaceObject3": 21,
+  "ImportAssets2": 6,
+  "CSMTextSettings": 17,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 4,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 20,
+  "sprites": 31,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 17,
+  "fonts": 0,
+  "classes": 18,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "windows.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 81,
+   "class": "vehicleSellDialogUI"
+  },
+  {
+   "id": 80,
+   "class": "ControlQuestionComponentUI"
+  },
+  {
+   "id": 73,
+   "class": "SellDisabledMessageUI"
+  },
+  {
+   "id": 69,
+   "class": "totalResultUI"
+  },
+  {
+   "id": 67,
+   "class": "SellSlidingComponentUI"
+  },
+  {
+   "id": 61,
+   "class": "SlidingScrollListUI"
+  },
+  {
+   "id": 54,
+   "class": "settingsBtnUI"
+  },
+  {
+   "id": 50,
+   "class": "AdditionalBtnUI"
+  },
+  {
+   "id": 43,
+   "class": "SellDevicesComponentUI"
+  },
+  {
+   "id": 36,
+   "class": "SellDevicesScrollPaneUI"
+  },
+  {
+   "id": 35,
+   "class": "SellDevicesContentContainerUI"
+  },
+  {
+   "id": 34,
+   "class": "ScrollingRendererUI"
+  },
+  {
+   "id": 29,
+   "class": "SellHeaderComponentUI"
+  },
+  {
+   "id": 14,
+   "class": "movingResultUI"
+  },
+  {
+   "id": 8,
+   "class": "saleItemBlockUI"
+  },
+  {
+   "id": 3,
+   "class": "ClickAreaUI"
+  },
+  {
+   "id": 0,
+   "class": "vehicleSellDialog_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 14957,
+   "classes": 18,
+   "methods": 102,
+   "bodies": 102,
+   "code_bytes": 5384
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleSellDialog_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ClickAreaUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ControlQuestionComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.ControlQuestionComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SellDevicesComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.SellDevicesComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SellDevicesContentContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.SellDevicesContentContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SellDisabledMessageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.SellDisabledMessage",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SellHeaderComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.SellHeaderComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SellSlidingComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.SellSlidingComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "movingResultUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.MovingResult",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.SettingsButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "totalResultUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.TotalResult",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdditionalBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.CheckBox",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollingRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.SellDialogListItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "saleItemBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.SaleItemBlockRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SellDevicesScrollPaneUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SlidingScrollListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.SlidingScrollingList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleSellDialogUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleTradeWnds.sell.VehicleSellDialog",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

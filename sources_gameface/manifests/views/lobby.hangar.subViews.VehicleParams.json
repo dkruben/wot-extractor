@@ -1,0 +1,223 @@
+{
+  "rid": "R.views.lobby.hangar.subViews.VehicleParams",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "VehicleParams",
+  "dir": "gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams",
+  "feature": null,
+  "files": [
+    {
+      "name": "VehicleParams.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams/VehicleParams.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams/VehicleParams.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "VehicleParams.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams/VehicleParams.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams/VehicleParams.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "VehicleParams.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams/VehicleParams.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams/VehicleParams.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams/VehicleParams.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/hangar/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/hangar/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams/VehicleParams.css",
+      "key": "res/gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams/VehicleParams.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams/VehicleParams.js",
+      "key": "res/gui/gameface/_dist/production/lobby/hangar/subViews/VehicleParams/VehicleParams.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.ExtendedTextTooltip",
+    "lobby.hangar.subViews.VehicleParams"
+  ],
+  "commands": [
+    "onGroupClick"
+  ],
+  "link": {
+    "rid": "R.views.lobby.hangar.subViews.VehicleParams",
+    "confidence": "provavel",
+    "evidence": [
+      "6 referencia(s) R.views.lobby.hangar.subViews.VehicleParams no Python",
+      "ViewModel MemberChangeViewModel (model=... no Python da view): 0/24 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/skills_training/skills_training_view.py",
+        97
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/member_change_view.py",
+        138
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/tankman_container_view.py",
+        102
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/sub_views/vehicle_params_view.py",
+        45
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/sub_views/vehicle_params_view.py",
+        421
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/vehicle_compare/skill_select_view.py",
+        142
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/skills_training/skills_training_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/member_change_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/tankman_container_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/hangar/sub_views/vehicle_params_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/vehicle_compare/skill_select_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/member_change_view_model.py",
+      "class": "MemberChangeViewModel",
+      "chain": [
+        "MemberChangeViewModel",
+        "BaseCrewViewModel"
+      ],
+      "properties": [
+        [
+          "vehicleInfo",
+          "ViewModel"
+        ],
+        [
+          "hasCrew",
+          "Bool"
+        ],
+        [
+          "hasFilters",
+          "Bool"
+        ],
+        [
+          "roleChangeDiscountPercent",
+          "Number"
+        ],
+        [
+          "vehicle",
+          "String"
+        ],
+        [
+          "nation",
+          "String"
+        ],
+        [
+          "requiredRole",
+          "String"
+        ],
+        [
+          "itemsAmount",
+          "Number"
+        ],
+        [
+          "itemsOffset",
+          "Number"
+        ],
+        [
+          "tankmanList",
+          "Array"
+        ],
+        [
+          "isRecruitDisabled",
+          "Bool"
+        ],
+        [
+          "backButtonLabel",
+          "Resource"
+        ],
+        [
+          "isButtonBarVisible",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onResetFilters",
+        "onTankmanSelected",
+        "onRecruitSelected",
+        "onRecruitNewTankman",
+        "onTankmanRestore",
+        "onPlayRecruitVoiceover",
+        "onLoadCards",
+        "onAbout",
+        "onClose",
+        "onBack",
+        "onHangar"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 24,
+        "missing": [
+          "backButtonLabel",
+          "hasCrew",
+          "hasFilters",
+          "isButtonBarVisible",
+          "isRecruitDisabled",
+          "itemsAmount",
+          "itemsOffset",
+          "nation",
+          "onAbout",
+          "onBack",
+          "onClose",
+          "onHangar",
+          "onLoadCards",
+          "onPlayRecruitVoiceover",
+          "onRecruitNewTankman",
+          "onRecruitSelected",
+          "onResetFilters",
+          "onTankmanRestore",
+          "onTankmanSelected",
+          "requiredRole",
+          "roleChangeDiscountPercent",
+          "tankmanList",
+          "vehicle",
+          "vehicleInfo"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/skills_training_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/tankman_container_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/hangar/sub_views/vehicle_params_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/vehicle_compare/skill_select_view_model.py"
+      ]
+    }
+  }
+}

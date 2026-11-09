@@ -1,0 +1,577 @@
+{
+ "source": "sources/res/gui/flash/commonStats.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 1983169,
+ "actual_length": 1983169,
+ "frame_size_px": [
+  0.0,
+  1017.0,
+  0.0,
+  601.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 72,
+  "ShowFrame": 445,
+  "DefineShape": 41,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "DefineShape2": 6,
+  "PlaceObject2": 308,
+  "RemoveObject2": 4,
+  "DefineShape3": 6,
+  "DefineBitsJPEG3": 5,
+  "DefineBitsLossless2": 39,
+  "DefineEditText": 83,
+  "DefineSprite": 71,
+  "FrameLabel": 59,
+  "FileAttributes": 1,
+  "PlaceObject3": 71,
+  "ImportAssets2": 11,
+  "CSMTextSettings": 82,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 45,
+  "shapes": 54,
+  "sprites": 71,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 83,
+  "fonts": 0,
+  "classes": 41,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "windows.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "achievements.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "teamStatsComponents.swf",
+   "symbols": []
+  },
+  {
+   "url": "questsComponents.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 253,
+   "class": "BattleResultUnlockDogTag_UI"
+  },
+  {
+   "id": 244,
+   "class": "BattleResultUnlockItem_UI"
+  },
+  {
+   "id": 240,
+   "class": "newSkillInfo"
+  },
+  {
+   "id": 238,
+   "class": "LinkPlusBtn_UI"
+  },
+  {
+   "id": 234,
+   "class": "newUnlockInfo"
+  },
+  {
+   "id": 232,
+   "class": "BR_SubtaskComponent_UI"
+  },
+  {
+   "id": 226,
+   "class": "BattleResultsAwards_UI"
+  },
+  {
+   "id": 212,
+   "class": "CommendationButtonUI"
+  },
+  {
+   "id": 208,
+   "class": "Comp7QualificationSubTaskUI"
+  },
+  {
+   "id": 205,
+   "class": "Comp7RankSubTaskUI"
+  },
+  {
+   "id": 200,
+   "class": "EfficiencyItemRendererGUI"
+  },
+  {
+   "id": 186,
+   "class": "PersonalQuestConditionUI"
+  },
+  {
+   "id": 183,
+   "class": "PersonalQuestSubTaskUI"
+  },
+  {
+   "id": 180,
+   "class": "BR_CollapsedToggleBtnUI"
+  },
+  {
+   "id": 173,
+   "class": "PlayerSatisfactionWidgetUI"
+  },
+  {
+   "id": 171,
+   "class": "CommendationBgMcUI"
+  },
+  {
+   "id": 160,
+   "class": "PrestigeProgressSubTaskUI"
+  },
+  {
+   "id": 157,
+   "class": "ProgressElement_UI"
+  },
+  {
+   "id": 154,
+   "class": "PersonalQuestStateUI"
+  },
+  {
+   "id": 153,
+   "class": "commonStats_fla.statusIcon_49"
+  },
+  {
+   "id": 141,
+   "class": "RankedBattleSubTaskUI"
+  },
+  {
+   "id": 134,
+   "class": "CommonStats"
+  },
+  {
+   "id": 124,
+   "class": "PrestigePointsUI"
+  },
+  {
+   "id": 116,
+   "class": "EfficiencyHeaderUI"
+  },
+  {
+   "id": 105,
+   "class": "EfficiencyList"
+  },
+  {
+   "id": 90,
+   "class": "deserter"
+  },
+  {
+   "id": 84,
+   "class": "tankStatsView"
+  },
+  {
+   "id": 75,
+   "class": "BattleResultImageSwitcherView"
+  },
+  {
+   "id": 54,
+   "class": "DetailsMcUI"
+  },
+  {
+   "id": 53,
+   "class": "ComparePremiumStateUI"
+  },
+  {
+   "id": 43,
+   "class": "WotPlusEarningsStateUI"
+  },
+  {
+   "id": 39,
+   "class": "WotPlusYouRockStateUI"
+  },
+  {
+   "id": 35,
+   "class": "WotPlusInfoStateUI"
+  },
+  {
+   "id": 32,
+   "class": "PremiumBonusStateUI"
+  },
+  {
+   "id": 27,
+   "class": "PremiumInfoStateUI"
+  },
+  {
+   "id": 23,
+   "class": "AdvertisingStateUI"
+  },
+  {
+   "id": 18,
+   "class": "BR_ScrollPane_UI"
+  },
+  {
+   "id": 12,
+   "class": "NoIcomeAlert"
+  },
+  {
+   "id": 10,
+   "class": "LinkPlusBonusBtn_UI"
+  },
+  {
+   "id": 7,
+   "class": "commonStats_fla.linkPlusBtnFocusIndicator_24"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 25822,
+   "classes": 41,
+   "methods": 224,
+   "bodies": 224,
+   "code_bytes": 10600
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalQuestConditionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.PersonalQuestCondition",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "commonStats_fla.linkPlusBtnFocusIndicator_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "commonStats_fla.statusIcon_49",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "deserter",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CommendationBgMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.commendation.CommendationBgMC",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "newSkillInfo",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.progressReport.NewSkillInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "newUnlockInfo",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.progressReport.NewSkillInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleResultImageSwitcherView",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.BattleResultImageSwitcherView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleResultsAwards_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.QuestAwardsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CommonStats",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.CommonStats",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DetailsMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.DetailsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EfficiencyHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.EfficiencyHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EfficiencyItemRendererGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.EfficiencyRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NoIcomeAlert",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.AlertMessage",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalQuestStateUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.PersonalQuestState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PrestigePointsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.PrestigePoints",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "tankStatsView",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.TankStatsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BR_SubtaskComponent_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.BattleResultsEventRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleResultUnlockDogTag_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.progressReport.BattleResultUnlockDogTag",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleResultUnlockItem_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.progressReport.BattleResultUnlockItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7QualificationSubTaskUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.comp7.battleResults.components.Comp7QualificationSubTask",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7RankSubTaskUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.comp7.battleResults.components.Comp7RankSubTask",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalQuestSubTaskUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.BattleResultsPersonalQuest",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PrestigeProgressSubTaskUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.prestige.components.battleResults.PrestigeProgressSubTask",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressElement_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.ProgressElement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattleSubTaskUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.battleResults.components.RankedBattleSubTask",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EfficiencyList",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollingListEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdvertisingStateUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.detailsBlockStates.AdvertisingState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ComparePremiumStateUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.detailsBlockStates.ComparePremiumState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PremiumBonusStateUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.detailsBlockStates.PremiumBonusState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PremiumInfoStateUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.detailsBlockStates.PremiumInfoState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WotPlusEarningsStateUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.detailsBlockStates.WotPlusEarningsState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WotPlusInfoStateUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.detailsBlockStates.WotPlusInfoState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WotPlusYouRockStateUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.detailsBlockStates.WotPlusYouRockState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BR_ScrollPane_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LinkPlusBonusBtn_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LinkPlusBtn_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BR_CollapsedToggleBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.CollapsedToggleButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CommendationButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.commendation.CommendationButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerSatisfactionWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.commendation.PlayerSatisfactionWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

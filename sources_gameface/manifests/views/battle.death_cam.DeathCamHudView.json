@@ -1,0 +1,235 @@
+{
+  "rid": "R.views.battle.death_cam.DeathCamHudView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "DeathCamHudView",
+  "dir": "gui/gameface/_dist/production/battle/death_cam/DeathCamHudView",
+  "feature": null,
+  "files": [
+    {
+      "name": "DeathCamHudView.css",
+      "effective": "res/gui/gameface/_dist/production/battle/death_cam/DeathCamHudView/DeathCamHudView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/death_cam/DeathCamHudView/DeathCamHudView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DeathCamHudView.html",
+      "effective": "res/gui/gameface/_dist/production/battle/death_cam/DeathCamHudView/DeathCamHudView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/death_cam/DeathCamHudView/DeathCamHudView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DeathCamHudView.js",
+      "effective": "res/gui/gameface/_dist/production/battle/death_cam/DeathCamHudView/DeathCamHudView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/death_cam/DeathCamHudView/DeathCamHudView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/battle/death_cam/DeathCamHudView/DeathCamHudView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/battle/death_cam/DeathCamHudView/DeathCamHudView.css",
+      "key": "res/gui/gameface/_dist/production/battle/death_cam/DeathCamHudView/DeathCamHudView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/battle/death_cam/DeathCamHudView/DeathCamHudView.js",
+      "key": "res/gui/gameface/_dist/production/battle/death_cam/DeathCamHudView/DeathCamHudView.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/battle/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/battle/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle.death_cam.DeathCamHudView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.battle.death_cam.DeathCamHudView no Python",
+      "ViewModel DeathCamHudViewModel (model=... no Python da view): 35/35 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/battle/death_cam/death_cam_hud_view.py",
+        21
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/battle/death_cam/death_cam_hud_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/battle/death_cam/death_cam_hud_view_model.py",
+      "class": "DeathCamHudViewModel",
+      "chain": [
+        "DeathCamHudViewModel"
+      ],
+      "properties": [
+        [
+          "marker",
+          "ViewModel"
+        ],
+        [
+          "hud",
+          "ViewModel"
+        ],
+        [
+          "impactMode",
+          "String"
+        ],
+        [
+          "phase",
+          "String"
+        ],
+        [
+          "isAdvanced",
+          "Bool"
+        ],
+        [
+          "isKillerUnspotted",
+          "Bool"
+        ],
+        [
+          "isMarkerVisible",
+          "Bool"
+        ],
+        [
+          "phaseDuration",
+          "Number"
+        ],
+        [
+          "phaseTimePassed",
+          "Number"
+        ],
+        [
+          "isSimplified",
+          "Bool"
+        ],
+        [
+          "shellType",
+          "String"
+        ],
+        [
+          "shellIcon",
+          "String"
+        ],
+        [
+          "modeShellIcon",
+          "String"
+        ],
+        [
+          "shellCaliber",
+          "Number"
+        ],
+        [
+          "caliberRule",
+          "String"
+        ],
+        [
+          "shellDamageBasic",
+          "Real"
+        ],
+        [
+          "shellVelocityBasic",
+          "Number"
+        ],
+        [
+          "shootDistance",
+          "Number"
+        ],
+        [
+          "shellPenetrationEffective",
+          "Number"
+        ],
+        [
+          "shellPenetrationBasic",
+          "Number"
+        ],
+        [
+          "armorRelative",
+          "Number"
+        ],
+        [
+          "armorNominal",
+          "Number"
+        ],
+        [
+          "shellArmorAngleGain",
+          "Number"
+        ],
+        [
+          "angleRicochet",
+          "Number"
+        ],
+        [
+          "angleFailure",
+          "Number"
+        ],
+        [
+          "angleImpact",
+          "Number"
+        ],
+        [
+          "shellDamageEffective",
+          "Real"
+        ],
+        [
+          "shellDamageRandomizationFactor",
+          "Real"
+        ],
+        [
+          "damageDistanceModifier",
+          "Real"
+        ],
+        [
+          "hasDistanceFalloff",
+          "Bool"
+        ],
+        [
+          "shellDamageBurst",
+          "Number"
+        ],
+        [
+          "shellDamageLossDistance",
+          "Number"
+        ],
+        [
+          "shellDamageLossProtectionHe",
+          "Number"
+        ],
+        [
+          "shellDamageLossProtectionSpallLiner",
+          "Number"
+        ],
+        [
+          "deathReason",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 35,
+        "total": 35,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

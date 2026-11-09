@@ -1,0 +1,126 @@
+{
+  "rid": "R.views.lobby.tanksetup.tooltips.PopularLoadoutsTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "PopularLoadoutsTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "PopularLoadoutsTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip/PopularLoadoutsTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip/PopularLoadoutsTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PopularLoadoutsTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip/PopularLoadoutsTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip/PopularLoadoutsTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PopularLoadoutsTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip/PopularLoadoutsTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip/PopularLoadoutsTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip/PopularLoadoutsTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip/PopularLoadoutsTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip/PopularLoadoutsTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip/PopularLoadoutsTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/PopularLoadoutsTooltip/PopularLoadoutsTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.tooltips.PopularLoadoutsTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.lobby.tanksetup.tooltips.PopularLoadoutsTooltip no Python",
+      "ViewModel OptionalDevicesAssistantModel (model=... no Python da view): 0/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/optional_devices_assistant_presenter.py",
+        114
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tank_setup/ammunition_setup/base_hangar.py",
+        91
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tanksetup/tooltips/popular_loadouts_tooltip.py",
+        22
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/optional_devices_assistant_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/tank_setup/ammunition_setup/base_hangar.py",
+      "sources/res/scripts/client/gui/impl/lobby/tanksetup/tooltips/popular_loadouts_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/tank_setup/sub_views/optional_devices_assistant_model.py",
+      "class": "OptionalDevicesAssistantModel",
+      "chain": [
+        "OptionalDevicesAssistantModel"
+      ],
+      "properties": [
+        [
+          "selectedPreset",
+          "ViewModel"
+        ],
+        [
+          "optionalDevicesAssistantPresets",
+          "Array"
+        ],
+        [
+          "state",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onPresetSelected"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 4,
+        "missing": [
+          "onPresetSelected",
+          "optionalDevicesAssistantPresets",
+          "selectedPreset",
+          "state"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/tanksetup/tooltips/popular_loadouts_tooltip_model.py"
+      ]
+    }
+  }
+}

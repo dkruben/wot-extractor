@@ -1,0 +1,1 @@
+import{Fa as s,pr as a}from"./lib.js";var r=r=>r>=s.Large?a.sizes.large:a.sizes.small;export{r as t};

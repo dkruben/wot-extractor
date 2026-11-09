@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/shaders/formats/instancing.xml -->
+<root>
+	<elements>
+		<TEXCOORD>
+			<semanticIndex>4</semanticIndex>
+			<stream>9</stream>
+			<offset>0</offset>
+			<type>FLOAT1</type>
+		</TEXCOORD>
+	</elements>
+</root>

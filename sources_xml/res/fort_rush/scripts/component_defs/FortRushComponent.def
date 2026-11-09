@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fort_rush/scripts/component_defs/FortRushComponent.def -->
+<root>
+	<CellMethods>
+		<setupArena>
+			<Args>
+				<config>PYTHON</config>
+			</Args>
+		</setupArena>
+	</CellMethods>
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+</root>

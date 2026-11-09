@@ -1,0 +1,148 @@
+{
+  "rid": "R.views.lobby.crew.tooltips.ConversionTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ConversionTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "ConversionTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip/ConversionTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip/ConversionTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ConversionTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip/ConversionTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip/ConversionTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ConversionTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip/ConversionTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip/ConversionTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip/ConversionTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip/ConversionTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip/ConversionTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip/ConversionTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/ConversionTooltip/ConversionTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.tooltips.ConversionTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "4 referencia(s) R.views.lobby.crew.tooltips.ConversionTooltip no Python",
+      "ViewModel AwardsViewModel (model=... no Python da view): 0/8 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/conversion_awards_view.py",
+        30
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/conversion_confirm_view.py",
+        29
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/conversion_tooltip.py",
+        20
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/utils.py",
+        179
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/conversion_awards_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/conversion_confirm_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/conversion_tooltip.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/utils.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/challenges/awards_view_model.py",
+      "class": "AwardsViewModel",
+      "chain": [
+        "AwardsViewModel"
+      ],
+      "properties": [
+        [
+          "challengeName",
+          "String"
+        ],
+        [
+          "mainRewardType",
+          "String"
+        ],
+        [
+          "isCompleted",
+          "Bool"
+        ],
+        [
+          "isAvailable",
+          "Bool"
+        ],
+        [
+          "rewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onHangar",
+        "onChallenges"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 8,
+        "missing": [
+          "challengeName",
+          "isAvailable",
+          "isCompleted",
+          "mainRewardType",
+          "onChallenges",
+          "onClose",
+          "onHangar",
+          "rewards"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/collection/awards_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/awards_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/conversion_confirm_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/tooltips/conversion_tooltip_model.py"
+      ]
+    }
+  }
+}

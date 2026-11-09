@@ -1,0 +1,22 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/StanceDanceController.def -->
+<root>
+	<Properties>
+		<abilityState>
+			<Type>STANCE_DANCE_STATE</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</abilityState>
+	</Properties>
+	<CellMethods>
+		<useActiveAbility>
+			<Exposed>OWN_CLIENT</Exposed>
+			<Arg>UINT8</Arg>
+		</useActiveAbility>
+		<switchStance>
+			<Exposed>OWN_CLIENT</Exposed>
+		</switchStance>
+	</CellMethods>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>stanceDanceController</DefaultKeyName>
+</root>

@@ -1,0 +1,86 @@
+{
+ "source": "sources/res/gui/flash/animations/battlePass/BPBuy.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 8174,
+ "actual_length": 8174,
+ "frame_size_px": [
+  0.0,
+  142.0,
+  0.0,
+  160.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#000000",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 125,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 396,
+  "RemoveObject2": 4,
+  "DefineShape3": 3,
+  "DefineSprite": 5,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 5,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 1,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 10,
+   "class": "BPBuy_fla.mcEmblemFlareBP_1"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 438,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 66
+  }
+ ],
+ "classes": [
+  {
+   "name": "BPBuy_fla.mcEmblemFlareBP_1",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

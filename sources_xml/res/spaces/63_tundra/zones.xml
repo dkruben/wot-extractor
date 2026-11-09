@@ -1,0 +1,84 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/63_tundra/zones.xml -->
+<root>
+	<path>
+		<id>4271877299</id>
+		<name>path</name>
+		<node>
+			<name>Zone 1</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1428324485</id>
+			<transform>
+				<row0>25 0 0</row0>
+				<row1>0 25 0</row1>
+				<row2>0 0 25</row2>
+				<row3>34.639114 0.159411 -27.702164</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 2</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3615350294</id>
+			<transform>
+				<row0>143.51474 0 0</row0>
+				<row1>0 46.043816 0</row1>
+				<row2>0 0 170.65987</row2>
+				<row3>-40.30239 21.543716 325.69943</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 3</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3473975593</id>
+			<transform>
+				<row0>261.26013 0 0</row0>
+				<row1>0 85.00944 0</row1>
+				<row2>0 0 399.43143</row2>
+				<row3>-283.2779 18.622425 -154.60187</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_01</name>
+			<colour>0.2 0.45098 0.8 0.498039</colour>
+			<id>3600091028</id>
+			<transform>
+				<row0>341.73166 0 0</row0>
+				<row1>0 226.4052 0</row1>
+				<row2>0 0 226.4052</row2>
+				<row3>-105.770096 -47.407536 220.82672</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_02</name>
+			<colour>0.2 0.482353 0.8 0.498039</colour>
+			<id>2532260849</id>
+			<transform>
+				<row0>244.69836 0 0</row0>
+				<row1>0 54.25873 0</row1>
+				<row2>0 0 376.53976</row2>
+				<row3>-280.5874 39.024796 -126.076065</row3>
+			</transform>
+		</node>
+		<node>
+			<name>comp7_flora_scale_patch_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2833977386</id>
+			<transform>
+				<row0>20 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 50.586613</row2>
+				<row3>58.68395 12.335132 -177.46753</row3>
+			</transform>
+		</node>
+		<node>
+			<name>63_tundra_pbh_z_1</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2625648005</id>
+			<transform>
+				<row0>67.7581 0 0</row0>
+				<row1>0 67.7581 0</row1>
+				<row2>0 0 67.7581</row2>
+				<row3>141.8211 -2.746825 -359.78973</row3>
+			</transform>
+		</node>
+	</path>
+</root>

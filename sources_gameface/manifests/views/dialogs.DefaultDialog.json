@@ -1,0 +1,185 @@
+{
+  "rid": "R.views.dialogs.DefaultDialog",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "DefaultDialog",
+  "dir": "gui/gameface/_dist/production/dialogs/DefaultDialog",
+  "feature": null,
+  "files": [
+    {
+      "name": "DefaultDialog.css",
+      "effective": "res/gui/gameface/_dist/production/dialogs/DefaultDialog/DefaultDialog.css",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/DefaultDialog/DefaultDialog.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DefaultDialog.html",
+      "effective": "res/gui/gameface/_dist/production/dialogs/DefaultDialog/DefaultDialog.html",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/DefaultDialog/DefaultDialog.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DefaultDialog.js",
+      "effective": "res/gui/gameface/_dist/production/dialogs/DefaultDialog/DefaultDialog.js",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/DefaultDialog/DefaultDialog.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/dialogs/DefaultDialog/DefaultDialog.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/dialogs/DefaultDialog/DefaultDialog.css",
+      "key": "res/gui/gameface/_dist/production/dialogs/DefaultDialog/DefaultDialog.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/dialogs/DefaultDialog/DefaultDialog.js",
+      "key": "res/gui/gameface/_dist/production/dialogs/DefaultDialog/DefaultDialog.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/dialogs/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/dialogs/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged",
+    "trigger:subView:destroy"
+  ],
+  "child_views": [
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "dialogs.common.DialogTemplateGenericTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.dialogs.DefaultDialog",
+    "confidence": "provavel",
+    "evidence": [
+      "6 referencia(s) R.views.dialogs.DefaultDialog no Python",
+      "ViewModel CrewModel (model=... no Python da view): 1/15 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/game_control/halloween_controller.py",
+        312
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/game_control/ls_controller.py",
+        297
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/dialogs/dialog_template.py",
+        26
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/crew_presenter.py",
+        270
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/crew_presenter.py",
+        309
+      ],
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        1610
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/game_control/halloween_controller.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/game_control/ls_controller.py",
+      "sources/res/scripts/client/gui/impl/dialogs/dialog_template.py",
+      "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/crew_presenter.py",
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/loadout/crew/crew_model.py",
+      "class": "CrewModel",
+      "chain": [
+        "CrewModel"
+      ],
+      "properties": [
+        [
+          "hasDog",
+          "Bool"
+        ],
+        [
+          "crew",
+          "Array"
+        ],
+        [
+          "slots",
+          "Array"
+        ],
+        [
+          "state",
+          "String"
+        ],
+        [
+          "berthsCount",
+          "Number"
+        ],
+        [
+          "acceleratedTraining",
+          "String"
+        ],
+        [
+          "intensiveTraining",
+          "String"
+        ],
+        [
+          "vehicleNation",
+          "String"
+        ],
+        [
+          "vehicleType",
+          "String"
+        ],
+        [
+          "vehicleName",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onOpenCrew",
+        "onOpenBarracks",
+        "onToggleAcceleratedTraining",
+        "onToggleIntensiveTraining",
+        "onDogMoreInfoClick"
+      ],
+      "coverage": {
+        "found": 1,
+        "total": 15,
+        "missing": [
+          "acceleratedTraining",
+          "berthsCount",
+          "crew",
+          "hasDog",
+          "intensiveTraining",
+          "onDogMoreInfoClick",
+          "onOpenBarracks",
+          "onOpenCrew",
+          "onToggleAcceleratedTraining",
+          "onToggleIntensiveTraining",
+          "slots",
+          "vehicleName",
+          "vehicleNation",
+          "vehicleType"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/award_view.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: resource_well/scripts/client/resource_well/gui/impl/lobby/feature/award_view.py
+from __future__ import absolute_import
+from frameworks.wulf import ViewSettings, WindowFlags
+from gui.impl import backport
+from gui.impl.auxiliary.vehicle_helper import fillVehicleInfo
+from gui.impl.gen import R
+from gui.impl.pub import ViewImpl
+from gui.impl.pub.lobby_window import LobbyNotificationWindow
+from gui.shared.event_dispatcher import selectVehicleInHangar, showHangar
+from helpers import dependency
+from resource_well.gui.impl.gen.view_models.views.lobby.award_view_model import AwardViewModel
+from resource_well.gui.impl.lobby.feature.sounds import RESOURCE_WELL_SOUND_SPACE
+from resource_well.gui.impl.lobby.feature.tooltips.serial_number_tooltip import SerialNumberTooltip
+from resource_well.gui.shared.event_dispatcher import showMainWindow
+from skeletons.gui.resource_well import IResourceWellController
+
+class AwardView(ViewImpl):
+    _COMMON_SOUND_SPACE = RESOURCE_WELL_SOUND_SPACE
+    __resourceWell = dependency.descriptor(IResourceWellController)
+
+    def __init__(self, rewardID, *args, **kwargs):
+        settings = ViewSettings(R.views.resource_well.mono.lobby.award_view(), model=AwardViewModel(), args=args, kwargs=kwargs)
+        super(AwardView, self).__init__(settings)
+        self.__vehicle = self.__resourceWell.getRewardVehicle(rewardID)
+        self.__rewardConfig = self.__resourceWell.config.getRewardConfig(rewardID)
+
+    @property
+    def viewModel(self):
+        return super(AwardView, self).getViewModel()
+
+    def createToolTipContent(self, event, contentID):
+        if contentID == R.views.resource_well.mono.lobby.tooltips.serial_number_tooltip():
+            return SerialNumberTooltip()
+        return super(AwardView, self).createToolTipContent(event, contentID)
+
+    def _onLoading(self, serialNumber, *args, **kwargs):
+        super(AwardView, self)._onLoading(*args, **kwargs)
+        with self.viewModel.transaction() as tx:
+            fillVehicleInfo(tx.vehicleInfo, self.__vehicle)
+            tx.setRewardIndex(self.__rewardConfig.order)
+            tx.setPersonalNumber(serialNumber if serialNumber is not None else '')
+        return
+
+    def _finalize(self):
+        self.soundManager.playSound(backport.sound(R.sounds.gui_hangar_award_screen_stop()))
+        self.__vehicle = None
+        self.__rewardConfig = None
+        super(AwardView, self)._finalize()
+        return
+
+    def _getEvents(self):
+        return (
+         (
+          self.viewModel.showInHangar, self.__showVehicle),
+         (
+          self.viewModel.close, self.__close))
+
+    def __close(self):
+        self.destroyWindow()
+        if self.__resourceWell.isActive():
+            showMainWindow()
+        else:
+            showHangar()
+
+    def __showVehicle(self):
+        selectVehicleInHangar(self.__vehicle.intCD)
+        self.destroyWindow()
+
+
+class AwardWindow(LobbyNotificationWindow):
+    __slots__ = ()
+
+    def __init__(self, rewardID, serialNumber):
+        super(AwardWindow, self).__init__(wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=AwardView(rewardID, serialNumber))

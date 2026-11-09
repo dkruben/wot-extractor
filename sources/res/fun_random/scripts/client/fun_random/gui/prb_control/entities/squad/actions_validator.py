@@ -1,0 +1,43 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/fun_random/scripts/client/fun_random/gui/prb_control/entities/squad/actions_validator.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: fun_random/scripts/client/fun_random/gui/prb_control/entities/squad/actions_validator.py
+from __future__ import absolute_import
+from fun_random_common.fun_constants import BATTLE_MODE_VEH_TAGS_EXCEPT_FUN
+from fun_random.gui.feature.util.fun_mixins import FunSubModesWatcher
+from fun_random.gui.feature.util.fun_wrappers import hasDesiredSubMode
+from gui.periodic_battles.prb_control.actions_validator import SquadPrimeTimeValidator
+from gui.prb_control.entities.base.actions_validator import ActionsValidatorComposite
+from gui.prb_control.entities.base.squad.actions_validator import SquadActionsValidator, SquadVehiclesValidator
+from gui.prb_control.entities.random.squad.actions_validator import BalancedSquadVehiclesValidator, BalancedSquadSlotsValidator, SquadRestrictionsVehiclesValidator
+
+class _FunRandomSquadStateValidator(SquadPrimeTimeValidator, FunSubModesWatcher):
+
+    def _getController(self):
+        return self.getDesiredSubMode()
+
+
+class _FunRandomSquadVehicleValidator(SquadVehiclesValidator, FunSubModesWatcher):
+    _BATTLE_MODE_VEHICLE_TAGS = BATTLE_MODE_VEH_TAGS_EXCEPT_FUN
+
+    @hasDesiredSubMode()
+    def _isVehicleSuitableForMode(self, vehicle):
+        validationResult = self.getDesiredSubMode().isSuitableVehicle(vehicle, isSquad=True)
+        return validationResult or super(_FunRandomSquadVehicleValidator, self)._isVehicleSuitableForMode(vehicle)
+
+
+class FunRandomActionsValidator(SquadActionsValidator):
+
+    def _createStateValidator(self, entity):
+        return _FunRandomSquadStateValidator(entity)
+
+    def _createSlotsValidator(self, entity):
+        baseValidator = super(FunRandomActionsValidator, self)._createSlotsValidator(entity)
+        return ActionsValidatorComposite(entity, validators=[baseValidator, BalancedSquadSlotsValidator(entity)])
+
+    def _createVehiclesValidator(self, entity):
+        return ActionsValidatorComposite(entity, validators=[
+         _FunRandomSquadVehicleValidator(entity),
+         BalancedSquadVehiclesValidator(entity),
+         SquadRestrictionsVehiclesValidator(entity)])

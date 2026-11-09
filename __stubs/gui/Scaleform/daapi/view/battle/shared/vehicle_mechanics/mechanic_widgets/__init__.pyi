@@ -1,0 +1,28 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/battle/shared/vehicle_mechanics/mechanic_widgets/__init__.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from .charge_shot_widget import ChargeShotMechanicWidget as ChargeShotMechanicWidget
+from .chargeable_burst_widget import ChargeableBurstMechanicWidget as ChargeableBurstMechanicWidget
+from .concentration_widget import ConcentrationMechanicWidget as ConcentrationMechanicWidget
+from .power_mode_widget import PowerModeMechanicWidget as PowerModeMechanicWidget
+from .pillbox_siege_widget import PillboxSiegeMechanicWidget as PillboxSiegeMechanicWidget
+from .shell_calibration_widget import ShellCalibrationMechanicWidget as ShellCalibrationMechanicWidget
+from .sight_pointer_widget import SightPointerMechanicWidget as SightPointerMechanicWidget
+from .stance_dance_turbo_widget import StanceDanceTurboMechanicWidget as StanceDanceTurboMechanicWidget
+from .stance_dance_fight_widget import StanceDanceFightMechanicWidget as StanceDanceFightMechanicWidget
+from .stationary_reloading_widget import StationaryReloadingMechanicWidget as StationaryReloadingMechanicWidget
+from .support_weapon_widget import SupportWeaponMechanicWidget as SupportWeaponMechanicWidget
+from .target_designator_widget import TargetDesignatorMechanicWidget as TargetDesignatorMechanicWidget
+from .temp_overheat_gun_widget import TemperatureOverheatGunWidget as TemperatureOverheatGunWidget
+from .temp_heating_zones_widget import TemperatureHeatingZonesGunWidget as TemperatureHeatingZonesGunWidget
+from .low_charge_shot_widget import LowChargeShotMechanicWidget as LowChargeShotMechanicWidget
+from .staged_jet_boosters_widget import StagedJetBoostersMechanicWidget as StagedJetBoostersMechanicWidget
+from .propellant_gun_widget import PropellantGunMechanicWidget as PropellantGunMechanicWidget
+from .wheeled_dash_widget import WheeledDashMechanicWidget as WheeledDashMechanicWidget
+from .auxiliary_rocket_launcher_widget import AuxiliaryRocketLauncherWidget as AuxiliaryRocketLauncherWidget
+from .shell_params_switcher_widget import ShellParamsSwitcherWidget as ShellParamsSwitcherWidget
+from .autoreloader_surge_widget import AutoreloaderSurgeMechanicWidget as AutoreloaderSurgeMechanicWidget
+from .bustle_feed_widget import BustleFeedMechanicWidget as BustleFeedMechanicWidget
+from .spec_boost_mode_widget import SpecBoostModeWidget as SpecBoostModeWidget
+__all__: tuple

@@ -1,0 +1,156 @@
+{
+  "rid": "R.views.lobby.veh_post_progression.tooltip.PairModificationTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "PairModificationTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "PairModificationTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView/PairModificationTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView/PairModificationTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PairModificationTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView/PairModificationTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView/PairModificationTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PairModificationTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView/PairModificationTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView/PairModificationTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView/PairModificationTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView/PairModificationTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView/PairModificationTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView/PairModificationTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PairModificationTooltipView/PairModificationTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.veh_post_progression.tooltip.PairModificationTooltipView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "6 referencia(s) R.views.lobby.veh_post_progression.tooltip.PairModificationTooltipView no Python",
+      "ViewModel PairModificationTooltipViewModel (model=... no Python da view): 8/8 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_base_component.py",
+        45
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_cfg_component.py",
+        87
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_cmp_component.py",
+        49
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/tooltips/pair_modification_tooltip_view.py",
+        29
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/vehicle_compare/modifications_panel.py",
+        25
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/vehicle_compare/modifications_panel.py",
+        44
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_base_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_cfg_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_cmp_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/tooltips/pair_modification_tooltip_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/vehicle_compare/modifications_panel.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/post_progression/tooltip/pair_modification_tooltip_view_model.py",
+      "class": "PairModificationTooltipViewModel",
+      "chain": [
+        "PairModificationTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "price",
+          "ViewModel"
+        ],
+        [
+          "moneyShortage",
+          "ViewModel"
+        ],
+        [
+          "modifiers",
+          "ViewModel"
+        ],
+        [
+          "multiStep",
+          "ViewModel"
+        ],
+        [
+          "nameRes",
+          "Resource"
+        ],
+        [
+          "level",
+          "Number"
+        ],
+        [
+          "isPriceExist",
+          "Bool"
+        ],
+        [
+          "showCTABlock",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 8,
+        "total": 8,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/vehicle_compare/compare_modifications_panel_view_model.py"
+      ]
+    }
+  }
+}

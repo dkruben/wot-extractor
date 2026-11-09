@@ -1,0 +1,117 @@
+{
+  "rid": "R.views.lobby.vehicle_preview.buying_panel.StyleBuyingPanel",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "StyleBuyingPanel",
+  "dir": "gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel",
+  "feature": null,
+  "files": [
+    {
+      "name": "StyleBuyingPanel.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "StyleBuyingPanel.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "StyleBuyingPanel.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/vehicle_preview/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/vehicle_preview/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.css",
+      "key": "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.js",
+      "key": "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.vehicle_preview.buying_panel.StyleBuyingPanel",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.vehicle_preview.buying_panel.StyleBuyingPanel no Python",
+      "ViewModel StyleBuyingPanelModel (model=... no Python da view): 6/6 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/vehicle_preview/info/bottom_panel_style_buying.py",
+        52
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/vehicle_preview/info/bottom_panel_style_buying.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/vehicle_preview/buying_panel/style_buying_panel_model.py",
+      "class": "StyleBuyingPanelModel",
+      "chain": [
+        "StyleBuyingPanelModel"
+      ],
+      "properties": [
+        [
+          "level",
+          "Number"
+        ],
+        [
+          "price",
+          "Number"
+        ],
+        [
+          "currency",
+          "String"
+        ],
+        [
+          "userCurrency",
+          "Number"
+        ],
+        [
+          "status",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onBuy"
+      ],
+      "coverage": {
+        "found": 6,
+        "total": 6,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/shaders/formats/xyznuvi.xml -->
+<root>
+	<elements>
+		<POSITION />
+		<NORMAL />
+		<TEXCOORD>
+			<type>FLOAT2</type>
+		</TEXCOORD>
+		<BLENDINDICES>
+			<type>SC_FLOAT1_MULT3_I</type>
+		</BLENDINDICES>
+	</elements>
+	<targets>
+		<target>
+			<name>D3D9</name>
+			<format>xyznuvipc</format>
+		</target>
+	</targets>
+</root>

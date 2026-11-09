@@ -1,0 +1,26 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/missions/missions_tab_bar_view_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+
+class MissionsTabBarViewModel(ViewModel):
+    __slots__: tuple
+    onTabSelectionChanged: Any
+    def __init__(self, properties=3, commands=1):
+        ...
+    def getViews(self):
+        ...
+    def setViews(self, value):
+        ...
+    def getCurrentView(self):
+        ...
+    def setCurrentView(self, value):
+        ...
+    def getStartIndex(self):
+        ...
+    def setStartIndex(self, value):
+        ...
+    def _initialize(self):
+        ...

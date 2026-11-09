@@ -1,0 +1,467 @@
+{
+ "source": "sources/res/gui/flash/fortCmp.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 315801,
+ "actual_length": 315801,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 66,
+  "ShowFrame": 3455,
+  "DefineShape": 77,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 1480,
+  "RemoveObject2": 329,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 40,
+  "DefineEditText": 6,
+  "DefineSprite": 65,
+  "FrameLabel": 56,
+  "FileAttributes": 1,
+  "PlaceObject3": 16,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 6,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 40,
+  "shapes": 79,
+  "sprites": 65,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 6,
+  "fonts": 0,
+  "classes": 34,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyDynamic2.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 190,
+   "class": "fortBattleRoomListBg"
+  },
+  {
+   "id": 187,
+   "class": "noSortieScreen"
+  },
+  {
+   "id": 183,
+   "class": "ConnectedDirectsUI"
+  },
+  {
+   "id": 182,
+   "class": "fortCmp_fla.baseGreenSwords_58"
+  },
+  {
+   "id": 178,
+   "class": "fortCmp_fla.arrowLeftLongOverGreenAnimated_57"
+  },
+  {
+   "id": 177,
+   "class": "fortCmp_fla.flagRedAppear_56"
+  },
+  {
+   "id": 176,
+   "class": "fortCmp_fla.circleGreenInOut_55"
+  },
+  {
+   "id": 175,
+   "class": "fortCmp_fla.arrowLeftOverGreenAnimated_54"
+  },
+  {
+   "id": 174,
+   "class": "fortCmp_fla.baseRedSwords_52"
+  },
+  {
+   "id": 170,
+   "class": "fortCmp_fla.base_51"
+  },
+  {
+   "id": 169,
+   "class": "fortCmp_fla.arrowRightLongOverRedAnimated_50"
+  },
+  {
+   "id": 168,
+   "class": "fortCmp_fla.flagGreenAppear_49"
+  },
+  {
+   "id": 131,
+   "class": "fortCmp_fla.circleRedInOut_48"
+  },
+  {
+   "id": 130,
+   "class": "fortCmp_fla.arrowRightOverRedAnimated_47"
+  },
+  {
+   "id": 123,
+   "class": "fortCmp_fla.circleGreenIn_43"
+  },
+  {
+   "id": 119,
+   "class": "fortCmp_fla.flagGreenAway_40"
+  },
+  {
+   "id": 112,
+   "class": "fortCmp_fla.arrowRightDisappear_39"
+  },
+  {
+   "id": 111,
+   "class": "fortCmp_fla.arrowLeftLongAnimated_37"
+  },
+  {
+   "id": 101,
+   "class": "fortCmp_fla.swordsAnimation2_34"
+  },
+  {
+   "id": 100,
+   "class": "fortCmp_fla.circleRedIn_32"
+  },
+  {
+   "id": 96,
+   "class": "fortCmp_fla.flagRedAway_29"
+  },
+  {
+   "id": 89,
+   "class": "fortCmp_fla.arrowLeftDisappear_28"
+  },
+  {
+   "id": 88,
+   "class": "fortCmp_fla.arrowRightLongAnimated_25"
+  },
+  {
+   "id": 82,
+   "class": "fortCmp_fla.circleFlag_24"
+  },
+  {
+   "id": 75,
+   "class": "fortCmp_fla.swordsAnimation1_19"
+  },
+  {
+   "id": 68,
+   "class": "fortCmp_fla.circleGreyInOut_17"
+  },
+  {
+   "id": 64,
+   "class": "fortCmp_fla.circleGreenFlagGreen_15"
+  },
+  {
+   "id": 60,
+   "class": "fortCmp_fla.circleRedFlagRed_13"
+  },
+  {
+   "id": 56,
+   "class": "fortCmp_fla.baseGreen_11"
+  },
+  {
+   "id": 52,
+   "class": "fortCmp_fla.baseRed_9"
+  },
+  {
+   "id": 38,
+   "class": "fortLevelUI"
+  },
+  {
+   "id": 17,
+   "class": "SortieSimpleSlotUI"
+  },
+  {
+   "id": 10,
+   "class": "UserNameFieldUI"
+  },
+  {
+   "id": 4,
+   "class": "timerUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 11112,
+   "classes": 34,
+   "methods": 185,
+   "bodies": 185,
+   "code_bytes": 3466
+  }
+ ],
+ "classes": [
+  {
+   "name": "fortBattleRoomListBg",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.arrowLeftDisappear_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.arrowLeftLongAnimated_37",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.arrowLeftLongOverGreenAnimated_57",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.arrowLeftOverGreenAnimated_54",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.arrowRightDisappear_39",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.arrowRightLongAnimated_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.arrowRightLongOverRedAnimated_50",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.arrowRightOverRedAnimated_47",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.baseGreenSwords_58",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.baseGreen_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.baseRedSwords_52",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.baseRed_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.base_51",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.circleFlag_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.circleGreenFlagGreen_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.circleGreenInOut_55",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.circleGreenIn_43",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.circleGreyInOut_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.circleRedFlagRed_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.circleRedInOut_48",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.circleRedIn_32",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.flagGreenAppear_49",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.flagGreenAway_40",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.flagRedAppear_56",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.flagRedAway_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.swordsAnimation1_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortCmp_fla.swordsAnimation2_34",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortLevelUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.battleRoom.clanBattle.ClanBattleTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "noSortieScreen",
+   "kind": "class",
+   "extends": "net.wg.gui.rally.views.list.RallyNoSortieScreen",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ConnectedDirectsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.cmp.drctn.impl.ConnectedDirects",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UserNameFieldUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UserNameField",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SortieSimpleSlotUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.cmp.battleRoom.SortieSimpleSlot",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

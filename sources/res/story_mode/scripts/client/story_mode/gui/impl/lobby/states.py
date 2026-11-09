@@ -1,0 +1,58 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/states.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: story_mode/scripts/client/story_mode/gui/impl/lobby/states.py
+from __future__ import absolute_import
+import typing
+from frameworks_common.state_machine import StateFlags
+from frameworks_common.state_machine.transitions import TransitionType
+from gui.Scaleform.framework import ScopeTemplates
+from gui.Scaleform.framework.entities.View import ViewKey
+from gui.battle_results.service import PostBattleResultsStateMixin
+from gui.impl import backport
+from gui.impl.gen import R
+from gui.lobby_state_machine.states import GuiImplViewLobbyState, SubScopeSubLayerState, LobbyStateFlags, LobbyStateDescription, TopScopeTopLayerState, ViewLobbyState
+from gui.lobby_state_machine.transitions import HijackTransition
+from helpers import dependency
+from story_mode.gui.impl.lobby.mission_selection_view import MissionSelectionView
+from story_mode.gui.story_mode_gui_constants import VIEW_ALIAS
+from story_mode.skeletons.story_mode_controller import IStoryModeController
+
+def registerStates(machine):
+    machine.addState(StoryModeState())
+    machine.addState(StoryModeBattleResultsState())
+
+
+def registerTransitions(machine):
+    from gui.impl.lobby.hangar.states import HangarState
+    storyMode = machine.getStateByCls(StoryModeState)
+    parent = machine.getStateByCls(StoryModeState).getParent()
+    parent.addTransition(HijackTransition(HangarState, _shallNavigateToStoryModeHangar, transitionType=TransitionType.EXTERNAL), storyMode)
+
+
+@SubScopeSubLayerState.parentOf
+class StoryModeState(GuiImplViewLobbyState):
+    STATE_ID = 'storyMode'
+    VIEW_KEY = ViewKey(MissionSelectionView.LAYOUT_ID)
+
+    def __init__(self, flags=StateFlags.UNDEFINED):
+        super(StoryModeState, self).__init__(MissionSelectionView, flags=flags | LobbyStateFlags.HANGAR, scope=ScopeTemplates.LOBBY_SUB_SCOPE)
+
+    def getNavigationDescription(self):
+        return LobbyStateDescription(title=backport.text(R.strings.sm_lobby.headerButtons.battle.types.story_mode()))
+
+
+@TopScopeTopLayerState.parentOf
+class StoryModeBattleResultsState(ViewLobbyState, PostBattleResultsStateMixin):
+    STATE_ID = VIEW_ALIAS.STORY_MODE_BATTLE_RESULTS
+    VIEW_KEY = ViewKey(VIEW_ALIAS.STORY_MODE_BATTLE_RESULTS)
+
+    def registerTransitions(self):
+        machine = self.getMachine()
+        machine.addNavigationTransitionFromParent(self)
+
+
+@dependency.replace_none_kwargs(storyModeCtrl=IStoryModeController)
+def _shallNavigateToStoryModeHangar(event, storyModeCtrl=None):
+    return storyModeCtrl.isEnabled() and storyModeCtrl.isInPrb()

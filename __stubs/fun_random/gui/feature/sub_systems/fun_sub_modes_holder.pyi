@@ -1,0 +1,69 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/fun_random/scripts/client/fun_random/gui/feature/sub_systems/fun_sub_modes_holder.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import operator as operator
+import typing as typing
+from future.utils import viewvalues as viewvalues
+from fun_random_common.fun_constants import FUN_EVENT_ID_KEY as FUN_EVENT_ID_KEY, UNKNOWN_EVENT_ID as UNKNOWN_EVENT_ID
+from fun_random.gui.feature.fun_constants import FunSubModeBroadcast as FunSubModeBroadcast
+from fun_random.gui.feature.util.fun_wrappers import skipNoSubModesAction as skipNoSubModesAction
+from fun_random.gui.feature.sub_modes import createFunSubMode as createFunSubMode
+from fun_random.gui.shared.events import FunSelectionEvent as FunSelectionEvent, FunSubModesEvent as FunSubModesEvent, FunEventScope as FunEventScope, FunEventType as FunEventType
+from gui.battle_control.arena_visitor import createByAvatar as createByAvatar
+from skeletons.gui.game_control import IFunRandomController as IFunRandomController
+from fun_random.gui.feature.sub_modes.base_sub_mode import IFunSubMode as IFunSubMode
+from fun_random.helpers.server_settings import FunSubModeConfig as FunSubModeConfig, FunRandomConfig as FunRandomConfig
+from skeletons.gui.battle_session import IClientArenaVisitor as IClientArenaVisitor
+
+class FunSubModesHolder(IFunRandomController.IFunSubModesHolder):
+    __desiredSubModeID: Any
+    __subModes: Any
+    __subscription: Any
+    def __init__(self, subscription):
+        ...
+    def clear(self):
+        ...
+    def fini(self):
+        ...
+    def getBattleSubMode(self, arenaVisitor=None):
+        ...
+    def getBattleSubModeID(self, arenaVisitor=None):
+        ...
+    def getDesiredSubMode(self):
+        ...
+    def getDesiredSubModeID(self):
+        ...
+    def getSubMode(self, subModeID):
+        ...
+    def getSubModes(self, subModesIDs=None, isOrdered=False):
+        ...
+    def getSubModesIDs(self):
+        ...
+    def setDesiredSubModeID(self, subModeID, trustedSource=False):
+        ...
+    def startNotification(self):
+        ...
+    def stopNotification(self):
+        ...
+    def updateSettings(self, prevSettings, newSettings):
+        ...
+    def __setDesiredSubMode(self, subModeID, isFlush=False):
+        ...
+    def __onSubModeEvent(self, eventType, subModeID, ctx=None):
+        ...
+    def __invokeSubModesMethod(self, method):
+        ...
+    # decorador original: @skipNoSubModesAction
+    def __invokeSubModesEvent(self, subModes, eventType, ctx=None):
+        ...
+    # decorador original: @skipNoSubModesAction
+    def __createSubModes(self, subModesToCreate, subModesSettings):
+        ...
+    # decorador original: @skipNoSubModesAction
+    def __destroySubModes(self, subModesToDestroy):
+        ...
+    # decorador original: @skipNoSubModesAction
+    def __invalidateSubModes(self, subModesToUpdate, subModesSettings):
+        ...

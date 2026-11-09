@@ -1,0 +1,163 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/platform/wgnp/demo_account/response.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from httplib import REQUEST_TIMEOUT as REQUEST_TIMEOUT
+from gui.platform.base.response import PlatformResponse as PlatformResponse
+
+class WGNPDemoAccCredentialsActionResponse(PlatformResponse):
+    @property
+    def isAccountAlreadyHasLogin(self):
+        ...
+    @property
+    def isLoginAlreadyTaken(self):
+        ...
+
+class WGNPDemoAccCredentialsAddResponse(WGNPDemoAccCredentialsActionResponse):
+    @property
+    def requestRestrictedUntilTime(self):
+        ...
+    @property
+    def isCredentialsNotFound(self):
+        ...
+    @property
+    def isRequestLimitExceeded(self):
+        ...
+    @property
+    def isPasswordWeak(self):
+        ...
+    @property
+    def isRestrictedByCountryPolicy(self):
+        ...
+    @property
+    def isLoginInvalid(self):
+        ...
+    @property
+    def isLoginEmpty(self):
+        ...
+    @property
+    def isLoginMinLength(self):
+        ...
+    @property
+    def isLoginMaxLength(self):
+        ...
+    @property
+    def isPasswordInvalid(self):
+        ...
+    @property
+    def isPasswordEmpty(self):
+        ...
+    @property
+    def isPasswordMinLength(self):
+        ...
+    @property
+    def isPasswordMaxLength(self):
+        ...
+
+class WGNPDemoAccCredentialsConfirmResponse(WGNPDemoAccCredentialsActionResponse):
+    @property
+    def isConfirmationCodeIncorrect(self):
+        ...
+    @property
+    def isConfirmationCodeDeactivated(self):
+        ...
+    @property
+    def isConfirmationCodeExpired(self):
+        ...
+    @property
+    def isFormInvalid(self):
+        ...
+    @property
+    def isCodeEmpty(self):
+        ...
+    @property
+    def isSpaWeakPassword(self):
+        ...
+    @property
+    def isSpaGenericConflict(self):
+        ...
+    @property
+    def isInvalidChoice(self):
+        ...
+
+class WGNPDemoAccChangeNicknameResponse(PlatformResponse):
+    @property
+    def isNameEmpty(self):
+        ...
+    @property
+    def isNameInvalid(self):
+        ...
+    @property
+    def isNameMaxLength(self):
+        ...
+    @property
+    def isNameMinLength(self):
+        ...
+    @property
+    def isNameForbidden(self):
+        ...
+    @property
+    def isNameExists(self):
+        ...
+    @property
+    def isGameEmpty(self):
+        ...
+    @property
+    def isGameInvalid(self):
+        ...
+    @property
+    def isCostEmpty(self):
+        ...
+    @property
+    def isCostInvalid(self):
+        ...
+    @property
+    def isViaMaxLength(self):
+        ...
+    @property
+    def isTimeout(self):
+        ...
+    @property
+    def isRequestTimeout(self):
+        ...
+    @property
+    def isAuthTokenExpired(self):
+        ...
+    @property
+    def isAuthTokenDenied(self):
+        ...
+    @property
+    def isNEGold(self):
+        ...
+    @property
+    def isFreeCostUnavailable(self):
+        ...
+    @property
+    def isCurrencyBanned(self):
+        ...
+    @property
+    def isNeedNicknameStatusCheck(self):
+        ...
+
+class WGNPDemoAccValidateNicknameResponse(PlatformResponse):
+    @property
+    def spaId(self):
+        ...
+    @property
+    def suggestions(self):
+        ...
+    @property
+    def isBanned(self):
+        ...
+    @property
+    def isOccupied(self):
+        ...
+    @property
+    def isInvalid(self):
+        ...
+    @property
+    def isMinLength(self):
+        ...
+    @property
+    def isMaxLength(self):
+        ...

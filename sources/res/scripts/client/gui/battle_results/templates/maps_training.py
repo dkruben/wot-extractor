@@ -1,0 +1,40 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/battle_results/templates/maps_training.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/battle_results/templates/maps_training.py
+from gui.battle_results.components import base, maps_training
+_MAPS_TRAINING_VO_META = base.DictMeta({'goal': {}, 'duration': 0, 
+   'stats': [], 'geometryId': 0, 
+   'team': 0, 
+   'vehicle': {}, 'doneValue': (-1), 
+   'wasDone': False, 
+   'scenarioProgress': [], 'rewards': [], 'accountProgress': {}})
+_MAPS_TRAINING_BATTLE_GOAL_VO_META = base.DictMeta({'heavyTank': [
+               0, 0], 
+   'mediumTank': [
+                0, 0], 
+   'lightTank': [
+               0, 0], 
+   'SPG': [
+         0, 0], 
+   'AT-SPG': [
+            0, 0]})
+_MAPS_TRAINING_VEHICLE_VO_META = base.DictMeta({'type': '', 
+   'name': ''})
+_MAPS_TRAINING_ACC_PROGRESS_VO_META = base.DictMeta({'hasImproved': False})
+_components = (
+ maps_training.BattleGoalsBlock(_MAPS_TRAINING_BATTLE_GOAL_VO_META, 'goal'),
+ maps_training.BattleDurationItem('duration'),
+ maps_training.StatsBlock(base.ListMeta(), 'stats'),
+ maps_training.GeometryIdItem('geometryId'),
+ maps_training.TeamItem('team'),
+ maps_training.VehicleBlock(_MAPS_TRAINING_VEHICLE_VO_META, 'vehicle'),
+ maps_training.DoneValueItem('doneValue'),
+ maps_training.WasDoneItem('wasDone'),
+ maps_training.ScenarioProgressBlock(base.ListMeta(), 'scenarioProgress'),
+ maps_training.RewardsBlock(base.ListMeta(), 'rewards'),
+ maps_training.AccountProgressBlock(_MAPS_TRAINING_ACC_PROGRESS_VO_META, 'accountProgress'))
+MAPS_TRAINING_RESULTS_BLOCK = base.StatsBlock(_MAPS_TRAINING_VO_META, '')
+for i, component in enumerate(_components):
+    MAPS_TRAINING_RESULTS_BLOCK.addComponent(i, component)

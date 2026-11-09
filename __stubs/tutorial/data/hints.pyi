@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/tutorial/data/hints.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from collections import namedtuple as namedtuple, defaultdict as defaultdict
+from future.utils import viewvalues as viewvalues
+HintProps: Any
+
+class HintsData(object):
+    __guiFilePath: Any
+    __hints: Any
+    def __init__(self):
+        ...
+    def getHints(self):
+        ...
+    def getHintsCount(self):
+        ...
+    def setGuiFilePath(self, filePath):
+        ...
+    def getGuiFilePath(self):
+        ...
+    def addHint(self, hint):
+        ...
+    def hintsForItem(self, itemID):
+        ...
+    def markAsShown(self, itemID, hintID):
+        ...
+    def markHintsAsShown(self, hintIDs):
+        ...
+    @staticmethod
+    def _delHints(hintsList, ids):
+        ...

@@ -1,0 +1,72 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.Action",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Action",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/Action",
+  "feature": null,
+  "files": [
+    {
+      "name": "Action.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Action/Action.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Action/Action.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Action.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Action/Action.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Action/Action.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Action.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Action/Action.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Action/Action.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/common/Action/Action.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/Action/Action.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Action/Action.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/Action/Action.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Action/Action.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.simple_tooltip_content"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.Action",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

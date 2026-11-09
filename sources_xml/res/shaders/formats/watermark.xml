@@ -1,0 +1,18 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/shaders/formats/watermark.xml -->
+<root>
+	<streams>
+		<stream>
+			<index>1</index>
+			<inputMode>INSTANCE_DATA</inputMode>
+		</stream>
+	</streams>
+	<elements>
+		<POSITION />
+		<TEXCOORD>
+			<semanticIndex>7</semanticIndex>
+			<stream>1</stream>
+			<offset>0</offset>
+			<type>FLOAT3</type>
+		</TEXCOORD>
+	</elements>
+</root>

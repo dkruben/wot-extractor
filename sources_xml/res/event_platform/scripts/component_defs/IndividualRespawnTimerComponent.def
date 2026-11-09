@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/event_platform/scripts/component_defs/IndividualRespawnTimerComponent.def -->
+<root>
+	<Properties>
+		<respawnDelay>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</respawnDelay>
+		<timeOfDeath>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</timeOfDeath>
+	</Properties>
+	<DefaultKeyName>IndividualRespawnTimerComponent</DefaultKeyName>
+</root>

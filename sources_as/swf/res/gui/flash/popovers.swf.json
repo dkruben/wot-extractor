@@ -1,0 +1,157 @@
+{
+ "source": "sources/res/gui/flash/popovers.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 92779,
+ "actual_length": 92779,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#2a2a2a",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 10,
+  "ShowFrame": 10,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 12,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 2,
+  "DefineSprite": 9,
+  "FileAttributes": 1,
+  "PlaceObject3": 11,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 3,
+  "sprites": 9,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattleDynamic.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 16,
+   "class": "PopOverUI"
+  },
+  {
+   "id": 14,
+   "class": "rudimentaryPopovers"
+  },
+  {
+   "id": 13,
+   "class": "SmartPopOverUI"
+  },
+  {
+   "id": 10,
+   "class": "popoverBackgroundScale9grid"
+  },
+  {
+   "id": 9,
+   "class": "popoverBackground_UI"
+  },
+  {
+   "id": 6,
+   "class": "PopoverImgBgUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2009,
+   "classes": 6,
+   "methods": 19,
+   "bodies": 19,
+   "code_bytes": 460
+  }
+ ],
+ "classes": [
+  {
+   "name": "rudimentaryPopovers",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PopoverImgBgUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "popoverBackgroundScale9grid",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "popoverBackground_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.popovers.UnClickableShadowBG",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PopOverUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.popovers.PopOver",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SmartPopOverUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.popovers.SmartPopOver",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

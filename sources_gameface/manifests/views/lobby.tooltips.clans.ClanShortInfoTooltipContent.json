@@ -1,0 +1,45 @@
+{
+  "rid": "R.views.lobby.tooltips.clans.ClanShortInfoTooltipContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "ClanShortInfoTooltipContent",
+  "dir": "gui/unbound/views/lobby/tooltips",
+  "feature": null,
+  "files": [
+    {
+      "name": "clans.unbound",
+      "effective": "res/gui/unbound/views/lobby/tooltips/clans.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/tooltips/clans.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tooltips.clans.ClanShortInfoTooltipContent",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.tooltips.clans.ClanShortInfoTooltipContent no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/account_dashboard/features/header_feature.py",
+        45
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tooltips/clans.py",
+        17
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/account_dashboard/features/header_feature.py",
+      "sources/res/scripts/client/gui/impl/lobby/tooltips/clans.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

@@ -1,0 +1,1507 @@
+{
+ "source": "sources/res/gui/flash/crosshairControls.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 558302,
+ "actual_length": 558302,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 170,
+  "ShowFrame": 2185,
+  "DefineShape": 674,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 12,
+  "DefineShape2": 6,
+  "PlaceObject2": 3183,
+  "RemoveObject2": 83,
+  "DefineShape3": 6,
+  "DefineBitsLossless2": 80,
+  "DefineEditText": 12,
+  "DefineSprite": 169,
+  "FrameLabel": 173,
+  "DefineMorphShape": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 42,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 12,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineShape4": 41,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 92,
+  "shapes": 728,
+  "sprites": 169,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 12,
+  "fonts": 0,
+  "classes": 130,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 1001,
+   "class": "PenetrationFxUI"
+  },
+  {
+   "id": 994,
+   "class": "AccuracyGunMarkerDebugUI"
+  },
+  {
+   "id": 993,
+   "class": "AccuracyGunMarkerUI"
+  },
+  {
+   "id": 992,
+   "class": "AccuracyGunDispersionCircleUI"
+  },
+  {
+   "id": 991,
+   "class": "AccuracyGunMixing"
+  },
+  {
+   "id": 990,
+   "class": "ArtyHitMarkerUI"
+  },
+  {
+   "id": 989,
+   "class": "AutoloaderCrosshairUI"
+  },
+  {
+   "id": 988,
+   "class": "BoostndicatorUI"
+  },
+  {
+   "id": 987,
+   "class": "BracketsUI"
+  },
+  {
+   "id": 977,
+   "class": "crosshairControls_fla.AutoloaderFireUI_117"
+  },
+  {
+   "id": 973,
+   "class": "AutoloaderCassetteUI"
+  },
+  {
+   "id": 971,
+   "class": "crosshairControls_fla.AutoloaderShellUI_19"
+  },
+  {
+   "id": 793,
+   "class": "crosshairControls_fla.AutoloaderIdicatorWhite_18"
+  },
+  {
+   "id": 787,
+   "class": "crosshairControls_fla.AutoloaderTimerContainer_17"
+  },
+  {
+   "id": 786,
+   "class": "AutoloaderTimerUI"
+  },
+  {
+   "id": 785,
+   "class": "AutoloaderTimerTFIdleUI"
+  },
+  {
+   "id": 783,
+   "class": "AutoloaderTimerTFStunUI"
+  },
+  {
+   "id": 781,
+   "class": "AutoloaderTimerTFAutoloadUI"
+  },
+  {
+   "id": 779,
+   "class": "AutoloaderTimerTFAutoreloaderSurgeUI"
+  },
+  {
+   "id": 777,
+   "class": "AutoloaderTimerTFAutoreloaderSurgeRedUI"
+  },
+  {
+   "id": 775,
+   "class": "AutoloaderTimerTFReloadingUI"
+  },
+  {
+   "id": 770,
+   "class": "crosshairControls_fla.ShellsBackgroungUI_16"
+  },
+  {
+   "id": 755,
+   "class": "crosshairControls_fla.FLStage_15"
+  },
+  {
+   "id": 754,
+   "class": "AuxiliaryRocketLauncherGunMarkerArcadeDebugUI"
+  },
+  {
+   "id": 753,
+   "class": "AuxiliaryRocketLauncherGunMarkerArcadeUI"
+  },
+  {
+   "id": 752,
+   "class": "AuxillaryRocketLauncherGunMarkerTagArcadeUI"
+  },
+  {
+   "id": 751,
+   "class": "AuxiliaryRocketLauncherGunMarkerTagClipArcadeUI"
+  },
+  {
+   "id": 750,
+   "class": "AuxiliaryRocketLauncherGunMarkerSniperDebugUI"
+  },
+  {
+   "id": 749,
+   "class": "AuxiliaryRocketLauncherGunMarkerSniperUI"
+  },
+  {
+   "id": 748,
+   "class": "AuxillaryRocketLauncherGunMarkerTagSniperUI"
+  },
+  {
+   "id": 747,
+   "class": "AuxiliaryRocketLauncherGunMarkerTagClipSniperUI"
+  },
+  {
+   "id": 746,
+   "class": "crosshairControls_fla.auxillary_rocket_launcher_circle_46"
+  },
+  {
+   "id": 740,
+   "class": "AuxiliaryRocketLauncherGunMarkerDispersionCircleUI"
+  },
+  {
+   "id": 739,
+   "class": "averageDamageContainerUI"
+  },
+  {
+   "id": 738,
+   "class": "averageDamageField"
+  },
+  {
+   "id": 731,
+   "class": "CassetteContainerUI"
+  },
+  {
+   "id": 730,
+   "class": "ChargeGunMarkerDebugUI"
+  },
+  {
+   "id": 729,
+   "class": "ChargeGunMarkerUI"
+  },
+  {
+   "id": 728,
+   "class": "ChargeGunDispersionCircleUI"
+  },
+  {
+   "id": 727,
+   "class": "ChargeGunMixingUI"
+  },
+  {
+   "id": 726,
+   "class": "ClipQuantityBarHeavyUI"
+  },
+  {
+   "id": 725,
+   "class": "crosshairControls_fla.pbc_anim_heavy_130"
+  },
+  {
+   "id": 711,
+   "class": "crosshairControls_fla.bg_pbc_129"
+  },
+  {
+   "id": 697,
+   "class": "ClipQuantityBarLightUI"
+  },
+  {
+   "id": 696,
+   "class": "crosshairControls_fla.pbc_anim_light_133"
+  },
+  {
+   "id": 502,
+   "class": "ControllableReloadingCassetteUI"
+  },
+  {
+   "id": 500,
+   "class": "ControllableReloadShellProgressBarUI"
+  },
+  {
+   "id": 499,
+   "class": "crosshairControls_fla.reloadCompleteMC_29"
+  },
+  {
+   "id": 498,
+   "class": "distanceContainerUI"
+  },
+  {
+   "id": 497,
+   "class": "distanceField"
+  },
+  {
+   "id": 495,
+   "class": "DualGunArcadeMarkerDebugUI"
+  },
+  {
+   "id": 494,
+   "class": "DualGunArcadeMarkerUI"
+  },
+  {
+   "id": 493,
+   "class": "GunMarkerArcadeDualGunChargeUI"
+  },
+  {
+   "id": 492,
+   "class": "DualGunSniperMarkerDebugUI"
+  },
+  {
+   "id": 491,
+   "class": "DualGunSniperMarkerUI"
+  },
+  {
+   "id": 490,
+   "class": "GunMarkerSniperDualGunChargeUI"
+  },
+  {
+   "id": 489,
+   "class": "ExtraShotClipPanelUI"
+  },
+  {
+   "id": 488,
+   "class": "ExtraShotClipCursorTopUI"
+  },
+  {
+   "id": 485,
+   "class": "ExtraShotClipBarUI"
+  },
+  {
+   "id": 484,
+   "class": "ExtraShotClipCursorBottomUI"
+  },
+  {
+   "id": 481,
+   "class": "ExtraShotShellProgressBarUI"
+  },
+  {
+   "id": 480,
+   "class": "crosshairControls_fla.shotMC_33"
+  },
+  {
+   "id": 478,
+   "class": "ShellProgressBarUI"
+  },
+  {
+   "id": 477,
+   "class": "GunMarkerDebugUI"
+  },
+  {
+   "id": 476,
+   "class": "GunMarkerSPGDebugUI"
+  },
+  {
+   "id": 475,
+   "class": "GunMarkerSPGUI"
+  },
+  {
+   "id": 474,
+   "class": "SmartRadiusNode"
+  },
+  {
+   "id": 468,
+   "class": "GunMarkerUI"
+  },
+  {
+   "id": 467,
+   "class": "DispersionCircleUI"
+  },
+  {
+   "id": 466,
+   "class": "crosshairControls_fla.StacksUI_90"
+  },
+  {
+   "id": 455,
+   "class": "ChargeableBurstCircleUI"
+  },
+  {
+   "id": 454,
+   "class": "LowChargeShotGunMarkerUI"
+  },
+  {
+   "id": 453,
+   "class": "LowChargeShotGunMarkerDispersionCircleUI"
+  },
+  {
+   "id": 452,
+   "class": "LowChargeShotMixingUI"
+  },
+  {
+   "id": 451,
+   "class": "ReloadBoostBorderUI"
+  },
+  {
+   "id": 445,
+   "class": "ReloadingSwitchIconUI"
+  },
+  {
+   "id": 440,
+   "class": "ReloadTimeBlinkUI"
+  },
+  {
+   "id": 439,
+   "class": "crosshairControls_fla.reloadBlinkMc_150"
+  },
+  {
+   "id": 435,
+   "class": "ShellCalibrationClipPanelUI"
+  },
+  {
+   "id": 434,
+   "class": "ShellCalibrationClipBarUI"
+  },
+  {
+   "id": 433,
+   "class": "ShellCalibrationProgressBarUI"
+  },
+  {
+   "id": 432,
+   "class": "crosshairControls_fla.calibrationIndicator_103"
+  },
+  {
+   "id": 422,
+   "class": "crosshairControls_fla.shell_progress_28"
+  },
+  {
+   "id": 411,
+   "class": "crosshairControls_fla.shell_active_27"
+  },
+  {
+   "id": 407,
+   "class": "SpeedometerUI"
+  },
+  {
+   "id": 299,
+   "class": "WarningAnimUI"
+  },
+  {
+   "id": 292,
+   "class": "crosshairControls_fla.butnout_flash_162"
+  },
+  {
+   "id": 286,
+   "class": "crosshairControls_fla.burnout_progress_161"
+  },
+  {
+   "id": 170,
+   "class": "WheelStateUI"
+  },
+  {
+   "id": 156,
+   "class": "SpeedometerBgUI"
+  },
+  {
+   "id": 153,
+   "class": "TwinGunMarkerDebugUI"
+  },
+  {
+   "id": 152,
+   "class": "TwinGunMarkerUI"
+  },
+  {
+   "id": 151,
+   "class": "GunMarkerTagUI"
+  },
+  {
+   "id": 150,
+   "class": "crosshairControls_fla.A_simple_67"
+  },
+  {
+   "id": 149,
+   "class": "crosshairControls_fla.A_reload_new_66"
+  },
+  {
+   "id": 148,
+   "class": "crosshairControls_fla.A_colored_65"
+  },
+  {
+   "id": 135,
+   "class": "crosshairControls_fla.O_simple_64"
+  },
+  {
+   "id": 134,
+   "class": "crosshairControls_fla.O_reload_63"
+  },
+  {
+   "id": 133,
+   "class": "crosshairControls_fla.O_colored_62"
+  },
+  {
+   "id": 120,
+   "class": "crosshairControls_fla.Dot_simple_61"
+  },
+  {
+   "id": 119,
+   "class": "crosshairControls_fla.Dot_reload_60"
+  },
+  {
+   "id": 118,
+   "class": "crosshairControls_fla.Dot_colored_59"
+  },
+  {
+   "id": 104,
+   "class": "crosshairControls_fla.X_reload_57"
+  },
+  {
+   "id": 103,
+   "class": "crosshairControls_fla.X_noob_55"
+  },
+  {
+   "id": 88,
+   "class": "crosshairControls_fla.A_reload_53"
+  },
+  {
+   "id": 87,
+   "class": "crosshairControls_fla.A_noob_52"
+  },
+  {
+   "id": 72,
+   "class": "TwinGunDispersionCircleUI"
+  },
+  {
+   "id": 71,
+   "class": "TwinGunMixingUI"
+  },
+  {
+   "id": 70,
+   "class": "radius_bar"
+  },
+  {
+   "id": 33,
+   "class": "radius_stapper"
+  },
+  {
+   "id": 32,
+   "class": "crosshairControls_fla.green_dots_82"
+  },
+  {
+   "id": 27,
+   "class": "radius_red"
+  },
+  {
+   "id": 26,
+   "class": "crosshairControls_fla.red_dots_78"
+  },
+  {
+   "id": 21,
+   "class": "continiusLine"
+  },
+  {
+   "id": 20,
+   "class": "radiusTtypestapper"
+  },
+  {
+   "id": 18,
+   "class": "radiusTtypered"
+  },
+  {
+   "id": 13,
+   "class": "AimDamageUI"
+  },
+  {
+   "id": 12,
+   "class": "ZoomingAimDamageUI"
+  },
+  {
+   "id": 11,
+   "class": "crosshairControls_fla.AimDamageX25_43"
+  },
+  {
+   "id": 10,
+   "class": "crosshairControls_fla.AimDamageX16_42"
+  },
+  {
+   "id": 9,
+   "class": "crosshairControls_fla.AimDamageX8_41"
+  },
+  {
+   "id": 8,
+   "class": "crosshairControls_fla.AimDamageX4_40"
+  },
+  {
+   "id": 7,
+   "class": "crosshairControls_fla.AimDamageX2_38"
+  },
+  {
+   "id": 4,
+   "class": "TwinGunGlowArcadeUI"
+  },
+  {
+   "id": 3,
+   "class": "ChargeGunGlowArcadeUI"
+  },
+  {
+   "id": 2,
+   "class": "TwinGunGlowSniperUI"
+  },
+  {
+   "id": 1,
+   "class": "ChargeGunGlowSniperUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 29681,
+   "classes": 130,
+   "methods": 555,
+   "bodies": 555,
+   "code_bytes": 10789
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Sine",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Circular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeGunGlowArcadeUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeGunGlowSniperUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TwinGunGlowArcadeUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TwinGunGlowSniperUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReloadTimeBlinkUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReloadingSwitchIconUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SmartRadiusNode",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SpeedometerBgUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WheelStateUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.A_colored_65",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.A_noob_52",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.A_reload_53",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.A_reload_new_66",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.A_simple_67",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.AimDamageX16_42",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.AimDamageX25_43",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.AimDamageX2_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.AimDamageX4_40",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.AimDamageX8_41",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.AutoloaderFireUI_117",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.AutoloaderIdicatorWhite_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.AutoloaderShellUI_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.AutoloaderTimerContainer_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.Dot_colored_59",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.Dot_reload_60",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.Dot_simple_61",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.FLStage_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.O_colored_62",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.O_reload_63",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.O_simple_64",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.ShellsBackgroungUI_16",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.StacksUI_90",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.X_noob_55",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.X_reload_57",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.auxillary_rocket_launcher_circle_46",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.bg_pbc_129",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.burnout_progress_161",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.butnout_flash_162",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.calibrationIndicator_103",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.green_dots_82",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.pbc_anim_heavy_130",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.pbc_anim_light_133",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.red_dots_78",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.reloadBlinkMc_150",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.reloadCompleteMC_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.shell_active_27",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.shell_progress_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "crosshairControls_fla.shotMC_33",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AimDamageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerAimDamage",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AutoloaderTimerTFAutoloadUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderTimerText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AutoloaderTimerTFAutoreloaderSurgeRedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderTimerText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AutoloaderTimerTFAutoreloaderSurgeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderTimerText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AutoloaderTimerTFIdleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderTimerText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AutoloaderTimerTFReloadingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderTimerText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AutoloaderTimerTFStunUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderTimerText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AutoloaderTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BracketsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicatorElement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ClipQuantityBarHeavyUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ClipQuantityBarLightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ExtraShotClipCursorBottomUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.extraShotClip.ExtraShotClipCursor",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ExtraShotClipCursorTopUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.extraShotClip.ExtraShotClipCursor",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PenetrationFxUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.PenetrationFX",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReloadBoostBorderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunStack.ReloadBoostBorder",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShellProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.shared.ShellProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WarningAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.speedometer.SpeedometerWarningAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ZoomingAimDamageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.ZoomingAimDamage",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "averageDamageContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.CrosshairAverageDamageContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "averageDamageField",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.CrosshairAverageDamageField",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "distanceContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.CrosshairDistanceContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "distanceField",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.CrosshairDistanceField",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ControllableReloadShellProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.controllableLoader.ControllableReloadShellProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ExtraShotShellProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.extraShotClip.ExtraShotShellProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShellCalibrationProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.shellCalibrationClip.ShellCalibrationProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AccuracyGunDispersionCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.AccuracyGunMarkerDispersionCircle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AccuracyGunMixing",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingAccuracyGun",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AutoloaderCassetteUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderShellsCassette",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AutoloaderCrosshairUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AuxiliaryRocketLauncherGunMarkerTagClipArcadeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.auxiliaryRocketLauncher.AuxiliaryRocketLauncherGunMarkerTagClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AuxiliaryRocketLauncherGunMarkerTagClipSniperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.auxiliaryRocketLauncher.AuxiliaryRocketLauncherGunMarkerTagClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AuxillaryRocketLauncherGunMarkerTagArcadeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.auxiliaryRocketLauncher.AuxiliaryRocketLauncherGunMarkerTag",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AuxillaryRocketLauncherGunMarkerTagSniperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.auxiliaryRocketLauncher.AuxiliaryRocketLauncherGunMarkerTag",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BoostndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CassetteContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeGunMixingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingChargeGun",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ControllableReloadingCassetteUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.controllableLoader.ControllableReloadCassette",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DispersionCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerDispersionCircle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ExtraShotClipBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.extraShotClip.ExtraShotClipBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ExtraShotClipPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.extraShotClip.ExtraShotClipPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GunMarkerArcadeDualGunChargeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingDualGun",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GunMarkerSPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerStrategic",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GunMarkerTagUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerTag",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GunMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LowChargeShotGunMarkerDispersionCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot.LowChargeShotGunMarkerDispersionCircle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LowChargeShotMixingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot.LowChargeShotGunMarkerMixing",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShellCalibrationClipBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.shellCalibrationClip.ShellCalibrationClipBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShellCalibrationClipPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.shellCalibrationClip.ShellCalibrationClipPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SpeedometerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.speedometer.Speedometer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TwinGunMixingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingTwinGun",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "continiusLine",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingSolid",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "radiusTtypered",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingWithoutProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "radiusTtypestapper",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingWithoutProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "radius_red",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingWithoutProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "radius_stapper",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingWithoutProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "radius_bar",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixing",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AuxiliaryRocketLauncherGunMarkerDispersionCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.auxiliaryRocketLauncher.AuxiliaryRocketLauncherGunMarkerDispersionCircle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeGunDispersionCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.ChargeGunMarkerDispersionCircle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TwinGunDispersionCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.TwinGunMarkerDispersionCircle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GunMarkerSniperDualGunChargeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingDualGunSniper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArtyHitMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerArtillery",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GunMarkerSPGDebugUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerDebugStrategic",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AccuracyGunMarkerDebugUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.AccuracyGunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AccuracyGunMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.AccuracyGunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AuxiliaryRocketLauncherGunMarkerArcadeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.auxiliaryRocketLauncher.AuxiliaryRocketLauncherGunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AuxiliaryRocketLauncherGunMarkerSniperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.auxiliaryRocketLauncher.AuxiliaryRocketLauncherGunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeGunMarkerDebugUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.ChargeGunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeGunMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.ChargeGunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DualGunArcadeMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.DualGunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DualGunSniperMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.DualGunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GunMarkerDebugUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerDebug",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LowChargeShotGunMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.lowChargeShot.LowChargeShotGunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TwinGunMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.TwinGunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeableBurstCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingChargeableBurst",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DualGunArcadeMarkerDebugUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.DualGunMarkerDebug",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DualGunSniperMarkerDebugUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.DualGunMarkerDebug",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AuxiliaryRocketLauncherGunMarkerArcadeDebugUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.auxiliaryRocketLauncher.AuxiliaryRocketLauncherGunMarkerDebug",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AuxiliaryRocketLauncherGunMarkerSniperDebugUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.auxiliaryRocketLauncher.AuxiliaryRocketLauncherGunMarkerDebug",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TwinGunMarkerDebugUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.gunMarker.TwinGunMarkerDebug",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,40 @@
+{
+  "rid": "R.views.common.dialog_view.components.balance_contents.CommonBalanceContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "CommonBalanceContent",
+  "dir": "gui/unbound/views/common/dialog_view/components",
+  "feature": null,
+  "files": [
+    {
+      "name": "balance_contents.unbound",
+      "effective": "res/gui/unbound/views/common/dialog_view/components/balance_contents.unbound",
+      "all": [
+        "res/gui/unbound/views/common/dialog_view/components/balance_contents.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.dialog_view.components.balance_contents.CommonBalanceContent",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.common.dialog_view.components.balance_contents.CommonBalanceContent no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dialogs/contents/common_balance_content.py",
+        41
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/dialogs/contents/common_balance_content.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

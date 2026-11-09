@@ -1,0 +1,121 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/equipmentImprovedAiming.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 144353,
+ "actual_length": 144353,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 22,
+  "ShowFrame": 514,
+  "DefineShape": 14,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 713,
+  "RemoveObject2": 2,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 10,
+  "DefineSprite": 21,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 136,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 10,
+  "shapes": 151,
+  "sprites": 21,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "equipmentImprovedAiming_fla.MainTimeline"
+  },
+  {
+   "id": 181,
+   "class": "equipmentImprovedAiming_fla.crosshairReloadFast_21"
+  },
+  {
+   "id": 118,
+   "class": "equipmentImprovedAiming_fla.crosshairReload_20"
+  },
+  {
+   "id": 46,
+   "class": "equipmentImprovedAiming_fla.tankShoot_16"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1057,
+   "classes": 4,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 264
+  }
+ ],
+ "classes": [
+  {
+   "name": "equipmentImprovedAiming_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentImprovedAiming_fla.crosshairReloadFast_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentImprovedAiming_fla.crosshairReload_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentImprovedAiming_fla.tankShoot_16",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

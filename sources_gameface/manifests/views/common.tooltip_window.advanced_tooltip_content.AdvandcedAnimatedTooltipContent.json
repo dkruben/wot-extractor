@@ -1,0 +1,72 @@
+{
+  "rid": "R.views.common.tooltip_window.advanced_tooltip_content.AdvandcedAnimatedTooltipContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "AdvandcedAnimatedTooltipContent",
+  "dir": "gui/unbound/views/common/tooltip_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "advanced_tooltip_content.unbound",
+      "effective": "res/gui/unbound/views/common/tooltip_window/advanced_tooltip_content.unbound",
+      "all": [
+        "res/gui/unbound/views/common/tooltip_window/advanced_tooltip_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.tooltip_window.advanced_tooltip_content.AdvandcedAnimatedTooltipContent",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.common.tooltip_window.advanced_tooltip_content.AdvandcedAnimatedTooltipContent no Python",
+      "ViewModel AdvancedAnimatedTooltipContentModel (model=... no Python da view): 3/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/pub/tooltip_window.py",
+        128
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/pub/tooltip_window.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/windows/advanced_animated_tooltip_content_model.py",
+      "class": "AdvancedAnimatedTooltipContentModel",
+      "chain": [
+        "AdvancedAnimatedTooltipContentModel"
+      ],
+      "properties": [
+        [
+          "header",
+          "String"
+        ],
+        [
+          "body",
+          "String"
+        ],
+        [
+          "animation",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 3,
+        "total": 3,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/windows/advanced_tooltip_content_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/windows/simple_tooltip_content_model.py"
+      ]
+    }
+  }
+}

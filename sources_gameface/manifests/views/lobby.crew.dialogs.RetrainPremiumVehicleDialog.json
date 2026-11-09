@@ -1,0 +1,138 @@
+{
+  "rid": "R.views.lobby.crew.dialogs.RetrainPremiumVehicleDialog",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "RetrainPremiumVehicleDialog",
+  "dir": "gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog",
+  "feature": null,
+  "files": [
+    {
+      "name": "RetrainPremiumVehicleDialog.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog/RetrainPremiumVehicleDialog.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog/RetrainPremiumVehicleDialog.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RetrainPremiumVehicleDialog.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog/RetrainPremiumVehicleDialog.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog/RetrainPremiumVehicleDialog.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RetrainPremiumVehicleDialog.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog/RetrainPremiumVehicleDialog.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog/RetrainPremiumVehicleDialog.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog/RetrainPremiumVehicleDialog.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog/RetrainPremiumVehicleDialog.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog/RetrainPremiumVehicleDialog.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog/RetrainPremiumVehicleDialog.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/dialogs/RetrainPremiumVehicleDialog/RetrainPremiumVehicleDialog.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged",
+    "trigger:subView:destroy"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "dialogs.common.DialogTemplateGenericTooltip",
+    "lobby.common.tooltips.ExtendedTextTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.dialogs.RetrainPremiumVehicleDialog",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.crew.dialogs.RetrainPremiumVehicleDialog no Python",
+      "ViewModel RetrainPremiumVehicleDialogModel (convencao de nomes): 10/10 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/retrain_premium_vehicle_dialog.py",
+        24
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/retrain_premium_vehicle_dialog.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/dialogs/retrain_premium_vehicle_dialog_model.py",
+      "class": "RetrainPremiumVehicleDialogModel",
+      "chain": [
+        "RetrainPremiumVehicleDialogModel",
+        "DialogTemplateViewModel"
+      ],
+      "properties": [
+        [
+          "vehicle",
+          "ViewModel"
+        ],
+        [
+          "isMassRetrain",
+          "Bool"
+        ],
+        [
+          "focus",
+          "ViewModel"
+        ],
+        [
+          "buttons",
+          "Array"
+        ],
+        [
+          "placeHolders",
+          "Array"
+        ],
+        [
+          "background",
+          "Resource"
+        ],
+        [
+          "dimmerAlpha",
+          "Real"
+        ],
+        [
+          "displayFlags",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onButtonClicked",
+        "onCloseClicked"
+      ],
+      "coverage": {
+        "found": 10,
+        "total": 10,
+        "missing": []
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

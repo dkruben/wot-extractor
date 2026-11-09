@@ -1,0 +1,58 @@
+{
+ "source": "sources/res/gui/flash/animations/battleMatters/rays.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 43,
+ "declared_length": 1415451,
+ "actual_length": 1415451,
+ "frame_size_px": [
+  0.0,
+  540.0,
+  0.0,
+  540.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 100,
+ "background": "#333333",
+ "actionscript": "none",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 1,
+  "ShowFrame": 100,
+  "DefineShape": 50,
+  "SetBackgroundColor": 1,
+  "DefineBitsJPEG2": 50,
+  "PlaceObject2": 50,
+  "FileAttributes": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 50,
+  "shapes": 50,
+  "sprites": 0,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 0,
+  "abc_blocks": 0,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [],
+ "abc": [],
+ "classes": [],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

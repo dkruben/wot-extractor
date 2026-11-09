@@ -1,0 +1,130 @@
+{
+  "rid": "R.views.fort_rush.mono.lobby.tooltips.banner_tooltip",
+  "rid_source": "sources/res/fort_rush/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "banner_tooltip",
+  "dir": "fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip",
+  "feature": "fort_rush",
+  "files": [
+    {
+      "name": "banner_tooltip.css",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "banner_tooltip.html",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.html",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/index2.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/index2.css"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.fort_rush.mono.lobby.tooltips.banner_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.fort_rush.mono.lobby.tooltips.banner_tooltip no Python",
+      "ViewModel FortRushEventBannerViewModel (model=... no Python da view): 0/8 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/tooltips/fort_rush_event_banner_tooltip.py",
+        24
+      ]
+    ],
+    "python_files": [
+      "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/tooltips/fort_rush_event_banner_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/gen/view_models/views/lobby/fort_rush_event_banner_view_model.py",
+      "class": "FortRushEventBannerViewModel",
+      "chain": [
+        "FortRushEventBannerViewModel"
+      ],
+      "properties": [
+        [
+          "date",
+          "Number"
+        ],
+        [
+          "endDate",
+          "Number"
+        ],
+        [
+          "performanceRisk",
+          "String"
+        ],
+        [
+          "curLevel",
+          "Number"
+        ],
+        [
+          "maxLevel",
+          "Number"
+        ],
+        [
+          "curPoints",
+          "Number"
+        ],
+        [
+          "maxPoints",
+          "Number"
+        ],
+        [
+          "state",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 8,
+        "missing": [
+          "curLevel",
+          "curPoints",
+          "date",
+          "endDate",
+          "maxLevel",
+          "maxPoints",
+          "performanceRisk",
+          "state"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

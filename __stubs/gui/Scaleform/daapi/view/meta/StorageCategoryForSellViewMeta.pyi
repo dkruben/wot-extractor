@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/StorageCategoryForSellViewMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.daapi.view.lobby.storage.category_view import InventoryCategoryView as InventoryCategoryView
+
+class StorageCategoryForSellViewMeta(InventoryCategoryView):
+    def navigateToStore(self):
+        ...
+    def selectItem(self, itemId, isSelected):
+        ...
+    def selectAll(self, isSelected):
+        ...
+    def sellItem(self, itemId):
+        ...
+    def sellAll(self):
+        ...
+    def as_initS(self, data):
+        ...

@@ -1,0 +1,212 @@
+{
+ "source": "sources/res/gui/flash/comp7ConsumableButton.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 125217,
+ "actual_length": 125217,
+ "frame_size_px": [
+  0.0,
+  806.0,
+  0.0,
+  58.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 32,
+  "ShowFrame": 540,
+  "DefineShape": 66,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "DefineShape2": 3,
+  "PlaceObject2": 1006,
+  "RemoveObject2": 12,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 19,
+  "DefineEditText": 4,
+  "DefineSprite": 31,
+  "FrameLabel": 24,
+  "FileAttributes": 1,
+  "PlaceObject3": 21,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 20,
+  "shapes": 72,
+  "sprites": 31,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 11,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 127,
+   "class": "Comp7ConsumableButtonUI"
+  },
+  {
+   "id": 113,
+   "class": "Comp7CounterUI"
+  },
+  {
+   "id": 108,
+   "class": "comp7ConsumableButton_fla.cooldownCounterBgUI_26"
+  },
+  {
+   "id": 102,
+   "class": "Comp7ProgressContainerUI"
+  },
+  {
+   "id": 101,
+   "class": "Comp7ProgressBarUI"
+  },
+  {
+   "id": 97,
+   "class": "comp7ConsumableButton_fla.progressBarGlowAnim_6"
+  },
+  {
+   "id": 81,
+   "class": "Comp7GlowUI"
+  },
+  {
+   "id": 65,
+   "class": "comp7ConsumableButton_fla.glowLoopMc_24"
+  },
+  {
+   "id": 58,
+   "class": "comp7ConsumableButton_fla.cooldownMc_23"
+  },
+  {
+   "id": 7,
+   "class": "comp7ConsumableButton_fla.greenGlowMc_21"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4283,
+   "classes": 11,
+   "methods": 63,
+   "bodies": 63,
+   "code_bytes": 1037
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7CounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.comp7.views.consumablesPanel.Comp7Counter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7ProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.comp7.views.consumablesPanel.Comp7ProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7ProgressContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.comp7.views.consumablesPanel.Comp7ProgressContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "comp7ConsumableButton_fla.cooldownCounterBgUI_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "comp7ConsumableButton_fla.cooldownMc_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "comp7ConsumableButton_fla.glowLoopMc_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "comp7ConsumableButton_fla.greenGlowMc_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "comp7ConsumableButton_fla.progressBarGlowAnim_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7GlowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.comp7.views.consumablesPanel.Comp7ConsumableButtonGlow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7ConsumableButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.comp7.views.consumablesPanel.Comp7ConsumableButton",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

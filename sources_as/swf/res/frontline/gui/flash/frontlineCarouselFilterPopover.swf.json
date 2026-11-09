@@ -1,0 +1,235 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineCarouselFilterPopover.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 29937,
+ "actual_length": 29937,
+ "frame_size_px": [
+  0.0,
+  266.0,
+  0.0,
+  657.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 23,
+  "ShowFrame": 235,
+  "DefineShape": 6,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 220,
+  "RemoveObject2": 16,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 4,
+  "DefineEditText": 20,
+  "DefineSprite": 22,
+  "FrameLabel": 21,
+  "FileAttributes": 1,
+  "PlaceObject3": 22,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 20,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 7,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 4,
+  "shapes": 10,
+  "sprites": 22,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 20,
+  "fonts": 0,
+  "classes": 12,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 56,
+   "class": "FrontlineCarouselFilterPopoverViewUI"
+  },
+  {
+   "id": 52,
+   "class": "FiltersPopoverContentUI"
+  },
+  {
+   "id": 44,
+   "class": "RolesContainerUI"
+  },
+  {
+   "id": 37,
+   "class": "RolesTileListUI"
+  },
+  {
+   "id": 34,
+   "class": "FiltersPopoverScrollPaneUI"
+  },
+  {
+   "id": 33,
+   "class": "FrontlineFilterDropDownUI"
+  },
+  {
+   "id": 21,
+   "class": "CheckBoxRendererUI"
+  },
+  {
+   "id": 20,
+   "class": "filtersPopoverViewImports"
+  },
+  {
+   "id": 19,
+   "class": "FrontlineListItemRendererUI"
+  },
+  {
+   "id": 5,
+   "class": "frontlineCarouselFilterPopover_fla.FocusIndicator_FrontlineListItemRendererUI_18"
+  },
+  {
+   "id": 1,
+   "class": "ToggleRendererImageAlphaUI"
+  },
+  {
+   "id": 0,
+   "class": "frontlineCarouselFilterPopover_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 9604,
+   "classes": 12,
+   "methods": 65,
+   "bodies": 65,
+   "code_bytes": 2196
+  }
+ ],
+ "classes": [
+  {
+   "name": "filtersPopoverViewImports",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineCarouselFilterPopover_fla.FocusIndicator_FrontlineListItemRendererUI_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineCarouselFilterPopover_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CheckBoxRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.controls.CheckBoxRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RolesContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.controls.RolesContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FiltersPopoverContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.FilterPopoverContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FiltersPopoverScrollPaneUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RolesTileListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.controls.RolesTileList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToggleRendererImageAlphaUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.controls.ToggleImageAlphaRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineFilterDropDownUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.components.FrontlineFilterDropDown",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineListItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.components.FrontlineListItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineCarouselFilterPopoverViewUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.FrontlineCarouselFilterPopoverView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

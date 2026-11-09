@@ -1,0 +1,1519 @@
+{
+ "source": "sources/res/gui/flash/guiControlsLobbyDynamic.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 977344,
+ "actual_length": 977344,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 197,
+  "ShowFrame": 660,
+  "DefineShape": 54,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 2,
+  "DefineShape2": 3,
+  "PlaceObject2": 849,
+  "RemoveObject2": 32,
+  "DefineShape3": 12,
+  "DefineBitsJPEG3": 5,
+  "DefineBitsLossless2": 45,
+  "DefineEditText": 210,
+  "DefineSprite": 196,
+  "FrameLabel": 33,
+  "FileAttributes": 1,
+  "PlaceObject3": 143,
+  "ImportAssets2": 10,
+  "CSMTextSettings": 196,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 52,
+  "shapes": 70,
+  "sprites": 196,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 210,
+  "fonts": 0,
+  "classes": 127,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattleDynamic.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "simpleVideoPlayer.swf",
+   "symbols": []
+  },
+  {
+   "url": "voice.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattleDynamic.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 528,
+   "class": "AchievementsCustomBlockItem"
+  },
+  {
+   "id": 525,
+   "class": "BrowserViewStackExPaddingUI"
+  },
+  {
+   "id": 524,
+   "class": "WaitingUI"
+  },
+  {
+   "id": 523,
+   "class": "DropDownListItemRendererPriceUI"
+  },
+  {
+   "id": 504,
+   "class": "guiControlsLobbyDynamic_fla.FocusIndicator_DropDownListItemRendererSoundUI_14"
+  },
+  {
+   "id": 501,
+   "class": "ddItemAction"
+  },
+  {
+   "id": 496,
+   "class": "equipmentComplexStatus"
+  },
+  {
+   "id": 493,
+   "class": "EfficiencyBlockIconTextParameterUI"
+  },
+  {
+   "id": 491,
+   "class": "EfficiencyBlockResultTitleLefttUI"
+  },
+  {
+   "id": 489,
+   "class": "EfficiencyBlockResultTitleRightUI"
+  },
+  {
+   "id": 487,
+   "class": "TooltipFinalStatsHeadBlockUI"
+  },
+  {
+   "id": 483,
+   "class": "igrPremVehQuestBlockUI"
+  },
+  {
+   "id": 480,
+   "class": "igrQuestBlockUI"
+  },
+  {
+   "id": 478,
+   "class": "igrQuestProgressUI"
+  },
+  {
+   "id": 476,
+   "class": "EfficiencyBlockUI"
+  },
+  {
+   "id": 473,
+   "class": "AbilityBattleRankItemUI"
+  },
+  {
+   "id": 467,
+   "class": "AbilityBattleRanksBlockUI"
+  },
+  {
+   "id": 460,
+   "class": "ActionTextParameterBlockUI"
+  },
+  {
+   "id": 458,
+   "class": "AdvancedClipBlockUI"
+  },
+  {
+   "id": 457,
+   "class": "AdvancedKeyBlockUI"
+  },
+  {
+   "id": 456,
+   "class": "AnimationAdvancedKeyUI"
+  },
+  {
+   "id": 450,
+   "class": "guiControlsLobbyDynamic_fla.fxAppear_3"
+  },
+  {
+   "id": 445,
+   "class": "AwardItemRendererUI"
+  },
+  {
+   "id": 440,
+   "class": "BadgeInfoBlockUI"
+  },
+  {
+   "id": 435,
+   "class": "BattleRoyaleMetaLevelBlockUI"
+  },
+  {
+   "id": 434,
+   "class": "BlueprintBlockUI"
+  },
+  {
+   "id": 432,
+   "class": "CompoundPriceBlockUI"
+  },
+  {
+   "id": 431,
+   "class": "CrewSkillsBlockUI"
+  },
+  {
+   "id": 428,
+   "class": "CustomizationItemPropertyBlockUI"
+  },
+  {
+   "id": 426,
+   "class": "DashLineItemPriceBlockUI"
+  },
+  {
+   "id": 423,
+   "class": "EpicBattleMetaLevelBlockUI"
+  },
+  {
+   "id": 421,
+   "class": "EpicMetaLevelProgressBlockUI"
+  },
+  {
+   "id": 420,
+   "class": "EpicProgressBlockUI"
+  },
+  {
+   "id": 419,
+   "class": "GroupBlockUI"
+  },
+  {
+   "id": 418,
+   "class": "BoundsUI"
+  },
+  {
+   "id": 416,
+   "class": "ImageBlockUI"
+  },
+  {
+   "id": 415,
+   "class": "ImageRendererUI"
+  },
+  {
+   "id": 414,
+   "class": "OptDeviceSlotBlockUI"
+  },
+  {
+   "id": 401,
+   "class": "guiControlsLobbyDynamic_fla.optDeviceSlotBgMc_49"
+  },
+  {
+   "id": 394,
+   "class": "QuestOrConditionBlockUI"
+  },
+  {
+   "id": 387,
+   "class": "QuestProgressBlockUI"
+  },
+  {
+   "id": 386,
+   "class": "QuestProgressBarUI"
+  },
+  {
+   "id": 367,
+   "class": "QuestRewardItemBlockUI"
+  },
+  {
+   "id": 366,
+   "class": "RendererTextBlockInBlockUI"
+  },
+  {
+   "id": 362,
+   "class": "SaleTextParameterBlockUI"
+  },
+  {
+   "id": 360,
+   "class": "SimpleTileListBlockUI"
+  },
+  {
+   "id": 359,
+   "class": "StatusDeltaParameterBlockUI"
+  },
+  {
+   "id": 356,
+   "class": "TextBetweenLineBlockUI"
+  },
+  {
+   "id": 354,
+   "class": "TextParameterBlockTwoColUI"
+  },
+  {
+   "id": 350,
+   "class": "TextParameterBlockTwoColWithIconsUI"
+  },
+  {
+   "id": 346,
+   "class": "TextParameterWithIconBlockUI"
+  },
+  {
+   "id": 344,
+   "class": "TitleDescParameterWithIconBlockUI"
+  },
+  {
+   "id": 341,
+   "class": "ModuleItemUI"
+  },
+  {
+   "id": 339,
+   "class": "RankBlockUI"
+  },
+  {
+   "id": 338,
+   "class": "rudimentaryGCLD"
+  },
+  {
+   "id": 337,
+   "class": "SessionStatsBattleEfficiencyBlockUI"
+  },
+  {
+   "id": 335,
+   "class": "SessionStatsBattleResultBlockUI"
+  },
+  {
+   "id": 334,
+   "class": "SessionStatsBattleResultBlockBackgroundUI"
+  },
+  {
+   "id": 331,
+   "class": "SessionStatsStatusBlockUI"
+  },
+  {
+   "id": 329,
+   "class": "SessionStatsTankInfoHeaderBlocktUI"
+  },
+  {
+   "id": 327,
+   "class": "BackroundUI"
+  },
+  {
+   "id": 325,
+   "class": "SessionStatsTankInfomainMarkUI"
+  },
+  {
+   "id": 321,
+   "class": "SessionStatsTankSmallNameUI"
+  },
+  {
+   "id": 318,
+   "class": "SessionStatsTankInfoRendererUI"
+  },
+  {
+   "id": 316,
+   "class": "SessionStatsEfficiencyParamBlockUI"
+  },
+  {
+   "id": 313,
+   "class": "TileGroupUI"
+  },
+  {
+   "id": 312,
+   "class": "SessionStatsParamStatsBlickUI"
+  },
+  {
+   "id": 311,
+   "class": "SuitableVehicleBlockItemUI"
+  },
+  {
+   "id": 306,
+   "class": "TitleBlockUI"
+  },
+  {
+   "id": 305,
+   "class": "ToolTipAchievementUI"
+  },
+  {
+   "id": 304,
+   "class": "TooltipBuildUpBlockAwardBgUI"
+  },
+  {
+   "id": 300,
+   "class": "TooltipBuildUpBlockComplexBgUI"
+  },
+  {
+   "id": 296,
+   "class": "TooltipBuildUpBlockEliteVehicleBgUI"
+  },
+  {
+   "id": 293,
+   "class": "TooltipBuildUpBlockGrayBgUI"
+  },
+  {
+   "id": 289,
+   "class": "TooltipBuildUpBlockLockBgUI"
+  },
+  {
+   "id": 285,
+   "class": "TooltipBuildUpBlockNormalVehicleBgUI"
+  },
+  {
+   "id": 282,
+   "class": "TooltipBuildUpBlockVioletBgBigUI"
+  },
+  {
+   "id": 278,
+   "class": "TooltipBuildUpBlockVioletBgUI"
+  },
+  {
+   "id": 274,
+   "class": "TooltipBuildUpBlockWideAwardBigBgUI"
+  },
+  {
+   "id": 270,
+   "class": "TooltipBuildUpBlockWideAwardSmallBgUI"
+  },
+  {
+   "id": 266,
+   "class": "TooltipBuildUpBlockYellowBgUI"
+  },
+  {
+   "id": 262,
+   "class": "TooltipBuildUpBlockYellowLightBgUI"
+  },
+  {
+   "id": 258,
+   "class": "ToolTipClanCommonInfoUI"
+  },
+  {
+   "id": 248,
+   "class": "ToolTipClanInfoUI"
+  },
+  {
+   "id": 237,
+   "class": "ToolTipColumnFieldsUI"
+  },
+  {
+   "id": 234,
+   "class": "TooltipContactUI"
+  },
+  {
+   "id": 231,
+   "class": "ToolTipCustomizationItemUI"
+  },
+  {
+   "id": 224,
+   "class": "TooltipEnvironmentUI"
+  },
+  {
+   "id": 220,
+   "class": "ToolTipFortDivisionUI"
+  },
+  {
+   "id": 215,
+   "class": "ToolTipFortSortieUI"
+  },
+  {
+   "id": 208,
+   "class": "ToolTipIGRUI"
+  },
+  {
+   "id": 204,
+   "class": "ToolTipLadderRegulationsUI"
+  },
+  {
+   "id": 197,
+   "class": "ToolTipLadderUI"
+  },
+  {
+   "id": 189,
+   "class": "ToolTipMapSmallUI"
+  },
+  {
+   "id": 185,
+   "class": "ToolTipMapUI"
+  },
+  {
+   "id": 180,
+   "class": "ToolTipMarkOfMasteryUI"
+  },
+  {
+   "id": 175,
+   "class": "ToolTipMarksOnGunUI"
+  },
+  {
+   "id": 162,
+   "class": "ToolTipPrivateQuestsUI"
+  },
+  {
+   "id": 157,
+   "class": "ToolTipRefSysDirectsUI"
+  },
+  {
+   "id": 135,
+   "class": "ToolTipRefSysReservesUI"
+  },
+  {
+   "id": 123,
+   "class": "ToolTipSelectedVehicleUI"
+  },
+  {
+   "id": 120,
+   "class": "ToolTipSortieDivisionUI"
+  },
+  {
+   "id": 117,
+   "class": "DivisionBlockUI"
+  },
+  {
+   "id": 106,
+   "class": "ToolTipSuitableVehicleUI"
+  },
+  {
+   "id": 101,
+   "class": "ToolTipTankmenUI"
+  },
+  {
+   "id": 95,
+   "class": "ToolTipUnitCommandUI"
+  },
+  {
+   "id": 87,
+   "class": "statsBlockUI"
+  },
+  {
+   "id": 84,
+   "class": "ToolTipUnitLevelUI"
+  },
+  {
+   "id": 82,
+   "class": "TooltipStatus"
+  },
+  {
+   "id": 81,
+   "class": "guiControlsLobbyDynamic_fla.statusIcon_146"
+  },
+  {
+   "id": 71,
+   "class": "VehicleItemRendererExUI"
+  },
+  {
+   "id": 69,
+   "class": "ViewHelpButtonUI"
+  },
+  {
+   "id": 58,
+   "class": "WindowHelpButtonUI"
+  },
+  {
+   "id": 40,
+   "class": "AwardItemExUI"
+  },
+  {
+   "id": 38,
+   "class": "BenefitRendererUI"
+  },
+  {
+   "id": 36,
+   "class": "CandidateListItemRendererDragUI"
+  },
+  {
+   "id": 31,
+   "class": "UserNameFieldUI"
+  },
+  {
+   "id": 29,
+   "class": "CustomizationImageBlockUI"
+  },
+  {
+   "id": 25,
+   "class": "CustomizationRarityHeaderUI"
+  },
+  {
+   "id": 22,
+   "class": "EquipmentAwardItemExUI"
+  },
+  {
+   "id": 20,
+   "class": "ImageTextBlockProgressiveUI"
+  },
+  {
+   "id": 14,
+   "class": "LegalDisclaimerUI"
+  },
+  {
+   "id": 12,
+   "class": "ToolTipTradeInPriceUI"
+  },
+  {
+   "id": 6,
+   "class": "TradeIcoUI"
+  },
+  {
+   "id": 5,
+   "class": "trade_hit"
+  },
+  {
+   "id": 1,
+   "class": "screenFillBg"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 36926,
+   "classes": 127,
+   "methods": 455,
+   "bodies": 455,
+   "code_bytes": 13168
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "screenFillBg",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BoundsUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ddItemAction",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentComplexStatus",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rudimentaryGCLD",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "trade_hit",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AnimationAdvancedKeyUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsBattleResultBlockBackgroundUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleItemRendererExUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobbyDynamic_fla.FocusIndicator_DropDownListItemRendererSoundUI_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobbyDynamic_fla.fxAppear_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobbyDynamic_fla.optDeviceSlotBgMc_49",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobbyDynamic_fla.statusIcon_146",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BackroundUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionStatsTankInfoBackground",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsParamStatsBlickUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionStatsInfoParamsRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsTankInfomainMarkUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionStatsTankInfoMainMark",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsTankSmallNameUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionStatsTankSmallName",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TradeIcoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TradeIco",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "igrPremVehQuestBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.IgrPremVehQuestBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "igrQuestBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.IgrQuestBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "igrQuestProgressUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.IgrQuestProgressBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AbilityBattleRankItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.AbilityBattleRankItemBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AbilityBattleRanksBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.AbilityBattleRanksBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdvancedClipBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.AdvancedClipBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BadgeInfoBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BadgeInfoBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleMetaLevelBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.EpicMetaLevelIconBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicBattleMetaLevelBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.EpicMetaLevelIconBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CompoundPriceBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.CompoundPriceBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrewSkillsBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.CrewSkillsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationRarityHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.CustomizationRarityHeaderBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicProgressBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.EpicProgressBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GroupBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.GroupBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ImageBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.ImageBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OptDeviceSlotBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.OptDeviceSlotBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestOrConditionBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.QuestOrConditionBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestProgressBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.QuestProgressBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.RankBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsStatusBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.SessionStatsStatusBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsTankInfoHeaderBlocktUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.SessionStatsTankInfoHeaderBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SimpleTileListBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.SimpleTileListBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatusDeltaParameterBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.StatusDeltaParameterBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TitleBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.TitleBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockAwardBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockComplexBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockEliteVehicleBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockGrayBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockLockBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockNormalVehicleBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockVioletBgBigUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockVioletBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockWideAwardBigBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockWideAwardSmallBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockYellowBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipBuildUpBlockYellowLightBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BuildUpBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipFinalStatsHeadBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.finstats.HeadBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicMetaLevelProgressBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.EpicMetaLevelProgressBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BlueprintBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.BlueprintBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationImageBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.CustomizationImageBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestRewardItemBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.QuestRewardItemBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EfficiencyBlockIconTextParameterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.TextBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EfficiencyBlockResultTitleLefttUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.TextBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EfficiencyBlockResultTitleRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.TextBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SaleTextParameterBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.SaleTextParameterBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ImageTextBlockProgressiveUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.ImageTextBlockProgressive",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RendererTextBlockInBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.RendererTextBlockInBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsBattleResultBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.SessionStatsBattleResultBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsEfficiencyParamBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.SessionStatsEfficiencyParamBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextBetweenLineBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.TextBetweenLineBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ActionTextParameterBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.ActionTextParameterBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DashLineItemPriceBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.DashLineItemPriceBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextParameterWithIconBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.TextParameterWithIconBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TitleDescParameterWithIconBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.TitleDescParameterWithIconBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdvancedKeyBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.AdvancedKeyBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsBattleEfficiencyBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.SessionStatsBattleEfficiencyBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementsCustomBlockItem",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.AchievementsCustomBlockItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardItemExUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.AwardItemEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EquipmentAwardItemExUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.AwardItemEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.AwardItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BenefitRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.techtree.controls.BenefitRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DivisionBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.sortie.SortieDivisionBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EfficiencyBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.finstats.EfficiencyBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ImageRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.components.ImageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LegalDisclaimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehiclePreview.infoPanel.browse.LegalDisclaimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModuleItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ModuleItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SuitableVehicleBlockItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.SuitableVehicleBlockItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipStatus",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.Status",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UserNameFieldUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UserNameField",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WaitingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.waiting.Waiting",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statsBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UnitCommanderStats",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationItemPropertyBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.CustomizationItemPropertyBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextParameterBlockTwoColUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.TextParameterBlockTwoCol",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TileGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipColumnFieldsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipColumnFields",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipCustomizationItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipCustomizationItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipSortieDivisionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipSortieDivision",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsTankInfoRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionStatsTankInfoRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextParameterBlockTwoColWithIconsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.inblocks.blocks.TextParameterBlockTwoColWithIcons",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipAchievementUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipAchievement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipClanCommonInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipClanCommonInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipClanInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipClanInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipFortDivisionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipFortDivision",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipFortSortieUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipFortSortie",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipIGRUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipIGR",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipLadderRegulationsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipLadderRegulations",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipLadderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipLadder",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipMapSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipMapSmall",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipMapUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipMap",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipMarkOfMasteryUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipMarkOfMastery",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipPrivateQuestsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipPrivateQuests",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipRefSysDirectsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipRefSysDirects",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipRefSysReservesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipRefSysReserves",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipSelectedVehicleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipSelectedVehicle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipSuitableVehicleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipSuitableVehicle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipTankmenUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipTankmen",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipTradeInPriceUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipTradeInPrice",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipUnitCommandUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.TooltipUnitCommand",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipUnitLevelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipUnitLevel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipContactUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.TooltipContact",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TooltipEnvironmentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.TooltipEnvironment",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CandidateListItemRendererDragUI",
+   "kind": "class",
+   "extends": "net.wg.gui.cyberSport.controls.CandidateItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ViewHelpButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.HelpButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WindowHelpButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.HelpButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToolTipMarksOnGunUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.tooltips.ToolTipMarksOnGun",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BrowserViewStackExPaddingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.BrowserViewStackExPadding",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DropDownListItemRendererPriceUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.DropDownListItemRendererPrice",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.tooltips.inblocks.blocks.QuestProgressBar",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

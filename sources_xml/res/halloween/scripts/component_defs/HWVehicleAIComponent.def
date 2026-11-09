@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/component_defs/HWVehicleAIComponent.def -->
+<root>
+	<CellMethods />
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>hwAIComponent</DefaultKeyName>
+</root>

@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fort_rush/scripts/component_defs/CapturePointInvaderComponent.def -->
+<root>
+	<Properties>
+		<capturablePointName>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</capturablePointName>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>capturePointInvaderComponent</DefaultKeyName>
+</root>

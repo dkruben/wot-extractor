@@ -1,0 +1,314 @@
+{
+ "source": "sources/res/halloween/gui/flash/battleStaticMarkers.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 186751,
+ "actual_length": 186751,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  300.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 30,
+  "ShowFrame": 189,
+  "DefineShape": 11,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 158,
+  "DefineBitsLossless2": 17,
+  "DefineEditText": 16,
+  "DefineSprite": 29,
+  "FrameLabel": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 16,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 16,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 17,
+  "shapes": 11,
+  "sprites": 29,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 16,
+  "fonts": 0,
+  "classes": 21,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 73,
+   "class": "HalloweenSoulsCollectorMarkerUI"
+  },
+  {
+   "id": 68,
+   "class": "EventSoulsCollectorProgressUI"
+  },
+  {
+   "id": 62,
+   "class": "EventSoulsCollectorTimerUI"
+  },
+  {
+   "id": 57,
+   "class": "HWFortConsumablesMarkerUI"
+  },
+  {
+   "id": 53,
+   "class": "battleStaticMarkers_fla.Pb_bg_9"
+  },
+  {
+   "id": 52,
+   "class": "EnemyCampHighlight"
+  },
+  {
+   "id": 51,
+   "class": "EnemyCampReplyMe"
+  },
+  {
+   "id": 48,
+   "class": "EnemyCampUIAnimationMC"
+  },
+  {
+   "id": 44,
+   "class": "HWEnemyCampMarkerUI"
+  },
+  {
+   "id": 37,
+   "class": "HWLootMarkerUI"
+  },
+  {
+   "id": 33,
+   "class": "HWLootMarkerIconStatesUI"
+  },
+  {
+   "id": 28,
+   "class": "battleStaticMarkers_fla.lootIcon_23"
+  },
+  {
+   "id": 25,
+   "class": "HWLootCaptureUI"
+  },
+  {
+   "id": 12,
+   "class": "HWRepliedMeSoulsCollectorUI"
+  },
+  {
+   "id": 9,
+   "class": "HWSoulsCollectorHoverShadowUI"
+  },
+  {
+   "id": 6,
+   "class": "DeathZoneMarkerUI"
+  },
+  {
+   "id": 5,
+   "class": "EventDeathZoneDamageOvertimeUI"
+  },
+  {
+   "id": 4,
+   "class": "EventDeathZoneIgniteUI"
+  },
+  {
+   "id": 3,
+   "class": "EventDeathZoneStunUI"
+  },
+  {
+   "id": 2,
+   "class": "EnemyCampUI"
+  },
+  {
+   "id": 1,
+   "class": "EventDeathZoneUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3908,
+   "classes": 21,
+   "methods": 68,
+   "bodies": 68,
+   "code_bytes": 1063
+  }
+ ],
+ "classes": [
+  {
+   "name": "DeathZoneMarkerUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EnemyCampUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventDeathZoneDamageOvertimeUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventDeathZoneIgniteUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventDeathZoneStunUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventDeathZoneUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EnemyCampHighlight",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EnemyCampReplyMe",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EnemyCampUIAnimationMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWRepliedMeSoulsCollectorUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWSoulsCollectorHoverShadowUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.Pb_bg_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.lootIcon_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventSoulsCollectorTimerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.staticMarkers.components.SoulsCollectorContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventSoulsCollectorProgressUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.staticMarkers.components.SoulsCollectorContainerProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWLootCaptureUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.staticMarkers.loot.LootCapture",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWEnemyCampMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.staticMarkers.HWEnemyCampMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWLootMarkerIconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWFortConsumablesMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.vehicleMarkers.HWFortConsumablesMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWLootMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.staticMarkers.loot.LootMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HalloweenSoulsCollectorMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.staticMarkers.HWSoulsCollectorMarker",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

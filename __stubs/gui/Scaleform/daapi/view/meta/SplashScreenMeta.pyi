@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/SplashScreenMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.daapi.view.meta.DAAPISimpleContainerMeta import DAAPISimpleContainerMeta as DAAPISimpleContainerMeta
+
+class SplashScreenMeta(DAAPISimpleContainerMeta):
+    def onComplete(self):
+        ...
+    def onError(self):
+        ...
+    def fadeOutComplete(self):
+        ...
+    def as_playVideoS(self, data):
+        ...
+    def as_setSizeS(self, width, height):
+        ...
+    def as_fadeOutS(self, time):
+        ...

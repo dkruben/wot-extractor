@@ -1,0 +1,154 @@
+{
+ "source": "sources/res/gui/flash/chargeShot.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 65268,
+ "actual_length": 65268,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 12,
+  "ShowFrame": 349,
+  "DefineShape": 9,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 3,
+  "PlaceObject2": 531,
+  "RemoveObject2": 10,
+  "DefineBitsLossless2": 10,
+  "DefineEditText": 1,
+  "DefineSprite": 11,
+  "FrameLabel": 11,
+  "FileAttributes": 1,
+  "PlaceObject3": 37,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 10,
+  "shapes": 12,
+  "sprites": 11,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "widgetsCommon.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 34,
+   "class": "ChargeShotWidgetUI"
+  },
+  {
+   "id": 19,
+   "class": "ChargeShotDamageUI"
+  },
+  {
+   "id": 17,
+   "class": "chargeShot_fla.RedMark_6"
+  },
+  {
+   "id": 13,
+   "class": "chargeShot_fla.chargeProgressUI_3"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3058,
+   "classes": 7,
+   "methods": 40,
+   "bodies": 40,
+   "code_bytes": 1149
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeShotDamageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.shared.TextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "chargeShot_fla.RedMark_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "chargeShot_fla.chargeProgressUI_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeShotWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.ChargeShotWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

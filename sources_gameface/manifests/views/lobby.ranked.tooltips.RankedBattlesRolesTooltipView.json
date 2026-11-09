@@ -1,0 +1,173 @@
+{
+  "rid": "R.views.lobby.ranked.tooltips.RankedBattlesRolesTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "RankedBattlesRolesTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "RankedBattlesRolesTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RankedBattlesRolesTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RankedBattlesRolesTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/ranked/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/ranked/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.ranked.tooltips.RankedBattlesRolesTooltipView",
+    "confidence": "provavel",
+    "evidence": [
+      "8 referencia(s) R.views.lobby.ranked.tooltips.RankedBattlesRolesTooltipView no Python",
+      "ViewModel SeniorityAwardsVehiclesViewModel (model=... no Python da view): 0/10 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/dialogs/purchase_dialog.py",
+        73
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/progression_page.py",
+        148
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/shop_page.py",
+        174
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/yearly_rewards_page.py",
+        123
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/rewards_screen.py",
+        93
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/whats_new_view.py",
+        76
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/seniority_awards/seniority_awards_vehicles_view.py",
+        115
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tooltips/vehicle_role_descr_view.py",
+        23
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/dialogs/purchase_dialog.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/progression_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/shop_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/yearly_rewards_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/rewards_screen.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/whats_new_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/seniority_awards/seniority_awards_vehicles_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/tooltips/vehicle_role_descr_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/seniority_awards/seniority_awards_vehicles_view_model.py",
+      "class": "SeniorityAwardsVehiclesViewModel",
+      "chain": [
+        "SeniorityAwardsVehiclesViewModel"
+      ],
+      "properties": [
+        [
+          "category",
+          "String"
+        ],
+        [
+          "maxCategory",
+          "String"
+        ],
+        [
+          "fromEntryPoint",
+          "Bool"
+        ],
+        [
+          "vehicles",
+          "Array"
+        ],
+        [
+          "viewState",
+          "String"
+        ],
+        [
+          "availableRewardsCount",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onMoreRewards",
+        "onGoToHangar",
+        "onClose",
+        "onSelectVehicleReward"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 10,
+        "missing": [
+          "availableRewardsCount",
+          "category",
+          "fromEntryPoint",
+          "maxCategory",
+          "onClose",
+          "onGoToHangar",
+          "onMoreRewards",
+          "onSelectVehicleReward",
+          "vehicles",
+          "viewState"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/tooltips/roles_view_model.py"
+      ]
+    }
+  }
+}

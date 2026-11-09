@@ -1,0 +1,70 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.Price",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Price",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/Price",
+  "feature": null,
+  "files": [
+    {
+      "name": "Price.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Price/Price.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Price/Price.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Price.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Price/Price.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Price/Price.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Price.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Price/Price.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Price/Price.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/common/Price/Price.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/Price/Price.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Price/Price.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/Price/Price.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Price/Price.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.Price",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

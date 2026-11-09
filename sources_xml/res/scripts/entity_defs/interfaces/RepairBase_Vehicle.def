@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/RepairBase_Vehicle.def -->
+<root>
+	<TempProperties>
+		<_repairBase />
+	</TempProperties>
+	<CellMethods>
+		<repairBase_onAction>
+			<Arg>UINT8</Arg>
+			<Arg>UINT8</Arg>
+			<Arg>FLOAT32</Arg>
+		</repairBase_onAction>
+	</CellMethods>
+</root>

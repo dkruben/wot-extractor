@@ -1,0 +1,146 @@
+{
+ "source": "sources/res/gui/flash/gammaWizard.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 137636,
+ "actual_length": 137636,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 15,
+  "DefineShape": 4,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 12,
+  "DefineBitsLossless2": 4,
+  "DefineEditText": 3,
+  "DefineSprite": 5,
+  "FrameLabel": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 5,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 3,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 4,
+  "shapes": 4,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 16,
+   "class": "GammaWizardViewUI"
+  },
+  {
+   "id": 13,
+   "class": "gammaWizard_fla.shine_3"
+  },
+  {
+   "id": 8,
+   "class": "sparks_left"
+  },
+  {
+   "id": 5,
+   "class": "sparks_right"
+  },
+  {
+   "id": 2,
+   "class": "InteractionBlockUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4053,
+   "classes": 5,
+   "methods": 22,
+   "bodies": 22,
+   "code_bytes": 1117
+  }
+ ],
+ "classes": [
+  {
+   "name": "sparks_left",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sparks_right",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InteractionBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.gamma.InteractionBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "gammaWizard_fla.shine_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GammaWizardViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.gamma.GammaWizardView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

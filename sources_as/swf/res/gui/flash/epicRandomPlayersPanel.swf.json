@@ -1,0 +1,299 @@
+{
+ "source": "sources/res/gui/flash/epicRandomPlayersPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 86380,
+ "actual_length": 86380,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 25,
+  "ShowFrame": 235,
+  "DefineShape": 35,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 168,
+  "RemoveObject2": 10,
+  "DefineShape3": 5,
+  "DefineBitsLossless2": 29,
+  "DefineEditText": 9,
+  "DefineSprite": 24,
+  "FrameLabel": 52,
+  "FileAttributes": 1,
+  "PlaceObject3": 37,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 9,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 29,
+  "shapes": 40,
+  "sprites": 24,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 9,
+  "fonts": 0,
+  "classes": 19,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 102,
+   "class": "EpicRandomPlayersPanelListItemLeftUI"
+  },
+  {
+   "id": 101,
+   "class": "DynamicSquadLeftUI"
+  },
+  {
+   "id": 98,
+   "class": "EpicRandomPlayersPanelListItemRightUI"
+  },
+  {
+   "id": 97,
+   "class": "DynamicSquadRightUI"
+  },
+  {
+   "id": 96,
+   "class": "SquadAcceptBtUI"
+  },
+  {
+   "id": 91,
+   "class": "SquadAddBtUI"
+  },
+  {
+   "id": 86,
+   "class": "hitItem"
+  },
+  {
+   "id": 79,
+   "class": "ListRowBackgroundUI"
+  },
+  {
+   "id": 62,
+   "class": "epicRandomPlayersPanelUI"
+  },
+  {
+   "id": 61,
+   "class": "PlayersPanelSwitchUI"
+  },
+  {
+   "id": 60,
+   "class": "PlayersPanelSwitchButtonExUI"
+  },
+  {
+   "id": 50,
+   "class": "PlayerPanelListLeftUI"
+  },
+  {
+   "id": 42,
+   "class": "InviteReceivedIndicatorLeftUI"
+  },
+  {
+   "id": 40,
+   "class": "DeploymentGroupGreenUI"
+  },
+  {
+   "id": 33,
+   "class": "PlayerPanelListRightUI"
+  },
+  {
+   "id": 17,
+   "class": "InviteReceivedIndicatorRightUI"
+  },
+  {
+   "id": 15,
+   "class": "DeploymentGroupRedUI"
+  },
+  {
+   "id": 3,
+   "class": "ListRowBgContainer"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5881,
+   "classes": 19,
+   "methods": 114,
+   "bodies": 114,
+   "code_bytes": 1832
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hitItem",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InviteReceivedIndicatorLeftUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.InviteReceivedIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InviteReceivedIndicatorRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.InviteReceivedIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DeploymentGroupGreenUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.list.PlayersPanelDeploymentGroupIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DeploymentGroupRedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.list.PlayersPanelDeploymentGroupIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ListRowBackgroundUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.list.ListRowBackgroundItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ListRowBgContainer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.list.ListRowBackgroundContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerPanelListLeftUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.list.PlayersPanelListLeft",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerPanelListRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.list.PlayersPanelListRight",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DynamicSquadLeftUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.PlayersPanelDynamicSquad",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DynamicSquadRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.PlayersPanelDynamicSquad",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicRandomPlayersPanelListItemLeftUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.list.PlayersPanelListItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicRandomPlayersPanelListItemRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.list.PlayersPanelListItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SquadAcceptBtUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.buttons.BattleButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SquadAddBtUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.buttons.BattleButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayersPanelSwitchUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.panelSwitch.PlayersPanelSwitch",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayersPanelSwitchButtonExUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.panelSwitch.PlayersPanelSwitchButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicRandomPlayersPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.views.stats.components.playersPanel.PlayersPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

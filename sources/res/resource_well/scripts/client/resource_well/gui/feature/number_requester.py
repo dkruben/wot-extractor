@@ -1,0 +1,149 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/resource_well/scripts/client/resource_well/gui/feature/number_requester.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: resource_well/scripts/client/resource_well/gui/feature/number_requester.py
+from __future__ import absolute_import
+import json, logging, typing
+from builtins import str
+from Event import Event
+from gui.game_control.reactive_comm import Subscription
+from helpers import dependency
+from resource_well.gui.feature.resource_well_helpers import getNumberChannelName
+from skeletons.gui.game_control import IReactiveCommunicationService
+from wg_async import AsyncSemaphore, wg_async, wg_await, BrokenPromiseError
+_logger = logging.getLogger(__name__)
+if typing.TYPE_CHECKING:
+    from typing import Optional
+_NO_VEHICLES_VALUE = 0
+
+class ResourceWellNumberRequester(object):
+    __reactiveCommunication = dependency.descriptor(IReactiveCommunicationService)
+
+    def __init__(self, rewardID, semaphore):
+        self.onUpdated = Event()
+        self.__rewardID = rewardID
+        self.__subscription = None
+        self.__remainingValues = None
+        self.__givenValues = None
+        self.__initialValues = None
+        self.__isActive = False
+        self.__semaphore = semaphore
+        return
+
+    @property
+    def isActive(self):
+        return self.__isActive
+
+    def start(self):
+        self.__isActive = True
+        self.__subscribe()
+
+    def stop(self):
+        if self.__isActive:
+            self.__unsubscribe()
+        self.__isActive = False
+
+    def clear(self):
+        self.onUpdated.clear()
+        self.__rewardID = None
+        self.__subscription = None
+        self.__remainingValues = None
+        self.__givenValues = None
+        self.__initialValues = None
+        self.__isActive = False
+        self.__semaphore = None
+        return
+
+    def setInitialValues(self, initialValues):
+        if initialValues is not None:
+            self.__initialValues = initialValues
+        self.onUpdated()
+        return
+
+    def getValuesLeft(self):
+        if self.__remainingValues is not None and self.__reactiveCommunication.isChannelSubscriptionAvailable:
+            return self.__remainingValues
+        else:
+            return
+
+    def getRemainingValues(self):
+        if self.__remainingValues is not None and self.__reactiveCommunication.isChannelSubscriptionAvailable and self.__initialValues != _NO_VEHICLES_VALUE:
+            return self.__remainingValues
+        else:
+            return self.__initialValues
+
+    def getGivenValues(self):
+        return self.__givenValues
+
+    def isDataAvailable(self):
+        return self.__remainingValues is not None or self.__initialValues is not None
+
+    @wg_async
+    def __subscribe(self):
+        try:
+            if self.__rewardID is None:
+                _logger.info('Requester can not subscribe to channel after the clearing.')
+                return
+            channelName = self.__getChannelName()
+            _logger.debug('Trying to subscribe channel: <%s>', channelName)
+            if self.__subscription is not None:
+                _logger.debug('Requester is already subscribed to channel: <%s>', channelName)
+                return
+            if not self.__reactiveCommunication.isChannelSubscriptionAvailable:
+                _logger.error('Channel subscription is unavailable! Please check reactive communication settings')
+                return
+            yield wg_await(self.__semaphore.acquire())
+            self.__subscription = Subscription(channelName)
+            status = yield wg_await(self.__reactiveCommunication.subscribeToChannel(self.__subscription))
+            _logger.debug('Subscription status for channel <%s>: %s', channelName, status)
+            if status:
+                self.__subscription.onClosed += self.__onClosed
+                self.__subscription.onMessage += self.__onMessage
+                _logger.debug('Sending get_last request for channel <%s>', channelName)
+                self.__reactiveCommunication.getLastMessageFromChannel(self.__subscription)
+            else:
+                self.__unsubscribe()
+        except BrokenPromiseError:
+            _logger.debug('Async semaphore was destroyed.')
+            return
+        except Exception as e:
+            _logger.exception(e)
+
+        if self.__semaphore is not None:
+            self.__semaphore.release()
+        return
+
+    def __unsubscribe(self):
+        if self.__subscription is not None:
+            _logger.debug('Trying to unsubscribe channel: <%s>', self.__subscription.channel)
+            self.__subscription.onClosed -= self.__onClosed
+            self.__subscription.onMessage -= self.__onMessage
+            self.__reactiveCommunication.unsubscribeFromChannel(self.__subscription)
+            self.__subscription = None
+        return
+
+    def __onMessage(self, message):
+        _logger.debug('Message: %s', message)
+        if message:
+            message = json.loads(message)
+            message = {str(k): v for k, v in message.items()}
+            remainingValues = message.get('remaining_values')
+            givenValues = message.get('given_values')
+        else:
+            remainingValues = None
+            givenValues = None
+        self.__remainingValues = remainingValues
+        self.__givenValues = givenValues
+        if self.__remainingValues is None:
+            _logger.warning('Remaining values for resource well is None!')
+        if self.__givenValues is None:
+            _logger.warning('Given values for resource well is None!')
+        self.onUpdated()
+        return
+
+    def __onClosed(self, *_):
+        self.__unsubscribe()
+
+    def __getChannelName(self):
+        return getNumberChannelName(rewardID=self.__rewardID)

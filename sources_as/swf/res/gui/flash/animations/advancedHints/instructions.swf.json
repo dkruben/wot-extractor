@@ -1,0 +1,60 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/instructions.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 174772,
+ "actual_length": 174772,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  234.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "none",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 303,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 60,
+  "DefineShape3": 1,
+  "DefineSprite": 4,
+  "FileAttributes": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 1,
+  "shapes": 3,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 0,
+  "abc_blocks": 0,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [],
+ "abc": [],
+ "classes": [],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

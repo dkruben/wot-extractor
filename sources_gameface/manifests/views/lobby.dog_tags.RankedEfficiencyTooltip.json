@@ -1,0 +1,185 @@
+{
+  "rid": "R.views.lobby.dog_tags.RankedEfficiencyTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "RankedEfficiencyTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "RankedEfficiencyTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip/RankedEfficiencyTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip/RankedEfficiencyTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RankedEfficiencyTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip/RankedEfficiencyTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip/RankedEfficiencyTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RankedEfficiencyTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip/RankedEfficiencyTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip/RankedEfficiencyTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip/RankedEfficiencyTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/dog_tags/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/dog_tags/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip/RankedEfficiencyTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip/RankedEfficiencyTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip/RankedEfficiencyTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/dog_tags/RankedEfficiencyTooltip/RankedEfficiencyTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.dog_tags.RankedEfficiencyTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.dog_tags.RankedEfficiencyTooltip no Python",
+      "ViewModel DogTagsViewModel (model=... no Python da view): 0/21 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dog_tags/dog_tags_view.py",
+        66
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dog_tags/ranked_efficiency_tooltip.py",
+        26
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/dog_tags/dog_tags_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/dog_tags/ranked_efficiency_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/dog_tags/dog_tags_view_model.py",
+      "class": "DogTagsViewModel",
+      "chain": [
+        "DogTagsViewModel"
+      ],
+      "properties": [
+        [
+          "equippedDogTag",
+          "ViewModel"
+        ],
+        [
+          "newEngravingComponentCount",
+          "Number"
+        ],
+        [
+          "newBackgroundComponentCount",
+          "Number"
+        ],
+        [
+          "newEngravingDedicationCount",
+          "Number"
+        ],
+        [
+          "newEngravingTriumphCount",
+          "Number"
+        ],
+        [
+          "newEngravingSkillCount",
+          "Number"
+        ],
+        [
+          "tab",
+          "Number"
+        ],
+        [
+          "backgroundGrid",
+          "Array"
+        ],
+        [
+          "engravingGrid",
+          "Array"
+        ],
+        [
+          "onboardingEnabled",
+          "Bool"
+        ],
+        [
+          "isTopView",
+          "Bool"
+        ],
+        [
+          "isAnimatedDogTagSelected",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onEquip",
+        "onReset",
+        "onTabSelect",
+        "onInfoButtonClick",
+        "onPlayVideo",
+        "onUpdateSelectedDT",
+        "onOnboardingCloseClick",
+        "onNewComponentHover",
+        "onBack"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 21,
+        "missing": [
+          "backgroundGrid",
+          "engravingGrid",
+          "equippedDogTag",
+          "isAnimatedDogTagSelected",
+          "isTopView",
+          "newBackgroundComponentCount",
+          "newEngravingComponentCount",
+          "newEngravingDedicationCount",
+          "newEngravingSkillCount",
+          "newEngravingTriumphCount",
+          "onBack",
+          "onEquip",
+          "onInfoButtonClick",
+          "onNewComponentHover",
+          "onOnboardingCloseClick",
+          "onPlayVideo",
+          "onReset",
+          "onTabSelect",
+          "onUpdateSelectedDT",
+          "onboardingEnabled",
+          "tab"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/dog_tags/ranked_efficiency_tooltip_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/dog_tags/ranked_season_efficiency_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/dog_tags/three_months_tooltip_model.py"
+      ]
+    }
+  }
+}

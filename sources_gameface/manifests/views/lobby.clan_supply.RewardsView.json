@@ -1,0 +1,122 @@
+{
+  "rid": "R.views.lobby.clan_supply.RewardsView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "RewardsView",
+  "dir": "gui/gameface/_dist/production/lobby/clan_supply/RewardsView",
+  "feature": null,
+  "files": [
+    {
+      "name": "RewardsView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/clan_supply/RewardsView/RewardsView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/clan_supply/RewardsView/RewardsView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RewardsView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/clan_supply/RewardsView/RewardsView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/clan_supply/RewardsView/RewardsView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RewardsView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/clan_supply/RewardsView/RewardsView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/clan_supply/RewardsView/RewardsView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/clan_supply/RewardsView/RewardsView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/clan_supply/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/clan_supply/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/clan_supply/RewardsView/RewardsView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/clan_supply/RewardsView/RewardsView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/clan_supply/RewardsView/RewardsView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/clan_supply/RewardsView/RewardsView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window",
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow"
+  ],
+  "commands": [
+    "onClose",
+    "onGoToHangar"
+  ],
+  "link": {
+    "rid": "R.views.lobby.clan_supply.RewardsView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.clan_supply.RewardsView no Python",
+      "ViewModel RewardsViewModel (model=... no Python da view): 5/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/clan_supply/rewards_view.py",
+        28
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/clan_supply/rewards_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/clan_supply/rewards_view_model.py",
+      "class": "RewardsViewModel",
+      "chain": [
+        "RewardsViewModel"
+      ],
+      "properties": [
+        [
+          "type",
+          "Number"
+        ],
+        [
+          "rewards",
+          "Array"
+        ],
+        [
+          "additionalRewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onGoToHangar"
+      ],
+      "coverage": {
+        "found": 5,
+        "total": 5,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/personal_missions_30/rewards_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/loot_box_vehicle_compensation_tooltip_model.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1450 @@
+{
+ "source": "sources/res/gui/flash/battleStaticMarkers.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 2910148,
+ "actual_length": 2910148,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  300.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 178,
+  "ShowFrame": 2962,
+  "DefineShape": 305,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 4,
+  "PlaceObject2": 2289,
+  "RemoveObject2": 265,
+  "DefineShape3": 1,
+  "DefineBitsJPEG3": 11,
+  "DefineBitsLossless2": 159,
+  "DefineEditText": 25,
+  "DefineSprite": 177,
+  "FrameLabel": 175,
+  "FileAttributes": 1,
+  "PlaceObject3": 55,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 25,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineShape4": 5,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 170,
+  "shapes": 319,
+  "sprites": 177,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 25,
+  "fonts": 0,
+  "classes": 123,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "epicSharedAssets.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleMarkersComponents.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 691,
+   "class": "AimMarkerUI"
+  },
+  {
+   "id": 690,
+   "class": "AimIconStatesUI"
+  },
+  {
+   "id": 689,
+   "class": "battleStaticMarkers_fla.aimHighlightAnimationMC_6"
+  },
+  {
+   "id": 681,
+   "class": "AttentionMarkerUI"
+  },
+  {
+   "id": 680,
+   "class": "IconStatesUI"
+  },
+  {
+   "id": 679,
+   "class": "battleStaticMarkers_fla.attentionClickAnimMC_20"
+  },
+  {
+   "id": 675,
+   "class": "battleStaticMarkers_fla.HighlightAnimationMC_17"
+  },
+  {
+   "id": 669,
+   "class": "battleStaticMarkers_fla.attentionIconTriStatesUI_16"
+  },
+  {
+   "id": 666,
+   "class": "battleStaticMarkers_fla.IconLineStatesUI_13"
+  },
+  {
+   "id": 665,
+   "class": "battleStaticMarkers_fla.attentionLineHighlightMC_14"
+  },
+  {
+   "id": 660,
+   "class": "CaptureIndicatorUI"
+  },
+  {
+   "id": 659,
+   "class": "battleStaticMarkers_fla.capture_point_25"
+  },
+  {
+   "id": 600,
+   "class": "FlagIndicatorUI"
+  },
+  {
+   "id": 594,
+   "class": "FlagIconUI"
+  },
+  {
+   "id": 581,
+   "class": "FlagMarkerUI"
+  },
+  {
+   "id": 580,
+   "class": "FlagIconStatesUI"
+  },
+  {
+   "id": 571,
+   "class": "FortConsumablesMarker"
+  },
+  {
+   "id": 567,
+   "class": "battleStaticMarkers_fla.Pb_bg_40"
+  },
+  {
+   "id": 552,
+   "class": "GoalMarkerUI"
+  },
+  {
+   "id": 548,
+   "class": "GoalFlagIconStatesUI"
+  },
+  {
+   "id": 547,
+   "class": "battleStaticMarkers_fla.flagHighlightAnimationMC_38"
+  },
+  {
+   "id": 537,
+   "class": "HeadquarterMarkerUI"
+  },
+  {
+   "id": 533,
+   "class": "HeadquarterIconUI"
+  },
+  {
+   "id": 532,
+   "class": "hqBGAnimationMC"
+  },
+  {
+   "id": 531,
+   "class": "HeadquarterActionMarkerUI"
+  },
+  {
+   "id": 530,
+   "class": "battleStaticMarkers_fla.hq_colorblind_67"
+  },
+  {
+   "id": 526,
+   "class": "battleStaticMarkers_fla.hq_ally_64"
+  },
+  {
+   "id": 519,
+   "class": "battleStaticMarkers_fla.hq_enemy_61"
+  },
+  {
+   "id": 510,
+   "class": "hq_enemyAttackMarker"
+  },
+  {
+   "id": 509,
+   "class": "battleStaticMarkers_fla.attackHQMarkerMC_71"
+  },
+  {
+   "id": 506,
+   "class": "hq_enemyHighlightAnimation"
+  },
+  {
+   "id": 505,
+   "class": "battleStaticMarkers_fla.HighlightAnimationAttackHQMC_73"
+  },
+  {
+   "id": 504,
+   "class": "hq_enemyClickAnimation"
+  },
+  {
+   "id": 503,
+   "class": "battleStaticMarkers_fla.attackHQClickAnimMC_76"
+  },
+  {
+   "id": 499,
+   "class": "hq_allyDefendMarker"
+  },
+  {
+   "id": 498,
+   "class": "battleStaticMarkers_fla.DefendHQMarkerMC_78"
+  },
+  {
+   "id": 495,
+   "class": "hq_allyHighlightAnimation"
+  },
+  {
+   "id": 494,
+   "class": "battleStaticMarkers_fla.HighlightAnimationDefendHQMC_80"
+  },
+  {
+   "id": 493,
+   "class": "hq_allyClickAnimation"
+  },
+  {
+   "id": 492,
+   "class": "battleStaticMarkers_fla.DefendHQClickAnimMC_83"
+  },
+  {
+   "id": 488,
+   "class": "hq_colorblindAttackMarker"
+  },
+  {
+   "id": 487,
+   "class": "battleStaticMarkers_fla.attackColorblindHQMarkerMC_85"
+  },
+  {
+   "id": 484,
+   "class": "hq_colorblindHighlightAnimation"
+  },
+  {
+   "id": 483,
+   "class": "battleStaticMarkers_fla.HighlightAnimationAttackColorBlindHQMC_87"
+  },
+  {
+   "id": 482,
+   "class": "hq_colorblindClickAnimation"
+  },
+  {
+   "id": 481,
+   "class": "battleStaticMarkers_fla.attackColorblindHQClickAnimMC_90"
+  },
+  {
+   "id": 477,
+   "class": "SectorWarningMarkerUI"
+  },
+  {
+   "id": 475,
+   "class": "SectorWarningIconUI"
+  },
+  {
+   "id": 470,
+   "class": "targetPointHighlight"
+  },
+  {
+   "id": 468,
+   "class": "TargetPointMarkerUI"
+  },
+  {
+   "id": 463,
+   "class": "targetPointReplyMe"
+  },
+  {
+   "id": 462,
+   "class": "battleStaticMarkers_fla.repliedMe_png_0"
+  },
+  {
+   "id": 461,
+   "class": "LocationMarkerUI"
+  },
+  {
+   "id": 460,
+   "class": "locationIconStatesUI"
+  },
+  {
+   "id": 459,
+   "class": "battleStaticMarkers_fla.locationHighlightAnimationMC_97"
+  },
+  {
+   "id": 457,
+   "class": "battleStaticMarkers_fla.locationClickAnimMC_95"
+  },
+  {
+   "id": 452,
+   "class": "battleStaticMarkers_fla.locationIconTriStatesUI_94"
+  },
+  {
+   "id": 447,
+   "class": "battleStaticMarkers_fla.locationIconLineStatesUI_93"
+  },
+  {
+   "id": 443,
+   "class": "NavigationMarkerUI"
+  },
+  {
+   "id": 439,
+   "class": "NavigationIconStatesUI"
+  },
+  {
+   "id": 438,
+   "class": "battleStaticMarkers_fla.navigationHighlightAnimationMC_102"
+  },
+  {
+   "id": 430,
+   "class": "PointOfInterestMarkerUI"
+  },
+  {
+   "id": 429,
+   "class": "MarkerPoiProgressBarUI"
+  },
+  {
+   "id": 428,
+   "class": "battleStaticMarkers_fla.captureCircleProgressAnimationGrayUI_115"
+  },
+  {
+   "id": 424,
+   "class": "RepairPointIndicatorUI"
+  },
+  {
+   "id": 419,
+   "class": "RepairPointIconUI"
+  },
+  {
+   "id": 400,
+   "class": "ResupplyMarkerUI"
+  },
+  {
+   "id": 398,
+   "class": "ResupplyIconUI"
+  },
+  {
+   "id": 391,
+   "class": "SafeZoneIndicatorUI"
+  },
+  {
+   "id": 331,
+   "class": "ScenarioMarkerUI"
+  },
+  {
+   "id": 330,
+   "class": "MarkerScenarioProgressBarUI"
+  },
+  {
+   "id": 328,
+   "class": "battleStaticMarkers_fla.captureCircleAnimationGrayUI_114"
+  },
+  {
+   "id": 170,
+   "class": "SectorBaseMarkerUI"
+  },
+  {
+   "id": 169,
+   "class": "sectorBaseActionsUI"
+  },
+  {
+   "id": 168,
+   "class": "battleStaticMarkers_fla.attackClickAnimColorBlindMC_142"
+  },
+  {
+   "id": 167,
+   "class": "battleStaticMarkers_fla.HighlightAnimationAttackBaseColorBlindMC_140"
+  },
+  {
+   "id": 165,
+   "class": "battleStaticMarkers_fla.epicAttackBaseMarkerColorBlindMC_139"
+  },
+  {
+   "id": 160,
+   "class": "battleStaticMarkers_fla.attackBaseMarkerColorBlindMC_138"
+  },
+  {
+   "id": 155,
+   "class": "battleStaticMarkers_fla.defendClickAnimMC_137"
+  },
+  {
+   "id": 154,
+   "class": "battleStaticMarkers_fla.HighlightAnimationDefendBaseMC_135"
+  },
+  {
+   "id": 152,
+   "class": "battleStaticMarkers_fla.epicDefendBaseMarkerMC_134"
+  },
+  {
+   "id": 146,
+   "class": "battleStaticMarkers_fla.defendBaseMarkerMC_133"
+  },
+  {
+   "id": 139,
+   "class": "battleStaticMarkers_fla.attackClickAnimMC_132"
+  },
+  {
+   "id": 138,
+   "class": "battleStaticMarkers_fla.HighlightAnimationAttackBaseMC_130"
+  },
+  {
+   "id": 136,
+   "class": "battleStaticMarkers_fla.epicAttackBaseMarkerMC_129"
+  },
+  {
+   "id": 131,
+   "class": "battleStaticMarkers_fla.attackBaseMarkerMC_128"
+  },
+  {
+   "id": 128,
+   "class": "targetPoint"
+  },
+  {
+   "id": 127,
+   "class": "SectorBaseIconUI"
+  },
+  {
+   "id": 126,
+   "class": "battleStaticMarkers_fla.sectorBaseBackground_144"
+  },
+  {
+   "id": 115,
+   "class": "battleStaticMarkers_fla.sectorBaseHoversMC_49"
+  },
+  {
+   "id": 95,
+   "class": "SectorWaypointMarkerUI"
+  },
+  {
+   "id": 93,
+   "class": "battleStaticMarkers_fla.selected_lane_indicator_172"
+  },
+  {
+   "id": 88,
+   "class": "SectorWaypointIconUI"
+  },
+  {
+   "id": 87,
+   "class": "StaticArtyMarkerUI"
+  },
+  {
+   "id": 83,
+   "class": "SPGIconStatesUI"
+  },
+  {
+   "id": 82,
+   "class": "battleStaticMarkers_fla.spgClickAnimMC_111"
+  },
+  {
+   "id": 79,
+   "class": "battleStaticMarkers_fla.SPGHighlightAnimationMC_109"
+  },
+  {
+   "id": 74,
+   "class": "battleStaticMarkers_fla.IconTriStatesUI_108"
+  },
+  {
+   "id": 71,
+   "class": "battleStaticMarkers_fla.SPGIconLineStatesUI_105"
+  },
+  {
+   "id": 70,
+   "class": "battleStaticMarkers_fla.attackLineHighlightMC_106"
+  },
+  {
+   "id": 59,
+   "class": "StaticObjectMarker"
+  },
+  {
+   "id": 53,
+   "class": "UnspottedMarkerUI"
+  },
+  {
+   "id": 52,
+   "class": "UspottedInnerMarkerUI"
+  },
+  {
+   "id": 51,
+   "class": "battleStaticMarkers_fla.aimHighlightAnimationMC_160"
+  },
+  {
+   "id": 49,
+   "class": "battleStaticMarkers_fla.aimBigMC_158"
+  },
+  {
+   "id": 46,
+   "class": "battleStaticMarkers_fla.Symbol2_159"
+  },
+  {
+   "id": 43,
+   "class": "battleStaticMarkers_fla.line_153"
+  },
+  {
+   "id": 42,
+   "class": "battleStaticMarkers_fla.Symbol1copy_154"
+  },
+  {
+   "id": 32,
+   "class": "battleStaticMarkers_fla.Foot_155"
+  },
+  {
+   "id": 14,
+   "class": "arrow"
+  },
+  {
+   "id": 13,
+   "class": "deathZone"
+  },
+  {
+   "id": 12,
+   "class": "eye"
+  },
+  {
+   "id": 11,
+   "class": "bootcampArrow"
+  },
+  {
+   "id": 10,
+   "class": "artillery_fort_ally"
+  },
+  {
+   "id": 9,
+   "class": "artillery_fort_enemy"
+  },
+  {
+   "id": 8,
+   "class": "artillery_fort_enemy_color_blind"
+  },
+  {
+   "id": 7,
+   "class": "artillery"
+  },
+  {
+   "id": 6,
+   "class": "artillery_yellow"
+  },
+  {
+   "id": 5,
+   "class": "bomber"
+  },
+  {
+   "id": 4,
+   "class": "fireCircleAlly"
+  },
+  {
+   "id": 3,
+   "class": "fireCircleEnemy"
+  },
+  {
+   "id": 2,
+   "class": "recon"
+  },
+  {
+   "id": 1,
+   "class": "smoke"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 28916,
+   "classes": 123,
+   "methods": 569,
+   "bodies": 569,
+   "code_bytes": 10160
+  }
+ ],
+ "classes": [
+  {
+   "name": "arrow",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "artillery",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "artillery_fort_ally",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "artillery_fort_enemy",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "artillery_fort_enemy_color_blind",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "artillery_yellow",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.repliedMe_png_0",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bomber",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bootcampArrow",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "deathZone",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eye",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fireCircleAlly",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fireCircleEnemy",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "recon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smoke",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "targetPoint",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CaptureIndicatorUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FlagIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.flag.FlagMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RepairPointIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.repairPoint.RepairPointMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ResupplyMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.resupplyPoint.ResupplyMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SafeZoneIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.safeZone.SafeZoneMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorWarningIconUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.DefendHQClickAnimMC_83",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.DefendHQMarkerMC_78",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.Foot_155",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.HighlightAnimationAttackBaseColorBlindMC_140",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.HighlightAnimationAttackBaseMC_130",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.HighlightAnimationAttackColorBlindHQMC_87",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.HighlightAnimationAttackHQMC_73",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.HighlightAnimationDefendBaseMC_135",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.HighlightAnimationDefendHQMC_80",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.HighlightAnimationMC_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.IconLineStatesUI_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.IconTriStatesUI_108",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.Pb_bg_40",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.SPGHighlightAnimationMC_109",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.SPGIconLineStatesUI_105",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.Symbol1copy_154",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.Symbol2_159",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.aimBigMC_158",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.aimHighlightAnimationMC_160",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.aimHighlightAnimationMC_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attackBaseMarkerColorBlindMC_138",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attackBaseMarkerMC_128",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attackClickAnimColorBlindMC_142",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attackClickAnimMC_132",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attackColorblindHQClickAnimMC_90",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attackColorblindHQMarkerMC_85",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attackHQClickAnimMC_76",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attackHQMarkerMC_71",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attackLineHighlightMC_106",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attentionClickAnimMC_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attentionIconTriStatesUI_16",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.attentionLineHighlightMC_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.captureCircleAnimationGrayUI_114",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.captureCircleProgressAnimationGrayUI_115",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.capture_point_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.defendBaseMarkerMC_133",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.defendClickAnimMC_137",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.epicAttackBaseMarkerColorBlindMC_139",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.epicAttackBaseMarkerMC_129",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.epicDefendBaseMarkerMC_134",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.flagHighlightAnimationMC_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.hq_ally_64",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.hq_colorblind_67",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.hq_enemy_61",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.line_153",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.locationClickAnimMC_95",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.locationHighlightAnimationMC_97",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.locationIconLineStatesUI_93",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.locationIconTriStatesUI_94",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.navigationHighlightAnimationMC_102",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.sectorBaseBackground_144",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.sectorBaseHoversMC_49",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.selected_lane_indicator_172",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleStaticMarkers_fla.spgClickAnimMC_111",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "targetPointHighlight",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "targetPointReplyMe",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorWarningMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.sectorWarning.SectorWarningMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorWaypointMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.sectorWaypoint.SectorWaypointMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorWaypointIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.sectorWaypoint.SectorWaypointIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hqBGAnimationMC",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hq_allyClickAnimation",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hq_allyHighlightAnimation",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hq_colorblindClickAnimation",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hq_colorblindHighlightAnimation",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hq_enemyClickAnimation",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hq_enemyHighlightAnimation",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hq_allyDefendMarker",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterLifeStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hq_colorblindAttackMarker",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterLifeStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hq_enemyAttackMarker",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterLifeStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FlagIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.flag.FlagIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeadquarterIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RepairPointIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.repairPoint.RepairPointIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ResupplyIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.resupplyPoint.ResupplyIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorBaseIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.sectorbase.SectorBaseIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AimMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AttentionMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FlagMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GoalMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LocationMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NavigationMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StaticArtyMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UnspottedMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FortConsumablesMarker",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.FortConsumablesMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeadquarterMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PointOfInterestMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.interestPoint.InterestPointMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScenarioMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.scenario.ScenarioMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorBaseMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.sectorbase.SectorBaseMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StaticObjectMarker",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.StaticObjectMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AimIconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NavigationIconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SPGIconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UspottedInnerMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "locationIconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeadquarterActionMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.headquarter.HeadquarterActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TargetPointMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.targetPoint.TargetPointMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sectorBaseActionsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.sectorbase.SectorBaseActions",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MarkerScenarioProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.scenario.ScenarioMarkerProgressCircle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FlagIconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.FlagLocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GoalFlagIconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.FlagLocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MarkerPoiProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.interestPoint.MarkerPoiProgressCircle",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

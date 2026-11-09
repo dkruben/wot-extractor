@@ -1,0 +1,1 @@
+import{Nn as s,qr as a}from"./lib.js";var e="ProxyCurrency_7a6e909e",r=s(),i=function(s){return s.x48="small",s.x80="big",s}({}),m={small:48,big:80};function n({type:s,className:i,size:n="small"}){return(0,r.jsx)("div",{className:a(e,i),style:{backgroundImage:`url(R.images.gui.maps.icons.quests.bonuses.${n}.${s})`,"--imageSize":`${m[n]}rem`}})}export{i as n,n as t};

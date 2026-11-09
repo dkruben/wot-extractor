@@ -1,0 +1,207 @@
+{
+ "source": "sources/res/gui/flash/vehicleInfo.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 10134,
+ "actual_length": 10134,
+ "frame_size_px": [
+  0.0,
+  504.0,
+  0.0,
+  406.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 11,
+  "ShowFrame": 11,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 8,
+  "DefineShape3": 1,
+  "DefineEditText": 7,
+  "DefineSprite": 10,
+  "FileAttributes": 1,
+  "PlaceObject3": 19,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 7,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 1,
+  "sprites": 10,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 7,
+  "fonts": 0,
+  "classes": 10,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "windows.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 18,
+   "class": "vehicleInfoUI"
+  },
+  {
+   "id": 15,
+   "class": "BaseBlockUI"
+  },
+  {
+   "id": 13,
+   "class": "CrewBlockUI"
+  },
+  {
+   "id": 10,
+   "class": "PropBlockUI"
+  },
+  {
+   "id": 7,
+   "class": "VehicleInfoBaseUI"
+  },
+  {
+   "id": 6,
+   "class": "VehicleInfoCrewUI"
+  },
+  {
+   "id": 5,
+   "class": "VehicleInfoPropsUI"
+  },
+  {
+   "id": 4,
+   "class": "InfoScrollPane_UI"
+  },
+  {
+   "id": 3,
+   "class": "containerUI"
+  },
+  {
+   "id": 0,
+   "class": "vehicleInfo_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 7979,
+   "classes": 10,
+   "methods": 44,
+   "bodies": 44,
+   "code_bytes": 2371
+  }
+ ],
+ "classes": [
+  {
+   "name": "containerUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleInfo_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BaseBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleInfo.BaseBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrewBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleInfo.CrewBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleInfo.PropBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InfoScrollPane_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleInfoBaseUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleInfo.VehicleInfoBase",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleInfoCrewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleInfo.VehicleInfoCrew",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleInfoPropsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleInfo.VehicleInfoProps",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleInfo.VehicleInfo",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

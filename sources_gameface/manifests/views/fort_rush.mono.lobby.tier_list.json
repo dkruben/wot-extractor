@@ -1,0 +1,62 @@
+{
+  "rid": "R.views.fort_rush.mono.lobby.tier_list",
+  "rid_source": "sources/res/fort_rush/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "tier_list",
+  "dir": "fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list",
+  "feature": "fort_rush",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list/bundle.js",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list/bundle.js"
+    },
+    {
+      "name": "tier_list.css",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list/tier_list.css",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list/tier_list.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "tier_list.html",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list/tier_list.html",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list/tier_list.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list/bundle.js",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list/bundle.js"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list/tier_list.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tier_list/tier_list.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.fort_rush.mono.lobby.tier_list",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

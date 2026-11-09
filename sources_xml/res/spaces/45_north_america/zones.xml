@@ -1,0 +1,29 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/45_north_america/zones.xml -->
+<root>
+	<path>
+		<id>313824264</id>
+		<name>path</name>
+		<node>
+			<name>Zone 1</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2086705359</id>
+			<transform>
+				<row0>44.71178 0 0</row0>
+				<row1>0 44.71178 0</row1>
+				<row2>0 0 44.71178</row2>
+				<row3>418.95578 12.050002 -438.1122</row3>
+			</transform>
+		</node>
+		<node>
+			<name>45_north_america_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2470895262</id>
+			<transform>
+				<row0>72.95164 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 64.991425</row2>
+				<row3>-153.41235 -12.073632 135.8213</row3>
+			</transform>
+		</node>
+	</path>
+</root>

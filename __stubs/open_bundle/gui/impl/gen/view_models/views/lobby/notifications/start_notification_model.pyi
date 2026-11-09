@@ -1,0 +1,26 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/open_bundle/scripts/client/open_bundle/gui/impl/gen/view_models/views/lobby/notifications/start_notification_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from gui.impl.gen.view_models.common.notification_base_model import NotificationBaseModel as NotificationBaseModel
+
+class StartNotificationModel(NotificationBaseModel):
+    __slots__: tuple
+    onOpenBundle: Any
+    def __init__(self, properties=4, commands=1):
+        ...
+    def getBundleID(self):
+        ...
+    def setBundleID(self, value):
+        ...
+    def getBundleType(self):
+        ...
+    def setBundleType(self, value):
+        ...
+    def getIsButtonDisabled(self):
+        ...
+    def setIsButtonDisabled(self, value):
+        ...
+    def _initialize(self):
+        ...

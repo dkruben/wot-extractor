@@ -1,0 +1,125 @@
+{
+  "rid": "R.views.last_stand.mono.lobby.tooltips.additional_data_tooltip",
+  "rid_source": "sources/res/last_stand/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "additional_data_tooltip",
+  "dir": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/additional_data_tooltip",
+  "feature": "last_stand",
+  "files": [
+    {
+      "name": "additional_data_tooltip.css",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/additional_data_tooltip/additional_data_tooltip.css",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/additional_data_tooltip/additional_data_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "additional_data_tooltip.html",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/additional_data_tooltip/additional_data_tooltip.html",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/additional_data_tooltip/additional_data_tooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/additional_data_tooltip/bundle.js",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/additional_data_tooltip/bundle.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/additional_data_tooltip/additional_data_tooltip.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/additional_data_tooltip/additional_data_tooltip.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/additional_data_tooltip/bundle.js",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/additional_data_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.last_stand.mono.lobby.tooltips.additional_data_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.last_stand.mono.lobby.tooltips.additional_data_tooltip no Python",
+      "ViewModel RewardPathViewModel (model=... no Python da view): 0/9 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/reward_path_view.py",
+        67
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/tooltips/additional_data_tooltip.py",
+        14
+      ]
+    ],
+    "python_files": [
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/reward_path_view.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/tooltips/additional_data_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/last_stand/scripts/client/last_stand/gui/impl/gen/view_models/views/lobby/reward_path_view_model.py",
+      "class": "RewardPathViewModel",
+      "chain": [
+        "RewardPathViewModel"
+      ],
+      "properties": [
+        [
+          "artefacts",
+          "Array"
+        ],
+        [
+          "points",
+          "Number"
+        ],
+        [
+          "currentArtefactID",
+          "String"
+        ],
+        [
+          "openFromQuestCard",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onViewLoaded",
+        "onAbout",
+        "onShowIntro",
+        "goToMission"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 9,
+        "missing": [
+          "artefacts",
+          "currentArtefactID",
+          "goToMission",
+          "onAbout",
+          "onClose",
+          "onShowIntro",
+          "onViewLoaded",
+          "openFromQuestCard",
+          "points"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/gen/view_models/views/lobby/widgets/reward_path_view_model.py"
+      ]
+    }
+  }
+}

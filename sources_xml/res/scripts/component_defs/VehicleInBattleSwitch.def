@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/VehicleInBattleSwitch.def -->
+<root>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<Properties />
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>vehicleInBattleSwitch</DefaultKeyName>
+</root>

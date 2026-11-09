@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/gui/html_templates.xml -->
+<root>
+	<lobby>
+		<textStyle>
+			<stPatrickText>&lt;font face='$FieldFont' size='14' color='#02BE64'&gt;%(message)s&lt;/font&gt;</stPatrickText>
+		</textStyle>
+	</lobby>
+</root>

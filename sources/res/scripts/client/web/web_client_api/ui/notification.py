@@ -1,0 +1,54 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/web/web_client_api/ui/notification.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/web/web_client_api/ui/notification.py
+from __future__ import absolute_import
+from future.utils import viewitems
+from past.builtins import basestring
+from gui.SystemMessages import SM_TYPE, pushI18nMessage, pushMessage
+from web.web_client_api import WebCommandException, w2c, W2CSchema, Field
+
+class _NotificationSchema(W2CSchema):
+    __unions__ = ('message', 'i18n_key', 'key')
+    type = Field(required=True, type=basestring)
+    message = Field(type=basestring)
+    message_data = Field(type=dict)
+    i18n_key = Field(type=basestring)
+    i18n_data = Field(type=dict)
+    key = Field(type=basestring, deprecated='prefer "i18n_key"')
+
+    def hasKey(self):
+        return self.key is not None
+
+    def hasMessage(self):
+        return self.message is not None
+
+    def hasI18nKey(self):
+        return self.i18n_key is not None
+
+
+class NotificationWebApiMixin(object):
+
+    @w2c(_NotificationSchema, 'notification')
+    def notification(self, cmd):
+        smType = SM_TYPE.lookup(cmd.type)
+        if smType is None:
+            raise WebCommandException("Unknown notification's type: %s!" % cmd.type)
+        if cmd.hasMessage():
+            pushMessage(cmd.message, type=smType, messageData=cmd.message_data)
+        elif cmd.hasI18nKey():
+            parameters = cmd.i18n_data
+            params = {'type': smType, 'key': (cmd.i18n_key), 'messageData': (cmd.message_data)}
+            for key, value in viewitems(parameters):
+                params[key] = value
+
+            pushI18nMessage(**params)
+        elif cmd.hasKey():
+            custom_parameters = cmd.custom_parameters
+            params = {'type': smType, 'key': (cmd.key), 'messageData': (cmd.message_data)}
+            for key, value in viewitems(custom_parameters):
+                params[key] = value
+
+            pushI18nMessage(**params)
+        return

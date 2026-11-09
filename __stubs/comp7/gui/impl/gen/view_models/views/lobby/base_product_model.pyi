@@ -1,0 +1,66 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/lobby/base_product_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from enum import Enum as Enum, IntEnum as IntEnum
+from comp7.gui.impl.gen.view_models.views.lobby.enums import Rank as Rank
+from frameworks.wulf import ViewModel as ViewModel
+from comp7.gui.impl.gen.view_models.views.lobby.product_price_model import ProductPriceModel as ProductPriceModel
+
+class ProductTypes(IntEnum):
+    BASE = 0
+    VEHICLE = 1
+    STYLE3D = 2
+    REWARD = 3
+
+class ProductState(Enum):
+    LOCKED = 'locked'
+    READYTORESTORE = 'readyToRestore'
+    READYTOPURCHASE = 'readyToPurchase'
+    PURCHASED = 'purchased'
+    INPROGRESS = 'inProgress'
+
+class BaseProductModel(ViewModel):
+    __slots__: tuple
+    def __init__(self, properties=9, commands=0):
+        ...
+    @property
+    def price(self):
+        ...
+    @staticmethod
+    def getPriceType():
+        ...
+    def getId(self):
+        ...
+    def setId(self, value):
+        ...
+    def getType(self):
+        ...
+    def setType(self, value):
+        ...
+    def getRank(self):
+        ...
+    def setRank(self, value):
+        ...
+    def getLimitedQuantity(self):
+        ...
+    def setLimitedQuantity(self, value):
+        ...
+    def getState(self):
+        ...
+    def setState(self, value):
+        ...
+    def getIsNew(self):
+        ...
+    def setIsNew(self, value):
+        ...
+    def getDescription(self):
+        ...
+    def setDescription(self, value):
+        ...
+    def getTooltipId(self):
+        ...
+    def setTooltipId(self, value):
+        ...
+    def _initialize(self):
+        ...

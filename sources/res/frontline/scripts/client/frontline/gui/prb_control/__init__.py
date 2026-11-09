@@ -1,0 +1,31 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/frontline/scripts/client/frontline/gui/prb_control/__init__.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: frontline/scripts/client/frontline/gui/prb_control/__init__.py
+from __future__ import absolute_import
+from frontline.gui.prb_control.entities.epic.pre_queue import entity as fl_entity
+from frontline.gui.prb_control.entities.epic.squad import entity as fl_squad_entity
+from frontline.gui.prb_control.entities.epic_battle_training import entity as fl_training_entity
+from frontline.gui.prb_control.storages.frontline_storage import FrontLineStorage
+from constants import QUEUE_TYPE, PREBATTLE_TYPE, ARENA_BONUS_TYPE
+from gui.prb_control.settings import PREBATTLE_ACTION_NAME
+from gui.prb_control.storages import makeQueueName
+from gui.shared.system_factory import registerQueueEntity, registerEntryPoint, registerUnitEntryPointByType, registerUnitEntity, registerLegacyEntryPointByType, registerLegacyEntryPoint, registerLegacyEntity, registerPrbStorage, registerBattleResultStatsCtrl
+from gui.prb_control.factories.LegacyFactory import extendSupportedIntroByType
+from frontline.gui.battle_results.frontline_stats_controller import FrontlineBattleResultStatsCtrl
+
+def registerFLPrebattles():
+    registerQueueEntity(QUEUE_TYPE.EPIC, fl_entity.EpicEntity)
+    registerEntryPoint(PREBATTLE_ACTION_NAME.EPIC, fl_entity.EpicEntryPoint)
+    registerUnitEntity(PREBATTLE_TYPE.EPIC, fl_squad_entity.EpicSquadEntity)
+    registerUnitEntryPointByType(PREBATTLE_TYPE.EPIC, fl_squad_entity.EpicSquadEntryPoint)
+    registerLegacyEntryPointByType(PREBATTLE_TYPE.EPIC_TRAINING, fl_training_entity.EpicBattleTrainingEntryPoint)
+    registerLegacyEntryPoint(PREBATTLE_ACTION_NAME.EPIC_TRAINING_LIST, fl_training_entity.EpicBattleTrainingIntroEntryPoint)
+    registerLegacyEntity(PREBATTLE_TYPE.EPIC_TRAINING, fl_training_entity.EpicBattleTrainingEntity)
+    registerPrbStorage(makeQueueName(QUEUE_TYPE.EPIC), FrontLineStorage())
+    registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.EPIC_BATTLE, FrontlineBattleResultStatsCtrl)
+
+
+def extendIntroByType():
+    extendSupportedIntroByType({(PREBATTLE_TYPE.EPIC_TRAINING): (fl_training_entity.EpicBattleTrainingIntroEntity)})

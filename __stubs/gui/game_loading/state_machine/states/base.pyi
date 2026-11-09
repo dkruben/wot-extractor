@@ -1,0 +1,126 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/game_loading/state_machine/states/base.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import time as time
+import typing as typing
+import wg_async as wg_async
+from gui.game_loading import loggers as loggers
+from helpers.CallbackDelayer import CallbackDelayer as CallbackDelayer
+from frameworks_common.state_machine import State as State, StateFlags as StateFlags, StateEvent as StateEvent
+from gui.game_loading.state_machine.const import TickingMode as TickingMode
+from frameworks_common.state_machine import StateMachine as StateMachine
+from gui.game_loading.resources.base import BaseResources as BaseResources
+from gui.game_loading.resources.models import BaseResourceModel as BaseResourceModel
+_logger: Any
+
+class _StateWaiting(object):
+    __slots__: tuple
+    _resetOnStateEnter: Any
+    _releaseOnStateExit: Any
+    _event: Any
+    _states: Any
+    _destroyOnStateClear: Any
+    def __init__(self, stateName, waiting=None, resetOnStateEnter=True, releaseOnStateExit=True):
+        ...
+    def getStateName(self):
+        ...
+    def getEvent(self):
+        ...
+    def release(self):
+        ...
+    def reset(self):
+        ...
+    # decorador original: @wg_async.wg_async
+    def wait(self):
+        ...
+    def onStateEnter(self):
+        ...
+    def onStateExit(self):
+        ...
+    def onStateClear(self):
+        ...
+
+class BaseState(State):
+    __slots__: tuple
+    _waiting: Any
+    def __init__(self, stateID, flags=...):
+        ...
+    def clear(self):
+        ...
+    def initWaiting(self, waiting=None, releaseOnStateExit=True, resetOnStateEnter=True):
+        ...
+    # decorador original: @wg_async.wg_async
+    def wait(self):
+        ...
+    def _releaseWaiting(self):
+        ...
+    def _resetWaiting(self):
+        ...
+    def _onEntered(self, event):
+        ...
+    def _onExited(self):
+        ...
+
+class BaseTickingState(BaseState):
+    __slots__: tuple
+    _tickingMode: Any
+    _nextTickTime: Any
+    _onCompleteEvent: Any
+    _stopped: Any
+    _ticker: Any
+    _stepNumber: Any
+    _isSelfTicking: Any
+    def __init__(self, stateID, flags=..., tickingMode=..., onCompleteEvent=None):
+        ...
+    @property
+    def timeLeft(self):
+        ...
+    def clear(self):
+        ...
+    def manualTick(self, stepNumber=0):
+        ...
+    def _start(self, *args, **kwargs):
+        ...
+    def _stop(self, *args, **kwargs):
+        ...
+    def _runTick(self):
+        ...
+    def _onEntered(self, event):
+        ...
+    def _onExited(self):
+        ...
+    def _runSelfTick(self):
+        ...
+    def _startTicker(self, delay):
+        ...
+    def _stopTicker(self):
+        ...
+    def _task(self):
+        ...
+
+class BaseViewResourcesTickingState(BaseTickingState):
+    __slots__: tuple
+    _resources: Any
+    _minDurationEventTime: Any
+    _overriddenViewTime: Any
+    def __init__(self, stateID, resources, flags=..., tickingMode=..., minDurationEventTime=0, onCompleteEvent=None):
+        ...
+    def _stop(self):
+        ...
+    def _task(self):
+        ...
+    def _selectResource(self):
+        ...
+    def _beforeView(self):
+        ...
+    def _onMinDurationTimeReached(self):
+        ...
+    def _view(self, resource):
+        ...
+
+class BaseGroupTickingStates(BaseState):
+    __slots__: tuple
+    def manualTick(self, stepNumber=0):
+        ...

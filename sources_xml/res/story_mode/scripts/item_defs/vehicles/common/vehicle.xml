@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/scripts/item_defs/vehicles/common/vehicle.xml -->
+<root>
+	<extras>
+		<story_mode_overturn>NoneExtra : story_mode_cell.ext_vehicle_extras.OverturnStoryMode<correctionDelay>5.0</correctionDelay>
+			<isOnboardShotAllowed>true</isOnboardShotAllowed>
+			<gameplayFactors />
+		</story_mode_overturn>
+	</extras>
+</root>

@@ -1,0 +1,36 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/battle_modifiers/scripts/client/battle_modifiers/gui/feature/modifiers_data_provider.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: battle_modifiers/scripts/client/battle_modifiers/gui/feature/modifiers_data_provider.py
+from __future__ import absolute_import
+from typing import Tuple, Any, TYPE_CHECKING
+from battle_modifiers_ext.battle_modifiers import BattleModifiers
+from battle_modifiers_ext.constants_ext import GameplayImpact
+if TYPE_CHECKING:
+    from battle_modifiers_ext.battle_modifiers import BattleModifier
+
+class ModifiersDataProvider(object):
+    __slots__ = ('__modifiers', '__domains', '__modifiersByDomain')
+
+    def __init__(self, battleModifiersDescr=()):
+        self.__modifiers = BattleModifiers(battleModifiersDescr)
+        domains = tuple(self._readClientDomain(modifier) for _, modifier in self.__modifiers if not self.isHiddenModifier(modifier))
+        self.__domains = tuple(domain for i, domain in enumerate(domains) if domain not in domains[:i])
+        self.__modifiersByDomain = {domain: tuple(modifier for _, modifier in self.__modifiers if not self.isHiddenModifier(modifier) and self._readClientDomain(modifier) == domain) for domain in self.__domains}
+
+    @classmethod
+    def isHiddenModifier(cls, mod):
+        return mod.gameplayImpact == GameplayImpact.HIDDEN or mod.useType not in mod.param.clientData.useTypes
+
+    def getDomains(self):
+        return self.__domains
+
+    def getDomainModifiers(self, domain):
+        return self.__modifiersByDomain.get(domain, ())
+
+    def getModifiers(self):
+        return self.__modifiers
+
+    def _readClientDomain(self, modifier):
+        return str(modifier.param.clientData.domain)

@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/dialog_prices_content_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from frameworks.wulf import ViewModel as ViewModel
+from gui.impl.gen.view_models.views.value_price import ValuePrice as ValuePrice
+
+class DialogPricesContentModel(ViewModel):
+    __slots__: tuple
+    def __init__(self, properties=4, commands=0):
+        ...
+    @property
+    def valueMain(self):
+        ...
+    @staticmethod
+    def getValueMainType():
+        ...
+    @property
+    def valueAdditional(self):
+        ...
+    @staticmethod
+    def getValueAdditionalType():
+        ...
+    def getTooltipId(self):
+        ...
+    def setTooltipId(self, value):
+        ...
+    def getHasAdditionalCost(self):
+        ...
+    def setHasAdditionalCost(self, value):
+        ...
+    def _initialize(self):
+        ...

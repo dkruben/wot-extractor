@@ -1,0 +1,574 @@
+{
+ "source": "sources/res/halloween/gui/flash/battleVehicleMarkers.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 857487,
+ "actual_length": 857487,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  300.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 67,
+  "ShowFrame": 1508,
+  "DefineShape": 72,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 24,
+  "DefineShape2": 1,
+  "PlaceObject2": 1375,
+  "RemoveObject2": 5,
+  "DefineBitsJPEG3": 4,
+  "DefineBitsLossless2": 45,
+  "DefineEditText": 9,
+  "DefineSprite": 66,
+  "FrameLabel": 121,
+  "FileAttributes": 1,
+  "PlaceObject3": 92,
+  "ImportAssets2": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 73,
+  "shapes": 73,
+  "sprites": 66,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 9,
+  "fonts": 0,
+  "classes": 44,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleMarkersComponents.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 221,
+   "class": "HWVehicleMarkerUI"
+  },
+  {
+   "id": 218,
+   "class": "battleVehicleMarkers_fla.vehicleMarkerHoverMC_6"
+  },
+  {
+   "id": 195,
+   "class": "VehicleIconAnimationUI"
+  },
+  {
+   "id": 193,
+   "class": "FlagContainerUI"
+  },
+  {
+   "id": 192,
+   "class": "HWVehicleActionMarkerUI"
+  },
+  {
+   "id": 191,
+   "class": "HWStatusContainerMarkerUI"
+  },
+  {
+   "id": 190,
+   "class": "VehicleStatusMarkerUI"
+  },
+  {
+   "id": 189,
+   "class": "glowStatusMarkerContainerUI"
+  },
+  {
+   "id": 188,
+   "class": "statusMarkerContainerUI"
+  },
+  {
+   "id": 186,
+   "class": "statusMarkerTimerUI"
+  },
+  {
+   "id": 184,
+   "class": "VehicleRecoverTargetMarkerUI"
+  },
+  {
+   "id": 183,
+   "class": "recoverArrowUI"
+  },
+  {
+   "id": 177,
+   "class": "VehicleInspireTargetMarkerUI"
+  },
+  {
+   "id": 176,
+   "class": "VehicleThunderStrikeMarkerUI"
+  },
+  {
+   "id": 172,
+   "class": "VehicleAdaptationHealthRestoreMarkerUI"
+  },
+  {
+   "id": 171,
+   "class": "battleVehicleMarkers_fla.iconMC_29"
+  },
+  {
+   "id": 166,
+   "class": "VehicleShotPassionMarkerUI"
+  },
+  {
+   "id": 165,
+   "class": "battleVehicleMarkers_fla.iconMC_31"
+  },
+  {
+   "id": 160,
+   "class": "VehicleFireCircleMarkerUI"
+  },
+  {
+   "id": 156,
+   "class": "GlowPulseContainerUI"
+  },
+  {
+   "id": 155,
+   "class": "VehicleBerserkerMarkerUI"
+  },
+  {
+   "id": 154,
+   "class": "berserkerIconUI"
+  },
+  {
+   "id": 153,
+   "class": "battleVehicleMarkers_fla.berserkerIconMc_36"
+  },
+  {
+   "id": 148,
+   "class": "VehicleStunMarkerUI"
+  },
+  {
+   "id": 95,
+   "class": "battleVehicleMarkers_fla.arrowMc_38"
+  },
+  {
+   "id": 88,
+   "class": "VehicleHealMarkerUI"
+  },
+  {
+   "id": 87,
+   "class": "healArrowUI"
+  },
+  {
+   "id": 79,
+   "class": "VehicleInspireMarkerUI"
+  },
+  {
+   "id": 76,
+   "class": "inspireArrowUI"
+  },
+  {
+   "id": 68,
+   "class": "VehicleBaseEngineerMarkerUI"
+  },
+  {
+   "id": 54,
+   "class": "VehicleStealthMarkerUI"
+  },
+  {
+   "id": 48,
+   "class": "VehicleFLRegenerationKitMarkerUI"
+  },
+  {
+   "id": 42,
+   "class": "HWGlowPulseContainerUI"
+  },
+  {
+   "id": 41,
+   "class": "battleVehicleMarkers_fla.glowMc_19"
+  },
+  {
+   "id": 34,
+   "class": "VehicleTargetDesignatorUI"
+  },
+  {
+   "id": 28,
+   "class": "battleVehicleMarkers_fla.arrowMc_53"
+  },
+  {
+   "id": 21,
+   "class": "HWVehicleMarkerMessageUI"
+  },
+  {
+   "id": 18,
+   "class": "HWMessageLabelUI"
+  },
+  {
+   "id": 16,
+   "class": "VehicleMarkerFxContainerUI"
+  },
+  {
+   "id": 15,
+   "class": "contentContainer"
+  },
+  {
+   "id": 14,
+   "class": "HWPhaseTimerUI"
+  },
+  {
+   "id": 13,
+   "class": "HWPhaseTimerContentUI"
+  },
+  {
+   "id": 8,
+   "class": "ActionEventCampUI"
+  },
+  {
+   "id": 4,
+   "class": "ActionEventCollectorUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 9416,
+   "classes": 44,
+   "methods": 198,
+   "bodies": 198,
+   "code_bytes": 3321
+  }
+ ],
+ "classes": [
+  {
+   "name": "HWMessageLabelUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "contentContainer",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ActionEventCampUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ActionEventCollectorUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleVehicleMarkers_fla.arrowMc_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleVehicleMarkers_fla.arrowMc_53",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleVehicleMarkers_fla.berserkerIconMc_36",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleVehicleMarkers_fla.glowMc_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleVehicleMarkers_fla.iconMC_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleVehicleMarkers_fla.iconMC_31",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleVehicleMarkers_fla.vehicleMarkerHoverMC_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FlagContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.FlagContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GlowPulseContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerAssetContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWGlowPulseContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerAssetContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "berserkerIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerAssetContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "glowStatusMarkerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerAssetContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "healArrowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerAssetContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "inspireArrowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerAssetContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "recoverArrowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerAssetContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statusMarkerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerAssetContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWVehicleMarkerMessageUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.vehicleMarkers.HWVehicleMarkerMessage",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleFireCircleMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleAnimatedStatusBaseMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleThunderStrikeMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleAnimatedStatusBaseMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleIconAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.VehicleIconAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleMarkerFxContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.VehicleMarkerFxContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleAdaptationHealthRestoreMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleStatusIconMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleShotPassionMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleStatusIconMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleBaseEngineerMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleEngineerEffectMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleBerserkerMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleBerserkerMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleFLRegenerationKitMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleFLBasicMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleStealthMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleFLBasicMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleInspireTargetMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleInspireTargetMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleRecoverTargetMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleInspireTargetMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleStatusMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleStatusMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleStunMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleStunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleTargetDesignatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleStunMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWPhaseTimerContentUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.vehicleMarkers.components.HWPhaseTimerContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWPhaseTimerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.vehicleMarkers.components.HWPhaseTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWStatusContainerMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.VehicleStatusContainerMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statusMarkerTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.MarkerTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleHealMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleInspireMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleInspireMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.statusMarkers.VehicleInspireMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWVehicleMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.vehicleMarkers.HWVehicleMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWVehicleActionMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.vehicleMarkers.HWVehicleActionMarker",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

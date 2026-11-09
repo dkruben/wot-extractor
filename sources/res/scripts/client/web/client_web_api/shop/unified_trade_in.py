@@ -1,0 +1,40 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/web/client_web_api/shop/unified_trade_in.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/web/client_web_api/shop/unified_trade_in.py
+from __future__ import absolute_import
+from gui.ClientUpdateManager import g_clientUpdateManager
+from gui.Scaleform.framework.entities.EventSystemEntity import EventSystemEntity
+from gui.shared import events
+from helpers import dependency
+from skeletons.gui.game_control import ITradeInController
+from web.client_web_api.api import C2WHandler, c2w
+
+class UnifiedTradeInEventHandler(C2WHandler, EventSystemEntity):
+    __tradeIn = dependency.descriptor(ITradeInController)
+
+    def __init__(self, sender):
+        super(UnifiedTradeInEventHandler, self).__init__(sender)
+        self.tradeInHelper = None
+        return
+
+    def init(self):
+        super(UnifiedTradeInEventHandler, self).init()
+        self.addListener(events.VehicleBuyEvent.VEHICLE_SELECTED, self.__onTradeInDataChanged)
+        g_clientUpdateManager.addCallback('tokens', self.__onTokensUpdate)
+
+    def fini(self):
+        self.removeListener(events.VehicleBuyEvent.VEHICLE_SELECTED, self.__onTradeInDataChanged)
+        g_clientUpdateManager.removeObjectCallbacks(self, True)
+        super(UnifiedTradeInEventHandler, self).fini()
+
+    def __onTokensUpdate(self, diff):
+        config = self.__tradeIn.getConfig()
+        if config is not None and config.allAccessTokenSet.intersection(diff.keys()):
+            self.__onTradeInDataChanged()
+        return
+
+    @c2w(name='unified_trade_in_update')
+    def __onTradeInDataChanged(self, *args, **kwargs):
+        return

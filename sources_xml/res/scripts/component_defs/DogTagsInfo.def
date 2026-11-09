@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/DogTagsInfo.def -->
+<root>
+	<Properties>
+		<usedDogTagsComponents>
+			<Type>ARRAY<of>UINT64</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</usedDogTagsComponents>
+	</Properties>
+	<ofEntity>
+		<ArenaInfo />
+	</ofEntity>
+	<DefaultKeyName>dogTagsInfo</DefaultKeyName>
+</root>

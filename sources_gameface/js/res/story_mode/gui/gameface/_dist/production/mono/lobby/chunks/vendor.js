@@ -1,0 +1,192 @@
+/* wot-extractor: JavaScript FORMATADO a partir de sources/res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/vendor.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
+import{
+  r as e,t
+}
+from"./rolldown-runtime.js";
+import{
+  F as r,I as n,L as o,P as i,nt as a,tt as u
+}
+from"./lib.js";
+var s=t((e,t)=>{
+  !function(){
+    var e={}.hasOwnProperty;
+    function r(){
+      for(var e="",t=0;t<arguments.length;t++){
+        var r=arguments[t];
+        r&&(e=o(e,n(r)))
+      }
+      return e
+    }
+    function n(t){
+      if("string"==typeof t||"number"==typeof t)return t;
+      if("object"!=typeof t)return"";
+      if(Array.isArray(t))return r.apply(null,t);
+      if(t.toString!==Object.prototype.toString&&!t.toString.toString().includes("[native code]"))return t.toString();
+      var n="";
+      for(var i in t)e.call(t,i)&&t[i]&&(n=o(n,i));
+      return n
+    }
+    function o(e,t){
+      return t?e?e+" "+t:e+t:e
+    }
+    void 0!==t&&t.exports?(r.default=r,t.exports=r):"function"==typeof define&&"object"==typeof define.amd&&define.amd?define("classnames",[],function(){
+      return r
+    }):window.classNames=r
+  }()
+}),c=e(a());
+if(!c.useState)throw new Error("mobx-react-lite requires React with Hooks support");
+if(!o)throw new Error("mobx-react-lite@3 requires mobx at least version 6 to be available");
+var l=u();
+function f(e){
+  e()
+}
+function p(e){
+  return n(e)
+}
+var d,b,m=function(){
+  function e(e){
+    var t=this;
+    Object.defineProperty(this,"finalize",{
+      enumerable:!0,configurable:!0,writable:!0,value:e
+    }),Object.defineProperty(this,"registrations",{
+      enumerable:!0,configurable:!0,writable:!0,value:new Map
+    }),Object.defineProperty(this,"sweepTimeout",{
+      enumerable:!0,configurable:!0,writable:!0,value:void 0
+    }),Object.defineProperty(this,"sweep",{
+      enumerable:!0,configurable:!0,writable:!0,value:function(e){
+        void 0===e&&(e=1e4),clearTimeout(t.sweepTimeout),t.sweepTimeout=void 0;
+        var r=Date.now();
+        t.registrations.forEach(function(n,o){
+          r-n.registeredAt>=e&&(t.finalize(n.value),t.registrations.delete(o))
+        }),t.registrations.size>0&&t.scheduleSweep()
+      }
+    }),Object.defineProperty(this,"finalizeAllImmediately",{
+      enumerable:!0,configurable:!0,writable:!0,value:function(){
+        t.sweep(0)
+      }
+    })
+  }
+  return Object.defineProperty(e.prototype,"register",{
+    enumerable:!1,configurable:!0,writable:!0,value:function(e,t,r){
+      this.registrations.set(r,{
+        value:t,registeredAt:Date.now()
+      }),this.scheduleSweep()
+    }
+  }),Object.defineProperty(e.prototype,"unregister",{
+    enumerable:!1,configurable:!0,writable:!0,value:function(e){
+      this.registrations.delete(e)
+    }
+  }),Object.defineProperty(e.prototype,"scheduleSweep",{
+    enumerable:!1,configurable:!0,writable:!0,value:function(){
+      void 0===this.sweepTimeout&&(this.sweepTimeout=setTimeout(this.sweep,1e4))
+    }
+  }),e
+}(),y=new("undefined"!=typeof FinalizationRegistry?FinalizationRegistry:m)(function(e){
+  var t;
+  null===(t=e.reaction)||void 0===t||t.dispose(),e.reaction=null
+}),v=t(e=>{
+  var t=a();
+  var r="function"==typeof Object.is?Object.is:function(e,t){
+    return e===t&&(0!==e||1/e==1/t)||e!=e&&t!=t
+  },
+  n=t.useState,o=t.useEffect,i=t.useLayoutEffect,u=t.useDebugValue;
+  function s(e){
+    var t=e.getSnapshot;
+    e=e.value;
+    try{
+      var n=t();
+      return!r(e,n)
+    }catch(o){
+      return!0
+    }
+  }
+  var c="undefined"==typeof window||void 0===window.document||void 0===window.document.createElement?function(e,t){
+    return t()
+  }:function(e,t){
+    var r=t(),a=n({
+      inst:{
+        value:r,getSnapshot:t
+      }
+    }),c=a[0].inst,l=a[1];
+    return i(function(){
+      c.value=r,c.getSnapshot=t,s(c)&&l({
+        inst:c
+      })
+    },[e,r,t]),o(function(){
+      return s(c)&&l({
+        inst:c
+      }),e(function(){
+        s(c)&&l({
+          inst:c
+        })
+      })
+    },[e]),u(r),r
+  };
+  e.useSyncExternalStore=void 0!==t.useSyncExternalStore?t.useSyncExternalStore:c
+}),w=t((e,t)=>{
+  t.exports=v()
+})();
+function g(e){
+  e.reaction=new i("observer".concat(e.name),function(){
+    var t;
+    e.stateVersion=Symbol(),null===(t=e.onStoreChange)||void 0===t||t.call(e)
+  })
+}
+function h(e,t){
+  void 0===t&&(t="observed");
+  var r=c.useRef(null);
+  if(!r.current){
+    var n={
+      reaction:null,onStoreChange:null,stateVersion:Symbol(),name:t,subscribe:function(e){
+        return y.unregister(n),n.onStoreChange=e,n.reaction||(g(n),n.stateVersion=Symbol()),function(){
+          var e;
+          n.onStoreChange=null,null===(e=n.reaction)||void 0===e||e.dispose(),n.reaction=null
+        }
+      },
+      getSnapshot:function(){
+        return n.stateVersion
+      }
+    };
+    r.current=n
+  }
+  var o,i,a=r.current;
+  if(a.reaction||(g(a),y.register(r,a,a)),c.useDebugValue(a.reaction,p),(0,w.useSyncExternalStore)(a.subscribe,a.getSnapshot,a.getSnapshot),a.reaction.track(function(){
+    try{
+      o=e()
+    }catch(t){
+      i=t
+    }
+  }),i)throw i;
+  return o
+}
+var S="function"==typeof Symbol&&Symbol.for,j=null!==(b=null===(d=Object.getOwnPropertyDescriptor(function(){},"name"))||void 0===d?void 0:d.configurable)&&void 0!==b&&b,O=S?Symbol.for("react.forward_ref"):"function"==typeof c.forwardRef&&(0,c.forwardRef)(function(e){
+  return null
+}).$$typeof,x=S?Symbol.for("react.memo"):"function"==typeof c.memo&&(0,c.memo)(function(e){
+  return null
+}).$$typeof;
+function P(e,t){
+  var r;
+  if(x&&e.$$typeof===x)throw new Error("[mobx-react-lite] You are trying to use `observer` on a function component wrapped in either another `observer` or `React.memo`. The observer already applies 'React.memo' for you.");
+  var n=null!==(r=null==t?void 0:t.forwardRef)&&void 0!==r&&r,o=e,i=e.displayName||e.name;
+  if(O&&e.$$typeof===O&&(n=!0,"function"!=typeof(o=e.render)))throw new Error("[mobx-react-lite] `render` property of ForwardRef was not a function");
+  var a,u,s=function(e,t){
+    return h(function(){
+      return o(e,t)
+    },i)
+  };
+  return s.displayName=e.displayName,j&&Object.defineProperty(s,"name",{
+    value:e.name,writable:!0,configurable:!0
+  }),e.contextTypes&&(s.contextTypes=e.contextTypes),n&&(s=(0,c.forwardRef)(s)),s=(0,c.memo)(s),a=e,u=s,Object.keys(a).forEach(function(e){
+    T[e]||Object.defineProperty(u,e,Object.getOwnPropertyDescriptor(a,e))
+  }),s
+}
+var E,R,T={
+  $$typeof:!0,render:!0,compare:!0,type:!0,displayName:!0
+};
+(R=l.unstable_batchedUpdates)||(R=f),r({
+  reactionScheduler:R
+});
+E=y.finalizeAllImmediately;
+export{
+  s as n,P as t
+};

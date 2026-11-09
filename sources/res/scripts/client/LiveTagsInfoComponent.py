@@ -1,0 +1,20 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/LiveTagsInfoComponent.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/LiveTagsInfoComponent.py
+from __future__ import absolute_import
+import logging
+from Event import Event
+from script_component.DynamicScriptComponent import DynamicScriptComponent
+_logger = logging.getLogger(__name__)
+
+class LiveTagsInfoComponent(DynamicScriptComponent):
+
+    def __init__(self):
+        super(LiveTagsInfoComponent, self).__init__()
+        self.onStateUpdate = Event()
+
+    def set_liveTags(self, _):
+        _logger.debug('[COMMS][LiveTag] Arena.TeamInfo.set_liveTags: %s', self.liveTags)
+        self.onStateUpdate()

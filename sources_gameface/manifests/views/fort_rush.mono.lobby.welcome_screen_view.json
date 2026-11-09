@@ -1,0 +1,73 @@
+{
+  "rid": "R.views.fort_rush.mono.lobby.welcome_screen_view",
+  "rid_source": "sources/res/fort_rush/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "welcome_screen_view",
+  "dir": "fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view",
+  "feature": "fort_rush",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view/bundle.js",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view/bundle.js"
+    },
+    {
+      "name": "welcome_screen_view.css",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view/welcome_screen_view.css",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view/welcome_screen_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "welcome_screen_view.html",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view/welcome_screen_view.html",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view/welcome_screen_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view/bundle.js",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view/bundle.js"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view/welcome_screen_view.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/welcome_screen_view/welcome_screen_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose",
+    "onVideoPlay",
+    "onViewLoaded"
+  ],
+  "link": {
+    "rid": "R.views.fort_rush.mono.lobby.welcome_screen_view",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.fort_rush.mono.lobby.welcome_screen_view no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/fort_rush_welcome_screen.py",
+        20
+      ]
+    ],
+    "python_files": [
+      "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/fort_rush_welcome_screen.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

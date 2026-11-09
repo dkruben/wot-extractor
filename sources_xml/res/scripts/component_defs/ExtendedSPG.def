@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/ExtendedSPG.def -->
+<root>
+	<Properties />
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+	<DefaultKeyName>extendedSPG</DefaultKeyName>
+</root>

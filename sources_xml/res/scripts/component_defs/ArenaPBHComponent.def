@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/ArenaPBHComponent.def -->
+<root>
+	<BaseMethods />
+	<CellMethods>
+		<setupArena>
+			<Args>
+				<config>PYTHON</config>
+			</Args>
+		</setupArena>
+	</CellMethods>
+	<ClientMethods />
+	<Properties />
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+	<DefaultKeyName>pbh</DefaultKeyName>
+</root>

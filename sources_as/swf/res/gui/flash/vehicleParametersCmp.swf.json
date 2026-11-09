@@ -1,0 +1,214 @@
+{
+ "source": "sources/res/gui/flash/vehicleParametersCmp.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 26532,
+ "actual_length": 26532,
+ "frame_size_px": [
+  0.0,
+  800.0,
+  0.0,
+  600.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 16,
+  "ShowFrame": 177,
+  "DefineShape": 7,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 2,
+  "DefineShape2": 2,
+  "PlaceObject2": 105,
+  "RemoveObject2": 2,
+  "DefineBitsLossless2": 5,
+  "DefineEditText": 4,
+  "DefineSprite": 15,
+  "FrameLabel": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 16,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 7,
+  "shapes": 9,
+  "sprites": 15,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 12,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 35,
+   "class": "VehParamRendererUI"
+  },
+  {
+   "id": 32,
+   "class": "VehParamRendererWithHighlightUI"
+  },
+  {
+   "id": 31,
+   "class": "vehicleParametersCmp_fla.VehParamGlowUI_5"
+  },
+  {
+   "id": 30,
+   "class": "vehicleParametersCmp_fla.VehParamGlowGreen_8"
+  },
+  {
+   "id": 26,
+   "class": "vehicleParametersCmp_fla.VehParamGlowRed_6"
+  },
+  {
+   "id": 14,
+   "class": "VehicleParametersUI"
+  },
+  {
+   "id": 13,
+   "class": "VehicleParametersWithHighlightUI"
+  },
+  {
+   "id": 9,
+   "class": "VehParamsListUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5261,
+   "classes": 12,
+   "methods": 56,
+   "bodies": 56,
+   "code_bytes": 1515
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Quadratic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Regular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleParametersCmp_fla.VehParamGlowGreen_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleParametersCmp_fla.VehParamGlowRed_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleParametersCmp_fla.VehParamGlowUI_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehParamsListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollingListEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehParamRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.vehicleParameters.components.VehParamRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehParamRendererWithHighlightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.vehicleParameters.components.VehParamRendererWithHighlight",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleParametersUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.VehicleParameters",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleParametersWithHighlightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.VehicleParametersWithHighlight",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

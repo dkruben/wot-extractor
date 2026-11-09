@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/item_defs/vehicles/sweden/components/chassis.xml -->
+<root>
+	<ids>
+		<Chassis_S27_UDES_16_2_LS_BOT>6556</Chassis_S27_UDES_16_2_LS_BOT>
+		<Chassis_S29_UDES_14_5_2_LS_BOT>6557</Chassis_S29_UDES_14_5_2_LS_BOT>
+	</ids>
+	<shared />
+</root>

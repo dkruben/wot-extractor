@@ -1,0 +1,162 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/battle_results/pbs_helpers/economics.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/battle_results/pbs_helpers/economics.py
+from collections import namedtuple
+import typing
+from helpers import dependency
+from shared_utils import first
+from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as _CAPS
+from gui.battle_results.pbs_helpers.additional_bonuses import isGoldPiggyBankAvailaible
+from skeletons.gui.game_control import IWotPlusController
+if typing.TYPE_CHECKING:
+    from gui.battle_results.reusable import _ReusableInfo
+    from gui.battle_results.stats_ctrl import BattleResults
+FinancialRecordValues = namedtuple('FinancialRecordValues', ('baseAccountValue', 'premiumAccountValue',
+                                                             'additionalValue', 'extraValue',
+                                                             'baseAccountValueWithWotPlus',
+                                                             'premiumAccountValueWithWotPlus'))
+
+def getTotalCrystalsToShow(reusable):
+    record = first(reusable.personal.getCrystalRecords())
+    if record:
+        _, crystals = record[:2]
+        return crystals.getRecord('crystal')
+    return 0
+
+
+def getTotalXPToShow(reusable):
+    hasPremium = reusable.personal.hasAnyPremium
+    xpRecords = getDirectXpRecords(reusable)
+    if hasPremium:
+        return xpRecords.premiumAccountValue.getRecord('xpToShow')
+    return xpRecords.baseAccountValue.getRecord('xpToShow')
+
+
+def getTotalFreeXPToShow(reusable):
+    hasPremium = reusable.personal.hasAnyPremium
+    freeXpRecords = getDirectFreeXpRecords(reusable)
+    if hasPremium:
+        return freeXpRecords.premiumAccountValue.getRecord('freeXP')
+    return freeXpRecords.baseAccountValue.getRecord('freeXP')
+
+
+def getCreditsToShow(reusable, isDiffShow=False):
+    values = []
+    for creditRecords in reusable.personal.getMoneyRecords():
+        baseCredits, premiumCredits = creditRecords[:2]
+        value = premiumCredits.getRecord('credits', 'originalCreditsToDraw')
+        if isDiffShow and value > 0:
+            value -= baseCredits.getRecord('credits', 'originalCreditsToDraw')
+        values.append(value)
+
+    return values
+
+
+def getTotalCreditsToShow(reusable):
+    hasPremium = reusable.personal.hasAnyPremium
+    moneyRecords = getDirectMoneyRecords(reusable)
+    if hasPremium:
+        return moneyRecords.premiumAccountValue.getRecord('credits', 'originalCreditsToDraw')
+    return moneyRecords.baseAccountValue.getRecord('credits', 'originalCreditsToDraw')
+
+
+def getDirectMoneyRecords(reusable):
+    personalResults = reusable.personal
+    base, premium, gold, additional, baseWithWotPlus, premiumWithWotPlus = first(personalResults.getMoneyRecords())
+    return FinancialRecordValues(baseAccountValue=base, premiumAccountValue=premium, additionalValue=additional, extraValue=gold, baseAccountValueWithWotPlus=baseWithWotPlus, premiumAccountValueWithWotPlus=premiumWithWotPlus)
+
+
+def getDirectXpRecords(reusable):
+    personalResults = reusable.personal
+    baseXP, premiumXP, _, _, baseXPWithWotPlus, premiumXPWithWotPlus, _, _ = first(personalResults.getXPRecords())
+    return FinancialRecordValues(baseAccountValue=baseXP, premiumAccountValue=premiumXP, additionalValue=None, extraValue=None, baseAccountValueWithWotPlus=baseXPWithWotPlus, premiumAccountValueWithWotPlus=premiumXPWithWotPlus)
+
+
+def getDirectFreeXpRecords(reusable):
+    personalResults = reusable.personal
+    _, _, baseFreeXP, premiumFreeXP, _, _, baseFreeXPWithWotPlus, premiumFreeXPWithWotPlus = first(personalResults.getXPRecords())
+    return FinancialRecordValues(baseAccountValue=baseFreeXP, premiumAccountValue=premiumFreeXP, additionalValue=None, extraValue=None, baseAccountValueWithWotPlus=baseFreeXPWithWotPlus, premiumAccountValueWithWotPlus=premiumFreeXPWithWotPlus)
+
+
+def hasAogasFine(battleResults):
+    factor = 'aogasFactor10'
+    xpRecords = getDirectXpRecords(battleResults.reusable)
+    moneyRecords = getDirectMoneyRecords(battleResults.reusable)
+    if battleResults.reusable.personal.hasAnyPremium:
+        return ('hasAogasFine',
+         moneyRecords.premiumAccountValue.getFactor(factor) < 1 or xpRecords.premiumAccountValue.getFactor(factor) < 1)
+    return (
+     'hasAogasFine',
+     moneyRecords.baseAccountValue.getFactor(factor) < 1 or xpRecords.baseAccountValue.getFactor(factor) < 1)
+
+
+def hasHighScope(battleResults):
+    personalResults = battleResults.reusable.personal
+    baseXP, _, _, _, _, _, _, _ = first(personalResults.getXPRecords())
+    if baseXP:
+        return ('isHighScope', baseXP.getRecord('isHighScope'))
+    return (
+     'isHighScope', False)
+
+
+def hasXpReferralFactor(battleResults):
+    personalResults = battleResults.reusable.personal
+    baseXP, _, _, _, _, _, _, _ = first(personalResults.getXPRecords())
+    if baseXP:
+        referralFactor = baseXP.getFactor('referral20XPFactor100')
+        if referralFactor > 0 and baseXP.getRecord('referral20XPFactor100'):
+            return ('referralFactor', referralFactor)
+    return ('referralFactor', 0)
+
+
+def hasCreditsReferralFactor(battleResults):
+    personalResults = battleResults.reusable.personal
+    baseCredits, _, _, _, _, _ = first(personalResults.getMoneyRecords())
+    referralFactor = 0
+    if baseCredits:
+        referralFactor = baseCredits.getFactor('referral20CreditsFactor100')
+    return (
+     'referralFactor', max(referralFactor, 0))
+
+
+def isPiggyBankCreditsAvailable(battleResults):
+    isAvailable = battleResults.reusable.common.checkBonusCaps(_CAPS.PIGGY_BANK_CREDITS)
+    return ('isAvailable', isAvailable)
+
+
+def isPiggyBankGoldAvailable(battleResults):
+    isAvailable = isGoldPiggyBankAvailaible(battleResults.reusable)
+    return ('isAvailable', isAvailable)
+
+
+def isCreditsAvailable(battleResults):
+    isAvailable = battleResults.reusable.common.checkBonusCaps(_CAPS.CREDITS)
+    return ('isAvailable', isAvailable)
+
+
+def isXpAvailable(battleResults):
+    isAvailable = battleResults.reusable.common.checkBonusCaps(_CAPS.XP)
+    return ('isAvailable', isAvailable)
+
+
+def isFreeXpAvailable(battleResults):
+    isAvailable = battleResults.reusable.common.checkBonusCaps(_CAPS.FREE_XP)
+    return ('isAvailable', isAvailable)
+
+
+@dependency.replace_none_kwargs(wotPlusCtrl=IWotPlusController)
+def isWotPlusBonusEnabled(_, wotPlusCtrl=None):
+    isWotPlusBattleBonusesEnabled = wotPlusCtrl.getSettingsStorage().isBattleBonusesEnabled()
+    return ('isEnabled', isWotPlusBattleBonusesEnabled)
+
+
+def hasCreditsPetFactor(battleResults):
+    personalResults = battleResults.reusable.personal
+    baseCredits, _, _, _, _, _ = first(personalResults.getMoneyRecords())
+    petBonusFactor = 0
+    if baseCredits:
+        petBonusFactor = baseCredits.getFactor('petSystemCreditsFactor100')
+    return (
+     'bonusFactor', max(int(petBonusFactor * 100), 0))

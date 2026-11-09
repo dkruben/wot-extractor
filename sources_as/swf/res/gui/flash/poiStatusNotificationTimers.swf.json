@@ -1,0 +1,451 @@
+{
+ "source": "sources/res/gui/flash/poiStatusNotificationTimers.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 275436,
+ "actual_length": 275436,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 28,
+  "ShowFrame": 931,
+  "DefineShape": 496,
+  "DefineBits": 1,
+  "JPEGTables": 1,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 1136,
+  "RemoveObject2": 579,
+  "DefineBitsJPEG3": 5,
+  "DefineBitsLossless2": 20,
+  "DefineEditText": 8,
+  "DefineSprite": 27,
+  "FrameLabel": 24,
+  "FileAttributes": 1,
+  "PlaceObject3": 9,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 27,
+  "shapes": 496,
+  "sprites": 27,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 8,
+  "fonts": 0,
+  "classes": 33,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 558,
+   "class": "DestroyTimerContainerHighlightedUI"
+  },
+  {
+   "id": 556,
+   "class": "poiStatusNotificationTimersImports"
+  },
+  {
+   "id": 555,
+   "class": "poiSecondaryTimerUI"
+  },
+  {
+   "id": 554,
+   "class": "SecondaryTimerFXContainerUI"
+  },
+  {
+   "id": 553,
+   "class": "poiStatusNotificationTimers_fla.multipleHitFX_14"
+  },
+  {
+   "id": 552,
+   "class": "poiStatusNotificationTimers_fla.explosionFX_11"
+  },
+  {
+   "id": 545,
+   "class": "SecondaryTimerContainerUI"
+  },
+  {
+   "id": 540,
+   "class": "timerProgressBarGreen"
+  },
+  {
+   "id": 353,
+   "class": "timerProgressBarOrange"
+  },
+  {
+   "id": 168,
+   "class": "poiMainTimerUI"
+  },
+  {
+   "id": 167,
+   "class": "DestroyTimerContainerUI"
+  },
+  {
+   "id": 165,
+   "class": "barGreen"
+  },
+  {
+   "id": 160,
+   "class": "IconSwitcherUI"
+  },
+  {
+   "id": 159,
+   "class": "poiStatusNotificationTimers_fla.criticalHighlight_9"
+  },
+  {
+   "id": 154,
+   "class": "bar"
+  },
+  {
+   "id": 29,
+   "class": "poiStatusNotificationTimers_fla.highlightContainer_3"
+  },
+  {
+   "id": 20,
+   "class": "TimerDescUI"
+  },
+  {
+   "id": 15,
+   "class": "poiTimerUI"
+  },
+  {
+   "id": 14,
+   "class": "PoIGreenArtilleryIconUI"
+  },
+  {
+   "id": 13,
+   "class": "PoIGreenArtillerySmallIconUI"
+  },
+  {
+   "id": 12,
+   "class": "PoIGreenIlluminationFlareIconUI"
+  },
+  {
+   "id": 11,
+   "class": "PoIGreenIlluminationFlareSmallIconUI"
+  },
+  {
+   "id": 10,
+   "class": "PoIGreenReconIconUI"
+  },
+  {
+   "id": 9,
+   "class": "PoIGreenReconSmallIconUI"
+  },
+  {
+   "id": 8,
+   "class": "PoIOrangeArtilleryIconUI"
+  },
+  {
+   "id": 7,
+   "class": "PoIOrangeArtillerySmallIconUI"
+  },
+  {
+   "id": 6,
+   "class": "PoIOrangeCrossIconUI"
+  },
+  {
+   "id": 5,
+   "class": "PoIOrangeCrossSmallIconUI"
+  },
+  {
+   "id": 4,
+   "class": "PoIOrangeIlluminationFlareIconUI"
+  },
+  {
+   "id": 3,
+   "class": "PoIOrangeIlluminationFlareSmallIconUI"
+  },
+  {
+   "id": 2,
+   "class": "PoIOrangeReconIconUI"
+  },
+  {
+   "id": 1,
+   "class": "PoIOrangeReconSmallIconUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 6277,
+   "classes": 33,
+   "methods": 131,
+   "bodies": 131,
+   "code_bytes": 1860
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIGreenArtilleryIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIGreenArtillerySmallIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIGreenIlluminationFlareIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIGreenIlluminationFlareSmallIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIGreenReconIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIGreenReconSmallIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIOrangeArtilleryIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIOrangeArtillerySmallIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIOrangeCrossIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIOrangeCrossSmallIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIOrangeIlluminationFlareIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIOrangeIlluminationFlareSmallIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIOrangeReconIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoIOrangeReconSmallIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconSwitcherUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TimerDescUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiStatusNotificationTimersImports",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiStatusNotificationTimers_fla.criticalHighlight_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiStatusNotificationTimers_fla.explosionFX_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiStatusNotificationTimers_fla.highlightContainer_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiStatusNotificationTimers_fla.multipleHitFX_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DestroyTimerContainerHighlightedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.TimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DestroyTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.TimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SecondaryTimerFXContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.secondaryTimerFx.SecondaryTimerFXContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bar",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "barGreen",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerProgressBarGreen",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerProgressBarOrange",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SecondaryTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.SecondaryTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.PoiTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiMainTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.PoiMainTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiSecondaryTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.PoiSecondaryTimer",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

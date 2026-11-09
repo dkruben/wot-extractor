@@ -1,0 +1,265 @@
+{
+ "source": "sources/res/fort_rush/gui/flash/playersPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 33221,
+ "actual_length": 33221,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 18,
+  "ShowFrame": 291,
+  "DefineShape": 162,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 294,
+  "RemoveObject2": 181,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 8,
+  "DefineEditText": 10,
+  "DefineSprite": 17,
+  "FrameLabel": 23,
+  "FileAttributes": 1,
+  "PlaceObject3": 52,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 10,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 8,
+  "shapes": 164,
+  "sprites": 17,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 10,
+  "fonts": 0,
+  "classes": 16,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 199,
+   "class": "PlayersPanelListItemLeftUI"
+  },
+  {
+   "id": 198,
+   "class": "DynamicSquadLeftUI"
+  },
+  {
+   "id": 193,
+   "class": "PlayersPanelListItemRightUI"
+  },
+  {
+   "id": 192,
+   "class": "DynamicSquadRightUI"
+  },
+  {
+   "id": 191,
+   "class": "SquadAcceptBtUI"
+  },
+  {
+   "id": 186,
+   "class": "SquadAddBtUI"
+  },
+  {
+   "id": 181,
+   "class": "hitItem"
+  },
+  {
+   "id": 175,
+   "class": "playersPanel_fla.captureCircleAnimationProgressUI_9"
+  },
+  {
+   "id": 15,
+   "class": "FortRushPlayersPanelUI"
+  },
+  {
+   "id": 14,
+   "class": "PlayersPanelSwitchUI"
+  },
+  {
+   "id": 13,
+   "class": "PlayersPanelSwitchButtonUI"
+  },
+  {
+   "id": 6,
+   "class": "PlayerPanelListLeftUI"
+  },
+  {
+   "id": 5,
+   "class": "InviteReceivedIndicatorLeftUI"
+  },
+  {
+   "id": 3,
+   "class": "PlayerPanelListRightUI"
+  },
+  {
+   "id": 2,
+   "class": "InviteReceivedIndicatorRightUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4892,
+   "classes": 16,
+   "methods": 78,
+   "bodies": 78,
+   "code_bytes": 1386
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hitItem",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InviteReceivedIndicatorLeftUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.InviteReceivedIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InviteReceivedIndicatorRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.InviteReceivedIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "playersPanel_fla.captureCircleAnimationProgressUI_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DynamicSquadLeftUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.PlayersPanelDynamicSquad",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DynamicSquadRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.PlayersPanelDynamicSquad",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SquadAcceptBtUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.buttons.BattleButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SquadAddBtUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.buttons.BattleButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerPanelListLeftUI",
+   "kind": "class",
+   "extends": "net.wg.fort_rush.gui.battle.views.stats.components.playersPanel.list.FortRushPlayersPanelListLeft",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerPanelListRightUI",
+   "kind": "class",
+   "extends": "net.wg.fort_rush.gui.battle.views.stats.components.playersPanel.list.FortRushPlayersPanelListRight",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayersPanelSwitchUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.panelSwitch.PlayersPanelSwitch",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayersPanelSwitchButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.panelSwitch.PlayersPanelSwitchButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayersPanelListItemLeftUI",
+   "kind": "class",
+   "extends": "net.wg.fort_rush.gui.battle.views.stats.components.playersPanel.list.FortRushPlayersPanelListItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayersPanelListItemRightUI",
+   "kind": "class",
+   "extends": "net.wg.fort_rush.gui.battle.views.stats.components.playersPanel.list.FortRushPlayersPanelListItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FortRushPlayersPanelUI",
+   "kind": "class",
+   "extends": "net.wg.fort_rush.gui.battle.views.stats.components.playersPanel.FortRushPlayersPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

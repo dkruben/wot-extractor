@@ -1,0 +1,109 @@
+{
+  "rid": "R.views.battle_royale.mono.lobby.tooltips.leaderboard_reward_tooltip_view",
+  "rid_source": "sources/res/battle_royale/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "leaderboard_reward_tooltip_view",
+  "dir": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/leaderboard_reward_tooltip_view",
+  "feature": "battle_royale",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/leaderboard_reward_tooltip_view/bundle.js",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/leaderboard_reward_tooltip_view/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "leaderboard_reward_tooltip_view.css",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.css",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "leaderboard_reward_tooltip_view.html",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.html",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/table.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/table.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/leaderboard_reward_tooltip_view/bundle.js",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/leaderboard_reward_tooltip_view/bundle.js"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle_royale.mono.lobby.tooltips.leaderboard_reward_tooltip_view",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.battle_royale.mono.lobby.tooltips.leaderboard_reward_tooltip_view no Python",
+      "ViewModel LeaderboardRewardTooltipModel (model=... no Python da view): 2/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/leaderboard_reward_tooltip_view.py",
+        20
+      ],
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/progression_main_view.py",
+        54
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/leaderboard_reward_tooltip_view.py",
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/progression_main_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/gen/view_models/views/lobby/tooltips/leaderboard_reward_tooltip_model.py",
+      "class": "LeaderboardRewardTooltipModel",
+      "chain": [
+        "LeaderboardRewardTooltipModel"
+      ],
+      "properties": [
+        [
+          "battleTypes",
+          "Array"
+        ],
+        [
+          "battleModes",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 2,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/gen/view_models/views/lobby/views/progression/progression_main_view_model.py"
+      ]
+    }
+  }
+}

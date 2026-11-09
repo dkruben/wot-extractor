@@ -1,0 +1,98 @@
+{
+  "rid": "R.views.mono.vehicle_hub.main",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "main",
+  "dir": "gui/gameface/_dist/production/mono/vehicle_hub/main",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/vehicle_hub/main/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/vehicle_hub/main/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/vehicle_hub/main/bundle.js"
+    },
+    {
+      "name": "main.css",
+      "effective": "res/gui/gameface/_dist/production/mono/vehicle_hub/main/main.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/vehicle_hub/main/main.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "main.html",
+      "effective": "res/gui/gameface/_dist/production/mono/vehicle_hub/main/main.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/vehicle_hub/main/main.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/vehicle_hub/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/vehicle_hub/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/vehicle_hub/chunks/veh_skill_tree.css",
+      "key": "res/gui/gameface/_dist/production/mono/vehicle_hub/chunks/veh_skill_tree.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/vehicle_hub/main/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/vehicle_hub/main/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/vehicle_hub/main/main.css",
+      "key": "res/gui/gameface/_dist/production/mono/vehicle_hub/main/main.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onAction",
+    "onAddToComparison",
+    "onAttackerClicked",
+    "onAttackerGunItemClick",
+    "onAttackerShellItemClick",
+    "onBlueprint",
+    "onBuyAndInstallItem",
+    "onCurrencyAction",
+    "onDragModule",
+    "onDragStateChanged",
+    "onGunItemClick",
+    "onInstallItem",
+    "onModeChanged",
+    "onMouseOver3dScene",
+    "onMoveSpace",
+    "onResize",
+    "onSellItem",
+    "onTurretItemClick",
+    "onUnlockItem",
+    "onVehicleChange",
+    "onVehiclePostProgression",
+    "onWatchMechanicsVideo",
+    "researchPurchaseModel.onAction",
+    "researchPurchaseModel.onBlueprint"
+  ],
+  "link": {
+    "rid": "R.views.mono.vehicle_hub.main",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.mono.vehicle_hub.main no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/vehicle_hub/vehicle_hub_main_view.py",
+        113
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/vehicle_hub/vehicle_hub_main_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

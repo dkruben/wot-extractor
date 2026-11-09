@@ -1,0 +1,108 @@
+{
+  "rid": "R.views.battle_royale.mono.lobby.tooltips.banner",
+  "rid_source": "sources/res/battle_royale/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "banner",
+  "dir": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner",
+  "feature": "battle_royale",
+  "files": [
+    {
+      "name": "banner.css",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner/banner.css",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner/banner.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "banner.html",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner/banner.html",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner/banner.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner/bundle.js",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner/banner.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner/banner.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner/bundle.js",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/banner/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle_royale.mono.lobby.tooltips.banner",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.battle_royale.mono.lobby.tooltips.banner no Python",
+      "ViewModel BannerTooltipViewModel (model=... no Python da view): 2/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/banner_tooltip_view.py",
+        23
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/banner_tooltip_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/gen/view_models/views/lobby/tooltips/banner_tooltip_view_model.py",
+      "class": "BannerTooltipViewModel",
+      "chain": [
+        "BannerTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "eventInfo",
+          "ViewModel"
+        ],
+        [
+          "time",
+          "Number"
+        ],
+        [
+          "modeState",
+          "String"
+        ],
+        [
+          "performanceRisk",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 4,
+        "missing": [
+          "modeState",
+          "time"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

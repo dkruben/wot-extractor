@@ -1,0 +1,120 @@
+{
+  "rid": "R.views.halloween.mono.lobby.award_congrats_screen",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "award_congrats_screen",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "award_congrats_screen.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen/award_congrats_screen.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen/award_congrats_screen.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "award_congrats_screen.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen/award_congrats_screen.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen/award_congrats_screen.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen/award_congrats_screen.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen/award_congrats_screen.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/award_congrats_screen/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.award_congrats_screen",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.halloween.mono.lobby.award_congrats_screen no Python",
+      "ViewModel AwardCongratsViewModel (model=... no Python da view): 3/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/award_congrats_view.py",
+        22
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/shared/event_dispatcher.py",
+        171
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/award_congrats_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/award_congrats_view_model.py",
+      "class": "AwardCongratsViewModel",
+      "chain": [
+        "AwardCongratsViewModel"
+      ],
+      "properties": [
+        [
+          "title",
+          "String"
+        ],
+        [
+          "isCommunityVoted",
+          "Bool"
+        ],
+        [
+          "bonuses",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClose"
+      ],
+      "coverage": {
+        "found": 3,
+        "total": 4,
+        "missing": [
+          "isCommunityVoted"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

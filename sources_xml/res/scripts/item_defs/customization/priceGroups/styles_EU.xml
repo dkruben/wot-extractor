@@ -1,0 +1,19 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/item_defs/customization/priceGroups/styles_EU.xml -->
+<root>
+	<priceGroup>
+		<id>72</id>
+		<name>styles 1200g EU</name>
+		<tags>styles EU</tags>
+		<price>1200<gold />
+		</price>
+		<notInShop>False</notInShop>
+	</priceGroup>
+	<priceGroup>
+		<id>98</id>
+		<name>styles 1750g EU notInShop</name>
+		<tags>styles EU</tags>
+		<price>1750<gold />
+		</price>
+		<notInShop>False</notInShop>
+	</priceGroup>
+</root>

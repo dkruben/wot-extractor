@@ -1,0 +1,381 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/arena_defs/209_wg_epic_suburbia.xml -->
+<root>
+	<name>#arenas:209_wg_epic_suburbia/name</name>
+	<description>#arenas:209_wg_epic_suburbia/description</description>
+	<geometry>spaces/209_wg_epic_suburbia</geometry>
+	<runDelay>30</runDelay>
+	<explicitRequestOnly>true</explicitRequestOnly>
+	<boundingBox>
+		<bottomLeft>-1500 -1500</bottomLeft>
+		<upperRight>1500 1500</upperRight>
+	</boundingBox>
+	<roundLength>720</roundLength>
+	<minimap>spaces/209_wg_epic_suburbia/mmap.dds</minimap>
+	<overviewmap>spaces/209_wg_epic_suburbia/ovmap.dds</overviewmap>
+	<vehicleCamouflageKind>winter</vehicleCamouflageKind>
+	<maxPlayersInTeam>30</maxPlayersInTeam>
+	<wwambientSound>ambient_wind_winter_02</wwambientSound>
+	<wwmusicSetup>
+		<wwmusicLoading>music_epic_suburbia_loading_screen</wwmusicLoading>
+		<wwmusicIntensive>music_epic_suburbia_dron_battle</wwmusicIntensive>
+		<wwmusicRelaxed>music_epic_suburbia_dron_battle</wwmusicRelaxed>
+		<wwmusicStop>music_dron_stop</wwmusicStop>
+		<wwmusicEndbattleStop>music_dron_endbattle_stop</wwmusicEndbattleStop>
+		<wwmusicResultWin>music_epic_suburbia_result_win</wwmusicResultWin>
+		<wwmusicResultDrawn>music_epic_suburbia_result_win</wwmusicResultDrawn>
+		<wwmusicResultDefeat>music_epic_suburbia_result_defeat</wwmusicResultDefeat>
+	</wwmusicSetup>
+	<wwmusicDroneSetup>
+		<timeRemained>
+			<value>120</value>
+		</timeRemained>
+		<capturedPoints>
+			<value>20</value>
+		</capturedPoints>
+		<musicStopPredelay>
+			<value>10</value>
+		</musicStopPredelay>
+		<epicRespawnView>
+			<value>1</value>
+		</epicRespawnView>
+		<epicMainObjectivesTotalHealth>
+			<value>50</value>
+		</epicMainObjectivesTotalHealth>
+		<epicMainObjectivesNumDestroyed>
+			<value>2</value>
+		</epicMainObjectivesNumDestroyed>
+		<epicZoneTransition>
+			<value>1</value>
+		</epicZoneTransition>
+	</wwmusicDroneSetup>
+	<soundRemapping>
+		<loadBanks>
+			<bank>
+				<name>epic_battle.bnk</name>
+			</bank>
+			<bank>
+				<name>epic_battle_voiceover.bnk</name>
+			</bank>
+			<bank>
+				<name>env_Mountain.bnk</name>
+			</bank>
+		</loadBanks>
+	</soundRemapping>
+	<umbraEnabled>1</umbraEnabled>
+	<batchingEnabled>0</batchingEnabled>
+	<water>
+		<texScale>0</texScale>
+		<freqX>0</freqX>
+		<freqZ>0</freqZ>
+	</water>
+	<estimatedLoad>0.75</estimatedLoad>
+	<gameplayTypes>
+		<epic>
+			<epicSectorGrid>
+				<owningTeam>2</owningTeam>
+				<mainDirection>+Z</mainDirection>
+				<bordersZ>
+					<border>-1500.5</border>
+					<border>-500</border>
+					<border>500</border>
+					<border>1500.5</border>
+				</bordersZ>
+				<bordersX>
+					<border>-1500.5</border>
+					<border>-500</border>
+					<border>500</border>
+					<border>1500.5</border>
+				</bordersX>
+			</epicSectorGrid>
+			<winnerIfTimeout>2</winnerIfTimeout>
+			<playerGroupLimit>13</playerGroupLimit>
+			<numPlayerGroups>3</numPlayerGroups>
+			<numDestructiblesToDestroyForWin>3</numDestructiblesToDestroyForWin>
+			<recon>
+				<flyDirections>
+					<flyDirection>
+						<team>1</team>
+						<direction>0 0 1</direction>
+					</flyDirection>
+					<flyDirection>
+						<team>2</team>
+						<direction>0 0 -1</direction>
+					</flyDirection>
+				</flyDirections>
+			</recon>
+			<frontLinesGeometry>
+				<front>
+					<playerGroup>1</playerGroup>
+					<direction>0 1</direction>
+					<boundingBox>
+						<bottomLeft>-1500.5 -1500.5</bottomLeft>
+						<upperRight>-500 1500.5</upperRight>
+					</boundingBox>
+				</front>
+				<front>
+					<playerGroup>2</playerGroup>
+					<direction>0 1</direction>
+					<boundingBox>
+						<bottomLeft>-500 -1500.5</bottomLeft>
+						<upperRight>500 1500.5</upperRight>
+					</boundingBox>
+				</front>
+				<front>
+					<playerGroup>3</playerGroup>
+					<direction>0 1</direction>
+					<boundingBox>
+						<bottomLeft>500 -1500.5</bottomLeft>
+						<upperRight>1500.5 1500.5</upperRight>
+					</boundingBox>
+				</front>
+			</frontLinesGeometry>
+			<visualScript>
+				<server>
+					<plan>flsectorbase</plan>
+				</server>
+			</visualScript>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>64.28923 11.987654 549.41315</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>5.931115 27.175219 -554.9259</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>131.05804 14.075397 449.41406</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>270.95856 13.240841 541.56866</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>237.59239 20.506178 -550.5915</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>248.83571 14.302162 -450.57428</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>462.88892 13.709862 449.41403</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>554.4781 14.043694 549.4299</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>744.7652 23.521109 -550.58594</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>703.03314 28.123835 -450.62384</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>852.18097 18.301394 444.57657</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>828.20795 17.926428 549.387</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>982.0192 23.963648 -550.58594</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>962.8039 27.876749 -449.2921</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>1097.5948 14.288004 549.41327</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>1118.0345 20.995495 449.34445</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>1198.6921 15.662933 -539.8243</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>1160.4006 15.972855 -450.58582</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>1335.7651 15.573694 449.41406</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>1383.5011 18.499544 549.4135</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>1341.304 24.973356 -550.58594</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>1335.7817 25.493536 -450.58585</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>-1321.3169 22.666958 -550.5652</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-1293.6042 17.50196 -450.62097</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>-1108.8911 15.44591 448.3024</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-1093.7826 13.571459 548.3407</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>-1016.9337 16.67007 -550.586</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-1021.3297 10.665012 -450.58585</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>-871.99884 13.266678 449.32712</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-866.8814 13.273745 549.41364</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-835.3271 13.703703 -450.5858</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>-734.37854 13.942364 449.4687</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>-775.8773 24.143728 -550.58594</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-671.9888 12.051441 549.41364</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-579.955 18.835089 -450.5436</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>-354.8653 11.623732 449.41403</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>-372.714 17.399864 -561.51526</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-273.71716 11.921915 552.288</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>-202.48871 16.953697 -561.51526</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-285.78168 19.654442 -450.41602</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>1</team>
+				<position>-194.74138 11.744648 449.41403</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-123.75121 11.92375 549.41315</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-121.27688 15.05374 -450.41595</position>
+			</sectorWayPoint>
+			<sectorWayPoint>
+				<team>2</team>
+				<position>-26.501938 16.632586 -455.13275</position>
+			</sectorWayPoint>
+			<epicSectorSettings>
+				<defenderMotivationFactors>0.875 0.5625 0.375</defenderMotivationFactors>
+			</epicSectorSettings>
+		</epic>
+	</gameplayTypes>
+	<roadMap />
+	<mapActivities />
+	<modules>
+		<common>
+			<module>BW::CgfCameraModule</module>
+			<module>BW::CollisionSceneModule</module>
+			<module>cgf::network::ClientNetworkModule</module>
+			<module>BW::CompoundModule</module>
+			<module>cgf::network::NetworkModule</module>
+			<module>vehicle::hierarchy::EntityHelpersModule</module>
+			<module>vehicle::hierarchy::VehicleHierarchyModule</module>
+			<module>BW::EffectsDebugModule</module>
+			<module>BW::ControlPointModule</module>
+			<module>BW::EntityFiltersModule</module>
+			<module>BW::EffectHandlersModule</module>
+			<module>BW::EffectsModule</module>
+			<module>BW::ArmorFlashlight::ArmorFlashlightModule</module>
+			<module>BW::VisibilityTunnelModule</module>
+			<module>BW::input::InputModule</module>
+			<module>BW::RompModule</module>
+			<module>cgf::events::EventsModule</module>
+			<module>cgf::FoundationModule</module>
+			<module>cgf::TriggersModule</module>
+			<module>BW::ConstraintsModule</module>
+			<module>BW::CGF::GenericComponentsModule</module>
+			<module>BW::tags::TagsModule</module>
+			<module>BW::variables::VariablesModule</module>
+			<module>vehicle::hierarchy::HierarchyModule</module>
+			<module>BW::DebugSoundRenderModule</module>
+			<module>cgf_debug_render::Module</module>
+			<module>BW::VisualScriptModule</module>
+			<module>BW::GameLogicModule</module>
+			<module>BW::SoundModule</module>
+			<module>BW::SoundSpatialModule</module>
+			<module>wot_physics::Module</module>
+			<module>BW::GpuDecalsModule</module>
+			<module>BW::WotRenderModule</module>
+			<module>BW::WULF::Module</module>
+			<module>BW::VehicleBasicModule</module>
+			<module>BW::VehicleCommonModule</module>
+			<module>BW::VehicleDrivetrainModule</module>
+			<module>BW::VehicleAudioModule</module>
+			<module>BW::VehicleTracksModule</module>
+			<module>BW::VehicleGunModule</module>
+			<module>script::AfterburningModule</module>
+			<module>script::ClientCommonModule</module>
+			<module>script::ClientUiModule</module>
+			<module>script::VehicleAppearanceModule</module>
+			<module>BW::SpaceZonesModule</module>
+			<module>script::AfterburningModule</module>
+			<module>script::CommonServerModule</module>
+			<module>script::VehicleRuleModule</module>
+			<module>script::ClientKillCamModule</module>
+			<module>script::ClientAbilitiesModule</module>
+			<module>script::RamDebugModule</module>
+			<module>script::VehicleSystemsModule</module>
+			<module>script::CommonScriptsModule</module>
+			<module>BW::ServerModule</module>
+			<module>BW::VehicleStatusesModule</module>
+			<module>BW::VehicleTriggersModule</module>
+			<module>BW::CGF::CGFBWCompatibilityModule</module>
+		</common>
+	</modules>
+</root>

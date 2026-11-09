@@ -1,0 +1,107 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/common/visual_script/vehicle_blocks.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/common/visual_script/vehicle_blocks.py
+from __future__ import absolute_import
+import typing
+from constants import NULL_ENTITY_ID
+from visual_script.block import Block, Meta, InitParam
+from visual_script.misc import errorVScript, ASPECT, EDITOR_TYPE
+from visual_script.slot_types import SLOT_TYPE
+from vehicle_filters import getVehicleFilters
+
+class VehicleMeta(Meta):
+
+    @classmethod
+    def blockColor(cls):
+        return 16738047
+
+    @classmethod
+    def blockCategory(cls):
+        return 'Vehicle'
+
+    @classmethod
+    def blockIcon(cls):
+        return ':vse/blocks/tank'
+
+
+class VehicleEventsMeta(Meta):
+
+    @classmethod
+    def blockColor(cls):
+        return 16738047
+
+    @classmethod
+    def blockCategory(cls):
+        return 'Vehicle'
+
+    @classmethod
+    def blockIcon(cls):
+        return ':vse/blocks/arena_event'
+
+
+class GetVehicleId(Block, VehicleMeta):
+
+    def __init__(self, *args, **kwargs):
+        super(GetVehicleId, self).__init__(*args, **kwargs)
+        self._vehicle = self._makeDataInputSlot('vehicle', SLOT_TYPE.VEHICLE)
+        self._res = self._makeDataOutputSlot('id', SLOT_TYPE.INT, self._exec)
+
+    def _exec(self):
+        vehicle = self._vehicle.getValue()
+        try:
+            self._res.setValue(vehicle.id)
+        except (AttributeError, ReferenceError):
+            errorVScript(self, 'Dead weakref')
+            self._res.setValue(NULL_ENTITY_ID)
+
+
+class GetVehicleOutfitId(Block, VehicleMeta):
+
+    def __init__(self, *args, **kwargs):
+        super(GetVehicleOutfitId, self).__init__(*args, **kwargs)
+        self._vehicle = self._makeDataInputSlot('vehicle', SLOT_TYPE.VEHICLE)
+        self._id = self._makeDataOutputSlot('id', SLOT_TYPE.INT, self._getData)
+
+    def _getData(self, *args, **kwargs):
+        vehicle = self._vehicle.getValue()
+        outfit = vehicle.cp['outfit']
+        self._id.setValue(outfit.styleId)
+
+
+class GetVehicleOutfitLevel(Block, VehicleMeta):
+
+    def __init__(self, *args, **kwargs):
+        super(GetVehicleOutfitLevel, self).__init__(*args, **kwargs)
+        self._vehicle = self._makeDataInputSlot('vehicle', SLOT_TYPE.VEHICLE)
+        self._level = self._makeDataOutputSlot('level', SLOT_TYPE.INT, self._getLevel)
+
+    def _getLevel(self):
+        vehicle = self._vehicle.getValue()
+        level = vehicle.publicInfo['outfitLevel']
+        self._level.setValue(level)
+
+
+class GetVehicleFilterName(Block, VehicleMeta):
+
+    def __init__(self, *args, **kwargs):
+        super(GetVehicleFilterName, self).__init__(*args, **kwargs)
+        self._filterName, = self._getInitParams()
+        nameSlot = self._makeDataOutputSlot('name', SLOT_TYPE.STR, None)
+        nameSlot.setValue(self._filterName)
+        return
+
+    @classmethod
+    def initParams(cls):
+        filterNames = getVehicleFilters().getFilterNames()
+        default = filterNames[0] if filterNames else ''
+        return [InitParam('Filter name', SLOT_TYPE.STR, default, EDITOR_TYPE.ENUM_SELECTOR, filterNames)]
+
+    @classmethod
+    def blockAspects(cls):
+        return [
+         ASPECT.CLIENT, ASPECT.SERVER]
+
+    def captionText(self):
+        return ('Vehicle filter: {}').format(self._filterName)

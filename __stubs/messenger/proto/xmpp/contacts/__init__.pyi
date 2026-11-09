@@ -1,0 +1,186 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/messenger/proto/xmpp/contacts/__init__.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from PlayerEvents import g_playerEvents as g_playerEvents
+from constants import IS_IGR_ENABLED as IS_IGR_ENABLED, ARENA_GUI_TYPE as ARENA_GUI_TYPE, ARENA_GUI_TYPE_LABEL as ARENA_GUI_TYPE_LABEL
+from helpers import dependency as dependency
+from messenger import g_settings as g_settings
+from messenger.m_constants import PROTO_TYPE as PROTO_TYPE, USER_ACTION_ID as USER_ACTION_ID, CLIENT_ERROR_ID as CLIENT_ERROR_ID, USER_TAG as USER_TAG, CLIENT_ACTION_ID as CLIENT_ACTION_ID, MESSENGER_SCOPE as MESSENGER_SCOPE
+from messenger.proto import notations as notations
+from messenger.proto.events import g_messengerEvents as g_messengerEvents
+from messenger.proto.shared_errors import ChatCoolDownError as ChatCoolDownError, ClientActionError as ClientActionError, ClientError as ClientError
+from messenger.proto.shared_find_criteria import ProtoFindCriteria as ProtoFindCriteria
+from messenger.proto.xmpp import entities as entities
+from messenger.proto.xmpp.XmppCooldownManager import XmppCooldownManager as XmppCooldownManager
+from messenger.proto.xmpp.contacts import block_tasks as block_tasks, roster_tasks as roster_tasks, sub_tasks as sub_tasks, note_tasks as note_tasks, sub_helper as sub_helper
+from messenger.proto.xmpp.contacts.tasks import ContactTaskQueue as ContactTaskQueue, SeqTaskQueue as SeqTaskQueue
+from messenger.proto.xmpp.decorators import xmpp_query as xmpp_query, QUERY_SIGN as QUERY_SIGN, local_query as local_query
+from messenger.proto.xmpp.errors import ClientContactError as ClientContactError, ClientIntLimitError as ClientIntLimitError
+from messenger.proto.xmpp.extensions.shared_queries import PresenceQuery as PresenceQuery
+from messenger.proto.xmpp.find_criteria import ItemsFindCriteria as ItemsFindCriteria, GroupFindCriteria as GroupFindCriteria, RqFriendshipCriteria as RqFriendshipCriteria, MutedOnlyFindCriteria as MutedOnlyFindCriteria
+from messenger.proto.xmpp.gloox_constants import SUBSCRIPTION as _SUB, GLOOX_EVENT as _EVENT, PRESENCE as PRESENCE, DISCONNECT_REASON as DISCONNECT_REASON
+from messenger.proto.xmpp.gloox_wrapper import ClientEventsHandler as ClientEventsHandler, ClientHolder as ClientHolder
+from messenger.proto.xmpp.jid import makeContactJID as makeContactJID, ContactJID as ContactJID
+from messenger.proto.xmpp.log_output import g_logOutput as g_logOutput, CLIENT_LOG_AREA as _LOG
+from messenger.proto.xmpp.xmpp_constants import XMPP_ITEM_TYPE as XMPP_ITEM_TYPE, CONTACT_LIMIT as CONTACT_LIMIT, CONTACT_ERROR_ID as CONTACT_ERROR_ID, LIMIT_ERROR_ID as LIMIT_ERROR_ID
+from messenger.storage import MessengerStorageDescriptor as MessengerStorageDescriptor, PlayerCtxStorage as PlayerCtxStorage, UsersStorage as UsersStorage
+from predefined_hosts import g_preDefinedHosts as g_preDefinedHosts
+from skeletons.connection_mgr import IConnectionManager as IConnectionManager
+from skeletons.gui.battle_session import IBattleSessionProvider as IBattleSessionProvider
+from skeletons.gui.game_control import IIGRController as IIGRController
+_MAX_TRIES_FAILED_IN_LOBBY = 2
+_MAX_TRIES_FAILED_IN_BATTLE = 1
+
+class _UserPresence(ClientHolder):
+    __slots__: tuple
+    igrCtrl: Any
+    sessionProvider: Any
+    connectionMgr: Any
+    __scope: Any
+    def __init__(self):
+        ...
+    def getUserScope(self):
+        ...
+    def switch(self, scope=None):
+        ...
+    def sendPresence(self, initial=False):
+        ...
+    def addListeners(self):
+        ...
+    def removeListeners(self):
+        ...
+    def __createQuery(self, presence):
+        ...
+    def __onIGRTypeChanged(self, igrID, _):
+        ...
+
+class VoipHandler(object):
+    usersStorage: Any
+    playerCtx: Any
+    def addListeners(self):
+        ...
+    def removeListeners(self):
+        ...
+    def __voip_onChannelEntered(self, uri, isTestChannel, isRejoin):
+        ...
+    def __voip_onChannelLeft(self, _, wasTest):
+        ...
+
+class ContactsManager(ClientEventsHandler):
+    usersStorage: Any
+    playerCtx: Any
+    __slots__: tuple
+    __seq: Any
+    __tasks: Any
+    __cooldown: Any
+    __subsBatch: Any
+    __subsRestrictions: Any
+    __presence: Any
+    __voip: Any
+    def __init__(self):
+        ...
+    def isInited(self):
+        ...
+    def clear(self):
+        ...
+    def switch(self, scope):
+        ...
+    # decorador original: @notations.contacts(...)
+    def registerHandlers(self):
+        ...
+    # decorador original: @notations.contacts(...)
+    def unregisterHandlers(self):
+        ...
+    # decorador original: @xmpp_query(...)
+    def addFriend(self, dbID, name, group=None, shadowMode=False):
+        ...
+    # decorador original: @xmpp_query(...)
+    def removeFriend(self, dbID, shadowMode=False):
+        ...
+    # decorador original: @xmpp_query(...)
+    def moveFriendToGroup(self, dbID, include=None, exclude=None):
+        ...
+    # decorador original: @xmpp_query(...)
+    def addGroup(self, name):
+        ...
+    # decorador original: @xmpp_query(...)
+    def renameGroup(self, oldName, newName):
+        ...
+    # decorador original: @xmpp_query(...)
+    def removeGroup(self, name, isForced=False):
+        ...
+    # decorador original: @xmpp_query(...)
+    def requestFriendship(self, dbID):
+        ...
+    def canApproveFriendship(self, contact):
+        ...
+    def canCancelFriendship(self, contact):
+        ...
+    # decorador original: @xmpp_query(...)
+    def approveFriendship(self, dbID):
+        ...
+    # decorador original: @xmpp_query(...)
+    def cancelFriendship(self, dbID):
+        ...
+    def getFriendshipRqs(self):
+        ...
+    # decorador original: @xmpp_query(...)
+    def addIgnored(self, dbID, name, shadowMode):
+        ...
+    # decorador original: @xmpp_query(...)
+    def removeIgnored(self, dbID, shadowMode):
+        ...
+    # decorador original: @local_query(...)
+    def setMuted(self, dbID, name):
+        ...
+    # decorador original: @local_query(...)
+    def unsetMuted(self, dbID):
+        ...
+    # decorador original: @xmpp_query(...)
+    def setNote(self, dbID, note):
+        ...
+    # decorador original: @xmpp_query(...)
+    def removeNote(self, dbID):
+        ...
+    def getUserScope(self):
+        ...
+    def _checkCooldown(self, actionID):
+        ...
+    def _processCooldown(self, actionID):
+        ...
+    def __makeChangeGroupsChain(self, exclude, include=None):
+        ...
+    def __makeRemoveItemsByGroupChain(self, name):
+        ...
+    def __addTasks(self, actionID, jid, shadowMode, *tasks):
+        ...
+    def __handleConnected(self):
+        ...
+    def __handleDisconnected(self, reason, description):
+        ...
+    def __handleIQ(self, iqID, iqType, pyGlooxTag):
+        ...
+    def __handleRosterQuery(self, iqID, jid, context):
+        ...
+    def __handleRosterResult(self, generator):
+        ...
+    def __handleRosterItemSet(self, jid, name, groups, sub, clanInfo):
+        ...
+    def __handleRosterItemRemoved(self, jid):
+        ...
+    def __handlePresence(self, jid, resource):
+        ...
+    def __handleSubscriptionRequest(self, subs):
+        ...
+    def __onSeqsInited(self):
+        ...
+    def __onSeqTaskRequested(self, task):
+        ...
+    def __me_onPluginConnectFailed(self, protoType, _, tries):
+        ...
+    def __us_onRestoredFromCache(self, stateGenerator):
+        ...
+    def __ms_onUserPreferencesUpdated(self):
+        ...

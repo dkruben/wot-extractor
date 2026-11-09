@@ -1,0 +1,114 @@
+{
+  "rid": "R.views.battle_royale.mono.lobby.battle_quest_awards_view",
+  "rid_source": "sources/res/battle_royale/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "battle_quest_awards_view",
+  "dir": "battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view",
+  "feature": "battle_royale",
+  "files": [
+    {
+      "name": "battle_quest_awards_view.css",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.css",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "battle_quest_awards_view.html",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.html",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/bundle.js",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/bundle.js",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/bundle.js"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onApprove",
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.battle_royale.mono.lobby.battle_quest_awards_view",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.battle_royale.mono.lobby.battle_quest_awards_view no Python",
+      "ViewModel BattleQuestAwardsModel (model=... no Python da view): 4/6 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/battle_quest_awards_view.py",
+        34
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/battle_quest_awards_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/gen/view_models/views/lobby/views/battle_quest_awards_model.py",
+      "class": "BattleQuestAwardsModel",
+      "chain": [
+        "BattleQuestAwardsModel"
+      ],
+      "properties": [
+        [
+          "eventInfo",
+          "ViewModel"
+        ],
+        [
+          "battleStatus",
+          "String"
+        ],
+        [
+          "level",
+          "Number"
+        ],
+        [
+          "rewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onApprove",
+        "onClose"
+      ],
+      "coverage": {
+        "found": 4,
+        "total": 6,
+        "missing": [
+          "battleStatus",
+          "level"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+ "source": "sources/res/fort_rush/gui/flash/fortRushDamageLogPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 15842,
+ "actual_length": 15842,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 8,
+  "ShowFrame": 62,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 75,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 8,
+  "DefineSprite": 7,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 8,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 7,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 8,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 19,
+   "class": "LogRendererUI"
+  },
+  {
+   "id": 15,
+   "class": "FortRushBattleDamageLogPanelUI"
+  },
+  {
+   "id": 14,
+   "class": "fortRushDamageLogPanel_fla.SummaryAnimationFortRushBgUI_6"
+  },
+  {
+   "id": 10,
+   "class": "fortRushDamageLogPanel_fla.SummaryAnimationDamageUI_4"
+  },
+  {
+   "id": 1,
+   "class": "DefaultSummaryImagesUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1619,
+   "classes": 5,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 312
+  }
+ ],
+ "classes": [
+  {
+   "name": "DefaultSummaryImagesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.battleDamagePanel.components.DefaultSummaryImages",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortRushDamageLogPanel_fla.SummaryAnimationDamageUI_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortRushDamageLogPanel_fla.SummaryAnimationFortRushBgUI_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LogRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.battleDamagePanel.components.DamageLogRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FortRushBattleDamageLogPanelUI",
+   "kind": "class",
+   "extends": "net.wg.fort_rush.gui.battle.fortRushDamagePanel.FortRushBattleDamageLogPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

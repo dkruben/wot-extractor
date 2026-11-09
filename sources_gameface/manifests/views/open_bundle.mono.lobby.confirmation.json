@@ -1,0 +1,116 @@
+{
+  "rid": "R.views.open_bundle.mono.lobby.confirmation",
+  "rid_source": "sources/res/open_bundle/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "confirmation",
+  "dir": "open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation",
+  "feature": "open_bundle",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation/bundle.js",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation/bundle.js"
+    },
+    {
+      "name": "confirmation.css",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation/confirmation.css",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation/confirmation.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "confirmation.html",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation/confirmation.html",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation/confirmation.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/base.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/base.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation/bundle.js",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation/bundle.js"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation/confirmation.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/confirmation/confirmation.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "cancel",
+    "confirm"
+  ],
+  "link": {
+    "rid": "R.views.open_bundle.mono.lobby.confirmation",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.open_bundle.mono.lobby.confirmation no Python",
+      "ViewModel ConfirmationModel (model=... no Python da view): 6/6 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/confirmation_view.py",
+        25
+      ],
+      [
+        "sources/res/open_bundle/scripts/client/open_bundle/gui/shared/event_dispatcher.py",
+        25
+      ]
+    ],
+    "python_files": [
+      "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/confirmation_view.py",
+      "sources/res/open_bundle/scripts/client/open_bundle/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/gen/view_models/views/lobby/confirmation_model.py",
+      "class": "ConfirmationModel",
+      "chain": [
+        "ConfirmationModel"
+      ],
+      "properties": [
+        [
+          "price",
+          "ViewModel"
+        ],
+        [
+          "bundleType",
+          "String"
+        ],
+        [
+          "balance",
+          "Array"
+        ],
+        [
+          "isWalletAvailable",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "confirm",
+        "cancel"
+      ],
+      "coverage": {
+        "found": 6,
+        "total": 6,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

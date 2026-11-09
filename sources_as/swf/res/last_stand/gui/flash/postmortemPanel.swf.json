@@ -1,0 +1,189 @@
+{
+ "source": "sources/res/last_stand/gui/flash/postmortemPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 30037,
+ "actual_length": 30037,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 12,
+  "ShowFrame": 157,
+  "DefineShape": 149,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 166,
+  "RemoveObject2": 1,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 5,
+  "DefineEditText": 12,
+  "DefineSprite": 11,
+  "FileAttributes": 1,
+  "PlaceObject3": 10,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 11,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 6,
+  "shapes": 150,
+  "sprites": 11,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 12,
+  "fonts": 0,
+  "classes": 9,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 179,
+   "class": "UserNameFieldUI"
+  },
+  {
+   "id": 177,
+   "class": "LSPostmortemPanelUI"
+  },
+  {
+   "id": 176,
+   "class": "PostmortemTimerUI"
+  },
+  {
+   "id": 175,
+   "class": "PostmortemTimerContainerUI"
+  },
+  {
+   "id": 174,
+   "class": "postmortemPanel_fla.iconSwitcher_5"
+  },
+  {
+   "id": 168,
+   "class": "LSBarCircleUI"
+  },
+  {
+   "id": 167,
+   "class": "postmortemPanel_fla.bar_2"
+  },
+  {
+   "id": 18,
+   "class": "LSVehiclePanelUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3179,
+   "classes": 9,
+   "methods": 33,
+   "bodies": 33,
+   "code_bytes": 736
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "postmortemPanel_fla.bar_2",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "postmortemPanel_fla.iconSwitcher_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSBarCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSVehiclePanelUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.postmortemPanel.LSVehiclePanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PostmortemTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.postmortemPanel.LSPostmortemTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PostmortemTimerUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.postmortemPanel.LSPostmortemTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UserNameFieldUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UserNameField",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSPostmortemPanelUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.postmortemPanel.LSPostmortemPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

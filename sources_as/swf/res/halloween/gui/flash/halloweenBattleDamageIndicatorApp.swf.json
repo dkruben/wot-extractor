@@ -1,0 +1,2411 @@
+{
+ "source": "sources/res/halloween/gui/flash/halloweenBattleDamageIndicatorApp.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 11,
+ "declared_length": 161159,
+ "actual_length": 161159,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  375.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": true,
+ "tags": {
+  "End": 14,
+  "ShowFrame": 433,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 413,
+  "DefineEditText": 2,
+  "DefineSprite": 13,
+  "ProductInfo": 1,
+  "FrameLabel": 3,
+  "ExportAssets": 1,
+  "ScriptLimits": 1,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "Metadata": 1,
+  "DoABC2": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 13,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 271,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [
+  {
+   "id": 15,
+   "name": "DamageIndicatorUI"
+  },
+  {
+   "id": 10,
+   "name": "ExtendedStateContainerUI"
+  },
+  {
+   "id": 3,
+   "name": "DamageUI"
+  },
+  {
+   "id": 12,
+   "name": "DefaultStateContainerUI"
+  },
+  {
+   "id": 13,
+   "name": "StandardAnimationUI"
+  },
+  {
+   "id": 5,
+   "name": "TankIconContainerUI"
+  },
+  {
+   "id": 9,
+   "name": "damageIndicator_fla.offsetContainer_5"
+  },
+  {
+   "id": 14,
+   "name": "DamageIndicatorItemUI"
+  },
+  {
+   "id": 11,
+   "name": "ExtendedAnimationUI"
+  },
+  {
+   "id": 7,
+   "name": "ItemWithRotationUI"
+  }
+ ],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 10,
+   "class": "ExtendedStateContainerUI"
+  },
+  {
+   "id": 3,
+   "class": "DamageUI"
+  },
+  {
+   "id": 12,
+   "class": "DefaultStateContainerUI"
+  },
+  {
+   "id": 13,
+   "class": "StandardAnimationUI"
+  },
+  {
+   "id": 9,
+   "class": "damageIndicator_fla.offsetContainer_5"
+  },
+  {
+   "id": 5,
+   "class": "TankIconContainerUI"
+  },
+  {
+   "id": 15,
+   "class": "DamageIndicatorUI"
+  },
+  {
+   "id": 14,
+   "class": "DamageIndicatorItemUI"
+  },
+  {
+   "id": 11,
+   "class": "ExtendedAnimationUI"
+  },
+  {
+   "id": 7,
+   "class": "ItemWithRotationUI"
+  },
+  {
+   "id": 0,
+   "class": "net.wg.halloween.app.impl.HalloweenBattleDamageIndicatorApp"
+  }
+ ],
+ "abc": [
+  {
+   "name": "frame1",
+   "lazy": true,
+   "size": 154156,
+   "classes": 271,
+   "methods": 3030,
+   "bodies": 1970,
+   "code_bytes": 36866
+  }
+ ],
+ "classes": [
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IDisposable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.app.iml.base.BaseRootApp",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.halloween.app.impl.HalloweenBattleDamageIndicatorApp",
+   "kind": "class",
+   "extends": "net.wg.app.iml.base.BaseRootApp",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IDisplayable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IDisplayObject",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IDisplayable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IRootAppMainContent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisplayObject",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.impl.ClassManagerBattleDamageIndicatorMeta",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.halloween.infrastructure.base.meta.impl.ClassManagerExtensionBattleDamageIndicatorMeta",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.DamageIndicator",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IRootAppMainContent"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.halloween.gui.components.damageIndicator.HWDamageIndicator",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.DamageIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DamageIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.components.damageIndicator.HWDamageIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.DamageIndicatorStandardSetting",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.DamageIndicatorExtendedSetting",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.DamageIndicatorStandardSetting",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.ItemWithRotation",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.DamageIndicatorItem",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.StandardStateContainer",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.AnimationContainer",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.ExtendedStateContainer",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.StandardStateContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.constants.Values",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.constants.generated.ATLAS_CONSTANTS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.utils.RootSWFAtlasManager",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "AtlasItemData",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "private": true,
+   "abc": 0
+  },
+  {
+   "name": "net.wg.halloween.gui.battle.views.damageIndicator.HWStateContainer",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.ExtendedStateContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ExtendedStateContainerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.damageIndicator.HWStateContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DamageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.ItemWithRotation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DefaultStateContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.StandardStateContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StandardAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.AnimationContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankIconContainerUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "damageIndicator_fla.offsetContainer_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DamageIndicatorItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.DamageIndicatorItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ExtendedAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.AnimationContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ItemWithRotationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.ItemWithRotation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "App",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IColorSchemeManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IColorSchemeManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IColorSchemeManagerMeta",
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.constants.generated.DAMAGEINDICATOR",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.events.AtlasEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.gfx.DisplayObjectEx",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.gfx.InteractiveObjectEx",
+   "kind": "class",
+   "extends": "scaleform.gfx.DisplayObjectEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.gfx.TextFieldEx",
+   "kind": "class",
+   "extends": "scaleform.gfx.InteractiveObjectEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IAtlas",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.containers.Atlas",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IAtlas"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IAtlasItemVO",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.halloween.data.constants.generated.HW_DAMAGE_SOURCE_TYPES",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CoreApp",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IStageSizeManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IEventLogManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IEventLogManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventLogManagerMeta"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.ISoundManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ISoundManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ISoundManagerMeta"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.gfx.Extensions",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IUtilsManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IUtils",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUtilsManagerMeta",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IVoiceChatManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IVoiceChatManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IVoiceChatManagerMeta"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.app.ICoreApplication",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IApplicationMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.app.IApplication",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IApplicationMeta",
+    "ICoreApplication"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockApplication",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IApplication"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.ICursorManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ICursorManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ICursorManagerMeta"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IEnvironmentManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.ITutorialManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ITutorialManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ITutorialManagerMeta"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IContextMenuManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IContextMenuManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IContextMenuManagerMeta",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IPopoverManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IImageManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IImageManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IImageManagerMeta",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IGraphicsOptimizationManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IAtlasManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.constants.LobbyMetrics",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.ICacheManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ICacheManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ICacheManagerMeta"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IGameInputManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IGameInputManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IGameInputManagerMeta"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "DebugUtils",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ISharedLayoutManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IUILoggerManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IUILoggerManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUILoggerManagerMeta"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.wulf.IChildViewProxy",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IContainerManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IChildViewProxy"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.ITextManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IInteractiveObject",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisplayObject"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IDisplayObjectContainer",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IInteractiveObject"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ISprite",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisplayObjectContainer"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IMovieClip",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ISprite"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IIdentifiable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.interfaces.IUIComponent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IMovieClip",
+    "IDisposable",
+    "IIdentifiable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IUIComponentEx",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponent"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IWaitingViewMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IManagedContent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponentEx"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IBaseDAAPIModuleMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IDAAPIEntity",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IDAAPIModule",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IBaseDAAPIModuleMeta",
+    "IDAAPIEntity"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITutorialView",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisplayObjectContainer",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IView",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDAAPIModule",
+    "IManagedContent",
+    "IUIComponentEx",
+    "ITutorialView"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IWaitingView",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IWaitingViewMeta",
+    "IUIComponentEx",
+    "IView"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IGlobalVarsMgrMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.ITweenManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ITooltipMgr",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IColorScheme",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.VO.AtlasItemVO",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IAtlasItemVO"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.constants.Errors",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.StageBreakPoint",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IStageSizeDependComponent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.ISoundable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IStrCaseProperties",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IImageUrlProperties",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IVOManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITweenHandler",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.ITweenAnimator",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ITweenHandler",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IIME",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.pool.IPoolManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IScheduler",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IFocusHandler",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IUniversalBtnStyles",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IViewRestrictions",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IDataUtils",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IStyleSheetManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IIcons",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IDateTime",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.INations",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.ICounterManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.ICommons",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IClassFactory",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.ILocale",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IAnimBuilder",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IPopUpManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IAssertable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.helpLayout.IHelpLayout",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.ISerializable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IElementBlurAdapter",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.ILoaderManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "lesta.unbound2.proxy.base.UbProxy",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "lesta.unbound2.proxy.UbPlayerProxy",
+   "kind": "class",
+   "extends": "lesta.unbound2.proxy.base.UbProxy",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IStats",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ILoaderManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ILoaderManagerMeta",
+    "IStats"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IGlobalVarsManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IGlobalVarsMgrMeta"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockVoiceChatManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IVoiceChatManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockImageManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IImageManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockCursorManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ICursorManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockCacheManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ICacheManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockContextMenuManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IContextMenuManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockWaitingView",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IWaitingView"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockTweenManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITweenManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockPopoverManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IPopoverManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockColorSchemeManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IColorSchemeManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockGlobalVarsManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IGlobalVarsManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockSharedLayoutManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ISharedLayoutManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockTextManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITextManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockSoundManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ISoundManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockContainerManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IContainerManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockTooltipMgr",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITooltipMgr"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockGameInputManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IGameInputManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockLoaderManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ILoaderManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockEnvironmentManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IEnvironmentManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockUtils",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IUtils"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IDragDropHitArea",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITutorialCustomComponent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IDAAPIDataClass",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IDAAPIEntity"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.daapi.base.DAAPIDataClass",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IDAAPIDataClass"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.TutorialBuilderVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.events.TutorialEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IClosePopoverCallback",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IPopOverCaller",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IImageData",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IGraphicsOptimizationComponent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ILayoutPart",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IFocusContainer",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.wulf.IViewWrapper",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ITutorialView",
+    "IFocusContainer"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ISimpleManagedContainer",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponentEx"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.events.InputEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.core.UIComponent",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IUIComponent"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.daapi.LoadViewVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IAbstractTweenMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITween",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IAbstractTweenMeta",
+    "IDAAPIModule"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ITweenManagerHelper",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ISimpleTweenPropertiesVO",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITweenPropertiesVO",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ISimpleTweenPropertiesVO"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ITooltipFormatter",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.ICloneable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.managers.ITooltipProps",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ICloneable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.managers.IToolTipParams",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IGlobalVO",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IWalletStatusVO",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IGlobalVO"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITweenAnimatorHandler",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.pool.IPool",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IReusable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.pool.IPoolItem",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IReusable",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.ui.InputDetails",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IUniversalBtn",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponentEx"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.daapi.ViewRestrictionVO",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "org.idmedia.as3commons.util.Map",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.ICounterProps",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.utils.Padding",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.constants.KeyProps",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IUserProps",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IFormattedInt",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.animation.ITweenConstruction",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ITweenHandler",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITweenConstructionHandler",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.helpLayout.PopupLayoutVO",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.helpLayout.IHelpLayoutComponent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "lesta.unbound2.proxy.base.UbProxyEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "lesta.unbound2.type_system.UbNumber",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "lesta.unbound2.UbBackgroundPainter",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "lesta.unbound2.UBPopoverCallerWrapper",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IPopOverCaller"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "lesta.unbound2.proxy.UbElementProxy",
+   "kind": "class",
+   "extends": "lesta.unbound2.proxy.base.UbProxy",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.constants.ImageCacheTypes",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockStyleSheetManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IStyleSheetManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockViewRestrictions",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IViewRestrictions"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockNations",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "INations"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockClassFactory",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IClassFactory"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockJSON",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ISerializable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockTweenAnimator",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITweenAnimator"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockCommons",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ICommons"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockDateTime",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDateTime"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockAssertable",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IAssertable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockFocusHandler",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IFocusHandler"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockVOManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IVOManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockHelpLayout",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IHelpLayout"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockScheduler",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IScheduler"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockDataUtils",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDataUtils"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockLocale",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ILocale"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockPopUpManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IPopUpManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.MockCounterManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ICounterManager"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockAnimBuilder",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IAnimBuilder"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockIcons",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IIcons"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.mock.utils.MockIME",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IIME"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "kind": "class",
+   "extends": "Error",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.DAAPIBindException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IImage",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ISprite",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.wulf.IBaseContainerWrapper",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponentEx",
+    "IView"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.events.LifeCycleEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.events.ComponentEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.gfx.MouseEventEx",
+   "kind": "class",
+   "extends": "flash.events.MouseEvent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.AssertionException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.utils.Constraints",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.InfrastructureException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.constants.InvalidationType",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.LifecycleException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.core.CLIK",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.gfx.FocusManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.layout.LayoutData",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.daapi.ViewSettingsVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.IUniversalBtnStyledDisplayObjects",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "org.idmedia.as3commons.util.Collection",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "org.idmedia.as3commons.util.Set",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "Collection"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.helpLayout.HelpLayoutVO",
+   "kind": "class",
+   "extends": "net.wg.utils.helpLayout.PopupLayoutVO",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "lesta.unbound2.type_system.UbUnits",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "lesta.managers.windows.BitmapManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BitmapWrapper",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "private": true,
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.TypeCastException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.InvalidComponentCastException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.TypeCastException",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.ArgumentException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.constants.ConstrainMode",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.events.ResizeEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.utils.ConstrainedElement",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.managers.FocusHandler",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.managers.PopUpManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IUniversalBtnToggleIndicator",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponentEx"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "org.idmedia.as3commons.util.Iterator",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.constants.FocusMode",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.events.FocusHandlerEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.utils.StaticUtils",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.managers.InputDelegate",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.gfx.FocusEventEx",
+   "kind": "class",
+   "extends": "flash.events.FocusEvent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.constants.InputValue",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.constants.NavigationCode",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.clik.utils.WeakReference",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.gfx.KeyboardEventEx",
+   "kind": "class",
+   "extends": "flash.events.KeyboardEvent",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [
+  "net_wg_halloween_app_impl_HalloweenBattleDamageIndicatorApp"
+ ],
+ "scenes": [],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ },
+ "metadata": "<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'><rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1'><dc:format>application/x-shockwave-flash</dc:format><dc:title>swf halloween_battle_damage_indicator</dc:title><dc:language>en_US</dc:language><dc:date>10/29/26 9:05 PM</dc:date></rdf:Description></rdf:RDF>",
+ "product_info": {
+  "product": 3,
+  "edition": 6,
+  "version": "4.5",
+  "build": 21328
+ }
+}

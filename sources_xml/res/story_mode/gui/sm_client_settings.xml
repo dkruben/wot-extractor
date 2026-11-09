@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/gui/sm_client_settings.xml -->
+<root>
+	<event>
+		<missionSelectors>
+			<active>battlesCount</active>
+			<default />
+			<withUnlockMission />
+			<battlesCount>
+				<normal>0</normal>
+				<hard>1000</hard>
+			</battlesCount>
+		</missionSelectors>
+	</event>
+</root>

@@ -1,0 +1,146 @@
+{
+ "source": "sources/res/last_stand/gui/flash/animations/advancedHints/ls_aoeDamageInstantShot.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 659051,
+ "actual_length": 659051,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#141410",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 36,
+  "ShowFrame": 773,
+  "DefineShape": 23,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 3,
+  "PlaceObject2": 1212,
+  "RemoveObject2": 10,
+  "DefineShape3": 4,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 19,
+  "DefineSprite": 35,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 20,
+  "shapes": 36,
+  "sprites": 35,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "ls_aoeDamageInstantShot_fla.MainTimeline"
+  },
+  {
+   "id": 82,
+   "class": "ls_aoeDamageInstantShot_fla.circleAnim_31"
+  },
+  {
+   "id": 79,
+   "class": "ls_aoeDamageInstantShot_fla.slotFx_30"
+  },
+  {
+   "id": 73,
+   "class": "ls_aoeDamageInstantShot_fla.activeAbilityReloadImmediately_27"
+  },
+  {
+   "id": 67,
+   "class": "ls_aoeDamageInstantShot_fla.tankShoot_23"
+  },
+  {
+   "id": 9,
+   "class": "ls_aoeDamageInstantShot_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1487,
+   "classes": 6,
+   "methods": 24,
+   "bodies": 24,
+   "code_bytes": 396
+  }
+ ],
+ "classes": [
+  {
+   "name": "ls_aoeDamageInstantShot_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_aoeDamageInstantShot_fla.activeAbilityReloadImmediately_27",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_aoeDamageInstantShot_fla.circleAnim_31",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_aoeDamageInstantShot_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_aoeDamageInstantShot_fla.slotFx_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_aoeDamageInstantShot_fla.tankShoot_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

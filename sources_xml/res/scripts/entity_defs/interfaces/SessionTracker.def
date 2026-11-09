@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/SessionTracker.def -->
+<root>
+	<BaseMethods>
+		<sessionTracker_processSessionTrackerData>
+			<Arg>MAILBOX</Arg>
+			<Arg>INT32</Arg>
+			<Arg>UINT8</Arg>
+			<Arg>STRING</Arg>
+		</sessionTracker_processSessionTrackerData>
+	</BaseMethods>
+</root>

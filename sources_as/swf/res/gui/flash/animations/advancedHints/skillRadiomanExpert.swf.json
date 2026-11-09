@@ -1,0 +1,189 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillRadiomanExpert.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 271906,
+ "actual_length": 271906,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 46,
+  "ShowFrame": 1177,
+  "DefineShape": 23,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 53,
+  "PlaceObject2": 2952,
+  "RemoveObject2": 36,
+  "DefineShape3": 98,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 15,
+  "DefineSprite": 45,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 16,
+  "shapes": 175,
+  "sprites": 45,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 10,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillRadiomanExpert_fla.MainTimeline"
+  },
+  {
+   "id": 235,
+   "class": "skillRadiomanExpert_fla.logDamageAppear_44"
+  },
+  {
+   "id": 231,
+   "class": "skillRadiomanExpert_fla.logKillAppear_42"
+  },
+  {
+   "id": 227,
+   "class": "skillRadiomanExpert_fla.tankShoot_38"
+  },
+  {
+   "id": 72,
+   "class": "skillRadiomanExpert_fla.explosionCircle_34"
+  },
+  {
+   "id": 67,
+   "class": "skillRadiomanExpert_fla.slotActive_30"
+  },
+  {
+   "id": 64,
+   "class": "skillRadiomanExpert_fla.statsIncreased_28"
+  },
+  {
+   "id": 60,
+   "class": "skillRadiomanExpert_fla.logAssistAppear_26"
+  },
+  {
+   "id": 55,
+   "class": "skillRadiomanExpert_fla.iconFxExplosion_23"
+  },
+  {
+   "id": 9,
+   "class": "skillRadiomanExpert_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2274,
+   "classes": 10,
+   "methods": 40,
+   "bodies": 40,
+   "code_bytes": 660
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillRadiomanExpert_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillRadiomanExpert_fla.explosionCircle_34",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillRadiomanExpert_fla.iconFxExplosion_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillRadiomanExpert_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillRadiomanExpert_fla.logAssistAppear_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillRadiomanExpert_fla.logDamageAppear_44",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillRadiomanExpert_fla.logKillAppear_42",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillRadiomanExpert_fla.slotActive_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillRadiomanExpert_fla.statsIncreased_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillRadiomanExpert_fla.tankShoot_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

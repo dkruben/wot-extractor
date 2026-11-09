@@ -1,0 +1,83 @@
+{
+  "rid": "R.views.lobby.offers.OfferRewardWindow",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "OfferRewardWindow",
+  "dir": "gui/gameface/_dist/production/lobby/offers/OfferRewardWindow",
+  "feature": null,
+  "files": [
+    {
+      "name": "OfferRewardWindow.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/offers/OfferRewardWindow/OfferRewardWindow.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/offers/OfferRewardWindow/OfferRewardWindow.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "OfferRewardWindow.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/offers/OfferRewardWindow/OfferRewardWindow.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/offers/OfferRewardWindow/OfferRewardWindow.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "OfferRewardWindow.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/offers/OfferRewardWindow/OfferRewardWindow.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/offers/OfferRewardWindow/OfferRewardWindow.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/offers/OfferRewardWindow/OfferRewardWindow.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/offers/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/offers/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/offers/OfferRewardWindow/OfferRewardWindow.css",
+      "key": "res/gui/gameface/_dist/production/lobby/offers/OfferRewardWindow/OfferRewardWindow.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/offers/OfferRewardWindow/OfferRewardWindow.js",
+      "key": "res/gui/gameface/_dist/production/lobby/offers/OfferRewardWindow/OfferRewardWindow.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.offers.OfferRewardWindow",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.offers.OfferRewardWindow no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        1267
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

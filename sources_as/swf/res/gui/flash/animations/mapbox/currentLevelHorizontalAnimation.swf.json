@@ -1,0 +1,84 @@
+{
+ "source": "sources/res/gui/flash/animations/mapbox/currentLevelHorizontalAnimation.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 41,
+ "declared_length": 6675,
+ "actual_length": 6675,
+ "frame_size_px": [
+  0.0,
+  183.0,
+  0.0,
+  92.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 3,
+  "ShowFrame": 102,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 92,
+  "DefineBitsLossless2": 1,
+  "DefineSprite": 2,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 1,
+  "shapes": 1,
+  "sprites": 2,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 1,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 4,
+   "class": "mcLightAnim"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 354,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 66
+  }
+ ],
+ "classes": [
+  {
+   "name": "mcLightAnim",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 2"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

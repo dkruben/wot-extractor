@@ -1,0 +1,96 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/open_bundle/scripts/client/open_bundle/gui/game_control/open_bundle_controller.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import logging as logging
+from Event import EventManager as EventManager, Event as Event
+from PlayerEvents import g_playerEvents as g_playerEvents
+from functools import partial as partial
+from gui.shared.utils.scheduled_notifications import SimpleNotifier as SimpleNotifier
+from helpers import dependency as dependency
+from helpers.events_handler import EventsHandler as EventsHandler
+from helpers.server_settings import serverSettingsChangeListener as serverSettingsChangeListener
+from helpers.time_utils import getServerUTCTime as getServerUTCTime, ONE_DAY as ONE_DAY
+from open_bundle.gui.constants import RARE_TAG as RARE_TAG, UNIC_NOTIFICATION_TAG as UNIC_NOTIFICATION_TAG
+from open_bundle.helpers.bonuses.bonus_layout_config import BonusLayoutConfig as BonusLayoutConfig
+from open_bundle.helpers.bonuses.optional_bonuses import parseBonusData as parseBonusData
+from open_bundle.helpers.server_settings import BundlesConfig as BundlesConfig
+from open_bundle.helpers.switch_hangar_helper import SwitchHangarHelper as SwitchHangarHelper
+from open_bundle.helpers.sync_data import OpenBundleSyncData as OpenBundleSyncData
+from open_bundle.skeletons.open_bundle_controller import IOpenBundleController as IOpenBundleController
+from open_bundle_common.constants import OPEN_BUNDLE_GAME_PARAMS_KEY as OPEN_BUNDLE_GAME_PARAMS_KEY, OPEN_BUNDLE_PDATA_KEY as OPEN_BUNDLE_PDATA_KEY
+from skeletons.gui.lobby_context import ILobbyContext as ILobbyContext
+_logger: Any
+
+class OpenBundleController(IOpenBundleController, EventsHandler):
+    __lobbyContext: Any
+    __settingsConfig: Any
+    __bonusLayoutConfig: Any
+    __syncData: Any
+    __switchHelper: Any
+    __eventsManager: Any
+    __statusChangeNotifiers: Any
+    onSettingsChanged: Any
+    onStatusChanged: Any
+    def __init__(self):
+        ...
+    @property
+    def bundleIDs(self):
+        ...
+    @property
+    def config(self):
+        ...
+    def onLobbyInited(self, _):
+        ...
+    def onAvatarBecomePlayer(self):
+        ...
+    def onDisconnected(self):
+        ...
+    def init(self):
+        ...
+    def fini(self):
+        ...
+    def isEnabled(self, bundleID):
+        ...
+    def getBundle(self, bundleID):
+        ...
+    def isBundleActive(self, bundleID):
+        ...
+    def isRareCell(self, bundleID, cellName):
+        ...
+    def isUnicNotificationCell(self, bundleID, cellName):
+        ...
+    def getCellBonusInfo(self, bundleID, cellName):
+        ...
+    def getBundleTimeLeft(self, bundleID):
+        ...
+    def isAllBundleCellsReceived(self, bundleID):
+        ...
+    def getReceivedCells(self, bundleID):
+        ...
+    def getBonusPriority(self, bonus):
+        ...
+    def isBonusVisible(self, bonus):
+        ...
+    def isRandomPrb(self):
+        ...
+    def selectRandomBattle(self, callback):
+        ...
+    def _getEvents(self):
+        ...
+    def __createConfig(self):
+        ...
+    def __onClientUpdated(self, diff, _):
+        ...
+    # decorador original: @serverSettingsChangeListener(...)
+    def __onServerSettingsChanged(self, _):
+        ...
+    def __stop(self):
+        ...
+    def __clear(self):
+        ...
+    def __startNotifiers(self):
+        ...
+    def __getTimeToStatusChange(self, bundleID):
+        ...

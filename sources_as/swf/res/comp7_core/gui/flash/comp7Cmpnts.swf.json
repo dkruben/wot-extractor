@@ -1,0 +1,128 @@
+{
+ "source": "sources/res/comp7_core/gui/flash/comp7Cmpnts.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 47423,
+ "actual_length": 47423,
+ "frame_size_px": [
+  0.0,
+  1420.0,
+  0.0,
+  740.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 40,
+  "DefineShape": 5,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 37,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 5,
+  "DefineEditText": 4,
+  "DefineSprite": 6,
+  "FrameLabel": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 5,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 5,
+  "shapes": 6,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 21,
+   "class": "Comp7HelpCtrlUI"
+  },
+  {
+   "id": 18,
+   "class": "Comp7SixthSenseIndicatorUI"
+  },
+  {
+   "id": 17,
+   "class": "comp7Cmpnts_fla.lampContainer_4"
+  },
+  {
+   "id": 12,
+   "class": "VoiceChatActivationUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1583,
+   "classes": 4,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 354
+  }
+ ],
+ "classes": [
+  {
+   "name": "comp7Cmpnts_fla.lampContainer_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7HelpCtrlUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.Comp7HelpCtrl",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VoiceChatActivationUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.stats.components.VoiceChatActivation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7SixthSenseIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.views.comp7SixthSenseIndicator.Comp7SixthSenseIndicator",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

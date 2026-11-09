@@ -1,0 +1,146 @@
+{
+  "rid": "R.views.halloween.mono.battle.tab_screen",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "tab_screen",
+  "dir": "halloween/gui/gameface/_dist/production/mono/battle/tab_screen",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/battle/tab_screen/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/battle/tab_screen/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/battle/tab_screen/bundle.js"
+    },
+    {
+      "name": "tab_screen.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/battle/tab_screen/tab_screen.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/battle/tab_screen/tab_screen.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "tab_screen.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/battle/tab_screen/tab_screen.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/battle/tab_screen/tab_screen.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/battle/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/battle/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/battle/tab_screen/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/battle/tab_screen/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/battle/tab_screen/tab_screen.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/battle/tab_screen/tab_screen.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.BackportContextMenu"
+  ],
+  "commands": [
+    "onRemoveFromBlacklist",
+    "onSendFriendRequest",
+    "onSendPlatoonInvitation"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.battle.tab_screen",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "8 referencia(s) R.views.halloween.mono.battle.tab_screen no Python",
+      "ViewModel FullStatsViewModel (model=... no Python da view): 2/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/battle/full_stats.py",
+        32
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/scaleform/daapi/view/battle/page.py",
+        149
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/scaleform/daapi/view/battle/page.py",
+        264
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/scaleform/daapi/view/battle/page.py",
+        271
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/scaleform/daapi/view/battle/page.py",
+        292
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/scaleform/daapi/view/battle/page.py",
+        294
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/scaleform/daapi/view/battle/shared/__init__.py",
+        103
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/scaleform/daapi/view/battle/shared/hw_indicators.py",
+        96
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/battle/full_stats.py",
+      "sources/res/halloween/scripts/client/halloween/gui/scaleform/daapi/view/battle/page.py",
+      "sources/res/halloween/scripts/client/halloween/gui/scaleform/daapi/view/battle/shared/__init__.py",
+      "sources/res/halloween/scripts/client/halloween/gui/scaleform/daapi/view/battle/shared/hw_indicators.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/battle/full_stats_view_model.py",
+      "class": "FullStatsViewModel",
+      "chain": [
+        "FullStatsViewModel"
+      ],
+      "properties": [
+        [
+          "missionTitle",
+          "String"
+        ],
+        [
+          "missionTask",
+          "String"
+        ],
+        [
+          "difficultyLevel",
+          "Number"
+        ],
+        [
+          "playerAnomaliesList",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 4,
+        "missing": [
+          "difficultyLevel",
+          "missionTitle"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

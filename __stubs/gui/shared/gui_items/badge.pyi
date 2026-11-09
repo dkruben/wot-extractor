@@ -1,0 +1,123 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/shared/gui_items/badge.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import re as re
+import typing as typing
+from past.builtins import cmp as cmp
+from account_helpers import AccountSettings as AccountSettings
+from account_helpers.AccountSettings import LAST_BADGES_VISIT as LAST_BADGES_VISIT
+from dossiers2.ui.achievements import BADGES_BLOCK as BADGES_BLOCK
+from gui.Scaleform.locale.BADGE import BADGE as BADGE
+from gui.Scaleform.settings import getBadgeIconPath as getBadgeIconPath, getAwardBadgeIconPath as getAwardBadgeIconPath, getBadgeHighlightIconPath as getBadgeHighlightIconPath, BADGES_ICONS as BADGES_ICONS
+from gui.impl import backport as backport
+from gui.impl.gen import R as R
+from gui.shared.gui_items.gui_item import GUIItem as GUIItem
+from helpers import i18n as i18n, dependency as dependency
+from shared_utils import CONST_CONTAINER as CONST_CONTAINER
+from skeletons.gui.game_control import IRTSBattlesController as IRTSBattlesController
+from typing import Dict as Dict, Optional as Optional
+from skeletons.gui.shared import IItemsRequester as IItemsRequester
+CUSTOM_LOGIC_KEY = 'customLogicImpl'
+
+class BadgeTypes(CONST_CONTAINER):
+    OBSOLETE = 1
+    COLLAPSIBLE = 2
+
+class BadgeLayouts(CONST_CONTAINER):
+    PREFIX = 1
+    SUFFIX = 2
+
+class Badge(GUIItem):
+    __slots__: tuple
+    badgeID: Any
+    data: Any
+    group: Any
+    isAchievable: Any
+    isTemporary: Any
+    showCongratsView: Any
+    isSelected: Any
+    isAchieved: Any
+    achievedAt: Any
+    def __init__(self, data, proxy=None, receivedBadges=None):
+        ...
+    def hasDynamicContent(self):
+        ...
+    def getDynamicContent(self):
+        ...
+    def getBadgeClass(self):
+        ...
+    def getName(self):
+        ...
+    def getWeight(self):
+        ...
+    def isObsolete(self):
+        ...
+    def isCollapsible(self):
+        ...
+    def isPrefixLayout(self):
+        ...
+    def isSuffixLayout(self):
+        ...
+    def isVisibleAsAchievable(self):
+        ...
+    def getHugeIcon(self):
+        ...
+    def getBigIcon(self):
+        ...
+    def getIconX110(self):
+        ...
+    def getIconX320(self):
+        ...
+    def getSmallIcon(self):
+        ...
+    def getThumbnailIcon(self):
+        ...
+    def getSuffixSmallIcon(self):
+        ...
+    def getAwardBadgeIcon(self, size):
+        ...
+    @classmethod
+    def getSuffixSmallIconByID(cls, badgeID):
+        ...
+    @classmethod
+    def getSmallIconById(cls, badgeID):
+        ...
+    @classmethod
+    def getBigIconById(cls, badgeID):
+        ...
+    def getUserName(self):
+        ...
+    def getShortUserName(self):
+        ...
+    def getUserDescription(self):
+        ...
+    def getLongUserDescription(self):
+        ...
+    def getHighlightIcon(self):
+        ...
+    def isNew(self):
+        ...
+    def getBadgeVO(self, size, extraData=None, shortIconName=False):
+        ...
+    def getIconPostfix(self):
+        ...
+    @staticmethod
+    def getBadgeIDFromIconPath(iconPath):
+        ...
+    def _compare(self, other):
+        ...
+    def __getIconPath(self, size, shortIconName=False):
+        ...
+    def __checkType(self, badgeType):
+        ...
+    def __checkLayout(self, badgeLayout):
+        ...
+
+class RTSBadge(Badge):
+    _rtsController: Any
+    def __init__(self, data, proxy=None, receivedBadges=None, extraData=None):
+        ...
+    def isVisibleAsAchievable(self):
+        ...

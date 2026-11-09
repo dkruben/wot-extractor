@@ -1,0 +1,98 @@
+{
+ "source": "sources/res/gui/flash/animations/newbieHints/pph_weak_spots_01.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 20150,
+ "actual_length": 20150,
+ "frame_size_px": [
+  0.0,
+  260.0,
+  0.0,
+  160.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 2,
+  "ShowFrame": 149,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 253,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 3,
+  "DefineSprite": 1,
+  "FrameLabel": 1,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 3,
+  "shapes": 7,
+  "sprites": 1,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "pph_weak_spots_01_fla.MainTimeline"
+  },
+  {
+   "id": 11,
+   "class": "pph_weak_spots_01_fla.main_1"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 626,
+   "classes": 2,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 135
+  }
+ ],
+ "classes": [
+  {
+   "name": "pph_weak_spots_01_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "pph_weak_spots_01_fla.main_1",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,53 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/common/blueprints/__init__.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import typing as typing
+from past.builtins import xrange as xrange
+import nations as nations
+from constants import IS_CLIENT as IS_CLIENT, MIN_VEHICLE_LEVEL as MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL as MAX_VEHICLE_LEVEL
+from debug_utils import LOG_CURRENT_EXCEPTION as LOG_CURRENT_EXCEPTION
+from soft_exception import SoftException as SoftException
+from wotdecorators import singleton as singleton
+from dossiers2.custom.cache import getCache as getHelperCache
+_CONFIG_FILE = 'scripts/server_xml/blueprints.xml'
+
+class BlueprintsException(SoftException):
+    ...
+
+# decorador original: @singleton
+class g_cache(object):
+    __nonzero__: Any
+    __cfg: Any
+    def __init__(self):
+        ...
+    def __getattr__(self, attr):
+        ...
+    def __bool__(self):
+        ...
+    def init(self, gameParams=None, nofail=True):
+        ...
+    def fini(self):
+        ...
+
+def wipe(blueprints_cfg, pdata, leaveGold):
+    ...
+def makeDefaults():
+    ...
+def readConfig(verbose, **overrides):
+    ...
+def _readBlueprints(reader, subsectionName):
+    ...
+def _readConversionCoefs(section, subsectionName):
+    ...
+def init(gameParams=None, nofail=True):
+    ...
+def getAllResearchableVehicles():
+    ...
+def _getAllDisabledVehicles():
+    ...
+def getAllowedVehiclesForBlueprints(unlocks, initialUnlocks):
+    ...
+def isNationResearchedForBlueprints(nationID, defaultUnlocks, unlocks):
+    ...

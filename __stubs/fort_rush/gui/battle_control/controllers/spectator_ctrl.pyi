@@ -1,0 +1,9 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/fort_rush/scripts/client/fort_rush/gui/battle_control/controllers/spectator_ctrl.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.battle_control.controllers.spectator_ctrl import SpectatorViewController as SpectatorViewController
+
+class FortRushSpectatorViewController(SpectatorViewController):
+    def spectatorViewModeChanged(self, mode):
+        ...

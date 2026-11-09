@@ -1,0 +1,51 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/35_steppes/zones.xml -->
+<root>
+	<path>
+		<id>346026382</id>
+		<name>path</name>
+		<node>
+			<name>Zone 1</name>
+			<colour>0.8 0.278431 0.2 0.105882</colour>
+			<id>1292496623</id>
+			<transform>
+				<row0>280.496 0 0</row0>
+				<row1>0 85.1672 0</row1>
+				<row2>0 0 222.437</row2>
+				<row3>-197.179 -6.64672 -98.3605</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 2</name>
+			<colour>0.2 0.639216 0.8 0.498039</colour>
+			<id>587699221</id>
+			<transform>
+				<row0>221.79288 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 278.425</row2>
+				<row3>113.0206 0.490002 43.125755</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 3</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3818449287</id>
+			<transform>
+				<row0>109.15475 0 0</row0>
+				<row1>0 30.067352 0</row1>
+				<row2>0 0 104.02013</row2>
+				<row3>-80.99376 1.644521 -378.45325</row3>
+			</transform>
+		</node>
+		<node>
+			<name>35_steppes_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1984843543</id>
+			<transform>
+				<row0>45.477177 -1.416973 -1.367739</row0>
+				<row1>-1.389841 -1.556633 -44.599373</row1>
+				<row2>0.600943 19.978144 -0.716016</row2>
+				<row3>-174.2785 0.065643 99.08537</row3>
+			</transform>
+		</node>
+	</path>
+</root>

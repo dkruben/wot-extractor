@@ -1,0 +1,114 @@
+{
+  "rid": "R.views.lobby.achievements.tooltips.BattlesKPITooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "BattlesKPITooltip",
+  "dir": "gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "BattlesKPITooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip/BattlesKPITooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip/BattlesKPITooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattlesKPITooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip/BattlesKPITooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip/BattlesKPITooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattlesKPITooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip/BattlesKPITooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip/BattlesKPITooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip/BattlesKPITooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/achievements/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/achievements/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip/BattlesKPITooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip/BattlesKPITooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip/BattlesKPITooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/BattlesKPITooltip/BattlesKPITooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.achievements.tooltips.BattlesKPITooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.achievements.tooltips.BattlesKPITooltip no Python",
+      "ViewModel BattlesKpiTooltipViewModel (model=... no Python da view): 5/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/achievements/tooltips/battles_kpi_tooltip.py",
+        19
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/achievements/tooltips/battles_kpi_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/achievements/tooltips/battles_kpi_tooltip_view_model.py",
+      "class": "BattlesKpiTooltipViewModel",
+      "chain": [
+        "BattlesKpiTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "countOfBattles",
+          "String"
+        ],
+        [
+          "wins",
+          "String"
+        ],
+        [
+          "defeat",
+          "String"
+        ],
+        [
+          "draws",
+          "String"
+        ],
+        [
+          "winsPercent",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 5,
+        "total": 5,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

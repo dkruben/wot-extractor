@@ -1,0 +1,26 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/TargetMarkersComponent.def -->
+<root>
+	<Properties>
+		<markersSettings>
+			<Type>ARRAY<of>PVE_TARGET_MARKER</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</markersSettings>
+	</Properties>
+	<ClientMethods>
+		<addMarker>
+			<Args>
+				<setting>PVE_TARGET_MARKER</setting>
+			</Args>
+		</addMarker>
+		<removeMarkers>
+			<Args>
+				<settings>ARRAY<of>PVE_TARGET_MARKER</of>
+				</settings>
+			</Args>
+		</removeMarkers>
+	</ClientMethods>
+	<ofEntity>
+		<Avatar />
+	</ofEntity>
+</root>

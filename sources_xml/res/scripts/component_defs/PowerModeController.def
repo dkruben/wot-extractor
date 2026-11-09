@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/PowerModeController.def -->
+<root>
+	<Properties>
+		<stateStatus>
+			<Type>POWER_MODE_STATE_STATUS</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</stateStatus>
+		<timeInfo>
+			<Type>POWER_MODE_TIME_INFO</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</timeInfo>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>powerModeController</DefaultKeyName>
+</root>

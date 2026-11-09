@@ -1,0 +1,81 @@
+{
+  "rid": "R.views.mono.maps_training.maps_training_queue",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "maps_training_queue",
+  "dir": "gui/gameface/_dist/production/mono/maps_training/maps_training_queue",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/maps_training/maps_training_queue/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/maps_training/maps_training_queue/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/maps_training/maps_training_queue/bundle.js"
+    },
+    {
+      "name": "maps_training_queue.css",
+      "effective": "res/gui/gameface/_dist/production/mono/maps_training/maps_training_queue/maps_training_queue.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/maps_training/maps_training_queue/maps_training_queue.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "maps_training_queue.html",
+      "effective": "res/gui/gameface/_dist/production/mono/maps_training/maps_training_queue/maps_training_queue.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/maps_training/maps_training_queue/maps_training_queue.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/maps_training/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/maps_training/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/maps_training/maps_training_queue/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/maps_training/maps_training_queue/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/maps_training/maps_training_queue/maps_training_queue.css",
+      "key": "res/gui/gameface/_dist/production/mono/maps_training/maps_training_queue/maps_training_queue.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onMenu",
+    "onMouseOver3dScene",
+    "onMoveSpace",
+    "onQuit",
+    "onShowNextTip",
+    "onShowPrevTip"
+  ],
+  "link": {
+    "rid": "R.views.mono.maps_training.maps_training_queue",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.mono.maps_training.maps_training_queue no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/maps_training/maps_training_queue_view.py",
+        33
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/maps_training/states.py",
+        100
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/maps_training/maps_training_queue_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/maps_training/states.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

@@ -1,0 +1,1 @@
+import{ht as a,q as s}from"./lib.js";var r="Background_ab091fa7",e=s();function t({image:s,style:t={},className:l=""}){return(0,e.jsx)("div",{className:a(r,l),style:{backgroundImage:`url(${s})`,...t}})}export{t};

@@ -1,0 +1,32 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/component_defs/InBattleUpgrades.def -->
+<root>
+	<Properties>
+		<upgradeReadinessTime>
+			<Type>TIME_WITH_REASON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</upgradeReadinessTime>
+		<isVehicleUpgrading>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+			<default>FALSE</default>
+		</isVehicleUpgrading>
+	</Properties>
+	<CellMethods>
+		<upgradeVehicle>
+			<Exposed />
+			<Arg>INT32</Arg>
+		</upgradeVehicle>
+	</CellMethods>
+	<ClientMethods>
+		<onVehicleUpgraded>
+			<Arg>STRING</Arg>
+			<Arg>STRING</Arg>
+		</onVehicleUpgraded>
+	</ClientMethods>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>inBattleUpgrades</DefaultKeyName>
+</root>

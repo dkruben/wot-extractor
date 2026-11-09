@@ -1,0 +1,4 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/AttackBomber.def -->
+<root>
+	<Parent>AreaOfEffect</Parent>
+</root>

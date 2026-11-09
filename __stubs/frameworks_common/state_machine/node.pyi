@@ -1,0 +1,43 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/common/frameworks_common/state_machine/node.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import weakref as weakref
+from typing import TYPE_CHECKING as TYPE_CHECKING
+from .exceptions import NodeError as NodeError
+import typing as typing
+
+class Node(object):
+    __counter = 0
+    __slots__: tuple
+    __id: Any
+    __parent: Any
+    __children: Any
+    def __init__(self):
+        ...
+    def __repr__(self):
+        ...
+    def clear(self):
+        ...
+    def getNodeID(self):
+        ...
+    def getParent(self):
+        ...
+    def getChildren(self, filter_=None):
+        ...
+    def getChildByIndex(self, index):
+        ...
+    def addChild(self, child):
+        ...
+    def removeChild(self, child):
+        ...
+    def visitInOrder(self, filter_=None):
+        ...
+    def _addChild(self, child):
+        ...
+    def _removeChild(self, child):
+        ...
+    @classmethod
+    def __genID(cls):
+        ...

@@ -1,0 +1,213 @@
+{
+ "source": "sources/res/gui/flash/storeCmpnts.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 116994,
+ "actual_length": 116994,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 34,
+  "ShowFrame": 209,
+  "DefineShape": 27,
+  "DefineBits": 2,
+  "JPEGTables": 1,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 153,
+  "RemoveObject2": 4,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 23,
+  "DefineEditText": 17,
+  "DefineSprite": 33,
+  "FrameLabel": 20,
+  "FileAttributes": 1,
+  "PlaceObject3": 37,
+  "ImportAssets2": 7,
+  "CSMTextSettings": 17,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 26,
+  "shapes": 30,
+  "sprites": 33,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 17,
+  "fonts": 0,
+  "classes": 9,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "FlagsLib.swf",
+   "symbols": []
+  },
+  {
+   "url": "tankCarousel.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 106,
+   "class": "CarouselProgressionPointsUI"
+  },
+  {
+   "id": 85,
+   "class": "SmallTankIconUI"
+  },
+  {
+   "id": 67,
+   "class": "TankIconUI"
+  },
+  {
+   "id": 63,
+   "class": "storeCmpnts_fla.CrystalsIconUI_17"
+  },
+  {
+   "id": 31,
+   "class": "MultiselectionSlotsUI"
+  },
+  {
+   "id": 29,
+   "class": "IinfoBlockUI"
+  },
+  {
+   "id": 26,
+   "class": "CarouselRankedBonusUI"
+  },
+  {
+   "id": 23,
+   "class": "MultiselectionSlotRendererUI"
+  },
+  {
+   "id": 4,
+   "class": "SlotActionBtnUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5348,
+   "classes": 9,
+   "methods": 49,
+   "bodies": 49,
+   "code_bytes": 1681
+  }
+ ],
+ "classes": [
+  {
+   "name": "CarouselRankedBonusUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CarouselProgressionPointsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.tcarousel.CarouselProgressionPoints",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storeCmpnts_fla.CrystalsIconUI_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IinfoBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.tcarousel.MultiselectionInfoBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MultiselectionSlotsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.tcarousel.MultiselectionSlots",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SmallTankIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.tcarousel.SmallTankIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.tcarousel.TankIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SlotActionBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MultiselectionSlotRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.tcarousel.MultiselectionSlotRenderer",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

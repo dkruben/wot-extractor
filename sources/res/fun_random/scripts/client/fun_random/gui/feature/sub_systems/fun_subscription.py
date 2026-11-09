@@ -1,0 +1,67 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/fun_random/scripts/client/fun_random/gui/feature/sub_systems/fun_subscription.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: fun_random/scripts/client/fun_random/gui/feature/sub_systems/fun_subscription.py
+from __future__ import absolute_import
+import typing
+from Event import SuspendedEventManager, SuspendedEvent
+from fun_random.gui.shared import g_funEventBus
+from fun_random.gui.shared.events import EventBridge, FunEventScope, FunEventType
+from gui.shared import events, EVENT_BUS_SCOPE
+from skeletons.gui.game_control import IFunRandomController
+if typing.TYPE_CHECKING:
+    from gui.shared.event_bus import SharedEvent
+
+class FunSubscription(IFunRandomController.IFunSubscription):
+
+    def __init__(self):
+        super(FunSubscription, self).__init__()
+        self.__em = SuspendedEventManager()
+        self.__handleEvent = SuspendedEvent(self.__em)
+        self.__handleEvent += g_funEventBus.handleEvent
+        self.__eventsBridges = (
+         (
+          events.BoostersControllerEvent(events.BoostersControllerEvent.UPDATE_GAMEMODE_STATUS),
+          EVENT_BUS_SCOPE.LOBBY, self.__addSubModesListener, (True,), {}),
+         (
+          events.GameSessionEvent(events.GameSessionEvent.UPDATE_KICK_NOTIFICATION),
+          EVENT_BUS_SCOPE.LOBBY, self.__addSubModesListener, (True,), {}),
+         (
+          events.LobbyHeaderMenuEvent(events.LobbyHeaderMenuEvent.UPDATE_PREBATTLE_CONTROLS),
+          EVENT_BUS_SCOPE.LOBBY, self.__addSubModesListener, (True,), {}))
+
+    def fini(self):
+        self.__eventsBridges = ()
+        self.__handleEvent -= g_funEventBus.handleEvent
+        self.__em.clear()
+
+    def clear(self):
+        g_funEventBus.clear()
+
+    def resume(self):
+        self.__em.resume()
+
+    def suspend(self):
+        self.__em.suspend()
+
+    def addListener(self, eventType, handler, scope=FunEventScope.DEFAULT):
+        g_funEventBus.addListener(eventType, handler, scope)
+
+    def removeListener(self, eventType, handler, scope=FunEventScope.DEFAULT):
+        g_funEventBus.removeListener(eventType, handler, scope)
+
+    def handleEvent(self, event, scope=FunEventScope.DEFAULT):
+        self.__handleEvent(event, scope)
+
+    def startCoreNotifications(self):
+        for event, scope, bridgeMaker, bridgeArgs, bridgeKwargs in self.__eventsBridges:
+            bridgeMaker(EventBridge(event, scope), *bridgeArgs, **bridgeKwargs)
+
+    def __addSubModesListener(self, method, desiredOnly=False, withTicks=False):
+        scope = FunEventScope.DESIRABLE if desiredOnly else FunEventScope.DEFAULT
+        self.addListener(FunEventType.SUB_SELECTION, method)
+        self.addListener(FunEventType.SUB_SETTINGS, method, scope=scope)
+        self.addListener(FunEventType.SUB_STATUS_UPDATE, method, scope=scope)
+        if withTicks:
+            self.addListener(FunEventType.SUB_STATUS_TICK, method, scope=scope)

@@ -1,0 +1,134 @@
+{
+ "source": "sources/res/gui/flash/customizationItemsPopover.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 21707,
+ "actual_length": 21707,
+ "frame_size_px": [
+  0.0,
+  362.0,
+  0.0,
+  328.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 6,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 13,
+  "DefineShape3": 1,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 5,
+  "DefineSprite": 5,
+  "FileAttributes": 1,
+  "PlaceObject3": 14,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 5,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 3,
+  "shapes": 4,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 5,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 17,
+   "class": "CustomizationItemsPopoverUI"
+  },
+  {
+   "id": 13,
+   "class": "CustomizationPopoverItemRendererUI"
+  },
+  {
+   "id": 0,
+   "class": "customizationItemsPopover_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5220,
+   "classes": 3,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 1012
+  }
+ ],
+ "classes": [
+  {
+   "name": "customizationItemsPopover_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationPopoverItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.CustomizationPopoverItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationItemsPopoverUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.CustomizationItemsPopover",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

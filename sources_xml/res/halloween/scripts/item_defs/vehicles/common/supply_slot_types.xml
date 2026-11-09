@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/item_defs/vehicles/common/supply_slot_types.xml -->
+<root>
+	<slots>
+		<slot>
+			<id>66</id>
+			<slotClass>halloween_common.items.hw_supply_slots_components.HWEquipmentSlot</slotClass>
+			<categories />
+			<tags>hwEquipment</tags>
+			<meta>
+				<equipmentType>regular</equipmentType>
+			</meta>
+		</slot>
+	</slots>
+</root>

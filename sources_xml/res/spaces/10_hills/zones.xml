@@ -1,0 +1,29 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/10_hills/zones.xml -->
+<root>
+	<path>
+		<id>1383971421</id>
+		<name>path</name>
+		<node>
+			<name>Zone 1</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>670638963</id>
+			<transform>
+				<row0>109.878944 0 0</row0>
+				<row1>0 59.93538 0</row1>
+				<row2>0 0 201.11476</row2>
+				<row3>-182.55327 0.596581 16.18045</row3>
+			</transform>
+		</node>
+		<node>
+			<name>10_hills_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>143868763</id>
+			<transform>
+				<row0>48.185547 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 40.37549</row2>
+				<row3>-74.18438 13.141053 -174.4303</row3>
+			</transform>
+		</node>
+	</path>
+</root>

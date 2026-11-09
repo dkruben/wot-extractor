@@ -1,0 +1,115 @@
+{
+  "rid": "R.views.lobby.tooltips.TankmanTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "TankmanTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "TankmanTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView/TankmanTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView/TankmanTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "TankmanTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView/TankmanTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView/TankmanTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "TankmanTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView/TankmanTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView/TankmanTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView/TankmanTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tooltips/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tooltips/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView/TankmanTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView/TankmanTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView/TankmanTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tooltips/TankmanTooltipView/TankmanTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tooltips.TankmanTooltipView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.tooltips.TankmanTooltipView no Python",
+      "ViewModel TankmanTooltipViewModel (model=... no Python da view): 5/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tooltips/tankman_tooltip_view.py",
+        15
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/tooltips/tankman_tooltip_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/tooltips/tankman_tooltip_view_model.py",
+      "class": "TankmanTooltipViewModel",
+      "chain": [
+        "TankmanTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "title",
+          "String"
+        ],
+        [
+          "subtitle",
+          "String"
+        ],
+        [
+          "mainIcon",
+          "String"
+        ],
+        [
+          "description",
+          "String"
+        ],
+        [
+          "iconsTitle",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 5,
+        "total": 5,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

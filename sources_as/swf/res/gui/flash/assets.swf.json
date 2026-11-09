@@ -1,0 +1,398 @@
+{
+ "source": "sources/res/gui/flash/assets.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 861562,
+ "actual_length": 861562,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 32,
+  "ShowFrame": 260,
+  "DefineShape": 22,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 264,
+  "DefineShape3": 1,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 23,
+  "DefineSprite": 31,
+  "FrameLabel": 5,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 24,
+  "shapes": 25,
+  "sprites": 31,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 29,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 80,
+   "class": "MediumCenterSeparatorAsset_UI"
+  },
+  {
+   "id": 79,
+   "class": "ArrowSeparatorUI"
+  },
+  {
+   "id": 74,
+   "class": "BigSeparator_UI"
+  },
+  {
+   "id": 72,
+   "class": "delimimterArrow"
+  },
+  {
+   "id": 69,
+   "class": "DotLineVerticalSeparator"
+  },
+  {
+   "id": 66,
+   "class": "GlowArrowBottom_UI"
+  },
+  {
+   "id": 64,
+   "class": "GlowArrowLeft_UI"
+  },
+  {
+   "id": 62,
+   "class": "GlowArrowRight_UI"
+  },
+  {
+   "id": 57,
+   "class": "GlowArrowTop_UI"
+  },
+  {
+   "id": 52,
+   "class": "GoldDelimiterUI"
+  },
+  {
+   "id": 49,
+   "class": "LightSeparator_UI"
+  },
+  {
+   "id": 46,
+   "class": "NewIndicator_UI"
+  },
+  {
+   "id": 40,
+   "class": "assets_fla.newLabelAnim_17"
+  },
+  {
+   "id": 36,
+   "class": "PreviewBlock_UI"
+  },
+  {
+   "id": 33,
+   "class": "QueueDialogBGUI"
+  },
+  {
+   "id": 30,
+   "class": "RotatedBigSeparator_UI"
+  },
+  {
+   "id": 27,
+   "class": "RotatedTableShaddow_UI"
+  },
+  {
+   "id": 25,
+   "class": "SelfIndicator_UI"
+  },
+  {
+   "id": 22,
+   "class": "Separator_UI"
+  },
+  {
+   "id": 19,
+   "class": "SeparatorAsset_UI"
+  },
+  {
+   "id": 15,
+   "class": "ShadowSeparatorAsset"
+  },
+  {
+   "id": 12,
+   "class": "TableShaddow_UI"
+  },
+  {
+   "id": 9,
+   "class": "WarningSign_UI"
+  },
+  {
+   "id": 6,
+   "class": "DottedSideSeparatorAsset_UI"
+  },
+  {
+   "id": 5,
+   "class": "DottedSmallSideSeparatorAsset_UI"
+  },
+  {
+   "id": 4,
+   "class": "DottedCenterSeparatorAsset_UI"
+  },
+  {
+   "id": 3,
+   "class": "GradientHorzLineBgPatternPng"
+  },
+  {
+   "id": 2,
+   "class": "GradientVertLineBgPatternPng"
+  },
+  {
+   "id": 1,
+   "class": "SquadBgPatternPng"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4211,
+   "classes": 29,
+   "methods": 91,
+   "bodies": 91,
+   "code_bytes": 1389
+  }
+ ],
+ "classes": [
+  {
+   "name": "DottedCenterSeparatorAsset_UI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DottedSideSeparatorAsset_UI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DottedSmallSideSeparatorAsset_UI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GradientHorzLineBgPatternPng",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GradientVertLineBgPatternPng",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SquadBgPatternPng",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MediumCenterSeparatorAsset_UI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QueueDialogBGUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BigSeparator_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DotLineVerticalSeparator",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GoldDelimiterUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LightSeparator_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PreviewBlock_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RotatedBigSeparator_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RotatedTableShaddow_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SelfIndicator_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Separator_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShadowSeparatorAsset",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TableShaddow_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WarningSign_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "assets_fla.newLabelAnim_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "delimimterArrow",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SeparatorAsset_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.assets.SeparatorAsset",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NewIndicator_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.assets.NewIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GlowArrowBottom_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.assets.GlowArrowAsset",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GlowArrowLeft_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.assets.GlowArrowAsset",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GlowArrowRight_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.assets.GlowArrowAsset",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GlowArrowTop_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.assets.GlowArrowAsset",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArrowSeparatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.assets.ArrowSeparator",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

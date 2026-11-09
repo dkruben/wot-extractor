@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/gui/configs/hw_hangar_gui_presets.xml -->
+<root>
+	<queueTypePresets>
+		<item>
+			<queueType>101</queueType>
+			<presetName>empty</presetName>
+		</item>
+		<item>
+			<queueType>102</queueType>
+			<presetName>empty</presetName>
+		</item>
+		<item>
+			<queueType>103</queueType>
+			<presetName>empty</presetName>
+		</item>
+	</queueTypePresets>
+</root>

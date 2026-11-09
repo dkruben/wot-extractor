@@ -1,0 +1,93 @@
+{
+  "rid": "R.views.mono.personal_missions_30.intro_screen",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "intro_screen",
+  "dir": "gui/gameface/_dist/production/mono/personal_missions_30/intro_screen",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/personal_missions_30/intro_screen/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/personal_missions_30/intro_screen/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "intro_screen.css",
+      "effective": "res/gui/gameface/_dist/production/mono/personal_missions_30/intro_screen/intro_screen.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/personal_missions_30/intro_screen/intro_screen.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "intro_screen.html",
+      "effective": "res/gui/gameface/_dist/production/mono/personal_missions_30/intro_screen/intro_screen.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/personal_missions_30/intro_screen/intro_screen.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/personal_missions_30/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/personal_missions_30/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/personal_missions_30/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/personal_missions_30/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/personal_missions_30/intro_screen/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/personal_missions_30/intro_screen/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/personal_missions_30/intro_screen/intro_screen.css",
+      "key": "res/gui/gameface/_dist/production/mono/personal_missions_30/intro_screen/intro_screen.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.personal_missions_30.intro_screen",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.mono.personal_missions_30.intro_screen no Python",
+      "ViewModel IntroScreenModel (model=... no Python da view): 1/1 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/personal_missions_30/intro_view.py",
+        49
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/personal_missions_30/intro_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/personal_missions_30/intro_screen_model.py",
+      "class": "IntroScreenModel",
+      "chain": [
+        "IntroScreenModel"
+      ],
+      "properties": [
+        [
+          "videoPath",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 1,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

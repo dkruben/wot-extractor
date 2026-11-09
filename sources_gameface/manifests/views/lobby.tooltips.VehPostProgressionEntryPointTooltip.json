@@ -1,0 +1,126 @@
+{
+  "rid": "R.views.lobby.tooltips.VehPostProgressionEntryPointTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "VehPostProgressionEntryPointTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "VehPostProgressionEntryPointTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip/VehPostProgressionEntryPointTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip/VehPostProgressionEntryPointTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "VehPostProgressionEntryPointTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip/VehPostProgressionEntryPointTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip/VehPostProgressionEntryPointTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "VehPostProgressionEntryPointTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip/VehPostProgressionEntryPointTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip/VehPostProgressionEntryPointTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip/VehPostProgressionEntryPointTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tooltips/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tooltips/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip/VehPostProgressionEntryPointTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip/VehPostProgressionEntryPointTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip/VehPostProgressionEntryPointTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tooltips/VehPostProgressionEntryPointTooltip/VehPostProgressionEntryPointTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tooltips.VehPostProgressionEntryPointTooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.tooltips.VehPostProgressionEntryPointTooltip no Python",
+      "ViewModel VehPostProgressionEntryPointTooltipModel (model=... no Python da view): 5/6 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tooltips/veh_post_progression_entry_point_tooltip.py",
+        23
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/vehicle_hub/sub_presenters/modules_sub_presenter.py",
+        155
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/tooltips/veh_post_progression_entry_point_tooltip.py",
+      "sources/res/scripts/client/gui/impl/lobby/vehicle_hub/sub_presenters/modules_sub_presenter.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/tooltips/veh_post_progression_entry_point_tooltip_model.py",
+      "class": "VehPostProgressionEntryPointTooltipModel",
+      "chain": [
+        "VehPostProgressionEntryPointTooltipModel"
+      ],
+      "properties": [
+        [
+          "modulesExplored",
+          "Number"
+        ],
+        [
+          "modulesTotal",
+          "Number"
+        ],
+        [
+          "header",
+          "Resource"
+        ],
+        [
+          "description",
+          "Resource"
+        ],
+        [
+          "status",
+          "Resource"
+        ],
+        [
+          "hasVehiclesToUnlock",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 5,
+        "total": 6,
+        "missing": [
+          "hasVehiclesToUnlock"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

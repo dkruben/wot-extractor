@@ -1,0 +1,20 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/TeamInfoInBattleVehicleSwitch.def -->
+<root>
+	<Properties>
+		<statuses>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<Default>{}</Default>
+		</statuses>
+		<positions>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<Default>{}</Default>
+		</positions>
+	</Properties>
+	<ofEntity>
+		<TeamInfo />
+	</ofEntity>
+</root>

@@ -1,0 +1,5 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/item_defs/dossier.xml -->
+<root>
+	<xmlns:xsi>http://www.w3.org/2001/XMLSchema-instance</xmlns:xsi>
+	<xsi:noNamespaceSchemaLocation>../development/xml_schema/dossier.xsd</xsi:noNamespaceSchemaLocation>
+</root>

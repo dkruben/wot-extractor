@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/item_defs/fairplay_violation_types.xml -->
+<root>
+	<LS_DESERTER>
+		<violationType>DESERTER</violationType>
+	</LS_DESERTER>
+	<LS_AFK>
+		<violationType>AFK</violationType>
+	</LS_AFK>
+	<LS_AFK_WARNING_MSG>
+		<violationType>AFK</violationType>
+	</LS_AFK_WARNING_MSG>
+</root>

@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/VehicleHealthBroadcastListenerComponent_Avatar.def -->
+<root>
+	<ClientMethods>
+		<onVehicleHealthChanged>
+			<Arg>OBJECT_ID</Arg>
+			<Arg>INT16</Arg>
+			<Arg>OBJECT_ID</Arg>
+			<Arg>UINT8</Arg>
+			<Arg>INT8</Arg>
+		</onVehicleHealthChanged>
+	</ClientMethods>
+</root>

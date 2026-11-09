@@ -1,0 +1,105 @@
+{
+  "rid": "R.views.battle_royale.mono.lobby.tooltips.shop_button",
+  "rid_source": "sources/res/battle_royale/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "shop_button",
+  "dir": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/shop_button",
+  "feature": "battle_royale",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/shop_button/bundle.js",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/shop_button/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "shop_button.css",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/shop_button/shop_button.css",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/shop_button/shop_button.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "shop_button.html",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/shop_button/shop_button.html",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/shop_button/shop_button.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/proxy_currency.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/proxy_currency.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/shop_button/bundle.js",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/shop_button/bundle.js"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/shop_button/shop_button.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/shop_button/shop_button.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle_royale.mono.lobby.tooltips.shop_button",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.battle_royale.mono.lobby.tooltips.shop_button no Python",
+      "ViewModel ShopButtonTooltipViewModel (model=... no Python da view): 1/1 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/shop_button_tooltip_view.py",
+        16
+      ],
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/user_missions/hangar_widget/presenters/event_shop_presenter.py",
+        29
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/shop_button_tooltip_view.py",
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/user_missions/hangar_widget/presenters/event_shop_presenter.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/gen/view_models/views/lobby/tooltips/shop_button_tooltip_view_model.py",
+      "class": "ShopButtonTooltipViewModel",
+      "chain": [
+        "ShopButtonTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "eventInfo",
+          "ViewModel"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 1,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/gen/view_models/views/lobby/views/widget/event_shop_model.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/dialogs/mono_dialog_template_button_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from enum import Enum as Enum
+from frameworks.wulf import ViewModel as ViewModel
+from gui.impl.gen import R as R
+
+class ButtonType(Enum):
+    PRIMARY = 'primary'
+    SECONDARY = 'secondary'
+    CUSTOM = 'custom'
+
+class MonoDialogTemplateButtonModel(ViewModel):
+    __slots__: tuple
+    def __init__(self, properties=5, commands=0):
+        ...
+    def getAction(self):
+        ...
+    def setAction(self, value):
+        ...
+    def getLabel(self):
+        ...
+    def setLabel(self, value):
+        ...
+    def getSoundTarget(self):
+        ...
+    def setSoundTarget(self, value):
+        ...
+    def getIsDisabled(self):
+        ...
+    def setIsDisabled(self, value):
+        ...
+    def getType(self):
+        ...
+    def setType(self, value):
+        ...
+    def _initialize(self):
+        ...

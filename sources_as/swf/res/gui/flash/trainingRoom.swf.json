@@ -1,0 +1,305 @@
+{
+ "source": "sources/res/gui/flash/trainingRoom.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 26142,
+ "actual_length": 26142,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 19,
+  "ShowFrame": 326,
+  "DefineShape": 7,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 85,
+  "RemoveObject2": 4,
+  "DefineShape3": 7,
+  "DefineBitsLossless2": 7,
+  "DefineEditText": 22,
+  "DefineSprite": 18,
+  "FrameLabel": 33,
+  "FileAttributes": 1,
+  "PlaceObject3": 37,
+  "ImportAssets2": 9,
+  "CSMTextSettings": 22,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 3,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 7,
+  "shapes": 14,
+  "sprites": 18,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 22,
+  "fonts": 0,
+  "classes": 17,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "voice.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "iconLibrary.swf",
+   "symbols": []
+  },
+  {
+   "url": "minimapLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 61,
+   "class": "trainingRoomUI"
+  },
+  {
+   "id": 50,
+   "class": "TeamDragList"
+  },
+  {
+   "id": 49,
+   "class": "DragTitleList"
+  },
+  {
+   "id": 48,
+   "class": "trainingRoom_fla.DragTarget_4"
+  },
+  {
+   "id": 44,
+   "class": "trainingRoom_fla.ScrollingBG_3"
+  },
+  {
+   "id": 41,
+   "class": "ObserverButtonComponentUI"
+  },
+  {
+   "id": 40,
+   "class": "AdditionalInfoUI"
+  },
+  {
+   "id": 39,
+   "class": "ArenaVoipSettingsUI"
+  },
+  {
+   "id": 38,
+   "class": "Comp7ConditionsRoomUI"
+  },
+  {
+   "id": 34,
+   "class": "vehiclesRequiredIcon"
+  },
+  {
+   "id": 31,
+   "class": "freeConsumablesIcon"
+  },
+  {
+   "id": 28,
+   "class": "separatorIcon"
+  },
+  {
+   "id": 25,
+   "class": "tierIcon"
+  },
+  {
+   "id": 22,
+   "class": "DragPlayerElementUI"
+  },
+  {
+   "id": 13,
+   "class": "DragPlayerRenderer"
+  },
+  {
+   "id": 6,
+   "class": "SwapCommandsButton"
+  },
+  {
+   "id": 0,
+   "class": "trainingRoom_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 13767,
+   "classes": 17,
+   "methods": 107,
+   "bodies": 107,
+   "code_bytes": 5272
+  }
+ ],
+ "classes": [
+  {
+   "name": "freeConsumablesIcon",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "separatorIcon",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "tierIcon",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehiclesRequiredIcon",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdditionalInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.AdditionalInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "trainingRoom_fla.DragTarget_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "trainingRoom_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "trainingRoom_fla.ScrollingBG_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7ConditionsRoomUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.Comp7Conditions",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArenaVoipSettingsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.ArenaVoipSettings",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ObserverButtonComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.ObserverButtonComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SwapCommandsButton",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DragPlayerElementUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.DragPlayerElement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DragPlayerRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.TrainingPlayerItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DragTitleList",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.DropTileList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TeamDragList",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.DropList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "trainingRoomUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.TrainingRoom",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

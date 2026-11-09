@@ -1,0 +1,21 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/component_defs/HWVehicleOptionsRequesterComponent.def -->
+<root>
+	<CellMethods>
+		<selectUpgrade>
+			<Args>
+				<index>INT32</index>
+			</Args>
+			<Exposed />
+		</selectUpgrade>
+	</CellMethods>
+	<Properties>
+		<upgradeOptions>
+			<Type>ARRAY<of>STRING</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</upgradeOptions>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+</root>

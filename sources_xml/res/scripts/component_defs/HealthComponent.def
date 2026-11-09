@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/HealthComponent.def -->
+<root>
+	<Properties>
+		<maxHealth>
+			<Type>INT16</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</maxHealth>
+		<health>
+			<Type>INT16</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</health>
+	</Properties>
+	<DefaultKeyName>healthComponent</DefaultKeyName>
+</root>

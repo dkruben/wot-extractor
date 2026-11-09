@@ -1,0 +1,330 @@
+{
+ "source": "sources/res/gui/flash/fortClanBattleRoom.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 606342,
+ "actual_length": 606342,
+ "frame_size_px": [
+  0.0,
+  1013.0,
+  0.0,
+  653.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 26,
+  "ShowFrame": 183,
+  "DefineShape": 55,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 168,
+  "RemoveObject2": 5,
+  "DefineShape3": 4,
+  "DefineBitsJPEG3": 2,
+  "DefineBitsLossless2": 51,
+  "DefineEditText": 28,
+  "DefineSprite": 25,
+  "FrameLabel": 16,
+  "FileAttributes": 1,
+  "PlaceObject3": 57,
+  "ImportAssets2": 12,
+  "CSMTextSettings": 26,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 54,
+  "shapes": 61,
+  "sprites": 25,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 28,
+  "fonts": 0,
+  "classes": 18,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "voice.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyDynamic2.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "iconLibrary.swf",
+   "symbols": []
+  },
+  {
+   "url": "controlsRally.swf",
+   "symbols": []
+  },
+  {
+   "url": "minimapLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "fortCmp.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 168,
+   "class": "FortClanBattleRoomUI"
+  },
+  {
+   "id": 152,
+   "class": "fortClanBattleRoom_fla.timerBack_2"
+  },
+  {
+   "id": 145,
+   "class": "SortieWaitListSectionUI"
+  },
+  {
+   "id": 143,
+   "class": "ClanBattleTeamSectionUI"
+  },
+  {
+   "id": 142,
+   "class": "fortClanBattleRoom_fla.gunnerIcon_13"
+  },
+  {
+   "id": 131,
+   "class": "ClanBattleSortieSlotUI"
+  },
+  {
+   "id": 120,
+   "class": "VehBrokenIcon"
+  },
+  {
+   "id": 117,
+   "class": "ButtonFiltersUI"
+  },
+  {
+   "id": 116,
+   "class": "SortieChatSectionUI"
+  },
+  {
+   "id": 113,
+   "class": "ChatComponentUI"
+  },
+  {
+   "id": 112,
+   "class": "battleTimerUI"
+  },
+  {
+   "id": 105,
+   "class": "ToggleFilterRendererUI"
+  },
+  {
+   "id": 104,
+   "class": "fortClanBattleRoomImporter"
+  },
+  {
+   "id": 103,
+   "class": "LegionariesCandidateItemRndUI"
+  },
+  {
+   "id": 102,
+   "class": "CandidateListItemRendererUI"
+  },
+  {
+   "id": 100,
+   "class": "inviteIndicatorUI"
+  },
+  {
+   "id": 9,
+   "class": "UserNameFieldUI"
+  },
+  {
+   "id": 5,
+   "class": "headerItemRenderUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 19044,
+   "classes": 18,
+   "methods": 105,
+   "bodies": 105,
+   "code_bytes": 7254
+  }
+ ],
+ "classes": [
+  {
+   "name": "VehBrokenIcon",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortClanBattleRoomImporter",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortClanBattleRoom_fla.gunnerIcon_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fortClanBattleRoom_fla.timerBack_2",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.battleRoom.clanBattle.AdvancedClanBattleTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "inviteIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.InviteIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToggleFilterRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ToggleRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "headerItemRenderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.cyberSport.controls.CandidateHeaderItemRender",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UserNameFieldUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UserNameField",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CandidateListItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.cyberSport.controls.CandidateItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LegionariesCandidateItemRndUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.battleRoom.LegionariesCandidateItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonFiltersUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.cmp.battleRoom.SlotButtonFilters",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SortieChatSectionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.battleRoom.SortieChatSection",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SortieWaitListSectionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.battleRoom.FortBattleRoomWaitListSection",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChatComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.messenger.ChannelComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ClanBattleTeamSectionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.battleRoom.clanBattle.FortClanBattleTeamSection",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ClanBattleSortieSlotUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.cmp.battleRoom.SortieSlot",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FortClanBattleRoomUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.battleRoom.clanBattle.FortClanBattleRoom",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

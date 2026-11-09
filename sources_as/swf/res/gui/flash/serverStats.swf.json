@@ -1,0 +1,122 @@
+{
+ "source": "sources/res/gui/flash/serverStats.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 3368,
+ "actual_length": 3368,
+ "frame_size_px": [
+  0.0,
+  210.0,
+  0.0,
+  85.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 5,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 3,
+  "DefineShape3": 1,
+  "DefineEditText": 2,
+  "DefineSprite": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 7,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 1,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 7,
+   "class": "serverStatsImports"
+  },
+  {
+   "id": 6,
+   "class": "ServerStats_UI"
+  },
+  {
+   "id": 4,
+   "class": "ServerInfo_UI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2553,
+   "classes": 3,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 549
+  }
+ ],
+ "classes": [
+  {
+   "name": "serverStatsImports",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServerInfo_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.serverStats.ServerInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServerStats_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.serverStats.ServerStats",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

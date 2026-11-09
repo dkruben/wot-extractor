@@ -1,0 +1,118 @@
+{
+ "source": "sources/res/halloween/gui/flash/timerPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 84494,
+ "actual_length": 84494,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  500.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 64,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 103,
+  "RemoveObject2": 1,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 3,
+  "DefineSprite": 5,
+  "FrameLabel": 3,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 3,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 12,
+   "class": "HWTimerPanelUI"
+  },
+  {
+   "id": 7,
+   "class": "hwtimerUI"
+  },
+  {
+   "id": 4,
+   "class": "timerPanel_fla.headerTimerFxAnim_4"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1220,
+   "classes": 3,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 233
+  }
+ ],
+ "classes": [
+  {
+   "name": "timerPanel_fla.headerTimerFxAnim_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hwtimerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.timerPanel.TimerMovie",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWTimerPanelUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.timerPanel.TimerPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

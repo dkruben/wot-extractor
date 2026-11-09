@@ -1,0 +1,94 @@
+{
+  "rid": "R.views.story_mode.mono.lobby.mission_selection_view",
+  "rid_source": "sources/res/story_mode/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "mission_selection_view",
+  "dir": "story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view",
+  "feature": "story_mode",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view/bundle.js",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view/bundle.js"
+    },
+    {
+      "name": "mission_selection_view.css",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view/mission_selection_view.css",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view/mission_selection_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "mission_selection_view.html",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view/mission_selection_view.html",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view/mission_selection_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/chunks/uilogging_constants.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/uilogging_constants.css"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view/bundle.js",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view/bundle.js"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view/mission_selection_view.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/mission_selection_view/mission_selection_view.css"
+    }
+  ],
+  "engine": [
+    "off:screenResized",
+    "off:self.onScaleUpdated",
+    "on:screenResized",
+    "on:self.onScaleUpdated"
+  ],
+  "child_views": [
+    "story_mode.mono.lobby.tooltips.difficulty_tooltip",
+    "story_mode.mono.lobby.tooltips.mission_tooltip"
+  ],
+  "commands": [
+    "onAboutClick",
+    "onChangeTab",
+    "onLoaded",
+    "onMissionSelect",
+    "onNavigate",
+    "onQuit",
+    "onSelectedMissionTaskUnlocked"
+  ],
+  "link": {
+    "rid": "R.views.story_mode.mono.lobby.mission_selection_view",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.story_mode.mono.lobby.mission_selection_view no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/mission_selection_view.py",
+        54
+      ],
+      [
+        "sources/res/story_mode/scripts/client/story_mode_personality.py",
+        140
+      ]
+    ],
+    "python_files": [
+      "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/mission_selection_view.py",
+      "sources/res/story_mode/scripts/client/story_mode_personality.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

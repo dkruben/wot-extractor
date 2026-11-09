@@ -1,0 +1,42 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fort_rush/scripts/component_defs/CapturePointComponent.def -->
+<root>
+	<Parent>FortRushCapturePointStateMachineComponent</Parent>
+	<Properties>
+		<currentPoints>
+			<Type>FLOAT</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</currentPoints>
+		<capturablePointName>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</capturablePointName>
+		<maxPoints>
+			<Type>FLOAT</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</maxPoints>
+		<invadingTeam>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</invadingTeam>
+		<capturablePointOwnerTeam>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</capturablePointOwnerTeam>
+		<totalInvaders>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</totalInvaders>
+		<isContested>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isContested>
+		<numberOfAttackers>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</numberOfAttackers>
+	</Properties>
+	<ofEntity>
+		<Entity />
+	</ofEntity>
+	<DefaultKeyName>capturePointComponent</DefaultKeyName>
+</root>

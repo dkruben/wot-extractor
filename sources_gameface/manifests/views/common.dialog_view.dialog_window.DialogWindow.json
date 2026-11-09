@@ -1,0 +1,117 @@
+{
+  "rid": "R.views.common.dialog_view.dialog_window.DialogWindow",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "DialogWindow",
+  "dir": "gui/unbound/views/common/dialog_view",
+  "feature": null,
+  "files": [
+    {
+      "name": "dialog_window.unbound",
+      "effective": "res/gui/unbound/views/common/dialog_view/dialog_window.unbound",
+      "all": [
+        "res/gui/unbound/views/common/dialog_view/dialog_window.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.dialog_view.dialog_window.DialogWindow",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.common.dialog_view.dialog_window.DialogWindow no Python",
+      "ViewModel DialogWindowModel (model=... no Python da view): 15/16 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/pub/dialog_window.py",
+        48
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/pub/dialog_window.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/windows/dialog_window_model.py",
+      "class": "DialogWindowModel",
+      "chain": [
+        "DialogWindowModel"
+      ],
+      "properties": [
+        [
+          "buttons",
+          "ViewModel"
+        ],
+        [
+          "icon",
+          "Resource"
+        ],
+        [
+          "iconHighlight",
+          "Resource"
+        ],
+        [
+          "animationHighlight",
+          "Resource"
+        ],
+        [
+          "title",
+          "Resource"
+        ],
+        [
+          "formattedTitle",
+          "String"
+        ],
+        [
+          "titleArgs",
+          "Array"
+        ],
+        [
+          "titleFmtArgs",
+          "Array"
+        ],
+        [
+          "isTitleFmtArgsNamed",
+          "Bool"
+        ],
+        [
+          "backgroundImage",
+          "Resource"
+        ],
+        [
+          "showSoundId",
+          "Resource"
+        ],
+        [
+          "preset",
+          "String"
+        ],
+        [
+          "hasBalance",
+          "Bool"
+        ],
+        [
+          "hasBottomContent",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onClosed",
+        "onBtnClicked"
+      ],
+      "coverage": {
+        "found": 15,
+        "total": 16,
+        "missing": [
+          "onBtnClicked"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

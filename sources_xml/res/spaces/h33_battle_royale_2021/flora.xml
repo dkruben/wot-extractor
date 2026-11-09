@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/h33_battle_royale_2021/flora.xml -->
+<root>
+	<speedgrass>
+		<slopeMin>0.00</slopeMin>
+		<slopeMax>90.00</slopeMax>
+		<sizeLimit>0.00</sizeLimit>
+		<oscillationFreqMin>1.0</oscillationFreqMin>
+		<oscillationFreqMax>6.0</oscillationFreqMax>
+		<fadeFloraHeight>true</fadeFloraHeight>
+	</speedgrass>
+	<tintMap />
+</root>

@@ -1,0 +1,143 @@
+{
+  "rid": "R.views.lobby.tooltips.BattleResultsStatsTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "BattleResultsStatsTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "BattleResultsStatsTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView/BattleResultsStatsTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView/BattleResultsStatsTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleResultsStatsTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView/BattleResultsStatsTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView/BattleResultsStatsTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleResultsStatsTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView/BattleResultsStatsTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView/BattleResultsStatsTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView/BattleResultsStatsTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tooltips/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tooltips/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView/BattleResultsStatsTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView/BattleResultsStatsTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView/BattleResultsStatsTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tooltips/BattleResultsStatsTooltipView/BattleResultsStatsTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tooltips.BattleResultsStatsTooltipView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "8 referencia(s) R.views.lobby.tooltips.BattleResultsStatsTooltipView no Python",
+      "ViewModel CriticalDamageTooltipModel (model=... no Python da view): 1/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+        34
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+        34
+      ],
+      [
+        "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/presenters/sub_presenters/battle_efficiency.py",
+        24
+      ],
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/presenters/sub_presenters/battle_efficiency.py",
+        43
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/battle_results/sub_presenters/fun_personal_efficiency.py",
+        31
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/tooltips/fun_random_battle_results_efficiency_tooltip_view.py",
+        18
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+        43
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tooltips/battle_efficiency_tooltips_views.py",
+        19
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+      "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/presenters/sub_presenters/battle_efficiency.py",
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/presenters/sub_presenters/battle_efficiency.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/battle_results/sub_presenters/fun_personal_efficiency.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/tooltips/fun_random_battle_results_efficiency_tooltip_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+      "sources/res/scripts/client/gui/impl/lobby/tooltips/battle_efficiency_tooltips_views.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/tooltips/critical_damage_tooltip_model.py",
+      "class": "CriticalDamageTooltipModel",
+      "chain": [
+        "CriticalDamageTooltipModel"
+      ],
+      "properties": [
+        [
+          "paramType",
+          "String"
+        ],
+        [
+          "details",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 2,
+        "missing": [
+          "paramType"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/tooltips/efficiency_tooltip_model.py"
+      ]
+    }
+  }
+}

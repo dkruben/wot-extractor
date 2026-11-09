@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/shaders/formats/yn_uv.xml -->
+<root>
+	<elements>
+		<POSITION>
+			<type>FLOAT1</type>
+		</POSITION>
+		<NORMAL />
+		<TEXCOORD>
+			<stream>1</stream>
+			<offset>0</offset>
+			<type>FLOAT2</type>
+		</TEXCOORD>
+	</elements>
+</root>

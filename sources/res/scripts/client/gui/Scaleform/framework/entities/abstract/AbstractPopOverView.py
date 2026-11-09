@@ -1,0 +1,25 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/framework/entities/abstract/AbstractPopOverView.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/framework/entities/abstract/AbstractPopOverView.py
+from __future__ import absolute_import
+from gui.Scaleform.daapi.view.meta.PopOverViewMeta import PopOverViewMeta
+from gui.shared.events import HidePopoverEvent
+
+class AbstractPopOverView(PopOverViewMeta):
+
+    def __init__(self, ctx=None):
+        super(AbstractPopOverView, self).__init__()
+
+    def _populate(self):
+        super(AbstractPopOverView, self)._populate()
+        self.addListener(HidePopoverEvent.HIDE_POPOVER, self._handlerHidePopover)
+
+    def _handlerHidePopover(self, event):
+        self.destroy()
+
+    def _dispose(self):
+        self.removeListener(HidePopoverEvent.HIDE_POPOVER, self._handlerHidePopover)
+        super(AbstractPopOverView, self)._dispose()
+        self.fireEvent(HidePopoverEvent(HidePopoverEvent.POPOVER_DESTROYED))

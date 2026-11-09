@@ -1,0 +1,282 @@
+{
+ "source": "sources/res/halloween/gui/flash/battleUpgradePanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 27149,
+ "actual_length": 27149,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 29,
+  "ShowFrame": 787,
+  "DefineShape": 18,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 10,
+  "PlaceObject2": 316,
+  "RemoveObject2": 2,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 3,
+  "DefineEditText": 11,
+  "DefineSprite": 28,
+  "FrameLabel": 29,
+  "FileAttributes": 1,
+  "PlaceObject3": 17,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 11,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 8,
+  "DoABC2": 1,
+  "DefineShape4": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 26,
+  "sprites": 28,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 11,
+  "fonts": 0,
+  "classes": 18,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 78,
+   "class": "HWBattleUpgradePanelUI"
+  },
+  {
+   "id": 70,
+   "class": "bg"
+  },
+  {
+   "id": 68,
+   "class": "NotificationBorderAnimationUI"
+  },
+  {
+   "id": 67,
+   "class": "NotificationBorderContainerUI"
+  },
+  {
+   "id": 64,
+   "class": "selectBG"
+  },
+  {
+   "id": 62,
+   "class": "HWChoiceInfoPanelUI"
+  },
+  {
+   "id": 57,
+   "class": "HotkeyHintUI"
+  },
+  {
+   "id": 53,
+   "class": "ModuleInfoKeyViewerUI"
+  },
+  {
+   "id": 48,
+   "class": "battleUpgradePanel_fla.CustomButtonIcons_12"
+  },
+  {
+   "id": 31,
+   "class": "buttonLongBgMc"
+  },
+  {
+   "id": 18,
+   "class": "HWModuleInfo"
+  },
+  {
+   "id": 16,
+   "class": "HWCounterUI"
+  },
+  {
+   "id": 9,
+   "class": "AlertTextUI"
+  },
+  {
+   "id": 8,
+   "class": "AtlasIconPlaceHolderUI"
+  },
+  {
+   "id": 6,
+   "class": "HWConfiguratorRendererUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4443,
+   "classes": 18,
+   "methods": 76,
+   "bodies": 76,
+   "code_bytes": 1348
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Sine",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AlertTextUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AtlasIconPlaceHolderUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bg",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "selectBG",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWModuleInfo",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.upgradePanel.components.HWModuleInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HotkeyHintUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.upgradePanel.components.HWHotkeyHint",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModuleInfoKeyViewerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.hintPanel.KeyViewer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NotificationBorderContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.upgradePanel.NotificationBorderContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleUpgradePanel_fla.CustomButtonIcons_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "buttonLongBgMc",
+   "kind": "class",
+   "extends": "net.wg.gui.components.hintPanel.KeyViewerLongKeyBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWChoiceInfoPanelUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.upgradePanel.components.HWChoiceInfoPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWConfiguratorRendererUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.upgradePanel.components.configurator.HWConfiguratorRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NotificationBorderAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.upgradePanel.NotificationBorderAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.counters.CounterView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWBattleUpgradePanelUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.upgradePanel.HWBattleUpgradePanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

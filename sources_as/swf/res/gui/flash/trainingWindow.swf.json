@@ -1,0 +1,212 @@
+{
+ "source": "sources/res/gui/flash/trainingWindow.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 12102,
+ "actual_length": 12102,
+ "frame_size_px": [
+  0.0,
+  896.0,
+  0.0,
+  407.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 10,
+  "ShowFrame": 118,
+  "DefineShape": 4,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 20,
+  "RemoveObject2": 1,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 4,
+  "DefineEditText": 12,
+  "DefineSprite": 9,
+  "FrameLabel": 11,
+  "FileAttributes": 1,
+  "PlaceObject3": 16,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 12,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 4,
+  "shapes": 8,
+  "sprites": 9,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 12,
+  "fonts": 0,
+  "classes": 10,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "minimapLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 33,
+   "class": "TrainingWindow"
+  },
+  {
+   "id": 24,
+   "class": "MapsScrollingList"
+  },
+  {
+   "id": 22,
+   "class": "Comp7ConditionsUI"
+  },
+  {
+   "id": 18,
+   "class": "freeConsumablesIcon"
+  },
+  {
+   "id": 15,
+   "class": "separatorIcon"
+  },
+  {
+   "id": 12,
+   "class": "vehicleRequired3"
+  },
+  {
+   "id": 9,
+   "class": "tierIcon"
+  },
+  {
+   "id": 6,
+   "class": "MapsListItemRendererUI"
+  },
+  {
+   "id": 3,
+   "class": "AdditionalInfoUI"
+  },
+  {
+   "id": 0,
+   "class": "trainingWindow_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 6862,
+   "classes": 10,
+   "methods": 50,
+   "bodies": 50,
+   "code_bytes": 1920
+  }
+ ],
+ "classes": [
+  {
+   "name": "freeConsumablesIcon",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "separatorIcon",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "tierIcon",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleRequired3",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdditionalInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.AdditionalInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "trainingWindow_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7ConditionsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.Comp7Conditions",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsListItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.MapsListItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsScrollingList",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollingListEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TrainingWindow",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.TrainingWindow",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

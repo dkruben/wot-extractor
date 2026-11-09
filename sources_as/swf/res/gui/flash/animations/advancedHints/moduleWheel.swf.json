@@ -1,0 +1,153 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/moduleWheel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 577092,
+ "actual_length": 577092,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#141410",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 35,
+  "ShowFrame": 791,
+  "DefineShape": 15,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 3,
+  "PlaceObject2": 4252,
+  "RemoveObject2": 16,
+  "DefineShape3": 8,
+  "DefineBitsLossless2": 12,
+  "DefineSprite": 34,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 12,
+  "shapes": 26,
+  "sprites": 34,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "moduleWheel_fla.MainTimeline"
+  },
+  {
+   "id": 54,
+   "class": "moduleWheel_fla.iconTankWheelForwardTurnRightOut_27"
+  },
+  {
+   "id": 53,
+   "class": "moduleWheel_fla.iconTankWheelForwardTurnRightIn_26"
+  },
+  {
+   "id": 50,
+   "class": "moduleWheel_fla.iconTankWheelForwardTurnLeftOut_24"
+  },
+  {
+   "id": 49,
+   "class": "moduleWheel_fla.iconTankWheelForwardTurnLeftIn_23"
+  },
+  {
+   "id": 32,
+   "class": "moduleWheel_fla.iconTankBodyWheelBig_16"
+  },
+  {
+   "id": 12,
+   "class": "moduleWheel_fla.iconTankBodyStyleBig_7"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1781,
+   "classes": 7,
+   "methods": 28,
+   "bodies": 28,
+   "code_bytes": 462
+  }
+ ],
+ "classes": [
+  {
+   "name": "moduleWheel_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleWheel_fla.iconTankBodyStyleBig_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleWheel_fla.iconTankBodyWheelBig_16",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleWheel_fla.iconTankWheelForwardTurnLeftIn_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleWheel_fla.iconTankWheelForwardTurnLeftOut_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleWheel_fla.iconTankWheelForwardTurnRightIn_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleWheel_fla.iconTankWheelForwardTurnRightOut_27",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

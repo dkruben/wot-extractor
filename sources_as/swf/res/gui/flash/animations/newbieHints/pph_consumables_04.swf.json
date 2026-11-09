@@ -1,0 +1,101 @@
+{
+ "source": "sources/res/gui/flash/animations/newbieHints/pph_consumables_04.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 91845,
+ "actual_length": 91845,
+ "frame_size_px": [
+  0.0,
+  260.0,
+  0.0,
+  160.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#161616",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 19,
+  "ShowFrame": 480,
+  "DefineShape": 19,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 1983,
+  "RemoveObject2": 29,
+  "DefineShape3": 1,
+  "DefineBitsJPEG3": 14,
+  "DefineSprite": 18,
+  "FrameLabel": 1,
+  "DefineMorphShape": 2,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineMorphShape2": 8,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 14,
+  "shapes": 32,
+  "sprites": 18,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "pph_consumables_04_fla.MainTimeline"
+  },
+  {
+   "id": 64,
+   "class": "pph_consumables_04_fla.main_1"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 629,
+   "classes": 2,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 135
+  }
+ ],
+ "classes": [
+  {
+   "name": "pph_consumables_04_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "pph_consumables_04_fla.main_1",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

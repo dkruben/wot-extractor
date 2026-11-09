@@ -1,0 +1,53 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/halloween/scripts/client/HWBuffDrainLifeComponent.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import random as random
+import weakref as weakref
+from functools import partial as partial
+import BigWorld as BigWorld
+from halloween.gui.battle_control.halloween_battle_constants import VEHICLE_VIEW_STATE as VEHICLE_VIEW_STATE
+from helpers import dependency as dependency
+from helpers.CallbackDelayer import CallbackDelayer as CallbackDelayer
+from skeletons.gui.battle_session import IBattleSessionProvider as IBattleSessionProvider
+from script_component.DynamicScriptComponent import DynamicScriptComponent as DynamicScriptComponent
+_REPEAT_FIRE_EFFECT_DELAY = 15.0
+
+class HWBuffDrainLifeComponent(DynamicScriptComponent):
+    _guiSessionProvider: Any
+    __callbackDelayer: Any
+    __isReady: Any
+    __effectListPlayerRef: Any
+    def __init__(self):
+        ...
+    def onDestroy(self):
+        ...
+    def set_isActive(self, prev):
+        ...
+    def set_isShownStatusIcon(self, prev):
+        ...
+    def _onAvatarReady(self):
+        ...
+    def __updateVisualStatus(self):
+        ...
+    def __isPlayerVehicle(self, vehicleID):
+        ...
+    def __setDamageIndication(self, value):
+        ...
+    def __stopDrainingLifeEffects(self):
+        ...
+    def __playFireEffect(self):
+        ...
+    def __playRepeatingFireEffect(self, vehicle, effects, stages):
+        ...
+    def __stopFireEffects(self):
+        ...
+    def __fadeFireEffects(self):
+        ...
+    def __getEffectsListPlayer(self):
+        ...
+    def __onAppearanceReady(self):
+        ...
+    def __onAvatarVehicleChanged(self):
+        ...

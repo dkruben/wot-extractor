@@ -1,0 +1,60 @@
+{
+  "rid": "R.views.fort_rush.mono.lobby.tooltips.param_tooltip",
+  "rid_source": "sources/res/fort_rush/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "param_tooltip",
+  "dir": "fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/param_tooltip",
+  "feature": "fort_rush",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/param_tooltip/bundle.js",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/param_tooltip/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "param_tooltip.css",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/param_tooltip/param_tooltip.css",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/param_tooltip/param_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "param_tooltip.html",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/param_tooltip/param_tooltip.html",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/param_tooltip/param_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/param_tooltip/bundle.js",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/param_tooltip/bundle.js"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/param_tooltip/param_tooltip.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/tooltips/param_tooltip/param_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.fort_rush.mono.lobby.tooltips.param_tooltip",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

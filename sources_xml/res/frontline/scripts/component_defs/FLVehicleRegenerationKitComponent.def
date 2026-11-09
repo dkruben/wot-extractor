@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/frontline/scripts/component_defs/FLVehicleRegenerationKitComponent.def -->
+<root>
+	<Properties>
+		<regenerationKit>
+			<Type>REGENERATION_KIT_INFO</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</regenerationKit>
+	</Properties>
+	<CellMethods />
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>FLVehicleRegenerationKitComponent</DefaultKeyName>
+</root>

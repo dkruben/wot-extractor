@@ -1,0 +1,236 @@
+{
+ "source": "sources/res/halloween/gui/flash/eventPlayersPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 54298,
+ "actual_length": 54298,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 15,
+  "ShowFrame": 265,
+  "DefineShape": 23,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 254,
+  "RemoveObject2": 2,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 22,
+  "DefineEditText": 8,
+  "DefineSprite": 14,
+  "FrameLabel": 22,
+  "FileAttributes": 1,
+  "PlaceObject3": 10,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 22,
+  "shapes": 24,
+  "sprites": 14,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 8,
+  "fonts": 0,
+  "classes": 13,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 68,
+   "class": "EventPlayersPanelListItemUI"
+  },
+  {
+   "id": 67,
+   "class": "eventPlayersPanel_fla.earAllyLifeType_13"
+  },
+  {
+   "id": 46,
+   "class": "EventMatterIndicatorUI"
+  },
+  {
+   "id": 45,
+   "class": "eventPlayersPanel_fla.matterIcon_9"
+  },
+  {
+   "id": 38,
+   "class": "EventHealthBarUI"
+  },
+  {
+   "id": 37,
+   "class": "earAllyHpFxUI"
+  },
+  {
+   "id": 36,
+   "class": "earAllyHpFxMcUI"
+  },
+  {
+   "id": 31,
+   "class": "earAllyHpMcUI"
+  },
+  {
+   "id": 26,
+   "class": "earAllyBgUI"
+  },
+  {
+   "id": 19,
+   "class": "NamePlayerUI"
+  },
+  {
+   "id": 15,
+   "class": "EventPlayersPanelUI"
+  },
+  {
+   "id": 14,
+   "class": "EventPlayersInfoUI"
+  },
+  {
+   "id": 10,
+   "class": "CollectorStateUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3027,
+   "classes": 13,
+   "methods": 52,
+   "bodies": 52,
+   "code_bytes": 930
+  }
+ ],
+ "classes": [
+  {
+   "name": "CollectorStateUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventPlayersPanel_fla.earAllyLifeType_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventPlayersPanel_fla.matterIcon_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventMatterIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.battle.playersPanel.EventMatterIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NamePlayerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.battle.components.NumberProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "earAllyHpFxUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.battle.playersPanel.EventHealthBarFx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventHealthBarUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.battle.playersPanel.EventHealthBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventPlayersInfoUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.battle.playersPanel.EventPlayersInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventPlayersPanelListItemUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.battle.playersPanel.EventPlayersPanelListItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "earAllyBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "earAllyHpFxMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "earAllyHpMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventPlayersPanelUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.battle.playersPanel.EventPlayersPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

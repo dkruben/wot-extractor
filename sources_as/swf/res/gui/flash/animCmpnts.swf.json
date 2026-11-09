@@ -1,0 +1,135 @@
+{
+ "source": "sources/res/gui/flash/animCmpnts.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 843774,
+ "actual_length": 843774,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 8,
+  "ShowFrame": 220,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 78,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 1,
+  "DefineSprite": 7,
+  "FrameLabel": 13,
+  "FileAttributes": 1,
+  "PlaceObject3": 50,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 3,
+  "sprites": 7,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 13,
+   "class": "RibbonAwardAnimUI"
+  },
+  {
+   "id": 12,
+   "class": "RibbonAwardUI"
+  },
+  {
+   "id": 7,
+   "class": "RibbonAwardsUI"
+  },
+  {
+   "id": 5,
+   "class": "animCmpnts_fla.picRibbon_7"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1166,
+   "classes": 4,
+   "methods": 18,
+   "bodies": 18,
+   "code_bytes": 318
+  }
+ ],
+ "classes": [
+  {
+   "name": "animCmpnts_fla.picRibbon_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RibbonAwardAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.RibbonAwardAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RibbonAwardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.AwardItemRendererEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RibbonAwardsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.RibbonAwards",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

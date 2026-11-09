@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/component_defs/LSVehicleMaxHealthModifierComponent.def -->
+<root>
+	<Properties>
+		<maxHealth>
+			<Type>INT16</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+		</maxHealth>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>lsMaxHealthModifier</DefaultKeyName>
+</root>

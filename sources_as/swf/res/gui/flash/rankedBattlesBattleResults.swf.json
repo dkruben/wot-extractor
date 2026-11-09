@@ -1,0 +1,307 @@
+{
+ "source": "sources/res/gui/flash/rankedBattlesBattleResults.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 39778,
+ "actual_length": 39778,
+ "frame_size_px": [
+  0.0,
+  1602.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 18,
+  "ShowFrame": 412,
+  "DefineShape": 19,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 261,
+  "RemoveObject2": 5,
+  "DefineBitsLossless2": 23,
+  "DefineEditText": 6,
+  "DefineSprite": 17,
+  "FrameLabel": 30,
+  "FileAttributes": 1,
+  "PlaceObject3": 19,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 6,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineMorphShape2": 3,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 23,
+  "shapes": 23,
+  "sprites": 17,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 6,
+  "fonts": 0,
+  "classes": 19,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "rankedBattlesCmp.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 69,
+   "class": "RankedBattlesBattleResultsViewUI"
+  },
+  {
+   "id": 67,
+   "class": "rankedBattlesBattleResults_fla.statusAnim_4"
+  },
+  {
+   "id": 64,
+   "class": "rankedBattlesBattleResults_fla.widgetAnimation_2"
+  },
+  {
+   "id": 62,
+   "class": "resultsContaineUI"
+  },
+  {
+   "id": 61,
+   "class": "ListsContainerRightUI"
+  },
+  {
+   "id": 59,
+   "class": "ListsContainerLeftUI"
+  },
+  {
+   "id": 57,
+   "class": "RankedListWithBackgroundUI"
+  },
+  {
+   "id": 56,
+   "class": "RankedSimpleTileListUI"
+  },
+  {
+   "id": 55,
+   "class": "rankedBattlesBattleResults_fla.bgMiddleElementMc_10"
+  },
+  {
+   "id": 38,
+   "class": "rankedBattlesBattleResults_fla.bgCornerElementMc_9"
+  },
+  {
+   "id": 29,
+   "class": "playerLeftRendererUI"
+  },
+  {
+   "id": 28,
+   "class": "rankedBattlesBattleResults_fla.waveUI_12"
+  },
+  {
+   "id": 22,
+   "class": "playerRightRendererUI"
+  },
+  {
+   "id": 17,
+   "class": "rankedBattlesBattleResults_fla.centerTopIconMc_11"
+  },
+  {
+   "id": 4,
+   "class": "topRankedTopBgBitmapDataUI"
+  },
+  {
+   "id": 3,
+   "class": "notEffectiveRankedTopBgBitmapDataUI"
+  },
+  {
+   "id": 2,
+   "class": "loseRankedTopBgBitmapDataUI"
+  },
+  {
+   "id": 1,
+   "class": "loseBlindRankedTopBgBitmapDataUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 7472,
+   "classes": 19,
+   "methods": 78,
+   "bodies": 78,
+   "code_bytes": 2005
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "loseBlindRankedTopBgBitmapDataUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "loseRankedTopBgBitmapDataUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "notEffectiveRankedTopBgBitmapDataUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "topRankedTopBgBitmapDataUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesBattleResults_fla.bgCornerElementMc_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesBattleResults_fla.bgMiddleElementMc_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesBattleResults_fla.centerTopIconMc_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesBattleResults_fla.statusAnim_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesBattleResults_fla.waveUI_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesBattleResults_fla.widgetAnimation_2",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ListsContainerLeftUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults.RankedListsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ListsContainerRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults.RankedListsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedListWithBackgroundUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults.RankedListWithBackground",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "resultsContaineUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults.ResultsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedSimpleTileListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults.RankedSimpleTileList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "playerLeftRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults.PlayerRankedRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "playerRightRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults.PlayerRankedRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattlesBattleResultsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults.RankedBattlesBattleResults",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

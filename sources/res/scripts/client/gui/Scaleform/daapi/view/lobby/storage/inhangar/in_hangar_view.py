@@ -1,0 +1,80 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/storage/inhangar/in_hangar_view.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/daapi/view/lobby/storage/inhangar/in_hangar_view.py
+from __future__ import absolute_import
+from collections import namedtuple
+from gui.Scaleform.daapi.view.common.filter_popover import VehiclesFilterPopover
+from gui.Scaleform.daapi.view.meta.StorageCategoryInHangarViewMeta import StorageCategoryInHangarViewMeta
+from gui.Scaleform.genConsts.STORAGE_CONSTANTS import STORAGE_CONSTANTS
+from gui.Scaleform.locale.STORAGE import STORAGE
+from gui.shared.gui_items import GUI_ITEM_TYPE
+from gui.shared.utils.requesters import REQ_CRITERIA
+from helpers import dependency
+from skeletons.gui.shared import IItemsCache
+StorageCategoryInHangarDataVO = namedtuple('StorageCategoryInHangarDataVO', ('displayString',
+                                                                             'isZeroCount',
+                                                                             'shouldShow',
+                                                                             'searchInputLabel',
+                                                                             'searchInputName',
+                                                                             'searchInputTooltip',
+                                                                             'searchInputMaxChars'))
+_SEARCH_INPUT_MAX_CHARS = 50
+_TABS_DATA = (
+ {'id': (STORAGE_CONSTANTS.VEHICLES_TAB_ALL), 
+    'label': (STORAGE.INHANGAR_TABS_ALL), 
+    'linkage': (STORAGE_CONSTANTS.IN_HANGAR_ALL_VEHICLES_TAB), 
+    'viewId': (STORAGE_CONSTANTS.IN_HANGAR_ALL_VEHICLES_TAB), 
+    'selected': False},
+ {'id': (STORAGE_CONSTANTS.VEHICLES_TAB_RESTORE), 
+    'label': (STORAGE.INHANGAR_TABS_RESTORE), 
+    'linkage': (STORAGE_CONSTANTS.IN_HANGAR_RESTORE_VEHICLES_TAB), 
+    'viewId': (STORAGE_CONSTANTS.IN_HANGAR_RESTORE_VEHICLES_TAB), 
+    'selected': False})
+_RENT_TAB_DATA = {'id': (STORAGE_CONSTANTS.VEHICLES_TAB_RENT), 
+   'label': (STORAGE.INHANGAR_TABS_RENT), 
+   'linkage': (STORAGE_CONSTANTS.IN_HANGAR_RENT_VEHICLES_TAB), 
+   'viewId': (STORAGE_CONSTANTS.IN_HANGAR_RENT_VEHICLES_TAB), 
+   'selected': False}
+
+class StorageVehicleFilterPopover(VehiclesFilterPopover):
+
+    def _getInitialVO(self, filters, xpRateMultiplier):
+        vo = super(StorageVehicleFilterPopover, self)._getInitialVO(filters, xpRateMultiplier)
+        vo['searchSectionVisible'] = False
+        return vo
+
+
+class StorageCategoryInHangarView(StorageCategoryInHangarViewMeta):
+    _itemsCache = dependency.descriptor(IItemsCache)
+
+    def setActiveState(self, isActive):
+        self.setActive(isActive)
+
+    def setActiveTab(self, tabId):
+        tabsData = self.getTabsData()
+        if tabId:
+            for i, tab in enumerate(tabsData):
+                tabsData[i]['selected'] = False
+                if tab.get('id') == tabId:
+                    tabsData[i]['selected'] = True
+
+        self.as_setTabsDataS(tabsData)
+
+    def _populate(self):
+        super(StorageCategoryInHangarView, self)._populate()
+        self.setActiveTab(STORAGE_CONSTANTS.VEHICLES_TAB_ALL)
+
+    def getTabsData(self):
+        if self.__canShowRentTab():
+            return _TABS_DATA + (_RENT_TAB_DATA,)
+        return _TABS_DATA
+
+    def __canShowRentTab(self):
+        criteria = REQ_CRITERIA.VEHICLE.RENT
+        criteria |= ~REQ_CRITERIA.VEHICLE.IS_STORAGE_HIDDEN
+        criteria |= ~REQ_CRITERIA.VEHICLE.BATTLE_ROYALE
+        criteria |= ~REQ_CRITERIA.VEHICLE.EVENT_BATTLE
+        criteria |= ~REQ_CRITERIA.VEHICLE.WOT_PLUS_VEHICLE
+        return bool(self._itemsCache.items.getItems(GUI_ITEM_TYPE.VEHICLE, criteria))

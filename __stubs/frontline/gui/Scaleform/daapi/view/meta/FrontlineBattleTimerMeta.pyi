@@ -1,0 +1,11 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/frontline/scripts/client/frontline/gui/Scaleform/daapi/view/meta/FrontlineBattleTimerMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.daapi.view.battle.shared.battle_timers import BattleTimer as BattleTimer
+
+class FrontlineBattleTimerMeta(BattleTimer):
+    def as_setTotalTimeWithSecondsS(self, minutes, seconds, timeFactor):
+        ...
+    def as_enableOvertimeS(self, enabled):
+        ...

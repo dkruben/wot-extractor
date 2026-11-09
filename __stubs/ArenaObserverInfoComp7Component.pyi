@@ -1,0 +1,26 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/comp7_core/scripts/client/ArenaObserverInfoComp7Component.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import logging as logging
+import BigWorld as BigWorld
+_logger: Any
+
+class ArenaObserverInfoComp7Component(BigWorld.DynamicScriptComponent):
+    def __init__(self):
+        ...
+    def onDestroy(self):
+        ...
+    def setNested_vehiclesInfo(self, changePath, oldValue):
+        ...
+    def setSlice_vehiclesInfo(self, changePath, oldValue):
+        ...
+    def setNested_poiInfo(self, changePath, oldValue):
+        ...
+    def setSlice_poiInfo(self, changePath, oldValue):
+        ...
+    def setNested_teamBasesInfo(self, changePath, oldValue):
+        ...
+    def setSlice_teamBasesInfo(self, changePath, oldValue):
+        ...

@@ -1,0 +1,37 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7_light/scripts/client/comp7_light/gui/impl/gen/view_models/views/lobby/progression/progression_main_view_model.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7_light/scripts/client/comp7_light/gui/impl/gen/view_models/views/lobby/progression/progression_main_view_model.py
+from enum import IntEnum
+from frameworks.wulf import ViewModel
+from comp7_light.gui.impl.gen.view_models.views.lobby.progression.progression_view_model import ProgressionViewModel
+
+class MainViews(IntEnum):
+    PROGRESSION = 0
+
+
+class ProgressionMainViewModel(ViewModel):
+    __slots__ = ()
+
+    def __init__(self, properties=2, commands=0):
+        super(ProgressionMainViewModel, self).__init__(properties=properties, commands=commands)
+
+    @property
+    def progressionModel(self):
+        return self._getViewModel(0)
+
+    @staticmethod
+    def getProgressionModelType():
+        return ProgressionViewModel
+
+    def getViewType(self):
+        return MainViews(self._getNumber(1))
+
+    def setViewType(self, value):
+        self._setNumber(1, value.value)
+
+    def _initialize(self):
+        super(ProgressionMainViewModel, self)._initialize()
+        self._addViewModelProperty('progressionModel', ProgressionViewModel())
+        self._addNumberProperty('viewType')

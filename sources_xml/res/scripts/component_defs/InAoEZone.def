@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/InAoEZone.def -->
+<root>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<Properties>
+		<inAoEZoneData>
+			<Type>IN_AOE_ZONE</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</inAoEZoneData>
+	</Properties>
+	<CellMethods />
+	<ClientMethods />
+	<DefaultKeyName>inAoEZone</DefaultKeyName>
+</root>

@@ -1,0 +1,144 @@
+{
+ "source": "sources/res/gui/flash/TrainingForm.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 69293,
+ "actual_length": 69293,
+ "frame_size_px": [
+  0.0,
+  990.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 92,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 45,
+  "RemoveObject2": 1,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 3,
+  "DefineEditText": 11,
+  "DefineSprite": 4,
+  "FrameLabel": 9,
+  "FileAttributes": 1,
+  "PlaceObject3": 16,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 11,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 3,
+  "shapes": 6,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 11,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "iconLibrary.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 24,
+   "class": "TrainingFormUI"
+  },
+  {
+   "id": 16,
+   "class": "RoomsScrollingList"
+  },
+  {
+   "id": 14,
+   "class": "RoomsListItemRenderer"
+  },
+  {
+   "id": 0,
+   "class": "trainingForm_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4861,
+   "classes": 4,
+   "methods": 27,
+   "bodies": 27,
+   "code_bytes": 1205
+  }
+ ],
+ "classes": [
+  {
+   "name": "trainingForm_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RoomsListItemRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.TrainingListItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RoomsScrollingList",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollingListEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TrainingFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.training.TrainingForm",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

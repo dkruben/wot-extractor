@@ -1,0 +1,21 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/user_data_object_defs/TriggerVehicleArea.def -->
+<root>
+	<Domain>CELL</Domain>
+	<NonChunk>True</NonChunk>
+	<SupportVSE>True</SupportVSE>
+	<Properties>
+		<Shape>
+			<Type>STRING</Type>
+			<Editable>True</Editable>
+			<Default>Circle</Default>
+		</Shape>
+		<name>
+			<Type>STRING</Type>
+			<Editable>True</Editable>
+		</name>
+		<serverPolygon>
+			<Type>POLYGON_TRIGGER_PARAMS</Type>
+			<Flags>CELL_PRIVATE</Flags>
+		</serverPolygon>
+	</Properties>
+</root>

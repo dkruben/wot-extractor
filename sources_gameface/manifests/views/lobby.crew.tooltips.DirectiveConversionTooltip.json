@@ -1,0 +1,117 @@
+{
+  "rid": "R.views.lobby.crew.tooltips.DirectiveConversionTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "DirectiveConversionTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "DirectiveConversionTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip/DirectiveConversionTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip/DirectiveConversionTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DirectiveConversionTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip/DirectiveConversionTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip/DirectiveConversionTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DirectiveConversionTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip/DirectiveConversionTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip/DirectiveConversionTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip/DirectiveConversionTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip/DirectiveConversionTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip/DirectiveConversionTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip/DirectiveConversionTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/DirectiveConversionTooltip/DirectiveConversionTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.ExtendedTextTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.tooltips.DirectiveConversionTooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.crew.tooltips.DirectiveConversionTooltip no Python",
+      "ViewModel DirectiveConversionTooltipModel (model=... no Python da view): 3/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/directive_conversion_tooltip.py",
+        19
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/utils.py",
+        209
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/directive_conversion_tooltip.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/utils.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/tooltips/directive_conversion_tooltip_model.py",
+      "class": "DirectiveConversionTooltipModel",
+      "chain": [
+        "DirectiveConversionTooltipModel"
+      ],
+      "properties": [
+        [
+          "oldDirective",
+          "ViewModel"
+        ],
+        [
+          "newDirective",
+          "ViewModel"
+        ],
+        [
+          "amount",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 3,
+        "total": 3,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

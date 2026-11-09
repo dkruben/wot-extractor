@@ -1,0 +1,121 @@
+{
+  "rid": "R.views.fun_random.mono.lobby.tooltips.battle_results_economic_tooltip",
+  "rid_source": "sources/res/fun_random/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "battle_results_economic_tooltip",
+  "dir": "fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip",
+  "feature": "fun_random",
+  "files": [
+    {
+      "name": "battle_results_economic_tooltip.css",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip/battle_results_economic_tooltip.css",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip/battle_results_economic_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "battle_results_economic_tooltip.html",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip/battle_results_economic_tooltip.html",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip/battle_results_economic_tooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip/bundle.js",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/chunks/profit.css",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/chunks/profit.css"
+    },
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip/battle_results_economic_tooltip.css",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip/battle_results_economic_tooltip.css"
+    },
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip/bundle.js",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/battle_results_economic_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.fun_random.mono.lobby.tooltips.battle_results_economic_tooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.fun_random.mono.lobby.tooltips.battle_results_economic_tooltip no Python",
+      "ViewModel FunRandomEconomicTooltipViewModel (model=... no Python da view): 5/6 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/battle_results/sub_presenters/fun_personal_rewards.py",
+        30
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/tooltips/fun_random_battle_results_economic_tooltip_view.py",
+        19
+      ]
+    ],
+    "python_files": [
+      "sources/res/fun_random/scripts/client/fun_random/gui/battle_results/sub_presenters/fun_personal_rewards.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/tooltips/fun_random_battle_results_economic_tooltip_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/fun_random/scripts/client/fun_random/gui/impl/gen/view_models/views/lobby/tooltips/fun_random_economic_tooltip_view_model.py",
+      "class": "FunRandomEconomicTooltipViewModel",
+      "chain": [
+        "FunRandomEconomicTooltipViewModel",
+        "FinancialDetailsModel"
+      ],
+      "properties": [
+        [
+          "currencyType",
+          "String"
+        ],
+        [
+          "premiumAdvertising",
+          "String"
+        ],
+        [
+          "earned",
+          "ViewModel"
+        ],
+        [
+          "expenses",
+          "ViewModel"
+        ],
+        [
+          "total",
+          "ViewModel"
+        ],
+        [
+          "additional",
+          "ViewModel"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 5,
+        "total": 6,
+        "missing": [
+          "premiumAdvertising"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

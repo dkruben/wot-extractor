@@ -1,0 +1,156 @@
+{
+ "source": "sources/res/gui/flash/battleRoyaleConsumableButton.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 153740,
+ "actual_length": 153740,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 18,
+  "ShowFrame": 604,
+  "DefineShape": 59,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 699,
+  "RemoveObject2": 6,
+  "DefineShape3": 1,
+  "DefineBitsJPEG3": 2,
+  "DefineBitsLossless2": 8,
+  "DefineEditText": 4,
+  "DefineSprite": 17,
+  "FrameLabel": 21,
+  "FileAttributes": 1,
+  "PlaceObject3": 24,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 10,
+  "shapes": 60,
+  "sprites": 17,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 91,
+   "class": "BattleRoyaleConsumableButtonUI"
+  },
+  {
+   "id": 88,
+   "class": "battleRoyaleConsumableButton_fla.activatedIndicator_11"
+  },
+  {
+   "id": 84,
+   "class": "battleRoyaleConsumableButton_fla.cooldownMc_3"
+  },
+  {
+   "id": 30,
+   "class": "BattleRoyaleRespawnButtonUI"
+  },
+  {
+   "id": 26,
+   "class": "BattleRoyaleConsumableGlowUI"
+  },
+  {
+   "id": 8,
+   "class": "RespawnIconWrapperUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3157,
+   "classes": 6,
+   "methods": 39,
+   "bodies": 39,
+   "code_bytes": 731
+  }
+ ],
+ "classes": [
+  {
+   "name": "battleRoyaleConsumableButton_fla.activatedIndicator_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleRoyaleConsumableButton_fla.cooldownMc_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleConsumableGlowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.consumablesPanel.BattleEquipmentButtonGlow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RespawnIconWrapperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.RespawnButton.RespawnIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleConsumableButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BattleRoyaleConsumableButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleRespawnButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.RespawnButton.BattleRoyaleRespawnButton",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

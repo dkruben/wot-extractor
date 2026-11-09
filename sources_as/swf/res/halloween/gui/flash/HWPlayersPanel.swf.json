@@ -1,0 +1,420 @@
+{
+ "source": "sources/res/halloween/gui/flash/HWPlayersPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 153749,
+ "actual_length": 153749,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 34,
+  "ShowFrame": 413,
+  "DefineShape": 49,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 412,
+  "RemoveObject2": 7,
+  "DefineShape3": 2,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 47,
+  "DefineEditText": 16,
+  "DefineSprite": 33,
+  "FrameLabel": 57,
+  "FileAttributes": 1,
+  "PlaceObject3": 57,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 12,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 48,
+  "shapes": 51,
+  "sprites": 33,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 16,
+  "fonts": 0,
+  "classes": 30,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 148,
+   "class": "HWInviteReceivedIndicatortUI"
+  },
+  {
+   "id": 146,
+   "class": "HWMatterIndicatorUI"
+  },
+  {
+   "id": 145,
+   "class": "HWPlayersPanel_fla.matterIcon_9"
+  },
+  {
+   "id": 137,
+   "class": "HWPlayersPanelListItemUI"
+  },
+  {
+   "id": 136,
+   "class": "DynamicSquadLeftUI"
+  },
+  {
+   "id": 131,
+   "class": "HWPlayersPanel_fla.earAllyLifeType_23"
+  },
+  {
+   "id": 100,
+   "class": "HWHealthBarUI"
+  },
+  {
+   "id": 97,
+   "class": "earAllyHpFxUI"
+  },
+  {
+   "id": 96,
+   "class": "earAllyHpFxMcUI"
+  },
+  {
+   "id": 91,
+   "class": "earAllyHpMcUI"
+  },
+  {
+   "id": 86,
+   "class": "earAllyBgUI"
+  },
+  {
+   "id": 79,
+   "class": "NamePlayerUI"
+  },
+  {
+   "id": 74,
+   "class": "HWSquadAcceptBtUI"
+  },
+  {
+   "id": 69,
+   "class": "PlayersPanelListItemRightUI"
+  },
+  {
+   "id": 68,
+   "class": "DynamicSquadRightUI"
+  },
+  {
+   "id": 67,
+   "class": "SquadAcceptBtUI"
+  },
+  {
+   "id": 62,
+   "class": "SquadAddBtUI"
+  },
+  {
+   "id": 57,
+   "class": "hitItem"
+  },
+  {
+   "id": 51,
+   "class": "HWChatCommandStateUI"
+  },
+  {
+   "id": 50,
+   "class": "HWPlayersPanel_fla.ChatCommandIcon_21"
+  },
+  {
+   "id": 19,
+   "class": "HWPlayersPanel_fla.ChatCommandColorsMC_18"
+  },
+  {
+   "id": 18,
+   "class": "HWPlayersPanel_fla.ChatCommandTriggerAnimation_19"
+  },
+  {
+   "id": 15,
+   "class": "HWPlayersPanelUI"
+  },
+  {
+   "id": 14,
+   "class": "PlayersPanelSwitchUI"
+  },
+  {
+   "id": 13,
+   "class": "PlayersPanelSwitchButtonUI"
+  },
+  {
+   "id": 6,
+   "class": "HWPlayerPanelListLeftUI"
+  },
+  {
+   "id": 5,
+   "class": "InviteReceivedIndicatorLeftUI"
+  },
+  {
+   "id": 3,
+   "class": "PlayerPanelListRightUI"
+  },
+  {
+   "id": 2,
+   "class": "InviteReceivedIndicatorRightUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 8210,
+   "classes": 30,
+   "methods": 156,
+   "bodies": 156,
+   "code_bytes": 2635
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hitItem",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWInviteReceivedIndicatortUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.InviteReceivedIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InviteReceivedIndicatorLeftUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.InviteReceivedIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InviteReceivedIndicatorRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.InviteReceivedIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWMatterIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.playersPanel.HWMatterIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWPlayersPanel_fla.ChatCommandColorsMC_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWPlayersPanel_fla.ChatCommandIcon_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWPlayersPanel_fla.ChatCommandTriggerAnimation_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWPlayersPanel_fla.earAllyLifeType_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWPlayersPanel_fla.matterIcon_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NamePlayerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.components.NumberProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "earAllyHpFxUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.playersPanel.HWHealthBarFx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWChatCommandStateUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.playersPanel.HWChatCommandItemComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWPlayerPanelListLeftUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.playersPanel.HWPlayersPanelList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerPanelListRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.PlayersPanelListRight",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DynamicSquadRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.PlayersPanelDynamicSquad",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWHealthBarUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.playersPanel.HWHealthBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWSquadAcceptBtUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.buttons.BattleButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SquadAcceptBtUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.buttons.BattleButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SquadAddBtUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.buttons.BattleButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DynamicSquadLeftUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.playersPanel.HWPlayersPanelDynamicSquad",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayersPanelSwitchUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.panelSwitch.PlayersPanelSwitch",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayersPanelListItemRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.list.PlayersPanelListItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "earAllyBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "earAllyHpFxMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "earAllyHpMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayersPanelSwitchButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.stats.components.playersPanel.panelSwitch.PlayersPanelSwitchButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWPlayersPanelListItemUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.playersPanel.HWPlayersPanelListItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWPlayersPanelUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.playersPanel.HWPlayersPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

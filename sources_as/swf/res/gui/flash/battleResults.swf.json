@@ -1,0 +1,142 @@
+{
+ "source": "sources/res/gui/flash/battleResults.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 4475,
+ "actual_length": 4475,
+ "frame_size_px": [
+  0.0,
+  1017.0,
+  0.0,
+  601.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 3,
+  "ShowFrame": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 2,
+  "DefineShape3": 1,
+  "DefineEditText": 1,
+  "DefineSprite": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 10,
+  "ImportAssets2": 8,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 1,
+  "sprites": 2,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "epicStats.swf",
+   "symbols": []
+  },
+  {
+   "url": "commonStats.swf",
+   "symbols": []
+  },
+  {
+   "url": "teamStats.swf",
+   "symbols": []
+  },
+  {
+   "url": "detailsStats.swf",
+   "symbols": []
+  },
+  {
+   "url": "windows.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 4,
+   "class": "battleResult"
+  },
+  {
+   "id": 1,
+   "class": "exportInFirstFrame"
+  },
+  {
+   "id": 0,
+   "class": "battleResults_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3485,
+   "classes": 3,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 658
+  }
+ ],
+ "classes": [
+  {
+   "name": "battleResults_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "exportInFirstFrame",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleResult",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.BattleResults",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

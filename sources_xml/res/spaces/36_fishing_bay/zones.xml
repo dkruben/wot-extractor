@@ -1,0 +1,18 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/36_fishing_bay/zones.xml -->
+<root>
+	<path>
+		<id>192307208</id>
+		<name>path</name>
+		<node>
+			<name>36_fishing_bay_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>4030083837</id>
+			<transform>
+				<row0>59.876686 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 52.53494</row2>
+				<row3>97.13834 9.118459 123.74807</row3>
+			</transform>
+		</node>
+	</path>
+</root>

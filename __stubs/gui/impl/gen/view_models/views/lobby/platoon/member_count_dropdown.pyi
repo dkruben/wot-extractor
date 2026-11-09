@@ -1,0 +1,29 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/platoon/member_count_dropdown.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from frameworks.wulf import Array as Array
+from gui.impl.gen.view_models.ui_kit.gf_drop_down_model import GfDropDownModel as GfDropDownModel
+from gui.impl.gen.view_models.views.lobby.platoon.dropdown_item import DropdownItem as DropdownItem
+
+class MemberCountDropdown(GfDropDownModel):
+    __slots__: tuple
+    def __init__(self, properties=6, commands=1):
+        ...
+    def getItems(self):
+        ...
+    def setItems(self, value):
+        ...
+    @staticmethod
+    def getItemsType():
+        ...
+    def getIsDisabled(self):
+        ...
+    def setIsDisabled(self, value):
+        ...
+    def getTooltipText(self):
+        ...
+    def setTooltipText(self, value):
+        ...
+    def _initialize(self):
+        ...

@@ -1,0 +1,681 @@
+{
+ "source": "sources/res/gui/flash/battleRoyalePage.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 1106199,
+ "actual_length": 1106199,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 65,
+  "ShowFrame": 906,
+  "DefineShape": 31,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 4,
+  "PlaceObject2": 1095,
+  "RemoveObject2": 12,
+  "DefineShape3": 9,
+  "DefineBitsJPEG3": 10,
+  "DefineBitsLossless2": 20,
+  "DefineEditText": 35,
+  "DefineSprite": 64,
+  "FrameLabel": 32,
+  "FileAttributes": 1,
+  "PlaceObject3": 193,
+  "ImportAssets2": 36,
+  "CSMTextSettings": 31,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 30,
+  "shapes": 45,
+  "sprites": 64,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 35,
+  "fonts": 0,
+  "classes": 44,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleRoyaleConsumableButton.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleRoyalePostmortemPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "decorativeCrosshairPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleRoyaleFullStats.swf",
+   "symbols": []
+  },
+  {
+   "url": "damageInfoPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleLevelPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "sixthSense.swf",
+   "symbols": []
+  },
+  {
+   "url": "widgetsPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "dualGunPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "statusNotificationsPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "eventBattleHint.swf",
+   "symbols": []
+  },
+  {
+   "url": "fragsAndEnemiesBar.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleEndWarningPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "prebattleTimer.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleUpgradePanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "damagePanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleMessenger.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleDamageLogPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleAnimationTimer.swf",
+   "symbols": []
+  },
+  {
+   "url": "siegeModePanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "debugPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "epicMinimap.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "radarButton.swf",
+   "symbols": []
+  },
+  {
+   "url": "ribbonsPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "consumablesPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "calloutPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleRoyalePlayerStats.swf",
+   "symbols": []
+  },
+  {
+   "url": "hintPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "perksPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "gameMessagesPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "radialMenu.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleRoyaleWinnerCongrats.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleRoyaleLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 174,
+   "class": "BattlePageUI"
+  },
+  {
+   "id": 173,
+   "class": "BattleRoyaleTeamPanelUI"
+  },
+  {
+   "id": 171,
+   "class": "battleRoyalePage_fla.AllyBgBlinkMC_4"
+  },
+  {
+   "id": 160,
+   "class": "ShamrockSideBarUI"
+  },
+  {
+   "id": 153,
+   "class": "ShamrockReceiveAnimationUI"
+  },
+  {
+   "id": 152,
+   "class": "ValueTFWrapperUI"
+  },
+  {
+   "id": 150,
+   "class": "ShamrockTotalAmountUI"
+  },
+  {
+   "id": 145,
+   "class": "ShamrockCollectUI"
+  },
+  {
+   "id": 144,
+   "class": "ShamrockCollectAnimationUI"
+  },
+  {
+   "id": 138,
+   "class": "CorrodingShotIndicatorUI"
+  },
+  {
+   "id": 135,
+   "class": "BattleRoyaleTimersPanelUI"
+  },
+  {
+   "id": 132,
+   "class": "AirDropTimerUI"
+  },
+  {
+   "id": 125,
+   "class": "RespawnTimerUI"
+  },
+  {
+   "id": 121,
+   "class": "TimerTF"
+  },
+  {
+   "id": 116,
+   "class": "BattleRoyalePlayersPanelUI"
+  },
+  {
+   "id": 109,
+   "class": "RespawnMessagePanelUI"
+  },
+  {
+   "id": 107,
+   "class": "DamageScreenUI"
+  },
+  {
+   "id": 106,
+   "class": "battleRoyalePage_fla.shineAnim_32"
+  },
+  {
+   "id": 102,
+   "class": "battlePageImportsUI"
+  },
+  {
+   "id": 101,
+   "class": "BattleRoyalePlayersPanelSeparatorUI"
+  },
+  {
+   "id": 99,
+   "class": "BattleRoyaleTeamPanelListItemUI"
+  },
+  {
+   "id": 98,
+   "class": "battleRoyalePage_fla.SoundMC_45"
+  },
+  {
+   "id": 88,
+   "class": "battleRoyalePage_fla.mcRespawnAnimation_39"
+  },
+  {
+   "id": 73,
+   "class": "HpProgressBarUI"
+  },
+  {
+   "id": 67,
+   "class": "BattleRoyalePlayersPanelListItemUI"
+  },
+  {
+   "id": 43,
+   "class": "VehicleTypeIconUI"
+  },
+  {
+   "id": 42,
+   "class": "BRPlayersPanelRespUI"
+  },
+  {
+   "id": 39,
+   "class": "RespawnMessageAvailableUI"
+  },
+  {
+   "id": 33,
+   "class": "RespawnMessageAvailableUISmall"
+  },
+  {
+   "id": 30,
+   "class": "RespawnMessageNoIconUI"
+  },
+  {
+   "id": 27,
+   "class": "RespawnMessageNoIconUISmall"
+  },
+  {
+   "id": 24,
+   "class": "RespawnMessageNotAvailableUI"
+  },
+  {
+   "id": 19,
+   "class": "RespawnMessageNotAvailableUISmall"
+  },
+  {
+   "id": 14,
+   "class": "RespawnMessageTimerUI"
+  },
+  {
+   "id": 8,
+   "class": "RespawnMessageTimerUISmall"
+  },
+  {
+   "id": 0,
+   "class": "battleRoyalePage_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 11972,
+   "classes": 44,
+   "methods": 187,
+   "bodies": 187,
+   "code_bytes": 4187
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Sine",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Circular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Exponential",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyalePlayersPanelSeparatorUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BRPlayersPanelRespUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battlePageImportsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleRoyalePage_fla.AllyBgBlinkMC_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleRoyalePage_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleRoyalePage_fla.SoundMC_45",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleRoyalePage_fla.mcRespawnAnimation_39",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleRoyalePage_fla.shineAnim_32",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DamageScreenUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.DamageScreen",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TimerTF",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.timersPanel.TimerTextField",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AirDropTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.timersPanel.AirDropTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyalePlayersPanelListItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.playersPanel.PlayersPanelItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleTeamPanelListItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.BattleRoyaleTeamPanelListItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RespawnTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.timersPanel.RespawnTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShamrockCollectAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockCollectAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShamrockCollectUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockCollect",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShamrockReceiveAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockReceiveAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShamrockSideBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockSideBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShamrockTotalAmountUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.shamrock.components.ShamrockTotalAmount",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ValueTFWrapperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.shamrock.components.TextFieldWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleTypeIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.playersPanel.ImageWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HpProgressBarUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.StatusIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RespawnMessageAvailableUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.respawnMessages.RespawnMessageWithDescription",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RespawnMessageAvailableUISmall",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.respawnMessages.RespawnMessageWithDescription",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RespawnMessageNoIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.respawnMessages.RespawnMessageWithDescription",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RespawnMessageNoIconUISmall",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.respawnMessages.RespawnMessageWithDescription",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RespawnMessageNotAvailableUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.respawnMessages.RespawnMessageWithDescription",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RespawnMessageNotAvailableUISmall",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.respawnMessages.RespawnMessageWithDescription",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RespawnMessageTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.respawnMessages.RespawnMessageTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RespawnMessageTimerUISmall",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.respawnMessages.RespawnMessageTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyalePlayersPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.playersPanel.BattleRoyalePlayersPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleTeamPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.BattleRoyaleTeamPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleTimersPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.timersPanel.BattleRoyaleTimersPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CorrodingShotIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.CorrodingShotIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RespawnMessagePanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.respawnMessages.RespawnMessagePanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattlePageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.BattleRoyalePage",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

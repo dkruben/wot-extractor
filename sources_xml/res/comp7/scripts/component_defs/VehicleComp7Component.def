@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/comp7/scripts/component_defs/VehicleComp7Component.def -->
+<root>
+	<Properties />
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>vehicleComp7</DefaultKeyName>
+</root>

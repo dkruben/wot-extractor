@@ -1,0 +1,174 @@
+{
+ "source": "sources/res/gui/flash/dualGunPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 37315,
+ "actual_length": 37315,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 15,
+  "ShowFrame": 537,
+  "DefineShape": 277,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 3,
+  "PlaceObject2": 668,
+  "RemoveObject2": 9,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 9,
+  "DefineEditText": 5,
+  "DefineSprite": 14,
+  "FrameLabel": 19,
+  "FileAttributes": 1,
+  "PlaceObject3": 14,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 5,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 12,
+  "shapes": 278,
+  "sprites": 14,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 5,
+  "fonts": 0,
+  "classes": 8,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 309,
+   "class": "DualGunPanelUI"
+  },
+  {
+   "id": 303,
+   "class": "DualGunPanelTimerUI"
+  },
+  {
+   "id": 297,
+   "class": "DualGunPanelGunIndicatorUI"
+  },
+  {
+   "id": 283,
+   "class": "DualGunReloadingBulletUI"
+  },
+  {
+   "id": 191,
+   "class": "DualGunChangingProgressIndicatorUI"
+  },
+  {
+   "id": 190,
+   "class": "dualGunPanel_fla.DualGunChangingProgressIndicatorContent_8"
+  },
+  {
+   "id": 183,
+   "class": "ChargeProgressAnimationUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2748,
+   "classes": 8,
+   "methods": 46,
+   "bodies": 46,
+   "code_bytes": 808
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "dualGunPanel_fla.DualGunChangingProgressIndicatorContent_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DualGunChangingProgressIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.dualGunPanel.DualGunChangingProgressIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DualGunPanelTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.dualGunPanel.DualGunPanelTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeProgressAnimationUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.StatusIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DualGunReloadingBulletUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.StatusIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DualGunPanelGunIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.dualGunPanel.DualGunPanelGunIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DualGunPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.dualGunPanel.DualGunPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

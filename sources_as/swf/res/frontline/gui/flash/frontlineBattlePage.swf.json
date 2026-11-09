@@ -1,0 +1,327 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineBattlePage.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 8807,
+ "actual_length": 8807,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  800.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 3,
+  "ShowFrame": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 1,
+  "DefineSprite": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 43,
+  "ImportAssets2": 41,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 2,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 11,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "postmortemPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "decorativeCrosshairPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "prebattleTimerCmpnts.swf",
+   "symbols": []
+  },
+  {
+   "url": "calloutPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "radialMenu.swf",
+   "symbols": []
+  },
+  {
+   "url": "ribbonsPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "damageInfoPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "widgetsPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "dualGunPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "sixthSense.swf",
+   "symbols": []
+  },
+  {
+   "url": "statusNotificationsPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "teamBasesPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "siegeModePanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineDamagePanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleDamageLogPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleEndWarningPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineMinimap.swf",
+   "symbols": []
+  },
+  {
+   "url": "spectatorView.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineMessagesPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineOverviewMapScreen.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|recoveryPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineFullStats.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineScorePanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "prebattleTimer.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineBattleTimer.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineBattleUpgradePanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "perksPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "hintPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineMissionsPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlinePlatoonPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineInGameRank.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineModificationPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineConsumablesPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineReinforcementPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineDeploymentMap.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleMessenger.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineRespawnView.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineBattleLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "debugPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "deathCamHud.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 2,
+   "class": "FrontlineBattlePage_UI"
+  },
+  {
+   "id": 1,
+   "class": "frontlineBattlePageImportsUI"
+  },
+  {
+   "id": 0,
+   "class": "frontlineBattlePage_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4932,
+   "classes": 11,
+   "methods": 59,
+   "bodies": 59,
+   "code_bytes": 1822
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Sine",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Circular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Exponential",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineBattlePageImportsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineBattlePage_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineBattlePage_UI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.FrontlineBattlePage",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "source": "sources/res/last_stand/gui/flash/animations/advancedHints/ls_nitro.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 173445,
+ "actual_length": 173445,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 31,
+  "ShowFrame": 931,
+  "DefineShape": 18,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 2095,
+  "RemoveObject2": 11,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 12,
+  "DefineSprite": 30,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 12,
+  "shapes": 27,
+  "sprites": 30,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "ls_nitro_fla.MainTimeline"
+  },
+  {
+   "id": 68,
+   "class": "ls_nitro_fla.slotFx_30"
+  },
+  {
+   "id": 62,
+   "class": "ls_nitro_fla.activeAbilityReload_28"
+  },
+  {
+   "id": 60,
+   "class": "ls_nitro_fla.activeAbilityCountdown_25"
+  },
+  {
+   "id": 12,
+   "class": "ls_nitro_fla.iconTankBodyStyleBig_7"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1207,
+   "classes": 5,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 330
+  }
+ ],
+ "classes": [
+  {
+   "name": "ls_nitro_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_nitro_fla.activeAbilityCountdown_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_nitro_fla.activeAbilityReload_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_nitro_fla.iconTankBodyStyleBig_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_nitro_fla.slotFx_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

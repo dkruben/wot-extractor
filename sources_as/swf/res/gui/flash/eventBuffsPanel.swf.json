@@ -1,0 +1,99 @@
+{
+ "source": "sources/res/gui/flash/eventBuffsPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 1048,
+ "actual_length": 1048,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  200.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 3,
+  "ShowFrame": 3,
+  "SetBackgroundColor": 1,
+  "DefineSprite": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 2,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 2,
+   "class": "EventBuffButtonUI"
+  },
+  {
+   "id": 1,
+   "class": "EventBuffsPanelUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 834,
+   "classes": 2,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 136
+  }
+ ],
+ "classes": [
+  {
+   "name": "EventBuffButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.buffsPanel.EventBuffButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBuffsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.buffsPanel.BuffsPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,189 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/moduleDualgun.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 220909,
+ "actual_length": 220909,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#141410",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 34,
+  "ShowFrame": 2111,
+  "DefineShape": 24,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 3323,
+  "RemoveObject2": 41,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 18,
+  "DefineSprite": 33,
+  "FileAttributes": 1,
+  "PlaceObject3": 19,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 7,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 19,
+  "shapes": 35,
+  "sprites": 33,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 10,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "moduleDualgun_fla.MainTimeline"
+  },
+  {
+   "id": 83,
+   "class": "moduleDualgun_fla.crosshairReloadLow_31"
+  },
+  {
+   "id": 82,
+   "class": "moduleDualgun_fla.crosshairReloadAnimLow_32"
+  },
+  {
+   "id": 78,
+   "class": "moduleDualgun_fla.crosshairDoublegunLoad_29"
+  },
+  {
+   "id": 74,
+   "class": "moduleDualgun_fla.crosshairReloadMed_27"
+  },
+  {
+   "id": 73,
+   "class": "moduleDualgun_fla.crosshairReloadAnimMed_28"
+  },
+  {
+   "id": 71,
+   "class": "moduleDualgun_fla.shelReload_25"
+  },
+  {
+   "id": 60,
+   "class": "moduleDualgun_fla.crosshairReloadFast_20"
+  },
+  {
+   "id": 59,
+   "class": "moduleDualgun_fla.crosshairReloadAnimFast_21"
+  },
+  {
+   "id": 52,
+   "class": "moduleDualgun_fla.tankShoot_16"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2292,
+   "classes": 10,
+   "methods": 40,
+   "bodies": 40,
+   "code_bytes": 663
+  }
+ ],
+ "classes": [
+  {
+   "name": "moduleDualgun_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleDualgun_fla.crosshairDoublegunLoad_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleDualgun_fla.crosshairReloadAnimFast_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleDualgun_fla.crosshairReloadAnimLow_32",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleDualgun_fla.crosshairReloadAnimMed_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleDualgun_fla.crosshairReloadFast_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleDualgun_fla.crosshairReloadLow_31",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleDualgun_fla.crosshairReloadMed_27",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleDualgun_fla.shelReload_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleDualgun_fla.tankShoot_16",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

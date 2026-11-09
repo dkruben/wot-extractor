@@ -1,0 +1,366 @@
+{
+ "source": "sources/res/gui/flash/personalMissionsCmp.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 2694423,
+ "actual_length": 2694423,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 50,
+  "ShowFrame": 401,
+  "DefineShape": 27,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 265,
+  "RemoveObject2": 2,
+  "DefineShape3": 5,
+  "DefineBitsLossless2": 25,
+  "DefineEditText": 13,
+  "DefineSprite": 49,
+  "FrameLabel": 32,
+  "FileAttributes": 1,
+  "PlaceObject3": 22,
+  "ImportAssets2": 6,
+  "CSMTextSettings": 13,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 25,
+  "shapes": 32,
+  "sprites": 49,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 13,
+  "fonts": 0,
+  "classes": 24,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 119,
+   "class": "OperationUI"
+  },
+  {
+   "id": 115,
+   "class": "OperationDescriptionUI"
+  },
+  {
+   "id": 112,
+   "class": "FreeSheetsCounterUI"
+  },
+  {
+   "id": 110,
+   "class": "OperationSeparatorUI"
+  },
+  {
+   "id": 107,
+   "class": "ChainButtonUI"
+  },
+  {
+   "id": 103,
+   "class": "ChainButtonContentUI"
+  },
+  {
+   "id": 100,
+   "class": "personalMissionsCmp_fla.ButtonBackgroundSelectedTween_23"
+  },
+  {
+   "id": 96,
+   "class": "personalMissionsCmp_fla.ButtonBackgroundTween_21"
+  },
+  {
+   "id": 92,
+   "class": "Flash"
+  },
+  {
+   "id": 89,
+   "class": "ItemSlot80x80_UI"
+  },
+  {
+   "id": 77,
+   "class": "PersonalMissionsUnlockBtnUI"
+  },
+  {
+   "id": 67,
+   "class": "OperationsHeaderUI"
+  },
+  {
+   "id": 66,
+   "class": "OperationsContainerUI"
+  },
+  {
+   "id": 54,
+   "class": "OperationTitleUI"
+  },
+  {
+   "id": 51,
+   "class": "personalMissionsCmpExporter"
+  },
+  {
+   "id": 50,
+   "class": "PersonalMissionsMapViewUI"
+  },
+  {
+   "id": 40,
+   "class": "PersonalMissionsVignetteUI"
+  },
+  {
+   "id": 32,
+   "class": "Map1Back"
+  },
+  {
+   "id": 31,
+   "class": "Ribbon"
+  },
+  {
+   "id": 28,
+   "class": "Sparks"
+  },
+  {
+   "id": 25,
+   "class": "StatusFooterUI"
+  },
+  {
+   "id": 22,
+   "class": "SheetsBlockUI"
+  },
+  {
+   "id": 14,
+   "class": "TankgirlsBlockUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 8647,
+   "classes": 24,
+   "methods": 114,
+   "bodies": 114,
+   "code_bytes": 2623
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OperationSeparatorUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Flash",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionsVignetteUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Ribbon",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Sparks",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "personalMissionsCmpExporter",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "personalMissionsCmp_fla.ButtonBackgroundSelectedTween_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "personalMissionsCmp_fla.ButtonBackgroundTween_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FreeSheetsCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.operationsHeader.FreeSheetsCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Map1Back",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionMapBgContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OperationDescriptionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.operationsHeader.OperationDescription",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ItemSlot80x80_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.awardsView.PersonalMissionsItemSlot",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OperationTitleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.operationsHeader.OperationTitle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OperationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.operationsHeader.Operation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OperationsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.operationsHeader.OperationsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OperationsHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.operationsHeader.OperationsHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatusFooterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.statusFooter.StatusFooter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChainButtonContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.chainsPanel.ChainButtonContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SheetsBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.statusFooter.SheetsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankgirlsBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.statusFooter.TankgirlsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionsUnlockBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChainButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.chainsPanel.ChainButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionsMapViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsMapView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/QuestProcessor.def -->
+<root>
+	<BaseMethods>
+		<questProcessor_handleEvent>
+			<Arg>INT32</Arg>
+			<Arg>PYTHON</Arg>
+		</questProcessor_handleEvent>
+	</BaseMethods>
+</root>

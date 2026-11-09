@@ -1,0 +1,84 @@
+{
+  "rid": "R.views.halloween.mono.lobby.notifications.crew_reward_notification",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "crew_reward_notification",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification/bundle.js"
+    },
+    {
+      "name": "crew_reward_notification.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification/crew_reward_notification.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification/crew_reward_notification.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "crew_reward_notification.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification/crew_reward_notification.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification/crew_reward_notification.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification/crew_reward_notification.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/notifications/crew_reward_notification/crew_reward_notification.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose",
+    "onRecruit"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.notifications.crew_reward_notification",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.halloween.mono.lobby.notifications.crew_reward_notification no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween_personality.py",
+        255
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween_personality.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

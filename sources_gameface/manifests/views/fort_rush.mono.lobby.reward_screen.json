@@ -1,0 +1,99 @@
+{
+  "rid": "R.views.fort_rush.mono.lobby.reward_screen",
+  "rid_source": "sources/res/fort_rush/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "reward_screen",
+  "dir": "fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen",
+  "feature": "fort_rush",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen/bundle.js",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen/bundle.js"
+    },
+    {
+      "name": "reward_screen.css",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen/reward_screen.css",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen/reward_screen.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "reward_screen.html",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen/reward_screen.html",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen/reward_screen.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen/bundle.js",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen/bundle.js"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen/reward_screen.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/reward_screen/reward_screen.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.fort_rush.mono.lobby.reward_screen",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.fort_rush.mono.lobby.reward_screen no Python",
+      "ViewModel FortRushRewardsScreenViewModel (model=... no Python da view): 2/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/fort_rush_reward_view.py",
+        29
+      ]
+    ],
+    "python_files": [
+      "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/fort_rush_reward_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/gen/view_models/views/lobby/fort_rush_rewards_screen_view_model.py",
+      "class": "FortRushRewardsScreenViewModel",
+      "chain": [
+        "FortRushRewardsScreenViewModel"
+      ],
+      "properties": [
+        [
+          "rewards",
+          "Array"
+        ],
+        [
+          "isCompleted",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onClose"
+      ],
+      "coverage": {
+        "found": 2,
+        "total": 3,
+        "missing": [
+          "isCompleted"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

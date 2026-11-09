@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/framework/entities/abstract/BaseDAAPIComponentMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.framework.entities.BaseDAAPIModule import BaseDAAPIModule as BaseDAAPIModule
+
+class BaseDAAPIComponentMeta(BaseDAAPIModule):
+    def registerFlashComponent(self, component, alias):
+        ...
+    def isFlashComponentRegistered(self, alias):
+        ...
+    def unregisterFlashComponent(self, alias):
+        ...
+    def getAlias(self):
+        ...
+    def as_populateS(self):
+        ...
+    def as_disposeS(self):
+        ...

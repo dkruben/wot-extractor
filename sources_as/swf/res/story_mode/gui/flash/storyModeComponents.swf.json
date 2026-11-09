@@ -1,0 +1,205 @@
+{
+ "source": "sources/res/story_mode/gui/flash/storyModeComponents.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 107900,
+ "actual_length": 107900,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 15,
+  "ShowFrame": 555,
+  "DefineShape": 150,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 482,
+  "RemoveObject2": 3,
+  "DefineBitsLossless2": 9,
+  "DefineEditText": 3,
+  "DefineSprite": 14,
+  "FrameLabel": 12,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 9,
+  "shapes": 150,
+  "sprites": 14,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 11,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 176,
+   "class": "StoryModeDestroyTimerUI"
+  },
+  {
+   "id": 173,
+   "class": "StoryModeDestroyTimerDescUI"
+  },
+  {
+   "id": 171,
+   "class": "DestroyTimerContainerUI"
+  },
+  {
+   "id": 168,
+   "class": "StoryModeDestroyTimerBarGreenUI"
+  },
+  {
+   "id": 22,
+   "class": "BunkerMinimapEntryUI"
+  },
+  {
+   "id": 19,
+   "class": "DistractionMinimapEntryUI"
+  },
+  {
+   "id": 15,
+   "class": "StoryModeLootMinimapUI"
+  },
+  {
+   "id": 10,
+   "class": "StoryModeReconMinimapEntryUI"
+  },
+  {
+   "id": 9,
+   "class": "storyModeComponents_fla.lootAppearAnimation_10"
+  },
+  {
+   "id": 2,
+   "class": "reconTimerEngineUI"
+  },
+  {
+   "id": 1,
+   "class": "StoryModeOverturnIconUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2637,
+   "classes": 11,
+   "methods": 44,
+   "bodies": 44,
+   "code_bytes": 725
+  }
+ ],
+ "classes": [
+  {
+   "name": "StoryModeOverturnIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "reconTimerEngineUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StoryModeDestroyTimerDescUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storyModeComponents_fla.lootAppearAnimation_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DestroyTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.TimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StoryModeDestroyTimerBarGreenUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BunkerMinimapEntryUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.minimap.components.entries.BunkerMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DistractionMinimapEntryUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.minimap.components.entries.ReconMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StoryModeReconMinimapEntryUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.minimap.components.entries.ReconMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StoryModeLootMinimapUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.minimap.components.entries.LootMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StoryModeDestroyTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.DestroyTimer",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

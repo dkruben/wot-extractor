@@ -1,0 +1,69 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/common/Lib/idlelib/idle_test/test_grep.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/common/Lib/idlelib/idle_test/test_grep.py
+import unittest
+from test.test_support import captured_stdout, findfile
+from idlelib.idle_test.mock_tk import Var
+from idlelib.GrepDialog import GrepDialog
+import re
+__file__ = findfile('idlelib/idle_test') + '/test_grep.py'
+
+class Dummy_searchengine:
+
+    def getpat(self):
+        return self._pat
+
+
+searchengine = Dummy_searchengine()
+
+class Dummy_grep:
+    grep_it = GrepDialog.grep_it.im_func
+    findfiles = GrepDialog.findfiles.im_func
+    recvar = Var(False)
+    engine = searchengine
+
+    def close(self):
+        pass
+
+
+grep = Dummy_grep()
+
+class FindfilesTest(unittest.TestCase):
+    pass
+
+
+class Grep_itTest(unittest.TestCase):
+
+    def report(self, pat):
+        grep.engine._pat = pat
+        with captured_stdout() as s:
+            grep.grep_it(re.compile(pat), __file__)
+        lines = s.getvalue().split('\n')
+        lines.pop()
+        return lines
+
+    def test_unfound(self):
+        pat = 'xyz*' * 7
+        lines = self.report(pat)
+        self.assertEqual(len(lines), 2)
+        self.assertIn(pat, lines[0])
+        self.assertEqual(lines[1], 'No hits.')
+
+    def test_found(self):
+        pat = '""" !Changing this line will break Test_findfile.test_found!'
+        lines = self.report(pat)
+        self.assertEqual(len(lines), 5)
+        self.assertIn(pat, lines[0])
+        self.assertIn('py: 1:', lines[1])
+        self.assertIn('2', lines[3])
+        self.assertTrue(lines[4].startswith('(Hint:'))
+
+
+class Default_commandTest(unittest.TestCase):
+    pass
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2, exit=False)

@@ -1,0 +1,21 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/ArenaInBattleVehicleSwitch.def -->
+<root>
+	<BaseMethods>
+		<requestSwitch>
+			<Arg>OBJECT_ID</Arg>
+			<Arg>OBJECT_ID</Arg>
+			<Arg>INT64</Arg>
+			<Arg>INT64</Arg>
+		</requestSwitch>
+	</BaseMethods>
+	<CellMethods>
+		<setPositions>
+			<Args>
+				<positionsByTeam>PYTHON</positionsByTeam>
+			</Args>
+		</setPositions>
+	</CellMethods>
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+</root>

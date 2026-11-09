@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/notification/NotificationsCollection.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import Event as Event
+from debug_utils import LOG_ERROR as LOG_ERROR, LOG_WARNING as LOG_WARNING
+from notification.decorators import SearchCriteria as SearchCriteria, _NotificationDecorator as _NotificationDecorator
+from notification.settings import NOTIFICATION_TYPE as NOTIFICATION_TYPE, ITEMS_MAX_LENGTHS as ITEMS_MAX_LENGTHS
+
+class NotificationsCollection(object):
+    __received: Any
+    onNotificationRemoved: Any
+    def __init__(self):
+        ...
+    def clear(self):
+        ...
+    def default(self):
+        ...
+    def addItem(self, item):
+        ...
+    def removeItem(self, typeID, itemID):
+        ...
+    def removeItemsByType(self, typeID):
+        ...
+    def updateItem(self, typeID, itemID, entity):
+        ...
+    def getItem(self, typeID, itemID):
+        ...
+    def getListIterator(self, typesRange=None):
+        ...
+    def __removeNotification(self, notification):
+        ...

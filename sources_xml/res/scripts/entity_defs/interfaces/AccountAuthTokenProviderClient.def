@@ -1,0 +1,10 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/AccountAuthTokenProviderClient.def -->
+<root>
+	<ClientMethods>
+		<onTokenReceived>
+			<Arg>UINT16</Arg>
+			<Arg>UINT8</Arg>
+			<Arg>STRING</Arg>
+		</onTokenReceived>
+	</ClientMethods>
+</root>

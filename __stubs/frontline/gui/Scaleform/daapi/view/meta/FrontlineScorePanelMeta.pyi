@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/frontline/scripts/client/frontline/gui/Scaleform/daapi/view/meta/FrontlineScorePanelMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPIComponent as BaseDAAPIComponent
+
+class FrontlineScorePanelMeta(BaseDAAPIComponent):
+    def as_updateBasesS(self, west, center, east):
+        ...
+    def as_updateHeadquarterHealthS(self, id, healthInPercent):
+        ...
+    def as_headquarterDestroyedS(self, idx):
+        ...
+    def as_updatePointsForBaseS(self, idx, points):
+        ...
+    def as_setTargetS(self, targetType, targetId):
+        ...
+    def as_setPrebattleTimerS(self, remainingPrebattleTime):
+        ...

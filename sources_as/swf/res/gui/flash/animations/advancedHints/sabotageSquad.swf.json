@@ -1,0 +1,144 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/sabotageSquad.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 43,
+ "declared_length": 200587,
+ "actual_length": 200587,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 28,
+  "ShowFrame": 2334,
+  "DefineShape": 36,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 2612,
+  "RemoveObject2": 14,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 14,
+  "DefineSprite": 27,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 14,
+  "shapes": 42,
+  "sprites": 27,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "sabotageSquad_fla.MainTimeline"
+  },
+  {
+   "id": 79,
+   "class": "sabotageSquad_fla.ammoFast_26"
+  },
+  {
+   "id": 78,
+   "class": "sabotageSquad_fla.ammoSlow_24"
+  },
+  {
+   "id": 50,
+   "class": "sabotageSquad_fla.baseProgressAllyIncreaseFast_20"
+  },
+  {
+   "id": 49,
+   "class": "sabotageSquad_fla.baseProgressAllyIncrease_17"
+  },
+  {
+   "id": 15,
+   "class": "sabotageSquad_fla.iconTankBodyStyleBig_6"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1462,
+   "classes": 6,
+   "methods": 24,
+   "bodies": 24,
+   "code_bytes": 400
+  }
+ ],
+ "classes": [
+  {
+   "name": "sabotageSquad_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sabotageSquad_fla.ammoFast_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sabotageSquad_fla.ammoSlow_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sabotageSquad_fla.baseProgressAllyIncreaseFast_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sabotageSquad_fla.baseProgressAllyIncrease_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sabotageSquad_fla.iconTankBodyStyleBig_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

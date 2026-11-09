@@ -1,0 +1,73 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/lobby/collection/collections_main_view.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import ViewFlags as ViewFlags, ViewSettings as ViewSettings, ViewStatus as ViewStatus
+from gui.Scaleform.daapi.view.lobby.profile.sound_constants import ACHIEVEMENTS_SOUND_SPACE as ACHIEVEMENTS_SOUND_SPACE
+from gui.collection.account_settings import isCompletedCollectionShown as isCompletedCollectionShown, isIntroShown as isIntroShown, isNewCollection as isNewCollection, getLastShownCollectionBalance as getLastShownCollectionBalance, resetCollectionsTabCounter as resetCollectionsTabCounter, setCollectionsUpdatedEntrySeen as setCollectionsUpdatedEntrySeen, setLastShownCollectionBalance as setLastShownCollectionBalance, setLastShownNewCollection as setLastShownNewCollection, setShownCompletedCollection as setShownCompletedCollection
+from gui.impl.gen import R as R
+from gui.impl.gen.view_models.views.lobby.collection.collection_model import CollectionModel as CollectionModel
+from gui.impl.gen.view_models.views.lobby.collection.collections_main_view_model import CollectionsMainViewModel as CollectionsMainViewModel
+from gui.impl.pub import ViewImpl as ViewImpl
+from gui.impl.wrappers.function_helpers import replaceNoneKwargsModel as replaceNoneKwargsModel
+from gui.shared import EVENT_BUS_SCOPE as EVENT_BUS_SCOPE, events as events, g_eventBus as g_eventBus
+from gui.shared.event_dispatcher import showCollectionWindow as showCollectionWindow, showHangar as showHangar
+from helpers import dependency as dependency
+from skeletons.gui.game_control import ICollectionsSystemController as ICollectionsSystemController
+from skeletons.gui.impl import IGuiLoader as IGuiLoader
+
+class CollectionsMainView(ViewImpl):
+    __slots__: tuple
+    __collectionsSystem: Any
+    __guiLoader: Any
+    _COMMON_SOUND_SPACE = ACHIEVEMENTS_SOUND_SPACE
+    __wasFirstActivation: Any
+    def __init__(self):
+        ...
+    @property
+    def viewModel(self):
+        ...
+    def activate(self):
+        ...
+    def deactivate(self):
+        ...
+    def _finalize(self):
+        ...
+    def _getEvents(self):
+        ...
+    def _getListeners(self):
+        ...
+    def _onLoading(self, *args, **kwargs):
+        ...
+    def _onLoaded(self, *args, **kwargs):
+        ...
+    # decorador original: @replaceNoneKwargsModel
+    def __updateData(self, model=None):
+        ...
+    # decorador original: @replaceNoneKwargsModel
+    def __setIsViewActive(self, isActive, model=None):
+        ...
+    # decorador original: @replaceNoneKwargsModel
+    def __fillCollections(self, model=None):
+        ...
+    def __fillCollection(self, collectionModel, collectionID, collection):
+        ...
+    def __onSettingsChanged(self):
+        ...
+    def __onBalanceUpdated(self):
+        ...
+    def __openCollection(self, args):
+        ...
+    def __setCompletionShown(self, args):
+        ...
+    def __setShownNewCollection(self, args):
+        ...
+    def __close(self):
+        ...
+    def __onCollectionViewClosed(self, *_):
+        ...
+    def __onIntroViewClosed(self, *_):
+        ...
+    def __isIntroViewOpen(self):
+        ...

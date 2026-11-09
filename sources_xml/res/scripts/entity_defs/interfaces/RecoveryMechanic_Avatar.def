@@ -1,0 +1,23 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/RecoveryMechanic_Avatar.def -->
+<root>
+	<BaseMethods>
+		<recoveryMechanic_notifyCannotStartRecovering />
+		<recoveryMechanic_notifyCancelled />
+		<recoveryMechanic_updateState>
+			<Arg>BOOL</Arg>
+			<Arg>INT32</Arg>
+			<Arg>INT32</Arg>
+			<Arg>FLOAT32</Arg>
+		</recoveryMechanic_updateState>
+	</BaseMethods>
+	<ClientMethods>
+		<notifyCannotStartRecovering />
+		<notifyCancelled />
+		<updateState>
+			<Arg>BOOL</Arg>
+			<Arg>INT32</Arg>
+			<Arg>INT32</Arg>
+			<Arg>FLOAT32</Arg>
+		</updateState>
+	</ClientMethods>
+</root>

@@ -1,0 +1,157 @@
+{
+ "source": "sources/res/halloween/gui/flash/animations/advancedHints/hw_aoeStunInstantShot.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 1393278,
+ "actual_length": 1393278,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 37,
+  "ShowFrame": 1077,
+  "DefineShape": 40,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 1400,
+  "RemoveObject2": 13,
+  "DefineShape3": 3,
+  "DefineBitsJPEG3": 19,
+  "DefineBitsLossless2": 20,
+  "DefineSprite": 36,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 39,
+  "shapes": 51,
+  "sprites": 36,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "hw_aoeStunInstantShot_fla.MainTimeline"
+  },
+  {
+   "id": 80,
+   "class": "hw_aoeStunInstantShot_fla.circleAnim_28"
+  },
+  {
+   "id": 79,
+   "class": "hw_aoeStunInstantShot_fla.circle_29"
+  },
+  {
+   "id": 72,
+   "class": "hw_aoeStunInstantShot_fla.tankShoot_24"
+  },
+  {
+   "id": 63,
+   "class": "hw_aoeStunInstantShot_fla.activeConsumableReload_21"
+  },
+  {
+   "id": 56,
+   "class": "hw_aoeStunInstantShot_fla.squaresFx_20"
+  },
+  {
+   "id": 9,
+   "class": "hw_aoeStunInstantShot_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1660,
+   "classes": 7,
+   "methods": 28,
+   "bodies": 28,
+   "code_bytes": 463
+  }
+ ],
+ "classes": [
+  {
+   "name": "hw_aoeStunInstantShot_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hw_aoeStunInstantShot_fla.activeConsumableReload_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hw_aoeStunInstantShot_fla.circleAnim_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hw_aoeStunInstantShot_fla.circle_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hw_aoeStunInstantShot_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hw_aoeStunInstantShot_fla.squaresFx_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hw_aoeStunInstantShot_fla.tankShoot_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

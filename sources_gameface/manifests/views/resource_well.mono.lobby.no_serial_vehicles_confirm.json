@@ -1,0 +1,120 @@
+{
+  "rid": "R.views.resource_well.mono.lobby.no_serial_vehicles_confirm",
+  "rid_source": "sources/res/resource_well/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "no_serial_vehicles_confirm",
+  "dir": "resource_well/gui/gameface/_dist/production/mono/lobby/no_serial_vehicles_confirm",
+  "feature": "resource_well",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/no_serial_vehicles_confirm/bundle.js",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/no_serial_vehicles_confirm/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "no_serial_vehicles_confirm.css",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/no_serial_vehicles_confirm/no_serial_vehicles_confirm.css",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/no_serial_vehicles_confirm/no_serial_vehicles_confirm.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "no_serial_vehicles_confirm.html",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/no_serial_vehicles_confirm/no_serial_vehicles_confirm.html",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/no_serial_vehicles_confirm/no_serial_vehicles_confirm.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/chunks/vehicle_count.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/chunks/vehicle_count.css"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/chunks/vignette.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/chunks/vignette.css"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/no_serial_vehicles_confirm/bundle.js",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/no_serial_vehicles_confirm/bundle.js"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/no_serial_vehicles_confirm/no_serial_vehicles_confirm.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/no_serial_vehicles_confirm/no_serial_vehicles_confirm.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "cancel",
+    "close",
+    "confirm"
+  ],
+  "link": {
+    "rid": "R.views.resource_well.mono.lobby.no_serial_vehicles_confirm",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.resource_well.mono.lobby.no_serial_vehicles_confirm no Python",
+      "ViewModel NoSerialVehiclesConfirmModel (model=... no Python da view): 4/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/no_serial_vehicles_confirm.py",
+        21
+      ],
+      [
+        "sources/res/resource_well/scripts/client/resource_well/gui/shared/event_dispatcher.py",
+        61
+      ]
+    ],
+    "python_files": [
+      "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/no_serial_vehicles_confirm.py",
+      "sources/res/resource_well/scripts/client/resource_well/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/resource_well/scripts/client/resource_well/gui/impl/gen/view_models/views/lobby/no_serial_vehicles_confirm_model.py",
+      "class": "NoSerialVehiclesConfirmModel",
+      "chain": [
+        "NoSerialVehiclesConfirmModel"
+      ],
+      "properties": [
+        [
+          "vehicleCounter",
+          "ViewModel"
+        ],
+        [
+          "vehicleName",
+          "String"
+        ]
+      ],
+      "commands": [
+        "confirm",
+        "cancel",
+        "close"
+      ],
+      "coverage": {
+        "found": 4,
+        "total": 5,
+        "missing": [
+          "vehicleName"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

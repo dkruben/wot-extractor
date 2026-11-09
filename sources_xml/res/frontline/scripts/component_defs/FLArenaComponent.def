@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/frontline/scripts/component_defs/FLArenaComponent.def -->
+<root>
+	<CellMethods>
+		<setupArena>
+			<Arg>PYTHON</Arg>
+		</setupArena>
+	</CellMethods>
+	<BaseMethods />
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+</root>

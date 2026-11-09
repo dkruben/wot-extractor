@@ -1,0 +1,32 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7/scripts/client/comp7/gui/prb_control/__init__.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7/scripts/client/comp7/gui/prb_control/__init__.py
+from __future__ import absolute_import
+
+def registerComp7OthersPrbParams():
+    from comp7.gui.comp7_constants import PREBATTLE_ACTION_NAME
+    from comp7.gui.impl.lobby.tooltips.progression_tooltip import ProgressionTooltip
+    from comp7.gui.impl.lobby.tooltips.rank_inactivity_tooltip import RankInactivityTooltip
+    from comp7.gui.prb_control.storages.comp7_storage import Comp7Storage
+    from comp7_common.comp7_constants import PREBATTLE_TYPE
+    from constants import ARENA_BONUS_TYPE
+    from constants import QUEUE_TYPE
+    from gui.impl.gen import R
+    from gui.impl.gen.view_models.views.lobby.mode_selector.tooltips.mode_selector_tooltips_constants import ModeSelectorTooltipsConstants
+    from gui.impl.lobby.mode_selector.items import _arenaBonusTypeByModeName
+    from gui.impl.lobby.platoon.platoon_config import PREBATTLE_TYPE_TO_VEH_CRITERIA, RANDOM_VEHICLE_CRITERIA
+    from gui.prb_control.prb_getters import _PRB_TO_QUEUE
+    from gui.prb_control.settings import ENTER_UNIT_MGR_RESET_ERRORS
+    from gui.prb_control.storages import makeQueueName
+    from gui.shared.system_factory import registerModeSelectorTooltips, registerPrbStorage
+    from UnitBase import UNIT_ERROR
+    registerModeSelectorTooltips([
+     ModeSelectorTooltipsConstants.COMP7_CALENDAR_DAY_EXTENDED_INFO], {(R.views.comp7.mono.lobby.tooltips.progression_tooltip()): ProgressionTooltip, 
+       (R.views.comp7.mono.lobby.tooltips.rank_inactivity_tooltip()): RankInactivityTooltip})
+    registerPrbStorage(makeQueueName(QUEUE_TYPE.COMP7), Comp7Storage())
+    _PRB_TO_QUEUE.update({(PREBATTLE_TYPE.COMP7): (QUEUE_TYPE.COMP7)})
+    _arenaBonusTypeByModeName.update({(PREBATTLE_ACTION_NAME.COMP7): (ARENA_BONUS_TYPE.COMP7)})
+    PREBATTLE_TYPE_TO_VEH_CRITERIA.update({(PREBATTLE_TYPE.COMP7): RANDOM_VEHICLE_CRITERIA})
+    ENTER_UNIT_MGR_RESET_ERRORS.append(UNIT_ERROR.COMP7_QUALIFICATION)

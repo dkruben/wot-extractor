@@ -1,0 +1,31 @@
+{
+  "rid": "R.views.common.pop_over_window.pop_over_window.PopOverWindow",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "PopOverWindow",
+  "dir": "gui/unbound/views/common/pop_over_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "pop_over_window.unbound",
+      "effective": "res/gui/unbound/views/common/pop_over_window/pop_over_window.unbound",
+      "all": [
+        "res/gui/unbound/views/common/pop_over_window/pop_over_window.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.pop_over_window.pop_over_window.PopOverWindow",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

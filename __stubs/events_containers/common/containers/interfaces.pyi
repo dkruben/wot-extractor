@@ -1,0 +1,29 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/events_containers/common/containers/interfaces.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+import typing as typing
+
+class IClientEventsContainer(object):
+    onEventsContainerDestroy = None
+    @property
+    def hasListeners(self):
+        ...
+    def destroy(self):
+        ...
+    def attachCFGEvents(self):
+        ...
+    def debugEvents(self):
+        ...
+    def lateSubscribe(self, listener):
+        ...
+    def unsubscribe(self, listener):
+        ...
+
+class IClientEventsContainerListener(object):
+    def subscribeTo(self, events):
+        ...
+    def unsubscribeFrom(self, events):
+        ...
+    def lateSubscribeTo(self, events):
+        ...

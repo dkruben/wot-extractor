@@ -1,0 +1,1 @@
+{"key":"res/gui/gameface/scripts/migration-ui/src/css/globals.ts","source":"sources/res/gui/gameface/scripts/migration-ui/src/css/globals.ts","kind":"ts_source","bytes":4789,"encoding":"utf-8","lines":156,"imports":["../bindings","../core","../utils/regex","./context","./mixins","effect","path"],"exports":["processGlobals","saveGlobals"]}

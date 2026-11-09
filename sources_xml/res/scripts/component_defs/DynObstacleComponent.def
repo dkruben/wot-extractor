@@ -1,0 +1,22 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/DynObstacleComponent.def -->
+<root>
+	<Properties>
+		<modelPath>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</modelPath>
+		<localMatrix>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+		</localMatrix>
+		<isHidden>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isHidden>
+		<applyOverlay>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</applyOverlay>
+	</Properties>
+</root>

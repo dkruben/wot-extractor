@@ -1,0 +1,53 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/messenger/gui/entry_decorator.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from collections import defaultdict as defaultdict
+from future.utils import viewvalues as viewvalues
+from messenger.gui import setGUIEntries as setGUIEntries
+from messenger.gui.interfaces import IGUIEntryDecorator as IGUIEntryDecorator, IGUIEntry as IGUIEntry
+from messenger.m_constants import MESSENGER_SCOPE as MESSENGER_SCOPE, GUI_FORCED_CLOSE_ON_LOGIN as GUI_FORCED_CLOSE_ON_LOGIN
+
+class _EntriesCollection(defaultdict):
+    def __missing__(self, key):
+        ...
+
+class _UnknownGUIEntry(IGUIEntry):
+    __scope: Any
+    def __init__(self, scope):
+        ...
+
+class GUIDecorator(IGUIEntryDecorator):
+    __entries: Any
+    __currentScope: Any
+    __closedScope: Any
+    def __init__(self):
+        ...
+    @property
+    def channelsCtrl(self):
+        ...
+    def getEntry(self, scope):
+        ...
+    def setEntry(self, scope, entry):
+        ...
+    def switch(self, scope):
+        ...
+    def init(self):
+        ...
+    def clear(self):
+        ...
+    def show(self):
+        ...
+    def close(self, nextScope):
+        ...
+    def invoke(self, method, *args, **kwargs):
+        ...
+    def handleKey(self, event):
+        ...
+    def isFocused(self):
+        ...
+    def addClientMessage(self, message, isCurrentPlayer=False):
+        ...
+    def __current(self):
+        ...

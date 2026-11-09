@@ -1,0 +1,18 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/component_defs/HWVehicleAnomaliesComponent.def -->
+<root>
+	<Properties>
+		<usedAnomalies>
+			<Type>ARRAY<of>STRING</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</usedAnomalies>
+		<knownAnomalies>
+			<Type>ARRAY<of>STRING</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</knownAnomalies>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+</root>

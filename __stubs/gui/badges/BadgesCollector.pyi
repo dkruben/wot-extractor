@@ -1,0 +1,39 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/badges/BadgesCollector.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import operator as operator
+from collections import defaultdict as defaultdict
+import typing as typing
+from gui.shared.gui_items.badge import Badge as Badge
+
+class BadgesCollector(object):
+    __receivedBadges: Any
+    __notReceivedBadges: Any
+    __suffixBadges: Any
+    __notReceivedSuffixBadges: Any
+    def __init__(self):
+        ...
+    def getReceivedPrefixBadges(self):
+        ...
+    def getNotReceivedPrefixBadges(self):
+        ...
+    def getNotReceivedSuffixBadges(self):
+        ...
+    def getSuffixAchievedBadges(self):
+        ...
+    def updateCollector(self, badges=None):
+        ...
+    def __isReceivedPrefixBadges(self, badge):
+        ...
+    def __isNotReceivedPrefixBadges(self, badge):
+        ...
+    def __isNotReceivedSuffixBadge(self, badge):
+        ...
+    def __isSuffixAchivedBadge(self, badge):
+        ...
+    def __clear(self):
+        ...
+    def __preprocessBadges(self, badges):
+        ...

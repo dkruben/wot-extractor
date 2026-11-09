@@ -1,0 +1,275 @@
+{
+ "source": "sources/res/gui/flash/teamStats.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 501927,
+ "actual_length": 501927,
+ "frame_size_px": [
+  0.0,
+  1017.0,
+  0.0,
+  601.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 26,
+  "ShowFrame": 1237,
+  "DefineShape": 13,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 3,
+  "DefineShape2": 2,
+  "PlaceObject2": 230,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 10,
+  "DefineEditText": 48,
+  "DefineSprite": 25,
+  "FrameLabel": 125,
+  "FileAttributes": 1,
+  "PlaceObject3": 122,
+  "ImportAssets2": 7,
+  "CSMTextSettings": 48,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 18,
+  "sprites": 25,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 48,
+  "fonts": 0,
+  "classes": 15,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "windows.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "teamStatsComponents.swf",
+   "symbols": []
+  },
+  {
+   "url": "iconLibrary.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 104,
+   "class": "Comp7TeamLeftMemberRendererUI"
+  },
+  {
+   "id": 99,
+   "class": "Comp7TeamRightMemberRendererUI"
+  },
+  {
+   "id": 91,
+   "class": "EpicTeamLeftRendererUI"
+  },
+  {
+   "id": 85,
+   "class": "EpicTeamRightRendererUI"
+  },
+  {
+   "id": 79,
+   "class": "RankedTeamLeftMemberRendererUI"
+  },
+  {
+   "id": 74,
+   "class": "RankedTeamRightMemberRendererUI"
+  },
+  {
+   "id": 69,
+   "class": "ScrollbarTeamLeftMemberRendererUI"
+  },
+  {
+   "id": 64,
+   "class": "ScrollbarTeamRightMemberRendererUI"
+  },
+  {
+   "id": 59,
+   "class": "TeamLeftMemberRendererUI"
+  },
+  {
+   "id": 51,
+   "class": "TeamRightMemberRendererUI"
+  },
+  {
+   "id": 31,
+   "class": "teamStats_fla.focusIndicator_7"
+  },
+  {
+   "id": 22,
+   "class": "TeamStatsUI"
+  },
+  {
+   "id": 20,
+   "class": "CyberSportBlock_UI"
+  },
+  {
+   "id": 13,
+   "class": "syberSportBlockBg_UI"
+  },
+  {
+   "id": 4,
+   "class": "TeamStatsListUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 24410,
+   "classes": 15,
+   "methods": 237,
+   "bodies": 237,
+   "code_bytes": 10832
+  }
+ ],
+ "classes": [
+  {
+   "name": "teamStats_fla.focusIndicator_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CyberSportBlock_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.cs.CsTeamStats",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TeamStatsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.TeamStats",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "syberSportBlockBg_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.cs.CsTeamStatsBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TeamStatsListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.TeamStatsList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7TeamLeftMemberRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.Comp7TeamMemberItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7TeamRightMemberRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.Comp7TeamMemberItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicTeamLeftRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.epic.EpicTeamMemberItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicTeamRightRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.epic.EpicTeamMemberItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedTeamLeftMemberRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.RankedTeamMemberItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedTeamRightMemberRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.RankedTeamMemberItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TeamLeftMemberRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.TeamMemberItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TeamRightMemberRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.TeamMemberItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollbarTeamLeftMemberRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.ScrollbarTeamMemberItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollbarTeamRightMemberRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.ScrollbarTeamMemberItemRenderer",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

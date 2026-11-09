@@ -1,0 +1,30 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/item_defs/item_types.xml -->
+<root>
+	<vehicle>
+		<tags>
+			<lsrole_sentry />
+			<lsrole_hunter />
+			<lsrole_runner />
+			<lsrole_alpha />
+			<lsrole_turret />
+			<lsrole_bomber />
+			<lsrole_bomber_alpha />
+			<lsrole_catcher />
+			<lsrole_charger />
+			<lsrole_ripper />
+			<lsrole_detonator />
+			<lsrole_boss />
+			<lsrole_obelisk />
+			<ls_continuous_turret_rotation />
+			<lsrole_bastion />
+			<lsrole_archer />
+		</tags>
+	</vehicle>
+	<equipment>
+		<tags>
+			<LS_equipment />
+			<LS_situational />
+			<LS_emptySlot />
+		</tags>
+	</equipment>
+</root>

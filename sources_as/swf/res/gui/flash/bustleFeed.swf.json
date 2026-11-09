@@ -1,0 +1,138 @@
+{
+ "source": "sources/res/gui/flash/bustleFeed.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 314920,
+ "actual_length": 314920,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 9,
+  "ShowFrame": 197,
+  "DefineShape": 54,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 261,
+  "RemoveObject2": 3,
+  "DefineBitsLossless2": 54,
+  "DefineEditText": 1,
+  "DefineSprite": 8,
+  "FrameLabel": 9,
+  "FileAttributes": 1,
+  "PlaceObject3": 5,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 54,
+  "shapes": 54,
+  "sprites": 8,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 117,
+   "class": "BustleFeedWidgetUI"
+  },
+  {
+   "id": 104,
+   "class": "BustleFeedProgressUI"
+  },
+  {
+   "id": 2,
+   "class": "TimerBustleFeedUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2709,
+   "classes": 6,
+   "methods": 32,
+   "bodies": 32,
+   "code_bytes": 1028
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BustleFeedProgressUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.bustleFeed.BustleFeedProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TimerBustleFeedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.Timer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BustleFeedWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.BustleFeedWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

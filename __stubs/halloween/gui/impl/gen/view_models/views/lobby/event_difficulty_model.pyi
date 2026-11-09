@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/event_difficulty_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from halloween.gui.impl.gen.view_models.views.lobby.difficulty_dropdown_item_model import DifficultyDropdownItemModel as DifficultyDropdownItemModel
+
+class EventDifficultyModel(ViewModel):
+    __slots__: tuple
+    onChange: Any
+    def __init__(self, properties=3, commands=1):
+        ...
+    def getItems(self):
+        ...
+    def setItems(self, value):
+        ...
+    @staticmethod
+    def getItemsType():
+        ...
+    def getSelected(self):
+        ...
+    def setSelected(self, value):
+        ...
+    @staticmethod
+    def getSelectedType():
+        ...
+    def getLevel(self):
+        ...
+    def setLevel(self, value):
+        ...
+    def _initialize(self):
+        ...

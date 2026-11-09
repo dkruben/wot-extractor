@@ -1,0 +1,73 @@
+{
+  "rid": "R.views.mono.post_battle.flag",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "flag",
+  "dir": "gui/gameface/_dist/production/mono/post_battle/flag",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/flag/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/flag/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "flag.css",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/flag/flag.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/flag/flag.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "flag.html",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/flag/flag.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/flag/flag.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/flag/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/flag/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/flag/flag.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/flag/flag.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.post_battle.flag",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.mono.post_battle.flag no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_results/flag_view.py",
+        22
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_results/flag_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

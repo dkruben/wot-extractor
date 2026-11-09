@@ -1,0 +1,208 @@
+{
+ "source": "sources/res/gui/flash/prebattleTimerCmpnts.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 1694001,
+ "actual_length": 1694001,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 14,
+  "ShowFrame": 614,
+  "DefineShape": 610,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 630,
+  "DefineBitsLossless2": 609,
+  "DefineSprite": 13,
+  "FrameLabel": 31,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 610,
+  "shapes": 610,
+  "sprites": 13,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 12,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 1233,
+   "class": "backgroundUI"
+  },
+  {
+   "id": 1229,
+   "class": "prebattleTimerAnimUI"
+  },
+  {
+   "id": 1228,
+   "class": "figure9UI"
+  },
+  {
+   "id": 1105,
+   "class": "figure8UI"
+  },
+  {
+   "id": 982,
+   "class": "figure7UI"
+  },
+  {
+   "id": 859,
+   "class": "figure6UI"
+  },
+  {
+   "id": 736,
+   "class": "figure5UI"
+  },
+  {
+   "id": 613,
+   "class": "figure4UI"
+  },
+  {
+   "id": 490,
+   "class": "figure3UI"
+  },
+  {
+   "id": 367,
+   "class": "figure2UI"
+  },
+  {
+   "id": 244,
+   "class": "figure1UI"
+  },
+  {
+   "id": 121,
+   "class": "figure0UI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1821,
+   "classes": 12,
+   "methods": 36,
+   "bodies": 36,
+   "code_bytes": 664
+  }
+ ],
+ "classes": [
+  {
+   "name": "backgroundUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.prebattleTimer.PrebattleTimerBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "figure0UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.preBattleTimer.DigitAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "figure1UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.preBattleTimer.DigitAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "figure2UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.preBattleTimer.DigitAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "figure3UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.preBattleTimer.DigitAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "figure4UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.preBattleTimer.DigitAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "figure5UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.preBattleTimer.DigitAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "figure6UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.preBattleTimer.DigitAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "figure7UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.preBattleTimer.DigitAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "figure8UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.preBattleTimer.DigitAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "figure9UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.preBattleTimer.DigitAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "prebattleTimerAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.preBattleTimer.TimerAnim",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

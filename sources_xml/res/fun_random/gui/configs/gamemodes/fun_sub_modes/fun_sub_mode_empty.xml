@@ -1,0 +1,10 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fun_random/gui/configs/gamemodes/fun_sub_modes/fun_sub_mode_empty.xml -->
+<root>
+	<common>
+		<regularDevices>False</regularDevices>
+		<regularBoosters>False</regularBoosters>
+		<regularShells>False</regularShells>
+		<regularConsumables>False</regularConsumables>
+	</common>
+	<subMode />
+</root>

@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/component_defs/LSVehicleInvulnerableMarkerComponent.def -->
+<root>
+	<Properties />
+	<CellMethods />
+	<ClientMethods>
+		<showNoHitMarker>
+			<Args>
+				<attackerID>OBJECT_ID</attackerID>
+			</Args>
+		</showNoHitMarker>
+	</ClientMethods>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+</root>

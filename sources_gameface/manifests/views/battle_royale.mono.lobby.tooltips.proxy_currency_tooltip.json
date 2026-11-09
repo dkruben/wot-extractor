@@ -1,0 +1,113 @@
+{
+  "rid": "R.views.battle_royale.mono.lobby.tooltips.proxy_currency_tooltip",
+  "rid_source": "sources/res/battle_royale/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "proxy_currency_tooltip",
+  "dir": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/proxy_currency_tooltip",
+  "feature": "battle_royale",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/proxy_currency_tooltip/bundle.js",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/proxy_currency_tooltip/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "proxy_currency_tooltip.css",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/proxy_currency_tooltip/proxy_currency_tooltip.css",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/proxy_currency_tooltip/proxy_currency_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "proxy_currency_tooltip.html",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/proxy_currency_tooltip/proxy_currency_tooltip.html",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/proxy_currency_tooltip/proxy_currency_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/proxy_currency_tooltip/bundle.js",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/proxy_currency_tooltip/bundle.js"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/proxy_currency_tooltip/proxy_currency_tooltip.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/proxy_currency_tooltip/proxy_currency_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle_royale.mono.lobby.tooltips.proxy_currency_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "4 referencia(s) R.views.battle_royale.mono.lobby.tooltips.proxy_currency_tooltip no Python",
+      "ViewModel ProxyCurrencyTooltipViewModel (model=... no Python da view): 0/1 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/proxy_currency_tooltip_view.py",
+        16
+      ],
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/battle_quest_awards_view.py",
+        49
+      ],
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/bonus_packer.py",
+        85
+      ],
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/progression_view.py",
+        54
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/proxy_currency_tooltip_view.py",
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/battle_quest_awards_view.py",
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/bonus_packer.py",
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/progression_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/gen/view_models/views/lobby/tooltips/proxy_currency_tooltip_view_model.py",
+      "class": "ProxyCurrencyTooltipViewModel",
+      "chain": [
+        "ProxyCurrencyTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "coinType",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 1,
+        "missing": [
+          "coinType"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/gen/view_models/views/lobby/views/battle_quest_awards_model.py"
+      ]
+    }
+  }
+}

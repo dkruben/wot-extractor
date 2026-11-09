@@ -1,0 +1,64 @@
+{
+  "rid": "R.views.lobby.mode_selector.tooltips.common.Divider",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Divider",
+  "dir": "gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/Divider",
+  "feature": null,
+  "files": [
+    {
+      "name": "Divider.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/Divider/Divider.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/Divider/Divider.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Divider.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/Divider/Divider.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/Divider/Divider.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Divider.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/Divider/Divider.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/Divider/Divider.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/mode_selector/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/mode_selector/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/Divider/Divider.css",
+      "key": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/Divider/Divider.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/Divider/Divider.js",
+      "key": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/Divider/Divider.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.mode_selector.tooltips.common.Divider",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

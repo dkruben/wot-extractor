@@ -1,0 +1,126 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/lobby_context.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from future.utils import viewitems as viewitems
+import BigWorld as BigWorld
+from Event import SafeEvent as SafeEvent, EventManager as EventManager
+from helpers.server_settings import ServerSettings as ServerSettings
+from account_helpers import isRoamingEnabled as isRoamingEnabled
+from adisp import adisp_async as adisp_async, adisp_process as adisp_process
+from constants import CURRENT_REALM as CURRENT_REALM, MISC_GUI_SETTINGS as MISC_GUI_SETTINGS
+from debug_utils import LOG_ERROR as LOG_ERROR, LOG_NOTE as LOG_NOTE
+from gui.lobby_ctx_listener import LobbyContextChangeListener as LobbyContextChangeListener
+from helpers import dependency as dependency
+from ids_generators import Int32IDGenerator as Int32IDGenerator
+from predefined_hosts import g_preDefinedHosts as g_preDefinedHosts
+from skeletons.connection_mgr import IConnectionManager as IConnectionManager
+from skeletons.gui.lobby_context import ILobbyContext as ILobbyContext
+from skeletons.gui.shared import IItemsCache as IItemsCache
+from Sound import setSpatialAudioEnabled as setSpatialAudioEnabled
+
+class LobbyContext(ILobbyContext):
+    connectionMgr: Any
+    __credentials: Any
+    __guiCtx: Any
+    __arenaUniqueIDs: Any
+    __serverSettings: Any
+    __battlesCount: Any
+    __epicBattlesCount: Any
+    __clientArenaIDGenerator: Any
+    __headerNavigationConfirmators: Any
+    __fightButtonConfirmators: Any
+    __platoonCreationConfirmators: Any
+    __changeListener: Any
+    __isAccountComplete: Any
+    __em: Any
+    onServerSettingsChanged: Any
+    def __init__(self):
+        ...
+    @property
+    def collectUiStats(self):
+        ...
+    @property
+    def needLogUXEvents(self):
+        ...
+    def clear(self):
+        ...
+    def onAccountBecomePlayer(self):
+        ...
+    def onAccountShowGUI(self, ctx):
+        ...
+    def getArenaUniqueIDByClientID(self, clientArenaID):
+        ...
+    def getClientIDByArenaUniqueID(self, arenaUniqueID):
+        ...
+    def setCredentials(self, login, token):
+        ...
+    def getCredentials(self):
+        ...
+    def isAccountComplete(self):
+        ...
+    def setAccountComplete(self, isComplete):
+        ...
+    def getBattlesCount(self):
+        ...
+    def getEpicBattlesCount(self):
+        ...
+    def updateBattlesCount(self, battlesCount, epicBattlesCount):
+        ...
+    def update(self, diff):
+        ...
+    def updateGuiCtx(self, ctx):
+        ...
+    def getGuiCtx(self):
+        ...
+    def getServerSettings(self):
+        ...
+    def setServerSettings(self, serverSettings):
+        ...
+    def getPlayerFullName(self, pName, clanInfo=None, clanAbbrev=None, regionCode=None, pDBID=None):
+        ...
+    def getClanAbbrev(self, clanInfo):
+        ...
+    def getRegionCode(self, dbID):
+        ...
+    def isAnotherPeriphery(self, peripheryID):
+        ...
+    # decorador original: @dependency.replace_none_kwargs(...)
+    def isPeripheryAvailable(self, peripheryID, itemsCache=None):
+        ...
+    def getPeripheryName(self, peripheryID, checkAnother=True, useShortName=False):
+        ...
+    def addHeaderNavigationConfirmator(self, confirmator):
+        ...
+    def deleteHeaderNavigationConfirmator(self, confirmator):
+        ...
+    # decorador original: @adisp_async
+    # decorador original: @adisp_process
+    def isHeaderNavigationPossible(self, callback=None):
+        ...
+    def addFightButtonConfirmator(self, confirmator):
+        ...
+    def deleteFightButtonConfirmator(self, confirmator):
+        ...
+    # decorador original: @adisp_async
+    # decorador original: @adisp_process
+    def isFightButtonPressPossible(self, callback=None):
+        ...
+    def addPlatoonCreationConfirmator(self, confirmator):
+        ...
+    def deletePlatoonCreationConfirmator(self, confirmator):
+        ...
+    # decorador original: @adisp_async
+    # decorador original: @adisp_process
+    def isPlatoonCreationPossible(self, callback=None):
+        ...
+    @classmethod
+    def _isSkipPeripheryChecking(cls):
+        ...
+    # decorador original: @dependency.replace_none_kwargs(...)
+    def __notifyToUpdate(self, diff, itemsCache=None):
+        ...
+
+def _switchAudioState(miscGuiSettings):
+    ...

@@ -1,0 +1,5 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/content_exclude/extension.xml -->
+<root>
+	<FeatureName>content_exclude</FeatureName>
+	<IsEnabled>true</IsEnabled>
+</root>

@@ -1,0 +1,29 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/01_karelia/zones.xml -->
+<root>
+	<path>
+		<id>3437907113</id>
+		<name>path</name>
+		<node>
+			<name>Zone 2</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3021857388</id>
+			<transform>
+				<row0>97 0 0</row0>
+				<row1>0 8.986 0</row1>
+				<row2>0 0 85.9758</row2>
+				<row3>237.257 20.8529 -280.809</row3>
+			</transform>
+		</node>
+		<node>
+			<name>01_karelia_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2048530400</id>
+			<transform>
+				<row0>84.47964 0 0</row0>
+				<row1>0 84.47964 0</row1>
+				<row2>0 0 84.47964</row2>
+				<row3>331.61935 -10.154779 -240.21977</row3>
+			</transform>
+		</node>
+	</path>
+</root>

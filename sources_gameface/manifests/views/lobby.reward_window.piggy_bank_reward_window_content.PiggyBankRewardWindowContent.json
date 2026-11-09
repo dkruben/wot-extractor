@@ -1,0 +1,90 @@
+{
+  "rid": "R.views.lobby.reward_window.piggy_bank_reward_window_content.PiggyBankRewardWindowContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "PiggyBankRewardWindowContent",
+  "dir": "gui/unbound/views/lobby/reward_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "piggy_bank_reward_window_content.unbound",
+      "effective": "res/gui/unbound/views/lobby/reward_window/piggy_bank_reward_window_content.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/reward_window/piggy_bank_reward_window_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.reward_window.piggy_bank_reward_window_content.PiggyBankRewardWindowContent",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.reward_window.piggy_bank_reward_window_content.PiggyBankRewardWindowContent no Python",
+      "ViewModel SubscriptionRewardViewModel (model=... no Python da view): 1/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/reward_window.py",
+        336
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/reward_window.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/player_subscriptions/subscription_reward_view_model.py",
+      "class": "SubscriptionRewardViewModel",
+      "chain": [
+        "SubscriptionRewardViewModel"
+      ],
+      "properties": [
+        [
+          "subscriptionTitle",
+          "String"
+        ],
+        [
+          "descText",
+          "String"
+        ],
+        [
+          "mainRewards",
+          "Array"
+        ],
+        [
+          "hasSelectiveRewards",
+          "Bool"
+        ],
+        [
+          "rewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onCloseButtonClick",
+        "onChooseButtonClick"
+      ],
+      "coverage": {
+        "found": 1,
+        "total": 7,
+        "missing": [
+          "hasSelectiveRewards",
+          "mainRewards",
+          "onChooseButtonClick",
+          "onCloseButtonClick",
+          "rewards",
+          "subscriptionTitle"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/windows/piggy_bank_reward_window_content_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/windows/reward_window_content_model.py"
+      ]
+    }
+  }
+}

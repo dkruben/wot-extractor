@@ -1,0 +1,191 @@
+{
+ "source": "sources/res/gui/flash/personalMissionFirstEntryAwardView.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 33969,
+ "actual_length": 33969,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 10,
+  "ShowFrame": 257,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 154,
+  "DefineEditText": 4,
+  "DefineSprite": 9,
+  "FileAttributes": 1,
+  "PlaceObject3": 241,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 9,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 9,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "personalMissionsCmp.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 13,
+   "class": "PersonalMissionAwardViewUI"
+  },
+  {
+   "id": 10,
+   "class": "Badges1UI"
+  },
+  {
+   "id": 9,
+   "class": "Badges2UI"
+  },
+  {
+   "id": 8,
+   "class": "Badges3UI"
+  },
+  {
+   "id": 7,
+   "class": "Badges4UI"
+  },
+  {
+   "id": 6,
+   "class": "BadgeMiddle"
+  },
+  {
+   "id": 4,
+   "class": "Badges5UI"
+  },
+  {
+   "id": 3,
+   "class": "BadgeSmall"
+  },
+  {
+   "id": 1,
+   "class": "BadgeBig"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4575,
+   "classes": 9,
+   "methods": 36,
+   "bodies": 36,
+   "code_bytes": 1121
+  }
+ ],
+ "classes": [
+  {
+   "name": "BadgeBig",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionAwardRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BadgeMiddle",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionAwardRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BadgeSmall",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionAwardRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Badges1UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionAwardsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Badges2UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionAwardsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Badges3UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionAwardsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Badges4UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionAwardsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Badges5UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionAwardsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionAwardViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionFirstEntryAwardView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

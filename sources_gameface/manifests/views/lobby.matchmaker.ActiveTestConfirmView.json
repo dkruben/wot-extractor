@@ -1,0 +1,175 @@
+{
+  "rid": "R.views.lobby.matchmaker.ActiveTestConfirmView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ActiveTestConfirmView",
+  "dir": "gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView",
+  "feature": null,
+  "files": [
+    {
+      "name": "ActiveTestConfirmView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView/ActiveTestConfirmView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView/ActiveTestConfirmView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ActiveTestConfirmView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView/ActiveTestConfirmView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView/ActiveTestConfirmView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ActiveTestConfirmView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView/ActiveTestConfirmView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView/ActiveTestConfirmView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView/ActiveTestConfirmView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/matchmaker/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/matchmaker/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView/ActiveTestConfirmView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView/ActiveTestConfirmView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView/ActiveTestConfirmView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/matchmaker/ActiveTestConfirmView/ActiveTestConfirmView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.matchmaker.ActiveTestConfirmView",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.matchmaker.ActiveTestConfirmView no Python",
+      "ViewModel ActiveTestConfirmViewModel (model=... no Python da view): 6/18 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/matchmaker/active_test_confirm_view.py",
+        18
+      ],
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        1368
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/matchmaker/active_test_confirm_view.py",
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/matchmaker/active_test_confirm_view_model.py",
+      "class": "ActiveTestConfirmViewModel",
+      "chain": [
+        "ActiveTestConfirmViewModel",
+        "FullScreenDialogWindowModel"
+      ],
+      "properties": [
+        [
+          "clusterName",
+          "String"
+        ],
+        [
+          "timeRangeStart",
+          "Number"
+        ],
+        [
+          "timeRangeEnd",
+          "Number"
+        ],
+        [
+          "dialogType",
+          "String"
+        ],
+        [
+          "credits",
+          "Number"
+        ],
+        [
+          "golds",
+          "Number"
+        ],
+        [
+          "crystals",
+          "Number"
+        ],
+        [
+          "freexp",
+          "Number"
+        ],
+        [
+          "isWalletAvailable",
+          "Bool"
+        ],
+        [
+          "isAcceptDisabled",
+          "Bool"
+        ],
+        [
+          "titleBody",
+          "Resource"
+        ],
+        [
+          "titleArgs",
+          "Array"
+        ],
+        [
+          "acceptButtonText",
+          "Resource"
+        ],
+        [
+          "cancelButtonText",
+          "Resource"
+        ]
+      ],
+      "commands": [
+        "onOpenPortalClicked",
+        "onAcceptClicked",
+        "onCancelClicked",
+        "onExit"
+      ],
+      "coverage": {
+        "found": 6,
+        "total": 18,
+        "missing": [
+          "acceptButtonText",
+          "cancelButtonText",
+          "credits",
+          "crystals",
+          "dialogType",
+          "freexp",
+          "golds",
+          "isAcceptDisabled",
+          "isWalletAvailable",
+          "onExit",
+          "titleArgs",
+          "titleBody"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

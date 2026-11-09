@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/comp7_light/scripts/client/comp7_light/gui/impl/gen/view_models/views/lobby/mode_selector/mode_selector_comp7_light_widget_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from enum import Enum as Enum
+from gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_base_widget_model import ModeSelectorBaseWidgetModel as ModeSelectorBaseWidgetModel
+
+class Comp7LightProgressionStatus(Enum):
+    DISABLED = 'disabled'
+    ACTIVE = 'active'
+
+class ModeSelectorComp7LightWidgetModel(ModeSelectorBaseWidgetModel):
+    __slots__: tuple
+    def __init__(self, properties=5, commands=0):
+        ...
+    def getStatus(self):
+        ...
+    def setStatus(self, value):
+        ...
+    def getCurrentStage(self):
+        ...
+    def setCurrentStage(self, value):
+        ...
+    def getStageCurrentPoints(self):
+        ...
+    def setStageCurrentPoints(self, value):
+        ...
+    def getStageMaximumPoints(self):
+        ...
+    def setStageMaximumPoints(self, value):
+        ...
+    def _initialize(self):
+        ...

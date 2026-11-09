@@ -1,0 +1,43 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/auxiliary/selected_filters.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import operator as operator
+from collections import OrderedDict as OrderedDict, namedtuple as namedtuple
+from gui.impl.gen.view_models.views.lobby.tank_setup.common.filters_model import FiltersModel as FiltersModel
+from gui.impl.gen.view_models.views.lobby.tank_setup.common.sub_filter_model import SubFilterModel as SubFilterModel
+_FilterData: Any
+
+class BaseSelectedFilters(object):
+    __slots__: tuple
+    _selectedFilters: Any
+    __filters: Any
+    def __init__(self):
+        ...
+    def changeFilter(self, filterName, model):
+        ...
+    def initFilters(self, model):
+        ...
+    def resetFilters(self, model):
+        ...
+    def getItems(self, items, model):
+        ...
+    def checkItem(self, item):
+        ...
+    def clear(self):
+        ...
+    def _getFilteredItems(self, items):
+        ...
+    @staticmethod
+    def _createSubFilterModel(filterName):
+        ...
+    def _addFilter(self, filterName, filterMethod, op=...):
+        ...
+    def _delFilter(self, filterName):
+        ...
+    def _clearFilters(self):
+        ...
+
+def getFilterDecorator(selectedFitler, model):
+    ...

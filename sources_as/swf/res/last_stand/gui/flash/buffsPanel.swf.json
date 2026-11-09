@@ -1,0 +1,235 @@
+{
+ "source": "sources/res/last_stand/gui/flash/buffsPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 28357,
+ "actual_length": 28357,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 17,
+  "ShowFrame": 445,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 626,
+  "DefineShape3": 9,
+  "DefineSprite": 16,
+  "FrameLabel": 20,
+  "FileAttributes": 1,
+  "PlaceObject3": 164,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 11,
+  "sprites": 16,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 14,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 27,
+   "class": "PerkItemUI"
+  },
+  {
+   "id": 26,
+   "class": "PerkIconUI"
+  },
+  {
+   "id": 25,
+   "class": "buffsPanel_fla.PerkProgressUI_3"
+  },
+  {
+   "id": 24,
+   "class": "buffsPanel_fla.mc_buff_darkHalfDisck_7"
+  },
+  {
+   "id": 19,
+   "class": "buffsPanel_fla.mc_buff_halfDisck_5"
+  },
+  {
+   "id": 16,
+   "class": "buffsPanel_fla.mc_buff_disck_4"
+  },
+  {
+   "id": 13,
+   "class": "PerksSeparatorUI"
+  },
+  {
+   "id": 11,
+   "class": "WeatherItemUI"
+  },
+  {
+   "id": 10,
+   "class": "buffsPanel_fla.mc_buff_darkDisck_8"
+  },
+  {
+   "id": 8,
+   "class": "WeatherItemIconUI"
+  },
+  {
+   "id": 6,
+   "class": "LSBuffsPanelUI"
+  },
+  {
+   "id": 5,
+   "class": "WrapperUI"
+  },
+  {
+   "id": 4,
+   "class": "PerksContainerUI"
+  },
+  {
+   "id": 3,
+   "class": "buffsPanel_fla.glowWrapper_15"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4341,
+   "classes": 14,
+   "methods": 62,
+   "bodies": 62,
+   "code_bytes": 1124
+  }
+ ],
+ "classes": [
+  {
+   "name": "PerksContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.AnimatedEmptyContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PerksSeparatorUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "buffsPanel_fla.PerkProgressUI_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "buffsPanel_fla.glowWrapper_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "buffsPanel_fla.mc_buff_darkDisck_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "buffsPanel_fla.mc_buff_darkHalfDisck_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "buffsPanel_fla.mc_buff_disck_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "buffsPanel_fla.mc_buff_halfDisck_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WeatherItemIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleAtlasSprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PerkIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.AnimatedLoaderTextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WeatherItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.situationIndicators.components.WeatherItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WrapperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.AnimatedSpriteContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PerkItemUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.buffsPanel.components.LSPerkItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSBuffsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.buffsPanel.LSBuffsPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,1181 @@
+{
+ "source": "sources/res/gui/flash/minimapEntriesLibrary.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 621091,
+ "actual_length": 621091,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 163,
+  "ShowFrame": 5846,
+  "DefineShape": 558,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 5,
+  "PlaceObject2": 8050,
+  "RemoveObject2": 668,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 104,
+  "DefineEditText": 5,
+  "DefineSprite": 162,
+  "FrameLabel": 91,
+  "FileAttributes": 1,
+  "PlaceObject3": 47,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 5,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineShape4": 3,
+  "DefineMorphShape2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 104,
+  "shapes": 571,
+  "sprites": 162,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 5,
+  "fonts": 0,
+  "classes": 100,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 842,
+   "class": "BRMarkerUI"
+  },
+  {
+   "id": 840,
+   "class": "CustomDeathZoneMinimapEntryUI"
+  },
+  {
+   "id": 839,
+   "class": "EventDeathZoneMinimapEntryUI"
+  },
+  {
+   "id": 838,
+   "class": "sprtTutorialItemPlaceholder"
+  },
+  {
+   "id": 837,
+   "class": "AOEArtilleryMinimapEntry"
+  },
+  {
+   "id": 836,
+   "class": "ArtilleryEntry"
+  },
+  {
+   "id": 835,
+   "class": "ArtilleryYellowEntry"
+  },
+  {
+   "id": 834,
+   "class": "BomberEntry"
+  },
+  {
+   "id": 833,
+   "class": "SmokeEntry"
+  },
+  {
+   "id": 832,
+   "class": "LandingZoneEntry"
+  },
+  {
+   "id": 826,
+   "class": "MapsTrainingVehicleEntryUI"
+  },
+  {
+   "id": 825,
+   "class": "MapsTrainingEyeMcUI"
+  },
+  {
+   "id": 824,
+   "class": "MTContainer"
+  },
+  {
+   "id": 823,
+   "class": "MapsTrainingTargetUI"
+  },
+  {
+   "id": 817,
+   "class": "NavigationPointEntryUI"
+  },
+  {
+   "id": 813,
+   "class": "ShootingPointEntryUI"
+  },
+  {
+   "id": 809,
+   "class": "AnimationEntry"
+  },
+  {
+   "id": 808,
+   "class": "ArcadeCameraEntry"
+  },
+  {
+   "id": 807,
+   "class": "DeadPointEntry"
+  },
+  {
+   "id": 806,
+   "class": "DeathZoneEntry"
+  },
+  {
+   "id": 805,
+   "class": "CellFlashEntry"
+  },
+  {
+   "id": 800,
+   "class": "StrategicCameraEntry"
+  },
+  {
+   "id": 797,
+   "class": "VideoCameraEntry"
+  },
+  {
+   "id": 796,
+   "class": "sprtPersonalCameraAtlasItemPlaceholder"
+  },
+  {
+   "id": 795,
+   "class": "sprtCameraPersonalDirectionAtlasItemPlaceholder"
+  },
+  {
+   "id": 794,
+   "class": "ViewPointEntry"
+  },
+  {
+   "id": 793,
+   "class": "DirectionLinePlaceholder"
+  },
+  {
+   "id": 792,
+   "class": "sprtPersonalAtlasItemPlaceholder"
+  },
+  {
+   "id": 791,
+   "class": "ViewRangeCirclesEntry"
+  },
+  {
+   "id": 790,
+   "class": "ViewRangeSectorEntry"
+  },
+  {
+   "id": 789,
+   "class": "PoiMinimapEntry"
+  },
+  {
+   "id": 788,
+   "class": "MinimapPoiProgressCircleUI"
+  },
+  {
+   "id": 787,
+   "class": "minimapEntriesLibrary_fla.captureCircleAnimationProgressUI_95"
+  },
+  {
+   "id": 784,
+   "class": "minimapEntriesLibrary_fla.captureCircleAnimationUI_94"
+  },
+  {
+   "id": 657,
+   "class": "ScenarioMinimapEntry"
+  },
+  {
+   "id": 656,
+   "class": "MinimapScenarioProgressCircleUI"
+  },
+  {
+   "id": 655,
+   "class": "minimapEntriesLibrary_fla.captureCircleReversAnimationUI_98"
+  },
+  {
+   "id": 496,
+   "class": "sprtfortconsAtlasItemPlaceholder"
+  },
+  {
+   "id": 495,
+   "class": "ArtyHitDotMarkerUI"
+  },
+  {
+   "id": 491,
+   "class": "ArtyMarkerMinimapEntry"
+  },
+  {
+   "id": 490,
+   "class": "MarkAttentionEntryUI"
+  },
+  {
+   "id": 489,
+   "class": "minimapEntriesLibrary_fla.markAttentionAnimationMC_104"
+  },
+  {
+   "id": 482,
+   "class": "MarkGoingToPositionEntryUI"
+  },
+  {
+   "id": 481,
+   "class": "minimapEntriesLibrary_fla.markGoingToPositionAnimationMC_111"
+  },
+  {
+   "id": 477,
+   "class": "minimapEntriesLibrary_fla.goingToPositionMeMC_109"
+  },
+  {
+   "id": 471,
+   "class": "UnspottedMarkerUI"
+  },
+  {
+   "id": 459,
+   "class": "FlagPointEntryUI"
+  },
+  {
+   "id": 451,
+   "class": "AllyTeamBaseEntry"
+  },
+  {
+   "id": 450,
+   "class": "minimapEntriesLibrary_fla.baseDefendAnimationMC_124"
+  },
+  {
+   "id": 444,
+   "class": "minimapEntriesLibrary_fla.BaseDefendMC_122"
+  },
+  {
+   "id": 437,
+   "class": "AllyTeamSpawnEntry"
+  },
+  {
+   "id": 436,
+   "class": "ControlPointEntry"
+  },
+  {
+   "id": 435,
+   "class": "minimapEntriesLibrary_fla.baseNeutralAttackColorBlindAnimationMC_136"
+  },
+  {
+   "id": 434,
+   "class": "minimapEntriesLibrary_fla.BaseNeutralAttackColorBlindMC_134"
+  },
+  {
+   "id": 433,
+   "class": "minimapEntriesLibrary_fla.baseNeutralAttackAnimationMC_131"
+  },
+  {
+   "id": 430,
+   "class": "minimapEntriesLibrary_fla.BaseNeutralAttackMC_129"
+  },
+  {
+   "id": 427,
+   "class": "EnemyTeamBaseEntry"
+  },
+  {
+   "id": 426,
+   "class": "minimapEntriesLibrary_fla.baseAttackColorBlindAnimationMC_143"
+  },
+  {
+   "id": 420,
+   "class": "minimapEntriesLibrary_fla.BaseAttackColorblindMC_142"
+  },
+  {
+   "id": 413,
+   "class": "minimapEntriesLibrary_fla.baseAttackAnimationMC_140"
+  },
+  {
+   "id": 403,
+   "class": "minimapEntriesLibrary_fla.BaseAttackMC_139"
+  },
+  {
+   "id": 396,
+   "class": "EnemyTeamSpawnEntry"
+  },
+  {
+   "id": 395,
+   "class": "sprtTeamBaseAtlasItemPlaceholder"
+  },
+  {
+   "id": 394,
+   "class": "VehicleMinimapBearerAnimation"
+  },
+  {
+   "id": 294,
+   "class": "RadarUI"
+  },
+  {
+   "id": 293,
+   "class": "radarAnimatedContainer"
+  },
+  {
+   "id": 292,
+   "class": "VehicleEntry"
+  },
+  {
+   "id": 289,
+   "class": "markerMark"
+  },
+  {
+   "id": 288,
+   "class": "minimapEntriesLibrary_fla.AllyIsSupporting_34"
+  },
+  {
+   "id": 284,
+   "class": "minimapEntriesLibrary_fla.ISupportYou_32"
+  },
+  {
+   "id": 280,
+   "class": "minimapEntriesLibrary_fla.THX_30"
+  },
+  {
+   "id": 276,
+   "class": "minimapEntriesLibrary_fla.turn_back_28"
+  },
+  {
+   "id": 272,
+   "class": "minimapEntriesLibrary_fla.Help_me_ex_26"
+  },
+  {
+   "id": 268,
+   "class": "minimapEntriesLibrary_fla.Positive_24"
+  },
+  {
+   "id": 264,
+   "class": "minimapEntriesLibrary_fla.Reloading_21"
+  },
+  {
+   "id": 259,
+   "class": "minimapEntriesLibrary_fla.AttackSenderSPG_19"
+  },
+  {
+   "id": 255,
+   "class": "minimapEntriesLibrary_fla.AttackSender_17"
+  },
+  {
+   "id": 251,
+   "class": "minimapEntriesLibrary_fla.AttackSPG_14"
+  },
+  {
+   "id": 244,
+   "class": "minimapEntriesLibrary_fla.Attack_12"
+  },
+  {
+   "id": 240,
+   "class": "minimapEntriesLibrary_fla.Help_me_10"
+  },
+  {
+   "id": 236,
+   "class": "minimapEntriesLibrary_fla.FirstTargetSPG_7"
+  },
+  {
+   "id": 231,
+   "class": "minimapEntriesLibrary_fla.FirstTarget_4"
+  },
+  {
+   "id": 226,
+   "class": "Vehicle_red_ico_mini_light"
+  },
+  {
+   "id": 224,
+   "class": "Vehicle_purple_ico_mini_light"
+  },
+  {
+   "id": 222,
+   "class": "DeadAnimationMC"
+  },
+  {
+   "id": 221,
+   "class": "DeadPermanentAnimationMC"
+  },
+  {
+   "id": 219,
+   "class": "Vehicle_yellow_ico_mini_light"
+  },
+  {
+   "id": 217,
+   "class": "Vehicle_blue_ico_mini_light"
+  },
+  {
+   "id": 215,
+   "class": "Vehicle_gold_ico_mini_light"
+  },
+  {
+   "id": 213,
+   "class": "Vehicle_green_ico_mini_light"
+  },
+  {
+   "id": 211,
+   "class": "vehicleHPCircleUI"
+  },
+  {
+   "id": 210,
+   "class": "minimapEntriesLibrary_fla.vehicleHPCircleAnimUI_53"
+  },
+  {
+   "id": 25,
+   "class": "SightPointerEntry"
+  },
+  {
+   "id": 19,
+   "class": "MinimapEntryContainer"
+  },
+  {
+   "id": 18,
+   "class": "MinimapEntryContainerUI"
+  },
+  {
+   "id": 16,
+   "class": "W2GTBattleZoneMinimapEntryUI"
+  },
+  {
+   "id": 15,
+   "class": "minimapEntriesLibrary_fla.wtgtIconContainer_162"
+  },
+  {
+   "id": 3,
+   "class": "W2gtBattleZoneHoverUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 22441,
+   "classes": 100,
+   "methods": 405,
+   "bodies": 405,
+   "code_bytes": 7891
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Exponential",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DirectionLinePlaceholder",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MTContainer",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MinimapEntryContainer",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MinimapEntryContainerUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "radarAnimatedContainer",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sprtCameraPersonalDirectionAtlasItemPlaceholder",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sprtPersonalAtlasItemPlaceholder",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sprtPersonalCameraAtlasItemPlaceholder",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sprtTeamBaseAtlasItemPlaceholder",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sprtTutorialItemPlaceholder",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sprtfortconsAtlasItemPlaceholder",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArtyHitDotMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.arty.ArtyHitDotMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsTrainingTargetUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleMinimapBearerAnimation",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.AllyIsSupporting_34",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.AttackSPG_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.AttackSenderSPG_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.AttackSender_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.Attack_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.BaseAttackColorblindMC_142",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.BaseAttackMC_139",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.BaseDefendMC_122",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.BaseNeutralAttackColorBlindMC_134",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.BaseNeutralAttackMC_129",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.FirstTargetSPG_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.FirstTarget_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.Help_me_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.Help_me_ex_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.ISupportYou_32",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.Positive_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.Reloading_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.THX_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.baseAttackAnimationMC_140",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.baseAttackColorBlindAnimationMC_143",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.baseDefendAnimationMC_124",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.baseNeutralAttackAnimationMC_131",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.baseNeutralAttackColorBlindAnimationMC_136",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.captureCircleAnimationProgressUI_95",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.captureCircleAnimationUI_94",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.captureCircleReversAnimationUI_98",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.goingToPositionMeMC_109",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.markAttentionAnimationMC_104",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.markGoingToPositionAnimationMC_111",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.turn_back_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.vehicleHPCircleAnimUI_53",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.wtgtIconContainer_162",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ViewRangeCirclesEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.ViewRangeCirclesMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ViewRangeSectorEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.ViewRangeSectorMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "W2gtBattleZoneHoverUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.w2gt.W2gtHover",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.battleRoyale.RadarAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "markerMark",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicle.MarkerTopAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AOEArtilleryMinimapEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.fortconsumables.AOEArtilleryMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AllyTeamSpawnEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.teambase.AllyTeamSpawnMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AnimationEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.AnimationMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArcadeCameraEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.ArcadeCameraMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArtilleryEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.fortconsumables.ArtilleryMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArtilleryYellowEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.fortconsumables.ArtilleryYellowMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArtyMarkerMinimapEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.arty.ArtyMarkerMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BRMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.battleRoyale.BRMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BomberEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.fortconsumables.BomberMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CellFlashEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.PingFlashMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MarkAttentionEntryUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.PingFlashMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MarkGoingToPositionEntryUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.PingFlashMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UnspottedMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.PingFlashMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomDeathZoneMinimapEntryUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.minimap.entries.CustomDeathZoneMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DeadAnimationMC",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleAnimationMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DeadPermanentAnimationMC",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleAnimationMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsTrainingEyeMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleAnimationMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Vehicle_blue_ico_mini_light",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleAnimationMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Vehicle_gold_ico_mini_light",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleAnimationMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Vehicle_green_ico_mini_light",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleAnimationMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Vehicle_purple_ico_mini_light",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleAnimationMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Vehicle_red_ico_mini_light",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleAnimationMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Vehicle_yellow_ico_mini_light",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleAnimationMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DeadPointEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.DeadPointMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DeathZoneEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.battleRoyale.DeathZoneMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EnemyTeamSpawnEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.teambase.EnemyTeamSpawnMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventDeathZoneMinimapEntryUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.minimap.entries.EventDeathZoneMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FlagPointEntryUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.minimap.ShootingPointMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NavigationPointEntryUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.minimap.ShootingPointMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShootingPointEntryUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.minimap.ShootingPointMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LandingZoneEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.LandingZoneMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoiMinimapEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.pointsOfInterest.PoiMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScenarioMinimapEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.scenario.ScenarioMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SightPointerEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicleMechanics.SightPointerMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SmokeEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.fortconsumables.SmokeMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StrategicCameraEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.StrategicCameraMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.vehicle.VehicleMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VideoCameraEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.VideoCameraMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ViewPointEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.ViewPointMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "W2GTBattleZoneMinimapEntryUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.w2gt.W2GTBattleZoneMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AllyTeamBaseEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.teambase.AllyTeamBaseMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ControlPointEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.teambase.ControlPointMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EnemyTeamBaseEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.teambase.EnemyTeamBaseMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsTrainingVehicleEntryUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.minimap.MapsTrainingVehicleMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MinimapScenarioProgressCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.scenario.ScenarioMinimapProgressCircle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleHPCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.HpProgressCircle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MinimapPoiProgressCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.pointsOfInterest.MinimapPoiProgressCircle",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

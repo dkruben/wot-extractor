@@ -1,0 +1,97 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/equipmentAdditionalGrousers.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 186174,
+ "actual_length": 186174,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 19,
+  "ShowFrame": 329,
+  "DefineShape": 10,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 2503,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 8,
+  "DefineSprite": 18,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 8,
+  "shapes": 15,
+  "sprites": 18,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "equipmentAdditionalGrousers_fla.MainTimeline"
+  },
+  {
+   "id": 16,
+   "class": "equipmentAdditionalGrousers_fla.iconTankBodyStyleBig_8"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 660,
+   "classes": 2,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 132
+  }
+ ],
+ "classes": [
+  {
+   "name": "equipmentAdditionalGrousers_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentAdditionalGrousers_fla.iconTankBodyStyleBig_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

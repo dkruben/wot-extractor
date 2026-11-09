@@ -1,0 +1,70 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.Specializations",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Specializations",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/Specializations",
+  "feature": null,
+  "files": [
+    {
+      "name": "Specializations.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Specializations/Specializations.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Specializations/Specializations.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Specializations.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Specializations/Specializations.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Specializations/Specializations.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Specializations.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Specializations/Specializations.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Specializations/Specializations.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/common/Specializations/Specializations.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/Specializations/Specializations.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Specializations/Specializations.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/Specializations/Specializations.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Specializations/Specializations.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.Specializations",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

@@ -1,0 +1,39 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/vehicles/mechanics/mechanic_helpers.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any as Any, Callable as Callable, Dict as Dict, Optional as Optional, Tuple as Tuple, TYPE_CHECKING as TYPE_CHECKING
+from future.utils import viewvalues as viewvalues
+import BigWorld as BigWorld
+from items.vehicle_mechanics_types import VehicleMechanicKey as VehicleMechanicKey
+from vehicles.mechanics.common import IMechanicComponentLogic as IMechanicComponentLogic
+from vehicles.mechanics.mechanic_constants import VEHICLE_MECHANIC_DYN_COMPONENT_NAMES as _DYN_COMPONENTS_NAMES, VEHICLE_MECHANIC_TAGS as VEHICLE_MECHANIC_TAGS, TRACKABLE_VEHICLE_MECHANICS as TRACKABLE_VEHICLE_MECHANICS
+from items.components.shared_components import MechanicsParams as MechanicsParams
+from items.vehicles import VehicleDescriptor as VehicleDescriptor
+from Vehicle import Vehicle as Vehicle
+from vehicles.mechanics.common import IMechanicComponent as IMechanicComponent
+
+def isValidMechanicComponent(component):
+    ...
+def isVehicleMechanicComponent(component, mechanicKey):
+    ...
+def hasVehicleMechanicComponent(vehicle, mechanicKey):
+    ...
+def getVehicleMechanicComponent(vehicle, mechanicKey):
+    ...
+def getVehicleMechanicsComponents(vehicle, criteria=...):
+    ...
+def getPlayerVehicleMechanicComponent(mechanicKey):
+    ...
+def findVehicleMechanicDynamicComponent(dynamicComponents, mechanicKey):
+    ...
+def hasVehicleDescrMechanic(vehicleDescriptor, mechanicKey):
+    ...
+def getVehicleDescrMechanics(vehicleDescriptor):
+    ...
+def getVehicleDescrMechanicParams(vehicleDescriptor, mechanicKey):
+    ...
+def isMechanicInMechanicsParams(mechanicParams, mechanicKey):
+    ...
+def getMechanicFromMechanicsParams(mechanicParams, mechanicKey):
+    ...

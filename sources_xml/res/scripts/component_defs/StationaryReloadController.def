@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/StationaryReloadController.def -->
+<root>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<Properties>
+		<status>
+			<Type>STATIONARY_RELOAD_STATUS</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</status>
+	</Properties>
+	<DefaultKeyName>stationaryReloadController</DefaultKeyName>
+</root>

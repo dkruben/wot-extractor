@@ -1,0 +1,100 @@
+{
+ "source": "sources/res/gui/flash/confirmModuleWindow.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 3017,
+ "actual_length": 3017,
+ "frame_size_px": [
+  0.0,
+  400.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 2,
+  "ShowFrame": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 1,
+  "DefineSprite": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 1,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "confirmDialogCmpnts.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 1,
+   "class": "ConfirmModuleDialog_UI"
+  },
+  {
+   "id": 0,
+   "class": "confirmModuleWindow_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2772,
+   "classes": 2,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 314
+  }
+ ],
+ "classes": [
+  {
+   "name": "confirmModuleWindow_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ConfirmModuleDialog_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.confirmModuleWindow.ConfirmModuleWindow",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

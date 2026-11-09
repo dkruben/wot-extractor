@@ -1,0 +1,108 @@
+{
+  "rid": "R.views.lobby.common.tooltips.SelectedRewardsTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SelectedRewardsTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "SelectedRewardsTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView/SelectedRewardsTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView/SelectedRewardsTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SelectedRewardsTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView/SelectedRewardsTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView/SelectedRewardsTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SelectedRewardsTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView/SelectedRewardsTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView/SelectedRewardsTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView/SelectedRewardsTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/common/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/common/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView/SelectedRewardsTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView/SelectedRewardsTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView/SelectedRewardsTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/common/tooltips/SelectedRewardsTooltipView/SelectedRewardsTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.common.tooltips.SelectedRewardsTooltipView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.common.tooltips.SelectedRewardsTooltipView no Python",
+      "ViewModel SelectedRewardsTooltipViewModel (model=... no Python da view): 2/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/common/selectable_reward_base.py",
+        64
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/common/tooltips/selected_rewards_tooltip_view.py",
+        17
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/common/selectable_reward_base.py",
+      "sources/res/scripts/client/gui/impl/lobby/common/tooltips/selected_rewards_tooltip_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/tooltips/selected_rewards_tooltip_view_model.py",
+      "class": "SelectedRewardsTooltipViewModel",
+      "chain": [
+        "SelectedRewardsTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "categories",
+          "Array"
+        ],
+        [
+          "totalSelected",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 2,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

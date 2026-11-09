@@ -1,0 +1,23 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/vehicle_compare/tooltips/crew_member_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+
+class CrewMemberModel(ViewModel):
+    __slots__: tuple
+    def __init__(self, properties=2, commands=0):
+        ...
+    def getRole(self):
+        ...
+    def setRole(self, value):
+        ...
+    def getAdditionalRoles(self):
+        ...
+    def setAdditionalRoles(self, value):
+        ...
+    @staticmethod
+    def getAdditionalRolesType():
+        ...
+    def _initialize(self):
+        ...

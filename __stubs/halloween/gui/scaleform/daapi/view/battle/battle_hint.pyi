@@ -1,0 +1,49 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/halloween/scripts/client/halloween/gui/scaleform/daapi/view/battle/battle_hint.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from builtins import round as round
+import BattleReplay as BattleReplay
+from halloween.gui.halloween_gui_constants import BATTLE_CTRL_ID as BATTLE_CTRL_ID, HALLOWEEN_BATTLE_HINTS_QUEUE_ID as HALLOWEEN_BATTLE_HINTS_QUEUE_ID
+from halloween.gui.scaleform.daapi.view.meta.BattleHintMeta import BattleHintMeta as BattleHintMeta
+from halloween.gui.scaleform.daapi.view.meta.BattleHintProgressMeta import BattleHintProgressMeta as BattleHintProgressMeta
+from gui.battle_control.controllers.battle_hints.component import BattleHintComponent as BattleHintComponent
+from helpers import dependency as dependency
+from skeletons.gui.battle_session import IBattleSessionProvider as IBattleSessionProvider
+
+class BattleHint(BattleHintComponent, BattleHintMeta):
+    guiSessionProvider: Any
+    def __init__(self):
+        ...
+    @property
+    def hwBattleGuiCtrl(self):
+        ...
+    def _populate(self):
+        ...
+    def _dispose(self):
+        ...
+    def _showHint(self, model, params):
+        ...
+    def _hideHint(self):
+        ...
+    def _cancelFadeOut(self):
+        ...
+    def _onBattleGoalChanged(self, goalName):
+        ...
+
+class ProgressBarBattleHint(BattleHint, BattleHintProgressMeta):
+    def _populate(self):
+        ...
+    def _dispose(self):
+        ...
+    def _hideHint(self):
+        ...
+    def _normalizeSoulsLeft(self, soulsLeft, maxSoulsCount):
+        ...
+    def _getCollectorSoulsAndCapacity(self):
+        ...
+    def _updateProgressBar(self):
+        ...
+    def _onCollectorSoulsChanged(self, *args):
+        ...

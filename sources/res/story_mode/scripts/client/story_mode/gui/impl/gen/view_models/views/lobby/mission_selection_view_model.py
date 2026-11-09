@@ -1,0 +1,101 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/story_mode/scripts/client/story_mode/gui/impl/gen/view_models/views/lobby/mission_selection_view_model.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: story_mode/scripts/client/story_mode/gui/impl/gen/view_models/views/lobby/mission_selection_view_model.py
+from enum import IntEnum
+from frameworks.wulf import Array, ViewModel
+from story_mode.gui.impl.gen.view_models.views.lobby.mission_model import MissionModel
+from story_mode.gui.impl.gen.view_models.views.lobby.parallax_model import ParallaxModel
+from story_mode.gui.impl.gen.view_models.views.lobby.selected_mission_model import SelectedMissionModel
+from story_mode.gui.impl.gen.view_models.views.lobby.task_model import TaskModel
+
+class TabsEnum(IntEnum):
+    NEWBIES = 0
+    EVENT = 1
+
+
+class MissionSelectionViewModel(ViewModel):
+    __slots__ = ('onQuit', 'onMissionSelect', 'onLoaded', 'onChangeTab', 'onSelectedMissionTaskUnlocked',
+                 'onAboutClick', 'onNavigate')
+
+    def __init__(self, properties=8, commands=7):
+        super(MissionSelectionViewModel, self).__init__(properties=properties, commands=commands)
+
+    @property
+    def selectedMission(self):
+        return self._getViewModel(0)
+
+    @staticmethod
+    def getSelectedMissionType():
+        return SelectedMissionModel
+
+    @property
+    def parallax(self):
+        return self._getViewModel(1)
+
+    @staticmethod
+    def getParallaxType():
+        return ParallaxModel
+
+    def getSelectedTab(self):
+        return TabsEnum(self._getNumber(2))
+
+    def setSelectedTab(self, value):
+        self._setNumber(2, value.value)
+
+    def getIsParallaxEnabled(self):
+        return self._getBool(3)
+
+    def setIsParallaxEnabled(self, value):
+        self._setBool(3, value)
+
+    def getIsTabsVisible(self):
+        return self._getBool(4)
+
+    def setIsTabsVisible(self, value):
+        self._setBool(4, value)
+
+    def getMissions(self):
+        return self._getArray(5)
+
+    def setMissions(self, value):
+        self._setArray(5, value)
+
+    @staticmethod
+    def getMissionsType():
+        return MissionModel
+
+    def getTasks(self):
+        return self._getArray(6)
+
+    def setTasks(self, value):
+        self._setArray(6, value)
+
+    @staticmethod
+    def getTasksType():
+        return TaskModel
+
+    def getModeId(self):
+        return self._getString(7)
+
+    def setModeId(self, value):
+        self._setString(7, value)
+
+    def _initialize(self):
+        super(MissionSelectionViewModel, self)._initialize()
+        self._addViewModelProperty('selectedMission', SelectedMissionModel())
+        self._addViewModelProperty('parallax', ParallaxModel())
+        self._addNumberProperty('selectedTab')
+        self._addBoolProperty('isParallaxEnabled', False)
+        self._addBoolProperty('isTabsVisible', False)
+        self._addArrayProperty('missions', Array())
+        self._addArrayProperty('tasks', Array())
+        self._addStringProperty('modeId', '')
+        self.onQuit = self._addCommand('onQuit')
+        self.onMissionSelect = self._addCommand('onMissionSelect')
+        self.onLoaded = self._addCommand('onLoaded')
+        self.onChangeTab = self._addCommand('onChangeTab')
+        self.onSelectedMissionTaskUnlocked = self._addCommand('onSelectedMissionTaskUnlocked')
+        self.onAboutClick = self._addCommand('onAboutClick')
+        self.onNavigate = self._addCommand('onNavigate')

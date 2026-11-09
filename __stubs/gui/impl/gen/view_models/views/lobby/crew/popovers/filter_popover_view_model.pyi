@@ -1,0 +1,36 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/popovers/filter_popover_view_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from gui.impl.gen import R as R
+from gui.impl.gen.view_models.views.lobby.crew.common.filter_toggle_group_model import FilterToggleGroupModel as FilterToggleGroupModel
+
+class FilterPopoverViewModel(ViewModel):
+    __slots__: tuple
+    onUpdateFilter: Any
+    onResetFilter: Any
+    def __init__(self, properties=4, commands=2):
+        ...
+    def getTitle(self):
+        ...
+    def setTitle(self, value):
+        ...
+    def getFilterGroups(self):
+        ...
+    def setFilterGroups(self, value):
+        ...
+    @staticmethod
+    def getFilterGroupsType():
+        ...
+    def getCanResetFilter(self):
+        ...
+    def setCanResetFilter(self, value):
+        ...
+    def getShowResetBtn(self):
+        ...
+    def setShowResetBtn(self, value):
+        ...
+    def _initialize(self):
+        ...

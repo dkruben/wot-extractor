@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/vscript/events/showHintAfterRespawn.xml -->
+<root>
+	<name>showHintAfterRespawn</name>
+	<isDevelopment>false</isDevelopment>
+	<senderAspects>CLIENT</senderAspects>
+	<receiverAspects>CLIENT</receiverAspects>
+	<param>
+		<name>hint</name>
+		<typecode>StringT</typecode>
+	</param>
+</root>

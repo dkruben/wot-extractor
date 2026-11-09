@@ -1,0 +1,18 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client_common/arena_component_system/assembler_helper.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from battleground.airdrops import AirdropsComponent as AirdropsComponent
+from battleground.berserker_effect import BerserkerEffectComponent as BerserkerEffectComponent
+from constants import ARENA_BONUS_TYPE as ARENA_BONUS_TYPE
+from arena_component_system.destructible_entity_component import DestructibleEntitiesComponent as DestructibleEntitiesComponent
+from arena_component_system.sector_base_arena_component import SectorBaseArenaComponent as SectorBaseArenaComponent
+from arena_component_system.sectors_arena_component import SectorsArenaComponent as SectorsArenaComponent
+from arena_component_system.step_repair_point_component import StepRepairPointComponent as StepRepairPointComponent
+from arena_component_system.epic_random_battle_component_assembler import EpicRandomBattleComponentAssembler as EpicRandomBattleComponentAssembler
+from arena_component_system.epic_battle_component_assembler import EpicBattleComponentAssembler as EpicBattleComponentAssembler
+from arena_component_system.protection_zone_component import ProtectionZoneComponent as ProtectionZoneComponent
+from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as ARENA_BONUS_TYPE_CAPS
+from arena_components.battle_royale_component import BattleRoyaleComponent as BattleRoyaleComponent
+COMPONENT_ASSEMBLER: dict
+ARENA_BONUS_TYPE_CAP_COMPONENTS: dict

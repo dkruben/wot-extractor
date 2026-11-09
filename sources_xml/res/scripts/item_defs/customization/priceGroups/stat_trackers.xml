@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/item_defs/customization/priceGroups/stat_trackers.xml -->
+<root>
+	<priceGroup>
+		<id>1138</id>
+		<name>statracker 50g notInShop</name>
+		<tags>notInShop</tags>
+		<price>50<gold />
+		</price>
+		<notInShop>True</notInShop>
+	</priceGroup>
+</root>

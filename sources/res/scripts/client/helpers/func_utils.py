@@ -1,0 +1,83 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/helpers/func_utils.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/helpers/func_utils.py
+from __future__ import absolute_import
+from functools import partial, wraps
+from past.builtins import intern
+from time import sleep, time
+import BigWorld
+from constants import IS_DEVELOPMENT
+from debug_utils import LOG_DEBUG
+FLASH_IMG_PREFIX = 'img://'
+
+def callback(delay, obj, methodName, *args):
+    return BigWorld.callback(delay, partial(callMethod, obj, methodName, *args))
+
+
+def callMethod(obj, methodName, *args):
+    if hasattr(obj, methodName):
+        getattr(obj, methodName)(*args)
+
+
+def debugDelay(timeLag):
+
+    def delayCallDecorator(func):
+
+        def delayCall(*args, **kwargs):
+            BigWorld.callback(timeLag, partial(func, *args, **kwargs))
+
+        return delayCall
+
+    return delayCallDecorator
+
+
+def logFunc(func):
+
+    def wrapped(*args, **kwargs):
+        LOG_DEBUG('|||||||||||||||||| %s(%s, %s) |||||||||||' % (func.func_name, args, kwargs))
+        func(*args, **kwargs)
+
+    return wrapped
+
+
+def freeze(seconds, nextFrame=True):
+    if nextFrame:
+        LOG_DEBUG('Freeze call at', BigWorld.time())
+        BigWorld.callback(0, partial(freeze, seconds, False))
+        return
+    LOG_DEBUG('Actual Freezing at', BigWorld.time())
+    sleep(seconds)
+
+
+def oncePerPeriod(period):
+    timeHolder = {(intern('lastRequest')): 0.0}
+
+    def wrapper(func):
+
+        def caller(*args, **kwargs):
+            currTime = time()
+            if currTime - timeHolder['lastRequest'] > period:
+                timeHolder['lastRequest'] = currTime
+                func(*args, **kwargs)
+
+        return caller
+
+    return wrapper
+
+
+def replaceImgPrefix(path):
+    return path.replace(FLASH_IMG_PREFIX, '')
+
+
+def isDeveloperFunc(func):
+
+    @wraps(func)
+    def decorator(*args, **kwargs):
+        if not IS_DEVELOPMENT:
+            return None
+        else:
+            return func(*args, **kwargs)
+
+    return decorator

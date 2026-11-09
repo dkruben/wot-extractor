@@ -1,0 +1,66 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/mapbox/mapbox_survey_manager.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import logging as logging
+import operator as operator
+import typing as typing
+from account_helpers.AccountSettings import MAPBOX_SURVEYS as MAPBOX_SURVEYS
+from account_helpers import AccountSettings as AccountSettings
+from constants import ARENA_BONUS_TYPE as ARENA_BONUS_TYPE
+from gui.doc_loaders.surveys_loader import getSurvey as getSurvey
+from gui.impl.gen.view_models.views.lobby.mapbox.map_box_question_model import QuestionType as QuestionType
+from gui.mapbox.mapbox_survey_helper import AlternativeQuestion as AlternativeQuestion, findQuestionById as findQuestionById
+from shared_utils import findFirst as findFirst, first as first
+from soft_exception import SoftException as SoftException
+from gui.mapbox.mapbox_survey_helper import IQuestion as IQuestion
+_logger: Any
+
+class MapboxSurveyManager(object):
+    __slots__: tuple
+    __mapId: Any
+    __surveyGroup: Any
+    __questions: Any
+    __surveyData: Any
+    __currentQuestionIdx: Any
+    def __init__(self):
+        ...
+    def fini(self):
+        ...
+    def startSurvey(self, mapId):
+        ...
+    def clearSurvey(self):
+        ...
+    def resetSurvey(self, mapId):
+        ...
+    def getMapId(self):
+        ...
+    def getSurveyGroup(self):
+        ...
+    def getSelectedAnswers(self, questionId, optionId=None):
+        ...
+    def saveAnswers(self, questionId, answers):
+        ...
+    def canContinue(self, questionId=None):
+        ...
+    def getQuestion(self, qId=None):
+        ...
+    def getPreviousQuestion(self):
+        ...
+    def getNextQuestion(self):
+        ...
+    def getTotalQuestionsCount(self):
+        ...
+    def getCurrentQuestionIdx(self):
+        ...
+    def getSurveyData(self):
+        ...
+    def __findQuestionToShow(self, questions):
+        ...
+    def __isShownAllQuestions(self):
+        ...
+    def __processLinkedAnswers(self, surveyData, question, newAnswers):
+        ...
+    def __clearSavedAnswers(self, questionsGlobalIndexes):
+        ...

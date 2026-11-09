@@ -1,0 +1,94 @@
+{
+  "rid": "R.views.last_stand.mono.battle.battle_loading",
+  "rid_source": "sources/res/last_stand/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "battle_loading",
+  "dir": "last_stand/gui/gameface/_dist/production/mono/battle/battle_loading",
+  "feature": "last_stand",
+  "files": [
+    {
+      "name": "battle_loading.css",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/battle/battle_loading/battle_loading.css",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/battle/battle_loading/battle_loading.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "battle_loading.html",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/battle/battle_loading/battle_loading.html",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/battle/battle_loading/battle_loading.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/battle/battle_loading/bundle.js",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/battle/battle_loading/bundle.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/battle/battle_loading/battle_loading.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/battle/battle_loading/battle_loading.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/battle/battle_loading/bundle.js",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/battle/battle_loading/bundle.js"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/battle/chunks/lib.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/battle/chunks/lib.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.last_stand.mono.battle.battle_loading",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.last_stand.mono.battle.battle_loading no Python",
+      "ViewModel EventLoadingViewModel (model=... no Python da view): 1/1 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/battle/battle_loading_view.py",
+        50
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/scaleform/daapi/view/battle/page.py",
+        118
+      ]
+    ],
+    "python_files": [
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/battle/battle_loading_view.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/scaleform/daapi/view/battle/page.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/last_stand/scripts/client/last_stand/gui/impl/gen/view_models/views/battle/event_loading_view_model.py",
+      "class": "EventLoadingViewModel",
+      "chain": [
+        "EventLoadingViewModel"
+      ],
+      "properties": [
+        [
+          "currentProgress",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 1,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

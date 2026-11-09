@@ -1,0 +1,141 @@
+{
+  "rid": "R.views.lobby.crew.tooltips.DismissedToggleTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "DismissedToggleTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "DismissedToggleTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip/DismissedToggleTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip/DismissedToggleTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DismissedToggleTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip/DismissedToggleTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip/DismissedToggleTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DismissedToggleTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip/DismissedToggleTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip/DismissedToggleTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip/DismissedToggleTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip/DismissedToggleTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip/DismissedToggleTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip/DismissedToggleTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/DismissedToggleTooltip/DismissedToggleTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.ExtendedTextTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.tooltips.DismissedToggleTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "4 referencia(s) R.views.lobby.crew.tooltips.DismissedToggleTooltip no Python",
+      "ViewModel FilterPopoverViewModel (model=... no Python da view): 0/6 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/base_tankman_list_view.py",
+        78
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/filter/__init__.py",
+        83
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/popovers/filter_popover_view.py",
+        52
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/dismissed_toggle_tooltip.py",
+        16
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/base_tankman_list_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/filter/__init__.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/popovers/filter_popover_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/dismissed_toggle_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/popovers/filter_popover_view_model.py",
+      "class": "FilterPopoverViewModel",
+      "chain": [
+        "FilterPopoverViewModel"
+      ],
+      "properties": [
+        [
+          "title",
+          "Resource"
+        ],
+        [
+          "filterGroups",
+          "Array"
+        ],
+        [
+          "canResetFilter",
+          "Bool"
+        ],
+        [
+          "showResetBtn",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onUpdateFilter",
+        "onResetFilter"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 6,
+        "missing": [
+          "canResetFilter",
+          "filterGroups",
+          "onResetFilter",
+          "onUpdateFilter",
+          "showResetBtn",
+          "title"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

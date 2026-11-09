@@ -1,0 +1,16 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/server_side_replay/extension.xml -->
+<root>
+	<FeatureName>server_side_replay</FeatureName>
+	<IsEnabled>true</IsEnabled>
+	<Personality>ServerSideReplayPersonality</Personality>
+	<Components>
+		<StaticComponents>
+			<ServerReplayArenaComponent />
+		</StaticComponents>
+	</Components>
+	<Entities>
+		<ClientServerEntities>
+			<ReplayAccount />
+		</ClientServerEntities>
+	</Entities>
+</root>

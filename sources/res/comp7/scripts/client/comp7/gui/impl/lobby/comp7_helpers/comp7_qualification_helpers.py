@@ -1,0 +1,52 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7/scripts/client/comp7/gui/impl/lobby/comp7_helpers/comp7_qualification_helpers.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7/scripts/client/comp7/gui/impl/lobby/comp7_helpers/comp7_qualification_helpers.py
+from __future__ import absolute_import
+import typing
+from helpers import dependency
+from comp7_common_const import BattleStatuses
+from frameworks.wulf.view.array import fillViewModelsArray
+from skeletons.gui.game_control import IComp7Controller
+from comp7.gui.impl.gen.view_models.views.lobby.qualification_battle import BattleState, QualificationBattle
+if typing.TYPE_CHECKING:
+    from frameworks.wulf import Array
+    from comp7.gui.impl.gen.view_models.views.lobby.qualification_model import QualificationModel
+BATTLE_STATES = {(BattleStatuses.WIN): (BattleState.VICTORY), (BattleStatuses.LOSE): (BattleState.DEFEAT), 
+   (BattleStatuses.DESERTER): (BattleState.DEFEAT)}
+
+@dependency.replace_none_kwargs(comp7Controller=IComp7Controller)
+def setQualificationInfo(model, comp7Controller=None):
+    battleStatuses = comp7Controller.qualificationBattlesStatuses
+    maxBattlesCount = comp7Controller.qualificationBattlesNumber
+    model.setIsActive(comp7Controller.isQualificationActive())
+    model.setBattlesCount(len(battleStatuses))
+    model.setMaxBattlesCount(maxBattlesCount)
+    model.setIsRatingCalculation(comp7Controller.isQualificationResultsProcessing())
+
+
+def setQualificationBattles(qualificationArray):
+    battles = [__createQualificationBattleModel(state) for state in __getQualificationBattleStates()]
+    fillViewModelsArray(battles, qualificationArray)
+
+
+@dependency.replace_none_kwargs(comp7Controller=IComp7Controller)
+def __getQualificationBattleStates(comp7Controller=None):
+    battles = []
+    battleStatuses = comp7Controller.qualificationBattlesStatuses
+    maxBattlesCount = comp7Controller.qualificationBattlesNumber
+    playedBattlesNumber = len(battleStatuses)
+    for battleIdx in range(maxBattlesCount):
+        state = BattleState.NOTPLAYED
+        if battleIdx < playedBattlesNumber:
+            state = BATTLE_STATES.get(battleStatuses[battleIdx], BattleState.INPROGRESS)
+        battles.append(state)
+
+    return battles
+
+
+def __createQualificationBattleModel(state):
+    battleModel = QualificationBattle()
+    battleModel.setState(state)
+    return battleModel

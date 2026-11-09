@@ -1,0 +1,75 @@
+{
+  "rid": "R.views.halloween.mono.lobby.anomalies",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "anomalies",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/anomalies",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "anomalies.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/anomalies/anomalies.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/anomalies/anomalies.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "anomalies.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/anomalies/anomalies.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/anomalies/anomalies.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/anomalies/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/anomalies/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/anomalies/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/anomalies/anomalies.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/anomalies/anomalies.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/anomalies/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/anomalies/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "halloween.mono.lobby.tooltips.anomaly_tooltip"
+  ],
+  "commands": [
+    "onAnomalyAcknowledged",
+    "onAnomalyClick",
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.anomalies",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.halloween.mono.lobby.anomalies no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/anomalies_view.py",
+        29
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/anomalies_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

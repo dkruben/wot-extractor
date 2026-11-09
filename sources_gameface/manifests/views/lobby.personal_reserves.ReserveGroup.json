@@ -1,0 +1,72 @@
+{
+  "rid": "R.views.lobby.personal_reserves.ReserveGroup",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ReserveGroup",
+  "dir": "gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup",
+  "feature": null,
+  "files": [
+    {
+      "name": "ReserveGroup.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup/ReserveGroup.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup/ReserveGroup.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ReserveGroup.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup/ReserveGroup.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup/ReserveGroup.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ReserveGroup.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup/ReserveGroup.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup/ReserveGroup.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup/ReserveGroup.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/personal_reserves/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/personal_reserves/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup/ReserveGroup.css",
+      "key": "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup/ReserveGroup.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup/ReserveGroup.js",
+      "key": "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveGroup/ReserveGroup.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.simple_tooltip_content"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.personal_reserves.ReserveGroup",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

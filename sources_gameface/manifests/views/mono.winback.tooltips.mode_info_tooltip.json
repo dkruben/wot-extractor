@@ -1,0 +1,103 @@
+{
+  "rid": "R.views.mono.winback.tooltips.mode_info_tooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "mode_info_tooltip",
+  "dir": "gui/gameface/_dist/production/mono/winback/tooltips/mode_info_tooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/winback/tooltips/mode_info_tooltip/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/winback/tooltips/mode_info_tooltip/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "mode_info_tooltip.css",
+      "effective": "res/gui/gameface/_dist/production/mono/winback/tooltips/mode_info_tooltip/mode_info_tooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/winback/tooltips/mode_info_tooltip/mode_info_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "mode_info_tooltip.html",
+      "effective": "res/gui/gameface/_dist/production/mono/winback/tooltips/mode_info_tooltip/mode_info_tooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/winback/tooltips/mode_info_tooltip/mode_info_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/winback/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/winback/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/winback/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/winback/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/winback/tooltips/mode_info_tooltip/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/winback/tooltips/mode_info_tooltip/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/winback/tooltips/mode_info_tooltip/mode_info_tooltip.css",
+      "key": "res/gui/gameface/_dist/production/mono/winback/tooltips/mode_info_tooltip/mode_info_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.winback.tooltips.mode_info_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.mono.winback.tooltips.mode_info_tooltip no Python",
+      "ViewModel WinbackLeaveModePopoverViewModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/winback/popovers/winback_leave_mode_popover_view.py",
+        34
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/winback/tooltips/mode_info_tooltip.py",
+        14
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/winback/popovers/winback_leave_mode_popover_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/winback/tooltips/mode_info_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/winback/popovers/winback_leave_mode_popover_view_model.py",
+      "class": "WinbackLeaveModePopoverViewModel",
+      "chain": [
+        "WinbackLeaveModePopoverViewModel"
+      ],
+      "properties": [
+        [
+          "battlesCount",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onClick"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "battlesCount",
+          "onClick"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

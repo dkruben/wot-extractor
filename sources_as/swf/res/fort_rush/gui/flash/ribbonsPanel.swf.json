@@ -1,0 +1,133 @@
+{
+ "source": "sources/res/fort_rush/gui/flash/ribbonsPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 20408,
+ "actual_length": 20408,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 8,
+  "ShowFrame": 154,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 76,
+  "RemoveObject2": 1,
+  "DefineBitsLossless2": 2,
+  "DefineSprite": 7,
+  "FrameLabel": 7,
+  "FileAttributes": 1,
+  "PlaceObject3": 47,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 7,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 11,
+   "class": "AnimationSetUI"
+  },
+  {
+   "id": 10,
+   "class": "ribbonsPanel_fla.glowAnim_3"
+  },
+  {
+   "id": 5,
+   "class": "EfficiencyBonusAnimationUI"
+  },
+  {
+   "id": 1,
+   "class": "FortRushRibbonsPanelUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1812,
+   "classes": 5,
+   "methods": 27,
+   "bodies": 27,
+   "code_bytes": 410
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ribbonsPanel_fla.glowAnim_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AnimationSetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.ribbonsPanel.AnimationSet",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EfficiencyBonusAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.ribbonsPanel.EfficiencyBonusAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FortRushRibbonsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.fort_rush.gui.battle.views.ribbonsPanel.FortRushRibbonsPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

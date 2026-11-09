@@ -1,0 +1,142 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillBattleTempered.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 155830,
+ "actual_length": 155830,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#22221c",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 27,
+  "ShowFrame": 453,
+  "DefineShape": 16,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 3,
+  "PlaceObject2": 1469,
+  "RemoveObject2": 15,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 11,
+  "DefineSprite": 26,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 11,
+  "shapes": 21,
+  "sprites": 26,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillBattleTempered_fla.MainTimeline"
+  },
+  {
+   "id": 57,
+   "class": "skillBattleTempered_fla.statsDecreased_2b_26"
+  },
+  {
+   "id": 56,
+   "class": "skillBattleTempered_fla.statsDecreased_2a_25"
+  },
+  {
+   "id": 55,
+   "class": "skillBattleTempered_fla.statsDecreased_1a_24"
+  },
+  {
+   "id": 40,
+   "class": "skillBattleTempered_fla.explosionCircle_17"
+  },
+  {
+   "id": 9,
+   "class": "skillBattleTempered_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1470,
+   "classes": 6,
+   "methods": 24,
+   "bodies": 24,
+   "code_bytes": 396
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillBattleTempered_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillBattleTempered_fla.explosionCircle_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillBattleTempered_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillBattleTempered_fla.statsDecreased_1a_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillBattleTempered_fla.statsDecreased_2a_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillBattleTempered_fla.statsDecreased_2b_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

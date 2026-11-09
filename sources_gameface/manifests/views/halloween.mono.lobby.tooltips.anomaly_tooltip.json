@@ -1,0 +1,121 @@
+{
+  "rid": "R.views.halloween.mono.lobby.tooltips.anomaly_tooltip",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "anomaly_tooltip",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "anomaly_tooltip.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip/anomaly_tooltip.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip/anomaly_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "anomaly_tooltip.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip/anomaly_tooltip.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip/anomaly_tooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/bullet.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/bullet.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/divider.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/divider.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/format_text_with_paragraphs.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/format_text_with_paragraphs.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip/anomaly_tooltip.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip/anomaly_tooltip.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/anomaly_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.tooltips.anomaly_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.halloween.mono.lobby.tooltips.anomaly_tooltip no Python",
+      "ViewModel AnomalyRecipesViewModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/battle/anomaly_recipes_view.py",
+        57
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/anomalies_view.py",
+        44
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/tooltips/anomaly_tooltip.py",
+        27
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/battle/anomaly_recipes_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/anomalies_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/tooltips/anomaly_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/battle/anomaly_recipes_view_model.py",
+      "class": "AnomalyRecipesViewModel",
+      "chain": [
+        "AnomalyRecipesViewModel"
+      ],
+      "properties": [
+        [
+          "matrix",
+          "ViewModel"
+        ],
+        [
+          "isVisible",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "isVisible",
+          "matrix"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/tooltips/anomaly_tooltip_view_model.py"
+      ]
+    }
+  }
+}

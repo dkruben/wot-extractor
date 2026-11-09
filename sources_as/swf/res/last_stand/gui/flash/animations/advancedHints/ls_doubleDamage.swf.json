@@ -1,0 +1,156 @@
+{
+ "source": "sources/res/last_stand/gui/flash/animations/advancedHints/ls_doubleDamage.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 232646,
+ "actual_length": 232646,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 39,
+  "ShowFrame": 1824,
+  "DefineShape": 28,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 6,
+  "PlaceObject2": 3013,
+  "RemoveObject2": 48,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 21,
+  "DefineSprite": 38,
+  "FileAttributes": 1,
+  "PlaceObject3": 16,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 5,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 21,
+  "shapes": 44,
+  "sprites": 38,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "ls_doubleDamage_fla.MainTimeline"
+  },
+  {
+   "id": 92,
+   "class": "ls_doubleDamage_fla.slotFx_36"
+  },
+  {
+   "id": 86,
+   "class": "ls_doubleDamage_fla.activeAbilityReload_34"
+  },
+  {
+   "id": 80,
+   "class": "ls_doubleDamage_fla.crosshairReloadFast_30"
+  },
+  {
+   "id": 79,
+   "class": "ls_doubleDamage_fla.crosshairReloadAnimFast_31"
+  },
+  {
+   "id": 72,
+   "class": "ls_doubleDamage_fla.tankShoot_26"
+  },
+  {
+   "id": 61,
+   "class": "ls_doubleDamage_fla.activeAbilityReady_21"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1651,
+   "classes": 7,
+   "methods": 28,
+   "bodies": 28,
+   "code_bytes": 462
+  }
+ ],
+ "classes": [
+  {
+   "name": "ls_doubleDamage_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_doubleDamage_fla.activeAbilityReady_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_doubleDamage_fla.activeAbilityReload_34",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_doubleDamage_fla.crosshairReloadAnimFast_31",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_doubleDamage_fla.crosshairReloadFast_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_doubleDamage_fla.slotFx_36",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_doubleDamage_fla.tankShoot_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

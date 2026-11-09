@@ -1,0 +1,342 @@
+{
+ "source": "sources/res/gui/flash/login.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 277885,
+ "actual_length": 277885,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 25,
+  "ShowFrame": 85,
+  "DefineShape": 9,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 86,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 8,
+  "DefineEditText": 21,
+  "DefineSprite": 24,
+  "FileAttributes": 1,
+  "PlaceObject3": 43,
+  "ImportAssets2": 6,
+  "CSMTextSettings": 21,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 8,
+  "shapes": 12,
+  "sprites": 24,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 21,
+  "fonts": 0,
+  "classes": 22,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "logos.swf",
+   "symbols": []
+  },
+  {
+   "url": "rssNewsFeed.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 65,
+   "class": "LoginPageUI"
+  },
+  {
+   "id": 58,
+   "class": "LoginViewStackUI"
+  },
+  {
+   "id": 57,
+   "class": "copyright"
+  },
+  {
+   "id": 55,
+   "class": "ChinaLoginFormUI"
+  },
+  {
+   "id": 51,
+   "class": "FilledLoginFormUI"
+  },
+  {
+   "id": 47,
+   "class": "hitTestArea"
+  },
+  {
+   "id": 44,
+   "class": "SparkUI"
+  },
+  {
+   "id": 42,
+   "class": "login_fla.sparkArray_13"
+  },
+  {
+   "id": 33,
+   "class": "LoginFormUI"
+  },
+  {
+   "id": 32,
+   "class": "CapsLockIndicatorUI"
+  },
+  {
+   "id": 24,
+   "class": "igrWarningUI"
+  },
+  {
+   "id": 22,
+   "class": "igrWarningBg"
+  },
+  {
+   "id": 18,
+   "class": "socialGroup_UI"
+  },
+  {
+   "id": 16,
+   "class": "socialList_bg"
+  },
+  {
+   "id": 13,
+   "class": "socialList_UI"
+  },
+  {
+   "id": 12,
+   "class": "loginImports"
+  },
+  {
+   "id": 11,
+   "class": "socialItemRenderer_UI"
+  },
+  {
+   "id": 9,
+   "class": "LoginUILoaderAlt_UI"
+  },
+  {
+   "id": 6,
+   "class": "socialIcoHitMc"
+  },
+  {
+   "id": 4,
+   "class": "SteamLoginFormUI"
+  },
+  {
+   "id": 0,
+   "class": "login_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 13260,
+   "classes": 22,
+   "methods": 94,
+   "bodies": 94,
+   "code_bytes": 5298
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hitTestArea",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "igrWarningBg",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "loginImports",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "socialIcoHitMc",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "socialList_bg",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SparkUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.Spark",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LoginViewStackUI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.LoginViewStack",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "login_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "login_fla.sparkArray_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LoginUILoaderAlt_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UILoaderAlt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CapsLockIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.components.CapsLockIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "copyright",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.components.Copyright",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "igrWarningUI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.components.LoginIgrWarning",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "socialGroup_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.components.SocialGroup",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "socialItemRenderer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.components.SocialItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChinaLoginFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.views.ChinaLoginForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FilledLoginFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.views.FilledLoginForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LoginFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.views.SimpleForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SteamLoginFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.views.SteamLoginForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "socialList_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.components.SocialIconsList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LoginPageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.LoginPage",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

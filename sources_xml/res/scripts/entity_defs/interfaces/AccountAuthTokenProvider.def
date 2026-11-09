@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/AccountAuthTokenProvider.def -->
+<root>
+	<BaseMethods>
+		<requestToken>
+			<Arg>UINT16</Arg>
+			<Arg>UINT8</Arg>
+			<Exposed />
+		</requestToken>
+		<accountAuthTokenProvider_setToken>
+			<Arg>INT64</Arg>
+			<Arg>INT32</Arg>
+		</accountAuthTokenProvider_setToken>
+	</BaseMethods>
+</root>

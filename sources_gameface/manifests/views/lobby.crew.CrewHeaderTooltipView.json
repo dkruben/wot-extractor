@@ -1,0 +1,186 @@
+{
+  "rid": "R.views.lobby.crew.CrewHeaderTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "CrewHeaderTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "CrewHeaderTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView/CrewHeaderTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView/CrewHeaderTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CrewHeaderTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView/CrewHeaderTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView/CrewHeaderTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CrewHeaderTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView/CrewHeaderTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView/CrewHeaderTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView/CrewHeaderTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView/CrewHeaderTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView/CrewHeaderTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView/CrewHeaderTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/CrewHeaderTooltipView/CrewHeaderTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.ExtendedTextTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.CrewHeaderTooltipView",
+    "confidence": "provavel",
+    "evidence": [
+      "4 referencia(s) R.views.lobby.crew.CrewHeaderTooltipView no Python",
+      "ViewModel CrewWidgetModel (model=... no Python da view): 0/15 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/crew_header_tooltip_view.py",
+        26
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/widget/crew_widget.py",
+        196
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/crew_presenter.py",
+        143
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/crew_presenter.py",
+        173
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/crew_header_tooltip_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/widget/crew_widget.py",
+      "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/crew_presenter.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/common/crew_widget_model.py",
+      "class": "CrewWidgetModel",
+      "chain": [
+        "CrewWidgetModel"
+      ],
+      "properties": [
+        [
+          "buttonsBar",
+          "ViewModel"
+        ],
+        [
+          "vehicleName",
+          "String"
+        ],
+        [
+          "vehicleType",
+          "String"
+        ],
+        [
+          "nation",
+          "String"
+        ],
+        [
+          "selectedSlotIdx",
+          "Number"
+        ],
+        [
+          "slots",
+          "Array"
+        ],
+        [
+          "isDisabled",
+          "Bool"
+        ],
+        [
+          "hasDog",
+          "Bool"
+        ],
+        [
+          "currentLayoutID",
+          "Number"
+        ],
+        [
+          "previousLayoutID",
+          "Number"
+        ],
+        [
+          "isCrewLocked",
+          "Bool"
+        ],
+        [
+          "slotSizeMode",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onSlotClick",
+        "onChangeCrewClick",
+        "onDogMoreInfoClick"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 15,
+        "missing": [
+          "buttonsBar",
+          "currentLayoutID",
+          "hasDog",
+          "isCrewLocked",
+          "isDisabled",
+          "nation",
+          "onChangeCrewClick",
+          "onDogMoreInfoClick",
+          "onSlotClick",
+          "previousLayoutID",
+          "selectedSlotIdx",
+          "slotSizeMode",
+          "slots",
+          "vehicleName",
+          "vehicleType"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/crew_header_tooltip_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/loadout/crew/crew_model.py"
+      ]
+    }
+  }
+}

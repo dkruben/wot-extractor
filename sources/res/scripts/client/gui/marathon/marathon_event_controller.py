@@ -1,0 +1,186 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/marathon/marathon_event_controller.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/marathon/marathon_event_controller.py
+import Event
+from gui.marathon.marathon_event import MarathonEvent
+from gui.marathon.marathon_resource_manager import MarathonResourceManager
+from gui.app_loader.decorators import sf_lobby
+from gui.shared.utils.scheduled_notifications import Notifiable, PeriodicNotifier
+from helpers import dependency, isPlayerAccount
+from skeletons.gui.game_control import IMarathonEventsController
+from skeletons.gui.server_events import IEventsCache
+from skeletons.gui.shared import IItemsCache
+_events = []
+
+def marathonCreator(event=MarathonEvent, resourceManager=MarathonResourceManager):
+
+    def wrapper(decoratedClass):
+        _events.append(event(resourceManager, decoratedClass))
+        return decoratedClass
+
+    return wrapper
+
+
+def getMarathons():
+    return _events
+
+
+class MarathonEventsController(IMarathonEventsController, Notifiable):
+    _eventsCache = dependency.descriptor(IEventsCache)
+    _itemsCache = dependency.descriptor(IItemsCache)
+
+    def __init__(self):
+        super(MarathonEventsController, self).__init__()
+        self.__isLobbyInited = False
+        self.__isInHangar = False
+        self.__eventManager = Event.EventManager()
+        self.onFlagUpdateNotify = Event.Event(self.__eventManager)
+        self.onMarathonDataChanged = Event.Event(self.__eventManager)
+        self.onVehicleReceived = Event.Event()
+        self.__marathons = _events
+
+    @sf_lobby
+    def app(self):
+        pass
+
+    def addMarathon(self, marathonEvent):
+        self.__marathons.append(marathonEvent)
+
+    def delMarathon(self, prefix):
+        self.__marathons.remove(self.__findByPrefix(prefix))
+
+    def getMarathon(self, prefix):
+        return self.__findByPrefix(prefix)
+
+    def getMarathons(self):
+        return self.__marathons
+
+    def getPrimaryMarathon(self):
+        if self.__marathons:
+            return self.__marathons[0]
+        else:
+            return
+
+    def getFirstEnabledMarathon(self):
+        for marathon in self.__marathons:
+            if marathon.isEnabled():
+                return marathon
+
+        return
+
+    def getPrefix(self, eventID):
+        for marathon in self.__marathons:
+            if eventID.startswith(marathon.prefix):
+                return marathon.prefix
+
+        return
+
+    def getVisibleInPostBattleQuests(self):
+        result = {}
+        for marathon in self.__marathons:
+            if marathon.doesShowInPostBattle():
+                result.update(marathon.getMarathonQuests())
+
+        return result
+
+    def getQuestsData(self, prefix=None, postfix=None):
+        if self.isAnyActive():
+            return self.getPrimaryMarathon().getQuestsData(prefix, postfix)
+        return {}
+
+    def getTokensData(self, prefix=None, postfix=None):
+        if self.isAnyActive():
+            return self.getPrimaryMarathon().getTokensData(prefix, postfix)
+        return {}
+
+    def isAnyActive(self):
+        return any(marathon.isAvailable() for marathon in self.__marathons)
+
+    def doesShowAnyMissionsTab(self):
+        return any(marathon.isEnabled() for marathon in self.__marathons)
+
+    def fini(self):
+        self.__stop()
+        super(MarathonEventsController, self).fini()
+
+    def onDisconnected(self):
+        super(MarathonEventsController, self).onDisconnected()
+        self.__stop()
+
+    def onAvatarBecomePlayer(self):
+        super(MarathonEventsController, self).onAvatarBecomePlayer()
+        self.__stop()
+
+    def onLobbyInited(self, event):
+        if not isPlayerAccount():
+            return
+        self.__isLobbyInited = True
+
+    def onLobbyStarted(self, ctx):
+        super(MarathonEventsController, self).onLobbyStarted(ctx)
+        self._eventsCache.onSyncCompleted += self.__onSyncCompleted
+        if self.app and self.app.loaderManager:
+            self.app.loaderManager.onViewLoaded += self.__onViewLoaded
+        self.__onSyncCompleted()
+
+    def __tryShowRewardScreen(self):
+        if self.__isLobbyInited and self.__isInHangar:
+            for marathon in self.__marathons:
+                marathon.showRewardScreen()
+
+    def __onViewLoaded(self, *args):
+        from gui.lobby_state_machine.states import isInHangarState
+        if self.__isLobbyInited:
+            self.__isInHangar = isInHangarState()
+            if self.__isInHangar:
+                self.__tryShowRewardScreen()
+
+    def __onSyncCompleted(self, *args):
+        self.__checkEvents()
+        self.__tryShowRewardScreen()
+        self.__reloadNotification()
+
+    def __checkEvents(self):
+        for marathon in self.__marathons:
+            marathon.updateQuestsData()
+            marathon.setState()
+            self.onMarathonDataChanged(marathon.prefix)
+
+    def __updateFlagState(self):
+        self.__checkEvents()
+        self.__tryShowRewardScreen()
+        self.onFlagUpdateNotify()
+
+    def __getClosestStatusUpdateTime(self):
+        timeList = []
+        for marathon in self.__marathons:
+            time = marathon.getClosestStatusUpdateTime()
+            if time != 0:
+                timeList.append(time)
+
+        if timeList:
+            return min(timeList)
+        return 0
+
+    def __reloadNotification(self):
+        self.clearNotification()
+        timePeriod = self.__getClosestStatusUpdateTime()
+        if timePeriod:
+            self.addNotificator(PeriodicNotifier(self.__getClosestStatusUpdateTime, self.__updateFlagState))
+            self.startNotification()
+
+    def __stop(self):
+        self.clearNotification()
+        self._eventsCache.onSyncCompleted -= self.__onSyncCompleted
+        if self.app and self.app.loaderManager:
+            self.app.loaderManager.onViewLoaded -= self.__onViewLoaded
+        self.__isLobbyInited = False
+
+    def __findByPrefix(self, prefix):
+        for marathon in self.__marathons:
+            if marathon.prefix == prefix:
+                return marathon
+
+        return

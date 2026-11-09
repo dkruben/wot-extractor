@@ -1,0 +1,181 @@
+{
+ "source": "sources/res/gui/flash/eventPlayersPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 28882,
+ "actual_length": 28882,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 14,
+  "ShowFrame": 190,
+  "DefineShape": 20,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 246,
+  "RemoveObject2": 5,
+  "DefineBitsLossless2": 19,
+  "DefineEditText": 6,
+  "DefineSprite": 13,
+  "FrameLabel": 13,
+  "FileAttributes": 1,
+  "PlaceObject3": 6,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 19,
+  "shapes": 20,
+  "sprites": 13,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 6,
+  "fonts": 0,
+  "classes": 8,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 58,
+   "class": "EventPlayersPanelListItemUI"
+  },
+  {
+   "id": 54,
+   "class": "eventPlayersPanel_fla.earAllyLifeType_11"
+  },
+  {
+   "id": 33,
+   "class": "eventPlayersPanel_fla.pointsIcon_9"
+  },
+  {
+   "id": 25,
+   "class": "EventHealthBarUI"
+  },
+  {
+   "id": 21,
+   "class": "eventPlayersPanel_fla.earAllyHpFx_3"
+  },
+  {
+   "id": 13,
+   "class": "NamePlayerUI"
+  },
+  {
+   "id": 9,
+   "class": "EventPlayersPanelUI"
+  },
+  {
+   "id": 8,
+   "class": "EventPlayersInfoUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1959,
+   "classes": 8,
+   "methods": 29,
+   "bodies": 29,
+   "code_bytes": 526
+  }
+ ],
+ "classes": [
+  {
+   "name": "eventPlayersPanel_fla.earAllyHpFx_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventPlayersPanel_fla.earAllyLifeType_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventPlayersPanel_fla.pointsIcon_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NamePlayerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.eventcomponents.NumberProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventHealthBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.eventPlayersPanel.EventHealthBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventPlayersInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.eventPlayersPanel.EventPlayersInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventPlayersPanelListItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.eventPlayersPanel.EventPlayersPanelListItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventPlayersPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.eventPlayersPanel.EventPlayersPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

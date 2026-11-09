@@ -1,0 +1,61 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/vehicle_systems/components/hull_aiming_controller.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/vehicle_systems/components/hull_aiming_controller.py
+from __future__ import absolute_import
+import CGF
+from cgf_script.registration import registerComponent
+from constants import VEHICLE_SIEGE_STATE
+
+@registerComponent
+class HullAimingController(object):
+    domain = CGF.Domain.ClientEditor
+    userVisible = False
+    vseVisible = False
+
+    def __init__(self):
+        self.__vehicleFilter = None
+        self.__vehicleDescriptor = None
+        return
+
+    def deactivate(self):
+        self.__vehicleFilter = None
+        self.__vehicleDescriptor = None
+        return
+
+    def destroy(self):
+        self.__vehicleFilter = None
+        self.__vehicleDescriptor = None
+        return
+
+    def setData(self, vehicleFilter, vehicleDescriptor):
+        self.__vehicleFilter = vehicleFilter
+        self.__vehicleDescriptor = vehicleDescriptor
+
+    def onSiegeStateChanged(self, newState):
+        if self.__vehicleFilter is None or self.__vehicleDescriptor is None:
+            return
+        needUpdateSpringsLength = newState in (
+         VEHICLE_SIEGE_STATE.ENABLED, VEHICLE_SIEGE_STATE.DISABLED, VEHICLE_SIEGE_STATE.PILLBOX_ENABLED)
+        physics = self.__vehicleFilter.getVehiclePhysics()
+        if physics is None or not needUpdateSpringsLength:
+            return
+        newSuspensionSpringLength = self.__vehicleDescriptor.chassis.suspensionSpringsLength
+        if newSuspensionSpringLength is not None:
+            physics.setDamperSpringsLength(newSuspensionSpringLength['left'], newSuspensionSpringLength['right'])
+        return
+
+
+class HullAimingSystem(CGF.System):
+    AimingDeactivated = CGF.DeactivateReaction(CGF.GameObject, CGF.ReactRw(HullAimingController))
+    Reactions = CGF.Reactions(AimingDeactivated)
+
+    def update(self):
+        for _, aiming in self.reaction(self.AimingDeactivated):
+            self.__deactivateAiming(aiming)
+
+    def __deactivateAiming(self, aimingComponent):
+        if aimingComponent is not None:
+            aimingComponent.deactivate()
+        return

@@ -1,0 +1,156 @@
+{
+  "rid": "R.views.common.tooltip_window.loot_box_compensation_tooltip.LootBoxVehicleCompensationTooltipContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "LootBoxVehicleCompensationTooltipContent",
+  "dir": "gui/unbound/views/common/tooltip_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "loot_box_compensation_tooltip.unbound",
+      "effective": "res/gui/unbound/views/common/tooltip_window/loot_box_compensation_tooltip.unbound",
+      "all": [
+        "res/gui/unbound/views/common/tooltip_window/loot_box_compensation_tooltip.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.tooltip_window.loot_box_compensation_tooltip.LootBoxVehicleCompensationTooltipContent",
+    "confidence": "provavel",
+    "evidence": [
+      "10 referencia(s) R.views.common.tooltip_window.loot_box_compensation_tooltip.LootBoxVehicleCompensationTooltipContent no Python",
+      "ViewModel MultipleAwardsViewModel (model=... no Python da view): 0/12 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/auxiliary/rewards_helper.py",
+        90
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/auxiliary/rewards_helper.py",
+        594
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/auxiliary/rewards_helper.py",
+        605
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/awards/multiple_awards_view.py",
+        66
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/awards/multiple_awards_view.py",
+        75
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/awards/packers.py",
+        32
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/awards/packers.py",
+        210
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/clan_supply/rewards_view.py",
+        44
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/clan_supply/rewards_view.py",
+        53
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/seniority_awards/seniority_awards_helper.py",
+        93
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/auxiliary/rewards_helper.py",
+      "sources/res/scripts/client/gui/impl/lobby/awards/multiple_awards_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/awards/packers.py",
+      "sources/res/scripts/client/gui/impl/lobby/clan_supply/rewards_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/seniority_awards/seniority_awards_helper.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/awards/multiple_awards_view_model.py",
+      "class": "MultipleAwardsViewModel",
+      "chain": [
+        "MultipleAwardsViewModel"
+      ],
+      "properties": [
+        [
+          "rewards",
+          "ViewModel"
+        ],
+        [
+          "title",
+          "String"
+        ],
+        [
+          "titleIcon",
+          "String"
+        ],
+        [
+          "subTitle",
+          "String"
+        ],
+        [
+          "isRibbonGold",
+          "Bool"
+        ],
+        [
+          "isLightVisible",
+          "Bool"
+        ],
+        [
+          "hasVehicleToView",
+          "Bool"
+        ],
+        [
+          "hasRewardsOnChoice",
+          "Bool"
+        ],
+        [
+          "mainItemsCount",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "showHangar",
+        "makeChoice",
+        "onClose"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 12,
+        "missing": [
+          "hasRewardsOnChoice",
+          "hasVehicleToView",
+          "isLightVisible",
+          "isRibbonGold",
+          "mainItemsCount",
+          "makeChoice",
+          "onClose",
+          "rewards",
+          "showHangar",
+          "subTitle",
+          "title",
+          "titleIcon"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/awards/reward_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/awards/tooltips/awards_vehicle_for_choose_tooltip_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/clan_supply/rewards_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/collection/reward_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/personal_missions_30/rewards_view_model.py"
+      ]
+    }
+  }
+}

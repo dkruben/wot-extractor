@@ -1,0 +1,73 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/common/intervals.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/common/intervals.py
+from __future__ import absolute_import
+import collections
+_Interval = collections.namedtuple('Interval', ['begin', 'end'])
+
+class Interval(_Interval):
+    EMPTY = None
+
+    def __new__(cls, begin, end):
+        if cls.EMPTY is not None and (begin is None or end is None):
+            return cls.EMPTY
+        else:
+            return super(Interval, cls).__new__(cls, min(begin, end), max(begin, end))
+
+    def __contains__(self, item):
+        if isinstance(item, _Interval):
+            if not self or not item:
+                return False
+            return item.begin in self and item.end in self
+        return self.begin <= item <= self.end
+
+    def __bool__(self):
+        return self is not self.EMPTY
+
+    __nonzero__ = __bool__
+
+    def __or__(self, other):
+        if self.begin in other or self.end in other:
+            return Interval(min(self.begin, other.begin), max(self.end, other.end))
+        raise ValueError('Non-overlapping intervals', self, other)
+
+    def __and__(self, other):
+        if self.begin in other or self.end in other:
+            return Interval(max(self.begin, other.begin), min(self.end, other.end))
+        return self.EMPTY
+
+    def __hash__(self):
+        return hash((self.begin, self.end))
+
+    def __eq__(self, other):
+        return self.__compare(other) == 0
+
+    def __ne__(self, other):
+        return self.__compare(other) != 0
+
+    def __lt__(self, other):
+        return self.__compare(other) < 0
+
+    def __le__(self, other):
+        return self.__compare(other) <= 0
+
+    def __gt__(self, other):
+        return self.__compare(other) > 0
+
+    def __ge__(self, other):
+        return self.__compare(other) >= 0
+
+    def __str__(self):
+        return ('[[{}, {}]]').format(self.begin, self.end)
+
+    def __compare(self, other):
+        if self & other:
+            return 0
+        if self.begin > other.end:
+            return 1
+        return -1
+
+
+Interval.EMPTY = Interval(None, None)

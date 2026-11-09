@@ -1,0 +1,16 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/battle_royale/scripts/common/BattleRoyaleConstants.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: battle_royale/scripts/common/BattleRoyaleConstants.py
+from __future__ import absolute_import
+CMD_BATTLE_ROYALE_OPERATE_BRCOIN = 21003
+CMD_BATTLE_ROYALE_OPERATE_STPCOIN = 21004
+CMD_BATTLE_ROYALE_SET_RATING = 21005
+BATTLE_ROYALE_REPAIR_COST = 10000
+
+class Currency(object):
+    BRCOIN = 'brcoin'
+    STPCOIN = 'stpcoin'
+    ALL = {
+     BRCOIN, STPCOIN}

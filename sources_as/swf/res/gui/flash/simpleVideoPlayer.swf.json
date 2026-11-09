@@ -1,0 +1,125 @@
+{
+ "source": "sources/res/gui/flash/simpleVideoPlayer.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 7781,
+ "actual_length": 7781,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 2,
+  "ShowFrame": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 2,
+  "DefineSprite": 1,
+  "DefineVideoStream": 1,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 1,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 2,
+   "class": "SimpleVideoPlayer_UI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 7624,
+   "classes": 7,
+   "methods": 61,
+   "bodies": 61,
+   "code_bytes": 1987
+  }
+ ],
+ "classes": [
+  {
+   "name": "net.wg.gui.components.common.video.PlayerStatus",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.common.video.NetStreamStatusCode",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.common.video.NetStreamStatusLevel",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.common.video.VideoPlayerStatusEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.common.video.VideoPlayerEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.components.common.video.SimpleVideoPlayer",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.UIComponentEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SimpleVideoPlayer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.video.SimpleVideoPlayer",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

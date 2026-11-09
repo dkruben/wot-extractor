@@ -1,0 +1,239 @@
+{
+ "source": "sources/res/gui/flash/fragCorrelationBar.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 85672,
+ "actual_length": 85672,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 16,
+  "ShowFrame": 62,
+  "DefineShape": 38,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 3,
+  "PlaceObject2": 81,
+  "RemoveObject2": 6,
+  "DefineBitsJPEG3": 4,
+  "DefineBitsLossless2": 37,
+  "DefineEditText": 7,
+  "DefineSprite": 15,
+  "FrameLabel": 40,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 44,
+  "shapes": 38,
+  "sprites": 15,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 7,
+  "fonts": 0,
+  "classes": 14,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 104,
+   "class": "fcMarkerItemUI"
+  },
+  {
+   "id": 103,
+   "class": "fragCorrelationBar_fla.normalVehicleIcons_10"
+  },
+  {
+   "id": 68,
+   "class": "fragCorrelationBar_fla.destroyedVehicleIcons_9"
+  },
+  {
+   "id": 33,
+   "class": "TierGroupingUI"
+  },
+  {
+   "id": 31,
+   "class": "fragCorrelationBarUI"
+  },
+  {
+   "id": 29,
+   "class": "allyTeamHealthBarUI"
+  },
+  {
+   "id": 26,
+   "class": "enemyTeamHealthBarUI"
+  },
+  {
+   "id": 24,
+   "class": "ScoreHealthBarElementUI"
+  },
+  {
+   "id": 6,
+   "class": "green_bar"
+  },
+  {
+   "id": 5,
+   "class": "green_bar_bg"
+  },
+  {
+   "id": 4,
+   "class": "purple_bar_bg"
+  },
+  {
+   "id": 3,
+   "class": "purple_bar"
+  },
+  {
+   "id": 2,
+   "class": "red_bar"
+  },
+  {
+   "id": 1,
+   "class": "red_bar_bg"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3830,
+   "classes": 14,
+   "methods": 81,
+   "bodies": 81,
+   "code_bytes": 1151
+  }
+ ],
+ "classes": [
+  {
+   "name": "green_bar",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "green_bar_bg",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "purple_bar",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "purple_bar_bg",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "red_bar",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "red_bar_bg",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fragCorrelationBar_fla.destroyedVehicleIcons_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fragCorrelationBar_fla.normalVehicleIcons_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TierGroupingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.fragCorrelationBar.components.TierGroupingElement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fcMarkerItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.fragCorrelationBar.components.FCVehicleMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScoreHealthBarElementUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.fragCorrelationBar.components.ScoreHealthBarElement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "enemyTeamHealthBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.fragCorrelationBar.components.BaseTeamHealthBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "allyTeamHealthBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.fragCorrelationBar.components.AllyTeamHealthBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fragCorrelationBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.random.views.fragCorrelationBar.FragCorrelationBar",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

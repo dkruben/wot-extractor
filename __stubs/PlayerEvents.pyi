@@ -1,0 +1,94 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/PlayerEvents.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from events_containers.common.containers import ClientEventsContainer as ClientEventsContainer
+g_playerEvents: Any
+
+class _PlayerEvents(ClientEventsContainer):
+    onPlayerEntityChanging: Any
+    onPlayerEntityChangeCanceled: Any
+    isPlayerEntityChanging: Any
+    onAvatarObserverVehicleChanged: Any
+    onObservedByEnemy: Any
+    onSightPointerEnemySpotted: Any
+    onAccountBecomePlayer: Any
+    onAccountBecomeNonPlayer: Any
+    onAccountShowGUI: Any
+    onAccountComponentsSynced: Any
+    onClientSynchronize: Any
+    onClientUpdated: Any
+    onEnqueued: Any
+    onDequeued: Any
+    onEnqueueFailure: Any
+    onKickedFromQueue: Any
+    onPrbDispatcherCreated: Any
+    onPrebattleJoined: Any
+    onPrebattleLeft: Any
+    onPrebattleJoinFailure: Any
+    onArenaCreated: Any
+    onArenaJoinFailure: Any
+    onKickedFromUnitsQueue: Any
+    onKickedFromPrebattle: Any
+    onKickedFromArena: Any
+    onQueueInfoReceived: Any
+    onPrebattlesListReceived: Any
+    onPrebattleAutoInvitesChanged: Any
+    onAccountGlobalRatingChanged: Any
+    onPrebattleInvitesChanged: Any
+    onPrebattleInvitationsChanged: Any
+    onPrebattleInvitationAccepted: Any
+    onPrebattleInvitesStatus: Any
+    onPrebattleInvitationsError: Any
+    onClanMembersListChanged: Any
+    onEventsDataChanged: Any
+    onPrebattleRosterReceived: Any
+    onArenaListReceived: Any
+    onServerStatsReceived: Any
+    onInventoryResync: Any
+    onStatsResync: Any
+    onShopResyncStarted: Any
+    onShopResync: Any
+    onDossiersResync: Any
+    onOffersResync: Any
+    onEventNotificationsChanged: Any
+    onVehicleLockChanged: Any
+    onVehicleBecomeElite: Any
+    onCenterIsLongDisconnected: Any
+    onIGRTypeChanged: Any
+    onAvatarBecomePlayer: Any
+    onAvatarBecomeNonPlayer: Any
+    onArenaPeriodChange: Any
+    onAvatarReady: Any
+    onBattleResultsReceived: Any
+    onAvatarVehicleLeaveWorld: Any
+    onLoginQueueNumberReceived: Any
+    onKickWhileLoginReceived: Any
+    onPeripheryRoutingGroupReceived: Any
+    onGuiCacheSyncCompleted: Any
+    onPMLocksChanged: Any
+    onDailyQuestsInfoChange: Any
+    onWeeklyQuestsInfoChange: Any
+    onNotification: Any
+    onTeamChanged: Any
+    onDisconnected: Any
+    onShowDevelopmentInfo: Any
+    onRoundFinished: Any
+    crosshairPanelInitialized: Any
+    onServerReplayEntering: Any
+    onServerReplayExiting: Any
+    onPlatformBlueprintsConvertSaleLimits: Any
+    onCollectPrebattleInvites: Any
+    onUpdateSpecBattlesWindow: Any
+    onLoadingMilestoneReached: Any
+    onConfigModelUpdated: Any
+    onShowBattleHint: Any
+    onHideBattleHint: Any
+    onEmptyBattleHintsQueue: Any
+    onTracerReceived: Any
+    onVehicleEntityCreated: Any
+    onUILoggingStarted: Any
+    onRenewableSubscriptionStatusChanged: Any
+    def __init__(self):
+        ...

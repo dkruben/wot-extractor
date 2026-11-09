@@ -1,0 +1,113 @@
+{
+  "rid": "R.views.lobby.ranked.RankedSelectableRewardView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "RankedSelectableRewardView",
+  "dir": "gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView",
+  "feature": null,
+  "files": [
+    {
+      "name": "RankedSelectableRewardView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView/RankedSelectableRewardView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView/RankedSelectableRewardView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RankedSelectableRewardView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView/RankedSelectableRewardView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView/RankedSelectableRewardView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RankedSelectableRewardView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView/RankedSelectableRewardView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView/RankedSelectableRewardView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView/RankedSelectableRewardView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/ranked/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/ranked/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView/RankedSelectableRewardView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView/RankedSelectableRewardView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView/RankedSelectableRewardView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/ranked/RankedSelectableRewardView/RankedSelectableRewardView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "off:clientResized",
+    "on:Ready",
+    "on:clientResized",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.SelectedRewardsTooltipView"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.ranked.RankedSelectableRewardView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.ranked.RankedSelectableRewardView no Python",
+      "ViewModel RankedSelectableRewardViewModel (convencao de nomes): 1/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/ranked/ranked_selectable_reward_view.py",
+        34
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/ranked/ranked_selectable_reward_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/ranked/ranked_selectable_reward_view_model.py",
+      "class": "RankedSelectableRewardViewModel",
+      "chain": [
+        "RankedSelectableRewardViewModel",
+        "SelectableRewardBaseModel"
+      ],
+      "properties": [
+        [
+          "rewardType",
+          "String"
+        ],
+        [
+          "selectableRewardModel",
+          "ViewModel"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 2,
+        "missing": [
+          "selectableRewardModel"
+        ]
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

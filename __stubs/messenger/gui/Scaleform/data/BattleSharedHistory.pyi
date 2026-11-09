@@ -1,0 +1,39 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/messenger/gui/Scaleform/data/BattleSharedHistory.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from collections import deque as deque
+from debug_utils import LOG_WARNING as LOG_WARNING
+from messenger.gui.Scaleform import FILL_COLORS as FILL_COLORS
+from messenger.m_constants import BATTLE_SHARED_HISTORY_MAX_LEN as BATTLE_SHARED_HISTORY_MAX_LEN
+
+class BattleSharedHistory(object):
+    __numberOfMessages: Any
+    __syncCursor: Any
+    __history: Any
+    __cursor: Any
+    def __init__(self, numberOfMessages):
+        ...
+    def clear(self):
+        ...
+    def numberOfMessages(self):
+        ...
+    def isEnabled(self):
+        ...
+    def activate(self):
+        ...
+    def syncCursor(self, value):
+        ...
+    def deactivate(self):
+        ...
+    def addMessage(self, message, fillColor=...):
+        ...
+    def getNavControlsEnabled(self):
+        ...
+    def getHistory(self):
+        ...
+    def goNext(self):
+        ...
+    def prev(self):
+        ...

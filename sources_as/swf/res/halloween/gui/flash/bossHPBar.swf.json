@@ -1,0 +1,172 @@
+{
+ "source": "sources/res/halloween/gui/flash/bossHPBar.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 87870,
+ "actual_length": 87870,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  200.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 11,
+  "ShowFrame": 372,
+  "DefineShape": 16,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 2,
+  "PlaceObject2": 159,
+  "RemoveObject2": 33,
+  "DefineBitsLossless2": 13,
+  "DefineEditText": 2,
+  "DefineSprite": 10,
+  "FrameLabel": 27,
+  "FileAttributes": 1,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 15,
+  "shapes": 16,
+  "sprites": 10,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 8,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 43,
+   "class": "BossHPBarUI"
+  },
+  {
+   "id": 37,
+   "class": "BossPhaseIndicatorUI"
+  },
+  {
+   "id": 36,
+   "class": "bossHPBar_fla.phasePassed_5"
+  },
+  {
+   "id": 29,
+   "class": "bossHPBar_fla.phaseActiveBlind_4"
+  },
+  {
+   "id": 22,
+   "class": "bossHPBar_fla.phaseActive_3"
+  },
+  {
+   "id": 15,
+   "class": "ProgressBarUI"
+  },
+  {
+   "id": 10,
+   "class": "ProgressUI"
+  },
+  {
+   "id": 5,
+   "class": "ShieldMCUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3186,
+   "classes": 8,
+   "methods": 61,
+   "bodies": 61,
+   "code_bytes": 954
+  }
+ ],
+ "classes": [
+  {
+   "name": "ShieldMCUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bossHPBar_fla.phaseActiveBlind_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bossHPBar_fla.phaseActive_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bossHPBar_fla.phasePassed_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BossPhaseIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.bossHP.PhaseIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.bossHP.ProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BossHPBarUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.bossHP.BossHPBar",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,113 @@
+{
+  "rid": "R.views.dialogs.sub_views.icon.MultipleIconsSet",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "MultipleIconsSet",
+  "dir": "gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet",
+  "feature": null,
+  "files": [
+    {
+      "name": "MultipleIconsSet.css",
+      "effective": "res/gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet/MultipleIconsSet.css",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet/MultipleIconsSet.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "MultipleIconsSet.html",
+      "effective": "res/gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet/MultipleIconsSet.html",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet/MultipleIconsSet.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "MultipleIconsSet.js",
+      "effective": "res/gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet/MultipleIconsSet.js",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet/MultipleIconsSet.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet/MultipleIconsSet.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet/MultipleIconsSet.css",
+      "key": "res/gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet/MultipleIconsSet.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet/MultipleIconsSet.js",
+      "key": "res/gui/gameface/_dist/production/dialogs/sub_views/icon/MultipleIconsSet/MultipleIconsSet.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/dialogs/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/dialogs/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.dialogs.sub_views.icon.MultipleIconsSet",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.dialogs.sub_views.icon.MultipleIconsSet no Python",
+      "ViewModel MultipleIconsSetViewModel (model=... no Python da view): 3/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/dialogs/sub_views/icon/multiple_icons_set.py",
+        65
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/dialogs/sub_views/icon/multiple_icons_set.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/dialogs/sub_views/multiple_icons_set_view_model.py",
+      "class": "MultipleIconsSetViewModel",
+      "chain": [
+        "MultipleIconsSetViewModel"
+      ],
+      "properties": [
+        [
+          "backgrounds",
+          "Array"
+        ],
+        [
+          "overlays",
+          "Array"
+        ],
+        [
+          "icons",
+          "Array"
+        ],
+        [
+          "iconPositionLogic",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 3,
+        "total": 4,
+        "missing": [
+          "iconPositionLogic"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

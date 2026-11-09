@@ -1,0 +1,449 @@
+{
+ "source": "sources/res/gui/flash/sessionStatsPopover.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 59555,
+ "actual_length": 59555,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 41,
+  "ShowFrame": 210,
+  "DefineShape": 6,
+  "DefineBits": 1,
+  "JPEGTables": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 197,
+  "DefineShape3": 10,
+  "DefineBitsLossless2": 5,
+  "DefineEditText": 17,
+  "DefineSprite": 40,
+  "FrameLabel": 9,
+  "FileAttributes": 1,
+  "PlaceObject3": 35,
+  "ImportAssets2": 5,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 6,
+  "shapes": 16,
+  "sprites": 40,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 17,
+  "fonts": 0,
+  "classes": 32,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "statisticsComponents.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 79,
+   "class": "SessionStatsPopoverUI"
+  },
+  {
+   "id": 78,
+   "class": "SessionStatsPopoverViewStackUI"
+  },
+  {
+   "id": 76,
+   "class": "SessionStatsOverviewUI"
+  },
+  {
+   "id": 74,
+   "class": "SessionBattleStatsViewUI"
+  },
+  {
+   "id": 73,
+   "class": "SessionStatsTileGroupUI"
+  },
+  {
+   "id": 72,
+   "class": "SessionTotalStatsGroupUI"
+  },
+  {
+   "id": 71,
+   "class": "SessionStatsCollapseButtonUI"
+  },
+  {
+   "id": 61,
+   "class": "SessionStatsCollapsedListUI"
+  },
+  {
+   "id": 52,
+   "class": "SessionStatsAnimatedCounterUI"
+  },
+  {
+   "id": 51,
+   "class": "SessionStatsAnimatedNumberUI"
+  },
+  {
+   "id": 48,
+   "class": "SessionStatsAnimatedNumberCounterUI"
+  },
+  {
+   "id": 46,
+   "class": "SessionVehicleStatsViewUI"
+  },
+  {
+   "id": 44,
+   "class": "HeaderImageWrapperUI"
+  },
+  {
+   "id": 40,
+   "class": "SessionVehicleStatsGroupUI"
+  },
+  {
+   "id": 39,
+   "class": "SessionStatsSettingsUI"
+  },
+  {
+   "id": 38,
+   "class": "SessionStatsSettingsHeaderUI"
+  },
+  {
+   "id": 36,
+   "class": "SessionStatsSettingsCommonUI"
+  },
+  {
+   "id": 35,
+   "class": "SessionStatsSettingsCheckboxUI"
+  },
+  {
+   "id": 33,
+   "class": "SessionStatsSettingsEconomicsUI"
+  },
+  {
+   "id": 31,
+   "class": "SessionStatsSettingsBattleUI"
+  },
+  {
+   "id": 30,
+   "class": "infoResizableScrollPane"
+  },
+  {
+   "id": 29,
+   "class": "SessionStatsSettingsBattleList"
+  },
+  {
+   "id": 28,
+   "class": "sessionStatsPopover_fla.redGlow_28"
+  },
+  {
+   "id": 22,
+   "class": "SessionStatsSettingsGroupUI"
+  },
+  {
+   "id": 21,
+   "class": "SessionStatsSettingsControlsUI"
+  },
+  {
+   "id": 19,
+   "class": "sessionStatsPopover_fla.lipBg_15"
+  },
+  {
+   "id": 13,
+   "class": "SessionVehicleStatsRendererUI"
+  },
+  {
+   "id": 8,
+   "class": "SessionBattleEfficiencyStatsRendererUI"
+  },
+  {
+   "id": 7,
+   "class": "SessionStatsRateComponentUI"
+  },
+  {
+   "id": 4,
+   "class": "SessionLastBattleStatsRendererUI"
+  },
+  {
+   "id": 1,
+   "class": "SessionTotalStatsRendererUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 14222,
+   "classes": 32,
+   "methods": 124,
+   "bodies": 124,
+   "code_bytes": 4863
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsAnimatedNumberCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionStatsAnimatedNumberCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsAnimatedNumberUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionStatsAnimatedNumber",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sessionStatsPopover_fla.lipBg_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sessionStatsPopover_fla.redGlow_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeaderImageWrapperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.ImageWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionBattleEfficiencyStatsRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionBattleEfficiencyStatsRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionLastBattleStatsRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionBattleStatsRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsAnimatedCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionStatsAnimatedCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsRateComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionStatsRateComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsSettingsBattleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.settings.SessionStatsSettingsBattle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsSettingsCheckboxUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionStatsCheckboxRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsSettingsControlsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.settings.SessionStatsSettingsControls",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionVehicleStatsRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionVehicleStatsRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionTotalStatsRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.components.SessionTotalStatsRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsSettingsBattleList",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.settings.SessionStatsSettingsBattleList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsSettingsCommonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.settings.SessionStatsSettingsCommon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsSettingsEconomicsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.settings.SessionStatsSettingsEconomics",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsSettingsHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.settings.SessionStatsSettingsHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsSettingsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsTileGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionTotalStatsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionVehicleStatsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "infoResizableScrollPane",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsCollapseButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsCollapsedListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollingListEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsPopoverViewStackUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.ResizableViewStack",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionBattleStatsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.SessionBattleStatsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsOverviewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.SessionStatsOverview",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsSettingsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.settings.SessionStatsSettings",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionVehicleStatsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.SessionVehicleStatsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SessionStatsPopoverUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.sessionStats.SessionStatsPopover",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

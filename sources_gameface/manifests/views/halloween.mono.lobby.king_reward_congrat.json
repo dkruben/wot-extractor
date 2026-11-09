@@ -1,0 +1,122 @@
+{
+  "rid": "R.views.halloween.mono.lobby.king_reward_congrat",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "king_reward_congrat",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat/bundle.js"
+    },
+    {
+      "name": "king_reward_congrat.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat/king_reward_congrat.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat/king_reward_congrat.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "king_reward_congrat.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat/king_reward_congrat.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat/king_reward_congrat.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/gifted_vehicle.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/gifted_vehicle.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat/king_reward_congrat.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/king_reward_congrat/king_reward_congrat.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose",
+    "onToGarageClick",
+    "onToOutroClick"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.king_reward_congrat",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.halloween.mono.lobby.king_reward_congrat no Python",
+      "ViewModel KingRewardCongratsViewModel (model=... no Python da view): 5/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/king_reward_congrats_view.py",
+        30
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/shared/event_dispatcher.py",
+        185
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/king_reward_congrats_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/king_reward_congrats_view_model.py",
+      "class": "KingRewardCongratsViewModel",
+      "chain": [
+        "KingRewardCongratsViewModel"
+      ],
+      "properties": [
+        [
+          "mainGiftVehicle",
+          "ViewModel"
+        ],
+        [
+          "rewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onToGarageClick",
+        "onToOutroClick"
+      ],
+      "coverage": {
+        "found": 5,
+        "total": 5,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

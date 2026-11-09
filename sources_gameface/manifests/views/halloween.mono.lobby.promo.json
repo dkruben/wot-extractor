@@ -1,0 +1,96 @@
+{
+  "rid": "R.views.halloween.mono.lobby.promo",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "promo",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/promo",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/promo/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/promo/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/promo/bundle.js"
+    },
+    {
+      "name": "promo.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/promo/promo.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/promo/promo.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "promo.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/promo/promo.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/promo/promo.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/format_text_with_paragraphs.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/format_text_with_paragraphs.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/vehicle_type.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/vehicle_type.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/promo/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/promo/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/promo/promo.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/promo/promo.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.promo",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.halloween.mono.lobby.promo no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/promo_window_view.py",
+        24
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/shared/event_dispatcher.py",
+        124
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/promo_window_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

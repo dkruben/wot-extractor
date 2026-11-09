@@ -1,0 +1,103 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/common/time_tracking.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/common/time_tracking.py
+from __future__ import absolute_import, division
+import sys
+from time import time
+from functools import wraps
+from constants import SERVER_TICK_LENGTH, IS_BASEAPP, IS_CELLAPP
+from debug_utils import LOG_WARNING
+from math_common import round_py2_style
+if IS_BASEAPP or IS_CELLAPP:
+    from insights.measurements import incrTickOverspends
+else:
+
+    def incrTickOverspends():
+        pass
+
+
+DEFAULT_TIME_LIMIT = 0.02
+DEFAULT_TICK_LENGTH = SERVER_TICK_LENGTH
+
+def LOG_TIME_WARNING(spentTime, context=None, tickLength=DEFAULT_TICK_LENGTH, *args):
+    percent = round_py2_style(spentTime / tickLength * 100)
+    if context is None:
+        context = sys._getframe(1).f_code.co_name
+    LOG_WARNING(('Time is overspent in %s: %.4f sec, %d%% of %.2f sec tick' % (
+     context, spentTime, percent, tickLength)), *args)
+    return
+
+
+class TimeTracker(object):
+
+    def __init__(self, context=None, timeLimit=DEFAULT_TIME_LIMIT, tickLength=DEFAULT_TICK_LENGTH):
+        self.context = context
+        self.timeLimit = timeLimit
+        self.tickLength = tickLength
+
+    def __enter__(self):
+        self.startTime = time()
+        self.checkpoints = []
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        spentTime = time() - self.startTime
+        if spentTime > self.timeLimit:
+            incrTickOverspends()
+            context = self.context
+            if context is None:
+                context = sys._getframe(1).f_code.co_name
+            checkpoints = self.checkpoints
+            if checkpoints:
+                startTime = self.startTime
+                for checkpoint in checkpoints:
+                    endTime = checkpoint[1]
+                    checkpoint[1] -= startTime
+                    startTime = endTime
+
+                LOG_TIME_WARNING(spentTime, context, self.tickLength, checkpoints)
+            else:
+                LOG_TIME_WARNING(spentTime, context, self.tickLength)
+        return
+
+    def checkpoint(self, name):
+        self.checkpoints.append([name, time()])
+
+
+def timetracked(func=None, context=None, timeLimit=DEFAULT_TIME_LIMIT, tickLength=DEFAULT_TICK_LENGTH):
+
+    def decorator(f):
+
+        def wrapper(*args, **kwargs):
+            startTime = time()
+            try:
+                return f(*args, **kwargs)
+            finally:
+                spentTime = time() - startTime
+                if spentTime > timeLimit:
+                    LOG_TIME_WARNING(spentTime, context if context is not None else f.__name__, tickLength)
+                    incrTickOverspends()
+
+            return
+
+        return wrapper
+
+    if func is not None:
+        return decorator(func)
+    else:
+        return decorator
+
+
+def logTimeTracker(func):
+
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        timeTracker = kwargs.get('timeTracker') or (getattr(args[1], 'timeTracker', None) if len(args) > 1 else None)
+        result = func(*args, **kwargs)
+        if timeTracker is not None:
+            timeTracker.checkpoint(('{}.{}').format(args[0].__class__.__name__, func.__name__))
+        return result
+
+    return wrapper

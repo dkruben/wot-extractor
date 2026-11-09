@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/frontline/scripts/component_defs/FLAvatarReservesComponent.def -->
+<root>
+	<CellMethods />
+	<ofEntity>
+		<Avatar />
+	</ofEntity>
+	<DefaultKeyName>FLAvatarReservesComponent</DefaultKeyName>
+</root>

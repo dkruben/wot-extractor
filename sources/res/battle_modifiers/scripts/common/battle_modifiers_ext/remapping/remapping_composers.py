@@ -1,0 +1,158 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/battle_modifiers/scripts/common/battle_modifiers_ext/remapping/remapping_composers.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: battle_modifiers/scripts/common/battle_modifiers_ext/remapping/remapping_composers.py
+from __future__ import absolute_import
+from future.utils import viewitems
+from typing import TYPE_CHECKING, Optional, Any, Dict, List, FrozenSet, Type
+from battle_modifiers_ext.constants_ext import ModifiersWithRemapping
+if TYPE_CHECKING:
+    from battle_modifiers_common import ModifiersContext
+    from battle_modifiers_ext.remapping.remapping_conditions import IRemappingCondition
+_START_PATTERN = '{'
+_END_PATTERN = '}'
+
+class IComposer(object):
+    __slots__ = ()
+
+    def getValue(self, ctx, oldValue):
+        raise NotImplementedError
+
+    def getValues(self, oldValue):
+        raise NotImplementedError
+
+
+class _BaseComposer(IComposer):
+    __slots__ = ('_conditions', '_targetTemplate', '_specialRules')
+
+    def __init__(self, conditions, targetTemplate, specialRules):
+        self._conditions = conditions
+        self._targetTemplate = targetTemplate
+        self._specialRules = specialRules
+
+    def getValue(self, ctx, oldValue):
+        resStr = self.__applySpecialRules(ctx, oldValue)
+        if resStr is not None:
+            return resStr
+        else:
+            resStr = self._targetTemplate
+            for condition in self._conditions:
+                resStr = resStr.replace(('').join((_START_PATTERN, condition.getName(), _END_PATTERN)), condition(ctx))
+
+            return resStr
+
+    def getValues(self, oldValue):
+        return
+
+    @classmethod
+    def _getItemName(cls, ctx, oldValue):
+        return oldValue
+
+    def __applySpecialRules(self, ctx, oldValue):
+        if not self._specialRules:
+            return
+        else:
+            itemName = self._getItemName(ctx, oldValue)
+            for sources, target in viewitems(self._specialRules):
+                if itemName in sources:
+                    return target
+
+            return
+
+
+class _DefaultGunEffectsComposer(_BaseComposer):
+
+    def getValue(self, ctx, oldValue):
+        if oldValue is not None:
+            return super(_DefaultGunEffectsComposer, self).getValue(ctx, oldValue)
+        else:
+            return
+
+    @classmethod
+    def _getItemName(cls, _, oldValue):
+        from items import vehicles
+        for k, v in viewitems(vehicles.g_cache.gunEffects):
+            if v == oldValue:
+                return k
+
+        return
+
+
+class _DefaultShotEffectsComposer(_BaseComposer):
+
+    @classmethod
+    def _getItemName(cls, _, oldValue):
+        from items import vehicles
+        return vehicles.g_cache.shotEffectsNames[oldValue]
+
+
+class _DefaultGunPrefabEffectsComposer(_BaseComposer):
+
+    @classmethod
+    def _getItemName(cls, _, oldValue):
+        from items import vehicles
+        for k, v in viewitems(vehicles.g_cache.prefabEffects.gun):
+            if v == oldValue:
+                return k
+
+        return
+
+
+class _DefaultShotPrefabEffectsComposer(_BaseComposer):
+
+    @classmethod
+    def _getItemName(cls, _, oldValue):
+        from items import vehicles
+        for k, v in viewitems(vehicles.g_cache.prefabEffects.shot.indexes):
+            if v == oldValue:
+                return k
+
+        return
+
+
+class _DefaultSoundNotificationsComposer(_BaseComposer):
+    _REMOVE_NOTIFICATION = 'none'
+
+    def getValue(self, ctx, oldValue):
+        resStr = super(_DefaultSoundNotificationsComposer, self).getValue(ctx, oldValue)
+        if not resStr:
+            return oldValue
+        return self.__applyRemoveRule(resStr)
+
+    def getValues(self, oldValue):
+        result = oldValue.copy()
+        for sources, target in viewitems(self._specialRules):
+            result.update({s: self.__applyRemoveRule(target) for s in sources})
+
+        return result
+
+    def __applyRemoveRule(self, value):
+        if value == self._REMOVE_NOTIFICATION:
+            return None
+        else:
+            return value
+
+
+class _DefaultExhaustEffectsComposer(_BaseComposer):
+
+    @classmethod
+    def _getItemName(cls, _, oldValue):
+        from items import vehicles
+        for k, v in viewitems(vehicles.g_cache.exhaustEffects):
+            if v == oldValue:
+                return k
+
+        return
+
+
+_DEFAULT_COMPOSERS = {(ModifiersWithRemapping.GUN_EFFECTS): _DefaultGunEffectsComposer, 
+   (ModifiersWithRemapping.SHOT_EFFECTS): _DefaultShotEffectsComposer, 
+   (ModifiersWithRemapping.GUN_PREFAB_EFFECTS): _DefaultGunPrefabEffectsComposer, 
+   (ModifiersWithRemapping.SHOT_PREFAB_EFFECTS): _DefaultShotPrefabEffectsComposer, 
+   (ModifiersWithRemapping.SOUND_NOTIFICATIONS): _DefaultSoundNotificationsComposer, 
+   (ModifiersWithRemapping.EXHAUST_EFFECTS): _DefaultExhaustEffectsComposer}
+_COMPOSERS_FACTORY = {}
+
+def getComposerClass(remappingName, modifierName):
+    return _COMPOSERS_FACTORY.get(remappingName, _DEFAULT_COMPOSERS).get(modifierName, _BaseComposer)

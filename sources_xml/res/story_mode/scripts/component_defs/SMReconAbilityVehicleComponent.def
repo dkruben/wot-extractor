@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/scripts/component_defs/SMReconAbilityVehicleComponent.def -->
+<root>
+	<Properties />
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>SMReconAbilityVehicleComponent</DefaultKeyName>
+</root>

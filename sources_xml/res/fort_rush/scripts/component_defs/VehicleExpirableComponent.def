@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fort_rush/scripts/component_defs/VehicleExpirableComponent.def -->
+<root>
+	<Properties>
+		<createdAt>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</createdAt>
+		<duration>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</duration>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>vehicleExpirable</DefaultKeyName>
+</root>

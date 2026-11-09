@@ -1,0 +1,375 @@
+{
+ "source": "sources/res/gui/flash/manualChapterView.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 231615,
+ "actual_length": 231615,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 31,
+  "ShowFrame": 405,
+  "DefineShape": 10,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 265,
+  "RemoveObject2": 24,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 9,
+  "DefineEditText": 7,
+  "DefineSprite": 30,
+  "FrameLabel": 39,
+  "FileAttributes": 1,
+  "PlaceObject3": 17,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 7,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 9,
+  "shapes": 14,
+  "sprites": 30,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 7,
+  "fonts": 0,
+  "classes": 26,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyDynamic.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 60,
+   "class": "ManualPageContainerViewUI"
+  },
+  {
+   "id": 57,
+   "class": "ManualPageBackgroundUI"
+  },
+  {
+   "id": 55,
+   "class": "ManualPageDetailsViewUI"
+  },
+  {
+   "id": 54,
+   "class": "manualChapterView_fla.manualPageDetailedVignetteTopAnim_9"
+  },
+  {
+   "id": 50,
+   "class": "manualChapterView_fla.manualPageDetailedVignetteHintAnim_7"
+  },
+  {
+   "id": 46,
+   "class": "manualChapterView_fla.manualPageDetailedVignetteDescriptionAnim_5"
+  },
+  {
+   "id": 42,
+   "class": "ManualPageDetailedDescriptionUI"
+  },
+  {
+   "id": 41,
+   "class": "manualChapterView_fla.dividerWikiPageAppearAnim_14"
+  },
+  {
+   "id": 36,
+   "class": "ManualPageDescriptionUI"
+  },
+  {
+   "id": 33,
+   "class": "ManualPageDetailedChaperUI"
+  },
+  {
+   "id": 32,
+   "class": "ManualPageChapterUI"
+  },
+  {
+   "id": 28,
+   "class": "ManualPageDetailedHeaderUI"
+  },
+  {
+   "id": 27,
+   "class": "ManualPageHeaderUI"
+  },
+  {
+   "id": 24,
+   "class": "BtnCloseAnimUI"
+  },
+  {
+   "id": 23,
+   "class": "BtnCloseWikiUI"
+  },
+  {
+   "id": 18,
+   "class": "ManualPageDetailedHintsUI"
+  },
+  {
+   "id": 16,
+   "class": "ManualPageDetailedHintTemplateItemUI"
+  },
+  {
+   "id": 15,
+   "class": "ManualPageDetailedHintIconAnimUI"
+  },
+  {
+   "id": 14,
+   "class": "ManualEmptyHolderUI"
+  },
+  {
+   "id": 11,
+   "class": "ManualPageDetailedHintDescriptionAnimUI"
+  },
+  {
+   "id": 10,
+   "class": "ManualPageDetailedHintDescriptionUI"
+  },
+  {
+   "id": 7,
+   "class": "ManualPageDetailedVideoUI"
+  },
+  {
+   "id": 6,
+   "class": "BtnPlayVideoUI"
+  },
+  {
+   "id": 1,
+   "class": "ManualPageDetailedWithButtonUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 8640,
+   "classes": 26,
+   "methods": 129,
+   "bodies": 129,
+   "code_bytes": 2614
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Regular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualEmptyHolderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manual.containers.AnimatedShapeContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageBackgroundUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manualChapter.controls.ManualBackgroundContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "manualChapterView_fla.dividerWikiPageAppearAnim_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "manualChapterView_fla.manualPageDetailedVignetteDescriptionAnim_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "manualChapterView_fla.manualPageDetailedVignetteHintAnim_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "manualChapterView_fla.manualPageDetailedVignetteTopAnim_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageChapterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.AnimatedTextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDescriptionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.AnimatedTextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDetailedHintDescriptionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.AnimatedTextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.AnimatedTextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnCloseAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.AnimatedButtonContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDetailedHintIconAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.AnimatedSpriteContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDetailedChaperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manualChapter.controls.TextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDetailedHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manualChapter.controls.TextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDetailedHintDescriptionAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manualChapter.controls.TextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDetailedHintTemplateItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manualChapter.controls.HintRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDetailsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manualChapter.ManualPageView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDetailedDescriptionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manualChapter.controls.DescriptionContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDetailedHintsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manualChapter.controls.HintsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDetailedVideoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manualChapter.controls.VideoContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageDetailedWithButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manualChapter.controls.PageWithButtonContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnPlayVideoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnCloseWikiUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.CloseButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualPageContainerViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manualChapter.ManualChapterView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

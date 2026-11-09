@@ -1,0 +1,130 @@
+{
+  "rid": "R.views.resource_well.mono.lobby.tooltips.serial_number_tooltip",
+  "rid_source": "sources/res/resource_well/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "serial_number_tooltip",
+  "dir": "resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/serial_number_tooltip",
+  "feature": "resource_well",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/serial_number_tooltip/bundle.js",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/serial_number_tooltip/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "serial_number_tooltip.css",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/serial_number_tooltip/serial_number_tooltip.css",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/serial_number_tooltip/serial_number_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "serial_number_tooltip.html",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/serial_number_tooltip/serial_number_tooltip.html",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/serial_number_tooltip/serial_number_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/serial_number_tooltip/bundle.js",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/serial_number_tooltip/bundle.js"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/serial_number_tooltip/serial_number_tooltip.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/serial_number_tooltip/serial_number_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.resource_well.mono.lobby.tooltips.serial_number_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "4 referencia(s) R.views.resource_well.mono.lobby.tooltips.serial_number_tooltip no Python",
+      "ViewModel AwardViewModel (model=... no Python da view): 0/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/award_view.py",
+        36
+      ],
+      [
+        "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/completed_progression_view.py",
+        44
+      ],
+      [
+        "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/progression_view.py",
+        54
+      ],
+      [
+        "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/tooltips/serial_number_tooltip.py",
+        16
+      ]
+    ],
+    "python_files": [
+      "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/award_view.py",
+      "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/completed_progression_view.py",
+      "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/progression_view.py",
+      "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/tooltips/serial_number_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/resource_well/scripts/client/resource_well/gui/impl/gen/view_models/views/lobby/award_view_model.py",
+      "class": "AwardViewModel",
+      "chain": [
+        "AwardViewModel"
+      ],
+      "properties": [
+        [
+          "vehicleInfo",
+          "ViewModel"
+        ],
+        [
+          "personalNumber",
+          "String"
+        ],
+        [
+          "rewardIndex",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "showInHangar",
+        "close"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 5,
+        "missing": [
+          "close",
+          "personalNumber",
+          "rewardIndex",
+          "showInHangar",
+          "vehicleInfo"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/resource_well/scripts/client/resource_well/gui/impl/gen/view_models/views/lobby/completed_progression_view_model.py",
+        "sources/res/resource_well/scripts/client/resource_well/gui/impl/gen/view_models/views/lobby/progression_view_model.py",
+        "sources/res/resource_well/scripts/client/resource_well/gui/impl/gen/view_models/views/lobby/reward_model.py"
+      ]
+    }
+  }
+}

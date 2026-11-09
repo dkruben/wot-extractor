@@ -1,0 +1,23 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/sounds.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: resource_well/scripts/client/resource_well/gui/impl/lobby/feature/sounds.py
+from __future__ import absolute_import
+from gui.sounds.filters import StatesGroup, States
+from shared_utils import CONST_CONTAINER
+from sound_gui_manager import CommonSoundSpaceSettings
+
+class SOUNDS(CONST_CONTAINER):
+    SPACE = 'resource_well_space'
+    COMMON_ENTER = 'resources_well_enter'
+    COMMON_EXIT = 'resources_well_exit'
+    PREVIEW_SPACE = 'resource_well_preview_space'
+    PREVIEW_ENTER = 'resources_well_preview_enter'
+    PREVIEW_EXIT = 'resources_well_preview_exit'
+    STATE_PLACE = 'STATE_hangar_place'
+    STATE_PLACE_GARAGE = 'STATE_hangar_place_garage'
+
+
+RESOURCE_WELL_SOUND_SPACE = CommonSoundSpaceSettings(name=SOUNDS.SPACE, entranceStates={(StatesGroup.HANGAR_FILTERED): (States.HANGAR_FILTERED_ON)}, exitStates={(StatesGroup.HANGAR_FILTERED): (States.HANGAR_FILTERED_OFF)}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent=SOUNDS.COMMON_ENTER, exitEvent=SOUNDS.COMMON_EXIT)
+RESOURCE_WELL_PREVIEW_SOUND_SPACE = CommonSoundSpaceSettings(name=SOUNDS.PREVIEW_SPACE, entranceStates={(SOUNDS.STATE_PLACE): (SOUNDS.STATE_PLACE_GARAGE)}, exitStates={}, persistentSounds=(), stoppableSounds=(), priorities=(), autoStart=True, enterEvent=SOUNDS.PREVIEW_ENTER, exitEvent=SOUNDS.PREVIEW_EXIT)

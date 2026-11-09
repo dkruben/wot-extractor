@@ -1,0 +1,107 @@
+{
+  "rid": "R.views.lobby.tanksetup.tooltips.DeconstructFromVehicleTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "DeconstructFromVehicleTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "DeconstructFromVehicleTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip/DeconstructFromVehicleTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip/DeconstructFromVehicleTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DeconstructFromVehicleTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip/DeconstructFromVehicleTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip/DeconstructFromVehicleTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DeconstructFromVehicleTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip/DeconstructFromVehicleTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip/DeconstructFromVehicleTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip/DeconstructFromVehicleTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip/DeconstructFromVehicleTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip/DeconstructFromVehicleTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip/DeconstructFromVehicleTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromVehicleTooltip/DeconstructFromVehicleTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.tooltips.DeconstructFromVehicleTooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.tanksetup.tooltips.DeconstructFromVehicleTooltip no Python",
+      "ViewModel DeconstructFromVehicleTooltipModel (model=... no Python da view): 2/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tank_setup/dialogs/deconstruct_confirm.py",
+        94
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tank_setup/tooltips/deconstruct_from_vehicle_tooltip.py",
+        14
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/tank_setup/dialogs/deconstruct_confirm.py",
+      "sources/res/scripts/client/gui/impl/lobby/tank_setup/tooltips/deconstruct_from_vehicle_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/tank_setup/tooltips/deconstruct_from_vehicle_tooltip_model.py",
+      "class": "DeconstructFromVehicleTooltipModel",
+      "chain": [
+        "DeconstructFromVehicleTooltipModel"
+      ],
+      "properties": [
+        [
+          "equipmentName",
+          "String"
+        ],
+        [
+          "vehicleNames",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 2,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

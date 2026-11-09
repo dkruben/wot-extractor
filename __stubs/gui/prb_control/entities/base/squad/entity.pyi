@@ -1,0 +1,79 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/prb_control/entities/base/squad/entity.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import typing as typing
+from debug_utils import LOG_ERROR as LOG_ERROR
+from gui.prb_control.ctrl_events import g_prbCtrlEvents as g_prbCtrlEvents
+from gui.prb_control.entities.base.squad.actions_handler import SquadActionsHandler as SquadActionsHandler
+from gui.prb_control.entities.base.squad.actions_validator import SquadActionsValidator as SquadActionsValidator
+from gui.prb_control.entities.base.squad.ctx import SquadSettingsCtx as SquadSettingsCtx
+from gui.prb_control.entities.base.squad.permissions import SquadPermissions as SquadPermissions
+from gui.prb_control.entities.base.unit.entity import UnitEntryPoint as UnitEntryPoint, UnitEntity as UnitEntity
+from gui.prb_control.events_dispatcher import g_eventDispatcher as g_eventDispatcher
+from gui.Scaleform.daapi.settings.views import VIEW_ALIAS as VIEW_ALIAS
+from gui.Scaleform.framework.entities.View import ViewKey as ViewKey
+from gui.prb_control.items import SelectResult as SelectResult
+from gui.shared.gui_items.Vehicle import Vehicle as Vehicle
+from gui.shared.utils.requesters import REQ_CRITERIA as REQ_CRITERIA
+from gui.impl.gen.resources import R as R
+from helpers import dependency as dependency
+from skeletons.gui.app_loader import IAppLoader as IAppLoader
+from wg_async import wg_async as wg_async, wg_await as wg_await
+
+class SquadEntryPoint(UnitEntryPoint):
+    def makeDefCtx(self):
+        ...
+    def join(self, ctx, callback=None):
+        ...
+
+class SquadEntity(UnitEntity):
+    __appLoader: Any
+    _rosterSettings: Any
+    def init(self, ctx=None):
+        ...
+    def fini(self, ctx=None, woEvents=False):
+        ...
+    def canKeepMode(self):
+        ...
+    def hasLockedState(self):
+        ...
+    def unit_onUnitRosterChanged(self):
+        ...
+    def rejoin(self):
+        ...
+    def invalidateVehicleStates(self, vehicles=None):
+        ...
+    def isBalancedSquadEnabled(self):
+        ...
+    def getSquadLevelBounds(self):
+        ...
+    def showDialog(self, meta, callback, parent=None):
+        ...
+    def doSelectAction(self, action):
+        ...
+    def loadHangar(self):
+        ...
+    @property
+    def _showUnitActionNames(self):
+        ...
+    def _buildPermissions(self, roles, flags, isCurrentPlayer=False, isPlayerReady=False, hasLockedState=False):
+        ...
+    def setVehicle(self, ctx, callback=None):
+        ...
+    def _createActionsHandler(self):
+        ...
+    def _createActionsValidator(self):
+        ...
+    def _vehicleStateCondition(self, v):
+        ...
+    def _updateVehicleState(self, vehicle, state):
+        ...
+    def __clearCustomVehicleStates(self):
+        ...
+    def __resourceSplitter(self, resourceStr):
+        ...
+    # decorador original: @wg_async
+    def __showDefaultDialog(self, meta, callback, parent=None):
+        ...

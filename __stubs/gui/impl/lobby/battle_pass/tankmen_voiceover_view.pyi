@@ -1,0 +1,83 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/lobby/battle_pass/tankmen_voiceover_view.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import logging as logging
+from future.moves.urllib.parse import urljoin as urljoin
+from battle_pass_common import BattlePassTankmenSource as BattlePassTankmenSource
+from frameworks.wulf import Array as Array
+from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getShopURL as getShopURL
+from gui.battle_pass.battle_pass_helpers import getReceivedTankmenCount as getReceivedTankmenCount, getDataByTankman as getDataByTankman
+from gui.battle_pass.sounds import BattlePassSounds as BattlePassSounds
+from gui.collection.collections_helpers import getTankmanFullName as getTankmanFullName
+from gui.impl.gen import R as R
+from gui.impl.gen.view_models.views.lobby.battle_pass.skill_model import SkillModel as SkillModel
+from gui.impl.gen.view_models.views.lobby.battle_pass.tankman_model import TankmanModel as TankmanModel, TankmanStates as TankmanStates
+from gui.impl.gen.view_models.views.lobby.battle_pass.tankmen_voiceover_view_model import TankmenVoiceoverViewModel as TankmenVoiceoverViewModel
+from gui.impl.lobby.battle_pass.tooltips.crew_member_skill_tooltip import CrewMemberSkillTooltip as CrewMemberSkillTooltip
+from gui.impl.pub.view_component import ViewComponent as ViewComponent
+from gui.server_events.recruit_helper import getRecruitInfo as getRecruitInfo
+from gui.shared.event_dispatcher import showShop as showShop
+from gui.sounds.filters import switchHangarOverlaySoundFilter as switchHangarOverlaySoundFilter
+from helpers import dependency as dependency
+from shared_utils import findFirst as findFirst
+from skeletons.gui.game_control import IBattlePassController as IBattlePassController
+_logger: Any
+
+# base nao representavel no stub: ViewComponent[...]
+class TankmenVoiceoverPresenter:
+    __battlePass: Any
+    __screenID: Any
+    __isActive: Any
+    def __init__(self, *args, **kwargs):
+        ...
+    @property
+    def viewModel(self):
+        ...
+    def updateInitialData(self, **kwargs):
+        ...
+    def activate(self):
+        ...
+    def deactivate(self):
+        ...
+    def createToolTipContent(self, event, contentID):
+        ...
+    def _onLoading(self, *args, **kwargs):
+        ...
+    def _finalize(self):
+        ...
+    def _getEvents(self):
+        ...
+    def _getStopSound(self):
+        ...
+    def __activateSounds(self):
+        ...
+    def __deactivateSounds(self):
+        ...
+    def __showShop(self, args):
+        ...
+    def __getTankmanInfo(self, tankman):
+        ...
+    def __getTankmenByPriority(self, tankmenDict):
+        ...
+    def __getCount(self, tankman):
+        ...
+    def __getTankmenForView(self):
+        ...
+    def __fillModel(self):
+        ...
+    def __fillTankmen(self, tankmenDict, tankmenModels):
+        ...
+    def __fillTankmanModel(self, model, tankman):
+        ...
+    def __fillTankmenStateForModel(self, model, tankman, tankmanInfo, count):
+        ...
+    def __fillTankmenProgressionInfo(self, model, tankmanInfo):
+        ...
+    def __getStateForShopTankmanModel(self, count, availableCount):
+        ...
+    def __getStateForProgressionTankmanModel(self, source, chapterID, receivedCount):
+        ...
+    def __onBattlePassChange(self, *_):
+        ...

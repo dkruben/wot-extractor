@@ -1,0 +1,173 @@
+{
+  "rid": "R.views.halloween.mono.lobby.decrypt",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "decrypt",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/decrypt",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/decrypt/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/decrypt/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/decrypt/bundle.js"
+    },
+    {
+      "name": "decrypt.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/decrypt/decrypt.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/decrypt/decrypt.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "decrypt.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/decrypt/decrypt.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/decrypt/decrypt.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/css.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/css.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/format_text_with_paragraphs.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/format_text_with_paragraphs.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/video_background.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/video_background.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/decrypt/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/decrypt/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/decrypt/decrypt.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/decrypt/decrypt.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onAffirmation",
+    "onChangeQuest",
+    "onMuted",
+    "onOutroVideo"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.decrypt",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.halloween.mono.lobby.decrypt no Python",
+      "ViewModel DecryptViewModel (model=... no Python da view): 14/15 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/decrypt_view.py",
+        43
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/widgets/meta_view.py",
+        112
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/decrypt_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/widgets/meta_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/decrypt_view_model.py",
+      "class": "DecryptViewModel",
+      "chain": [
+        "DecryptViewModel"
+      ],
+      "properties": [
+        [
+          "id",
+          "String"
+        ],
+        [
+          "index",
+          "Number"
+        ],
+        [
+          "name",
+          "String"
+        ],
+        [
+          "isMuted",
+          "Bool"
+        ],
+        [
+          "isOutroDisabled",
+          "Bool"
+        ],
+        [
+          "isOutroVisible",
+          "Bool"
+        ],
+        [
+          "isTransition",
+          "Bool"
+        ],
+        [
+          "isNextArtefactAvailable",
+          "Bool"
+        ],
+        [
+          "isPreviousArtefactAvailable",
+          "Bool"
+        ],
+        [
+          "rewards",
+          "Array"
+        ],
+        [
+          "types",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onAffirmation",
+        "onMuted",
+        "onOutroVideo",
+        "onChangeQuest"
+      ],
+      "coverage": {
+        "found": 14,
+        "total": 15,
+        "missing": [
+          "id"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/widgets/meta_view_model.py"
+      ]
+    }
+  }
+}

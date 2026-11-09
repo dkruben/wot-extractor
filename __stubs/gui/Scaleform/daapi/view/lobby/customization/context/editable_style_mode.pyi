@@ -1,0 +1,119 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/customization/context/editable_style_mode.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import logging as logging
+import typing as typing
+from functools import partial as partial
+from CurrentVehicle import g_currentVehicle as g_currentVehicle
+from adisp import adisp_process as adisp_process, adisp_async as adisp_async
+from gui.shared.gui_items.processors.common import OutfitApplier as OutfitApplier, CustomizationsSeller as CustomizationsSeller
+from gui.Scaleform.daapi.view.lobby.customization.context.custom_mode import CustomMode as CustomMode
+from gui.Scaleform.daapi.view.lobby.customization.context.styled_mode import StyledMode as StyledMode
+from gui.Scaleform.daapi.view.lobby.customization import shared as shared
+from gui.Scaleform.daapi.view.lobby.customization.shared import customizationSlotIdToUid as customizationSlotIdToUid, CustomizationSlotUpdateVO as CustomizationSlotUpdateVO, getStylePurchaseItems as getStylePurchaseItems, correctSlot as correctSlot, getCurrentVehicleAvailableRegionsMap as getCurrentVehicleAvailableRegionsMap, fitOutfit as fitOutfit, removeItemFromEditableStyle as removeItemFromEditableStyle, getEditableStyleOutfitDiff as getEditableStyleOutfitDiff, getItemInventoryCount as getItemInventoryCount, getOutfitWithoutItemsNoDiff as getOutfitWithoutItemsNoDiff, getOutfitWithoutItems as getOutfitWithoutItems, ITEM_TYPE_TO_SLOT_TYPE as ITEM_TYPE_TO_SLOT_TYPE, getUnsuitableDependentData as getUnsuitableDependentData, changePartsOutfit as changePartsOutfit
+from gui.customization.shared import getAvailableRegions as getAvailableRegions, EDITABLE_STYLE_IRREMOVABLE_TYPES as EDITABLE_STYLE_IRREMOVABLE_TYPES, EDITABLE_STYLE_APPLY_TO_ALL_AREAS_TYPES as EDITABLE_STYLE_APPLY_TO_ALL_AREAS_TYPES, C11nId as C11nId
+from gui.shared.gui_items import GUI_ITEM_TYPE as GUI_ITEM_TYPE
+from gui.shared.utils.decorators import adisp_process as wrapperdProcess
+from items import makeIntCompactDescrByID as makeIntCompactDescrByID
+from items.components.c11n_constants import SeasonType as SeasonType, MAX_USERS_PROJECTION_DECALS as MAX_USERS_PROJECTION_DECALS, CustomizationType as CustomizationType
+from vehicle_outfit.containers import SlotData as SlotData
+from vehicle_outfit.outfit import Area as Area
+from helpers import dependency as dependency
+from account_helpers.settings_core.settings_constants import OnceOnlyHints as OnceOnlyHints
+from skeletons.account_helpers.settings_core import ISettingsCore as ISettingsCore
+from tutorial.hints_manager import HINT_SHOWN_STATUS as HINT_SHOWN_STATUS
+from items.customizations import SerializableComponent as SerializableComponent
+from gui.customization.shared import PurchaseItem as PurchaseItem
+from gui.hangar_vehicle_appearance import AnchorParams as AnchorParams
+from gui.shared.gui_items.customization.c11n_items import Customization as Customization
+from gui.Scaleform.daapi.view.lobby.customization.context.context import CustomizationContext as CustomizationContext
+_logger: Any
+
+class EditableStyleMode(CustomMode):
+    _settingsCore: Any
+    __style: Any
+    __baseOutfits: Any
+    __isCanceled: Any
+    _isInited: Any
+    _originalOutfits: Any
+    _modifiedOutfits: Any
+    def __init__(self, ctx):
+        ...
+    @property
+    def style(self):
+        ...
+    @property
+    def baseOutfits(self):
+        ...
+    def getPurchaseItems(self):
+        ...
+    def getDependenciesData(self):
+        ...
+    def changeCamouflageColor(self, slotId, paletteIdx):
+        ...
+    def changeCamouflageScale(self, slotId, scale):
+        ...
+    def getAnchorParams(self, slotId):
+        ...
+    def getSlotDataFromSlot(self, slotId, season=None):
+        ...
+    def getSlotDataFromBaseOutfit(self, slotId, season=None):
+        ...
+    def getItemFromSlot(self, slotId, season=None):
+        ...
+    def getComponentFromSlot(self, slotId, season=None):
+        ...
+    def isBaseItem(self, slotId, season=None):
+        ...
+    def isPossibleToInstallItemForAllSeasons(self, slotId, intCD):
+        ...
+    def installItemToAllSeasons(self, slotId, slotData):
+        ...
+    def getItemInventoryCount(self, item, excludeBase=False):
+        ...
+    def clearStyle(self):
+        ...
+    def getStyleProgressionLevel(self):
+        ...
+    def _onStart(self):
+        ...
+    def _onStop(self):
+        ...
+    def _cancelChanges(self):
+        ...
+    # decorador original: @adisp_async
+    # decorador original: @adisp_process
+    def _applyItems(self, purchaseItems, callback):
+        ...
+    def _fillOutfits(self):
+        ...
+    def _installItem(self, intCD, slotId, season=None, component=None):
+        ...
+    def _selectItem(self, intCD, progressionLevel=0):
+        ...
+    def _iterOutfitsWithoutItem(self, item, count):
+        ...
+    # decorador original: @adisp_async
+    # decorador original: @wrapperdProcess(...)
+    def _sellItem(self, item, count, callback):
+        ...
+    def _selectSlot(self, slotId):
+        ...
+    def _removeItem(self, slotId, season=None):
+        ...
+    def _getAnchorVOs(self):
+        ...
+    def _validateItem(self, item, slotId, season):
+        ...
+    def _onVehicleChangeStarted(self):
+        ...
+    def __installItemToAllAreas(self, item, season=None):
+        ...
+    def __processDependentTypes(self, selItemTypeID, selItemID, season):
+        ...
+    def __getSuitableIntCD(self, unsuitableItem, dependentByType):
+        ...
+    def __saveDiffs(self):
+        ...

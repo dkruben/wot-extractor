@@ -1,0 +1,10 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/event_platform/scripts/component_defs/RespawnPolicyVehicleLinkComponent.def -->
+<root>
+	<Properties>
+		<vehicleId>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehicleId>
+	</Properties>
+	<DefaultKeyName>RespawnPolicyVehicleLinkComponent</DefaultKeyName>
+</root>

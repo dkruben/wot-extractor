@@ -1,0 +1,64 @@
+{
+  "rid": "R.views.lobby.veh_post_progression.tooltip.common.Lock",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Lock",
+  "dir": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock",
+  "feature": null,
+  "files": [
+    {
+      "name": "Lock.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock/Lock.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock/Lock.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Lock.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock/Lock.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock/Lock.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Lock.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock/Lock.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock/Lock.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock/Lock.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock/Lock.css",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock/Lock.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock/Lock.js",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/common/Lock/Lock.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.veh_post_progression.tooltip.common.Lock",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

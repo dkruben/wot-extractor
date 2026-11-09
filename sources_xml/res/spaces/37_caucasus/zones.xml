@@ -1,0 +1,18 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/37_caucasus/zones.xml -->
+<root>
+	<path>
+		<id>3767994181</id>
+		<name>path</name>
+		<node>
+			<name>37_caucasus_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2292230103</id>
+			<transform>
+				<row0>64.55504 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 53.06683</row2>
+				<row3>49.747906 20.185354 -43.563976</row3>
+			</transform>
+		</node>
+	</path>
+</root>

@@ -1,0 +1,457 @@
+{
+ "source": "sources/res/gui/flash/battleMattersCommon.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 8709408,
+ "actual_length": 8709408,
+ "frame_size_px": [
+  0.0,
+  940.0,
+  0.0,
+  520.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 895,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 35,
+  "ShowFrame": 969,
+  "DefineShape": 33,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 17,
+  "PlaceObject2": 75,
+  "DefineBitsLossless2": 16,
+  "DefineEditText": 10,
+  "DefineSprite": 34,
+  "FileAttributes": 1,
+  "PlaceObject3": 9,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 7,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 33,
+  "shapes": 33,
+  "sprites": 34,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 10,
+  "fonts": 0,
+  "classes": 34,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 110,
+   "class": "BgUSAUI"
+  },
+  {
+   "id": 107,
+   "class": "BgBluePrintUI"
+  },
+  {
+   "id": 104,
+   "class": "BgBluePrintResearchUI"
+  },
+  {
+   "id": 101,
+   "class": "BgUSABlurUI"
+  },
+  {
+   "id": 98,
+   "class": "BgDepotUI"
+  },
+  {
+   "id": 95,
+   "class": "BgTechTreeUI"
+  },
+  {
+   "id": 92,
+   "class": "BgTechTreeVehicle"
+  },
+  {
+   "id": 89,
+   "class": "BgTiger131"
+  },
+  {
+   "id": 86,
+   "class": "BgVehicle"
+  },
+  {
+   "id": 83,
+   "class": "BlueprintTechTreeUI"
+  },
+  {
+   "id": 80,
+   "class": "BtnApplyUI"
+  },
+  {
+   "id": 76,
+   "class": "BtnApplySmallDisabledUI"
+  },
+  {
+   "id": 72,
+   "class": "BtnApplySmallFocusedUI"
+  },
+  {
+   "id": 68,
+   "class": "BtnBackUI"
+  },
+  {
+   "id": 64,
+   "class": "BtnCancelUI"
+  },
+  {
+   "id": 60,
+   "class": "BtnCloseUI"
+  },
+  {
+   "id": 56,
+   "class": "BtnCloseX"
+  },
+  {
+   "id": 52,
+   "class": "BtnFightUI"
+  },
+  {
+   "id": 48,
+   "class": "BtnResearchUI"
+  },
+  {
+   "id": 44,
+   "class": "BtnSellUI"
+  },
+  {
+   "id": 40,
+   "class": "CarouseleUI"
+  },
+  {
+   "id": 37,
+   "class": "CrewBg"
+  },
+  {
+   "id": 34,
+   "class": "CrewHover"
+  },
+  {
+   "id": 31,
+   "class": "CrewPersons"
+  },
+  {
+   "id": 28,
+   "class": "CrewSelectBg"
+  },
+  {
+   "id": 25,
+   "class": "CrewSelectBorder"
+  },
+  {
+   "id": 22,
+   "class": "CursorArrowUI"
+  },
+  {
+   "id": 19,
+   "class": "CursorHandUI"
+  },
+  {
+   "id": 16,
+   "class": "FxAnim"
+  },
+  {
+   "id": 15,
+   "class": "FxUI"
+  },
+  {
+   "id": 12,
+   "class": "HeaderUI"
+  },
+  {
+   "id": 9,
+   "class": "HeaderBtnUI"
+  },
+  {
+   "id": 6,
+   "class": "HeaderBtnActiveUI"
+  },
+  {
+   "id": 3,
+   "class": "TtxUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4204,
+   "classes": 34,
+   "methods": 103,
+   "bodies": 103,
+   "code_bytes": 1650
+  }
+ ],
+ "classes": [
+  {
+   "name": "BgBluePrintResearchUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BgBluePrintUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BgDepotUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BgTechTreeUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BgTechTreeVehicle",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BgTiger131",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BgUSABlurUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BgUSAUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BgVehicle",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BlueprintTechTreeUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnApplySmallDisabledUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnApplySmallFocusedUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnApplyUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnBackUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnCancelUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnCloseUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnCloseX",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnFightUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnResearchUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnSellUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CarouseleUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrewBg",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrewHover",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrewPersons",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrewSelectBg",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrewSelectBorder",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CursorArrowUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CursorHandUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FxAnim",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FxUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeaderBtnActiveUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeaderBtnUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeaderUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TtxUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

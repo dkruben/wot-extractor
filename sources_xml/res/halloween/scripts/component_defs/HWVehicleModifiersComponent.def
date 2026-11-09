@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/component_defs/HWVehicleModifiersComponent.def -->
+<root>
+	<Properties>
+		<modifiers>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</modifiers>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>hwModifiers</DefaultKeyName>
+</root>

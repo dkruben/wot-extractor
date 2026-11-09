@@ -1,0 +1,138 @@
+{
+ "source": "sources/res/last_stand/gui/flash/minimap.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 3930,
+ "actual_length": 3930,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 11,
+  "ShowFrame": 11,
+  "DefineShape": 4,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 24,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 2,
+  "DefineSprite": 10,
+  "FileAttributes": 1,
+  "PlaceObject3": 5,
+  "ImportAssets2": 4,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 5,
+  "sprites": 10,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "minimapEntriesLibrary.swf",
+   "symbols": []
+  },
+  {
+   "url": "PveMinimapEntriesLibrary.swf",
+   "symbols": []
+  },
+  {
+   "url": "epicMinimapEntriesLibrary.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 17,
+   "class": "epicMinimapImportsUI"
+  },
+  {
+   "id": 16,
+   "class": "LSMinimapUI"
+  },
+  {
+   "id": 10,
+   "class": "LSMinimapEntriesContainerUI"
+  },
+  {
+   "id": 8,
+   "class": "LSMinimapBackgroundUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1417,
+   "classes": 4,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 244
+  }
+ ],
+ "classes": [
+  {
+   "name": "epicMinimapImportsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSMinimapBackgroundUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UILoaderAlt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSMinimapEntriesContainerUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.minimap.containers.LSMinimapEntriesContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSMinimapUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.minimap.LSMinimap",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

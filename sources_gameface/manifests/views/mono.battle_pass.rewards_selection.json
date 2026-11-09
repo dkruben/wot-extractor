@@ -1,0 +1,331 @@
+{
+  "rid": "R.views.mono.battle_pass.rewards_selection",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "rewards_selection",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/rewards_selection",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/rewards_selection/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/rewards_selection/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/battle_pass/rewards_selection/bundle.js"
+    },
+    {
+      "name": "rewards_selection.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/rewards_selection/rewards_selection.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/rewards_selection/rewards_selection.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "rewards_selection.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/rewards_selection/rewards_selection.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/rewards_selection/rewards_selection.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/rewards_selection/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/rewards_selection/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/rewards_selection/rewards_selection.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/rewards_selection/rewards_selection.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onCloseClick",
+    "onOkClick",
+    "onRewardAdd",
+    "onRewardReduce",
+    "onTabClick",
+    "selectableRewardModel.onCloseClick"
+  ],
+  "link": {
+    "rid": "R.views.mono.battle_pass.rewards_selection",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.mono.battle_pass.rewards_selection no Python",
+      "ViewModel BattlePassProgressionsViewModel (model=... no Python da view): 1/54 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/battle_pass_progressions_view.py",
+        592
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/rewards_selection_view.py",
+        35
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/battle_pass_progressions_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/rewards_selection_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/battle_pass_progressions_view_model.py",
+      "class": "BattlePassProgressionsViewModel",
+      "chain": [
+        "BattlePassProgressionsViewModel",
+        "CommonViewModel"
+      ],
+      "properties": [
+        [
+          "levels",
+          "ViewModel"
+        ],
+        [
+          "starterPackRewards",
+          "ViewModel"
+        ],
+        [
+          "widget3dStyle",
+          "ViewModel"
+        ],
+        [
+          "chapterCharacter",
+          "ViewModel"
+        ],
+        [
+          "widgetFinalRewards",
+          "ViewModel"
+        ],
+        [
+          "awardsWidget",
+          "ViewModel"
+        ],
+        [
+          "chapterID",
+          "Number"
+        ],
+        [
+          "chapterState",
+          "String"
+        ],
+        [
+          "freeFinalRewards",
+          "Array"
+        ],
+        [
+          "paidFinalRewards",
+          "Array"
+        ],
+        [
+          "previousPointsInChapter",
+          "Number"
+        ],
+        [
+          "currentPointsInChapter",
+          "Number"
+        ],
+        [
+          "previousFreePointsInChapter",
+          "Number"
+        ],
+        [
+          "freePointsInChapter",
+          "Number"
+        ],
+        [
+          "previousPointsInLevel",
+          "Number"
+        ],
+        [
+          "currentPointsInLevel",
+          "Number"
+        ],
+        [
+          "previousFreePointsInLevel",
+          "Number"
+        ],
+        [
+          "freePointsInLevel",
+          "Number"
+        ],
+        [
+          "previousLevel",
+          "Number"
+        ],
+        [
+          "potentialLevel",
+          "Number"
+        ],
+        [
+          "previousPotentialLevel",
+          "Number"
+        ],
+        [
+          "isPaused",
+          "Bool"
+        ],
+        [
+          "isChooseDeviceEnabled",
+          "Bool"
+        ],
+        [
+          "isWalletAvailable",
+          "Bool"
+        ],
+        [
+          "showBuyAnimations",
+          "Bool"
+        ],
+        [
+          "showLevelsAnimations",
+          "Bool"
+        ],
+        [
+          "showReplaceRewardsAnimations",
+          "Bool"
+        ],
+        [
+          "actionType",
+          "String"
+        ],
+        [
+          "isStyleTaken",
+          "Bool"
+        ],
+        [
+          "isSeasonEndingSoon",
+          "Bool"
+        ],
+        [
+          "chapterType",
+          "String"
+        ],
+        [
+          "hasExtra",
+          "Bool"
+        ],
+        [
+          "expireTime",
+          "Number"
+        ],
+        [
+          "timeLeft",
+          "Number"
+        ],
+        [
+          "seasonNum",
+          "Number"
+        ],
+        [
+          "tankmenScreenID",
+          "Number"
+        ],
+        [
+          "isStarterPack",
+          "Bool"
+        ],
+        [
+          "title",
+          "String"
+        ],
+        [
+          "currentLevel",
+          "Number"
+        ],
+        [
+          "isBattlePassPurchased",
+          "Bool"
+        ],
+        [
+          "canBuy",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onChapterActivate",
+        "onTakeClick",
+        "onTakeAllClick",
+        "onOpenShopClick",
+        "onAboutClick",
+        "onPointsInfoClick",
+        "onFinishedAnimation",
+        "onLevelsAnimationFinished",
+        "onStyleBonusPreview",
+        "onChapterChoice",
+        "onViewLoaded",
+        "onClosed"
+      ],
+      "coverage": {
+        "found": 1,
+        "total": 54,
+        "missing": [
+          "actionType",
+          "awardsWidget",
+          "canBuy",
+          "chapterCharacter",
+          "chapterID",
+          "chapterState",
+          "chapterType",
+          "currentLevel",
+          "currentPointsInChapter",
+          "currentPointsInLevel",
+          "expireTime",
+          "freeFinalRewards",
+          "freePointsInChapter",
+          "freePointsInLevel",
+          "hasExtra",
+          "isBattlePassPurchased",
+          "isChooseDeviceEnabled",
+          "isPaused",
+          "isSeasonEndingSoon",
+          "isStarterPack",
+          "isStyleTaken",
+          "isWalletAvailable",
+          "levels",
+          "onAboutClick",
+          "onChapterActivate",
+          "onChapterChoice",
+          "onClose",
+          "onClosed",
+          "onFinishedAnimation",
+          "onLevelsAnimationFinished",
+          "onOpenShopClick",
+          "onPointsInfoClick",
+          "onStyleBonusPreview",
+          "onTakeAllClick",
+          "onTakeClick",
+          "onViewLoaded",
+          "paidFinalRewards",
+          "potentialLevel",
+          "previousFreePointsInChapter",
+          "previousFreePointsInLevel",
+          "previousLevel",
+          "previousPointsInChapter",
+          "previousPointsInLevel",
+          "previousPotentialLevel",
+          "seasonNum",
+          "showBuyAnimations",
+          "showLevelsAnimations",
+          "showReplaceRewardsAnimations",
+          "starterPackRewards",
+          "tankmenScreenID"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

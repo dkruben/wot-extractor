@@ -1,0 +1,83 @@
+{
+  "rid": "R.views.common.Browser",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Browser",
+  "dir": "gui/gameface/_dist/production/common/Browser",
+  "feature": null,
+  "files": [
+    {
+      "name": "Browser.css",
+      "effective": "res/gui/gameface/_dist/production/common/Browser/Browser.css",
+      "all": [
+        "res/gui/gameface/_dist/production/common/Browser/Browser.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Browser.html",
+      "effective": "res/gui/gameface/_dist/production/common/Browser/Browser.html",
+      "all": [
+        "res/gui/gameface/_dist/production/common/Browser/Browser.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Browser.js",
+      "effective": "res/gui/gameface/_dist/production/common/Browser/Browser.js",
+      "all": [
+        "res/gui/gameface/_dist/production/common/Browser/Browser.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/common/Browser/Browser.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/common/Browser/Browser.css",
+      "key": "res/gui/gameface/_dist/production/common/Browser/Browser.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/common/Browser/Browser.js",
+      "key": "res/gui/gameface/_dist/production/common/Browser/Browser.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/common/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/common/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [
+    "createWebView",
+    "focus",
+    "unfocus"
+  ],
+  "link": {
+    "rid": "R.views.common.Browser",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.common.Browser no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/common/browser.py",
+        24
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/common/browser.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

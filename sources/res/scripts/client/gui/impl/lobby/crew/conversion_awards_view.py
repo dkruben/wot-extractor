@@ -1,0 +1,72 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/impl/lobby/crew/conversion_awards_view.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/impl/lobby/crew/conversion_awards_view.py
+import SoundGroups
+from PlayerEvents import g_playerEvents
+from frameworks.wulf import ViewFlags, ViewSettings, WindowFlags, WindowLayer
+from gui.impl.gen import R
+from gui.impl.gen.view_models.views.lobby.common.awards_view_model import AwardsViewModel
+from gui.impl.lobby.crew.base_crew_view import BaseCrewSubView
+from gui.impl.lobby.crew.tooltips.conversion_tooltip import ConversionTooltip
+from gui.impl.lobby.crew.utils import packCompensationData
+from gui.impl.pub import WindowImpl
+from helpers import dependency
+from skeletons.gui.shared import IItemsCache
+from crew_sounds import SOUNDS
+
+class ConversionAwardsView(BaseCrewSubView):
+    itemsCache = dependency.descriptor(IItemsCache)
+    __slots__ = ('__conversionResult', '__tooltipData')
+
+    def __init__(self, layoutID=R.views.lobby.common.AwardsView(), *args, **kwargs):
+        settings = ViewSettings(layoutID, flags=ViewFlags.VIEW, model=AwardsViewModel(), args=args, kwargs=kwargs)
+        self.__conversionResult = kwargs.get('conversionResults')
+        self.__tooltipData = {}
+        super(ConversionAwardsView, self).__init__(settings)
+
+    def createToolTipContent(self, event, contentID):
+        if contentID == R.views.lobby.crew.tooltips.ConversionTooltip():
+            tooltipId = event.getArgument('tooltipId')
+            books = self.__tooltipData.get(tooltipId, [])
+            return ConversionTooltip(books, title=R.strings.tooltips.conversion.received.header(), description=R.strings.tooltips.conversion.received.body())
+        return super(ConversionAwardsView, self).createToolTipContent(event, contentID)
+
+    @property
+    def viewModel(self):
+        return super(ConversionAwardsView, self).getViewModel()
+
+    def _onLoading(self, *args, **kwargs):
+        super(ConversionAwardsView, self)._onLoading(*args, **kwargs)
+        locales = R.strings.crew.conversionAwards
+        with self.viewModel.transaction() as tx:
+            tx.setBackground(R.images.gui.maps.icons.windows.background())
+            tx.setTitle(locales.title())
+            tx.setUnderTitle(locales.underTitle())
+            tx.setBottomNote(locales.buttonNote())
+            tx.setDefaultButtonTitle(locales.button.submit())
+            packCompensationData(self.__conversionResult, tx.mainRewards, self.__tooltipData)
+
+    def _onLoaded(self, *args, **kwargs):
+        super(ConversionAwardsView, self)._onLoaded(*args, **kwargs)
+        SoundGroups.g_instance.playSound2D(SOUNDS.CONVERSION_AWARD)
+
+    def _getEvents(self):
+        return (
+         (
+          self.viewModel.onClose, self._onClose),
+         (
+          g_playerEvents.onDisconnected, self.__onDisconnected))
+
+    def _onClose(self, *_):
+        self.destroyWindow()
+
+    def __onDisconnected(self):
+        self._onClose()
+
+
+class ConversionAwardsWindow(WindowImpl):
+
+    def __init__(self, **kwargs):
+        super(ConversionAwardsWindow, self).__init__(WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, layer=WindowLayer.TOP_WINDOW, content=ConversionAwardsView(**kwargs))

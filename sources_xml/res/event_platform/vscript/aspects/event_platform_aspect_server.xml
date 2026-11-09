@@ -1,0 +1,16 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/event_platform/vscript/aspects/event_platform_aspect_server.xml -->
+<root>
+	<name>SERVER</name>
+	<app_name>cellApp</app_name>
+	<mask>2</mask>
+	<meta>
+		<display>Server</display>
+		<icon>:/vse/aspects/server</icon>
+	</meta>
+	<python>
+		<registrar>
+			<module>event_platform_cell.visual_script_cell</module>
+			<name>g_blockRegistrar</name>
+		</registrar>
+	</python>
+</root>

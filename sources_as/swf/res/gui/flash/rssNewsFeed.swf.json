@@ -1,0 +1,140 @@
+{
+ "source": "sources/res/gui/flash/rssNewsFeed.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 2753,
+ "actual_length": 2753,
+ "frame_size_px": [
+  0.0,
+  177.0,
+  0.0,
+  154.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 5,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 4,
+  "DefineShape3": 1,
+  "DefineEditText": 1,
+  "DefineSprite": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 1,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 6,
+   "class": "RssNewsFeedRendererUI"
+  },
+  {
+   "id": 4,
+   "class": "RssNewsFeedUI"
+  },
+  {
+   "id": 3,
+   "class": "rssContainer"
+  },
+  {
+   "id": 2,
+   "class": "rssBg"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2204,
+   "classes": 5,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 551
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rssBg",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rssContainer",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RssNewsFeedRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.components.RssNewsFeedRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RssNewsFeedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.impl.components.RssNewsFeed",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,251 @@
+{
+ "source": "sources/res/gui/flash/consumablesPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 237766,
+ "actual_length": 237766,
+ "frame_size_px": [
+  0.0,
+  806.0,
+  0.0,
+  58.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 36,
+  "ShowFrame": 1012,
+  "DefineShape": 122,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 1058,
+  "RemoveObject2": 39,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 28,
+  "DefineEditText": 4,
+  "DefineSprite": 35,
+  "FrameLabel": 64,
+  "FileAttributes": 1,
+  "PlaceObject3": 46,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 28,
+  "shapes": 125,
+  "sprites": 35,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 15,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleRoyaleConsumableButton.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 192,
+   "class": "ConsumablesPanelUI"
+  },
+  {
+   "id": 191,
+   "class": "EquipmentButtonUI"
+  },
+  {
+   "id": 188,
+   "class": "consumablesPanel_fla.cooldownCounterBgUI_16"
+  },
+  {
+   "id": 182,
+   "class": "consumablesPanel_fla.cooldownMc_15"
+  },
+  {
+   "id": 132,
+   "class": "consumablesPanel_fla.greenGlowMc_13"
+  },
+  {
+   "id": 128,
+   "class": "MapsTrainingShellButtonUI"
+  },
+  {
+   "id": 125,
+   "class": "OptionalDeviceButtonUI"
+  },
+  {
+   "id": 118,
+   "class": "GlowUI"
+  },
+  {
+   "id": 91,
+   "class": "ShellButtonBattleUI"
+  },
+  {
+   "id": 30,
+   "class": "consumablesPanel_fla.spgShotResultIndicator_31"
+  },
+  {
+   "id": 25,
+   "class": "consumablesPanel_fla.shellModeIndicator_30"
+  },
+  {
+   "id": 12,
+   "class": "consumablesPanel_fla.ShellButton_select_28"
+  },
+  {
+   "id": 8,
+   "class": "consumablesPanel_fla.ShellButton_next_25"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 7481,
+   "classes": 15,
+   "methods": 121,
+   "bodies": 121,
+   "code_bytes": 2264
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Circular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.ShellButton_next_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.ShellButton_select_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.cooldownCounterBgUI_16",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.cooldownMc_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.greenGlowMc_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.shellModeIndicator_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.spgShotResultIndicator_31",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GlowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.consumablesPanel.BattleEquipmentButtonGlow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EquipmentButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.consumablesPanel.BattleEquipmentButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OptionalDeviceButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.consumablesPanel.BattleOptionalDeviceButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShellButtonBattleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.consumablesPanel.BattleShellButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ConsumablesPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.consumablesPanel.ConsumablesPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsTrainingShellButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.consumablesPanel.MapsTrainingBattleShellButton",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

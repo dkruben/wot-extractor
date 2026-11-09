@@ -1,0 +1,519 @@
+{
+ "source": "sources/res/gui/flash/MinimapLobby.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 779440,
+ "actual_length": 779440,
+ "frame_size_px": [
+  0.0,
+  300.0,
+  0.0,
+  300.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 82,
+  "ShowFrame": 2809,
+  "DefineShape": 161,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 4667,
+  "RemoveObject2": 89,
+  "DefineBitsLossless2": 157,
+  "DefineEditText": 1,
+  "DefineSprite": 81,
+  "FrameLabel": 159,
+  "FileAttributes": 1,
+  "PlaceObject3": 38,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 158,
+  "shapes": 162,
+  "sprites": 81,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 39,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 402,
+   "class": "MinimapClick"
+  },
+  {
+   "id": 398,
+   "class": "MinimapEntry"
+  },
+  {
+   "id": 397,
+   "class": "minimapLobby_fla.poiMc_71"
+  },
+  {
+   "id": 388,
+   "class": "minimapLobby_fla.backmarker_68"
+  },
+  {
+   "id": 387,
+   "class": "minimapLobby_fla.TutorialTargetBackMarker_69"
+  },
+  {
+   "id": 310,
+   "class": "minimapLobby_fla.MinimapCellFlash_53"
+  },
+  {
+   "id": 301,
+   "class": "minimapLobby_fla.marker_enemy_proto_mini_47"
+  },
+  {
+   "id": 300,
+   "class": "minimapLobby_fla.Vehicle_purple_ico_mini_light_50"
+  },
+  {
+   "id": 299,
+   "class": "minimapLobby_fla.Vehicle_purple_ico_mini_51"
+  },
+  {
+   "id": 278,
+   "class": "minimapLobby_fla.Vehicle_red_ico_mini_light_48"
+  },
+  {
+   "id": 277,
+   "class": "minimapLobby_fla.Vehicle_red_ico_mini_49"
+  },
+  {
+   "id": 256,
+   "class": "minimapLobby_fla.marker_ally_proto_mini_36"
+  },
+  {
+   "id": 254,
+   "class": "minimapLobby_fla.DeadAnimationMC_45"
+  },
+  {
+   "id": 253,
+   "class": "minimapLobby_fla.dead_markers_46"
+  },
+  {
+   "id": 180,
+   "class": "minimapLobby_fla.Vehicle_yellow_ico_mini_light_43"
+  },
+  {
+   "id": 179,
+   "class": "minimapLobby_fla.Vehicle_yellow_ico_mini_44"
+  },
+  {
+   "id": 158,
+   "class": "minimapLobby_fla.Vehicle_blue_ico_mini_light_41"
+  },
+  {
+   "id": 157,
+   "class": "minimapLobby_fla.Vehicle_blue_ico_mini_42"
+  },
+  {
+   "id": 136,
+   "class": "minimapLobby_fla.Vehicle_gold_ico_mini_light_39"
+  },
+  {
+   "id": 135,
+   "class": "minimapLobby_fla.Vehicle_gold_ico_mini_40"
+  },
+  {
+   "id": 114,
+   "class": "minimapLobby_fla.Vehicle_green_ico_mini_light_37"
+  },
+  {
+   "id": 113,
+   "class": "minimapLobby_fla.Vehicle_green_ico_mini_38"
+  },
+  {
+   "id": 92,
+   "class": "minimapLobby_fla.markerMark_5"
+  },
+  {
+   "id": 91,
+   "class": "minimapLobby_fla.turn_back_34"
+  },
+  {
+   "id": 87,
+   "class": "minimapLobby_fla.Help_me_ex_32"
+  },
+  {
+   "id": 83,
+   "class": "minimapLobby_fla.Stop_30"
+  },
+  {
+   "id": 79,
+   "class": "minimapLobby_fla.Positive_28"
+  },
+  {
+   "id": 75,
+   "class": "minimapLobby_fla.Negative_26"
+  },
+  {
+   "id": 71,
+   "class": "minimapLobby_fla.Reloading_23"
+  },
+  {
+   "id": 66,
+   "class": "minimapLobby_fla.AttackSenderSPG_21"
+  },
+  {
+   "id": 62,
+   "class": "minimapLobby_fla.AttackSender_19"
+  },
+  {
+   "id": 58,
+   "class": "minimapLobby_fla.AttackSPG_15"
+  },
+  {
+   "id": 48,
+   "class": "minimapLobby_fla.Attack_13"
+  },
+  {
+   "id": 44,
+   "class": "minimapLobby_fla.follow_me_11"
+  },
+  {
+   "id": 40,
+   "class": "minimapLobby_fla.Help_me_9"
+  },
+  {
+   "id": 36,
+   "class": "minimapLobby_fla.FirstTarget_6"
+  },
+  {
+   "id": 31,
+   "class": "minimapLobby_fla.playerIcon_4"
+  },
+  {
+   "id": 24,
+   "class": "LobbyMinimap"
+  },
+  {
+   "id": 13,
+   "class": "LobbyMinimapGrid"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 13708,
+   "classes": 39,
+   "methods": 281,
+   "bodies": 281,
+   "code_bytes": 4382
+  }
+ ],
+ "classes": [
+  {
+   "name": "MinimapClick",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.AttackSPG_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.AttackSenderSPG_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.AttackSender_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Attack_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.DeadAnimationMC_45",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.FirstTarget_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Help_me_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Help_me_ex_32",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.MinimapCellFlash_53",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Negative_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Positive_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Reloading_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Stop_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.TutorialTargetBackMarker_69",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_blue_ico_mini_42",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_blue_ico_mini_light_41",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_gold_ico_mini_40",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_gold_ico_mini_light_39",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_green_ico_mini_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_green_ico_mini_light_37",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_purple_ico_mini_51",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_purple_ico_mini_light_50",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_red_ico_mini_49",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_red_ico_mini_light_48",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_yellow_ico_mini_44",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.Vehicle_yellow_ico_mini_light_43",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.backmarker_68",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.dead_markers_46",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.follow_me_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.markerMark_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.marker_ally_proto_mini_36",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.marker_enemy_proto_mini_47",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.playerIcon_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.poiMc_71",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapLobby_fla.turn_back_34",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MinimapEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.MinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LobbyMinimapGrid",
+   "kind": "class",
+   "extends": "net.wg.gui.components.minimap.MinimapGrid",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LobbyMinimap",
+   "kind": "class",
+   "extends": "net.wg.gui.components.minimap.MinimapPresentation",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

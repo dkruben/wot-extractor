@@ -1,0 +1,118 @@
+{
+ "source": "sources/res/gui/flash/rankedFullStats.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 26982,
+ "actual_length": 26982,
+ "frame_size_px": [
+  0.0,
+  1420.0,
+  0.0,
+  740.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 5,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 24,
+  "DefineShape3": 2,
+  "DefineEditText": 62,
+  "DefineSprite": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 373,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 62,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 2,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 62,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 68,
+   "class": "RankedFullStatsUI"
+  },
+  {
+   "id": 67,
+   "class": "FullStatsTableUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1199,
+   "classes": 3,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 273
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FullStatsTableUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.ranked.stats.components.fullStats.FullStatsTable",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedFullStatsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.ranked.stats.components.fullStats.FullStats",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

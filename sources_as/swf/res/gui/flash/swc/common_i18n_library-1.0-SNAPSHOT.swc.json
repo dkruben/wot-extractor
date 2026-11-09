@@ -1,0 +1,999 @@
+{
+ "source": "sources/res/gui/flash/swc/common_i18n_library-1.0-SNAPSHOT.swc",
+ "container_member": "library.swf",
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 11,
+ "declared_length": 8544334,
+ "actual_length": 8544334,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  375.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": true,
+ "tags": {
+  "End": 1,
+  "ShowFrame": 1,
+  "SetBackgroundColor": 1,
+  "ProductInfo": 1,
+  "ScriptLimits": 1,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "Metadata": 1,
+  "DoABC2": 58
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 0,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 58,
+  "abc_blocks": 58,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "_3192fc296cc59d9a5db14299e6f64deae8d61404ce10f6bc9442805a9c22a91a_flash_display_Sprite"
+  }
+ ],
+ "abc": [
+  {
+   "name": "VEHICLE_PREVIEW",
+   "lazy": true,
+   "size": 13948,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 887
+  },
+  {
+   "name": "SETTINGS",
+   "lazy": true,
+   "size": 77020,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 8405
+  },
+  {
+   "name": "VEH_COMPARE",
+   "lazy": true,
+   "size": 17622,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 1221
+  },
+  {
+   "name": "STORAGE",
+   "lazy": true,
+   "size": 9729,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 785
+  },
+  {
+   "name": "NATIONS",
+   "lazy": true,
+   "size": 1713,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 389
+  },
+  {
+   "name": "BADGE",
+   "lazy": true,
+   "size": 30102,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 4559
+  },
+  {
+   "name": "READABLE_KEY_NAMES",
+   "lazy": true,
+   "size": 11470,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 1400
+  },
+  {
+   "name": "ACHIEVEMENTS",
+   "lazy": true,
+   "size": 140932,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 24102
+  },
+  {
+   "name": "INGAME_GUI",
+   "lazy": true,
+   "size": 119973,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 9527
+  },
+  {
+   "name": "SYSTEM_MESSAGES",
+   "lazy": true,
+   "size": 159242,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 12929
+  },
+  {
+   "name": "RES_SHOP",
+   "lazy": true,
+   "size": 486779,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 57381
+  },
+  {
+   "name": "CONTROLS",
+   "lazy": true,
+   "size": 2308,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 226
+  },
+  {
+   "name": "RES_LOGIN",
+   "lazy": true,
+   "size": 349,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 46
+  },
+  {
+   "name": "STORE",
+   "lazy": true,
+   "size": 2422,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 207
+  },
+  {
+   "name": "PERSONAL_RESERVES",
+   "lazy": true,
+   "size": 4704,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 340
+  },
+  {
+   "name": "DEATH_CAM",
+   "lazy": true,
+   "size": 5837,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 421
+  },
+  {
+   "name": "MESSENGER",
+   "lazy": true,
+   "size": 168082,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 11485
+  },
+  {
+   "name": "BATTLE_MATTERS",
+   "lazy": true,
+   "size": 8623,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 631
+  },
+  {
+   "name": "PERSONAL_MISSIONS",
+   "lazy": true,
+   "size": 27760,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 2389
+  },
+  {
+   "name": "RES_COMMON",
+   "lazy": true,
+   "size": 3677,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 250
+  },
+  {
+   "name": "TOOLTIPS",
+   "lazy": true,
+   "size": 511038,
+   "classes": 1,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 43092
+  },
+  {
+   "name": "QUESTS",
+   "lazy": true,
+   "size": 177008,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 15280
+  },
+  {
+   "name": "CREW_BOOKS",
+   "lazy": true,
+   "size": 5059,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 400
+  },
+  {
+   "name": "EPIC_BATTLE",
+   "lazy": true,
+   "size": 32264,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 2723
+  },
+  {
+   "name": "INGAME_HELP",
+   "lazy": true,
+   "size": 24146,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 1679
+  },
+  {
+   "name": "RES_ICONS",
+   "lazy": true,
+   "size": 4217367,
+   "classes": 1,
+   "methods": 48,
+   "bodies": 48,
+   "code_bytes": 339162
+  },
+  {
+   "name": "ITEM_TYPES",
+   "lazy": true,
+   "size": 13586,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 1324
+  },
+  {
+   "name": "PREBATTLE",
+   "lazy": true,
+   "size": 9454,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 792
+  },
+  {
+   "name": "RANKED_BATTLES",
+   "lazy": true,
+   "size": 57075,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 4361
+  },
+  {
+   "name": "_3192fc296cc59d9a5db14299e6f64deae8d61404ce10f6bc9442805a9c22a91a_flash_display_Sprite",
+   "lazy": true,
+   "size": 601,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 88
+  },
+  {
+   "name": "FORTIFICATIONS",
+   "lazy": true,
+   "size": 12151,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 870
+  },
+  {
+   "name": "COMMON",
+   "lazy": true,
+   "size": 2459,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 280
+  },
+  {
+   "name": "CHAT",
+   "lazy": true,
+   "size": 2389,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 232
+  },
+  {
+   "name": "BATTLE_ROYALE",
+   "lazy": true,
+   "size": 31918,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 2480
+  },
+  {
+   "name": "MAPS_TRAINING",
+   "lazy": true,
+   "size": 59744,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 5378
+  },
+  {
+   "name": "CommonI18NClassManagerMeta",
+   "lazy": true,
+   "size": 1689,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 476
+  },
+  {
+   "name": "CLANS",
+   "lazy": true,
+   "size": 48876,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 3614
+  },
+  {
+   "name": "CREW_PERKS",
+   "lazy": true,
+   "size": 32967,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 3194
+  },
+  {
+   "name": "EVENT_BOARDS",
+   "lazy": true,
+   "size": 24714,
+   "classes": 1,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 3150
+  },
+  {
+   "name": "CYBERSPORT",
+   "lazy": true,
+   "size": 23292,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 1778
+  },
+  {
+   "name": "WAITING",
+   "lazy": true,
+   "size": 9866,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 1130
+  },
+  {
+   "name": "DIALOGS",
+   "lazy": true,
+   "size": 113093,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 16327
+  },
+  {
+   "name": "MENU",
+   "lazy": true,
+   "size": 239899,
+   "classes": 1,
+   "methods": 24,
+   "bodies": 24,
+   "code_bytes": 26492
+  },
+  {
+   "name": "PLATOON",
+   "lazy": true,
+   "size": 10834,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 778
+  },
+  {
+   "name": "BATTLE_RESULTS",
+   "lazy": true,
+   "size": 53916,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 4568
+  },
+  {
+   "name": "EVENT",
+   "lazy": true,
+   "size": 481,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 52
+  },
+  {
+   "name": "PO_FILES",
+   "lazy": true,
+   "size": 11050,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 1967
+  },
+  {
+   "name": "CREW_OPERATIONS",
+   "lazy": true,
+   "size": 3942,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 274
+  },
+  {
+   "name": "TANK_CAROUSEL_FILTER",
+   "lazy": true,
+   "size": 7251,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 547
+  },
+  {
+   "name": "LOBBY_HELP",
+   "lazy": true,
+   "size": 2138,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 226
+  },
+  {
+   "name": "VEH_POST_PROGRESSION",
+   "lazy": true,
+   "size": 26407,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 1427
+  },
+  {
+   "name": "VEHICLE_CUSTOMIZATION",
+   "lazy": true,
+   "size": 1357467,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 102567
+  },
+  {
+   "name": "PROFILE",
+   "lazy": true,
+   "size": 71252,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 5189
+  },
+  {
+   "name": "BATTLE_HINTS",
+   "lazy": true,
+   "size": 3260,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 286
+  },
+  {
+   "name": "INVITES",
+   "lazy": true,
+   "size": 14670,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 1067
+  },
+  {
+   "name": "DEVELOPMENT",
+   "lazy": true,
+   "size": 14420,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 1112
+  },
+  {
+   "name": "DEMOUNT_KIT",
+   "lazy": true,
+   "size": 3102,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 214
+  },
+  {
+   "name": "CREW_SKINS",
+   "lazy": true,
+   "size": 19399,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 2273
+  }
+ ],
+ "classes": [
+  {
+   "name": "VEHICLE_PREVIEW",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SETTINGS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 1
+  },
+  {
+   "name": "VEH_COMPARE",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 2
+  },
+  {
+   "name": "STORAGE",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 3
+  },
+  {
+   "name": "NATIONS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 4
+  },
+  {
+   "name": "BADGE",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 5
+  },
+  {
+   "name": "READABLE_KEY_NAMES",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 6
+  },
+  {
+   "name": "ACHIEVEMENTS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 7
+  },
+  {
+   "name": "INGAME_GUI",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 8
+  },
+  {
+   "name": "SYSTEM_MESSAGES",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 9
+  },
+  {
+   "name": "RES_SHOP",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 10
+  },
+  {
+   "name": "CONTROLS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 11
+  },
+  {
+   "name": "RES_LOGIN",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 12
+  },
+  {
+   "name": "STORE",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 13
+  },
+  {
+   "name": "PERSONAL_RESERVES",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 14
+  },
+  {
+   "name": "DEATH_CAM",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 15
+  },
+  {
+   "name": "MESSENGER",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 16
+  },
+  {
+   "name": "BATTLE_MATTERS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 17
+  },
+  {
+   "name": "PERSONAL_MISSIONS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 18
+  },
+  {
+   "name": "RES_COMMON",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 19
+  },
+  {
+   "name": "TOOLTIPS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 20
+  },
+  {
+   "name": "QUESTS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 21
+  },
+  {
+   "name": "CREW_BOOKS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 22
+  },
+  {
+   "name": "EPIC_BATTLE",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 23
+  },
+  {
+   "name": "INGAME_HELP",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 24
+  },
+  {
+   "name": "RES_ICONS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 25
+  },
+  {
+   "name": "ITEM_TYPES",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 26
+  },
+  {
+   "name": "PREBATTLE",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 27
+  },
+  {
+   "name": "RANKED_BATTLES",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 28
+  },
+  {
+   "name": "_3192fc296cc59d9a5db14299e6f64deae8d61404ce10f6bc9442805a9c22a91a_flash_display_Sprite",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 29
+  },
+  {
+   "name": "FORTIFICATIONS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 30
+  },
+  {
+   "name": "COMMON",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 31
+  },
+  {
+   "name": "CHAT",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 32
+  },
+  {
+   "name": "BATTLE_ROYALE",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 33
+  },
+  {
+   "name": "MAPS_TRAINING",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 34
+  },
+  {
+   "name": "CommonI18NClassManagerMeta",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 35
+  },
+  {
+   "name": "CLANS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 36
+  },
+  {
+   "name": "CREW_PERKS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 37
+  },
+  {
+   "name": "EVENT_BOARDS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 38
+  },
+  {
+   "name": "CYBERSPORT",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 39
+  },
+  {
+   "name": "WAITING",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 40
+  },
+  {
+   "name": "DIALOGS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 41
+  },
+  {
+   "name": "MENU",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 42
+  },
+  {
+   "name": "PLATOON",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 43
+  },
+  {
+   "name": "BATTLE_RESULTS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 44
+  },
+  {
+   "name": "EVENT",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 45
+  },
+  {
+   "name": "PO_FILES",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 46
+  },
+  {
+   "name": "CREW_OPERATIONS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 47
+  },
+  {
+   "name": "TANK_CAROUSEL_FILTER",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 48
+  },
+  {
+   "name": "LOBBY_HELP",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 49
+  },
+  {
+   "name": "VEH_POST_PROGRESSION",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 50
+  },
+  {
+   "name": "VEHICLE_CUSTOMIZATION",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 51
+  },
+  {
+   "name": "PROFILE",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 52
+  },
+  {
+   "name": "BATTLE_HINTS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 53
+  },
+  {
+   "name": "INVITES",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 54
+  },
+  {
+   "name": "DEVELOPMENT",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 55
+  },
+  {
+   "name": "DEMOUNT_KIT",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 56
+  },
+  {
+   "name": "CREW_SKINS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 57
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ },
+ "metadata": "<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'><rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1'><dc:format>application/x-shockwave-flash</dc:format><dc:title>swc common_i18n</dc:title><dc:date>10/29/26 9:04 PM</dc:date></rdf:Description></rdf:RDF>",
+ "product_info": {
+  "product": 3,
+  "edition": 6,
+  "version": "4.5",
+  "build": 21328
+ }
+}

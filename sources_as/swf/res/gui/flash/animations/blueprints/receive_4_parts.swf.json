@@ -1,0 +1,64 @@
+{
+ "source": "sources/res/gui/flash/animations/blueprints/receive_4_parts.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 22959,
+ "actual_length": 22959,
+ "frame_size_px": [
+  0.0,
+  1920.0,
+  0.0,
+  1080.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 56,
+ "background": "#999999",
+ "actionscript": "none",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 62,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 348,
+  "DefineShape3": 3,
+  "DefineBitsJPEG3": 1,
+  "DefineSprite": 6,
+  "FrameLabel": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 1,
+  "shapes": 6,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 0,
+  "abc_blocks": 0,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [],
+ "abc": [],
+ "classes": [],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [
+  "start"
+ ],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

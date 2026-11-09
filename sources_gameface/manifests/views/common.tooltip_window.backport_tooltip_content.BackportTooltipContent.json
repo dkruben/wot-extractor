@@ -1,0 +1,245 @@
+{
+  "rid": "R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "BackportTooltipContent",
+  "dir": "gui/unbound/views/common/tooltip_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "backport_tooltip_content.unbound",
+      "effective": "res/gui/unbound/views/common/tooltip_window/backport_tooltip_content.unbound",
+      "all": [
+        "res/gui/unbound/views/common/tooltip_window/backport_tooltip_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "confidence": "provavel",
+    "evidence": [
+      "30 referencia(s) R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent no Python",
+      "ViewModel CommonBattleQuestProgressModel (model=... no Python da view): 0/8 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/battle_result_view/battle_result_view.py",
+        120
+      ],
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/presenters/loadout_panel_presenter/commander_presenter.py",
+        33
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/battle_results/missions_progress/comp7_customization_progress.py",
+        51
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/battle_results/missions_progress/comp7_weekly_missions_progress.py",
+        52
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/dialogs/purchase_dialog.py",
+        60
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/meta_root_view.py",
+        86
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/progression_page.py",
+        109
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/rank_rewards_page.py",
+        78
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/shop_page.py",
+        147
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/weekly_quests_page.py",
+        59
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/yearly_rewards_page.py",
+        90
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/rewards_screen.py",
+        77
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/rewards_screen.py",
+        355
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/tank_setup/ammunition_panel.py",
+        19
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/whats_new_view.py",
+        60
+      ],
+      [
+        "sources/res/comp7_core/scripts/client/comp7_core/gui/impl/lobby/intro_screen.py",
+        59
+      ],
+      [
+        "sources/res/comp7_core/scripts/client/comp7_core/gui/impl/lobby/no_vehicles_screen.py",
+        57
+      ],
+      [
+        "sources/res/comp7_core/scripts/client/comp7_core/gui/impl/lobby/role_skill_slot_presenter.py",
+        36
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/missions_progress/comp7_light_progression_quests_progress.py",
+        53
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/progression_view.py",
+        49
+      ],
+      [
+        "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/fort_rush_progression_view.py",
+        28
+      ],
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/presenters/sub_presenters/battle_achievements.py",
+        33
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/award_congrats_view.py",
+        18
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/battle_result_view.py",
+        42
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/bundle_view.py",
+        41
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/decrypt_view.py",
+        33
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/gsw_cards/quests_card_presenter.py",
+        61
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/king_reward_congrats_view.py",
+        27
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/reward_path_view.py",
+        38
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/reward_selection_view.py",
+        25
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/battle_result_view/battle_result_view.py",
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/presenters/loadout_panel_presenter/commander_presenter.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/battle_results/missions_progress/comp7_customization_progress.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/battle_results/missions_progress/comp7_weekly_missions_progress.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/dialogs/purchase_dialog.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/meta_root_view.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/progression_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/rank_rewards_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/shop_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/weekly_quests_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/yearly_rewards_page.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/rewards_screen.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/tank_setup/ammunition_panel.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/whats_new_view.py",
+      "sources/res/comp7_core/scripts/client/comp7_core/gui/impl/lobby/intro_screen.py",
+      "sources/res/comp7_core/scripts/client/comp7_core/gui/impl/lobby/no_vehicles_screen.py",
+      "sources/res/comp7_core/scripts/client/comp7_core/gui/impl/lobby/role_skill_slot_presenter.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/missions_progress/comp7_light_progression_quests_progress.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/progression_view.py",
+      "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/fort_rush_progression_view.py",
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/presenters/sub_presenters/battle_achievements.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/award_congrats_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/battle_result_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/bundle_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/decrypt_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/gsw_cards/quests_card_presenter.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/king_reward_congrats_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/reward_path_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/reward_selection_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/progression/common_battle_quest_progress_model.py",
+      "class": "CommonBattleQuestProgressModel",
+      "chain": [
+        "CommonBattleQuestProgressModel"
+      ],
+      "properties": [
+        [
+          "icon",
+          "String"
+        ],
+        [
+          "guiDisabled",
+          "Bool"
+        ],
+        [
+          "hidden",
+          "Bool"
+        ],
+        [
+          "available",
+          "Bool"
+        ],
+        [
+          "currentCompletionCount",
+          "Number"
+        ],
+        [
+          "maxCompletionCount",
+          "Number"
+        ],
+        [
+          "defaultMaxCompletionCount",
+          "Number"
+        ],
+        [
+          "navigationEnabled",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 8,
+        "missing": [
+          "available",
+          "currentCompletionCount",
+          "defaultMaxCompletionCount",
+          "guiDisabled",
+          "hidden",
+          "icon",
+          "maxCompletionCount",
+          "navigationEnabled"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/progression/common_battle_quests_progress_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/tank_setup/common/role_skill_slot_model.py"
+      ]
+    }
+  }
+}

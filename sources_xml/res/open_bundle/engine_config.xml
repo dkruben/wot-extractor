@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/open_bundle/engine_config.xml -->
+<root>
+	<soundMgr>
+		<WWISE_adv_profile>
+			<SFX_soundbanks_hangar>
+				<bank>
+					<name>open_bundle.bnk</name>
+					<extension>open_bundle</extension>
+				</bank>
+			</SFX_soundbanks_hangar>
+		</WWISE_adv_profile>
+	</soundMgr>
+</root>

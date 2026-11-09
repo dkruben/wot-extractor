@@ -1,0 +1,93 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/shared/gui_items/factories.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import logging as logging
+import typing as typing
+from debug_utils import LOG_WARNING as LOG_WARNING
+from items import vehicles as vehicles, EQUIPMENT_TYPES as EQUIPMENT_TYPES, getTypeOfCompactDescr as getTypeOfCompactDescr
+from items.components.c11n_constants import CustomizationType as CustomizationType, DecalType as DecalType
+from gui.shared.gui_items import GUI_ITEM_TYPE as GUI_ITEM_TYPE
+from gui.shared.gui_items.customization.c11n_items import Customization as Customization, Paint as Paint, Camouflage as Camouflage, Modification as Modification, Insignia as Insignia, Decal as Decal, Emblem as Emblem, Inscription as Inscription, Style as Style, ProjectionDecal as ProjectionDecal, PersonalNumber as PersonalNumber, Sequence as Sequence, Attachment as Attachment, StatTracker as StatTracker
+from vehicle_outfit.outfit import Outfit as Outfit
+from gui.shared.gui_items.dossier import TankmanDossier as TankmanDossier, AccountDossier as AccountDossier, VehicleDossier as VehicleDossier
+from gui.shared.gui_items.vehicle_modules import Shell as Shell, VehicleGun as VehicleGun, VehicleChassis as VehicleChassis, VehicleEngine as VehicleEngine, VehicleRadio as VehicleRadio, VehicleTurret as VehicleTurret, VehicleFuelTank as VehicleFuelTank
+from gui.shared.gui_items.artefacts import Equipment as Equipment, BattleBooster as BattleBooster, BattleAbility as BattleAbility, OptionalDevice as OptionalDevice
+from gui.shared.gui_items.Tankman import Tankman as Tankman
+from gui.shared.gui_items.Vehicle import Vehicle as Vehicle
+import gui.shared.gui_items.badge as badges
+from gui.shared.gui_items.loot_box import LootBox as LootBox
+from gui.shared.gui_items.crew_skin import CrewSkin as CrewSkin
+from gui.shared.gui_items.crew_book import CrewBook as CrewBook
+from gui.shared.gui_items.vehicle_mechanics.module_mechanic_item import ModuleMechanicItem as ModuleMechanicItem, GunMechanicItem as GunMechanicItem, ChassisMechanicItem as ChassisMechanicItem, EngineMechanicItem as EngineMechanicItem
+from gui.shared.gui_items.vehicle_mechanics.vehicle_mechanic_item import VehicleMechanicItem as VehicleMechanicItem
+from gui.shared.gui_items.vehicle_mechanics.shell_mechanic_item import ShellMechanicItem as ShellMechanicItem
+from gui.veh_post_progression.models.progression import PostProgressionItem as PostProgressionItem
+from skeletons.gui.shared.gui_items import IGuiItemsFactory as IGuiItemsFactory
+from items.vehicle_mechanics_types import VehicleMechanicKey as VehicleMechanicKey
+from items.vehicles import VehicleType as VehicleType
+from post_progression_common import VehicleState as VehicleState
+_logger: Any
+_NONE_GUI_ITEM_TYPE = 0
+_CUSTOMIZATION_TYPE_TO_CLS: dict
+_DECAL_TYPE_TO_CLS: dict
+_ITEM_TYPES_MAPPING: dict
+
+class GuiItemFactory(IGuiItemsFactory):
+    def clear(self):
+        ...
+    def createGuiItemsOfSameType(self, itemTypeIdx, compactDecrs, proxy, *args, **kwargs):
+        ...
+    def createGuiItem(self, itemTypeIdx, *args, **kwargs):
+        ...
+    def createGuiItemFromCompactDescr(self, compactDescr, *args, **kwargs):
+        ...
+    def createShell(self, intCompactDescr, count=0, proxy=None, isBoughtForCredits=False):
+        ...
+    def createEquipment(self, intCompactDescr, proxy=None, isBoughtForCredits=False):
+        ...
+    def createOptionalDevice(self, intCompactDescr, proxy=None):
+        ...
+    def createVehicleGun(self, intCompactDescr, proxy=None, descriptor=None):
+        ...
+    def createVehicleChassis(self, intCompactDescr, proxy=None, descriptor=None):
+        ...
+    def createVehicleTurret(self, intCompactDescr, proxy=None, descriptor=None):
+        ...
+    def createVehicleEngine(self, intCompactDescr, proxy=None, descriptor=None):
+        ...
+    def createVehicleRadio(self, intCompactDescr, proxy=None, descriptor=None):
+        ...
+    def createVehicleFuelTank(self, intCompactDescr, proxy=None, descriptor=None):
+        ...
+    def createVehicle(self, strCompactDescr=None, inventoryID=-1, typeCompDescr=None, proxy=None, extData=None, invData=None):
+        ...
+    def createTankman(self, strCompactDescr, inventoryID=-1, vehicle=None, dismissedAt=None, proxy=None, vehicleSlotIdx=-1, bonusSkillsLevels=None):
+        ...
+    def createTankmanDossier(self, tmanDescr, tankmanDossierDescr, extDossier, playerDBID=None, currentVehicleItem=None):
+        ...
+    def createAccountDossier(self, dossier, playerDBID=None, rated7x7Seasons=None):
+        ...
+    def createVehicleDossier(self, dossier, vehTypeCompDescr, playerDBID=None):
+        ...
+    def createBadge(self, descriptor, proxy=None, extraData=None, receivedBadges=None):
+        ...
+    def createLootBox(self, lootBoxID, lootBoxConfig, count):
+        ...
+    def getCustomizationCls(self, descriptor):
+        ...
+    def createCustomization(self, intCompactDescr, proxy=None):
+        ...
+    def createOutfit(self, strCompactDescr=None, component=None, vehicleCD=''):
+        ...
+    def createCrewSkin(self, intCompactDescr, proxy=None):
+        ...
+    def createCrewBook(self, intCompactDescr, proxy=None):
+        ...
+    def createVehPostProgression(self, vehIntCD, state, vehType):
+        ...
+    def createModuleMechanicItem(self, mechanic, itemType, **kwargs):
+        ...
+    def createVehicleMechanicItem(self, mechanic, vehIntCD):
+        ...

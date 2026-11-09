@@ -1,0 +1,131 @@
+{
+  "rid": "R.views.mono.battle_pass.tooltips.completed",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "completed",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tooltips/completed",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/completed/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/completed/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/battle_pass/tooltips/completed/bundle.js"
+    },
+    {
+      "name": "completed.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/completed/completed.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/completed/completed.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "completed.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/completed/completed.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/completed/completed.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/icon_text_block.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/icon_text_block.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/completed/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/completed/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/completed/completed.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/completed/completed.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.battle_pass.tooltips.completed",
+    "confidence": "provavel",
+    "evidence": [
+      "4 referencia(s) R.views.mono.battle_pass.tooltips.completed no Python",
+      "ViewModel BattlePassCompletedTooltipViewModel (model=... no Python da view): 1/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/battle_pass_entry_point_view.py",
+        155
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_completed_tooltip_view.py",
+        21
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/mode_selector/mode_selector_view.py",
+        61
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/hangar_widget/presenters/battle_pass_presenter.py",
+        88
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/battle_pass_entry_point_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_completed_tooltip_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/mode_selector/mode_selector_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/hangar_widget/presenters/battle_pass_presenter.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/tooltips/battle_pass_completed_tooltip_view_model.py",
+      "class": "BattlePassCompletedTooltipViewModel",
+      "chain": [
+        "BattlePassCompletedTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "isBattlePassPurchased",
+          "Bool"
+        ],
+        [
+          "notChosenRewardCount",
+          "Number"
+        ],
+        [
+          "isAvailableTankmen",
+          "Bool"
+        ],
+        [
+          "chapterType",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 4,
+        "missing": [
+          "isAvailableTankmen",
+          "isBattlePassPurchased",
+          "notChosenRewardCount"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/user_missions/widget/battle_pass_model.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,303 @@
+{
+ "source": "sources/res/gui/flash/guiLobbyBattleCarousels.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 103263,
+ "actual_length": 103263,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  440.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 27,
+  "ShowFrame": 236,
+  "DefineShape": 14,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 226,
+  "RemoveObject2": 7,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 10,
+  "DefineEditText": 6,
+  "DefineSprite": 26,
+  "FrameLabel": 30,
+  "FileAttributes": 1,
+  "PlaceObject3": 8,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 6,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 10,
+  "shapes": 16,
+  "sprites": 26,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 6,
+  "fonts": 0,
+  "classes": 19,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 58,
+   "class": "TankCarouselFiltersUI"
+  },
+  {
+   "id": 57,
+   "class": "TankFilterCounterUI"
+  },
+  {
+   "id": 54,
+   "class": "guiLobbyBattleCarousels_fla.glow_17"
+  },
+  {
+   "id": 47,
+   "class": "ToggleHotFilterRendererUI"
+  },
+  {
+   "id": 46,
+   "class": "ToggleHotFilterSmallRendererUI"
+  },
+  {
+   "id": 45,
+   "class": "ExtendedHorizontalScrollerUI"
+  },
+  {
+   "id": 44,
+   "class": "HorizontalScrollerUI"
+  },
+  {
+   "id": 41,
+   "class": "InfoLevelItemUI"
+  },
+  {
+   "id": 36,
+   "class": "InfoLevelBtn"
+  },
+  {
+   "id": 35,
+   "class": "guiLobbyBattleCarousels_fla.InfoLevelBtnHitArea_8"
+  },
+  {
+   "id": 34,
+   "class": "guiLobbyBattleCarousels_fla.btnFocusIndicator_6"
+  },
+  {
+   "id": 32,
+   "class": "guiLobbyBattleCarousels_fla.InfoLevelOverIcon_5"
+  },
+  {
+   "id": 27,
+   "class": "guiLobbyBattleCarousels_fla.InfoLevelIconNormal_4"
+  },
+  {
+   "id": 22,
+   "class": "guiLobbyBattleCarousels_fla.InfoLevelBtnBg_3"
+  },
+  {
+   "id": 18,
+   "class": "LevelLabelContainerUI"
+  },
+  {
+   "id": 17,
+   "class": "InfoLevelLabelSmallUI"
+  },
+  {
+   "id": 15,
+   "class": "InfoLevelLabelSmallExtUI"
+  },
+  {
+   "id": 13,
+   "class": "InfoLevelLabelExtUI"
+  },
+  {
+   "id": 11,
+   "class": "InfoLevelLabelUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 6317,
+   "classes": 19,
+   "methods": 80,
+   "bodies": 80,
+   "code_bytes": 2033
+  }
+ ],
+ "classes": [
+  {
+   "name": "InfoLevelLabelExtUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InfoLevelLabelSmallExtUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InfoLevelLabelSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InfoLevelLabelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiLobbyBattleCarousels_fla.InfoLevelBtnBg_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiLobbyBattleCarousels_fla.InfoLevelBtnHitArea_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiLobbyBattleCarousels_fla.InfoLevelIconNormal_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiLobbyBattleCarousels_fla.InfoLevelOverIcon_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiLobbyBattleCarousels_fla.btnFocusIndicator_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiLobbyBattleCarousels_fla.glow_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LevelLabelContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.controls.levelInfo.LevelLabelContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InfoLevelBtn",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.controls.levelInfo.LevelInfoButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InfoLevelItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.controls.levelInfo.LevelInfoItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankCarouselFiltersUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.filters.TankCarouselFilters",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankFilterCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.filters.FilterCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToggleHotFilterRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ToggleRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToggleHotFilterSmallRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ToggleRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HorizontalScrollerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.HorizontalScroller",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ExtendedHorizontalScrollerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.ExtendedHorizontalScroller",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

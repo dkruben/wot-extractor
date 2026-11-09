@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/item_defs/customization/priceGroups/projection_decals_nonASIA.xml -->
+<root>
+	<priceGroup>
+		<id>91</id>
+		<name>projection_decals 110g ASIA</name>
+		<tags>projection_decals ASIA</tags>
+		<price>110<gold />
+		</price>
+		<notInShop>True</notInShop>
+	</priceGroup>
+</root>

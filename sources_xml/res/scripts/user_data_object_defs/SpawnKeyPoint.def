@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/user_data_object_defs/SpawnKeyPoint.def -->
+<root>
+	<Domain>CELL</Domain>
+	<NonChunk>True</NonChunk>
+	<Properties>
+		<radius>
+			<Type>FLOAT32</Type>
+			<Editable>true</Editable>
+			<MinValue>0</MinValue>
+			<MaxValue>1000</MaxValue>
+			<Default>15</Default>
+		</radius>
+	</Properties>
+</root>

@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/scripts/component_defs/BunkerLogicComponent.def -->
+<root>
+	<Properties>
+		<vehicleIDs>
+			<Type>ARRAY<of>INT32</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehicleIDs>
+	</Properties>
+	<ClientMethods>
+		<bunkerDestroyed />
+	</ClientMethods>
+	<DefaultKeyName>bunkerLogicComponent</DefaultKeyName>
+</root>

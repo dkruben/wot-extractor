@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/vscript/events/artilleryStrike.xml -->
+<root>
+	<name>artilleryStrike</name>
+	<isDevelopment>false</isDevelopment>
+	<senderAspects>SERVER</senderAspects>
+	<receiverAspects>CLIENT</receiverAspects>
+	<param>
+		<name>avoideType</name>
+		<typecode>StringT</typecode>
+	</param>
+</root>

@@ -1,0 +1,121 @@
+{
+  "rid": "R.views.lobby.customization.progression_styles.StageSwitcher",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "StageSwitcher",
+  "dir": "gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher",
+  "feature": null,
+  "files": [
+    {
+      "name": "StageSwitcher.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher/StageSwitcher.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher/StageSwitcher.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "StageSwitcher.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher/StageSwitcher.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher/StageSwitcher.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "StageSwitcher.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher/StageSwitcher.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher/StageSwitcher.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher/StageSwitcher.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/customization/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/customization/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher/StageSwitcher.css",
+      "key": "res/gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher/StageSwitcher.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher/StageSwitcher.js",
+      "key": "res/gui/gameface/_dist/production/lobby/customization/progression_styles/StageSwitcher/StageSwitcher.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.customization.progression_styles.StageSwitcher",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.customization.progression_styles.StageSwitcher no Python",
+      "ViewModel StageSwitcherModel (model=... no Python da view): 7/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/customization/progression_styles/stage_switcher.py",
+        32
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/customization/progression_styles/stage_switcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/customization/progression_styles/stage_switcher_model.py",
+      "class": "StageSwitcherModel",
+      "chain": [
+        "StageSwitcherModel"
+      ],
+      "properties": [
+        [
+          "currentLevel",
+          "Number"
+        ],
+        [
+          "selectedLevel",
+          "Number"
+        ],
+        [
+          "numberOfBullets",
+          "Number"
+        ],
+        [
+          "isBulletsBeforeCurrentDisabled",
+          "Bool"
+        ],
+        [
+          "switcherType",
+          "Number"
+        ],
+        [
+          "styleID",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onChange"
+      ],
+      "coverage": {
+        "found": 7,
+        "total": 7,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

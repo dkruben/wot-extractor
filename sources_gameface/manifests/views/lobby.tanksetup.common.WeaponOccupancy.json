@@ -1,0 +1,99 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.WeaponOccupancy",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "WeaponOccupancy",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy",
+  "feature": null,
+  "files": [
+    {
+      "name": "WeaponOccupancy.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy/WeaponOccupancy.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy/WeaponOccupancy.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "WeaponOccupancy.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy/WeaponOccupancy.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy/WeaponOccupancy.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "WeaponOccupancy.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy/WeaponOccupancy.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy/WeaponOccupancy.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy/WeaponOccupancy.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy/WeaponOccupancy.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy/WeaponOccupancy.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy/WeaponOccupancy.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/WeaponOccupancy/WeaponOccupancy.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [
+    "onAnimationEnd",
+    "onClose",
+    "onResized",
+    "onViewRendered",
+    "optionalDevicesAssistant.onHintShown",
+    "optionalDevicesAssistant.onPresetSelected",
+    "tankSetup.battleBoostersSetup.onAutoRenewalChanged",
+    "tankSetup.battleBoostersSetup.onDealCancelled",
+    "tankSetup.battleBoostersSetup.onDealConfirmed",
+    "tankSetup.battleBoostersSetup.onSlotAction",
+    "tankSetup.battleBoostersSetup.onTabChanged",
+    "tankSetup.consumablesSetup.onAutoRenewalChanged",
+    "tankSetup.consumablesSetup.onDealCancelled",
+    "tankSetup.consumablesSetup.onDealConfirmed",
+    "tankSetup.consumablesSetup.onSlotAction",
+    "tankSetup.optDevicesSetup.onAutoRenewalChanged",
+    "tankSetup.optDevicesSetup.onDealCancelled",
+    "tankSetup.optDevicesSetup.onDealConfirmed",
+    "tankSetup.optDevicesSetup.onFilterChanged",
+    "tankSetup.optDevicesSetup.onFilterReset",
+    "tankSetup.optDevicesSetup.onIntroPassed",
+    "tankSetup.optDevicesSetup.onSlotAction",
+    "tankSetup.optDevicesSetup.onTabChanged",
+    "tankSetup.optDevicesSetup.specialCurrency.onGetMoreCurrency",
+    "tankSetup.shellsSetup.onAutoRenewalChanged",
+    "tankSetup.shellsSetup.onDealCancelled",
+    "tankSetup.shellsSetup.onDealConfirmed",
+    "tankSetup.shellsSetup.onShellUpdate",
+    "tankSetup.shellsSetup.onSlotAction"
+  ],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.WeaponOccupancy",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

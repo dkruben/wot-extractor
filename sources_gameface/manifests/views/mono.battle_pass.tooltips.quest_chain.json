@@ -1,0 +1,122 @@
+{
+  "rid": "R.views.mono.battle_pass.tooltips.quest_chain",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "quest_chain",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain/bundle.js"
+    },
+    {
+      "name": "quest_chain.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain/quest_chain.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain/quest_chain.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "quest_chain.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain/quest_chain.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain/quest_chain.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain/quest_chain.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/quest_chain/quest_chain.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.battle_pass.tooltips.quest_chain",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.mono.battle_pass.tooltips.quest_chain no Python",
+      "ViewModel TokenBonusModel (model=... no Python da view): 0/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_bonuses_packers.py",
+        575
+      ],
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+        61
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_quests_chain_tooltip_view.py",
+        22
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_bonuses_packers.py",
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_quests_chain_tooltip_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/token_bonus_model.py",
+      "class": "TokenBonusModel",
+      "chain": [
+        "TokenBonusModel"
+      ],
+      "properties": [
+        [
+          "userName",
+          "String"
+        ],
+        [
+          "iconSmall",
+          "String"
+        ],
+        [
+          "iconBig",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 3,
+        "missing": [
+          "iconBig",
+          "iconSmall",
+          "userName"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/reward_item_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/tooltips/battle_pass_quests_chain_tooltip_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/vehicle_bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/reward_item_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/reward_item_model.py"
+      ]
+    }
+  }
+}

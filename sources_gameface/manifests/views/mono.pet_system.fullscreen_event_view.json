@@ -1,0 +1,79 @@
+{
+  "rid": "R.views.mono.pet_system.fullscreen_event_view",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "fullscreen_event_view",
+  "dir": "gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/bundle.js"
+    },
+    {
+      "name": "fullscreen_event_view.css",
+      "effective": "res/gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/fullscreen_event_view.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/fullscreen_event_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "fullscreen_event_view.html",
+      "effective": "res/gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/fullscreen_event_view.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/fullscreen_event_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/pet_system/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/pet_system/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/pet_system/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/pet_system/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/pet_system/chunks/synergy_rewards.css",
+      "key": "res/gui/gameface/_dist/production/mono/pet_system/chunks/synergy_rewards.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/fullscreen_event_view.css",
+      "key": "res/gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/fullscreen_event_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.mono.pet_system.fullscreen_event_view",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.mono.pet_system.fullscreen_event_view no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/pet_system/fullscreen_event_view.py",
+        13
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/pet_system/fullscreen_event_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

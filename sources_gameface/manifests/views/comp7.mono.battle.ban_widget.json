@@ -1,0 +1,145 @@
+{
+  "rid": "R.views.comp7.mono.battle.ban_widget",
+  "rid_source": "sources/res/comp7/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ban_widget",
+  "dir": "comp7/gui/gameface/_dist/production/mono/battle/ban_widget",
+  "feature": "comp7",
+  "files": [
+    {
+      "name": "ban_widget.css",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/battle/ban_widget/ban_widget.css",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/battle/ban_widget/ban_widget.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ban_widget.html",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/battle/ban_widget/ban_widget.html",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/battle/ban_widget/ban_widget.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/battle/ban_widget/bundle.js",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/battle/ban_widget/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7/gui/gameface/_dist/production/mono/battle/ban_widget/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/battle/ban_widget/ban_widget.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/battle/ban_widget/ban_widget.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/battle/ban_widget/bundle.js",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/battle/ban_widget/bundle.js"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/battle/chunks/globals.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/battle/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/battle/chunks/lib.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/battle/chunks/lib.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onOpen"
+  ],
+  "link": {
+    "rid": "R.views.comp7.mono.battle.ban_widget",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.comp7.mono.battle.ban_widget no Python",
+      "ViewModel BanWidgetModel (model=... no Python da view): 5/12 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/battle/vehicle_ban/ban_widget.py",
+        38
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/battle/vehicle_ban/ban_widget.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/battle/ban_widget_model.py",
+      "class": "BanWidgetModel",
+      "chain": [
+        "BanWidgetModel"
+      ],
+      "properties": [
+        [
+          "bannedByAlliesVehicle",
+          "ViewModel"
+        ],
+        [
+          "bannedByEnemiesVehicle",
+          "ViewModel"
+        ],
+        [
+          "vehicleToBan",
+          "ViewModel"
+        ],
+        [
+          "banState",
+          "String"
+        ],
+        [
+          "candidateState",
+          "String"
+        ],
+        [
+          "confirmedChoice",
+          "Bool"
+        ],
+        [
+          "bannedByAlliesVehicles",
+          "Array"
+        ],
+        [
+          "isAlliesRandomlySelected",
+          "Bool"
+        ],
+        [
+          "isEnemyRandomlySelected",
+          "Bool"
+        ],
+        [
+          "alliesVotes",
+          "Number"
+        ],
+        [
+          "enemyVotes",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onOpen"
+      ],
+      "coverage": {
+        "found": 5,
+        "total": 12,
+        "missing": [
+          "alliesVotes",
+          "banState",
+          "candidateState",
+          "confirmedChoice",
+          "enemyVotes",
+          "isAlliesRandomlySelected",
+          "isEnemyRandomlySelected"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

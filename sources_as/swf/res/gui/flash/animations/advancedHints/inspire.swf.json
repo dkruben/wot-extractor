@@ -1,0 +1,134 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/inspire.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 43,
+ "declared_length": 233295,
+ "actual_length": 233295,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 35,
+  "ShowFrame": 1469,
+  "DefineShape": 21,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 3012,
+  "RemoveObject2": 30,
+  "DefineShape3": 3,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 21,
+  "DefineSprite": 34,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 3,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 22,
+  "shapes": 33,
+  "sprites": 34,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "inspire_fla.MainTimeline"
+  },
+  {
+   "id": 88,
+   "class": "inspire_fla.activeConsumableReload_32"
+  },
+  {
+   "id": 81,
+   "class": "inspire_fla.tankShoot_28"
+  },
+  {
+   "id": 62,
+   "class": "inspire_fla.squaresFx_21"
+  },
+  {
+   "id": 9,
+   "class": "inspire_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1178,
+   "classes": 5,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 331
+  }
+ ],
+ "classes": [
+  {
+   "name": "inspire_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "inspire_fla.activeConsumableReload_32",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "inspire_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "inspire_fla.squaresFx_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "inspire_fla.tankShoot_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

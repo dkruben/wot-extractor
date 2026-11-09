@@ -1,0 +1,63 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/Listener.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import copy as copy
+import weakref as weakref
+
+class Listenable:
+    listeners: Any
+    def __init__(self):
+        ...
+    def addListener(self, eventName, fn):
+        ...
+    def removeListener(self, eventName, fn):
+        ...
+
+class _Listeners(object):
+    listeners: Any
+    def __init__(self):
+        ...
+    def addListener(self, eventName, fn):
+        ...
+    def removeListener(self, eventName, fn):
+        ...
+    def __getattribute__(self, name):
+        ...
+
+class _ListenerDispatch:
+    dispatcher: Any
+    eventName: Any
+    def __init__(self, dispatcher, eventName):
+        ...
+    def __call__(self, *args, **kargs):
+        ...
+
+class _ListenerFunc(object):
+    isBoundMethod: Any
+    ref: Any
+    func: Any
+    def __init__(self, func):
+        ...
+    def matches(self, func):
+        ...
+    def alive(self):
+        ...
+    def get(self):
+        ...
+    def __call__(self, *args, **kwargs):
+        ...
+
+class FunctionListeners(object):
+    listeners: Any
+    def __init__(self):
+        ...
+    def append(self, func):
+        ...
+    def remove(self, func):
+        ...
+    def reset(self):
+        ...
+    def __call__(self, *args, **kwargs):
+        ...

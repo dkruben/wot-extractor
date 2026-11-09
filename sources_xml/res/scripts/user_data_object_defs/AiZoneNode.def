@@ -1,0 +1,32 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/user_data_object_defs/AiZoneNode.def -->
+<root>
+	<Domain>NONE</Domain>
+	<NonChunk>True</NonChunk>
+	<Properties>
+		<zonesMap>
+			<Type>STRING</Type>
+			<Default />
+			<Editable>true</Editable>
+		</zonesMap>
+		<zoneNodes>
+			<Type>ARRAY<of>UDO_REF</of>
+			</Type>
+			<Editable>True</Editable>
+		</zoneNodes>
+		<nodeType>
+			<Type>UINT8</Type>
+			<Editable>True</Editable>
+			<Default>0</Default>
+		</nodeType>
+		<desirability>
+			<Type>UINT8</Type>
+			<Editable>True</Editable>
+			<Default>100</Default>
+		</desirability>
+		<priority>
+			<Type>UINT8</Type>
+			<Editable>True</Editable>
+			<Default>100</Default>
+		</priority>
+	</Properties>
+</root>

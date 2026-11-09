@@ -1,0 +1,119 @@
+{
+  "rid": "R.views.lobby.mode_selector.tooltips.SimplyFormatTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SimplyFormatTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "SimplyFormatTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip/SimplyFormatTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip/SimplyFormatTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SimplyFormatTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip/SimplyFormatTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip/SimplyFormatTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SimplyFormatTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip/SimplyFormatTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip/SimplyFormatTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip/SimplyFormatTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/mode_selector/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/mode_selector/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip/SimplyFormatTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip/SimplyFormatTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip/SimplyFormatTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/SimplyFormatTooltip/SimplyFormatTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.mode_selector.tooltips.SimplyFormatTooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.mode_selector.tooltips.SimplyFormatTooltip no Python",
+      "ViewModel SimpleTooltipContentModel (model=... no Python da view): 2/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/mode_selector/mode_selector_view.py",
+        129
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/mode_selector/tooltips/simply_format_tooltip.py",
+        14
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/mode_selector/mode_selector_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/mode_selector/tooltips/simply_format_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/windows/simple_tooltip_content_model.py",
+      "class": "SimpleTooltipContentModel",
+      "chain": [
+        "SimpleTooltipContentModel"
+      ],
+      "properties": [
+        [
+          "header",
+          "String"
+        ],
+        [
+          "body",
+          "String"
+        ],
+        [
+          "note",
+          "String"
+        ],
+        [
+          "alert",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 4,
+        "missing": [
+          "alert",
+          "note"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

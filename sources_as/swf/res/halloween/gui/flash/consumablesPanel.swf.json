@@ -1,0 +1,340 @@
+{
+ "source": "sources/res/halloween/gui/flash/consumablesPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 287787,
+ "actual_length": 287787,
+ "frame_size_px": [
+  0.0,
+  806.0,
+  0.0,
+  58.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 56,
+  "ShowFrame": 1141,
+  "DefineShape": 104,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 3,
+  "PlaceObject2": 1091,
+  "RemoveObject2": 211,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 39,
+  "DefineEditText": 11,
+  "DefineSprite": 55,
+  "FrameLabel": 71,
+  "FileAttributes": 1,
+  "PlaceObject3": 84,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 11,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 39,
+  "shapes": 108,
+  "sprites": 55,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 11,
+  "fonts": 0,
+  "classes": 23,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleRoyaleConsumableButton.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 213,
+   "class": "HWAbilityButtonUI"
+  },
+  {
+   "id": 207,
+   "class": "consumablesPanel_fla.barCooldown_30"
+  },
+  {
+   "id": 135,
+   "class": "HWAbilityButtonGlowUI"
+  },
+  {
+   "id": 132,
+   "class": "HWKeyIndicatordDisabledUI"
+  },
+  {
+   "id": 119,
+   "class": "HWConsumablesPanelUI"
+  },
+  {
+   "id": 118,
+   "class": "HWEquipmentButtonUI"
+  },
+  {
+   "id": 116,
+   "class": "HWEquipmentButtonGlowUI"
+  },
+  {
+   "id": 115,
+   "class": "consumablesPanel_fla.specialGlowYellowSmall_25"
+  },
+  {
+   "id": 108,
+   "class": "HWPassiveAbilityUI"
+  },
+  {
+   "id": 99,
+   "class": "AnimatedIconLoaderUI"
+  },
+  {
+   "id": 98,
+   "class": "HWShellButtonBattleUI"
+  },
+  {
+   "id": 86,
+   "class": "consumablesPanel_fla.spgShotResultIndicator_49"
+  },
+  {
+   "id": 81,
+   "class": "consumablesPanel_fla.shellModeIndicator_48"
+  },
+  {
+   "id": 76,
+   "class": "consumablesPanel_fla.ShellBetton_select_46"
+  },
+  {
+   "id": 72,
+   "class": "consumablesPanel_fla.ShellBetton_next_43"
+  },
+  {
+   "id": 67,
+   "class": "HWAbilityShellButtonGlowUI"
+  },
+  {
+   "id": 60,
+   "class": "HWKeyIndicatorYellowUI"
+  },
+  {
+   "id": 58,
+   "class": "HWKeyIndicatorBlackUI"
+  },
+  {
+   "id": 53,
+   "class": "HWKeyIndicatorGreenUI"
+  },
+  {
+   "id": 38,
+   "class": "OptionalDeviceButtonUI"
+  },
+  {
+   "id": 29,
+   "class": "GlowUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 9632,
+   "classes": 23,
+   "methods": 153,
+   "bodies": 153,
+   "code_bytes": 2922
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Circular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWKeyIndicatorBlackUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWKeyIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWKeyIndicatorGreenUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWKeyIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWKeyIndicatorYellowUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWKeyIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWKeyIndicatordDisabledUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWKeyIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.ShellBetton_next_43",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.ShellBetton_select_46",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.barCooldown_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.shellModeIndicator_48",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.specialGlowYellowSmall_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "consumablesPanel_fla.spgShotResultIndicator_49",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWPassiveAbilityUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWPassiveAbility",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AnimatedIconLoaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.AnimatedLoaderTextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GlowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.consumablesPanel.BattleEquipmentButtonGlow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWAbilityButtonGlowUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWAbilityButtonGlow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWAbilityShellButtonGlowUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWAbilityButtonGlow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWEquipmentButtonGlowUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWEquipmentButtonGlow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWAbilityButtonUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWAbilityButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWEquipmentButtonUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWEquipmentButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OptionalDeviceButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.consumablesPanel.BattleOptionalDeviceButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWShellButtonBattleUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWShellButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWConsumablesPanelUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.consumablesPanel.HWConsumablesPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

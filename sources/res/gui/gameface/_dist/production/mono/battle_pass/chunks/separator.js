@@ -1,0 +1,1 @@
+import{r as a}from"./rolldown-runtime.js";import{Yn as s,ci as r,oi as o}from"./lib.js";r();var i="Separator_a3ff07",m=s(),t=({className:a=""})=>(0,m.jsx)("div",{className:o(i,a)});export{t};

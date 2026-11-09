@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/ClientSelectableCameraVehicle.def -->
+<root>
+	<Parent>ClientSelectableCameraObject</Parent>
+	<Properties>
+		<modelName>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Editable>false</Editable>
+		</modelName>
+	</Properties>
+</root>

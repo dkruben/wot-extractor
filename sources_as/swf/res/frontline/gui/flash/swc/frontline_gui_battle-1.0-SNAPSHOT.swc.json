@@ -1,0 +1,3090 @@
+{
+ "source": "sources/res/frontline/gui/flash/swc/frontline_gui_battle-1.0-SNAPSHOT.swc",
+ "container_member": "library.swf",
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 11,
+ "declared_length": 382783,
+ "actual_length": 382783,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  375.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": true,
+ "tags": {
+  "End": 1,
+  "ShowFrame": 1,
+  "SetBackgroundColor": 1,
+  "ProductInfo": 1,
+  "ScriptLimits": 1,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "Metadata": 1,
+  "DoABC2": 179
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 0,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 180,
+  "abc_blocks": 179,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "_44f60e5271d8ee2ffdfb705fe45fb0464ace2f1bb65974f5eaa09c105c982635_flash_display_Sprite"
+  }
+ ],
+ "abc": [
+  {
+   "name": "net/wg/frontline/gui/battle/views/battleTankCarousel/renderers/ResetFilters",
+   "lazy": true,
+   "size": 1137,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 201
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/RetreatMessage",
+   "lazy": true,
+   "size": 1620,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 148
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/upgradePanel/FrontlineModuleInfo",
+   "lazy": true,
+   "size": 4157,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 14,
+   "code_bytes": 1103
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/stats/events/FrontlineFullStatsEvent",
+   "lazy": true,
+   "size": 478,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 71
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/BaseContestedMessage",
+   "lazy": true,
+   "size": 2380,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 272
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IRecoveryPanelMeta",
+   "lazy": true,
+   "size": 410,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineBattleStatisticDataControllerMeta",
+   "lazy": true,
+   "size": 1696,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 10,
+   "code_bytes": 319
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/FirstGeneralRankReachedMessage",
+   "lazy": true,
+   "size": 1750,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 158
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/upgradePanel/FrontlineChoiceInfoPanel",
+   "lazy": true,
+   "size": 5083,
+   "classes": 1,
+   "methods": 19,
+   "bodies": 19,
+   "code_bytes": 1601
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineBattleTimerMeta",
+   "lazy": true,
+   "size": 363,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/helpers/statisticsDataController/interfaces/IFrontlineBattleStatisticDataController",
+   "lazy": true,
+   "size": 515,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/battleLoading/FrontlineBattleLoading",
+   "lazy": true,
+   "size": 1872,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 268
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineRespawnView/components/FrontlineRespawnMapEntriesContainer",
+   "lazy": true,
+   "size": 4257,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 1616
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineScorePanelMeta",
+   "lazy": true,
+   "size": 662,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 88
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineScorePanelMeta",
+   "lazy": true,
+   "size": 476,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineScorePanel/FrontlineScorePanel",
+   "lazy": true,
+   "size": 7766,
+   "classes": 1,
+   "methods": 30,
+   "bodies": 30,
+   "code_bytes": 2596
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/battleTankCarousel/data/BattleVehicleCarouselVO",
+   "lazy": true,
+   "size": 1444,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 212
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineCarouselFilterPopoverMeta",
+   "lazy": true,
+   "size": 1693,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 274
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineBattleUpgradePanelMeta",
+   "lazy": true,
+   "size": 521,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineScorePanel/components/SectorBaseEntryAnimated",
+   "lazy": true,
+   "size": 2019,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 553
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineBattleConsumablesPanelMeta",
+   "lazy": true,
+   "size": 517,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineBattleConsumablesPanelMeta",
+   "lazy": true,
+   "size": 785,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 100
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/consumablesPanel/FrontlineBattleConsumablesPanel",
+   "lazy": true,
+   "size": 3461,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 378
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineOverviewMapScreenMeta",
+   "lazy": true,
+   "size": 362,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineRespawnViewMeta",
+   "lazy": true,
+   "size": 2289,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 426
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineRespawnViewMeta",
+   "lazy": true,
+   "size": 644,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineRespawnView/FrontlineRespawnView",
+   "lazy": true,
+   "size": 5814,
+   "classes": 1,
+   "methods": 28,
+   "bodies": 28,
+   "code_bytes": 1162
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/UnlockTankLevelMessage",
+   "lazy": true,
+   "size": 1624,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 140
+  },
+  {
+   "name": "net/wg/frontline/data/constants/FrontlineLinkages",
+   "lazy": true,
+   "size": 1417,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 136
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/TimeRemainingMessage",
+   "lazy": true,
+   "size": 1616,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 140
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineBattleTimerMeta",
+   "lazy": true,
+   "size": 757,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 100
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineMinimapMeta",
+   "lazy": true,
+   "size": 1029,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 139
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/MessageHQMarker",
+   "lazy": true,
+   "size": 664,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 86
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineMinimapMeta",
+   "lazy": true,
+   "size": 457,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "_44f60e5271d8ee2ffdfb705fe45fb0464ace2f1bb65974f5eaa09c105c982635_flash_display_Sprite",
+   "lazy": true,
+   "size": 601,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 88
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineScorePanel/components/HeadquarterEntryAnimated",
+   "lazy": true,
+   "size": 1200,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 198
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/battleTankCarousel/BattleCarouselEnvironment",
+   "lazy": true,
+   "size": 843,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 101
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/BattleTankCarouselMeta",
+   "lazy": true,
+   "size": 1137,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 165
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineOverviewMapScreenMeta",
+   "lazy": true,
+   "size": 1216,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 181
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/upgradePanel/data/FrontlineModuleInfoVO",
+   "lazy": true,
+   "size": 1353,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 311
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/battleLoading/components/FrontlineBattleLoadingTankBalance",
+   "lazy": true,
+   "size": 3082,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 804
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/ClassManagerExtensionBattleDirectionIndicatorMeta",
+   "lazy": true,
+   "size": 311,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 28
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/battleLoading/renderers/FrontlineBattleLoadingPlayerItemRenderer",
+   "lazy": true,
+   "size": 7762,
+   "classes": 1,
+   "methods": 40,
+   "bodies": 40,
+   "code_bytes": 2532
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/modificationPanel/data/FrontlineModificationPanelVO",
+   "lazy": true,
+   "size": 488,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 41
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/staticMarkers/sectorbase/SectorBaseIcon",
+   "lazy": true,
+   "size": 2431,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 14,
+   "code_bytes": 527
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/RankUpMessage",
+   "lazy": true,
+   "size": 1870,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 207
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/battleLoading/components/FrontlineBattleScrollingList",
+   "lazy": true,
+   "size": 1896,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 332
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/data/OverTimeMessageVO",
+   "lazy": true,
+   "size": 480,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 47
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineRespawnView/components/FrontlineRespawnDeployButtonGroup",
+   "lazy": true,
+   "size": 3479,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 14,
+   "code_bytes": 949
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/data/HeadquarterDestroyedMessageVO",
+   "lazy": true,
+   "size": 499,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 47
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineDeploymentMapMeta",
+   "lazy": true,
+   "size": 775,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 106
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/battleLoading/FrontlineBattleLoadingForm",
+   "lazy": true,
+   "size": 3686,
+   "classes": 1,
+   "methods": 18,
+   "bodies": 18,
+   "code_bytes": 779
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/FrontlineBattleTimer",
+   "lazy": true,
+   "size": 1431,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 233
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineInGameRankMeta",
+   "lazy": true,
+   "size": 400,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/data/FirstGeneralRankReachedMessageVO",
+   "lazy": true,
+   "size": 507,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 47
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/FrontlineCarouselFilterPopoverView",
+   "lazy": true,
+   "size": 3861,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 526
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/ammunitionPanel/FrontlineRespawnAmmunitionPanelView",
+   "lazy": true,
+   "size": 808,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 113
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/components/FrontlineFilterDropDown",
+   "lazy": true,
+   "size": 2460,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 515
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineScorePanel/events/FrontlineScorePanelEvent",
+   "lazy": true,
+   "size": 698,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 95
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/battleLoading/components/FrontlineBattleLoadingTankTypeComponent",
+   "lazy": true,
+   "size": 1527,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 234
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/VO/daapi/FrontlinePlayerStatsVO",
+   "lazy": true,
+   "size": 425,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 41
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/minimap/FrontlineMinimap",
+   "lazy": true,
+   "size": 7687,
+   "classes": 1,
+   "methods": 37,
+   "bodies": 37,
+   "code_bytes": 2259
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/ClassManagerExtensionBattleDamageIndicatorMeta",
+   "lazy": true,
+   "size": 305,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 28
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/stats/components/PlayerScrollingList",
+   "lazy": true,
+   "size": 5035,
+   "classes": 1,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 1140
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/data/HeadquarterAttackedMessageVO",
+   "lazy": true,
+   "size": 535,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 47
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/stats/components/FrontlineStatsTableTabButton",
+   "lazy": true,
+   "size": 1415,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 313
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineFullStatsMeta",
+   "lazy": true,
+   "size": 382,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineFullStatsMeta",
+   "lazy": true,
+   "size": 683,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 94
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/stats/FrontlineFullStats",
+   "lazy": true,
+   "size": 6494,
+   "classes": 1,
+   "methods": 36,
+   "bodies": 36,
+   "code_bytes": 1368
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineReinforcementPanelMeta",
+   "lazy": true,
+   "size": 384,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineReinforcementPanelMeta",
+   "lazy": true,
+   "size": 678,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 88
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineReinforcementPanel/FrontlineReinforcementPanel",
+   "lazy": true,
+   "size": 3059,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 10,
+   "code_bytes": 622
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/HeadquarterDestroyedMessage",
+   "lazy": true,
+   "size": 2042,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 190
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/components/FrontlineListItemRenderer",
+   "lazy": true,
+   "size": 2820,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 14,
+   "code_bytes": 605
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineModificationPanelMeta",
+   "lazy": true,
+   "size": 343,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/battleTankCarousel/renderers/BattleTankCarouselItemRenderer",
+   "lazy": true,
+   "size": 4483,
+   "classes": 1,
+   "methods": 26,
+   "bodies": 26,
+   "code_bytes": 1133
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineInGameRank/data/FrontlineInGameRankVO",
+   "lazy": true,
+   "size": 512,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 41
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineDeploymentMap/events/FrontlineDeploymentMapEvent",
+   "lazy": true,
+   "size": 670,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 105
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/MessageBaseMarker",
+   "lazy": true,
+   "size": 755,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 93
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/stats/renderers/FrontlineStatsPlayerRenderer",
+   "lazy": true,
+   "size": 10625,
+   "classes": 1,
+   "methods": 65,
+   "bodies": 65,
+   "code_bytes": 3624
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/RecoveryPanelMeta",
+   "lazy": true,
+   "size": 650,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 88
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/recoveryPanel/RecoveryPanel",
+   "lazy": true,
+   "size": 2477,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 497
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/battleLoading/events/FrontlineBattleLoadingEvent",
+   "lazy": true,
+   "size": 465,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 63
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/upgradePanel/data/FrontlineChoiceInfoPanelVO",
+   "lazy": true,
+   "size": 865,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 146
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/upgradePanel/data/FrontlineUpgradePanelVO",
+   "lazy": true,
+   "size": 481,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 47
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineMissionsPanelMeta",
+   "lazy": true,
+   "size": 1190,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 181
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineRespawnView/data/RespawnPointVO",
+   "lazy": true,
+   "size": 428,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 41
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlinePlatoonPanel/renderers/PlayerInfoContainer",
+   "lazy": true,
+   "size": 1721,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 328
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/VO/daapi/FrontlineVehiclesStatsVO",
+   "lazy": true,
+   "size": 2011,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 829
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/ClassManagerExtensionCrosshairsMeta",
+   "lazy": true,
+   "size": 283,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 28
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/staticMarkers/sectorWaypoint/SectorWaypointIcon",
+   "lazy": true,
+   "size": 816,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 125
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMissionsPanel/components/FrontlineMissionsAnimatedMarker",
+   "lazy": true,
+   "size": 1532,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 289
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlinePlatoonPanel/list/PlatoonMemberListItemHolder",
+   "lazy": true,
+   "size": 3065,
+   "classes": 1,
+   "methods": 29,
+   "bodies": 29,
+   "code_bytes": 837
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/upgradePanel/IFrontlineConfiguratorRenderer",
+   "lazy": true,
+   "size": 706,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/upgradePanel/FrontlineConfiguratorRenderer",
+   "lazy": true,
+   "size": 2935,
+   "classes": 1,
+   "methods": 19,
+   "bodies": 19,
+   "code_bytes": 739
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineDamagePanelMeta",
+   "lazy": true,
+   "size": 302,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineDamagePanelMeta",
+   "lazy": true,
+   "size": 779,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 106
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineDamagePanel/FrontlineDamagePanel",
+   "lazy": true,
+   "size": 1310,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 167
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/modificationPanel/components/FrontlineModificationInfo",
+   "lazy": true,
+   "size": 729,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 91
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/data/FrontlineStatsDataProviderBaseCtrl",
+   "lazy": true,
+   "size": 2712,
+   "classes": 1,
+   "methods": 19,
+   "bodies": 19,
+   "code_bytes": 729
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/OverTimeMessage",
+   "lazy": true,
+   "size": 2536,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 446
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlinePlatoonPanel/renderers/PlatoonInviteRenderer",
+   "lazy": true,
+   "size": 2824,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 14,
+   "code_bytes": 570
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineCarouselFilterPopoverMeta",
+   "lazy": true,
+   "size": 363,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/RankUpSubElement",
+   "lazy": true,
+   "size": 999,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 174
+  },
+  {
+   "name": "net/wg/frontline/data/constants/generated/FRONTLINE_BATTLE_VIEW_ALIASES",
+   "lazy": true,
+   "size": 1211,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 112
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlinePlatoonPanelMeta",
+   "lazy": true,
+   "size": 356,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/data/SectorBaseMessageVO",
+   "lazy": true,
+   "size": 535,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 47
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineOverviewMapScreen/data/FrontlineOverviewMapScreenVO",
+   "lazy": true,
+   "size": 521,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 41
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/stats/components/FrontlineStatsHeader",
+   "lazy": true,
+   "size": 2284,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 605
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineDeploymentMap/constants/DeploymentMapConstants",
+   "lazy": true,
+   "size": 625,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 81
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineInGameRank/FrontlineInGameRankAnimatedProgress",
+   "lazy": true,
+   "size": 1509,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 319
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlinePlatoonPanelMeta",
+   "lazy": true,
+   "size": 715,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 100
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/recoveryPanel/RecoveryHint",
+   "lazy": true,
+   "size": 1673,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 480
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineMissionsPanelMeta",
+   "lazy": true,
+   "size": 395,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMissionsPanel/FrontlineMissionsPanel",
+   "lazy": true,
+   "size": 3662,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 582
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/components/FrontlineProgressCircle",
+   "lazy": true,
+   "size": 1588,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 14,
+   "code_bytes": 497
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/minimap/entries/ShortcutLabel",
+   "lazy": true,
+   "size": 1238,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 242
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/VO/daapi/FrontlineVehicleStatsVO",
+   "lazy": true,
+   "size": 459,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 47
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlinePlatoonPanel/FrontlinePlatoonPanel",
+   "lazy": true,
+   "size": 7215,
+   "classes": 1,
+   "methods": 38,
+   "bodies": 38,
+   "code_bytes": 1836
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineBattleStatisticDataControllerMeta",
+   "lazy": true,
+   "size": 419,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/helpers/statisticsDataController/FrontlineBattleStatisticDataController",
+   "lazy": true,
+   "size": 2853,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 346
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/battleLoading/components/FrontlineBattleStatsTable",
+   "lazy": true,
+   "size": 878,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 129
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/data/FrontlineVehicleDataProvider",
+   "lazy": true,
+   "size": 2838,
+   "classes": 1,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 1182
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineOverviewMapScreen/FrontlineOverviewMapScreen",
+   "lazy": true,
+   "size": 3269,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 14,
+   "code_bytes": 480
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineBattlePageMeta",
+   "lazy": true,
+   "size": 391,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/ClassManagerMeta",
+   "lazy": true,
+   "size": 27144,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 1903
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/stats/events/FrontlineFullStatsRendererEvent",
+   "lazy": true,
+   "size": 541,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 79
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineModificationPanelMeta",
+   "lazy": true,
+   "size": 1193,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 181
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/consumablesPanel/interfaces/IFrontlineBattleConsumableButton",
+   "lazy": true,
+   "size": 518,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineBattlePageMeta",
+   "lazy": true,
+   "size": 1020,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 144
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/data/RankUpMessageVO",
+   "lazy": true,
+   "size": 499,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 47
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/BaseCaptureMessage",
+   "lazy": true,
+   "size": 2411,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 331
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlinePlatoonPanel/list/PlatoonPanelList",
+   "lazy": true,
+   "size": 3830,
+   "classes": 1,
+   "methods": 23,
+   "bodies": 23,
+   "code_bytes": 1310
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineInGameRankMeta",
+   "lazy": true,
+   "size": 1396,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 213
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/staticMarkers/ObjectiveIdReplyState",
+   "lazy": true,
+   "size": 1056,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 258
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlinePlatoonPanel/components/PlatoonInvitePanel",
+   "lazy": true,
+   "size": 2939,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 800
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/FrontlineBattlePage",
+   "lazy": true,
+   "size": 14883,
+   "classes": 1,
+   "methods": 48,
+   "bodies": 48,
+   "code_bytes": 3587
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/ClassManagerExtensionBattleMarkersMeta",
+   "lazy": true,
+   "size": 1107,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 68
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineScorePanel/components/SectorBaseScoreEntry",
+   "lazy": true,
+   "size": 1286,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 195
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/upgradePanel/data/FrontlineConfiguratorModuleVO",
+   "lazy": true,
+   "size": 561,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 62
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/battleTankCarousel/renderers/BaseBattleTankIcon",
+   "lazy": true,
+   "size": 2976,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 844
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/data/MissionChangeMessageVO",
+   "lazy": true,
+   "size": 485,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 47
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineDamagePanel/components/GeneralBonus",
+   "lazy": true,
+   "size": 882,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 117
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/data/SectorBaseContestedMessageVO",
+   "lazy": true,
+   "size": 528,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 47
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/battleLoading/components/FrontlineBattleStatsTableCtrl",
+   "lazy": true,
+   "size": 2284,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 676
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/staticMarkers/headquarter/HeadquarterAnimation",
+   "lazy": true,
+   "size": 791,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 109
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMissionsPanel/data/FrontlineMissionVO",
+   "lazy": true,
+   "size": 479,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 41
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/impl/FrontlineBattleUpgradePanelMeta",
+   "lazy": true,
+   "size": 1394,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 214
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/upgradePanel/FrontlineBattleUpgradePanel",
+   "lazy": true,
+   "size": 8704,
+   "classes": 1,
+   "methods": 36,
+   "bodies": 36,
+   "code_bytes": 3288
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/consumablesPanel/components/FrontlineBattleEquipmentButtonGlow",
+   "lazy": true,
+   "size": 1663,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 215
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/minimap/containers/FrontlineMinimapEntriesContainer",
+   "lazy": true,
+   "size": 847,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 103
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineInGameRank/FrontlineInGameRankIcon",
+   "lazy": true,
+   "size": 1208,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 235
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineInGameRank/FrontlineInGameRankPanel",
+   "lazy": true,
+   "size": 2596,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 453
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/modificationPanel/FrontlineModificationPanel",
+   "lazy": true,
+   "size": 1975,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 292
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/staticMarkers/headquarter/HeadquarterIcon",
+   "lazy": true,
+   "size": 2180,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 475
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineRespawnView/events/FrontlineRespawnEvent",
+   "lazy": true,
+   "size": 683,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 89
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineInGameRank/events/FrontlineInGameRankEvent",
+   "lazy": true,
+   "size": 497,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 63
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/components/HeadquarterAttackedMessage",
+   "lazy": true,
+   "size": 2152,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 259
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IFrontlineDeploymentMapMeta",
+   "lazy": true,
+   "size": 305,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineDeploymentMap/FrontlineDeploymentMap",
+   "lazy": true,
+   "size": 4845,
+   "classes": 1,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 1035
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/data/PlayListsVO",
+   "lazy": true,
+   "size": 713,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 158
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/battleTankCarousel/BattleTankCarouselFilters",
+   "lazy": true,
+   "size": 916,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 100
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineDeploymentMap/components/FrontlineMapContainer",
+   "lazy": true,
+   "size": 1461,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 318
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/consumablesPanel/FrontlineBattleConsumableButton",
+   "lazy": true,
+   "size": 5000,
+   "classes": 1,
+   "methods": 27,
+   "bodies": 27,
+   "code_bytes": 1306
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineScorePanel/components/HeadquarterScoreEntry",
+   "lazy": true,
+   "size": 1857,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 10,
+   "code_bytes": 492
+  },
+  {
+   "name": "net/wg/frontline/infrastructure/base/meta/IBattleTankCarouselMeta",
+   "lazy": true,
+   "size": 397,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/battleTankCarousel/FrontlineBattleTankCarousel",
+   "lazy": true,
+   "size": 7716,
+   "classes": 2,
+   "methods": 31,
+   "bodies": 31,
+   "code_bytes": 1903
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/FrontlineMessagesPanel",
+   "lazy": true,
+   "size": 3567,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 637
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/stats/components/FrontlineStatsTableFilterGroup",
+   "lazy": true,
+   "size": 1377,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 254
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/stats/components/FrontlineStatsGeneralBonus",
+   "lazy": true,
+   "size": 1459,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 295
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/stats/components/FrontlineFullStatsTableCtrl",
+   "lazy": true,
+   "size": 5300,
+   "classes": 1,
+   "methods": 27,
+   "bodies": 27,
+   "code_bytes": 2127
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/stats/components/FrontlineFullStatsTable",
+   "lazy": true,
+   "size": 1400,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 250
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineMessagesPanel/data/FrontlineGameMessageVO",
+   "lazy": true,
+   "size": 1626,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 479
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineDeploymentMap/components/FrontlineDeploymentMapEntriesContainer",
+   "lazy": true,
+   "size": 746,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 84
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/minimap/entries/MapShortcutLabel",
+   "lazy": true,
+   "size": 716,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 102
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/modificationPanel/components/FrontlineModificationIcon",
+   "lazy": true,
+   "size": 771,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 98
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlineRespawnView/components/FrontlineRespawnPoint",
+   "lazy": true,
+   "size": 2530,
+   "classes": 1,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 608
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlinePlatoonPanel/components/PlatoonMembersPanel",
+   "lazy": true,
+   "size": 2593,
+   "classes": 1,
+   "methods": 23,
+   "bodies": 23,
+   "code_bytes": 435
+  },
+  {
+   "name": "net/wg/frontline/gui/battle/views/frontlinePlatoonPanel/renderers/PlatoonMemberListItemRenderer",
+   "lazy": true,
+   "size": 5664,
+   "classes": 1,
+   "methods": 30,
+   "bodies": 30,
+   "code_bytes": 1485
+  }
+ ],
+ "classes": [
+  {
+   "name": "net.wg.frontline.gui.battle.views.battleTankCarousel.renderers.ResetFilters",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.RetreatMessage",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.components.MessageContainerBase",
+   "implements": [],
+   "abc": 1
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.upgradePanel.FrontlineModuleInfo",
+   "kind": "class",
+   "extends": "scaleform.clik.core.UIComponent",
+   "implements": [],
+   "abc": 2
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.stats.events.FrontlineFullStatsEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 3
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.BaseContestedMessage",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.components.MessageContainerBase",
+   "implements": [],
+   "abc": 4
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IRecoveryPanelMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 5
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineBattleStatisticDataControllerMeta",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.helpers.statisticsDataController.BattleStatisticDataController",
+   "implements": [],
+   "abc": 6
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.FirstGeneralRankReachedMessage",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.components.MessageContainerBase",
+   "implements": [],
+   "abc": 7
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.upgradePanel.FrontlineChoiceInfoPanel",
+   "kind": "class",
+   "extends": "scaleform.clik.core.UIComponent",
+   "implements": [],
+   "abc": 8
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineBattleTimerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 9
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.helpers.statisticsDataController.interfaces.IFrontlineBattleStatisticDataController",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 10
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.battleLoading.FrontlineBattleLoading",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleloading.BattleLoading",
+   "implements": [
+    "IFrontlineBattleStatisticDataController"
+   ],
+   "abc": 11
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineRespawnView.components.FrontlineRespawnMapEntriesContainer",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 12
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineScorePanelMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleDisplayable",
+   "implements": [],
+   "abc": 13
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineScorePanelMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 14
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineScorePanel.FrontlineScorePanel",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineScorePanelMeta",
+   "implements": [
+    "IFrontlineScorePanelMeta",
+    "IFrontlineBattleStatisticDataController"
+   ],
+   "abc": 15
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.battleTankCarousel.data.BattleVehicleCarouselVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIUpdatableDataClass",
+   "implements": [
+    "IScrollerItemRendererData"
+   ],
+   "abc": 16
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineCarouselFilterPopoverMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.VehiclesFilterPopoverView",
+   "implements": [],
+   "abc": 17
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineBattleUpgradePanelMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 18
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineScorePanel.components.SectorBaseEntryAnimated",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 19
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineBattleConsumablesPanelMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 20
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineBattleConsumablesPanelMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.consumablesPanel.ConsumablesPanel",
+   "implements": [],
+   "abc": 21
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.consumablesPanel.FrontlineBattleConsumablesPanel",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineBattleConsumablesPanelMeta",
+   "implements": [
+    "IFrontlineBattleConsumablesPanelMeta"
+   ],
+   "abc": 22
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineOverviewMapScreenMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 23
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineRespawnViewMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleDisplayable",
+   "implements": [],
+   "abc": 24
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineRespawnViewMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 25
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineRespawnView.FrontlineRespawnView",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineRespawnViewMeta",
+   "implements": [
+    "IFrontlineRespawnViewMeta",
+    "IFrontlineBattleStatisticDataController"
+   ],
+   "abc": 26
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.UnlockTankLevelMessage",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.components.MessageContainerBase",
+   "implements": [],
+   "abc": 27
+  },
+  {
+   "name": "net.wg.frontline.data.constants.FrontlineLinkages",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 28
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.TimeRemainingMessage",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.components.MessageContainerBase",
+   "implements": [],
+   "abc": 29
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineBattleTimerMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.battleTimer.BattleAnimationTimer",
+   "implements": [],
+   "abc": 30
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineMinimapMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.BaseMinimap",
+   "implements": [],
+   "abc": 31
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.MessageHQMarker",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 32
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineMinimapMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 33
+  },
+  {
+   "name": "_44f60e5271d8ee2ffdfb705fe45fb0464ace2f1bb65974f5eaa09c105c982635_flash_display_Sprite",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 34
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineScorePanel.components.HeadquarterEntryAnimated",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 35
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.battleTankCarousel.BattleCarouselEnvironment",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.CarouselEnvironment",
+   "implements": [],
+   "abc": 36
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.BattleTankCarouselMeta",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.battleTankCarousel.BattleCarouselEnvironment",
+   "implements": [],
+   "abc": 37
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineOverviewMapScreenMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleDisplayable",
+   "implements": [],
+   "abc": 38
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.upgradePanel.data.FrontlineModuleInfoVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 39
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.battleLoading.components.FrontlineBattleLoadingTankBalance",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 40
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.ClassManagerExtensionBattleDirectionIndicatorMeta",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 41
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.battleLoading.renderers.FrontlineBattleLoadingPlayerItemRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [
+    "IEpicRandomBattleLoadingRenderer",
+    "IStageSizeDependComponent"
+   ],
+   "abc": 42
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.modificationPanel.data.FrontlineModificationPanelVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 43
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.staticMarkers.sectorbase.SectorBaseIcon",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleIconHolder",
+   "implements": [],
+   "abc": 44
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.RankUpMessage",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.components.MessageContainerBase",
+   "implements": [],
+   "abc": 45
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.battleLoading.components.FrontlineBattleScrollingList",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.ScrollingList",
+   "implements": [],
+   "abc": 46
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.data.OverTimeMessageVO",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.data.BaseGameMessageVO",
+   "implements": [],
+   "abc": 47
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineRespawnView.components.FrontlineRespawnDeployButtonGroup",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 48
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.data.HeadquarterDestroyedMessageVO",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.data.BaseGameMessageVO",
+   "implements": [],
+   "abc": 49
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineDeploymentMapMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.BaseMinimap",
+   "implements": [],
+   "abc": 50
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.battleLoading.FrontlineBattleLoadingForm",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleloading.BaseLoadingForm",
+   "implements": [
+    "IStageSizeDependComponent"
+   ],
+   "abc": 51
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.FrontlineBattleTimer",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineBattleTimerMeta",
+   "implements": [
+    "IFrontlineBattleTimerMeta"
+   ],
+   "abc": 52
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineInGameRankMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 53
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.data.FirstGeneralRankReachedMessageVO",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.data.BaseGameMessageVO",
+   "implements": [],
+   "abc": 54
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.FrontlineCarouselFilterPopoverView",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineCarouselFilterPopoverMeta",
+   "implements": [],
+   "abc": 55
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.ammunitionPanel.FrontlineRespawnAmmunitionPanelView",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.inject.GFInjectComponent",
+   "implements": [],
+   "abc": 56
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.components.FrontlineFilterDropDown",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.DropdownMenu",
+   "implements": [],
+   "abc": 57
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineScorePanel.events.FrontlineScorePanelEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 58
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.battleLoading.components.FrontlineBattleLoadingTankTypeComponent",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 59
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.VO.daapi.FrontlinePlayerStatsVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 60
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.minimap.FrontlineMinimap",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineMinimapMeta",
+   "implements": [
+    "IFrontlineBattleStatisticDataController",
+    "IFrontlineMinimapMeta"
+   ],
+   "abc": 61
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.ClassManagerExtensionBattleDamageIndicatorMeta",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 62
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.stats.components.PlayerScrollingList",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.ScrollingList",
+   "implements": [],
+   "abc": 63
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.data.HeadquarterAttackedMessageVO",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.data.BaseGameMessageVO",
+   "implements": [],
+   "abc": 64
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.stats.components.FrontlineStatsTableTabButton",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.RadioButton",
+   "implements": [],
+   "abc": 65
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineFullStatsMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 66
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineFullStatsMeta",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.StatsBaseMeta",
+   "implements": [],
+   "abc": 67
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.stats.FrontlineFullStats",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineFullStatsMeta",
+   "implements": [
+    "IFrontlineFullStatsMeta",
+    "IBattleComponentDataController",
+    "IFrontlineBattleStatisticDataController"
+   ],
+   "abc": 68
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineReinforcementPanelMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 69
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineReinforcementPanelMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleDisplayable",
+   "implements": [],
+   "abc": 70
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineReinforcementPanel.FrontlineReinforcementPanel",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineReinforcementPanelMeta",
+   "implements": [
+    "IFrontlineReinforcementPanelMeta"
+   ],
+   "abc": 71
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.HeadquarterDestroyedMessage",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.components.MessageContainerBase",
+   "implements": [],
+   "abc": 72
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.components.FrontlineListItemRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.DropDownListItemRendererSound",
+   "implements": [],
+   "abc": 73
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineModificationPanelMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 74
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.battleTankCarousel.renderers.BattleTankCarouselItemRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [
+    "IScrollerItemRenderer"
+   ],
+   "abc": 75
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineInGameRank.data.FrontlineInGameRankVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 76
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineDeploymentMap.events.FrontlineDeploymentMapEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 77
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.MessageBaseMarker",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 78
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.stats.renderers.FrontlineStatsPlayerRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [
+    "IListItemRenderer"
+   ],
+   "abc": 79
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.RecoveryPanelMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleDisplayable",
+   "implements": [],
+   "abc": 80
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.recoveryPanel.RecoveryPanel",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.RecoveryPanelMeta",
+   "implements": [
+    "IRecoveryPanelMeta"
+   ],
+   "abc": 81
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.battleLoading.events.FrontlineBattleLoadingEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 82
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.upgradePanel.data.FrontlineChoiceInfoPanelVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 83
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.upgradePanel.data.FrontlineUpgradePanelVO",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.upgradePanel.data.FrontlineChoiceInfoPanelVO",
+   "implements": [],
+   "abc": 84
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineMissionsPanelMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleDisplayable",
+   "implements": [],
+   "abc": 85
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineRespawnView.data.RespawnPointVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 86
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.renderers.PlayerInfoContainer",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.UIComponentEx",
+   "implements": [],
+   "abc": 87
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.VO.daapi.FrontlineVehiclesStatsVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 88
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.ClassManagerExtensionCrosshairsMeta",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 89
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.staticMarkers.sectorWaypoint.SectorWaypointIcon",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 90
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMissionsPanel.components.FrontlineMissionsAnimatedMarker",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 91
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.list.PlatoonMemberListItemHolder",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 92
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.upgradePanel.IFrontlineConfiguratorRenderer",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisplayObject",
+    "IDisposable"
+   ],
+   "abc": 93
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.upgradePanel.FrontlineConfiguratorRenderer",
+   "kind": "class",
+   "extends": "scaleform.clik.core.UIComponent",
+   "implements": [
+    "IFrontlineConfiguratorRenderer"
+   ],
+   "abc": 94
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineDamagePanelMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 95
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineDamagePanelMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.DamagePanel",
+   "implements": [],
+   "abc": 96
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineDamagePanel.FrontlineDamagePanel",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineDamagePanelMeta",
+   "implements": [
+    "IFrontlineDamagePanelMeta"
+   ],
+   "abc": 97
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.modificationPanel.components.FrontlineModificationInfo",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 98
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.data.FrontlineStatsDataProviderBaseCtrl",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 99
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.OverTimeMessage",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.components.MessageContainerBase",
+   "implements": [],
+   "abc": 100
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.renderers.PlatoonInviteRenderer",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.UIComponentEx",
+   "implements": [],
+   "abc": 101
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineCarouselFilterPopoverMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 102
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.RankUpSubElement",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 103
+  },
+  {
+   "name": "net.wg.frontline.data.constants.generated.FRONTLINE_BATTLE_VIEW_ALIASES",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 104
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlinePlatoonPanelMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 105
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.data.SectorBaseMessageVO",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.data.BaseGameMessageVO",
+   "implements": [],
+   "abc": 106
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineOverviewMapScreen.data.FrontlineOverviewMapScreenVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 107
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.stats.components.FrontlineStatsHeader",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 108
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineDeploymentMap.constants.DeploymentMapConstants",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 109
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineInGameRank.FrontlineInGameRankAnimatedProgress",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 110
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlinePlatoonPanelMeta",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.PlayersPanelMeta",
+   "implements": [],
+   "abc": 111
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.recoveryPanel.RecoveryHint",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleDisplayable",
+   "implements": [],
+   "abc": 112
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineMissionsPanelMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 113
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMissionsPanel.FrontlineMissionsPanel",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineMissionsPanelMeta",
+   "implements": [
+    "IFrontlineBattleStatisticDataController",
+    "IFrontlineMissionsPanelMeta"
+   ],
+   "abc": 114
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.components.FrontlineProgressCircle",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BaseProgressCircle",
+   "implements": [],
+   "abc": 115
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.minimap.entries.ShortcutLabel",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 116
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.VO.daapi.FrontlineVehicleStatsVO",
+   "kind": "class",
+   "extends": "net.wg.data.VO.daapi.DAAPIVehicleStatsVO",
+   "implements": [],
+   "abc": 117
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.FrontlinePlatoonPanel",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlinePlatoonPanelMeta",
+   "implements": [
+    "IFrontlineBattleStatisticDataController",
+    "IBattleComponentDataController",
+    "IFrontlinePlatoonPanelMeta",
+    "IStatsBaseMeta",
+    "IPlayersPanelMeta"
+   ],
+   "abc": 118
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineBattleStatisticDataControllerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 119
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.helpers.statisticsDataController.FrontlineBattleStatisticDataController",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineBattleStatisticDataControllerMeta",
+   "implements": [
+    "IFrontlineBattleStatisticDataControllerMeta"
+   ],
+   "abc": 120
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.battleLoading.components.FrontlineBattleStatsTable",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 121
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.data.FrontlineVehicleDataProvider",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleloading.data.VehiclesDataProvider",
+   "implements": [
+    "IVehiclesDataProvider"
+   ],
+   "abc": 122
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineOverviewMapScreen.FrontlineOverviewMapScreen",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineOverviewMapScreenMeta",
+   "implements": [
+    "IFrontlineBattleStatisticDataController",
+    "IFrontlineOverviewMapScreenMeta"
+   ],
+   "abc": 123
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineBattlePageMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 124
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.ClassManagerMeta",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 125
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.stats.events.FrontlineFullStatsRendererEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 126
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineModificationPanelMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleDisplayable",
+   "implements": [],
+   "abc": 127
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.consumablesPanel.interfaces.IFrontlineBattleConsumableButton",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IConsumablesButton"
+   ],
+   "abc": 128
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineBattlePageMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.BaseBattlePage",
+   "implements": [],
+   "abc": 129
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.data.RankUpMessageVO",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.data.BaseGameMessageVO",
+   "implements": [],
+   "abc": 130
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.BaseCaptureMessage",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.components.MessageContainerBase",
+   "implements": [],
+   "abc": 131
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.list.PlatoonPanelList",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 132
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineInGameRankMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleDisplayable",
+   "implements": [],
+   "abc": 133
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.staticMarkers.ObjectiveIdReplyState",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 134
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.components.PlatoonInvitePanel",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 135
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.FrontlineBattlePage",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineBattlePageMeta",
+   "implements": [
+    "IFrontlineBattlePageMeta"
+   ],
+   "abc": 136
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.ClassManagerExtensionBattleMarkersMeta",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 137
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineScorePanel.components.SectorBaseScoreEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 138
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.upgradePanel.data.FrontlineConfiguratorModuleVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 139
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.battleTankCarousel.renderers.BaseBattleTankIcon",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 140
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.data.MissionChangeMessageVO",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.data.BaseGameMessageVO",
+   "implements": [],
+   "abc": 141
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineDamagePanel.components.GeneralBonus",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 142
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.data.SectorBaseContestedMessageVO",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.data.BaseGameMessageVO",
+   "implements": [],
+   "abc": 143
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.battleLoading.components.FrontlineBattleStatsTableCtrl",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.data.FrontlineStatsDataProviderBaseCtrl",
+   "implements": [],
+   "abc": 144
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.staticMarkers.headquarter.HeadquarterAnimation",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 145
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMissionsPanel.data.FrontlineMissionVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 146
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineBattleUpgradePanelMeta",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleDisplayable",
+   "implements": [],
+   "abc": 147
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.upgradePanel.FrontlineBattleUpgradePanel",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineBattleUpgradePanelMeta",
+   "implements": [
+    "IFrontlineBattleUpgradePanelMeta"
+   ],
+   "abc": 148
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.consumablesPanel.components.FrontlineBattleEquipmentButtonGlow",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.consumablesPanel.BattleEquipmentButtonGlow",
+   "implements": [],
+   "abc": 149
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.minimap.containers.FrontlineMinimapEntriesContainer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.containers.MinimapEntriesContainer",
+   "implements": [],
+   "abc": 150
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineInGameRank.FrontlineInGameRankIcon",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 151
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineInGameRank.FrontlineInGameRankPanel",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineInGameRankMeta",
+   "implements": [
+    "IFrontlineInGameRankMeta"
+   ],
+   "abc": 152
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.modificationPanel.FrontlineModificationPanel",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineModificationPanelMeta",
+   "implements": [
+    "IFrontlineModificationPanelMeta"
+   ],
+   "abc": 153
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.staticMarkers.headquarter.HeadquarterIcon",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleIconHolder",
+   "implements": [],
+   "abc": 154
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineRespawnView.events.FrontlineRespawnEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 155
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineInGameRank.events.FrontlineInGameRankEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 156
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.components.HeadquarterAttackedMessage",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.components.MessageContainerBase",
+   "implements": [],
+   "abc": 157
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IFrontlineDeploymentMapMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 158
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineDeploymentMap.FrontlineDeploymentMap",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.FrontlineDeploymentMapMeta",
+   "implements": [
+    "IFrontlineDeploymentMapMeta"
+   ],
+   "abc": 159
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.data.PlayListsVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 160
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.battleTankCarousel.BattleTankCarouselFilters",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.filters.TankCarouselFilters",
+   "implements": [],
+   "abc": 161
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineDeploymentMap.components.FrontlineMapContainer",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 162
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.consumablesPanel.FrontlineBattleConsumableButton",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.consumablesPanel.BattleEquipmentButton",
+   "implements": [
+    "IFrontlineBattleConsumableButton"
+   ],
+   "abc": 163
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineScorePanel.components.HeadquarterScoreEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 164
+  },
+  {
+   "name": "net.wg.frontline.infrastructure.base.meta.IBattleTankCarouselMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 165
+  },
+  {
+   "name": "FrontlineBattleTankCarouselHelper",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "private": true,
+   "abc": 166
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.battleTankCarousel.FrontlineBattleTankCarousel",
+   "kind": "class",
+   "extends": "net.wg.frontline.infrastructure.base.meta.impl.BattleTankCarouselMeta",
+   "implements": [
+    "IBattleTankCarouselMeta",
+    "IUIComponentEx"
+   ],
+   "abc": 166
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.FrontlineMessagesPanel",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.GameMessagesPanel",
+   "implements": [
+    "IGameMessagesPanelMeta"
+   ],
+   "abc": 167
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.stats.components.FrontlineStatsTableFilterGroup",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 168
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.stats.components.FrontlineStatsGeneralBonus",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 169
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.stats.components.FrontlineFullStatsTableCtrl",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.data.FrontlineStatsDataProviderBaseCtrl",
+   "implements": [
+    "ISquadHandler"
+   ],
+   "abc": 170
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.stats.components.FrontlineFullStatsTable",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 171
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineMessagesPanel.data.FrontlineGameMessageVO",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.gameMessagesPanel.data.GameMessageVO",
+   "implements": [],
+   "abc": 172
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineDeploymentMap.components.FrontlineDeploymentMapEntriesContainer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.containers.MinimapEntriesContainer",
+   "implements": [],
+   "abc": 173
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.minimap.entries.MapShortcutLabel",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 174
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.modificationPanel.components.FrontlineModificationIcon",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 175
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlineRespawnView.components.FrontlineRespawnPoint",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable",
+    "ISoundable"
+   ],
+   "abc": 176
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.components.PlatoonMembersPanel",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 177
+  },
+  {
+   "name": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.renderers.PlatoonMemberListItemRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.BattleUIComponent",
+   "implements": [],
+   "abc": 178
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ },
+ "metadata": "<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'><rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1'><dc:format>application/x-shockwave-flash</dc:format><dc:title>swc frontline_gui_battle</dc:title><dc:date>10/29/26 9:05 PM</dc:date></rdf:Description></rdf:RDF>",
+ "product_info": {
+  "product": 3,
+  "edition": 6,
+  "version": "4.5",
+  "build": 21328
+ }
+}

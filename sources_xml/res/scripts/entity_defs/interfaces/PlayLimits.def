@@ -1,0 +1,10 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/PlayLimits.def -->
+<root>
+	<BaseMethods>
+		<playLimits_submitReadinessValidation>
+			<Arg>INT32</Arg>
+		</playLimits_submitReadinessValidation>
+		<playLimits_schedulePlayLimitsTimer />
+		<playLimits_onKickAtTimeUpdated />
+	</BaseMethods>
+</root>

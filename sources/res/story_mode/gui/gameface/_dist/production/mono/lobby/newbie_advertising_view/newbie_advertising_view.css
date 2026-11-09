@@ -1,0 +1,61 @@
+/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable scss/dollar-variable-pattern */
+.NewbieAdvertisingViewApp_e4af8027 {
+  background: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.bg") no-repeat 50%/cover;
+}
+
+.NewbieAdvertisingViewApp_icon__image1_57e4e1b8 {
+  margin-top: 25rem;
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_1_extraSmall");
+}
+.mediaSmall .NewbieAdvertisingViewApp_icon__image1_57e4e1b8 {
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_1_small");
+}
+.mediaMedium .NewbieAdvertisingViewApp_icon__image1_57e4e1b8 {
+  margin-top: 27rem;
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_1_medium");
+}
+.mediaLarge .NewbieAdvertisingViewApp_icon__image1_57e4e1b8 {
+  margin-top: 23rem;
+}
+.mediaExtraLarge .NewbieAdvertisingViewApp_icon__image1_57e4e1b8 {
+  margin-top: 30rem;
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_1_extraLarge");
+}
+.NewbieAdvertisingViewApp_icon__image2_4faf2ca7 {
+  margin-top: 25rem;
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_2_extraSmall");
+}
+.mediaSmall .NewbieAdvertisingViewApp_icon__image2_4faf2ca7 {
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_2_small");
+}
+.mediaMedium .NewbieAdvertisingViewApp_icon__image2_4faf2ca7 {
+  margin-top: 27rem;
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_2_medium");
+}
+.mediaLarge .NewbieAdvertisingViewApp_icon__image2_4faf2ca7 {
+  margin-top: 23rem;
+}
+.mediaExtraLarge .NewbieAdvertisingViewApp_icon__image2_4faf2ca7 {
+  margin-top: 30rem;
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_2_extraLarge");
+}
+.NewbieAdvertisingViewApp_icon__image3_ad4b8736 {
+  margin-top: 25rem;
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_3_extraSmall");
+}
+.mediaSmall .NewbieAdvertisingViewApp_icon__image3_ad4b8736 {
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_3_small");
+}
+.mediaMedium .NewbieAdvertisingViewApp_icon__image3_ad4b8736 {
+  margin-top: 27rem;
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_3_medium");
+}
+.mediaLarge .NewbieAdvertisingViewApp_icon__image3_ad4b8736 {
+  margin-top: 23rem;
+}
+.mediaExtraLarge .NewbieAdvertisingViewApp_icon__image3_ad4b8736 {
+  margin-top: 30rem;
+  background-image: url("R.images.story_mode.gui.maps.icons.newbieAdvertisingScreen.card_3_extraLarge");
+}

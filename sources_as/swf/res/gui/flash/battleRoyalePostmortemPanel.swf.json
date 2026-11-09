@@ -1,0 +1,118 @@
+{
+ "source": "sources/res/gui/flash/battleRoyalePostmortemPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 4048,
+ "actual_length": 4048,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 5,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 9,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 6,
+  "DefineSprite": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 6,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 6,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 3,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 6,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "postmortemPanel.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 15,
+   "class": "BattleRoyalePostmortemPanelUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1384,
+   "classes": 3,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 297
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyalePostmortemPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.BattleRoyalePostmortemPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 127"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

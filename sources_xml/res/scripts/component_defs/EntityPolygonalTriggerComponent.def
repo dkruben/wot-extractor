@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/EntityPolygonalTriggerComponent.def -->
+<root>
+	<Properties>
+		<isActive>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isActive>
+	</Properties>
+	<ofEntity>
+		<Entity />
+	</ofEntity>
+	<DefaultKeyName>entityPolygonalTrigger</DefaultKeyName>
+</root>

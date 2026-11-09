@@ -1,0 +1,157 @@
+{
+  "rid": "R.views.fun_random.mono.lobby.tooltips.loot_box_tooltip",
+  "rid_source": "sources/res/fun_random/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "loot_box_tooltip",
+  "dir": "fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip",
+  "feature": "fun_random",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip/bundle.js",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip/bundle.js"
+    },
+    {
+      "name": "loot_box_tooltip.css",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip/loot_box_tooltip.css",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip/loot_box_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "loot_box_tooltip.html",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip/loot_box_tooltip.html",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip/loot_box_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip/bundle.js",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip/bundle.js"
+    },
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip/loot_box_tooltip.css",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/loot_box_tooltip/loot_box_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.fun_random.mono.lobby.tooltips.loot_box_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "5 referencia(s) R.views.fun_random.mono.lobby.tooltips.loot_box_tooltip no Python",
+      "ViewModel FunRandomProgressionViewModel (model=... no Python da view): 0/11 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/battle_results/sub_presenters/fun_progression.py",
+        58
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/common/lootboxes.py",
+        79
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/feature/fun_random_progression_view.py",
+        58
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/mode_selector/fun_sub_selector_view.py",
+        99
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/tooltips/fun_random_loot_box_tooltip_view.py",
+        25
+      ]
+    ],
+    "python_files": [
+      "sources/res/fun_random/scripts/client/fun_random/gui/battle_results/sub_presenters/fun_progression.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/common/lootboxes.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/feature/fun_random_progression_view.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/mode_selector/fun_sub_selector_view.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/tooltips/fun_random_loot_box_tooltip_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/fun_random/scripts/client/fun_random/gui/impl/gen/view_models/views/lobby/feature/fun_random_progression_view_model.py",
+      "class": "FunRandomProgressionViewModel",
+      "chain": [
+        "FunRandomProgressionViewModel"
+      ],
+      "properties": [
+        [
+          "state",
+          "ViewModel"
+        ],
+        [
+          "condition",
+          "ViewModel"
+        ],
+        [
+          "infiniteCondition",
+          "ViewModel"
+        ],
+        [
+          "infiniteStage",
+          "ViewModel"
+        ],
+        [
+          "stages",
+          "Array"
+        ],
+        [
+          "assetsPointer",
+          "String"
+        ],
+        [
+          "isFirstOpen",
+          "Bool"
+        ],
+        [
+          "modeViewSettings",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onShowInfo",
+        "onOpenTierList"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 11,
+        "missing": [
+          "assetsPointer",
+          "condition",
+          "infiniteCondition",
+          "infiniteStage",
+          "isFirstOpen",
+          "modeViewSettings",
+          "onClose",
+          "onOpenTierList",
+          "onShowInfo",
+          "stages",
+          "state"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/gen/view_models/views/lobby/feature/mode_selector/fun_random_sub_selector_model.py",
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/gen/view_models/views/lobby/tooltips/fun_random_loot_box_tooltip_view_model.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "rid": "R.views.lobby.battle_matters.BattleMattersEntryPointView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "BattleMattersEntryPointView",
+  "dir": "gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView",
+  "feature": null,
+  "files": [
+    {
+      "name": "BattleMattersEntryPointView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView/BattleMattersEntryPointView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView/BattleMattersEntryPointView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleMattersEntryPointView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView/BattleMattersEntryPointView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView/BattleMattersEntryPointView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleMattersEntryPointView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView/BattleMattersEntryPointView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView/BattleMattersEntryPointView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView/BattleMattersEntryPointView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/battle_matters/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/battle_matters/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView/BattleMattersEntryPointView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView/BattleMattersEntryPointView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView/BattleMattersEntryPointView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersEntryPointView/BattleMattersEntryPointView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "lobby.battle_matters.tooltips.BattleMattersEntryTooltipView"
+  ],
+  "commands": [
+    "onClick"
+  ],
+  "link": {
+    "rid": "R.views.lobby.battle_matters.BattleMattersEntryPointView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.battle_matters.BattleMattersEntryPointView no Python",
+      "ViewModel BattleMattersEntryPointViewModel (model=... no Python da view): 6/6 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_matters/battle_matters_entry_point_view.py",
+        28
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_matters/battle_matters_entry_point_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_matters/battle_matters_entry_point_view_model.py",
+      "class": "BattleMattersEntryPointViewModel",
+      "chain": [
+        "BattleMattersEntryPointViewModel"
+      ],
+      "properties": [
+        [
+          "currentProgress",
+          "Number"
+        ],
+        [
+          "maxProgress",
+          "Number"
+        ],
+        [
+          "questNumber",
+          "Number"
+        ],
+        [
+          "isCompleted",
+          "Bool"
+        ],
+        [
+          "state",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onClick"
+      ],
+      "coverage": {
+        "found": 6,
+        "total": 6,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

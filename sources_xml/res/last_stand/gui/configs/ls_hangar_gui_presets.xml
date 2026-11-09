@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/gui/configs/ls_hangar_gui_presets.xml -->
+<root>
+	<queueTypePresets>
+		<item>
+			<queueType>107</queueType>
+			<presetName>empty</presetName>
+		</item>
+		<item>
+			<queueType>108</queueType>
+			<presetName>empty</presetName>
+		</item>
+		<item>
+			<queueType>109</queueType>
+			<presetName>empty</presetName>
+		</item>
+	</queueTypePresets>
+</root>

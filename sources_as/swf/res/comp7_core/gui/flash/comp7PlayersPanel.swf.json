@@ -1,0 +1,170 @@
+{
+ "source": "sources/res/comp7_core/gui/flash/comp7PlayersPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 5608,
+ "actual_length": 5608,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 7,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 13,
+  "DefineShape3": 1,
+  "DefineEditText": 8,
+  "DefineSprite": 6,
+  "FileAttributes": 1,
+  "PlaceObject3": 44,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 8,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 1,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 8,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "comp7_core|comp7Cmpnts.swf",
+   "symbols": []
+  },
+  {
+   "url": "playersPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 15,
+   "class": "Comp7PlayersPanelListItemLeftUI"
+  },
+  {
+   "id": 10,
+   "class": "Comp7PlayersPanelListItemRightUI"
+  },
+  {
+   "id": 9,
+   "class": "hitItem"
+  },
+  {
+   "id": 3,
+   "class": "Comp7PlayersPanelUI"
+  },
+  {
+   "id": 2,
+   "class": "Comp7PlayerPanelListLeftUI"
+  },
+  {
+   "id": 1,
+   "class": "Comp7PlayerPanelListRightUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2140,
+   "classes": 7,
+   "methods": 24,
+   "bodies": 24,
+   "code_bytes": 505
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hitItem",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7PlayerPanelListLeftUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.stats.components.playersPanel.list.Comp7PlayersPanelListLeft",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7PlayerPanelListRightUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.stats.components.playersPanel.list.Comp7PlayersPanelListRight",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7PlayersPanelListItemLeftUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.stats.components.playersPanel.list.Comp7PlayersPanelListItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7PlayersPanelListItemRightUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.stats.components.playersPanel.list.Comp7PlayersPanelListItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7PlayersPanelUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.stats.components.playersPanel.Comp7PlayersPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

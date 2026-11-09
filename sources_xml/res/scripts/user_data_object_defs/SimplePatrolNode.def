@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/user_data_object_defs/SimplePatrolNode.def -->
+<root>
+	<Domain>BASE</Domain>
+	<Properties>
+		<pathID>
+			<Type>INT8</Type>
+			<Editable>true</Editable>
+		</pathID>
+		<pointNumber>
+			<Type>STRING</Type>
+			<Editable>true</Editable>
+		</pointNumber>
+	</Properties>
+</root>

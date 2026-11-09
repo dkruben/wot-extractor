@@ -1,0 +1,39 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/hangar/sub_views/vehicle_param_base_view_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from enum import Enum as Enum
+from frameworks.wulf import ViewModel as ViewModel
+
+class HighlightType(Enum):
+    NONE = 'none'
+    INCREASE = 'increase'
+    DECREASE = 'decrease'
+    SITUATIONAL = 'situational'
+
+class VehicleParamBaseViewModel(ViewModel):
+    __slots__: tuple
+    def __init__(self, properties=5, commands=0):
+        ...
+    def getId(self):
+        ...
+    def setId(self, value):
+        ...
+    def getIsEnabled(self):
+        ...
+    def setIsEnabled(self, value):
+        ...
+    def getTooltipID(self):
+        ...
+    def setTooltipID(self, value):
+        ...
+    def getValue(self):
+        ...
+    def setValue(self, value):
+        ...
+    def getHighlightType(self):
+        ...
+    def setHighlightType(self, value):
+        ...
+    def _initialize(self):
+        ...

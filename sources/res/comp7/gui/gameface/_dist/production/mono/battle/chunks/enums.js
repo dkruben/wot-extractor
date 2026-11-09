@@ -1,0 +1,1 @@
+var e=function(e){return e.Prepick="prepick",e.Voting="voting",e.Finished="finished",e.None="none",e}({}),n=function(e){return e.NoSelected="noSelected",e.DontBanSelected="dontBanSelected",e.SingleCandidate="singleCandidate",e.MultipleCandidates="multipleCandidates",e}({});export{n,e as t};

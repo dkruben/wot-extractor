@@ -1,0 +1,121 @@
+{
+  "rid": "R.views.halloween.mono.lobby.tooltips.daily_quests_tooltip",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "daily_quests_tooltip",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/tooltips/daily_quests_tooltip",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/daily_quests_tooltip/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/daily_quests_tooltip/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "daily_quests_tooltip.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/daily_quests_tooltip/daily_quests_tooltip.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/daily_quests_tooltip/daily_quests_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "daily_quests_tooltip.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/daily_quests_tooltip/daily_quests_tooltip.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/daily_quests_tooltip/daily_quests_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/divider.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/divider.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/tooltips/daily_quests_tooltip/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/daily_quests_tooltip/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/tooltips/daily_quests_tooltip/daily_quests_tooltip.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/daily_quests_tooltip/daily_quests_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.tooltips.daily_quests_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.halloween.mono.lobby.tooltips.daily_quests_tooltip no Python",
+      "ViewModel DailyTooltipViewModel (model=... no Python da view): 2/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/gsw_cards/quests_card_presenter.py",
+        72
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/tooltips/daily_quests_tooltip.py",
+        23
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/gsw_cards/quests_card_presenter.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/tooltips/daily_quests_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/tooltips/daily_tooltip_view_model.py",
+      "class": "DailyTooltipViewModel",
+      "chain": [
+        "DailyTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "isEpicMedal",
+          "Bool"
+        ],
+        [
+          "resetTime",
+          "Number"
+        ],
+        [
+          "name",
+          "String"
+        ],
+        [
+          "description",
+          "String"
+        ],
+        [
+          "rewards",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 5,
+        "missing": [
+          "description",
+          "isEpicMedal",
+          "resetTime"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/widgets/quests_list_view_model.py"
+      ]
+    }
+  }
+}

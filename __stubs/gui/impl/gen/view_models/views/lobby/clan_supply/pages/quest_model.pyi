@@ -1,0 +1,76 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/clan_supply/pages/quest_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from enum import Enum as Enum, IntEnum as IntEnum
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from gui.impl.gen.view_models.common.missions.bonuses.icon_bonus_model import IconBonusModel as IconBonusModel
+
+class QuestStatus(IntEnum):
+    DISABLED = 0
+    IN_PROGRESS = 1
+    REWARD_AVAILABLE = 2
+    REWARD_PENDING = 3
+    COMPLETE = 4
+
+class QuestCondition(Enum):
+    FRAGS = 'frags'
+    FULL_DAMAGE = 'fullDamage'
+    EXP = 'exp'
+    WIN = 'win'
+
+class QuestSquadState(Enum):
+    SOLO = 'solo'
+    PLATOON = 'platoon'
+    SOLO_AND_PLATOON = 'soloAndPlatoon'
+    DETACHMENT = 'detachment'
+
+class QuestModel(ViewModel):
+    __slots__: tuple
+    def __init__(self, properties=10, commands=0):
+        ...
+    def getLevel(self):
+        ...
+    def setLevel(self, value):
+        ...
+    def getCurrentProgress(self):
+        ...
+    def setCurrentProgress(self, value):
+        ...
+    def getRequiredProgress(self):
+        ...
+    def setRequiredProgress(self, value):
+        ...
+    def getMainCondition(self):
+        ...
+    def setMainCondition(self, value):
+        ...
+    def getMainSquadState(self):
+        ...
+    def setMainSquadState(self, value):
+        ...
+    def getAlternativeCondition(self):
+        ...
+    def setAlternativeCondition(self, value):
+        ...
+    def getAlternativeSquadState(self):
+        ...
+    def setAlternativeSquadState(self, value):
+        ...
+    def getConditionParams(self):
+        ...
+    def setConditionParams(self, value):
+        ...
+    def getStatus(self):
+        ...
+    def setStatus(self, value):
+        ...
+    def getRewards(self):
+        ...
+    def setRewards(self, value):
+        ...
+    @staticmethod
+    def getRewardsType():
+        ...
+    def _initialize(self):
+        ...

@@ -1,0 +1,206 @@
+{
+ "source": "sources/res/gui/flash/strategicCrosshair.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 60396,
+ "actual_length": 60396,
+ "frame_size_px": [
+  0.0,
+  800.0,
+  0.0,
+  800.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 25,
+  "ShowFrame": 336,
+  "DefineShape": 14,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 390,
+  "RemoveObject2": 14,
+  "DefineBitsLossless2": 13,
+  "DefineEditText": 10,
+  "DefineSprite": 24,
+  "FrameLabel": 13,
+  "FileAttributes": 1,
+  "PlaceObject3": 14,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 7,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 14,
+  "sprites": 24,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 10,
+  "fonts": 0,
+  "classes": 11,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "crosshairControls.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 61,
+   "class": "CrosshairStrategicUI"
+  },
+  {
+   "id": 60,
+   "class": "strategicCrosshair_fla.mcReloadingAnimation_12"
+  },
+  {
+   "id": 59,
+   "class": "strategicCrosshair_fla.CrosshairUniversalBar_10"
+  },
+  {
+   "id": 55,
+   "class": "strategicCrosshair_fla.CrosshairReloadBar_7"
+  },
+  {
+   "id": 37,
+   "class": "ScaleWidgetUI"
+  },
+  {
+   "id": 31,
+   "class": "ArtyShotIndicatorsPanelUI"
+  },
+  {
+   "id": 30,
+   "class": "ArtyShotIndicatorUI"
+  },
+  {
+   "id": 29,
+   "class": "ArtyShotIndicatorName"
+  },
+  {
+   "id": 22,
+   "class": "ArtyShotIndicatorTime"
+  },
+  {
+   "id": 1,
+   "class": "strategicCrosshairImported"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2604,
+   "classes": 11,
+   "methods": 45,
+   "bodies": 45,
+   "code_bytes": 700
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArtyShotIndicatorsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.artyShot.ArtyShotIndicatorsPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "strategicCrosshairImported",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "strategicCrosshair_fla.CrosshairReloadBar_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "strategicCrosshair_fla.CrosshairUniversalBar_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "strategicCrosshair_fla.mcReloadingAnimation_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArtyShotIndicatorName",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.artyShot.ArtyShotIndicatorText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArtyShotIndicatorTime",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.artyShot.ArtyShotIndicatorText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArtyShotIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.artyShot.ArtyShotIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrosshairStrategicUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.CrosshairStrategic",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScaleWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.components.artyScale.ArtyIndicationScale",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

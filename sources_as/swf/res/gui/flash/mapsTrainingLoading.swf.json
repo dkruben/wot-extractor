@@ -1,0 +1,188 @@
+{
+ "source": "sources/res/gui/flash/mapsTrainingLoading.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 26605,
+ "actual_length": 26605,
+ "frame_size_px": [
+  0.0,
+  1920.0,
+  0.0,
+  1080.0
+ ],
+ "frame_rate": 60.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 19,
+  "ShowFrame": 212,
+  "DefineShape": 9,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 279,
+  "RemoveObject2": 5,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 8,
+  "DefineEditText": 8,
+  "DefineSprite": 18,
+  "FrameLabel": 8,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 8,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 8,
+  "shapes": 10,
+  "sprites": 18,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 8,
+  "fonts": 0,
+  "classes": 9,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 44,
+   "class": "stepperUI"
+  },
+  {
+   "id": 38,
+   "class": "MapsTrainingLoading1PageBigUI"
+  },
+  {
+   "id": 35,
+   "class": "MapsTrainingLoading2PageBigUI"
+  },
+  {
+   "id": 32,
+   "class": "MapsTrainingLoading3PageBigUI"
+  },
+  {
+   "id": 29,
+   "class": "MapsTrainingLoading4PageBigUI"
+  },
+  {
+   "id": 26,
+   "class": "MapsTrainingLoadingUI"
+  },
+  {
+   "id": 25,
+   "class": "BtnArrowUI"
+  },
+  {
+   "id": 15,
+   "class": "LoadingProgressUI"
+  },
+  {
+   "id": 2,
+   "class": "StepperBarUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3433,
+   "classes": 9,
+   "methods": 37,
+   "bodies": 37,
+   "code_bytes": 711
+  }
+ ],
+ "classes": [
+  {
+   "name": "MapsTrainingLoading1PageBigUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.LoadingPageContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsTrainingLoading2PageBigUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.LoadingPageContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsTrainingLoading3PageBigUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.LoadingPageContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsTrainingLoading4PageBigUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.LoadingPageContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StepperBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.StepperContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stepperUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LoadingProgressUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.LoadingContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnArrowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsTrainingLoadingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.MapsTrainingBattleLoading",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

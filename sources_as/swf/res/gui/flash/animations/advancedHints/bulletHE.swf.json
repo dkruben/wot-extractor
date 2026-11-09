@@ -1,0 +1,134 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/bulletHE.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 290011,
+ "actual_length": 290011,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  406.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#141410",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 31,
+  "ShowFrame": 601,
+  "DefineShape": 16,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 3,
+  "PlaceObject2": 830,
+  "RemoveObject2": 13,
+  "DefineShape3": 2,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 10,
+  "DefineSprite": 30,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 11,
+  "shapes": 22,
+  "sprites": 30,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "bulletHE_fla.MainTimeline"
+  },
+  {
+   "id": 58,
+   "class": "bulletHE_fla.iconFxExplosion_25"
+  },
+  {
+   "id": 49,
+   "class": "bulletHE_fla.iconTankHeadBigShootAnim_23"
+  },
+  {
+   "id": 48,
+   "class": "bulletHE_fla.tankShoot_20"
+  },
+  {
+   "id": 23,
+   "class": "bulletHE_fla.iconTankBodyStyleBig_12"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1211,
+   "classes": 5,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 330
+  }
+ ],
+ "classes": [
+  {
+   "name": "bulletHE_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletHE_fla.iconFxExplosion_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletHE_fla.iconTankBodyStyleBig_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletHE_fla.iconTankHeadBigShootAnim_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletHE_fla.tankShoot_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

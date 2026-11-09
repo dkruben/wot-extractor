@@ -1,0 +1,19 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/arena_defs/_default_.xml -->
+<root>
+	<extraSoundRemapping>
+		<halloween_remapping>
+			<soundRemapping>
+				<loadBanks>
+					<bank>
+						<name>ev_halloween_hangar.bnk</name>
+						<extension>halloween</extension>
+					</bank>
+					<bank>
+						<name>ev_halloween_hangar.pck</name>
+						<extension>halloween</extension>
+					</bank>
+				</loadBanks>
+			</soundRemapping>
+		</halloween_remapping>
+	</extraSoundRemapping>
+</root>

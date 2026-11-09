@@ -1,0 +1,668 @@
+{
+ "source": "sources/res/halloween/gui/flash/destroyTimersPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 393131,
+ "actual_length": 393131,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 47,
+  "ShowFrame": 1817,
+  "DefineShape": 509,
+  "DefineBits": 1,
+  "JPEGTables": 1,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 1809,
+  "RemoveObject2": 766,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 25,
+  "DefineEditText": 16,
+  "DefineSprite": 46,
+  "FrameLabel": 50,
+  "FileAttributes": 1,
+  "PlaceObject3": 22,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 5,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 28,
+  "shapes": 509,
+  "sprites": 46,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 16,
+  "fonts": 0,
+  "classes": 52,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "statusNotificationsPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "timersPanel.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 599,
+   "class": "containerUI"
+  },
+  {
+   "id": 598,
+   "class": "eventDestroyTimersPanelImports"
+  },
+  {
+   "id": 597,
+   "class": "FillDestroyTimerUI"
+  },
+  {
+   "id": 596,
+   "class": "FillTimerContainerUI"
+  },
+  {
+   "id": 594,
+   "class": "HWBarFill"
+  },
+  {
+   "id": 593,
+   "class": "destroyTimersPanel_fla.circleContainerFill_7"
+  },
+  {
+   "id": 590,
+   "class": "GoToDestroyTimerUI"
+  },
+  {
+   "id": 589,
+   "class": "GotoTimerContainerUI"
+  },
+  {
+   "id": 584,
+   "class": "OrangeTimerDescUI"
+  },
+  {
+   "id": 582,
+   "class": "HWDestroyTimerUI"
+  },
+  {
+   "id": 580,
+   "class": "destroyTimersPanel_fla.bg_23"
+  },
+  {
+   "id": 577,
+   "class": "HWTimerDescUI"
+  },
+  {
+   "id": 575,
+   "class": "HWTimerContainerUI"
+  },
+  {
+   "id": 570,
+   "class": "MagnusSecondaryTimerUI"
+  },
+  {
+   "id": 569,
+   "class": "MagusSecondaryTimerContainerUI"
+  },
+  {
+   "id": 565,
+   "class": "destroyTimersPanel_fla.pulsingGlow_31"
+  },
+  {
+   "id": 561,
+   "class": "timerProgressBarOrange"
+  },
+  {
+   "id": 560,
+   "class": "timerProgressBarGreen"
+  },
+  {
+   "id": 381,
+   "class": "timerProgressBarViolet"
+  },
+  {
+   "id": 198,
+   "class": "MagnusWaitSecondaryTimerUI"
+  },
+  {
+   "id": 197,
+   "class": "SecondaryTimerFXContainerUI"
+  },
+  {
+   "id": 196,
+   "class": "destroyTimersPanel_fla.multipleHitFX_19"
+  },
+  {
+   "id": 195,
+   "class": "destroyTimersPanel_fla.explosionFX_16"
+  },
+  {
+   "id": 188,
+   "class": "MagusWaitSecondaryTimerContainerUI"
+  },
+  {
+   "id": 185,
+   "class": "IconSwitcherUI"
+  },
+  {
+   "id": 184,
+   "class": "timerProgressBarEmpty"
+  },
+  {
+   "id": 183,
+   "class": "WaitDestroyTimerUI"
+  },
+  {
+   "id": 182,
+   "class": "WaitTimerContainerUI"
+  },
+  {
+   "id": 181,
+   "class": "HWIconSwitcherUI"
+  },
+  {
+   "id": 180,
+   "class": "bar"
+  },
+  {
+   "id": 36,
+   "class": "destroyTimersPanel_fla.circleContainer_3"
+  },
+  {
+   "id": 31,
+   "class": "VioletTimerDescUI"
+  },
+  {
+   "id": 29,
+   "class": "HWGotoStatusNotificationTimerUI"
+  },
+  {
+   "id": 28,
+   "class": "HWLootIconContentUI"
+  },
+  {
+   "id": 17,
+   "class": "HWStatusNotificationsPanelUI"
+  },
+  {
+   "id": 16,
+   "class": "HWNotificationsContainerUI"
+  },
+  {
+   "id": 15,
+   "class": "HWWaitStatusNotificationTimerUI"
+  },
+  {
+   "id": 14,
+   "class": "AreaDeathZoneDamageOvertimeStatusIconUI"
+  },
+  {
+   "id": 13,
+   "class": "AreaDeathZoneIgniteStatusIconUI"
+  },
+  {
+   "id": 12,
+   "class": "AreaDeathZoneDamageOvertimeStatusIconSmallUI"
+  },
+  {
+   "id": 11,
+   "class": "AreaDeathZoneIgniteStatusIconSmallUI"
+  },
+  {
+   "id": 10,
+   "class": "AreaDeathZoneStunStatusIconSmallUI"
+  },
+  {
+   "id": 9,
+   "class": "AreaDeathZoneStunStatusIconUI"
+  },
+  {
+   "id": 8,
+   "class": "IconVolotReadySmall"
+  },
+  {
+   "id": 7,
+   "class": "HWHalfOverturnSmallUI"
+  },
+  {
+   "id": 6,
+   "class": "AreaDearhZoneStatusIconUI"
+  },
+  {
+   "id": 5,
+   "class": "AreaDearhZoneStatusIconSmallUI"
+  },
+  {
+   "id": 4,
+   "class": "DearhZoneStatusIconUI"
+  },
+  {
+   "id": 3,
+   "class": "TeleportTimerIcon"
+  },
+  {
+   "id": 2,
+   "class": "TeleportTimerIconSmall"
+  },
+  {
+   "id": 1,
+   "class": "IconVolotReady"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 10178,
+   "classes": 52,
+   "methods": 206,
+   "bodies": 206,
+   "code_bytes": 3205
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AreaDearhZoneStatusIconSmallUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AreaDearhZoneStatusIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AreaDeathZoneDamageOvertimeStatusIconSmallUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AreaDeathZoneDamageOvertimeStatusIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AreaDeathZoneIgniteStatusIconSmallUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AreaDeathZoneIgniteStatusIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AreaDeathZoneStunStatusIconSmallUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AreaDeathZoneStunStatusIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DearhZoneStatusIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWHalfOverturnSmallUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconVolotReady",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconVolotReadySmall",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TeleportTimerIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TeleportTimerIconSmall",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWIconSwitcherUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWNotificationsContainerUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconSwitcherUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWTimerDescUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "containerUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimersPanel_fla.bg_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimersPanel_fla.circleContainerFill_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimersPanel_fla.circleContainer_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimersPanel_fla.explosionFX_16",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimersPanel_fla.multipleHitFX_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimersPanel_fla.pulsingGlow_31",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventDestroyTimersPanelImports",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OrangeTimerDescUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusTextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VioletTimerDescUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusTextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWBarFill",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bar",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerProgressBarEmpty",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerProgressBarGreen",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerProgressBarOrange",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerProgressBarViolet",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWLootIconContentUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.AnimationContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BattleRoyaleTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SecondaryTimerFXContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.secondaryTimerFx.SecondaryTimerFXContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FillTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GotoTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WaitTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MagusSecondaryTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusSecondaryTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MagusWaitSecondaryTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusSecondaryTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWGotoStatusNotificationTimerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusGoToNotificationTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWWaitStatusNotificationTimerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusWaitToNotificationTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FillDestroyTimerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusDestroyTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GoToDestroyTimerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusDestroyTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WaitDestroyTimerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusDestroyTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWDestroyTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BattleRoyaleTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MagnusSecondaryTimerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusSecondaryTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MagnusWaitSecondaryTimerUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.MagnusSecondaryTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HWStatusNotificationsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.destroyTimers.HWStatusNotificationsPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

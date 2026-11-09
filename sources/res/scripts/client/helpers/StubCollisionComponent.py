@@ -1,0 +1,87 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/helpers/StubCollisionComponent.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/helpers/StubCollisionComponent.py
+from __future__ import absolute_import
+import typing, Math, CGF
+from vehicle_systems.tankStructure import TankPartNames, TankPartIndexes
+
+class StubCollisionComponent(object):
+    _SIZE = 1.0
+    _BBOX_MIN = Math.Vector3(0.0, 0.0, 0.0)
+    _BBOX_MAX = Math.Vector3(_SIZE, _SIZE, _SIZE)
+    _BBOX_DISTANCE = (_BBOX_MAX - _BBOX_MIN).length
+    _NORMAL = Math.Vector3(0, 1, 0)
+
+    def __init__(self, spaceID):
+        self._spaceID = spaceID
+        self._partIndices = TankPartIndexes.ALL
+
+    @property
+    def spaceID(self):
+        return self._spaceID
+
+    @property
+    def maxStaticPartIndex(self):
+        return len(self._partIndices) - 1
+
+    @property
+    def partIndices(self):
+        return self._partIndices
+
+    def getBoundingBox(self, partIndex):
+        return (
+         self._BBOX_MIN, self._BBOX_MAX, self._BBOX_DISTANCE)
+
+    def getPartName(self, partIndex):
+        partName = TankPartIndexes.getName(partIndex)
+        if partName:
+            return partName
+        return TankPartNames.CHASSIS
+
+    def collideLocal(self, partIndex, start, end):
+        direction = end - start
+        direction.normalise()
+        return (
+         0.0, Math.Vector3(start), Math.Vector3(-direction.x, -direction.y, -direction.z), 0)
+
+    def collideLocalPoint(self, partIndex, point, maxDistance):
+        return (
+         0.0, Math.Vector3(point), self._NORMAL, 0)
+
+    def collideAllWorld(self, start, end):
+        return (0.0, 1.0, 0, 0)
+
+    def collideShape(self, partIndex, vertices, extent):
+        return 0.0
+
+    def collideWorld(self, partIndex, start, end):
+        return 0.0
+
+    def collideWorldRecursively(self, partIndex, start, end):
+        return 0.0
+
+    def collideLocalRecursively(self, partIndex, start, end):
+        return 0.0
+
+    def hasAttachment(self, partIndex):
+        return True
+
+    def getParentPartIndex(self, partIndex):
+        return
+
+    def getPartTransform(self, partIndex):
+        return Math.Matrix()
+
+    def getPartTransformProvider(self, partIndex):
+        return Math.Matrix()
+
+    def getPartGameObject(self, partIndex):
+        return CGF.GameObject.INVALID_GAME_OBJECT
+
+    def getColliderID(self):
+        return 0
+
+    def setOnAttachmentsUpdated(self, callback):
+        pass

@@ -1,0 +1,74 @@
+{
+  "rid": "R.views.lobby.battle_pass.trophy_device_confirm_dialog.TrophyDeviceConfirmDialogContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "TrophyDeviceConfirmDialogContent",
+  "dir": "gui/unbound/views/lobby/battle_pass",
+  "feature": null,
+  "files": [
+    {
+      "name": "trophy_device_confirm_dialog.unbound",
+      "effective": "res/gui/unbound/views/lobby/battle_pass/trophy_device_confirm_dialog.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/battle_pass/trophy_device_confirm_dialog.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.battle_pass.trophy_device_confirm_dialog.TrophyDeviceConfirmDialogContent",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.battle_pass.trophy_device_confirm_dialog.TrophyDeviceConfirmDialogContent no Python",
+      "ViewModel TrophyDeviceConfirmDialogModel (model=... no Python da view): 3/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/trophy_device_confirm_view.py",
+        100
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/trophy_device_confirm_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/trophy_device_confirm_dialog_model.py",
+      "class": "TrophyDeviceConfirmDialogModel",
+      "chain": [
+        "TrophyDeviceConfirmDialogModel"
+      ],
+      "properties": [
+        [
+          "trophyBasicName",
+          "String"
+        ],
+        [
+          "trophyBasicImg",
+          "String"
+        ],
+        [
+          "bonuses",
+          "Array"
+        ],
+        [
+          "credits",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 3,
+        "total": 4,
+        "missing": [
+          "credits"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

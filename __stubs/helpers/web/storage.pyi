@@ -1,0 +1,16 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/helpers/web/storage.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+
+class IStorage(object):
+    def close(self):
+        ...
+    def add(self, name, data, callback):
+        ...
+    def remove(self, name):
+        ...
+    def isStored(self, name):
+        ...
+    def getAll(self):
+        ...

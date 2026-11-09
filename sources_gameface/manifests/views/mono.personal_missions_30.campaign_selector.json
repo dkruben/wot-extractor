@@ -1,0 +1,113 @@
+{
+  "rid": "R.views.mono.personal_missions_30.campaign_selector",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "campaign_selector",
+  "dir": "gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector/bundle.js"
+    },
+    {
+      "name": "campaign_selector.css",
+      "effective": "res/gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector/campaign_selector.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector/campaign_selector.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "campaign_selector.html",
+      "effective": "res/gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector/campaign_selector.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector/campaign_selector.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector/campaign_selector.css",
+      "key": "res/gui/gameface/_dist/production/mono/personal_missions_30/campaign_selector/campaign_selector.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/personal_missions_30/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/personal_missions_30/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/personal_missions_30/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/personal_missions_30/chunks/lib.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose",
+    "onOperation",
+    "switchCampaign"
+  ],
+  "link": {
+    "rid": "R.views.mono.personal_missions_30.campaign_selector",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.mono.personal_missions_30.campaign_selector no Python",
+      "ViewModel CampaignSelectorModel (model=... no Python da view): 7/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/personal_missions_30/campaign_selector_view.py",
+        278
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/personal_missions_30/campaign_selector_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/personal_missions_30/campaign_selector_model.py",
+      "class": "CampaignSelectorModel",
+      "chain": [
+        "CampaignSelectorModel"
+      ],
+      "properties": [
+        [
+          "campaigns",
+          "Array"
+        ],
+        [
+          "blockedByVehicle",
+          "Bool"
+        ],
+        [
+          "firstTimeEntrance",
+          "Bool"
+        ],
+        [
+          "campaignSelectorViewState",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onOperation",
+        "switchCampaign",
+        "onClose"
+      ],
+      "coverage": {
+        "found": 7,
+        "total": 7,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

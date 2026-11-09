@@ -1,0 +1,76 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/shared/utils/graphics.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import math as math
+from builtins import range as range
+from collections import namedtuple as namedtuple
+from past.utils import old_div as old_div
+import BigWorld as BigWorld
+from shared_utils import CONST_CONTAINER as CONST_CONTAINER
+MIN_SCREEN_WIDTH = 1280
+MIN_SCREEN_HEIGHT = 768
+MIN_COLOR_DEPTH = 32
+VideoMode: Any
+WindowSize: Any
+BorderlessSize: Any
+SCALE_PREFIX: tuple
+GraphicSetting: Any
+
+class GRAPHICS_SETTINGS(CONST_CONTAINER):
+    ...
+
+class GRAPHICS_SETTINGS_STATUS(CONST_CONTAINER):
+    NONE = 0
+    MAJOR_CHANGED = 1
+    MINOR_CHANGED = 2
+
+class _GraphicsStatus(object):
+    __value: Any
+    def __init__(self, value):
+        ...
+    def isReset(self):
+        ...
+    def isShowWarning(self):
+        ...
+    @classmethod
+    def markProcessed(cls):
+        ...
+
+def getStatus():
+    ...
+def isVideoModeSuitable(mode):
+    ...
+def getSuitableVideoModes():
+    ...
+def getSuitableWindowSizes():
+    ...
+def getSuitableBorderlessSizes():
+    ...
+def getGraphicsSetting(settingName):
+    ...
+def getGraphicsPresets(presetIdx=None):
+    ...
+def getGraphicsPresetsIndices():
+    ...
+def getGraphicSettingImages(settingName):
+    ...
+def getGraphicSettingColorSettingsFiletersImages():
+    ...
+def getResolution():
+    ...
+def getInterfaceScalesList(size, powerOfTwo=True):
+    ...
+def onInterfaceScaleChanged(scale):
+    ...
+def getNativeResolutionIndex():
+    ...
+def isGammaSupported():
+    ...
+def isRendererPipelineDeferred():
+    ...
+def isLowPreset():
+    ...
+def getGraphicsEngineValue():
+    ...

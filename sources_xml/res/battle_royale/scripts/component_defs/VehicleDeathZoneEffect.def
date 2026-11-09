@@ -1,0 +1,30 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/component_defs/VehicleDeathZoneEffect.def -->
+<root>
+	<ClientMethods>
+		<onDamaged />
+	</ClientMethods>
+	<Properties>
+		<state>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</state>
+		<damageTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</damageTime>
+		<timeToDamage>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</timeToDamage>
+		<warningStartTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</warningStartTime>
+		<warningFinishTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</warningFinishTime>
+	</Properties>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<DefaultKeyName>deathZoneEffect</DefaultKeyName>
+</root>

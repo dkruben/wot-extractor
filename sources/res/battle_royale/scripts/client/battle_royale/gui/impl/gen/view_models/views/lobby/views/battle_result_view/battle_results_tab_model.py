@@ -1,0 +1,67 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/battle_royale/scripts/client/battle_royale/gui/impl/gen/view_models/views/lobby/views/battle_result_view/battle_results_tab_model.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: battle_royale/scripts/client/battle_royale/gui/impl/gen/view_models/views/lobby/views/battle_result_view/battle_results_tab_model.py
+from battle_royale.gui.impl.gen.view_models.views.lobby.views.battle_result_view.battle_pass_progress import BattlePassProgress
+from gui.impl.gen.view_models.views.battle_royale.battle_results.personal.personal_results_model import PersonalResultsModel
+
+class BattleResultsTabModel(PersonalResultsModel):
+    __slots__ = ()
+
+    def __init__(self, properties=11, commands=0):
+        super(BattleResultsTabModel, self).__init__(properties=properties, commands=commands)
+
+    @property
+    def battlePassProgress(self):
+        return self._getViewModel(4)
+
+    @staticmethod
+    def getBattlePassProgressType():
+        return BattlePassProgress
+
+    def getPlace(self):
+        return self._getNumber(5)
+
+    def setPlace(self, value):
+        self._setNumber(5, value)
+
+    def getHasPremium(self):
+        return self._getBool(6)
+
+    def setHasPremium(self, value):
+        self._setBool(6, value)
+
+    def getVehicleType(self):
+        return self._getString(7)
+
+    def setVehicleType(self, value):
+        self._setString(7, value)
+
+    def getVehicleName(self):
+        return self._getString(8)
+
+    def setVehicleName(self, value):
+        self._setString(8, value)
+
+    def getQuestCompleted(self):
+        return self._getNumber(9)
+
+    def setQuestCompleted(self, value):
+        self._setNumber(9, value)
+
+    def getIsObserver(self):
+        return self._getBool(10)
+
+    def setIsObserver(self, value):
+        self._setBool(10, value)
+
+    def _initialize(self):
+        super(BattleResultsTabModel, self)._initialize()
+        self._addViewModelProperty('battlePassProgress', BattlePassProgress())
+        self._addNumberProperty('place', 0)
+        self._addBoolProperty('hasPremium', False)
+        self._addStringProperty('vehicleType', '')
+        self._addStringProperty('vehicleName', '')
+        self._addNumberProperty('questCompleted', 0)
+        self._addBoolProperty('isObserver', False)

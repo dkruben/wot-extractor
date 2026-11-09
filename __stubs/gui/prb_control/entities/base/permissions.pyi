@@ -1,0 +1,16 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/prb_control/entities/base/permissions.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+
+class IPrbPermissions(object):
+    def canExitFromQueue(self):
+        ...
+    def canChangeVehicle(self):
+        ...
+    def canSendInvite(self):
+        ...
+    def canCreateSquad(self):
+        ...
+    def hasSquadArrow(self):
+        ...

@@ -1,0 +1,29 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/29_el_hallouf/zones.xml -->
+<root>
+	<path>
+		<id>796550198</id>
+		<name>path</name>
+		<node>
+			<name>Zone 1</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>533975299</id>
+			<transform>
+				<row0>194.27 0 0</row0>
+				<row1>0 86.58241 0</row1>
+				<row2>0 0 184.76141</row2>
+				<row3>-274.20847 22.920612 223.71634</row3>
+			</transform>
+		</node>
+		<node>
+			<name>29_el_hallouf_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3974468733</id>
+			<transform>
+				<row0>50 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 59.35602</row2>
+				<row3>-227.72786 18.87268 69.09998</row3>
+			</transform>
+		</node>
+	</path>
+</root>

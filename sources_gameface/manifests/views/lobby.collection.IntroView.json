@@ -1,0 +1,120 @@
+{
+  "rid": "R.views.lobby.collection.IntroView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "IntroView",
+  "dir": "gui/gameface/_dist/production/lobby/collection/IntroView",
+  "feature": null,
+  "files": [
+    {
+      "name": "IntroView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/IntroView/IntroView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/IntroView/IntroView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "IntroView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/IntroView/IntroView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/IntroView/IntroView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "IntroView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/IntroView/IntroView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/IntroView/IntroView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/collection/IntroView/IntroView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/collection/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/collection/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/collection/IntroView/IntroView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/collection/IntroView/IntroView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/collection/IntroView/IntroView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/collection/IntroView/IntroView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.lobby.collection.IntroView",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.collection.IntroView no Python",
+      "ViewModel CollectionsMainViewModel (model=... no Python da view): 2/6 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/collection/collections_main_view.py",
+        161
+      ],
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        1854
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/collection/collections_main_view.py",
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/collection/collections_main_view_model.py",
+      "class": "CollectionsMainViewModel",
+      "chain": [
+        "CollectionsMainViewModel"
+      ],
+      "properties": [
+        [
+          "isViewActive",
+          "Bool"
+        ],
+        [
+          "collections",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onOpenCollection",
+        "onClose",
+        "setCompletionWasShown",
+        "onSetNewCollectionShown"
+      ],
+      "coverage": {
+        "found": 2,
+        "total": 6,
+        "missing": [
+          "isViewActive",
+          "onOpenCollection",
+          "onSetNewCollectionShown",
+          "setCompletionWasShown"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/08_ruinberg/zones.xml -->
+<root>
+	<path>
+		<id>4083055419</id>
+		<name>path</name>
+		<node>
+			<name>Zone 1</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3006945087</id>
+			<transform>
+				<row0>73.0747 0 0</row0>
+				<row1>0 28.463297 0</row1>
+				<row2>0 0 69.28748</row2>
+				<row3>-320.2806 -2.805247 74.83529</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_01</name>
+			<colour>0.8 0.772549 0.2 0.498039</colour>
+			<id>95567550</id>
+			<transform>
+				<row0>37.03193 0 0</row0>
+				<row1>0 65.36033 0</row1>
+				<row2>0 0 62.4101</row2>
+				<row3>-363.5089 2.096524 -41.11258</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_03</name>
+			<colour>0.8 0.772549 0.2 0.498039</colour>
+			<id>113811551</id>
+			<transform>
+				<row0>278.8586 0 0</row0>
+				<row1>0 62.013744 0</row1>
+				<row2>0 0 219.258</row2>
+				<row3>-71.31456 2.700177 -108.60987</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_04</name>
+			<colour>0.8 0.772549 0.2 0.498039</colour>
+			<id>2286615620</id>
+			<transform>
+				<row0>328.2691 0 0</row0>
+				<row1>0 68.28321 0</row1>
+				<row2>0 0 266.97144</row2>
+				<row3>-24.790272 1.193066 134.56992</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_02</name>
+			<colour>0.8 0.772549 0.2 0.498039</colour>
+			<id>1322370576</id>
+			<transform>
+				<row0>61.56158 0 0</row0>
+				<row1>0 71.079384 0</row1>
+				<row2>0 0 87.58244</row2>
+				<row3>-331.87524 2.191624 -186.13646</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_05</name>
+			<colour>0.8 0.772549 0.2 0.498039</colour>
+			<id>2384092657</id>
+			<transform>
+				<row0>45.110588 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 50.69834</row2>
+				<row3>-211.40204 4.076169 27.623745</row3>
+			</transform>
+		</node>
+		<node>
+			<name>08_ruinberg_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3199226045</id>
+			<transform>
+				<row0>45.94466 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 71.6919</row2>
+				<row3>296.81586 8.882367 -246.3974</row3>
+			</transform>
+		</node>
+	</path>
+</root>

@@ -1,0 +1,118 @@
+{
+  "rid": "R.views.mono.pet_system.tooltips.pet_tooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "pet_tooltip",
+  "dir": "gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip/bundle.js"
+    },
+    {
+      "name": "pet_tooltip.css",
+      "effective": "res/gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip/pet_tooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip/pet_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "pet_tooltip.html",
+      "effective": "res/gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip/pet_tooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip/pet_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/pet_system/chunks/breed.css",
+      "key": "res/gui/gameface/_dist/production/mono/pet_system/chunks/breed.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/pet_system/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/pet_system/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/pet_system/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/pet_system/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip/pet_tooltip.css",
+      "key": "res/gui/gameface/_dist/production/mono/pet_system/tooltips/pet_tooltip/pet_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.pet_system.tooltips.pet_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.mono.pet_system.tooltips.pet_tooltip no Python",
+      "ViewModel PetTooltipModel (model=... no Python da view): 1/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/pet_system/tooltips/pet_tooltip.py",
+        19
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/pet_system/tooltips/pet_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/pet_system/tooltips/pet_tooltip_model.py",
+      "class": "PetTooltipModel",
+      "chain": [
+        "PetTooltipModel"
+      ],
+      "properties": [
+        [
+          "petNameID",
+          "Number"
+        ],
+        [
+          "petID",
+          "Number"
+        ],
+        [
+          "petType",
+          "String"
+        ],
+        [
+          "breedName",
+          "String"
+        ],
+        [
+          "promotionBonuses",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 5,
+        "missing": [
+          "breedName",
+          "petID",
+          "petNameID",
+          "petType"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

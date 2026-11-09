@@ -1,0 +1,39 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/common/tabs_controller.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import inspect as inspect
+from future.utils import iterkeys as iterkeys
+from account_helpers.AccountSettings import AccountSettings as AccountSettings, OPT_DEVICE_TAB_VISITED as OPT_DEVICE_TAB_VISITED
+
+class TabsController(object):
+    __slots__: tuple
+    _autoCreating: Any
+    _tabs: Any
+    def __init__(self, autoCreating=True):
+        ...
+    def createTabModels(self, tabsArray, **kwargs):
+        ...
+    def updateTabModels(self, tabsArray):
+        ...
+    def updateTabModel(self, tabName, tabsArray):
+        ...
+    def tabOrderKey(self, tabName):
+        ...
+    def getDefaultTab(self):
+        ...
+    def _getTabs(self, **kwargs):
+        ...
+    def _createViewModel(self, name):
+        ...
+    @property
+    def tabs(self):
+        ...
+    def isVisited(self, tabName):
+        ...
+    def setVisited(self, tabName):
+        ...
+
+def tabUpdateFunc(tabName):
+    ...

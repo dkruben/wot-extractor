@@ -1,0 +1,1 @@
+import{ds as e,et as t}from"./lib.js";var r=0,s=1,a=(a,i,n)=>{const o=Number.isInteger(a)||Number.isInteger(10*a)?e(a,s):e(parseFloat(a.toFixed(n)),r);return i?t(R.strings.comp7_ext.percentage(),{percentageValue:o}):o},i=({value:e,isPercentage:t=!1,fractionDigits:r=2})=>-1===e?R.strings.comp7_ext.dash():a(e,t,r);export{i as n,a as t};

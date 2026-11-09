@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/server_side_replay/scripts/component_defs/ServerReplayArenaComponent.def -->
+<root>
+	<Properties />
+	<BaseMethods />
+	<CellMethods>
+		<storeInitialState>
+			<Arg>PYTHON</Arg>
+		</storeInitialState>
+		<recordReplayAvatarMethod>
+			<Arg>STRING</Arg>
+			<Arg>PYTHON</Arg>
+		</recordReplayAvatarMethod>
+	</CellMethods>
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+</root>

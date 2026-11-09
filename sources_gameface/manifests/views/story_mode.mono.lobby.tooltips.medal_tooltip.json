@@ -1,0 +1,119 @@
+{
+  "rid": "R.views.story_mode.mono.lobby.tooltips.medal_tooltip",
+  "rid_source": "sources/res/story_mode/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "medal_tooltip",
+  "dir": "story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/medal_tooltip",
+  "feature": "story_mode",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/medal_tooltip/bundle.js",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/medal_tooltip/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "medal_tooltip.css",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/medal_tooltip/medal_tooltip.css",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/medal_tooltip/medal_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "medal_tooltip.html",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/medal_tooltip/medal_tooltip.html",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/medal_tooltip/medal_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/medal_tooltip/bundle.js",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/medal_tooltip/bundle.js"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/medal_tooltip/medal_tooltip.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/medal_tooltip/medal_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.story_mode.mono.lobby.tooltips.medal_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.story_mode.mono.lobby.tooltips.medal_tooltip no Python",
+      "ViewModel CongratulationsWindowViewModel (model=... no Python da view): 0/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/congratulations_window.py",
+        44
+      ]
+    ],
+    "python_files": [
+      "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/congratulations_window.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/story_mode/scripts/client/story_mode/gui/impl/gen/view_models/views/lobby/congratulations_window_view_model.py",
+      "class": "CongratulationsWindowViewModel",
+      "chain": [
+        "CongratulationsWindowViewModel"
+      ],
+      "properties": [
+        [
+          "isCloseVisible",
+          "Bool"
+        ],
+        [
+          "isOnboarding",
+          "Bool"
+        ],
+        [
+          "medalName",
+          "String"
+        ],
+        [
+          "badgeId",
+          "Number"
+        ],
+        [
+          "missionId",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onLoaded"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 7,
+        "missing": [
+          "badgeId",
+          "isCloseVisible",
+          "isOnboarding",
+          "medalName",
+          "missionId",
+          "onClose",
+          "onLoaded"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/gen/view_models/views/lobby/medal_tooltip_view_model.py"
+      ]
+    }
+  }
+}

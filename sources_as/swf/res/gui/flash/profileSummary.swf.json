@@ -1,0 +1,239 @@
+{
+ "source": "sources/res/gui/flash/profileSummary.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 689188,
+ "actual_length": 689188,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 15,
+  "ShowFrame": 31,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 23,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 3,
+  "DefineEditText": 9,
+  "DefineSprite": 14,
+  "FrameLabel": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 29,
+  "ImportAssets2": 6,
+  "CSMTextSettings": 9,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 3,
+  "shapes": 5,
+  "sprites": 14,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 9,
+  "fonts": 0,
+  "classes": 13,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "globalRatingAnimation.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "profileComponents.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 31,
+   "class": "ProfileGroupBlockUI"
+  },
+  {
+   "id": 29,
+   "class": "ProfileSummaryPage_UI"
+  },
+  {
+   "id": 28,
+   "class": "NearestAwardsComponent_UI"
+  },
+  {
+   "id": 26,
+   "class": "ProfilePageFooter_UI"
+  },
+  {
+   "id": 24,
+   "class": "ProfileSummaryWindow_UI"
+  },
+  {
+   "id": 23,
+   "class": "SignificantAwards_UI"
+  },
+  {
+   "id": 21,
+   "class": "ProfileMedalsList_UI"
+  },
+  {
+   "id": 16,
+   "class": "PersonalScoreComponentUI"
+  },
+  {
+   "id": 13,
+   "class": "CenteredLineDescrIconText_UI"
+  },
+  {
+   "id": 11,
+   "class": "CenteredUnderlineText_UI"
+  },
+  {
+   "id": 7,
+   "class": "ProfileWindowFooter_UI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 10637,
+   "classes": 13,
+   "methods": 73,
+   "bodies": 73,
+   "code_bytes": 3649
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CenteredUnderlineText_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.UnderlinedText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalScoreComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.components.PersonalScoreComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NearestAwardsComponent_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.summary.AwardsListComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SignificantAwards_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.summary.AwardsListComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileGroupBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.components.ProfileGroupBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfilePageFooter_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.components.ProfilePageFooter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileWindowFooter_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.components.ProfileWindowFooter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CenteredLineDescrIconText_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.components.CenteredLineIconText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileMedalsList_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.components.ProfileMedalsList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileSummaryPage_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.summary.ProfileSummaryPage",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileSummaryWindow_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.summary.ProfileSummaryWindow",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,25 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7/scripts/common/comp7_common/__init__.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7/scripts/common/comp7_common/__init__.py
+from __future__ import absolute_import
+import constants
+from constants_utils import addArenaGuiTypesFromExtension, addPrebattleTypesFromExtension, initSquadCommonTypes, addBattleProgressCategory
+from comp7_core_constants import injectCommonConstants
+from comp7_common import comp7_constants
+from constants import PREBATTLE_TYPE
+
+def injectConsts(personality):
+    addArenaGuiTypesFromExtension(comp7_constants.ARENA_GUI_TYPE, personality)
+    addPrebattleTypesFromExtension(comp7_constants.PREBATTLE_TYPE, personality)
+    constants.INBATTLE_CONFIGS.extend(comp7_constants.COMP7_INBATTLE_CONFIGS)
+    PREBATTLE_TYPE.TRAININGS += (comp7_constants.PREBATTLE_TYPE.TRAINING_COMP7,)
+    constants.ARENA_GUI_TYPE.NON_DESERTION_ARENAS += (comp7_constants.ARENA_GUI_TYPE.TRAINING_COMP7,)
+    addBattleProgressCategory(comp7_constants.BATTLE_PROGRESS_CATEGORY, personality)
+    injectCommonConstants(personality)
+
+
+def injectSquadConsts(personality):
+    initSquadCommonTypes(comp7_constants, personality)
+    constants.INVITATION_TYPE.TYPES_WITH_EXTRA_DATA += (comp7_constants.INVITATION_TYPE.COMP7,)

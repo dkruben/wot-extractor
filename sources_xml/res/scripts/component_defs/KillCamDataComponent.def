@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/KillCamDataComponent.def -->
+<root>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<Properties>
+		<capturedKillCamData>
+			<Type>KILL_CAM_DATA</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</capturedKillCamData>
+	</Properties>
+	<DefaultKeyName>killCamData</DefaultKeyName>
+</root>

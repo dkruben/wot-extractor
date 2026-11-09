@@ -1,0 +1,196 @@
+{
+  "rid": "R.views.mono.battle_pass.rewards_screen",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "rewards_screen",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/rewards_screen",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/rewards_screen/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/rewards_screen/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/battle_pass/rewards_screen/bundle.js"
+    },
+    {
+      "name": "rewards_screen.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/rewards_screen/rewards_screen.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/rewards_screen/rewards_screen.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "rewards_screen.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/rewards_screen/rewards_screen.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/rewards_screen/rewards_screen.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/useKeyup.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/useKeyup.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/rewards_screen/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/rewards_screen/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/rewards_screen/rewards_screen.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/rewards_screen/rewards_screen.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onBuyClick",
+    "onClose",
+    "onShowPostProgression"
+  ],
+  "link": {
+    "rid": "R.views.mono.battle_pass.rewards_screen",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.mono.battle_pass.rewards_screen no Python",
+      "ViewModel BattlePassAwardsViewModel (model=... no Python da view): 10/22 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/battle_pass_awards_view.py",
+        45
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/battle_pass_progressions_view.py",
+        592
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/battle_pass_awards_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/battle_pass_progressions_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/battle_pass_awards_view_model.py",
+      "class": "BattlePassAwardsViewModel",
+      "chain": [
+        "BattlePassAwardsViewModel",
+        "CommonViewModel"
+      ],
+      "properties": [
+        [
+          "mainRewards",
+          "ViewModel"
+        ],
+        [
+          "additionalRewards",
+          "ViewModel"
+        ],
+        [
+          "packageRewards",
+          "ViewModel"
+        ],
+        [
+          "starterPackRewards",
+          "ViewModel"
+        ],
+        [
+          "chapterID",
+          "Number"
+        ],
+        [
+          "reason",
+          "String"
+        ],
+        [
+          "isFinalReward",
+          "Bool"
+        ],
+        [
+          "isBaseStyleLevel",
+          "Bool"
+        ],
+        [
+          "isNeedToShowOffer",
+          "Bool"
+        ],
+        [
+          "seasonStopped",
+          "Bool"
+        ],
+        [
+          "wideRewardsIDs",
+          "Array"
+        ],
+        [
+          "isExtra",
+          "Bool"
+        ],
+        [
+          "isPostProgressionUnlocked",
+          "Bool"
+        ],
+        [
+          "isStarterPack",
+          "Bool"
+        ],
+        [
+          "title",
+          "String"
+        ],
+        [
+          "currentLevel",
+          "Number"
+        ],
+        [
+          "isBattlePassPurchased",
+          "Bool"
+        ],
+        [
+          "canBuy",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onBuyClick",
+        "onClose",
+        "onShowPostProgression",
+        "onClosed"
+      ],
+      "coverage": {
+        "found": 10,
+        "total": 22,
+        "missing": [
+          "canBuy",
+          "chapterID",
+          "currentLevel",
+          "isBaseStyleLevel",
+          "isBattlePassPurchased",
+          "isExtra",
+          "isNeedToShowOffer",
+          "isPostProgressionUnlocked",
+          "isStarterPack",
+          "onClosed",
+          "seasonStopped",
+          "wideRewardsIDs"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/battle_pass_progressions_view_model.py"
+      ]
+    }
+  }
+}

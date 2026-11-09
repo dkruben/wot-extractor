@@ -1,0 +1,88 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/resource_well/scripts/client/resource_well/helpers/server_settings.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: resource_well/scripts/client/resource_well/helpers/server_settings.py
+from __future__ import absolute_import
+import logging
+from collections import namedtuple
+from builtins import str
+from future.utils import iteritems
+from typing import Tuple, List
+from shared_utils import makeTupleByDict
+_logger = logging.getLogger(__name__)
+
+class RewardConfig(namedtuple('RewardConfig', ('bonus', 'limit', 'isSerial', 'sequence', 'resources',
+                            'availableAfter', 'points', 'order'))):
+    __slots__ = ()
+
+    def __new__(cls, **kwargs):
+        defaults = dict(bonus={}, limit=0, isSerial=False, sequence='', resources={}, availableAfter='', points=0, order=0)
+        defaults.update(kwargs)
+        cls.__packResourceConfigs(defaults)
+        return super(RewardConfig, cls).__new__(cls, **defaults)
+
+    @classmethod
+    def defaults(cls):
+        return cls()
+
+    @classmethod
+    def __packResourceConfigs(cls, data):
+        resources = {}
+        for resourceType, resourceConfig in iteritems(data['resources']):
+            resources[resourceType] = {name: _ResourceConfig(name=name, rate=resourceData.get('rate'), limit=resourceData.get('limit')) for name, resourceData in iteritems(resourceConfig)}
+
+        data['resources'] = resources
+
+
+class _ResourceConfig(namedtuple('_ResourceConfig', ('name', 'rate', 'limit'))):
+    __slots__ = ()
+
+    def __new__(cls, **kwargs):
+        defaults = dict(name='', rate=0, limit=0)
+        defaults.update(kwargs)
+        return super(_ResourceConfig, cls).__new__(cls, **defaults)
+
+    @classmethod
+    def defaults(cls):
+        return cls()
+
+
+class ResourceWellConfig(namedtuple('_ResourceWellConfig', ('isEnabled', 'season', 'finishTime', 'remindTime',
+                                   'rewards', 'startTime', 'infoPageUrl'))):
+    __slots__ = ()
+
+    def __new__(cls, **kwargs):
+        defaults = dict(isEnabled=False, season=0, startTime=0, finishTime=0, remindTime=0, rewards={}, infoPageUrl='')
+        defaults.update(kwargs)
+        cls.__packRewardsConfigs(defaults)
+        return super(ResourceWellConfig, cls).__new__(cls, **defaults)
+
+    @classmethod
+    def defaults(cls):
+        return cls()
+
+    def replace(self, data):
+        allowedFields = self._fields
+        dataToUpdate = dict((k, v) for k, v in iteritems(data) if k in allowedFields)
+        self.__packRewardsConfigs(dataToUpdate)
+        return self._replace(**dataToUpdate)
+
+    def getRewardConfig(self, rewardID):
+        if rewardID not in self.rewards:
+            _logger.error('Invalid rewardID - %s. Available IDs: %s', rewardID, str(list(self.rewards)))
+            return RewardConfig()
+        return self.rewards[rewardID]
+
+    def getParentRewardID(self, rewardID):
+        reward = self.getRewardConfig(rewardID)
+        return reward.availableAfter
+
+    def getSortedRewardsByOrder(self):
+        return sorted(iteritems(self.rewards), key=(lambda item: item[1].order))
+
+    @classmethod
+    def __packRewardsConfigs(cls, data):
+        if 'rewards' not in data:
+            return
+        data['rewards'] = {rewardID: makeTupleByDict(RewardConfig, reward) for rewardID, reward in iteritems(data['rewards'])}

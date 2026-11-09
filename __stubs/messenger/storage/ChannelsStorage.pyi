@@ -1,0 +1,36 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/messenger/storage/ChannelsStorage.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from future.utils import lfilter as lfilter
+from debug_utils import LOG_ERROR as LOG_ERROR
+from messenger.ext.channel_num_gen import genClientID4Channel as genClientID4Channel
+from messenger.storage.local_cache import SimpleCachedStorage as SimpleCachedStorage
+_CHANNELS_MAX_COUNT = 20
+
+class ChannelsStorage(SimpleCachedStorage):
+    __slots__: tuple
+    __channels: Any
+    def __init__(self):
+        ...
+    def __repr__(self):
+        ...
+    def clear(self):
+        ...
+    def all(self):
+        ...
+    def getChannel(self, channel):
+        ...
+    def getChannelsByCriteria(self, criteria):
+        ...
+    def getChannelByCriteria(self, criteria):
+        ...
+    def addChannel(self, channel):
+        ...
+    def removeChannel(self, channel, clear=True):
+        ...
+    def _getCachedData(self):
+        ...
+    def _setCachedData(self, data):
+        ...

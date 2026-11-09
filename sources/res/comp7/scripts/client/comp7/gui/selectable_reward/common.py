@@ -1,0 +1,54 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7/scripts/client/comp7/gui/selectable_reward/common.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7/scripts/client/comp7/gui/selectable_reward/common.py
+from __future__ import absolute_import
+import logging, typing
+from future.utils import viewitems, viewvalues
+from comp7.gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS as COMP7_TOOLTIPS
+from comp7.gui.selectable_reward.constants import Features
+from gui.impl.backport import TooltipData
+from gui.selectable_reward.common import SelectableRewardManager
+from helpers import dependency
+from shared_utils import first
+from skeletons.gui.offers import IOffersDataProvider
+if typing.TYPE_CHECKING:
+    from gui.server_events.bonuses import SelectableBonus
+    from typing import Dict
+_logger = logging.getLogger(__name__)
+
+class Comp7SelectableRewardManager(SelectableRewardManager):
+    _FEATURE = Features.COMP7
+    _offersDataProvider = dependency.descriptor(IOffersDataProvider)
+
+    @classmethod
+    def getTabTooltipData(cls, selectableBonus):
+        tokenID = first(selectableBonus.getValue())
+        if cls.isFeatureReward(tokenID):
+            return TooltipData(tooltip=None, isSpecial=True, specialAlias=COMP7_TOOLTIPS.COMP7_SELECTABLE_REWARD, specialArgs=(
+             tokenID,))
+        else:
+            return
+
+    @classmethod
+    def getGiftCount(cls, bonus):
+        return sum(viewvalues(cls.getGiftCountPerToken(bonus)))
+
+    @classmethod
+    def getGiftCountPerToken(cls, bonus):
+        isComp7OfferToken = cls.isFeatureReward
+        tokens = ((token, v.get('count', 0)) for token, v in viewitems(bonus.getValue()) if isComp7OfferToken(token))
+        return {token: cls.__getTokenGiftCount(token, count) for token, count in tokens}
+
+    @classmethod
+    def getBonusOfferToken(cls, bonus):
+        return cls._getBonusOfferToken(bonus)
+
+    @classmethod
+    def __getTokenGiftCount(cls, token, count):
+        token = cls._offersDataProvider.getOfferByToken(token)
+        if token is not None:
+            return token.giftTokenCount * count
+        else:
+            return count

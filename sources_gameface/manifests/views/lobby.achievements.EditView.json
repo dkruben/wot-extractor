@@ -1,0 +1,146 @@
+{
+  "rid": "R.views.lobby.achievements.EditView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "EditView",
+  "dir": "gui/gameface/_dist/production/lobby/achievements/EditView",
+  "feature": null,
+  "files": [
+    {
+      "name": "EditView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/EditView/EditView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/EditView/EditView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "EditView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/EditView/EditView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/EditView/EditView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "EditView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/EditView/EditView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/EditView/EditView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/achievements/EditView/EditView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/achievements/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/achievements/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/EditView/EditView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/EditView/EditView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/EditView/EditView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/EditView/EditView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.achievements.tooltips.AutoSettingTooltip"
+  ],
+  "commands": [
+    "onCancel",
+    "onChangeAutoSelect",
+    "onExitConfirm",
+    "onHideFirstEntryState",
+    "onReplaceAchievement",
+    "onSave"
+  ],
+  "link": {
+    "rid": "R.views.lobby.achievements.EditView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.achievements.EditView no Python",
+      "ViewModel EditViewModel (model=... no Python da view): 14/14 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/achievements/edit_view.py",
+        50
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/achievements/edit_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/achievements/views/edit_view_model.py",
+      "class": "EditViewModel",
+      "chain": [
+        "EditViewModel"
+      ],
+      "properties": [
+        [
+          "isAutoSelect",
+          "Bool"
+        ],
+        [
+          "isFirstEntry",
+          "Bool"
+        ],
+        [
+          "hasChanges",
+          "Bool"
+        ],
+        [
+          "selectedAchievements",
+          "Array"
+        ],
+        [
+          "achievementSections",
+          "Array"
+        ],
+        [
+          "ribbonSmall",
+          "String"
+        ],
+        [
+          "ribbonNormal",
+          "String"
+        ],
+        [
+          "ribbonLarge",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onChangeAutoSelect",
+        "onReplaceAchievement",
+        "onSave",
+        "onCancel",
+        "onExitConfirm",
+        "onHideFirstEntryState"
+      ],
+      "coverage": {
+        "found": 14,
+        "total": 14,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/battle/prebattle_highlights/prebattle_highlights_view_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from gui.impl.gen.view_models.views.battle.prebattle_highlights.prebattle_highlights_marker_model import PrebattleHighlightsMarkerModel as PrebattleHighlightsMarkerModel
+from gui.impl.gen.view_models.views.battle.prebattle_highlights.prebattle_highlights_player_stats_model import PrebattleHighlightsPlayerStatsModel as PrebattleHighlightsPlayerStatsModel
+
+class PrebattleHighlightsViewModel(ViewModel):
+    __slots__: tuple
+    WINTER_MAP_TYPE = 0
+    SUMMER_MAP_TYPE = 1
+    DESERT_MAP_TYPE = 3
+    PBH_INTRO = 'intro'
+    PBH_STAGE = 'stage'
+    PBH_OUTRO = 'outro'
+    def __init__(self, properties=5, commands=0):
+        ...
+    def getCurrentState(self):
+        ...
+    def setCurrentState(self, value):
+        ...
+    def getMapType(self):
+        ...
+    def setMapType(self, value):
+        ...
+    def getHistoricalCompliance(self):
+        ...
+    def setHistoricalCompliance(self, value):
+        ...
+    def getMarkers(self):
+        ...
+    def setMarkers(self, value):
+        ...
+    @staticmethod
+    def getMarkersType():
+        ...
+    def getPlayersStats(self):
+        ...
+    def setPlayersStats(self, value):
+        ...
+    @staticmethod
+    def getPlayersStatsType():
+        ...
+    def _initialize(self):
+        ...

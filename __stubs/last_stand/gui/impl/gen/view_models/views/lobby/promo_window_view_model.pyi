@@ -1,0 +1,26 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/last_stand/scripts/client/last_stand/gui/impl/gen/view_models/views/lobby/promo_window_view_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import ViewModel as ViewModel
+
+class PromoWindowViewModel(ViewModel):
+    __slots__: tuple
+    onClose: Any
+    def __init__(self, properties=3, commands=1):
+        ...
+    def getStartDate(self):
+        ...
+    def setStartDate(self, value):
+        ...
+    def getEndDate(self):
+        ...
+    def setEndDate(self, value):
+        ...
+    def getRegularArtefactsLength(self):
+        ...
+    def setRegularArtefactsLength(self, value):
+        ...
+    def _initialize(self):
+        ...

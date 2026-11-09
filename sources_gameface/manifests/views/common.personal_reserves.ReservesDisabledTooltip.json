@@ -1,0 +1,155 @@
+{
+  "rid": "R.views.common.personal_reserves.ReservesDisabledTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ReservesDisabledTooltip",
+  "dir": "gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "ReservesDisabledTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip/ReservesDisabledTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip/ReservesDisabledTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ReservesDisabledTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip/ReservesDisabledTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip/ReservesDisabledTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ReservesDisabledTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip/ReservesDisabledTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip/ReservesDisabledTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip/ReservesDisabledTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip/ReservesDisabledTooltip.css",
+      "key": "res/gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip/ReservesDisabledTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip/ReservesDisabledTooltip.js",
+      "key": "res/gui/gameface/_dist/production/common/personal_reserves/ReservesDisabledTooltip/ReservesDisabledTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/common/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/common/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.personal_reserves.ReservesDisabledTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "6 referencia(s) R.views.common.personal_reserves.ReservesDisabledTooltip no Python",
+      "ViewModel ReservesActivationViewModel (model=... no Python da view): 0/10 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/battle/battle_page/full_stats/personal_reserves_tab_view.py",
+        46
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/battle/battle_page/full_stats/personal_reserves_tab_view.py",
+        47
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/battle/battle_page/tab_view.py",
+        192
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/battle/battle_page/tab_view.py",
+        193
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/personal_reserves/reserves_activation_view.py",
+        143
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/personal_reserves/reserves_activation_view.py",
+        144
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/battle/battle_page/full_stats/personal_reserves_tab_view.py",
+      "sources/res/scripts/client/gui/impl/battle/battle_page/tab_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/personal_reserves/reserves_activation_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/common/personal_reserves/reserves_activation_view_model.py",
+      "class": "ReservesActivationViewModel",
+      "chain": [
+        "ReservesActivationViewModel"
+      ],
+      "properties": [
+        [
+          "reserveGroups",
+          "Array"
+        ],
+        [
+          "gold",
+          "Number"
+        ],
+        [
+          "canActivateClanReserves",
+          "Bool"
+        ],
+        [
+          "nextExpirationTime",
+          "Number"
+        ],
+        [
+          "nextExpirationAmount",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onNavigateToStore",
+        "onClose",
+        "onBoosterActivate",
+        "onNavigateToDepot",
+        "onCardHover"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 10,
+        "missing": [
+          "canActivateClanReserves",
+          "gold",
+          "nextExpirationAmount",
+          "nextExpirationTime",
+          "onBoosterActivate",
+          "onCardHover",
+          "onClose",
+          "onNavigateToDepot",
+          "onNavigateToStore",
+          "reserveGroups"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/battle/battle_page/tab_view_model.py"
+      ]
+    }
+  }
+}

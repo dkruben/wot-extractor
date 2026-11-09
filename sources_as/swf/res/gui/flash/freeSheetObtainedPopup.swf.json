@@ -1,0 +1,199 @@
+{
+ "source": "sources/res/gui/flash/freeSheetObtainedPopup.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 402133,
+ "actual_length": 402133,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 14,
+  "ShowFrame": 462,
+  "DefineShape": 5,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 2,
+  "PlaceObject2": 907,
+  "RemoveObject2": 7,
+  "DefineBitsLossless2": 3,
+  "DefineEditText": 8,
+  "DefineSprite": 13,
+  "FrameLabel": 3,
+  "FileAttributes": 1,
+  "PlaceObject3": 70,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 8,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 5,
+  "shapes": 5,
+  "sprites": 13,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 8,
+  "fonts": 0,
+  "classes": 10,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 31,
+   "class": "FourFreeSheetsObtainedPopupUI"
+  },
+  {
+   "id": 27,
+   "class": "HeaderBlockUI"
+  },
+  {
+   "id": 25,
+   "class": "PersonlaMissionsBottomBlockUI"
+  },
+  {
+   "id": 23,
+   "class": "IconTextRendererUI"
+  },
+  {
+   "id": 21,
+   "class": "FreeSheetObtainedPopupUI"
+  },
+  {
+   "id": 17,
+   "class": "TextBlocksUI"
+  },
+  {
+   "id": 12,
+   "class": "TitleUI"
+  },
+  {
+   "id": 7,
+   "class": "BtnCmpUI"
+  },
+  {
+   "id": 6,
+   "class": "AwardSheetUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4653,
+   "classes": 10,
+   "methods": 43,
+   "bodies": 43,
+   "code_bytes": 1326
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardSheetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.popupComponents.AwardSheetAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnCmpUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.popupComponents.AwardSheetAcceptBtnCmp",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeaderBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.popupComponents.HeaderBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconTextRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.popupComponents.IconTextRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextBlocksUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.popupComponents.AwardSheetTextBlocks",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TitleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.popupComponents.FreeSheetTitle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonlaMissionsBottomBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.popupComponents.BottomBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FourFreeSheetsObtainedPopupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.popupComponents.FourFreeSheetsObtainedPopup",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FreeSheetObtainedPopupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.popupComponents.FreeSheetObtainedPopup",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

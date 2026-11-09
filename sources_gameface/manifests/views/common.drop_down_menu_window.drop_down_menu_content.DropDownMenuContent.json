@@ -1,0 +1,31 @@
+{
+  "rid": "R.views.common.drop_down_menu_window.drop_down_menu_content.DropDownMenuContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "DropDownMenuContent",
+  "dir": "gui/unbound/views/common/drop_down_menu_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "drop_down_menu_content.unbound",
+      "effective": "res/gui/unbound/views/common/drop_down_menu_window/drop_down_menu_content.unbound",
+      "all": [
+        "res/gui/unbound/views/common/drop_down_menu_window/drop_down_menu_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.drop_down_menu_window.drop_down_menu_content.DropDownMenuContent",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

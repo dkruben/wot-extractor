@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/CrestMovingController.def -->
+<root>
+	<Properties>
+		<vehTypeCD>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehTypeCD>
+		<state>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</state>
+	</Properties>
+	<DefaultKeyName>CrestMovingController</DefaultKeyName>
+</root>

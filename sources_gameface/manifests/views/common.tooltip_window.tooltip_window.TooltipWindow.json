@@ -1,0 +1,40 @@
+{
+  "rid": "R.views.common.tooltip_window.tooltip_window.TooltipWindow",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "TooltipWindow",
+  "dir": "gui/unbound/views/common/tooltip_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "tooltip_window.unbound",
+      "effective": "res/gui/unbound/views/common/tooltip_window/tooltip_window.unbound",
+      "all": [
+        "res/gui/unbound/views/common/tooltip_window/tooltip_window.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.tooltip_window.tooltip_window.TooltipWindow",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.common.tooltip_window.tooltip_window.TooltipWindow no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/backport/backport_tooltip.py",
+        90
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/backport/backport_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

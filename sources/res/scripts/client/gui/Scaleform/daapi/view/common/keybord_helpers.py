@@ -1,0 +1,33 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/daapi/view/common/keybord_helpers.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/daapi/view/common/keybord_helpers.py
+from __future__ import absolute_import
+import typing
+from collections import namedtuple
+import BigWorld, CommandMapping
+from gui.Scaleform.locale.READABLE_KEY_NAMES import READABLE_KEY_NAMES
+from helpers.i18n import makeString
+
+class _HotKeysInfo(namedtuple('_HotKeysInfo', ('vKey', 'keyName'))):
+
+    def asDict(self):
+        return {'vKey': (self.vKey), 
+           'keyName': (self.keyName)}
+
+
+def getHotKeyList(command):
+    keys = [makeString(READABLE_KEY_NAMES.key(vKey)) for vKey in _getHotKeyVkList(command)]
+    return keys
+
+
+def getHotKeysInfo(command):
+    return [_HotKeysInfo(vKey, makeString(READABLE_KEY_NAMES.key(vKey))) for vKey in _getHotKeyVkList(command)]
+
+
+def _getHotKeyVkList(command):
+    key, satelliteKeys = CommandMapping.g_instance.getCommandKeys(command)
+    keys = [BigWorld.keyToString(satelliteKey) for satelliteKey in satelliteKeys]
+    keys.append(BigWorld.keyToString(key))
+    return keys

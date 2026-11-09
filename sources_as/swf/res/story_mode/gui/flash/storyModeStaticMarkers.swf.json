@@ -1,0 +1,341 @@
+{
+ "source": "sources/res/story_mode/gui/flash/storyModeStaticMarkers.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 201642,
+ "actual_length": 201642,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  300.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 45,
+  "ShowFrame": 311,
+  "DefineShape": 16,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 281,
+  "RemoveObject2": 3,
+  "DefineBitsLossless2": 16,
+  "DefineEditText": 10,
+  "DefineSprite": 44,
+  "FrameLabel": 15,
+  "FileAttributes": 1,
+  "PlaceObject3": 10,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 9,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 16,
+  "shapes": 16,
+  "sprites": 44,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 10,
+  "fonts": 0,
+  "classes": 23,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleMarkersComponents.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 86,
+   "class": "BunkerMarkerUI"
+  },
+  {
+   "id": 85,
+   "class": "BunkerActionMarkerUI"
+  },
+  {
+   "id": 84,
+   "class": "BunkerIconUI"
+  },
+  {
+   "id": 83,
+   "class": "BunkerAnimationUI"
+  },
+  {
+   "id": 82,
+   "class": "storyModeStaticMarkers_fla.bunker_blind_5"
+  },
+  {
+   "id": 78,
+   "class": "storyModeStaticMarkers_fla.bunker_enemy_3"
+  },
+  {
+   "id": 70,
+   "class": "DistractionMarkerUI"
+  },
+  {
+   "id": 69,
+   "class": "DistractionIconStatesUI"
+  },
+  {
+   "id": 67,
+   "class": "storyModeStaticMarkers_fla.iconAnim_14"
+  },
+  {
+   "id": 63,
+   "class": "storyModeStaticMarkers_fla.lineAnim_12"
+  },
+  {
+   "id": 59,
+   "class": "StoryModeLootMarkerUI"
+  },
+  {
+   "id": 58,
+   "class": "LootMarkerIconStatesUI"
+  },
+  {
+   "id": 55,
+   "class": "storyModeStaticMarkers_fla.lootIcon_29"
+  },
+  {
+   "id": 52,
+   "class": "LootCaptureUI"
+  },
+  {
+   "id": 43,
+   "class": "StoryModeLootMarkerYellowUI"
+  },
+  {
+   "id": 39,
+   "class": "LootMarkerYellowIconStatesUI"
+  },
+  {
+   "id": 36,
+   "class": "storyModeStaticMarkers_fla.lootIconYellow_33"
+  },
+  {
+   "id": 33,
+   "class": "LootCaptureYellowUI"
+  },
+  {
+   "id": 20,
+   "class": "ReconMarkerUI"
+  },
+  {
+   "id": 16,
+   "class": "ReconIconStatesUI"
+  },
+  {
+   "id": 13,
+   "class": "storyModeStaticMarkers_fla.iconAnim_39"
+  },
+  {
+   "id": 9,
+   "class": "storyModeStaticMarkers_fla.lineAnim_38"
+  },
+  {
+   "id": 4,
+   "class": "StoryModeStickyMarkerUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4761,
+   "classes": 23,
+   "methods": 89,
+   "bodies": 89,
+   "code_bytes": 1559
+  }
+ ],
+ "classes": [
+  {
+   "name": "StoryModeStickyMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.actionMarkers.StickyMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storyModeStaticMarkers_fla.bunker_blind_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storyModeStaticMarkers_fla.bunker_enemy_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storyModeStaticMarkers_fla.iconAnim_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storyModeStaticMarkers_fla.iconAnim_39",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storyModeStaticMarkers_fla.lineAnim_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storyModeStaticMarkers_fla.lineAnim_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storyModeStaticMarkers_fla.lootIconYellow_33",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storyModeStaticMarkers_fla.lootIcon_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BunkerAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.staticMarkers.bunker.BunkerAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BunkerIconUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.staticMarkers.bunker.BunkerIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BunkerActionMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.actionMarkers.BaseActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BunkerMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.staticMarkers.bunker.BunkerMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DistractionMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReconMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LootCaptureUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.staticMarkers.loot.LootCapture",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LootCaptureYellowUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.staticMarkers.loot.LootCapture",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LootMarkerIconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LootMarkerYellowIconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.location.LocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StoryModeLootMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.staticMarkers.loot.LootMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StoryModeLootMarkerYellowUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.staticMarkers.loot.LootMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DistractionIconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.staticMarkers.StoryModeLocationActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReconIconStatesUI",
+   "kind": "class",
+   "extends": "net.wg.story_mode.gui.battle.views.staticMarkers.StoryModeLocationActionMarker",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,712 @@
+{
+ "source": "sources/res/gui/flash/settingsWindow.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 6734976,
+ "actual_length": 6734976,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 74,
+  "ShowFrame": 1203,
+  "DefineShape": 64,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 9,
+  "PlaceObject2": 914,
+  "RemoveObject2": 15,
+  "DefineShape3": 12,
+  "DefineBitsLossless2": 52,
+  "DefineEditText": 34,
+  "DefineSprite": 73,
+  "FrameLabel": 69,
+  "FileAttributes": 1,
+  "PlaceObject3": 442,
+  "ImportAssets2": 11,
+  "CSMTextSettings": 34,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 3,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineMorphShape2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 61,
+  "shapes": 78,
+  "sprites": 73,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 34,
+  "fonts": 0,
+  "classes": 53,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "windows.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "vehicleMarkers.swf",
+   "symbols": []
+  },
+  {
+   "url": "sniperCrosshair.swf",
+   "symbols": []
+  },
+  {
+   "url": "arcadeCrosshair.swf",
+   "symbols": []
+  },
+  {
+   "url": "crosshairControls.swf",
+   "symbols": []
+  },
+  {
+   "url": "strategicCrosshair.swf",
+   "symbols": []
+  },
+  {
+   "url": "settingsFeedback.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 246,
+   "class": "SettingsWindowUI"
+  },
+  {
+   "id": 244,
+   "class": "KeysItemRendererUI"
+  },
+  {
+   "id": 241,
+   "class": "KeyItemUnderlineUI"
+  },
+  {
+   "id": 239,
+   "class": "KeysItemRenderer_hitAreaUI"
+  },
+  {
+   "id": 237,
+   "class": "LimitedUISettingBlockUI"
+  },
+  {
+   "id": 234,
+   "class": "SoundDeviceTabButtonUI"
+  },
+  {
+   "id": 230,
+   "class": "Window_BG_UI"
+  },
+  {
+   "id": 226,
+   "class": "settingsWindowImports"
+  },
+  {
+   "id": 225,
+   "class": "AimSettings"
+  },
+  {
+   "id": 216,
+   "class": "ArcadeFormUI"
+  },
+  {
+   "id": 215,
+   "class": "SniperFormUI"
+  },
+  {
+   "id": 214,
+   "class": "AimContourContentUI"
+  },
+  {
+   "id": 211,
+   "class": "settingsWindow_fla.AimPenetrableContourFillSmplViolet_10"
+  },
+  {
+   "id": 206,
+   "class": "settingsWindow_fla.AimImpenetrableContourFillSmplViolet_9"
+  },
+  {
+   "id": 199,
+   "class": "settingsWindow_fla.AimPenetrableContourFillStnViolet_8"
+  },
+  {
+   "id": 194,
+   "class": "settingsWindow_fla.AimImpenetrableContourFillStnViolet_7"
+  },
+  {
+   "id": 187,
+   "class": "settingsWindow_fla.AimPenetrableContourFillSmpl_6"
+  },
+  {
+   "id": 182,
+   "class": "settingsWindow_fla.AimImpenetrableContourFillSmpl_5"
+  },
+  {
+   "id": 175,
+   "class": "settingsWindow_fla.AimPenetrableContourFillStn_4"
+  },
+  {
+   "id": 170,
+   "class": "settingsWindow_fla.AimImpenetrableContourFillStn_3"
+  },
+  {
+   "id": 165,
+   "class": "ContourFormUI"
+  },
+  {
+   "id": 162,
+   "class": "ArtyFormUI"
+  },
+  {
+   "id": 161,
+   "class": "ArmorFlashlightFormUI"
+  },
+  {
+   "id": 155,
+   "class": "ArmorFlashlightContentUI"
+  },
+  {
+   "id": 152,
+   "class": "settingsWindow_fla.aimSettingsBg_53"
+  },
+  {
+   "id": 143,
+   "class": "ControlsSettings"
+  },
+  {
+   "id": 136,
+   "class": "KeysScrollingListUI"
+  },
+  {
+   "id": 134,
+   "class": "DisabledTabsOverlayUI"
+  },
+  {
+   "id": 124,
+   "class": "GameSettings"
+  },
+  {
+   "id": 123,
+   "class": "GameSettingsScrollPaneUI"
+  },
+  {
+   "id": 122,
+   "class": "GameSettingsContentUI"
+  },
+  {
+   "id": 117,
+   "class": "GraphicSettings"
+  },
+  {
+   "id": 112,
+   "class": "AdvancedGraphicSettingsFormUI"
+  },
+  {
+   "id": 111,
+   "class": "AdvSettingsScrollPaneUI"
+  },
+  {
+   "id": 108,
+   "class": "AdvancedGraphicContentFormUI"
+  },
+  {
+   "id": 107,
+   "class": "SettingsStepSliderUI"
+  },
+  {
+   "id": 106,
+   "class": "Slider_ThumbUI"
+  },
+  {
+   "id": 101,
+   "class": "Step_Slider_TrackUI"
+  },
+  {
+   "id": 93,
+   "class": "Step_Slider_Track_Up_UI"
+  },
+  {
+   "id": 89,
+   "class": "ScreenSettingsFormUI"
+  },
+  {
+   "id": 83,
+   "class": "MarkerSettings"
+  },
+  {
+   "id": 78,
+   "class": "MarkerFormEnemyUI"
+  },
+  {
+   "id": 73,
+   "class": "MarkerFormUI"
+  },
+  {
+   "id": 66,
+   "class": "settingsWindow_fla.marker_bg_67"
+  },
+  {
+   "id": 58,
+   "class": "SoundSettings"
+  },
+  {
+   "id": 57,
+   "class": "SoundCommonFormUI"
+  },
+  {
+   "id": 56,
+   "class": "SoundDeviceButtonBarUI"
+  },
+  {
+   "id": 51,
+   "class": "SoundVivoxFormUI"
+  },
+  {
+   "id": 49,
+   "class": "KeyInputUI"
+  },
+  {
+   "id": 47,
+   "class": "KeyInputAlertUI"
+  },
+  {
+   "id": 36,
+   "class": "SoundVoiceWavesUI"
+  },
+  {
+   "id": 1,
+   "class": "SoundSpecialFormUI"
+  },
+  {
+   "id": 0,
+   "class": "settingsWindow_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 147679,
+   "classes": 53,
+   "methods": 661,
+   "bodies": 661,
+   "code_bytes": 74245
+  }
+ ],
+ "classes": [
+  {
+   "name": "KeyItemUnderlineUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "KeysItemRenderer_hitAreaUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Step_Slider_Track_Up_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SliderBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Window_BG_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindowImports",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindow_fla.AimImpenetrableContourFillSmplViolet_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindow_fla.AimImpenetrableContourFillSmpl_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindow_fla.AimImpenetrableContourFillStnViolet_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindow_fla.AimImpenetrableContourFillStn_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindow_fla.AimPenetrableContourFillSmplViolet_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindow_fla.AimPenetrableContourFillSmpl_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindow_fla.AimPenetrableContourFillStnViolet_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindow_fla.AimPenetrableContourFillStn_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindow_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindow_fla.aimSettingsBg_53",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsWindow_fla.marker_bg_67",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AimContourContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.aimSettings.AimContourContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArmorFlashlightContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.ArmorFlashlightContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "KeyInputAlertUI",
+   "kind": "class",
+   "extends": "scaleform.clik.core.UIComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Slider_ThumbUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.Button",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Step_Slider_TrackUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.Button",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdvancedGraphicContentFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.AdvancedGraphicContentForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdvancedGraphicSettingsFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.AdvancedGraphicSettingsForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DisabledTabsOverlayUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.DisabledTabsOverlay",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GameSettingsContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.GameSettingsContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LimitedUISettingBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.components.LimitedUISettingBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScreenSettingsFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.ScreenSettingsForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SoundCommonFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SoundCommonForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SoundSpecialFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SoundSpecialForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SoundVivoxFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SoundVivoxForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SoundVoiceWavesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.components.SoundVoiceWaves",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "KeysItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.components.KeysItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SoundDeviceButtonBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.components.SoundDeviceButtonBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArcadeFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SettingsArcadeForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArmorFlashlightFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SettingsArmorFlashlightForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArtyFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SettingsArtyForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ContourFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SettingsContourForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MarkerFormEnemyUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SettingsMarkersForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MarkerFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SettingsMarkersForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "KeyInputUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.components.KeyInput",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "KeysScrollingListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.components.KeysScrollingList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SettingsStepSliderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.components.SettingsStepSlider",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SniperFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SettingsSniperForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GameSettings",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.GameSettings",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdvSettingsScrollPaneUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.BorderShadowScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GameSettingsScrollPaneUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.BorderShadowScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SoundDeviceTabButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.components.SoundDeviceTabButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AimSettings",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.AimSettings",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ControlsSettings",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.ControlsSettings",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GraphicSettings",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.GraphicSettings",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MarkerSettings",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.MarkerSettings",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SoundSettings",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SoundSettings",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SettingsWindowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.SettingsWindow",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

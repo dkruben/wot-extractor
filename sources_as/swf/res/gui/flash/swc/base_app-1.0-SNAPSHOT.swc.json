@@ -1,0 +1,1670 @@
+{
+ "source": "sources/res/gui/flash/swc/base_app-1.0-SNAPSHOT.swc",
+ "container_member": "library.swf",
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 11,
+ "declared_length": 207419,
+ "actual_length": 207419,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  375.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": true,
+ "tags": {
+  "End": 1,
+  "ShowFrame": 1,
+  "SetBackgroundColor": 1,
+  "ProductInfo": 1,
+  "ScriptLimits": 1,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "Metadata": 1,
+  "DoABC2": 84
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 0,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 99,
+  "abc_blocks": 84,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "_81cc5c2965935a5d63a886328365a18ea94d5b3ae92f6e940ca0cf2cb5fe069f_flash_display_Sprite"
+  }
+ ],
+ "abc": [
+  {
+   "name": "net/wg/infrastructure/managers/impl/TooltipMgr/TooltipFormatter",
+   "lazy": true,
+   "size": 1165,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 306
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/Scheduler",
+   "lazy": true,
+   "size": 4388,
+   "classes": 5,
+   "methods": 49,
+   "bodies": 49,
+   "code_bytes": 1824
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/ViewRestrictions",
+   "lazy": true,
+   "size": 1566,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 399
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/cursor/base/BaseCursorManager",
+   "lazy": true,
+   "size": 2508,
+   "classes": 1,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 474
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/cursor/base/ExternalCursorManager",
+   "lazy": true,
+   "size": 2268,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 603
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/cursor/base/ResizingCursorManager",
+   "lazy": true,
+   "size": 1880,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 371
+  },
+  {
+   "name": "com/adobe/serialization/json/JSON",
+   "lazy": true,
+   "size": 344,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 53
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/EnvironmentManager",
+   "lazy": true,
+   "size": 1917,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 459
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/VoiceChatManagerBase",
+   "lazy": true,
+   "size": 712,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 69
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/cursor/base/BaseInfo",
+   "lazy": true,
+   "size": 1628,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 316
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/cursor/base/DroppingCursorManager",
+   "lazy": true,
+   "size": 5393,
+   "classes": 2,
+   "methods": 27,
+   "bodies": 27,
+   "code_bytes": 1734
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/cursor/CursorManager",
+   "lazy": true,
+   "size": 5328,
+   "classes": 2,
+   "methods": 24,
+   "bodies": 24,
+   "code_bytes": 1625
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/ImageManager",
+   "lazy": true,
+   "size": 5731,
+   "classes": 3,
+   "methods": 44,
+   "bodies": 44,
+   "code_bytes": 1969
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/ElementBlurAdapter",
+   "lazy": true,
+   "size": 1869,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 626
+  },
+  {
+   "name": "net/wg/data/constants/KeysMap",
+   "lazy": true,
+   "size": 4430,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 1943
+  },
+  {
+   "name": "com/adobe/serialization/json/JSONToken",
+   "lazy": true,
+   "size": 331,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 64
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/TweenManager",
+   "lazy": true,
+   "size": 1466,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 169
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/AbstractTriggerWatcher",
+   "lazy": true,
+   "size": 859,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 120
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/BaseEnabledTriggerWatcher",
+   "lazy": true,
+   "size": 1132,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 188
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/EnabledChangeTriggerWatcher",
+   "lazy": true,
+   "size": 677,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 88
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/TriggerEvent",
+   "lazy": true,
+   "size": 377,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 48
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/TriggerWatcherFactory",
+   "lazy": true,
+   "size": 1107,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 292
+  },
+  {
+   "name": "net/wg/data/utilData/FormattedInteger",
+   "lazy": true,
+   "size": 382,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 48
+  },
+  {
+   "name": "_81cc5c2965935a5d63a886328365a18ea94d5b3ae92f6e940ca0cf2cb5fe069f_flash_display_Sprite",
+   "lazy": true,
+   "size": 601,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 88
+  },
+  {
+   "name": "net/wg/data/vo/TutorialComponentPathVO",
+   "lazy": true,
+   "size": 517,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 74
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/EscapeTriggerWatcher",
+   "lazy": true,
+   "size": 881,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 143
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/ColorSchemeManager",
+   "lazy": true,
+   "size": 1444,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 173
+  },
+  {
+   "name": "net/wg/infrastructure/managers/TutorialViewManager",
+   "lazy": true,
+   "size": 552,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 63
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/ClickTriggerWatcher",
+   "lazy": true,
+   "size": 877,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 175
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/DataUtils",
+   "lazy": true,
+   "size": 2280,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 859
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/TweenManagerHelper",
+   "lazy": true,
+   "size": 2113,
+   "classes": 1,
+   "methods": 24,
+   "bodies": 24,
+   "code_bytes": 447
+  },
+  {
+   "name": "com/adobe/serialization/json/JSONEncoder",
+   "lazy": true,
+   "size": 1985,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 1157
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/WGJSON",
+   "lazy": true,
+   "size": 452,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 53
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/ContainerManagerBase",
+   "lazy": true,
+   "size": 14570,
+   "classes": 3,
+   "methods": 73,
+   "bodies": 73,
+   "code_bytes": 5515
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/ContextMenuManager",
+   "lazy": true,
+   "size": 2896,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 649
+  },
+  {
+   "name": "net/wg/data/constants/EngineMethods",
+   "lazy": true,
+   "size": 684,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 82
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/CommonsBase",
+   "lazy": true,
+   "size": 9410,
+   "classes": 2,
+   "methods": 70,
+   "bodies": 70,
+   "code_bytes": 3071
+  },
+  {
+   "name": "com/adobe/serialization/json/JSONDecoder",
+   "lazy": true,
+   "size": 2031,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 10,
+   "code_bytes": 930
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/VisibleChangeTriggerWatcher",
+   "lazy": true,
+   "size": 879,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 211
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/LoaderManager",
+   "lazy": true,
+   "size": 7016,
+   "classes": 2,
+   "methods": 28,
+   "bodies": 28,
+   "code_bytes": 2683
+  },
+  {
+   "name": "com/adobe/serialization/json/JSONParseError",
+   "lazy": true,
+   "size": 372,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 61
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/CustomObjectFinderBase",
+   "lazy": true,
+   "size": 1559,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 593
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/IME",
+   "lazy": true,
+   "size": 3160,
+   "classes": 1,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 879
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/TweenAnimator",
+   "lazy": true,
+   "size": 5500,
+   "classes": 2,
+   "methods": 42,
+   "bodies": 42,
+   "code_bytes": 2020
+  },
+  {
+   "name": "net/wg/data/vo/UniversalStyle",
+   "lazy": true,
+   "size": 1687,
+   "classes": 1,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 338
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/StageSizeManager",
+   "lazy": true,
+   "size": 2339,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 720
+  },
+  {
+   "name": "net/wg/infrastructure/managers/GlobalVarsManager",
+   "lazy": true,
+   "size": 429,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 52
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/StyleSheetManager",
+   "lazy": true,
+   "size": 1047,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 296
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/LocaleBase",
+   "lazy": true,
+   "size": 2086,
+   "classes": 1,
+   "methods": 18,
+   "bodies": 18,
+   "code_bytes": 504
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/TooltipMgr/ToolTipManagerBase",
+   "lazy": true,
+   "size": 4895,
+   "classes": 1,
+   "methods": 28,
+   "bodies": 28,
+   "code_bytes": 1174
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/BuilderTypeMapping",
+   "lazy": true,
+   "size": 1002,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 188
+  },
+  {
+   "name": "net/wg/data/StrCaseProperties",
+   "lazy": true,
+   "size": 237,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 28
+  },
+  {
+   "name": "net/wg/app/iml/base/BaseRootApp",
+   "lazy": true,
+   "size": 1025,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 10,
+   "code_bytes": 202
+  },
+  {
+   "name": "net/wg/data/vo/TutorialCriteriaVo",
+   "lazy": true,
+   "size": 873,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 168
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/GraphicsOptimizationManager",
+   "lazy": true,
+   "size": 3710,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 1432
+  },
+  {
+   "name": "com/adobe/serialization/json/JSONTokenType",
+   "lazy": true,
+   "size": 531,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 106
+  },
+  {
+   "name": "net/wg/app/iml/base/AbstractApplication",
+   "lazy": true,
+   "size": 10928,
+   "classes": 1,
+   "methods": 92,
+   "bodies": 92,
+   "code_bytes": 2502
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/LibrariesLoader",
+   "lazy": true,
+   "size": 1996,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 554
+  },
+  {
+   "name": "net/wg/data/vo/TweenPropertiesVO",
+   "lazy": true,
+   "size": 3302,
+   "classes": 1,
+   "methods": 38,
+   "bodies": 38,
+   "code_bytes": 790
+  },
+  {
+   "name": "net/wg/data/ImageUrlProperties",
+   "lazy": true,
+   "size": 664,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 115
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/AtlasManager",
+   "lazy": true,
+   "size": 3784,
+   "classes": 2,
+   "methods": 19,
+   "bodies": 19,
+   "code_bytes": 1317
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/PopoverManagerBase",
+   "lazy": true,
+   "size": 2128,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 512
+  },
+  {
+   "name": "net/wg/data/vo/UniversalBtnStyledDisplayObjects",
+   "lazy": true,
+   "size": 751,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 90
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/Utils",
+   "lazy": true,
+   "size": 3595,
+   "classes": 1,
+   "methods": 34,
+   "bodies": 34,
+   "code_bytes": 747
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/ClickOutsideTriggerWatcher",
+   "lazy": true,
+   "size": 797,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 134
+  },
+  {
+   "name": "net/wg/data/vo/TutorialUnboundViewVO",
+   "lazy": true,
+   "size": 778,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 105
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/EnabledTriggerWatcher",
+   "lazy": true,
+   "size": 643,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 83
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/ClassFactory",
+   "lazy": true,
+   "size": 1889,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 469
+  },
+  {
+   "name": "net/wg/infrastructure/events/SharedLayoutRegisterEvent",
+   "lazy": true,
+   "size": 589,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 67
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/DateTimeCommon",
+   "lazy": true,
+   "size": 3580,
+   "classes": 1,
+   "methods": 36,
+   "bodies": 36,
+   "code_bytes": 1212
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/PopupManager",
+   "lazy": true,
+   "size": 1266,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 282
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/TutorialManager",
+   "lazy": true,
+   "size": 15622,
+   "classes": 2,
+   "methods": 74,
+   "bodies": 74,
+   "code_bytes": 7223
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/Asserter",
+   "lazy": true,
+   "size": 1692,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 460
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/FocusHandlerEx",
+   "lazy": true,
+   "size": 2604,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 607
+  },
+  {
+   "name": "net/wg/app/iml/base/StageResizeEvent",
+   "lazy": true,
+   "size": 450,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 76
+  },
+  {
+   "name": "net/wg/app/iml/base/RootApp",
+   "lazy": true,
+   "size": 1563,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 287
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/SoundManager",
+   "lazy": true,
+   "size": 1852,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 339
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/TextManager",
+   "lazy": true,
+   "size": 1568,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 210
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/SharedLayoutManager",
+   "lazy": true,
+   "size": 1442,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 282
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/UILoggerManager",
+   "lazy": true,
+   "size": 608,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 68
+  },
+  {
+   "name": "net/wg/data/constants/TooltipTags",
+   "lazy": true,
+   "size": 519,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 76
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/UniversalBtnStyles",
+   "lazy": true,
+   "size": 4429,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 1343
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/tutorial/BuildersMap",
+   "lazy": true,
+   "size": 1340,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 10,
+   "code_bytes": 436
+  },
+  {
+   "name": "com/adobe/serialization/json/JSONTokenizer",
+   "lazy": true,
+   "size": 4231,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 2510
+  }
+ ],
+ "classes": [
+  {
+   "name": "net.wg.infrastructure.managers.impl.TooltipMgr.TooltipFormatter",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITooltipFormatter"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "TimedTask",
+   "kind": "class",
+   "extends": "net.wg.utils.scheduler.Task",
+   "implements": [],
+   "private": true,
+   "abc": 1
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.Scheduler",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IScheduler"
+   ],
+   "abc": 1
+  },
+  {
+   "name": "TimedTaskStack",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "private": true,
+   "abc": 1
+  },
+  {
+   "name": "InProcessTaskStack",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "private": true,
+   "abc": 1
+  },
+  {
+   "name": "NextFrameTasks",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "private": true,
+   "abc": 1
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.ViewRestrictions",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IViewRestrictions"
+   ],
+   "abc": 2
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.cursor.base.BaseCursorManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.BaseDAAPIModule",
+   "implements": [],
+   "abc": 3
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.cursor.base.ExternalCursorManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.cursor.base.BaseCursorManager",
+   "implements": [],
+   "abc": 4
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.cursor.base.ResizingCursorManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.cursor.base.ExternalCursorManager",
+   "implements": [],
+   "abc": 5
+  },
+  {
+   "name": "com.adobe.serialization.json.JSON",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 6
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.EnvironmentManager",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IEnvironmentManager"
+   ],
+   "abc": 7
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.VoiceChatManagerBase",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.VoiceChatManagerMeta",
+   "implements": [
+    "IVoiceChatManager"
+   ],
+   "abc": 8
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.cursor.base.BaseInfo",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 9
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.cursor.base.DroppingCursorManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.cursor.base.ResizingCursorManager",
+   "implements": [],
+   "abc": 10
+  },
+  {
+   "name": "DropInfo",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.cursor.base.BaseInfo",
+   "implements": [],
+   "private": true,
+   "abc": 10
+  },
+  {
+   "name": "DragInfo",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.cursor.base.BaseInfo",
+   "implements": [],
+   "private": true,
+   "abc": 11
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.cursor.CursorManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.cursor.base.DroppingCursorManager",
+   "implements": [
+    "ICursorManager"
+   ],
+   "abc": 11
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.ImageManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.ImageManagerMeta",
+   "implements": [
+    "IImageManager"
+   ],
+   "abc": 12
+  },
+  {
+   "name": "WeakRef",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "private": true,
+   "abc": 12
+  },
+  {
+   "name": "ImageData",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IDisposable",
+    "IImageData"
+   ],
+   "private": true,
+   "abc": 12
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.ElementBlurAdapter",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IElementBlurAdapter"
+   ],
+   "abc": 13
+  },
+  {
+   "name": "net.wg.data.constants.KeysMap",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 14
+  },
+  {
+   "name": "com.adobe.serialization.json.JSONToken",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 15
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.TweenManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.TweenManagerMeta",
+   "implements": [
+    "ITweenManager",
+    "ITweenManagerMeta"
+   ],
+   "abc": 16
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.AbstractTriggerWatcher",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "ITriggerWatcher"
+   ],
+   "abc": 17
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.BaseEnabledTriggerWatcher",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.tutorial.AbstractTriggerWatcher",
+   "implements": [],
+   "abc": 18
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.EnabledChangeTriggerWatcher",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.tutorial.BaseEnabledTriggerWatcher",
+   "implements": [],
+   "abc": 19
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.TriggerEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 20
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.TriggerWatcherFactory",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 21
+  },
+  {
+   "name": "net.wg.data.utilData.FormattedInteger",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IFormattedInt"
+   ],
+   "abc": 22
+  },
+  {
+   "name": "_81cc5c2965935a5d63a886328365a18ea94d5b3ae92f6e940ca0cf2cb5fe069f_flash_display_Sprite",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 23
+  },
+  {
+   "name": "net.wg.data.vo.TutorialComponentPathVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 24
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.EscapeTriggerWatcher",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.tutorial.AbstractTriggerWatcher",
+   "implements": [],
+   "abc": 25
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.ColorSchemeManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.ColorSchemeManagerMeta",
+   "implements": [
+    "IColorSchemeManager"
+   ],
+   "abc": 26
+  },
+  {
+   "name": "net.wg.infrastructure.managers.TutorialViewManager",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "ITutorialViewManager"
+   ],
+   "abc": 27
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.ClickTriggerWatcher",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.tutorial.AbstractTriggerWatcher",
+   "implements": [],
+   "abc": 28
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.DataUtils",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDataUtils"
+   ],
+   "abc": 29
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.TweenManagerHelper",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITweenManagerHelper"
+   ],
+   "abc": 30
+  },
+  {
+   "name": "com.adobe.serialization.json.JSONEncoder",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 31
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.WGJSON",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ISerializable"
+   ],
+   "abc": 32
+  },
+  {
+   "name": "AliasVO",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "private": true,
+   "abc": 33
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.ContainerManagerBase",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.ContainerManagerMeta",
+   "implements": [
+    "IContainerManager",
+    "IContainerManagerMeta"
+   ],
+   "abc": 33
+  },
+  {
+   "name": "ViewInfo",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "private": true,
+   "abc": 33
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.ContextMenuManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.ContextMenuManagerMeta",
+   "implements": [
+    "IContextMenuManager"
+   ],
+   "abc": 34
+  },
+  {
+   "name": "net.wg.data.constants.EngineMethods",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 35
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.CommonsBase",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ICommons"
+   ],
+   "abc": 36
+  },
+  {
+   "name": "UserProps",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IUserProps"
+   ],
+   "private": true,
+   "abc": 36
+  },
+  {
+   "name": "com.adobe.serialization.json.JSONDecoder",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 37
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.VisibleChangeTriggerWatcher",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.tutorial.AbstractTriggerWatcher",
+   "implements": [],
+   "abc": 38
+  },
+  {
+   "name": "StatsEntity",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "private": true,
+   "abc": 39
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.LoaderManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.LoaderManagerMeta",
+   "implements": [
+    "ILoaderManager"
+   ],
+   "abc": 39
+  },
+  {
+   "name": "com.adobe.serialization.json.JSONParseError",
+   "kind": "class",
+   "extends": "Error",
+   "implements": [],
+   "abc": 40
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.CustomObjectFinderBase",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ICustomObjectFinder"
+   ],
+   "abc": 41
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.IME",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IIME"
+   ],
+   "abc": 42
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.TweenAnimator",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITweenAnimator"
+   ],
+   "abc": 43
+  },
+  {
+   "name": "TweenLinkedObjects",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "private": true,
+   "abc": 43
+  },
+  {
+   "name": "net.wg.data.vo.UniversalStyle",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IUniversalStyle"
+   ],
+   "abc": 44
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.StageSizeManager",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IStageSizeManager"
+   ],
+   "abc": 45
+  },
+  {
+   "name": "net.wg.infrastructure.managers.GlobalVarsManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.GlobalVarsMgrMeta",
+   "implements": [
+    "IGlobalVarsManager"
+   ],
+   "abc": 46
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.StyleSheetManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IStyleSheetManager"
+   ],
+   "abc": 47
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.LocaleBase",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ILocale"
+   ],
+   "abc": 48
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.TooltipMgr.ToolTipManagerBase",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.ToolTipMgrMeta",
+   "implements": [
+    "ITooltipMgr",
+    "IToolTipMgrMeta"
+   ],
+   "abc": 49
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.BuilderTypeMapping",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 50
+  },
+  {
+   "name": "net.wg.data.StrCaseProperties",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IStrCaseProperties"
+   ],
+   "abc": 51
+  },
+  {
+   "name": "net.wg.app.iml.base.BaseRootApp",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 52
+  },
+  {
+   "name": "net.wg.data.vo.TutorialCriteriaVo",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 53
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.GraphicsOptimizationManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.GraphicsOptimizationManagerMeta",
+   "implements": [
+    "IGraphicsOptimizationManager",
+    "IGraphicsOptimizationManagerMeta"
+   ],
+   "abc": 54
+  },
+  {
+   "name": "com.adobe.serialization.json.JSONTokenType",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 55
+  },
+  {
+   "name": "net.wg.app.iml.base.AbstractApplication",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.ApplicationMeta",
+   "implements": [
+    "IApplication"
+   ],
+   "abc": 56
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.LibrariesLoader",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "ILibrariesLoader"
+   ],
+   "abc": 57
+  },
+  {
+   "name": "net.wg.data.vo.TweenPropertiesVO",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "ITweenPropertiesVO"
+   ],
+   "abc": 58
+  },
+  {
+   "name": "net.wg.data.ImageUrlProperties",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IImageUrlProperties"
+   ],
+   "abc": 59
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.AtlasManager",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IAtlasManager"
+   ],
+   "abc": 60
+  },
+  {
+   "name": "AtlasVO",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "private": true,
+   "abc": 60
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.PopoverManagerBase",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.PopoverManagerMeta",
+   "implements": [
+    "IPopoverManagerMeta",
+    "IPopoverManager"
+   ],
+   "abc": 61
+  },
+  {
+   "name": "net.wg.data.vo.UniversalBtnStyledDisplayObjects",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IUniversalBtnStyledDisplayObjects"
+   ],
+   "abc": 62
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.Utils",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.UtilsManagerMeta",
+   "implements": [
+    "IUtils"
+   ],
+   "abc": 63
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.ClickOutsideTriggerWatcher",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.tutorial.AbstractTriggerWatcher",
+   "implements": [],
+   "abc": 64
+  },
+  {
+   "name": "net.wg.data.vo.TutorialUnboundViewVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 65
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.EnabledTriggerWatcher",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.tutorial.BaseEnabledTriggerWatcher",
+   "implements": [],
+   "abc": 66
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.ClassFactory",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IClassFactory"
+   ],
+   "abc": 67
+  },
+  {
+   "name": "net.wg.infrastructure.events.SharedLayoutRegisterEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 68
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.DateTimeCommon",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDateTime"
+   ],
+   "abc": 69
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.PopupManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IPopUpManager"
+   ],
+   "abc": 70
+  },
+  {
+   "name": "CriteriaUtils",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "private": true,
+   "abc": 71
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.TutorialManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.TutorialManagerMeta",
+   "implements": [
+    "ITutorialManager"
+   ],
+   "abc": 71
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.Asserter",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IAssertable"
+   ],
+   "abc": 72
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.FocusHandlerEx",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IFocusHandler"
+   ],
+   "abc": 73
+  },
+  {
+   "name": "net.wg.app.iml.base.StageResizeEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 74
+  },
+  {
+   "name": "net.wg.app.iml.base.RootApp",
+   "kind": "class",
+   "extends": "net.wg.app.iml.base.BaseRootApp",
+   "implements": [
+    "ICoreApplication"
+   ],
+   "abc": 75
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.SoundManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.SoundManagerMeta",
+   "implements": [
+    "ISoundManager"
+   ],
+   "abc": 76
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.TextManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.TextManagerMeta",
+   "implements": [
+    "ITextManager",
+    "ITextManagerMeta",
+    "IDisposable"
+   ],
+   "abc": 77
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.SharedLayoutManager",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "ISharedLayoutManager"
+   ],
+   "abc": 78
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.UILoggerManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.UILoggerManagerMeta",
+   "implements": [
+    "IUILoggerManager",
+    "IUILoggerManagerMeta"
+   ],
+   "abc": 79
+  },
+  {
+   "name": "net.wg.data.constants.TooltipTags",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 80
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.UniversalBtnStyles",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IUniversalBtnStyles"
+   ],
+   "abc": 81
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.tutorial.BuildersMap",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 82
+  },
+  {
+   "name": "com.adobe.serialization.json.JSONTokenizer",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 83
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ },
+ "metadata": "<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'><rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1'><dc:format>application/x-shockwave-flash</dc:format><dc:title>swc base_app</dc:title><dc:date>10/29/26 9:04 PM</dc:date></rdf:Description></rdf:RDF>",
+ "product_info": {
+  "product": 3,
+  "edition": 6,
+  "version": "4.5",
+  "build": 21328
+ }
+}

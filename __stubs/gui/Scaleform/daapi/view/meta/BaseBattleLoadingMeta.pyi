@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/BaseBattleLoadingMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPIComponent as BaseDAAPIComponent
+
+class BaseBattleLoadingMeta(BaseDAAPIComponent):
+    def as_setProgressS(self, value):
+        ...
+    def as_setMapIconS(self, source):
+        ...
+    def as_setEventInfoPanelDataS(self, data):
+        ...
+    def as_setTipS(self, value):
+        ...
+    def as_setTipTitleS(self, title):
+        ...
+    def as_setVisualTipInfoS(self, data):
+        ...

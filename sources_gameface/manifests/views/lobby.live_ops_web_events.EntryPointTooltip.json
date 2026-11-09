@@ -1,0 +1,124 @@
+{
+  "rid": "R.views.lobby.live_ops_web_events.EntryPointTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "EntryPointTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "EntryPointTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip/EntryPointTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip/EntryPointTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "EntryPointTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip/EntryPointTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip/EntryPointTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "EntryPointTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip/EntryPointTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip/EntryPointTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip/EntryPointTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/live_ops_web_events/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/live_ops_web_events/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip/EntryPointTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip/EntryPointTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip/EntryPointTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/live_ops_web_events/EntryPointTooltip/EntryPointTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.live_ops_web_events.EntryPointTooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.live_ops_web_events.EntryPointTooltip no Python",
+      "ViewModel EntryPointTooltipViewModel (model=... no Python da view): 3/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/live_ops_web_events/entry_point_tooltip_view.py",
+        19
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/live_ops_web_events/entry_point_view.py",
+        60
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/live_ops_web_events/entry_point_tooltip_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/live_ops_web_events/entry_point_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/live_ops_web_events/entry_point_tooltip_view_model.py",
+      "class": "EntryPointTooltipViewModel",
+      "chain": [
+        "EntryPointTooltipViewModel",
+        "EntryPointBase"
+      ],
+      "properties": [
+        [
+          "eventStartDate",
+          "Number"
+        ],
+        [
+          "eventEndDate",
+          "Number"
+        ],
+        [
+          "state",
+          "String"
+        ],
+        [
+          "previousState",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 3,
+        "total": 4,
+        "missing": [
+          "previousState"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/live_ops_web_events/entry_point_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/lootbox_system/entry_point_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/lootbox_system/tooltips/entry_point_tooltip_view_model.py"
+      ]
+    }
+  }
+}

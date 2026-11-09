@@ -1,0 +1,46 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/event_difficulty_model.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/event_difficulty_model.py
+from frameworks.wulf import Array, ViewModel
+from halloween.gui.impl.gen.view_models.views.lobby.difficulty_dropdown_item_model import DifficultyDropdownItemModel
+
+class EventDifficultyModel(ViewModel):
+    __slots__ = ('onChange', )
+
+    def __init__(self, properties=3, commands=1):
+        super(EventDifficultyModel, self).__init__(properties=properties, commands=commands)
+
+    def getItems(self):
+        return self._getArray(0)
+
+    def setItems(self, value):
+        self._setArray(0, value)
+
+    @staticmethod
+    def getItemsType():
+        return DifficultyDropdownItemModel
+
+    def getSelected(self):
+        return self._getArray(1)
+
+    def setSelected(self, value):
+        self._setArray(1, value)
+
+    @staticmethod
+    def getSelectedType():
+        return unicode
+
+    def getLevel(self):
+        return self._getNumber(2)
+
+    def setLevel(self, value):
+        self._setNumber(2, value)
+
+    def _initialize(self):
+        super(EventDifficultyModel, self)._initialize()
+        self._addArrayProperty('items', Array())
+        self._addArrayProperty('selected', Array())
+        self._addNumberProperty('level', 0)
+        self.onChange = self._addCommand('onChange')

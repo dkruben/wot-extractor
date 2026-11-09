@@ -1,0 +1,43 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/shared/utils/requesters/TokenResponse.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/shared/utils/requesters/TokenResponse.py
+from __future__ import absolute_import
+import BigWorld
+TOKEN_EXPIRED_TIME = 3000
+
+class TokenResponse(object):
+    __slots__ = ('_receivedAt', '_token', '_databaseID', '_error')
+
+    def __init__(self, token=None, databaseID=0, error=None, **kwargs):
+        super(TokenResponse, self).__init__()
+        self._receivedAt = BigWorld.time()
+        self._token = token
+        self._databaseID = databaseID
+        self._error = error
+
+    def __repr__(self):
+        return ('{0}(receivedAt={1}, databaseID={2}, error={3})').format(self.__class__.__name__, self._receivedAt, self._databaseID, self._error)
+
+    def clear(self):
+        self._receivedAt = 0
+        self._token = None
+        self._databaseID = 0
+        self._error = None
+        return
+
+    def isValid(self):
+        return self._token and not self._error and BigWorld.time() < self._receivedAt + TOKEN_EXPIRED_TIME
+
+    def getDatabaseID(self):
+        return self._databaseID
+
+    def getToken(self):
+        return self._token
+
+    def hasError(self):
+        return self._error is not None
+
+    def getError(self):
+        return self._error

@@ -1,0 +1,76 @@
+{
+  "rid": "R.views.mono.seniority_awards.notifications.manual_claim",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "manual_claim",
+  "dir": "gui/gameface/_dist/production/mono/seniority_awards/notifications/manual_claim",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/seniority_awards/notifications/manual_claim/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/seniority_awards/notifications/manual_claim/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "manual_claim.css",
+      "effective": "res/gui/gameface/_dist/production/mono/seniority_awards/notifications/manual_claim/manual_claim.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/seniority_awards/notifications/manual_claim/manual_claim.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "manual_claim.html",
+      "effective": "res/gui/gameface/_dist/production/mono/seniority_awards/notifications/manual_claim/manual_claim.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/seniority_awards/notifications/manual_claim/manual_claim.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/seniority_awards/chunks/common.css",
+      "key": "res/gui/gameface/_dist/production/mono/seniority_awards/chunks/common.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/seniority_awards/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/seniority_awards/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/seniority_awards/notifications/manual_claim/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/seniority_awards/notifications/manual_claim/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/seniority_awards/notifications/manual_claim/manual_claim.css",
+      "key": "res/gui/gameface/_dist/production/mono/seniority_awards/notifications/manual_claim/manual_claim.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClick",
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.mono.seniority_awards.notifications.manual_claim",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.mono.seniority_awards.notifications.manual_claim no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/seniority_awards/__init__.py",
+        18
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/seniority_awards/__init__.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

@@ -1,0 +1,61 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/story_mode/scripts/client/story_mode/gui/impl/battle/lore_settings_model.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: story_mode/scripts/client/story_mode/gui/impl/battle/lore_settings_model.py
+from __future__ import absolute_import
+import ResMgr, section2dict, typing
+from dict2model import models, schemas, fields, validate
+from game_params_common.scope import GameParamsScopeFlags
+from story_mode_common.configs.sounds_schema import soundSchema
+if typing.TYPE_CHECKING:
+    from story_mode_common.configs.sounds_schema import SoundModel
+_LORE_SETTINGS_PATH = 'story_mode/gui/lore.xml'
+
+class MissionLoreModel(models.Model):
+    __slots__ = ('id', 'music', 'vo', 'battleMusic')
+
+    def __init__(self, id, music, vo, battleMusic):
+        super(MissionLoreModel, self).__init__()
+        self.id = id
+        self.music = music
+        self.vo = vo
+        self.battleMusic = battleMusic
+
+
+class EpilogueLoreModel(models.Model):
+    __slots__ = ('music', 'vo')
+
+    def __init__(self, music, vo):
+        super(EpilogueLoreModel, self).__init__()
+        self.music = music
+        self.vo = vo
+
+
+class LoreSettingsModel(models.Model):
+    __slots__ = ('mission', 'epilogue')
+
+    def __init__(self, mission, epilogue):
+        super(LoreSettingsModel, self).__init__()
+        self.mission = mission
+        self.epilogue = epilogue
+
+
+missionLoreSchema = schemas.Schema(fields={'id': (fields.Integer(required=True, serializedValidators=validate.Range(minValue=1), deserializedValidators=validate.Range(minValue=1))), 
+   'music': (fields.Nested(schema=soundSchema, required=True)), 
+   'vo': (fields.String(required=True)), 
+   'battleMusic': (fields.String(required=True))}, modelClass=MissionLoreModel, checkUnknown=True)
+epilogueLoreSchema = schemas.Schema(fields={'music': (fields.Nested(schema=soundSchema, required=True)), 
+   'vo': (fields.String(required=True))}, modelClass=EpilogueLoreModel, checkUnknown=True)
+loreSchema = schemas.Schema(fields={'mission': (fields.UniCapList(fieldOrSchema=missionLoreSchema, required=True, deserializedValidators=validate.Length(minValue=1))), 
+   'epilogue': (fields.Nested(schema=epilogueLoreSchema, required=True, filterParams=GameParamsScopeFlags.BASE))}, modelClass=LoreSettingsModel, checkUnknown=True)
+__loreSchema = None
+
+def getLoreSettings():
+    global __loreSchema
+    if __loreSchema:
+        return __loreSchema
+    root = ResMgr.openSection(_LORE_SETTINGS_PATH)
+    rawData = section2dict.parse(root)
+    __loreSchema = loreSchema.deserialize(rawData)
+    return __loreSchema

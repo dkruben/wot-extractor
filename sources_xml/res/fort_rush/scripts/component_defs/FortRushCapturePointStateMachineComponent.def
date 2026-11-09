@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fort_rush/scripts/component_defs/FortRushCapturePointStateMachineComponent.def -->
+<root>
+	<CellMethods />
+	<Properties>
+		<state>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</state>
+	</Properties>
+	<ofEntity>
+		<Entity />
+	</ofEntity>
+	<DefaultKeyName>FortRushCapturePointStateMachineComponent</DefaultKeyName>
+</root>

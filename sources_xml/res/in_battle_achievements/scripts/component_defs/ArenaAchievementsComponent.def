@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/in_battle_achievements/scripts/component_defs/ArenaAchievementsComponent.def -->
+<root>
+	<CellMethods />
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+	<DefaultKeyName>achievementsComponent</DefaultKeyName>
+</root>

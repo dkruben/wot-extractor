@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/TargetDesignatorController.def -->
+<root>
+	<Properties>
+		<abilityState>
+			<Type>TARGET_DESIGNATOR_STATE</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</abilityState>
+	</Properties>
+	<CellMethods>
+		<tryActivate>
+			<Exposed>OWN_CLIENT</Exposed>
+		</tryActivate>
+	</CellMethods>
+	<DefaultKeyName>targetDesignatorController</DefaultKeyName>
+</root>

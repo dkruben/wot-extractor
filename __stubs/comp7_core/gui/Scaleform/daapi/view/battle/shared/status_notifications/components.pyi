@@ -1,0 +1,66 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/comp7_core/scripts/client/comp7_core/gui/Scaleform/daapi/view/battle/shared/status_notifications/components.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import logging as logging
+from gui.Scaleform.genConsts.BATTLE_NOTIFICATIONS_TIMER_TYPES import BATTLE_NOTIFICATIONS_TIMER_TYPES as BATTLE_NOTIFICATIONS_TIMER_TYPES
+from gui.Scaleform.daapi.view.battle.shared.status_notifications.components import StatusNotificationContainer as StatusNotificationContainer
+_logger: Any
+
+class Comp7StatusNotificationContainer(StatusNotificationContainer):
+    _COMP7_TIMER_ROLE_EFFECTS_PRIORITY: tuple
+    def getItemsData(self):
+        ...
+    def typeIDPriority(self, item):
+        ...
+
+class StatusNotificationItem(object):
+    NOT_CHANGE_DEFAULT_ICON = ''
+    __updateCallback: Any
+    _isPulseVisible: Any
+    _vo: Any
+    _isVisible: Any
+    def __init__(self, updateCallback):
+        ...
+    def start(self):
+        ...
+    def getItemID(self):
+        ...
+    def getViewTypeID(self):
+        ...
+    def isVisible(self):
+        ...
+    def getVO(self):
+        ...
+    def destroy(self):
+        ...
+    def _setVisible(self, value):
+        ...
+    def _sendUpdate(self):
+        ...
+    def _getIsPulseVisible(self):
+        ...
+
+class StatusNotificationsGroup(StatusNotificationItem):
+    GROUP_ITEM_ID = 'snGroup'
+    GROUP_VIEW_ITEM_ID = 'snGroup'
+    __items: Any
+    __visibleItem: Any
+    _isVisible: Any
+    def __init__(self, notificationClasses, updateCallback):
+        ...
+    def start(self):
+        ...
+    def updateItems(self, updater):
+        ...
+    def getItemID(self):
+        ...
+    def getViewTypeID(self):
+        ...
+    def destroy(self):
+        ...
+    def getVO(self):
+        ...
+    def __onItemUpdated(self):
+        ...

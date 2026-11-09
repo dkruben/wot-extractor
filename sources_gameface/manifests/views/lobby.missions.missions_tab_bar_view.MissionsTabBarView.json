@@ -1,0 +1,40 @@
+{
+  "rid": "R.views.lobby.missions.missions_tab_bar_view.MissionsTabBarView",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "MissionsTabBarView",
+  "dir": "gui/unbound/views/lobby/missions",
+  "feature": null,
+  "files": [
+    {
+      "name": "missions_tab_bar_view.unbound",
+      "effective": "res/gui/unbound/views/lobby/missions/missions_tab_bar_view.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/missions/missions_tab_bar_view.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.missions.missions_tab_bar_view.MissionsTabBarView",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.missions.missions_tab_bar_view.MissionsTabBarView no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/missions/regular/missions_tab_bar.py",
+        35
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/missions/regular/missions_tab_bar.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

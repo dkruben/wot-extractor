@@ -1,0 +1,24 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/gui/effects/flash_bang_effect.xml -->
+<root>
+	<variant1>
+		<timeline>
+			<lightingEnd>0.2</lightingEnd>
+			<soundplaystop>3</soundplaystop>
+			<endpixie>1</endpixie>
+			<end>1</end>
+		</timeline>
+		<effects>
+			<flashBang>
+				<startKey>start</startKey>
+				<stages>
+					<stage>0.1<color>0 0 0 0</color>
+					</stage>
+					<stage>0.5<color>1.0 0.0 0.0 0.5</color>
+					</stage>
+					<stage>0.0<color>0 0 0 0</color>
+					</stage>
+				</stages>
+			</flashBang>
+		</effects>
+	</variant1>
+</root>

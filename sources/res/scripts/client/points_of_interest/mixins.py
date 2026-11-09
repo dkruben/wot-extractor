@@ -1,0 +1,88 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/points_of_interest/mixins.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/points_of_interest/mixins.py
+from __future__ import absolute_import
+import typing, CGF
+from gui.battle_control import avatar_getter
+from points_of_interest.components import PoiStateComponent, PoiStateUIListenerComponent
+from points_of_interest.managers import PoiStateCreateSystem
+from shared_utils import first
+
+class PointsOfInterestListener(object):
+
+    def __init__(self):
+        self.__listenerGameObject = None
+        return
+
+    def onPoiAdded(self, poiState):
+        pass
+
+    def onPoiRemoved(self, poiState):
+        pass
+
+    def onProcessPoi(self, poiState):
+        pass
+
+    def onPoiEntered(self, poiID):
+        pass
+
+    def onPoiLeft(self, poiID):
+        pass
+
+    @property
+    def _poiStateSystem(self):
+        spaceID = avatar_getter.getSpaceID()
+        if spaceID is not None:
+            return CGF.getSystem(spaceID, PoiStateCreateSystem)
+        else:
+            return
+
+    @property
+    def _poiStateQuery(self):
+        system = self._poiStateSystem
+        if system is not None:
+            return system.reaction(system.StateIterate)
+        else:
+            return []
+
+    @property
+    def _poiVehicleState(self):
+        system = self._poiStateSystem
+        if system is not None:
+            return first(system.reaction(system.VehicleStateIterate))
+        else:
+            return
+
+    def _registerPoiListener(self, go=None):
+        spaceID = avatar_getter.getSpaceID()
+        if spaceID is None:
+            return
+        else:
+            q = CGF.CommandQueue(spaceID)
+            if go is None:
+                p = q.createGameObject(self.__class__.__name__)
+                q.activateGameObject(p)
+                q.createComponent(p, PoiStateUIListenerComponent, self)
+                self.__listenerGameObject = p
+            else:
+                q.createComponent(self.__listenerGameObject, PoiStateUIListenerComponent, self)
+            q.submit()
+            return
+
+    def _unregisterPoiListener(self, go=None):
+        spaceID = avatar_getter.getSpaceID()
+        if spaceID is None:
+            self.__listenerGameObject = None
+            return
+        else:
+            q = CGF.CommandQueue(spaceID)
+            if go is not None:
+                q.removeComponent(go, PoiStateUIListenerComponent)
+            elif self.__listenerGameObject is not None:
+                if self.__listenerGameObject.valid:
+                    q.removeGameObject(self.__listenerGameObject)
+                self.__listenerGameObject = None
+            q.submit()
+            return

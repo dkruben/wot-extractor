@@ -1,0 +1,64 @@
+{
+  "rid": "R.views.lobby.veh_post_progression.common.Description",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Description",
+  "dir": "gui/gameface/_dist/production/lobby/veh_post_progression/common/Description",
+  "feature": null,
+  "files": [
+    {
+      "name": "Description.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/Description/Description.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/Description/Description.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Description.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/Description/Description.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/Description/Description.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Description.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/Description/Description.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/Description/Description.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/veh_post_progression/common/Description/Description.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/common/Description/Description.css",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/Description/Description.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/common/Description/Description.js",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/Description/Description.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.veh_post_progression.common.Description",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

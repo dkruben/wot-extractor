@@ -1,0 +1,106 @@
+{
+ "source": "sources/res/gui/flash/EULADlg.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 3711,
+ "actual_length": 3711,
+ "frame_size_px": [
+  0.0,
+  356.0,
+  0.0,
+  227.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 2,
+  "ShowFrame": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 2,
+  "DefineShape3": 1,
+  "DefineSprite": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "ImportAssets2": 2,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 1,
+  "sprites": 1,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 2,
+   "class": "EULADlgUI"
+  },
+  {
+   "id": 0,
+   "class": "EULADlg_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3336,
+   "classes": 2,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 588
+  }
+ ],
+ "classes": [
+  {
+   "name": "EULADlg_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EULADlgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.login.EULA.EULADlg",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

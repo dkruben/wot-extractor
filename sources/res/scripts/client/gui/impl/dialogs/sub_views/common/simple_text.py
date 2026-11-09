@@ -1,0 +1,49 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/impl/dialogs/sub_views/common/simple_text.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/impl/dialogs/sub_views/common/simple_text.py
+from __future__ import absolute_import
+from collections import namedtuple
+import typing
+from frameworks.wulf import ViewSettings
+from gui.impl.dialogs.dialog_template_utils import toString
+from gui.impl.gen import R
+from gui.impl.gen.view_models.views.dialogs.sub_views.image_substitution_view_model import ImageSubstitutionViewModel
+from gui.impl.gen.view_models.views.dialogs.sub_views.simple_text_view_model import SimpleTextViewModel
+from gui.impl.pub import ViewImpl
+if typing.TYPE_CHECKING:
+    from typing import Optional, List, Union
+    from frameworks.wulf import PyResAccessor
+ImageSubstitution = namedtuple('ImageSubstitution', 'resourceID placeholder marginTop marginRight marginBottom marginLeft')
+ImageSubstitution.__new__.__defaults__ = (-1, None, 0, 0, 0, 0)
+
+class SimpleText(ViewImpl):
+    __slots__ = ()
+    _LAYOUT_DYN_ACCESSOR = R.views.dialogs.sub_views.common.SimpleText
+
+    def __init__(self, text, imageSubstitutions=None, layoutID=None):
+        settings = ViewSettings(layoutID or self._LAYOUT_DYN_ACCESSOR())
+        settings.model = SimpleTextViewModel()
+        settings.kwargs = {'text': text, 
+           'imageSubstitutions': imageSubstitutions}
+        super(SimpleText, self).__init__(settings)
+
+    def _onLoading(self, text, imageSubstitutions, *args, **kwargs):
+        super(SimpleText, self)._onLoading(*args, **kwargs)
+        viewModel = self.getViewModel()
+        viewModel.setText(toString(text))
+        if imageSubstitutions:
+            substitutionList = viewModel.getImageSubstitutions()
+            for subs in imageSubstitutions:
+                imageSubstitutionVM = ImageSubstitutionViewModel()
+                imageSubstitutionVM.setPath(subs.resourceID)
+                imageSubstitutionVM.setPlaceholder(subs.placeholder)
+                imageSubstitutionVM.setMarginTop(subs.marginTop)
+                imageSubstitutionVM.setMarginRight(subs.marginRight)
+                imageSubstitutionVM.setMarginBottom(subs.marginBottom)
+                imageSubstitutionVM.setMarginLeft(subs.marginLeft)
+                substitutionList.addViewModel(imageSubstitutionVM)
+
+    def updateText(self, text):
+        self.getViewModel().setText(toString(text))

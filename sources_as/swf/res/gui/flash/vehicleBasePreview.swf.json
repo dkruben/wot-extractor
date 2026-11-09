@@ -1,0 +1,132 @@
+{
+ "source": "sources/res/gui/flash/vehicleBasePreview.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 3774,
+ "actual_length": 3774,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 5,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 10,
+  "DefineEditText": 6,
+  "DefineSprite": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 6,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 6,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 6,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "vehiclePreview.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 10,
+   "class": "VehicleBasePreviewUI"
+  },
+  {
+   "id": 8,
+   "class": "VPAdditionalInfoPanel"
+  },
+  {
+   "id": 3,
+   "class": "VehicleInfoDescUI"
+  },
+  {
+   "id": 0,
+   "class": "vehicleBasePreview_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2468,
+   "classes": 4,
+   "methods": 14,
+   "bodies": 14,
+   "code_bytes": 435
+  }
+ ],
+ "classes": [
+  {
+   "name": "vehicleBasePreview_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VPAdditionalInfoPanel",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehiclePreview.additionalInfo.VPAdditionalInfoPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleInfoDescUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehiclePreview.additionalInfo.VehicleInfoDesc",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleBasePreviewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehiclePreview.VehicleBasePreviewPage",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

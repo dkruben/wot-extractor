@@ -1,0 +1,151 @@
+{
+ "source": "sources/res/gui/flash/personalMissionsPage.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 3768,
+ "actual_length": 3768,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 6,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 7,
+  "DefineShape3": 1,
+  "DefineEditText": 2,
+  "DefineSprite": 5,
+  "FileAttributes": 1,
+  "PlaceObject3": 7,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 1,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "personalMissionsCmp.swf",
+   "symbols": []
+  },
+  {
+   "url": "freeSheetObtainedPopup.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 8,
+   "class": "PersonalMissionsPageUI"
+  },
+  {
+   "id": 5,
+   "class": "ChainsPanelUI"
+  },
+  {
+   "id": 4,
+   "class": "ViewHeaderUI"
+  },
+  {
+   "id": 1,
+   "class": "PMSeasonPlansImports"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2780,
+   "classes": 6,
+   "methods": 26,
+   "bodies": 26,
+   "code_bytes": 589
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PMSeasonPlansImports",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ViewHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ViewHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChainsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.chainsPanel.ChainsPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionsPageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.PersonalMissionsPage",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,73 @@
+{
+  "rid": "R.views.comp7_light.mono.lobby.flag",
+  "rid_source": "sources/res/comp7_light/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "flag",
+  "dir": "comp7_light/gui/gameface/_dist/production/mono/lobby/flag",
+  "feature": "comp7_light",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/flag/bundle.js",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/flag/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "flag.css",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/flag/flag.css",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/flag/flag.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "flag.html",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/flag/flag.html",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/flag/flag.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/flag/bundle.js",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/flag/bundle.js"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/flag/flag.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/flag/flag.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.comp7_light.mono.lobby.flag",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.comp7_light.mono.lobby.flag no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/comp7_light_flag_view.py",
+        20
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/comp7_light_flag_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

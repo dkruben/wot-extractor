@@ -1,0 +1,119 @@
+{
+ "source": "sources/res/gui/flash/PveProgressCounter.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 43897,
+ "actual_length": 43897,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 393,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 414,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 1,
+  "DefineSprite": 5,
+  "FrameLabel": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "ImportAssets2": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 10,
+   "class": "PveProgressCounterUI"
+  },
+  {
+   "id": 6,
+   "class": "TitleAnimUI"
+  },
+  {
+   "id": 4,
+   "class": "PveProgressCounter_fla.shadow_3"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1073,
+   "classes": 3,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 221
+  }
+ ],
+ "classes": [
+  {
+   "name": "PveProgressCounter_fla.shadow_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TitleAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.progressCounter.TitleAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveProgressCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.progressCounter.PveProgressCounter",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

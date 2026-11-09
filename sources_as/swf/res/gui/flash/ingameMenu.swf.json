@@ -1,0 +1,135 @@
+{
+ "source": "sources/res/gui/flash/ingameMenu.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 61671,
+ "actual_length": 61671,
+ "frame_size_px": [
+  0.0,
+  442.0,
+  0.0,
+  645.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 5,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 5,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 4,
+  "DefineSprite": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 9,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 1,
+  "shapes": 2,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 11,
+   "class": "IngameMenuUI"
+  },
+  {
+   "id": 4,
+   "class": "ReportBugPanelUI"
+  },
+  {
+   "id": 2,
+   "class": "ServerInfoHitMc"
+  },
+  {
+   "id": 0,
+   "class": "ingameMenu_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3249,
+   "classes": 4,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 517
+  }
+ ],
+ "classes": [
+  {
+   "name": "ServerInfoHitMc",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ingameMenu_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReportBugPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.bugreport.ReportBugPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IngameMenuUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.windows.IngameMenu",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

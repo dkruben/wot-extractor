@@ -1,0 +1,149 @@
+{
+ "source": "sources/res/gui/flash/battleQueue.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 801430,
+ "actual_length": 801430,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 130,
+  "DefineShape": 10,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 51,
+  "RemoveObject2": 80,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 11,
+  "DefineEditText": 72,
+  "DefineSprite": 6,
+  "FrameLabel": 23,
+  "FileAttributes": 1,
+  "PlaceObject3": 82,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 72,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 11,
+  "shapes": 13,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 72,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 102,
+   "class": "BattleQueueUI"
+  },
+  {
+   "id": 19,
+   "class": "BattleIconBackgroundUI"
+  },
+  {
+   "id": 9,
+   "class": "TankTypeListUI"
+  },
+  {
+   "id": 7,
+   "class": "BattleQueueItemRendererUI"
+  },
+  {
+   "id": 0,
+   "class": "battleQueue_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5628,
+   "classes": 5,
+   "methods": 43,
+   "bodies": 43,
+   "code_bytes": 1556
+  }
+ ],
+ "classes": [
+  {
+   "name": "battleQueue_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleIconBackgroundUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleQueueItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battlequeue.BattleQueueItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankTypeListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollingListEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleQueueUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battlequeue.BattleQueue",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,122 @@
+{
+  "rid": "R.views.lobby.marathon.tooltips.RestRewardTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "RestRewardTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "RestRewardTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip/RestRewardTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip/RestRewardTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RestRewardTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip/RestRewardTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip/RestRewardTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RestRewardTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip/RestRewardTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip/RestRewardTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip/RestRewardTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/marathon/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/marathon/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip/RestRewardTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip/RestRewardTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip/RestRewardTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/marathon/tooltips/RestRewardTooltip/RestRewardTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.marathon.tooltips.RestRewardTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.marathon.tooltips.RestRewardTooltip no Python",
+      "ViewModel BonusModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/marathon/marathon_reward_tooltip_content.py",
+        14
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/marathon/marathon_reward_window_view.py",
+        68
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/marathon/marathon_reward_tooltip_content.py",
+      "sources/res/scripts/client/gui/impl/lobby/marathon/marathon_reward_window_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/common/bonus_model.py",
+      "class": "BonusModel",
+      "chain": [
+        "BonusModel"
+      ],
+      "properties": [
+        [
+          "localeName",
+          "String"
+        ],
+        [
+          "values",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "localeName",
+          "values"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/challenges/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/lootbox_system/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/marathon/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/marathon/marathon_prize_reward_model.py"
+      ]
+    }
+  }
+}

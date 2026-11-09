@@ -1,0 +1,397 @@
+{
+ "source": "sources/res/gui/flash/ub_personalMissionDetails.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 911704,
+ "actual_length": 911704,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 10,
+  "ShowFrame": 10,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 10,
+  "DefineShape3": 4,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 24,
+  "DefineSprite": 9,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 25,
+  "shapes": 8,
+  "sprites": 9,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 29,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 42,
+   "class": "MissionBgUI"
+  },
+  {
+   "id": 39,
+   "class": "btnArrowLeftDefault"
+  },
+  {
+   "id": 37,
+   "class": "btnArrowLeftDisabled"
+  },
+  {
+   "id": 35,
+   "class": "btnArrowLeftHover"
+  },
+  {
+   "id": 33,
+   "class": "btnArrowRightDefault"
+  },
+  {
+   "id": 31,
+   "class": "btnArrowRightDisabled"
+  },
+  {
+   "id": 28,
+   "class": "btnArrowRightHover"
+  },
+  {
+   "id": 22,
+   "class": "advices_icon"
+  },
+  {
+   "id": 21,
+   "class": "awards_bg"
+  },
+  {
+   "id": 20,
+   "class": "blank_icon"
+  },
+  {
+   "id": 19,
+   "class": "check_icon"
+  },
+  {
+   "id": 18,
+   "class": "cond_separator"
+  },
+  {
+   "id": 17,
+   "class": "double_check_icon"
+  },
+  {
+   "id": 16,
+   "class": "hor_separator"
+  },
+  {
+   "id": 15,
+   "class": "in_progress_icon"
+  },
+  {
+   "id": 14,
+   "class": "missionStatusCompletedBg"
+  },
+  {
+   "id": 13,
+   "class": "missionStatusDefaultBg"
+  },
+  {
+   "id": 12,
+   "class": "missionStatusDisabledBg"
+  },
+  {
+   "id": 11,
+   "class": "btnNumHover"
+  },
+  {
+   "id": 10,
+   "class": "btnNumNormal"
+  },
+  {
+   "id": 9,
+   "class": "btnNumSelected"
+  },
+  {
+   "id": 8,
+   "class": "btnNumGreen"
+  },
+  {
+   "id": 7,
+   "class": "btnNumGreenSelected"
+  },
+  {
+   "id": 6,
+   "class": "btnNumRed"
+  },
+  {
+   "id": 5,
+   "class": "btnNumRedSelected"
+  },
+  {
+   "id": 4,
+   "class": "bg_object260"
+  },
+  {
+   "id": 3,
+   "class": "bg_StuGIV"
+  },
+  {
+   "id": 2,
+   "class": "bg_T28"
+  },
+  {
+   "id": 1,
+   "class": "bg_T55"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3435,
+   "classes": 29,
+   "methods": 87,
+   "bodies": 87,
+   "code_bytes": 996
+  }
+ ],
+ "classes": [
+  {
+   "name": "advices_icon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "awards_bg",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bg_StuGIV",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bg_T28",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bg_T55",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bg_object260",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "blank_icon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnNumGreen",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnNumGreenSelected",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnNumHover",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnNumNormal",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnNumRed",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnNumRedSelected",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnNumSelected",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "check_icon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "cond_separator",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "double_check_icon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hor_separator",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "in_progress_icon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "missionStatusCompletedBg",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "missionStatusDefaultBg",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "missionStatusDisabledBg",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionBgUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnArrowLeftDefault",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnArrowLeftDisabled",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnArrowLeftHover",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnArrowRightDefault",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnArrowRightDisabled",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnArrowRightHover",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,40 @@
+{
+  "rid": "R.views.common.standard_window.standard_window.StandardWindow",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "StandardWindow",
+  "dir": "gui/unbound/views/common/standard_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "standard_window.unbound",
+      "effective": "res/gui/unbound/views/common/standard_window/standard_window.unbound",
+      "all": [
+        "res/gui/unbound/views/common/standard_window/standard_window.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.standard_window.standard_window.StandardWindow",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.common.standard_window.standard_window.StandardWindow no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/pub/window_view.py",
+        14
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/pub/window_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

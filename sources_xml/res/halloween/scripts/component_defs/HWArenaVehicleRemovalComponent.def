@@ -1,0 +1,6 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/component_defs/HWArenaVehicleRemovalComponent.def -->
+<root>
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+</root>

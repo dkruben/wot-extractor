@@ -1,0 +1,117 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineReinforcementPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 12455,
+ "actual_length": 12455,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 32,
+  "DefineShape": 5,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 10,
+  "RemoveObject2": 1,
+  "DefineBitsLossless2": 5,
+  "DefineEditText": 2,
+  "DefineSprite": 5,
+  "FrameLabel": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 5,
+  "shapes": 5,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 17,
+   "class": "FrontlineReinforcementPanelUI"
+  },
+  {
+   "id": 14,
+   "class": "frontlineReinforcementPanel_fla.tankSlot_3"
+  },
+  {
+   "id": 7,
+   "class": "frontlineReinforcementPanel_fla.tankAdd_2"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1227,
+   "classes": 3,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 230
+  }
+ ],
+ "classes": [
+  {
+   "name": "frontlineReinforcementPanel_fla.tankAdd_2",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineReinforcementPanel_fla.tankSlot_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineReinforcementPanelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineReinforcementPanel.FrontlineReinforcementPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

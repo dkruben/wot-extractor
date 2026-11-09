@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/SimpleDialogMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.framework.entities.abstract.AbstractWindowView import AbstractWindowView as AbstractWindowView
+
+class SimpleDialogMeta(AbstractWindowView):
+    def onButtonClick(self, buttonId):
+        ...
+    def as_setTextS(self, text):
+        ...
+    def as_setTitleS(self, title):
+        ...
+    def as_setButtonsS(self, buttonNames):
+        ...
+    def as_setButtonEnablingS(self, id, isEnabled):
+        ...
+    def as_setButtonFocusS(self, id):
+        ...

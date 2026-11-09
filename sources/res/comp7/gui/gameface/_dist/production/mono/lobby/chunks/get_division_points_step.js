@@ -1,0 +1,1 @@
+var e=function(e){return e[e.Achieved=0]="Achieved",e[e.Current=1]="Current",e[e.Inactive=2]="Inactive",e}({}),n=(e,n,r)=>Math.round((n-e)/r);export{e as n,n as t};

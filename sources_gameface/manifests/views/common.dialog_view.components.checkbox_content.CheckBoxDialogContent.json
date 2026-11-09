@@ -1,0 +1,40 @@
+{
+  "rid": "R.views.common.dialog_view.components.checkbox_content.CheckBoxDialogContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "CheckBoxDialogContent",
+  "dir": "gui/unbound/views/common/dialog_view/components",
+  "feature": null,
+  "files": [
+    {
+      "name": "checkbox_content.unbound",
+      "effective": "res/gui/unbound/views/common/dialog_view/components/checkbox_content.unbound",
+      "all": [
+        "res/gui/unbound/views/common/dialog_view/components/checkbox_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.dialog_view.components.checkbox_content.CheckBoxDialogContent",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.common.dialog_view.components.checkbox_content.CheckBoxDialogContent no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dialogs/contents/checkbox_content.py",
+        14
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/dialogs/contents/checkbox_content.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

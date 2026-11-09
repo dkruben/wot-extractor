@@ -1,0 +1,31 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/comp7_core/gui/component_marker_items.xml -->
+<root>
+	<COMP7_ILLUMINATION_FLARE>
+		<visible>true</visible>
+		<components>
+			<MINIMAP_MARKER>
+				<item>
+					<class>comp7_core.gui.Scaleform.daapi.view.battle.markers_components.IlluminationFlareMinimapMarker</class>
+					<config>
+						<symbol>Comp7PointIlluminationFlareMinimapEntryUI</symbol>
+						<container>equipments</container>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+		</components>
+	</COMP7_ILLUMINATION_FLARE>
+	<COMP7_ILLUMINATION_FLARE_ENEMY>
+		<visible>true</visible>
+		<components>
+			<MINIMAP_MARKER>
+				<item>
+					<class>comp7_core.gui.Scaleform.daapi.view.battle.markers_components.IlluminationFlareMinimapMarker</class>
+					<config>
+						<symbol>Comp7PointIlluminationFlareEnemyMinimapEntryUI</symbol>
+						<container>equipments</container>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+		</components>
+	</COMP7_ILLUMINATION_FLARE_ENEMY>
+</root>

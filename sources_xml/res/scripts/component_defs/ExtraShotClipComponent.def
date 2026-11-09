@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/ExtraShotClipComponent.def -->
+<root>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<Properties>
+		<reloadState>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</reloadState>
+	</Properties>
+	<DefaultKeyName>extraShotClipComponent</DefaultKeyName>
+</root>

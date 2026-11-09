@@ -1,0 +1,74 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/battle_royale/scripts/client/battle_royale/gui/Scaleform/daapi/view/battle/abilities/corroding_shot_indicator.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: battle_royale/scripts/client/battle_royale/gui/Scaleform/daapi/view/battle/abilities/corroding_shot_indicator.py
+from __future__ import absolute_import
+from future.utils import viewvalues
+import BigWorld
+from helpers import dependency
+from gui.battle_control.controllers.period_ctrl import IAbstractPeriodView
+from skeletons.gui.battle_session import IBattleSessionProvider
+from constants import EQUIPMENT_STAGES
+from gui.Scaleform.daapi.view.meta.CorrodingShotIndicatorMeta import CorrodingShotIndicatorMeta
+from battle_royale.gui.constants import BattleRoyaleEquipments
+from Event import EventsSubscriber
+
+class CorrodingShotIndicator(CorrodingShotIndicatorMeta, IAbstractPeriodView):
+    __sessionProvider = dependency.descriptor(IBattleSessionProvider)
+
+    def __init__(self):
+        super(CorrodingShotIndicator, self).__init__()
+        self.__isEnabled = False
+        self._es = EventsSubscriber()
+        ctrl = self.__sessionProvider.shared.vehicleState
+        if ctrl is not None:
+            ctrl.onEquipmentComponentUpdated.subscribe(self.__onEquipmentComponentUpdated, BattleRoyaleEquipments.CORRODING_SHOT)
+        ctrl = self.__sessionProvider.shared.crosshair
+        if ctrl is not None:
+            self._es.subscribeToEvent(ctrl.onCrosshairPositionChanged, self.__onCrosshairPositionChanged)
+        ctrl = self.__sessionProvider.shared.vehicleState
+        if ctrl is not None:
+            self._es.subscribeToEvent(ctrl.onVehicleControlling, self.__onVehicleChanged)
+        player = BigWorld.player()
+        if player is not None and player.inputHandler is not None:
+            self._es.subscribeToEvent(player.inputHandler.onCameraChanged, self.__onCameraChanged)
+        return
+
+    def _destroy(self):
+        ctrl = self.__sessionProvider.shared.vehicleState
+        if ctrl is not None:
+            ctrl.onEquipmentComponentUpdated.unsubscribe(self.__onEquipmentComponentUpdated)
+        self._es.unsubscribeFromAllEvents()
+        self.__disable()
+        super(CorrodingShotIndicator, self)._destroy()
+        return
+
+    def __onEquipmentComponentUpdated(self, equipmentName, vehicleID, abilityInfo):
+        if abilityInfo.stage == EQUIPMENT_STAGES.PREPARING:
+            self.__enable()
+        else:
+            self.__disable()
+
+    def __onVehicleChanged(self, _):
+        equipments = self.__sessionProvider.shared.equipments.getEquipments()
+        hasCorrodingShot = any(eq.getDescriptor().name == BattleRoyaleEquipments.CORRODING_SHOT for eq in viewvalues(equipments))
+        if not hasCorrodingShot and self.__isEnabled:
+            self.__disable()
+
+    def __onCrosshairPositionChanged(self, *args):
+        crosshairCtrl = self.__sessionProvider.shared.crosshair
+        scaledPosition = crosshairCtrl.getScaledPosition()
+        self.as_updateLayoutS(*scaledPosition)
+
+    def __enable(self):
+        self.__isEnabled = True
+        self.as_showS()
+
+    def __disable(self):
+        self.__isEnabled = False
+        self.as_hideS()
+
+    def __onCameraChanged(self, cameraName, currentVehicleId=None):
+        if cameraName == 'video':
+            self.__disable()

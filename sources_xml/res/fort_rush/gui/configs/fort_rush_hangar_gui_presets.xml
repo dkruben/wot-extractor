@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fort_rush/gui/configs/fort_rush_hangar_gui_presets.xml -->
+<root>
+	<queueTypePresets>
+		<item>
+			<queueType>99</queueType>
+			<presetName>default</presetName>
+		</item>
+	</queueTypePresets>
+</root>

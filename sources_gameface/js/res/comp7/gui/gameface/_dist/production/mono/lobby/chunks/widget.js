@@ -1,0 +1,128 @@
+/* wot-extractor: JavaScript FORMATADO a partir de sources/res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/widget.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
+import{
+  r as e
+}
+from"./rolldown-runtime.js";
+import{
+  Cs as s,Es as a,Na as t,Ti as r,Wa as n,Y as o,_i as i,_s as d,ao as l,gs as c,hs as _,ms as p,n as m,ps as f,q as g,so as u,t as h,vi as b,vs as T,xs as x,xt as v
+}
+from"./lib.js";
+import{
+  a as N
+}
+from"./vendor.js";
+var w=function(e){
+  return e.News="news",e.ShopPromo="shopPromo",e.None="none",e
+}({});
+w.News,w.News,w.ShopPromo,Math.floor(Date.now()/1e3);
+var y={
+  getter:b({
+    type:w.News,description:"Watch very interesting video, with very long, very very interesting and meaningful description!",isVideo:!0,image:"https://pie-webbrg-cdn-stg.wgcdn.co/dcont/fb/image/whats_new_475x230_2.png"
+  }),controls:()=>u(l("onClick","onClose"))
+},
+[j,C]=i("TeaserModel")(({
+  observableModel:e
+})=>e.primitives(["type","postCounter","description","text","isVideo","finishTime","image"]),({
+  externalModel:e
+})=>({
+  onClick:e.createCallbackNoArgs("onClick"),onClose:e.createCallbackNoArgs("onClose")
+})),k=e(s(),1),W={
+  imageWrapper:"Teaser_imageWrapper_901f1116",vignette:"Teaser_vignette_32737740",base:"Teaser_a2a96284",base__video:"Teaser_base__video_3d4fdb7e",contentWrapper:"Teaser_contentWrapper_b44f0d64",image:"Teaser_image_41628c29",base__newsType:"Teaser_base__newsType_3d4fdb7e",base__shopPromoType:"Teaser_base__shopPromoType_3d4fdb7e",title:"Teaser_title_f8c387e3",counter:"Teaser_counter_6afc9955",closeButton:"Teaser_closeButton_c46a88df",text:"Teaser_text_8e0a588c",bottomContent:"Teaser_bottomContent_eb7878d6",description:"Teaser_description_f7e0ddfc",extendedText:"Teaser_extendedText_286b5b73",countdown:"Teaser_countdown_40e45fc1",fadeIn:"Teaser_fadeIn_3d4fdb7e",fadeInThreeQuarters:"Teaser_fadeInThreeQuarters_3d4fdb7e",fadeInHalf:"Teaser_fadeInHalf_3d4fdb7e",fadeOut:"Teaser_fadeOut_3d4fdb7e",fadeInWithScale:"Teaser_fadeInWithScale_3d4fdb7e",slideUp:"Teaser_slideUp_3d4fdb7e",scale:"Teaser_scale_3d4fdb7e",raysAppearance:"Teaser_raysAppearance_3d4fdb7e",rotate:"Teaser_rotate_3d4fdb7e","reverse-rotate":"Teaser_reverse-rotate_3d4fdb7e",glowAppearance:"Teaser_glowAppearance_3d4fdb7e",highlightAppearance:"Teaser_highlightAppearance_3d4fdb7e",blink:"Teaser_blink_3d4fdb7e",slideUpIn:"Teaser_slideUpIn_3d4fdb7e"
+},
+I=e(t(),1),A="Teaser:Base",M=N(function({
+  className:e,classNames:s
+}){
+  const{
+    model:t,controls:i
+  }=C(),l=t.type.get()||w.News,u=t.postCounter.get(),b=t.text.get(),N=t.description.get(),y=t.finishTime.get(),j=t.isVideo.get(),M=t.image.get(),E=r(),S=a.resolve("strings");
+  const B=(0,k.useCallback)(e=>{
+    e.stopPropagation(),i.onClose()
+  },[i]),[P,U]=(0,k.useState)(null);
+  (0,k.useLayoutEffect)(()=>{
+    let e;
+    const s=f(T(y||0),d());
+    if(!y||s<=0)return void U(null);
+    const a=Math.floor(_.seconds(s)),t=c(T(y),p(1))?o.Extended:o.Long;
+    if(U({
+      duration:a,style:t
+    }),t===o.Extended){
+      const s=f(T(a+1),p(1));
+      e=setTimeout(()=>U(e=>({
+        ...e,style:o.Long
+      })),Math.min(s,n))
+    }
+    return()=>{
+      e&&(clearTimeout(e),e=void 0)
+    }
+  },[y]);
+  const[$,L]=(0,k.useState)(null),[O,V]=(0,k.useState)(!1);
+  return(0,k.useEffect)(()=>{
+    const e=new Image;
+    return e.src=M,e.onload=()=>{
+      L({
+        path:M,height:e.height,width:e.width
+      }),V(!0)
+    },
+    e.onerror=()=>{
+      V(!0)
+    },
+    ()=>{
+      e.src="",L(null)
+    }
+  },[M]),O?(0,I.jsxs)("div",{
+    className:x(W.base,W[`base__${l}Type`],j&&W.base__video,e),onClick:function(e){
+      E.play("click",{
+        target:A,original:e
+      }),i.onClick()
+    },
+    onMouseEnter:function(e){
+      E.play("mouse-enter",{
+        target:A,original:e
+      })
+    },
+    children:[(0,I.jsx)("div",{
+      className:x(W.contentWrapper,s?.contentWrapper),children:(0,I.jsx)("div",{
+        className:x(W.imageWrapper,s?.imageWrapper),children:$&&(0,I.jsx)("div",{
+          className:x(W.image,s?.image),style:{
+            backgroundImage:`url(${$.path})`,height:`${$.height}rem`,width:`${$.width}rem`
+          }
+        })
+      })
+    }),(0,I.jsx)("div",{
+      className:x(W.vignette,s?.vignette)
+    }),(0,I.jsxs)("div",{
+      className:x(W.contentWrapper,s?.contentWrapper),children:[(0,I.jsxs)("div",{
+        className:x(W.title,s?.title),children:[S.readOrEmpty("menu.promo.teaser.title"),Boolean(u)&&u>0&&(0,I.jsx)(m,{
+          className:x(W.counter,s?.counter),value:u,size:"small"
+        })]
+      }),(0,I.jsx)(h,{
+        type:"close",side:"right",classNames:{
+          base:x(W.closeButton,s?.closeButton)
+        },
+        onClick:B,caption:""
+      }),b&&(0,I.jsx)("div",{
+        className:x(W.text,s?.text),children:b
+      }),(N||P)&&(0,I.jsxs)("div",{
+        className:W.bottomContent,children:[N&&(0,I.jsx)("div",{
+          className:x(W.description,s?.description),children:(0,I.jsx)(v,{
+            classMix:W.extendedText,text:N,isTruncationAvailable:!0
+          })
+        }),P&&(0,I.jsx)(g,{
+          className:x(W.countdown,s?.countdown),...P
+        })]
+      })]
+    })]
+  }):null
+});
+function E({
+  className:e,classNames:s,...a
+}){
+  return(0,I.jsx)(j,{
+    ...a,mode:"real",mocks:y,children:(0,I.jsx)(M,{
+      className:e,classNames:s
+    })
+  })
+}
+export{
+  E as default
+};

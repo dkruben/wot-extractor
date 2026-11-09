@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/VisualScriptCache.def -->
+<root>
+	<Properties />
+	<ofEntity>
+		<ArenaInfo />
+	</ofEntity>
+	<DefaultKeyName>visualScriptCache</DefaultKeyName>
+</root>

@@ -1,0 +1,93 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_quest_awards_view.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_quest_awards_view.py
+from __future__ import absolute_import
+from future.utils import viewitems
+from comp7_light.gui.impl.gen.view_models.views.lobby.battle_quest_awards_model import BattleQuestAwardsModel, BattleStatus
+from comp7_light.gui.impl.lobby.comp7_light_helpers.comp7_light_packers import getComp7LightBonusPacker
+from comp7_light.gui.sounds_constants import GENERAL_SOUND_SPACE
+from frameworks.wulf import ViewSettings, WindowFlags, WindowLayer
+from gui.battle_pass.battle_pass_bonuses_packers import packBonusModelAndTooltipData
+from gui.impl.gen import R
+from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
+from gui.impl.pub import ViewImpl
+from gui.impl.pub.lobby_window import LobbyNotificationWindow
+from gui.server_events.bonuses import getNonQuestBonuses
+
+class BattleQuestAwardsView(ViewImpl):
+    __slots__ = ('__tooltipData', '_stage')
+    _COMMON_SOUND_SPACE = GENERAL_SOUND_SPACE
+
+    def __init__(self, stage):
+        settings = ViewSettings(R.views.comp7_light.mono.lobby.battle_quest_awards_view())
+        settings.model = BattleQuestAwardsModel()
+        self.__tooltipData = {}
+        self._stage = stage
+        super(BattleQuestAwardsView, self).__init__(settings)
+
+    @property
+    def viewModel(self):
+        return super(BattleQuestAwardsView, self).getViewModel()
+
+    @createBackportTooltipDecorator()
+    def createToolTip(self, event):
+        return super(BattleQuestAwardsView, self).createToolTip(event)
+
+    def getTooltipData(self, event):
+        tooltipId = event.getArgument('tooltipId')
+        if tooltipId is None:
+            return
+        else:
+            return self.__tooltipData.get(tooltipId)
+
+    def updateModel(self):
+        level = self._stage.get('stage', 0)
+        isFinishStage = self._stage.get('finishStage', False)
+        rewardsData = self._stage.get('detailedRewards', ())
+        bonuses = self.__awardsFactory(rewardsData)
+        with self.viewModel.transaction() as model:
+            model.setBattleStatus((isFinishStage or BattleStatus).INPROGRESS if 1 else BattleStatus.COMPLETED)
+            model.setLevel(level)
+            rewards = model.getRewards()
+            packBonusModelAndTooltipData(bonuses, rewards, self.__tooltipData, getComp7LightBonusPacker())
+
+    def _onLoading(self, *args, **kwargs):
+        super(BattleQuestAwardsView, self)._onLoading(args, kwargs)
+        self.updateModel()
+        self.__addListeners()
+
+    def _finalize(self):
+        self.__removeListeners()
+
+    def __addListeners(self):
+        with self.viewModel.transaction() as model:
+            model.onClose += self.__onClose
+            model.onApprove += self.__onApprove
+
+    def __removeListeners(self):
+        with self.viewModel.transaction() as model:
+            model.onClose -= self.__onClose
+            model.onApprove -= self.__onApprove
+
+    def __onClose(self):
+        self.destroyWindow()
+
+    def __onApprove(self):
+        self.__onClose()
+
+    @staticmethod
+    def __awardsFactory(items, ctx=None):
+        bonuses = []
+        for key, value in viewitems(items):
+            bonuses.extend(getNonQuestBonuses(key, value, ctx))
+
+        return bonuses
+
+
+class BattleQuestAwardsViewWindow(LobbyNotificationWindow):
+    __slots__ = ()
+
+    def __init__(self, stage, parent=None):
+        super(BattleQuestAwardsViewWindow, self).__init__(wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, layer=WindowLayer.TOP_WINDOW, content=BattleQuestAwardsView(stage), parent=parent)

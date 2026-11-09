@@ -1,0 +1,137 @@
+{
+  "rid": "R.views.halloween.mono.lobby.pre_battle_queue_view",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "pre_battle_queue_view",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view/bundle.js"
+    },
+    {
+      "name": "pre_battle_queue_view.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view/pre_battle_queue_view.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view/pre_battle_queue_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "pre_battle_queue_view.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view/pre_battle_queue_view.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view/pre_battle_queue_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view/pre_battle_queue_view.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/pre_battle_queue_view/pre_battle_queue_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onEscape",
+    "onExitBattle",
+    "onMoveSpace",
+    "onOverScene"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.pre_battle_queue_view",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.halloween.mono.lobby.pre_battle_queue_view no Python",
+      "ViewModel PreBattleQueueViewModel (model=... no Python da view): 4/11 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/pre_battle_queue_view.py",
+        37
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/states.py",
+        188
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/pre_battle_queue_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/states.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/pre_battle_queue_view_model.py",
+      "class": "PreBattleQueueViewModel",
+      "chain": [
+        "PreBattleQueueViewModel",
+        "SelectableViewModel"
+      ],
+      "properties": [
+        [
+          "selectedDifficultyLevel",
+          "Number"
+        ],
+        [
+          "isExitButtonAvailable",
+          "Bool"
+        ],
+        [
+          "vehicleType",
+          "String"
+        ],
+        [
+          "vehicleName",
+          "String"
+        ],
+        [
+          "tip",
+          "String"
+        ],
+        [
+          "isFirstTip",
+          "Bool"
+        ],
+        [
+          "timerStartTime",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onExitBattle",
+        "onEscape",
+        "onMoveSpace",
+        "onOverScene"
+      ],
+      "coverage": {
+        "found": 4,
+        "total": 11,
+        "missing": [
+          "isExitButtonAvailable",
+          "isFirstTip",
+          "selectedDifficultyLevel",
+          "timerStartTime",
+          "tip",
+          "vehicleName",
+          "vehicleType"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

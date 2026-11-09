@@ -1,0 +1,74 @@
+{
+  "rid": "R.views.open_bundle.mono.lobby.notifications.special_rewards_notification",
+  "rid_source": "sources/res/open_bundle/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "special_rewards_notification",
+  "dir": "open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification",
+  "feature": "open_bundle",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/bundle.js",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/bundle.js"
+    },
+    {
+      "name": "special_rewards_notification.css",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/special_rewards_notification.css",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/special_rewards_notification.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "special_rewards_notification.html",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/special_rewards_notification.html",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/special_rewards_notification.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/background.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/background.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/base.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/base.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/reward.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/reward.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/bundle.js",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/bundle.js"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/special_rewards_notification.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/special_rewards_notification.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onShowReward"
+  ],
+  "link": {
+    "rid": "R.views.open_bundle.mono.lobby.notifications.special_rewards_notification",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

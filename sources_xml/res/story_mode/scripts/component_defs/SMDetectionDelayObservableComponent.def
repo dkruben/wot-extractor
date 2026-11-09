@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/scripts/component_defs/SMDetectionDelayObservableComponent.def -->
+<root>
+	<CellMethods />
+	<ClientMethods />
+	<Properties>
+		<timers>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<Default>{}</Default>
+		</timers>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>SMDetectionDelayObservableComponent</DefaultKeyName>
+</root>

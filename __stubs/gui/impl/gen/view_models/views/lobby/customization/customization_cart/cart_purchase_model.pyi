@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/customization/customization_cart/cart_purchase_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import ViewModel as ViewModel
+from gui.impl.wrappers.user_compound_price_model import UserCompoundPriceModel as UserCompoundPriceModel
+
+class CartPurchaseModel(ViewModel):
+    __slots__: tuple
+    onBuyAction: Any
+    def __init__(self, properties=4, commands=1):
+        ...
+    @property
+    def totalPrice(self):
+        ...
+    @staticmethod
+    def getTotalPriceType():
+        ...
+    def getPurchasedCount(self):
+        ...
+    def setPurchasedCount(self, value):
+        ...
+    def getIsEnoughMoney(self):
+        ...
+    def setIsEnoughMoney(self, value):
+        ...
+    def getIsGoldPrice(self):
+        ...
+    def setIsGoldPrice(self, value):
+        ...
+    def _initialize(self):
+        ...

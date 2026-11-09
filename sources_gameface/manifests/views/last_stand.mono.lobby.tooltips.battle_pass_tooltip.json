@@ -1,0 +1,69 @@
+{
+  "rid": "R.views.last_stand.mono.lobby.tooltips.battle_pass_tooltip",
+  "rid_source": "sources/res/last_stand/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "battle_pass_tooltip",
+  "dir": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip",
+  "feature": "last_stand",
+  "files": [
+    {
+      "name": "battle_pass_tooltip.css",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip/battle_pass_tooltip.css",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip/battle_pass_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "battle_pass_tooltip.html",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip/battle_pass_tooltip.html",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip/battle_pass_tooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip/bundle.js",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip/battle_pass_tooltip.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip/battle_pass_tooltip.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip/bundle.js",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/battle_pass_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.last_stand.mono.lobby.tooltips.battle_pass_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.last_stand.mono.lobby.tooltips.battle_pass_tooltip no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/tooltips/battle_pass_in_progress_tooltip.py",
+        11
+      ]
+    ],
+    "python_files": [
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/tooltips/battle_pass_in_progress_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

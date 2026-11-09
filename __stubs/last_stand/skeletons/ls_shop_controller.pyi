@@ -1,0 +1,23 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/last_stand/scripts/client/last_stand/skeletons/ls_shop_controller.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from skeletons.gui.game_control import IGameController as IGameController
+
+class ILSShopController(IGameController):
+    onShopSettingsUpdated = None
+    onBundlesUpdated = None
+    def isEnabled(self):
+        ...
+    def keyBundles(self):
+        ...
+    def getBundleByID(self, bundleID):
+        ...
+    def getProgressPointsInBundle(self, bundleID):
+        ...
+    def purchaseBundle(self, bundleID, int):
+        ...
+    def getPurchaseCount(self, bundleID):
+        ...
+    def checkIsEnoughBundles(self):
+        ...

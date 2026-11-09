@@ -1,0 +1,165 @@
+{
+ "source": "sources/res/last_stand/gui/flash/minimapEntriesLibrary.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 15001,
+ "actual_length": 15001,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 12,
+  "ShowFrame": 198,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 191,
+  "RemoveObject2": 6,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 2,
+  "DefineSprite": 11,
+  "FrameLabel": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 3,
+  "sprites": 11,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 8,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 16,
+   "class": "LSSprtTutorialItemPlaceholderUI"
+  },
+  {
+   "id": 15,
+   "class": "LSDeathZoneEntryUI"
+  },
+  {
+   "id": 14,
+   "class": "LSEmptyEntryUI"
+  },
+  {
+   "id": 13,
+   "class": "LSEnemyCampEntryUI"
+  },
+  {
+   "id": 12,
+   "class": "minimapEntriesLibrary_fla.baseAttackAnimationMC_6"
+  },
+  {
+   "id": 5,
+   "class": "LSMagnusEntryUI"
+  },
+  {
+   "id": 4,
+   "class": "LSSoulEntryUI"
+  },
+  {
+   "id": 2,
+   "class": "LSMinimapEntryExporterUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1702,
+   "classes": 8,
+   "methods": 26,
+   "bodies": 26,
+   "code_bytes": 465
+  }
+ ],
+ "classes": [
+  {
+   "name": "LSMinimapEntryExporterUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSSprtTutorialItemPlaceholderUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "minimapEntriesLibrary_fla.baseAttackAnimationMC_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSEmptyEntryUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.minimap.components.entries.LSEmptyMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSEnemyCampEntryUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.minimap.components.entries.LSEnemyCampMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSMagnusEntryUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.minimap.components.entries.LSMagnusMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSDeathZoneEntryUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.minimap.components.entries.LSDeathZoneMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSSoulEntryUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.minimap.components.entries.LSSoulMinimapEntry",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

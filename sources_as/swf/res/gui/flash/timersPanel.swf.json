@@ -1,0 +1,605 @@
+{
+ "source": "sources/res/gui/flash/timersPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 465642,
+ "actual_length": 465642,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 36,
+  "ShowFrame": 2135,
+  "DefineShape": 862,
+  "DefineBits": 1,
+  "JPEGTables": 1,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 2558,
+  "RemoveObject2": 1533,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 30,
+  "DefineEditText": 36,
+  "DefineSprite": 35,
+  "FrameLabel": 66,
+  "FileAttributes": 1,
+  "PlaceObject3": 54,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 8,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 33,
+  "shapes": 862,
+  "sprites": 35,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 36,
+  "fonts": 0,
+  "classes": 47,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 966,
+   "class": "orangeBg"
+  },
+  {
+   "id": 964,
+   "class": "BattleRoyaleCounterTimerUI"
+  },
+  {
+   "id": 963,
+   "class": "BattleRoyaleCounterTimerContainerUI"
+  },
+  {
+   "id": 958,
+   "class": "greenCounterAnimationUI"
+  },
+  {
+   "id": 957,
+   "class": "greenCounterContainerUI"
+  },
+  {
+   "id": 946,
+   "class": "destroyTimersPanelUI"
+  },
+  {
+   "id": 945,
+   "class": "containerUI"
+  },
+  {
+   "id": 944,
+   "class": "destroyTimerUI"
+  },
+  {
+   "id": 943,
+   "class": "DestroyTimerContainerUI"
+  },
+  {
+   "id": 941,
+   "class": "BarLightBlueUI"
+  },
+  {
+   "id": 937,
+   "class": "BarGrayUI"
+  },
+  {
+   "id": 931,
+   "class": "BarOrangeUI"
+  },
+  {
+   "id": 927,
+   "class": "BarYellowUI"
+  },
+  {
+   "id": 920,
+   "class": "BarGreenUI"
+  },
+  {
+   "id": 768,
+   "class": "TimerDescUI"
+  },
+  {
+   "id": 766,
+   "class": "secondaryTimerUI"
+  },
+  {
+   "id": 765,
+   "class": "SecondaryTimerFXContainerUI"
+  },
+  {
+   "id": 764,
+   "class": "timersPanel_fla.multipleHitFX_27"
+  },
+  {
+   "id": 763,
+   "class": "timersPanel_fla.explosionFX_24"
+  },
+  {
+   "id": 756,
+   "class": "SecondaryTimerContainerUI"
+  },
+  {
+   "id": 749,
+   "class": "timerProgressBarYellow"
+  },
+  {
+   "id": 744,
+   "class": "timerProgressBarGreenCircleDisabled"
+  },
+  {
+   "id": 563,
+   "class": "timerProgressBarRed"
+  },
+  {
+   "id": 382,
+   "class": "timersPanel_fla.pulsingGlow_5"
+  },
+  {
+   "id": 380,
+   "class": "timerProgressBarGreen"
+  },
+  {
+   "id": 199,
+   "class": "timerProgressBarOrange"
+  },
+  {
+   "id": 20,
+   "class": "IconSwitcherUI"
+  },
+  {
+   "id": 19,
+   "class": "destroyTimerBerserkerUI"
+  },
+  {
+   "id": 18,
+   "class": "secondaryBlockedIconUI"
+  },
+  {
+   "id": 17,
+   "class": "dangerTimerDeathZoneUI"
+  },
+  {
+   "id": 16,
+   "class": "destroyTimerDeathZoneUI"
+  },
+  {
+   "id": 15,
+   "class": "destroyTimerDeathZoneCNUI"
+  },
+  {
+   "id": 14,
+   "class": "destroyTimerDrownUI"
+  },
+  {
+   "id": 13,
+   "class": "destroyTimerFireUI"
+  },
+  {
+   "id": 12,
+   "class": "secondaryHealPointIconUI"
+  },
+  {
+   "id": 11,
+   "class": "secondaryTimerInspireSourceIconUI"
+  },
+  {
+   "id": 10,
+   "class": "secondaryInspireIconUI"
+  },
+  {
+   "id": 9,
+   "class": "secondaryStunIconUI"
+  },
+  {
+   "id": 8,
+   "class": "destroyTimerOverTurnedUI"
+  },
+  {
+   "id": 7,
+   "class": "destroyTimerOverTurnedGreenUI"
+  },
+  {
+   "id": 6,
+   "class": "secondaryRecoveryZoneIconUI"
+  },
+  {
+   "id": 5,
+   "class": "secondaryTargetDesignatorIconUI"
+  },
+  {
+   "id": 4,
+   "class": "shieldIconUI"
+  },
+  {
+   "id": 3,
+   "class": "secondarySmokeIconUI"
+  },
+  {
+   "id": 2,
+   "class": "destroyTimerRespawnUI"
+  },
+  {
+   "id": 1,
+   "class": "warningTimerUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 9590,
+   "classes": 47,
+   "methods": 210,
+   "bodies": 210,
+   "code_bytes": 3132
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "dangerTimerDeathZoneUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerBerserkerUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerDeathZoneCNUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerDeathZoneUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerDrownUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerFireUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerOverTurnedGreenUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerOverTurnedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerRespawnUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryBlockedIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryHealPointIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryInspireIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryRecoveryZoneIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondarySmokeIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryStunIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryTargetDesignatorIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryTimerInspireSourceIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "shieldIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "warningTimerUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconSwitcherUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TimerDescUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "containerUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "orangeBg",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timersPanel_fla.explosionFX_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timersPanel_fla.multipleHitFX_27",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timersPanel_fla.pulsingGlow_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BarGrayUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BarGreenUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BarLightBlueUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BarOrangeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BarYellowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerProgressBarGreen",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerProgressBarGreenCircleDisabled",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerProgressBarOrange",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerProgressBarRed",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "timerProgressBarYellow",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DestroyTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.TimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SecondaryTimerFXContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.secondaryTimerFx.SecondaryTimerFXContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "greenCounterAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BattleRoyaleCounterTimerAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SecondaryTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.SecondaryTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "greenCounterContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BattleRoyaleTimerCounterContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleCounterTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BattleRoyaleCounterTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.DestroyTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.SecondaryTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleCounterTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BattleRoyaleCounterTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimersPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.TimersPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

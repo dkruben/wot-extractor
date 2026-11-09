@@ -1,0 +1,6 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/open_bundle/scripts/component_defs/OpenBundleAccountComponent.def -->
+<root>
+	<ofEntity>
+		<Account />
+	</ofEntity>
+</root>

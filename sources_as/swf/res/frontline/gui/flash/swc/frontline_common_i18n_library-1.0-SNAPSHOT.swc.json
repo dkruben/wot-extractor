@@ -1,0 +1,295 @@
+{
+ "source": "sources/res/frontline/gui/flash/swc/frontline_common_i18n_library-1.0-SNAPSHOT.swc",
+ "container_member": "library.swf",
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 11,
+ "declared_length": 66148,
+ "actual_length": 66148,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  375.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": true,
+ "tags": {
+  "End": 1,
+  "ShowFrame": 1,
+  "SetBackgroundColor": 1,
+  "ProductInfo": 1,
+  "ScriptLimits": 1,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "Metadata": 1,
+  "DoABC2": 14
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 0,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 14,
+  "abc_blocks": 14,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "_7c80037f845775b1202e1621ee916abd7f87764e97b9274ae432b62eebabdeac_flash_display_Sprite"
+  }
+ ],
+ "abc": [
+  {
+   "name": "FL_UPGRADE_PANEL",
+   "lazy": true,
+   "size": 1777,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 124
+  },
+  {
+   "name": "FL_PROGRESSION_SCREEN",
+   "lazy": true,
+   "size": 608,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 64
+  },
+  {
+   "name": "FL_BATTLE_ABILITIES_SETUP",
+   "lazy": true,
+   "size": 2114,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 136
+  },
+  {
+   "name": "FL_HANGAR",
+   "lazy": true,
+   "size": 644,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 64
+  },
+  {
+   "name": "FL_COMMON",
+   "lazy": true,
+   "size": 2499,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 190
+  },
+  {
+   "name": "FL_POST_BATTLE_RESULTS",
+   "lazy": true,
+   "size": 2945,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 202
+  },
+  {
+   "name": "FL_POST_BATTLE_REWARDS",
+   "lazy": true,
+   "size": 1008,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 94
+  },
+  {
+   "name": "RES_ICONS_FRONTLINE",
+   "lazy": true,
+   "size": 30990,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 1716
+  },
+  {
+   "name": "_7c80037f845775b1202e1621ee916abd7f87764e97b9274ae432b62eebabdeac_flash_display_Sprite",
+   "lazy": true,
+   "size": 601,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 88
+  },
+  {
+   "name": "CommonI18NClassManagerMeta",
+   "lazy": true,
+   "size": 541,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 124
+  },
+  {
+   "name": "FL_WELCOME",
+   "lazy": true,
+   "size": 1073,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 88
+  },
+  {
+   "name": "FL_INFO_PAGE",
+   "lazy": true,
+   "size": 12765,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 870
+  },
+  {
+   "name": "FL_TOOLTIPS",
+   "lazy": true,
+   "size": 5891,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 382
+  },
+  {
+   "name": "FL_DIALOGS",
+   "lazy": true,
+   "size": 1767,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 136
+  }
+ ],
+ "classes": [
+  {
+   "name": "FL_UPGRADE_PANEL",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FL_PROGRESSION_SCREEN",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 1
+  },
+  {
+   "name": "FL_BATTLE_ABILITIES_SETUP",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 2
+  },
+  {
+   "name": "FL_HANGAR",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 3
+  },
+  {
+   "name": "FL_COMMON",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 4
+  },
+  {
+   "name": "FL_POST_BATTLE_RESULTS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 5
+  },
+  {
+   "name": "FL_POST_BATTLE_REWARDS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 6
+  },
+  {
+   "name": "RES_ICONS_FRONTLINE",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 7
+  },
+  {
+   "name": "_7c80037f845775b1202e1621ee916abd7f87764e97b9274ae432b62eebabdeac_flash_display_Sprite",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 8
+  },
+  {
+   "name": "CommonI18NClassManagerMeta",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 9
+  },
+  {
+   "name": "FL_WELCOME",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 10
+  },
+  {
+   "name": "FL_INFO_PAGE",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 11
+  },
+  {
+   "name": "FL_TOOLTIPS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 12
+  },
+  {
+   "name": "FL_DIALOGS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 13
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ },
+ "metadata": "<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'><rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1'><dc:format>application/x-shockwave-flash</dc:format><dc:title>swc frontline_common_i18n</dc:title><dc:date>10/29/26 9:05 PM</dc:date></rdf:Description></rdf:RDF>",
+ "product_info": {
+  "product": 3,
+  "edition": 6,
+  "version": "4.5",
+  "build": 21328
+ }
+}

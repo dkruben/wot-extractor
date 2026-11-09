@@ -1,0 +1,168 @@
+{
+  "rid": "R.views.battle_royale.mono.lobby.tooltips.progression_widget",
+  "rid_source": "sources/res/battle_royale/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "progression_widget",
+  "dir": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget",
+  "feature": "battle_royale",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget/bundle.js",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget/bundle.js"
+    },
+    {
+      "name": "progression_widget.css",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget/progression_widget.css",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget/progression_widget.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "progression_widget.html",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget/progression_widget.html",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget/progression_widget.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/table.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/table.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget/bundle.js",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget/bundle.js"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget/progression_widget.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_widget/progression_widget.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle_royale.mono.lobby.tooltips.progression_widget",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.battle_royale.mono.lobby.tooltips.progression_widget no Python",
+      "ViewModel ProgressionModel (model=... no Python da view): 1/15 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/progression_widget_tooltip.py",
+        22
+      ],
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/user_missions/hangar_widget/presenters/progression_presenter.py",
+        31
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/progression_widget_tooltip.py",
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/user_missions/hangar_widget/presenters/progression_presenter.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/gen/view_models/views/lobby/views/widget/progression_model.py",
+      "class": "ProgressionModel",
+      "chain": [
+        "ProgressionModel"
+      ],
+      "properties": [
+        [
+          "leaderBoard",
+          "ViewModel"
+        ],
+        [
+          "eventInfo",
+          "ViewModel"
+        ],
+        [
+          "status",
+          "Number"
+        ],
+        [
+          "stage",
+          "Number"
+        ],
+        [
+          "prevStage",
+          "Number"
+        ],
+        [
+          "curPoints",
+          "Number"
+        ],
+        [
+          "prevPoints",
+          "Number"
+        ],
+        [
+          "stageProgress",
+          "Number"
+        ],
+        [
+          "prevStageProgress",
+          "Number"
+        ],
+        [
+          "stagePoints",
+          "Number"
+        ],
+        [
+          "prevStagePoints",
+          "Number"
+        ],
+        [
+          "isCompleted",
+          "Bool"
+        ],
+        [
+          "timeTillEnd",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "showProgression",
+        "onProgressionAnimationCompleted"
+      ],
+      "coverage": {
+        "found": 1,
+        "total": 15,
+        "missing": [
+          "curPoints",
+          "isCompleted",
+          "leaderBoard",
+          "onProgressionAnimationCompleted",
+          "prevPoints",
+          "prevStage",
+          "prevStagePoints",
+          "prevStageProgress",
+          "showProgression",
+          "stage",
+          "stagePoints",
+          "stageProgress",
+          "status",
+          "timeTillEnd"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

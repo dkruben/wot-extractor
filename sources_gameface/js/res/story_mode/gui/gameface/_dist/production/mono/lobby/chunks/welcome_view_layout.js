@@ -1,0 +1,125 @@
+/* wot-extractor: JavaScript FORMATADO a partir de sources/res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/welcome_view_layout.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
+import{
+  r as e
+}
+from"./rolldown-runtime.js";
+import{
+  G as a,M as o,R as t,V as s,X as i,_ as l,g as c,nt as n,v as d,z as r
+}
+from"./lib.js";
+import{
+  n as m
+}
+from"./vendor.js";
+import{
+  h as y,p as u
+}
+from"./sound_constants.js";
+import{
+  t as _
+}
+from"./utils.js";
+var b=e(n()),f=e(m()),h={
+  y:0,opacity:1
+},
+j=function(e){
+  return e.HEADER="header",e.BLOCK_1="block1",e.TITLE_1="title1",e.BLOCK_2="block2",e.TITLE_2="title2",e.BLOCK_3="block3",e.TITLE_3="title3",e.BUTTON="button",e
+}({}),L=500,p={
+  header:{
+    from:{
+      y:-10,opacity:0
+    },
+    to:h,delay:0,duration:L
+  },
+  block1:{
+    from:{
+      y:5,opacity:0
+    },
+    to:h,delay:400,duration:L
+  },
+  title1:{
+    from:{
+      y:-15,opacity:0
+    },
+    to:h,delay:400,duration:L
+  },
+  block2:{
+    from:{
+      y:5,opacity:0
+    },
+    to:h,delay:600,duration:L
+  },
+  title2:{
+    from:{
+      y:-15,opacity:0
+    },
+    to:h,delay:600,duration:L
+  },
+  block3:{
+    from:{
+      y:5,opacity:0
+    },
+    to:h,delay:800,duration:L
+  },
+  title3:{
+    from:{
+      y:-15,opacity:0
+    },
+    to:h,delay:800,duration:L
+  },
+  button:{
+    from:{
+      y:-10,opacity:0
+    },
+    to:h,delay:1200,duration:L
+  }
+},
+x="WelcomeViewLayout_13f0ed9c",C="WelcomeViewLayout_container_15998999",N="WelcomeViewLayout_header_790d036d",w="WelcomeViewLayout_subheader_da7b1ed6",T="WelcomeViewLayout_content_3cf8ba50",V="WelcomeViewLayout_icon_cb966619",v="WelcomeViewLayout_infoBlock_1280834d",E="WelcomeViewLayout_title_7ef6cf3c",W="WelcomeViewLayout_subTitle_4fad9748",k="WelcomeViewLayout_bottomContainer_7b82b119",B="WelcomeViewLayout_topContainer_f5d06635",$="WelcomeViewLayout_btn_5b2228cf",O="WelcomeViewLayout_closeBtn_1ac3721e",g=r(),I=(0,b.memo)(({
+  localePath:e,subheader:n,close:r,submit:m,classMix:h,classMixImage:L
+})=>{
+  const{
+    breakpoint:I
+  }=t(),A=e.$dyn("column"),K=A.$dyn("title"),S=A.$dyn("subtitle"),[M,P]=(0,b.useState)(!1);
+  o(a.ESCAPE,r),o(a.ENTER,m),o(a.SPACE,m);
+  const z=(0,b.useCallback)(()=>{
+    i.sound(u)
+  },[]);
+  return(0,g.jsxs)("div",{
+    className:(0,f.default)(x,h),onClick:()=>P(!0),children:[(0,g.jsx)(c,{
+      className:O,onClose:r
+    }),(0,g.jsxs)("div",{
+      className:C,children:[(0,g.jsx)(y,{
+        ...p[j.HEADER],isCanceled:M,children:(0,g.jsxs)("div",{
+          className:B,children:[(0,g.jsx)("div",{
+            className:N,children:e.$dyn("header")
+          }),(0,g.jsx)("div",{
+            className:w,children:n
+          })]
+        })
+      }),(0,g.jsx)("div",{
+        className:T,children:s(3,e=>(0,g.jsx)(y,{
+          isCanceled:M,...p[j[`BLOCK_${e+1}`]],onStart:z,children:(0,g.jsxs)("div",{
+            className:v,children:[(0,g.jsx)("div",{
+              className:(0,f.default)(V,L[e])
+            }),(0,g.jsxs)(y,{
+              isCanceled:M,...p[j[`TITLE_${e+1}`]],children:[(0,g.jsx)("div",{
+                className:E,children:K.$num(e+1)
+              }),(0,g.jsx)(l,{
+                split:!0,upgradeLegacy:!0,className:W,text:S.$num(e+1)
+              })]
+            })]
+          })
+        },e))
+      }),(0,g.jsx)(y,{
+        className:k,...p[j.BUTTON],isCanceled:M,children:(0,g.jsx)("div",{
+          className:$,children:(0,g.jsx)(d,{
+            theme:d.themes.primary,size:_(I),onClick:m,children:R.strings.sm_common.button.confirm()
+          })
+        })
+      })]
+    })]
+  })
+});
+export{
+  I as t
+};

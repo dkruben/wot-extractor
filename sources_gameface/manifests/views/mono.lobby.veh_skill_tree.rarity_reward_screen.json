@@ -1,0 +1,104 @@
+{
+  "rid": "R.views.mono.lobby.veh_skill_tree.rarity_reward_screen",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "rarity_reward_screen",
+  "dir": "gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen/bundle.js"
+    },
+    {
+      "name": "rarity_reward_screen.css",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen/rarity_reward_screen.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen/rarity_reward_screen.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "rarity_reward_screen.html",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen/rarity_reward_screen.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen/rarity_reward_screen.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen/rarity_reward_screen.css",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/rarity_reward_screen/rarity_reward_screen.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.mono.lobby.veh_skill_tree.rarity_reward_screen",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.mono.lobby.veh_skill_tree.rarity_reward_screen no Python",
+      "ViewModel RarityRewardScreenModel (model=... no Python da view): 2/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_skill_tree/rarity_reward_screen/rarity_reward_screen.py",
+        22
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/veh_skill_tree/rarity_reward_screen/rarity_reward_screen.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/veh_skill_tree/rarity_reward_screen_model.py",
+      "class": "RarityRewardScreenModel",
+      "chain": [
+        "RarityRewardScreenModel"
+      ],
+      "properties": [
+        [
+          "name",
+          "String"
+        ],
+        [
+          "title",
+          "String"
+        ],
+        [
+          "rarity",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onClose"
+      ],
+      "coverage": {
+        "found": 2,
+        "total": 4,
+        "missing": [
+          "name",
+          "rarity"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

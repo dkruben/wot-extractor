@@ -1,0 +1,60 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/in_battle_achievements/scripts/common/in_battle_achievements.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: in_battle_achievements/scripts/common/in_battle_achievements.py
+from __future__ import absolute_import
+from future.utils import viewitems
+from dossiers2.custom.records import RECORD_DB_IDS
+DISABLE_ACHIEVEMENTS_VEHICLE_TAG = 'disableIBA'
+EXCLUDED_VEHICLE_TAGS = ('observer', DISABLE_ACHIEVEMENTS_VEHICLE_TAG)
+ENABLED_ACHIEVEMENTS = {('achievements', 'kamikaze'): True, 
+   ('achievements', 'huntsman'): True, 
+   ('achievements', 'medalPascucci'): True, 
+   ('achievements', 'medalBurda'): True, 
+   ('achievements', 'steelwall'): True, 
+   ('achievements', 'medalKolobanov'): True, 
+   ('achievements', 'raider'): True, 
+   ('achievements', 'medalBillotte'): True, 
+   ('achievements', 'medalBrunoPietro'): True, 
+   ('achievements', 'medalTarczay'): True, 
+   ('achievements', 'bombardier'): True, 
+   ('achievements', 'duelist'): True, 
+   ('achievements', 'medalFadin'): True, 
+   ('achievements', 'even'): True, 
+   ('achievements', 'fighter'): True, 
+   ('achievements', 'warrior'): True, 
+   ('achievements', 'medalMonolith'): True, 
+   ('achievements', 'impenetrable'): True, 
+   ('achievements', 'charmed'): True, 
+   ('achievements', 'ironMan'): True, 
+   ('achievements', 'luckyDevil'): True, 
+   ('achievements', 'medalHalonen'): True, 
+   ('achievements', 'medalAntiSpgFire'): True, 
+   ('achievements', 'medalDeLanglade'): True, 
+   ('achievements', 'medalLehvaslaiho'): True, 
+   ('achievements', 'medalNikolas'): True, 
+   ('achievements', 'medalOskin'): True, 
+   ('achievements', 'sturdy'): True, 
+   ('achievements', 'medalBrothersInArms'): True, 
+   ('achievements', 'medalCrucialContribution'): True, 
+   ('achievements', 'scout'): True, 
+   ('achievements', 'evileye'): True, 
+   ('achievements', 'defender'): True, 
+   ('achievements', 'medalRadleyWalters'): True, 
+   ('achievements', 'invader'): True, 
+   ('achievements', 'medalLafayettePool'): True, 
+   ('achievements', 'heroesOfRassenay'): True, 
+   ('achievements', 'medalOrlik'): True, 
+   ('achievements', 'medalTamadaYoshio'): True, 
+   ('achievements', 'arsonist'): True, 
+   ('achievements', 'demolition'): True, 
+   ('achievements', 'bonecrusher'): True, 
+   ('achievements', 'medalStark'): True, 
+   ('achievements', 'medalCoolBlood'): True, 
+   ('achievements', 'supporter'): True, 
+   ('achievements', 'sniper2'): True, 
+   ('achievements', 'shootToKill'): True, 
+   ('achievements', 'medalGore'): True, 
+   ('achievements', 'mainGun'): True}
+ENABLED_ACHIEVEMENTS_BY_ID = {RECORD_DB_IDS[item]: isEnabled for item, isEnabled in viewitems(ENABLED_ACHIEVEMENTS)}

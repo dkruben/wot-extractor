@@ -1,0 +1,123 @@
+{
+  "rid": "R.views.lobby.achievements.AchievementsMainView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "AchievementsMainView",
+  "dir": "gui/gameface/_dist/production/lobby/achievements/AchievementsMainView",
+  "feature": null,
+  "files": [
+    {
+      "name": "AchievementsMainView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/AchievementsMainView/AchievementsMainView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/AchievementsMainView/AchievementsMainView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "AchievementsMainView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/AchievementsMainView/AchievementsMainView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/AchievementsMainView/AchievementsMainView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "AchievementsMainView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/AchievementsMainView/AchievementsMainView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/AchievementsMainView/AchievementsMainView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/achievements/AchievementsMainView/AchievementsMainView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/achievements/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/achievements/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/AchievementsMainView/AchievementsMainView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/AchievementsMainView/AchievementsMainView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/AchievementsMainView/AchievementsMainView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/AchievementsMainView/AchievementsMainView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.lobby.achievements.AchievementsMainView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.achievements.AchievementsMainView no Python",
+      "ViewModel AchievementsMainViewModel (model=... no Python da view): 5/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/achievements/achievements_main_view.py",
+        34
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dog_tags/animated_dog_tags_view.py",
+        173
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/achievements/achievements_main_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/dog_tags/animated_dog_tags_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/achievements/views/achievements_main_view_model.py",
+      "class": "AchievementsMainViewModel",
+      "chain": [
+        "AchievementsMainViewModel"
+      ],
+      "properties": [
+        [
+          "summaryModel",
+          "ViewModel"
+        ],
+        [
+          "achievementsModel",
+          "ViewModel"
+        ],
+        [
+          "viewType",
+          "Number"
+        ],
+        [
+          "isOtherPlayer",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onClose"
+      ],
+      "coverage": {
+        "found": 5,
+        "total": 5,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/dog_tags/animated_dog_tags_view_model.py"
+      ]
+    }
+  }
+}

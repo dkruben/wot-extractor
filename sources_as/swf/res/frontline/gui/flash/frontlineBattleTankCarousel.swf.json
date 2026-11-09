@@ -1,0 +1,177 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineBattleTankCarousel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 52642,
+ "actual_length": 52642,
+ "frame_size_px": [
+  0.0,
+  100.0,
+  0.0,
+  100.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 15,
+  "ShowFrame": 166,
+  "DefineShape": 9,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 91,
+  "DefineBitsLossless2": 6,
+  "DefineEditText": 3,
+  "DefineSprite": 14,
+  "FrameLabel": 17,
+  "FileAttributes": 1,
+  "PlaceObject3": 16,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 3,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 4,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 6,
+  "shapes": 9,
+  "sprites": 14,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiLobbyBattleCarousels.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 32,
+   "class": "FLBattleTankCarouselItemRendererUI"
+  },
+  {
+   "id": 29,
+   "class": "frontlineBattleTankCarousel_fla.tankCarouselRenderer_focusIndicator_10"
+  },
+  {
+   "id": 19,
+   "class": "BaseBattleTankIconUI"
+  },
+  {
+   "id": 13,
+   "class": "EmptySlotBgUI"
+  },
+  {
+   "id": 10,
+   "class": "FrontlineBattleTankCarouselUI"
+  },
+  {
+   "id": 9,
+   "class": "BattleTankCarouselFiltersUI"
+  },
+  {
+   "id": 5,
+   "class": "ResetFiltersUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 6780,
+   "classes": 7,
+   "methods": 46,
+   "bodies": 46,
+   "code_bytes": 1623
+  }
+ ],
+ "classes": [
+  {
+   "name": "EmptySlotBgUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineBattleTankCarousel_fla.tankCarouselRenderer_focusIndicator_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BaseBattleTankIconUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.battleTankCarousel.renderers.BaseBattleTankIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ResetFiltersUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.battleTankCarousel.renderers.ResetFilters",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleTankCarouselFiltersUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.battleTankCarousel.BattleTankCarouselFilters",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FLBattleTankCarouselItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.battleTankCarousel.renderers.BattleTankCarouselItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineBattleTankCarouselUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.battleTankCarousel.FrontlineBattleTankCarousel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,88 @@
+{
+  "rid": "R.views.common.dialog_view.components.dialog_prices_tooltip.DialogPricesTooltip",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "DialogPricesTooltip",
+  "dir": "gui/unbound/views/common/dialog_view/components",
+  "feature": null,
+  "files": [
+    {
+      "name": "dialog_prices_tooltip.unbound",
+      "effective": "res/gui/unbound/views/common/dialog_view/components/dialog_prices_tooltip.unbound",
+      "all": [
+        "res/gui/unbound/views/common/dialog_view/components/dialog_prices_tooltip.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.dialog_view.components.dialog_prices_tooltip.DialogPricesTooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.common.dialog_view.components.dialog_prices_tooltip.DialogPricesTooltip no Python",
+      "ViewModel DialogPricesTooltipModel (model=... no Python da view): 8/8 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dialogs/dialog_prices_tooltip.py",
+        15
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/dialogs/dialog_prices_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/windows/dialog_prices_tooltip_model.py",
+      "class": "DialogPricesTooltipModel",
+      "chain": [
+        "DialogPricesTooltipModel"
+      ],
+      "properties": [
+        [
+          "valueMainCost",
+          "String"
+        ],
+        [
+          "iconMainCost",
+          "Resource"
+        ],
+        [
+          "labelMainCost",
+          "Resource"
+        ],
+        [
+          "valueAdditionalCost",
+          "String"
+        ],
+        [
+          "iconAdditionalCost",
+          "Resource"
+        ],
+        [
+          "labelAdditionalCost",
+          "Resource"
+        ],
+        [
+          "totalCost",
+          "String"
+        ],
+        [
+          "labelTotalCost",
+          "Resource"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 8,
+        "total": 8,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

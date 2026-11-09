@@ -1,0 +1,149 @@
+{
+  "rid": "R.views.lobby.crew.dialogs.CrewBooksPurchaseDialog",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "CrewBooksPurchaseDialog",
+  "dir": "gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog",
+  "feature": null,
+  "files": [
+    {
+      "name": "CrewBooksPurchaseDialog.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog/CrewBooksPurchaseDialog.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog/CrewBooksPurchaseDialog.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CrewBooksPurchaseDialog.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog/CrewBooksPurchaseDialog.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog/CrewBooksPurchaseDialog.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CrewBooksPurchaseDialog.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog/CrewBooksPurchaseDialog.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog/CrewBooksPurchaseDialog.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog/CrewBooksPurchaseDialog.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog/CrewBooksPurchaseDialog.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog/CrewBooksPurchaseDialog.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog/CrewBooksPurchaseDialog.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/dialogs/CrewBooksPurchaseDialog/CrewBooksPurchaseDialog.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged",
+    "trigger:subView:destroy"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "dialogs.common.DialogTemplateGenericTooltip",
+    "lobby.common.tooltips.ExtendedTextTooltip"
+  ],
+  "commands": [
+    "onStepperChanged"
+  ],
+  "link": {
+    "rid": "R.views.lobby.crew.dialogs.CrewBooksPurchaseDialog",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.crew.dialogs.CrewBooksPurchaseDialog no Python",
+      "ViewModel CrewBooksPurchaseDialogModel (convencao de nomes): 13/13 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/crew_books_purchase_dialog.py",
+        31
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/crew_books_purchase_dialog.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/dialogs/crew_books_purchase_dialog_model.py",
+      "class": "CrewBooksPurchaseDialogModel",
+      "chain": [
+        "CrewBooksPurchaseDialogModel",
+        "DialogTemplateViewModel"
+      ],
+      "properties": [
+        [
+          "bookPrice",
+          "ViewModel"
+        ],
+        [
+          "bookName",
+          "String"
+        ],
+        [
+          "isBookPersonal",
+          "Bool"
+        ],
+        [
+          "experience",
+          "Number"
+        ],
+        [
+          "focus",
+          "ViewModel"
+        ],
+        [
+          "buttons",
+          "Array"
+        ],
+        [
+          "placeHolders",
+          "Array"
+        ],
+        [
+          "background",
+          "Resource"
+        ],
+        [
+          "dimmerAlpha",
+          "Real"
+        ],
+        [
+          "displayFlags",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onStepperChanged",
+        "onButtonClicked",
+        "onCloseClicked"
+      ],
+      "coverage": {
+        "found": 13,
+        "total": 13,
+        "missing": []
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

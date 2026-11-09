@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fort_rush/scripts/item_defs/vehicles/common/supply_slot_types.xml -->
+<root>
+	<slots>
+		<slot>
+			<id>70</id>
+			<slotClass>fort_rush_common.items.fr_supply_slots_components.FortRushEquipmentSlot</slotClass>
+			<categories />
+			<tags />
+			<excludeTags>hwEquipment</excludeTags>
+			<meta>
+				<equipmentType>regular</equipmentType>
+			</meta>
+		</slot>
+	</slots>
+</root>

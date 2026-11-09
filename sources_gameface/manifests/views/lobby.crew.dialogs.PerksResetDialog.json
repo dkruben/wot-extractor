@@ -1,0 +1,158 @@
+{
+  "rid": "R.views.lobby.crew.dialogs.PerksResetDialog",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "PerksResetDialog",
+  "dir": "gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog",
+  "feature": null,
+  "files": [
+    {
+      "name": "PerksResetDialog.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog/PerksResetDialog.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog/PerksResetDialog.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PerksResetDialog.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog/PerksResetDialog.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog/PerksResetDialog.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PerksResetDialog.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog/PerksResetDialog.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog/PerksResetDialog.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog/PerksResetDialog.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog/PerksResetDialog.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog/PerksResetDialog.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog/PerksResetDialog.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/dialogs/PerksResetDialog/PerksResetDialog.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged",
+    "trigger:subView:destroy"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "dialogs.common.DialogTemplateGenericTooltip",
+    "dialogs.widgets.MoneyBalance",
+    "lobby.common.tooltips.ExtendedTextTooltip",
+    "lobby.crew.tooltips.EmptySkillTooltip",
+    "lobby.crew.widgets.CrewWidget",
+    "lobby.crew.widgets.PriceList"
+  ],
+  "commands": [
+    "onCardClick",
+    "onPriceSelect"
+  ],
+  "link": {
+    "rid": "R.views.lobby.crew.dialogs.PerksResetDialog",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.crew.dialogs.PerksResetDialog no Python",
+      "ViewModel PerksResetDialogModel (convencao de nomes): 13/13 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/perks_reset_dialog.py",
+        51
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/perks_reset_dialog.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/dialogs/perks_reset_dialog_model.py",
+      "class": "PerksResetDialogModel",
+      "chain": [
+        "PerksResetDialogModel",
+        "TankmanSkillsChangeBaseDialogModel",
+        "DialogTemplateViewModel"
+      ],
+      "properties": [
+        [
+          "title",
+          "String"
+        ],
+        [
+          "resetGracePeriodLeft",
+          "Number"
+        ],
+        [
+          "hasFreeFirstReset",
+          "Bool"
+        ],
+        [
+          "tankmanBefore",
+          "ViewModel"
+        ],
+        [
+          "tankmanAfter",
+          "ViewModel"
+        ],
+        [
+          "focus",
+          "ViewModel"
+        ],
+        [
+          "buttons",
+          "Array"
+        ],
+        [
+          "placeHolders",
+          "Array"
+        ],
+        [
+          "background",
+          "Resource"
+        ],
+        [
+          "dimmerAlpha",
+          "Real"
+        ],
+        [
+          "displayFlags",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onButtonClicked",
+        "onCloseClicked"
+      ],
+      "coverage": {
+        "found": 13,
+        "total": 13,
+        "missing": []
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+ "source": "sources/res/gui/flash/promoPremiumIgrWindow.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 150391,
+ "actual_length": 150391,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  800.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 2,
+  "ShowFrame": 2,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 4,
+  "DefineBitsJPEG3": 1,
+  "DefineEditText": 2,
+  "DefineSprite": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 1,
+  "shapes": 1,
+  "sprites": 1,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 5,
+   "class": "PromoPremiumIgrWindowUI"
+  },
+  {
+   "id": 0,
+   "class": "promoPremiumIgrWindow_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2920,
+   "classes": 2,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 402
+  }
+ ],
+ "classes": [
+  {
+   "name": "promoPremiumIgrWindow_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PromoPremiumIgrWindowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.window.PromoPremiumIgrWindow",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

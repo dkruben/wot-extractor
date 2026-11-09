@@ -1,0 +1,76 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7/scripts/client/comp7/gui/impl/lobby/tank_setup/ammunition_panel.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7/scripts/client/comp7/gui/impl/lobby/tank_setup/ammunition_panel.py
+from __future__ import absolute_import
+from CurrentVehicle import g_currentVehicle
+from comp7.gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS as COMP7_TOOLTIPS
+from gui.impl.backport import createTooltipData, BackportTooltipWindow
+from gui.impl.gen import R
+from gui.impl.lobby.tank_setup.ammunition_panel.hangar_view import HangarAmmunitionPanelView
+from helpers import dependency
+from skeletons.gui.game_control import IComp7Controller
+
+class Comp7AmmunitionPanelView(HangarAmmunitionPanelView):
+    __comp7Controller = dependency.descriptor(IComp7Controller)
+
+    def createToolTip(self, event):
+        if event.contentID == R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent():
+            tooltipId = event.getArgument('tooltipId')
+            tooltipData = None
+            if tooltipId == COMP7_TOOLTIPS.COMP7_ROLE_SKILL_LOBBY_TOOLTIP:
+                tooltipData = createTooltipData(isSpecial=True, specialAlias=tooltipId, specialArgs=(
+                 event.getArgument('roleSkill'),
+                 self.__getCurrentVehicleRoleEquipmentKey(),
+                 self.__getCurrentVehicleRoleSkillLevel()))
+            if tooltipData is not None:
+                window = BackportTooltipWindow(tooltipData, self.getParentWindow())
+                window.load()
+                return window
+        return super(Comp7AmmunitionPanelView, self).createToolTip(event)
+
+    def _onLoading(self, *args, **kwargs):
+        super(Comp7AmmunitionPanelView, self)._onLoading(*args, **kwargs)
+        self.viewModel.roleSkillSlot.setTooltipId(COMP7_TOOLTIPS.COMP7_ROLE_SKILL_LOBBY_TOOLTIP)
+
+    def _updateViewModel(self):
+        super(Comp7AmmunitionPanelView, self)._updateViewModel()
+        self.__updateRoleSkillSlot()
+
+    def __updateRoleSkillSlot(self):
+        roleSkill = self.__getCurrentVehicleRoleSkill()
+        self.viewModel.roleSkillSlot.setRoleSkill(roleSkill.name if roleSkill is not None else '')
+        return
+
+    def __getVehicle(self):
+        if not g_currentVehicle.isPresent():
+            return
+        else:
+            vehicle = g_currentVehicle.item
+            restriction = self.__comp7Controller.isSuitableVehicle(vehicle)
+            if restriction is not None:
+                return
+            return vehicle
+
+    def __getCurrentVehicleRoleSkill(self):
+        vehicle = self.__getVehicle()
+        if vehicle is None:
+            return
+        else:
+            roleName = self.__getCurrentVehicleRoleEquipmentKey()
+            return self.__comp7Controller.getRoleEquipment(roleName)
+
+    def __getCurrentVehicleRoleEquipmentKey(self):
+        vehicle = self.__getVehicle()
+        if vehicle is None:
+            return
+        else:
+            return self.__comp7Controller.getRoleEquipmentKey(vehicle.descriptor.type)
+
+    def __getCurrentVehicleRoleSkillLevel(self):
+        roleName = self.__getCurrentVehicleRoleEquipmentKey()
+        if roleName is None:
+            return
+        else:
+            return self.__comp7Controller.getEquipmentStartLevel(roleName)

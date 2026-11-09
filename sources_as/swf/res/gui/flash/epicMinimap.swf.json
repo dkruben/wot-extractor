@@ -1,0 +1,227 @@
+{
+ "source": "sources/res/gui/flash/epicMinimap.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 14509,
+ "actual_length": 14509,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 26,
+  "ShowFrame": 284,
+  "DefineShape": 15,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 178,
+  "RemoveObject2": 13,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 14,
+  "DefineEditText": 7,
+  "DefineSprite": 25,
+  "FrameLabel": 16,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 7,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 4,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 14,
+  "shapes": 19,
+  "sprites": 25,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 7,
+  "fonts": 0,
+  "classes": 12,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "minimapEntriesLibrary.swf",
+   "symbols": []
+  },
+  {
+   "url": "epicMinimapEntriesLibrary.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 65,
+   "class": "epicMinimapImportsUI"
+  },
+  {
+   "id": 64,
+   "class": "MapModeButtonUI"
+  },
+  {
+   "id": 57,
+   "class": "MapModeOverviewButtonUI"
+  },
+  {
+   "id": 43,
+   "class": "EpicMinimapUI"
+  },
+  {
+   "id": 42,
+   "class": "MapShortcutLabelUI"
+  },
+  {
+   "id": 37,
+   "class": "epicMinimap_fla.changeOwnerAnim_8"
+  },
+  {
+   "id": 32,
+   "class": "epicMinimap_fla.overviewSectorHq_7"
+  },
+  {
+   "id": 27,
+   "class": "epicMinimap_fla.overviewSector_6"
+  },
+  {
+   "id": 22,
+   "class": "ShortcutLabelUI"
+  },
+  {
+   "id": 18,
+   "class": "epicMinimap_fla.mapZoomMode_24"
+  },
+  {
+   "id": 10,
+   "class": "EpicMinimapEntriesContainerUI"
+  },
+  {
+   "id": 8,
+   "class": "epicMinimapBackgroundUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3470,
+   "classes": 12,
+   "methods": 60,
+   "bodies": 60,
+   "code_bytes": 986
+  }
+ ],
+ "classes": [
+  {
+   "name": "epicMinimapImportsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimap_fla.changeOwnerAnim_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimap_fla.mapZoomMode_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimap_fla.overviewSectorHq_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimap_fla.overviewSector_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicMinimapEntriesContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.containers.EpicMinimapEntriesContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapBackgroundUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UILoaderAlt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapShortcutLabelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.MapShortcutLabel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShortcutLabelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.ShortcutLabel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapModeButtonUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.RadioButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapModeOverviewButtonUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.RadioButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicMinimapUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.EpicMinimap",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

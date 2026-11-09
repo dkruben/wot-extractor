@@ -1,0 +1,862 @@
+{
+ "source": "sources/res/gui/flash/ub_components.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 1451622,
+ "actual_length": 1451622,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 44,
+  "ShowFrame": 686,
+  "DefineShape": 159,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 4,
+  "PlaceObject2": 669,
+  "RemoveObject2": 206,
+  "DefineShape3": 5,
+  "DefineBitsJPEG3": 49,
+  "DefineBitsLossless2": 39,
+  "DefineSprite": 43,
+  "FrameLabel": 10,
+  "DefineMorphShape": 3,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 92,
+  "shapes": 167,
+  "sprites": 43,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 71,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 302,
+   "class": "FWCloseButtonSlimMC"
+  },
+  {
+   "id": 292,
+   "class": "DialogRadialBgMC"
+  },
+  {
+   "id": 287,
+   "class": "FWMaskMC"
+  },
+  {
+   "id": 286,
+   "class": "FWProgressNormalMC"
+  },
+  {
+   "id": 282,
+   "class": "FWProgressNormalVerticalMC"
+  },
+  {
+   "id": 276,
+   "class": "FWProgressSmallMC"
+  },
+  {
+   "id": 269,
+   "class": "Dogtag_Flames"
+  },
+  {
+   "id": 184,
+   "class": "RoundProgressBarMC"
+  },
+  {
+   "id": 74,
+   "class": "FWScrollBarLeftBtnDisabledMC"
+  },
+  {
+   "id": 73,
+   "class": "FWScrollBarLeftBtnDownMC"
+  },
+  {
+   "id": 72,
+   "class": "FWScrollBarLeftBtnOverMC"
+  },
+  {
+   "id": 71,
+   "class": "FWScrollBarLeftBtnUpMC"
+  },
+  {
+   "id": 70,
+   "class": "FWScrollBarRightBtnDisabledMC"
+  },
+  {
+   "id": 69,
+   "class": "FWScrollBarRightBtnDownMC"
+  },
+  {
+   "id": 68,
+   "class": "FWScrollBarRightBtnOverMC"
+  },
+  {
+   "id": 67,
+   "class": "FWScrollBarRightBtnUpMC"
+  },
+  {
+   "id": 66,
+   "class": "FWScrollBarHTrackDisabledMC"
+  },
+  {
+   "id": 65,
+   "class": "FWScrollBarHTrackDownMC"
+  },
+  {
+   "id": 64,
+   "class": "FWScrollBarHTrackOverMC"
+  },
+  {
+   "id": 63,
+   "class": "FWScrollBarHTrackUpMC"
+  },
+  {
+   "id": 62,
+   "class": "FWScrollBarDownBtnDisabledMC"
+  },
+  {
+   "id": 61,
+   "class": "FWScrollBarDownBtnDownMC"
+  },
+  {
+   "id": 60,
+   "class": "FWScrollBarDownBtnOverMC"
+  },
+  {
+   "id": 59,
+   "class": "FWScrollBarDownBtnUpMC"
+  },
+  {
+   "id": 58,
+   "class": "FWScrollBarUpBtnDisabledMC"
+  },
+  {
+   "id": 57,
+   "class": "FWScrollBarUpBtnDownMC"
+  },
+  {
+   "id": 56,
+   "class": "FWScrollBarUpBtnOverMC"
+  },
+  {
+   "id": 55,
+   "class": "FWScrollBarUpBtnUpMC"
+  },
+  {
+   "id": 51,
+   "class": "FWScrollBarVTrackDisabledMC"
+  },
+  {
+   "id": 50,
+   "class": "FWScrollBarVTrackDownMC"
+  },
+  {
+   "id": 49,
+   "class": "FWScrollBarVTrackOverMC"
+  },
+  {
+   "id": 48,
+   "class": "FWScrollBarVTrackUpMC"
+  },
+  {
+   "id": 44,
+   "class": "Btn_Blink"
+  },
+  {
+   "id": 38,
+   "class": "button_black_bg"
+  },
+  {
+   "id": 37,
+   "class": "button_black_bg_disabled"
+  },
+  {
+   "id": 36,
+   "class": "button_black_bg_hover"
+  },
+  {
+   "id": 35,
+   "class": "button_black_press"
+  },
+  {
+   "id": 34,
+   "class": "button_normal_bg"
+  },
+  {
+   "id": 33,
+   "class": "button_normal_bg_disabled"
+  },
+  {
+   "id": 32,
+   "class": "button_normal_bg_hover"
+  },
+  {
+   "id": 31,
+   "class": "button_normal_bg_press"
+  },
+  {
+   "id": 30,
+   "class": "button_normal_focus"
+  },
+  {
+   "id": 29,
+   "class": "button_slot_active"
+  },
+  {
+   "id": 28,
+   "class": "button_slot_disabled"
+  },
+  {
+   "id": 27,
+   "class": "button_slot_normal"
+  },
+  {
+   "id": 26,
+   "class": "BtnTexture"
+  },
+  {
+   "id": 25,
+   "class": "InputDisable"
+  },
+  {
+   "id": 24,
+   "class": "input_disabled"
+  },
+  {
+   "id": 23,
+   "class": "SlotDisableBmp"
+  },
+  {
+   "id": 22,
+   "class": "DisableCard"
+  },
+  {
+   "id": 21,
+   "class": "input_focus"
+  },
+  {
+   "id": 20,
+   "class": "InputDisableTexture"
+  },
+  {
+   "id": 19,
+   "class": "input_normal"
+  },
+  {
+   "id": 18,
+   "class": "button_slot_grey_shine_hover"
+  },
+  {
+   "id": 17,
+   "class": "button_slot_red_shine_hover"
+  },
+  {
+   "id": 16,
+   "class": "PiggyBg"
+  },
+  {
+   "id": 15,
+   "class": "PiggyFreeze"
+  },
+  {
+   "id": 14,
+   "class": "PiggyGreen"
+  },
+  {
+   "id": 13,
+   "class": "PiggyOrange"
+  },
+  {
+   "id": 12,
+   "class": "ReserveSlotFillPattern"
+  },
+  {
+   "id": 11,
+   "class": "ScrollBarHThumbDisabledStyle"
+  },
+  {
+   "id": 10,
+   "class": "ScrollBarHThumbDownStyle"
+  },
+  {
+   "id": 9,
+   "class": "ScrollBarHThumbOverStyle"
+  },
+  {
+   "id": 8,
+   "class": "ScrollBarHThumbUpStyle"
+  },
+  {
+   "id": 7,
+   "class": "ScrollBarVThumbDisabledStyle"
+  },
+  {
+   "id": 6,
+   "class": "ScrollBarVThumbDownStyle"
+  },
+  {
+   "id": 5,
+   "class": "ScrollBarVThumbOverStyle"
+  },
+  {
+   "id": 4,
+   "class": "ScrollBarVThumbUpStyle"
+  },
+  {
+   "id": 3,
+   "class": "FWSliderSmallThumbBmp"
+  },
+  {
+   "id": 2,
+   "class": "BtnTextureStandard"
+  },
+  {
+   "id": 1,
+   "class": "BtnDisableTexture"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 9178,
+   "classes": 71,
+   "methods": 220,
+   "bodies": 220,
+   "code_bytes": 2825
+  }
+ ],
+ "classes": [
+  {
+   "name": "BtnDisableTexture",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnTexture",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnTextureStandard",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DisableCard",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWSliderSmallThumbBmp",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InputDisable",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InputDisableTexture",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PiggyBg",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PiggyFreeze",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PiggyGreen",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PiggyOrange",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReserveSlotFillPattern",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBarHThumbDisabledStyle",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBarHThumbDownStyle",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBarHThumbOverStyle",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBarHThumbUpStyle",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBarVThumbDisabledStyle",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBarVThumbDownStyle",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBarVThumbOverStyle",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBarVThumbUpStyle",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SlotDisableBmp",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_black_bg",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_black_bg_disabled",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_black_bg_hover",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_black_press",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_normal_bg",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_normal_bg_disabled",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_normal_bg_hover",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_normal_bg_press",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_normal_focus",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_slot_active",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_slot_disabled",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_slot_grey_shine_hover",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_slot_normal",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_slot_red_shine_hover",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "input_disabled",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "input_focus",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "input_normal",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Btn_Blink",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DialogRadialBgMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Dogtag_Flames",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWCloseButtonSlimMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWMaskMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWProgressNormalMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWProgressNormalVerticalMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWProgressSmallMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarDownBtnDisabledMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarDownBtnDownMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarDownBtnOverMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarDownBtnUpMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarHTrackDisabledMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarHTrackDownMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarHTrackOverMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarHTrackUpMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarLeftBtnDisabledMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarLeftBtnDownMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarLeftBtnOverMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarLeftBtnUpMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarRightBtnDisabledMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarRightBtnDownMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarRightBtnOverMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarRightBtnUpMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarUpBtnDisabledMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarUpBtnDownMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarUpBtnOverMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarUpBtnUpMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarVTrackDisabledMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarVTrackDownMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarVTrackOverMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FWScrollBarVTrackUpMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RoundProgressBarMC",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

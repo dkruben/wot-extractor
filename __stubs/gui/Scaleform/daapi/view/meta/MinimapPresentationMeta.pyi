@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/MinimapPresentationMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.daapi.view.meta.MinimapEntityMeta import MinimapEntityMeta as MinimapEntityMeta
+
+class MinimapPresentationMeta(MinimapEntityMeta):
+    def setMap(self, arenaID):
+        ...
+    def setMinimapData(self, arenaID, playerTeam, size):
+        ...
+    def as_changeMapS(self, texture):
+        ...
+    def as_addPointS(self, x, y, type, color, id):
+        ...
+    def as_addPoiS(self, x, y, type, id):
+        ...
+    def as_clearS(self):
+        ...

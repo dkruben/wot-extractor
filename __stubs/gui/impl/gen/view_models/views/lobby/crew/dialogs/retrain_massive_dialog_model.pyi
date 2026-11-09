@@ -1,0 +1,36 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/dialogs/retrain_massive_dialog_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from frameworks.wulf import Array as Array
+from gui.impl.gen.view_models.common.vehicle_info_model import VehicleInfoModel as VehicleInfoModel
+from gui.impl.gen.view_models.views.dialogs.dialog_template_view_model import DialogTemplateViewModel as DialogTemplateViewModel
+from gui.impl.gen.view_models.views.lobby.crew.dialogs.dialog_tankman_model import DialogTankmanModel as DialogTankmanModel
+
+class RetrainMassiveDialogModel(DialogTemplateViewModel):
+    __slots__: tuple
+    def __init__(self, properties=10, commands=2):
+        ...
+    @property
+    def targetVehicle(self):
+        ...
+    @staticmethod
+    def getTargetVehicleType():
+        ...
+    def getIsPriceSelected(self):
+        ...
+    def setIsPriceSelected(self, value):
+        ...
+    def getIsPriceVisible(self):
+        ...
+    def setIsPriceVisible(self, value):
+        ...
+    def getTankmen(self):
+        ...
+    def setTankmen(self, value):
+        ...
+    @staticmethod
+    def getTankmenType():
+        ...
+    def _initialize(self):
+        ...

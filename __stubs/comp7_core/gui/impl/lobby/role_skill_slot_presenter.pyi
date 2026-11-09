@@ -1,0 +1,39 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/comp7_core/scripts/client/comp7_core/gui/impl/lobby/role_skill_slot_presenter.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from CurrentVehicle import g_currentVehicle as g_currentVehicle
+from gui.impl.gen import R as R
+from gui.impl.backport import createTooltipData as createTooltipData, BackportTooltipWindow as BackportTooltipWindow
+from gui.impl.pub.view_component import ViewComponent as ViewComponent
+from gui.impl.gen.view_models.views.lobby.tank_setup.common.role_skill_slot_model import RoleSkillSlotModel as RoleSkillSlotModel
+
+# base nao representavel no stub: ViewComponent[...]
+class RoleSkillSlotPresenter:
+    def __init__(self):
+        ...
+    @property
+    def _modeController(self):
+        ...
+    @property
+    def _roleSkillTooltipId(self):
+        ...
+    def _onLoading(self, *args, **kwargs):
+        ...
+    @property
+    def viewModel(self):
+        ...
+    def createToolTip(self, event):
+        ...
+    def _getEvents(self):
+        ...
+    def __updateRoleSkillSlot(self):
+        ...
+    def __getCurrentVehicleRoleSkill(self):
+        ...
+    def __getCurrentVehicleRoleSkillLevel(self):
+        ...
+    def __getCurrentVehicleRoleEquipmentKey(self):
+        ...
+    def _getVehicle(self):
+        ...

@@ -1,0 +1,144 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillCommanderPractical.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 181287,
+ "actual_length": 181287,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 40,
+  "ShowFrame": 918,
+  "DefineShape": 19,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 4,
+  "PlaceObject2": 2221,
+  "RemoveObject2": 54,
+  "DefineShape3": 5,
+  "DefineBitsLossless2": 25,
+  "DefineSprite": 39,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 25,
+  "shapes": 33,
+  "sprites": 39,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillCommanderPractical_fla.MainTimeline"
+  },
+  {
+   "id": 95,
+   "class": "skillCommanderPractical_fla.activeConsumableReloadFast_38"
+  },
+  {
+   "id": 94,
+   "class": "skillCommanderPractical_fla.activeConsumableReload_36"
+  },
+  {
+   "id": 91,
+   "class": "skillCommanderPractical_fla.squaresFx_35"
+  },
+  {
+   "id": 58,
+   "class": "skillCommanderPractical_fla.iconFxExplosion_20"
+  },
+  {
+   "id": 12,
+   "class": "skillCommanderPractical_fla.iconTankBodyStyleBig_7"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1536,
+   "classes": 6,
+   "methods": 24,
+   "bodies": 24,
+   "code_bytes": 398
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillCommanderPractical_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderPractical_fla.activeConsumableReloadFast_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderPractical_fla.activeConsumableReload_36",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderPractical_fla.iconFxExplosion_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderPractical_fla.iconTankBodyStyleBig_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderPractical_fla.squaresFx_35",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

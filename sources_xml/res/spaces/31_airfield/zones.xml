@@ -1,0 +1,62 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/31_airfield/zones.xml -->
+<root>
+	<path>
+		<id>3338661036</id>
+		<name>path</name>
+		<node>
+			<name>Zone 1</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2824644982</id>
+			<transform>
+				<row0>79.632545 0 0</row0>
+				<row1>0 26.003187 0</row1>
+				<row2>0 0 82.671265</row2>
+				<row3>-262.53745 -0.596877 34.375877</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 2</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1723437207</id>
+			<transform>
+				<row0>139.53114 0 0</row0>
+				<row1>0 91.957 0</row1>
+				<row2>0 0 145.91426</row2>
+				<row3>23.703306 -15.798683 53.646255</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_comp7_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1613723865</id>
+			<transform>
+				<row0>59.94277 0 0</row0>
+				<row1>0 59.94277 0</row1>
+				<row2>0 0 59.94277</row2>
+				<row3>15.15712 -10.370094 39.142754</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_comp7_02</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>892401082</id>
+			<transform>
+				<row0>29.595154 0 0</row0>
+				<row1>0 29.595154 0</row1>
+				<row2>0 0 29.595154</row2>
+				<row3>6.947217 -21.79537 5.158436</row3>
+			</transform>
+		</node>
+		<node>
+			<name>31_airfield_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2886545502</id>
+			<transform>
+				<row0>34 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 38</row2>
+				<row3>431.89166 -5.830001 283.1106</row3>
+			</transform>
+		</node>
+	</path>
+</root>

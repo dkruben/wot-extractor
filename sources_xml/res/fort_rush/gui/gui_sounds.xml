@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fort_rush/gui/gui_sounds.xml -->
+<root>
+	<controls>
+		<schemas>
+			<frEventRespawnPoint>
+				<sounds>
+					<wwover>highlight</wwover>
+					<wwpress>yes</wwpress>
+				</sounds>
+				<groups />
+			</frEventRespawnPoint>
+		</schemas>
+	</controls>
+</root>

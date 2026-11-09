@@ -1,0 +1,256 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/battle/battle_page/tab_view.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from contextlib import contextmanager as contextmanager
+import logging as logging
+import typing as typing
+from future.utils import iteritems as iteritems
+import BigWorld as BigWorld
+import VOIP as VOIP
+from PlayerEvents import g_playerEvents as g_playerEvents
+from account_helpers.settings_core import settings_constants as settings_constants
+from commendations_common.CommendationHelpers import CommendationsSource as CommendationsSource
+from debug_utils import LOG_CURRENT_EXCEPTION as LOG_CURRENT_EXCEPTION, LOG_ERROR as LOG_ERROR, LOG_WARNING as LOG_WARNING
+from gui.battle_control import avatar_getter as avatar_getter
+from gui.doc_loaders.badges_loader import getSelectedByLayout as getSelectedByLayout
+from gui.impl import backport as backport
+from gui.prb_control import prbInvitesProperty as prbInvitesProperty
+from gui.prestige.prestige_helpers import fillPrestigeEmblemModel as fillPrestigeEmblemModel
+from cgf_components.marker_component import IBattleSessionProvider as IBattleSessionProvider
+from frameworks.wulf import ViewFlags as ViewFlags, ViewSettings as ViewSettings
+from gui.impl.gen.view_models.common.battle_player import BattlePlayer as BattlePlayer, VehicleTypeEnum as VehicleTypeEnum
+from gui.impl.gen.view_models.common.commendationStateModel import CommendationStateEnum as CommendationStateEnum
+from gui.impl.gui_decorators import args2params as args2params
+from gui.impl.gen.view_models.views.battle.battle_page.tab_view_model import TabViewModel as TabViewModel, TabAlias as TabAlias
+from gui.impl.pub import ViewImpl as ViewImpl
+from gui.shared.gui_items.Vehicle import VEHICLE_CLASS_NAME as VEHICLE_CLASS_NAME
+from gui.shared.utils.scheduled_notifications import Notifiable as Notifiable, PeriodicNotifier as PeriodicNotifier
+from live_tags_constants import LIVE_TAG_TYPES as LIVE_TAG_TYPES
+from messenger.proto.events import g_messengerEvents as g_messengerEvents
+from messenger.proto.shared_find_criteria import MutedFindCriteria as MutedFindCriteria, IgnoredFindCriteria as IgnoredFindCriteria
+from messenger.storage import MessengerStorageDescriptor as MessengerStorageDescriptor, PlayerCtxStorage as PlayerCtxStorage, UsersStorage as UsersStorage
+from skeletons.account_helpers.settings_core import ISettingsCore as ISettingsCore
+from skeletons.gui.game_control import IPlatoonController as IPlatoonController, ICommendationsController as ICommendationsController, IAnonymizerController as IAnonymizerController
+from skeletons.gui.goodies import IBoostersStateProvider as IBoostersStateProvider
+from helpers import dependency as dependency
+from gui.impl.gen import R as R
+from gui.battle_control.arena_info import settings as settings, squad_finder as squad_finder
+from frameworks.wulf import ViewModel as ViewModel
+from gui.battle_control.battle_constants import TabsAliases as TabsAliases
+from gui.impl.common.personal_reserves.personal_reserves_shared_constants import PERSONAL_RESOURCE_ORDER as PERSONAL_RESOURCE_ORDER
+from gui.impl.common.personal_reserves.personal_reserves_shared_model_utils import getPersonalBoosterModelDataByResourceType as getPersonalBoosterModelDataByResourceType, addPersonalBoostersGroup as addPersonalBoostersGroup, addEventGroup as addEventGroup
+from gui.impl.lobby.personal_reserves.personal_reserves_utils import generatePersonalReserveTick as generatePersonalReserveTick
+from gui.battle_control.arena_info.settings import INVITATION_DELIVERY_STATUS as _D_STATUS
+from gui.shared.utils.requesters import REQ_CRITERIA as REQ_CRITERIA
+from constants import ARENA_GUI_TYPE as ARENA_GUI_TYPE, CommendationsState as CommendationsState
+from commendations_common import CommendationHelpers as CommendationHelpers
+from soft_exception import SoftException as SoftException
+from messenger.proto.entities import ChatEntity as ChatEntity
+from typing import Optional as Optional, Tuple as Tuple, Set as Set, Callable as Callable, List as List, Dict as Dict
+import ClientArena as ClientArena
+from gui.battle_control.arena_info.arena_vos import VehicleArenaStatsVO as VehicleArenaStatsVO
+from gui.battle_control.arena_info.arena_dp import ArenaDataProvider as ArenaDataProvider
+from frameworks.wulf import Array as Array
+from gui.battle_control.controllers.battle_field_ctrl import BattleFieldCtrl as BattleFieldCtrl
+from gui.prb_control.invites import InvitesManager as InvitesManager
+from gui.goodies.booster_state_provider import BoosterStateProvider as BoosterStateProvider
+from gui.game_control.platoon_controller import PlatoonController as PlatoonController
+from gui.battle_control.battle_session import BattleSessionProvider as BattleSessionProvider
+from frameworks.wulf import PyResAccessor as PyResAccessor
+from account_helpers.settings_core.SettingsCore import SettingsCore as SettingsCore
+from TeamInfo import TeamInfo as TeamInfo
+_logger: Any
+_VEHICLE_TYPE_SORTING_ORDER: tuple
+_VEHICLE_TYPE_SORTING_ORDER_MAP: dict
+_VEHICLE_TYPE_TO_VEHICLE_TYPE_ENUM: dict
+_COMMENDATIONS_STATE_TO_ENUM: dict
+
+class BattlePlayerNotFound(SoftException):
+    ...
+
+class TabView(ViewImpl):
+    __slots__: tuple
+    _boostersStateProvider: Any
+    _platoonController: Any
+    _settingsCore: Any
+    sessionProvider: Any
+    commendationsCtrl: Any
+    anonymizerController: Any
+    usersStorage: Any
+    playerCtx: Any
+    _visitor: Any
+    _squadFinder: Any
+    _battleCtx: Any
+    _notificatorManager: Any
+    __playerIndexes: Any
+    def __init__(self, layoutID):
+        ...
+    @property
+    def viewModel(self):
+        ...
+    @property
+    def battleField(self):
+        ...
+    # decorador original: @prbInvitesProperty
+    def prbInvites(self):
+        ...
+    @property
+    def arena(self):
+        ...
+    @property
+    def teamInfo(self):
+        ...
+    def _getVehicleInfo(self, vehicleId):
+        ...
+    def _isAlly(self, vehicleInfo):
+        ...
+    def _getPlayerList(self, vehicleInfo):
+        ...
+    def _setColorblindSettings(self, *args):
+        ...
+    def _onLoaded(self, *args, **kwargs):
+        ...
+    def _setPlatoonSettings(self):
+        ...
+    def _setCommendationSettings(self, *args):
+        ...
+    def _setLiveTagsSettings(self, *args):
+        ...
+    def createToolTipContent(self, event, contentID):
+        ...
+    # decorador original: @contextmanager
+    def modifyBattlePlayer(self, vehicleId):
+        ...
+    def _finalize(self):
+        ...
+    def _invalidateGameInfo(self, *args):
+        ...
+    def _fillPlayerListModel(self, playerList, playerInfo):
+        ...
+    def __setBattlePlayer(self, vehicleId, player):
+        ...
+    def __getBattlePlayer(self, vehicleId):
+        ...
+    def _invalidateVehiclesInfo(self, *args):
+        ...
+    def _onVehicleUpdated(self, vehicleId):
+        ...
+    def _hasCurrentPlayerJustJoinedSquad(self, vehicleId, prebattleID):
+        ...
+    def _needsResort(self, vehicleId):
+        ...
+    def _updateSquadFinder(self, vehicleId, vehicleInfo):
+        ...
+    def _onVehicleAdded(self, vehicleId):
+        ...
+    def _resortPlayerList(self, playerModelArray, playersToAdd=None):
+        ...
+    def _fillPlayerModel(self, vehicleId, vehicleInfo):
+        ...
+    def _isSquadMember(self, memberVehID, prebattleId):
+        ...
+    def _invalidatePlatoonInfo(self, playerModel):
+        ...
+    def _isAvatarSquad(self, prebattleId):
+        ...
+    @staticmethod
+    def _getTeam(vehicleInfo):
+        ...
+    @staticmethod
+    def _getPrebattleID(vehicleInfo):
+        ...
+    # decorador original: @checkArenaDataProvider
+    def _isPlatoonInvitationEnabled(self, vehicleId):
+        ...
+    def _invalidateVehicleStats(self, player):
+        ...
+    def _invalidateVehicleTypeInfo(self, player):
+        ...
+    def _invalidateDenunciationInfo(self, player, violatorDbID):
+        ...
+    def _invalidateVehicleStatus(self, player):
+        ...
+    def _invalidatePersonalInfo(self, player):
+        ...
+    def _addStats(self, *args):
+        ...
+    def _updateStats(self, vehicleId):
+        ...
+    def _onFogOfWarEnabled(self, flag):
+        ...
+    def _updateInvites(self, *args):
+        ...
+    def __getInviteIds(self, received=False):
+        ...
+    def _updateDenunciations(self, denunciationInfo):
+        ...
+    def _updateStatus(self, vehicleId, *args):
+        ...
+    def _onSpottedStatusChanged(self, updated, _):
+        ...
+    # decorador original: @checkArenaDataProvider
+    def _onPlayerSpeaking(self, accountDBID, isSpeak):
+        ...
+    # decorador original: @checkArenaDataProvider
+    def _hasMutedSelfInPlatoon(self, vehicleId):
+        ...
+    # decorador original: @checkArenaDataProvider
+    def _invalidateChatActions(self, vehicleId):
+        ...
+    def _onVOIPChannelStateToggled(self, *args):
+        ...
+    # decorador original: @checkArenaDataProvider
+    def _updateChatActions(self, _, user):
+        ...
+    def _resetChatActions(self):
+        ...
+    def _getChatUserStatuses(self):
+        ...
+    def _updateCommendationStates(self):
+        ...
+    def _updateLiveTags(self):
+        ...
+    def __vehicleHasLiveTagValidator(self, tagsSets):
+        ...
+    def __getLiveTagVehicleSets(self, teamInfoLiveTagsComponent):
+        ...
+    def _invalidateCommendationState(self, player):
+        ...
+    def _getAnonymizerTooltipContent(self, player):
+        ...
+    def _getLiveTagTooltipContent(self, player, validator):
+        ...
+    def _canBeCommended(self, vehicleId):
+        ...
+    # decorador original: @args2params(...)
+    def _onPlayerCommend(self, vehicleId):
+        ...
+    def _getEvents(self):
+        ...
+    def handleTabChange(self, tabAlias):
+        ...
+    def _onLoading(self, *args, **kwargs):
+        ...
+    # decorador original: @args2params(...)
+    def _onPlatoonInvite(self, avatarSessionID):
+        ...
+    def activatePersonalReserve(self, boosterId):
+        ...
+    # decorador original: @args2params(...)
+    def _onBoosterActivate(self, boosterId):
+        ...
+    def _updateBoosters(self):
+        ...
+    def fillViewModel(self):
+        ...
+    def _timeTillNextPersonalReserveTick(self):
+        ...
+    def _addStateForLogging(self, msg):
+        ...
+
+def checkArenaDataProvider(func):
+    ...
+def _playerCompositionKey(playerModel):
+    ...

@@ -1,0 +1,84 @@
+{
+  "rid": "R.views.halloween.mono.lobby.attachments_reward_view",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "attachments_reward_view",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "attachments_reward_view.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view/attachments_reward_view.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view/attachments_reward_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "attachments_reward_view.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view/attachments_reward_view.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view/attachments_reward_view.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view/attachments_reward_view.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view/attachments_reward_view.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/attachments_reward_view/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "goToExterior",
+    "goToGarage"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.attachments_reward_view",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.halloween.mono.lobby.attachments_reward_view no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/attachment_reward_view.py",
+        17
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/attachment_reward_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

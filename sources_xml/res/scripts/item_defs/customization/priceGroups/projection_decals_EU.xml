@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/item_defs/customization/priceGroups/projection_decals_EU.xml -->
+<root>
+	<priceGroup>
+		<id>57</id>
+		<name>projection_decals 110g EU</name>
+		<tags>projection_decals EU</tags>
+		<price>110<gold />
+		</price>
+		<notInShop>True</notInShop>
+	</priceGroup>
+</root>

@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_modifiers/extension.xml -->
+<root>
+	<FeatureName>battle_modifiers</FeatureName>
+	<IsEnabled>true</IsEnabled>
+	<Personality>BattleModifiersPersonality</Personality>
+	<CommonPersonality>BattleModifiersPersonalityCommon</CommonPersonality>
+	<Entities />
+	<Components>
+		<StaticComponents />
+		<DynamicComponents />
+	</Components>
+</root>

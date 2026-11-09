@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/PersonalMissionsOperationAwardsScreenMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.framework.entities.View import View as View
+
+class PersonalMissionsOperationAwardsScreenMeta(View):
+    def onCloseWindow(self):
+        ...
+    def onPlaySound(self, soundType):
+        ...
+    def as_setInitDataS(self, data):
+        ...
+    def as_setAwardDataS(self, awardData):
+        ...
+    def as_setCloseBtnEnabledS(self, enabled):
+        ...
+    def as_playAwardsAnimationS(self):
+        ...

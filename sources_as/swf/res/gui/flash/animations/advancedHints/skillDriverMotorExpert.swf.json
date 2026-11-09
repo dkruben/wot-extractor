@@ -1,0 +1,109 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillDriverMotorExpert.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 163822,
+ "actual_length": 163822,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 25,
+  "ShowFrame": 734,
+  "DefineShape": 13,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 2698,
+  "RemoveObject2": 16,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 10,
+  "DefineSprite": 24,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 10,
+  "shapes": 17,
+  "sprites": 24,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillDriverMotorExpert_fla.MainTimeline"
+  },
+  {
+   "id": 46,
+   "class": "skillDriverMotorExpert_fla.iconFxExplosion_20"
+  },
+  {
+   "id": 9,
+   "class": "skillDriverMotorExpert_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 859,
+   "classes": 3,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 198
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillDriverMotorExpert_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillDriverMotorExpert_fla.iconFxExplosion_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillDriverMotorExpert_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

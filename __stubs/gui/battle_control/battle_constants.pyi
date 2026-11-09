@@ -1,0 +1,484 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/battle_control/battle_constants.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from builtins import range as range
+from enum import Enum as Enum
+from future.utils import viewitems as viewitems
+from constants import SECTOR_STATE as SECTOR_STATE
+from enumerations import Enumeration as Enumeration, AttributeEnumItem as AttributeEnumItem
+from gui.impl.gen import R as R
+from shared_utils import CONST_CONTAINER as CONST_CONTAINER
+REUSABLE_BATTLE_CTRL_IDS: tuple
+BATTLE_CTRL_NAMES: dict
+PLAYERS_PANEL_LENGTH = 24
+HIT_INDICATOR_MAX_ON_SCREEN = 5
+PREDICTION_INDICATOR_MAX_ON_SCREEN = 5
+CANT_SHOOT_PRIORITIES: dict
+SHELL_QUANTITY_UNKNOWN = -1
+VEHICLE_VIEW_STATE_ID_TO_WEATHER_ZONE_NAME: dict
+VEHICLE_DEVICES: tuple
+WHEELED_VEHICLE_DEVICES: tuple
+TRACK_WITHIN_TRACK_DEVICES: tuple
+VEHICLE_GUI_ITEMS: tuple
+ALL_VEHICLE_GUI_ITEMS: tuple
+VEHICLE_DEVICE_IN_COMPLEX_ITEM: dict
+VEHICLE_COMPLEX_ITEMS: dict
+DEVICE_STATE_NORMAL = 'normal'
+DEVICE_STATE_CRITICAL = 'critical'
+DEVICE_STATE_DESTROYED = 'destroyed'
+DEVICE_STATES_RANGE: tuple
+DEVICE_STATE_AS_DAMAGE: tuple
+EXTRA_SUFFIX = 'Health'
+EXTRA_PREFIX_LENGTH: Any
+PLAYER_GUI_PROPS: Any
+VEHICLE_WAINING_INTERVAL = 0.05
+VEHICLE_UPDATE_INTERVAL = 0.03
+MARKER_HIT_EVENTS: set
+MARKER_EMPTY_HIT_STATE: tuple
+MARKER_DEFAULT_HIT_STATES: dict
+MARKER_FREQUENT_HIT_STATE: tuple
+MARKER_FREQUENT_HIT_STATES: dict
+NEUTRAL_TEAM = 0
+SECTOR_STATE_ID: dict
+
+class BATTLE_CTRL_ID(object):
+    AMMO: Any
+    EQUIPMENTS: Any
+    OPTIONAL_DEVICES: Any
+    OBSERVED_VEHICLE_STATE: Any
+    ARENA_LOAD_PROGRESS: Any
+    ARENA_PERIOD: Any
+    TEAM_BASES: Any
+    DEBUG: Any
+    HIT_DIRECTION: Any
+    FEEDBACK: Any
+    CHAT_COMMANDS: Any
+    MESSAGES: Any
+    DRR_SCALE: Any
+    RESPAWN: Any
+    REPAIR: Any
+    DYN_SQUADS: Any
+    AVATAR_PRIVATE_STATS: Any
+    FLAG_NOTS: Any
+    CROSSHAIR: Any
+    MOD: Any
+    GUI: Any
+    PERSONAL_EFFICIENCY: Any
+    VIEW_POINTS: Any
+    BATTLE_FIELD_CTRL: Any
+    PLAYER_GAME_MODE_DATA: Any
+    TEAM_HEALTH_BAR: Any
+    ARENA_BORDER: Any
+    PROGRESS_TIMER: Any
+    MAPS: Any
+    SPECTATOR: Any
+    GAME_NOTIFICATIONS: Any
+    EPIC_MISSIONS: Any
+    GAME_MESSAGES_PANEL: Any
+    QUEST_PROGRESS: Any
+    ANONYMIZER_FAKES: Any
+    GAME_RESTRICTIONS_MESSAGES: Any
+    BATTLE_HINTS: Any
+    PREBATTLE_HIGHLIGHTS: Any
+    DOG_TAGS: Any
+    CALLOUT: Any
+    PROGRESSION_CTRL: Any
+    RADAR_CTRL: Any
+    SPAWN_CTRL: Any
+    DEATH_SCREEN_CTRL: Any
+    VEHICLES_COUNT_CTRL: Any
+    AREA_MARKER: Any
+    DEATHZONES: Any
+    APPEARANCE_CACHE_CTRL: Any
+    BATTLE_NOTIFIER: Any
+    PREBATTLE_SETUPS_CTRL: Any
+    KILL_CAM_CTRL: Any
+    SOUND_PLAYERS_CTRL: Any
+    POINTS_OF_INTEREST_CTRL: Any
+    PREBATTLE_SETUP_CTRL: Any
+    INGAME_HELP_CTRL: Any
+    PERKS: Any
+    MAP_ZONES_CONTROLLER: Any
+    OVERRIDE_SETTINGS: Any
+    AIMING_SOUNDS_CTRL: Any
+    SHOTS_RESULT_SOUND: Any
+    BR_VOIP_CTRL: Any
+    VSE_HUD_SETTINGS_CTRL: Any
+    AUTO_SHOOT_CTRL: Any
+    BATTLE_SPAM_CTRL: Any
+    PERSONAL_DEATH_ZONES_GUI_CTRL: Any
+    COMMENDATIONS_MESSAGES_CTRL: Any
+    ARMOR_FLASHLIGHT: Any
+    VEHICLE_PASSENGER_CTRL: Any
+    VEHICLES_TRACKING_CTRL: Any
+    SPOTTING_INDICATORS_CTRL: Any
+    W2GT_CTRL: Any
+    PREFAB_EFFECTS_AVAILABILITY_CTRL: Any
+
+class VIEW_COMPONENT_RULE(object):
+    NONE = 0
+    PROXY = 1
+
+class SHELL_SET_RESULT(object):
+    UNDEFINED = 0
+    ADDED = 1
+    UPDATED = 2
+    CURRENT = 4
+    CASSETTE_RELOAD = 8
+
+class CANT_SHOOT_ERROR(object):
+    UNDEFINED = ''
+    WAITING = 'waiting'
+    NO_AMMO = 'no_ammo'
+    RELOADING = 'gun_reload'
+    EMPTY_CLIP = 'empty_clip'
+    EMPTY_AUTO_CLIP = 'empty_auto_clip'
+    CHARGE_SHOT_BLOCKING = 'charge_shot_blocking'
+    GUN_OVERHEATED = 'gun_overheated'
+    LOW_CHARGE_SHOT_BLOCKING = 'low_charge_shot_blocking'
+
+class VEHICLE_VIEW_STATE(object):
+    FIRE = 1
+    DEVICES = 2
+    HEALTH = 4
+    DESTROYED = 8
+    CREW_DEACTIVATED = 16
+    AUTO_ROTATION = 32
+    SPEED = 64
+    CRUISE_MODE = 128
+    REPAIRING = 256
+    PLAYER_INFO = 512
+    DESTROY_TIMER = 1024
+    TARGET_DESIGNATOR = 2048
+    RESPAWNING = 8192
+    SWITCHING = 16384
+    DEATHZONE_TIMER = 32768
+    DEATH_INFO = 131072
+    VEHICLE_CHANGED = 262144
+    SIEGE_MODE = 524288
+    STUN = 16777216
+    CAPTURE_BLOCKED = 33554432
+    SMOKE = 67108864
+    INSPIRE = 134217728
+    UNDER_FIRE = 268435456
+    RECOVERY = 536870912
+    PROGRESS_CIRCLE = 1073741824
+    BURNOUT = 2147483648
+    BURNOUT_WARNING = 4294967296
+    BURNOUT_UNAVAILABLE_DUE_TO_BROKEN_ENGINE = 8589934592
+    DUAL_GUN_CHARGER = 17179869184
+    DUAL_GUN_MODE = 34359738368
+    DUAL_GUN_STATE_UPDATED = 68719476736
+    LOOT = 137438953472
+    HEALING = 274877906944
+    DOT_EFFECT = 549755813888
+    DEBUFF = 1099511627776
+    REPAIR_POINT = 2199023255552
+    DEATHZONE = 4398046511104
+    PERSONAL_DEATHZONE = 8796093022208
+    STEALTH_RADAR = 17592186044416
+    ADAPTATION_HEALTH_RESTORE = 35184372088832
+    BERSERKER = 70368744177664
+    CORRODING_SHOT = 140737488355328
+    FIRE_CIRCLE = 281474976710656
+    THUNDER_STRIKE = 562949953421312
+    AOE_ZONE = 1125899906842624
+    SHOT_PASSION = 2251799813685248
+    POINT_OF_INTEREST_STATE = 4503599627370496
+    POINT_OF_INTEREST_VEHICLE_STATE = 9007199254740992
+    AOE_INSPIRE = 18014398509481984
+    AOE_HEAL = 36028797018963968
+    RISKY_ATTACK_BUFF = 72057594037927936
+    RISKY_ATTACK_HEAL = 144115188075855872
+    BERSERK = 288230376151711744
+    SNIPER = 576460752303423488
+    HUNTER = 1152921504606846976
+    FAST_RECHARGE = 2305843009213693952
+    ALLY_SUPPORT = 4611686018427387904
+    JUGGERNAUT = 9223372036854775808
+    SURE_SHOT = 18446744073709551616
+    CONCENTRATION = 36893488147419103232
+    MARCH = 73786976294838206464
+    AGGRESSIVE_DETECTION = 147573952589676412928
+    GUN_RELOAD_BOOST = 295147905179352825856
+    DANGER_ZONE = 590295810358705651712
+    WARNING_ZONE = 1180591620717411303424
+    MAP_DEATH_ZONE = 2361183241434822606848
+    BLIZZARD_ZONE = 151115727451828646838272
+    FIRE_ZONE = 302231454903657293676544
+    FOG_ZONE = 604462909807314587353088
+    RAIN_ZONE = 1208925819614629174706176
+    SANDSTORM_ZONE = 2417851639229258349412352
+    SMOKE_ZONE = 4835703278458516698824704
+    TORNADO_ZONE = 9671406556917033397649408
+    WEATHER_ZONES: tuple
+    ILLUMINATION_FLARE_SPOTTED = 19807040628566084398385987584
+    CLIENT_ONLY: tuple
+
+class TIMER_VIEW_STATE(object):
+    CRITICAL = 'critical'
+    WARNING = 'warning'
+
+class VEHICLE_INDICATOR_TYPE(object):
+    DEFAULT = 'Tank'
+    SPG = 'SPG'
+    AT_SPG = 'AT-SPG'
+
+class FEEDBACK_EVENT_ID(object):
+    PLAYER_KILLED_ENEMY: Any
+    PLAYER_DAMAGED_HP_ENEMY: Any
+    PLAYER_DAMAGED_DEVICE_ENEMY: Any
+    PLAYER_SPOTTED_ENEMY: Any
+    PLAYER_ASSIST_TO_KILL_ENEMY: Any
+    PLAYER_ASSIST_TO_STUN_ENEMY: Any
+    PLAYER_USED_ARMOR: Any
+    PLAYER_CAPTURED_BASE: Any
+    PLAYER_DROPPED_CAPTURE: Any
+    PLAYER_BLOCKED_CAPTURE: Any
+    PLAYER_STUN_ENEMIES: Any
+    VEHICLE_HEALTH: Any
+    VEHICLE_HIT: Any
+    VEHICLE_CRITICAL_HIT: Any
+    VEHICLE_CRITICAL_HIT_CHASSIS: Any
+    VEHICLE_CRITICAL_HIT_CHASSIS_PIERCED: Any
+    VEHICLE_RICOCHET: Any
+    VEHICLE_ARMOR_PIERCED: Any
+    VEHICLE_DEAD: Any
+    VEHICLE_SHOW_MARKER: Any
+    VEHICLE_ATTRS_CHANGED: Any
+    ENTITY_IN_FOCUS: Any
+    VEHICLE_HAS_AMMO: Any
+    SHOW_VEHICLE_DAMAGES_DEVICES: Any
+    HIDE_VEHICLE_DAMAGES_DEVICES: Any
+    MINIMAP_SHOW_MARKER: Any
+    MINIMAP_MARK_CELL: Any
+    DAMAGE_LOG_SUMMARY: Any
+    POSTMORTEM_SUMMARY: Any
+    ENEMY_DAMAGED_HP_PLAYER: Any
+    ENEMY_DAMAGED_DEVICE_PLAYER: Any
+    VEHICLE_VISIBILITY_CHANGED: Any
+    VEHICLE_STUN: Any
+    VEHICLE_DEBUFF: Any
+    VEHICLE_INSPIRE: Any
+    VEHICLE_HEAL_POINT: Any
+    VEHICLE_PASSIVE_ENGINEERING: Any
+    VEHICLE_REPAIR_POINT: Any
+    VEHICLE_AOE_INSPIRE: Any
+    VEHICLE_AOE_HEAL: Any
+    VEHICLE_RISKY_ATTACK_BUFF: Any
+    VEHICLE_RISKY_ATTACK_HEAL: Any
+    VEHICLE_BERSERK: Any
+    VEHICLE_SNIPER: Any
+    VEHICLE_HUNTER: Any
+    VEHICLE_FAST_RECHARGE: Any
+    VEHICLE_ALLY_SUPPORT: Any
+    VEHICLE_JUGGERNAUT: Any
+    VEHICLE_SURE_SHOT: Any
+    VEHICLE_CONCENTRATION: Any
+    VEHICLE_MARCH: Any
+    VEHICLE_AGGRESSIVE_DETECTION: Any
+    VEHICLE_POINT_RECON: Any
+    VEHICLE_RED_LINE: Any
+    MINIMAP_MARK_POSITION: Any
+    MINIMAP_MARK_OBJECTIVE: Any
+    MINIMAP_MARK_BASE: Any
+    ENEMY_SECTOR_CAPTURED: Any
+    DESTRUCTIBLE_DAMAGED: Any
+    DESTRUCTIBLE_DESTROYED: Any
+    DESTRUCTIBLES_DEFENDED: Any
+    DEFENDER_BONUS: Any
+    SMOKE_ASSIST: Any
+    INSPIRE_ASSIST: Any
+    VEHICLE_RECOVERY_STATE_UPDATE: Any
+    VEHICLE_RECOVERY_CANCELED: Any
+    VEHICLE_RECOVERY_KEY_PRESSED: Any
+    VEHICLE_ACTIVE_GUN_CHANGED: Any
+    VEHICLE_SHOW_MESSAGE: Any
+    VEHICLE_DETECTED: Any
+    EQUIPMENT_TIMER_EXPIRED: Any
+    VEHICLE_ARMOR_SCREEN_BLOCKED: Any
+    VEHICLE_TRACK_BLOCKED: Any
+    VEHICLE_WHEEL_BLOCKED: Any
+    VEHICLE_ARMOR_MISSED: Any
+    VEHICLE_FRONTLINE_STEALTH_RADAR_ACTIVE: Any
+    VEHICLE_FRONTLINE_REGENERATION_KIT_ACTIVE: Any
+    VEHICLE_CUSTOM_MARKER: Any
+    VEHICLE_HEALTH_ADDED: Any
+    TARGET_DESIGNATOR_SPOTTED_MARKER: Any
+    ILLUMINATION_FLARE_SPOTTED_MARKER: Any
+    VEHICLE_SIGHT_POINTER_SPOTTED: Any
+
+class ENTITY_IN_FOCUS_TYPE(object):
+    VEHICLE = 0
+    DESTRUCTIBLE_ENTITY = 1
+
+class COUNTDOWN_STATE(object):
+    UNDEFINED = 0
+    WAIT = 1
+    START = 2
+    STOP = 3
+    VISIBLE: tuple
+
+class MULTIPLE_TEAMS_TYPE(object):
+    UNDEFINED = ''
+    FFA = 'ffa'
+    TDM = 'teams'
+    MIXED = 'mixed'
+
+class WinStatus(object):
+    DRAW = 0
+    WIN = 1
+    LOSE = 2
+    _status: Any
+    def __init__(self, status):
+        ...
+    def isValid(self):
+        ...
+    def isWin(self):
+        ...
+    def isLose(self):
+        ...
+    def isDraw(self):
+        ...
+    def getStatus(self):
+        ...
+    @classmethod
+    def fromWinnerTeam(cls, winnerTeam, isAlly):
+        ...
+    @classmethod
+    def empty(cls):
+        ...
+
+class VEHICLE_LOCATION(object):
+    UNDEFINED = 0
+    AOI = 1
+    FAR = 2
+    AOI_TO_FAR = 3
+
+class GAS_ATTACK_STATE(object):
+    NO_ATTACK = 0
+    PREPEARING = 1
+    INSIDE_SAFE_ZONE = 2
+    NEAR_SAFE = 3
+    NEAR_CLOUD = 4
+    INSIDE_CLOUD = 5
+    DEAD = 6
+    VISIBLE: tuple
+
+class REPAIR_STATE_ID(object):
+    UNRESOLVED = 0
+    DISABLED = 1
+    READY = 2
+    REPAIRING = 3
+    COOLDOWN = 4
+
+class CROSSHAIR_VIEW_ID(object):
+    UNDEFINED = 0
+    ARCADE = 1
+    SNIPER = 2
+    STRATEGIC = 3
+    POSTMORTEM = 4
+
+class PROGRESS_CIRCLE_TYPE(object):
+    RESUPPLY_CIRCLE = 1
+    SECTOR_BASE_CIRCLE = 2
+
+class TabsAliases(Enum):
+    STATS = 'stats'
+    QUESTS_PROGRESS = 'quests_progress'
+    BOOSTERS = 'boosters'
+
+class AUTO_ROTATION_FLAG(int):
+    IGNORE_IN_UI = 1
+    TURN_ON = 2
+    TURN_OFF = 3
+
+class HIT_FLAGS(CONST_CONTAINER):
+    HP_DAMAGE = 1
+    IS_ALLAY = 2
+    IS_BLOCKED = 4
+    IS_CRITICAL = 8
+    IS_HIGH_EXPLOSIVE = 16
+    IS_BATTLE_CONSUMABLES = 32
+    IS_NON_PLAYER_ATTACK_REASON = 64
+
+class PERSONAL_EFFICIENCY_TYPE(CONST_CONTAINER):
+    DAMAGE = 1
+    ASSIST_DAMAGE = 2
+    BLOCKED_DAMAGE = 4
+    RECEIVED_DAMAGE = 8
+    RECEIVED_CRITICAL_HITS = 16
+    STUN = 32
+
+class CACHE_RECORDS_IDS(CONST_CONTAINER):
+    RELATIONS = 0
+    TMP_PROGRESSION = 1
+    INITIAL_MODULES = 2
+
+class NET_TYPE_OVERRIDE(CONST_CONTAINER):
+    DISABLED = -1
+    SIEGE_MODE = 4
+    PILLBOX_MODE = 5
+    AUXILIARY_ROCKET_LAUNCHER = 6
+
+class STRATEGIC_CAMERA_ID(object):
+    UNDEFINED = 0
+    AERIAL = 1
+    TRAJECTORY = 2
+
+class DestroyTimerViewState(object):
+    __slots__: tuple
+    code: Any
+    totalTime: Any
+    level: Any
+    startTime: Any
+    def __init__(self, code, totalTime, level, startTime=None):
+        ...
+    def needToShow(self):
+        ...
+    def needToCloseTimer(self):
+        ...
+    def needToCloseAll(self):
+        ...
+    @classmethod
+    def makeCloseTimerState(cls, code):
+        ...
+    @classmethod
+    def makeCloseAllState(cls):
+        ...
+    def __repr__(self):
+        ...
+
+class DeathZoneTimerViewState(object):
+    __slots__: tuple
+    zoneID: Any
+    isCausingDamage: Any
+    totalTime: Any
+    level: Any
+    finishTime: Any
+    entered: Any
+    def __init__(self, zoneID, isCausingDamage, totalTime, level, finishTime, entered=None):
+        ...
+    def needToShow(self):
+        ...
+    def needToCloseTimer(self):
+        ...
+    def needToCloseAll(self):
+        ...
+    @classmethod
+    def makeCloseTimerState(cls, zoneID, isCausingDamage=False):
+        ...
+    @classmethod
+    def makeCloseAllState(cls):
+        ...
+
+class BonusRibbonLabel(CONST_CONTAINER):
+    NO_BONUS = -1
+    BASE_BONUS_LABEL = 0
+
+def getBattleCtrlName(ctrlID):
+    ...
+def makeExtraName(entityName):
+    ...

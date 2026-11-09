@@ -1,0 +1,133 @@
+{
+  "rid": "R.views.halloween.mono.lobby.tooltips.simple_format_tooltip",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "simple_format_tooltip",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/tooltips/simple_format_tooltip",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/simple_format_tooltip/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/simple_format_tooltip/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "simple_format_tooltip.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/simple_format_tooltip/simple_format_tooltip.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/simple_format_tooltip/simple_format_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "simple_format_tooltip.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/simple_format_tooltip/simple_format_tooltip.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/simple_format_tooltip/simple_format_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/css.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/css.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/tooltips/simple_format_tooltip/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/simple_format_tooltip/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/tooltips/simple_format_tooltip/simple_format_tooltip.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/tooltips/simple_format_tooltip/simple_format_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.tooltips.simple_format_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.halloween.mono.lobby.tooltips.simple_format_tooltip no Python",
+      "ViewModel HangarCarouselVehicleViewModel (model=... no Python da view): 0/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/tooltips/simple_format_tooltip.py",
+        15
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/widgets/carousel_view.py",
+        94
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/tooltips/simple_format_tooltip.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/widgets/carousel_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/widgets/hangar_carousel_vehicle_view_model.py",
+      "class": "HangarCarouselVehicleViewModel",
+      "chain": [
+        "HangarCarouselVehicleViewModel"
+      ],
+      "properties": [
+        [
+          "intCD",
+          "Number"
+        ],
+        [
+          "invID",
+          "Number"
+        ],
+        [
+          "name",
+          "String"
+        ],
+        [
+          "iconName",
+          "String"
+        ],
+        [
+          "hasDaily",
+          "Bool"
+        ],
+        [
+          "vehicleType",
+          "String"
+        ],
+        [
+          "vehicleState",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 7,
+        "missing": [
+          "hasDaily",
+          "iconName",
+          "intCD",
+          "invID",
+          "name",
+          "vehicleState",
+          "vehicleType"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/widgets/hangar_carousel_view_model.py"
+      ]
+    }
+  }
+}

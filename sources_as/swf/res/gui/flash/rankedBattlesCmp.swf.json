@@ -1,0 +1,593 @@
+{
+ "source": "sources/res/gui/flash/rankedBattlesCmp.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 6390813,
+ "actual_length": 6390813,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 106,
+  "ShowFrame": 4379,
+  "DefineShape": 106,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 14,
+  "PlaceObject2": 7112,
+  "RemoveObject2": 102,
+  "DefineShape3": 7,
+  "DefineBitsLossless2": 86,
+  "DefineEditText": 21,
+  "DefineSprite": 105,
+  "FrameLabel": 133,
+  "FileAttributes": 1,
+  "PlaceObject3": 1552,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 15,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 100,
+  "shapes": 115,
+  "sprites": 105,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 21,
+  "fonts": 0,
+  "classes": 46,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 341,
+   "class": "DivisionUI"
+  },
+  {
+   "id": 337,
+   "class": "DivisionProgressBlockUI"
+  },
+  {
+   "id": 336,
+   "class": "StepsContainer19UI"
+  },
+  {
+   "id": 335,
+   "class": "DivisionProgressRankRendererUI"
+  },
+  {
+   "id": 332,
+   "class": "DivisionRankShieldUI"
+  },
+  {
+   "id": 328,
+   "class": "DivisionsContainerUI"
+  },
+  {
+   "id": 327,
+   "class": "divisionContainerBg"
+  },
+  {
+   "id": 322,
+   "class": "DivisionSelectorUI"
+  },
+  {
+   "id": 321,
+   "class": "DivisionNameUI"
+  },
+  {
+   "id": 320,
+   "class": "DevisionSelectorHitMc"
+  },
+  {
+   "id": 317,
+   "class": "DevisionStatusUI"
+  },
+  {
+   "id": 310,
+   "class": "DivisionIconUI"
+  },
+  {
+   "id": 285,
+   "class": "LeagueIconUI"
+  },
+  {
+   "id": 256,
+   "class": "RankedBattlesPageHeaderUI"
+  },
+  {
+   "id": 252,
+   "class": "rankedBattlesCmp_fla.calendarMc_70"
+  },
+  {
+   "id": 247,
+   "class": "TitleSeparatorUI"
+  },
+  {
+   "id": 244,
+   "class": "RankedBattleStatsDeltaUI"
+  },
+  {
+   "id": 240,
+   "class": "RankedBattleStatsInfoUI"
+  },
+  {
+   "id": 234,
+   "class": "RankedHangarWidgetUI"
+  },
+  {
+   "id": 233,
+   "class": "WidgetStepsContainerUI"
+  },
+  {
+   "id": 230,
+   "class": "WidgetDivisionUI"
+  },
+  {
+   "id": 229,
+   "class": "WidgetLeagueUI"
+  },
+  {
+   "id": 207,
+   "class": "imgContainer"
+  },
+  {
+   "id": 206,
+   "class": "LeagueImageContainerUI"
+  },
+  {
+   "id": 205,
+   "class": "StatsDeltaUI"
+  },
+  {
+   "id": 202,
+   "class": "RankedBattleStatsUI"
+  },
+  {
+   "id": 196,
+   "class": "rankedBattlesCmp_fla.backFlash_81"
+  },
+  {
+   "id": 115,
+   "class": "WidgetBonusBattlesUI"
+  },
+  {
+   "id": 114,
+   "class": "BonusBattlesUI"
+  },
+  {
+   "id": 102,
+   "class": "WidgetBgUI"
+  },
+  {
+   "id": 92,
+   "class": "RankIcon19UI"
+  },
+  {
+   "id": 91,
+   "class": "RankShieldContainer19UI"
+  },
+  {
+   "id": 90,
+   "class": "RankShieldHuge19UI"
+  },
+  {
+   "id": 89,
+   "class": "rankedBattlesCmp_fla.shieldReflect2_49"
+  },
+  {
+   "id": 85,
+   "class": "rankedBattlesCmp_fla.ani_spark2_48"
+  },
+  {
+   "id": 83,
+   "class": "rankedBattlesCmp_fla.lots_sparks_47"
+  },
+  {
+   "id": 79,
+   "class": "rankedBattlesCmp_fla.ani_spark_44"
+  },
+  {
+   "id": 62,
+   "class": "RankShieldMedium19UI"
+  },
+  {
+   "id": 41,
+   "class": "StepArrow19UI"
+  },
+  {
+   "id": 39,
+   "class": "rankedBattlesCmp_fla.stepShineHuge_101"
+  },
+  {
+   "id": 33,
+   "class": "rankedBattlesCmp_fla.stepNormalHuge_100"
+  },
+  {
+   "id": 26,
+   "class": "rankedBattlesCmp_fla.stepBlink_97"
+  },
+  {
+   "id": 18,
+   "class": "rankedBattlesCmp_fla.stepShine_93"
+  },
+  {
+   "id": 8,
+   "class": "rankedBattlesCmp_fla.stepShineSmall_88"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 11627,
+   "classes": 46,
+   "methods": 213,
+   "bodies": 213,
+   "code_bytes": 4187
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Sine",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DevisionSelectorHitMc",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TitleSeparatorUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DivisionNameUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.divisionSelector.DivisionSelectorName",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WidgetBgUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesCmp_fla.ani_spark2_48",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesCmp_fla.ani_spark_44",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesCmp_fla.backFlash_81",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesCmp_fla.calendarMc_70",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesCmp_fla.lots_sparks_47",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesCmp_fla.shieldReflect2_49",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesCmp_fla.stepBlink_97",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesCmp_fla.stepNormalHuge_100",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesCmp_fla.stepShineHuge_101",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesCmp_fla.stepShineSmall_88",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rankedBattlesCmp_fla.stepShine_93",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LeagueIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.league.LeagueIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankShieldContainer19UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.widget.RankShieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StepArrow19UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.StepArrow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BonusBattlesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.BonusBattles",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DivisionProgressBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.divisionProgress.DivisionProgressBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DivisionProgressRankRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.divisionProgress.DivisionProgressRankRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DivisionRankShieldUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.divisionProgress.DivisionRankShield",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DivisionSelectorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.divisionSelector.DivisionSelector",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DivisionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.divisionsContainer.Division",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DivisionsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.divisionsContainer.DivisionsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankIcon19UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.widget.RankIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankShieldHuge19UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.widget.RankShield",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankShieldMedium19UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.widget.RankShield",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattleStatsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.stats.RankedBattleStats",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattlesPageHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.RankedBattlesPageHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StepsContainer19UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.StepsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WidgetBonusBattlesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.widget.WidgetBonusBattles",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WidgetDivisionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.widget.WidgetDivision",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WidgetLeagueUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.widget.WidgetLeague",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "divisionContainerBg",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "imgContainer",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.ImageContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattleStatsDeltaUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.stats.RankedBattleStatsDelta",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattleStatsInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.stats.RankedBattleStatsInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WidgetStepsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.widget.WidgetStepsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DevisionStatusUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.divisionStatus.DivisionStatus",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DivisionIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.DivisionIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LeagueImageContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.widget.LeagueImageContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatsDeltaUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.widget.StatsDelta",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedHangarWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.components.widget.RankedBattlesHangarWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

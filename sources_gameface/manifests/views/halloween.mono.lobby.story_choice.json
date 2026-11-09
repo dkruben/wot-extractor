@@ -1,0 +1,107 @@
+{
+  "rid": "R.views.halloween.mono.lobby.story_choice",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "story_choice",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/story_choice",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/story_choice/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/story_choice/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/story_choice/bundle.js"
+    },
+    {
+      "name": "story_choice.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/story_choice/story_choice.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/story_choice/story_choice.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "story_choice.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/story_choice/story_choice.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/story_choice/story_choice.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/story_choice/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/story_choice/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/story_choice/story_choice.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/story_choice/story_choice.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose",
+    "onSelectSide"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.story_choice",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.halloween.mono.lobby.story_choice no Python",
+      "ViewModel StoryChoiceViewModel (model=... no Python da view): 2/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/story_choice.py",
+        29
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/shared/event_dispatcher.py",
+        165
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/story_choice.py",
+      "sources/res/halloween/scripts/client/halloween/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/story_choice_view_model.py",
+      "class": "StoryChoiceViewModel",
+      "chain": [
+        "StoryChoiceViewModel"
+      ],
+      "properties": [],
+      "commands": [
+        "onClose",
+        "onSelectSide"
+      ],
+      "coverage": {
+        "found": 2,
+        "total": 2,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

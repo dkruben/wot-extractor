@@ -1,0 +1,109 @@
+{
+ "source": "sources/res/gui/flash/confirmDialogCmpnts.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 6693,
+ "actual_length": 6693,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 2,
+  "ShowFrame": 2,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 2,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 6,
+  "DefineSprite": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 16,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 6,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 1,
+  "shapes": 2,
+  "sprites": 1,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 6,
+  "fonts": 0,
+  "classes": 1,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "windows.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 10,
+   "class": "ConfirmItemComponent_UI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4137,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 1449
+  }
+ ],
+ "classes": [
+  {
+   "name": "ConfirmItemComponent_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.ConfirmItemComponent",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

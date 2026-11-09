@@ -1,0 +1,206 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/arena_defs/10_hills.xml -->
+<root>
+	<name>#arenas:10_hills/name</name>
+	<description>#arenas:10_hills/description</description>
+	<geometry>spaces/10_hills</geometry>
+	<estimatedLoad>0.3</estimatedLoad>
+	<roundLength>900</roundLength>
+	<boundingBox>
+		<bottomLeft>-400.0 -400.0</bottomLeft>
+		<upperRight>400.0 400.0</upperRight>
+	</boundingBox>
+	<minimap>spaces/10_hills/mmap.dds</minimap>
+	<vehicleCamouflageKind>summer</vehicleCamouflageKind>
+	<defaultGroundEffect>None</defaultGroundEffect>
+	<umbraEnabled>1</umbraEnabled>
+	<batchingEnabled>0</batchingEnabled>
+	<wwmusicSetup>
+		<wwmusicLoading>music_mines_loading_screen</wwmusicLoading>
+		<wwmusicIntensive>music_mines_dron_intensive</wwmusicIntensive>
+		<wwmusicRelaxed>music_mines_dron_relaxed</wwmusicRelaxed>
+		<wwmusicStop>music_dron_stop</wwmusicStop>
+		<wwmusicEndbattleStop>music_dron_endbattle_stop</wwmusicEndbattleStop>
+		<wwmusicResultWin>music_mines_result_win</wwmusicResultWin>
+		<wwmusicResultDrawn>music_mines_result_drawn</wwmusicResultDrawn>
+		<wwmusicResultDefeat>music_mines_result_defeat</wwmusicResultDefeat>
+	</wwmusicSetup>
+	<wwambientSound>amb_map_10_hills_wind_summer</wwambientSound>
+	<soundRemapping>
+		<loadBanks>
+			<bank>
+				<name>env_Mountain.bnk</name>
+			</bank>
+		</loadBanks>
+	</soundRemapping>
+	<water>
+		<texScale>0</texScale>
+		<freqX>0</freqX>
+		<freqZ>0</freqZ>
+	</water>
+	<gameplayTypes>
+		<ctf>
+			<artilleryPreparationChance>0.0</artilleryPreparationChance>
+			<teamBasePositions>
+				<team1>
+					<position1>175.78372 -305.8484</position1>
+				</team1>
+				<team2>
+					<position1>-236.64932 329.63818</position1>
+				</team2>
+			</teamBasePositions>
+		</ctf>
+		<domination>
+			<teamSpawnPoints>
+				<team1>
+					<position>-14 -330</position>
+				</team1>
+				<team2>
+					<position>-177 305</position>
+				</team2>
+			</teamSpawnPoints>
+			<controlPoint>258.44855 132.45337</controlPoint>
+		</domination>
+		<assault2>
+			<roundLength>420</roundLength>
+			<winnerIfTimeout>1</winnerIfTimeout>
+			<winnerIfExtermination>1</winnerIfExtermination>
+			<teamSpawnPoints>
+				<team1>
+					<position>86.705 -311.497</position>
+				</team1>
+				<team2>
+					<position>-172.927 264.269</position>
+				</team2>
+			</teamSpawnPoints>
+			<teamBasePositions>
+				<team1>
+					<position1>195.06473 -18.873474</position1>
+					<position2>-222.88567 -81.280106</position2>
+				</team1>
+				<team2 />
+			</teamBasePositions>
+		</assault2>
+		<maps_training>
+			<teamBasePositions>
+				<team1>
+					<position1>175.78372 -305.8484</position1>
+				</team1>
+				<team2>
+					<position1>-236.64932 329.63818</position1>
+				</team2>
+			</teamBasePositions>
+		</maps_training>
+		<comp7>
+			<visualScript>
+				<server>
+					<plan>PointsOfInterest/pointsOfInterest</plan>
+				</server>
+			</visualScript>
+			<recon>
+				<flyDirections>
+					<flyDirection>
+						<team>1</team>
+						<direction>0 0 1</direction>
+					</flyDirection>
+					<flyDirection>
+						<team>2</team>
+						<direction>0 0 1</direction>
+					</flyDirection>
+				</flyDirections>
+			</recon>
+			<minimap>spaces/10_hills/mmap_comp7.dds</minimap>
+			<pointsOfInterestUDO>
+				<point>
+					<position>-226.24397 -5.562868</position>
+					<type>1</type>
+				</point>
+				<point>
+					<position>184.46906 67.78953</position>
+					<type>1</type>
+				</point>
+				<point>
+					<position>79.613525 23.82218</position>
+					<type>2</type>
+				</point>
+				<point>
+					<position>-320.7138 -26.193348</position>
+					<type>1</type>
+				</point>
+			</pointsOfInterestUDO>
+			<teamSpawnPoints>
+				<team1>
+					<position>-19.039597 -292.89856</position>
+				</team1>
+				<team2>
+					<position>-62.687927 258.23715</position>
+				</team2>
+			</teamSpawnPoints>
+			<controlPoint>-72.87681 12.496384</controlPoint>
+		</comp7>
+	</gameplayTypes>
+	<roadMap />
+	<modules>
+		<common>
+			<module>BW::CgfCameraModule</module>
+			<module>BW::CollisionSceneModule</module>
+			<module>cgf::network::ClientNetworkModule</module>
+			<module>BW::CompoundModule</module>
+			<module>cgf::network::NetworkModule</module>
+			<module>vehicle::hierarchy::EntityHelpersModule</module>
+			<module>vehicle::hierarchy::VehicleHierarchyModule</module>
+			<module>BW::EffectsDebugModule</module>
+			<module>BW::ControlPointModule</module>
+			<module>BW::EntityFiltersModule</module>
+			<module>BW::EffectHandlersModule</module>
+			<module>BW::EffectsModule</module>
+			<module>BW::ArmorFlashlight::ArmorFlashlightModule</module>
+			<module>BW::VisibilityTunnelModule</module>
+			<module>BW::input::InputModule</module>
+			<module>BW::RompModule</module>
+			<module>cgf::events::EventsModule</module>
+			<module>cgf::FoundationModule</module>
+			<module>cgf::TriggersModule</module>
+			<module>BW::ConstraintsModule</module>
+			<module>BW::CGF::GenericComponentsModule</module>
+			<module>BW::tags::TagsModule</module>
+			<module>BW::variables::VariablesModule</module>
+			<module>vehicle::hierarchy::HierarchyModule</module>
+			<module>BW::DebugSoundRenderModule</module>
+			<module>cgf_debug_render::Module</module>
+			<module>BW::VisualScriptModule</module>
+			<module>BW::GameLogicModule</module>
+			<module>BW::SoundModule</module>
+			<module>BW::SoundSpatialModule</module>
+			<module>wot_physics::Module</module>
+			<module>BW::GpuDecalsModule</module>
+			<module>BW::WotRenderModule</module>
+			<module>BW::WULF::Module</module>
+			<module>BW::VehicleBasicModule</module>
+			<module>BW::VehicleCommonModule</module>
+			<module>BW::VehicleDrivetrainModule</module>
+			<module>BW::VehicleAudioModule</module>
+			<module>BW::VehicleTracksModule</module>
+			<module>BW::VehicleGunModule</module>
+			<module>script::AfterburningModule</module>
+			<module>script::ClientCommonModule</module>
+			<module>script::ClientUiModule</module>
+			<module>script::VehicleAppearanceModule</module>
+			<module>BW::SpaceZonesModule</module>
+			<module>script::AfterburningModule</module>
+			<module>script::CommonServerModule</module>
+			<module>script::VehicleRuleModule</module>
+			<module>script::ClientKillCamModule</module>
+			<module>script::ClientAbilitiesModule</module>
+			<module>script::RamDebugModule</module>
+			<module>script::VehicleSystemsModule</module>
+			<module>script::CommonScriptsModule</module>
+			<module>BW::ServerModule</module>
+			<module>BW::VehicleStatusesModule</module>
+			<module>BW::VehicleTriggersModule</module>
+			<module>BW::CGF::CGFBWCompatibilityModule</module>
+		</common>
+		<comp7>
+			<module>script::PointsOfInterestModule</module>
+		</comp7>
+	</modules>
+</root>

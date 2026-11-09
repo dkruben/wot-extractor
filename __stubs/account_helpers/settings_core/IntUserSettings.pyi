@@ -1,0 +1,39 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/account_helpers/settings_core/IntUserSettings.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from functools import partial as partial
+from future.utils import viewitems as viewitems
+import AccountCommands as AccountCommands
+from account_helpers.settings_core import longToInt32 as longToInt32
+from debug_utils import LOG_DEBUG as LOG_DEBUG, LOG_ERROR as LOG_ERROR
+
+class IntUserSettings(object):
+    __proxy: Any
+    __syncData: Any
+    __cache: Any
+    def __init__(self):
+        ...
+    def setProxy(self, proxy, syncData):
+        ...
+    def onProxyBecomePlayer(self):
+        ...
+    def onProxyBecomeNonPlayer(self):
+        ...
+    def isSynchronized(self):
+        ...
+    def synchronize(self, isFullSync, diff):
+        ...
+    def getCache(self, callback=None):
+        ...
+    def get(self, key, callback=None):
+        ...
+    def addIntSettings(self, dictIntSettings, callback=None):
+        ...
+    def delIntSettings(self, listIntKeys, callback=None):
+        ...
+    def __onGetResponse(self, statName, callback, resultID):
+        ...
+    def __onGetCacheResponse(self, callback, resultID):
+        ...

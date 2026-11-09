@@ -1,0 +1,16 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/AutoreloaderSurgeController.def -->
+<root>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<Properties>
+		<abilityState>
+			<Type>AUTORELOADER_SURGE_STATE</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</abilityState>
+	</Properties>
+	<CellMethods>
+		<activate>
+			<Exposed>OWN_CLIENT</Exposed>
+		</activate>
+	</CellMethods>
+	<DefaultKeyName>autoreloaderSurgeController</DefaultKeyName>
+</root>

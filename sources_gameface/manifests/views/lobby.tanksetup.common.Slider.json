@@ -1,0 +1,70 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.Slider",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Slider",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/Slider",
+  "feature": null,
+  "files": [
+    {
+      "name": "Slider.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Slider/Slider.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Slider/Slider.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Slider.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Slider/Slider.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Slider/Slider.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Slider.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Slider/Slider.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Slider/Slider.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/common/Slider/Slider.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/Slider/Slider.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Slider/Slider.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/Slider/Slider.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Slider/Slider.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.Slider",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

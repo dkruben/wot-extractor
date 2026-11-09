@@ -1,0 +1,140 @@
+{
+  "rid": "R.views.frontline.mono.lobby.progression_screen",
+  "rid_source": "sources/res/frontline/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "progression_screen",
+  "dir": "frontline/gui/gameface/_dist/production/mono/lobby/progression_screen",
+  "feature": "frontline",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/progression_screen/bundle.js",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/progression_screen/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/frontline/gui/gameface/_dist/production/mono/lobby/progression_screen/bundle.js"
+    },
+    {
+      "name": "progression_screen.css",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/progression_screen/progression_screen.css",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/progression_screen/progression_screen.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "progression_screen.html",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/progression_screen/progression_screen.html",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/progression_screen/progression_screen.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/chunks/custom_reward.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/chunks/custom_reward.css"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/chunks/level_badge.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/chunks/level_badge.css"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/progression_screen/bundle.js",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/progression_screen/bundle.js"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/progression_screen/progression_screen.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/progression_screen/progression_screen.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClaimRewards",
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.frontline.mono.lobby.progression_screen",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.frontline.mono.lobby.progression_screen no Python",
+      "ViewModel ProgressionScreenModel (model=... no Python da view): 11/11 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/progression_screen_view.py",
+        30
+      ],
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/states.py",
+        163
+      ]
+    ],
+    "python_files": [
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/progression_screen_view.py",
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/states.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/frontline/scripts/client/frontline/gui/impl/gen/view_models/views/lobby/views/progression_screen/progression_screen_model.py",
+      "class": "ProgressionScreenModel",
+      "chain": [
+        "ProgressionScreenModel"
+      ],
+      "properties": [
+        [
+          "frontlineState",
+          "String"
+        ],
+        [
+          "countdownSeconds",
+          "Number"
+        ],
+        [
+          "level",
+          "Number"
+        ],
+        [
+          "isMaxLevel",
+          "Bool"
+        ],
+        [
+          "currentPoints",
+          "Number"
+        ],
+        [
+          "neededPoints",
+          "Number"
+        ],
+        [
+          "amountRewardsToClaim",
+          "Number"
+        ],
+        [
+          "areRewardsJustEarned",
+          "Bool"
+        ],
+        [
+          "tiersSections",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClaimRewards",
+        "onClose"
+      ],
+      "coverage": {
+        "found": 11,
+        "total": 11,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

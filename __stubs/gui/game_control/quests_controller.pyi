@@ -1,0 +1,109 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/game_control/quests_controller.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import weakref as weakref
+import typing as typing
+from builtins import filter as filter
+from future.utils import listvalues as listvalues, viewvalues as viewvalues
+from constants import EVENT_TYPE as EVENT_TYPE, PremiumConfigs as PremiumConfigs
+from gui.ClientUpdateManager import g_clientUpdateManager as g_clientUpdateManager
+from gui.shared.gui_items import GUI_ITEM_TYPE as GUI_ITEM_TYPE
+from gui.shared.utils.requesters import REQ_CRITERIA as REQ_CRITERIA
+from helpers import dependency as dependency
+from items import getTypeOfCompactDescr as getTypeOfCompactDescr
+from skeletons.gui.game_control import IQuestsController as IQuestsController, IBattleRoyaleController as IBattleRoyaleController
+from skeletons.gui.lobby_context import ILobbyContext as ILobbyContext
+from skeletons.gui.server_events import IEventsCache as IEventsCache
+from skeletons.gui.shared import IItemsCache as IItemsCache
+from gui.server_events.events_helpers import isBattleMattersQuestID as isBattleMattersQuestID, isPremium as isPremium, isBattleRoyale as isBattleRoyale, isDailyEpic as isDailyEpic, isDailyQuest as isDailyQuest
+from gui.ranked_battles.ranked_helpers import isRankedQuestID as isRankedQuestID
+from Vehicle import Vehicle as Vehicle
+from gui.server_events.event_items import Quest as Quest
+_MAX_LVL_FOR_TUTORIAL = 3
+
+class _QuestCache(object):
+    __slots__: tuple
+    itemsCache: Any
+    lobbyContext: Any
+    __eventsCache: Any
+    __invVehicles: Any
+    __cache: Any
+    def __init__(self, eventsCache):
+        ...
+    def isNewbiePlayer(self):
+        ...
+    def getInventoryVehicles(self):
+        ...
+    def getAllAvailableQuests(self):
+        ...
+    def isAnyQuestAvailable(self):
+        ...
+    def getFirstAvailableQuest(self):
+        ...
+    def getQuestForVehicle(self, vehicle):
+        ...
+    def invalidate(self):
+        ...
+    def clear(self):
+        ...
+    def __update(self, vehicle=None):
+        ...
+    def __setInvVehicles(self):
+        ...
+    @classmethod
+    def __filterFunc(cls, event):
+        ...
+
+class QuestsController(IQuestsController):
+    __slots__: tuple
+    eventsCache: Any
+    lobbyContext: Any
+    __battleRoyaleController: Any
+    __quests: Any
+    def __init__(self):
+        ...
+    def fini(self):
+        ...
+    def onLobbyStarted(self, ctx):
+        ...
+    def onAvatarBecomePlayer(self):
+        ...
+    def onDisconnected(self):
+        ...
+    def isNewbiePlayer(self):
+        ...
+    def getInventoryVehicles(self):
+        ...
+    def getAllAvailableQuests(self):
+        ...
+    def isAnyQuestAvailable(self):
+        ...
+    def getFirstAvailableQuest(self):
+        ...
+    def getQuestForVehicle(self, vehicle):
+        ...
+    def getQuestGroups(self):
+        ...
+    def getCurrentModeQuestsForVehicle(self, vehicle, notCompleted=False):
+        ...
+    def __invalidateEventsData(self, *args):
+        ...
+    def __onServerSettingsChange(self, diff):
+        ...
+    def __onStatsUnlocked(self, ids):
+        ...
+    def __stop(self):
+        ...
+    def __clearCache(self):
+        ...
+    @classmethod
+    def _getEvents(cls):
+        ...
+    @classmethod
+    def _getGroups(cls):
+        ...
+
+def _isAvailableForMode(q):
+    ...

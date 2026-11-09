@@ -1,0 +1,51 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/120_graf_zeppelin/zones.xml -->
+<root>
+	<path>
+		<id>1518078728</id>
+		<name>path</name>
+		<node>
+			<name>District 4 - Zone 1</name>
+			<colour>0.8 0.2 0.572549 0.498039</colour>
+			<id>2063669485</id>
+			<transform>
+				<row0>300 0 0</row0>
+				<row1>0 100 0</row1>
+				<row2>0 0 600</row2>
+				<row3>490 50 -80</row3>
+			</transform>
+		</node>
+		<node>
+			<name>District 4 - Zone 3</name>
+			<colour>0.8 0.32549 0.2 0.498039</colour>
+			<id>17534664</id>
+			<transform>
+				<row0>140 0 0</row0>
+				<row1>0 100 0</row1>
+				<row2>0 0 240</row2>
+				<row3>270 50 20</row3>
+			</transform>
+		</node>
+		<node>
+			<name>District 4 - Zone 2</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>637112665</id>
+			<transform>
+				<row0>300 0 0</row0>
+				<row1>0 100 0</row1>
+				<row2>0 0 400</row2>
+				<row3>450 50 420</row3>
+			</transform>
+		</node>
+		<node>
+			<name>120_graf_zeppelin_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1726196977</id>
+			<transform>
+				<row0>100 0 0</row0>
+				<row1>0 75.50919 0</row1>
+				<row2>0 0 120</row2>
+				<row3>249.08766 9.073128 374.96655</row3>
+			</transform>
+		</node>
+	</path>
+</root>

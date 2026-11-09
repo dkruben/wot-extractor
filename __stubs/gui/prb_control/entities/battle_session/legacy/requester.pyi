@@ -1,0 +1,27 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/prb_control/entities/battle_session/legacy/requester.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from PlayerEvents import g_playerEvents as g_playerEvents
+from debug_utils import LOG_ERROR as LOG_ERROR
+from gui.prb_control import prb_getters as prb_getters
+from gui.prb_control.entities.base.requester import IPrbListRequester as IPrbListRequester
+from gui.prb_control.items import prb_seqs as prb_seqs
+
+class AutoInvitesRequester(IPrbListRequester):
+    __callback: Any
+    def __init__(self):
+        ...
+    def start(self, callback):
+        ...
+    def stop(self):
+        ...
+    def request(self, ctx=None):
+        ...
+    def getItem(self, prbID):
+        ...
+    def __pe_onPrbAutoInvitesChanged(self):
+        ...
+    def __fetchList(self):
+        ...

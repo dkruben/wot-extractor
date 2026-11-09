@@ -1,0 +1,46 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/dialogs/retrain_single_dialog_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from gui.impl.gen import R as R
+from gui.impl.gen.view_models.common.vehicle_info_model import VehicleInfoModel as VehicleInfoModel
+from gui.impl.gen.view_models.views.lobby.crew.dialogs.role_change_model import RoleChangeModel as RoleChangeModel
+from gui.impl.gen.view_models.views.lobby.crew.dialogs.tankman_skills_change_base_dialog_model import TankmanSkillsChangeBaseDialogModel as TankmanSkillsChangeBaseDialogModel
+
+class RetrainSingleDialogModel(TankmanSkillsChangeBaseDialogModel):
+    __slots__: tuple
+    onRoleCheckChanged: Any
+    onRoleSelected: Any
+    def __init__(self, properties=14, commands=4):
+        ...
+    @property
+    def targetVehicle(self):
+        ...
+    @staticmethod
+    def getTargetVehicleType():
+        ...
+    @property
+    def roleChange(self):
+        ...
+    @staticmethod
+    def getRoleChangeType():
+        ...
+    def getTitle(self):
+        ...
+    def setTitle(self, value):
+        ...
+    def getWarning(self):
+        ...
+    def setWarning(self, value):
+        ...
+    def getIsPriceSelected(self):
+        ...
+    def setIsPriceSelected(self, value):
+        ...
+    def getHasRetrainDiscount(self):
+        ...
+    def setHasRetrainDiscount(self, value):
+        ...
+    def _initialize(self):
+        ...

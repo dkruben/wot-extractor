@@ -1,0 +1,79 @@
+{
+  "rid": "R.views.dialogs.sub_views.content.SimpleTextContent",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SimpleTextContent",
+  "dir": "gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent",
+  "feature": null,
+  "files": [
+    {
+      "name": "SimpleTextContent.css",
+      "effective": "res/gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent/SimpleTextContent.css",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent/SimpleTextContent.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SimpleTextContent.html",
+      "effective": "res/gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent/SimpleTextContent.html",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent/SimpleTextContent.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SimpleTextContent.js",
+      "effective": "res/gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent/SimpleTextContent.js",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent/SimpleTextContent.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent/SimpleTextContent.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent/SimpleTextContent.css",
+      "key": "res/gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent/SimpleTextContent.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent/SimpleTextContent.js",
+      "key": "res/gui/gameface/_dist/production/dialogs/sub_views/content/SimpleTextContent/SimpleTextContent.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/dialogs/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/dialogs/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.dialogs.sub_views.content.SimpleTextContent",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.dialogs.sub_views.content.SimpleTextContent no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/dialogs/sub_views/content/simple_text_content.py",
+        12
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/dialogs/sub_views/content/simple_text_content.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

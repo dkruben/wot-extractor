@@ -1,0 +1,123 @@
+{
+  "rid": "R.views.halloween.mono.lobby.crew_showcase",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "crew_showcase",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase/bundle.js"
+    },
+    {
+      "name": "crew_showcase.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase/crew_showcase.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase/crew_showcase.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "crew_showcase.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase/crew_showcase.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase/crew_showcase.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/crew_view_template.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/crew_view_template.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase/crew_showcase.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/crew_showcase/crew_showcase.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClaim",
+    "onClose",
+    "onPlaySound",
+    "onShop"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.crew_showcase",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.halloween.mono.lobby.crew_showcase no Python",
+      "ViewModel CrewShowcaseViewModel (model=... no Python da view): 7/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/crew_showcase_view.py",
+        35
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/crew_showcase_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/crew_showcase_view_model.py",
+      "class": "CrewShowcaseViewModel",
+      "chain": [
+        "CrewShowcaseViewModel"
+      ],
+      "properties": [
+        [
+          "crewMembers",
+          "Array"
+        ],
+        [
+          "skills",
+          "Array"
+        ],
+        [
+          "groupVoiceover",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onClaim",
+        "onShop",
+        "onPlaySound"
+      ],
+      "coverage": {
+        "found": 7,
+        "total": 7,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/CaptureControl.def -->
+<root>
+	<Properties />
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>CaptureControl</DefaultKeyName>
+</root>

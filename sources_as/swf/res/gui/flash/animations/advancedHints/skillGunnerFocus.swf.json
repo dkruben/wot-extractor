@@ -1,0 +1,100 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillGunnerFocus.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 118395,
+ "actual_length": 118395,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 14,
+  "ShowFrame": 328,
+  "DefineShape": 10,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 807,
+  "RemoveObject2": 1,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 7,
+  "DefineSprite": 13,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 101,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 7,
+  "shapes": 113,
+  "sprites": 13,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillGunnerFocus_fla.MainTimeline"
+  },
+  {
+   "id": 83,
+   "class": "skillGunnerFocus_fla.slotActive_12"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 610,
+   "classes": 2,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 132
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillGunnerFocus_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillGunnerFocus_fla.slotActive_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

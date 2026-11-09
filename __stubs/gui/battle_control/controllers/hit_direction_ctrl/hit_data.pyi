@@ -1,0 +1,83 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/battle_control/controllers/hit_direction_ctrl/hit_data.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import math as math
+from gui.battle_control.battle_constants import HIT_FLAGS as HIT_FLAGS
+from constants import ATTACK_REASON_INDICES as ATTACK_REASON_INDICES, ATTACK_REASON as ATTACK_REASON
+from shared_utils import BitmaskHelper as BitmaskHelper
+from helpers import i18n as i18n
+from gui.Scaleform.locale.INGAME_GUI import INGAME_GUI as INGAME_GUI
+_HIT_YAW_MIN_SMOOTHING: Any
+_HIT_YAW_MAX_SMOOTHING: Any
+_NONE_PLAYER_ATTACK_REASON_TAG: dict
+
+class SimpleHitData(object):
+    __slots__: tuple
+    __yaw: Any
+    __attackerID: Any
+    __soundName: Any
+    def __init__(self, yaw=0, attackerID=0, soundName=None):
+        ...
+    def getYaw(self):
+        ...
+    def getAttackerID(self):
+        ...
+    def getSoundName(self):
+        ...
+    def extend(self, hitData):
+        ...
+
+class HitData(SimpleHitData):
+    __slots__: tuple
+    __damage: Any
+    __attackerVehName: Any
+    __attackerVehClassTag: Any
+    __playerVehMaxHP: Any
+    __attackReasonID: Any
+    __friendlyFireMode: Any
+    __critFlags: Any
+    __critsCount: Any
+    __hitFlags: Any
+    def __init__(self, yaw=0, attackerID=0, attackerVehName='', attackerVehClassTag=None, playerVehMaxHP=0, damage=0, critFlags=0, isAlly=False, isBlocked=False, isHighExplosive=False, attackReasonID=0, friendlyFireMode=False):
+        ...
+    def __repr__(self):
+        ...
+    def getAttackerVehicleClassTag(self):
+        ...
+    def getPlayerVehicleMaxHP(self):
+        ...
+    def getAttackerVehicleName(self):
+        ...
+    def getDamage(self):
+        ...
+    def getHitFlags(self):
+        ...
+    def getCriticalFlags(self):
+        ...
+    def getCritsCount(self):
+        ...
+    def isAttackerAlly(self):
+        ...
+    def isBlocked(self):
+        ...
+    def isCritical(self):
+        ...
+    def isHighExplosive(self):
+        ...
+    def isBattleConsumables(self):
+        ...
+    def isNonPlayerAttackReason(self):
+        ...
+    def isBattleAbilityConsumable(self):
+        ...
+    def isDamage(self):
+        ...
+    def isFriendlyFire(self):
+        ...
+    def extend(self, hitData):
+        ...
+    @staticmethod
+    def __buildFlags(attackerID, damage, isAlly, isBlocked, critFlags, isHighExplosive, attackReasonID):
+        ...

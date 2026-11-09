@@ -1,0 +1,131 @@
+{
+  "rid": "R.views.mono.battle_pass.tooltips.reward_compensation",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "reward_compensation",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation/bundle.js"
+    },
+    {
+      "name": "reward_compensation.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation/reward_compensation.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation/reward_compensation.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "reward_compensation.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation/reward_compensation.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation/reward_compensation.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation/reward_compensation.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/reward_compensation/reward_compensation.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.battle_pass.tooltips.reward_compensation",
+    "confidence": "provavel",
+    "evidence": [
+      "6 referencia(s) R.views.mono.battle_pass.tooltips.reward_compensation no Python",
+      "ViewModel BonusModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_bonuses_packers.py",
+        286
+      ],
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_bonuses_packers.py",
+        684
+      ],
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+        83
+      ],
+      [
+        "sources/res/scripts/client/gui/challenges/challenges_bonuses_packers.py",
+        36
+      ],
+      [
+        "sources/res/scripts/client/gui/challenges/challenges_decorators.py",
+        39
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/reward_compensation_tooltip.py",
+        17
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_bonuses_packers.py",
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+      "sources/res/scripts/client/gui/challenges/challenges_bonuses_packers.py",
+      "sources/res/scripts/client/gui/challenges/challenges_decorators.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/reward_compensation_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/common/bonus_model.py",
+      "class": "BonusModel",
+      "chain": [
+        "BonusModel"
+      ],
+      "properties": [
+        [
+          "localeName",
+          "String"
+        ],
+        [
+          "values",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "localeName",
+          "values"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/token_bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/reward_item_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/tooltips/reward_compensation_tooltip_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/vehicle_bonus_model.py"
+      ]
+    }
+  }
+}

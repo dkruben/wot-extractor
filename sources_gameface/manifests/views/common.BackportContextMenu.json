@@ -1,0 +1,216 @@
+{
+  "rid": "R.views.common.BackportContextMenu",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "BackportContextMenu",
+  "dir": "gui/gameface/_dist/production/common/BackportContextMenu",
+  "feature": null,
+  "files": [
+    {
+      "name": "BackportContextMenu.html",
+      "effective": "res/gui/gameface/_dist/production/common/BackportContextMenu/BackportContextMenu.html",
+      "all": [
+        "res/gui/gameface/_dist/production/common/BackportContextMenu/BackportContextMenu.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BackportContextMenu.js",
+      "effective": "res/gui/gameface/_dist/production/common/BackportContextMenu/BackportContextMenu.js",
+      "all": [
+        "res/gui/gameface/_dist/production/common/BackportContextMenu/BackportContextMenu.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/common/BackportContextMenu/BackportContextMenu.js",
+      "key": "res/gui/gameface/_dist/production/common/BackportContextMenu/BackportContextMenu.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.BackportContextMenu",
+    "confidence": "provavel",
+    "evidence": [
+      "15 referencia(s) R.views.common.BackportContextMenu no Python",
+      "ViewModel BarracksViewModel (model=... no Python da view): 0/20 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/battle_result_view/battle_result_view.py",
+        133
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/battle_results/submodel_presenters/team_statistics.py",
+        36
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/leaderboard_page.py",
+        66
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/submodel_presenters/team_statistics.py",
+        33
+      ],
+      [
+        "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/presenters/sub_presenters/team_statistics.py",
+        32
+      ],
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/presenters/sub_presenters/team_statistics.py",
+        32
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/battle_results/sub_presenters/fun_team_stats.py",
+        36
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/widgets/battle_result_stats.py",
+        62
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/widgets/battle_result_stats.py",
+        59
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_results/submodel_presenters/team_statistics.py",
+        30
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/barracks_view.py",
+        81
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/widget/crew_widget.py",
+        228
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/platoon/view/platoon_members_view.py",
+        177
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tank_setup/ammunition_panel/base_view.py",
+        60
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tank_setup/ammunition_setup/base.py",
+        61
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/battle_result_view/battle_result_view.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/battle_results/submodel_presenters/team_statistics.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/pages/leaderboard_page.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/submodel_presenters/team_statistics.py",
+      "sources/res/fort_rush/scripts/client/fort_rush/gui/impl/lobby/presenters/sub_presenters/team_statistics.py",
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/presenters/sub_presenters/team_statistics.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/battle_results/sub_presenters/fun_team_stats.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/widgets/battle_result_stats.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/widgets/battle_result_stats.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_results/submodel_presenters/team_statistics.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/barracks_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/widget/crew_widget.py",
+      "sources/res/scripts/client/gui/impl/lobby/platoon/view/platoon_members_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/tank_setup/ammunition_panel/base_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/tank_setup/ammunition_setup/base.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/barracks_view_model.py",
+      "class": "BarracksViewModel",
+      "chain": [
+        "BarracksViewModel"
+      ],
+      "properties": [
+        [
+          "berthsAmount",
+          "ViewModel"
+        ],
+        [
+          "itemsAmount",
+          "Number"
+        ],
+        [
+          "itemsOffset",
+          "Number"
+        ],
+        [
+          "tankmanList",
+          "Array"
+        ],
+        [
+          "isBerthsOnSale",
+          "Bool"
+        ],
+        [
+          "isBannerVisible",
+          "Bool"
+        ],
+        [
+          "hasFilters",
+          "Bool"
+        ],
+        [
+          "hasUndertrainedCrewMembers",
+          "Bool"
+        ],
+        [
+          "isCleanButtonEnabled",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onResetFilters",
+        "onRetireUndertrained",
+        "onBuyBerth",
+        "onTankmanSelected",
+        "onTankmanRecruit",
+        "onTankmanDismiss",
+        "onPlayTankmanVoiceover",
+        "onTankmanRestore",
+        "onLoadCards",
+        "showHangar",
+        "onNewTankmanHovered"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 20,
+        "missing": [
+          "berthsAmount",
+          "hasFilters",
+          "hasUndertrainedCrewMembers",
+          "isBannerVisible",
+          "isBerthsOnSale",
+          "isCleanButtonEnabled",
+          "itemsAmount",
+          "itemsOffset",
+          "onBuyBerth",
+          "onLoadCards",
+          "onNewTankmanHovered",
+          "onPlayTankmanVoiceover",
+          "onResetFilters",
+          "onRetireUndertrained",
+          "onTankmanDismiss",
+          "onTankmanRecruit",
+          "onTankmanRestore",
+          "onTankmanSelected",
+          "showHangar",
+          "tankmanList"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/common/crew_widget_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/platoon/slot_label_element_model.py"
+      ]
+    }
+  }
+}

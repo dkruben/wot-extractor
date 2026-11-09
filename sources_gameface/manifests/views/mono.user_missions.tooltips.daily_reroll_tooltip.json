@@ -1,0 +1,122 @@
+{
+  "rid": "R.views.mono.user_missions.tooltips.daily_reroll_tooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "daily_reroll_tooltip",
+  "dir": "gui/gameface/_dist/production/mono/user_missions/tooltips/daily_reroll_tooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_reroll_tooltip/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_reroll_tooltip/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "daily_reroll_tooltip.html",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_reroll_tooltip/daily_reroll_tooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_reroll_tooltip/daily_reroll_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/divider.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/divider.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/extended_tooltip_decorator.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/extended_tooltip_decorator.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/tooltips/daily_reroll_tooltip/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_reroll_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.user_missions.tooltips.daily_reroll_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.mono.user_missions.tooltips.daily_reroll_tooltip no Python",
+      "ViewModel DailyMissionsBlockModel (model=... no Python da view): 0/6 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/hub/tabs/basic/daily_section/presenters/daily_missions_block_presenter.py",
+        52
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/tooltips/daily_reroll_tooltip.py",
+        18
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/hub/tabs/basic/daily_section/presenters/daily_missions_block_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/tooltips/daily_reroll_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/user_missions/hub/tabs/basic_missions/daily/daily_missions_block_model.py",
+      "class": "DailyMissionsBlockModel",
+      "chain": [
+        "DailyMissionsBlockModel"
+      ],
+      "properties": [
+        [
+          "bonusMission",
+          "ViewModel"
+        ],
+        [
+          "missionsList",
+          "Array"
+        ],
+        [
+          "timeToNextRerol",
+          "Number"
+        ],
+        [
+          "areAllMissionsCompleted",
+          "Bool"
+        ],
+        [
+          "timeToMissionsUpdate",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onReroll"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 6,
+        "missing": [
+          "areAllMissionsCompleted",
+          "bonusMission",
+          "missionsList",
+          "onReroll",
+          "timeToMissionsUpdate",
+          "timeToNextRerol"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/user_missions/tooltips/daily_reroll_tooltip_model.py"
+      ]
+    }
+  }
+}

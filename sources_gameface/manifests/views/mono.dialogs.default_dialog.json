@@ -1,0 +1,71 @@
+{
+  "rid": "R.views.mono.dialogs.default_dialog",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "default_dialog",
+  "dir": "gui/gameface/_dist/production/mono/dialogs/default_dialog",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/dialogs/default_dialog/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/dialogs/default_dialog/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "default_dialog.html",
+      "effective": "res/gui/gameface/_dist/production/mono/dialogs/default_dialog/default_dialog.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/dialogs/default_dialog/default_dialog.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/dialogs/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/dialogs/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/dialogs/chunks/mono_dialog_template_button_model.css",
+      "key": "res/gui/gameface/_dist/production/mono/dialogs/chunks/mono_dialog_template_button_model.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/dialogs/default_dialog/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/dialogs/default_dialog/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.dialogs.default_dialog",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.mono.dialogs.default_dialog no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/dialogs/dialogs.py",
+        279
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dialogs/wot_plus/base_dialog.py",
+        20
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/reset_stats_dialog.py",
+        22
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/dialogs/dialogs.py",
+      "sources/res/scripts/client/gui/impl/lobby/dialogs/wot_plus/base_dialog.py",
+      "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/reset_stats_dialog.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

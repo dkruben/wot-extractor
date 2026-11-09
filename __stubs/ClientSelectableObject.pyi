@@ -1,0 +1,46 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/ClientSelectableObject.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import BigWorld as BigWorld
+import CGF as CGF
+import SoundGroups as SoundGroups
+from vehicle_systems.tankStructure import ColliderTypes as ColliderTypes
+from hangar_selectable_objects import ISelectableObject as ISelectableObject
+
+class ClientSelectableObject(BigWorld.Entity, ISelectableObject):
+    __name: Any
+    __enabled: Any
+    __edged: Any
+    model: Any
+    filter: Any
+    @property
+    def enabled(self):
+        ...
+    def __init__(self, name='ClientSelectableObject'):
+        ...
+    def prerequisites(self):
+        ...
+    def onEnterWorld(self, prereqs):
+        ...
+    def onLeaveWorld(self):
+        ...
+    def setEnable(self, enabled):
+        ...
+    def setHighlight(self, show):
+        ...
+    def onMouseDown(self):
+        ...
+    def onMouseUp(self):
+        ...
+    def onMouseClick(self):
+        ...
+    def _getModelHeight(self):
+        ...
+    def _getCollisionModelsPrereqs(self):
+        ...
+    def _addEdgeDetect(self):
+        ...
+    def _delEdgeDetect(self):
+        ...

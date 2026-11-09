@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/item_defs/fairplay_violation_types.xml -->
+<root>
+	<HALLOWEEN_DESERTER>
+		<violationType>DESERTER</violationType>
+	</HALLOWEEN_DESERTER>
+	<HALLOWEEN_AFK>
+		<violationType>AFK</violationType>
+	</HALLOWEEN_AFK>
+	<AFK_HW_WARNING_MSG>
+		<violationType>AFK</violationType>
+	</AFK_HW_WARNING_MSG>
+</root>

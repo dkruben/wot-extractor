@@ -1,0 +1,40 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/04_himmelsdorf/zones.xml -->
+<root>
+	<path>
+		<id>1481918057</id>
+		<name>path</name>
+		<node>
+			<name>comp7_flora_scale_patch_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>802419961</id>
+			<transform>
+				<row0>20 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 20</row2>
+				<row3>75.06778 1.410004 41.035076</row3>
+			</transform>
+		</node>
+		<node>
+			<name>04_himmelsdorf_pbh_z_01zz</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>861774271</id>
+			<transform>
+				<row0>68.268265 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 56.721973</row2>
+				<row3>313.31964 48.49631 -47.047356</row3>
+			</transform>
+		</node>
+		<node>
+			<name>04_himmelsdorf_sh_grid_patch_01</name>
+			<colour>0.2 0.8 0.4 0.1</colour>
+			<id>924665619</id>
+			<transform>
+				<row0>68.85471 0 0</row0>
+				<row1>0 71.545235 0</row1>
+				<row2>0 0 64.68869</row2>
+				<row3>-160.56546 -11.337862 -98.33175</row3>
+			</transform>
+		</node>
+	</path>
+</root>

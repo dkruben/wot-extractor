@@ -1,0 +1,42 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/battle_results/templates/__init__.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from gui.battle_results.components import base as base
+from gui.battle_results.templates.cybersport import CYBER_SPORT_BLOCK as CYBER_SPORT_BLOCK
+from gui.battle_results.templates.fortification import STRONGHOLD_BATTLE_COMMON_STATS_BLOCK as STRONGHOLD_BATTLE_COMMON_STATS_BLOCK
+from gui.battle_results.templates.fortification import STRONGHOLD_PERSONAL_STATS_BLOCK as STRONGHOLD_PERSONAL_STATS_BLOCK
+from gui.battle_results.templates.fortification import STRONGHOLD_TEAMS_STATS_BLOCK as STRONGHOLD_TEAMS_STATS_BLOCK
+from gui.battle_results.templates.regular import MULTI_TEAM_TABS_BLOCK as MULTI_TEAM_TABS_BLOCK
+from gui.battle_results.templates.regular import PROGRESSIVE_REWARD_VO as PROGRESSIVE_REWARD_VO
+from gui.battle_results.templates.regular import PRESTIGE_PROGRESS_VO as PRESTIGE_PROGRESS_VO
+from gui.battle_results.templates.regular import REGULAR_TABS_BLOCK as REGULAR_TABS_BLOCK
+from gui.battle_results.templates.regular import VEHICLE_PROGRESS_STATS_BLOCK as VEHICLE_PROGRESS_STATS_BLOCK
+from gui.battle_results.templates.regular import BATTLE_PASS_PROGRESS_STATS_BLOCK as BATTLE_PASS_PROGRESS_STATS_BLOCK
+from gui.battle_results.templates.regular import QUESTS_PROGRESS_STATS_BLOCK as QUESTS_PROGRESS_STATS_BLOCK
+from gui.battle_results.templates.regular import DOG_TAGS_PROGRESS_STATS_BLOCK as DOG_TAGS_PROGRESS_STATS_BLOCK
+from gui.battle_results.templates.regular import REGULAR_COMMON_STATS_BLOCK as REGULAR_COMMON_STATS_BLOCK
+from gui.battle_results.templates.regular import REGULAR_PERSONAL_STATS_BLOCK as REGULAR_PERSONAL_STATS_BLOCK
+from gui.battle_results.templates.regular import REGULAR_TEAMS_STATS_BLOCK as REGULAR_TEAMS_STATS_BLOCK
+from gui.battle_results.templates.regular import REGULAR_TEXT_STATS_BLOCK as REGULAR_TEXT_STATS_BLOCK
+from gui.battle_results.templates.regular import CLAN_TEXT_STATS_BLOCK as CLAN_TEXT_STATS_BLOCK
+from gui.battle_results.templates.regular import COMMENDATIONS_RECEIVED_VO as COMMENDATIONS_RECEIVED_VO
+from gui.battle_results.templates.ranked_battles import RANKED_COMMON_STATS_BLOCK as RANKED_COMMON_STATS_BLOCK
+from gui.battle_results.templates.ranked_battles import RANKED_TEAMS_STATS_BLOCK as RANKED_TEAMS_STATS_BLOCK
+from gui.battle_results.templates.ranked_battles import RANKED_RESULTS_BLOCK as RANKED_RESULTS_BLOCK
+from gui.battle_results.templates.ranked_battles import RANKED_PERSONAL_STATS_BLOCK as RANKED_PERSONAL_STATS_BLOCK
+from gui.battle_results.templates.ranked_battles import RANKED_RESULTS_STATUS_BLOCK as RANKED_RESULTS_STATUS_BLOCK
+from gui.battle_results.templates.ranked_battles import RANKED_RESULTS_TEAMS_STATS_BLOCK as RANKED_RESULTS_TEAMS_STATS_BLOCK
+from gui.battle_results.templates.ranked_battles import RANKED_ENABLE_ANIMATION_BLOCK as RANKED_ENABLE_ANIMATION_BLOCK
+from gui.battle_results.templates.ranked_battles import RANKED_SHOW_WIDGET_BLOCK as RANKED_SHOW_WIDGET_BLOCK
+from gui.battle_results.templates.ranked_battles import RANKED_RESULTS_STATE_BLOCK as RANKED_RESULTS_STATE_BLOCK
+from gui.battle_results.templates.epic import EPIC_TABS_BLOCK as EPIC_TABS_BLOCK
+from gui.battle_results.templates.epic import EPIC_COMMON_STATS_BLOCK as EPIC_COMMON_STATS_BLOCK
+from gui.battle_results.templates.epic import EPIC_PERSONAL_STATS_BLOCK as EPIC_PERSONAL_STATS_BLOCK
+from gui.battle_results.templates.epic import EPIC_TEAMS_STATS_BLOCK as EPIC_TEAMS_STATS_BLOCK
+from gui.battle_results.templates.maps_training import MAPS_TRAINING_RESULTS_BLOCK as MAPS_TRAINING_RESULTS_BLOCK
+from gui.impl import backport as backport
+from gui.impl.gen import R as R
+__all__: tuple
+TOTAL_VO_META: Any

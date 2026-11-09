@@ -1,0 +1,467 @@
+{
+ "source": "sources/res/gui/flash/vehicleCompareConfiguratorMain.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 131186,
+ "actual_length": 131186,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 44,
+  "ShowFrame": 579,
+  "DefineShape": 15,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 2,
+  "DefineShape2": 1,
+  "PlaceObject2": 397,
+  "RemoveObject2": 7,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 12,
+  "DefineEditText": 10,
+  "DefineSprite": 43,
+  "FrameLabel": 43,
+  "FileAttributes": 1,
+  "PlaceObject3": 40,
+  "ImportAssets2": 10,
+  "CSMTextSettings": 10,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 14,
+  "shapes": 18,
+  "sprites": 43,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 10,
+  "fonts": 0,
+  "classes": 33,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "FlagsLib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "vehicleParametersCmp.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "iconLibrary.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 85,
+   "class": "VehicleCompareConfiguratorMainUI"
+  },
+  {
+   "id": 84,
+   "class": "CamouflageButtonUI"
+  },
+  {
+   "id": 83,
+   "class": "vehicleCompareConfiguratorMain_fla.ShellButton_FocusIndicator_4"
+  },
+  {
+   "id": 79,
+   "class": "ClosableEquipmentSlotUI"
+  },
+  {
+   "id": 78,
+   "class": "VehConfParamRendererUI"
+  },
+  {
+   "id": 77,
+   "class": "vehicleCompareConfiguratorMain_fla.VehParamGlowUI_33"
+  },
+  {
+   "id": 76,
+   "class": "vehicleCompareConfiguratorMain_fla.VehParamGlowGreen_36"
+  },
+  {
+   "id": 72,
+   "class": "vehicleCompareConfiguratorMain_fla.VehParamGlowRed_34"
+  },
+  {
+   "id": 68,
+   "class": "vehicleCompareConfiguratorMain_fla.ParamShine_29"
+  },
+  {
+   "id": 54,
+   "class": "ClanProfileMainWindowViewImportsUI"
+  },
+  {
+   "id": 53,
+   "class": "VehicleCompareConfiguratorViewUI"
+  },
+  {
+   "id": 51,
+   "class": "ModificationsWidgetUI"
+  },
+  {
+   "id": 50,
+   "class": "EquipmentWidgetUI"
+  },
+  {
+   "id": 49,
+   "class": "VehConfModulesUI"
+  },
+  {
+   "id": 48,
+   "class": "VehConfModulesButtonUI"
+  },
+  {
+   "id": 44,
+   "class": "VehConfModuleUI"
+  },
+  {
+   "id": 39,
+   "class": "SkillsWidgetUI"
+  },
+  {
+   "id": 38,
+   "class": "VehConfParametersUI"
+  },
+  {
+   "id": 33,
+   "class": "VehicleModulesViewUI"
+  },
+  {
+   "id": 31,
+   "class": "VehConfBottomPanelUI"
+  },
+  {
+   "id": 30,
+   "class": "VehicleModulesTreeUI"
+  },
+  {
+   "id": 29,
+   "class": "VehicleModulesGraphicsUI"
+  },
+  {
+   "id": 28,
+   "class": "ModulesRootNodeUI"
+  },
+  {
+   "id": 21,
+   "class": "inHangarIconUI"
+  },
+  {
+   "id": 15,
+   "class": "VehicleModulesViewImportsUI"
+  },
+  {
+   "id": 14,
+   "class": "ModuleItemNodeUI"
+  },
+  {
+   "id": 11,
+   "class": "ModuleItemSelectorUI"
+  },
+  {
+   "id": 3,
+   "class": "ModuleFakeItemNodeUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 16279,
+   "classes": 33,
+   "methods": 176,
+   "bodies": 176,
+   "code_bytes": 5134
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Quadratic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Regular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModuleItemSelectorUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleModulesViewImportsUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "inHangarIconUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ClanProfileMainWindowViewImportsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleCompareConfiguratorMain_fla.ParamShine_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleCompareConfiguratorMain_fla.ShellButton_FocusIndicator_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleCompareConfiguratorMain_fla.VehParamGlowGreen_36",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleCompareConfiguratorMain_fla.VehParamGlowRed_34",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "vehicleCompareConfiguratorMain_fla.VehParamGlowUI_33",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleModulesGraphicsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.techtree.helpers.ModulesGraphics",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ClosableEquipmentSlotUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.configurator.ClosableEquipmentSlot",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehConfBottomPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.configurator.VehConfBottomPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehConfModuleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.configurator.VehConfModuleSlot",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehConfModulesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.configurator.VehConfModules",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleModulesTreeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.VehicleModulesTree",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CamouflageButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.configurator.CamouflageCheckBoxButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehConfModulesButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.configurator.VehConfModulesButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModuleFakeItemNodeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.techtree.nodes.FakeNode",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModuleItemNodeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.nodes.ModuleItemNode",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModulesRootNodeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.nodes.ModulesRootNode",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehConfParamRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.configurator.VehConfParamRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EquipmentWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.configurator.EquipmentWidget",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModificationsWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.configurator.ModificationsWidget",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SkillsWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.configurator.SkillsWidget",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleCompareConfiguratorViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.VehicleCompareConfiguratorView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleModulesViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.VehicleModulesView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehConfParametersUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.configurator.VehConfParameters",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleCompareConfiguratorMainUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCompare.VehicleCompareConfiguratorMain",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

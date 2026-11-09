@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/resource_well/extension.xml -->
+<root>
+	<FeatureName>resource_well</FeatureName>
+	<IsEnabled>true</IsEnabled>
+	<Personality>resource_well_personality</Personality>
+	<Components>
+		<StaticComponents>
+			<ResourceWellAccountComponent />
+		</StaticComponents>
+		<DynamicComponents />
+	</Components>
+</root>

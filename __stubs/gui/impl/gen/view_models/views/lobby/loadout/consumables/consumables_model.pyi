@@ -1,0 +1,29 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/loadout/consumables/consumables_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from frameworks.wulf import Array as Array
+from gui.impl.gen.view_models.views.lobby.loadout.base_loadout_model import BaseLoadoutModel as BaseLoadoutModel
+from gui.impl.gen.view_models.views.lobby.tank_setup.sub_views.consumable_slot_model import ConsumableSlotModel as ConsumableSlotModel
+
+class ConsumablesModel(BaseLoadoutModel):
+    __slots__: tuple
+    def __init__(self, properties=4, commands=1):
+        ...
+    def getHasChanges(self):
+        ...
+    def setHasChanges(self, value):
+        ...
+    def getAutoloadEnabled(self):
+        ...
+    def setAutoloadEnabled(self, value):
+        ...
+    def getConsumables(self):
+        ...
+    def setConsumables(self, value):
+        ...
+    @staticmethod
+    def getConsumablesType():
+        ...
+    def _initialize(self):
+        ...

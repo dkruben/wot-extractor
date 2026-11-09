@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/fort_rush/scripts/client/fort_rush/gui/impl/gen/view_models/feature/fun_random_rewards_view_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from gui.impl.gen.view_models.common.missions.bonuses.item_bonus_model import ItemBonusModel as ItemBonusModel
+
+class FunRandomRewardsViewModel(ViewModel):
+    __slots__: tuple
+    onClose: Any
+    def __init__(self, properties=3, commands=1):
+        ...
+    def getAssetsPointer(self):
+        ...
+    def setAssetsPointer(self, value):
+        ...
+    def getMainRewards(self):
+        ...
+    def setMainRewards(self, value):
+        ...
+    @staticmethod
+    def getMainRewardsType():
+        ...
+    def getAdditionalRewards(self):
+        ...
+    def setAdditionalRewards(self, value):
+        ...
+    @staticmethod
+    def getAdditionalRewardsType():
+        ...
+    def _initialize(self):
+        ...

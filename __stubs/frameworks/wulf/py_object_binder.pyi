@@ -1,0 +1,29 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/frameworks/wulf/py_object_binder.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+
+class PyObjectEntity(object):
+    __slots__: tuple
+    __cppObject: Any
+    def __init__(self, cppObject=None):
+        ...
+    @property
+    def proxy(self):
+        ...
+    def isBound(self):
+        ...
+    def unbind(self):
+        ...
+    def bind(self, cppObject):
+        ...
+    def _bind(self, cppObject):
+        ...
+    def _unbind(self):
+        ...
+
+def getProxy(object_):
+    ...
+def getObject(proxy):
+    ...

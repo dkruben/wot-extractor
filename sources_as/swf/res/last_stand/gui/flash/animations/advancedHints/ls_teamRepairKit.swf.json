@@ -1,0 +1,135 @@
+{
+ "source": "sources/res/last_stand/gui/flash/animations/advancedHints/ls_teamRepairKit.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 219619,
+ "actual_length": 219619,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 30,
+  "ShowFrame": 698,
+  "DefineShape": 19,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 3,
+  "PlaceObject2": 1009,
+  "RemoveObject2": 12,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 18,
+  "DefineSprite": 29,
+  "DefineMorphShape": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 18,
+  "shapes": 32,
+  "sprites": 29,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "ls_teamRepairKit_fla.MainTimeline"
+  },
+  {
+   "id": 78,
+   "class": "ls_teamRepairKit_fla.hpAllyIncreaseFull_29"
+  },
+  {
+   "id": 75,
+   "class": "ls_teamRepairKit_fla.slotFx_28"
+  },
+  {
+   "id": 69,
+   "class": "ls_teamRepairKit_fla.activeAbilityReloadImmediately_25"
+  },
+  {
+   "id": 9,
+   "class": "ls_teamRepairKit_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1269,
+   "classes": 5,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 330
+  }
+ ],
+ "classes": [
+  {
+   "name": "ls_teamRepairKit_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_teamRepairKit_fla.activeAbilityReloadImmediately_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_teamRepairKit_fla.hpAllyIncreaseFull_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_teamRepairKit_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_teamRepairKit_fla.slotFx_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

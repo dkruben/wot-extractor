@@ -1,0 +1,1 @@
+{"key":"res/gui/gameface/scripts/migration-ui/src/utils/pretty.ts","source":"sources/res/gui/gameface/scripts/migration-ui/src/utils/pretty.ts","kind":"ts_source","bytes":686,"encoding":"utf-8","lines":20,"imports":["child_process","effect","path"],"exports":["pretty"]}

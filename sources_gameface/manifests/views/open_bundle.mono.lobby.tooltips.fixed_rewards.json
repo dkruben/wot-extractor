@@ -1,0 +1,142 @@
+{
+  "rid": "R.views.open_bundle.mono.lobby.tooltips.fixed_rewards",
+  "rid_source": "sources/res/open_bundle/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "fixed_rewards",
+  "dir": "open_bundle/gui/gameface/_dist/production/mono/lobby/tooltips/fixed_rewards",
+  "feature": "open_bundle",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/tooltips/fixed_rewards/bundle.js",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/tooltips/fixed_rewards/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "fixed_rewards.css",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/tooltips/fixed_rewards/fixed_rewards.css",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/tooltips/fixed_rewards/fixed_rewards.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "fixed_rewards.html",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/tooltips/fixed_rewards/fixed_rewards.html",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/tooltips/fixed_rewards/fixed_rewards.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/base.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/base.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/tooltips/fixed_rewards/bundle.js",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/tooltips/fixed_rewards/bundle.js"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/tooltips/fixed_rewards/fixed_rewards.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/tooltips/fixed_rewards/fixed_rewards.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.open_bundle.mono.lobby.tooltips.fixed_rewards",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.open_bundle.mono.lobby.tooltips.fixed_rewards no Python",
+      "ViewModel MainViewModel (model=... no Python da view): 0/11 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/main_view.py",
+        78
+      ],
+      [
+        "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/tooltips/fixed_rewards_tooltip.py",
+        21
+      ]
+    ],
+    "python_files": [
+      "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/main_view.py",
+      "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/tooltips/fixed_rewards_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/gen/view_models/views/lobby/main_view_model.py",
+      "class": "MainViewModel",
+      "chain": [
+        "MainViewModel"
+      ],
+      "properties": [
+        [
+          "stepPrice",
+          "ViewModel"
+        ],
+        [
+          "bundleType",
+          "String"
+        ],
+        [
+          "startTime",
+          "Number"
+        ],
+        [
+          "finishTime",
+          "Number"
+        ],
+        [
+          "isInterrupted",
+          "Bool"
+        ],
+        [
+          "cells",
+          "Array"
+        ],
+        [
+          "fixedReward",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "play",
+        "onItemShown",
+        "showPreview",
+        "resetInterruption"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 11,
+        "missing": [
+          "bundleType",
+          "cells",
+          "finishTime",
+          "fixedReward",
+          "isInterrupted",
+          "onItemShown",
+          "play",
+          "resetInterruption",
+          "showPreview",
+          "startTime",
+          "stepPrice"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/gen/view_models/views/lobby/tooltips/fixed_rewards_tooltip_model.py"
+      ]
+    }
+  }
+}

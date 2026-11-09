@@ -1,0 +1,146 @@
+{
+  "rid": "R.views.lobby.awards.tooltips.RewardCompensationTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "RewardCompensationTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "RewardCompensationTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RewardCompensationTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RewardCompensationTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/awards/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/awards/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.awards.tooltips.RewardCompensationTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "8 referencia(s) R.views.lobby.awards.tooltips.RewardCompensationTooltip no Python",
+      "ViewModel BonusModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/common/lootboxes.py",
+        123
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/feature/fun_random_progression_view.py",
+        65
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/feature/fun_random_rewards_view.py",
+        43
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/feature/fun_random_tier_list_view.py",
+        49
+      ],
+      [
+        "sources/res/scripts/client/gui/Scaleform/daapi/view/tooltips/vehicle_builders.py",
+        65
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/bonuses_packers.py",
+        40
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/decorators.py",
+        90
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/decorators.py",
+        98
+      ]
+    ],
+    "python_files": [
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/common/lootboxes.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/feature/fun_random_progression_view.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/feature/fun_random_rewards_view.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/feature/fun_random_tier_list_view.py",
+      "sources/res/scripts/client/gui/Scaleform/daapi/view/tooltips/vehicle_builders.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/bonuses_packers.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/decorators.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/common/bonus_model.py",
+      "class": "BonusModel",
+      "chain": [
+        "BonusModel"
+      ],
+      "properties": [
+        [
+          "localeName",
+          "String"
+        ],
+        [
+          "values",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "localeName",
+          "values"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/token_bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/challenges/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/lootbox_system/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/marathon/bonus_model.py"
+      ]
+    }
+  }
+}

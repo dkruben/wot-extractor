@@ -1,0 +1,131 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineModificationPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 64563,
+ "actual_length": 64563,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 66,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 93,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 2,
+  "DefineSprite": 5,
+  "FrameLabel": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 1,
+  "shapes": 1,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 9,
+   "class": "FrontlineModificationPanelUI"
+  },
+  {
+   "id": 5,
+   "class": "iconMc"
+  },
+  {
+   "id": 4,
+   "class": "titleTxt"
+  },
+  {
+   "id": 2,
+   "class": "descriptionTxt"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1986,
+   "classes": 4,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 366
+  }
+ ],
+ "classes": [
+  {
+   "name": "descriptionTxt",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.modificationPanel.components.FrontlineModificationInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "titleTxt",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.modificationPanel.components.FrontlineModificationInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "iconMc",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.modificationPanel.components.FrontlineModificationIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineModificationPanelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.modificationPanel.FrontlineModificationPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

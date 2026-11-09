@@ -1,0 +1,202 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlinePlatoonPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 15804,
+ "actual_length": 15804,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 18,
+  "ShowFrame": 104,
+  "DefineShape": 6,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 103,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 7,
+  "DefineEditText": 4,
+  "DefineSprite": 17,
+  "FrameLabel": 8,
+  "FileAttributes": 1,
+  "PlaceObject3": 18,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 7,
+  "shapes": 7,
+  "sprites": 17,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 10,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineSharedAssets.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 35,
+   "class": "PlatoonInviteRendererUI"
+  },
+  {
+   "id": 32,
+   "class": "frontlinePlatoonPanel_fla.inviteDropdownBG_3"
+  },
+  {
+   "id": 30,
+   "class": "PlayerInfoContainerUI"
+  },
+  {
+   "id": 29,
+   "class": "FSSquadAcceptBtUI"
+  },
+  {
+   "id": 24,
+   "class": "PlatoonMemberListItemUI"
+  },
+  {
+   "id": 10,
+   "class": "FrontlinePlatoonPanelUI"
+  },
+  {
+   "id": 9,
+   "class": "platoonInvitePanelUI"
+  },
+  {
+   "id": 8,
+   "class": "platoonMembersPanelUI"
+  },
+  {
+   "id": 6,
+   "class": "PlatoonPanelListUI"
+  },
+  {
+   "id": 1,
+   "class": "frontlinePlatoonPanel_fla.player_icon_png_0"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2871,
+   "classes": 10,
+   "methods": 39,
+   "bodies": 39,
+   "code_bytes": 682
+  }
+ ],
+ "classes": [
+  {
+   "name": "frontlinePlatoonPanel_fla.player_icon_png_0",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlatoonPanelListUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.list.PlatoonPanelList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlinePlatoonPanel_fla.inviteDropdownBG_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FSSquadAcceptBtUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.buttons.BattleButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlatoonMemberListItemUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.renderers.PlatoonMemberListItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "platoonInvitePanelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.components.PlatoonInvitePanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "platoonMembersPanelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.components.PlatoonMembersPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlatoonInviteRendererUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.renderers.PlatoonInviteRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerInfoContainerUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.renderers.PlayerInfoContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlinePlatoonPanelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlinePlatoonPanel.FrontlinePlatoonPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

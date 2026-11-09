@@ -1,0 +1,166 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillIntuition.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 139734,
+ "actual_length": 139734,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 26,
+  "ShowFrame": 1464,
+  "DefineShape": 17,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 4,
+  "PlaceObject2": 1753,
+  "RemoveObject2": 25,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 12,
+  "DefineSprite": 25,
+  "FileAttributes": 1,
+  "PlaceObject3": 5,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 3,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 12,
+  "shapes": 25,
+  "sprites": 25,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 8,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillIntuition_fla.MainTimeline"
+  },
+  {
+   "id": 61,
+   "class": "skillIntuition_fla.activeBullet1ProgressFast_25"
+  },
+  {
+   "id": 60,
+   "class": "skillIntuition_fla.activeBullet1ProgressSlow_24"
+  },
+  {
+   "id": 59,
+   "class": "skillIntuition_fla.slotActive_22"
+  },
+  {
+   "id": 56,
+   "class": "skillIntuition_fla.activeBullet2ProgressFast_21"
+  },
+  {
+   "id": 55,
+   "class": "skillIntuition_fla.crosshairReloadAnim2_20"
+  },
+  {
+   "id": 52,
+   "class": "skillIntuition_fla.activeBullet2ProgressSlow_17"
+  },
+  {
+   "id": 47,
+   "class": "skillIntuition_fla.crosshairReloadAnim_15"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1899,
+   "classes": 8,
+   "methods": 32,
+   "bodies": 32,
+   "code_bytes": 531
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillIntuition_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillIntuition_fla.activeBullet1ProgressFast_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillIntuition_fla.activeBullet1ProgressSlow_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillIntuition_fla.activeBullet2ProgressFast_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillIntuition_fla.activeBullet2ProgressSlow_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillIntuition_fla.crosshairReloadAnim2_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillIntuition_fla.crosshairReloadAnim_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillIntuition_fla.slotActive_22",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

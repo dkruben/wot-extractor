@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/29_el_hallouf/environments/06FB9661-4FCDC8A7-1771F591-1F2DDFCE/probes/global/rem_sh.xml -->
+<root>
+	<sh0>5.235381 4.70962 5.132148</sh0>
+	<sh1>-0.347783 1.22697 3.155317</sh1>
+	<sh2>0.504056 0.207238 -0.188236</sh2>
+	<sh3>0.969373 0.971639 1.019421</sh3>
+	<sh4>0.96652 1.003692 1.072654</sh4>
+	<sh5>0.355737 0.216139 -0.060592</sh5>
+	<sh6>0.077959 0.070927 0.041795</sh6>
+	<sh7>0.221204 -0.031272 -0.263736</sh7>
+	<sh8>0.19574 0.198796 0.122644</sh8>
+	<dominant_vector>0.754822 0.62951 0.184283</dominant_vector>
+	<max_lum>6.754055</max_lum>
+</root>

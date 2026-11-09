@@ -1,0 +1,54 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/common/quest_cache_helpers.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/common/quest_cache_helpers.py
+from __future__ import absolute_import
+import logging, time
+from constants import EVENT_TYPE, IS_CLIENT
+from debug_utils import LOG_WARNING
+import quest_xml_source
+from soft_exception import SoftException
+if IS_CLIENT:
+    from helpers import i18n
+else:
+    from web_stubs import i18n
+_logger = logging.getLogger(__name__)
+
+def makeI18nString(string):
+    return i18n.makeString(string)
+
+
+def _getEventName(eventType):
+    return EVENT_TYPE.TYPE_TO_NAME.get(eventType, '<wrong EVENT_TYPE>')
+
+
+def readQuestsFromFile(filePath, eventType, auxData=None):
+    xmlSource = quest_xml_source.Source()
+    nodes = xmlSource.readFromInternalFile(filePath, int(time.time()), auxData=auxData)
+    nodes = nodes.get(eventType, None)
+    questIDs = set()
+    if nodes is None:
+        _logger.info('No quests of type %s were found in %s.', _getEventName(eventType), filePath)
+        return
+    for node in nodes:
+        info = node.info
+        questID = info.get('id', None)
+        if not questID:
+            raise SoftException(('questID is not set for a quest in {}, eventType: {}').format(filePath, _getEventName(eventType)))
+        if questID in questIDs:
+            raise SoftException(('duplicate questID: {} in {}, eventType: {}').format(questID, filePath, _getEventName(eventType)))
+        questIDs.add(questID)
+        questData = info.get('questClientData', None)
+        if questData is None:
+            LOG_WARNING(filePath, ('"questClientData" not set for {} in {}').format(questID, filePath))
+            continue
+        questName = questData.get('name', None)
+        if questName:
+            questName = makeI18nString(questName.get('key', ''))
+        questDescr = questData.get('description', None)
+        if questDescr:
+            questDescr = makeI18nString(questDescr.get('key', ''))
+        yield (questID, questName, questDescr, questData, node)
+
+    return

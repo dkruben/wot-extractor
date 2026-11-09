@@ -1,0 +1,66 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/page/header/wot_plus_subscription_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from enum import Enum as Enum, IntEnum as IntEnum
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from gui.impl.gen.view_models.views.lobby.page.header.wot_plus_subscription_bonus_model import WotPlusSubscriptionBonusModel as WotPlusSubscriptionBonusModel
+
+class WotPlusTypeEnum(Enum):
+    NONE = 'None'
+    CORE = 'Core'
+    PRO = 'Pro'
+
+class WotPlusStateEnum(Enum):
+    INACTIVE = 'Inactive'
+    ACTIVE = 'Active'
+    CANCELLED = 'Cancelled'
+
+class WotPlusPeriodicityEnum(IntEnum):
+    P6MONTHS = 6
+    P12MONTHS = 12
+
+class WotPlusSubscriptionModel(ViewModel):
+    __slots__: tuple
+    def __init__(self, properties=8, commands=0):
+        ...
+    def getIsWotPlusEnabled(self):
+        ...
+    def setIsWotPlusEnabled(self, value):
+        ...
+    def getIsCrossPlatformCore(self):
+        ...
+    def setIsCrossPlatformCore(self, value):
+        ...
+    def getType(self):
+        ...
+    def setType(self, value):
+        ...
+    def getState(self):
+        ...
+    def setState(self, value):
+        ...
+    def getPeriodicity(self):
+        ...
+    def setPeriodicity(self, value):
+        ...
+    def getExpiryTime(self):
+        ...
+    def setExpiryTime(self, value):
+        ...
+    def getBenefits(self):
+        ...
+    def setBenefits(self, value):
+        ...
+    @staticmethod
+    def getBenefitsType():
+        ...
+    def getProBenefits(self):
+        ...
+    def setProBenefits(self, value):
+        ...
+    @staticmethod
+    def getProBenefitsType():
+        ...
+    def _initialize(self):
+        ...

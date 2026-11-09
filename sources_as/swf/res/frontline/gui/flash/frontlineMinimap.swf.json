@@ -1,0 +1,223 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineMinimap.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 14709,
+ "actual_length": 14709,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 27,
+  "ShowFrame": 285,
+  "DefineShape": 15,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 179,
+  "RemoveObject2": 13,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 14,
+  "DefineEditText": 7,
+  "DefineSprite": 26,
+  "FrameLabel": 16,
+  "FileAttributes": 1,
+  "PlaceObject3": 3,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 7,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 4,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 14,
+  "shapes": 19,
+  "sprites": 26,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 7,
+  "fonts": 0,
+  "classes": 12,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "epicMinimapEntriesLibrary.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 66,
+   "class": "frontlineMinimapImportsUI"
+  },
+  {
+   "id": 64,
+   "class": "MapModeButtonUI"
+  },
+  {
+   "id": 57,
+   "class": "MapModeOverviewButtonUI"
+  },
+  {
+   "id": 43,
+   "class": "FrontlineMinimapUI"
+  },
+  {
+   "id": 42,
+   "class": "MapShortcutLabelUI"
+  },
+  {
+   "id": 37,
+   "class": "frontlineMinimap_fla.changeOwnerAnim_9"
+  },
+  {
+   "id": 32,
+   "class": "frontlineMinimap_fla.overviewSectorHq_8"
+  },
+  {
+   "id": 27,
+   "class": "frontlineMinimap_fla.overviewSector_7"
+  },
+  {
+   "id": 22,
+   "class": "ShortcutLabelUI"
+  },
+  {
+   "id": 18,
+   "class": "frontlineMinimap_fla.mapZoomMode_25"
+  },
+  {
+   "id": 10,
+   "class": "FrontlineMinimapEntriesContainerUI"
+  },
+  {
+   "id": 8,
+   "class": "frontlineMinimapBackgroundUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3672,
+   "classes": 12,
+   "methods": 60,
+   "bodies": 60,
+   "code_bytes": 986
+  }
+ ],
+ "classes": [
+  {
+   "name": "frontlineMinimapImportsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineMinimap_fla.changeOwnerAnim_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineMinimap_fla.mapZoomMode_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineMinimap_fla.overviewSectorHq_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineMinimap_fla.overviewSector_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineMinimapEntriesContainerUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.minimap.containers.FrontlineMinimapEntriesContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineMinimapBackgroundUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UILoaderAlt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapShortcutLabelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.minimap.entries.MapShortcutLabel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShortcutLabelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.minimap.entries.ShortcutLabel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapModeButtonUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.RadioButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapModeOverviewButtonUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.RadioButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineMinimapUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.minimap.FrontlineMinimap",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

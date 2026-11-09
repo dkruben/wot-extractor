@@ -1,0 +1,79 @@
+{
+  "rid": "R.views.dialogs.sub_views.footer.SimpleTextFooter",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SimpleTextFooter",
+  "dir": "gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter",
+  "feature": null,
+  "files": [
+    {
+      "name": "SimpleTextFooter.css",
+      "effective": "res/gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter/SimpleTextFooter.css",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter/SimpleTextFooter.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SimpleTextFooter.html",
+      "effective": "res/gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter/SimpleTextFooter.html",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter/SimpleTextFooter.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SimpleTextFooter.js",
+      "effective": "res/gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter/SimpleTextFooter.js",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter/SimpleTextFooter.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter/SimpleTextFooter.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter/SimpleTextFooter.css",
+      "key": "res/gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter/SimpleTextFooter.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter/SimpleTextFooter.js",
+      "key": "res/gui/gameface/_dist/production/dialogs/sub_views/footer/SimpleTextFooter/SimpleTextFooter.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/dialogs/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/dialogs/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.dialogs.sub_views.footer.SimpleTextFooter",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.dialogs.sub_views.footer.SimpleTextFooter no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/dialogs/sub_views/footer/simple_text_footer.py",
+        12
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/dialogs/sub_views/footer/simple_text_footer.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

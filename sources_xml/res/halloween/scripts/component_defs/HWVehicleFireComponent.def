@@ -1,0 +1,10 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/component_defs/HWVehicleFireComponent.def -->
+<root>
+	<Properties />
+	<CellMethods />
+	<ClientMethods />
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>hwFire</DefaultKeyName>
+</root>

@@ -1,0 +1,91 @@
+/* wot-extractor: JavaScript FORMATADO a partir de sources/res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/common.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
+import{
+  r as e
+}
+from"./rolldown-runtime.js";
+import{
+  Er as s,Ka as l,Mi as t,Or as r,To as i,hi as a,kr as o,vo as d
+}
+from"./lib.js";
+import{
+  s as c
+}
+from"./vendor.js";
+import{
+  t as _
+}
+from"./story_point.js";
+import{
+  i as f,n,r as b,t as m
+}
+from"./sound.js";
+var p=e(c()),u=function(e){
+  return e.DEFAULT="default",e.SELECTED="selected",e
+}({}),g={
+  border:"DifficultyItem_border_3ef02768",base:"DifficultyItem_f9ea1d1b",base__hoverable:"DifficultyItem_base__hoverable_84d51887",content:"DifficultyItem_content_d2957dcf",storyPointsWrapper:"DifficultyItem_storyPointsWrapper_e7223a99",base__locked:"DifficultyItem_base__locked_84d51887",base__selected:"DifficultyItem_base__selected_84d51887",storyPointsGlow:"DifficultyItem_storyPointsGlow_865279f8",bgHelper:"DifficultyItem_bgHelper_e2cbb8de",bgHelper__selected:"DifficultyItem_bgHelper__selected_aa403705",bgHelper__hover:"DifficultyItem_bgHelper__hover_da7a02c3",bgHelper__default:"DifficultyItem_bgHelper__default_6128901",bgHelper__locked:"DifficultyItem_bgHelper__locked_fd5602d8",progress:"DifficultyItem_progress_c50db54a",progressIconWrapper:"DifficultyItem_progressIconWrapper_fb8bd451",progressIcon:"DifficultyItem_progressIcon_4ec65bf6",progressIcon__completed:"DifficultyItem_progressIcon__completed_4fedf01e",label:"DifficultyItem_label_e0bd4ef3",lock:"DifficultyItem_lock_63b24d89"
+},
+y=a(),v={
+  1:f,2:m,3:b
+},
+I=i.resolve("strings");
+function D({
+  level:e,state:i,isDisabled:a,isLocked:o,onClick:d,className:c,missionCount:f,modifier:b,completedMissions:m,isSearchingPlatoon:D
+}){
+  const j=r({
+    resId:R.aliases.last_stand.shared.Difficulty("resId"),contentId:R.views.last_stand.mono.lobby.tooltips.difficulty_tooltip("resId"),args:{
+      level:e,state:i,isLocked:o
+    },
+    disabled:a
+  }),h=s({
+    body:D?R.strings.last_stand_lobby.difficult.searching.body():R.strings.last_stand_lobby.difficult.disabled.body(),header:R.strings.last_stand_lobby.difficult.disabled.header(),disabled:!a
+  }),x=a?h:j,H=i===u.DEFAULT&&!o&&!a;
+  return(0,y.jsx)("div",{
+    className:(0,p.default)(g.base,g[`base__${i}`],o&&g.base__locked,H&&g.base__hoverable,c),...x,onMouseEnter:e=>{
+      x.onMouseEnter(e),i!==u.DEFAULT||a||o||l.sound(n)
+    },
+    onClick:()=>{
+      if(x.onClick(),i!==u.DEFAULT||a||o)return;
+      const s=v[e];
+      void 0!==s&&l.sound(s),d(e)
+    },
+    children:(0,y.jsxs)("div",{
+      className:g.content,children:[(0,y.jsxs)("div",{
+        className:g.storyPointsWrapper,children:[(0,y.jsx)(_,{
+          size:_.sizes.s16x16,modifier:b,withTimesSymbol:!0
+        }),(0,y.jsx)("div",{
+          className:g.storyPointsGlow
+        })]
+      }),(0,y.jsx)("div",{
+        className:g.border
+      }),(0,y.jsx)("div",{
+        className:(0,p.default)(g.bgHelper,g.bgHelper__selected)
+      }),i===u.DEFAULT&&!a&&!o&&(0,y.jsxs)(y.Fragment,{
+        children:[(0,y.jsx)("div",{
+          className:(0,p.default)(g.bgHelper,g.bgHelper__default)
+        }),(0,y.jsx)("div",{
+          className:(0,p.default)(g.bgHelper,g.bgHelper__hover)
+        })]
+      }),o&&(0,y.jsxs)(y.Fragment,{
+        children:[(0,y.jsx)("div",{
+          className:(0,p.default)(g.bgHelper,g.bgHelper__default)
+        }),(0,y.jsx)("div",{
+          className:(0,p.default)(g.bgHelper,g.bgHelper__locked)
+        })]
+      }),(0,y.jsx)("div",{
+        className:g.progress,children:t(f,e=>(0,y.jsx)("div",{
+          className:g.progressIconWrapper,children:(0,y.jsx)("div",{
+            className:(0,p.default)(g.progressIcon,m.includes(e.toString())&&g.progressIcon__completed)
+          })
+        },`icon_${e}`))
+      }),(0,y.jsx)("div",{
+        className:g.label,children:I.readOrEmpty(`R.strings.last_stand_lobby.difficult.uppercase.level_${e}`)
+      }),o&&(0,y.jsx)("div",{
+        className:g.lock
+      })]
+    })
+  })
+}
+var j=e(d(),1),h=e=>o("vehicleRoles",(0,j.useMemo)(()=>[e],[e]));
+export{
+  D as n,h as t
+};

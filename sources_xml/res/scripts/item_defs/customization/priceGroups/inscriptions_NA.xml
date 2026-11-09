@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/item_defs/customization/priceGroups/inscriptions_NA.xml -->
+<root>
+	<priceGroup>
+		<id>39</id>
+		<name>inscriptions 50g NA</name>
+		<tags>inscriptions NA</tags>
+		<price>50<gold />
+		</price>
+		<notInShop>False</notInShop>
+	</priceGroup>
+</root>

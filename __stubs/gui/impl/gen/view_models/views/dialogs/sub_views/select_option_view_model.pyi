@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/dialogs/sub_views/select_option_view_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from gui.impl.gen.view_models.views.dialogs.sub_views.select_option_base_item_view_model import SelectOptionBaseItemViewModel as SelectOptionBaseItemViewModel
+
+class SelectOptionViewModel(ViewModel):
+    __slots__: tuple
+    onClicked: Any
+    def __init__(self, properties=3, commands=1):
+        ...
+    def getItems(self):
+        ...
+    def setItems(self, value):
+        ...
+    @staticmethod
+    def getItemsType():
+        ...
+    def getSelectedIndexes(self):
+        ...
+    def setSelectedIndexes(self, value):
+        ...
+    @staticmethod
+    def getSelectedIndexesType():
+        ...
+    def getMessage(self):
+        ...
+    def setMessage(self, value):
+        ...
+    def _initialize(self):
+        ...

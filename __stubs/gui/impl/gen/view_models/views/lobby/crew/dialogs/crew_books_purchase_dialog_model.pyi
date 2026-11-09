@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/dialogs/crew_books_purchase_dialog_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from gui.impl.gen.view_models.views.dialogs.dialog_template_view_model import DialogTemplateViewModel as DialogTemplateViewModel
+from gui.impl.gen.view_models.views.dialogs.sub_views.currency_view_model import CurrencyViewModel as CurrencyViewModel
+
+class CrewBooksPurchaseDialogModel(DialogTemplateViewModel):
+    __slots__: tuple
+    onStepperChanged: Any
+    def __init__(self, properties=10, commands=3):
+        ...
+    @property
+    def bookPrice(self):
+        ...
+    @staticmethod
+    def getBookPriceType():
+        ...
+    def getBookName(self):
+        ...
+    def setBookName(self, value):
+        ...
+    def getIsBookPersonal(self):
+        ...
+    def setIsBookPersonal(self, value):
+        ...
+    def getExperience(self):
+        ...
+    def setExperience(self, value):
+        ...
+    def _initialize(self):
+        ...

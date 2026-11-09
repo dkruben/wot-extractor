@@ -1,0 +1,127 @@
+{
+  "rid": "R.views.last_stand.mono.lobby.prebattle_queue_view",
+  "rid_source": "sources/res/last_stand/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "prebattle_queue_view",
+  "dir": "last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view",
+  "feature": "last_stand",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view/bundle.js",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view/bundle.js"
+    },
+    {
+      "name": "prebattle_queue_view.css",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view/prebattle_queue_view.css",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view/prebattle_queue_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "prebattle_queue_view.html",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view/prebattle_queue_view.html",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view/prebattle_queue_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/common.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/common.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/story_point.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/story_point.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view/bundle.js",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view/bundle.js"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view/prebattle_queue_view.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/prebattle_queue_view/prebattle_queue_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "last_stand.mono.lobby.tooltips.difficulty_tooltip"
+  ],
+  "commands": [
+    "onEscape",
+    "onExitBattle",
+    "onMoveSpace",
+    "onOverScene"
+  ],
+  "link": {
+    "rid": "R.views.last_stand.mono.lobby.prebattle_queue_view",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.last_stand.mono.lobby.prebattle_queue_view no Python",
+      "ViewModel PreBattleQueueViewModel (model=... no Python da view): 8/8 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/pre_battle_queue_view.py",
+        44
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/states.py",
+        212
+      ]
+    ],
+    "python_files": [
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/pre_battle_queue_view.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/states.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/last_stand/scripts/client/last_stand/gui/impl/gen/view_models/views/lobby/pre_battle_queue_view_model.py",
+      "class": "PreBattleQueueViewModel",
+      "chain": [
+        "PreBattleQueueViewModel",
+        "SelectableViewModel"
+      ],
+      "properties": [
+        [
+          "selectedVehicle",
+          "ViewModel"
+        ],
+        [
+          "selectedDifficulty",
+          "ViewModel"
+        ],
+        [
+          "isExitButtonAvailable",
+          "Bool"
+        ],
+        [
+          "timerStartTime",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onExitBattle",
+        "onEscape",
+        "onMoveSpace",
+        "onOverScene"
+      ],
+      "coverage": {
+        "found": 8,
+        "total": 8,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

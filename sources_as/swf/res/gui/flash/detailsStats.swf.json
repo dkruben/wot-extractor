@@ -1,0 +1,245 @@
+{
+ "source": "sources/res/gui/flash/detailsStats.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 313584,
+ "actual_length": 313584,
+ "frame_size_px": [
+  0.0,
+  1017.0,
+  0.0,
+  601.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 21,
+  "ShowFrame": 160,
+  "DefineShape": 4,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 61,
+  "RemoveObject2": 5,
+  "DefineShape3": 6,
+  "DefineBitsLossless2": 7,
+  "DefineEditText": 27,
+  "DefineSprite": 20,
+  "FrameLabel": 14,
+  "FileAttributes": 1,
+  "PlaceObject3": 20,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 27,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 7,
+  "shapes": 12,
+  "sprites": 20,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 27,
+  "fonts": 0,
+  "classes": 13,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "teamStatsComponents.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 66,
+   "class": "EpicVehicleSelectionItemRendererUI"
+  },
+  {
+   "id": 54,
+   "class": "normalLine"
+  },
+  {
+   "id": 52,
+   "class": "smallLineUI"
+  },
+  {
+   "id": 50,
+   "class": "wideLine"
+  },
+  {
+   "id": 48,
+   "class": "DetailsStatsViewUI"
+  },
+  {
+   "id": 47,
+   "class": "EpicVehicleSelectionUI"
+  },
+  {
+   "id": 46,
+   "class": "BasicTileListUI"
+  },
+  {
+   "id": 41,
+   "class": "detailsStatsScrollPane"
+  },
+  {
+   "id": 40,
+   "class": "DetailsStats"
+  },
+  {
+   "id": 38,
+   "class": "CrystalDetailsUI"
+  },
+  {
+   "id": 31,
+   "class": "ResourceDetailsUI"
+  },
+  {
+   "id": 21,
+   "class": "CreditsDetailsUI"
+  },
+  {
+   "id": 15,
+   "class": "XpDetailsUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5123,
+   "classes": 13,
+   "methods": 57,
+   "bodies": 57,
+   "code_bytes": 1351
+  }
+ ],
+ "classes": [
+  {
+   "name": "normalLine",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smallLineUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "wideLine",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DetailsStats",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.DetailsStats",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DetailsStatsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.DetailsStatsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicVehicleSelectionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.epic.EpicDetailsVehicleSelection",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CreditsDetailsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.IncomeDetails",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrystalDetailsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.IncomeDetailsSmall",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ResourceDetailsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.IncomeDetailsShort",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BasicTileListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TileList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "XpDetailsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.TotalIncomeDetails",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "detailsStatsScrollPane",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.DetailsStatsScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicVehicleSelectionItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.TankResultItemRenderer",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,123 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/server_events/parsers.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import weakref as weakref
+import typing as typing
+from gui.server_events import formatters as formatters, conditions as conditions
+from gui.server_events.conditions import CumulativeResult as CumulativeResult, CLASS_TYPE as CLASS_TYPE
+from gui.shared.utils.requesters import REQ_CRITERIA as REQ_CRITERIA
+from helpers import dependency as dependency
+from skeletons.gui.shared import IItemsCache as IItemsCache
+from soft_exception import SoftException as SoftException
+from typing import Union as Union, List as List
+from gui.server_events.conditions import _ConditionsGroup as _ConditionsGroup, Cumulativable as Cumulativable
+
+class ConditionsParser(object):
+    LOGICAL_OPS: dict
+    NEGATIVE_OP = 'not'
+    _section: Any
+    _rootNode: Any
+    __rootName: Any
+    def __init__(self, section, rootName=''):
+        ...
+    def getConditions(self):
+        ...
+    def getSection(self):
+        ...
+    def clearCache(self):
+        ...
+    def forEachNodeInTree(self, handler):
+        ...
+    def _handleCondition(self, name, data, uniqueName, group):
+        ...
+    def _parse(self):
+        ...
+    def _parseNode(self, uniquePath, section, group, isNegative=False):
+        ...
+    def __forEachNode(self, group, handler):
+        ...
+
+class AccountRequirements(ConditionsParser):
+    _hasIgrCondition: Any
+    def __init__(self, section):
+        ...
+    def clearItemsCache(self):
+        ...
+    def _handleCondition(self, name, data, uniqueName, group):
+        ...
+    def isAvailable(self):
+        ...
+    def hasIGRCondition(self):
+        ...
+    def getTokens(self):
+        ...
+
+class TokenQuestAccountRequirements(AccountRequirements):
+    def _handleCondition(self, name, data, uniqueName, group):
+        ...
+
+class VehicleRequirements(ConditionsParser):
+    itemsCache: Any
+    _suitableVehicles: Any
+    def __init__(self, section):
+        ...
+    def clearItemsCache(self):
+        ...
+    def isAvailable(self, vehicle):
+        ...
+    def isAnyVehicleAcceptable(self):
+        ...
+    def getSuitableVehicles(self):
+        ...
+    def _handleCondition(self, name, data, uniqueName, group):
+        ...
+
+class PreBattleConditions(ConditionsParser):
+    def __init__(self, section):
+        ...
+    def _handleCondition(self, name, data, uniqueName, group):
+        ...
+
+class PostBattleConditions(ConditionsParser):
+    __preBattleCond: Any
+    def __init__(self, section, preBattleCond):
+        ...
+    def _handleCondition(self, name, data, uniqueName, group):
+        ...
+
+class BonusConditions(ConditionsParser):
+    itemsCache: Any
+    __preBattleCond: Any
+    _isDaily: Any
+    _isWeekly: Any
+    _bonusLimit: Any
+    _groupBy: Any
+    _inRow: Any
+    _progress: Any
+    def __init__(self, section, progress, preBattleCond):
+        ...
+    def isDaily(self):
+        ...
+    def isWeekly(self):
+        ...
+    def getBonusLimit(self):
+        ...
+    def getGroupByValue(self):
+        ...
+    def isInRow(self):
+        ...
+    def getProgress(self):
+        ...
+    def _handleCondition(self, name, data, uniqueName, group):
+        ...
+    def isGroupProgressCompleted(self, groupByKey):
+        ...
+
+class MapsTrainingPostBattleConditions(PostBattleConditions):
+    questID: Any
+    def __init__(self, section, preBattleCond, questID):
+        ...
+    def _handleCondition(self, name, data, uniqueName, group):
+        ...

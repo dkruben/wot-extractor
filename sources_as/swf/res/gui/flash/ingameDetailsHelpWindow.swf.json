@@ -1,0 +1,127 @@
+{
+ "source": "sources/res/gui/flash/ingameDetailsHelpWindow.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 70937,
+ "actual_length": 70937,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 5,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 10,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 5,
+  "DefineSprite": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 7,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 5,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 13,
+   "class": "IngameDetailsHelpWindowUI"
+  },
+  {
+   "id": 2,
+   "class": "IngameDetailsRoleActionUI"
+  },
+  {
+   "id": 0,
+   "class": "ingameDetailsHelpWindow_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3719,
+   "classes": 3,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 553
+  }
+ ],
+ "classes": [
+  {
+   "name": "ingameDetailsHelpWindow_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IngameDetailsRoleActionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.windows.components.IngameDetailsRoleAction",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IngameDetailsHelpWindowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.windows.IngameDetailsHelpWindow",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/shaders/formats/set3/xyznuvpc.xml -->
+<root>
+	<elements>
+		<POSITION />
+		<NORMAL>
+			<type>UBYTE4_NORMAL_8_8_8</type>
+		</NORMAL>
+		<TEXCOORD>
+			<type>FLOAT2</type>
+		</TEXCOORD>
+	</elements>
+</root>

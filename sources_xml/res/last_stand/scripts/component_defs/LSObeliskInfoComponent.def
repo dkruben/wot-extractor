@@ -1,0 +1,21 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/component_defs/LSObeliskInfoComponent.def -->
+<root>
+	<ClientMethods>
+		<onDamageReceived />
+		<onDeath />
+	</ClientMethods>
+	<CellMethods />
+	<Properties>
+		<isPresent>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isPresent>
+		<observedObeliskCD>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</observedObeliskCD>
+	</Properties>
+	<ofEntity>
+		<ArenaInfo />
+	</ofEntity>
+</root>

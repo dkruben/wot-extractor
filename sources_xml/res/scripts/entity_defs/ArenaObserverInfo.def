@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/ArenaObserverInfo.def -->
+<root>
+	<Implements />
+	<AppealRadius>3000</AppealRadius>
+	<Volatile />
+	<Properties />
+	<TempProperties />
+	<CellMethods />
+	<BaseMethods />
+	<shouldBackup>false</shouldBackup>
+</root>

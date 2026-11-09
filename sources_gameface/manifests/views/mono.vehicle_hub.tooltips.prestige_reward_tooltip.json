@@ -1,0 +1,98 @@
+{
+  "rid": "R.views.mono.vehicle_hub.tooltips.prestige_reward_tooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "prestige_reward_tooltip",
+  "dir": "gui/gameface/_dist/production/mono/vehicle_hub/tooltips/prestige_reward_tooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/prestige_reward_tooltip/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/prestige_reward_tooltip/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "prestige_reward_tooltip.css",
+      "effective": "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/prestige_reward_tooltip/prestige_reward_tooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/prestige_reward_tooltip/prestige_reward_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "prestige_reward_tooltip.html",
+      "effective": "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/prestige_reward_tooltip/prestige_reward_tooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/prestige_reward_tooltip/prestige_reward_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/vehicle_hub/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/vehicle_hub/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/vehicle_hub/chunks/veh_skill_tree.css",
+      "key": "res/gui/gameface/_dist/production/mono/vehicle_hub/chunks/veh_skill_tree.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/vehicle_hub/tooltips/prestige_reward_tooltip/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/prestige_reward_tooltip/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/vehicle_hub/tooltips/prestige_reward_tooltip/prestige_reward_tooltip.css",
+      "key": "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/prestige_reward_tooltip/prestige_reward_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.vehicle_hub.tooltips.prestige_reward_tooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.mono.vehicle_hub.tooltips.prestige_reward_tooltip no Python",
+      "ViewModel PrestigeRewardTooltipModel (model=... no Python da view): 1/1 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_skill_tree/tooltips/prestige_reward_tooltip.py",
+        16
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/vehicle_hub/sub_presenters/veh_skill_tree/prestige_presenter.py",
+        75
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/veh_skill_tree/tooltips/prestige_reward_tooltip.py",
+      "sources/res/scripts/client/gui/impl/lobby/vehicle_hub/sub_presenters/veh_skill_tree/prestige_presenter.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/veh_skill_tree/tooltips/prestige_reward_tooltip_model.py",
+      "class": "PrestigeRewardTooltipModel",
+      "chain": [
+        "PrestigeRewardTooltipModel"
+      ],
+      "properties": [
+        [
+          "rewards",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 1,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

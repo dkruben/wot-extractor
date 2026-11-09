@@ -1,0 +1,86 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/prb_control/entities/random/squad/entity.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import account_helpers as account_helpers
+from constants import MAX_VEHICLE_LEVEL as MAX_VEHICLE_LEVEL, MIN_VEHICLE_LEVEL as MIN_VEHICLE_LEVEL, PREBATTLE_TYPE as PREBATTLE_TYPE, QUEUE_TYPE as QUEUE_TYPE
+from gui.ClientUpdateManager import g_clientUpdateManager as g_clientUpdateManager
+from gui.prb_control.entities.base.pre_queue.vehicles_watcher import BaseVehiclesWatcher as BaseVehiclesWatcher
+from gui.prb_control.entities.base.squad.entity import SquadEntryPoint as SquadEntryPoint, SquadEntity as SquadEntity
+from gui.prb_control.entities.base.squad.mixins import SquadRestrictionsMixin as SquadRestrictionsMixin
+from gui.prb_control.entities.random.squad.actions_handler import RandomSquadActionsHandler as RandomSquadActionsHandler, BalancedSquadActionsHandler as BalancedSquadActionsHandler
+from gui.prb_control.entities.random.squad.actions_validator import VehTypeForbiddenSquadActionsValidator as VehTypeForbiddenSquadActionsValidator, VehTypeForbiddenBalancedSquadActionsValidator as VehTypeForbiddenBalancedSquadActionsValidator
+from gui.prb_control.events_dispatcher import g_eventDispatcher as g_eventDispatcher
+from gui.prb_control.items import SelectResult as SelectResult
+from gui.prb_control.items.unit_items import DynamicRosterSettings as DynamicRosterSettings
+from gui.prb_control.settings import PREBATTLE_ACTION_NAME as PREBATTLE_ACTION_NAME, FUNCTIONAL_FLAG as FUNCTIONAL_FLAG
+from helpers import dependency as dependency
+from skeletons.gui.lobby_context import ILobbyContext as ILobbyContext
+from skeletons.gui.server_events import IEventsCache as IEventsCache
+
+class BalancedSquadDynamicRosterSettings(DynamicRosterSettings):
+    _lowerBound: Any
+    _upperBound: Any
+    def __init__(self, unit, lowerBound=0, upperBound=0):
+        ...
+    def _extractSettings(self, unit):
+        ...
+    def _getVehicleLevels(self, vehicles):
+        ...
+
+class RandomSquadEntryPoint(SquadEntryPoint):
+    def __init__(self, accountsToInvite=None):
+        ...
+    def _doCreate(self, unitMgr, ctx):
+        ...
+
+class RandomSquadEntity(SquadEntity, SquadRestrictionsMixin):
+    eventsCache: Any
+    lobbyContext: Any
+    _isBalancedSquad: Any
+    _mmData: Any
+    __watcher: Any
+    def __init__(self):
+        ...
+    def init(self, ctx=None):
+        ...
+    def fini(self, ctx=None, woEvents=False):
+        ...
+    def getQueueType(self):
+        ...
+    def doAction(self, action=None):
+        ...
+    def doBattleQueue(self, ctx, callback=None):
+        ...
+    def isBalancedSquadEnabled(self):
+        ...
+    def getSquadLevelBounds(self):
+        ...
+    @property
+    def squadRestrictions(self):
+        ...
+    def unit_onUnitVehicleChanged(self, dbID, vehInvID, vehTypeCD):
+        ...
+    def unit_onUnitVehiclesChanged(self, dbID, vehicles):
+        ...
+    def unit_onUnitPlayerRoleChanged(self, playerID, prevRoleFlags, nextRoleFlags):
+        ...
+    def unit_onUnitPlayerRemoved(self, playerID, playerData):
+        ...
+    def doSelectAction(self, action):
+        ...
+    def _createRosterSettings(self):
+        ...
+    def _createActionsHandler(self):
+        ...
+    def _createActionsValidator(self):
+        ...
+    def _vehicleStateCondition(self, v):
+        ...
+    def _onServerSettingChanged(self, *args, **kwargs):
+        ...
+    def _onInventoryVehiclesUpdated(self, diff):
+        ...
+    def _onUnitMemberVehiclesChanged(self, accountDBID):
+        ...

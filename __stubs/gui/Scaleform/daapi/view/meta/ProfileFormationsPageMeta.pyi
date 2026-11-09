@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/ProfileFormationsPageMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.daapi.view.lobby.profile.ProfileSection import ProfileSection as ProfileSection
+
+class ProfileFormationsPageMeta(ProfileSection):
+    def showFort(self):
+        ...
+    def createFort(self):
+        ...
+    def onClanLinkNavigate(self, code):
+        ...
+    def as_setClanInfoS(self, clanInfo):
+        ...
+    def as_setFortInfoS(self, fortInfo):
+        ...
+    def as_setClanEmblemS(self, clanIcon):
+        ...

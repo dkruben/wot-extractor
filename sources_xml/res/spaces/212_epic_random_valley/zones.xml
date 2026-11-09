@@ -1,0 +1,18 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/212_epic_random_valley/zones.xml -->
+<root>
+	<path>
+		<id>3475060813</id>
+		<name>path</name>
+		<node>
+			<name>212_epic_random_valley_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3415829903</id>
+			<transform>
+				<row0>102.45826 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 100.82912</row2>
+				<row3>135.41815 18.075277 -6.217464</row3>
+			</transform>
+		</node>
+	</path>
+</root>

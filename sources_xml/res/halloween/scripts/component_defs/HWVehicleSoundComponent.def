@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/component_defs/HWVehicleSoundComponent.def -->
+<root>
+	<ClientMethods>
+		<onBossDamageReceived>
+			<Arg>OBJECT_ID</Arg>
+			<Arg>UINT8</Arg>
+			<Arg>INT16</Arg>
+		</onBossDamageReceived>
+	</ClientMethods>
+	<Properties />
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+</root>

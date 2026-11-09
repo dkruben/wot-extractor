@@ -1,0 +1,133 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/artillery.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 43,
+ "declared_length": 264826,
+ "actual_length": 264826,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 34,
+  "ShowFrame": 1483,
+  "DefineShape": 24,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 6,
+  "PlaceObject2": 2445,
+  "RemoveObject2": 31,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 27,
+  "DefineSprite": 33,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 27,
+  "shapes": 40,
+  "sprites": 33,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "artillery_fla.MainTimeline"
+  },
+  {
+   "id": 95,
+   "class": "artillery_fla.iconFxExplosion_29"
+  },
+  {
+   "id": 85,
+   "class": "artillery_fla.activeConsumableReload_25"
+  },
+  {
+   "id": 75,
+   "class": "artillery_fla.squaresFx_23"
+  },
+  {
+   "id": 9,
+   "class": "artillery_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1213,
+   "classes": 5,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 331
+  }
+ ],
+ "classes": [
+  {
+   "name": "artillery_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "artillery_fla.activeConsumableReload_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "artillery_fla.iconFxExplosion_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "artillery_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "artillery_fla.squaresFx_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

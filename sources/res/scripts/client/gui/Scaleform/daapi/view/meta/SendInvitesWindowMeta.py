@@ -1,0 +1,52 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/SendInvitesWindowMeta.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/daapi/view/meta/SendInvitesWindowMeta.py
+from gui.Scaleform.framework.entities.abstract.AbstractWindowView import AbstractWindowView
+
+class SendInvitesWindowMeta(AbstractWindowView):
+
+    def showError(self, value):
+        self._printOverrideError('showError')
+
+    def setOnlineFlag(self, value):
+        self._printOverrideError('setOnlineFlag')
+
+    def sendInvites(self, accountsToInvite, comment):
+        self._printOverrideError('sendInvites')
+
+    def getAllAvailableContacts(self):
+        self._printOverrideError('getAllAvailableContacts')
+
+    def as_onReceiveSendInvitesCooldownS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_onReceiveSendInvitesCooldown(value)
+
+    def as_setDefaultOnlineFlagS(self, onlineFlag):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setDefaultOnlineFlag(onlineFlag)
+
+    def as_setInvalidUserTagsS(self, tags):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setInvalidUserTags(tags)
+
+    def as_setWindowTitleS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setWindowTitle(value)
+
+    def as_onContactUpdatedS(self, contact):
+        if self._isDAAPIInited():
+            return self.flashObject.as_onContactUpdated(contact)
+
+    def as_onListStateChangedS(self, isEmpty):
+        if self._isDAAPIInited():
+            return self.flashObject.as_onListStateChanged(isEmpty)
+
+    def as_enableDescriptionS(self, isEnabled):
+        if self._isDAAPIInited():
+            return self.flashObject.as_enableDescription(isEnabled)
+
+    def as_enableMassSendS(self, isEnabled, addAllTooltip):
+        if self._isDAAPIInited():
+            return self.flashObject.as_enableMassSend(isEnabled, addAllTooltip)

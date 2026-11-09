@@ -1,0 +1,29 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/127_japort/zones.xml -->
+<root>
+	<path>
+		<id>3574791811</id>
+		<name>path</name>
+		<node>
+			<name>Zone 1</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3753823586</id>
+			<transform>
+				<row0>44.475307 0 0</row0>
+				<row1>0 44.475307 0</row1>
+				<row2>0 0 44.475307</row2>
+				<row3>64.11878 21.05474 -87.31633</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 2</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2724092972</id>
+			<transform>
+				<row0>123.27779 0 0</row0>
+				<row1>0 30.363598 0</row1>
+				<row2>0 0 116.192696</row2>
+				<row3>-77.22063 55.41737 -462.03363</row3>
+			</transform>
+		</node>
+	</path>
+</root>

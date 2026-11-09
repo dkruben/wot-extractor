@@ -1,0 +1,62 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/05_prohorovka/zones.xml -->
+<root>
+	<path>
+		<id>461080636</id>
+		<name>path</name>
+		<node>
+			<name>Zone 1</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>771142399</id>
+			<transform>
+				<row0>155.03566 0 0</row0>
+				<row1>0 39.00955 0</row1>
+				<row2>0 0 109.210945</row2>
+				<row3>87.66165 9.613911 -133.10956</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 2</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1334796129</id>
+			<transform>
+				<row0>148.83246 0 0</row0>
+				<row1>0 42.73603 0</row1>
+				<row2>0 0 122.60105</row2>
+				<row3>50.627956 8.272569 202.11037</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 3</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>713485598</id>
+			<transform>
+				<row0>40 0 0</row0>
+				<row1>0 30.159584 0</row1>
+				<row2>0 0 60</row2>
+				<row3>235.05179 5.698691 -160.02219</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 4</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2717170372</id>
+			<transform>
+				<row0>65 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 40</row2>
+				<row3>163.29112 2.956326 250.97864</row3>
+			</transform>
+		</node>
+		<node>
+			<name>05_prohorovka_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1929176</id>
+			<transform>
+				<row0>54.015205 0 0</row0>
+				<row1>0 54.015205 0</row1>
+				<row2>0 0 54.015205</row2>
+				<row3>144.78546 -14.730179 262.56418</row3>
+			</transform>
+		</node>
+	</path>
+</root>

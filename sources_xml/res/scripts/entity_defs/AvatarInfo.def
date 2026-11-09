@@ -1,0 +1,16 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/AvatarInfo.def -->
+<root>
+	<AppealRadius>3000</AppealRadius>
+	<Volatile />
+	<Properties>
+		<avatarID>
+			<Type>OBJECT_ID</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</avatarID>
+	</Properties>
+	<TempProperties />
+	<ClientMethods />
+	<CellMethods />
+	<BaseMethods />
+	<shouldBackup>false</shouldBackup>
+</root>

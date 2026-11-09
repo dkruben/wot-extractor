@@ -1,0 +1,18 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/hangar/TournamentsView.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/daapi/view/lobby/hangar/TournamentsView.py
+from __future__ import absolute_import
+from typing import TYPE_CHECKING
+from gui.Scaleform.daapi.view.lobby import BrowserView
+from gui.tournament.sound_constants import TOURNAMENTS_SOUND_SPACE
+if TYPE_CHECKING:
+    pass
+
+class TournamentsView(BrowserView):
+    __background_alpha__ = 1.0
+    _BROWSER_SOUND_SPACE = TOURNAMENTS_SOUND_SPACE
+
+    def _checkDestroy(self):
+        pass

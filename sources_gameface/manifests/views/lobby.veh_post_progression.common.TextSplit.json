@@ -1,0 +1,48 @@
+{
+  "rid": "R.views.lobby.veh_post_progression.common.TextSplit",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "TextSplit",
+  "dir": "gui/gameface/_dist/production/lobby/veh_post_progression/common/TextSplit",
+  "feature": null,
+  "files": [
+    {
+      "name": "TextSplit.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/TextSplit/TextSplit.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/TextSplit/TextSplit.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "TextSplit.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/TextSplit/TextSplit.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/TextSplit/TextSplit.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/common/TextSplit/TextSplit.js",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/common/TextSplit/TextSplit.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.veh_post_progression.common.TextSplit",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

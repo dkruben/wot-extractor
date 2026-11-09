@@ -1,0 +1,114 @@
+{
+  "rid": "R.views.frontline.mono.lobby.tooltips.level_reserves_tooltip",
+  "rid_source": "sources/res/frontline/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "level_reserves_tooltip",
+  "dir": "frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip",
+  "feature": "frontline",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip/bundle.js",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip/bundle.js"
+    },
+    {
+      "name": "level_reserves_tooltip.css",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip/level_reserves_tooltip.css",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip/level_reserves_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "level_reserves_tooltip.html",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip/level_reserves_tooltip.html",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip/level_reserves_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/chunks/divider.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/chunks/divider.css"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/chunks/head_decorator.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/chunks/head_decorator.css"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip/bundle.js",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip/bundle.js"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip/level_reserves_tooltip.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/level_reserves_tooltip/level_reserves_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.frontline.mono.lobby.tooltips.level_reserves_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.frontline.mono.lobby.tooltips.level_reserves_tooltip no Python",
+      "ViewModel RouterModel (model=... no Python da view): 0/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/hangar_view.py",
+        108
+      ],
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/tooltips/level_reserves_tooltip.py",
+        18
+      ]
+    ],
+    "python_files": [
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/hangar_view.py",
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/tooltips/level_reserves_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/router_model.py",
+      "class": "RouterModel",
+      "chain": [
+        "RouterModel"
+      ],
+      "properties": [
+        [
+          "route",
+          "String"
+        ],
+        [
+          "params",
+          "String"
+        ]
+      ],
+      "commands": [
+        "navigateTo",
+        "navigateBack"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 4,
+        "missing": [
+          "navigateBack",
+          "navigateTo",
+          "params",
+          "route"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

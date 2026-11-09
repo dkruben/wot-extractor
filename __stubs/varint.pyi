@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/common/varint.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from py2to3.moves.io import FastBytesIO as FastBytesIO
+from struct_helpers import unpackByte as unpackByte, packByte as packByte
+
+def encode_zigzag64(n):
+    ...
+def decode_zigzag(n):
+    ...
+def encode(number):
+    ...
+def decode_stream(stream):
+    ...
+def decode_bytes(buf):
+    ...
+def _read_one(stream):
+    ...

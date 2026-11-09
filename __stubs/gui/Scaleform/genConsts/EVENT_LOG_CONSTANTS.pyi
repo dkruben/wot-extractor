@@ -1,0 +1,87 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/genConsts/EVENT_LOG_CONSTANTS.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+
+class EVENT_LOG_CONSTANTS(object):
+    SST_EVENT_LOG = 0
+    SST_TOOLTIP = 2
+    SST_VIEWSTACK = 4
+    SST_CONTEXT_MENU = 8
+    SST_LOADER = 16
+    SST_HANDLE_INPUT = 32
+    SST_UI_COMMON = 128
+    SUB_SYSTEMS: list
+    EVENT_TYPE_CLICK = 'click'
+    EVENT_TYPE_ROLL_OVER = 'rollOver'
+    EVENT_TYPE_ROLL_OUT = 'rollOut'
+    EVENT_TYPE_MOUSE_DOWN = 'mouseDown'
+    EVENT_TYPE_MOUSE_UP = 'mouseUp'
+    EVENT_TYPE_DOUBLE_CLICK = 'doubleClick'
+    EVENT_TYPE_ITEM_BUTTON_CLICK = 'buttonClick'
+    EVENT_TYPE_ITEM_CLICK = 'itemClick'
+    EVENT_TYPE_ITEM_RIGHT_CLICK = 'itemRightClick'
+    EVENT_TYPE_ITEM_PRESS = 'itemPress'
+    EVENT_TYPE_ITEM_ROLL_OVER = 'itemRollOver'
+    EVENT_TYPE_ITEM_ROLL_OUT = 'itemRollOut'
+    EVENT_TYPE_ITEM_DOUBLE_CLICK = 'itemDoubleClick'
+    EVENT_TYPE_ITEM_INDEX_CHANGE = 'listIndexChange'
+    EVENT_TYPE_ITEM_DRAG_OVER = 'itemDragOver'
+    EVENT_TYPE_ITEM_DRAG_OUT = 'itemDragOut'
+    EVENT_TYPE_ITEM_RELEASE_OUTSIDE = 'itemReleaseOutside'
+    EVENT_TYPE_ON_WINDOW_OPEN = 'onWindowOpen'
+    EVENT_TYPE_ON_WINDOW_CLOSE = 'onWindowClose'
+    EVENT_TYPE_ON_WINDOW_MINIMIZE = 'onWindowMinimize'
+    EVENT_TYPE_ON_WINDOW_RESIZE = 'onWindowResize'
+    EVENT_TYPE_ON_DROPDOWN_OPEN = 'onDropDownOpen'
+    EVENT_TYPE_ON_DROPDOWN_CLOSE = 'onDropDownClose'
+    EVENT_TYPE_ON_TOOLTIP_SHOW = 'onToolTipShow'
+    EVENT_TYPE_ON_TOOLTIP_HIDE = 'onToolTipHide'
+    EVENT_TYPE_VIEWSTAK_ITEM_SHOW = 'onViewStackItemShow'
+    EVENT_TYPE_VIEWSTAK_ITEM_HIDE = 'onViewStackItemHide'
+    EVENT_TYPE_CONTEXT_MENU_SHOW = 'onContextMenuShow'
+    EVENT_TYPE_CONTEXT_MENU_HIDE = 'onContextMenuHide'
+    EVENT_TYPE_SYSTEM_MESSAGE_SHOW = 'onSystemMessgeShow'
+    EVENT_TYPE_SYSTEM_MESSAGE_HIDE = 'onSystemMessgeHide'
+    EVENT_TYPE_VIEW_LOADED = 'viewLoaded'
+    EVENT_TYPE_VIEW_UNLOADED = 'viewUnloaded'
+    EVENT_TYPE_HANDLER_INPUT_KEY_DOWN = 'keyDown'
+    EVENT_TYPE_HANDLER_INPUT_KEY_UP = 'keyUp'
+    EVENT_TYPE_DATA = 'data'
+    EVENT_TYPES: list
+    EVENT_CODE_CLICK = 0
+    EVENT_CODE_ROLL_OVER = 1
+    EVENT_CODE_ROLL_OUT = 2
+    EVENT_CODE_MOUSE_DOWN = 3
+    EVENT_CODE_MOUSE_UP = 4
+    EVENT_CODE_DOUBLE_CLICK = 5
+    EVENT_CODE_ITEM_BUTTON_CLICK = 6
+    EVENT_CODE_ITEM_CLICK = 7
+    EVENT_CODE_ITEM_RIGHT_CLICK = 8
+    EVENT_CODE_ITEM_PRESS = 9
+    EVENT_CODE_ITEM_ROLL_OVER = 10
+    EVENT_CODE_ITEM_ROLL_OUT = 11
+    EVENT_CODE_ITEM_DOUBLE_CLICK = 12
+    EVENT_CODE_ITEM_INDEX_CHANGE = 13
+    EVENT_CODE_ITEM_DRAG_OVER = 14
+    EVENT_CODE_ITEM_DRAG_OUT = 15
+    EVENT_CODE_ITEM_RELEASE_OUTSIDE = 16
+    EVENT_CODE_ON_WINDOW_OPEN = 32
+    EVENT_CODE_ON_WINDOW_CLOSE = 33
+    EVENT_CODE_ON_WINDOW_MINIMIZE = 34
+    EVENT_CODE_ON_WINDOW_RESIZE = 35
+    EVENT_CODE_ON_DROPDOWN_OPEN = 36
+    EVENT_CODE_ON_DROPDOWN_CLOSE = 37
+    EVENT_CODE_ON_TOOLTIP_SHOW = 128
+    EVENT_CODE_ON_TOOLTIP_HIDE = 129
+    EVENT_CODE_VIEWSTAK_ITEM_SHOW = 130
+    EVENT_CODE_VIEWSTAK_ITEM_HIDE = 131
+    EVENT_CODE_CONTEXT_MENU_SHOW = 132
+    EVENT_CODE_CONTEXT_MENU_HIDE = 133
+    EVENT_CODE_VIEW_LOADED = 134
+    EVENT_CODE_VIEW_UNLOADED = 135
+    EVENT_CODE_HANDLER_INPUT_KEY_DOWN = 256
+    EVENT_CODE_HANDLER_INPUT_KEY_UP = 257
+    EVENT_CODE_DATA = 4096
+    EVENT_CODES: list
+    IMAGINARY_UIID = 0

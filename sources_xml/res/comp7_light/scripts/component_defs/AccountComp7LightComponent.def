@@ -1,0 +1,6 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/comp7_light/scripts/component_defs/AccountComp7LightComponent.def -->
+<root>
+	<ofEntity>
+		<Account />
+	</ofEntity>
+</root>

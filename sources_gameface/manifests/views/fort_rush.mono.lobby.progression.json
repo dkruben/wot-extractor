@@ -1,0 +1,66 @@
+{
+  "rid": "R.views.fort_rush.mono.lobby.progression",
+  "rid_source": "sources/res/fort_rush/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "progression",
+  "dir": "fort_rush/gui/gameface/_dist/production/mono/lobby/progression",
+  "feature": "fort_rush",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/progression/bundle.js",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/progression/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/fort_rush/gui/gameface/_dist/production/mono/lobby/progression/bundle.js"
+    },
+    {
+      "name": "progression.css",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/progression/progression.css",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/progression/progression.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "progression.html",
+      "effective": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/progression/progression.html",
+      "all": [
+        "res/fort_rush/gui/gameface/_dist/production/mono/lobby/progression/progression.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/progression/bundle.js",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/progression/bundle.js"
+    },
+    {
+      "virtual": "fort_rush/gui/gameface/_dist/production/mono/lobby/progression/progression.css",
+      "key": "res/fort_rush/gui/gameface/_dist/production/mono/lobby/progression/progression.css"
+    }
+  ],
+  "engine": [
+    "call:SetRTPCGlobal"
+  ],
+  "child_views": [],
+  "commands": [
+    "onClose",
+    "onOpenTierList",
+    "onShowInfo"
+  ],
+  "link": {
+    "rid": "R.views.fort_rush.mono.lobby.progression",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

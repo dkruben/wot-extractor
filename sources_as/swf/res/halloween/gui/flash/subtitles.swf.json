@@ -1,0 +1,90 @@
+{
+ "source": "sources/res/halloween/gui/flash/subtitles.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 1243,
+ "actual_length": 1243,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 3,
+  "ShowFrame": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 5,
+  "DefineEditText": 4,
+  "DefineSprite": 2,
+  "FileAttributes": 1,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 2,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 1,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 6,
+   "class": "HWSubtitlesUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 638,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 72
+  }
+ ],
+ "classes": [
+  {
+   "name": "HWSubtitlesUI",
+   "kind": "class",
+   "extends": "net.wg.halloween.gui.battle.views.subtitles.HWSubtitles",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

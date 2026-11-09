@@ -1,0 +1,502 @@
+{
+ "source": "sources/res/gui/flash/epicMinimapEntriesLibrary.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 168391,
+ "actual_length": 168391,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 48,
+  "ShowFrame": 1801,
+  "DefineShape": 19,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 1859,
+  "RemoveObject2": 56,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 24,
+  "DefineSprite": 47,
+  "FrameLabel": 46,
+  "FileAttributes": 1,
+  "PlaceObject3": 41,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 24,
+  "shapes": 23,
+  "sprites": 47,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 38,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "epicSharedAssets.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 94,
+   "class": "HeadquarterAllyEntry"
+  },
+  {
+   "id": 93,
+   "class": "HeadquarterEntryDeploymentAlly"
+  },
+  {
+   "id": 92,
+   "class": "epicMinimapEntriesLibrary_fla.objectiveDefendAnimationMC_5"
+  },
+  {
+   "id": 91,
+   "class": "epicMinimapEntriesLibrary_fla.HQDefendMC_3"
+  },
+  {
+   "id": 85,
+   "class": "HeadquarterEnemyEntry"
+  },
+  {
+   "id": 84,
+   "class": "HeadquarterEntryDeploymentEnemy"
+  },
+  {
+   "id": 83,
+   "class": "FrontLinePointEntry"
+  },
+  {
+   "id": 82,
+   "class": "HeadquarterEntryDeployment"
+  },
+  {
+   "id": 81,
+   "class": "hqColorblindDestroyAnim"
+  },
+  {
+   "id": 80,
+   "class": "epicMinimapEntriesLibrary_fla.objectiveColorblindAnimationMC_11"
+  },
+  {
+   "id": 79,
+   "class": "epicMinimapEntriesLibrary_fla.HQColorblindMC_8"
+  },
+  {
+   "id": 73,
+   "class": "hqEnemyDestroyAnim"
+  },
+  {
+   "id": 72,
+   "class": "epicMinimapEntriesLibrary_fla.objectiveAttackAnimationMC_13"
+  },
+  {
+   "id": 71,
+   "class": "epicMinimapEntriesLibrary_fla.HQAttackMC_12"
+  },
+  {
+   "id": 65,
+   "class": "PositionFlashEntry"
+  },
+  {
+   "id": 60,
+   "class": "ReconEntry"
+  },
+  {
+   "id": 59,
+   "class": "sprtfortconsAtlasItemPlaceholder"
+  },
+  {
+   "id": 57,
+   "class": "ResupplyEntry"
+  },
+  {
+   "id": 50,
+   "class": "SectorBaseAllyEntry"
+  },
+  {
+   "id": 49,
+   "class": "SectorBaseEnemyEntry"
+  },
+  {
+   "id": 48,
+   "class": "SectorBaseEntryDeploymentAlly"
+  },
+  {
+   "id": 47,
+   "class": "epicMinimapEntriesLibrary_fla.baseDefendAnimationMC_28"
+  },
+  {
+   "id": 46,
+   "class": "epicMinimapEntriesLibrary_fla.baseDefendMC_26"
+  },
+  {
+   "id": 40,
+   "class": "SectorBaseEntryDeploymentEnemy"
+  },
+  {
+   "id": 39,
+   "class": "epicMinimapEntriesLibrary_fla.baseColorblindAnimationMC_35"
+  },
+  {
+   "id": 38,
+   "class": "epicMinimapEntriesLibrary_fla.baseColorblindMC_33"
+  },
+  {
+   "id": 32,
+   "class": "epicMinimapEntriesLibrary_fla.baseAttackAnimationMC_32"
+  },
+  {
+   "id": 31,
+   "class": "epicMinimapEntriesLibrary_fla.baseAttackMC_30"
+  },
+  {
+   "id": 25,
+   "class": "SectorBaseEntryDeployment"
+  },
+  {
+   "id": 22,
+   "class": "SectorEntry"
+  },
+  {
+   "id": 13,
+   "class": "SectorAirStrike"
+  },
+  {
+   "id": 12,
+   "class": "SectorAirSupport"
+  },
+  {
+   "id": 11,
+   "class": "SectorClosed"
+  },
+  {
+   "id": 10,
+   "class": "SectorFighting"
+  },
+  {
+   "id": 9,
+   "class": "SectorClosedHQ"
+  },
+  {
+   "id": 8,
+   "class": "SectorFightingHQ"
+  },
+  {
+   "id": 7,
+   "class": "SectorOverlayEntry"
+  },
+  {
+   "id": 2,
+   "class": "epicMinimapEntriesLibraryUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 8234,
+   "classes": 38,
+   "methods": 166,
+   "bodies": 166,
+   "code_bytes": 2702
+  }
+ ],
+ "classes": [
+  {
+   "name": "SectorAirStrike",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorAirSupport",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorClosed",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorClosedHQ",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorFighting",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorFightingHQ",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibraryUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sprtfortconsAtlasItemPlaceholder",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.HQAttackMC_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.HQColorblindMC_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.HQDefendMC_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.baseAttackAnimationMC_32",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.baseAttackMC_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.baseColorblindAnimationMC_35",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.baseColorblindMC_33",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.baseDefendAnimationMC_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.baseDefendMC_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.objectiveAttackAnimationMC_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.objectiveColorblindAnimationMC_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMinimapEntriesLibrary_fla.objectiveDefendAnimationMC_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hqColorblindDestroyAnim",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hqEnemyDestroyAnim",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontLinePointEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.FrontLinePointEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PositionFlashEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.personal.SimpleAttentionToFlashMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReconEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.ReconMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ResupplyEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.ResupplyMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.SectorMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorOverlayEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.SectorOverlayMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeadquarterAllyEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.HeadquarterMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeadquarterEnemyEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.HeadquarterMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeadquarterEntryDeployment",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.HeadquarterMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeadquarterEntryDeploymentAlly",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.HeadquarterMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeadquarterEntryDeploymentEnemy",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.HeadquarterMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorBaseAllyEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.SectorBaseMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorBaseEnemyEntry",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.SectorBaseMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorBaseEntryDeployment",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.SectorBaseMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorBaseEntryDeploymentAlly",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.SectorBaseMinimapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorBaseEntryDeploymentEnemy",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.components.entries.epic.SectorBaseMinimapEntry",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

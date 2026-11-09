@@ -1,0 +1,25 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/lobby/battle_results/missions_progress/progress_presenters_helpers.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from collections import namedtuple as namedtuple
+from constants import BATTLE_PROGRESS_CATEGORY as BATTLE_PROGRESS_CATEGORY
+from gui.battle_results.progress.progress_filters import dailyQuestsProgressFilter as dailyQuestsProgressFilter, weeklyQuestsProgressFilter as weeklyQuestsProgressFilter, battleMattersProgressFilter as battleMattersProgressFilter, prestigeProgressFilter as prestigeProgressFilter, battlePassProgressFilter as battlePassProgressFilter, personalMissionProgressFilter as personalMissionProgressFilter, vehicleProgressFilter as vehicleProgressFilter, commonBattleQuestsProgressFilter as commonBattleQuestsProgressFilter, challengesMissionsProgressFilter as challengesMissionsProgressFilter
+from gui.impl.lobby.battle_results.missions_progress.battle_matters_progress import BattleMattersProgressPresenter as BattleMattersProgressPresenter
+from gui.impl.lobby.battle_results.missions_progress.battle_pass_progress import BattlePassProgressPresenter as BattlePassProgressPresenter
+from gui.impl.lobby.battle_results.missions_progress.challenges_missions_progress import ChallengesMissionsProgressPresenter as ChallengesMissionsProgressPresenter
+from gui.impl.lobby.battle_results.missions_progress.common_battle_quests_progress import CommonBattleQuestsProgressPresenter as CommonBattleQuestsProgressPresenter
+from gui.impl.lobby.battle_results.missions_progress.daily_missions_progress import DailyMissionsProgressPresenter as DailyMissionsProgressPresenter
+from gui.impl.lobby.battle_results.missions_progress.prestige_progress import PrestigeProgressPresenter as PrestigeProgressPresenter
+from gui.impl.lobby.battle_results.missions_progress.weekly_missions_progress import WeeklyMissionsProgressPresenter as WeeklyMissionsProgressPresenter
+from gui.impl.lobby.battle_results.missions_progress.personal_missions_progress import PersonalMissionsProgressPresenter as PersonalMissionsProgressPresenter
+from gui.impl.lobby.battle_results.missions_progress.new_module_vehicle_progress import NewModuleVehicleProgressPresenter as NewModuleVehicleProgressPresenter
+from gui.shared.system_factory import registerProgressionPresenter as registerProgressionPresenter, collectProgressionPresenters as collectProgressionPresenters
+from helpers import dependency as dependency
+from skeletons.gui.server_events import IEventsCache as IEventsCache
+ProgressPresenterEntry: Any
+
+# decorador original: @dependency.replace_none_kwargs(...)
+def getProgressionCategoriesPresenters(eventsCache=None):
+    ...

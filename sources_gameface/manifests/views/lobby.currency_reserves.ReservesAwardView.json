@@ -1,0 +1,123 @@
+{
+  "rid": "R.views.lobby.currency_reserves.ReservesAwardView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ReservesAwardView",
+  "dir": "gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView",
+  "feature": null,
+  "files": [
+    {
+      "name": "ReservesAwardView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView/ReservesAwardView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView/ReservesAwardView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ReservesAwardView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView/ReservesAwardView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView/ReservesAwardView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ReservesAwardView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView/ReservesAwardView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView/ReservesAwardView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView/ReservesAwardView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/currency_reserves/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/currency_reserves/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView/ReservesAwardView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView/ReservesAwardView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView/ReservesAwardView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/currency_reserves/ReservesAwardView/ReservesAwardView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.currency_reserves.ReservesAwardView",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.currency_reserves.ReservesAwardView no Python",
+      "ViewModel ReservesAwardViewModel (model=... no Python da view): 0/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/currency_reserves/reserves_award_view.py",
+        87
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/currency_reserves/reserves_award_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/currency_reserves/reserves_award_view_model.py",
+      "class": "ReservesAwardViewModel",
+      "chain": [
+        "ReservesAwardViewModel"
+      ],
+      "properties": [
+        [
+          "creditAmount",
+          "Number"
+        ],
+        [
+          "goldAmount",
+          "Number"
+        ],
+        [
+          "showCreditWarning",
+          "Bool"
+        ],
+        [
+          "showGoldWarning",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onPremiumAccountExtend",
+        "onSubscriptionExtend"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 7,
+        "missing": [
+          "creditAmount",
+          "goldAmount",
+          "onClose",
+          "onPremiumAccountExtend",
+          "onSubscriptionExtend",
+          "showCreditWarning",
+          "showGoldWarning"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

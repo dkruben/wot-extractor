@@ -1,0 +1,153 @@
+{
+ "source": "sources/res/gui/flash/chevronsAnim.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 1426089,
+ "actual_length": 1426089,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 15,
+  "ShowFrame": 188,
+  "DefineShape": 7,
+  "DefineBits": 1,
+  "JPEGTables": 1,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 2,
+  "PlaceObject2": 168,
+  "RemoveObject2": 2,
+  "DefineBitsJPEG3": 2,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 1,
+  "DefineSprite": 14,
+  "FrameLabel": 7,
+  "FileAttributes": 1,
+  "PlaceObject3": 7,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 7,
+  "shapes": 7,
+  "sprites": 14,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 29,
+   "class": "AddItemAnimUI"
+  },
+  {
+   "id": 22,
+   "class": "AddSignAnimUI"
+  },
+  {
+   "id": 18,
+   "class": "NoChangeChevronAnimUI"
+  },
+  {
+   "id": 14,
+   "class": "NoChangeTextAnimUI"
+  },
+  {
+   "id": 11,
+   "class": "RemoveItemAnimUI"
+  },
+  {
+   "id": 4,
+   "class": "RemoveSignAnimUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1216,
+   "classes": 6,
+   "methods": 26,
+   "bodies": 26,
+   "code_bytes": 422
+  }
+ ],
+ "classes": [
+  {
+   "name": "AddItemAnimUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AddSignAnimUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NoChangeChevronAnimUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NoChangeTextAnimUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RemoveItemAnimUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RemoveSignAnimUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

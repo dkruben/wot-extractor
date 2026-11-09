@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/SpamProtectionComponent.def -->
+<root>
+	<Properties>
+		<settingValues>
+			<Type>ARRAY<of>FLOAT32</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</settingValues>
+	</Properties>
+	<ofEntity>
+		<TeamInfo />
+	</ofEntity>
+	<DefaultKeyName>spamProtection</DefaultKeyName>
+</root>

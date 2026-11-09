@@ -1,0 +1,20 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/genConsts/BATTLE_MESSAGES_CONSTS.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+
+class BATTLE_MESSAGES_CONSTS(object):
+    LIST_DIRECTION_UP = 'up'
+    LIST_DIRECTION_DOWN = 'down'
+    COLOR_YELLOW = 'yellow'
+    COLOR_RED = 'red'
+    COLOR_PURPLE = 'purple'
+    COLOR_GREEN = 'green'
+    COLOR_GOLD = 'gold'
+    COLOR_SELF = 'self'
+    RED_MESSAGE_RENDERER = 'PlayerRedMessageLeftRenderer'
+    GREEN_MESSAGE_RENDERER = 'PlayerGreenMessageLeftRenderer'
+    BLACK_MESSAGE_RENDERER = 'PlayerBlackMessageLeftRenderer'
+    SELF_MESSAGE_RENDERER = 'PlayerSelfMessageLeftRenderer'
+    ADD_IN_BLACKLIST = 0
+    REMOVE_FROM_BLACKLIST = 1

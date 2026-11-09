@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/halloween/scripts/component_defs/HWKafkaPublisherComponent.def -->
+<root>
+	<BaseMethods />
+	<Properties />
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+	<DefaultKeyName>HWKafkaPublisherComponent</DefaultKeyName>
+</root>

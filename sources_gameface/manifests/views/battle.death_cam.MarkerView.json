@@ -1,0 +1,70 @@
+{
+  "rid": "R.views.battle.death_cam.MarkerView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "MarkerView",
+  "dir": "gui/gameface/_dist/production/battle/death_cam/MarkerView",
+  "feature": null,
+  "files": [
+    {
+      "name": "MarkerView.css",
+      "effective": "res/gui/gameface/_dist/production/battle/death_cam/MarkerView/MarkerView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/death_cam/MarkerView/MarkerView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "MarkerView.html",
+      "effective": "res/gui/gameface/_dist/production/battle/death_cam/MarkerView/MarkerView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/death_cam/MarkerView/MarkerView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "MarkerView.js",
+      "effective": "res/gui/gameface/_dist/production/battle/death_cam/MarkerView/MarkerView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/death_cam/MarkerView/MarkerView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/battle/death_cam/MarkerView/MarkerView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/battle/death_cam/MarkerView/MarkerView.css",
+      "key": "res/gui/gameface/_dist/production/battle/death_cam/MarkerView/MarkerView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/battle/death_cam/MarkerView/MarkerView.js",
+      "key": "res/gui/gameface/_dist/production/battle/death_cam/MarkerView/MarkerView.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/battle/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/battle/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle.death_cam.MarkerView",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

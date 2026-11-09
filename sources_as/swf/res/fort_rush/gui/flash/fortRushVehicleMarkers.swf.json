@@ -1,0 +1,156 @@
+{
+ "source": "sources/res/fort_rush/gui/flash/fortRushVehicleMarkers.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 13636,
+ "actual_length": 13636,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  800.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 12,
+  "ShowFrame": 115,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 27,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 3,
+  "DefineSprite": 11,
+  "FrameLabel": 8,
+  "FileAttributes": 1,
+  "PlaceObject3": 90,
+  "ImportAssets2": 3,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 1,
+  "shapes": 1,
+  "sprites": 11,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "battleMarkersComponents.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleVehicleMarkers.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 16,
+   "class": "FortRushVehicleMarkerUI"
+  },
+  {
+   "id": 6,
+   "class": "VehicleIconAnimationUI"
+  },
+  {
+   "id": 4,
+   "class": "FlagContainerUI"
+  },
+  {
+   "id": 3,
+   "class": "VehicleActionMarkerUI"
+  },
+  {
+   "id": 2,
+   "class": "VehicleMarkerFxContainerUI"
+  },
+  {
+   "id": 1,
+   "class": "contentContainer"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1602,
+   "classes": 6,
+   "methods": 25,
+   "bodies": 25,
+   "code_bytes": 417
+  }
+ ],
+ "classes": [
+  {
+   "name": "contentContainer",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FlagContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.FlagContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleIconAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.VehicleIconAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleMarkerFxContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.VehicleMarkerFxContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FortRushVehicleMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.fort_rush.gui.battle.views.vehicleMarkers.FortRushVehicleMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleActionMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.VehicleActionMarker",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

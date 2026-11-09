@@ -1,0 +1,395 @@
+{
+ "source": "sources/res/gui/flash/questProgressViews.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 250160,
+ "actual_length": 250160,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 52,
+  "ShowFrame": 1723,
+  "DefineShape": 222,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 13,
+  "PlaceObject2": 1924,
+  "RemoveObject2": 9,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 9,
+  "DefineEditText": 9,
+  "DefineSprite": 51,
+  "FrameLabel": 36,
+  "FileAttributes": 1,
+  "PlaceObject3": 31,
+  "ImportAssets2": 6,
+  "CSMTextSettings": 5,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 22,
+  "shapes": 225,
+  "sprites": 51,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 9,
+  "fonts": 0,
+  "classes": 27,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattleDynamic.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 307,
+   "class": "HexagonBarAnimCompleted94UI"
+  },
+  {
+   "id": 303,
+   "class": "HexagonBarAnimFailed94UI"
+  },
+  {
+   "id": 299,
+   "class": "HexagonBarAnimProgress94UI"
+  },
+  {
+   "id": 298,
+   "class": "anim_hexagon_94"
+  },
+  {
+   "id": 295,
+   "class": "Hexagon94ProgressDiff"
+  },
+  {
+   "id": 190,
+   "class": "RadialBarAnimCompleted54UI"
+  },
+  {
+   "id": 183,
+   "class": "RadialBarAnimFailed54UI"
+  },
+  {
+   "id": 178,
+   "class": "RadialBarAnimProgress54UI"
+  },
+  {
+   "id": 177,
+   "class": "anim_ring_54"
+  },
+  {
+   "id": 174,
+   "class": "valueContainerUI"
+  },
+  {
+   "id": 172,
+   "class": "taskIconAnim"
+  },
+  {
+   "id": 168,
+   "class": "Ring54ProgressDiff"
+  },
+  {
+   "id": 60,
+   "class": "QuestTrackingButtonUI"
+  },
+  {
+   "id": 52,
+   "class": "TrackingOnPauseUI"
+  },
+  {
+   "id": 45,
+   "class": "QuestProgressTabViewUI"
+  },
+  {
+   "id": 42,
+   "class": "QuestProgressTrackingUI"
+  },
+  {
+   "id": 34,
+   "class": "questBg"
+  },
+  {
+   "id": 31,
+   "class": "QuestProgressTopAnimContainer"
+  },
+  {
+   "id": 30,
+   "class": "QuestProgressTopViewUI"
+  },
+  {
+   "id": 23,
+   "class": "FlagInfoUI"
+  },
+  {
+   "id": 18,
+   "class": "QPLockUI"
+  },
+  {
+   "id": 14,
+   "class": "LineAnimationUI"
+  },
+  {
+   "id": 13,
+   "class": "questProgressViews_fla.lineAnimationForThree_39"
+  },
+  {
+   "id": 12,
+   "class": "questProgressViews_fla.lineAnimationForTwo_37"
+  },
+  {
+   "id": 1,
+   "class": "operationSelectorBtnDisable"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 8193,
+   "classes": 27,
+   "methods": 116,
+   "bodies": 116,
+   "code_bytes": 2400
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "operationSelectorBtnDisable",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FlagInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.components.QPFlag",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Hexagon94ProgressDiff",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimStepProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Ring54ProgressDiff",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimStepProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestProgressTopAnimContainer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimationTopContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TrackingOnPauseUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.components.QuestTrackingOnPause",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "questProgressViews_fla.lineAnimationForThree_39",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "questProgressViews_fla.lineAnimationForTwo_37",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "taskIconAnim",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimIconContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "valueContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimValueContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LineAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.components.QPLockLineAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QPLockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.components.QPLock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "anim_hexagon_94",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimationRing",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "anim_ring_54",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimationRing",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HexagonBarAnimCompleted94UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimationItemCompleted",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadialBarAnimCompleted54UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimationItemCompleted",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HexagonBarAnimFailed94UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimationItemFailed",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadialBarAnimFailed54UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimationItemFailed",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HexagonBarAnimProgress94UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimationItemProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadialBarAnimProgress54UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.animated.AnimationItemProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "questBg",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestTrackingButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.components.QuestTrackingButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestProgressTrackingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.components.QuestProgressTracking",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestProgressTabViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.QuestProgressTabView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestProgressTopViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.questProgress.QuestProgressTopView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

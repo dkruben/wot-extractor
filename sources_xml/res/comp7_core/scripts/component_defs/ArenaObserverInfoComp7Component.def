@@ -1,0 +1,24 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/comp7_core/scripts/component_defs/ArenaObserverInfoComp7Component.def -->
+<root>
+	<Properties>
+		<vehiclesInfo>
+			<Type>ARRAY<of>COMP7_VEHICLE_INFO</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+		</vehiclesInfo>
+		<poiInfo>
+			<Type>ARRAY<of>COMP7_POI_INFO</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+		</poiInfo>
+		<teamBasesInfo>
+			<Type>ARRAY<of>COMP7_BASE_INFO</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+		</teamBasesInfo>
+	</Properties>
+	<DefaultKeyName>arenaObserverInfoComp7Component</DefaultKeyName>
+</root>

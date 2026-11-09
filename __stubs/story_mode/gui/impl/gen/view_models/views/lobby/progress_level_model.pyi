@@ -1,0 +1,37 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/story_mode/scripts/client/story_mode/gui/impl/gen/view_models/views/lobby/progress_level_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from enum import Enum as Enum
+from frameworks.wulf import ViewModel as ViewModel
+from gui.impl.gen import R as R
+
+class StatEnum(Enum):
+    MISSIONS = 'missions'
+    ASSIST = 'assist'
+    KILLS = 'kills'
+    DAMAGE = 'damage'
+    ARMOR_USE = 'armorUse'
+
+class ProgressLevelModel(ViewModel):
+    __slots__: tuple
+    def __init__(self, properties=4, commands=0):
+        ...
+    def getIcon(self):
+        ...
+    def setIcon(self, value):
+        ...
+    def getValue(self):
+        ...
+    def setValue(self, value):
+        ...
+    def getName(self):
+        ...
+    def setName(self, value):
+        ...
+    def getStat(self):
+        ...
+    def setStat(self, value):
+        ...
+    def _initialize(self):
+        ...

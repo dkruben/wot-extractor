@@ -1,0 +1,40 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/common/player_satisfaction_schema.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/common/player_satisfaction_schema.py
+from __future__ import absolute_import
+from game_params_common.schema import GameParamsSchema
+from constants import Configs
+from dict2model import fields, models
+from dict2model.schemas import Schema
+
+class _InterfacesModel(models.Model):
+    __slots__ = ('postbattle', 'spectatorMode')
+
+    def __init__(self, postbattle, spectatorMode):
+        super(_InterfacesModel, self).__init__()
+        self.postbattle = postbattle
+        self.spectatorMode = spectatorMode
+
+    def _reprArgs(self):
+        return ('postbattle={}, spectatorMode={}').format(self.postbattle, self.spectatorMode)
+
+
+_interfacesSchema = Schema[_InterfacesModel](fields={'postbattle': (fields.Boolean(required=False, default=False)), 
+   'spectatorMode': (fields.Boolean(required=False, default=False))}, modelClass=_InterfacesModel, checkUnknown=True)
+
+class PlayerSatisfactionConfigModel(models.Model):
+    __slots__ = ('enabled', 'enabledInterfaces')
+
+    def __init__(self, enabled, enabledInterfaces):
+        super(PlayerSatisfactionConfigModel, self).__init__()
+        self.enabled = enabled
+        self.enabledInterfaces = enabledInterfaces
+
+    def _reprArgs(self):
+        return ('enabled={}, enabledInterfaces={}').format(self.enabled, self.enabledInterfaces)
+
+
+playerSatisfactionSchema = GameParamsSchema[PlayerSatisfactionConfigModel](gameParamsKey=Configs.PLAYER_SATISFACTION_CONFIG.value, fields={'enabled': (fields.Boolean(required=True)), 
+   'enabledInterfaces': (fields.Nested(_interfacesSchema, required=True))}, modelClass=PlayerSatisfactionConfigModel, checkUnknown=True, usedInReplay=True)

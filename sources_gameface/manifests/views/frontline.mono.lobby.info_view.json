@@ -1,0 +1,71 @@
+{
+  "rid": "R.views.frontline.mono.lobby.info_view",
+  "rid_source": "sources/res/frontline/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "info_view",
+  "dir": "frontline/gui/gameface/_dist/production/mono/lobby/info_view",
+  "feature": "frontline",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/info_view/bundle.js",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/info_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/frontline/gui/gameface/_dist/production/mono/lobby/info_view/bundle.js"
+    },
+    {
+      "name": "info_view.css",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/info_view/info_view.css",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/info_view/info_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "info_view.html",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/info_view/info_view.html",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/info_view/info_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/info_view/bundle.js",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/info_view/bundle.js"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/info_view/info_view.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/info_view/info_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.frontline.mono.lobby.info_view",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.frontline.mono.lobby.info_view no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/views/info_view.py",
+        22
+      ]
+    ],
+    "python_files": [
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/views/info_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

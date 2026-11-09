@@ -1,0 +1,179 @@
+{
+  "rid": "R.views.lobby.collection.CollectionView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "CollectionView",
+  "dir": "gui/gameface/_dist/production/lobby/collection/CollectionView",
+  "feature": null,
+  "files": [
+    {
+      "name": "CollectionView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/CollectionView/CollectionView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/CollectionView/CollectionView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CollectionView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/CollectionView/CollectionView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/CollectionView/CollectionView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CollectionView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/CollectionView/CollectionView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/CollectionView/CollectionView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/collection/CollectionView/CollectionView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/collection/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/collection/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/collection/CollectionView/CollectionView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/collection/CollectionView/CollectionView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/collection/CollectionView/CollectionView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/collection/CollectionView/CollectionView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.collection.tooltips.CollectionItemTooltipView"
+  ],
+  "commands": [
+    "onClose",
+    "onFinishTutorial",
+    "onOpenItemPreview",
+    "onSetItemReceived",
+    "onSetProgressItemsReceived",
+    "onSetRewardReceived",
+    "onTabSelected",
+    "onViewLoaded"
+  ],
+  "link": {
+    "rid": "R.views.lobby.collection.CollectionView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.collection.CollectionView no Python",
+      "ViewModel CollectionViewModel (convencao de nomes): 20/23 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/collection/collection.py",
+        47
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/collection/collection.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/collection/collection_view_model.py",
+      "class": "CollectionViewModel",
+      "chain": [
+        "CollectionViewModel"
+      ],
+      "properties": [
+        [
+          "backButtonText",
+          "String"
+        ],
+        [
+          "currentCollection",
+          "String"
+        ],
+        [
+          "isCompleted",
+          "Bool"
+        ],
+        [
+          "isTutorial",
+          "Bool"
+        ],
+        [
+          "isError",
+          "Bool"
+        ],
+        [
+          "page",
+          "Number"
+        ],
+        [
+          "tabs",
+          "Array"
+        ],
+        [
+          "items",
+          "Array"
+        ],
+        [
+          "maxItemsCount",
+          "Number"
+        ],
+        [
+          "receivedItemsCount",
+          "Number"
+        ],
+        [
+          "prevReceivedItemsCount",
+          "Number"
+        ],
+        [
+          "rewardsInfo",
+          "Array"
+        ],
+        [
+          "generalBackground",
+          "String"
+        ],
+        [
+          "pagesBackgrounds",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onViewLoaded",
+        "onSetItemReceived",
+        "onSetRewardReceived",
+        "onSetProgressItemsReceived",
+        "onOpenItemPreview",
+        "onFinishTutorial",
+        "onTabSelected",
+        "onPageChanged",
+        "onClose"
+      ],
+      "coverage": {
+        "found": 20,
+        "total": 23,
+        "missing": [
+          "backButtonText",
+          "isCompleted",
+          "onPageChanged"
+        ]
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

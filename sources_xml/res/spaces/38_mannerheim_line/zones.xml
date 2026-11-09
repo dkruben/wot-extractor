@@ -1,0 +1,18 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/38_mannerheim_line/zones.xml -->
+<root>
+	<path>
+		<id>3134927849</id>
+		<name>path</name>
+		<node>
+			<name>38_mannerheim_line_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2033259067</id>
+			<transform>
+				<row0>57.539246 0 0</row0>
+				<row1>0 20.000002 0</row1>
+				<row2>0 0 53.398205</row2>
+				<row3>-408.78125 10.139998 95.67414</row3>
+			</transform>
+		</node>
+	</path>
+</root>

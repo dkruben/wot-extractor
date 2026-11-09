@@ -1,0 +1,145 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineInGameRank.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 8725,
+ "actual_length": 8725,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#6d95c0",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 8,
+  "ShowFrame": 218,
+  "DefineShape": 5,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 249,
+  "RemoveObject2": 2,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 4,
+  "DefineEditText": 1,
+  "DefineSprite": 7,
+  "FrameLabel": 2,
+  "DefineMorphShape": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 4,
+  "shapes": 7,
+  "sprites": 7,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "frontline|frontlineSharedAssets.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 19,
+   "class": "FrontlineInGameRankUI"
+  },
+  {
+   "id": 17,
+   "class": "FrontlineAnimatedRankProgressUI"
+  },
+  {
+   "id": 16,
+   "class": "frontlineInGameRank_fla.AnimatedProgressBar_3"
+  },
+  {
+   "id": 9,
+   "class": "FrontlineRankIconUI"
+  },
+  {
+   "id": 5,
+   "class": "frontlineInGameRank_fla.FrontlineRankBackground_7"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1663,
+   "classes": 5,
+   "methods": 21,
+   "bodies": 21,
+   "code_bytes": 374
+  }
+ ],
+ "classes": [
+  {
+   "name": "frontlineInGameRank_fla.AnimatedProgressBar_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineInGameRank_fla.FrontlineRankBackground_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineAnimatedRankProgressUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineInGameRank.FrontlineInGameRankAnimatedProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineRankIconUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineInGameRank.FrontlineInGameRankIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineInGameRankUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineInGameRank.FrontlineInGameRankPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

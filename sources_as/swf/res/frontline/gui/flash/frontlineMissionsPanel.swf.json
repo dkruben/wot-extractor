@@ -1,0 +1,109 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineMissionsPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 14229,
+ "actual_length": 14229,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#859faf",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 66,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 189,
+  "DefineBitsLossless2": 3,
+  "DefineEditText": 3,
+  "DefineSprite": 6,
+  "FrameLabel": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 6,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 3,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 3,
+  "shapes": 3,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "frontline|frontlineBattleStaticMarkers.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 15,
+   "class": "FrontlineMissionsPanelUI"
+  },
+  {
+   "id": 7,
+   "class": "AnimatedMarkerUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1030,
+   "classes": 2,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 159
+  }
+ ],
+ "classes": [
+  {
+   "name": "AnimatedMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineMissionsPanel.components.FrontlineMissionsAnimatedMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineMissionsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineMissionsPanel.FrontlineMissionsPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

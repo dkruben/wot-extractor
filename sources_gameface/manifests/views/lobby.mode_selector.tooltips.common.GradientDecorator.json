@@ -1,0 +1,64 @@
+{
+  "rid": "R.views.lobby.mode_selector.tooltips.common.GradientDecorator",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "GradientDecorator",
+  "dir": "gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator",
+  "feature": null,
+  "files": [
+    {
+      "name": "GradientDecorator.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator/GradientDecorator.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator/GradientDecorator.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "GradientDecorator.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator/GradientDecorator.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator/GradientDecorator.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "GradientDecorator.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator/GradientDecorator.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator/GradientDecorator.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator/GradientDecorator.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/mode_selector/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/mode_selector/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator/GradientDecorator.css",
+      "key": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator/GradientDecorator.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator/GradientDecorator.js",
+      "key": "res/gui/gameface/_dist/production/lobby/mode_selector/tooltips/common/GradientDecorator/GradientDecorator.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.mode_selector.tooltips.common.GradientDecorator",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

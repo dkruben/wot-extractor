@@ -1,0 +1,49 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/team_stats_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from enum import Enum as Enum
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from gui.impl.gen.view_models.views.lobby.battle_results.player_model import PlayerModel as PlayerModel
+
+class SortingOrder(Enum):
+    ASC = 'ascending'
+    DESC = 'descending'
+
+class TeamStatsModel(ViewModel):
+    __slots__: tuple
+    onStatsSorted: Any
+    def __init__(self, properties=5, commands=1):
+        ...
+    def getAllies(self):
+        ...
+    def setAllies(self, value):
+        ...
+    @staticmethod
+    def getAlliesType():
+        ...
+    def getEnemies(self):
+        ...
+    def setEnemies(self, value):
+        ...
+    @staticmethod
+    def getEnemiesType():
+        ...
+    def getShownValueColumns(self):
+        ...
+    def setShownValueColumns(self, value):
+        ...
+    @staticmethod
+    def getShownValueColumnsType():
+        ...
+    def getSortingColumn(self):
+        ...
+    def setSortingColumn(self, value):
+        ...
+    def getSortingOrder(self):
+        ...
+    def setSortingOrder(self, value):
+        ...
+    def _initialize(self):
+        ...

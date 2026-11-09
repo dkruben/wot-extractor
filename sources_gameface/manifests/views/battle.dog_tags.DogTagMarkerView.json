@@ -1,0 +1,118 @@
+{
+  "rid": "R.views.battle.dog_tags.DogTagMarkerView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "DogTagMarkerView",
+  "dir": "gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView",
+  "feature": null,
+  "files": [
+    {
+      "name": "DogTagMarkerView.css",
+      "effective": "res/gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView/DogTagMarkerView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView/DogTagMarkerView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DogTagMarkerView.html",
+      "effective": "res/gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView/DogTagMarkerView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView/DogTagMarkerView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DogTagMarkerView.js",
+      "effective": "res/gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView/DogTagMarkerView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView/DogTagMarkerView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView/DogTagMarkerView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView/DogTagMarkerView.css",
+      "key": "res/gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView/DogTagMarkerView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView/DogTagMarkerView.js",
+      "key": "res/gui/gameface/_dist/production/battle/dog_tags/DogTagMarkerView/DogTagMarkerView.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/battle/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/battle/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle.dog_tags.DogTagMarkerView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.battle.dog_tags.DogTagMarkerView no Python",
+      "ViewModel DogTagMarkerViewModel (model=... no Python da view): 3/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/battle/dog_tags/dog_tag_marker_view.py",
+        23
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/battle/dog_tags/dog_tag_marker_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/battle/dog_tags/dog_tag_marker_view_model.py",
+      "class": "DogTagMarkerViewModel",
+      "chain": [
+        "DogTagMarkerViewModel",
+        "DtDogTag"
+      ],
+      "properties": [
+        [
+          "animation",
+          "String"
+        ],
+        [
+          "engraving",
+          "ViewModel"
+        ],
+        [
+          "background",
+          "ViewModel"
+        ],
+        [
+          "playerName",
+          "String"
+        ],
+        [
+          "clanTag",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 3,
+        "total": 5,
+        "missing": [
+          "clanTag",
+          "playerName"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

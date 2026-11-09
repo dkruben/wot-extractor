@@ -1,0 +1,187 @@
+{
+  "rid": "R.views.lobby.collection.tooltips.CollectionItemTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "CollectionItemTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "CollectionItemTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CollectionItemTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CollectionItemTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/collection/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/collection/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.collection.tooltips.CollectionItemTooltipView",
+    "confidence": "provavel",
+    "evidence": [
+      "4 referencia(s) R.views.lobby.collection.tooltips.CollectionItemTooltipView no Python",
+      "ViewModel RewardModel (model=... no Python da view): 0/13 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/auxiliary/collections_helper.py",
+        153
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/collection/awards_view.py",
+        54
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/collection/collection.py",
+        61
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/collection/tooltips/collection_item_tooltip_view.py",
+        20
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/auxiliary/collections_helper.py",
+      "sources/res/scripts/client/gui/impl/lobby/collection/awards_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/collection/collection.py",
+      "sources/res/scripts/client/gui/impl/lobby/collection/tooltips/collection_item_tooltip_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/awards/reward_model.py",
+      "class": "RewardModel",
+      "chain": [
+        "RewardModel",
+        "ItemBonusModel"
+      ],
+      "properties": [
+        [
+          "item",
+          "String"
+        ],
+        [
+          "icon",
+          "String"
+        ],
+        [
+          "iconSmall",
+          "String"
+        ],
+        [
+          "iconBig",
+          "String"
+        ],
+        [
+          "userName",
+          "String"
+        ],
+        [
+          "vehicleType",
+          "String"
+        ],
+        [
+          "vehicleLevel",
+          "Number"
+        ],
+        [
+          "vehicleRentType",
+          "Number"
+        ],
+        [
+          "vehicleRentValue",
+          "Number"
+        ],
+        [
+          "isFromStorage",
+          "Bool"
+        ],
+        [
+          "isVehicleOnChoice",
+          "Bool"
+        ],
+        [
+          "itemID",
+          "Number"
+        ],
+        [
+          "item",
+          "String"
+        ],
+        [
+          "overlayType",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 13,
+        "missing": [
+          "icon",
+          "iconBig",
+          "iconSmall",
+          "isFromStorage",
+          "isVehicleOnChoice",
+          "item",
+          "itemID",
+          "overlayType",
+          "userName",
+          "vehicleLevel",
+          "vehicleRentType",
+          "vehicleRentValue",
+          "vehicleType"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/challenges/awards_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/collection/awards_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/collection/reward_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/collection/tooltips/collection_item_tooltip_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/awards_view_model.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,73 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/18_cliff/zones.xml -->
+<root>
+	<path>
+		<id>3255696454</id>
+		<name>path</name>
+		<node>
+			<name>18_plane_crashing_01_plane_part_03</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2145476542</id>
+			<transform>
+				<row0>140 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 40</row2>
+				<row3>-351.00845 -6.929337 33.783607</row3>
+			</transform>
+		</node>
+		<node>
+			<name>18_plane_crashing_01_plane_part_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2227346183</id>
+			<transform>
+				<row0>90 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 20</row2>
+				<row3>-366.67856 -14.716907 4.781425</row3>
+			</transform>
+		</node>
+		<node>
+			<name>18_plane_crashing_01_plane_part_02</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3473227758</id>
+			<transform>
+				<row0>90 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 50</row2>
+				<row3>-374.16412 -14.530322 -30.146212</row3>
+			</transform>
+		</node>
+		<node>
+			<name>18_plane_crashing_01_lighthouse_base_destroyed</name>
+			<colour>0.698039 0.8 0.733333 0.498039</colour>
+			<id>2476902618</id>
+			<transform>
+				<row0>62.81999 0 0</row0>
+				<row1>0 38.914146 0</row1>
+				<row2>0 0 62.699028</row2>
+				<row3>154.41154 40.023087 0.307285</row3>
+			</transform>
+		</node>
+		<node>
+			<name>18_plane_crashing_01_lighthouse_destroyed</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>264864599</id>
+			<transform>
+				<row0>68.18869 0 0</row0>
+				<row1>0 27.5177 0</row1>
+				<row2>0 0 34.92626</row2>
+				<row3>95.00822 29.219408 -6.567795</row3>
+			</transform>
+		</node>
+		<node>
+			<name>18_cliff_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1638021133</id>
+			<transform>
+				<row0>50.65461 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 53.77301</row2>
+				<row3>-20.543034 -1.242709 -212.58868</row3>
+			</transform>
+		</node>
+	</path>
+</root>

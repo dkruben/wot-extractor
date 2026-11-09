@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/LabelComponent.def -->
+<root>
+	<Properties>
+		<label>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</label>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>labelComponent</DefaultKeyName>
+</root>

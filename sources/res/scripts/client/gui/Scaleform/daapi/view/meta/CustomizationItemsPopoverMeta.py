@@ -1,0 +1,29 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/CustomizationItemsPopoverMeta.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/daapi/view/meta/CustomizationItemsPopoverMeta.py
+from gui.Scaleform.daapi.view.lobby.popover.SmartPopOverView import SmartPopOverView
+
+class CustomizationItemsPopoverMeta(SmartPopOverView):
+
+    def remove(self, id, itemsList, seasonType):
+        self._printOverrideError('remove')
+
+    def removeAll(self):
+        self._printOverrideError('removeAll')
+
+    def onFilterChanged(self, showHistoric, showNonHistoric, showFantastic):
+        self._printOverrideError('onFilterChanged')
+
+    def as_setHeaderDataS(self, data):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setHeaderData(data)
+
+    def as_getDPS(self):
+        if self._isDAAPIInited():
+            return self.flashObject.as_getDP()
+
+    def as_showClearMessageS(self, isClear, message):
+        if self._isDAAPIInited():
+            return self.flashObject.as_showClearMessage(isClear, message)

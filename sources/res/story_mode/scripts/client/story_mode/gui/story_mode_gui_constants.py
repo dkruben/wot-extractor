@@ -1,0 +1,54 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/story_mode/scripts/client/story_mode/gui/story_mode_gui_constants.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: story_mode/scripts/client/story_mode/gui/story_mode_gui_constants.py
+from __future__ import absolute_import
+from constants_utils import ConstInjector
+from gui.Scaleform.daapi.settings import views
+from gui.prb_control import settings
+
+class PREBATTLE_ACTION_NAME(settings.PREBATTLE_ACTION_NAME, ConstInjector):
+    _const_type = str
+    STORY_MODE = 'story_mode'
+
+
+class FUNCTIONAL_FLAG(settings.FUNCTIONAL_FLAG, ConstInjector):
+    STORY_MODE = 2147483648L
+
+
+class SELECTOR_BATTLE_TYPES(settings.SELECTOR_BATTLE_TYPES, ConstInjector):
+    _const_type = str
+    STORY_MODE = 'StoryMode'
+
+
+class VIEW_ALIAS(views.VIEW_ALIAS, ConstInjector):
+    _const_type = str
+    STORY_MODE_BATTLE_PAGE = 'StoryModeBattlePage'
+    ONBOARDING_BATTLE_PAGE = 'OnboardingBattlePage'
+    ONBOARDING_SETTINGS_WINDOW = 'onboardingSettingsWindow'
+    STORY_MODE_INTRO_VIDEO_WINDOW = 'storyModeIntroVideoWindow'
+    STORY_MODE_WEB_VIEW_TRANSPARENT = 'StoryModeWebViewTransparent'
+    STORY_MODE_OUTRO_VIDEO_WINDOW = 'storyModeOutroVideoWindow'
+    STORY_MODE_BATTLE_RESULTS = 'storyModeBattleResults'
+
+
+IS_ONBOARDING_SEAMLESS_MISSION_CHANGING_ON = True
+IS_STORY_MODE_FADE_IN_OUT_ON = True
+STORY_MODE_FADE_IN_DURATION = 0.4
+STORY_MODE_FADE_OUT_DURATION = 0.4
+BONUS_ORDER = [
+ 'dossier', 
+ 'vehicles', 
+ 'slots', 
+ 'bpcoin', 
+ 'battlePassPoints', 
+ 'crystal', 
+ 'freeXP', 
+ 'credits', 
+ 'premium_plus', 
+ 'items', 
+ 'customizations']
+INFO_PAGE_STORY_MODE = 'infoPageStoryMode'
+INFO_PAGE_STORY_MODE_EVENT = 'infoPageStoryMode_event'
+ABILITY_ON_COOLDOWN_ACTIVATION_ERROR_KEY = 'ability_on_cooldown'

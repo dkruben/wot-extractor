@@ -1,0 +1,42 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/battle_control/controllers/vehicles_tracking/tracking_mixins.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/battle_control/controllers/vehicles_tracking/tracking_mixins.py
+from __future__ import absolute_import
+from typing import TYPE_CHECKING
+from gui.battle_control.controllers.vehicles_tracking.tracking_interfaces import IVehiclesTrackingWatcher
+from gui.battle_control.controllers.vehicles_tracking.tracking_wrappers import hasVehiclesTrackingCtrl
+from helpers import dependency
+from skeletons.gui.battle_session import IBattleSessionProvider
+if TYPE_CHECKING:
+    from typing import Optional, Tuple
+    from gui.battle_control.controllers.vehicles_tracking.tracking_interfaces import IVehiclesTrackingController
+    from items.vehicle_mechanics_types import VehicleMechanicKey
+    from vehicles.mechanics.mechanic_trackers import IVehicleMechanicsTrackerListener
+
+class VehiclesTrackingWatcher(IVehiclesTrackingWatcher):
+
+    @classmethod
+    def getVehiclesTrackingCtrl(cls):
+        return dependency.instance(IBattleSessionProvider).shared.vehiclesTracking
+
+    @classmethod
+    @hasVehiclesTrackingCtrl()
+    def startCurrentVehicleMechanicsTracking(cls, mechanics, listener, vehiclesTrackingCtrl=None):
+        vehiclesTrackingCtrl.vehicleMechanicTrackers.startCurrentMechanicsTracking(mechanics, listener)
+
+    @classmethod
+    @hasVehiclesTrackingCtrl()
+    def stopCurrentVehicleMechanicsTracking(cls, mechanics, listener, vehiclesTrackingCtrl=None):
+        vehiclesTrackingCtrl.vehicleMechanicTrackers.stopCurrentMechanicsTracking(mechanics, listener)
+
+    @classmethod
+    @hasVehiclesTrackingCtrl()
+    def startVehicleMechanicsTracking(cls, vehicleID, mechanics, listener, vehiclesTrackingCtrl=None):
+        vehiclesTrackingCtrl.vehicleMechanicTrackers.startMechanicsTracking(vehicleID, mechanics, listener)
+
+    @classmethod
+    @hasVehiclesTrackingCtrl()
+    def stopVehicleMechanicsTracking(cls, vehicleID, mechanics, listener, vehiclesTrackingCtrl=None):
+        vehiclesTrackingCtrl.vehicleMechanicTrackers.stopMechanicsTracking(vehicleID, mechanics, listener)

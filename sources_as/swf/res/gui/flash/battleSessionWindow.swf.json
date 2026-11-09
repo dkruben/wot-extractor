@@ -1,0 +1,236 @@
+{
+ "source": "sources/res/gui/flash/battleSessionWindow.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 92410,
+ "actual_length": 92410,
+ "frame_size_px": [
+  0.0,
+  830.0,
+  0.0,
+  764.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 17,
+  "ShowFrame": 78,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 40,
+  "RemoveObject2": 1,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 9,
+  "DefineEditText": 26,
+  "DefineSprite": 16,
+  "FrameLabel": 6,
+  "FileAttributes": 1,
+  "PlaceObject3": 25,
+  "ImportAssets2": 8,
+  "CSMTextSettings": 26,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 3,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 9,
+  "shapes": 7,
+  "sprites": 16,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 26,
+  "fonts": 0,
+  "classes": 11,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "prebattleComponents.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "MessengerControls.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 58,
+   "class": "BattleSessionWindowUI"
+  },
+  {
+   "id": 37,
+   "class": "RoomChannelComponentUI"
+  },
+  {
+   "id": 36,
+   "class": "RequirementInfoUI"
+  },
+  {
+   "id": 21,
+   "class": "FlagsListUI"
+  },
+  {
+   "id": 18,
+   "class": "TopStatsUI"
+  },
+  {
+   "id": 15,
+   "class": "TopInfoUI"
+  },
+  {
+   "id": 9,
+   "class": "battleSessionWindow_fla.AttackDirection_12"
+  },
+  {
+   "id": 5,
+   "class": "BattleSessionWindowImports"
+  },
+  {
+   "id": 4,
+   "class": "FlagRendererUI"
+  },
+  {
+   "id": 2,
+   "class": "Numbering_UI"
+  },
+  {
+   "id": 0,
+   "class": "battleSessionWindow_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 11391,
+   "classes": 11,
+   "methods": 60,
+   "bodies": 60,
+   "code_bytes": 3949
+  }
+ ],
+ "classes": [
+  {
+   "name": "BattleSessionWindowImports",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Numbering_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleSessionWindow_fla.AttackDirection_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleSessionWindow_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RequirementInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.prebattle.battleSession.RequirementInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TopInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.prebattle.battleSession.TopInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TopStatsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.prebattle.battleSession.TopStats",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FlagsListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.prebattle.battleSession.FlagsList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FlagRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.prebattle.battleSession.BSFlagRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RoomChannelComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.messenger.ChannelComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleSessionWindowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.prebattle.battleSession.BattleSessionWindow",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

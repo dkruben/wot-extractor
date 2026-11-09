@@ -1,0 +1,133 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/statSurvivability.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 235712,
+ "actual_length": 235712,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 25,
+  "ShowFrame": 687,
+  "DefineShape": 15,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 51,
+  "PlaceObject2": 1084,
+  "RemoveObject2": 18,
+  "DefineShape3": 97,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 7,
+  "DefineSprite": 24,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 8,
+  "shapes": 164,
+  "sprites": 24,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "statSurvivability_fla.MainTimeline"
+  },
+  {
+   "id": 49,
+   "class": "statSurvivability_fla.explosionCircle_21"
+  },
+  {
+   "id": 46,
+   "class": "statSurvivability_fla.iconFxExplosion_18"
+  },
+  {
+   "id": 38,
+   "class": "statSurvivability_fla.tankShoot_14"
+  },
+  {
+   "id": 9,
+   "class": "statSurvivability_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1245,
+   "classes": 5,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 330
+  }
+ ],
+ "classes": [
+  {
+   "name": "statSurvivability_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statSurvivability_fla.explosionCircle_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statSurvivability_fla.iconFxExplosion_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statSurvivability_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statSurvivability_fla.tankShoot_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

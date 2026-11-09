@@ -1,0 +1,23 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/mode_selector/__init__.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: fun_random/scripts/client/fun_random/gui/impl/lobby/mode_selector/__init__.py
+from __future__ import absolute_import
+
+def getStateMachineRegistrators():
+    from fun_random.gui.impl.lobby.mode_selector.states import registerStates, registerTransitions
+    return (
+     registerStates, registerTransitions)
+
+
+def getViewSettings():
+    return ()
+
+
+def getBusinessHandlers():
+    return ()
+
+
+def getContextMenuHandlers():
+    return ()

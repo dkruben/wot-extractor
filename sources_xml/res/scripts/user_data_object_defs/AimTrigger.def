@@ -1,0 +1,19 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/user_data_object_defs/AimTrigger.def -->
+<root>
+	<Domain>CLIENT</Domain>
+	<Properties>
+		<name>
+			<Type>STRING</Type>
+			<Editable>True</Editable>
+		</name>
+		<maxDistance>
+			<Type>FLOAT</Type>
+			<Default>50.0</Default>
+			<Editable>True</Editable>
+		</maxDistance>
+		<radius>
+			<Type>FLOAT</Type>
+			<Editable>False</Editable>
+		</radius>
+	</Properties>
+</root>

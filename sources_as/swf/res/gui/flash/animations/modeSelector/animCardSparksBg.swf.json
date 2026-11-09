@@ -1,0 +1,60 @@
+{
+ "source": "sources/res/gui/flash/animations/modeSelector/animCardSparksBg.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 749671,
+ "actual_length": 749671,
+ "frame_size_px": [
+  0.0,
+  370.0,
+  0.0,
+  700.0
+ ],
+ "frame_rate": 30.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "none",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 3,
+  "ShowFrame": 48,
+  "DefineShape": 47,
+  "SetBackgroundColor": 1,
+  "DefineBitsJPEG2": 47,
+  "PlaceObject2": 48,
+  "DefineSprite": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 47,
+  "shapes": 47,
+  "sprites": 2,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 0,
+  "abc_blocks": 0,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [],
+ "abc": [],
+ "classes": [],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

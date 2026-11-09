@@ -1,0 +1,79 @@
+{
+  "rid": "R.views.comp7.mono.lobby.no_vehicles_screen",
+  "rid_source": "sources/res/comp7/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "no_vehicles_screen",
+  "dir": "comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen",
+  "feature": "comp7",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen/bundle.js",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen/bundle.js"
+    },
+    {
+      "name": "no_vehicles_screen.css",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen/no_vehicles_screen.css",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen/no_vehicles_screen.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "no_vehicles_screen.html",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen/no_vehicles_screen.html",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen/no_vehicles_screen.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/schedule_subheading.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/schedule_subheading.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen/bundle.js",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen/bundle.js"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen/no_vehicles_screen.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/no_vehicles_screen/no_vehicles_screen.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.comp7.mono.lobby.no_vehicles_screen",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.comp7.mono.lobby.no_vehicles_screen no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/hangar/states.py",
+        138
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/hangar/states.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

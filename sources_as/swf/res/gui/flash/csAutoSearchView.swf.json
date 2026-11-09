@@ -1,0 +1,209 @@
+{
+ "source": "sources/res/gui/flash/csAutoSearchView.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 113581,
+ "actual_length": 113581,
+ "frame_size_px": [
+  0.0,
+  1006.0,
+  0.0,
+  566.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 13,
+  "ShowFrame": 13,
+  "DefineShape": 5,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 50,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 5,
+  "DefineEditText": 33,
+  "DefineSprite": 12,
+  "FileAttributes": 1,
+  "PlaceObject3": 16,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 29,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 5,
+  "shapes": 7,
+  "sprites": 12,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 33,
+  "fonts": 0,
+  "classes": 10,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "waiting.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 57,
+   "class": "confirmationReadinessStatusUI"
+  },
+  {
+   "id": 51,
+   "class": "CSAutoSearchMainViewUI"
+  },
+  {
+   "id": 50,
+   "class": "formBg"
+  },
+  {
+   "id": 47,
+   "class": "searchBg"
+  },
+  {
+   "id": 44,
+   "class": "errorStateUI"
+  },
+  {
+   "id": 40,
+   "class": "searchCommandsStateUI"
+  },
+  {
+   "id": 32,
+   "class": "searchEnemyRespawnUI"
+  },
+  {
+   "id": 27,
+   "class": "searchEnemyUI"
+  },
+  {
+   "id": 22,
+   "class": "waitingPlayersUI"
+  },
+  {
+   "id": 21,
+   "class": "WaitingAlertUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 6340,
+   "classes": 10,
+   "methods": 45,
+   "bodies": 45,
+   "code_bytes": 2493
+  }
+ ],
+ "classes": [
+  {
+   "name": "formBg",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "searchBg",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CSAutoSearchMainViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.cyberSport.views.autoSearch.CSAutoSearchMainView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WaitingAlertUI",
+   "kind": "class",
+   "extends": "net.wg.gui.cyberSport.controls.WaitingAlert",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "confirmationReadinessStatusUI",
+   "kind": "class",
+   "extends": "net.wg.gui.cyberSport.views.autoSearch.ConfirmationReadinessStatus",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "errorStateUI",
+   "kind": "class",
+   "extends": "net.wg.gui.cyberSport.views.autoSearch.ErrorState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "searchCommandsStateUI",
+   "kind": "class",
+   "extends": "net.wg.gui.cyberSport.views.autoSearch.SearchCommands",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "searchEnemyRespawnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.cyberSport.views.autoSearch.SearchEnemyRespawn",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "searchEnemyUI",
+   "kind": "class",
+   "extends": "net.wg.gui.cyberSport.views.autoSearch.SearchEnemy",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "waitingPlayersUI",
+   "kind": "class",
+   "extends": "net.wg.gui.cyberSport.views.autoSearch.WaitingPlayers",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

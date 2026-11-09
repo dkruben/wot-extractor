@@ -1,0 +1,30 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/frontline/extension.xml -->
+<root>
+	<FeatureName>frontline</FeatureName>
+	<Components>
+		<StaticComponents>
+			<FLArenaComponent />
+			<FLAccountComponent />
+			<FLAccountPrebattleComponent />
+			<FLAccountBattleResultComponent />
+			<FLArenaBattleResultComponent />
+			<FLRespawnComponent />
+		</StaticComponents>
+		<DynamicComponents>
+			<FLAvatarComponent />
+			<FLReservesComponent />
+			<FLAvatarReservesComponent />
+			<FLBattleUpgradeReserves />
+			<FLVehicleComponent />
+			<FLArenaMinefieldComponent />
+			<FLVehicleRegenerationKitComponent />
+			<FLStealthRadarComponent />
+			<FLArenaBattleModifiersComponent />
+		</DynamicComponents>
+	</Components>
+	<IsEnabled>True</IsEnabled>
+	<Personality>frontline_personality</Personality>
+	<Entities>
+		<ClientServerEntities />
+	</Entities>
+</root>

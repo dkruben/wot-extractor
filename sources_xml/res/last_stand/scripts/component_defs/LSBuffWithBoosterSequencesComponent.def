@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/component_defs/LSBuffWithBoosterSequencesComponent.def -->
+<root>
+	<Properties>
+		<factors>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</factors>
+	</Properties>
+</root>

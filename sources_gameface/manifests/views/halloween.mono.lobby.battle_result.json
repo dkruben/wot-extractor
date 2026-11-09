@@ -1,0 +1,152 @@
+{
+  "rid": "R.views.halloween.mono.lobby.battle_result",
+  "rid_source": "sources/res/halloween/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "battle_result",
+  "dir": "halloween/gui/gameface/_dist/production/mono/lobby/battle_result",
+  "feature": "halloween",
+  "files": [
+    {
+      "name": "battle_result.css",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/battle_result/battle_result.css",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/battle_result/battle_result.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "battle_result.html",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/battle_result/battle_result.html",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/battle_result/battle_result.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/halloween/gui/gameface/_dist/production/mono/lobby/battle_result/bundle.js",
+      "all": [
+        "res/halloween/gui/gameface/_dist/production/mono/lobby/battle_result/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/halloween/gui/gameface/_dist/production/mono/lobby/battle_result/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/battle_result/battle_result.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/battle_result/battle_result.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/battle_result/bundle.js",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/battle_result/bundle.js"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/number_animation.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/number_animation.css"
+    },
+    {
+      "virtual": "halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css",
+      "key": "res/halloween/gui/gameface/_dist/production/mono/lobby/chunks/text.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.BackportContextMenu"
+  ],
+  "commands": [
+    "onClose",
+    "onRemoveFromBlacklist",
+    "onSendFriendRequest",
+    "onSendPlatoonInvitation"
+  ],
+  "link": {
+    "rid": "R.views.halloween.mono.lobby.battle_result",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "3 referencia(s) R.views.halloween.mono.lobby.battle_result no Python",
+      "ViewModel BattleResultViewModel (model=... no Python da view): 5/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/game_control/award_handlers.py",
+        116
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/battle_result_view.py",
+        59
+      ],
+      [
+        "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/platoon_members_view.py",
+        49
+      ]
+    ],
+    "python_files": [
+      "sources/res/halloween/scripts/client/halloween/gui/game_control/award_handlers.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/battle_result_view.py",
+      "sources/res/halloween/scripts/client/halloween/gui/impl/lobby/platoon_members_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/halloween/scripts/client/halloween/gui/impl/gen/view_models/views/lobby/battle_result_view_model.py",
+      "class": "BattleResultViewModel",
+      "chain": [
+        "BattleResultViewModel"
+      ],
+      "properties": [
+        [
+          "battleInfo",
+          "ViewModel"
+        ],
+        [
+          "playerInfo",
+          "ViewModel"
+        ],
+        [
+          "currentPhase",
+          "Number"
+        ],
+        [
+          "isBossDefeated",
+          "Bool"
+        ],
+        [
+          "difficultyLevel",
+          "Number"
+        ],
+        [
+          "rewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClose"
+      ],
+      "coverage": {
+        "found": 5,
+        "total": 7,
+        "missing": [
+          "difficultyLevel",
+          "isBossDefeated"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

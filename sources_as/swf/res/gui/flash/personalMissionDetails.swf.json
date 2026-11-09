@@ -1,0 +1,154 @@
+{
+ "source": "sources/res/gui/flash/personalMissionDetails.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 548424,
+ "actual_length": 548424,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 10,
+  "ShowFrame": 10,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 21,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 6,
+  "DefineSprite": 9,
+  "FileAttributes": 1,
+  "PlaceObject3": 16,
+  "ImportAssets2": 7,
+  "CSMTextSettings": 6,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 5,
+  "sprites": 9,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 6,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattleDynamic.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyDynamic.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 22,
+   "class": "PersonalMissionDetailsContainerViewUI"
+  },
+  {
+   "id": 16,
+   "class": "PersonalMissionDetailedViewUI"
+  },
+  {
+   "id": 1,
+   "class": "PersonalMissionsAwardsGroupUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5593,
+   "classes": 5,
+   "methods": 30,
+   "bodies": 30,
+   "code_bytes": 1588
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionDetailedViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionDetailedView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionsAwardsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionDetailsContainerViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionDetailsContainerView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}
