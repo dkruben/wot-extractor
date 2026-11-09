@@ -1,21 +1,21 @@
 # World of Tanks EU — v.2.4.1.1 #993
 
-Cliente **EU** do World of Tanks (v.2.4.1.1 #993, hd) extraído e descompilado pelo
-[wot-extractor](https://github.com/dkruben/wot-extractor) (branch `main`). Gerado automaticamente; cada commit
-corresponde a uma versão do cliente.
+World of Tanks **EU** client (v.2.4.1.1 #993, hd) extracted and decompiled by
+[wot-extractor](https://github.com/dkruben/wot-extractor/tree/main) (branch `main`). Generated automatically;
+each commit corresponds to one client version.
 
-| Pasta | Conteúdo |
+| Folder | Content |
 |---|---|
-| `sources/` | ficheiros do jogo (`res`, `res_mods`) com os caminhos originais; os `.py` são código **descompilado** dos `.pyc` (1.ª linha `wot-extractor: codigo DESCOMPILADO`) |
-| `sources_xml/` | XML binários BigWorld **descodificados** para texto |
-| `sources_as/scripts/` | código ActionScript 3 **descompilado** pelo FFDec (ou só declarações, assinaladas) |
-| `sources_as/swf/` | catálogo de cada SWF (classes, símbolos, imports) e `catalog.json` (classe → SWF) |
-| `sources_gameface/` | HTML/CSS/JS do Gameface **formatados** (não são o código-fonte original), análises e views (`VIEWS.md`) |
-| `__stubs/` | stubs `.pyi` gerados só com informação verificada no código (para VS Code/Pylance: `python.analysis.stubPath`) |
-| `REPORT.md` | resumo da extração: o que foi recuperado e o que ficou parcial |
+| `sources/` | game files (`res`, `res_mods`) with their original paths; the `.py` files are **decompiled** code from the `.pyc` files (first line `wot-extractor: codigo DESCOMPILADO`) |
+| `sources_xml/` | BigWorld binary XML **decoded** to text |
+| `sources_as/scripts/` | ActionScript 3 code **decompiled** by FFDec (or declarations only, marked as such) |
+| `sources_as/swf/` | catalog of each SWF (classes, symbols, imports) and `catalog.json` (class → SWF) |
+| `sources_gameface/` | Gameface HTML/CSS/JS **formatted** (not the original source code), analyses and views (`VIEWS.md`) |
+| `__stubs/` | `.pyi` stubs generated only from information verified in the code (VS Code/Pylance: `python.analysis.stubPath`) |
+| `REPORT.md` | extraction summary: what was recovered and what is only partial |
 
-Os `.pyc`, XML binários e SWF já processados não estão incluídos (ver `REPORT.md`). Os mods de terceiros não
-estão incluídos.
+The `.pyc`, binary XML and SWF files that were already processed are not included (see `REPORT.md`).
+Third-party mods are not included.
 
-**Todo o conteúdo pertence à Wargaming.net** e é publicado apenas como referência para o desenvolvimento de mods;
-não é concedida nenhuma licença sobre ele.
+**All content belongs to Wargaming.net** and is published only as a reference for mod development; no licence is
+granted for it.

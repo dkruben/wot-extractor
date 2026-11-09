@@ -1,32 +1,32 @@
-# wot-extractor — relatório EU (2.4.1.1)
+# wot-extractor — EU report (2.4.1.1)
 
-Gerado em 2026-11-09T12:46:59+00:00 · instalação `D:\Games\World_of_Tanks_EU` (hd) · `.version_name` = 2.4.1.1
+Generated 2026-11-09T15:29:43+00:00 · install `D:\Games\World_of_Tanks_EU` (hd) · `.version_name` = 2.4.1.1
 
-## Conteúdo das pastas
+## Folder contents
 
-| Pasta | O que é | Ficheiros | Tamanho |
+| Folder | What it is | Files | Size |
 |---|---|---|---|
-| `sources/` | ORIGINAIS extraidos de res, res_mods e mods (copia exata, SHA-256 no manifesto); os .py ao lado dos .pyc sao codigo DESCOMPILADO (1.a linha 'wot-extractor: codigo DESCOMPILADO') | 33412 | 895 MB |
-| `sources_xml/` | XML binarios do BigWorld DESCODIFICADOS para texto (o original continua em sources/) | 5096 | 218 MB |
-| `sources_as/` | SWF: catalogo, codigo AS3 DESCOMPILADO pelo FFDec (ou so declaracoes, marcadas) e recursos exportados (o SWF original continua em sources/) | 91479 | 1 GB |
-| `sources_gameface/` | JS/CSS/HTML FORMATADOS (nao sao o codigo-fonte original), analises, views e ligacoes PROVAVEIS ao Python (originais em sources/) | 4306 | 84 MB |
-| `__stubs/` | stubs .pyi GERADOS so com informacao verificada no codigo (Any = desconhecido) | 10907 | 30 MB |
+| `sources/` | ORIGINAL files extracted from res and res_mods (exact copy, SHA-256 in the manifest); the .py files next to the .pyc are DECOMPILED code (first line 'wot-extractor: codigo DESCOMPILADO'); processed .pyc/XML/SWF may have been removed by `clean` | 15475 | 322 MB |
+| `sources_xml/` | BigWorld binary XML DECODED to text | 5096 | 218 MB |
+| `sources_as/` | SWF: catalog, AS3 code DECOMPILED by FFDec (or declarations only, marked), exported assets and .asasm disassembly | 91479 | 1 GB |
+| `sources_gameface/` | FORMATTED JS/CSS/HTML (not the original source code), analyses, views and PROBABLE links to Python (originals in sources/) | 4306 | 84 MB |
+| `__stubs/` | .pyi stubs GENERATED only from information verified in the code (Any = unknown) | 10907 | 30 MB |
 
-## Fases
+## Phases
 
-- **Extração** (2026-11-09T12:33:09+00:00, consistente: True): 21357 ficheiros de 537802 encontrados, sucesso 21357, falhas 0. XML binários descodificados: {'success': 5096}.
-- **Descompilação Python (.pyc 2.7)** (2026-11-09T12:33:12+00:00): {'success': 12041, 'partial': 14, 'failed': 4}. Não totalmente recuperados: 18.
-- **ActionScript/SWF** (2026-11-09T12:33:14+00:00): {'success': 774, 'partial': 10, 'extracted': 26}. Não totalmente recuperados: 10.
-- **Gameface** (2026-11-09T12:33:25+00:00): {'success': 2839}. Não totalmente recuperados: 0. Views: 713; ligações ao Python (prováveis): {'provavel-forte': 303, 'provavel': 324, 'nao-encontrada': 86}.
-- **Stubs .pyi** (2026-11-09T12:35:00+00:00): {'success': 10819, 'partial': 16, 'failed': 1}. Não totalmente recuperados: 17. Classes 20837, funções 125996, módulos sem código 70.
+- **Extraction** (2026-11-09T13:05:03+00:00, consistent: True): 21357 files out of 537802 found, success 21357, failures 0. Binary XML decoded: {'success': 5096}. Removed from `sources/` by `clean` (already processed; marked in the manifest): {'xml': 5096, 'python_bytecode': 12041, 'scaleform': 800}.
+- **Python decompilation (.pyc 2.7)** (2026-11-09T13:05:05+00:00): {'success': 12041, 'partial': 14, 'failed': 4}. Not fully recovered: 18.
+- **ActionScript/SWF** (2026-11-09T13:05:07+00:00): {'success': 774, 'partial': 10, 'extracted': 26}. Not fully recovered: 10.
+- **Gameface** (2026-11-09T15:29:26+00:00): {'success': 2839}. Not fully recovered: 0. Views: 713; links to Python (probable): {'provavel-forte': 303, 'provavel': 324, 'nao-encontrada': 86}.
+- **.pyi stubs** (2026-11-09T12:35:00+00:00): {'success': 10819, 'partial': 16, 'failed': 1}. Not fully recovered: 17. Classes 20837, functions 125996, modules without code 70.
 
-## Verificação
+## Verification
 
-Última `verify` (2026-11-09T12:46:20+00:00): integridade OK; 21357 ficheiros verificados; atualização necessária: não.
+Last `verify` (2026-11-09T13:05:18+00:00): integrity OK; 21357 files checked; update needed: no.
 
-## Não totalmente recuperados (primeiros por fase)
+## Not fully recovered (first ones per phase)
 
-### Descompilação Python (.pyc 2.7)
+### Python decompilation (.pyc 2.7)
 
 - `res/scripts/client/gui/impl/battle/postmortem_panel/postmortem_panel_view.pyc` — partial: descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 55)
 - `res/scripts/client/gui/impl/lobby/battle_results/states.pyc` — failed: AttributeError: 'SyntaxTree' object has no attribute 'pattr'
@@ -60,7 +60,7 @@ Gerado em 2026-11-09T12:46:59+00:00 · instalação `D:\Games\World_of_Tanks_EU`
 - `res/last_stand/gui/flash/lastStandBattleVehicleMarkersApp.swf` — partial: 2 linha(s) com fluxo nao reconstruido (§§)
 - `res/story_mode/gui/flash/storyModeBattleVehicleMarkersApp.swf` — partial: 2 linha(s) com fluxo nao reconstruido (§§)
 
-### Stubs .pyi
+### .pyi stubs
 
 - `res/scripts/client/gui/impl/battle/postmortem_panel/postmortem_panel_view.pyc` — partial: gerado do bytecode (SyntaxError: invalid syntax (linha 55))
 - `res/scripts/client/gui/impl/lobby/battle_results/states.pyc` — partial: gerado do bytecode (sem codigo descompilado)
@@ -80,7 +80,7 @@ Gerado em 2026-11-09T12:46:59+00:00 · instalação `D:\Games\World_of_Tanks_EU`
 - `res/scripts/common/serializable_types/customizations/customization_outfit.pyc` — partial: gerado do bytecode (SyntaxError: invalid syntax (linha 56))
 - `res/scripts/common/serialization/component_xml_deserializer.pyc` — partial: gerado do bytecode (SyntaxError: invalid syntax (linha 31))
 
-## Versões das ferramentas
+## Tool versions
 
 ```
 {
