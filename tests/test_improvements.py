@@ -138,7 +138,7 @@ class IndexCompareTests(_Realm):
         self.assertEqual((sig["before"], sig["after"]), ("(self, a, b=1)", "(self, a, b=1, c=None)"))
         self.assertEqual(res["files"]["counts"]["changed"], 1)  # so o foo.py (o mod em mods/<versao> e igual)
         self.assertTrue(jp.is_file() and mp.is_file())
-        self.assertIn("Assinaturas alteradas", mp.read_text(encoding="utf-8"))
+        self.assertIn("Changed signatures", mp.read_text(encoding="utf-8"))
         hits = search(self.cfg, "gui.foo.Foo.run", exact=True)
         self.assertEqual(sorted(h["realm"] for h in hits), ["CT", "EU"])
 

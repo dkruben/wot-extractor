@@ -135,34 +135,35 @@ def _markdown(r: dict) -> str:
     f = r["files"]
     py = r["python_api"]
     L = [f"# {a} ({r['versions'][a]}) → {b} ({r['versions'][b]})", "",
-         f"Gerado em {r['generated']}. {r['note']}", "",
-         "## Ficheiros", "",
-         f"Novos {f['counts']['added']} · removidos {f['counts']['removed']} · alterados {f['counts']['changed']} · "
-         f"iguais {f['counts']['same']}", "", "| Categoria | Novos | Removidos | Alterados |", "|---|---|---|---|"]
+         f"Generated {r['generated']}. Comparison based only on verified information (SHA-256 and the stub "
+         "descriptions); Gameface↔Python links remain PROBABLE.", "",
+         "## Files", "",
+         f"New {f['counts']['added']} · removed {f['counts']['removed']} · changed {f['counts']['changed']} · "
+         f"same {f['counts']['same']}", "", "| Category | New | Removed | Changed |", "|---|---|---|---|"]
     cats = sorted(set().union(*[set(v) for v in f["by_category"].values()]))
     for c in cats:
         L.append(f"| {c} | {f['by_category']['added'].get(c, 0)} | {f['by_category']['removed'].get(c, 0)} | "
                  f"{f['by_category']['changed'].get(c, 0)} |")
-    L += ["", "## API Python", "", f"Novos: {py['counts']['added']}", "", f"Removidos: {py['counts']['removed']}", "",
-          f"Assinaturas alteradas: {py['counts']['signature_changed']}", ""]
+    L += ["", "## Python API", "", f"New: {py['counts']['added']}", "", f"Removed: {py['counts']['removed']}", "",
+          f"Changed signatures: {py['counts']['signature_changed']}", ""]
     for title, items, fmt in (
-            ("Módulos e classes novos", [x for x in py["added"] if x["kind"] in ("module", "class")],
+            ("New modules and classes", [x for x in py["added"] if x["kind"] in ("module", "class")],
              lambda x: f"- {x['kind']} `{x['name']}`"),
-            ("Módulos e classes removidos", [x for x in py["removed"] if x["kind"] in ("module", "class")],
+            ("Removed modules and classes", [x for x in py["removed"] if x["kind"] in ("module", "class")],
              lambda x: f"- {x['kind']} `{x['name']}`"),
-            ("Assinaturas alteradas", py["signature_changed"],
+            ("Changed signatures", py["signature_changed"],
              lambda x: f"- {x['kind']} `{x['name']}`: `{x['before']}` → `{x['after']}`")):
         L += [f"### {title}", ""]
-        L += [fmt(x) for x in items[:300]] or ["- (nenhum)"]
+        L += [fmt(x) for x in items[:300]] or ["- (none)"]
         if len(items) > 300:
-            L.append(f"- ... mais {len(items) - 300} (ver JSON)")
+            L.append(f"- ... {len(items) - 300} more (see the JSON)")
         L.append("")
     g = r["gameface"]
-    L += ["## Gameface", "", f"Views novas: {len(g['added'])} · removidas: {len(g['removed'])} · ViewModel mudou: "
-          f"{len(g['view_model_changed'])} · membros de ViewModels novos/removidos: {len(g['vm_members_added'])}/"
+    L += ["## Gameface", "", f"New views: {len(g['added'])} · removed: {len(g['removed'])} · ViewModel changed: "
+          f"{len(g['view_model_changed'])} · ViewModel members new/removed: {len(g['vm_members_added'])}/"
           f"{len(g['vm_members_removed'])}", ""]
-    L += [f"- nova `{x}`" for x in g["added"][:200]] + [f"- removida `{x}`" for x in g["removed"][:200]]
+    L += [f"- new `{x}`" for x in g["added"][:200]] + [f"- removed `{x}`" for x in g["removed"][:200]]
     c = r["as3_classes"]
-    L += ["", "## ActionScript", "", f"Classes novas: {len(c['added'])} · removidas: {len(c['removed'])}", ""]
-    L += [f"- nova `{x}`" for x in c["added"][:200]] + [f"- removida `{x}`" for x in c["removed"][:200]]
+    L += ["", "## ActionScript", "", f"New classes: {len(c['added'])} · removed: {len(c['removed'])}", ""]
+    L += [f"- new `{x}`" for x in c["added"][:200]] + [f"- removed `{x}`" for x in c["removed"][:200]]
     return "\n".join(L) + "\n"

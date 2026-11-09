@@ -224,7 +224,7 @@ class EngineTests(unittest.TestCase):
         assets = json.loads((gf / "assets/index.json").read_text(encoding="utf-8"))
         self.assertEqual([a["key"] for a in assets["assets"]], ["res/gui/gameface/fonts/a.ttf"])
         md = (gf / "VIEWS.md").read_text(encoding="utf-8")
-        self.assertIn("não é o código-fonte original", md)
+        self.assertIn("is not the original source code", md)
         self.assertIn("`R.views.lobby.Bad` *", md)
         self.assertTrue((self.out / "gameface_report.json").is_file())
 

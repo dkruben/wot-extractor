@@ -126,9 +126,9 @@ class MaintenanceCycleTests(unittest.TestCase):
         self.assertTrue(r["phases"]["gameface"]["done"])
         self.assertFalse(r["verify"]["integrity_ok"])
         md = (self.out / "REPORT.md").read_text(encoding="utf-8")
-        self.assertIn("ORIGINAIS", md)
-        self.assertIn("não executada", md)
-        self.assertIn("COM PROBLEMAS", md)
+        self.assertIn("ORIGINAL", md)
+        self.assertIn("not run", md)
+        self.assertIn("PROBLEMS FOUND", md)
 
     def test_update_stops_when_extraction_fails(self):
         # membro com CRC errado: a extracao falha, a versao nao avanca e as fases seguintes nao correm

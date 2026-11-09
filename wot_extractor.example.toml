@@ -1,48 +1,48 @@
-# Configuracao do wot-extractor.
-# Copiar para "wot_extractor.toml" (na raiz do projeto) e ajustar.
-# Todos os campos sao opcionais.
+# wot-extractor configuration.
+# Copy to "wot_extractor.toml" (in the project root) and adjust.
+# Every field is optional.
 
 [paths]
-# Pasta onde serao criadas as arvores wot_src_<REALM>. Relativa a este ficheiro.
+# Folder where the wot_src_<REALM> trees are created. Relative to this file.
 output_root = "."
 
 [detect]
-# Pesquisa limitada nos discos quando as outras fontes falham.
+# Bounded disk search when the other sources fail.
 scan_drives = true
-# Profundidade maxima da pesquisa (a partir da raiz do disco).
+# Maximum search depth (from the drive root).
 scan_depth = 2
 
 [decompile]
-# Python 2.7 com uncompyle6 (descompila e valida o bytecode 2.7). Vazio = detecao
-# automatica (variavel WOT_EXTRACTOR_PY27, lancador "py -2.7", C:..H:\Python27).
+# Python 2.7 with uncompyle6 (decompiles and validates the 2.7 bytecode). Empty = automatic
+# detection (WOT_EXTRACTOR_PY27 variable, "py -2.7" launcher, C:..H:\Python27).
 python27 = ""
-# Python 3 com uncompyle6 para o descompilador alternativo. Vazio = o interpretador atual.
+# Python 3 with uncompyle6 for the fallback decompiler. Empty = the current interpreter.
 python3 = ""
-# Tempo limite por ficheiro, em segundos.
+# Timeout per file, in seconds.
 timeout = 120
 
 [actionscript]
-# FFDec (JPEXS Free Flash Decompiler): ffdec-cli.jar, ffdec.jar ou a pasta. Vazio = detecao
-# automatica (variavel WOT_EXTRACTOR_FFDEC, "Program Files (x86)\FFDec", "Program Files\FFDec").
+# FFDec (JPEXS Free Flash Decompiler): ffdec-cli.jar, ffdec.jar or its folder. Empty = automatic
+# detection (WOT_EXTRACTOR_FFDEC variable, "Program Files (x86)\FFDec", "Program Files\FFDec").
 ffdec = ""
-# Java para o FFDec. Vazio = JAVA_HOME ou o "java" do PATH.
+# Java for FFDec. Empty = JAVA_HOME or the "java" on the PATH.
 java = ""
-# Memoria maxima de cada JVM (um processo por SWF em paralelo).
+# Maximum memory of each JVM (one process per SWF in parallel).
 java_heap = "4g"
-# RABCDAsm (pasta com abcexport.exe e rabcdasm.exe): desmontagem .asasm sem perdas dos SWF onde o FFDec
-# nao reconstroi o codigo. Vazio = variavel WOT_EXTRACTOR_RABCDASM ou o PATH. (O XVM traz uma copia em
+# RABCDAsm (folder with abcexport.exe and rabcdasm.exe): lossless .asasm disassembly of the SWFs whose
+# code FFDec cannot rebuild. Empty = WOT_EXTRACTOR_RABCDASM variable or the PATH. (XVM ships a copy in
 # xvm-master/src_build/bin/windows_i686/rabcdasm.)
 rabcdasm = ""
-# Tempo limite por SWF, em segundos (o lobby.swf leva ~17 min).
+# Timeout per SWF, in seconds (lobby.swf takes ~25 min).
 timeout = 3600
 
 [gameface]
-# node.exe usado so para verificar a sintaxe do JavaScript formatado (node --check; nada e executado).
-# Vazio = o "node" do PATH; sem node, a verificacao e so token a token.
+# node.exe, used only to check the syntax of the formatted JavaScript (node --check; nothing is executed).
+# Empty = the "node" on the PATH; without node the check is token by token only.
 node = ""
 
 [realms.EU]
-# Vazio = detecao automatica.
+# Empty = automatic detection.
 install = ""
 preferred_drive = "D:"
 

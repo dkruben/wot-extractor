@@ -21,14 +21,15 @@ OK_ENTRY = frozenset({"extracted", "unchanged"})
 TOP_PROBLEMS = 25
 
 CONTENT = [
-    ("sources/", "ORIGINAIS extraidos de res, res_mods e mods (copia exata, SHA-256 no manifesto); os .py ao lado "
-                 "dos .pyc sao codigo DESCOMPILADO (1.a linha 'wot-extractor: codigo DESCOMPILADO')"),
-    ("sources_xml/", "XML binarios do BigWorld DESCODIFICADOS para texto (o original continua em sources/)"),
-    ("sources_as/", "SWF: catalogo, codigo AS3 DESCOMPILADO pelo FFDec (ou so declaracoes, marcadas) e recursos "
-                    "exportados (o SWF original continua em sources/)"),
-    ("sources_gameface/", "JS/CSS/HTML FORMATADOS (nao sao o codigo-fonte original), analises, views e ligacoes "
-                          "PROVAVEIS ao Python (originais em sources/)"),
-    ("__stubs/", "stubs .pyi GERADOS so com informacao verificada no codigo (Any = desconhecido)"),
+    ("sources/", "ORIGINAL files extracted from res and res_mods (exact copy, SHA-256 in the manifest); the .py files next "
+                 "to the .pyc are DECOMPILED code (first line 'wot-extractor: codigo DESCOMPILADO'); processed .pyc/XML/SWF "
+                 "may have been removed by `clean`"),
+    ("sources_xml/", "BigWorld binary XML DECODED to text"),
+    ("sources_as/", "SWF: catalog, AS3 code DECOMPILED by FFDec (or declarations only, marked), exported assets and "
+                    ".asasm disassembly"),
+    ("sources_gameface/", "FORMATTED JS/CSS/HTML (not the original source code), analyses, views and PROBABLE links "
+                          "to Python (originals in sources/)"),
+    ("__stubs/", ".pyi stubs GENERATED only from information verified in the code (Any = unknown)"),
 ]
 
 
@@ -141,45 +142,45 @@ def _h(n: int | None) -> str:
 def to_markdown(r: dict) -> str:
     p = r["phases"]
     ex = p["extract"]
-    L = [f"# wot-extractor — relatório {r['realm']} ({r['version_name']})", "",
-         f"Gerado em {r['generated']} · instalação `{r['install_path']}` ({r.get('app_type')}) · "
+    L = [f"# wot-extractor — {r['realm']} report ({r['version_name']})", "",
+         f"Generated {r['generated']} · install `{r['install_path']}` ({r.get('app_type')}) · "
          f"`.version_name` = {r['version_file']}", "",
-         "## Conteúdo das pastas", "", "| Pasta | O que é | Ficheiros | Tamanho |", "|---|---|---|---|"]
+         "## Folder contents", "", "| Folder | What it is | Files | Size |", "|---|---|---|---|"]
     for c in r["content"]:
         L.append(f"| `{c['dir']}` | {c['content']} | {c.get('files', '-')} | {_h(c.get('bytes'))} |")
     counts = ex.get("counts") or {}
-    L += ["", "## Fases", "",
-          f"- **Extração** ({ex['date']}, consistente: {ex['consistent']}): {counts.get('selected')} ficheiros de "
-          f"{counts.get('found')} encontrados, sucesso {counts.get('success')}, falhas {counts.get('failed')}. "
-          f"XML binários descodificados: {ex['xml_decoded']}."
-          + (f" Limpos de `sources/` pelo `clean` (já processados; marcados no manifesto): {ex['cleaned']}."
+    L += ["", "## Phases", "",
+          f"- **Extraction** ({ex['date']}, consistent: {ex['consistent']}): {counts.get('selected')} files out of "
+          f"{counts.get('found')} found, success {counts.get('success')}, failures {counts.get('failed')}. "
+          f"Binary XML decoded: {ex['xml_decoded']}."
+          + (f" Removed from `sources/` by `clean` (already processed; marked in the manifest): {ex['cleaned']}."
              if ex.get("cleaned") else "")]
-    labels = {"decompile": "Descompilação Python (.pyc 2.7)", "actionscript": "ActionScript/SWF",
-              "gameface": "Gameface", "stubs": "Stubs .pyi"}
+    labels = {"decompile": "Python decompilation (.pyc 2.7)", "actionscript": "ActionScript/SWF",
+              "gameface": "Gameface", "stubs": ".pyi stubs"}
     for name, label in labels.items():
         ph = p[name]
         if not ph["done"]:
-            L.append(f"- **{label}**: não executada.")
+            L.append(f"- **{label}**: not run.")
             continue
         summ = ph.get("summary") or {}
         extra = ""
         if name == "gameface":
-            extra = f" Views: {summ.get('views')}; ligações ao Python (prováveis): {summ.get('python_links')}."
+            extra = f" Views: {summ.get('views')}; links to Python (probable): {summ.get('python_links')}."
         if name == "stubs":
-            extra = (f" Classes {summ.get('classes')}, funções {summ.get('functions')}, módulos sem código "
+            extra = (f" Classes {summ.get('classes')}, functions {summ.get('functions')}, modules without code "
                      f"{len(summ.get('natives') or [])}.")
-        L.append(f"- **{label}** ({summ.get('date')}): {ph['status']}. Não totalmente recuperados: "
+        L.append(f"- **{label}** ({summ.get('date')}): {ph['status']}. Not fully recovered: "
                  f"{ph['problems_total']}.{extra}")
     v = r.get("verify")
-    L += ["", "## Verificação", ""]
+    L += ["", "## Verification", ""]
     if v:
         c = v.get("counts") or {}
-        L.append(f"Última `verify` ({v['started']}): integridade {'OK' if v['integrity_ok'] else 'COM PROBLEMAS'}; "
-                 f"{c.get('files_checked')} ficheiros verificados; atualização necessária: "
-                 f"{'sim' if v['update_needed'] else 'não'}.")
+        L.append(f"Last `verify` ({v['started']}): integrity {'OK' if v['integrity_ok'] else 'PROBLEMS FOUND'}; "
+                 f"{c.get('files_checked')} files checked; update needed: "
+                 f"{'yes' if v['update_needed'] else 'no'}.")
     else:
-        L.append("Ainda não foi corrida a `verify`.")
-    L += ["", "## Não totalmente recuperados (primeiros por fase)", ""]
+        L.append("`verify` has not been run yet.")
+    L += ["", "## Not fully recovered (first ones per phase)", ""]
     for name, label in labels.items():
         items = p[name]["problems"]
         if not items:
@@ -189,9 +190,9 @@ def to_markdown(r: dict) -> str:
         for it in items:
             L.append(f"- `{it['key']}` — {it['status']}: {it['error'][:160]}")
         if p[name]["problems_total"] > len(items):
-            L.append(f"- ... mais {p[name]['problems_total'] - len(items)} (ver report.json / relatório da fase)")
+            L.append(f"- ... {p[name]['problems_total'] - len(items)} more (see report.json / the phase report)")
         L.append("")
-    L += ["## Versões das ferramentas", "", "```", json.dumps(r.get("tool_versions"), ensure_ascii=False, indent=1),
+    L += ["## Tool versions", "", "```", json.dumps(r.get("tool_versions"), ensure_ascii=False, indent=1),
           "```", ""]
     return "\n".join(L)
 
