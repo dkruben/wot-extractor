@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/frontline/scripts/component_defs/FLBattleUpgradeReserves.def -->
+<root>
+	<Properties>
+		<upgradeReadinessTime>
+			<Type>TIME_WITH_REASON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</upgradeReadinessTime>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>FLBattleUpgradeReserves</DefaultKeyName>
+</root>

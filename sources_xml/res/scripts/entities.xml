@@ -1,0 +1,45 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entities.xml -->
+<root>
+	<ClientServerEntities>
+		<Account />
+		<Avatar />
+		<ArenaInfo />
+		<ClientSelectableObject />
+		<HangarVehicle />
+		<Vehicle />
+		<AreaDestructibles />
+		<OfflineEntity />
+		<Flock />
+		<FlockExotic />
+		<Login />
+		<DetachedTurret />
+		<DebugDrawEntity />
+		<ClientSelectableCameraObject />
+		<ClientSelectableCameraVehicle />
+		<ClientSelectableWebLinksOpener />
+		<ClientSelectableEasterEgg />
+		<EmptyEntity />
+		<LimitedVisibilityEntity />
+		<HeroTank />
+		<PlatoonTank />
+		<PlatoonLighting />
+		<SectorBase />
+		<Sector />
+		<DestructibleEntity />
+		<StepRepairPoint />
+		<ProtectionZone />
+		<TeamInfo />
+		<AvatarInfo />
+		<ArenaObserverInfo />
+		<AreaOfEffect />
+		<AttackBomber />
+		<AttackArtilleryFort />
+		<PersonalDeathZone />
+		<ClientSelectableRankedObject />
+		<SimulatedVehicle />
+		<ClientSelectableHangarsSwitcher />
+		<StaticDeathZone />
+		<BasicMine />
+		<NetworkEntity />
+	</ClientServerEntities>
+</root>

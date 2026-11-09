@@ -1,0 +1,53 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/extension.xml -->
+<root>
+	<FeatureName>story_mode</FeatureName>
+	<IsEnabled>true</IsEnabled>
+	<Personality>story_mode_personality</Personality>
+	<EditorPersonality>story_mode_personality_editor</EditorPersonality>
+	<Components>
+		<StaticComponents>
+			<StoryModeMissions />
+			<StoryModeAccountComponent />
+			<StoryModeArenaComponent />
+			<StoryModeAvatarComponent />
+		</StaticComponents>
+		<DynamicComponents>
+			<StoryModeAfkController />
+			<StoryModeDamageResistsComponent />
+			<StoryModeAccuracyOverrideComponent />
+			<StoryModeModulesImmunityComponent />
+			<StoryModeLootableComponent />
+			<SMReconAbilityEntityComponent />
+			<SMReconAbilityVehicleComponent />
+			<SMDistractionAbilityEntityComponent />
+			<SMDistractionAbilityArenaInfoComponent />
+			<SMDetectionDelayObserverComponent />
+			<SMDetectionDelayObservableComponent />
+			<SMVehicleRespawnComponent />
+			<SMAbilitiesTrackerComponent />
+			<SMAbilitiesInterruptComponent />
+			<SMAbilitiesRechargeComponent />
+			<SMArtilleryStrikeChannelComponent />
+			<SMRemovableDynGroupComponent />
+			<SMSequencesComponent />
+			<SMSound3DComponent />
+			<SMSound3DObjectComponent />
+			<BunkerLogicComponent />
+		</DynamicComponents>
+	</Components>
+	<Entities>
+		<ServerOnlyEntities>
+			<StoryModeBattlesMgr />
+		</ServerOnlyEntities>
+		<ClientServerEntities>
+			<SPGZone />
+		</ClientServerEntities>
+	</Entities>
+	<ExternalComponents />
+	<cgf>
+		<script>
+			<module>client.story_mode.client_story_mode_module</module>
+			<module>cell.story_mode_cell.cell_story_mode_module</module>
+		</script>
+	</cgf>
+</root>

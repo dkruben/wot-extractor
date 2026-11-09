@@ -1,0 +1,167 @@
+{
+ "source": "sources/res/gui/flash/PvePostmortemPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 43024,
+ "actual_length": 43024,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 11,
+  "ShowFrame": 156,
+  "DefineShape": 150,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 168,
+  "RemoveObject2": 1,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 6,
+  "DefineEditText": 12,
+  "DefineSprite": 10,
+  "FileAttributes": 1,
+  "PlaceObject3": 9,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 11,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 7,
+  "shapes": 151,
+  "sprites": 10,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 12,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 180,
+   "class": "PvePostmortemPanelUI"
+  },
+  {
+   "id": 179,
+   "class": "PostmortemTimerUI"
+  },
+  {
+   "id": 178,
+   "class": "PostmortemTimerContainerUI"
+  },
+  {
+   "id": 177,
+   "class": "PvePostmortemPanel_fla.iconSwitcher_3"
+  },
+  {
+   "id": 171,
+   "class": "ProgressBarUI"
+  },
+  {
+   "id": 22,
+   "class": "PveVehiclePanelUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2811,
+   "classes": 7,
+   "methods": 27,
+   "bodies": 27,
+   "code_bytes": 628
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PvePostmortemPanel_fla.iconSwitcher_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveVehiclePanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.postmortemPanel.PvePostmortemVehiclePanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PostmortemTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.postmortemPanel.PvePostmortemTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PostmortemTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.postmortemPanel.PvePostmortemTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PvePostmortemPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.postmortemPanel.PvePostmortemPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

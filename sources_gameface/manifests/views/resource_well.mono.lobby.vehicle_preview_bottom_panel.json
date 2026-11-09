@@ -1,0 +1,118 @@
+{
+  "rid": "R.views.resource_well.mono.lobby.vehicle_preview_bottom_panel",
+  "rid_source": "sources/res/resource_well/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "vehicle_preview_bottom_panel",
+  "dir": "resource_well/gui/gameface/_dist/production/mono/lobby/vehicle_preview_bottom_panel",
+  "feature": "resource_well",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/vehicle_preview_bottom_panel/bundle.js",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/vehicle_preview_bottom_panel/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "vehicle_preview_bottom_panel.css",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/vehicle_preview_bottom_panel/vehicle_preview_bottom_panel.css",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/vehicle_preview_bottom_panel/vehicle_preview_bottom_panel.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "vehicle_preview_bottom_panel.html",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/vehicle_preview_bottom_panel/vehicle_preview_bottom_panel.html",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/vehicle_preview_bottom_panel/vehicle_preview_bottom_panel.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/vehicle_preview_bottom_panel/bundle.js",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/vehicle_preview_bottom_panel/bundle.js"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/vehicle_preview_bottom_panel/vehicle_preview_bottom_panel.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/vehicle_preview_bottom_panel/vehicle_preview_bottom_panel.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onAction"
+  ],
+  "link": {
+    "rid": "R.views.resource_well.mono.lobby.vehicle_preview_bottom_panel",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.resource_well.mono.lobby.vehicle_preview_bottom_panel no Python",
+      "ViewModel WellPanelModel (model=... no Python da view): 2/6 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/resource_well/scripts/client/resource_well/gui/Scaleform/daapi/view/lobby/vehicle_preview/info/vehicle_preview_bottom_panel.py",
+        40
+      ]
+    ],
+    "python_files": [
+      "sources/res/resource_well/scripts/client/resource_well/gui/Scaleform/daapi/view/lobby/vehicle_preview/info/vehicle_preview_bottom_panel.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/resource_well/scripts/client/resource_well/gui/impl/gen/view_models/views/lobby/well_panel_model.py",
+      "class": "WellPanelModel",
+      "chain": [
+        "WellPanelModel"
+      ],
+      "properties": [
+        [
+          "vehicleInfo",
+          "ViewModel"
+        ],
+        [
+          "topRewardsCount",
+          "Number"
+        ],
+        [
+          "regularRewardsCount",
+          "Number"
+        ],
+        [
+          "isVisible",
+          "Bool"
+        ],
+        [
+          "eventMode",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onAction"
+      ],
+      "coverage": {
+        "found": 2,
+        "total": 6,
+        "missing": [
+          "eventMode",
+          "isVisible",
+          "regularRewardsCount",
+          "topRewardsCount"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

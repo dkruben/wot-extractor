@@ -1,0 +1,250 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineFullStats.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 380513,
+ "actual_length": 380513,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 19,
+  "ShowFrame": 183,
+  "DefineShape": 12,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 119,
+  "RemoveObject2": 6,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 12,
+  "DefineEditText": 20,
+  "DefineSprite": 18,
+  "FrameLabel": 24,
+  "FileAttributes": 1,
+  "PlaceObject3": 57,
+  "ImportAssets2": 7,
+  "CSMTextSettings": 20,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 12,
+  "shapes": 16,
+  "sprites": 18,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 20,
+  "fonts": 0,
+  "classes": 13,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "fullStats.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "frontline|frontlineSharedAssets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 66,
+   "class": "listEntryLeftUI"
+  },
+  {
+   "id": 61,
+   "class": "listEntryRightUI"
+  },
+  {
+   "id": 51,
+   "class": "FrontlineFullStatsUI"
+  },
+  {
+   "id": 50,
+   "class": "FrontlineFullStatsTableUI"
+  },
+  {
+   "id": 49,
+   "class": "statsFiltersUI"
+  },
+  {
+   "id": 48,
+   "class": "StatsTableButtonUI"
+  },
+  {
+   "id": 43,
+   "class": "frontlineFullStats_fla.StatsTabBtn_FocusIndicator_3"
+  },
+  {
+   "id": 39,
+   "class": "frontlineFullStats_fla.LaneIcon_2"
+  },
+  {
+   "id": 26,
+   "class": "generalBonusUI"
+  },
+  {
+   "id": 15,
+   "class": "PlayerScrollingListUI"
+  },
+  {
+   "id": 11,
+   "class": "FrontlineStatsHeaderUI"
+  },
+  {
+   "id": 7,
+   "class": "frontlineFullStats_fla.headerBg_12"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 6656,
+   "classes": 13,
+   "methods": 71,
+   "bodies": 71,
+   "code_bytes": 1976
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineFullStats_fla.LaneIcon_2",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineFullStats_fla.StatsTabBtn_FocusIndicator_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineFullStats_fla.headerBg_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineFullStatsTableUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.stats.components.FrontlineFullStatsTable",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineStatsHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.stats.components.FrontlineStatsHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "generalBonusUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.stats.components.FrontlineStatsGeneralBonus",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statsFiltersUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.stats.components.FrontlineStatsTableFilterGroup",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "listEntryLeftUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.stats.renderers.FrontlineStatsPlayerRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "listEntryRightUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.stats.renderers.FrontlineStatsPlayerRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerScrollingListUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.stats.components.PlayerScrollingList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatsTableButtonUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.stats.components.FrontlineStatsTableTabButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineFullStatsUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.stats.FrontlineFullStats",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

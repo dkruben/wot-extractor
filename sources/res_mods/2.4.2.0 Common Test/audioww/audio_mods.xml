@@ -1,0 +1,11 @@
+<root>
+	<events/>
+	<switches/>
+	<RTPCs/>
+	<states/>
+	<loadBanks>
+		<bank>
+			<name> driftkings_sixthsense.bnk </name>
+		</bank>
+	</loadBanks>
+</root>

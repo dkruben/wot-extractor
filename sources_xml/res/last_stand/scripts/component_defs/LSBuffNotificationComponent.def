@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/component_defs/LSBuffNotificationComponent.def -->
+<root>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<Properties>
+		<startTime>
+			<Type>FLOAT</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0.0</Default>
+		</startTime>
+	</Properties>
+</root>

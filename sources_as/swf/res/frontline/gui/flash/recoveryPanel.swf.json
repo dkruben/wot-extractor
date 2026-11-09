@@ -1,0 +1,105 @@
+{
+ "source": "sources/res/frontline/gui/flash/recoveryPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 24015,
+ "actual_length": 24015,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 6,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 7,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 4,
+  "DefineSprite": 5,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 13,
+   "class": "RecoveryPanelUI"
+  },
+  {
+   "id": 12,
+   "class": "RecoveryHintUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 803,
+   "classes": 2,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 140
+  }
+ ],
+ "classes": [
+  {
+   "name": "RecoveryHintUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.recoveryPanel.RecoveryHint",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RecoveryPanelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.recoveryPanel.RecoveryPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

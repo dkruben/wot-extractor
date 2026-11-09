@@ -1,0 +1,1 @@
+{"key":"res/gui/gameface/scripts/migration-ui/src/ts/index.ts","source":"sources/res/gui/gameface/scripts/migration-ui/src/ts/index.ts","kind":"ts_source","bytes":9008,"encoding":"utf-8","lines":239,"imports":["../bindings","../core","../core/banner","../utils/strings","effect","path"],"exports":["TsContext","tsProcess"]}

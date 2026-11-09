@@ -1,0 +1,44 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/account_helpers/settings_core/settings_disable/aop.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/account_helpers/settings_core/settings_disable/aop.py
+from __future__ import absolute_import
+from future.utils import viewitems
+from typing import TYPE_CHECKING
+from helpers import aop
+if TYPE_CHECKING:
+    from typing import Dict, Sequence
+
+class _FlashDisableSettingsAspect(aop.Aspect):
+
+    def __init__(self, settings):
+        super(_FlashDisableSettingsAspect, self).__init__()
+        self.__disabledSettings = settings
+
+    def atCall(self, cd):
+        for itemId, guiPath in viewitems(self.__disabledSettings):
+            self.__disableControl(cd, itemId, guiPath)
+
+    def __disableControl(self, cd, itemId, guiPath):
+        page = ''
+        subpage = ''
+        pathLen = len(guiPath)
+        if pathLen == 1:
+            page = guiPath[0]
+        elif pathLen == 2:
+            page, subpage = guiPath
+        cd.self.as_disableControlS(page, itemId, subpage)
+
+
+class DisableCameraSettingsFlashPointcut(aop.Pointcut):
+
+    def __init__(self, settings):
+        aop.Pointcut.__init__(self, 'gui.Scaleform.daapi.view.common.settings.SettingsWindow', 'SettingsWindow', 'as_setDataS')
+        self.addAspect(_FlashDisableSettingsAspect, settings=settings)
+
+
+class DisableAltModeTogglePointcut(aop.Pointcut):
+
+    def __init__(self):
+        super(DisableAltModeTogglePointcut, self).__init__('AvatarInputHandler.control_modes', 'ArcadeControlMode', '^__activateAlternateMode$')

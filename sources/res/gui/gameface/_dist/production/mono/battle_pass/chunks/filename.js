@@ -1,0 +1,1 @@
+var n=(n,r,a="")=>{const s=a.length>0?`_${a}`:a,e=n.$dyn(`c_${r}${s}`),o=String(r).slice(-1),t=n.$dyn(`default_${o}${s}`);return e||t},r=r=>{const a=R.images.gui.maps.icons.battlePass.backgrounds;return r?{backgroundImage:`url(${n(a.progression,r)})`}:{backgroundImage:`url(${a.$dyn("common")})`}};export{n,r as t};

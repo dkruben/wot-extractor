@@ -1,0 +1,6 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fun_random/scripts/component_defs/AccountFunRandomComponent.def -->
+<root>
+	<ofEntity>
+		<Account />
+	</ofEntity>
+</root>

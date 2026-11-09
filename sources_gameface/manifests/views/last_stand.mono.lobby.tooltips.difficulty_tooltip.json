@@ -1,0 +1,162 @@
+{
+  "rid": "R.views.last_stand.mono.lobby.tooltips.difficulty_tooltip",
+  "rid_source": "sources/res/last_stand/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "difficulty_tooltip",
+  "dir": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip",
+  "feature": "last_stand",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip/bundle.js",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip/bundle.js"
+    },
+    {
+      "name": "difficulty_tooltip.css",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip/difficulty_tooltip.css",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip/difficulty_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "difficulty_tooltip.html",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip/difficulty_tooltip.html",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip/difficulty_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/story_point.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/story_point.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip/bundle.js",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip/bundle.js"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip/difficulty_tooltip.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/difficulty_tooltip/difficulty_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.last_stand.mono.lobby.tooltips.difficulty_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "4 referencia(s) R.views.last_stand.mono.lobby.tooltips.difficulty_tooltip no Python",
+      "ViewModel BattleResultViewModel (model=... no Python da view): 1/11 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/battle_result_view.py",
+        91
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/pre_battle_queue_view.py",
+        52
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/tooltips/difficulty_tooltip.py",
+        29
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/widgets/difficulty_view.py",
+        37
+      ]
+    ],
+    "python_files": [
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/battle_result_view.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/pre_battle_queue_view.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/tooltips/difficulty_tooltip.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/widgets/difficulty_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/last_stand/scripts/client/last_stand/gui/impl/gen/view_models/views/lobby/battle_result_view_model.py",
+      "class": "BattleResultViewModel",
+      "chain": [
+        "BattleResultViewModel"
+      ],
+      "properties": [
+        [
+          "battleInfo",
+          "ViewModel"
+        ],
+        [
+          "playerInfo",
+          "ViewModel"
+        ],
+        [
+          "currentPhase",
+          "Number"
+        ],
+        [
+          "phasesCount",
+          "Number"
+        ],
+        [
+          "isWin",
+          "Bool"
+        ],
+        [
+          "newRecord",
+          "Bool"
+        ],
+        [
+          "difficultyLevel",
+          "Number"
+        ],
+        [
+          "time",
+          "Number"
+        ],
+        [
+          "completedMissions",
+          "String"
+        ],
+        [
+          "rewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClose"
+      ],
+      "coverage": {
+        "found": 1,
+        "total": 11,
+        "missing": [
+          "battleInfo",
+          "completedMissions",
+          "currentPhase",
+          "difficultyLevel",
+          "isWin",
+          "newRecord",
+          "onClose",
+          "phasesCount",
+          "playerInfo",
+          "time"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/gen/view_models/views/lobby/pre_battle_queue_view_model.py",
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/gen/view_models/views/lobby/tooltips/difficulty_tooltip_view_model.py",
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/gen/view_models/views/lobby/widgets/difficulty_view_model.py"
+      ]
+    }
+  }
+}

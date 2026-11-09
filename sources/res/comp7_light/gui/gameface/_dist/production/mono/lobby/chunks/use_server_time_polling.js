@@ -1,0 +1,1 @@
+import{Ri as i}from"./lib.js";function o(o,t,r){i(()=>{r()},o<t?950:void 0)}export{o as t};

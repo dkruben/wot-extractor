@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/advent_calendar/scripts/client/advent_calendar/gui/shared/advent_system_factory.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from gui.shared.system_factory import CollectEventsManager as CollectEventsManager
+DOORS_AVAILABLE_LISTENER = 0
+REWARD_WINDOW = 1
+CALENDAR_WINDOW = 2
+PURCHASE_DIALOG_VIEW = 3
+QUEST_CALENDAR_FORMATTER = 4
+__collectAdventEM: Any
+
+def registerDoorsAvailableListener(listener):
+    ...
+def collectDoorsAvailableListener():
+    ...
+def registerRewardWindow(validator, viewType):
+    ...
+def collectRewardWindow():
+    ...
+def registerCalendarWindow(validator, windowCls):
+    ...
+def collectCalendarWindow():
+    ...
+def registerPurchaseDialogView(validator, viewCls):
+    ...
+def collectPurchaseDialogView():
+    ...
+def registerQuestRewardFormatter(formatter):
+    ...
+def collectQuestRewardFormatter():
+    ...

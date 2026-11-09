@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/PlaneTrajectoryArenaInfo.def -->
+<root>
+	<Properties>
+		<planeTrajectory>
+			<Type>PLANE_TRAJECTORY</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</planeTrajectory>
+	</Properties>
+</root>

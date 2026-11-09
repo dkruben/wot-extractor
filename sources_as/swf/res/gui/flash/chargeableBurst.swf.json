@@ -1,0 +1,260 @@
+{
+ "source": "sources/res/gui/flash/chargeableBurst.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 24362,
+ "actual_length": 24362,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 21,
+  "ShowFrame": 176,
+  "DefineShape": 12,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 189,
+  "RemoveObject2": 1,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 11,
+  "DefineSprite": 20,
+  "FrameLabel": 20,
+  "FileAttributes": 1,
+  "PlaceObject3": 3,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 12,
+  "shapes": 12,
+  "sprites": 20,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 18,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 44,
+   "class": "ChargeableBurstBulletUI"
+  },
+  {
+   "id": 43,
+   "class": "chargeableBurst_fla.bulletImg_3"
+  },
+  {
+   "id": 38,
+   "class": "chargeableBurst_fla.bulletBg_2"
+  },
+  {
+   "id": 33,
+   "class": "ChargeableBurstWidgetUI"
+  },
+  {
+   "id": 32,
+   "class": "ChargeableBurstBulletsUI"
+  },
+  {
+   "id": 31,
+   "class": "Shadows"
+  },
+  {
+   "id": 30,
+   "class": "BulletsShadow"
+  },
+  {
+   "id": 26,
+   "class": "PenetrationsShadow"
+  },
+  {
+   "id": 25,
+   "class": "ChargeableBurstPenetrationsUI"
+  },
+  {
+   "id": 24,
+   "class": "BulletDecorationsUI"
+  },
+  {
+   "id": 20,
+   "class": "chargeableBurst_fla.bulletDecorLeft_14"
+  },
+  {
+   "id": 16,
+   "class": "chargeableBurst_fla.bulletDecorRight_12"
+  },
+  {
+   "id": 12,
+   "class": "ChargeableBurstPenetrationUI"
+  },
+  {
+   "id": 3,
+   "class": "PenetrationsShadowItemUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5005,
+   "classes": 18,
+   "methods": 82,
+   "bodies": 82,
+   "code_bytes": 1940
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Exponential",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BulletsShadow",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.chargeableBurst.BulletsShadow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeableBurstPenetrationsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.chargeableBurst.Penetrations",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PenetrationsShadow",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.chargeableBurst.PenetrationsShadow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PenetrationsShadowItemUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "chargeableBurst_fla.bulletBg_2",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "chargeableBurst_fla.bulletDecorLeft_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "chargeableBurst_fla.bulletDecorRight_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "chargeableBurst_fla.bulletImg_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BulletDecorationsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.chargeableBurst.Decorations",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeableBurstBulletUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.chargeableBurst.BulletItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeableBurstBulletsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.chargeableBurst.Bullets",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeableBurstPenetrationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.chargeableBurst.PenetrationItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Shadows",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.chargeableBurst.Shadows",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChargeableBurstWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.ChargeableBurstWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

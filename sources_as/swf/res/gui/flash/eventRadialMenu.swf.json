@@ -1,0 +1,505 @@
+{
+ "source": "sources/res/gui/flash/eventRadialMenu.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 450192,
+ "actual_length": 450192,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 39,
+  "ShowFrame": 71,
+  "DefineShape": 27,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 136,
+  "DefineBitsLossless2": 25,
+  "DefineEditText": 11,
+  "DefineSprite": 38,
+  "FrameLabel": 7,
+  "FileAttributes": 1,
+  "PlaceObject3": 27,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 11,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 25,
+  "shapes": 27,
+  "sprites": 38,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 11,
+  "fonts": 0,
+  "classes": 38,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 101,
+   "class": "EventRadialMenuUI"
+  },
+  {
+   "id": 100,
+   "class": "RadialButtonUI"
+  },
+  {
+   "id": 99,
+   "class": "HitAreaUI"
+  },
+  {
+   "id": 97,
+   "class": "IconsHoverRotationContainerUI"
+  },
+  {
+   "id": 96,
+   "class": "RadialButtonIconsHoverUI"
+  },
+  {
+   "id": 95,
+   "class": "followMeHoverUI"
+  },
+  {
+   "id": 92,
+   "class": "stopHoverUI"
+  },
+  {
+   "id": 89,
+   "class": "turnBackHoverUI"
+  },
+  {
+   "id": 86,
+   "class": "supportHoverUI"
+  },
+  {
+   "id": 83,
+   "class": "sosexHoverUI"
+  },
+  {
+   "id": 80,
+   "class": "sosHoverUI"
+  },
+  {
+   "id": 77,
+   "class": "backtobaseHoverUI"
+  },
+  {
+   "id": 74,
+   "class": "noHoverUI"
+  },
+  {
+   "id": 71,
+   "class": "reloadHoverUI"
+  },
+  {
+   "id": 68,
+   "class": "attackHoverUI"
+  },
+  {
+   "id": 65,
+   "class": "yesHoverUI"
+  },
+  {
+   "id": 62,
+   "class": "IconsUpRotationContainerUI"
+  },
+  {
+   "id": 61,
+   "class": "RadialButtonIconsUpUI"
+  },
+  {
+   "id": 60,
+   "class": "followMeUI"
+  },
+  {
+   "id": 57,
+   "class": "stopUI"
+  },
+  {
+   "id": 54,
+   "class": "turnBackUI"
+  },
+  {
+   "id": 51,
+   "class": "supportUI"
+  },
+  {
+   "id": 48,
+   "class": "sosexUI"
+  },
+  {
+   "id": 45,
+   "class": "sosUI"
+  },
+  {
+   "id": 42,
+   "class": "backtobaseUI"
+  },
+  {
+   "id": 39,
+   "class": "noUI"
+  },
+  {
+   "id": 36,
+   "class": "reloadUI"
+  },
+  {
+   "id": 33,
+   "class": "attackUI"
+  },
+  {
+   "id": 30,
+   "class": "yesUI"
+  },
+  {
+   "id": 27,
+   "class": "RadialButtonContentUI"
+  },
+  {
+   "id": 26,
+   "class": "ChatMessageUI"
+  },
+  {
+   "id": 23,
+   "class": "MessageBgUI"
+  },
+  {
+   "id": 21,
+   "class": "CommandContainerUI"
+  },
+  {
+   "id": 16,
+   "class": "RadialButtonSectorHoveredWrapperUI"
+  },
+  {
+   "id": 11,
+   "class": "PagingUI"
+  },
+  {
+   "id": 7,
+   "class": "PageDotUI"
+  },
+  {
+   "id": 4,
+   "class": "PageUI"
+  },
+  {
+   "id": 1,
+   "class": "backgroundedHoleAreaUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5544,
+   "classes": 38,
+   "methods": 119,
+   "bodies": 119,
+   "code_bytes": 1850
+  }
+ ],
+ "classes": [
+  {
+   "name": "HitAreaUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MessageBgUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PageDotUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PageUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "attackHoverUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "attackUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "backtobaseHoverUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "backtobaseUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "followMeHoverUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "followMeUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "noHoverUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "noUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "reloadHoverUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "reloadUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sosHoverUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sosUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sosexHoverUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sosexUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stopHoverUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stopUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "supportHoverUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "supportUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "turnBackHoverUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "turnBackUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "yesHoverUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "yesUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChatMessageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.radialMenu.components.ChatContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CommandContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.radialMenu.components.CommandContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconsHoverRotationContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.radialMenu.components.IconRotationContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconsUpRotationContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.radialMenu.components.IconRotationContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PagingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.radialMenu.components.RadialPaging",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadialButtonContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.radialMenu.components.EventContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadialButtonIconsHoverUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.radialMenu.components.Icons",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadialButtonIconsUpUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.radialMenu.components.Icons",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadialButtonSectorHoveredWrapperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.radialMenu.components.EventSectorHoveredWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "backgroundedHoleAreaUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.radialMenu.components.EventBackGround",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadialButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.radialMenu.EventRadialButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventRadialMenuUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.radialMenu.EventRadialMenu",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

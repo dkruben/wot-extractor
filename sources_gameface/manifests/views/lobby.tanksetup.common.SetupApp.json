@@ -1,0 +1,70 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.SetupApp",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SetupApp",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp",
+  "feature": null,
+  "files": [
+    {
+      "name": "SetupApp.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp/SetupApp.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp/SetupApp.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SetupApp.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp/SetupApp.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp/SetupApp.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SetupApp.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp/SetupApp.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp/SetupApp.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp/SetupApp.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp/SetupApp.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp/SetupApp.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp/SetupApp.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SetupApp/SetupApp.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.SetupApp",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

@@ -1,0 +1,48 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/open_bundle/scripts/client/open_bundle/helpers/resources.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: open_bundle/scripts/client/open_bundle/helpers/resources.py
+from __future__ import absolute_import
+import typing
+from gui.impl.gen import R
+from helpers import dependency
+from open_bundle.gui.constants import OPEN_BUNDLE_ENTRY_POINT_NAME
+from open_bundle.skeletons.open_bundle_controller import IOpenBundleController
+if typing.TYPE_CHECKING:
+    from typing import Iterable
+    from frameworks.wulf import PyResAccessor
+_TEXT_PATH_PREFIX = 'open_bundle_lobby_{}'
+_IMAGES_PATH_PREFIX = 'open_bundle.gui.maps.icons.bundles.{}'
+_DEFAULT_BUNDLE_TYPE = 'default'
+
+@dependency.replace_none_kwargs(openBundle=IOpenBundleController)
+def getTextResource(bundleID, path, openBundle=None):
+    bundle = openBundle.config.getBundle(bundleID)
+    customResource = _getResourceFromPath(R.strings.dyn(_TEXT_PATH_PREFIX.format(bundle.type)), path)
+    if customResource.isValid():
+        return customResource
+    return getDefaultTextResource(path)
+
+
+def getDefaultTextResource(path):
+    return _getResourceFromPath(R.strings.open_bundle_lobby_default, path)
+
+
+@dependency.replace_none_kwargs(openBundle=IOpenBundleController)
+def getBannerImagesPath(bundleID, openBundle=None):
+    bundle = openBundle.config.getBundle(bundleID)
+    if bundle.type:
+        bannerPath = [
+         'hangarEventBanners', 'event', OPEN_BUNDLE_ENTRY_POINT_NAME]
+        customImages = R.images.open_bundle.gui.maps.icons.bundles.dyn(bundle.type)
+        if _getResourceFromPath(customImages, bannerPath).isValid():
+            return _IMAGES_PATH_PREFIX.format(bundle.type)
+    return _IMAGES_PATH_PREFIX.format(_DEFAULT_BUNDLE_TYPE)
+
+
+def _getResourceFromPath(resource, path):
+    for part in path:
+        resource = resource.dyn(part)
+
+    return resource

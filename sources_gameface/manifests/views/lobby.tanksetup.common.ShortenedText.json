@@ -1,0 +1,70 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.ShortenedText",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ShortenedText",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText",
+  "feature": null,
+  "files": [
+    {
+      "name": "ShortenedText.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText/ShortenedText.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText/ShortenedText.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ShortenedText.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText/ShortenedText.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText/ShortenedText.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ShortenedText.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText/ShortenedText.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText/ShortenedText.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText/ShortenedText.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText/ShortenedText.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText/ShortenedText.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText/ShortenedText.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/ShortenedText/ShortenedText.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.ShortenedText",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

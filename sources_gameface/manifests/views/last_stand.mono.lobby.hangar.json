@@ -1,0 +1,216 @@
+{
+  "rid": "R.views.last_stand.mono.lobby.hangar",
+  "rid_source": "sources/res/last_stand/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "hangar",
+  "dir": "last_stand/gui/gameface/_dist/production/mono/lobby/hangar",
+  "feature": "last_stand",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/last_stand/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+    },
+    {
+      "name": "hangar.css",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "hangar.html",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/hangar/hangar.html",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/hangar/hangar.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/common.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/common.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/parallax_app.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/parallax_app.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/story_point.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/story_point.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/tankman_role.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/tankman_role.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "common.tooltip_window.simple_tooltip_content.SimpleTooltipContent",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "last_stand.mono.lobby.tooltips.daily_quests_tooltip",
+    "last_stand.mono.lobby.tooltips.reward_path_tooltip",
+    "last_stand.mono.lobby.tooltips.simple_format_tooltip",
+    "mono.rest_bonus.tooltips.rest_bonus_tooltip"
+  ],
+  "commands": [
+    "dealPanel.onAutoRenewalChanged",
+    "dealPanel.onDealCancelled",
+    "dealPanel.onDealConfirmed",
+    "onAboutClick",
+    "onBuySlot",
+    "onCarouselTypeChange",
+    "onChangeSetupIndex",
+    "onClick",
+    "onCreate",
+    "onDiscard",
+    "onDogMoreInfoClick",
+    "onGetMoreCurrency",
+    "onGoBuyVehicle",
+    "onGoRecoverVehicle",
+    "onGoToAboutVehicle",
+    "onGroupClick",
+    "onIntroAnimationPlayed",
+    "onMarkAsViewed",
+    "onModify",
+    "onNarrationClick",
+    "onNavigate",
+    "onOpenBarracks",
+    "onOpenBattlePass",
+    "onOpenCrew",
+    "onOpenSlotSpecDialog",
+    "onPresetSelected",
+    "onReset",
+    "onSave",
+    "onSaveFilter",
+    "onSelect",
+    "onSelectTelecomRentalVehicle",
+    "onSelectVehicle",
+    "onSetDirtyEdit",
+    "onShellUpdate",
+    "onSlideChanged",
+    "onSlotAction",
+    "onSwitch",
+    "onSwitchLevel",
+    "onToggleAcceleratedTraining",
+    "onToggleIntensiveTraining",
+    "onUpdateSetting",
+    "onViewLoaded",
+    "onWidgetUnmounted",
+    "openDeleteConfirm",
+    "openImportConfirm"
+  ],
+  "link": {
+    "rid": "R.views.last_stand.mono.lobby.hangar",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "5 referencia(s) R.views.last_stand.mono.lobby.hangar no Python",
+      "ViewModel HangarViewModel (model=... no Python da view): 6/12 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/game_control/ls_controller.py",
+        320
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/hangar_view.py",
+        65
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/scaleform/daapi/view/lobby/ls_user_cm_handlers.py",
+        30
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/shared/event_dispatcher.py",
+        62
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand_personality.py",
+        356
+      ]
+    ],
+    "python_files": [
+      "sources/res/last_stand/scripts/client/last_stand/gui/game_control/ls_controller.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/hangar_view.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/scaleform/daapi/view/lobby/ls_user_cm_handlers.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/shared/event_dispatcher.py",
+      "sources/res/last_stand/scripts/client/last_stand_personality.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/last_stand/scripts/client/last_stand/gui/impl/gen/view_models/views/lobby/hangar_view_model.py",
+      "class": "HangarViewModel",
+      "chain": [
+        "HangarViewModel",
+        "RouterModel"
+      ],
+      "properties": [
+        [
+          "isInfoEnabled",
+          "Bool"
+        ],
+        [
+          "isLootBoxEntryPointEnabled",
+          "Bool"
+        ],
+        [
+          "isLoadedSetup",
+          "Bool"
+        ],
+        [
+          "selectedStory",
+          "Number"
+        ],
+        [
+          "showDailyAnim",
+          "Bool"
+        ],
+        [
+          "route",
+          "String"
+        ],
+        [
+          "params",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onAboutClick",
+        "onViewLoaded",
+        "onNarrationClick",
+        "navigateTo",
+        "navigateBack"
+      ],
+      "coverage": {
+        "found": 6,
+        "total": 12,
+        "missing": [
+          "isInfoEnabled",
+          "isLoadedSetup",
+          "isLootBoxEntryPointEnabled",
+          "navigateBack",
+          "selectedStory",
+          "showDailyAnim"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

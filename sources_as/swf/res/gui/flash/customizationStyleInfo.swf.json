@@ -1,0 +1,152 @@
+{
+ "source": "sources/res/gui/flash/customizationStyleInfo.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 13113,
+ "actual_length": 13113,
+ "frame_size_px": [
+  0.0,
+  200.0,
+  0.0,
+  200.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 7,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 10,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 4,
+  "DefineSprite": 6,
+  "FileAttributes": 1,
+  "PlaceObject3": 6,
+  "ImportAssets2": 5,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 14,
+   "class": "CustomizationStyleInfoUI"
+  },
+  {
+   "id": 13,
+   "class": "StyleInfoBlockUI"
+  },
+  {
+   "id": 11,
+   "class": "ScrollPaneUI"
+  },
+  {
+   "id": 10,
+   "class": "ScrollPaneTargetUI"
+  },
+  {
+   "id": 4,
+   "class": "ParamIconRendererUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2572,
+   "classes": 5,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 436
+  }
+ ],
+ "classes": [
+  {
+   "name": "ScrollPaneTargetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.CustomizationStyleScrollContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StyleInfoBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.CustomizationStyleInfoBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollPaneUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ParamIconRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.StyleInfoRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationStyleInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.CustomizationStyleInfo",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

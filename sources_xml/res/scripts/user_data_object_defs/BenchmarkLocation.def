@@ -1,0 +1,10 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/user_data_object_defs/BenchmarkLocation.def -->
+<root>
+	<Domain>CLIENT</Domain>
+	<Properties>
+		<order>
+			<Type>UINT16</Type>
+			<Editable>True</Editable>
+		</order>
+	</Properties>
+</root>

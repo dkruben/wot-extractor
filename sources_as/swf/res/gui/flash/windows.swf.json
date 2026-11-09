@@ -1,0 +1,238 @@
+{
+ "source": "sources/res/gui/flash/windows.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 478445,
+ "actual_length": 478445,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 25,
+  "ShowFrame": 217,
+  "DefineShape": 13,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 223,
+  "RemoveObject2": 6,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 13,
+  "DefineSprite": 24,
+  "FrameLabel": 22,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 3,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 16,
+  "sprites": 24,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 14,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 53,
+   "class": "ViewLoadCurtain"
+  },
+  {
+   "id": 52,
+   "class": "PopUpModal"
+  },
+  {
+   "id": 50,
+   "class": "USSWindowUI"
+  },
+  {
+   "id": 49,
+   "class": "WindowUI"
+  },
+  {
+   "id": 48,
+   "class": "ResizeButton"
+  },
+  {
+   "id": 39,
+   "class": "CloseButton"
+  },
+  {
+   "id": 29,
+   "class": "MinimizeButton"
+  },
+  {
+   "id": 17,
+   "class": "windows_fla.Window_Icon_24"
+  },
+  {
+   "id": 10,
+   "class": "Window_BGForm"
+  },
+  {
+   "id": 9,
+   "class": "window_form_bg_new.png"
+  },
+  {
+   "id": 8,
+   "class": "Window_BG"
+  },
+  {
+   "id": 7,
+   "class": "Window_BG_Graphic"
+  },
+  {
+   "id": 6,
+   "class": "WindowBG_hit"
+  },
+  {
+   "id": 1,
+   "class": "window_form_bg.png"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4873,
+   "classes": 14,
+   "methods": 68,
+   "bodies": 68,
+   "code_bytes": 1578
+  }
+ ],
+ "classes": [
+  {
+   "name": "window_form_bg.png",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "window_form_bg_new.png",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Window_BGForm",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PopUpModal",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "USSWindowUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ViewLoadCurtain",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Window_BG",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "windows_fla.Window_Icon_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WindowBG_hit",
+   "kind": "class",
+   "extends": "scaleform.clik.core.UIComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MinimizeButton",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ResizeButton",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Window_BG_Graphic",
+   "kind": "class",
+   "extends": "net.wg.gui.components.popovers.UnClickableShadowBG",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CloseButton",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.CloseButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WindowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.windows.Window",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

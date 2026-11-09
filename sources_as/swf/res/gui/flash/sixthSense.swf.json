@@ -1,0 +1,130 @@
+{
+ "source": "sources/res/gui/flash/sixthSense.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 60494,
+ "actual_length": 60494,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 10,
+  "ShowFrame": 160,
+  "DefineShape": 4,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 121,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 3,
+  "DefineSprite": 9,
+  "FileAttributes": 1,
+  "PlaceObject3": 8,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 4,
+  "shapes": 4,
+  "sprites": 9,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 17,
+   "class": "sightPointerSpottedIndicatorUI"
+  },
+  {
+   "id": 16,
+   "class": "selfLampUI"
+  },
+  {
+   "id": 13,
+   "class": "sightPointerUnderScanningUI"
+  },
+  {
+   "id": 8,
+   "class": "sixthSenseUI"
+  },
+  {
+   "id": 4,
+   "class": "unspottedUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1622,
+   "classes": 5,
+   "methods": 27,
+   "bodies": 27,
+   "code_bytes": 544
+  }
+ ],
+ "classes": [
+  {
+   "name": "selfLampUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.sixthSense.SixthSense",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sightPointerSpottedIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.sixthSense.SixthSense",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sightPointerUnderScanningUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.sixthSense.SixthSense",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sixthSenseUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.sixthSense.SixthSense",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "unspottedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.sixthSense.SixthSense",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,78 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.Transitions.SlotTransitions",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SlotTransitions",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions",
+  "feature": null,
+  "files": [
+    {
+      "name": "SlotTransitions.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions/SlotTransitions.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions/SlotTransitions.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SlotTransitions.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions/SlotTransitions.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions/SlotTransitions.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SlotTransitions.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions/SlotTransitions.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions/SlotTransitions.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions/SlotTransitions.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions/SlotTransitions.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions/SlotTransitions.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions/SlotTransitions.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/Transitions/SlotTransitions/SlotTransitions.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [
+    "ammunitionPanel.onChangeSetupIndex",
+    "ammunitionPanel.onDragDropSwap",
+    "ammunitionPanel.onSectionResized",
+    "ammunitionPanel.onSectionSelect",
+    "ammunitionPanel.onSlotClear",
+    "ammunitionPanel.onSpecializationSelect",
+    "onEscKeyDown"
+  ],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.Transitions.SlotTransitions",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

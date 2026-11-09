@@ -1,0 +1,133 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillCommanderCoordination.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 157592,
+ "actual_length": 157592,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 23,
+  "ShowFrame": 934,
+  "DefineShape": 21,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 1983,
+  "RemoveObject2": 15,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 9,
+  "DefineSprite": 22,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 104,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 9,
+  "shapes": 128,
+  "sprites": 22,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillCommanderCoordination_fla.MainTimeline"
+  },
+  {
+   "id": 138,
+   "class": "skillCommanderCoordination_fla.crosshairReloadAnimFast_21"
+  },
+  {
+   "id": 132,
+   "class": "skillCommanderCoordination_fla.tankShoot_17"
+  },
+  {
+   "id": 79,
+   "class": "skillCommanderCoordination_fla.cooldownCircle_15"
+  },
+  {
+   "id": 33,
+   "class": "skillCommanderCoordination_fla.slotActive_12"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1299,
+   "classes": 5,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 331
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillCommanderCoordination_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderCoordination_fla.cooldownCircle_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderCoordination_fla.crosshairReloadAnimFast_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderCoordination_fla.slotActive_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderCoordination_fla.tankShoot_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

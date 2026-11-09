@@ -1,0 +1,125 @@
+{
+  "rid": "R.views.frontline.mono.lobby.tooltips.banner_tooltip",
+  "rid_source": "sources/res/frontline/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "banner_tooltip",
+  "dir": "frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip",
+  "feature": "frontline",
+  "files": [
+    {
+      "name": "banner_tooltip.css",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "banner_tooltip.html",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.html",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/chunks/divider.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/chunks/divider.css"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.frontline.mono.lobby.tooltips.banner_tooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.frontline.mono.lobby.tooltips.banner_tooltip no Python",
+      "ViewModel BannerTooltipModel (model=... no Python da view): 9/9 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/tooltips/banner_tooltip.py",
+        23
+      ]
+    ],
+    "python_files": [
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/tooltips/banner_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/frontline/scripts/client/frontline/gui/impl/gen/view_models/views/lobby/tooltips/banner_tooltip_model.py",
+      "class": "BannerTooltipModel",
+      "chain": [
+        "BannerTooltipModel"
+      ],
+      "properties": [
+        [
+          "state",
+          "String"
+        ],
+        [
+          "eventStartDate",
+          "Number"
+        ],
+        [
+          "eventEndDate",
+          "Number"
+        ],
+        [
+          "rewardsCount",
+          "Number"
+        ],
+        [
+          "curLevel",
+          "Number"
+        ],
+        [
+          "maxLevel",
+          "Number"
+        ],
+        [
+          "curPoints",
+          "Number"
+        ],
+        [
+          "maxPoints",
+          "Number"
+        ],
+        [
+          "vehiclesLevel",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 9,
+        "total": 9,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

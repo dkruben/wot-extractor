@@ -1,0 +1,189 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/customization/vehicle_anchor_states.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import logging as logging
+from Math import Vector3 as Vector3
+from gui.Scaleform.daapi.view.lobby.customization.shared import isSlotFilled as isSlotFilled, isItemsQuantityLimitReached as isItemsQuantityLimitReached, REGIONS_SLOTS as REGIONS_SLOTS
+from gui.Scaleform.genConsts.CUSTOMIZATION_ALIASES import CUSTOMIZATION_ALIASES as CUSTOMIZATION_ALIASES
+from gui.shared.gui_items import GUI_ITEM_TYPE as GUI_ITEM_TYPE
+from gui.shared.gui_items.customization.slots import SLOT_ASPECT_RATIO as SLOT_ASPECT_RATIO
+from helpers import dependency as dependency
+from skeletons.gui.customization import ICustomizationService as ICustomizationService
+from vehicle_outfit.outfit import Area as Area
+_logger: Any
+_ANCHOR_SHIFT: dict
+_REGION_ANCHOR_SHIFT = 0.2
+
+class StateContext(object):
+    __slots__: tuple
+    _state: Any
+    def __init__(self):
+        ...
+    def changeState(self, newState):
+        ...
+    def destroy(self):
+        ...
+
+class Anchor(StateContext):
+    __slots__: tuple
+    __service: Any
+    __slotId: Any
+    __uid: Any
+    _state: Any
+    __anchorShift: Any
+    __ctx: Any
+    __position: Any
+    __direction: Any
+    def __init__(self, slotId, uid, position, direction):
+        ...
+    @property
+    def position(self):
+        ...
+    @property
+    def direction(self):
+        ...
+    @property
+    def state(self):
+        ...
+    @property
+    def slotId(self):
+        ...
+    @property
+    def uid(self):
+        ...
+    @property
+    def stateID(self):
+        ...
+    @property
+    def shift(self):
+        ...
+    @property
+    def updater(self):
+        ...
+    def changeState(self, newState):
+        ...
+    def updateState(self):
+        ...
+    def setup(self):
+        ...
+    def destroy(self):
+        ...
+    def setShift(self, shift):
+        ...
+
+class BaseState(object):
+    __slots__: tuple
+    _context: Any
+    def __init__(self, context):
+        ...
+    def changeState(self, newState):
+        ...
+    def onEnterState(self):
+        ...
+    def onExitState(self):
+        ...
+
+class AnchorState(BaseState):
+    __slots__: tuple
+    _service: Any
+    stateID = None
+    _ctx: Any
+    def __init__(self, anchor):
+        ...
+    @property
+    def anchor(self):
+        ...
+    @property
+    def updater(self):
+        ...
+    def onItemInstalled(self):
+        ...
+    def onItemRemoved(self):
+        ...
+    def onItemSelected(self):
+        ...
+    def onItemUnselected(self):
+        ...
+    def onHovered(self):
+        ...
+    def onUnhovered(self):
+        ...
+    def onSelected(self):
+        ...
+    def onUnselected(self):
+        ...
+    def onLocked(self):
+        ...
+    def onUnlocked(self):
+        ...
+
+class UnselectedEmptyState(AnchorState):
+    stateID = CUSTOMIZATION_ALIASES.ANCHOR_STATE_UNSELECTED_EMPTY
+    def onItemInstalled(self):
+        ...
+    def onHovered(self):
+        ...
+    def onSelected(self):
+        ...
+    def onLocked(self):
+        ...
+
+class UnselectedFilledState(AnchorState):
+    stateID = CUSTOMIZATION_ALIASES.ANCHOR_STATE_UNSELECTED_FILLED
+    def onHovered(self):
+        ...
+    def onSelected(self):
+        ...
+    def onEnterState(self):
+        ...
+    def onExitState(self):
+        ...
+
+class SelectedEmptyState(AnchorState):
+    stateID = CUSTOMIZATION_ALIASES.ANCHOR_STATE_SELECTED_EMPTY
+    def onItemInstalled(self):
+        ...
+    def onUnselected(self):
+        ...
+
+class SelectedFilledState(AnchorState):
+    stateID = CUSTOMIZATION_ALIASES.ANCHOR_STATE_SELECTED_FILLED
+    def onUnselected(self):
+        ...
+    def onEnterState(self):
+        ...
+    def onExitState(self):
+        ...
+
+class PreviewState(AnchorState):
+    stateID = CUSTOMIZATION_ALIASES.ANCHOR_STATE_PREVIEW
+    def onItemInstalled(self):
+        ...
+    def onUnhovered(self):
+        ...
+    def onItemUnselected(self):
+        ...
+    def onEnterState(self):
+        ...
+    def onExitState(self):
+        ...
+
+class LockedState(AnchorState):
+    stateID = CUSTOMIZATION_ALIASES.ANCHOR_STATE_LOCKED
+    def onUnlocked(self):
+        ...
+
+class RemoveState(AnchorState):
+    stateID = CUSTOMIZATION_ALIASES.ANCHOR_STATE_REMOVED
+    def onItemRemoved(self):
+        ...
+    def onUnhovered(self):
+        ...
+    def onItemUnselected(self):
+        ...
+
+# decorador original: @dependency.replace_none_kwargs(...)
+def getAnchorShift(slotId, direction, service=None):
+    ...

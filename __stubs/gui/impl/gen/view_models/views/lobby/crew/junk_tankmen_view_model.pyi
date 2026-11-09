@@ -1,0 +1,32 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/junk_tankmen_view_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from gui.impl.gen.view_models.views.lobby.crew.tankman_model import TankmanModel as TankmanModel
+
+class JunkTankmenViewModel(ViewModel):
+    __slots__: tuple
+    onLoadCards: Any
+    onConfirm: Any
+    onClose: Any
+    def __init__(self, properties=3, commands=3):
+        ...
+    def getItemsAmount(self):
+        ...
+    def setItemsAmount(self, value):
+        ...
+    def getItemsOffset(self):
+        ...
+    def setItemsOffset(self, value):
+        ...
+    def getTankmanList(self):
+        ...
+    def setTankmanList(self, value):
+        ...
+    @staticmethod
+    def getTankmanListType():
+        ...
+    def _initialize(self):
+        ...

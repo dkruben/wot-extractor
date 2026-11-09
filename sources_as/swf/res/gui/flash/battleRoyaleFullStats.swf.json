@@ -1,0 +1,281 @@
+{
+ "source": "sources/res/gui/flash/battleRoyaleFullStats.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 8731,
+ "actual_length": 8731,
+ "frame_size_px": [
+  0.0,
+  1420.0,
+  0.0,
+  740.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 15,
+  "ShowFrame": 18,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 25,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 3,
+  "DefineEditText": 7,
+  "DefineSprite": 14,
+  "FrameLabel": 3,
+  "FileAttributes": 1,
+  "PlaceObject3": 5,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 6,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 3,
+  "shapes": 7,
+  "sprites": 14,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 7,
+  "fonts": 0,
+  "classes": 20,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "battleRoyaleLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 31,
+   "class": "BattleRoyaleNationsVehiclesRendererUI"
+  },
+  {
+   "id": 30,
+   "class": "battleRoyaleFullStats_fla.icon_5"
+  },
+  {
+   "id": 20,
+   "class": "BattleRoyalePlatoonsListUI"
+  },
+  {
+   "id": 19,
+   "class": "BattleRoyalePlatoonRendererUI"
+  },
+  {
+   "id": 17,
+   "class": "MinimapLegendRendererSmallUI"
+  },
+  {
+   "id": 15,
+   "class": "MinimapLegendRendererUI"
+  },
+  {
+   "id": 13,
+   "class": "BattleRoyaleFullStatsUI"
+  },
+  {
+   "id": 11,
+   "class": "BattleRoyaleNationsVehiclesCounterUI"
+  },
+  {
+   "id": 10,
+   "class": "ScoreUI"
+  },
+  {
+   "id": 9,
+   "class": "scoreSeparator"
+  },
+  {
+   "id": 7,
+   "class": "VehCounterUI"
+  },
+  {
+   "id": 3,
+   "class": "FullStatsListUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5720,
+   "classes": 20,
+   "methods": 87,
+   "bodies": 87,
+   "code_bytes": 2229
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Sine",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Circular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Exponential",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scoreSeparator",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleNationsVehiclesCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.fullStats.nationsVehiclesCounter.BattleRoyaleNationsVehiclesCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MinimapLegendRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.fullStats.DescriptionWithIconRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScoreUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.fullStats.ScoreBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.fullStats.VehicleCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleRoyaleFullStats_fla.icon_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MinimapLegendRendererSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.fullStats.DescriptionWithIconRendererSmall",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleNationsVehiclesRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.fullStats.nationsVehiclesCounter.BattleRoyaleNationsVehiclesRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyalePlatoonRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.fullStats.nationsVehiclesCounter.BattleRoyalePlatoonRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyalePlatoonsListUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.TileList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FullStatsListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.fullStats.MinimapItemsInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleFullStatsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.fullStats.BattleRoyaleFullStats",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,140 @@
+{
+  "rid": "R.views.lobby.battle_matters.tooltips.BattleMattersTokenTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "BattleMattersTokenTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "BattleMattersTokenTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView/BattleMattersTokenTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView/BattleMattersTokenTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleMattersTokenTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView/BattleMattersTokenTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView/BattleMattersTokenTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleMattersTokenTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView/BattleMattersTokenTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView/BattleMattersTokenTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView/BattleMattersTokenTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/battle_matters/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/battle_matters/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView/BattleMattersTokenTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView/BattleMattersTokenTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView/BattleMattersTokenTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/battle_matters/tooltips/BattleMattersTokenTooltipView/BattleMattersTokenTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.battle_matters.tooltips.BattleMattersTokenTooltipView",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.lobby.battle_matters.tooltips.BattleMattersTokenTooltipView no Python",
+      "ViewModel BattleMattersMainViewModel (model=... no Python da view): 0/10 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_matters/battle_matters_main_view.py",
+        167
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_matters/battle_matters_rewards_view.py",
+        74
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_matters/tooltips/battle_matters_token_tooltip_view.py",
+        21
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_matters/battle_matters_main_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_matters/battle_matters_rewards_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_matters/tooltips/battle_matters_token_tooltip_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_matters/battle_matters_main_view_model.py",
+      "class": "BattleMattersMainViewModel",
+      "chain": [
+        "BattleMattersMainViewModel"
+      ],
+      "properties": [
+        [
+          "questProgress",
+          "ViewModel"
+        ],
+        [
+          "isRewardsViewOpen",
+          "Bool"
+        ],
+        [
+          "quests",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onShowView",
+        "onShowManual",
+        "onShowManualForQuest",
+        "onShowAnimForQuest",
+        "onShowMainReward",
+        "onSelectDelayedReward",
+        "onClose"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 10,
+        "missing": [
+          "isRewardsViewOpen",
+          "onClose",
+          "onSelectDelayedReward",
+          "onShowAnimForQuest",
+          "onShowMainReward",
+          "onShowManual",
+          "onShowManualForQuest",
+          "onShowView",
+          "questProgress",
+          "quests"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_matters/battle_matters_rewards_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_matters/tooltips/battle_matters_token_tooltip_view_model.py"
+      ]
+    }
+  }
+}

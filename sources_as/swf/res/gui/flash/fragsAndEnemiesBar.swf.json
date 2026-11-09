@@ -1,0 +1,136 @@
+{
+ "source": "sources/res/gui/flash/fragsAndEnemiesBar.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 23114,
+ "actual_length": 23114,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 6,
+  "DefineShape": 4,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 10,
+  "DefineBitsLossless2": 4,
+  "DefineEditText": 2,
+  "DefineSprite": 5,
+  "FileAttributes": 1,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 4,
+  "shapes": 4,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 15,
+   "class": "FragsAndEnemiesBarUI"
+  },
+  {
+   "id": 14,
+   "class": "EnemiesUI"
+  },
+  {
+   "id": 11,
+   "class": "FragsUI"
+  },
+  {
+   "id": 8,
+   "class": "DeviderUI"
+  },
+  {
+   "id": 3,
+   "class": "BackgroundUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1037,
+   "classes": 5,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 248
+  }
+ ],
+ "classes": [
+  {
+   "name": "BackgroundUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DeviderUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EnemiesUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FragsUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FragsAndEnemiesBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.BattleRoyaleScoreBar",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,116 @@
+{
+  "rid": "R.views.mono.battle_pass.dialogs.chapter_confirm",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "chapter_confirm",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm/bundle.js"
+    },
+    {
+      "name": "chapter_confirm.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm/chapter_confirm.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm/chapter_confirm.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "chapter_confirm.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm/chapter_confirm.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm/chapter_confirm.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm/chapter_confirm.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/dialogs/chapter_confirm/chapter_confirm.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onAccept",
+    "onCancel"
+  ],
+  "link": {
+    "rid": "R.views.mono.battle_pass.dialogs.chapter_confirm",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.mono.battle_pass.dialogs.chapter_confirm no Python",
+      "ViewModel ChapterConfirmViewModel (model=... no Python da view): 2/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/activate_chapter_confirm_dialog.py",
+        26
+      ],
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        1405
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/activate_chapter_confirm_dialog.py",
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/chapter_confirm_view_model.py",
+      "class": "ChapterConfirmViewModel",
+      "chain": [
+        "ChapterConfirmViewModel"
+      ],
+      "properties": [
+        [
+          "prevChapter",
+          "Number"
+        ],
+        [
+          "nextChapter",
+          "Number"
+        ],
+        [
+          "isSwitchFromPostProgressionToExtraChapter",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onAccept",
+        "onCancel"
+      ],
+      "coverage": {
+        "found": 2,
+        "total": 5,
+        "missing": [
+          "isSwitchFromPostProgressionToExtraChapter",
+          "nextChapter",
+          "prevChapter"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "rid": "R.views.battle_royale.mono.lobby.tooltips.progression_quest",
+  "rid_source": "sources/res/battle_royale/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "progression_quest",
+  "dir": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_quest",
+  "feature": "battle_royale",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_quest/bundle.js",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_quest/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "progression_quest.css",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_quest/progression_quest.css",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_quest/progression_quest.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "progression_quest.html",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_quest/progression_quest.html",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_quest/progression_quest.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/extended_tooltip_decorator.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/extended_tooltip_decorator.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_quest/bundle.js",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_quest/bundle.js"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_quest/progression_quest.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/progression_quest/progression_quest.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "lobby.tooltips.AdditionalRewardsTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle_royale.mono.lobby.tooltips.progression_quest",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.battle_royale.mono.lobby.tooltips.progression_quest no Python",
+      "ViewModel WidgetQuestModel (model=... no Python da view): 3/15 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/progression_quest_tooltip.py",
+        21
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/tooltips/progression_quest_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/user_missions/widget/widget_quest_model.py",
+      "class": "WidgetQuestModel",
+      "chain": [
+        "WidgetQuestModel",
+        "BaseQuestModel"
+      ],
+      "properties": [
+        [
+          "countdown",
+          "Number"
+        ],
+        [
+          "missionType",
+          "String"
+        ],
+        [
+          "bonuses",
+          "Array"
+        ],
+        [
+          "commonConditionId",
+          "Number"
+        ],
+        [
+          "specialConditionIds",
+          "Array"
+        ],
+        [
+          "id",
+          "String"
+        ],
+        [
+          "animationId",
+          "String"
+        ],
+        [
+          "icon",
+          "String"
+        ],
+        [
+          "description",
+          "String"
+        ],
+        [
+          "currentProgress",
+          "Number"
+        ],
+        [
+          "totalProgress",
+          "Number"
+        ],
+        [
+          "earned",
+          "Number"
+        ],
+        [
+          "isCompleted",
+          "Bool"
+        ],
+        [
+          "isLocked",
+          "Bool"
+        ],
+        [
+          "animateCompletion",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 3,
+        "total": 15,
+        "missing": [
+          "animateCompletion",
+          "animationId",
+          "commonConditionId",
+          "currentProgress",
+          "earned",
+          "icon",
+          "id",
+          "isCompleted",
+          "isLocked",
+          "missionType",
+          "specialConditionIds",
+          "totalProgress"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

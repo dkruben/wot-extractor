@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/LoginQueueWindowMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.framework.entities.abstract.AbstractWindowView import AbstractWindowView as AbstractWindowView
+
+class LoginQueueWindowMeta(AbstractWindowView):
+    def onCancelClick(self):
+        ...
+    def onAutoLoginClick(self):
+        ...
+    def as_setTitleS(self, title):
+        ...
+    def as_setMessageS(self, message):
+        ...
+    def as_setCancelLabelS(self, cancelLabel):
+        ...
+    def as_showAutoLoginBtnS(self, value):
+        ...

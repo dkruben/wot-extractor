@@ -1,0 +1,112 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/moduleRadio.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 122648,
+ "actual_length": 122648,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 16,
+  "ShowFrame": 476,
+  "DefineShape": 10,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 891,
+  "RemoveObject2": 9,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 7,
+  "DefineSprite": 15,
+  "DefineMorphShape": 2,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineMorphShape2": 6,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 7,
+  "shapes": 24,
+  "sprites": 15,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "moduleRadio_fla.MainTimeline"
+  },
+  {
+   "id": 42,
+   "class": "moduleRadio_fla.tankVisibilityBig_14"
+  },
+  {
+   "id": 9,
+   "class": "moduleRadio_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 821,
+   "classes": 3,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 199
+  }
+ ],
+ "classes": [
+  {
+   "name": "moduleRadio_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleRadio_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleRadio_fla.tankVisibilityBig_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

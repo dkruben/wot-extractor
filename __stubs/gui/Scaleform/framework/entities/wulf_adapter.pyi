@@ -1,0 +1,103 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/framework/entities/wulf_adapter.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import logging as logging
+import typing as typing
+import BigWorld as BigWorld
+from Event import Event as Event, EventManager as EventManager
+from frameworks.wulf import WindowStatus as WindowStatus, WindowLayer as WindowLayer
+from frameworks.wulf.gui_constants import ShowingStatus as ShowingStatus
+from gui.impl.pub import WindowImpl as WindowImpl
+from gui.Scaleform.framework.entities.View import ViewKey as ViewKey
+_logger: Any
+
+class WulfPackageLayoutAdapter(object):
+    __slots__: tuple
+    __background_alpha__: Any
+    __window: Any
+    __loadID: Any
+    __app: Any
+    __isDestroyed: Any
+    __key: Any
+    __sfWindow: Any
+    __scope: Any
+    __settings: Any
+    __eManager: Any
+    onCreated: Any
+    onDispose: Any
+    onDisposed: Any
+    onWulfViewLoaded: Any
+    onWulfViewLoadError: Any
+    def __init__(self):
+        ...
+    @classmethod
+    def shoudBeWrapped(cls, windowClass):
+        ...
+    def create(self):
+        ...
+    def initWindow(self, windowClass, *args, **kwargs):
+        ...
+    def load(self):
+        ...
+    @property
+    def uiImpl(self):
+        ...
+    def isCreated(self):
+        ...
+    def isDisposed(self):
+        ...
+    def setEnvironment(self, app):
+        ...
+    def setUniqueName(self, name):
+        ...
+    @property
+    def key(self):
+        ...
+    def getSubContainersSettings(self):
+        ...
+    @property
+    def alias(self):
+        ...
+    def getAlias(self):
+        ...
+    @property
+    def layer(self):
+        ...
+    @property
+    def uniqueName(self):
+        ...
+    @property
+    def viewScope(self):
+        ...
+    def setSettings(self, settings):
+        ...
+    @property
+    def settings(self):
+        ...
+    def getCurrentScope(self):
+        ...
+    def destroy(self):
+        ...
+    def isViewModal(self):
+        ...
+    def validate(self, *args, **kwargs):
+        ...
+    def setParentWindow(self, window):
+        ...
+    def getParentWindow(self):
+        ...
+    @property
+    def content(self):
+        ...
+    def __repr__(self):
+        ...
+    def __windowLoad(self):
+        ...
+    def __onViewLoaded(self):
+        ...
+    def __onStatusChanged(self, newStatus):
+        ...
+    def __onShowingStatusChanged(self, newStatus):
+        ...

@@ -1,0 +1,193 @@
+{
+  "rid": "R.views.lobby.tanksetup.dialogs.ExchangeToBuyItems",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ExchangeToBuyItems",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems",
+  "feature": null,
+  "files": [
+    {
+      "name": "ExchangeToBuyItems.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems/ExchangeToBuyItems.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems/ExchangeToBuyItems.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ExchangeToBuyItems.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems/ExchangeToBuyItems.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems/ExchangeToBuyItems.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ExchangeToBuyItems.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems/ExchangeToBuyItems.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems/ExchangeToBuyItems.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems/ExchangeToBuyItems.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems/ExchangeToBuyItems.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems/ExchangeToBuyItems.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems/ExchangeToBuyItems.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/dialogs/ExchangeToBuyItems/ExchangeToBuyItems.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "dialogs.common.DialogTemplateGenericTooltip",
+    "lobby.personal_exchange_rates.tooltips.ExchangeLimitTooltip",
+    "lobby.personal_exchange_rates.tooltips.ExchangeRateTooltip"
+  ],
+  "commands": [
+    "dealPanel.onAutoRenewalChanged",
+    "exchangePanel.exchangeRate.onOpenAllDiscountsWindow",
+    "exchangePanel.exchangeRate.onSelectedValueUpdated",
+    "onAutoRenewalChanged"
+  ],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.dialogs.ExchangeToBuyItems",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "3 referencia(s) R.views.lobby.tanksetup.dialogs.ExchangeToBuyItems no Python",
+      "ViewModel ExchangeWithItemsModel (model=... no Python da view): 14/19 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/game_control/ls_controller.py",
+        301
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/dialogs/dialogs.py",
+        93
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dialogs/exchange_with_items.py",
+        71
+      ]
+    ],
+    "python_files": [
+      "sources/res/last_stand/scripts/client/last_stand/gui/game_control/ls_controller.py",
+      "sources/res/scripts/client/gui/impl/dialogs/dialogs.py",
+      "sources/res/scripts/client/gui/impl/lobby/dialogs/exchange_with_items.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/exchange/exchange_with_items_model.py",
+      "class": "ExchangeWithItemsModel",
+      "chain": [
+        "ExchangeWithItemsModel",
+        "DialogWithExchange",
+        "FullScreenDialogWindowModel"
+      ],
+      "properties": [
+        [
+          "mainContent",
+          "ViewModel"
+        ],
+        [
+          "exchangePanel",
+          "ViewModel"
+        ],
+        [
+          "lacksMoney",
+          "ViewModel"
+        ],
+        [
+          "bottomContentType",
+          "String"
+        ],
+        [
+          "exchangeState",
+          "String"
+        ],
+        [
+          "dialogType",
+          "String"
+        ],
+        [
+          "credits",
+          "Number"
+        ],
+        [
+          "golds",
+          "Number"
+        ],
+        [
+          "crystals",
+          "Number"
+        ],
+        [
+          "freexp",
+          "Number"
+        ],
+        [
+          "isWalletAvailable",
+          "Bool"
+        ],
+        [
+          "isAcceptDisabled",
+          "Bool"
+        ],
+        [
+          "titleBody",
+          "Resource"
+        ],
+        [
+          "titleArgs",
+          "Array"
+        ],
+        [
+          "acceptButtonText",
+          "Resource"
+        ],
+        [
+          "cancelButtonText",
+          "Resource"
+        ]
+      ],
+      "commands": [
+        "onAcceptClicked",
+        "onCancelClicked",
+        "onExit"
+      ],
+      "coverage": {
+        "found": 14,
+        "total": 19,
+        "missing": [
+          "acceptButtonText",
+          "cancelButtonText",
+          "dialogType",
+          "titleArgs",
+          "titleBody"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

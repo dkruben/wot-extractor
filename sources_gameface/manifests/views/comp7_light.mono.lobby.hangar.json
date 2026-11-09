@@ -1,0 +1,159 @@
+{
+  "rid": "R.views.comp7_light.mono.lobby.hangar",
+  "rid_source": "sources/res/comp7_light/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "hangar",
+  "dir": "comp7_light/gui/gameface/_dist/production/mono/lobby/hangar",
+  "feature": "comp7_light",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7_light/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+    },
+    {
+      "name": "hangar.css",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "hangar.html",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/hangar/hangar.html",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/hangar/hangar.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "comp7_light.mono.lobby.tooltips.all_quests_done_tooltip",
+    "mono.rest_bonus.tooltips.rest_bonus_tooltip",
+    "mono.tooltips.tooltips"
+  ],
+  "commands": [
+    "dealPanel.onAutoRenewalChanged",
+    "dealPanel.onDealCancelled",
+    "dealPanel.onDealConfirmed",
+    "onAnimationEnd",
+    "onBuySlot",
+    "onCarouselTypeChange",
+    "onChangeSetupIndex",
+    "onClick",
+    "onClose",
+    "onCreate",
+    "onDealCancelled",
+    "onDealConfirmed",
+    "onDiscard",
+    "onDogMoreInfoClick",
+    "onEntryPointAnimationSeen",
+    "onGetMoreCurrency",
+    "onGoBuyVehicle",
+    "onGoRecoverVehicle",
+    "onGoToAboutVehicle",
+    "onGroupClick",
+    "onIntroAnimationPlayed",
+    "onMarkAsViewed",
+    "onMissionClick",
+    "onModify",
+    "onMouseOver3dScene",
+    "onMoveSpace",
+    "onNavigate",
+    "onOpenBarracks",
+    "onOpenBattlePass",
+    "onOpenCrew",
+    "onOpenProgression",
+    "onOpenSlotSpecDialog",
+    "onPresetSelected",
+    "onReset",
+    "onSave",
+    "onSaveFilter",
+    "onSelect",
+    "onSelectProposal",
+    "onSelectTelecomRentalVehicle",
+    "onSelectVehicle",
+    "onSetDirtyEdit",
+    "onShellUpdate",
+    "onSlideChanged",
+    "onSlotAction",
+    "onSwapSlots",
+    "onSwitchPreset",
+    "onToggleAcceleratedTraining",
+    "onToggleIntensiveTraining",
+    "onUpdateSetting",
+    "onWidgetUnmounted",
+    "openDeleteConfirm",
+    "openImportConfirm"
+  ],
+  "link": {
+    "rid": "R.views.comp7_light.mono.lobby.hangar",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.comp7_light.mono.lobby.hangar no Python",
+      "ViewModel RouterModel (model=... no Python da view): 3/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/hangar/comp7_light_hangar.py",
+        88
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/hangar/comp7_light_hangar.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/router_model.py",
+      "class": "RouterModel",
+      "chain": [
+        "RouterModel"
+      ],
+      "properties": [
+        [
+          "route",
+          "String"
+        ],
+        [
+          "params",
+          "String"
+        ]
+      ],
+      "commands": [
+        "navigateTo",
+        "navigateBack"
+      ],
+      "coverage": {
+        "found": 3,
+        "total": 4,
+        "missing": [
+          "navigateBack"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

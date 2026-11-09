@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fun_random/gui/configs/gamemodes/fun_sub_modes/fun_sub_mode_regular.xml -->
+<root>
+	<common>
+		<regularDevices>True</regularDevices>
+		<regularBoosters>True</regularBoosters>
+		<regularShells>True</regularShells>
+		<regularConsumables>True</regularConsumables>
+	</common>
+	<subMode>
+		<hasBattleQueueWarning>True</hasBattleQueueWarning>
+		<showInfoPageOnFirstVisit>False</showInfoPageOnFirstVisit>
+	</subMode>
+</root>

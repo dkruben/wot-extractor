@@ -1,0 +1,10 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/shaders/formats/wire.xml -->
+<root>
+	<elements>
+		<POSITION />
+		<TEXCOORD>
+			<type>FLOAT3</type>
+		</TEXCOORD>
+		<NORMAL />
+	</elements>
+</root>

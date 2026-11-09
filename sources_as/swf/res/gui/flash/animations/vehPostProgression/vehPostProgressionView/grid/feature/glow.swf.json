@@ -1,0 +1,84 @@
+{
+ "source": "sources/res/gui/flash/animations/vehPostProgression/vehPostProgressionView/grid/feature/glow.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 43,
+ "declared_length": 2251848,
+ "actual_length": 2251848,
+ "frame_size_px": [
+  0.0,
+  400.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 2,
+  "ShowFrame": 101,
+  "DefineShape": 50,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 51,
+  "DefineBitsJPEG3": 50,
+  "DefineSprite": 1,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 50,
+  "shapes": 50,
+  "sprites": 1,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 1,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 101,
+   "class": "mcGodraysHD_400_400"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 290,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 48
+  }
+ ],
+ "classes": [
+  {
+   "name": "mcGodraysHD_400_400",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 2"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "source": "sources/res/gui/flash/UserInfo.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 75506,
+ "actual_length": 75506,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 2,
+  "ShowFrame": 3,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 2,
+  "DefineShape2": 1,
+  "PlaceObject2": 6,
+  "RemoveObject2": 13,
+  "DefineEditText": 19,
+  "DefineSprite": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 23,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 19,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 3,
+  "sprites": 1,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 19,
+  "fonts": 0,
+  "classes": 1,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "windows.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 25,
+   "class": "userInfoForm"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1533,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 370
+  }
+ ],
+ "classes": [
+  {
+   "name": "userInfoForm",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.UserInfoForm",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

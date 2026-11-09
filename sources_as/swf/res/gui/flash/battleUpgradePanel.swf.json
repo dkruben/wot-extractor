@@ -1,0 +1,176 @@
+{
+ "source": "sources/res/gui/flash/battleUpgradePanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 9334,
+ "actual_length": 9334,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 11,
+  "ShowFrame": 708,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 272,
+  "DefineShape3": 2,
+  "DefineEditText": 3,
+  "DefineSprite": 10,
+  "FrameLabel": 3,
+  "FileAttributes": 1,
+  "PlaceObject3": 9,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 3,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 4,
+  "DoABC2": 1,
+  "DefineShape4": 3,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 6,
+  "sprites": 10,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 9,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleVehicleConfigurator.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 19,
+   "class": "BattleUpgradePanelUI"
+  },
+  {
+   "id": 16,
+   "class": "AlertTextUI"
+  },
+  {
+   "id": 13,
+   "class": "selectBG"
+  },
+  {
+   "id": 10,
+   "class": "NotificationBorderAnimationUI"
+  },
+  {
+   "id": 9,
+   "class": "NotificationBorderContainerUI"
+  },
+  {
+   "id": 2,
+   "class": "bg"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2392,
+   "classes": 9,
+   "methods": 39,
+   "bodies": 39,
+   "code_bytes": 755
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Sine",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AlertTextUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bg",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "selectBG",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NotificationBorderContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.upgradePanel.NotificationBorderContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NotificationBorderAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.upgradePanel.NotificationBorderAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleUpgradePanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.upgradePanel.BattleUpgradePanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

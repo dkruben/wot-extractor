@@ -1,0 +1,122 @@
+{
+  "rid": "R.views.story_mode.mono.lobby.tooltips.badge_tooltip",
+  "rid_source": "sources/res/story_mode/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "badge_tooltip",
+  "dir": "story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/badge_tooltip",
+  "feature": "story_mode",
+  "files": [
+    {
+      "name": "badge_tooltip.css",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/badge_tooltip/badge_tooltip.css",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/badge_tooltip/badge_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "badge_tooltip.html",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/badge_tooltip/badge_tooltip.html",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/badge_tooltip/badge_tooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/badge_tooltip/bundle.js",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/badge_tooltip/bundle.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/badge_tooltip/badge_tooltip.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/badge_tooltip/badge_tooltip.css"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/badge_tooltip/bundle.js",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/tooltips/badge_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.story_mode.mono.lobby.tooltips.badge_tooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.story_mode.mono.lobby.tooltips.badge_tooltip no Python",
+      "ViewModel BadgeTooltipViewModel (model=... no Python da view): 7/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/badge_tooltip.py",
+        23
+      ],
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/congratulations_window.py",
+        52
+      ]
+    ],
+    "python_files": [
+      "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/badge_tooltip.py",
+      "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/congratulations_window.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/story_mode/scripts/client/story_mode/gui/impl/gen/view_models/views/lobby/badge_tooltip_view_model.py",
+      "class": "BadgeTooltipViewModel",
+      "chain": [
+        "BadgeTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "name",
+          "String"
+        ],
+        [
+          "image",
+          "Resource"
+        ],
+        [
+          "description",
+          "String"
+        ],
+        [
+          "playerName",
+          "String"
+        ],
+        [
+          "vehicleIcon",
+          "String"
+        ],
+        [
+          "vehicleLevel",
+          "String"
+        ],
+        [
+          "smallBadgeIcon",
+          "Resource"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 7,
+        "total": 7,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/gen/view_models/views/lobby/congratulations_window_view_model.py",
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/gen/view_models/views/lobby/medal_tooltip_view_model.py"
+      ]
+    }
+  }
+}

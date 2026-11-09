@@ -1,0 +1,62 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/NetworkEntity.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/NetworkEntity.py
+from __future__ import absolute_import
+import CGF, BigWorld
+from debug_utils import LOG_DEBUG_DEV
+
+class NetworkEntity(BigWorld.Entity):
+    ignoreEntityGOSync = True
+
+    def __init__(self):
+        super(NetworkEntity, self).__init__()
+        self.entityGameObject = None
+        return
+
+    def onEnterWorld(self, _):
+        if CGF.addNetworkEntity(self, self.unique_id, self.prefab_path):
+            direction = (
+             self.yaw, self.pitch, self.roll)
+            LOG_DEBUG_DEV(('New NetworkEntity [{}][{}] position {} rotation {} scale {}').format(self.id, self.unique_id, self.position, direction, self.scale))
+
+    def onLeaveWorld(self):
+        if self.entityGameObject and self.prefab_path:
+            CGF.removeGameObject(self.entityGameObject)
+        self.entityGameObject = None
+        if CGF.removeNetworkEntity(self, self.unique_id):
+            LOG_DEBUG_DEV(('Removed NetworkEntity [{}]').format(self.id))
+        return
+
+    @property
+    def gameObject(self):
+        return self.entityGameObject
+
+    @property
+    def isConnected(self):
+        return self.entityGameObject is not None
+
+    def onDynamicComponentCreated(self, component):
+        if not self.isConnected:
+            return
+        self.__processAddComponent(self.entityGameObject, component)
+
+    def onDynamicComponentDestroyed(self, component):
+        if not self.isConnected:
+            return
+        self.__processRemoveComponent(self.entityGameObject, component)
+
+    @staticmethod
+    def __processAddComponent(go, component):
+        if not go.valid:
+            return
+        if not go.hasComponent(type(component)):
+            go.assignComponent(component)
+
+    @staticmethod
+    def __processRemoveComponent(go, component):
+        if not go.valid:
+            return
+        if go.hasComponent(type(component)):
+            go.removeComponent(component)

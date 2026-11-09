@@ -1,0 +1,219 @@
+{
+ "source": "sources/res/gui/flash/personalMissionsOperations.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 4602679,
+ "actual_length": 4602679,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 42,
+  "ShowFrame": 1409,
+  "DefineShape": 47,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 13,
+  "PlaceObject2": 2254,
+  "RemoveObject2": 30,
+  "DefineShape3": 13,
+  "DefineBitsLossless2": 33,
+  "DefineEditText": 2,
+  "DefineSprite": 41,
+  "FrameLabel": 86,
+  "FileAttributes": 1,
+  "PlaceObject3": 31,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 46,
+  "shapes": 60,
+  "sprites": 41,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 11,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 149,
+   "class": "PMStartPageViewUI"
+  },
+  {
+   "id": 146,
+   "class": "contentUI"
+  },
+  {
+   "id": 98,
+   "class": "BtnOperation1UI"
+  },
+  {
+   "id": 94,
+   "class": "ArrowUI"
+  },
+  {
+   "id": 78,
+   "class": "postponedUI"
+  },
+  {
+   "id": 71,
+   "class": "btnOperationGlowUI"
+  },
+  {
+   "id": 64,
+   "class": "unlockedHoverUI"
+  },
+  {
+   "id": 63,
+   "class": "unlockedHoverStatesUI"
+  },
+  {
+   "id": 48,
+   "class": "badgesUI"
+  },
+  {
+   "id": 16,
+   "class": "OPHitFramesUI"
+  },
+  {
+   "id": 2,
+   "class": "OperationTitleInfoUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5345,
+   "classes": 11,
+   "methods": 66,
+   "bodies": 66,
+   "code_bytes": 1368
+  }
+ ],
+ "classes": [
+  {
+   "name": "postponedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.OperationButtonPostponed",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "unlockedHoverUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStatesContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArrowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OPHitFramesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "badgesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnOperationGlowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "unlockedHoverStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OperationTitleInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.operationsHeader.OperationTitleInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "contentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.AllOperationsContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnOperation1UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.OperationButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PMStartPageViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionOperations",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

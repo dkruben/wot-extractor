@@ -1,0 +1,1 @@
+import{Y as t,ut as e}from"./lib.js";var a="Vignette_496c9d28",s="Vignette_gradient_f5571371",i="Vignette_gradient__top_54bd5800",_="Vignette_gradient__bottom_a779d3c8",d=t(),n=()=>(0,d.jsxs)("div",{className:a,children:[(0,d.jsx)("div",{className:e(s,i)}),(0,d.jsx)("div",{className:e(s,_)})]});export{n as t};

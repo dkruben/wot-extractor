@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/tutorial_docs/sales/premiumPacket.xml -->
+<root>
+	<default-scene>DefaultScene</default-scene>
+	<initial-scene>DefaultScene</initial-scene>
+	<scenes>
+		<scene>DefaultScene<post-effects>
+				<invoke-gui-cmd>ShowShopPremium</invoke-gui-cmd>
+				<refuse-training />
+			</post-effects>
+			<runtime-effects />
+			<gui-items />
+		</scene>
+	</scenes>
+	<has-id />
+	<triggers />
+	<vars />
+</root>

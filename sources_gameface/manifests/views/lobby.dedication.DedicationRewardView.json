@@ -1,0 +1,108 @@
+{
+  "rid": "R.views.lobby.dedication.DedicationRewardView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "DedicationRewardView",
+  "dir": "gui/gameface/_dist/production/lobby/dedication/DedicationRewardView",
+  "feature": null,
+  "files": [
+    {
+      "name": "DedicationRewardView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/dedication/DedicationRewardView/DedicationRewardView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dedication/DedicationRewardView/DedicationRewardView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DedicationRewardView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/dedication/DedicationRewardView/DedicationRewardView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dedication/DedicationRewardView/DedicationRewardView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DedicationRewardView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/dedication/DedicationRewardView/DedicationRewardView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dedication/DedicationRewardView/DedicationRewardView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/dedication/DedicationRewardView/DedicationRewardView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/dedication/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/dedication/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/dedication/DedicationRewardView/DedicationRewardView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/dedication/DedicationRewardView/DedicationRewardView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/dedication/DedicationRewardView/DedicationRewardView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/dedication/DedicationRewardView/DedicationRewardView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.dedication.DedicationRewardView",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.dedication.DedicationRewardView no Python",
+      "ViewModel DedicationRewardViewModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dedication/dedication_reward_view.py",
+        20
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/dedication/dedication_reward_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/dedication/dedication_reward_view_model.py",
+      "class": "DedicationRewardViewModel",
+      "chain": [
+        "DedicationRewardViewModel"
+      ],
+      "properties": [
+        [
+          "mainRewards",
+          "Array"
+        ],
+        [
+          "level",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "level",
+          "mainRewards"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

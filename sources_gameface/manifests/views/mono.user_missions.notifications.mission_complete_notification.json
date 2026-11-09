@@ -1,0 +1,79 @@
+{
+  "rid": "R.views.mono.user_missions.notifications.mission_complete_notification",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "mission_complete_notification",
+  "dir": "gui/gameface/_dist/production/mono/user_missions/notifications/mission_complete_notification",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/notifications/mission_complete_notification/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/notifications/mission_complete_notification/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "mission_complete_notification.css",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/notifications/mission_complete_notification/mission_complete_notification.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/notifications/mission_complete_notification/mission_complete_notification.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "mission_complete_notification.html",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/notifications/mission_complete_notification/mission_complete_notification.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/notifications/mission_complete_notification/mission_complete_notification.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/rewards.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/rewards.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/notifications/mission_complete_notification/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/notifications/mission_complete_notification/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/notifications/mission_complete_notification/mission_complete_notification.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/notifications/mission_complete_notification/mission_complete_notification.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClick"
+  ],
+  "link": {
+    "rid": "R.views.mono.user_missions.notifications.mission_complete_notification",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.mono.user_missions.notifications.mission_complete_notification no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/challenges/__init__.py",
+        22
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/challenges/__init__.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

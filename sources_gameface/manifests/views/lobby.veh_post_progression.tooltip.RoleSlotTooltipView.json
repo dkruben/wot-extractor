@@ -1,0 +1,91 @@
+{
+  "rid": "R.views.lobby.veh_post_progression.tooltip.RoleSlotTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "RoleSlotTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "RoleSlotTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView/RoleSlotTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView/RoleSlotTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RoleSlotTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView/RoleSlotTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView/RoleSlotTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RoleSlotTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView/RoleSlotTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView/RoleSlotTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView/RoleSlotTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView/RoleSlotTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView/RoleSlotTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView/RoleSlotTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/RoleSlotTooltipView/RoleSlotTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.veh_post_progression.tooltip.RoleSlotTooltipView",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.lobby.veh_post_progression.tooltip.RoleSlotTooltipView no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_base_component.py",
+        47
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_cfg_component.py",
+        90
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/tooltips/role_slot_tooltip_view.py",
+        25
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_base_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_cfg_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/tooltips/role_slot_tooltip_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

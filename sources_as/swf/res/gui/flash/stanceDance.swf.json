@@ -1,0 +1,332 @@
+{
+ "source": "sources/res/gui/flash/stanceDance.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 409817,
+ "actual_length": 409817,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 31,
+  "ShowFrame": 3494,
+  "DefineShape": 40,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 2715,
+  "RemoveObject2": 42,
+  "DefineShape3": 1,
+  "DefineBitsJPEG3": 4,
+  "DefineBitsLossless2": 35,
+  "DefineEditText": 7,
+  "DefineSprite": 30,
+  "FrameLabel": 152,
+  "FileAttributes": 1,
+  "PlaceObject3": 9,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 7,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 39,
+  "shapes": 43,
+  "sprites": 30,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 7,
+  "fonts": 0,
+  "classes": 23,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "widgetsCommon.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 119,
+   "class": "StanceDanceFightWidgetUI"
+  },
+  {
+   "id": 118,
+   "class": "stanceDance_fla.FocusLeftUI_15"
+  },
+  {
+   "id": 117,
+   "class": "stanceDance_fla.FocusRightUI_13"
+  },
+  {
+   "id": 113,
+   "class": "StanceDanceButtonsContainerUI"
+  },
+  {
+   "id": 112,
+   "class": "StanceDanceWidgetAnimationUI"
+  },
+  {
+   "id": 76,
+   "class": "StanceDanceTurboWidgetUI"
+  },
+  {
+   "id": 75,
+   "class": "SpeedWidgetUI"
+  },
+  {
+   "id": 71,
+   "class": "stanceDance_fla.PointerTurboUI_28"
+  },
+  {
+   "id": 64,
+   "class": "stanceDance_fla.EmptyGlowAsset_26"
+  },
+  {
+   "id": 61,
+   "class": "stanceDance_fla.PointerActiveUI_25"
+  },
+  {
+   "id": 58,
+   "class": "stanceDance_fla.PointerUI_24"
+  },
+  {
+   "id": 49,
+   "class": "stanceDance_fla.TorboAsset_21"
+  },
+  {
+   "id": 44,
+   "class": "stanceDance_fla.EmptyAsset_20"
+  },
+  {
+   "id": 39,
+   "class": "largeTextUI"
+  },
+  {
+   "id": 37,
+   "class": "largeTextIdleUI"
+  },
+  {
+   "id": 31,
+   "class": "progressUI"
+  },
+  {
+   "id": 30,
+   "class": "stanceDance_fla.progress_active_11"
+  },
+  {
+   "id": 22,
+   "class": "stanceDance_fla.progress_on_9"
+  },
+  {
+   "id": 12,
+   "class": "stanceDance_fla.progress_off_7"
+  },
+  {
+   "id": 1,
+   "class": "TurboButtonsUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 8191,
+   "classes": 23,
+   "methods": 164,
+   "bodies": 164,
+   "code_bytes": 3079
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "largeTextIdleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.shared.TextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "largeTextUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.shared.TextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stanceDance_fla.EmptyAsset_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stanceDance_fla.EmptyGlowAsset_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stanceDance_fla.FocusLeftUI_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stanceDance_fla.FocusRightUI_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stanceDance_fla.PointerActiveUI_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stanceDance_fla.PointerTurboUI_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stanceDance_fla.PointerUI_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stanceDance_fla.TorboAsset_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stanceDance_fla.progress_active_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stanceDance_fla.progress_off_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stanceDance_fla.progress_on_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SpeedWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.StanceDanceSpeedWidget",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StanceDanceButtonsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.StanceDanceButtonsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TurboButtonsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.StanceDanceButtonsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StanceDanceWidgetAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.stanceDance.FightWidgetAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "progressUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.stanceDance.StanceDanceProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StanceDanceFightWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.StanceDanceFightWidget",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StanceDanceTurboWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.StanceDanceTurboWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

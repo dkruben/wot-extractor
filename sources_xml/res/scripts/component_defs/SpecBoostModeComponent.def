@@ -1,0 +1,19 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/SpecBoostModeComponent.def -->
+<root>
+	<Properties>
+		<mechanicVariant>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</mechanicVariant>
+		<status>
+			<Type>PHASED_MODE_WITH_PROGRESS_STATUS</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</status>
+	</Properties>
+	<CellMethods>
+		<tryActivate>
+			<Exposed>OWN_CLIENT</Exposed>
+		</tryActivate>
+	</CellMethods>
+	<DefaultKeyName>specBoostModeComponent</DefaultKeyName>
+</root>

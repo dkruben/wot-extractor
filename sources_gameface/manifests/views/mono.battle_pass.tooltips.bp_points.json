@@ -1,0 +1,115 @@
+{
+  "rid": "R.views.mono.battle_pass.tooltips.bp_points",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "bp_points",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points",
+  "feature": null,
+  "files": [
+    {
+      "name": "bp_points.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points/bp_points.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points/bp_points.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bp_points.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points/bp_points.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points/bp_points.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/per_battle_points_table.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/per_battle_points_table.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/wot_plus_banner.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/wot_plus_banner.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points/bp_points.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points/bp_points.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bp_points/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.battle_pass.tooltips.bp_points",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.mono.battle_pass.tooltips.bp_points no Python",
+      "ViewModel BattlePassPointsViewModel (model=... no Python da view): 1/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+        73
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_points_view.py",
+        28
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_points_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/battle_pass_points_view_model.py",
+      "class": "BattlePassPointsViewModel",
+      "chain": [
+        "BattlePassPointsViewModel"
+      ],
+      "properties": [
+        [
+          "pointsTops",
+          "ViewModel"
+        ],
+        [
+          "vehiclesList",
+          "ViewModel"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 2,
+        "missing": [
+          "pointsTops"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/tooltips/battle_pass_points_view_model.py"
+      ]
+    }
+  }
+}

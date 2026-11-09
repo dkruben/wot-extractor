@@ -1,0 +1,93 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7_light/scripts/client/comp7_light/helpers/comp7_light_server_settings.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7_light/scripts/client/comp7_light/helpers/comp7_light_server_settings.py
+from __future__ import absolute_import
+import logging
+from collections import namedtuple
+from future.utils import viewitems
+from shared_utils import makeTupleByDict
+import BattleReplay
+from Event import Event
+from Event import EventManager
+from comp7_light_constants import Configs
+from helpers import dependency
+from skeletons.gui.lobby_context import ILobbyContext
+_logger = logging.getLogger(__name__)
+
+class _Comp7LightConfig(namedtuple('_Comp7LightConfig', ('isEnabled', 'isTrainingEnabled', 'peripheryIDs',
+                                 'primeTimes', 'seasons', 'cycleTimes', 'battleModifiersDescr',
+                                 'maps', 'levels', 'numPlayers', 'squadSizes', 'allowedVehTypes',
+                                 'roleEquipments', 'roleEquipmentsByVehicle', 'poiEquipments',
+                                 'createVivoxTeamChannels', 'tournaments', 'progression'))):
+    __slots__ = ()
+
+    def __new__(cls, **kwargs):
+        defaults = dict(isEnabled=False, isTrainingEnabled=False, peripheryIDs={}, primeTimes={}, seasons={}, cycleTimes={}, battleModifiersDescr=(), maps=set(), levels=[], numPlayers=7, squadSizes=[
+         0, 0], allowedVehTypes=set(), roleEquipments={}, roleEquipmentsByVehicle={}, poiEquipments={}, createVivoxTeamChannels=False, tournaments={}, progression={})
+        defaults.update(kwargs)
+        return super(_Comp7LightConfig, cls).__new__(cls, **defaults)
+
+    def asDict(self):
+        return self._asdict()
+
+    def replace(self, data):
+        allowedFields = self._fields
+        dataToUpdate = {k: v for k, v in viewitems(data) if k in allowedFields}
+        return self._replace(**dataToUpdate)
+
+    @classmethod
+    def defaults(cls):
+        return cls()
+
+
+class Comp7LightServerSettings(object):
+    __lobbyContext = dependency.descriptor(ILobbyContext)
+
+    def __init__(self):
+        super(Comp7LightServerSettings, self).__init__()
+        self.__comp7LightConfig = _Comp7LightConfig()
+        self.__serverSettings = self.__lobbyContext.getServerSettings()
+        self.__setInitialValues()
+        self.__lobbyContext.onServerSettingsChanged += self.__onServerSettingsChanged
+        if self.__serverSettings is not None:
+            self.__serverSettings.onServerSettingsChange += self.__update
+        self.__eventsManager = EventManager()
+        self.onServerSettingsChanged = Event(self.__eventsManager)
+        return
+
+    @property
+    def comp7LightConfig(self):
+        return self.__comp7LightConfig
+
+    def fini(self):
+        self.__comp7LightConfig = None
+        self.__lobbyContext.onServerSettingsChanged -= self.__onServerSettingsChanged
+        if self.__serverSettings is not None:
+            self.__serverSettings.onServerSettingsChange -= self.__update
+        self.__serverSettings = None
+        self.__eventsManager.clear()
+        return
+
+    def __onServerSettingsChanged(self, serverSettings):
+        if self.__serverSettings is not None:
+            self.__serverSettings.onServerSettingsChange -= self.__update
+        self.__serverSettings = serverSettings
+        self.__serverSettings.onServerSettingsChange += self.__update
+        return
+
+    def __setInitialValues(self):
+        settings = self.__serverSettings.getSettings()
+        if not settings and BattleReplay.isPlaying() and not BattleReplay.isServerSideReplay():
+            settings = BattleReplay.g_replayCtrl.arenaInfo['serverSettings']
+        if Configs.COMP7_LIGHT_CONFIG.value in settings:
+            _logger.debug(Configs.COMP7_LIGHT_CONFIG.value, settings[Configs.COMP7_LIGHT_CONFIG.value])
+            self.__comp7LightConfig = makeTupleByDict(_Comp7LightConfig, settings[Configs.COMP7_LIGHT_CONFIG.value])
+        else:
+            self.__comp7LightConfig = _Comp7LightConfig.defaults()
+
+    def __update(self, serverSettingsDiff):
+        if Configs.COMP7_LIGHT_CONFIG.value in serverSettingsDiff:
+            self.__comp7LightConfig = self.__comp7LightConfig.replace(serverSettingsDiff[Configs.COMP7_LIGHT_CONFIG.value])
+            self.onServerSettingsChanged(serverSettingsDiff)

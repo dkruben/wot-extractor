@@ -1,0 +1,126 @@
+{
+ "source": "sources/res/gui/flash/spectatorView.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 41337,
+ "actual_length": 41337,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 13,
+  "ShowFrame": 16,
+  "DefineShape": 5,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 7,
+  "PlaceObject2": 48,
+  "RemoveObject2": 4,
+  "DefineBitsLossless2": 13,
+  "DefineEditText": 26,
+  "DefineSprite": 12,
+  "FrameLabel": 5,
+  "FileAttributes": 1,
+  "PlaceObject3": 7,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 25,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 12,
+  "sprites": 12,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 26,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "postmortemPanel.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 63,
+   "class": "SpectatorViewUI"
+  },
+  {
+   "id": 38,
+   "class": "spectatorView_fla.SpeedHeightHint_4"
+  },
+  {
+   "id": 21,
+   "class": "spectatorView_fla.highlightButtonsMC_7"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1355,
+   "classes": 3,
+   "methods": 14,
+   "bodies": 14,
+   "code_bytes": 243
+  }
+ ],
+ "classes": [
+  {
+   "name": "spectatorView_fla.SpeedHeightHint_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "spectatorView_fla.highlightButtonsMC_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SpectatorViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.spectatorView.SpectatorView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,86 @@
+{
+  "rid": "R.views.story_mode.mono.lobby.event_welcome_view",
+  "rid_source": "sources/res/story_mode/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "event_welcome_view",
+  "dir": "story_mode/gui/gameface/_dist/production/mono/lobby/event_welcome_view",
+  "feature": "story_mode",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/event_welcome_view/bundle.js",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/event_welcome_view/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "event_welcome_view.css",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/event_welcome_view/event_welcome_view.css",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/event_welcome_view/event_welcome_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "event_welcome_view.html",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/event_welcome_view/event_welcome_view.html",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/event_welcome_view/event_welcome_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/chunks/welcome_view_layout.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/welcome_view_layout.css"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/event_welcome_view/bundle.js",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/event_welcome_view/bundle.js"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/event_welcome_view/event_welcome_view.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/event_welcome_view/event_welcome_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose",
+    "onSubmit"
+  ],
+  "link": {
+    "rid": "R.views.story_mode.mono.lobby.event_welcome_view",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.story_mode.mono.lobby.event_welcome_view no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/event_welcome_view.py",
+        19
+      ],
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/mission_selection_view.py",
+        70
+      ],
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/shared/event_dispatcher.py",
+        142
+      ]
+    ],
+    "python_files": [
+      "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/event_welcome_view.py",
+      "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/mission_selection_view.py",
+      "sources/res/story_mode/scripts/client/story_mode/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

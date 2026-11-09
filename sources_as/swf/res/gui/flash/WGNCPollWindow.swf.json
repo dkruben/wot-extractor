@@ -1,0 +1,112 @@
+{
+ "source": "sources/res/gui/flash/WGNCPollWindow.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 195547,
+ "actual_length": 195547,
+ "frame_size_px": [
+  0.0,
+  370.0,
+  0.0,
+  230.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#000000",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 2,
+  "ShowFrame": 2,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 2,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 1,
+  "DefineSprite": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 3,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 1,
+  "shapes": 1,
+  "sprites": 1,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 4,
+   "class": "WGNCPollWindowUI"
+  },
+  {
+   "id": 0,
+   "class": "WGNCPollWindow_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2859,
+   "classes": 2,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 402
+  }
+ ],
+ "classes": [
+  {
+   "name": "WGNCPollWindow_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WGNCPollWindowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.wgnc.WGNCPollWindow",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

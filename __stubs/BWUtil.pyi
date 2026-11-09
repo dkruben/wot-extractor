@@ -1,0 +1,106 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/common/BWUtil.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import io as io
+import os as os
+import platform as platform
+import sys as sys
+from functools import partial as partial
+import BigWorld as BigWorld
+import ResMgr as ResMgr
+from bwdebug import TRACE_MSG as TRACE_MSG
+import builtins as builtins
+import __builtin__ as builtins
+_unicode: Any
+_basestring: Any
+_PY2: Any
+_: Any
+_open_accessor: Any
+SHORT_NAME_ENTERPRISE_LINUX = 'el'
+ENTERPRISE_LINUX_DISTROS: list
+ALLOWED_DISTROS: Any
+
+class _BuiltinsAccessor(object):
+    _field_name: Any
+    _original: Any
+    def __init__(self, field_name):
+        ...
+    @property
+    def original(self):
+        ...
+    def set(self, value):
+        ...
+    def get(self):
+        ...
+    def _set(self, value):
+        ...
+    def _get(self):
+        ...
+    def revert(self):
+        ...
+
+class _ItemAccessor(_BuiltinsAccessor):
+    def _set(self, value):
+        ...
+    def _get(self):
+        ...
+
+class _AttrAccessor(_BuiltinsAccessor):
+    def _set(self, value):
+        ...
+    def _get(self):
+        ...
+
+class _BwFile(object):
+    _content: Any
+    def __init__(self, path):
+        ...
+    def __enter__(self):
+        ...
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        ...
+    def __iter__(self):
+        ...
+
+class AsyncReturn(StopIteration):
+    __slots__: tuple
+    value: Any
+    def __init__(self, value):
+        ...
+
+def bwResReplaceOpen(name, *args, **kwargs):
+    ...
+def bwResRelativePatch(function, name, *args, **kwargs):
+    ...
+# decorador original: @partial
+def bwResRelativeOpen(name, *args, **kwargs):
+    ...
+# decorador original: @partial
+def bwResRelativeIOOpen(name, *args, **kwargs):
+    ...
+def monkeyPatchOpen(full_replace=False):
+    ...
+def monkeyPatchFutureOpen():
+    ...
+def revertPatchedOpen():
+    ...
+def extendPath(path, name):
+    ...
+def longDistroNameToShort(longDistroName):
+    ...
+def finaliseShortNameFromReleaseInfo(longDistroName, versionStr, releaseName):
+    ...
+def findPlatformName():
+    ...
+def getPlatformArchitecutre():
+    ...
+def getPlatformSuffix():
+    ...
+def getNoarchSuffix():
+    ...
+def if_only_component(*components):
+    ...
+def if_only_not_component(*components):
+    ...

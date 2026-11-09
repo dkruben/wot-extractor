@@ -1,0 +1,83 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/notification/NotificationPopUpViewer.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import logging as logging
+from typing import TYPE_CHECKING as TYPE_CHECKING
+from PlayerEvents import g_playerEvents as g_playerEvents
+from gui.Scaleform.daapi.view.meta.NotificationPopUpViewerMeta import NotificationPopUpViewerMeta as NotificationPopUpViewerMeta
+from gui.game_loading.resources.consts import Milestones as Milestones
+from gui.shared.notifications import NotificationGroup as NotificationGroup, NotificationPriorityLevel as NotificationPriorityLevel
+from helpers import dependency as dependency
+from messenger import g_settings as g_settings
+from messenger.formatters import TimeFormatter as TimeFormatter
+from messenger.proto.events import g_messengerEvents as g_messengerEvents
+from notification import NotificationMVC as NotificationMVC
+from notification.BaseNotificationView import BaseNotificationView as BaseNotificationView
+from notification.settings import NOTIFICATION_STATE as NOTIFICATION_STATE
+from notification.utils import dynamicNotificationRegister as dynamicNotificationRegister
+from skeletons.connection_mgr import IConnectionManager as IConnectionManager
+from skeletons.gui.shared.utils import IHangarSpace as IHangarSpace
+from typing import Dict as Dict, Optional as Optional, Set as Set
+_logger: Any
+
+class NotificationPopUpViewer(NotificationPopUpViewerMeta, BaseNotificationView):
+    __connectionMgr: Any
+    __hangarSpace: Any
+    __maxAvailableItemsCount: Any
+    __messagesPadding: Any
+    __noDisplayingPopups: Any
+    __lockedNotificationUseQueue: Any
+    __lockedNotificationPriority: Any
+    __pendingMessagesQueue: Any
+    def __init__(self):
+        ...
+    def onClickAction(self, typeID, entityID, action):
+        ...
+    def onMessageHidden(self, byTimeout, wasNotified, typeID, entityID):
+        ...
+    def setListClear(self):
+        ...
+    def getMessageActualTime(self, msTime):
+        ...
+    def registerGFNotification(self, component, alias, gfViewName, isPopUp, linkageData):
+        ...
+    def _populate(self):
+        ...
+    def _dispose(self):
+        ...
+    def _getSettings(self):
+        ...
+    def __incrementOrDecrementNotifiedMessagesCount(self, notification):
+        ...
+    def __onNotificationReceived(self, notification):
+        ...
+    def __onNotificationUpdated(self, notification, isStateChanged):
+        ...
+    def __onNotificationRemoved(self, typeID, entityID, groupID, countOnce):
+        ...
+    def __sendMessageForDisplay(self, notification):
+        ...
+    def __showAlertMessage(self, notification):
+        ...
+    def __allAlertsMessageCloseHandler(self):
+        ...
+    def __showMessagesFromQueue(self):
+        ...
+    def __onPopUpPaddingChanged(self, enabled=True, paddinX=0, paddinY=0):
+        ...
+    def __displayStateChangeHandler(self, oldState, newState, data):
+        ...
+    def __getPopUpVO(self, notification):
+        ...
+    def __isLocked(self, notification):
+        ...
+    def __onLockPopUpMessages(self, key, lockHigh=False, useQueue=True):
+        ...
+    def __onUnlockPopUpMessages(self, key):
+        ...
+    def __startNotifications(self):
+        ...
+    def _onLoadingMilestoneReached(self, milestoneName):
+        ...

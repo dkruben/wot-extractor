@@ -1,0 +1,405 @@
+{
+ "source": "sources/res/gui/flash/decorativeCrosshairPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 1150573,
+ "actual_length": 1150573,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 59,
+  "ShowFrame": 2504,
+  "DefineShape": 40,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 4513,
+  "RemoveObject2": 21,
+  "DefineBitsJPEG3": 7,
+  "DefineBitsLossless2": 30,
+  "DefineEditText": 4,
+  "DefineSprite": 58,
+  "FrameLabel": 64,
+  "FileAttributes": 1,
+  "PlaceObject3": 34,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 37,
+  "shapes": 42,
+  "sprites": 58,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 29,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 141,
+   "class": "AccuracyCrosshairUI"
+  },
+  {
+   "id": 140,
+   "class": "ProgressUI"
+  },
+  {
+   "id": 139,
+   "class": "decorativeCrosshairPanel_fla.fullCharged_8"
+  },
+  {
+   "id": 135,
+   "class": "decorativeCrosshairPanel_fla.MarkUI_5"
+  },
+  {
+   "id": 121,
+   "class": "SpeedLimitMarkUI"
+  },
+  {
+   "id": 117,
+   "class": "TextWrapperUI"
+  },
+  {
+   "id": 115,
+   "class": "ConcentrationCrosshairUI"
+  },
+  {
+   "id": 111,
+   "class": "DecorativeCrosshairPanelUI"
+  },
+  {
+   "id": 110,
+   "class": "FuryCrosshairUI"
+  },
+  {
+   "id": 95,
+   "class": "decorativeCrosshairPanel_fla.StackUI_17"
+  },
+  {
+   "id": 87,
+   "class": "OverheatCrosshairUI"
+  },
+  {
+   "id": 86,
+   "class": "HeatIconUI"
+  },
+  {
+   "id": 71,
+   "class": "decorativeCrosshairPanel_fla.DelayProgressUI_49"
+  },
+  {
+   "id": 65,
+   "class": "HeatProgressUI"
+  },
+  {
+   "id": 64,
+   "class": "decorativeCrosshairPanel_fla.PointerUI_41"
+  },
+  {
+   "id": 60,
+   "class": "decorativeCrosshairPanel_fla.PointerGlowUI_38"
+  },
+  {
+   "id": 53,
+   "class": "decorativeCrosshairPanel_fla.EmptyMainProgressUI_36"
+  },
+  {
+   "id": 48,
+   "class": "CounterOverheatUI"
+  },
+  {
+   "id": 42,
+   "class": "ActiveTextUI"
+  },
+  {
+   "id": 31,
+   "class": "OverheatDecorationUI"
+  },
+  {
+   "id": 30,
+   "class": "decorativeCrosshairPanel_fla.OverheatDecorationAssetUI_29"
+  },
+  {
+   "id": 27,
+   "class": "OverHeatStatusUI"
+  },
+  {
+   "id": 26,
+   "class": "OverheatIconUI"
+  },
+  {
+   "id": 21,
+   "class": "decorativeCrosshairPanel_fla.RoundLimiticonUI_47"
+  },
+  {
+   "id": 18,
+   "class": "ActiveStatusTextUI"
+  },
+  {
+   "id": 16,
+   "class": "PillboxSiegeDecorativeCrosshairUI"
+  },
+  {
+   "id": 12,
+   "class": "TemperatureGunOverheatDecorativeCrosshairUI"
+  },
+  {
+   "id": 11,
+   "class": "decorativeCrosshairPanel_fla.HeatProgressColorblindAnimation_57"
+  },
+  {
+   "id": 7,
+   "class": "decorativeCrosshairPanel_fla.HeatProgressNormalAnimation_54"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 8000,
+   "classes": 29,
+   "methods": 147,
+   "bodies": 147,
+   "code_bytes": 2540
+  }
+ ],
+ "classes": [
+  {
+   "name": "ActiveStatusTextUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.shared.TextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ActiveTextUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.shared.TextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextWrapperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.shared.TextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "decorativeCrosshairPanel_fla.DelayProgressUI_49",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "decorativeCrosshairPanel_fla.EmptyMainProgressUI_36",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "decorativeCrosshairPanel_fla.HeatProgressColorblindAnimation_57",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "decorativeCrosshairPanel_fla.HeatProgressNormalAnimation_54",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "decorativeCrosshairPanel_fla.MarkUI_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "decorativeCrosshairPanel_fla.OverheatDecorationAssetUI_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "decorativeCrosshairPanel_fla.PointerGlowUI_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "decorativeCrosshairPanel_fla.PointerUI_41",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "decorativeCrosshairPanel_fla.RoundLimiticonUI_47",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "decorativeCrosshairPanel_fla.StackUI_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "decorativeCrosshairPanel_fla.fullCharged_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CounterOverheatUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeatIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeatProgressUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OverHeatStatusUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatStatus",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OverheatDecorationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatDecoration",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OverheatIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatSpeedLimitIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.accuracy.AccuracyProgressbar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SpeedLimitMarkUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.accuracy.SpeedLimitMark",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DecorativeCrosshairPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.DecorativeCrosshairPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AccuracyCrosshairUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.AccuracyStackDecorativeCrosshair",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ConcentrationCrosshairUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.ConcentrationDecorativeCrosshair",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FuryCrosshairUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.FuryDecorativeCrosshair",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OverheatCrosshairUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.OverheatDecorativeCrosshair",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PillboxSiegeDecorativeCrosshairUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.PillboxSiegeDecorativeCrosshair",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunOverheatDecorativeCrosshairUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.decorativeCrosshair.TemperatureGunOverheatDecorativeCrosshair",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

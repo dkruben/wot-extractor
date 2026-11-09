@@ -1,0 +1,122 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/equipmentExperimentalAiming.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 274612,
+ "actual_length": 274612,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 35,
+  "ShowFrame": 1857,
+  "DefineShape": 21,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 4462,
+  "RemoveObject2": 39,
+  "DefineShape3": 2,
+  "DefineBitsJPEG3": 2,
+  "DefineBitsLossless2": 11,
+  "DefineSprite": 34,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 90,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 113,
+  "sprites": 34,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "equipmentExperimentalAiming_fla.MainTimeline"
+  },
+  {
+   "id": 149,
+   "class": "equipmentExperimentalAiming_fla.crosshairMove2_26"
+  },
+  {
+   "id": 147,
+   "class": "equipmentExperimentalAiming_fla.crosshairMove_25"
+  },
+  {
+   "id": 49,
+   "class": "equipmentExperimentalAiming_fla.crosshairReloadAnim_17"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1095,
+   "classes": 4,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 264
+  }
+ ],
+ "classes": [
+  {
+   "name": "equipmentExperimentalAiming_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentExperimentalAiming_fla.crosshairMove2_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentExperimentalAiming_fla.crosshairMove_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentExperimentalAiming_fla.crosshairReloadAnim_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

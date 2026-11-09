@@ -1,0 +1,70 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/impl/common/components_presenter.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/impl/common/components_presenter.py
+from __future__ import absolute_import
+import typing
+from gui.impl.common.base_sub_model_view import BaseSubModelView
+from gui.impl.pub import ViewImpl
+if typing.TYPE_CHECKING:
+    from frameworks.wulf import View, ViewEvent, Window
+
+class ComponentsPresenterView(ViewImpl):
+
+    def __init__(self, settings):
+        self.__componentPresenters = []
+        super(ComponentsPresenterView, self).__init__(settings)
+
+    def _onLoading(self, *args, **kwargs):
+        super(ComponentsPresenterView, self)._onLoading(args, kwargs)
+        self.__componentPresenters.extend(self._registerSubModels())
+        for presenter in self.__componentPresenters:
+            presenter.initialize()
+
+    def _finalize(self):
+        for presenter in self.__componentPresenters:
+            presenter.finalize()
+
+        self.__componentPresenters = None
+        super(ComponentsPresenterView, self)._finalize()
+        return
+
+    def createToolTipContent(self, event, contentID):
+        for presenter in self.__componentPresenters:
+            content = presenter.createToolTipContent(event, contentID)
+            if content is not None:
+                return content
+
+        return super(ComponentsPresenterView, self).createToolTipContent(event, contentID)
+
+    def createToolTip(self, event):
+        for presenter in self.__componentPresenters:
+            content = presenter.createToolTip(event)
+            if content is not None:
+                return content
+
+        return super(ComponentsPresenterView, self).createToolTip(event)
+
+    def createPopOverContent(self, event):
+        for presenter in self.__componentPresenters:
+            content = presenter.createPopOverContent(event)
+            if content is not None:
+                return content
+
+        return super(ComponentsPresenterView, self).createPopOverContent(event)
+
+    def _registerSubModels(self):
+        raise NotImplementedError
+
+
+class BaseSubModelViewWithToolTips(BaseSubModelView):
+
+    def createToolTipContent(self, event, contentID):
+        return
+
+    def createPopOverContent(self, event):
+        return
+
+    def createToolTip(self, event):
+        return

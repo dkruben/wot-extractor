@@ -1,0 +1,121 @@
+{
+  "rid": "R.views.mono.lootbox.tooltips.reroll",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "reroll",
+  "dir": "gui/gameface/_dist/production/mono/lootbox/tooltips/reroll",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/reroll/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/reroll/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/lootbox/tooltips/reroll/bundle.js"
+    },
+    {
+      "name": "reroll.css",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/reroll/reroll.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/reroll/reroll.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "reroll.html",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/reroll/reroll.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/reroll/reroll.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/divider.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/divider.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/tooltips/reroll/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/reroll/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/tooltips/reroll/reroll.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/reroll/reroll.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.lootbox.tooltips.reroll",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.mono.lootbox.tooltips.reroll no Python",
+      "ViewModel BoxRerollTooltipModel (model=... no Python da view): 1/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/tooltips/box_reroll_tooltip.py",
+        20
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/decorators.py",
+        86
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/tooltips/box_reroll_tooltip.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/decorators.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/lootbox_system/tooltips/box_reroll_tooltip_model.py",
+      "class": "BoxRerollTooltipModel",
+      "chain": [
+        "BoxRerollTooltipModel"
+      ],
+      "properties": [
+        [
+          "currency",
+          "String"
+        ],
+        [
+          "prices",
+          "Array"
+        ],
+        [
+          "rerollAttempts",
+          "Number"
+        ],
+        [
+          "eventName",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 4,
+        "missing": [
+          "currency",
+          "eventName",
+          "rerollAttempts"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/loot_box_vehicle_compensation_tooltip_model.py"
+      ]
+    }
+  }
+}

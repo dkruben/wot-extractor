@@ -1,0 +1,10 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/TransactionUser.def -->
+<root>
+	<BaseMethods>
+		<onTransactionMessage>
+			<Arg>MAILBOX</Arg>
+			<Arg>UINT8</Arg>
+			<Arg>PYTHON</Arg>
+		</onTransactionMessage>
+	</BaseMethods>
+</root>

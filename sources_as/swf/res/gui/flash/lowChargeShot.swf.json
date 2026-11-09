@@ -1,0 +1,144 @@
+{
+ "source": "sources/res/gui/flash/lowChargeShot.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 3280,
+ "actual_length": 3280,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 5,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 3,
+  "DefineEditText": 3,
+  "DefineSprite": 4,
+  "FileAttributes": 1,
+  "PlaceObject3": 3,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 7,
+   "class": "LowChargeShotWidgetUI"
+  },
+  {
+   "id": 6,
+   "class": "FirstStageTimeField"
+  },
+  {
+   "id": 4,
+   "class": "QuickReloadTimeField"
+  },
+  {
+   "id": 2,
+   "class": "SecondStageTimeField"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2604,
+   "classes": 7,
+   "methods": 31,
+   "bodies": 31,
+   "code_bytes": 1023
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FirstStageTimeField",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.lowChargeShot.FirstStageTimeField",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuickReloadTimeField",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.lowChargeShot.QuickReloadTimeField",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SecondStageTimeField",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.lowChargeShot.SecondStageTimeField",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LowChargeShotWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.LowChargeShotWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

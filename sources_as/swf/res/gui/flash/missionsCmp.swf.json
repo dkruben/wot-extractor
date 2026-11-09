@@ -1,0 +1,456 @@
+{
+ "source": "sources/res/gui/flash/missionsCmp.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 502452,
+ "actual_length": 502452,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 49,
+  "ShowFrame": 484,
+  "DefineShape": 28,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 210,
+  "RemoveObject2": 6,
+  "DefineShape3": 6,
+  "DefineBitsLossless2": 29,
+  "DefineEditText": 28,
+  "DefineSprite": 48,
+  "FrameLabel": 53,
+  "FileAttributes": 1,
+  "PlaceObject3": 32,
+  "ImportAssets2": 8,
+  "CSMTextSettings": 28,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 29,
+  "shapes": 35,
+  "sprites": 48,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 28,
+  "fonts": 0,
+  "classes": 31,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattleDynamic.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 140,
+   "class": "MissionCardAltConditionsContainerUI"
+  },
+  {
+   "id": 138,
+   "class": "MissionConditionsListContainerUI"
+  },
+  {
+   "id": 137,
+   "class": "MissionDetailsAltConditionsContainerUI"
+  },
+  {
+   "id": 132,
+   "class": "MissionDetailsConditionsListContainerUI"
+  },
+  {
+   "id": 131,
+   "class": "MissionDetailsTokenRendererUI"
+  },
+  {
+   "id": 129,
+   "class": "MarathonHeaderConditionItemRendererUI"
+  },
+  {
+   "id": 125,
+   "class": "missionsCmp_fla.tokenStates_12"
+  },
+  {
+   "id": 118,
+   "class": "MissionPackCategoryHeaderUI"
+  },
+  {
+   "id": 117,
+   "class": "CategoryHeaderDescBlockUI"
+  },
+  {
+   "id": 116,
+   "class": "CmpMissionHeaderCalendarUI"
+  },
+  {
+   "id": 113,
+   "class": "CategoryHeaderTitleBlockUI"
+  },
+  {
+   "id": 112,
+   "class": "CmpMissionHeaderActionUI"
+  },
+  {
+   "id": 106,
+   "class": "CmpMissionPackTitleMc"
+  },
+  {
+   "id": 99,
+   "class": "CmpMissionPageCollapsedToggleBtnUI"
+  },
+  {
+   "id": 88,
+   "class": "MissionPackMarathonBodyUI"
+  },
+  {
+   "id": 85,
+   "class": "packBg"
+  },
+  {
+   "id": 82,
+   "class": "packBgPremium"
+  },
+  {
+   "id": 79,
+   "class": "MissionPackRendererUI"
+  },
+  {
+   "id": 78,
+   "class": "MissionsTokenListRendererUI"
+  },
+  {
+   "id": 72,
+   "class": "MissionVehicleItemRendererUI"
+  },
+  {
+   "id": 70,
+   "class": "MissionVehicleParamRendererUI"
+  },
+  {
+   "id": 69,
+   "class": "MissionVehicleTypeRendererUI"
+  },
+  {
+   "id": 66,
+   "class": "MissionCardConditionRendererUI"
+  },
+  {
+   "id": 63,
+   "class": "MissionCardRendererUI"
+  },
+  {
+   "id": 51,
+   "class": "MissionsAwardsGroupUI"
+  },
+  {
+   "id": 50,
+   "class": "MissionDetailsConditionRendererSmallUI"
+  },
+  {
+   "id": 44,
+   "class": "MissionDetailsConditionRendererUI"
+  },
+  {
+   "id": 39,
+   "class": "missionsCmpExporter"
+  },
+  {
+   "id": 38,
+   "class": "MissionsEventBoardsCardRendererUI"
+  },
+  {
+   "id": 29,
+   "class": "missionsCmp_fla.ribbon_46"
+  },
+  {
+   "id": 7,
+   "class": "missionsCmp_fla.CardBackground_38"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 10970,
+   "classes": 31,
+   "methods": 149,
+   "bodies": 149,
+   "code_bytes": 3325
+  }
+ ],
+ "classes": [
+  {
+   "name": "CmpMissionPackTitleMc",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "packBg",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "packBgPremium",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "missionsCmpExporter",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "missionsCmp_fla.CardBackground_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "missionsCmp_fla.ribbon_46",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "missionsCmp_fla.tokenStates_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CategoryHeaderDescBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.headerComponents.HeaderDescBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CmpMissionHeaderActionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.headerComponents.MissionHeaderAction",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CmpMissionHeaderCalendarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.headerComponents.MissionHeaderCalendar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionConditionsListContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionConditionsListContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsTokenRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionDetailsTokenRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionPackMarathonBodyUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionPackMarathonBody",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionVehicleItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionVehicleItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionVehicleParamRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionVehicleParamRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionVehicleTypeRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionVehicleTypeRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsConditionsListContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionDetailsConditionsListContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CategoryHeaderTitleBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.headerComponents.CollapsedHeaderTitleBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionCardAltConditionsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionCardAltConditionsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsAltConditionsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionDetailsAltConditionsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionCardConditionRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionCardConditionRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionPackCategoryHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionPackCategoryHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CmpMissionPageCollapsedToggleBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MarathonHeaderConditionItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.userMissions.components.headerComponents.MarathonHeaderConditionItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsConditionRendererSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionDetailsConditionRendererSmall",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsConditionRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionDetailedConditionRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionsAwardsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.AwardGroup",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionCardRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionCardRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionPackRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionPackRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionsEventBoardsCardRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.MissionsEventBoardsCardRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionsTokenListRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.MissionsTokenListRenderer",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

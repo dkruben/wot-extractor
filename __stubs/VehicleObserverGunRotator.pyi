@@ -1,0 +1,26 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/VehicleObserverGunRotator.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+import BigWorld as BigWorld
+import Math as Math
+import BattleReplay as BattleReplay
+from VehicleGunRotator import VehicleGunRotator as VehicleGunRotator
+
+class VehicleObserverGunRotator(VehicleGunRotator):
+    def start(self):
+        ...
+    def update(self, turretYaw, gunPitch, maxTurretRotationSpeed, maxGunRotationSpeed):
+        ...
+    def setShotPosition(self, vehicleID, shotPos, shotVec, dispersionAngle, forceValueRefresh=False):
+        ...
+    def updateRotationAndGunMarker(self, shotPoint, timeDiff):
+        ...
+    def getNextTurretYaw(self, curAngle, shotAngle, speedLimit, angleLimits):
+        ...
+    def getNextGunPitch(self, curAngle, shotAngle, timeDiff, angleLimits):
+        ...
+    def getAvatarOwnVehicleStabilisedMatrix(self):
+        ...
+    def getAttachedVehicleID(self):
+        ...

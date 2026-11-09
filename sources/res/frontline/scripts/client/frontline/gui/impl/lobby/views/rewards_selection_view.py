@@ -1,0 +1,125 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/frontline/scripts/client/frontline/gui/impl/lobby/views/rewards_selection_view.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: frontline/scripts/client/frontline/gui/impl/lobby/views/rewards_selection_view.py
+from __future__ import absolute_import
+from functools import partial
+from future.utils import viewitems
+from AccountCommands import RES_SUCCESS
+from epic_constants import EPIC_OFFER_TYPES
+from frameworks.wulf import WindowFlags
+from frontline.gui.impl.gen.view_models.views.lobby.views.rewards_selection_view.rewards_selection_view_model import RewardsSelectionViewModel
+from gui import SystemMessages
+from gui.impl import backport
+from gui.impl.gen import R
+from gui.impl.lobby.common.selectable_reward_base import SelectableRewardBase
+from gui.impl.pub.lobby_window import LobbyWindow
+from gui.selectable_reward.common import EpicSelectableRewardManager
+from gui.shared.event_dispatcher import showHangar
+from gui.sounds.filters import switchHangarOverlaySoundFilter
+from helpers import dependency
+from skeletons.gui.game_control import IEpicBattleMetaGameController
+
+def _isValidReward(level, tokenID):
+    tokenLevel = tokenID.split(':')[-1]
+    return not level or int(tokenLevel) <= level
+
+
+class RewardsSelectionView(SelectableRewardBase):
+    __slots__ = ('__onRewardsReceivedCallback', '__onCloseCallback', '__onLoadedCallback',
+                 '__isViewLoaded', '__isAutoDestroyWindowsOnReceivedRewards')
+    _helper = EpicSelectableRewardManager
+    _epicController = dependency.descriptor(IEpicBattleMetaGameController)
+
+    def __init__(self, onRewardsReceivedCallback=None, onCloseCallback=None, onLoadedCallback=None, isAutoDestroyWindowsOnReceivedRewards=True, level=0):
+        self.__onRewardsReceivedCallback = onRewardsReceivedCallback
+        self.__onCloseCallback = onCloseCallback
+        self.__onLoadedCallback = onLoadedCallback
+        self.__isViewLoaded = False
+        self.__isAutoDestroyWindowsOnReceivedRewards = isAutoDestroyWindowsOnReceivedRewards
+        super(RewardsSelectionView, self).__init__(R.views.frontline.lobby.RewardsSelectionView(), self._helper.getAvailableSelectableBonuses(partial(_isValidReward, level)), RewardsSelectionViewModel)
+
+    @property
+    def viewModel(self):
+        return super(RewardsSelectionView, self).getViewModel()
+
+    def _initialize(self, *args, **kwargs):
+        super(RewardsSelectionView, self)._initialize(*args, **kwargs)
+        self._epicController.onUpdated += self._onEpicUpdate
+        switchHangarOverlaySoundFilter(on=True)
+
+    def _onLoading(self, *args, **kwargs):
+        super(RewardsSelectionView, self)._onLoading(*args, **kwargs)
+        self.viewModel.onLoadedView += self.__onViewLoaded
+
+    def _finalize(self):
+        self.__safeCall(self.__onCloseCallback)
+        switchHangarOverlaySoundFilter(on=False)
+        self._epicController.onUpdated -= self._onEpicUpdate
+        self.viewModel.onLoadedView -= self.__onViewLoaded
+        super(RewardsSelectionView, self)._finalize()
+
+    def _onOkClick(self):
+        super(RewardsSelectionView, self)._onOkClick()
+        self.destroyWindow()
+
+    def _onEpicUpdate(self, diff, *args):
+        if 'isEnabled' in diff and not diff['isEnabled']:
+            self.destroyWindow()
+            showHangar()
+
+    @staticmethod
+    def _rewardsSortKeyByArtifactName(x):
+        artefacts = R.strings.artefacts
+
+        def _safeExtract(path):
+            folder = artefacts.dyn(path)
+            if folder:
+                return backport.text(folder.name())
+            return ''
+
+        return _safeExtract(x[0])
+
+    @staticmethod
+    def _defaultSortKey(x):
+        return x[0]
+
+    def _getTypesSortKey(self):
+        return self._defaultSortKey
+
+    def _getItemsSortKey(self, tabName):
+        if tabName in EPIC_OFFER_TYPES:
+            return self._rewardsSortKeyByArtifactName
+        return self._defaultSortKey
+
+    def _processReceivedRewards(self, result):
+        if result.success and result.auxData:
+            successRewards = result.auxData.get(RES_SUCCESS, {})
+            if successRewards:
+                rewardsGenerator = ({group: rewards} for group, rewards in viewitems(successRewards))
+                self.__safeCall(self.__onRewardsReceivedCallback, rewardsGenerator)
+        else:
+            SystemMessages.pushI18nMessage(backport.text(R.strings.system_messages.epicBattles.rewardChoice.error()), type=SystemMessages.SM_TYPE.Error)
+        if self.__isAutoDestroyWindowsOnReceivedRewards:
+            self.destroyWindow()
+
+    def _getReceivedRewards(self, rewardName):
+        return 0
+
+    def __onViewLoaded(self):
+        if not self.__isViewLoaded:
+            self.__safeCall(self.__onLoadedCallback)
+            self.__isViewLoaded = True
+
+    @staticmethod
+    def __safeCall(callback, *args, **kwargs):
+        if callable(callback):
+            callback(*args, **kwargs)
+
+
+class RewardsSelectionWindow(LobbyWindow):
+    __slots__ = ()
+
+    def __init__(self, onRewardsReceivedCallback=None, onCloseCallback=None, onLoadedCallback=None, isAutoDestroyWindowsOnReceivedRewards=True, level=0):
+        super(RewardsSelectionWindow, self).__init__(wndFlags=WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=RewardsSelectionView(onRewardsReceivedCallback, onCloseCallback, onLoadedCallback, isAutoDestroyWindowsOnReceivedRewards, level))

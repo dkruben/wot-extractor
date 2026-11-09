@@ -1,0 +1,146 @@
+{
+ "source": "sources/res/gui/flash/personalMissionsQuestAwardScreen.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 6378,
+ "actual_length": 6378,
+ "frame_size_px": [
+  0.0,
+  1601.0,
+  0.0,
+  900.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 6,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 12,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 5,
+  "DefineSprite": 5,
+  "FileAttributes": 1,
+  "PlaceObject3": 6,
+  "ImportAssets2": 7,
+  "CSMTextSettings": 5,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 5,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobbyBattleDynamic.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "animCmpnts.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 14,
+   "class": "PersonalMissionsQuestAwardScreenUI"
+  },
+  {
+   "id": 9,
+   "class": "QuestConditionsUI"
+  },
+  {
+   "id": 5,
+   "class": "QuestStatusUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3933,
+   "classes": 4,
+   "methods": 19,
+   "bodies": 19,
+   "code_bytes": 1057
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Quintic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestConditionsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.questAwardScreen.QuestConditions",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestStatusUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.questAwardScreen.QuestStatus",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionsQuestAwardScreenUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsQuestAwardScreen",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,74 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/user_missions/hangar_widget/presenters/progression_presenter.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/user_missions/hangar_widget/presenters/progression_presenter.py
+from __future__ import absolute_import
+from battle_royale.gui.impl.gen.view_models.views.lobby.views.widget.progression_model import ProgressionModel, ProgressionStatus
+from battle_royale.gui.impl.lobby.tooltips.progression_widget_tooltip import ProgressionWidgetTooltipView
+from battle_royale.gui.impl.lobby.views.user_missions.hangar_widget.overlap_ctrl import BattleRoyaleOverlapCtrlMixin
+from battle_royale.gui.shared.event_dispatcher import showProgressionView
+from battle_royale.skeletons.game_controller import IBRProgressionOnTokensController
+from gui.impl.lobby.user_missions.hangar_widget.presenters.base_child_presenter import UserMissionChildPresenter
+from gui.impl.lobby.user_missions.hangar_widget.tooltip_positioner import TooltipPositionerMixin
+from battle_royale.gui.impl.lobby.br_helpers.utils import setEventInfo
+from gui.impl.gen import R
+from gui.impl.pub.view_component import ViewComponent
+from helpers import dependency
+
+class BattleRoyaleProgressionPresenter(UserMissionChildPresenter, TooltipPositionerMixin, BattleRoyaleOverlapCtrlMixin, ViewComponent[ProgressionModel]):
+    GROUP = 'progressionEntryPoint'
+    __brProgression = dependency.descriptor(IBRProgressionOnTokensController)
+
+    def __init__(self):
+        super(BattleRoyaleProgressionPresenter, self).__init__(model=ProgressionModel)
+
+    @property
+    def viewModel(self):
+        return super(BattleRoyaleProgressionPresenter, self).getViewModel()
+
+    def createToolTipContent(self, event, contentID):
+        if contentID == R.views.battle_royale.mono.lobby.tooltips.progression_widget():
+            return ProgressionWidgetTooltipView()
+        return super(BattleRoyaleProgressionPresenter, self).createToolTipContent(event, contentID)
+
+    def _onLoading(self, *args, **kwargs):
+        self.initOverlapCtrl()
+        super(BattleRoyaleProgressionPresenter, self)._onLoading(*args, **kwargs)
+        self.__updateModel()
+
+    def _getEvents(self):
+        return super(BattleRoyaleProgressionPresenter, self)._getEvents() + (
+         (
+          self.viewModel.showProgression, self.__onShowProgressionClick),
+         (
+          self.viewModel.onProgressionAnimationCompleted, self.__onProgressionAnimationCompleted),
+         (
+          self.__brProgression.onProgressPointsUpdated, self.__updateModel),
+         (
+          self.__brProgression.onSettingsChanged, self.__updateModel))
+
+    def __updateModel(self):
+        with self.viewModel.transaction() as tx:
+            if self.__brProgression.isEnabled:
+                data = self.__brProgression.getProgessionPointsData()
+                tx.setStage(data['stage'])
+                tx.setPrevStage(data['prevStage'])
+                tx.setCurPoints(data['curPoints'])
+                tx.setPrevPoints(data['prevPoints'])
+                tx.setStageProgress(data['stageProgress'])
+                tx.setPrevStageProgress(data['prevStageProgress'])
+                tx.setStagePoints(data['stagePoints'])
+                tx.setPrevStagePoints(data['prevStagePoints'])
+                tx.setIsCompleted(self.__brProgression.isFinished)
+                status = ProgressionStatus.ACTIVE
+            else:
+                status = ProgressionStatus.DISABLED
+            tx.setStatus(status)
+            setEventInfo(tx.eventInfo)
+
+    def __onProgressionAnimationCompleted(self):
+        self.__brProgression.saveCurPoints()
+
+    def __onShowProgressionClick(self):
+        showProgressionView()

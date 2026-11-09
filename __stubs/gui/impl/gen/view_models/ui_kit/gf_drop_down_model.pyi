@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/ui_kit/gf_drop_down_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from gui.impl.gen.view_models.ui_kit.gf_drop_down_item import GfDropDownItem as GfDropDownItem
+
+class GfDropDownModel(ViewModel):
+    __slots__: tuple
+    onChange: Any
+    def __init__(self, properties=3, commands=1):
+        ...
+    def getItems(self):
+        ...
+    def setItems(self, value):
+        ...
+    @staticmethod
+    def getItemsType():
+        ...
+    def getSelected(self):
+        ...
+    def setSelected(self, value):
+        ...
+    @staticmethod
+    def getSelectedType():
+        ...
+    def getMultiple(self):
+        ...
+    def setMultiple(self, value):
+        ...
+    def _initialize(self):
+        ...

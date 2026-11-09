@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/AvatarFairplayMessageComponent.def -->
+<root>
+	<ClientMethods>
+		<showWarningMessage>
+			<Arg>STRING</Arg>
+		</showWarningMessage>
+	</ClientMethods>
+	<Properties />
+	<ofEntity>
+		<Avatar />
+	</ofEntity>
+</root>

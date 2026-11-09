@@ -1,0 +1,24 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/component_defs/AccountBattleRoyaleTournamentComponent.def -->
+<root>
+	<ofEntity>
+		<Account />
+	</ofEntity>
+	<ClientMethods>
+		<setTournamentToken>
+			<Arg>STRING</Arg>
+		</setTournamentToken>
+		<setParticipants>
+			<Arg>LIST_OF_TOURNAMEMT_PARTICIPANTS</Arg>
+			<VariableLengthHeaderSize>2</VariableLengthHeaderSize>
+		</setParticipants>
+	</ClientMethods>
+	<BaseMethods>
+		<setParticipants>
+			<Arg>PYTHON</Arg>
+		</setParticipants>
+		<onTournamentJoin>
+			<Arg>STRING</Arg>
+		</onTournamentJoin>
+		<onTournamentLeave />
+	</BaseMethods>
+</root>

@@ -1,0 +1,7 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/last_stand/scripts/client/last_stand/gui/scaleform/genConsts/LS_ICON_TEXT_FRAMES.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+
+class LS_ICON_TEXT_FRAMES(object):
+    LS_EVENT_KEY = 'lsEventKey'

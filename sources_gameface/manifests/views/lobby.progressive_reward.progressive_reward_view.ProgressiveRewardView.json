@@ -1,0 +1,40 @@
+{
+  "rid": "R.views.lobby.progressive_reward.progressive_reward_view.ProgressiveRewardView",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "ProgressiveRewardView",
+  "dir": "gui/unbound/views/lobby/progressive_reward",
+  "feature": null,
+  "files": [
+    {
+      "name": "progressive_reward_view.unbound",
+      "effective": "res/gui/unbound/views/lobby/progressive_reward/progressive_reward_view.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/progressive_reward/progressive_reward_view.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.progressive_reward.progressive_reward_view.ProgressiveRewardView",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.progressive_reward.progressive_reward_view.ProgressiveRewardView no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        958
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

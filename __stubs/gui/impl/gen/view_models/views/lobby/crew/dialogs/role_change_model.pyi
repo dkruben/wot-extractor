@@ -1,0 +1,43 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/dialogs/role_change_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from enum import Enum as Enum
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from gui.impl.gen.view_models.views.lobby.crew.dialogs.retrain_role_model import RetrainRoleModel as RetrainRoleModel
+
+class DisableState(Enum):
+    AVAILABLE = 'available'
+    FORCED = 'forced'
+    CREWLOCK = 'crewLock'
+    FREEOPERATION = 'freeOperation'
+
+class RoleChangeModel(ViewModel):
+    __slots__: tuple
+    def __init__(self, properties=5, commands=0):
+        ...
+    def getIsVisible(self):
+        ...
+    def setIsVisible(self, value):
+        ...
+    def getIsChecked(self):
+        ...
+    def setIsChecked(self, value):
+        ...
+    def getSelectedIdx(self):
+        ...
+    def setSelectedIdx(self, value):
+        ...
+    def getDisableState(self):
+        ...
+    def setDisableState(self, value):
+        ...
+    def getRoles(self):
+        ...
+    def setRoles(self, value):
+        ...
+    @staticmethod
+    def getRolesType():
+        ...
+    def _initialize(self):
+        ...

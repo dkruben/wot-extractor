@@ -1,0 +1,136 @@
+{
+  "rid": "R.views.dialogs.common.DialogTemplateGenericTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "DialogTemplateGenericTooltip",
+  "dir": "gui/gameface/_dist/production/dialogs/common/DialogTemplateGenericTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "DialogTemplateGenericTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/dialogs/common/DialogTemplateGenericTooltip/DialogTemplateGenericTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/common/DialogTemplateGenericTooltip/DialogTemplateGenericTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DialogTemplateGenericTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/dialogs/common/DialogTemplateGenericTooltip/DialogTemplateGenericTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/common/DialogTemplateGenericTooltip/DialogTemplateGenericTooltip.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/dialogs/common/DialogTemplateGenericTooltip/DialogTemplateGenericTooltip.js",
+      "key": "res/gui/gameface/_dist/production/dialogs/common/DialogTemplateGenericTooltip/DialogTemplateGenericTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.dialogs.common.DialogTemplateGenericTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "9 referencia(s) R.views.dialogs.common.DialogTemplateGenericTooltip no Python",
+      "ViewModel SelectOptionViewModel (model=... no Python da view): 0/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/dialogs/dialog_template.py",
+        53
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/dialogs/sub_views/common/single_price.py",
+        63
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/dialogs/sub_views/content/select_option_content.py",
+        97
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/dialogs/sub_views/top_right/money_balance.py",
+        56
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/enlarge_barracks_dialog.py",
+        43
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/price_cards_content/base_price_list.py",
+        40
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/price_cards_content/perks_reset_price_list.py",
+        57
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dialogs/full_screen_dialog_view.py",
+        81
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tank_setup/ammunition_setup/base_hangar.py",
+        84
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/dialogs/dialog_template.py",
+      "sources/res/scripts/client/gui/impl/dialogs/sub_views/common/single_price.py",
+      "sources/res/scripts/client/gui/impl/dialogs/sub_views/content/select_option_content.py",
+      "sources/res/scripts/client/gui/impl/dialogs/sub_views/top_right/money_balance.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/enlarge_barracks_dialog.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/price_cards_content/base_price_list.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/price_cards_content/perks_reset_price_list.py",
+      "sources/res/scripts/client/gui/impl/lobby/dialogs/full_screen_dialog_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/tank_setup/ammunition_setup/base_hangar.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/dialogs/sub_views/select_option_view_model.py",
+      "class": "SelectOptionViewModel",
+      "chain": [
+        "SelectOptionViewModel"
+      ],
+      "properties": [
+        [
+          "items",
+          "Array"
+        ],
+        [
+          "selectedIndexes",
+          "Array"
+        ],
+        [
+          "message",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onClicked"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 4,
+        "missing": [
+          "items",
+          "message",
+          "onClicked",
+          "selectedIndexes"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/dialogs/sub_views/single_price_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/dialogs/price_list_model.py"
+      ]
+    }
+  }
+}

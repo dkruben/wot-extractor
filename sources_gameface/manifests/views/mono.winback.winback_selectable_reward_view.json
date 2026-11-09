@@ -1,0 +1,121 @@
+{
+  "rid": "R.views.mono.winback.winback_selectable_reward_view",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "winback_selectable_reward_view",
+  "dir": "gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view/bundle.js"
+    },
+    {
+      "name": "winback_selectable_reward_view.css",
+      "effective": "res/gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view/winback_selectable_reward_view.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view/winback_selectable_reward_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "winback_selectable_reward_view.html",
+      "effective": "res/gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view/winback_selectable_reward_view.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view/winback_selectable_reward_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/winback/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/winback/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/winback/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/winback/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view/winback_selectable_reward_view.css",
+      "key": "res/gui/gameface/_dist/production/mono/winback/winback_selectable_reward_view/winback_selectable_reward_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "lobby.battle_matters.popovers.BattleMattersFilterPopoverView",
+    "mono.winback.tooltips.selectable_reward_tooltip",
+    "mono.winback.tooltips.selected_rewards_tooltip"
+  ],
+  "commands": [
+    "onCategorySelect",
+    "onClose",
+    "onConfirm",
+    "onFilterReset",
+    "onSelectReward"
+  ],
+  "link": {
+    "rid": "R.views.mono.winback.winback_selectable_reward_view",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.mono.winback.winback_selectable_reward_view no Python",
+      "ViewModel WinbackSelectableRewardViewModel (model=... no Python da view): 9/9 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/winback/winback_selectable_reward_view.py",
+        107
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/winback/winback_selectable_reward_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/winback/winback_selectable_reward_view_model.py",
+      "class": "WinbackSelectableRewardViewModel",
+      "chain": [
+        "WinbackSelectableRewardViewModel"
+      ],
+      "properties": [
+        [
+          "categories",
+          "Array"
+        ],
+        [
+          "totalRewardsCount",
+          "Number"
+        ],
+        [
+          "selectedRewardsCount",
+          "Number"
+        ],
+        [
+          "selectableRewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onCategorySelect",
+        "onFilterReset",
+        "onSelectReward",
+        "onClose",
+        "onConfirm"
+      ],
+      "coverage": {
+        "found": 9,
+        "total": 9,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

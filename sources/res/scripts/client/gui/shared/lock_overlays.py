@@ -1,0 +1,20 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/shared/lock_overlays.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/shared/lock_overlays.py
+from __future__ import absolute_import
+from helpers import dependency
+from skeletons.gui.impl import INotificationWindowController
+
+@dependency.replace_none_kwargs(notificationManager=INotificationWindowController)
+def lockNotificationManager(lock, source=__name__, releasePostponed=False, postponeActive=False, notificationManager=None):
+    isLocked = notificationManager.hasLock(source)
+    if lock and not isLocked:
+        if postponeActive:
+            notificationManager.postponeActive()
+        notificationManager.lock(source)
+    elif not lock and isLocked:
+        notificationManager.unlock(source)
+        if releasePostponed:
+            notificationManager.releasePostponed()

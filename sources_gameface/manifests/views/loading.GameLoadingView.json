@@ -1,0 +1,73 @@
+{
+  "rid": "R.views.loading.GameLoadingView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "GameLoadingView",
+  "dir": "gui/gameface/_dist/production/loading/GameLoadingView",
+  "feature": null,
+  "files": [
+    {
+      "name": "GameLoadingView.css",
+      "effective": "res/gui/gameface/_dist/production/loading/GameLoadingView/GameLoadingView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/loading/GameLoadingView/GameLoadingView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "GameLoadingView.html",
+      "effective": "res/gui/gameface/_dist/production/loading/GameLoadingView/GameLoadingView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/loading/GameLoadingView/GameLoadingView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "GameLoadingView.js",
+      "effective": "res/gui/gameface/_dist/production/loading/GameLoadingView/GameLoadingView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/loading/GameLoadingView/GameLoadingView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/loading/GameLoadingView/GameLoadingView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/loading/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/loading/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/loading/GameLoadingView/GameLoadingView.css",
+      "key": "res/gui/gameface/_dist/production/loading/GameLoadingView/GameLoadingView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/loading/GameLoadingView/GameLoadingView.js",
+      "key": "res/gui/gameface/_dist/production/loading/GameLoadingView/GameLoadingView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "trigger:onViewReady"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.loading.GameLoadingView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "caminho coui:// do HTML referido em 1 sitio(s) (referencia direta)"
+    ],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [
+      [
+        "sources_xml/res/gui/game_loading_config.xml",
+        4
+      ]
+    ],
+    "view_model": null
+  }
+}

@@ -1,0 +1,59 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/battle_pass/state_machine/delegator.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import typing as typing
+from battle_pass_common import BattlePassRewardReason as BPReason
+from frameworks_common.state_machine import StringEvent as StringEvent, StateEvent as StateEvent
+from gui.battle_pass.state_machine.state_machine_helpers import separateRewards as separateRewards
+from gui.battle_pass.state_machine.states import StateMachineEventID as StateMachineEventID
+from helpers import dependency as dependency
+from skeletons.gui.game_control import IBattlePassController as IBattlePassController
+from skeletons.gui.shared import IItemsCache as IItemsCache
+from typing import Dict as Dict, Iterable as Iterable, Optional as Optional
+from gui.battle_pass.state_machine.machine import BattlePassStateMachine as BattlePassStateMachine
+
+class BattlePassRewardLogic(object):
+    __slots__: tuple
+    __battlePassController: Any
+    __itemsCache: Any
+    __machine: Any
+    __startAfterTurningOnMachine: Any
+    def __init__(self, machine):
+        ...
+    def start(self):
+        ...
+    def stop(self):
+        ...
+    def startRewardFlow(self, rewards, data, packageRewards, starterPack):
+        ...
+    def startManualFlow(self, rewardsToChoose, chapterID=None, level=0):
+        ...
+    def hasActiveFlow(self):
+        ...
+    def hasRewardToChoose(self):
+        ...
+    def getLeftRewardsCount(self):
+        ...
+    def getRewardsToChoose(self):
+        ...
+    def extendRewards(self, rewards):
+        ...
+    def getChosenStyleChapter(self):
+        ...
+    def setChapterForStyle(self, chapter):
+        ...
+    def postPreviewOpen(self):
+        ...
+    def postClosePreview(self):
+        ...
+    def postStringEvent(self, eventID, **kwargs):
+        ...
+    def postStateEvent(self, **kwargs):
+        ...
+    def __getValidRewardsToChoose(self, rewardsToChoose):
+        ...
+    @staticmethod
+    def __getChapterFromRewardsToChoose(rewardsToChoose):
+        ...

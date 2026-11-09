@@ -1,0 +1,166 @@
+{
+  "rid": "R.views.comp7.mono.lobby.dialogs.purchase_dialog",
+  "rid_source": "sources/res/comp7/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "purchase_dialog",
+  "dir": "comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog",
+  "feature": "comp7",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog/bundle.js",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog/bundle.js"
+    },
+    {
+      "name": "purchase_dialog.css",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog/purchase_dialog.css",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog/purchase_dialog.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "purchase_dialog.html",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog/purchase_dialog.html",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog/purchase_dialog.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/vehicle_name.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/vehicle_name.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog/bundle.js",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog/bundle.js"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog/purchase_dialog.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/dialogs/purchase_dialog/purchase_dialog.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose",
+    "onConfirm",
+    "onCurrencyAction",
+    "onMouseOver3dScene",
+    "onMoveSpace"
+  ],
+  "link": {
+    "rid": "R.views.comp7.mono.lobby.dialogs.purchase_dialog",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.comp7.mono.lobby.dialogs.purchase_dialog no Python",
+      "ViewModel RootViewModel (model=... no Python da view): 1/12 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/dialogs/purchase_dialog.py",
+        48
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/meta_root_view.py",
+        270
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/dialogs/purchase_dialog.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/meta_view/meta_root_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/lobby/meta_view/root_view_model.py",
+      "class": "RootViewModel",
+      "chain": [
+        "RootViewModel"
+      ],
+      "properties": [
+        [
+          "sidebar",
+          "ViewModel"
+        ],
+        [
+          "scheduleInfo",
+          "ViewModel"
+        ],
+        [
+          "progressionModel",
+          "ViewModel"
+        ],
+        [
+          "rankRewardsModel",
+          "ViewModel"
+        ],
+        [
+          "weeklyQuestsModel",
+          "ViewModel"
+        ],
+        [
+          "leaderboardModel",
+          "ViewModel"
+        ],
+        [
+          "yearlyRewardsModel",
+          "ViewModel"
+        ],
+        [
+          "shopModel",
+          "ViewModel"
+        ],
+        [
+          "yearlyStatisticsModel",
+          "ViewModel"
+        ],
+        [
+          "claimRewardsModel",
+          "ViewModel"
+        ],
+        [
+          "pageViewId",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onClose"
+      ],
+      "coverage": {
+        "found": 1,
+        "total": 12,
+        "missing": [
+          "claimRewardsModel",
+          "leaderboardModel",
+          "pageViewId",
+          "progressionModel",
+          "rankRewardsModel",
+          "scheduleInfo",
+          "shopModel",
+          "sidebar",
+          "weeklyQuestsModel",
+          "yearlyRewardsModel",
+          "yearlyStatisticsModel"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

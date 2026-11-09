@@ -1,0 +1,420 @@
+{
+ "source": "sources/res/gui/flash/temperatureGun.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 294666,
+ "actual_length": 294666,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 20,
+  "ShowFrame": 248,
+  "DefineShape": 5,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 381,
+  "RemoveObject2": 4,
+  "DefineShape3": 8,
+  "DefineBitsLossless2": 22,
+  "DefineEditText": 2,
+  "DefineSprite": 19,
+  "FrameLabel": 20,
+  "FileAttributes": 1,
+  "PlaceObject3": 63,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineMorphShape2": 2,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 22,
+  "shapes": 17,
+  "sprites": 19,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 31,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "widgetsCommon.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 60,
+   "class": "TemperatureGunHeatZonesWidgetUI"
+  },
+  {
+   "id": 59,
+   "class": "ZoneScaleCursorUI"
+  },
+  {
+   "id": 58,
+   "class": "temperatureGun_fla.zoneCursor_5"
+  },
+  {
+   "id": 54,
+   "class": "ZoneHighlightScaleSectorUI"
+  },
+  {
+   "id": 53,
+   "class": "ZonePathScaleSectorUI"
+  },
+  {
+   "id": 52,
+   "class": "zonePathMarkerUI"
+  },
+  {
+   "id": 50,
+   "class": "TemperatureGunOverheatWidgetUI"
+  },
+  {
+   "id": 49,
+   "class": "OverheatWidgetTimerUI"
+  },
+  {
+   "id": 31,
+   "class": "OverheatScaleCursorUI"
+  },
+  {
+   "id": 28,
+   "class": "WarnHighlightScaleSectorUI"
+  },
+  {
+   "id": 27,
+   "class": "TemperatureGunScaleSectorUI"
+  },
+  {
+   "id": 17,
+   "class": "TemperatureGunCoolProgressUI"
+  },
+  {
+   "id": 16,
+   "class": "TemperatureGunCoolProgressAltUI"
+  },
+  {
+   "id": 15,
+   "class": "TemperatureGunHeatProgressUI"
+  },
+  {
+   "id": 14,
+   "class": "TemperatureGunHighZoneHighlightUI"
+  },
+  {
+   "id": 13,
+   "class": "TemperatureGunHighZoneProgressUI"
+  },
+  {
+   "id": 12,
+   "class": "TemperatureGunLowZoneProgress1UI"
+  },
+  {
+   "id": 11,
+   "class": "TemperatureGunLowZoneProgress2UI"
+  },
+  {
+   "id": 10,
+   "class": "TemperatureGunLowZoneProgress3UI"
+  },
+  {
+   "id": 9,
+   "class": "TemperatureGunMediumZoneHighlightUI"
+  },
+  {
+   "id": 8,
+   "class": "TemperatureGunMediumZoneProgress1UI"
+  },
+  {
+   "id": 7,
+   "class": "TemperatureGunMediumZoneProgress2UI"
+  },
+  {
+   "id": 6,
+   "class": "TemperatureGunOverheatProgressUI"
+  },
+  {
+   "id": 5,
+   "class": "TemperatureGunOverheatProgressAltUI"
+  },
+  {
+   "id": 4,
+   "class": "TemperatureGunWarnHighlightUI"
+  },
+  {
+   "id": 3,
+   "class": "TemperatureGunWarnPathUI"
+  },
+  {
+   "id": 2,
+   "class": "TemperatureGunWarnProgressUI"
+  },
+  {
+   "id": 1,
+   "class": "TemperatureGunZonePathUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 6356,
+   "classes": 31,
+   "methods": 113,
+   "bodies": 113,
+   "code_bytes": 2076
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunCoolProgressAltUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunCoolProgressUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunHeatProgressUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunHighZoneHighlightUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunHighZoneProgressUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunLowZoneProgress1UI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunLowZoneProgress2UI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunLowZoneProgress3UI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunMediumZoneHighlightUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunMediumZoneProgress1UI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunMediumZoneProgress2UI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunOverheatProgressAltUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunOverheatProgressUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunWarnHighlightUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunWarnPathUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunWarnProgressUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunZonePathUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "zonePathMarkerUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OverheatScaleCursorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.temperatureGun.TemperatureGunScaleCursor",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ZoneScaleCursorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.temperatureGun.TemperatureGunScaleCursor",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "temperatureGun_fla.zoneCursor_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OverheatWidgetTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.Timer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunScaleSectorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.temperatureGun.TemperatureGunScaleSector",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WarnHighlightScaleSectorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.temperatureGun.TemperatureGunScaleSector",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ZoneHighlightScaleSectorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.temperatureGun.TemperatureGunScaleSector",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ZonePathScaleSectorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.temperatureGun.TemperatureGunScaleSector",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunHeatZonesWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.TemperatureGunHeatZonesWidget",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TemperatureGunOverheatWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.TemperatureGunOverheatWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

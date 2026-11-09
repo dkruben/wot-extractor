@@ -1,0 +1,832 @@
+{
+ "source": "sources/res/gui/flash/guiControlsLoginBattle.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 202750,
+ "actual_length": 202750,
+ "frame_size_px": [
+  0.0,
+  100.0,
+  0.0,
+  100.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 107,
+  "ShowFrame": 2192,
+  "DefineShape": 49,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 4,
+  "DefineShape2": 5,
+  "PlaceObject2": 1694,
+  "RemoveObject2": 66,
+  "DefineShape3": 13,
+  "DefineBitsLossless2": 50,
+  "DefineEditText": 49,
+  "DefineSprite": 106,
+  "FrameLabel": 184,
+  "FileAttributes": 1,
+  "PlaceObject3": 43,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 49,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 23,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 54,
+  "shapes": 67,
+  "sprites": 106,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 49,
+  "fonts": 0,
+  "classes": 68,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 276,
+   "class": "BtnCircleAnimUI"
+  },
+  {
+   "id": 271,
+   "class": "UniHeavyBlackStatesUI"
+  },
+  {
+   "id": 267,
+   "class": "UniHeavyGreenStatesUI"
+  },
+  {
+   "id": 263,
+   "class": "UniHeavyLimeStatesUI"
+  },
+  {
+   "id": 259,
+   "class": "UniHeavyOrangeStatesUI"
+  },
+  {
+   "id": 255,
+   "class": "UniSlimBtnShineAnimUI"
+  },
+  {
+   "id": 250,
+   "class": "UniSlimBlackStatesUI"
+  },
+  {
+   "id": 246,
+   "class": "UniSlimGreenStatesUI"
+  },
+  {
+   "id": 242,
+   "class": "UniSlimLimeStatesUI"
+  },
+  {
+   "id": 238,
+   "class": "UniSlimOrangeStatesUI"
+  },
+  {
+   "id": 234,
+   "class": "UniSlimRedStatesUI"
+  },
+  {
+   "id": 230,
+   "class": "AlertIcon_UI"
+  },
+  {
+   "id": 227,
+   "class": "bgHighlightMcLargeUI"
+  },
+  {
+   "id": 220,
+   "class": "ButtonBlack"
+  },
+  {
+   "id": 209,
+   "class": "ToggleIndicatorUI"
+  },
+  {
+   "id": 205,
+   "class": "ButtonNormalToggleIndicatorHit"
+  },
+  {
+   "id": 202,
+   "class": "guiControlsLoginBattle_fla.FocusIndicator_53"
+  },
+  {
+   "id": 200,
+   "class": "guiControlsLoginBattle_fla.ButtonBlackStates_48"
+  },
+  {
+   "id": 188,
+   "class": "ButtonNormal"
+  },
+  {
+   "id": 186,
+   "class": "button_disabled_bg"
+  },
+  {
+   "id": 177,
+   "class": "guiControlsLoginBattle_fla.button_alert_state_anim_57"
+  },
+  {
+   "id": 166,
+   "class": "Button_FocusIndicator"
+  },
+  {
+   "id": 163,
+   "class": "button_bg"
+  },
+  {
+   "id": 159,
+   "class": "CheckBox"
+  },
+  {
+   "id": 154,
+   "class": "guiControlsLoginBattle_fla.CheckBox_FocusIndicator_new_61"
+  },
+  {
+   "id": 152,
+   "class": "CheckBoxHitArea"
+  },
+  {
+   "id": 150,
+   "class": "chek_reg"
+  },
+  {
+   "id": 147,
+   "class": "hover_chek"
+  },
+  {
+   "id": 144,
+   "class": "select_check_saturated"
+  },
+  {
+   "id": 141,
+   "class": "DropDownListItemRendererSound"
+  },
+  {
+   "id": 129,
+   "class": "guiControlsLoginBattle_fla.FocusIndicator_DropDownListItemRendererSoundUI_66"
+  },
+  {
+   "id": 125,
+   "class": "DropdownMenu_ScrollingList"
+  },
+  {
+   "id": 120,
+   "class": "IconTextBigButton_UI"
+  },
+  {
+   "id": 108,
+   "class": "IconTextBigButton_FocusIndicator"
+  },
+  {
+   "id": 98,
+   "class": "InfoIconUI"
+  },
+  {
+   "id": 93,
+   "class": "AlertSmall.png"
+  },
+  {
+   "id": 88,
+   "class": "inviteIndicator_UI"
+  },
+  {
+   "id": 83,
+   "class": "ScrollBar"
+  },
+  {
+   "id": 82,
+   "class": "ScrollBarBookmarked_UI"
+  },
+  {
+   "id": 81,
+   "class": "ScrollBar_thumb"
+  },
+  {
+   "id": 80,
+   "class": "guiControlsLoginBattle_fla.scrollThumbIcon_87"
+  },
+  {
+   "id": 76,
+   "class": "guiControlsLoginBattle_fla.ScrollBar_thumbStates_85"
+  },
+  {
+   "id": 72,
+   "class": "ScrollBar_arrowButton"
+  },
+  {
+   "id": 67,
+   "class": "ScrollBar_track"
+  },
+  {
+   "id": 63,
+   "class": "SimpleScrollBar"
+  },
+  {
+   "id": 62,
+   "class": "SimpleScrollBar_thumb"
+  },
+  {
+   "id": 61,
+   "class": "guiControlsLoginBattle_fla.scrollThumbIcon_12"
+  },
+  {
+   "id": 57,
+   "class": "guiControlsLoginBattle_fla.SimpleScrollBar_thumbStates_10"
+  },
+  {
+   "id": 53,
+   "class": "SimpleScrollBar_arrowButton"
+  },
+  {
+   "id": 48,
+   "class": "SimpleScrollBar_track"
+  },
+  {
+   "id": 44,
+   "class": "TextFieldShort"
+  },
+  {
+   "id": 42,
+   "class": "TextInputHighlight"
+  },
+  {
+   "id": 39,
+   "class": "UniSlimBlackToggleGlowUI"
+  },
+  {
+   "id": 36,
+   "class": "UniSlimBlackToggleIndicatorUI"
+  },
+  {
+   "id": 28,
+   "class": "UniversalHeavyBtnUI"
+  },
+  {
+   "id": 26,
+   "class": "guiControlsLoginBattle_fla.uniHeavyBtnFocusIndicator_99"
+  },
+  {
+   "id": 21,
+   "class": "UniversalSlimBtnUI"
+  },
+  {
+   "id": 19,
+   "class": "Image"
+  },
+  {
+   "id": 18,
+   "class": "guiControlsLoginBattle_fla.uniSlimBtnFocusIndicator_104"
+  },
+  {
+   "id": 17,
+   "class": "Button_Focus"
+  },
+  {
+   "id": 11,
+   "class": "BitmapFill"
+  },
+  {
+   "id": 6,
+   "class": "BtnDisableBmp"
+  },
+  {
+   "id": 5,
+   "class": "channel_disable_fill"
+  },
+  {
+   "id": 4,
+   "class": "BtnLinkDisableBmp"
+  },
+  {
+   "id": 3,
+   "class": "ContentTabDisablePattern"
+  },
+  {
+   "id": 2,
+   "class": "TableDisableOverlayPattern"
+  },
+  {
+   "id": 1,
+   "class": "uniDisablePattern"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 21988,
+   "classes": 68,
+   "methods": 397,
+   "bodies": 397,
+   "code_bytes": 8748
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AlertSmall.png",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnDisableBmp",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnLinkDisableBmp",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ContentTabDisablePattern",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TableDisableOverlayPattern",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "channel_disable_fill",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "uniDisablePattern",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Button_Focus",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CheckBoxHitArea",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniSlimBlackToggleGlowUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BtnCircleAnimUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonNormalToggleIndicatorHit",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Button_FocusIndicator",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconTextBigButton_FocusIndicator",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniHeavyBlackStatesUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniHeavyGreenStatesUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniHeavyLimeStatesUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniHeavyOrangeStatesUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniSlimBlackStatesUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniSlimGreenStatesUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniSlimLimeStatesUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniSlimOrangeStatesUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniSlimRedStatesUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bgHighlightMcLargeUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_bg",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "button_disabled_bg",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "chek_reg",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLoginBattle_fla.ButtonBlackStates_48",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLoginBattle_fla.CheckBox_FocusIndicator_new_61",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLoginBattle_fla.FocusIndicator_53",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLoginBattle_fla.FocusIndicator_DropDownListItemRendererSoundUI_66",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLoginBattle_fla.ScrollBar_thumbStates_85",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLoginBattle_fla.SimpleScrollBar_thumbStates_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLoginBattle_fla.button_alert_state_anim_57",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLoginBattle_fla.scrollThumbIcon_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLoginBattle_fla.scrollThumbIcon_87",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLoginBattle_fla.uniHeavyBtnFocusIndicator_99",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLoginBattle_fla.uniSlimBtnFocusIndicator_104",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hover_chek",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "select_check_saturated",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Image",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.Image",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextInputHighlight",
+   "kind": "class",
+   "extends": "scaleform.clik.core.UIComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniSlimBtnShineAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.universalBtn.UniversalBtnShineAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBar_track",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.Button",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SimpleScrollBar_track",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.Button",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "inviteIndicator_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.InviteIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AlertIcon_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.AlertIco",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DropdownMenu_ScrollingList",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.ScrollingList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BitmapFill",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.BitmapFill",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToggleIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ToggleIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InfoIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.InfoIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBar_arrowButton",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SimpleScrollBar_arrowButton",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniSlimBlackToggleIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.universalBtn.UniversalBtnToggleIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CheckBox",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.CheckBox",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextFieldShort",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldShort",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBar_thumb",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollThumb",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SimpleScrollBar_thumb",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollThumb",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonNormal",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBar",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DropDownListItemRendererSound",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.DropDownListItemRendererSound",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonBlack",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.BlackButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconTextBigButton_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.IconTextBigButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniversalHeavyBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.universalBtn.UniversalBtn",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UniversalSlimBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.universalBtn.UniversalBtn",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SimpleScrollBar",
+   "kind": "class",
+   "extends": "ScrollBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBarBookmarked_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollBarBookmarked",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 19"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

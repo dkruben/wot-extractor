@@ -1,0 +1,360 @@
+{
+ "source": "sources/res/gui/flash/mapsTrainingBattlePage.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 134108,
+ "actual_length": 134108,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  800.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 16,
+  "ShowFrame": 122,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 141,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 4,
+  "DefineSprite": 15,
+  "FrameLabel": 9,
+  "FileAttributes": 1,
+  "PlaceObject3": 29,
+  "ImportAssets2": 24,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 15,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 19,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gameMessagesPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "postmortemPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "mapsTrainingGoals.swf",
+   "symbols": []
+  },
+  {
+   "url": "prebattleTimerCmpnts.swf",
+   "symbols": []
+  },
+  {
+   "url": "decorativeCrosshairPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "damageInfoPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "sixthSense.swf",
+   "symbols": []
+  },
+  {
+   "url": "widgetsPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "timersPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleEndWarningPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "damagePanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleMessenger.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleDamageLogPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleAnimationTimer.swf",
+   "symbols": []
+  },
+  {
+   "url": "siegeModePanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "debugPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "minimap.swf",
+   "symbols": []
+  },
+  {
+   "url": "ribbonsPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "consumablesPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "calloutPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "hintPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "radialMenu.swf",
+   "symbols": []
+  },
+  {
+   "url": "mapsTrainingLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 23,
+   "class": "MTBattlePageUI"
+  },
+  {
+   "id": 22,
+   "class": "mtPrebattleTimerUI"
+  },
+  {
+   "id": 21,
+   "class": "TimerBackGroundUI"
+  },
+  {
+   "id": 14,
+   "class": "infoContainer"
+  },
+  {
+   "id": 13,
+   "class": "TFTitleContainerUI"
+  },
+  {
+   "id": 12,
+   "class": "TFTitleUI"
+  },
+  {
+   "id": 10,
+   "class": "TFSideContainerUI"
+  },
+  {
+   "id": 9,
+   "class": "TFSideUI"
+  },
+  {
+   "id": 7,
+   "class": "TFWinUI"
+  },
+  {
+   "id": 5,
+   "class": "TFMessageUI"
+  },
+  {
+   "id": 3,
+   "class": "MapsTrainingGameMessagesPanelUI"
+  },
+  {
+   "id": 1,
+   "class": "mtBattlePageImportsUI"
+  },
+  {
+   "id": 0,
+   "class": "mapsTrainingBattlePage_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 6530,
+   "classes": 19,
+   "methods": 81,
+   "bodies": 81,
+   "code_bytes": 2187
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Circular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Exponential",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TFMessageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TFSideUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TFTitleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TFWinUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "infoContainer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.prebattleInfo.PrebattleInfoContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingBattlePage_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mtBattlePageImportsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TFSideContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.prebattleTimer.MapsTrainingTextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TFTitleContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.prebattleTimer.MapsTrainingTextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TimerBackGroundUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.prebattleTimer.MapsTrainingPrebattleTimerBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsTrainingGameMessagesPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.mapsTrainingMessagesPanel.MapsTrainingMessagesPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MTBattlePageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.MapsTrainingBattlePage",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mtPrebattleTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.prebattleTimer.MapsTrainingPrebattleTimer",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

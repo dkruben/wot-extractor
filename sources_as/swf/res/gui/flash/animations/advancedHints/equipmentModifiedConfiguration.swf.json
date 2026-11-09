@@ -1,0 +1,189 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/equipmentModifiedConfiguration.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 434846,
+ "actual_length": 434846,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 57,
+  "ShowFrame": 2452,
+  "DefineShape": 35,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 54,
+  "PlaceObject2": 5146,
+  "RemoveObject2": 102,
+  "DefineShape3": 99,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 31,
+  "DefineSprite": 56,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 32,
+  "shapes": 192,
+  "sprites": 56,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 10,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "equipmentModifiedConfiguration_fla.MainTimeline"
+  },
+  {
+   "id": 278,
+   "class": "equipmentModifiedConfiguration_fla.glareAnim_55"
+  },
+  {
+   "id": 267,
+   "class": "equipmentModifiedConfiguration_fla.crosshairReloadFast_50"
+  },
+  {
+   "id": 266,
+   "class": "equipmentModifiedConfiguration_fla.crosshairReloadAnimFast_51"
+  },
+  {
+   "id": 265,
+   "class": "equipmentModifiedConfiguration_fla.crosshairReload_47"
+  },
+  {
+   "id": 264,
+   "class": "equipmentModifiedConfiguration_fla.crosshairReloadAnim_48"
+  },
+  {
+   "id": 257,
+   "class": "equipmentModifiedConfiguration_fla.tankShoot_43"
+  },
+  {
+   "id": 80,
+   "class": "equipmentModifiedConfiguration_fla.explosionCircle_33"
+  },
+  {
+   "id": 49,
+   "class": "equipmentModifiedConfiguration_fla.iconFxExplosion_19"
+  },
+  {
+   "id": 12,
+   "class": "equipmentModifiedConfiguration_fla.iconTankBodyStyleBig_7"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2446,
+   "classes": 10,
+   "methods": 40,
+   "bodies": 40,
+   "code_bytes": 661
+  }
+ ],
+ "classes": [
+  {
+   "name": "equipmentModifiedConfiguration_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentModifiedConfiguration_fla.crosshairReloadAnimFast_51",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentModifiedConfiguration_fla.crosshairReloadAnim_48",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentModifiedConfiguration_fla.crosshairReloadFast_50",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentModifiedConfiguration_fla.crosshairReload_47",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentModifiedConfiguration_fla.explosionCircle_33",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentModifiedConfiguration_fla.glareAnim_55",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentModifiedConfiguration_fla.iconFxExplosion_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentModifiedConfiguration_fla.iconTankBodyStyleBig_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "equipmentModifiedConfiguration_fla.tankShoot_43",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

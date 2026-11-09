@@ -1,0 +1,140 @@
+{
+  "rid": "R.views.comp7.mono.battle.tooltips.ban_show_tooltip",
+  "rid_source": "sources/res/comp7/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ban_show_tooltip",
+  "dir": "comp7/gui/gameface/_dist/production/mono/battle/tooltips/ban_show_tooltip",
+  "feature": "comp7",
+  "files": [
+    {
+      "name": "ban_show_tooltip.css",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/battle/tooltips/ban_show_tooltip/ban_show_tooltip.css",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/battle/tooltips/ban_show_tooltip/ban_show_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ban_show_tooltip.html",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/battle/tooltips/ban_show_tooltip/ban_show_tooltip.html",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/battle/tooltips/ban_show_tooltip/ban_show_tooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/battle/tooltips/ban_show_tooltip/bundle.js",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/battle/tooltips/ban_show_tooltip/bundle.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/battle/chunks/globals.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/battle/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/battle/chunks/lib.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/battle/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/battle/tooltips/ban_show_tooltip/ban_show_tooltip.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/battle/tooltips/ban_show_tooltip/ban_show_tooltip.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/battle/tooltips/ban_show_tooltip/bundle.js",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/battle/tooltips/ban_show_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.comp7.mono.battle.tooltips.ban_show_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.comp7.mono.battle.tooltips.ban_show_tooltip no Python",
+      "ViewModel BanViewModel (model=... no Python da view): 0/10 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/battle/tooltips/ban_show_tooltip.py",
+        15
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/battle/vehicle_ban/ban_view.py",
+        72
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/battle/tooltips/ban_show_tooltip.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/battle/vehicle_ban/ban_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/battle/ban_view_model.py",
+      "class": "BanViewModel",
+      "chain": [
+        "BanViewModel"
+      ],
+      "properties": [
+        [
+          "banProgression",
+          "ViewModel"
+        ],
+        [
+          "ownId",
+          "Number"
+        ],
+        [
+          "players",
+          "Array"
+        ],
+        [
+          "vehicles",
+          "Array"
+        ],
+        [
+          "nationsOrder",
+          "Array"
+        ],
+        [
+          "isSelectionAvailable",
+          "Bool"
+        ],
+        [
+          "selectedVehicleCD",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onConfirm",
+        "onSelect"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 10,
+        "missing": [
+          "banProgression",
+          "isSelectionAvailable",
+          "nationsOrder",
+          "onClose",
+          "onConfirm",
+          "onSelect",
+          "ownId",
+          "players",
+          "selectedVehicleCD",
+          "vehicles"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/battle/tooltips/ban_show_tooltip_model.py"
+      ]
+    }
+  }
+}

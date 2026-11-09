@@ -1,0 +1,154 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillCommanderEnemyShotPredictor.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 574218,
+ "actual_length": 574218,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#22221c",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 41,
+  "ShowFrame": 646,
+  "DefineShape": 40,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 4,
+  "PlaceObject2": 2044,
+  "RemoveObject2": 17,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 33,
+  "DefineSprite": 40,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 33,
+  "shapes": 48,
+  "sprites": 40,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillCommanderEnemyShotPredictor_fla.MainTimeline"
+  },
+  {
+   "id": 120,
+   "class": "skillCommanderEnemyShotPredictor_fla.statsDecreased2_40"
+  },
+  {
+   "id": 119,
+   "class": "skillCommanderEnemyShotPredictor_fla.statsDecreased_39"
+  },
+  {
+   "id": 102,
+   "class": "skillCommanderEnemyShotPredictor_fla.explosionCircle_30"
+  },
+  {
+   "id": 99,
+   "class": "skillCommanderEnemyShotPredictor_fla.iconFxExplosion_27"
+  },
+  {
+   "id": 87,
+   "class": "skillCommanderEnemyShotPredictor_fla.slotActive_23"
+  },
+  {
+   "id": 12,
+   "class": "skillCommanderEnemyShotPredictor_fla.iconTankBodyStyleBig_7"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1772,
+   "classes": 7,
+   "methods": 28,
+   "bodies": 28,
+   "code_bytes": 462
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillCommanderEnemyShotPredictor_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderEnemyShotPredictor_fla.explosionCircle_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderEnemyShotPredictor_fla.iconFxExplosion_27",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderEnemyShotPredictor_fla.iconTankBodyStyleBig_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderEnemyShotPredictor_fla.slotActive_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderEnemyShotPredictor_fla.statsDecreased2_40",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillCommanderEnemyShotPredictor_fla.statsDecreased_39",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

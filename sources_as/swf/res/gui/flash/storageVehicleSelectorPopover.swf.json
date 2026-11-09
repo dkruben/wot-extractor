@@ -1,0 +1,145 @@
+{
+ "source": "sources/res/gui/flash/storageVehicleSelectorPopover.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 12175,
+ "actual_length": 12175,
+ "frame_size_px": [
+  0.0,
+  362.0,
+  0.0,
+  292.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 96,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 11,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 3,
+  "DefineSprite": 6,
+  "FrameLabel": 9,
+  "FileAttributes": 1,
+  "PlaceObject3": 10,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 3,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 3,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 1,
+  "shapes": 3,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 13,
+   "class": "StorageVehicleSelectorPopoverUI"
+  },
+  {
+   "id": 9,
+   "class": "StorageVehicleSelectorFilterUI"
+  },
+  {
+   "id": 8,
+   "class": "StorageVehicleSelectorRendererUI"
+  },
+  {
+   "id": 0,
+   "class": "storageVehicleSelectorPopover_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 7032,
+   "classes": 4,
+   "methods": 31,
+   "bodies": 31,
+   "code_bytes": 1807
+  }
+ ],
+ "classes": [
+  {
+   "name": "storageVehicleSelectorPopover_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageVehicleSelectorFilterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.vehicleSelectPopover.VehicleSelectorFilter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageVehicleSelectorRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.vehicleSelectPopover.VehicleSelectRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageVehicleSelectorPopoverUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.vehicleSelectPopover.VehicleSelectPopover",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

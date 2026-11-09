@@ -1,0 +1,105 @@
+{
+  "rid": "R.views.mono.lootbox.tooltips.guaranteed_reward_info",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "guaranteed_reward_info",
+  "dir": "gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "guaranteed_reward_info.css",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "guaranteed_reward_info.html",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.lootbox.tooltips.guaranteed_reward_info",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.mono.lootbox.tooltips.guaranteed_reward_info no Python",
+      "ViewModel GuaranteedRewardInfoTooltipViewModel (model=... no Python da view): 2/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/tooltips/guaranteed_reward_info_tooltip.py",
+        17
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/decorators.py",
+        76
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/tooltips/guaranteed_reward_info_tooltip.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/decorators.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/lootbox_system/tooltips/guaranteed_reward_info_tooltip_view_model.py",
+      "class": "GuaranteedRewardInfoTooltipViewModel",
+      "chain": [
+        "GuaranteedRewardInfoTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "eventName",
+          "String"
+        ],
+        [
+          "guaranteedFrequency",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 2,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/loot_box_vehicle_compensation_tooltip_model.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/exchange/exchange_rate_vehicles_selection_model.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/impl/gen/view_models/views/lobby/exchange/exchange_rate_vehicles_selection_model.py
+from gui.impl.gen.view_models.views.lobby.common.vehicle_model import VehicleModel
+
+class ExchangeRateVehiclesSelectionModel(VehicleModel):
+    __slots__ = ()
+
+    def __init__(self, properties=15, commands=0):
+        super(ExchangeRateVehiclesSelectionModel, self).__init__(properties=properties, commands=commands)
+
+    def getIsFieldModernizationAvailable(self):
+        return self._getBool(10)
+
+    def setIsFieldModernizationAvailable(self, value):
+        self._setBool(10, value)
+
+    def getIsFieldModernizationComplited(self):
+        return self._getBool(11)
+
+    def setIsFieldModernizationComplited(self, value):
+        self._setBool(11, value)
+
+    def getLevelOfFieldModernization(self):
+        return self._getNumber(12)
+
+    def setLevelOfFieldModernization(self, value):
+        self._setNumber(12, value)
+
+    def getAmountOfCombatXp(self):
+        return self._getNumber(13)
+
+    def setAmountOfCombatXp(self, value):
+        self._setNumber(13, value)
+
+    def getNationOrder(self):
+        return self._getNumber(14)
+
+    def setNationOrder(self, value):
+        self._setNumber(14, value)
+
+    def _initialize(self):
+        super(ExchangeRateVehiclesSelectionModel, self)._initialize()
+        self._addBoolProperty('isFieldModernizationAvailable', False)
+        self._addBoolProperty('isFieldModernizationComplited', False)
+        self._addNumberProperty('levelOfFieldModernization', 1)
+        self._addNumberProperty('amountOfCombatXp', 1)
+        self._addNumberProperty('nationOrder', 1)

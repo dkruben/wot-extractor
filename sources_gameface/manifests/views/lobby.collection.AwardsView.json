@@ -1,0 +1,149 @@
+{
+  "rid": "R.views.lobby.collection.AwardsView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "AwardsView",
+  "dir": "gui/gameface/_dist/production/lobby/collection/AwardsView",
+  "feature": null,
+  "files": [
+    {
+      "name": "AwardsView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/AwardsView/AwardsView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/AwardsView/AwardsView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "AwardsView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/AwardsView/AwardsView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/AwardsView/AwardsView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "AwardsView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/AwardsView/AwardsView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/AwardsView/AwardsView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/collection/AwardsView/AwardsView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/collection/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/collection/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/collection/AwardsView/AwardsView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/collection/AwardsView/AwardsView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/collection/AwardsView/AwardsView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/collection/AwardsView/AwardsView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow"
+  ],
+  "commands": [
+    "onClose",
+    "onFinishTutorial",
+    "onOpenCollection",
+    "onOpenItemPreview",
+    "onSetItemReceived",
+    "onSetProgressItemsReceived",
+    "onSetRewardReceived",
+    "onTabSelected",
+    "onViewLoaded"
+  ],
+  "link": {
+    "rid": "R.views.lobby.collection.AwardsView",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.collection.AwardsView no Python",
+      "ViewModel AwardsViewModel (model=... no Python da view): 2/8 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/collection/awards_view.py",
+        34
+      ],
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        1843
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/collection/awards_view.py",
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/challenges/awards_view_model.py",
+      "class": "AwardsViewModel",
+      "chain": [
+        "AwardsViewModel"
+      ],
+      "properties": [
+        [
+          "challengeName",
+          "String"
+        ],
+        [
+          "mainRewardType",
+          "String"
+        ],
+        [
+          "isCompleted",
+          "Bool"
+        ],
+        [
+          "isAvailable",
+          "Bool"
+        ],
+        [
+          "rewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onHangar",
+        "onChallenges"
+      ],
+      "coverage": {
+        "found": 2,
+        "total": 8,
+        "missing": [
+          "challengeName",
+          "isAvailable",
+          "isCompleted",
+          "mainRewardType",
+          "onChallenges",
+          "onHangar"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/collection/awards_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/awards_view_model.py"
+      ]
+    }
+  }
+}

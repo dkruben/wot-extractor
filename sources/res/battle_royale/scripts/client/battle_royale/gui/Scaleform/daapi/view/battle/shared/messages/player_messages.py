@@ -1,0 +1,39 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/battle_royale/scripts/client/battle_royale/gui/Scaleform/daapi/view/battle/shared/messages/player_messages.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: battle_royale/scripts/client/battle_royale/gui/Scaleform/daapi/view/battle/shared/messages/player_messages.py
+from __future__ import absolute_import
+import logging
+from gui.Scaleform.daapi.view.battle.shared.messages import player_messages
+from items import vehicles
+_logger = logging.getLogger(__name__)
+
+class SHPlayerMessages(player_messages.PlayerMessages):
+
+    def _onShowPlayerMessageByCode(self, code, postfix, targetID, attackerID, equipmentID, ignoreMessages):
+        _logger.debug('onShowPlayerMessage %r %r %r %r %r', code, postfix, targetID, attackerID, equipmentID)
+        if ignoreMessages:
+            return
+        else:
+            if equipmentID:
+                equipment = vehicles.g_cache.equipments().get(equipmentID)
+                if equipment is not None:
+                    postfix = ('_').join((postfix, equipment.name.split('_')[0].upper()))
+            if postfix in ('ENEMY_ENEMY', 'ENEMY_ALLY') and self.__isVehicleBot(attackerID) and code.startswith('DEATH'):
+                code = 'DEATH_BY_BOT'
+            self.showMessage(code, {'target': (self._getFullName(targetID)), 
+               'attacker': (self._getFullName(attackerID))}, extra=(
+             (
+              'target', targetID), ('attacker', attackerID)), postfix=postfix)
+            return
+
+    def _getFullName(self, vehicleID):
+        isBot = self.__isVehicleBot(vehicleID)
+        getFullName = self.sessionProvider.getCtx().getPlayerFullName
+        if isBot:
+            return self.sessionProvider.getCtx().getPlayerFullNameParts(vehicleID, showClan=False).vehicleName
+        return getFullName(vehicleID, showClan=False)
+
+    def __isVehicleBot(self, vehicleID):
+        return self.sessionProvider.getArenaDP().getVehicleInfo(vehicleID).team == 21

@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/SituationIndicatorsMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPIComponent as BaseDAAPIComponent
+
+class SituationIndicatorsMeta(BaseDAAPIComponent):
+    def as_setPerksS(self, items):
+        ...
+    def as_updatePerkS(self, perkName, state, duration, lifeTime):
+        ...
+    def as_setWeatherS(self, items):
+        ...
+    def as_updateWeatherS(self, weatherName, state, toolTip):
+        ...
+    def as_clearPanelS(self):
+        ...
+    def as_replayPauseS(self, isPaused):
+        ...

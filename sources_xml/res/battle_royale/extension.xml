@@ -1,0 +1,69 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/extension.xml -->
+<root>
+	<FeatureName>battle_royale</FeatureName>
+	<Components>
+		<StaticComponents>
+			<BattleRoyaleComponent />
+			<AccountBattleRoyaleComponent />
+			<AccountBattleRoyaleTournamentComponent />
+		</StaticComponents>
+		<DynamicComponents>
+			<ArenaLootComponent />
+			<ArenaMinesComponent />
+			<ArenaDeathZonesComponent />
+			<ArenaEntityPositionGridComponent />
+			<ArenaInfoDeathZonesComponent />
+			<VehicleDeathZoneEffect />
+			<SpawnKeyPointController />
+			<SpawnKeyPointTeamInfo />
+			<BattleXP />
+			<ConeVisibility />
+			<Radar />
+			<InBattleUpgradeReadiness />
+			<InBattleUpgrades />
+			<VehicleLoot />
+			<InBattleUpgradesAvatar />
+			<AvatarBattleRoyaleComponent />
+			<BattleXPArenaInfo />
+			<LootArenaInfo />
+			<VehicleCorrodingShotComponent />
+			<VehicleCorrodingShotPreparingComponent />
+			<VehicleAdaptationHealthRestoreComponent />
+			<VehicleThunderStrikeComponent />
+			<VehicleShotPassionComponent />
+			<VehicleSelfBuffComponent />
+			<VehicleBerserkerComponent />
+			<ArenaInfoBRComponent />
+			<VehicleHealPointComponent />
+			<VehicleHealingComponent />
+			<VehicleFireCircleEffectComponent />
+			<VehicleBRRespawnComponent />
+			<VehicleBRRespawnEffectComponent />
+			<BattleRoyaleObserverInfoComponent />
+			<BattleRoyaleCheatsComponent />
+			<VehicleBRStPatrickComponent />
+		</DynamicComponents>
+	</Components>
+	<IsEnabled>True</IsEnabled>
+	<Personality>BattleRoyalePersonality</Personality>
+	<Entities>
+		<ClientServerEntities>
+			<Mine />
+			<Loot />
+			<Placement />
+			<InfluenceZone />
+			<BattleRoyaleRadio />
+			<ThunderStrike />
+		</ClientServerEntities>
+		<ServerOnlyEntities>
+			<BattleRoyaleMgr />
+			<BattleRoyaleTournamentMgr />
+		</ServerOnlyEntities>
+	</Entities>
+	<ExternalComponents />
+	<cgf>
+		<script>
+			<module>client.battle_royale_client_cgf_module</module>
+		</script>
+	</cgf>
+</root>

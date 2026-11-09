@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/vscript/events/ShowCelebAnimation.xml -->
+<root>
+	<name>ShowCelebAnimation</name>
+	<isDevelopment>false</isDevelopment>
+	<senderAspects>HANGAR</senderAspects>
+	<receiverAspects>HANGAR</receiverAspects>
+	<param>
+		<name>celebName</name>
+		<typecode>StringT</typecode>
+	</param>
+	<param>
+		<name>animationIndex</name>
+		<typecode>IntT</typecode>
+	</param>
+</root>

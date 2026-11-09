@@ -1,0 +1,139 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineDeploymentMap.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 2687,
+ "actual_length": 2687,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 9,
+  "ShowFrame": 9,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 19,
+  "DefineShape3": 2,
+  "DefineSprite": 8,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "ImportAssets2": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 3,
+  "sprites": 8,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "minimapEntriesLibrary.swf",
+   "symbols": []
+  },
+  {
+   "url": "epicMinimapEntriesLibrary.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 11,
+   "class": "FrontlineDeploymentMapImportsUI"
+  },
+  {
+   "id": 10,
+   "class": "FrontlineDeploymentMapUI"
+  },
+  {
+   "id": 9,
+   "class": "mapContainerUI"
+  },
+  {
+   "id": 8,
+   "class": "FrontlineDeploymentMapEntriesContainerUI"
+  },
+  {
+   "id": 3,
+   "class": "frontlineDeploymentMapBackgroundUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1646,
+   "classes": 5,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 292
+  }
+ ],
+ "classes": [
+  {
+   "name": "FrontlineDeploymentMapImportsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapContainerUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineDeploymentMap.components.FrontlineMapContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineDeploymentMapEntriesContainerUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineDeploymentMap.components.FrontlineDeploymentMapEntriesContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineDeploymentMapBackgroundUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UILoaderAlt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineDeploymentMapUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineDeploymentMap.FrontlineDeploymentMap",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

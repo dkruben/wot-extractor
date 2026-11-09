@@ -1,0 +1,19 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/PoiCaptureBlockerComponent.def -->
+<root>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<Properties>
+		<pointID>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</pointID>
+		<blockReasons>
+			<Type>ARRAY<of>STATUS_WITH_TIME_INTERVAL</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</blockReasons>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>poiCaptureBlockerComponent</DefaultKeyName>
+</root>

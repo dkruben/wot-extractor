@@ -1,0 +1,141 @@
+{
+ "source": "sources/res/gui/flash/lobbyVehicleMarkerView.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 14691,
+ "actual_length": 14691,
+ "frame_size_px": [
+  0.0,
+  32.0,
+  0.0,
+  32.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 6,
+  "ShowFrame": 10,
+  "DefineShape": 5,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 8,
+  "DefineBitsLossless2": 5,
+  "DefineEditText": 3,
+  "DefineSprite": 5,
+  "FrameLabel": 5,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "ImportAssets2": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 5,
+  "shapes": 5,
+  "sprites": 5,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 18,
+   "class": "LobbyVehicleMarkerViewUI"
+  },
+  {
+   "id": 17,
+   "class": "CustomMarkerUI"
+  },
+  {
+   "id": 15,
+   "class": "PlatoonMarkerUI"
+  },
+  {
+   "id": 13,
+   "class": "VehicleMarkersUI"
+  },
+  {
+   "id": 11,
+   "class": "lobbyVehicleMarkerView_fla.MarkerUI_4"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1544,
+   "classes": 5,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 378
+  }
+ ],
+ "classes": [
+  {
+   "name": "lobbyVehicleMarkerView_fla.MarkerUI_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.lobbyVehicleMarkers.CustomMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlatoonMarkerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.lobbyVehicleMarkers.PlatoonMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleMarkersUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.lobbyVehicleMarkers.LobbyVehicleMarkers",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LobbyVehicleMarkerViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.lobbyVehicleMarkerView.LobbyVehicleMarkerView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

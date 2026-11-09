@@ -1,0 +1,210 @@
+{
+  "rid": "R.views.mono.rest_bonus.tooltips.rest_bonus_tooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "rest_bonus_tooltip",
+  "dir": "gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip/bundle.js"
+    },
+    {
+      "name": "rest_bonus_tooltip.css",
+      "effective": "res/gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip/rest_bonus_tooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip/rest_bonus_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "rest_bonus_tooltip.html",
+      "effective": "res/gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip/rest_bonus_tooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip/rest_bonus_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/rest_bonus/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/rest_bonus/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip/rest_bonus_tooltip.css",
+      "key": "res/gui/gameface/_dist/production/mono/rest_bonus/tooltips/rest_bonus_tooltip/rest_bonus_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.rest_bonus.tooltips.rest_bonus_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.mono.rest_bonus.tooltips.rest_bonus_tooltip no Python",
+      "ViewModel VehicleStatisticModel (model=... no Python da view): 0/23 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/vehicle_statistics_presenter.py",
+        52
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tooltips/rest_bonus_tooltip.py",
+        20
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/vehicle_statistics_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/tooltips/rest_bonus_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/hangar/sub_views/vehicle_statistic_model.py",
+      "class": "VehicleStatisticModel",
+      "chain": [
+        "VehicleStatisticModel"
+      ],
+      "properties": [
+        [
+          "id",
+          "String"
+        ],
+        [
+          "intCD",
+          "Number"
+        ],
+        [
+          "inventoryId",
+          "Number"
+        ],
+        [
+          "xp",
+          "Number"
+        ],
+        [
+          "status",
+          "String"
+        ],
+        [
+          "stateLevel",
+          "String"
+        ],
+        [
+          "elite",
+          "Bool"
+        ],
+        [
+          "bonusMultiplier",
+          "Number"
+        ],
+        [
+          "mastery",
+          "Number"
+        ],
+        [
+          "battlesCount",
+          "Number"
+        ],
+        [
+          "winsCount",
+          "Number"
+        ],
+        [
+          "tooltipID",
+          "Number"
+        ],
+        [
+          "prestigeLevel",
+          "Number"
+        ],
+        [
+          "prestigeGrade",
+          "Number"
+        ],
+        [
+          "prestigeType",
+          "String"
+        ],
+        [
+          "fromWotPlus",
+          "Bool"
+        ],
+        [
+          "proBoostActive",
+          "Bool"
+        ],
+        [
+          "bpSpecial",
+          "Bool"
+        ],
+        [
+          "maxBpScore",
+          "Number"
+        ],
+        [
+          "bpProgress",
+          "Number"
+        ],
+        [
+          "numberOfCrystalEarned",
+          "Array"
+        ],
+        [
+          "own3DStyle",
+          "Bool"
+        ],
+        [
+          "restBonusEnabled",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 23,
+        "missing": [
+          "battlesCount",
+          "bonusMultiplier",
+          "bpProgress",
+          "bpSpecial",
+          "elite",
+          "fromWotPlus",
+          "id",
+          "intCD",
+          "inventoryId",
+          "mastery",
+          "maxBpScore",
+          "numberOfCrystalEarned",
+          "own3DStyle",
+          "prestigeGrade",
+          "prestigeLevel",
+          "prestigeType",
+          "proBoostActive",
+          "restBonusEnabled",
+          "stateLevel",
+          "status",
+          "tooltipID",
+          "winsCount",
+          "xp"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/hangar/sub_views/vehicle_statistics_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/tooltips/rest_bonus_tooltip_model.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,139 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/44_north_america/zones.xml -->
+<root>
+	<path>
+		<id>869253916</id>
+		<name>path</name>
+		<node>
+			<name>sh_grid_patch_comp7_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2667431900</id>
+			<transform>
+				<row0>132 0 0</row0>
+				<row1>0 64 0</row1>
+				<row2>0 0 64</row2>
+				<row3>-307.6646 2.249661 472.73898</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_02</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2757119267</id>
+			<transform>
+				<row0>92 0 0</row0>
+				<row1>0 64 0</row1>
+				<row2>0 0 80</row2>
+				<row3>-363.04916 2.214055 384.5608</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_03</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1824544060</id>
+			<transform>
+				<row0>84 0 0</row0>
+				<row1>0 64 0</row1>
+				<row2>0 0 66</row2>
+				<row3>-261.0601 2.223965 327.23697</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_04</name>
+			<colour>0.2 0.8 0.4 0</colour>
+			<id>3709353524</id>
+			<transform>
+				<row0>48 0 0</row0>
+				<row1>0 64 0</row1>
+				<row2>0 0 40</row2>
+				<row3>-68.03865 1.524129 201.7257</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_05</name>
+			<colour>0.2 0.8 0.4 0</colour>
+			<id>2771994132</id>
+			<transform>
+				<row0>32 0 0</row0>
+				<row1>0 64 0</row1>
+				<row2>0 0 24</row2>
+				<row3>-123.83754 -2.32426 180.68967</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_06</name>
+			<colour>0.2 0.8 0.4 0</colour>
+			<id>1063890991</id>
+			<transform>
+				<row0>44 0 0</row0>
+				<row1>0 64 0</row1>
+				<row2>0 0 56</row2>
+				<row3>-418.052 4.63104 111.62361</row3>
+			</transform>
+		</node>
+		<node>
+			<name>terrain_patch_comp7_01</name>
+			<colour>0.2 0.8 0.4 0.25</colour>
+			<id>1220237994</id>
+			<transform>
+				<row0>189.83275 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 155.25655</row2>
+				<row3>-214.26328 -6.341983 -35.24265</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_07</name>
+			<colour>0.2 0.701961 0.8 0.25</colour>
+			<id>3561274527</id>
+			<transform>
+				<row0>37.10548 0 0</row0>
+				<row1>0 62.440544 0</row1>
+				<row2>0 0 37.10548</row2>
+				<row3>-200.28917 -8.997207 -34.298923</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_08</name>
+			<colour>0.2 0.701961 0.8 0.25</colour>
+			<id>2141054997</id>
+			<transform>
+				<row0>52.5129 0 0</row0>
+				<row1>0 52.5129 0</row1>
+				<row2>0 0 52.5129</row2>
+				<row3>-186.84828 2.425236 -114.94976</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_09</name>
+			<colour>0.2 0.701961 0.8 0.25</colour>
+			<id>3638442753</id>
+			<transform>
+				<row0>25.969103 0 0</row0>
+				<row1>0 35.019257 0</row1>
+				<row2>0 0 25.969103</row2>
+				<row3>-173.54456 -5.730876 54.790398</row3>
+			</transform>
+		</node>
+		<node>
+			<name>sh_grid_patch_comp7_10</name>
+			<colour>0.2 0.701961 0.8 0.25</colour>
+			<id>2150538828</id>
+			<transform>
+				<row0>47.145905 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 34.096077</row2>
+				<row3>-25.622019 -1.738301 -230.3253</row3>
+			</transform>
+		</node>
+		<node>
+			<name>44_north_america_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3721630190</id>
+			<transform>
+				<row0>67.57019 0 0</row0>
+				<row1>0 54.938095 0</row1>
+				<row2>0 0 73.95097</row2>
+				<row3>143.752 -4.55716 203.3419</row3>
+			</transform>
+		</node>
+	</path>
+</root>

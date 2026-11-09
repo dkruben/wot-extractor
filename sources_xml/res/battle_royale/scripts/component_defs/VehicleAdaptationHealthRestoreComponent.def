@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/component_defs/VehicleAdaptationHealthRestoreComponent.def -->
+<root>
+	<Properties>
+		<finishTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</finishTime>
+		<restoreHealth>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</restoreHealth>
+	</Properties>
+	<DefaultKeyName>vehicleAdaptationHealthRestoreComponent</DefaultKeyName>
+</root>

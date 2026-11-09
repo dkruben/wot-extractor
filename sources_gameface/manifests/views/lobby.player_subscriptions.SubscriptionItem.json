@@ -1,0 +1,70 @@
+{
+  "rid": "R.views.lobby.player_subscriptions.SubscriptionItem",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SubscriptionItem",
+  "dir": "gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem",
+  "feature": null,
+  "files": [
+    {
+      "name": "SubscriptionItem.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem/SubscriptionItem.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem/SubscriptionItem.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SubscriptionItem.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem/SubscriptionItem.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem/SubscriptionItem.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SubscriptionItem.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem/SubscriptionItem.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem/SubscriptionItem.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem/SubscriptionItem.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/player_subscriptions/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/player_subscriptions/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem/SubscriptionItem.css",
+      "key": "res/gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem/SubscriptionItem.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem/SubscriptionItem.js",
+      "key": "res/gui/gameface/_dist/production/lobby/player_subscriptions/SubscriptionItem/SubscriptionItem.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.player_subscriptions.SubscriptionItem",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

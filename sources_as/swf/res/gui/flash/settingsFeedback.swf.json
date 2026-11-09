@@ -1,0 +1,418 @@
+{
+ "source": "sources/res/gui/flash/settingsFeedback.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 3321456,
+ "actual_length": 3321456,
+ "frame_size_px": [
+  0.0,
+  470.0,
+  0.0,
+  366.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 39,
+  "ShowFrame": 192,
+  "DefineShape": 37,
+  "DefineBits": 1,
+  "JPEGTables": 1,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 4,
+  "DefineShape2": 2,
+  "PlaceObject2": 77,
+  "RemoveObject2": 5,
+  "DefineShape3": 1,
+  "DefineBitsJPEG3": 12,
+  "DefineBitsLossless2": 22,
+  "DefineEditText": 25,
+  "DefineSprite": 38,
+  "FrameLabel": 29,
+  "FileAttributes": 1,
+  "PlaceObject3": 103,
+  "ImportAssets2": 6,
+  "CSMTextSettings": 24,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 39,
+  "shapes": 40,
+  "sprites": 38,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 25,
+  "fonts": 0,
+  "classes": 28,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "battleDamageLogPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "damageIndicator.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 142,
+   "class": "feedbackBattleBorderMap"
+  },
+  {
+   "id": 139,
+   "class": "BattleBorderMapBorderContainerUI"
+  },
+  {
+   "id": 123,
+   "class": "feedbackBattleEvents"
+  },
+  {
+   "id": 120,
+   "class": "DynamicSettingsScrollPaneUI"
+  },
+  {
+   "id": 117,
+   "class": "InfoViewUI"
+  },
+  {
+   "id": 109,
+   "class": "RibbonsContainerUI"
+  },
+  {
+   "id": 108,
+   "class": "controlsContainerUI"
+  },
+  {
+   "id": 106,
+   "class": "CrewPerksControlsGroupUI"
+  },
+  {
+   "id": 104,
+   "class": "CrewPerksGroupContentUI"
+  },
+  {
+   "id": 103,
+   "class": "battleEfficiencyControlsGroupUI"
+  },
+  {
+   "id": 101,
+   "class": "battleEfficiencyControlsContainerUI"
+  },
+  {
+   "id": 100,
+   "class": "DamageControlsGroupUI"
+  },
+  {
+   "id": 88,
+   "class": "DamageControlsContainerUI"
+  },
+  {
+   "id": 87,
+   "class": "feedbackDamageIndicator"
+  },
+  {
+   "id": 83,
+   "class": "DamageIndicatorContainerUI"
+  },
+  {
+   "id": 82,
+   "class": "DamageIndicatorExtendedUI"
+  },
+  {
+   "id": 72,
+   "class": "feedbackQuestsProgress"
+  },
+  {
+   "id": 65,
+   "class": "QuestsProgressControls"
+  },
+  {
+   "id": 56,
+   "class": "ScorePanelControls"
+  },
+  {
+   "id": 55,
+   "class": "settingsFeedback_fla.scorePanelTierGrouping_35"
+  },
+  {
+   "id": 50,
+   "class": "settingsFeedback_fla.scorePanelVehicleIconsRegular_34"
+  },
+  {
+   "id": 45,
+   "class": "settingsFeedback_fla.scorePanelNoHPRegular_33"
+  },
+  {
+   "id": 40,
+   "class": "settingsFeedback_fla.scorePanelHPValues_32"
+  },
+  {
+   "id": 35,
+   "class": "settingsFeedback_fla.scorePanelHPDifference_29"
+  },
+  {
+   "id": 24,
+   "class": "settingsFeedback_fla.scorePanelHPValuesAndDifference_26"
+  },
+  {
+   "id": 10,
+   "class": "feedbackDamageLog"
+  },
+  {
+   "id": 3,
+   "class": "screenSizeAlert"
+  },
+  {
+   "id": 1,
+   "class": "FeedbackSettings"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 31837,
+   "classes": 28,
+   "methods": 178,
+   "bodies": 178,
+   "code_bytes": 14295
+  }
+ ],
+ "classes": [
+  {
+   "name": "DamageIndicatorContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.damageIndicator.DamageIndicatorsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DamageIndicatorExtendedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.damageIndicator.DamageIndicatorExtended",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestsProgressControls",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.questsProgress.QuestsProgressControls",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScorePanelControls",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.questsProgress.ScorePanelControls",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsFeedback_fla.scorePanelHPDifference_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsFeedback_fla.scorePanelHPValuesAndDifference_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsFeedback_fla.scorePanelHPValues_32",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsFeedback_fla.scorePanelNoHPRegular_33",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsFeedback_fla.scorePanelTierGrouping_35",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "settingsFeedback_fla.scorePanelVehicleIconsRegular_34",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleBorderMapBorderContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.borderMap.BattleBorderMapBorderContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "screenSizeAlert",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.damageLog.ScreenSizeAlert",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrewPerksControlsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.ribbons.ControlsGroup",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DamageControlsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.ribbons.ControlsGroup",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleEfficiencyControlsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.ribbons.ControlsGroup",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrewPerksGroupContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.ribbons.CrewPerksGroupContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DamageControlsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.ribbons.DamageControlsGroupContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleEfficiencyControlsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.ribbons.BattleEfficiencyControlsGroupContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "controlsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.ribbons.ControlsContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InfoViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.ribbons.InfoView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RibbonsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.ribbons.SettingsRibbonContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DynamicSettingsScrollPaneUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FeedbackSettings",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.FeedbackSettings",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "feedbackBattleBorderMap",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.borderMap.BattleBorderMapForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "feedbackBattleEvents",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.ribbons.BattleRibbonsForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "feedbackDamageIndicator",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.damageIndicator.DamageIndicatorForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "feedbackDamageLog",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.damageLog.DamageLogPanelForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "feedbackQuestsProgress",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.settings.feedback.questsProgress.QuestsProgressForm",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,107 @@
+{
+  "rid": "R.views.comp7_light.mono.lobby.tooltips.all_quests_done_tooltip",
+  "rid_source": "sources/res/comp7_light/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "all_quests_done_tooltip",
+  "dir": "comp7_light/gui/gameface/_dist/production/mono/lobby/tooltips/all_quests_done_tooltip",
+  "feature": "comp7_light",
+  "files": [
+    {
+      "name": "all_quests_done_tooltip.html",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/tooltips/all_quests_done_tooltip/all_quests_done_tooltip.html",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/tooltips/all_quests_done_tooltip/all_quests_done_tooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/tooltips/all_quests_done_tooltip/bundle.js",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/tooltips/all_quests_done_tooltip/bundle.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/extended_tooltip_decorator.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/extended_tooltip_decorator.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/tooltips/all_quests_done_tooltip/bundle.js",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/tooltips/all_quests_done_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "season.pollServerTime"
+  ],
+  "link": {
+    "rid": "R.views.comp7_light.mono.lobby.tooltips.all_quests_done_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.comp7_light.mono.lobby.tooltips.all_quests_done_tooltip no Python",
+      "ViewModel ProgressionQuestsModel (model=... no Python da view): 0/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/progression_quests_presenter.py",
+        63
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/tooltips/battle_quests_done_tooltip.py",
+        24
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/progression_quests_presenter.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/tooltips/battle_quests_done_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/gen/view_models/views/lobby/progression_quests_model.py",
+      "class": "ProgressionQuestsModel",
+      "chain": [
+        "ProgressionQuestsModel"
+      ],
+      "properties": [
+        [
+          "quests",
+          "Array"
+        ],
+        [
+          "isMissionsEnable",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onMissionClick",
+        "onMarkAsViewed"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 4,
+        "missing": [
+          "isMissionsEnable",
+          "onMarkAsViewed",
+          "onMissionClick",
+          "quests"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/gen/view_models/views/lobby/tooltips/battle_quests_done_tooltip_model.py"
+      ]
+    }
+  }
+}

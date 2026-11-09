@@ -1,0 +1,99 @@
+{
+  "rid": "R.views.lobby.awards.BadgeAwardView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "BadgeAwardView",
+  "dir": "gui/gameface/_dist/production/lobby/awards/BadgeAwardView",
+  "feature": null,
+  "files": [
+    {
+      "name": "BadgeAwardView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/awards/BadgeAwardView/BadgeAwardView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/awards/BadgeAwardView/BadgeAwardView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BadgeAwardView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/awards/BadgeAwardView/BadgeAwardView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/awards/BadgeAwardView/BadgeAwardView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BadgeAwardView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/awards/BadgeAwardView/BadgeAwardView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/awards/BadgeAwardView/BadgeAwardView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/awards/BadgeAwardView/BadgeAwardView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/awards/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/awards/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/awards/BadgeAwardView/BadgeAwardView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/awards/BadgeAwardView/BadgeAwardView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/awards/BadgeAwardView/BadgeAwardView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/awards/BadgeAwardView/BadgeAwardView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.awards.BadgeAwardView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.awards.BadgeAwardView no Python",
+      "ViewModel BadgeAwardViewModel (model=... no Python da view): 1/1 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/awards/badge_award_view.py",
+        19
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/awards/badge_award_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/awards/badge_award_view_model.py",
+      "class": "BadgeAwardViewModel",
+      "chain": [
+        "BadgeAwardViewModel"
+      ],
+      "properties": [
+        [
+          "badgeId",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 1,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "rid": "R.views.lobby.crew.dialogs.RecruitConfirmIrrelevantDialog",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "RecruitConfirmIrrelevantDialog",
+  "dir": "gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog",
+  "feature": null,
+  "files": [
+    {
+      "name": "RecruitConfirmIrrelevantDialog.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog/RecruitConfirmIrrelevantDialog.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog/RecruitConfirmIrrelevantDialog.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RecruitConfirmIrrelevantDialog.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog/RecruitConfirmIrrelevantDialog.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog/RecruitConfirmIrrelevantDialog.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RecruitConfirmIrrelevantDialog.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog/RecruitConfirmIrrelevantDialog.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog/RecruitConfirmIrrelevantDialog.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog/RecruitConfirmIrrelevantDialog.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog/RecruitConfirmIrrelevantDialog.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog/RecruitConfirmIrrelevantDialog.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog/RecruitConfirmIrrelevantDialog.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/dialogs/RecruitConfirmIrrelevantDialog/RecruitConfirmIrrelevantDialog.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged",
+    "trigger:subView:destroy"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "dialogs.common.DialogTemplateGenericTooltip",
+    "lobby.common.tooltips.ExtendedTextTooltip",
+    "lobby.crew.tooltips.EmptySkillTooltip",
+    "lobby.crew.widgets.CrewWidget"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.dialogs.RecruitConfirmIrrelevantDialog",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.crew.dialogs.RecruitConfirmIrrelevantDialog no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/recruit_window/confirm_irrelevant_perk_reset_dialog.py",
+        17
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/recruit_window/confirm_irrelevant_perk_reset_dialog.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

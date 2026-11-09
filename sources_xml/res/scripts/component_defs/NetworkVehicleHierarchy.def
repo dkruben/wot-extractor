@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/NetworkVehicleHierarchy.def -->
+<root>
+	<Properties>
+		<vehTypeCD>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehTypeCD>
+		<hierarchyInfo>
+			<Type>ARRAY<of>VEHICLE_HIERARCHY_INFO</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</hierarchyInfo>
+	</Properties>
+	<CellMethods />
+	<ClientMethods />
+	<DefaultKeyName>networkVehicleHierarchy</DefaultKeyName>
+</root>

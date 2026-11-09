@@ -1,0 +1,27 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/component_defs/Radar.def -->
+<root>
+	<Properties>
+		<radarReadinessTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</radarReadinessTime>
+		<radarReady>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</radarReady>
+	</Properties>
+	<CellMethods>
+		<activateRadar>
+			<Exposed />
+		</activateRadar>
+	</CellMethods>
+	<ClientMethods>
+		<activatePatrickEffect />
+	</ClientMethods>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>radar</DefaultKeyName>
+</root>

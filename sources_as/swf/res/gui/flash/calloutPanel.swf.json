@@ -1,0 +1,175 @@
+{
+ "source": "sources/res/gui/flash/calloutPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 209654,
+ "actual_length": 209654,
+ "frame_size_px": [
+  0.0,
+  806.0,
+  0.0,
+  58.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 12,
+  "ShowFrame": 164,
+  "DefineShape": 10,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 294,
+  "RemoveObject2": 3,
+  "DefineBitsJPEG3": 6,
+  "DefineBitsLossless2": 4,
+  "DefineEditText": 4,
+  "DefineSprite": 11,
+  "FrameLabel": 34,
+  "FileAttributes": 1,
+  "PlaceObject3": 12,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 10,
+  "shapes": 11,
+  "sprites": 11,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 8,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 36,
+   "class": "CalloutPanelUI"
+  },
+  {
+   "id": 35,
+   "class": "calloutPanel_fla.leftFistMc_11"
+  },
+  {
+   "id": 32,
+   "class": "calloutPanel_fla.rightFistMc_10"
+  },
+  {
+   "id": 29,
+   "class": "calloutPanel_fla.fistsBgMC_9"
+  },
+  {
+   "id": 26,
+   "class": "calloutPanel_fla.triggeredIconUI_8"
+  },
+  {
+   "id": 21,
+   "class": "ActionIconsUI"
+  },
+  {
+   "id": 10,
+   "class": "tankTextMcUI"
+  },
+  {
+   "id": 7,
+   "class": "interactionTextMcUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2843,
+   "classes": 8,
+   "methods": 58,
+   "bodies": 58,
+   "code_bytes": 888
+  }
+ ],
+ "classes": [
+  {
+   "name": "ActionIconsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "calloutPanel_fla.fistsBgMC_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "calloutPanel_fla.leftFistMc_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "calloutPanel_fla.rightFistMc_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "calloutPanel_fla.triggeredIconUI_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "interactionTextMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.calloutPanel.components.InteractionDynamicTextLabel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "tankTextMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.calloutPanel.components.VehicleInfoLabel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CalloutPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.calloutPanel.CalloutPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

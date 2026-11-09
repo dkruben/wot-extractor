@@ -1,0 +1,274 @@
+{
+ "source": "sources/res/gui/flash/battleDirectionIndicatorApp.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 11,
+ "declared_length": 48440,
+ "actual_length": 48440,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  375.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": true,
+ "tags": {
+  "End": 9,
+  "ShowFrame": 9,
+  "DefineShape": 4,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 10,
+  "DefineBitsLossless2": 4,
+  "DefineEditText": 3,
+  "DefineSprite": 8,
+  "ProductInfo": 1,
+  "FrameLabel": 1,
+  "ExportAssets": 1,
+  "ScriptLimits": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 5,
+  "CSMTextSettings": 3,
+  "SymbolClass": 1,
+  "Metadata": 1,
+  "DoABC2": 1
+ },
+ "counts": {
+  "images": 4,
+  "shapes": 4,
+  "sprites": 8,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 20,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [
+  {
+   "id": 19,
+   "name": "DirectionIndicatorUI"
+  },
+  {
+   "id": 4,
+   "name": "BaseValueIndicatorUI"
+  },
+  {
+   "id": 18,
+   "name": "DirectionIndicatorImageUI"
+  }
+ ],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 19,
+   "class": "DirectionIndicatorUI"
+  },
+  {
+   "id": 4,
+   "class": "BaseValueIndicatorUI"
+  },
+  {
+   "id": 18,
+   "class": "DirectionIndicatorImageUI"
+  },
+  {
+   "id": 0,
+   "class": "net.wg.app.impl.BattleDirectionIndicatorApp"
+  }
+ ],
+ "abc": [
+  {
+   "name": "frame1",
+   "lazy": true,
+   "size": 10341,
+   "classes": 20,
+   "methods": 178,
+   "bodies": 122,
+   "code_bytes": 2288
+  }
+ ],
+ "classes": [
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IDisposable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.app.iml.base.BaseRootApp",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.app.impl.BattleDirectionIndicatorApp",
+   "kind": "class",
+   "extends": "net.wg.app.iml.base.BaseRootApp",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IDisplayable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IDisplayObject",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IDisplayable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IRootAppMainContent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisplayObject",
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.battle.views.directionIndicator.DirectionIndicator",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IRootAppMainContent"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "DirectionIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.directionIndicator.DirectionIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.impl.ClassManagerBattleDirectionIndicatorMeta",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.battle.views.directionIndicator.BaseValueIndicator",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.battle.views.directionIndicator.DirectionIndicatorImage",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "BaseValueIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.directionIndicator.BaseValueIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DirectionIndicatorImageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.directionIndicator.DirectionIndicatorImage",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.battle.views.directionIndicator.ArtyDirectionIndicator",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.battle.views.directionIndicator.DirnIndicatorDistance",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.gui.battle.views.directionIndicator.DirectionIndicatorShape",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.gfx.DisplayObjectEx",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.gfx.InteractiveObjectEx",
+   "kind": "class",
+   "extends": "scaleform.gfx.DisplayObjectEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "scaleform.gfx.TextFieldEx",
+   "kind": "class",
+   "extends": "scaleform.gfx.InteractiveObjectEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.data.constants.Values",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [
+  "net_wg_app_impl_BattleDirectionIndicatorApp"
+ ],
+ "scenes": [],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ },
+ "metadata": "<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'><rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1'><dc:format>application/x-shockwave-flash</dc:format><dc:title>swf battle_direction_indicator</dc:title><dc:language>en_US</dc:language><dc:date>11/3/26 1:47 PM</dc:date></rdf:Description></rdf:RDF>",
+ "product_info": {
+  "product": 3,
+  "edition": 6,
+  "version": "4.5",
+  "build": 21328
+ }
+}

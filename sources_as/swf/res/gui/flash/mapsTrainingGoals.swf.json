@@ -1,0 +1,262 @@
+{
+ "source": "sources/res/gui/flash/mapsTrainingGoals.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 267972,
+ "actual_length": 267972,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  500.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 19,
+  "ShowFrame": 158,
+  "DefineShape": 21,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 144,
+  "RemoveObject2": 8,
+  "DefineBitsLossless2": 24,
+  "DefineEditText": 2,
+  "DefineSprite": 18,
+  "FrameLabel": 14,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 25,
+  "shapes": 23,
+  "sprites": 18,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 16,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 68,
+   "class": "MapsTrainingGoalsUI"
+  },
+  {
+   "id": 63,
+   "class": "TimerAnimUI"
+  },
+  {
+   "id": 62,
+   "class": "TimerHintUI"
+  },
+  {
+   "id": 60,
+   "class": "mapsTrainingGoals_fla.timer_5"
+  },
+  {
+   "id": 53,
+   "class": "GoalsUI"
+  },
+  {
+   "id": 51,
+   "class": "GoalItemUI"
+  },
+  {
+   "id": 50,
+   "class": "mapsTrainingGoals_fla.spgTween_18"
+  },
+  {
+   "id": 45,
+   "class": "mapsTrainingGoals_fla.spgDTween_17"
+  },
+  {
+   "id": 40,
+   "class": "mapsTrainingGoals_fla.heavyTween_16"
+  },
+  {
+   "id": 35,
+   "class": "mapsTrainingGoals_fla.heavyDTween_15"
+  },
+  {
+   "id": 30,
+   "class": "mapsTrainingGoals_fla.atTween_14"
+  },
+  {
+   "id": 25,
+   "class": "mapsTrainingGoals_fla.atDTween_13"
+  },
+  {
+   "id": 20,
+   "class": "mapsTrainingGoals_fla.lightTween_12"
+  },
+  {
+   "id": 15,
+   "class": "mapsTrainingGoals_fla.lightDTween_11"
+  },
+  {
+   "id": 10,
+   "class": "mapsTrainingGoals_fla.mediumTween_10"
+  },
+  {
+   "id": 5,
+   "class": "mapsTrainingGoals_fla.mediumDTween_9"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3641,
+   "classes": 16,
+   "methods": 67,
+   "bodies": 67,
+   "code_bytes": 1112
+  }
+ ],
+ "classes": [
+  {
+   "name": "GoalsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.goals.hint.MapsTrainingGoal",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TimerHintUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.goals.hint.MapsTrainingTimerHint",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingGoals_fla.atDTween_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingGoals_fla.atTween_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingGoals_fla.heavyDTween_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingGoals_fla.heavyTween_16",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingGoals_fla.lightDTween_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingGoals_fla.lightTween_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingGoals_fla.mediumDTween_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingGoals_fla.mediumTween_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingGoals_fla.spgDTween_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingGoals_fla.spgTween_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mapsTrainingGoals_fla.timer_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GoalItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.goals.hint.MapsTrainingGoalItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TimerAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.goals.hint.MapsTrainingTimerAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MapsTrainingGoalsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.mapsTraining.views.goals.MapsTrainingGoals",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

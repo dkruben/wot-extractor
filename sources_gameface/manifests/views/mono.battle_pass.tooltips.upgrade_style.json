@@ -1,0 +1,122 @@
+{
+  "rid": "R.views.mono.battle_pass.tooltips.upgrade_style",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "upgrade_style",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style/bundle.js"
+    },
+    {
+      "name": "upgrade_style.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style/upgrade_style.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style/upgrade_style.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "upgrade_style.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style/upgrade_style.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style/upgrade_style.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style/upgrade_style.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/upgrade_style/upgrade_style.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.battle_pass.tooltips.upgrade_style",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.mono.battle_pass.tooltips.upgrade_style no Python",
+      "ViewModel TokenBonusModel (model=... no Python da view): 0/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_bonuses_packers.py",
+        460
+      ],
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+        57
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_upgrade_style_tooltip_view.py",
+        18
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_bonuses_packers.py",
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_upgrade_style_tooltip_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/token_bonus_model.py",
+      "class": "TokenBonusModel",
+      "chain": [
+        "TokenBonusModel"
+      ],
+      "properties": [
+        [
+          "userName",
+          "String"
+        ],
+        [
+          "iconSmall",
+          "String"
+        ],
+        [
+          "iconBig",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 3,
+        "missing": [
+          "iconBig",
+          "iconSmall",
+          "userName"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/reward_item_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/tooltips/battle_pass_upgrade_style_tooltip_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/vehicle_bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/reward_item_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/reward_item_model.py"
+      ]
+    }
+  }
+}

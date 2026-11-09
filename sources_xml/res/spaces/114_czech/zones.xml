@@ -1,0 +1,18 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/114_czech/zones.xml -->
+<root>
+	<path>
+		<id>2968917855</id>
+		<name>path</name>
+		<node>
+			<name>114_czech_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1698092960</id>
+			<transform>
+				<row0>52.743755 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 50.331066</row2>
+				<row3>133.03543 13.649999 94.95951</row3>
+			</transform>
+		</node>
+	</path>
+</root>

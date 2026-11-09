@@ -1,0 +1,53 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/advent_calendar/scripts/client/advent_calendar/gui/impl/gen/view_models/views/lobby/door_view_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from enum import Enum as Enum
+from frameworks.wulf import ViewModel as ViewModel
+
+class DoorState(Enum):
+    CLOSED = 'closed'
+    OPENED = 'opened'
+    READY_TO_OPEN = 'readyToOpen'
+    EXPIRED = 'expired'
+
+class Mark(Enum):
+    NONE = 'none'
+    NY = 'ny'
+    NY_EVENT = 'nyEvent'
+    WDR = 'wdr'
+
+class DoorViewModel(ViewModel):
+    __slots__: tuple
+    def __init__(self, properties=7, commands=0):
+        ...
+    def getDayId(self):
+        ...
+    def setDayId(self, value):
+        ...
+    def getDoorState(self):
+        ...
+    def setDoorState(self, value):
+        ...
+    def getMark(self):
+        ...
+    def setMark(self, value):
+        ...
+    def getPrice(self):
+        ...
+    def setPrice(self, value):
+        ...
+    def getOpenTimeStamp(self):
+        ...
+    def setOpenTimeStamp(self, value):
+        ...
+    def getIsEnoughResources(self):
+        ...
+    def setIsEnoughResources(self, value):
+        ...
+    def getOpenAnimationRequired(self):
+        ...
+    def setOpenAnimationRequired(self, value):
+        ...
+    def _initialize(self):
+        ...

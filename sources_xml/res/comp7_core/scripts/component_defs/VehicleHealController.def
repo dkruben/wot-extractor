@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/comp7_core/scripts/component_defs/VehicleHealController.def -->
+<root>
+	<Properties>
+		<displayedStates>
+			<Type>ARRAY<of>STATE_WITH_TIME_INTERVAL</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</displayedStates>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>VehicleHealController</DefaultKeyName>
+</root>

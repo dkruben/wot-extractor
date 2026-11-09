@@ -1,0 +1,206 @@
+{
+ "source": "sources/res/gui/flash/hintPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 77078,
+ "actual_length": 77078,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 18,
+  "ShowFrame": 1065,
+  "DefineShape": 16,
+  "DefineBits": 1,
+  "JPEGTables": 1,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 10,
+  "PlaceObject2": 250,
+  "RemoveObject2": 2,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 2,
+  "DefineSprite": 17,
+  "FrameLabel": 22,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 4,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 17,
+  "sprites": 17,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 11,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 49,
+   "class": "HintPanelUI"
+  },
+  {
+   "id": 48,
+   "class": "hintPanel_fla.AppearanceEffectAnim_16"
+  },
+  {
+   "id": 44,
+   "class": "KeyEffectAnimUI"
+  },
+  {
+   "id": 43,
+   "class": "KeyAnimUI"
+  },
+  {
+   "id": 42,
+   "class": "KeyViewerContainerUI"
+  },
+  {
+   "id": 41,
+   "class": "KeyViewerUI"
+  },
+  {
+   "id": 39,
+   "class": "buttonLongBgMc"
+  },
+  {
+   "id": 23,
+   "class": "hintPanel_fla.CustomButtonIcons_9"
+  },
+  {
+   "id": 6,
+   "class": "MessageAnimUI"
+  },
+  {
+   "id": 5,
+   "class": "TextFieldContainerUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2724,
+   "classes": 11,
+   "methods": 47,
+   "bodies": 47,
+   "code_bytes": 838
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "KeyViewerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.hintPanel.KeyViewerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "KeyViewerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.hintPanel.KeyViewer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextFieldContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "buttonLongBgMc",
+   "kind": "class",
+   "extends": "net.wg.gui.components.hintPanel.KeyViewerLongKeyBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hintPanel_fla.AppearanceEffectAnim_16",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hintPanel_fla.CustomButtonIcons_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "KeyAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.hintPanel.KeyViewerContainerAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "KeyEffectAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.hintPanel.KeyViewerContainerAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MessageAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.hintPanel.MessageAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HintPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.hintPanel.HintPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

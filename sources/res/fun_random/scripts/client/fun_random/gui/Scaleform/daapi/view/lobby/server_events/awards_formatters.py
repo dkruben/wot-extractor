@@ -1,0 +1,69 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/fun_random/scripts/client/fun_random/gui/Scaleform/daapi/view/lobby/server_events/awards_formatters.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: fun_random/scripts/client/fun_random/gui/Scaleform/daapi/view/lobby/server_events/awards_formatters.py
+from __future__ import absolute_import
+from future.utils import viewvalues
+from constants import PREMIUM_ENTITLEMENTS
+from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin
+from fun_random.gui.impl.lobby.common.lootboxes import FunRandomLootBoxTypes, sortTokenFunc
+from gui.Scaleform.daapi.view.lobby.missions.awards_formatters import CurtailingAwardsComposer, formatShortData
+from gui.impl import backport
+from gui.server_events.awards_formatters import AWARDS_SIZES, AwardsPacker, getMissionsDefaultFormatterMap, TokenBonusFormatter, UniversalPremiumDaysBonusFormatter
+
+class FunCurtailingAwardsComposer(CurtailingAwardsComposer):
+
+    @classmethod
+    def _getShortBonusesData(cls, preformattedBonuses, size=AWARDS_SIZES.SMALL):
+        return [formatShortData(bonus, size) for bonus in preformattedBonuses]
+
+
+def getFunFormatterMap():
+    mapping = getMissionsDefaultFormatterMap()
+    mapping['tokens'] = FunRandomLootBoxFormatter()
+    mapping['lootBox'] = FunRandomLootBoxFormatter()
+    mapping[PREMIUM_ENTITLEMENTS.BASIC] = UniversalPremiumDaysBonusFormatter()
+    mapping[PREMIUM_ENTITLEMENTS.PLUS] = UniversalPremiumDaysBonusFormatter()
+    return mapping
+
+
+def getFunSpecialFormatterMap():
+    mapping = getFunFormatterMap()
+    mapping['lootBox'] = FunRandomRewardLootBoxFormatter()
+    return mapping
+
+
+def getFunAwardsPacker(isSpecial=False):
+    mapping = getFunSpecialFormatterMap() if isSpecial else getFunFormatterMap()
+    return AwardsPacker(mapping)
+
+
+class FunRandomLootBoxFormatter(TokenBonusFormatter, FunAssetPacksMixin):
+
+    def _format(self, bonus):
+        result = []
+        for token in sorted(viewvalues(bonus.getTokens()), key=sortTokenFunc):
+            formatted = self._getFormattedBonus(token.id, token, bonus)
+            if formatted is not None:
+                result.append(formatted)
+
+        return result
+
+    def _getLootboxUserName(self, lootBox):
+        return backport.text(self.getModeLocalsResRoot().lootbox.dyn(lootBox.getType())())
+
+    def _getLootboxIcon(self, lootBox, size):
+        if lootBox.getType() in FunRandomLootBoxTypes.ALL:
+            rarity = lootBox.getType().split('_')[-1]
+            return backport.image(self._getIconPath(rarity))
+        return super(FunRandomLootBoxFormatter, self)._getLootboxIcon(lootBox, size)
+
+    def _getIconPath(self, rarity):
+        return self.getModeIconsResRoot().progression.bonuses.dyn(AWARDS_SIZES.SMALL).dyn(rarity)()
+
+
+class FunRandomRewardLootBoxFormatter(FunRandomLootBoxFormatter):
+
+    def _getIconPath(self, rarity):
+        return self.getModeIconsResRoot().library.bonuses.dyn(AWARDS_SIZES.SMALL).dyn(rarity)()

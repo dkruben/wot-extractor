@@ -1,0 +1,19 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/item_defs/vehicles/common/prefab_effects/damage_stickers.xml -->
+<root>
+	<ap>
+		<priority>1</priority>
+		<prefab>content/DecalsPrefabs/armor_hit_decal_ap.prefab</prefab>
+	</ap>
+	<apcr>
+		<priority>1</priority>
+		<prefab>content/DecalsPrefabs/armor_hit_decal_apcr.prefab</prefab>
+	</apcr>
+	<he>
+		<priority>1</priority>
+		<prefab>content/DecalsPrefabs/armor_hit_decal_he.prefab</prefab>
+	</he>
+	<hc>
+		<priority>1</priority>
+		<prefab>content/DecalsPrefabs/armor_hit_decal_hc.prefab</prefab>
+	</hc>
+</root>

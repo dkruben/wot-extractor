@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/VehicleCompareConfiguratorBaseViewMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPIComponent as BaseDAAPIComponent
+
+class VehicleCompareConfiguratorBaseViewMeta(BaseDAAPIComponent):
+    def applyConfig(self):
+        ...
+    def resetConfig(self):
+        ...
+    def onCloseView(self):
+        ...
+    def as_setResetEnabledS(self, value):
+        ...
+    def as_setApplyEnabledS(self, value):
+        ...
+    def as_setInitDataS(self, data):
+        ...

@@ -1,0 +1,186 @@
+{
+ "source": "sources/res/gui/flash/PveMinimapEntriesLibrary.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 65668,
+ "actual_length": 65668,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 17,
+  "ShowFrame": 1242,
+  "DefineShape": 8,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 1739,
+  "RemoveObject2": 7,
+  "DefineBitsLossless2": 6,
+  "DefineSprite": 16,
+  "FrameLabel": 5,
+  "FileAttributes": 1,
+  "PlaceObject3": 95,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 6,
+  "shapes": 8,
+  "sprites": 16,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 10,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 29,
+   "class": "PveAllyDamagedUI"
+  },
+  {
+   "id": 25,
+   "class": "PveAttackDirectionUI"
+  },
+  {
+   "id": 24,
+   "class": "PveArrowHolderUI"
+  },
+  {
+   "id": 23,
+   "class": "PveAttentionAnimationUI"
+  },
+  {
+   "id": 22,
+   "class": "PveBitmapUI"
+  },
+  {
+   "id": 21,
+   "class": "PveEnemySpawnAnimationUI"
+  },
+  {
+   "id": 16,
+   "class": "PveFlagAnimationUI"
+  },
+  {
+   "id": 9,
+   "class": "PvePersonalDeathZoneAnimationUI"
+  },
+  {
+   "id": 8,
+   "class": "PveMinimapEntriesLibrary_fla.PveDeathZoneAnimation_13"
+  },
+  {
+   "id": 1,
+   "class": "PveMinimapEntriesLibraryExportUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2164,
+   "classes": 10,
+   "methods": 37,
+   "bodies": 37,
+   "code_bytes": 674
+  }
+ ],
+ "classes": [
+  {
+   "name": "PveMinimapEntriesLibraryExportUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveMinimapEntriesLibrary_fla.PveDeathZoneAnimation_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveAllyDamagedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.entries.PveScalableEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveAttentionAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.entries.PveScalableEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveEnemySpawnAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.entries.PveScalableEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PvePersonalDeathZoneAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.entries.PveScalableEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveArrowHolderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.entries.PveCenterBottomAlignedIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveAttackDirectionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.entries.PveArrowEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveBitmapUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.entries.PveBitmapEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveFlagAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.entries.PveFlagAnimationEntry",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

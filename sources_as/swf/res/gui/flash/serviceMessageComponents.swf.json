@@ -1,0 +1,702 @@
+{
+ "source": "sources/res/gui/flash/serviceMessageComponents.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 842672,
+ "actual_length": 842672,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 74,
+  "ShowFrame": 1905,
+  "DefineShape": 24,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 1936,
+  "RemoveObject2": 2,
+  "DefineShape3": 6,
+  "DefineBitsJPEG3": 5,
+  "DefineBitsLossless2": 20,
+  "DefineEditText": 48,
+  "DefineSprite": 73,
+  "FrameLabel": 10,
+  "FileAttributes": 1,
+  "PlaceObject3": 164,
+  "ImportAssets2": 6,
+  "CSMTextSettings": 48,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 8,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 25,
+  "shapes": 32,
+  "sprites": 73,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 48,
+  "fonts": 0,
+  "classes": 54,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattleDynamic.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 178,
+   "class": "ServiceMessagePopUp_UI"
+  },
+  {
+   "id": 177,
+   "class": "ServiceMessageContentPopUp_UI"
+  },
+  {
+   "id": 175,
+   "class": "ServiceMessageIR_UI"
+  },
+  {
+   "id": 174,
+   "class": "ServiceMessageContentIR_UI"
+  },
+  {
+   "id": 172,
+   "class": "NotificationTimeComponentUI"
+  },
+  {
+   "id": 170,
+   "class": "AuctionMessageIR_UI"
+  },
+  {
+   "id": 168,
+   "class": "AuctionMessagePopUp_UI"
+  },
+  {
+   "id": 166,
+   "class": "BondEquipmentChoosingMessageIR_UI"
+  },
+  {
+   "id": 162,
+   "class": "BondEquipmentChoosingMessagePopUp_UI"
+  },
+  {
+   "id": 159,
+   "class": "BondEquipmentChoosingMessageHeaderIcon"
+  },
+  {
+   "id": 153,
+   "class": "PostProgressionStyleMessageIR_UI"
+  },
+  {
+   "id": 151,
+   "class": "PostProgressionStyleMessagePopUp_UI"
+  },
+  {
+   "id": 149,
+   "class": "PrestigeStyleMessageHeaderIcon"
+  },
+  {
+   "id": 147,
+   "class": "PrestigeStyleMessageIR_UI"
+  },
+  {
+   "id": 142,
+   "class": "PrestigeStyleMessagePopUp_UI"
+  },
+  {
+   "id": 127,
+   "class": "ProgressiveStyleMessageIR_UI"
+  },
+  {
+   "id": 123,
+   "class": "ProgressiveStyleMessagePopUp_UI"
+  },
+  {
+   "id": 119,
+   "class": "ProgressiveStyleMessageHeaderIcon"
+  },
+  {
+   "id": 111,
+   "class": "SMCloseBtn"
+  },
+  {
+   "id": 104,
+   "class": "AchievementEditingIR_UI"
+  },
+  {
+   "id": 102,
+   "class": "AchievementEditingPopUp_UI"
+  },
+  {
+   "id": 100,
+   "class": "AchievementRatingIR_UI"
+  },
+  {
+   "id": 98,
+   "class": "AchievementRatingPopUp_UI"
+  },
+  {
+   "id": 96,
+   "class": "AchievementsFirstEntryIR_UI"
+  },
+  {
+   "id": 94,
+   "class": "AchievementsFirstEntryPopUp_UI"
+  },
+  {
+   "id": 92,
+   "class": "AchievementsFirstEntryWithoutWTRIR_UI"
+  },
+  {
+   "id": 90,
+   "class": "AchievementsFirstEntryWithoutWTRPopUp_UI"
+  },
+  {
+   "id": 88,
+   "class": "BattleMattersTaskReminderIR_UI"
+  },
+  {
+   "id": 85,
+   "class": "BattleMattersTaskReminderPopUp_UI"
+  },
+  {
+   "id": 82,
+   "class": "CollectionsCustomIR_UI"
+  },
+  {
+   "id": 80,
+   "class": "CollectionsCustomPopUp_UI"
+  },
+  {
+   "id": 76,
+   "class": "ExchangeRatePersonalDiscountIR_UI"
+  },
+  {
+   "id": 73,
+   "class": "SMFunRandomRewardIR_UI"
+  },
+  {
+   "id": 71,
+   "class": "SMFunRandomRewardPopUp_UI"
+  },
+  {
+   "id": 69,
+   "class": "SMFunRandomRewardsGroupUI"
+  },
+  {
+   "id": 68,
+   "class": "rewardGlow"
+  },
+  {
+   "id": 62,
+   "class": "GamefaceNotificationIR_UI"
+  },
+  {
+   "id": 61,
+   "class": "GamefaceNotificationPopUp_UI"
+  },
+  {
+   "id": 60,
+   "class": "PM3AwardsGroupUI"
+  },
+  {
+   "id": 59,
+   "class": "PM3DescrCompletedUI"
+  },
+  {
+   "id": 54,
+   "class": "PM3DescrUncompletedUI"
+  },
+  {
+   "id": 52,
+   "class": "PM3FooterCompletedUI"
+  },
+  {
+   "id": 51,
+   "class": "PM3FooterUncompletedUI"
+  },
+  {
+   "id": 49,
+   "class": "PM3QuestIR_UI"
+  },
+  {
+   "id": 46,
+   "class": "PM3QuestPopUp_UI"
+  },
+  {
+   "id": 34,
+   "class": "PM3VehicleIconUI"
+  },
+  {
+   "id": 28,
+   "class": "PM3VehicleRowInfoUI"
+  },
+  {
+   "id": 23,
+   "class": "WotPlusAttendanceBigIR_UI"
+  },
+  {
+   "id": 20,
+   "class": "WotPlusAttendanceBigPopUp_UI"
+  },
+  {
+   "id": 17,
+   "class": "WotPlusAttendanceSmallIR_UI"
+  },
+  {
+   "id": 14,
+   "class": "ServiceMessageComponents_fla.ListBackground_6"
+  },
+  {
+   "id": 8,
+   "class": "WotPlusAttendanceSmallPopUp_UI"
+  },
+  {
+   "id": 6,
+   "class": "WotPlusAttendanceRewardsGroupUI"
+  },
+  {
+   "id": 1,
+   "class": "actionBackgroundFill"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 22014,
+   "classes": 54,
+   "methods": 209,
+   "bodies": 209,
+   "code_bytes": 8864
+  }
+ ],
+ "classes": [
+  {
+   "name": "actionBackgroundFill",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BondEquipmentChoosingMessageHeaderIcon",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressiveStyleMessageHeaderIcon",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rewardGlow",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PM3VehicleIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.pm3.PM3VehicleIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PM3VehicleRowInfoUI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.pm3.PM3VehicleInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PrestigeStyleMessageHeaderIcon",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServiceMessageComponents_fla.ListBackground_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PM3DescrCompletedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.pm3.PM3DescriptionCompleted",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PM3DescrUncompletedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.pm3.PM3DescriptionUncompleted",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PM3FooterCompletedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.pm3.PM3FooterCompleted",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PM3FooterUncompletedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.pm3.PM3FooterUncompleted",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SMCloseBtn",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.Button",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NotificationTimeComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.NotificationTimeComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GamefaceNotificationIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.GFNotification",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GamefaceNotificationPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.GFNotification",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServiceMessageContentIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.ServiceMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServiceMessageContentPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.ServiceMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SMFunRandomRewardsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WotPlusAttendanceRewardsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServiceMessageIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.ServiceMessageItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServiceMessagePopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.ServiceMessagePopUp",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementEditingIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.NotificationAchievements",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementRatingIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.NotificationAchievements",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementEditingPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.SMAchievements",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementRatingPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.SMAchievements",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementsFirstEntryIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.NotificationAchievementsFirstEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementsFirstEntryPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.SMAchievementsFirstEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementsFirstEntryWithoutWTRIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.NotificationAchievementsFirstEntryWithoutWTR",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementsFirstEntryWithoutWTRPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.SMAchievementsFirstEntryWithoutWTR",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AuctionMessageIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.AuctionMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AuctionMessagePopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.AuctionMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleMattersTaskReminderIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.NotificationBMTaskReminder",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleMattersTaskReminderPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.SMBattleMattersReminder",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BondEquipmentChoosingMessageIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.BondEquipmentChoosingMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BondEquipmentChoosingMessagePopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.BondEquipmentChoosingMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CollectionsCustomIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.NotificationCollectionsCustom",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CollectionsCustomPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.SMCollectionsCustom",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ExchangeRatePersonalDiscountIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.ExchangeRatePersonalDiscount",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PostProgressionStyleMessageIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.PostProgressionStyleMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PostProgressionStyleMessagePopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.PostProgressionStyleMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PrestigeStyleMessageIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.PrestigeStyleMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PrestigeStyleMessagePopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.PrestigeStyleMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressiveStyleMessageIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.ProgressiveStyleMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressiveStyleMessagePopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.ProgressiveStyleMessageContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SMFunRandomRewardIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.SMFunRandomReward",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SMFunRandomRewardPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.SMFunRandomReward",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WotPlusAttendanceBigIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.WotPlusAttendanceBig",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WotPlusAttendanceSmallIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.WotPlusAttendanceSmall",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WotPlusAttendanceSmallPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.WotPlusAttendanceSmall",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PM3AwardsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.AwardGroup",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WotPlusAttendanceBigPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.SMWotPlusAttendanceBig",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PM3QuestIR_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.NotificationPM3Quest",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PM3QuestPopUp_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.notification.custom.SMPM3Quest",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

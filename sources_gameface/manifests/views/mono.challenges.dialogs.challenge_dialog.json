@@ -1,0 +1,111 @@
+{
+  "rid": "R.views.mono.challenges.dialogs.challenge_dialog",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "challenge_dialog",
+  "dir": "gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog/bundle.js"
+    },
+    {
+      "name": "challenge_dialog.css",
+      "effective": "res/gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog/challenge_dialog.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog/challenge_dialog.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "challenge_dialog.html",
+      "effective": "res/gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog/challenge_dialog.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog/challenge_dialog.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/challenges/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/challenges/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog/challenge_dialog.css",
+      "key": "res/gui/gameface/_dist/production/mono/challenges/dialogs/challenge_dialog/challenge_dialog.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "cancel",
+    "confirm"
+  ],
+  "link": {
+    "rid": "R.views.mono.challenges.dialogs.challenge_dialog",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.mono.challenges.dialogs.challenge_dialog no Python",
+      "ViewModel PriceItemModel (model=... no Python da view): 2/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/challenges/confirmation_view.py",
+        25
+      ],
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        2208
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/challenges/confirmation_view.py",
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/common/price_item_model.py",
+      "class": "PriceItemModel",
+      "chain": [
+        "PriceItemModel"
+      ],
+      "properties": [
+        [
+          "name",
+          "String"
+        ],
+        [
+          "value",
+          "Real"
+        ],
+        [
+          "isEnough",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 3,
+        "missing": [
+          "isEnough"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/challenges/confirmation_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/lootbox_system/confirmation_model.py"
+      ]
+    }
+  }
+}

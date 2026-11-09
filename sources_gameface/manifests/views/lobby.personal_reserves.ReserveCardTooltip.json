@@ -1,0 +1,72 @@
+{
+  "rid": "R.views.lobby.personal_reserves.ReserveCardTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ReserveCardTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "ReserveCardTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip/ReserveCardTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip/ReserveCardTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ReserveCardTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip/ReserveCardTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip/ReserveCardTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ReserveCardTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip/ReserveCardTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip/ReserveCardTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip/ReserveCardTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/personal_reserves/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/personal_reserves/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip/ReserveCardTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip/ReserveCardTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip/ReserveCardTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/personal_reserves/ReserveCardTooltip/ReserveCardTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.simple_tooltip_content"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.personal_reserves.ReserveCardTooltip",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

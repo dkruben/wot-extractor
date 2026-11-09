@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/EnemyVehiclesController.def -->
+<root>
+	<Properties>
+		<isActive>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isActive>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>EnemyVehiclesController</DefaultKeyName>
+</root>

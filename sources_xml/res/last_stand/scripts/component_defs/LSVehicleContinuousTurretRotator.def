@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/component_defs/LSVehicleContinuousTurretRotator.def -->
+<root>
+	<ClientMethods />
+	<CellMethods />
+	<Properties />
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+</root>

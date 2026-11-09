@@ -1,0 +1,18 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/23_westfeld/zones.xml -->
+<root>
+	<path>
+		<id>893138154</id>
+		<name>path</name>
+		<node>
+			<name>23_westfeld_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>73921276</id>
+			<transform>
+				<row0>122.22296 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 138.57298</row2>
+				<row3>242.29103 12.543836 158.61844</row3>
+			</transform>
+		</node>
+	</path>
+</root>

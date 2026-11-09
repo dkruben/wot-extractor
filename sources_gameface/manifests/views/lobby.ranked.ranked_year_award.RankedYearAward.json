@@ -1,0 +1,95 @@
+{
+  "rid": "R.views.lobby.ranked.ranked_year_award.RankedYearAward",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "RankedYearAward",
+  "dir": "gui/unbound/views/lobby/ranked",
+  "feature": null,
+  "files": [
+    {
+      "name": "ranked_year_award.unbound",
+      "effective": "res/gui/unbound/views/lobby/ranked/ranked_year_award.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/ranked/ranked_year_award.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.ranked.ranked_year_award.RankedYearAward",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.ranked.ranked_year_award.RankedYearAward no Python",
+      "ViewModel RankedYearAwardModel (model=... no Python da view): 11/11 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/ranked/ranked_year_award_view.py",
+        157
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/ranked/ranked_year_award_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/ranked/ranked_year_award_model.py",
+      "class": "RankedYearAwardModel",
+      "chain": [
+        "RankedYearAwardModel"
+      ],
+      "properties": [
+        [
+          "awardType",
+          "String"
+        ],
+        [
+          "startClose",
+          "Bool"
+        ],
+        [
+          "rewards",
+          "Array"
+        ],
+        [
+          "actionButtonLabel",
+          "Resource"
+        ],
+        [
+          "pointsTotal",
+          "Number"
+        ],
+        [
+          "pointsCompensated",
+          "Number"
+        ],
+        [
+          "crystals",
+          "Number"
+        ],
+        [
+          "isRewardSelected",
+          "Bool"
+        ],
+        [
+          "rewardsToSelect",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onActionBtnClick",
+        "onDestroyEvent"
+      ],
+      "coverage": {
+        "found": 11,
+        "total": 11,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

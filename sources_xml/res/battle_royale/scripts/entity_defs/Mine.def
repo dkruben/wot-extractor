@@ -1,0 +1,23 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/entity_defs/Mine.def -->
+<root>
+	<AppealRadius>3000</AppealRadius>
+	<Properties>
+		<equipmentID>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</equipmentID>
+		<ownerVehicleID>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</ownerVehicleID>
+		<isDetonated>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isDetonated>
+		<deployTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</deployTime>
+	</Properties>
+	<shouldBackup>false</shouldBackup>
+</root>

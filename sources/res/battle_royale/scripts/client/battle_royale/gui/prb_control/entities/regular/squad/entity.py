@@ -1,0 +1,103 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/battle_royale/scripts/client/battle_royale/gui/prb_control/entities/regular/squad/entity.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: battle_royale/scripts/client/battle_royale/gui/prb_control/entities/regular/squad/entity.py
+from __future__ import absolute_import
+from constants import PREBATTLE_TYPE, QUEUE_TYPE
+from battle_royale.gui.constants import BattleRoyaleSubMode
+from battle_royale.gui.impl.lobby.br_helpers.utils import isBattleResultsStateEntered
+from battle_royale.gui.prb_control.entities.regular.pre_queue.vehicles_watcher import BattleRoyaleVehiclesWatcher
+from battle_royale.gui.prb_control.entities.regular.scheduler import RoyaleScheduler
+from battle_royale.gui.prb_control.entities.regular.squad.actions_validator import BattleRoyaleSquadActionsValidator
+from battle_royale.gui.prb_control.entities.regular.squad.action_handler import BattleRoyaleSquadActionsHandler
+from gui.prb_control.entities.base.squad.ctx import SquadSettingsCtx
+from gui.prb_control.entities.base.squad.entity import SquadEntryPoint, SquadEntity
+from gui.prb_control.events_dispatcher import g_eventDispatcher
+from gui.prb_control.settings import FUNCTIONAL_FLAG, PREBATTLE_ACTION_NAME, UNIT_RESTRICTION
+from gui.prb_control.storages import prequeue_storage_getter
+from gui.shared import g_eventBus, EVENT_BUS_SCOPE
+from gui.shared.events import BattleRoyalePlatoonEvent
+from helpers import dependency
+from skeletons.gui.game_control import IBattleRoyaleController
+
+class BattleRoyaleSquadEntryPoint(SquadEntryPoint):
+
+    def __init__(self, accountsToInvite=None):
+        super(BattleRoyaleSquadEntryPoint, self).__init__(FUNCTIONAL_FLAG.BATTLE_ROYALE, accountsToInvite)
+
+    def makeDefCtx(self):
+        return SquadSettingsCtx(PREBATTLE_TYPE.BATTLE_ROYALE, waitingID='prebattle/create', accountsToInvite=self._accountsToInvite)
+
+    def _doCreate(self, unitMgr, ctx):
+        unitMgr.createBattleRoyaleSquad()
+
+
+class BattleRoyaleSquadEntity(SquadEntity):
+    __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
+    _VALID_RESTRICTIONS = (
+     UNIT_RESTRICTION.UNIT_NOT_FULL,
+     UNIT_RESTRICTION.NOT_READY_IN_SLOTS)
+
+    def __init__(self):
+        super(BattleRoyaleSquadEntity, self).__init__(FUNCTIONAL_FLAG.BATTLE_ROYALE, PREBATTLE_TYPE.BATTLE_ROYALE)
+        self.__watcher = None
+        self.storage = prequeue_storage_getter(QUEUE_TYPE.BATTLE_ROYALE)()
+        return
+
+    def init(self, ctx=None):
+        self.storage.release()
+        self.__watcher = BattleRoyaleVehiclesWatcher()
+        self.__watcher.start()
+        self.__battleRoyaleController.setCurrentSubModeID(BattleRoyaleSubMode.SQUAD_MODE_ID)
+        result = super(BattleRoyaleSquadEntity, self).init(ctx)
+        return result
+
+    def fini(self, ctx=None, woEvents=False):
+        if self.__watcher is not None:
+            self.__watcher.stop()
+            self.__watcher = None
+        if not woEvents:
+            if not self.canSwitch(ctx) and not isBattleResultsStateEntered:
+                g_eventDispatcher.loadHangar()
+        return super(BattleRoyaleSquadEntity, self).fini(ctx, woEvents)
+
+    def leave(self, ctx, callback=None):
+        updateNeeded = True
+        if ctx.hasFlags(FUNCTIONAL_FLAG.SWITCH):
+            self.storage.suspend()
+            updateNeeded = False
+        self.__battleRoyaleController.setCurrentSubModeID(BattleRoyaleSubMode.SOLO_MODE_ID, updateNeeded)
+        g_eventBus.handleEvent(BattleRoyalePlatoonEvent(BattleRoyalePlatoonEvent.LEAVED_PLATOON), scope=EVENT_BUS_SCOPE.LOBBY)
+        super(BattleRoyaleSquadEntity, self).leave(ctx, callback)
+
+    def getQueueType(self):
+        return QUEUE_TYPE.BATTLE_ROYALE
+
+    def getConfirmDialogMeta(self, ctx):
+        if not self.__battleRoyaleController.isEnabled():
+            return None
+        else:
+            return super(BattleRoyaleSquadEntity, self).getConfirmDialogMeta(ctx)
+
+    def isVehiclesReadyToBattle(self):
+        result = self._actionsValidator.getVehiclesValidator().canPlayerDoAction()
+        return result is None or result.isValid or result.restriction in self._VALID_RESTRICTIONS
+
+    def _goToHangar(self):
+        if isBattleResultsStateEntered():
+            return
+        super(BattleRoyaleSquadEntity, self)._goToHangar()
+
+    @property
+    def _showUnitActionNames(self):
+        return (PREBATTLE_ACTION_NAME.BATTLE_ROYALE_SQUAD,)
+
+    def _createActionsValidator(self):
+        return BattleRoyaleSquadActionsValidator(self)
+
+    def _createScheduler(self):
+        return RoyaleScheduler(self)
+
+    def _createActionsHandler(self):
+        return BattleRoyaleSquadActionsHandler(self)

@@ -1,0 +1,51 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/messengerBar/ChannelListContextMenuHandler.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/daapi/view/lobby/messengerBar/ChannelListContextMenuHandler.py
+from __future__ import absolute_import
+from gui.Scaleform.framework.entities.EventSystemEntity import EventSystemEntity
+from gui.Scaleform.framework.managers.context_menu import AbstractContextMenuHandler
+from gui.Scaleform.locale.MENU import MENU
+from gui.shared import EVENT_BUS_SCOPE
+from gui.shared.events import ChannelCarouselEvent
+
+class CHANNEL(object):
+    CLOSE_CURRENT = 'closeCurrent'
+    MINIMIZE_ALL = 'minimizeAll'
+    CLOSE_ALL_EXCEPT_CURRENT = 'closeAllExceptCurrent'
+
+
+class ChannelListContextMenuHandler(AbstractContextMenuHandler, EventSystemEntity):
+
+    def __init__(self, cmProxy, ctx=None):
+        super(ChannelListContextMenuHandler, self).__init__(cmProxy, ctx, {(CHANNEL.MINIMIZE_ALL): 'minimizeAll', 
+           (CHANNEL.CLOSE_CURRENT): 'closeCurrent', 
+           (CHANNEL.CLOSE_ALL_EXCEPT_CURRENT): 'closeAllExceptCurrent'})
+
+    def closeCurrent(self):
+        self.fireEvent(ChannelCarouselEvent(self, ChannelCarouselEvent.CLOSE_BUTTON_CLICK, self._clientID), scope=EVENT_BUS_SCOPE.LOBBY)
+
+    def minimizeAll(self):
+        self.fireEvent(ChannelCarouselEvent(self, ChannelCarouselEvent.MINIMIZE_ALL_CHANNELS, None), scope=EVENT_BUS_SCOPE.LOBBY)
+        return
+
+    def closeAllExceptCurrent(self):
+        self.fireEvent(ChannelCarouselEvent(self, ChannelCarouselEvent.CLOSE_ALL_EXCEPT_CURRENT, self._clientID), scope=EVENT_BUS_SCOPE.LOBBY)
+
+    def _initFlashValues(self, ctx):
+        self._clientID = int(ctx.clientID)
+        self._canClose = bool(ctx.canClose)
+
+    def _clearFlashValues(self):
+        self._clientID = None
+        self._canClose = None
+        return
+
+    def _generateOptions(self, ctx=None):
+        return [
+         self._makeItem(CHANNEL.MINIMIZE_ALL, MENU.contextmenu('messenger/minimizeAll')),
+         self._makeSeparator(),
+         self._makeItem(CHANNEL.CLOSE_CURRENT, MENU.contextmenu('messenger/closeCurrent'), {'enabled': (self._canClose)}),
+         self._makeSeparator(),
+         self._makeItem(CHANNEL.CLOSE_ALL_EXCEPT_CURRENT, MENU.contextmenu('messenger/closeAllExceptCurrent'))]

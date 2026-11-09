@@ -1,0 +1,315 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineBattleUpgradePanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 74831,
+ "actual_length": 74831,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 34,
+  "ShowFrame": 851,
+  "DefineShape": 26,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 10,
+  "PlaceObject2": 380,
+  "RemoveObject2": 13,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 11,
+  "DefineEditText": 20,
+  "DefineSprite": 33,
+  "FrameLabel": 44,
+  "FileAttributes": 1,
+  "PlaceObject3": 19,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 20,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 7,
+  "DoABC2": 1,
+  "DefineShape4": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 21,
+  "shapes": 34,
+  "sprites": 33,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 20,
+  "fonts": 0,
+  "classes": 21,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 108,
+   "class": "AtlasIconPlaceHolderUI"
+  },
+  {
+   "id": 106,
+   "class": "ConfiguratorRendererBigUI"
+  },
+  {
+   "id": 99,
+   "class": "ConfiguratorRendererSmallUI"
+  },
+  {
+   "id": 90,
+   "class": "frontlineBattleUpgradePanel_fla.reserveLevelMC_6"
+  },
+  {
+   "id": 76,
+   "class": "ModuleInfoInfoPanelUI"
+  },
+  {
+   "id": 75,
+   "class": "ModuleInfoKeyViewerUI"
+  },
+  {
+   "id": 73,
+   "class": "buttonLongBgMc"
+  },
+  {
+   "id": 57,
+   "class": "frontlineBattleUpgradePanel_fla.CustomButtonIcons_23"
+  },
+  {
+   "id": 40,
+   "class": "FrontlineBattleUpgradePanelUI"
+  },
+  {
+   "id": 34,
+   "class": "AlertTextUI"
+  },
+  {
+   "id": 31,
+   "class": "FrontlineChoiceInfoPanelUI"
+  },
+  {
+   "id": 29,
+   "class": "FrontlineModuleInfoFirstUI"
+  },
+  {
+   "id": 26,
+   "class": "FrontlineModuleInfoSecondUI"
+  },
+  {
+   "id": 25,
+   "class": "frontlineBattleUpgradePanel_fla.categoryMC_14"
+  },
+  {
+   "id": 13,
+   "class": "selectBG"
+  },
+  {
+   "id": 10,
+   "class": "NotificationBorderAnimationUI"
+  },
+  {
+   "id": 9,
+   "class": "NotificationBorderContainerUI"
+  },
+  {
+   "id": 2,
+   "class": "bg"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 6086,
+   "classes": 21,
+   "methods": 96,
+   "bodies": 96,
+   "code_bytes": 1834
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Sine",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AlertTextUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AtlasIconPlaceHolderUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bg",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "selectBG",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModuleInfoInfoPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.configurator.ModuleInfoPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModuleInfoKeyViewerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.hintPanel.KeyViewer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NotificationBorderContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.upgradePanel.NotificationBorderContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "buttonLongBgMc",
+   "kind": "class",
+   "extends": "net.wg.gui.components.hintPanel.KeyViewerLongKeyBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineBattleUpgradePanel_fla.CustomButtonIcons_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineBattleUpgradePanel_fla.categoryMC_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineBattleUpgradePanel_fla.reserveLevelMC_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NotificationBorderAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.upgradePanel.NotificationBorderAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ConfiguratorRendererBigUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.upgradePanel.FrontlineConfiguratorRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ConfiguratorRendererSmallUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.upgradePanel.FrontlineConfiguratorRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineChoiceInfoPanelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.upgradePanel.FrontlineChoiceInfoPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineModuleInfoFirstUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.upgradePanel.FrontlineModuleInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineModuleInfoSecondUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.upgradePanel.FrontlineModuleInfo",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineBattleUpgradePanelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.upgradePanel.FrontlineBattleUpgradePanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

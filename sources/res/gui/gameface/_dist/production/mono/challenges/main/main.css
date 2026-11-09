@@ -1,0 +1,88 @@
+/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable selector-no-qualifying-type */
+@keyframes App_fadeInWithScale_0 {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes App_slideUp_0 {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes App_blink_0 {
+  0% {
+    filter: brightness(1);
+  }
+  16% {
+    filter: brightness(3);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+@keyframes App_scale_0 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes App_rotate_0 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes App_windowIn_0 {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes App_fadeOut_0 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes App_fadeIn_0 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#App_root_0 {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App_card_55b8e634 {
+  padding: 2em;
+}
+
+.App_read-the-docs_1a52100a {
+  color: #888;
+}

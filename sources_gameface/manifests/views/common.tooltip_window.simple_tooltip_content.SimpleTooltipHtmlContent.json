@@ -1,0 +1,119 @@
+{
+  "rid": "R.views.common.tooltip_window.simple_tooltip_content.SimpleTooltipHtmlContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "SimpleTooltipHtmlContent",
+  "dir": "gui/unbound/views/common/tooltip_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "simple_tooltip_content.unbound",
+      "effective": "res/gui/unbound/views/common/tooltip_window/simple_tooltip_content.unbound",
+      "all": [
+        "res/gui/unbound/views/common/tooltip_window/simple_tooltip_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.tooltip_window.simple_tooltip_content.SimpleTooltipHtmlContent",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.common.tooltip_window.simple_tooltip_content.SimpleTooltipHtmlContent no Python",
+      "ViewModel PrebattleAmmunitionPanelViewModel (model=... no Python da view): 0/10 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/battle/battle_page/ammunition_panel/prebattle_ammunition_panel_view.py",
+        30
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/battle/battle_page/ammunition_panel/prebattle_ammunition_panel_view.py",
+        62
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/pub/view_impl.py",
+        52
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/battle/battle_page/ammunition_panel/prebattle_ammunition_panel_view.py",
+      "sources/res/scripts/client/gui/impl/pub/view_impl.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/battle/battle_page/prebattle_ammunition_panel_view_model.py",
+      "class": "PrebattleAmmunitionPanelViewModel",
+      "chain": [
+        "PrebattleAmmunitionPanelViewModel",
+        "AmmunitionPanelViewModel"
+      ],
+      "properties": [
+        [
+          "ammunitionPanel",
+          "ViewModel"
+        ],
+        [
+          "timeTillBattleStart",
+          "Number"
+        ],
+        [
+          "state",
+          "Number"
+        ],
+        [
+          "ammunitionPanel",
+          "ViewModel"
+        ],
+        [
+          "lastSlotAction",
+          "ViewModel"
+        ],
+        [
+          "roleSkillSlot",
+          "ViewModel"
+        ],
+        [
+          "vehicleCD",
+          "Number"
+        ],
+        [
+          "isMaintenanceEnabled",
+          "Bool"
+        ],
+        [
+          "isDisabled",
+          "Bool"
+        ],
+        [
+          "isReady",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onEscKeyDown"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 10,
+        "missing": [
+          "ammunitionPanel",
+          "isDisabled",
+          "isMaintenanceEnabled",
+          "isReady",
+          "lastSlotAction",
+          "onEscKeyDown",
+          "roleSkillSlot",
+          "state",
+          "timeTillBattleStart",
+          "vehicleCD"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

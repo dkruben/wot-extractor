@@ -1,0 +1,217 @@
+{
+ "source": "sources/res/gui/flash/eventLoading.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 31417,
+ "actual_length": 31417,
+ "frame_size_px": [
+  0.0,
+  1920.0,
+  0.0,
+  1080.0
+ ],
+ "frame_rate": 60.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 22,
+  "ShowFrame": 215,
+  "DefineShape": 11,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 275,
+  "RemoveObject2": 5,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 9,
+  "DefineEditText": 12,
+  "DefineSprite": 21,
+  "FrameLabel": 8,
+  "FileAttributes": 1,
+  "PlaceObject3": 19,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 12,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 9,
+  "shapes": 12,
+  "sprites": 21,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 12,
+  "fonts": 0,
+  "classes": 12,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 54,
+   "class": "EventLoading_UI"
+  },
+  {
+   "id": 47,
+   "class": "EventLogoContainerUI"
+  },
+  {
+   "id": 46,
+   "class": "loadingProgressUI"
+  },
+  {
+   "id": 33,
+   "class": "btnArrowUI"
+  },
+  {
+   "id": 24,
+   "class": "stepperBarUI"
+  },
+  {
+   "id": 22,
+   "class": "eventHint1PageBigUI"
+  },
+  {
+   "id": 18,
+   "class": "eventHint1PageSmallUI"
+  },
+  {
+   "id": 14,
+   "class": "eventHint2PageBigUI"
+  },
+  {
+   "id": 10,
+   "class": "eventHint2PageSmallUI"
+  },
+  {
+   "id": 6,
+   "class": "stepperUI"
+  },
+  {
+   "id": 0,
+   "class": "eventLoading_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5080,
+   "classes": 12,
+   "methods": 54,
+   "bodies": 54,
+   "code_bytes": 1440
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventHint1PageBigUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.LoadingPageContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventHint1PageSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.LoadingPageContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventHint2PageBigUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.LoadingPageContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventHint2PageSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.LoadingPageContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventLoading_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stepperUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stepperBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.StepperContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "loadingProgressUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.LoadingContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventLogoContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.containers.EventLogoContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "btnArrowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventLoading_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.eventBattle.views.loading.EventBattleLoading",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

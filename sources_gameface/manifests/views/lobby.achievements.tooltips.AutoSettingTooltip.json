@@ -1,0 +1,106 @@
+{
+  "rid": "R.views.lobby.achievements.tooltips.AutoSettingTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "AutoSettingTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "AutoSettingTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip/AutoSettingTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip/AutoSettingTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "AutoSettingTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip/AutoSettingTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip/AutoSettingTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "AutoSettingTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip/AutoSettingTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip/AutoSettingTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip/AutoSettingTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/achievements/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/achievements/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip/AutoSettingTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip/AutoSettingTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip/AutoSettingTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/AutoSettingTooltip/AutoSettingTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.achievements.tooltips.AutoSettingTooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.achievements.tooltips.AutoSettingTooltip no Python",
+      "ViewModel AutoSettingTooltipModel (model=... no Python da view): 1/1 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/achievements/edit_view.py",
+        82
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/achievements/tooltips/auto_setting_tooltip.py",
+        15
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/achievements/edit_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/achievements/tooltips/auto_setting_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/achievements/tooltips/auto_setting_tooltip_model.py",
+      "class": "AutoSettingTooltipModel",
+      "chain": [
+        "AutoSettingTooltipModel"
+      ],
+      "properties": [
+        [
+          "isSwitchedOn",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 1,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/achievements/views/edit_view_model.py"
+      ]
+    }
+  }
+}

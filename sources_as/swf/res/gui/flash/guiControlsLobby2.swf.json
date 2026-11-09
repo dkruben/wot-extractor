@@ -1,0 +1,921 @@
+{
+ "source": "sources/res/gui/flash/guiControlsLobby2.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 9012607,
+ "actual_length": 9012607,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  440.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 123,
+  "ShowFrame": 2142,
+  "DefineShape": 234,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 3,
+  "DefineShape2": 2,
+  "PlaceObject2": 1616,
+  "RemoveObject2": 68,
+  "DefineShape3": 19,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 228,
+  "DefineEditText": 79,
+  "DefineSprite": 122,
+  "FrameLabel": 240,
+  "FileAttributes": 1,
+  "PlaceObject3": 122,
+  "ImportAssets2": 8,
+  "CSMTextSettings": 79,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 12,
+  "DoABC2": 1,
+  "DefineShape4": 3,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 232,
+  "shapes": 258,
+  "sprites": 122,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 79,
+  "fonts": 0,
+  "classes": 73,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyDynamic.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 691,
+   "class": "ButtonNormalShineAnimUI"
+  },
+  {
+   "id": 686,
+   "class": "MissionsVehicleSelectorUI"
+  },
+  {
+   "id": 685,
+   "class": "CloseArrowButtonUI"
+  },
+  {
+   "id": 679,
+   "class": "guiControlsLobby2_fla.CloseArrowButtonIcon_8"
+  },
+  {
+   "id": 670,
+   "class": "rudimentaryGCL2"
+  },
+  {
+   "id": 669,
+   "class": "SideBarRendererUI"
+  },
+  {
+   "id": 583,
+   "class": "SideBarSmallRendererUI"
+  },
+  {
+   "id": 490,
+   "class": "TileListUI"
+  },
+  {
+   "id": 488,
+   "class": "TradeOffWidgetUI"
+  },
+  {
+   "id": 470,
+   "class": "AlertMessageBlockUI"
+  },
+  {
+   "id": 465,
+   "class": "guiControlsLobby2_fla.alertMessageBg_40"
+  },
+  {
+   "id": 458,
+   "class": "BlueShineAnimUI"
+  },
+  {
+   "id": 381,
+   "class": "ButtonAttentionLargeUI"
+  },
+  {
+   "id": 372,
+   "class": "ButtonAttentionSmallUI"
+  },
+  {
+   "id": 362,
+   "class": "ButtonGreenLargeUI"
+  },
+  {
+   "id": 351,
+   "class": "ButtonNormalShineUI"
+  },
+  {
+   "id": 340,
+   "class": "guiControlsLobby2_fla.button_alert_state_anim_55"
+  },
+  {
+   "id": 323,
+   "class": "ButtonSecondaryLargeUI"
+  },
+  {
+   "id": 316,
+   "class": "guiControlsLobby2_fla.btnFocusIndicator_45"
+  },
+  {
+   "id": 309,
+   "class": "ButtonTTCUI"
+  },
+  {
+   "id": 306,
+   "class": "ButtonTTCContent"
+  },
+  {
+   "id": 302,
+   "class": "ButtonAboutTextUI"
+  },
+  {
+   "id": 300,
+   "class": "DropdownMenuPriceUI"
+  },
+  {
+   "id": 288,
+   "class": "ddAction"
+  },
+  {
+   "id": 279,
+   "class": "GhostButtonSlimUI"
+  },
+  {
+   "id": 272,
+   "class": "GhostButtonUI"
+  },
+  {
+   "id": 262,
+   "class": "MissionAwardsBgUI"
+  },
+  {
+   "id": 259,
+   "class": "MissionDetailsNumPageButtonUI"
+  },
+  {
+   "id": 258,
+   "class": "guiControlsLobby2_fla.NumBgSelected_76"
+  },
+  {
+   "id": 251,
+   "class": "guiControlsLobby2_fla.NumBgHover_75"
+  },
+  {
+   "id": 247,
+   "class": "guiControlsLobby2_fla.NumBgNormal_74"
+  },
+  {
+   "id": 240,
+   "class": "MissionsFilterCounterUI"
+  },
+  {
+   "id": 239,
+   "class": "guiControlsLobby2_fla.glow_79"
+  },
+  {
+   "id": 235,
+   "class": "MoneyUI"
+  },
+  {
+   "id": 221,
+   "class": "NationTreeArrowUI"
+  },
+  {
+   "id": 219,
+   "class": "OrangeTabButtonUI"
+  },
+  {
+   "id": 201,
+   "class": "OrangeTabMenuUI"
+  },
+  {
+   "id": 200,
+   "class": "OverlayTypeUI"
+  },
+  {
+   "id": 191,
+   "class": "PostProgressionEntryPointButtonUI"
+  },
+  {
+   "id": 186,
+   "class": "guiControlsLobby2_fla.lockAnim_92"
+  },
+  {
+   "id": 176,
+   "class": "PostProgressionEntryPointBgUI"
+  },
+  {
+   "id": 172,
+   "class": "PriceMcUI"
+  },
+  {
+   "id": 170,
+   "class": "ProgressiveRewardGiftUI"
+  },
+  {
+   "id": 158,
+   "class": "ProgressiveRewardWidgetUI"
+  },
+  {
+   "id": 157,
+   "class": "ProgressiveRewardUI"
+  },
+  {
+   "id": 154,
+   "class": "guiControlsLobby2_fla.progressiveRewardLock_20"
+  },
+  {
+   "id": 145,
+   "class": "ProgressiveRewardProgressUI"
+  },
+  {
+   "id": 144,
+   "class": "guiControlsLobby2_fla.progressiveRewardType_18"
+  },
+  {
+   "id": 132,
+   "class": "RentIconUI"
+  },
+  {
+   "id": 129,
+   "class": "ResizableScrollPaneUI"
+  },
+  {
+   "id": 128,
+   "class": "Separator_2_5_UI"
+  },
+  {
+   "id": 126,
+   "class": "ServerSlotButtonUI"
+  },
+  {
+   "id": 125,
+   "class": "guiControlsLobby2_fla.highlightFadeOut_107"
+  },
+  {
+   "id": 124,
+   "class": "guiControlsLobby2_fla.highlightFadeIn_106"
+  },
+  {
+   "id": 120,
+   "class": "guiControlsLobby2_fla.focusIndicator_105"
+  },
+  {
+   "id": 119,
+   "class": "ShadowBGUI"
+  },
+  {
+   "id": 118,
+   "class": "ShadowLip322x53_UI"
+  },
+  {
+   "id": 115,
+   "class": "ShineAnimUI"
+  },
+  {
+   "id": 38,
+   "class": "SideBarUI"
+  },
+  {
+   "id": 37,
+   "class": "SlotBtnBlink_UI"
+  },
+  {
+   "id": 33,
+   "class": "SortieChatSectionUI"
+  },
+  {
+   "id": 30,
+   "class": "ChatComponentUI"
+  },
+  {
+   "id": 29,
+   "class": "StaticItemSlotUI"
+  },
+  {
+   "id": 28,
+   "class": "StatisticsHeaderGroup_UI"
+  },
+  {
+   "id": 27,
+   "class": "SubtasksList_UI"
+  },
+  {
+   "id": 25,
+   "class": "TransportingTutotialArrowUI"
+  },
+  {
+   "id": 22,
+   "class": "VehicleTitleUI"
+  },
+  {
+   "id": 21,
+   "class": "tankTypeHit"
+  },
+  {
+   "id": 12,
+   "class": "VideoBtnUI"
+  },
+  {
+   "id": 11,
+   "class": "VideoBtnHitAreaMcUI"
+  },
+  {
+   "id": 8,
+   "class": "VideoBtnBgUI"
+  },
+  {
+   "id": 3,
+   "class": "wnd_bounds"
+  },
+  {
+   "id": 1,
+   "class": "ShadowBgBitmapUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 26154,
+   "classes": 73,
+   "methods": 380,
+   "bodies": 380,
+   "code_bytes": 9993
+  }
+ ],
+ "classes": [
+  {
+   "name": "ShadowBgBitmapUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Separator_2_5_UI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShadowLip322x53_UI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ddAction",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rudimentaryGCL2",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "wnd_bounds",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BlueShineAnimUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionAwardsBgUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NationTreeArrowUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OverlayTypeUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressiveRewardGiftUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RentIconUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShineAnimUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SlotBtnBlink_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.CloseArrowButtonIcon_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.NumBgHover_75",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.NumBgNormal_74",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.NumBgSelected_76",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.alertMessageBg_40",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.btnFocusIndicator_45",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.button_alert_state_anim_55",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.focusIndicator_105",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.glow_79",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.highlightFadeIn_106",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.highlightFadeOut_107",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.lockAnim_92",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.progressiveRewardLock_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby2_fla.progressiveRewardType_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "tankTypeHit",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonAboutTextUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.backButton.BackButtonText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShadowBGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.assets.SpottedBackground",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonNormalShineAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.ButtonNormalShineAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonTTCContent",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.backButton.BackButtonStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TransportingTutotialArrowUI",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.UIComponentEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionsFilterCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.filters.FilterCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MoneyUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.Money",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PostProgressionEntryPointBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.vehPostProgression.EntryPointBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PostProgressionEntryPointButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.vehPostProgression.EntryPointButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PriceMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.dialogs.PriceMc",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressiveRewardProgressUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.progressiveReward.ProgressiveRewardProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressiveRewardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.progressiveReward.ProgressiveReward",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StaticItemSlotUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.StaticItemSlot",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SubtasksList_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.SubtasksList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleTitleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.VehicleTitle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VideoBtnBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VideoBtnHitAreaMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VideoBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.VideoButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ResizableScrollPaneUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatisticsHeaderGroup_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonAttentionLargeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonAttentionSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonGreenLargeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonSecondaryLargeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CloseArrowButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GhostButtonSlimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GhostButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsNumPageButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OrangeTabMenuUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.tabs.OrangeTabMenu",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SideBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.SideBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TileListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TileList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SortieChatSectionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.fortifications.battleRoom.SortieChatSection",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonNormalShineUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.ButtonNormalShine",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonTTCUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ButtonAbout",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServerSlotButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.ServerSlotButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DropdownMenuPriceUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.DropdownMenuPrice",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OrangeTabButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.tabs.OrangeTabButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SideBarRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.SideBarRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SideBarSmallRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.SideBarRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AlertMessageBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.alertMessage.AlertMessageBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChatComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.messenger.ChannelComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionsVehicleSelectorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.MissionsVehicleSelector",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressiveRewardWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.progressiveReward.ProgressiveRewardWidget",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TradeOffWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.tradeIn.TradeOffWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

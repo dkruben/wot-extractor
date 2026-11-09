@@ -1,0 +1,26 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/quick_training/mentoring_license_component_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from gui.impl.gen.view_models.views.lobby.crew.components.component_base_model import ComponentBaseModel as ComponentBaseModel
+
+class MentoringLicenseComponentModel(ComponentBaseModel):
+    __slots__: tuple
+    openMentoring: Any
+    def __init__(self, properties=4, commands=1):
+        ...
+    def getAmount(self):
+        ...
+    def setAmount(self, value):
+        ...
+    def getIsEnabled(self):
+        ...
+    def setIsEnabled(self, value):
+        ...
+    def getIsVisible(self):
+        ...
+    def setIsVisible(self, value):
+        ...
+    def _initialize(self):
+        ...

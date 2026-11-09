@@ -1,0 +1,1 @@
+import{uo as s,xi as a}from"./lib.js";var e="Divider_35efe770",i="Divider_db17be24",r=a(),d=({className:a})=>(0,r.jsx)("div",{className:s(e,a),children:(0,r.jsx)("div",{className:i})});export{d as t};

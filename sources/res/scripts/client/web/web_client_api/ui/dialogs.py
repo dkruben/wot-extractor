@@ -1,0 +1,43 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/web/web_client_api/ui/dialogs.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/web/web_client_api/ui/dialogs.py
+from __future__ import absolute_import
+from past.builtins import basestring
+import adisp, wg_async
+from gui.impl.pub.dialog_window import DialogButtons
+from gui.shared.event_dispatcher import showPreformattedDialog
+from shared_utils import first
+from web.web_client_api import WebCommandException, w2c, W2CSchema, Field
+
+def _dialogButtonsValidator(buttonsList, _=None):
+    for button in buttonsList:
+        if first(button.keys()) not in DialogButtons.ALL:
+            raise WebCommandException(('unsupported button label "{}"').format(first(button.keys())))
+
+    return True
+
+
+class _DialogSchema(W2CSchema):
+    preset = Field(required=True, type=basestring)
+    title = Field(required=False, type=basestring, default='')
+    message = Field(required=False, type=basestring, default='')
+    buttons = Field(required=True, type=list, validator=_dialogButtonsValidator)
+    focusedButton = Field(required=False, type=basestring, default=None)
+    btnDownSounds = Field(required=False, type=dict, default=None)
+
+
+class DialogsWebApiMixin(object):
+
+    @w2c(_DialogSchema, 'confirm_dialog_overlay')
+    def showDialog(self, cmd):
+
+        @adisp.adisp_async
+        @wg_async.wg_async
+        def proxy(callback):
+            res = yield wg_async.wg_await(showPreformattedDialog(cmd.preset, cmd.title, cmd.message, cmd.buttons, cmd.focusedButton, cmd.btnDownSounds))
+            callback(res)
+
+        result = yield proxy()
+        yield {'buttonID': result}

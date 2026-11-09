@@ -1,0 +1,121 @@
+{
+  "rid": "R.views.mono.user_missions.tooltips.daily_quest_tooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "daily_quest_tooltip",
+  "dir": "gui/gameface/_dist/production/mono/user_missions/tooltips/daily_quest_tooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_quest_tooltip/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_quest_tooltip/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "daily_quest_tooltip.css",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_quest_tooltip/daily_quest_tooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_quest_tooltip/daily_quest_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "daily_quest_tooltip.html",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_quest_tooltip/daily_quest_tooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_quest_tooltip/daily_quest_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/divider.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/divider.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/extended_tooltip_decorator.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/extended_tooltip_decorator.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/tooltips/daily_quest_tooltip/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_quest_tooltip/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/tooltips/daily_quest_tooltip/daily_quest_tooltip.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/daily_quest_tooltip/daily_quest_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.user_missions.tooltips.daily_quest_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.mono.user_missions.tooltips.daily_quest_tooltip no Python",
+      "ViewModel QuestsListModel (model=... no Python da view): 0/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/user_missions/hangar_widget/presenters/quests_presenter.py",
+        70
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/hangar_widget/presenters/quests_presenter.py",
+        48
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/tooltips/quest_tooltip.py",
+        64
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/user_missions/hangar_widget/presenters/quests_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/hangar_widget/presenters/quests_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/tooltips/quest_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/user_missions/widget/quests_list_model.py",
+      "class": "QuestsListModel",
+      "chain": [
+        "QuestsListModel"
+      ],
+      "properties": [
+        [
+          "quests",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onMissionClick",
+        "onMarkAsViewed"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 3,
+        "missing": [
+          "onMarkAsViewed",
+          "onMissionClick",
+          "quests"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/user_missions/widget/widget_quest_model.py"
+      ]
+    }
+  }
+}

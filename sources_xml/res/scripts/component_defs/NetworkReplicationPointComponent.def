@@ -1,0 +1,20 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/NetworkReplicationPointComponent.def -->
+<root>
+	<Properties>
+		<status>
+			<Type>ARRAY<of>GAME_OBJECT_STATE_INFO</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<IsReliable>true</IsReliable>
+		</status>
+		<removed>
+			<Type>ARRAY<of>UINT32</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<IsReliable>true</IsReliable>
+		</removed>
+	</Properties>
+	<CellMethods />
+	<ClientMethods />
+	<DefaultKeyName>networkReplicationPointComponent</DefaultKeyName>
+</root>

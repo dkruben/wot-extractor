@@ -1,0 +1,5 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/system/data/gpu_wind.xml -->
+<root>
+	<enabled>true</enabled>
+	<grassInfluence>0.5</grassInfluence>
+</root>

@@ -1,0 +1,122 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillGunnerArmorer.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 228101,
+ "actual_length": 228101,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 26,
+  "ShowFrame": 601,
+  "DefineShape": 16,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 53,
+  "PlaceObject2": 1083,
+  "RemoveObject2": 8,
+  "DefineShape3": 96,
+  "DefineBitsLossless2": 10,
+  "DefineSprite": 25,
+  "FileAttributes": 1,
+  "PlaceObject3": 3,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 10,
+  "shapes": 169,
+  "sprites": 25,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillGunnerArmorer_fla.MainTimeline"
+  },
+  {
+   "id": 53,
+   "class": "skillGunnerArmorer_fla.crosshairReload1_20"
+  },
+  {
+   "id": 52,
+   "class": "skillGunnerArmorer_fla.crosshairReloadAnimFast_21"
+  },
+  {
+   "id": 43,
+   "class": "skillGunnerArmorer_fla.tankShoot_15"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1053,
+   "classes": 4,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 264
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillGunnerArmorer_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillGunnerArmorer_fla.crosshairReload1_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillGunnerArmorer_fla.crosshairReloadAnimFast_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillGunnerArmorer_fla.tankShoot_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,168 @@
+{
+ "source": "sources/res/gui/flash/statisticsComponents.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 4469,
+ "actual_length": 4469,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  800.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 8,
+  "ShowFrame": 16,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 10,
+  "RemoveObject2": 2,
+  "DefineShape3": 1,
+  "DefineEditText": 5,
+  "DefineSprite": 7,
+  "FrameLabel": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 5,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 1,
+  "sprites": 7,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 5,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 13,
+   "class": "DetailedStatisticsRootUnitUI"
+  },
+  {
+   "id": 12,
+   "class": "StatisticsComponentsImports"
+  },
+  {
+   "id": 11,
+   "class": "DetailedStatisticsView_UI"
+  },
+  {
+   "id": 10,
+   "class": "StatisticsDashLineTextItemIRenderer_UI"
+  },
+  {
+   "id": 5,
+   "class": "DetailedStatisticsUnit_UI"
+  },
+  {
+   "id": 3,
+   "class": "StatisticsBodyContainerUI"
+  },
+  {
+   "id": 2,
+   "class": "StatisticsBodyContainerViewStackUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3120,
+   "classes": 7,
+   "methods": 25,
+   "bodies": 25,
+   "code_bytes": 706
+  }
+ ],
+ "classes": [
+  {
+   "name": "StatisticsComponentsImports",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DetailedStatisticsUnit_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.DetailedStatisticsUnit",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatisticsBodyContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.StatisticsBodyContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DetailedStatisticsView_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.DetailedStatisticsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatisticsBodyContainerViewStackUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.ResizableViewStack",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatisticsDashLineTextItemIRenderer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.StatisticsDashLineTextItemIRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DetailedStatisticsRootUnitUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.DetailedStatisticsRootUnit",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "source": "sources/res/gui/flash/battleMattersVideoModule.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 54496,
+ "actual_length": 54496,
+ "frame_size_px": [
+  0.0,
+  940.0,
+  0.0,
+  520.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 16,
+  "ShowFrame": 707,
+  "DefineShape": 12,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 1126,
+  "RemoveObject2": 18,
+  "DefineBitsLossless2": 9,
+  "DefineSprite": 15,
+  "FileAttributes": 1,
+  "PlaceObject3": 46,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 9,
+  "shapes": 13,
+  "sprites": 15,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "battleMattersCommon.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 37,
+   "class": "ContentUI"
+  },
+  {
+   "id": 36,
+   "class": "battleMattersVideoModule_fla.creditsAnim_14"
+  },
+  {
+   "id": 35,
+   "class": "battleMattersVideoModule_fla.creditsAnimMC_15"
+  },
+  {
+   "id": 34,
+   "class": "battleMattersVideoModule_fla.fxAnim_13"
+  },
+  {
+   "id": 30,
+   "class": "battleMattersVideoModule_fla.expAnim_10"
+  },
+  {
+   "id": 29,
+   "class": "battleMattersVideoModule_fla.expAnimMC_11"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1493,
+   "classes": 6,
+   "methods": 23,
+   "bodies": 23,
+   "code_bytes": 390
+  }
+ ],
+ "classes": [
+  {
+   "name": "battleMattersVideoModule_fla.creditsAnimMC_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleMattersVideoModule_fla.creditsAnim_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleMattersVideoModule_fla.expAnimMC_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleMattersVideoModule_fla.expAnim_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleMattersVideoModule_fla.fxAnim_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleMatters.BattleMattersAnimation",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

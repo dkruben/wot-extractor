@@ -1,0 +1,460 @@
+{
+ "source": "sources/res/gui/flash/personalMissionsPlanSPG.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 897716,
+ "actual_length": 897716,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 50,
+  "ShowFrame": 4535,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 1393,
+  "RemoveObject2": 1,
+  "DefineShape3": 16,
+  "DefineBitsLossless2": 17,
+  "DefineEditText": 1,
+  "DefineSprite": 49,
+  "FrameLabel": 450,
+  "FileAttributes": 1,
+  "PlaceObject3": 423,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 17,
+  "shapes": 17,
+  "sprites": 49,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 33,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "personalMissionsPlanCmp.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 84,
+   "class": "PersonalMissionsPlanSPGUI"
+  },
+  {
+   "id": 83,
+   "class": "PMRegionAwardsSPGUI"
+  },
+  {
+   "id": 81,
+   "class": "region1SPGUI"
+  },
+  {
+   "id": 77,
+   "class": "region1SPGpngUI"
+  },
+  {
+   "id": 76,
+   "class": "region2SPGUI"
+  },
+  {
+   "id": 72,
+   "class": "region2SPGpngUI"
+  },
+  {
+   "id": 71,
+   "class": "region3SPGUI"
+  },
+  {
+   "id": 67,
+   "class": "region3SPGpngUI"
+  },
+  {
+   "id": 66,
+   "class": "region4SPGUI"
+  },
+  {
+   "id": 62,
+   "class": "region4SPGpngUI"
+  },
+  {
+   "id": 61,
+   "class": "region5SPGUI"
+  },
+  {
+   "id": 57,
+   "class": "region5SPGpngUI"
+  },
+  {
+   "id": 56,
+   "class": "region6SPGUI"
+  },
+  {
+   "id": 52,
+   "class": "region6SPGpngUI"
+  },
+  {
+   "id": 51,
+   "class": "region7SPGUI"
+  },
+  {
+   "id": 47,
+   "class": "region7SPGpngUI"
+  },
+  {
+   "id": 46,
+   "class": "region8SPGUI"
+  },
+  {
+   "id": 42,
+   "class": "region8SPGpngUI"
+  },
+  {
+   "id": 41,
+   "class": "region9SPGUI"
+  },
+  {
+   "id": 37,
+   "class": "region9SPGpngUI"
+  },
+  {
+   "id": 36,
+   "class": "region10SPGUI"
+  },
+  {
+   "id": 32,
+   "class": "region10SPGpngUI"
+  },
+  {
+   "id": 31,
+   "class": "region11SPGUI"
+  },
+  {
+   "id": 27,
+   "class": "region11SPGpngUI"
+  },
+  {
+   "id": 26,
+   "class": "region12SPGUI"
+  },
+  {
+   "id": 22,
+   "class": "region12SPGpngUI"
+  },
+  {
+   "id": 21,
+   "class": "region13SPGUI"
+  },
+  {
+   "id": 17,
+   "class": "region13SPGpngUI"
+  },
+  {
+   "id": 16,
+   "class": "region14SPGUI"
+  },
+  {
+   "id": 12,
+   "class": "region14SPGpngUI"
+  },
+  {
+   "id": 11,
+   "class": "region15SPGUI"
+  },
+  {
+   "id": 7,
+   "class": "region15SPGDisabledpngUI"
+  },
+  {
+   "id": 5,
+   "class": "region15SPGpngUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 19284,
+   "classes": 33,
+   "methods": 549,
+   "bodies": 549,
+   "code_bytes": 7815
+  }
+ ],
+ "classes": [
+  {
+   "name": "region10SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region11SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region12SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region13SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region14SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region15SPGDisabledpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region15SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region1SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region2SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region3SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region4SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region5SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region6SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region7SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region8SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region9SPGpngUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PMRegionAwardsSPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsRegionAwards",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionsPlanSPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlan",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region10SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region11SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region12SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region13SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region14SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region15SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region1SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region2SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region3SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region4SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region5SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region6SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region7SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region8SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "region9SPGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsPlanRegion",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

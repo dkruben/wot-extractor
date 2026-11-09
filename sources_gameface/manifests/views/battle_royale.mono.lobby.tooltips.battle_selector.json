@@ -1,0 +1,64 @@
+{
+  "rid": "R.views.battle_royale.mono.lobby.tooltips.battle_selector",
+  "rid_source": "sources/res/battle_royale/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "battle_selector",
+  "dir": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/battle_selector",
+  "feature": "battle_royale",
+  "files": [
+    {
+      "name": "battle_selector.css",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/battle_selector/battle_selector.css",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/battle_selector/battle_selector.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "battle_selector.html",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/battle_selector/battle_selector.html",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/battle_selector/battle_selector.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/battle_selector/bundle.js",
+      "all": [
+        "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/battle_selector/bundle.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/battle_selector/battle_selector.css",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/battle_selector/battle_selector.css"
+    },
+    {
+      "virtual": "battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/battle_selector/bundle.js",
+      "key": "res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/battle_selector/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle_royale.mono.lobby.tooltips.battle_selector",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

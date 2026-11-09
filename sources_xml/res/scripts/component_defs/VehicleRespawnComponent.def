@@ -1,0 +1,53 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/VehicleRespawnComponent.def -->
+<root>
+	<CellMethods>
+		<chooseSpawnGroup>
+			<Exposed />
+			<Arg>STRING</Arg>
+		</chooseSpawnGroup>
+	</CellMethods>
+	<Properties>
+		<spawnGroups>
+			<Type>ARRAY<of>SPAWNGROUP_INFO</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</spawnGroups>
+		<groupName>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</groupName>
+		<delay>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</delay>
+		<spawnTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</spawnTime>
+		<respawnState>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</respawnState>
+		<isLeaveAllowed>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+			<Default>0</Default>
+		</isLeaveAllowed>
+		<respawnID>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</respawnID>
+		<isDisabledEffect>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isDisabledEffect>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>VehicleRespawnComponent</DefaultKeyName>
+</root>

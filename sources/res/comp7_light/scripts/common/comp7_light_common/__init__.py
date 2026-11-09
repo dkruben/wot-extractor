@@ -1,0 +1,23 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7_light/scripts/common/comp7_light_common/__init__.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7_light/scripts/common/comp7_light_common/__init__.py
+from __future__ import absolute_import
+import constants, comp7_light_constants
+from comp7_core_constants import injectCommonConstants
+from constants_utils import addArenaGuiTypesFromExtension, addPrebattleTypesFromExtension, addRosterTypes, addInvitationTypes, addClientUnitCmd
+
+def injectConsts(personality):
+    addArenaGuiTypesFromExtension(comp7_light_constants.ARENA_GUI_TYPE, personality)
+    addPrebattleTypesFromExtension(comp7_light_constants.PREBATTLE_TYPE, personality)
+    constants.INBATTLE_CONFIGS.extend(comp7_light_constants.COMP7_LIGHT_INBATTLE_CONFIGS)
+    injectCommonConstants(personality)
+
+
+def injectSquadConsts(personality):
+    comp7_light_constants.UNIT_MGR_FLAGS.inject(personality)
+    addRosterTypes(comp7_light_constants.ROSTER_TYPE, personality)
+    addInvitationTypes(comp7_light_constants.INVITATION_TYPE, personality)
+    addClientUnitCmd(comp7_light_constants.CLIENT_UNIT_CMD, personality)
+    constants.INVITATION_TYPE.TYPES_WITH_EXTRA_DATA += (comp7_light_constants.INVITATION_TYPE.COMP7_LIGHT,)

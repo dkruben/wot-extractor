@@ -1,0 +1,266 @@
+{
+ "source": "sources/res/gui/flash/Achievements.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 30283,
+ "actual_length": 30283,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 23,
+  "ShowFrame": 322,
+  "DefineShape": 12,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 32,
+  "RemoveObject2": 1,
+  "DefineShape3": 6,
+  "DefineBitsLossless2": 11,
+  "DefineEditText": 3,
+  "DefineSprite": 22,
+  "FrameLabel": 35,
+  "FileAttributes": 1,
+  "PlaceObject3": 8,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 3,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 11,
+  "shapes": 18,
+  "sprites": 22,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 16,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 54,
+   "class": "AchievementCommon_UI"
+  },
+  {
+   "id": 52,
+   "class": "AchievementProgressComponent_UI"
+  },
+  {
+   "id": 50,
+   "class": "AchievementProgressBar_UI"
+  },
+  {
+   "id": 40,
+   "class": "AchievementDivision_UI"
+  },
+  {
+   "id": 39,
+   "class": "DivisionLineUI_"
+  },
+  {
+   "id": 35,
+   "class": "AchievementProgress_UI"
+  },
+  {
+   "id": 34,
+   "class": "BattleResultsMedalsList_UI"
+  },
+  {
+   "id": 31,
+   "class": "BeigeCounter_UI"
+  },
+  {
+   "id": 20,
+   "class": "BigAchievement_UI"
+  },
+  {
+   "id": 19,
+   "class": "BigMedalsList_UI"
+  },
+  {
+   "id": 16,
+   "class": "CustomAchievement_UI"
+  },
+  {
+   "id": 14,
+   "class": "GreyCounter_UI"
+  },
+  {
+   "id": 12,
+   "class": "mcCounterBackgroundGrey"
+  },
+  {
+   "id": 9,
+   "class": "SpecialAchievement_UI"
+  },
+  {
+   "id": 5,
+   "class": "YellowCounter_UI"
+  },
+  {
+   "id": 3,
+   "class": "mcCounterBackgroundYellow"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 6663,
+   "classes": 16,
+   "methods": 86,
+   "bodies": 86,
+   "code_bytes": 2133
+  }
+ ],
+ "classes": [
+  {
+   "name": "mcCounterBackgroundGrey",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mcCounterBackgroundYellow",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DivisionLineUI_",
+   "kind": "class",
+   "extends": "scaleform.clik.core.UIComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementProgressComponent_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.achievements.AchievementProgressComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementProgressBar_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.achievements.AchievementProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SpecialAchievement_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.SpecialAchievement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BigMedalsList_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.MedalsList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleResultsMedalsList_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.BattleResultsMedalsList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomAchievement_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.CustomAchievement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BigAchievement_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.achievements.BigAchievement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BeigeCounter_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.achievements.BeigeCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GreyCounter_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.achievements.GreyRibbonCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "YellowCounter_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.achievements.YellowRibbonCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementProgress_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.achievements.AchievementProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementCommon_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.achievements.AchievementCommon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementDivision_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.achievements.AchievementDivision",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

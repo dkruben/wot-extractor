@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/component_defs/LastStandComponent.def -->
+<root>
+	<CellMethods>
+		<setupArena>
+			<Args>
+				<config>PYTHON</config>
+			</Args>
+		</setupArena>
+	</CellMethods>
+	<BaseMethods />
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+</root>

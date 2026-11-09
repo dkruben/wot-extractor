@@ -1,0 +1,329 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/105_germany/environments/9A1B07DE-41F7DC7A-8E6D5BB4-24713C26/environment.xml -->
+<root>
+	<day_night_cycle>
+		<forward>
+			<angle>22</angle>
+			<angleZ>207</angleZ>
+			<angleShadow>22</angleShadow>
+		</forward>
+		<deferred>
+			<angle>22</angle>
+			<angleZ>207</angleZ>
+		</deferred>
+		<simplified_deferred>
+			<angle>22</angle>
+		</simplified_deferred>
+		<sunScale>2</sunScale>
+		<sunColor>255 217 194</sunColor>
+		<sunTexture />
+		<sunLightColor>1 0.72549 0.521569</sunLightColor>
+		<ambientTint>1 1 1</ambientTint>
+		<isMoon>false</isMoon>
+		<drawSunAndMoon>true</drawSunAndMoon>
+		<sunLightColorSimplifiedDeferred>1 0.72549 0.521569</sunLightColorSimplifiedDeferred>
+		<ambientTintSimplifiedDeferred>1 1 1</ambientTintSimplifiedDeferred>
+		<sunScaleForward>0.45</sunScaleForward>
+		<sunColorForward>255 193 112</sunColorForward>
+		<sunTextureForward>system/maps/PSF2_ldr.dds</sunTextureForward>
+		<sunLightColorForward>1 0.854902 0.74902</sunLightColorForward>
+		<ambientColorForward>0.619608 0.619608 0.619608</ambientColorForward>
+		<starttime>10</starttime>
+	</day_night_cycle>
+	<Fog>
+		<version>2</version>
+		<enable>true</enable>
+		<innerBB>-500 -514.1994 500 500</innerBB>
+		<outerBB>-690 -653.7764 690 685</outerBB>
+		<deferred>
+			<useEdgeFog>false</useEdgeFog>
+			<color>0.788235 0.823529 1 6.5</color>
+			<density>0.001</density>
+			<height>60</height>
+			<heightFalloff>0.01</heightFalloff>
+			<startDistance>150</startDistance>
+			<scatterStart>400</scatterStart>
+			<scatterExponent>8</scatterExponent>
+			<scatterColor>1 0.745098 0.588235 15</scatterColor>
+			<skyLow>0.37</skyLow>
+			<skyHigh>0.7</skyHigh>
+		</deferred>
+		<simplifiedDeferred>
+			<useEdgeFog>true</useEdgeFog>
+			<color>0.788235 0.823529 1 6.5</color>
+			<density>0.001</density>
+			<height>60</height>
+			<heightFalloff>0.01</heightFalloff>
+			<startDistance>150</startDistance>
+			<scatterStart>400</scatterStart>
+			<scatterExponent>8</scatterExponent>
+			<scatterColor>1 0.745098 0.588235 15</scatterColor>
+			<skyLow>-0.01</skyLow>
+			<skyHigh>0.3</skyHigh>
+		</simplifiedDeferred>
+		<forward>
+			<useEdgeFog>true</useEdgeFog>
+			<color>0.470588 0.498039 0.560784 6</color>
+			<density>0.025</density>
+			<height>-155.29</height>
+			<heightFalloff>0.014</heightFalloff>
+			<startDistance>150</startDistance>
+			<skyLow>-0.01</skyLow>
+			<skyHigh>0.3</skyHigh>
+		</forward>
+	</Fog>
+	<HDR>
+		<version>2</version>
+		<enable>true</enable>
+		<adaptationSpeed>120</adaptationSpeed>
+		<bloom>
+			<pbsBloom>true</pbsBloom>
+			<threshold>0.3</threshold>
+			<amount>0.95</amount>
+			<tint>0.85098 0.666667 0.541176</tint>
+			<dirtAmount>0.91</dirtAmount>
+		</bloom>
+		<environment>
+			<sunlightLumMultiplier>40</sunlightLumMultiplier>
+			<sunLumMultiplier>50</sunLumMultiplier>
+			<skyLumMultiplier>5</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1</skyLumMultiplierDeferred>
+			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
+			<LDR2HDRsaturation>1</LDR2HDRsaturation>
+		</environment>
+		<tonemappings>
+			<tonemapping>
+				<name>RexpTM</name>
+				<whitePoint>1</whitePoint>
+				<blackPoint>2</blackPoint>
+			</tonemapping>
+			<tonemapping>
+				<name>FilmicTM</name>
+				<whitePoint>12.79</whitePoint>
+				<blackPoint>3.5</blackPoint>
+			</tonemapping>
+			<tonemapping>
+				<name>LinearExpTM</name>
+				<whitePoint>1.75</whitePoint>
+				<blackPoint>1.09</blackPoint>
+			</tonemapping>
+			<active>0</active>
+		</tonemappings>
+		<colorCorrection>
+			<map>system/maps/post_processing/cube/wgr_filmic_112b.dds</map>
+		</colorCorrection>
+		<filmgrain>
+			<enable>true</enable>
+			<scale>0.2</scale>
+		</filmgrain>
+		<camera>
+			<fnumberDown>22</fnumberDown>
+			<fnumberUp>20</fnumberUp>
+			<shutterSpeed>6.321928</shutterSpeed>
+			<keyValue>0.09</keyValue>
+		</camera>
+	</HDR>
+	<LensFlare>
+		<enable>true</enable>
+		<haloWidth>0.29</haloWidth>
+		<ghostDispersion>0.01</ghostDispersion>
+		<starIntensity>3</starIntensity>
+		<colorUVScale>1.77</colorUVScale>
+		<chromDistortion>1</chromDistortion>
+		<sunTintColor>1 0.792157 0.65098 1</sunTintColor>
+		<sunSize>0.6</sunSize>
+		<sunBrightness>0.02</sunBrightness>
+		<objectEnable>true</objectEnable>
+		<glareEnable>true</glareEnable>
+		<glareIntensity>0.5</glareIntensity>
+		<glareSize>0.01</glareSize>
+		<flareIntensity>0.04</flareIntensity>
+		<objectThreshold>3.584963</objectThreshold>
+		<objectFlareIntensity>0.3</objectFlareIntensity>
+		<haloEnable>true</haloEnable>
+		<sunTexture1>system/maps/psf_rgbe.dds</sunTexture1>
+		<colorTexture>system/maps/lenscolorF.dds</colorTexture>
+		<starTexture>system/maps/lensDiffract.dds</starTexture>
+		<dirtTexture>system/maps/LensDirtDef.dds</dirtTexture>
+	</LensFlare>
+	<GodRays>
+		<enable>true</enable>
+		<attenuationPower>30</attenuationPower>
+		<decay>0.44</decay>
+		<color>1 0.726667 0.59 15</color>
+	</GodRays>
+	<SSAO>
+		<enable>true</enable>
+		<radius>0.1</radius>
+		<amplify>0.43</amplify>
+		<fadeNear>4</fadeNear>
+		<terrainAOGammaCorrection>0.25</terrainAOGammaCorrection>
+		<influences>
+			<speedtree>0.4 0.9</speedtree>
+			<terrain>0.97 0</terrain>
+			<objects>0.93 0</objects>
+			<localLights>1</localLights>
+		</influences>
+	</SSAO>
+	<Shadow>
+		<maxShadowsSplitCount>5</maxShadowsSplitCount>
+		<maxDynamicViewDistance>100</maxDynamicViewDistance>
+		<lightSize>12.52</lightSize>
+		<dynamicShadowsLightSize>13</dynamicShadowsLightSize>
+	</Shadow>
+	<SSShadows>
+		<enable>true</enable>
+		<amplify>0.8</amplify>
+	</SSShadows>
+	<VFX>
+		<vfxModelsMultiplier>2.47</vfxModelsMultiplier>
+		<cpuParticlesMultiplier>2.47</cpuParticlesMultiplier>
+		<gpuParticlesMultiplier>2.47</gpuParticlesMultiplier>
+		<emissiveMaterialsMultiplier>2.47</emissiveMaterialsMultiplier>
+		<particlesConfigXml>system/data/particles.xml</particlesConfigXml>
+		<particlesSpaceConfigXml>spaces/105_germany/particles.xml</particlesSpaceConfigXml>
+	</VFX>
+	<cloudsShadow>
+		<enabled>true</enabled>
+		<useTwoLayers>true</useTwoLayers>
+		<sunAngleOffset>65</sunAngleOffset>
+		<layer0>
+			<texture>maps/fx/cloud_4.dds</texture>
+			<windDir>0.573577 0.819152</windDir>
+			<windStrength>4</windStrength>
+			<angle>150</angle>
+			<offset>0 0</offset>
+			<tiling>400</tiling>
+			<shadowFactor>0.45</shadowFactor>
+		</layer0>
+		<layer1>
+			<texture>maps/fx/cloud_105_1.dds</texture>
+			<windDir>1 0</windDir>
+			<windStrength>0</windStrength>
+			<angle>90</angle>
+			<offset>700 700</offset>
+			<tiling>1400</tiling>
+			<shadowFactor>0.8</shadowFactor>
+		</layer1>
+	</cloudsShadow>
+	<PBS>
+		<ForwardSHMultiplier>1.2</ForwardSHMultiplier>
+		<flakesEnabled>false</flakesEnabled>
+		<flakesDensityThreshold>0.8</flakesDensityThreshold>
+		<flakesUvScale>0.8</flakesUvScale>
+		<flakesGloss>0.89</flakesGloss>
+		<flakesSurfNormalNoiseWeight>0.1</flakesSurfNormalNoiseWeight>
+	</PBS>
+	<Weather>
+		<wind>
+			<windSpeed>-4.648803 -9.969384</windSpeed>
+			<windGustiness>6</windGustiness>
+		</wind>
+	</Weather>
+	<overlayMaterial>
+		<enable>true</enable>
+		<applyOnVehicles>false</applyOnVehicles>
+		<colorTintMap>spaces/105_germany/overlay_tint_map.dds</colorTintMap>
+		<layer>
+			<texture>maps/overlay/92_ashes.dds</texture>
+			<normalMap>maps/overlay/92_ashes_NM.dds</normalMap>
+			<slope1>15.1875</slope1>
+			<slope2>90</slope2>
+			<twoSided>false</twoSided>
+			<amount>0.3</amount>
+			<tiling>100</tiling>
+			<minAltitude>0</minAltitude>
+			<maxAltitude>195.53572</maxAltitude>
+			<altitudeFalloff>41</altitudeFalloff>
+			<tileRotation>230</tileRotation>
+			<azimuth>120</azimuth>
+			<inclination>60</inclination>
+		</layer>
+		<layer>
+			<texture>maps/overlay/Snow_22.dds</texture>
+			<normalMap>maps/overlay/92_ashes_NM.dds</normalMap>
+			<slope1>4.864865</slope1>
+			<slope2>43.783783</slope2>
+			<twoSided>true</twoSided>
+			<amount>0.55</amount>
+			<tiling>1.3</tiling>
+			<minAltitude>0</minAltitude>
+			<maxAltitude>195.53572</maxAltitude>
+			<altitudeFalloff>20</altitudeFalloff>
+			<tileRotation>20</tileRotation>
+			<azimuth>200</azimuth>
+			<inclination>22</inclination>
+		</layer>
+	</overlayMaterial>
+	<dirt>
+		<normal>vehicles/russian/Tank_detail/Dirt3NM.dds</normal>
+		<configFile>maps/dirt_presets/dirt_preset_wetmud.xml</configFile>
+		<color>0.509804 0.431373 0.329412 0.098039</color>
+		<enabled>true</enabled>
+	</dirt>
+	<SkyDome>
+		<worldMatrix>
+			<row0>-1 0 -0</row0>
+			<row1>0 1 0</row1>
+			<row2>0 0 -1</row2>
+			<row3>0 -73000 0</row3>
+		</worldMatrix>
+		<worldMatrixForward>
+			<row0>-1 0 -0</row0>
+			<row1>0 1 0</row1>
+			<row2>0 0 -1</row2>
+			<row3>0 0 0</row3>
+		</worldMatrixForward>
+	</SkyDome>
+	<Wetness>
+		<waterColor>0.423529 0.25098 0.145098</waterColor>
+		<waterAlpha>0.4</waterAlpha>
+		<waveTexture>maps/water/ripple_normal_animation/normal</waveTexture>
+		<waveTextureCount>32</waveTextureCount>
+		<waveAnimationSpeed>8</waveAnimationSpeed>
+		<waveUVScale>0.4</waveUVScale>
+		<waveSpeed>0.07</waveSpeed>
+		<waveStrength>12</waveStrength>
+		<waveMaskTexture>system/maps/wetness_waves.dds</waveMaskTexture>
+		<waveMaskUVScale>0.25</waveMaskUVScale>
+		<waveMaskSpeed>0.18</waveMaskSpeed>
+	</Wetness>
+	<name>env_new_BF_dramatic</name>
+	<DOF>
+		<enable>false</enable>
+		<nearStart>2</nearStart>
+		<nearDist>3</nearDist>
+		<farStart>50</farStart>
+		<farDist>20</farDist>
+		<blurRadius>0.006</blurRadius>
+	</DOF>
+	<VolumetricFog>
+		<enabled>false</enabled>
+		<enableGameplay>false</enableGameplay>
+		<sampleShadows>true</sampleShadows>
+		<temporalReprojection>true</temporalReprojection>
+		<fogDistance>500</fogDistance>
+		<fogStart>0</fogStart>
+		<hdrScale>1</hdrScale>
+		<sunLightScatterCoef>0.1</sunLightScatterCoef>
+		<shadowCoef>0.4</shadowCoef>
+		<numOfLightMarchSteps>5</numOfLightMarchSteps>
+		<shadowDensity>1.65</shadowDensity>
+		<shadowStepLength>0.35</shadowStepLength>
+		<useLightMarching>false</useLightMarching>
+		<curveCConst>4.4</curveCConst>
+		<curvePConst>26</curvePConst>
+		<enableLocalLights>false</enableLocalLights>
+		<densityFix>1</densityFix>
+	</VolumetricFog>
+	<SimplifiedDeferred>
+		<terrainBakedShadowFactor>0.9</terrainBakedShadowFactor>
+		<bakedAOToShadow>1.4</bakedAOToShadow>
+		<bakedAOPower>0.75</bakedAOPower>
+		<vegetationMetallicMult>0.35</vegetationMetallicMult>
+		<transmissionMult>0.6</transmissionMult>
+		<waterReflectionAttenuation>1</waterReflectionAttenuation>
+	</SimplifiedDeferred>
+	<VisibilityTunnel>
+		<shouldOverrideSettings>false</shouldOverrideSettings>
+	</VisibilityTunnel>
+</root>

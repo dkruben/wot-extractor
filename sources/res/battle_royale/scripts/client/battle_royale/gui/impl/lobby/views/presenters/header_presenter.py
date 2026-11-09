@@ -1,0 +1,49 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/presenters/header_presenter.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/presenters/header_presenter.py
+from __future__ import absolute_import
+from gui.impl.pub.view_component import ViewComponent
+from gui.prb_control.entities.listener import IGlobalListener
+from helpers import dependency
+from skeletons.gui.game_control import IBattleRoyaleController
+from skeletons.gui.shared import IItemsCache
+from battle_royale.gui.constants import BattleRoyaleModeState
+from battle_royale.gui.impl.gen.view_models.views.lobby.views.header_model import HeaderModel, ModeStatus
+
+class HeaderPresenter(ViewComponent[HeaderModel], IGlobalListener):
+    __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
+    __itemsCache = dependency.descriptor(IItemsCache)
+
+    def __init__(self):
+        super(HeaderPresenter, self).__init__(model=HeaderModel)
+
+    @property
+    def viewModel(self):
+        return super(HeaderPresenter, self).getViewModel()
+
+    def onPrbEntitySwitched(self):
+        self.__update()
+
+    def _getEvents(self):
+        return super(HeaderPresenter, self)._getEvents() + (
+         (
+          self.__battleRoyaleController.onPrimeTimeStatusUpdated, self.__update),)
+
+    def _onLoading(self, *args, **kwargs):
+        super(HeaderPresenter, self)._onLoading(*args, **kwargs)
+        self.startGlobalListening()
+        self.__update()
+
+    def _finalize(self):
+        self.stopGlobalListening()
+        return super(HeaderPresenter, self)._finalize()
+
+    def __update(self, *_):
+        isAlert = self.__battleRoyaleController.getModeState() != BattleRoyaleModeState.Regular
+        if isAlert:
+            modeStatus = ModeStatus.ALERT
+        else:
+            modeStatus = ModeStatus.BATTLESELECTOR
+        self.viewModel.setModeStatus(modeStatus)

@@ -1,0 +1,110 @@
+{
+  "rid": "R.views.lobby.mapbox.MapBoxIntro",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "MapBoxIntro",
+  "dir": "gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro",
+  "feature": null,
+  "files": [
+    {
+      "name": "MapBoxIntro.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro/MapBoxIntro.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro/MapBoxIntro.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "MapBoxIntro.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro/MapBoxIntro.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro/MapBoxIntro.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "MapBoxIntro.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro/MapBoxIntro.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro/MapBoxIntro.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro/MapBoxIntro.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/mapbox/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/mapbox/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro/MapBoxIntro.css",
+      "key": "res/gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro/MapBoxIntro.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro/MapBoxIntro.js",
+      "key": "res/gui/gameface/_dist/production/lobby/mapbox/MapBoxIntro/MapBoxIntro.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.mapbox.MapBoxIntro",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.mapbox.MapBoxIntro no Python",
+      "ViewModel MapBoxIntroModel (model=... no Python da view): 3/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/mapbox/map_box_intro.py",
+        28
+      ],
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        1501
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/mapbox/map_box_intro.py",
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/mapbox/map_box_intro_model.py",
+      "class": "MapBoxIntroModel",
+      "chain": [
+        "MapBoxIntroModel"
+      ],
+      "properties": [
+        [
+          "date",
+          "Number"
+        ],
+        [
+          "isActive",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onClose"
+      ],
+      "coverage": {
+        "found": 3,
+        "total": 3,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

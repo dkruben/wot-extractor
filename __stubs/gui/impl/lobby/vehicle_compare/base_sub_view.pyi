@@ -1,0 +1,23 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/lobby/vehicle_compare/base_sub_view.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.impl.gen.view_models.views.lobby.tank_setup.sub_views.base_setup_model import BaseSetupModel as BaseSetupModel
+from gui.impl.lobby.tank_setup.sub_views.base_setup import BaseSetupSubView as BaseSetupSubView
+
+class CompareBaseSetupSubView(BaseSetupSubView):
+    __slots__: tuple
+    def revertItem(self, slotID):
+        ...
+    def _addListeners(self):
+        ...
+    def _onSelectItem(self, args):
+        ...
+    def _selectItem(self, slotID, item):
+        ...
+    def _onSwapSlots(self, args):
+        ...
+    def _swapSlots(self, currentSlotID, slotID):
+        ...
+    def _onRevertItem(self, args):
+        ...

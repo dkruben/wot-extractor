@@ -1,0 +1,124 @@
+{
+ "source": "sources/res/gui/flash/FilterPopoverView.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 7614,
+ "actual_length": 7614,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  600.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 124,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 51,
+  "RemoveObject2": 11,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 5,
+  "DefineSprite": 4,
+  "FrameLabel": 12,
+  "FileAttributes": 1,
+  "PlaceObject3": 15,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 5,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 4,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 5,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 15,
+   "class": "EBFiltersPopoverViewUI"
+  },
+  {
+   "id": 12,
+   "class": "LevelTypeFlagTextRendererUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4422,
+   "classes": 2,
+   "methods": 21,
+   "bodies": 21,
+   "code_bytes": 780
+  }
+ ],
+ "classes": [
+  {
+   "name": "LevelTypeFlagTextRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.LevelTypeFlagRendererText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EBFiltersPopoverViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.view.EventBoardsResultFilterPopoverView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

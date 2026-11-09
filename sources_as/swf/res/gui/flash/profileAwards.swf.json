@@ -1,0 +1,162 @@
+{
+ "source": "sources/res/gui/flash/profileAwards.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 6229,
+ "actual_length": 6229,
+ "frame_size_px": [
+  0.0,
+  988.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#000000",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 8,
+  "ShowFrame": 8,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 16,
+  "DefineShape3": 1,
+  "DefineEditText": 4,
+  "DefineSprite": 7,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 1,
+  "sprites": 7,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 12,
+   "class": "ProfileAwards_UI"
+  },
+  {
+   "id": 9,
+   "class": "AwardsScrollPane_UI"
+  },
+  {
+   "id": 8,
+   "class": "AwardsContentContainer_UI"
+  },
+  {
+   "id": 7,
+   "class": "StageAwardsBlock_UI"
+  },
+  {
+   "id": 5,
+   "class": "AwardsBlock_UI"
+  },
+  {
+   "id": 3,
+   "class": "AwardsTiltList_UI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4868,
+   "classes": 7,
+   "methods": 28,
+   "bodies": 28,
+   "code_bytes": 1234
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardsContentContainer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.awards.AwardsMainContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardsBlock_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.awards.AwardsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardsScrollPane_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StageAwardsBlock_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.awards.StageAwardsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardsTiltList_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableTileList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileAwards_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.awards.ProfileAwards",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

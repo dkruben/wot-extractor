@@ -1,0 +1,20 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/user_data_object_defs/DeathZoneAreaTriggerMask.def -->
+<root>
+	<Domain>CELL</Domain>
+	<Domain>CLIENT</Domain>
+	<Properties>
+		<DeathZoneID>
+			<Type>STRING</Type>
+			<Editable>True</Editable>
+		</DeathZoneID>
+		<minimapMarkerPolygon>
+			<Type>ARRAY<of>VECTOR2</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</minimapMarkerPolygon>
+		<serverPolygon>
+			<Type>POLYGON_TRIGGER_PARAMS</Type>
+			<Flags>CELL_PRIVATE</Flags>
+		</serverPolygon>
+	</Properties>
+</root>

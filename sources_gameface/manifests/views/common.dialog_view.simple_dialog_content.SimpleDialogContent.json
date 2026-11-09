@@ -1,0 +1,81 @@
+{
+  "rid": "R.views.common.dialog_view.simple_dialog_content.SimpleDialogContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "SimpleDialogContent",
+  "dir": "gui/unbound/views/common/dialog_view",
+  "feature": null,
+  "files": [
+    {
+      "name": "simple_dialog_content.unbound",
+      "effective": "res/gui/unbound/views/common/dialog_view/simple_dialog_content.unbound",
+      "all": [
+        "res/gui/unbound/views/common/dialog_view/simple_dialog_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.dialog_view.simple_dialog_content.SimpleDialogContent",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.common.dialog_view.simple_dialog_content.SimpleDialogContent no Python",
+      "ViewModel SimpleDialogWindowModel (model=... no Python da view): 5/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/game_control/ls_controller.py",
+        298
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/pub/simple_dialog_window.py",
+        20
+      ]
+    ],
+    "python_files": [
+      "sources/res/last_stand/scripts/client/last_stand/gui/game_control/ls_controller.py",
+      "sources/res/scripts/client/gui/impl/pub/simple_dialog_window.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/windows/simple_dialog_window_model.py",
+      "class": "SimpleDialogWindowModel",
+      "chain": [
+        "SimpleDialogWindowModel"
+      ],
+      "properties": [
+        [
+          "message",
+          "Resource"
+        ],
+        [
+          "formattedMessage",
+          "String"
+        ],
+        [
+          "messageArgs",
+          "Array"
+        ],
+        [
+          "messageFmtArgs",
+          "Array"
+        ],
+        [
+          "isMessageFmtArgsNamed",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 5,
+        "total": 5,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

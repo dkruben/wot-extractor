@@ -1,0 +1,37 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/prb_windows/squad_action_button_state_vo.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/daapi/view/lobby/prb_windows/squad_action_button_state_vo.py
+from __future__ import absolute_import
+from gui.Scaleform.daapi.view.lobby.rally.action_button_state_vo import ActionButtonStateVO
+from gui.Scaleform.locale.CYBERSPORT import CYBERSPORT
+from gui.prb_control.settings import UNIT_RESTRICTION
+_VALID_RESTRICTIONS = (
+ UNIT_RESTRICTION.COMMANDER_VEHICLE_NOT_SELECTED,
+ UNIT_RESTRICTION.UNIT_NOT_FULL,
+ UNIT_RESTRICTION.NOT_READY_IN_SLOTS)
+
+class SquadActionButtonStateVO(ActionButtonStateVO):
+
+    def _isEnabled(self, isValid, restriction):
+        return isValid or restriction in _VALID_RESTRICTIONS
+
+    def _getLabel(self):
+        if self._playerInfo.isReady:
+            label = CYBERSPORT.WINDOW_UNIT_NOTREADY
+        else:
+            label = CYBERSPORT.WINDOW_UNIT_READY
+        return label
+
+    def _getArenaStateStr(self):
+        return (
+         CYBERSPORT.WINDOW_UNIT_MESSAGE_SQUADINBATTLE, {})
+
+    def _getReadyValidInSlotStateStr(self):
+        return (
+         CYBERSPORT.WINDOW_UNIT_MESSAGE_GETNOTREADY, {})
+
+    def _getIdleStateStr(self):
+        return (
+         CYBERSPORT.SQUADWINDOW_WAITINGFORBATTLE, {})

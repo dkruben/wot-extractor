@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/Invitations.def -->
+<root>
+	<BaseMethods>
+		<invitations_syncInvitationState>
+			<Arg>INT8</Arg>
+			<Arg>PYTHON</Arg>
+		</invitations_syncInvitationState>
+	</BaseMethods>
+</root>

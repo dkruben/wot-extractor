@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/component_defs/ArenaInfoDeathZonesComponent.def -->
+<root>
+	<Properties>
+		<activeZones>
+			<Type>ARRAY<of>UINT8</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</activeZones>
+		<vehicleLifetimeInDeathZone>
+			<Type>FLOAT</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehicleLifetimeInDeathZone>
+	</Properties>
+	<DefaultKeyName>deathZones</DefaultKeyName>
+</root>

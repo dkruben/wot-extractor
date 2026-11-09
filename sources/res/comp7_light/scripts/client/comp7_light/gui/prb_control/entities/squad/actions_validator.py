@@ -1,0 +1,108 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7_light/scripts/client/comp7_light/gui/prb_control/entities/squad/actions_validator.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7_light/scripts/client/comp7_light/gui/prb_control/entities/squad/actions_validator.py
+from __future__ import absolute_import
+import typing
+from future.utils import viewvalues
+from comp7_light_constants import BATTLE_MODE_VEH_TAGS_EXCEPT_COMP7_LIGHT
+from gui.prb_control.entities.base.actions_validator import ActionsValidatorComposite, BaseActionsValidator
+from gui.prb_control.entities.base.squad.actions_validator import SquadActionsValidator, SquadVehiclesValidator
+from gui.prb_control.entities.base.unit.actions_validator import UnitSlotsValidator, CommanderValidator, UnitPlayerValidator
+from gui.prb_control.items import ValidationResult
+from gui.prb_control.settings import UNIT_RESTRICTION
+from helpers import dependency
+from skeletons.gui.game_control import IComp7LightController, IPlatoonController
+from gui.periodic_battles.models import PrimeTimeStatus
+from constants import IS_DEVELOPMENT
+if typing.TYPE_CHECKING:
+    from gui.prb_control.items import PlayerUnitInfo
+
+class _Comp7LightVehiclesValidator(SquadVehiclesValidator):
+    _BATTLE_MODE_VEHICLE_TAGS = BATTLE_MODE_VEH_TAGS_EXCEPT_COMP7_LIGHT
+
+
+class _UnitSlotsValidator(UnitSlotsValidator):
+
+    def _validate(self):
+        stats = self._entity.getStats()
+        if stats.freeSlotsCount > 0:
+            return ValidationResult(False, UNIT_RESTRICTION.UNIT_NOT_FULL)
+        return super(_UnitSlotsValidator, self)._validate()
+
+
+class _PrimeTimeValidator(CommanderValidator):
+
+    def _validate(self):
+        status, _, _ = dependency.instance(IComp7LightController).getPrimeTimeStatus()
+        if status != PrimeTimeStatus.AVAILABLE:
+            return ValidationResult(False, UNIT_RESTRICTION.CURFEW)
+        return super(_PrimeTimeValidator, self)._validate()
+
+
+class _Comp7LightPlayerValidator(UnitPlayerValidator):
+    __comp7LightController = dependency.descriptor(IComp7LightController)
+    __platoonController = dependency.descriptor(IPlatoonController)
+
+    def _validate(self):
+        if self.__comp7LightController.isBanned:
+            return ValidationResult(False, UNIT_RESTRICTION.BAN_IS_SET, None)
+        else:
+            return super(_Comp7LightPlayerValidator, self)._validate()
+
+
+class _Comp7LightModeStatusValidator(BaseActionsValidator):
+
+    def _validate(self):
+        if self._entity.isCommander():
+            for pInfo in viewvalues(self._entity.getMembers()):
+                if self.__isModeOfflineForPlayer(pInfo):
+                    return ValidationResult(False, UNIT_RESTRICTION.MODE_OFFLINE)
+
+        else:
+            pInfo = self._entity.getPlayerInfo()
+            if self.__isModeOfflineForPlayer(pInfo):
+                return ValidationResult(False, UNIT_RESTRICTION.MODE_OFFLINE)
+        return super(_Comp7LightModeStatusValidator, self)._validate()
+
+    @staticmethod
+    def __isModeOfflineForPlayer(pInfo):
+        comp7LightEnqueueData = pInfo.extraData.get('comp7LightEnqueueData', {})
+        isOnline = bool(comp7LightEnqueueData.get('isOnline', True))
+        return not isOnline
+
+
+class _Comp7LightSlotValidator(CommanderValidator):
+
+    def _validate(self):
+        stats = self._entity.getStats()
+        pInfo = self._entity.getPlayerInfo()
+        if stats.occupiedSlotsCount > 1 and not pInfo.isReady:
+            return ValidationResult(False, UNIT_RESTRICTION.COMMANDER_VEHICLE_NOT_SELECTED)
+        else:
+            return
+
+
+class Comp7LightSquadActionsValidator(SquadActionsValidator):
+
+    def _createVehiclesValidator(self, entity):
+        validators = [
+         _Comp7LightVehiclesValidator(entity),
+         _PrimeTimeValidator(entity)]
+        return ActionsValidatorComposite(entity, validators=validators)
+
+    def _createSlotsValidator(self, entity):
+        baseValidator = super(Comp7LightSquadActionsValidator, self)._createSlotsValidator(entity)
+        validators = [
+         baseValidator,
+         _Comp7LightSlotValidator(entity)]
+        if not IS_DEVELOPMENT:
+            validators.append(_UnitSlotsValidator(entity))
+        return ActionsValidatorComposite(entity, validators=validators)
+
+    def _createPlayerValidator(self, entity):
+        validators = [
+         _Comp7LightPlayerValidator(entity),
+         _Comp7LightModeStatusValidator(entity)]
+        return ActionsValidatorComposite(entity, validators=validators)

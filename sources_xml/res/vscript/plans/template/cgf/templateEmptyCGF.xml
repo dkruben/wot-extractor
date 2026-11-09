@@ -1,0 +1,28 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/vscript/plans/template/cgf/templateEmptyCGF.xml -->
+<root>
+	<info>
+		<name>emptyCGF</name>
+		<isMacro>false</isMacro>
+		<aspect>
+			<compatibles>CLIENT;HANGAR</compatibles>
+		</aspect>
+		<blocks>
+			<block>
+				<class>ContextGetSelf</class>
+				<id>ContextGetSelf_1</id>
+				<params>
+					<param>CGFGameObjectContext<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>getSelf<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots />
+			</block>
+		</blocks>
+		<connections />
+		<macros />
+		<curves />
+	</info>
+</root>

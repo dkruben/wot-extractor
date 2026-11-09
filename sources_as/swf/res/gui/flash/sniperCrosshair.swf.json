@@ -1,0 +1,327 @@
+{
+ "source": "sources/res/gui/flash/sniperCrosshair.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 208016,
+ "actual_length": 208016,
+ "frame_size_px": [
+  0.0,
+  800.0,
+  0.0,
+  800.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 33,
+  "ShowFrame": 608,
+  "DefineShape": 152,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 3,
+  "PlaceObject2": 648,
+  "RemoveObject2": 177,
+  "DefineBitsLossless2": 34,
+  "DefineEditText": 28,
+  "DefineSprite": 32,
+  "FrameLabel": 42,
+  "FileAttributes": 1,
+  "PlaceObject3": 48,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 7,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 34,
+  "shapes": 155,
+  "sprites": 32,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 28,
+  "fonts": 0,
+  "classes": 22,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "crosshairControls.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 249,
+   "class": "CrosshairSniperUI"
+  },
+  {
+   "id": 238,
+   "class": "sniperCrosshair_fla.Crosshair_grid1_4_30"
+  },
+  {
+   "id": 220,
+   "class": "sniperCrosshair_fla.CrosshairHealth_fakeBar_27"
+  },
+  {
+   "id": 218,
+   "class": "sniperCrosshair_fla.Crosshair_fakeBar_25"
+  },
+  {
+   "id": 214,
+   "class": "sniperCrosshair_fla.Crosshair_grid1_3_23"
+  },
+  {
+   "id": 209,
+   "class": "sniperCrosshair_fla.Crosshair_universalbar_sniper3_20"
+  },
+  {
+   "id": 203,
+   "class": "sniperCrosshair_fla.mcReloading3_18"
+  },
+  {
+   "id": 200,
+   "class": "sniperCrosshair_fla.Crosshair_reloadbar_sniper3_17"
+  },
+  {
+   "id": 183,
+   "class": "sniperCrosshair_fla.Crosshair_grid1_1_15"
+  },
+  {
+   "id": 178,
+   "class": "sniperCrosshair_fla.Crosshair_universalbar_sniper_14"
+  },
+  {
+   "id": 125,
+   "class": "sniperCrosshair_fla.mcReloadingSniper2_12"
+  },
+  {
+   "id": 121,
+   "class": "sniperCrosshair_fla.Crosshair_reloadbar_sniper_11"
+  },
+  {
+   "id": 60,
+   "class": "sniperCrosshair_fla.Crosshair_mark_10"
+  },
+  {
+   "id": 28,
+   "class": "sniperCrosshair_fla.Crosshair_grid1_2_8"
+  },
+  {
+   "id": 23,
+   "class": "sniperCrosshair_fla.Crosshair_universalbar_sniper2_6"
+  },
+  {
+   "id": 19,
+   "class": "sniperCrosshair_fla.reloadingBarSniper_4"
+  },
+  {
+   "id": 17,
+   "class": "sniperCrosshair_fla.Crosshair_reloadbar_sniper2_2"
+  },
+  {
+   "id": 12,
+   "class": "netSeparator_1UI"
+  },
+  {
+   "id": 9,
+   "class": "netSeparator_2UI"
+  },
+  {
+   "id": 6,
+   "class": "netSeparator_3UI"
+  },
+  {
+   "id": 1,
+   "class": "sniperCrosshairImported"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 6174,
+   "classes": 22,
+   "methods": 129,
+   "bodies": 129,
+   "code_bytes": 1967
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshairImported",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.CrosshairHealth_fakeBar_27",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_fakeBar_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_grid1_1_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_grid1_2_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_grid1_3_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_grid1_4_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_mark_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_reloadbar_sniper2_2",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_reloadbar_sniper3_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_reloadbar_sniper_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_universalbar_sniper2_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_universalbar_sniper3_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.Crosshair_universalbar_sniper_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.mcReloading3_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.mcReloadingSniper2_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "sniperCrosshair_fla.reloadingBarSniper_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "netSeparator_1UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.CrosshairNetSeparator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "netSeparator_2UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.CrosshairNetSeparator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "netSeparator_3UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.CrosshairNetSeparator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrosshairSniperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.crosshairPanel.CrosshairSniper",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

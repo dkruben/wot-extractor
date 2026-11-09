@@ -1,0 +1,21 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/component_defs/LSTeamInfoVoiceChatComponent.def -->
+<root>
+	<CellMethods>
+		<setVivoxPresence>
+			<Arg>BOOL</Arg>
+			<Exposed />
+		</setVivoxPresence>
+	</CellMethods>
+	<ClientMethods />
+	<Properties>
+		<teamVivoxChannel>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<Default>{}</Default>
+		</teamVivoxChannel>
+	</Properties>
+	<ofEntity>
+		<TeamInfo />
+	</ofEntity>
+</root>

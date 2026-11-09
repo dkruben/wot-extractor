@@ -1,0 +1,206 @@
+{
+ "source": "sources/res/gui/flash/PveMinimap.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 132826,
+ "actual_length": 132826,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 20,
+  "ShowFrame": 20,
+  "DefineShape": 8,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 27,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 8,
+  "DefineEditText": 1,
+  "DefineSprite": 19,
+  "FileAttributes": 1,
+  "PlaceObject3": 36,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 8,
+  "shapes": 9,
+  "sprites": 19,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 10,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "minimapEntriesLibrary.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "PveMinimapEntriesLibrary.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 37,
+   "class": "PveMinimapImports"
+  },
+  {
+   "id": 36,
+   "class": "PveMinimapUI"
+  },
+  {
+   "id": 35,
+   "class": "PveMapShortcutLabelUI"
+  },
+  {
+   "id": 28,
+   "class": "PveMinimapGridJacketUI"
+  },
+  {
+   "id": 27,
+   "class": "PveMinimapHorizontalCoordinatesUI"
+  },
+  {
+   "id": 26,
+   "class": "PveMinimapVerticalCoordinatesUI"
+  },
+  {
+   "id": 7,
+   "class": "PveMinimapSimpleJacketUI"
+  },
+  {
+   "id": 3,
+   "class": "PveMinimapEntriesContainerUI"
+  },
+  {
+   "id": 2,
+   "class": "PveMinimapGridUI"
+  },
+  {
+   "id": 1,
+   "class": "PveScenarioLayerUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2340,
+   "classes": 10,
+   "methods": 30,
+   "bodies": 30,
+   "code_bytes": 584
+  }
+ ],
+ "classes": [
+  {
+   "name": "PveMinimapImports",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveScenarioLayerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.minimap.ScenarioLayer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveMinimapEntriesContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.PveMinimapEntriesContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveMapShortcutLabelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.PveMinimapShortcutLabel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveMinimapGridUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.jacket.grid.PveMinimapGrid",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveMinimapGridJacketUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.jacket.PveMinimapGridJacket",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveMinimapSimpleJacketUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.jacket.PveMinimapSimpleJacket",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveMinimapHorizontalCoordinatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.jacket.grid.PveMinimapHorizontalCoordinates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveMinimapVerticalCoordinatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.jacket.grid.PveMinimapVerticalCoordinates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveMinimapUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.PveMinimap",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

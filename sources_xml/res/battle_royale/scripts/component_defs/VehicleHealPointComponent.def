@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/component_defs/VehicleHealPointComponent.def -->
+<root>
+	<Properties>
+		<endTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</endTime>
+		<radius>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</radius>
+	</Properties>
+	<DefaultKeyName>healPointComponent</DefaultKeyName>
+</root>

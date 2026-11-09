@@ -1,0 +1,21 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/EntityMarkerComponent.def -->
+<root>
+	<Properties>
+		<style>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</style>
+		<bcTargetID>
+			<Type>INT64</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</bcTargetID>
+		<visible>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</visible>
+	</Properties>
+	<ofEntity>
+		<Entity />
+	</ofEntity>
+	<DefaultKeyName>entityMarker</DefaultKeyName>
+</root>

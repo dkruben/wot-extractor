@@ -1,0 +1,91 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/common/dossiers2/custom/vehicle_layout.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from dossiers2.common.DossierBlockBuilders import *
+from dossiers2.common.DossierBlockBuilders import BinarySetDossierBlockBuilder as BinarySetDossierBlockBuilder, DictBlockBuilder as DictBlockBuilder, ListBlockBuilder as ListBlockBuilder, StaticSizeBlockBuilder as StaticSizeBlockBuilder
+from dossiers2.custom.battle_statistics_layouts import *
+from dossiers2.custom.battle_statistics_layouts import A7X7_BLOCK_LAYOUT as A7X7_BLOCK_LAYOUT, A7X7_STATS_DEPENDENCIES as A7X7_STATS_DEPENDENCIES, A15X15_2_BLOCK_LAYOUT as A15X15_2_BLOCK_LAYOUT, A15X15_BLOCK_LAYOUT as A15X15_BLOCK_LAYOUT, A15X15_STATS_DEPENDENCIES as A15X15_STATS_DEPENDENCIES, A30X30_BLOCK_LAYOUT as A30X30_BLOCK_LAYOUT, CLAN2_BLOCK_LAYOUT as CLAN2_BLOCK_LAYOUT, CLAN_BLOCK_LAYOUT as CLAN_BLOCK_LAYOUT, CLAN_STATS_DEPENDENCIES as CLAN_STATS_DEPENDENCIES, COMP7_BLOCK_LAYOUT as COMP7_BLOCK_LAYOUT, COMPANY2_BLOCK_LAYOUT as COMPANY2_BLOCK_LAYOUT, COMPANY_BLOCK_LAYOUT as COMPANY_BLOCK_LAYOUT, EPIC_BATTLE_VEHICLE_BLOCK_LAYOUT as EPIC_BATTLE_VEHICLE_BLOCK_LAYOUT, FALLOUT_VEHICLE_BLOCK_LAYOUT as FALLOUT_VEHICLE_BLOCK_LAYOUT, FORT_BATTLES_STATS_DEPENDENCIES as FORT_BATTLES_STATS_DEPENDENCIES, FORT_BLOCK_LAYOUT as FORT_BLOCK_LAYOUT, FORT_SORTIES_STATS_DEPENDENCIES as FORT_SORTIES_STATS_DEPENDENCIES, GLOBAL_MAP_BLOCK_LAYOUT as GLOBAL_MAP_BLOCK_LAYOUT, HISTORICAL_BLOCK_LAYOUT as HISTORICAL_BLOCK_LAYOUT, HISTORICAL_STATS_DEPENDENCIES as HISTORICAL_STATS_DEPENDENCIES, MAX_BLOCK_LAYOUT as MAX_BLOCK_LAYOUT, MAX_COMP7_BLOCK_LAYOUT as MAX_COMP7_BLOCK_LAYOUT, MAX_FALLOUT_BLOCK_LAYOUT as MAX_FALLOUT_BLOCK_LAYOUT, RANKED_BLOCK_LAYOUT as RANKED_BLOCK_LAYOUT, RATED_7X7_BLOCK_LAYOUT as RATED_7X7_BLOCK_LAYOUT, VEH_TYPE_FRAGS_DEPENDENCIES as VEH_TYPE_FRAGS_DEPENDENCIES, MAX_15x15_BLOCK_LAYOUT as MAX_15x15_BLOCK_LAYOUT
+from dossiers2.custom.dependencies import A30X30_STATS_DEPENDENCIES as A30X30_STATS_DEPENDENCIES, ACHIEVEMENT7X7_DEPENDENCIES as ACHIEVEMENT7X7_DEPENDENCIES, ACHIEVEMENT15X15_DEPENDENCIES as ACHIEVEMENT15X15_DEPENDENCIES, EPIC_BATTLE_STATS_DEPENDENCIES as EPIC_BATTLE_STATS_DEPENDENCIES, FALLOUT_STATS_DEPENDENCIES as FALLOUT_STATS_DEPENDENCIES, FORT_ACHIEVEMENTS_DEPENDENCIES as FORT_ACHIEVEMENTS_DEPENDENCIES, GLOBAL_MAP_STATS_DEPENDENCIES as GLOBAL_MAP_STATS_DEPENDENCIES, RANKED_STATS_DEPENDENCIES as RANKED_STATS_DEPENDENCIES
+TOTAL_BLOCK_LAYOUT: list
+_totalBlockBuilder: Any
+_a15x15BlockBuilder: Any
+_a15x15_2BlockBuilder: Any
+_clanBlockBuilder: Any
+_clan2BlockBuilder: Any
+_companyBlockBuilder: Any
+_company2BlockBuilder: Any
+_a7x7BlockBuilder: Any
+_rated7x7BlockBuilder: Any
+_historicalBlockBuilder: Any
+_fortBattlesBlockBuilder: Any
+_fortSortiesBlockBuilder: Any
+_globalMapCommonBlockBuilder: Any
+_falloutBlockBuilder: Any
+_rankedBlockBuilder: Any
+_rankedBlockBuilder_10x10: Any
+_a30x30BlockBuilder: Any
+_epicBattleBlockBuilder: Any
+_comp7Season1BlockBuilder: Any
+_comp7Season2BlockBuilder: Any
+_comp7Season3BlockBuilder: Any
+_comp7ArchiveGriffinBlockBuilder: Any
+_comp7ArchivePegasusBlockBuilder: Any
+_comp7ArchiveManticoreBlockBuilder: Any
+_comp7ArchiveDragonBlockBuilder: Any
+_maxPopUps: list
+_maxFalloutPopUps: Any
+_max15x15BlockBuilder: Any
+_max7x7BlockBuilder: Any
+_maxHistoricalBlockBuilder: Any
+_maxFortBattlesBlockBuilder: Any
+_maxFortSortiesBlockBuilder: Any
+_maxRated7x7BlockBuilder: Any
+_maxGlobalMapCommonBlockBuilder: Any
+_maxFalloutBlockBuilder: Any
+_maxRankedBlockBuilder: Any
+_max30x30BlockBuilder: Any
+_maxEpicBattleBlockBuilder: Any
+_maxRankedBlockBuilder_10x10: Any
+_maxComp7Season1BlockBuilder: Any
+_maxComp7Season2BlockBuilder: Any
+_maxComp7Season3BlockBuilder: Any
+_maxComp7ArchiveGriffinBlockBuilder: Any
+_maxComp7ArchivePegasusBlockBuilder: Any
+_maxComp7ArchiveManticoreBlockBuilder: Any
+_maxComp7ArchiveDragonBlockBuilder: Any
+_vehTypeFragsBlockBuilder: Any
+_rankedSeasonsBlockBuilder: Any
+_maxRankedSeason1BlockBuilder: Any
+_maxRankedSeason2BlockBuilder: Any
+_maxRankedSeason3BlockBuilder: Any
+_ACHIEVEMENTS15X15_BLOCK_LAYOUT: list
+_achievements15x15PopUps: list
+_achievements15x15BlockBuilder: Any
+ACHIEVEMENTS7X7_BLOCK_LAYOUT: list
+_achievements7x7BlockBuilder: Any
+UNIQUE_VEH_ACHIEVEMENT_VALUES: list
+_uniqueVehAchievementPopUps: list
+_uniqueVehAchievementBlockBuilder: Any
+_SINGLE_ACHIEVEMENTS_VALUES: list
+_singleAchievementsPopUps: list
+_singleAchievementsBlockBuilder: Any
+FORT_ACHIEVEMENTS_BLOCK_LAYOUT: list
+_fortPersonalAchievementsPopUps: list
+_fortPersonalAchievementsBlockBuilder: Any
+CLAN_ACHIEVEMENTS_BLOCK_LAYOUT: list
+_clanAchievementsBlockBuilder: Any
+FALLOUT_ACHIEVEMENTS_BLOCK_LAYOUT: list
+_falloutAchievementsPopUps: list
+_falloutAchievementsBlockBuilder: Any
+EPIC_BATTLE_ACHIEVEMENTS_BLOCK_LAYOUT: list
+_epicBattleAchievementsPopUps: list
+_epicBattleAchievementsBlockBuilder: Any
+_playerInscriptionsBlockBuilder: Any
+_playerEmblemsBlockBuilder: Any
+_camouflagesBlockBuilder: Any
+COMPENSATION_BLOCK_LAYOUT: list
+_compensationBlockBuilder: Any
+vehicleDossierLayout: tuple
+VEHICLE_DOSSIER_BLOCKS: dict

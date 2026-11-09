@@ -1,0 +1,48 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7_light/scripts/client/comp7_light/notification/decorators.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7_light/scripts/client/comp7_light/notification/decorators.py
+from __future__ import absolute_import
+from comp7_light.skeletons.gui.game_control import IComp7LightProgressionController
+from helpers import dependency
+from notification.decorators import MessageDecorator
+from notification.settings import NOTIFICATION_BUTTON_STATE
+
+class Comp7LightProgressionLockButtonDecorator(MessageDecorator):
+    _comp7LightProgressionController = dependency.descriptor(IComp7LightProgressionController)
+
+    def __init__(self, entityID, entity=None, settings=None, model=None):
+        super(Comp7LightProgressionLockButtonDecorator, self).__init__(entityID, entity, settings, model)
+        self._comp7LightProgressionController.onSettingsChanged += self.__update
+
+    def clear(self):
+        self._comp7LightProgressionController.onSettingsChanged -= self.__update
+        super(Comp7LightProgressionLockButtonDecorator, self).clear()
+
+    def _make(self, entity=None, settings=None):
+        self.__updateEntityButtons()
+        super(Comp7LightProgressionLockButtonDecorator, self)._make(entity, settings)
+
+    def __updateEntityButtons(self):
+        if self._entity is None:
+            return
+        else:
+            buttonsLayout = self._entity.get('buttonsLayout')
+            if not buttonsLayout:
+                return
+            if self._comp7LightProgressionController.isEnabled:
+                state = NOTIFICATION_BUTTON_STATE.DEFAULT
+            else:
+                state = NOTIFICATION_BUTTON_STATE.VISIBLE
+            buttonsStates = self._entity.get('buttonsStates')
+            if buttonsStates is None:
+                return
+            buttonsStates['submit'] = state
+            return
+
+    def __update(self, *_):
+        self.__updateEntityButtons()
+        if self._model is not None:
+            self._model.updateNotification(self.getType(), self._entityID, self._entity, False)
+        return

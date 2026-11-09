@@ -1,0 +1,53 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/common/Lib/idlelib/idle_test/test_warning.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/common/Lib/idlelib/idle_test/test_warning.py
+import unittest
+from test.test_support import captured_stderr
+import warnings
+showwarning = warnings.showwarning
+running_in_idle = 'idle' in showwarning.__name__
+from idlelib import run
+from idlelib import PyShell as shell
+idlemsg = '\nWarning (from warnings module):\n  File "test_warning.py", line 99\n    Line of code\nUserWarning: Test\n'
+shellmsg = idlemsg + '>>> '
+
+class RunWarnTest(unittest.TestCase):
+
+    @unittest.skipIf(running_in_idle, 'Does not work when run within Idle.')
+    def test_showwarnings(self):
+        self.assertIs(warnings.showwarning, showwarning)
+        run.capture_warnings(True)
+        self.assertIs(warnings.showwarning, run.idle_showwarning_subproc)
+        run.capture_warnings(False)
+        self.assertIs(warnings.showwarning, showwarning)
+
+    def test_run_show(self):
+        with captured_stderr() as f:
+            run.idle_showwarning_subproc('Test', UserWarning, 'test_warning.py', 99, f, 'Line of code')
+            self.assertEqual(idlemsg.splitlines(), f.getvalue().splitlines())
+
+
+class ShellWarnTest(unittest.TestCase):
+
+    @unittest.skipIf(running_in_idle, 'Does not work when run within Idle.')
+    def test_showwarnings(self):
+        self.assertIs(warnings.showwarning, showwarning)
+        shell.capture_warnings(True)
+        self.assertIs(warnings.showwarning, shell.idle_showwarning)
+        shell.capture_warnings(False)
+        self.assertIs(warnings.showwarning, showwarning)
+
+    def test_idle_formatter(self):
+        s = shell.idle_formatwarning('Test', UserWarning, 'test_warning.py', 99, 'Line of code')
+        self.assertEqual(idlemsg, s)
+
+    def test_shell_show(self):
+        with captured_stderr() as f:
+            shell.idle_showwarning('Test', UserWarning, 'test_warning.py', 99, f, 'Line of code')
+            self.assertEqual(shellmsg.splitlines(), f.getvalue().splitlines())
+
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2, exit=False)

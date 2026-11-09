@@ -1,0 +1,102 @@
+{
+ "source": "sources/res/gui/flash/battleTimer.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 2261,
+ "actual_length": 2261,
+ "frame_size_px": [
+  0.0,
+  100.0,
+  0.0,
+  100.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 2,
+  "ShowFrame": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 1,
+  "DefineEditText": 3,
+  "DefineSprite": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 3,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 3,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 1,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 3,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 4,
+   "class": "battleTimerUI"
+  },
+  {
+   "id": 0,
+   "class": "battleTimer_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1613,
+   "classes": 2,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 204
+  }
+ ],
+ "classes": [
+  {
+   "name": "battleTimer_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.battleTimer.BattleTimer",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,20 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7_core/scripts/client/comp7_core/gui/__init__.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7_core/scripts/client/comp7_core/gui/__init__.py
+from __future__ import absolute_import
+from comp7_core.gui import comp7_core_constants
+from gui.battle_control import battle_constants
+from gui.prb_control.prb_utils import initBattleCtrlIDs
+
+def _initBattleCtrlIDs(personality):
+    for attr in comp7_core_constants.BATTLE_CTRL_ID.getExtraAttrs():
+        if hasattr(battle_constants.BATTLE_CTRL_ID, attr):
+            return
+
+    initBattleCtrlIDs(comp7_core_constants, personality)
+
+
+def initCoreGuiTypes(personality):
+    _initBattleCtrlIDs(personality)

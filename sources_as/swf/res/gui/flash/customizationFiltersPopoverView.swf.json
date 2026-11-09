@@ -1,0 +1,129 @@
+{
+ "source": "sources/res/gui/flash/customizationFiltersPopoverView.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 6283,
+ "actual_length": 6283,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 3,
+  "ShowFrame": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 7,
+  "DefineEditText": 6,
+  "DefineSprite": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 9,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 6,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 2,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 6,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "customizationCarouselView.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 8,
+   "class": "CustomizationFiltersPopoverViewUI"
+  },
+  {
+   "id": 1,
+   "class": "customizationFiltersPopoverViewImportsUI"
+  },
+  {
+   "id": 0,
+   "class": "customizationFiltersPopoverView_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4822,
+   "classes": 3,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 833
+  }
+ ],
+ "classes": [
+  {
+   "name": "customizationFiltersPopoverViewImportsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "customizationFiltersPopoverView_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationFiltersPopoverViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.CustomizationFiltersPopover",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

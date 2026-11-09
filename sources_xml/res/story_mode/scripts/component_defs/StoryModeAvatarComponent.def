@@ -1,0 +1,31 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/scripts/component_defs/StoryModeAvatarComponent.def -->
+<root>
+	<Properties>
+		<wrongApplicationPoint>
+			<Type>VECTOR3</Type>
+			<Flags>OWN_CLIENT</Flags>
+		</wrongApplicationPoint>
+		<isPositionValid>
+			<Type>BOOL</Type>
+			<Flags>OWN_CLIENT</Flags>
+		</isPositionValid>
+	</Properties>
+	<BaseMethods>
+		<setDevelopmentFeature>
+			<Exposed />
+			<Arg>STRING</Arg>
+			<Arg>INT32</Arg>
+			<Arg>STRING</Arg>
+		</setDevelopmentFeature>
+	</BaseMethods>
+	<CellMethods>
+		<checkPositionForEquipment>
+			<Exposed>OWN_CLIENT</Exposed>
+			<Arg>INT32</Arg>
+			<Arg>VECTOR3</Arg>
+		</checkPositionForEquipment>
+	</CellMethods>
+	<ofEntity>
+		<Avatar />
+	</ofEntity>
+</root>

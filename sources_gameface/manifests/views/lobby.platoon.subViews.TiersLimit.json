@@ -1,0 +1,140 @@
+{
+  "rid": "R.views.lobby.platoon.subViews.TiersLimit",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "TiersLimit",
+  "dir": "gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit",
+  "feature": null,
+  "files": [
+    {
+      "name": "TiersLimit.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "TiersLimit.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "TiersLimit.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/platoon/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/platoon/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.css",
+      "key": "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.js",
+      "key": "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged",
+    "trigger:subView:destroy"
+  ],
+  "child_views": [
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.platoon.AlertTooltip",
+    "lobby.platoon.SettingsPopover"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.platoon.subViews.TiersLimit",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.platoon.subViews.TiersLimit no Python",
+      "ViewModel TiersLimitModel (model=... no Python da view): 7/9 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/platoon/view/subview/platoon_tiers_limit_subview.py",
+        31
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/platoon/view/subview/platoon_tiers_limit_subview.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/platoon/tiers_limit_model.py",
+      "class": "TiersLimitModel",
+      "chain": [
+        "TiersLimitModel"
+      ],
+      "properties": [
+        [
+          "btnResetSettings",
+          "ViewModel"
+        ],
+        [
+          "btnShowSettings",
+          "ViewModel"
+        ],
+        [
+          "tiers",
+          "String"
+        ],
+        [
+          "isExpanded",
+          "Bool"
+        ],
+        [
+          "isLight",
+          "Bool"
+        ],
+        [
+          "hasSettingsButton",
+          "Bool"
+        ],
+        [
+          "hasLookingForCaption",
+          "Bool"
+        ],
+        [
+          "hasTiersCaption",
+          "Bool"
+        ],
+        [
+          "hasResetButton",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 7,
+        "total": 9,
+        "missing": [
+          "btnResetSettings",
+          "btnShowSettings"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

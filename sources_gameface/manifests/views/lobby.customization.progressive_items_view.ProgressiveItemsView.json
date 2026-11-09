@@ -1,0 +1,139 @@
+{
+  "rid": "R.views.lobby.customization.progressive_items_view.ProgressiveItemsView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ProgressiveItemsView",
+  "dir": "gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView",
+  "feature": null,
+  "files": [
+    {
+      "name": "ProgressiveItemsView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView/ProgressiveItemsView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView/ProgressiveItemsView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ProgressiveItemsView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView/ProgressiveItemsView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView/ProgressiveItemsView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ProgressiveItemsView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView/ProgressiveItemsView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView/ProgressiveItemsView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView/ProgressiveItemsView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/customization/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/customization/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView/ProgressiveItemsView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView/ProgressiveItemsView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView/ProgressiveItemsView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/customization/progressive_items_view/ProgressiveItemsView/ProgressiveItemsView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "off:self.onPaddingsUpdated",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.customization.progressive_items_view.ProgressiveItemsView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "3 referencia(s) R.views.lobby.customization.progressive_items_view.ProgressiveItemsView no Python",
+      "ViewModel ProgressiveItemsViewModel (convencao de nomes): 7/8 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/customization/main_view.py",
+        78
+      ],
+      [
+        "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/customization/main_view.py",
+        1279
+      ],
+      [
+        "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/customization/states.py",
+        483
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/customization/main_view.py",
+      "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/customization/states.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/customization/progressive_items_view/progressive_items_view_model.py",
+      "class": "ProgressiveItemsViewModel",
+      "chain": [
+        "ProgressiveItemsViewModel"
+      ],
+      "properties": [
+        [
+          "progressiveItems",
+          "ViewModel"
+        ],
+        [
+          "tutorial",
+          "ViewModel"
+        ],
+        [
+          "tankLevel",
+          "String"
+        ],
+        [
+          "tankType",
+          "Resource"
+        ],
+        [
+          "tankName",
+          "String"
+        ],
+        [
+          "isRendererPipelineDeferred",
+          "Bool"
+        ],
+        [
+          "itemToScroll",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onSelectItem"
+      ],
+      "coverage": {
+        "found": 7,
+        "total": 8,
+        "missing": [
+          "tutorial"
+        ]
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

@@ -1,0 +1,2332 @@
+{
+ "source": "sources/res/gui/flash/guiControlsLobby.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 2564392,
+ "actual_length": 2564392,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 330,
+  "ShowFrame": 7711,
+  "DefineShape": 514,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 43,
+  "DefineShape2": 3,
+  "PlaceObject2": 6178,
+  "RemoveObject2": 419,
+  "DefineShape3": 29,
+  "DefineBitsJPEG3": 10,
+  "DefineBitsLossless2": 374,
+  "DefineEditText": 170,
+  "DefineSprite": 329,
+  "FrameLabel": 628,
+  "FileAttributes": 1,
+  "PlaceObject3": 359,
+  "ImportAssets2": 7,
+  "CSMTextSettings": 160,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 43,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineMorphShape2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 427,
+  "shapes": 549,
+  "sprites": 329,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 170,
+  "fonts": 0,
+  "classes": 203,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "windows.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 1475,
+   "class": "advancedImports"
+  },
+  {
+   "id": 1474,
+   "class": "AccrodionSoundRendererUI"
+  },
+  {
+   "id": 1469,
+   "class": "BoosterAddSlotUI"
+  },
+  {
+   "id": 1466,
+   "class": "BlinkAddItemAnimationUI"
+  },
+  {
+   "id": 1462,
+   "class": "guiControlsLobby_fla.BlinkAnimationItem_17"
+  },
+  {
+   "id": 1409,
+   "class": "SeasonTextElementUI"
+  },
+  {
+   "id": 1403,
+   "class": "TextOverlayUI"
+  },
+  {
+   "id": 1397,
+   "class": "NormalSortBtnUI"
+  },
+  {
+   "id": 1394,
+   "class": "guiControlsLobby_fla.normalSortBtnPressed_58"
+  },
+  {
+   "id": 1385,
+   "class": "guiControlsLobby_fla.normalSortBtnArrow_55"
+  },
+  {
+   "id": 1377,
+   "class": "guiControlsLobby_fla.normalSortBtnBg_53"
+  },
+  {
+   "id": 1373,
+   "class": "rudimentaryGCL"
+  },
+  {
+   "id": 1372,
+   "class": "ScalableIconButton_UI"
+  },
+  {
+   "id": 1371,
+   "class": "ScalableIconWrapper_UI"
+  },
+  {
+   "id": 1370,
+   "class": "SortingIconLoader"
+  },
+  {
+   "id": 1369,
+   "class": "TableRenderer_UI"
+  },
+  {
+   "id": 1368,
+   "class": "TableRendererBg_UI"
+  },
+  {
+   "id": 1365,
+   "class": "TutorialContextHintUI"
+  },
+  {
+   "id": 1360,
+   "class": "TutorialHintUI"
+  },
+  {
+   "id": 1359,
+   "class": "TutorialHintTextAnimationUI"
+  },
+  {
+   "id": 1358,
+   "class": "TutorialHintTextShowAnimationMcUI"
+  },
+  {
+   "id": 1357,
+   "class": "TutorialHintTextHideAnimationMcUI"
+  },
+  {
+   "id": 1356,
+   "class": "TutorialHintTextUI"
+  },
+  {
+   "id": 1354,
+   "class": "TutorialHintArrowAnimationUI"
+  },
+  {
+   "id": 1353,
+   "class": "guiControlsLobby_fla.arrowShowAnimation_92"
+  },
+  {
+   "id": 1302,
+   "class": "guiControlsLobby_fla.arrowLoopAnimation_91"
+  },
+  {
+   "id": 1231,
+   "class": "guiControlsLobby_fla.arrowHideAnimation_90"
+  },
+  {
+   "id": 1210,
+   "class": "TutorialHintBoxAnimationUI"
+  },
+  {
+   "id": 1209,
+   "class": "guiControlsLobby_fla.boxShowAnimation_98"
+  },
+  {
+   "id": 1156,
+   "class": "guiControlsLobby_fla.boxHideAnimation_97"
+  },
+  {
+   "id": 1103,
+   "class": "TutorialHintBgAnimationUI"
+  },
+  {
+   "id": 1102,
+   "class": "guiControlsLobby_fla.bgShowAnimation_95"
+  },
+  {
+   "id": 1051,
+   "class": "guiControlsLobby_fla.bgHideAnimation_94"
+  },
+  {
+   "id": 1028,
+   "class": "AccordionBg"
+  },
+  {
+   "id": 1020,
+   "class": "AccordionUI"
+  },
+  {
+   "id": 1017,
+   "class": "ActionPriceUI"
+  },
+  {
+   "id": 1011,
+   "class": "actionPrice_hit"
+  },
+  {
+   "id": 1008,
+   "class": "ActionPriceBgUI"
+  },
+  {
+   "id": 996,
+   "class": "ActivationButtonUI"
+  },
+  {
+   "id": 975,
+   "class": "AdvancedLineDescrIconText_UI"
+  },
+  {
+   "id": 973,
+   "class": "ArrowDownUI"
+  },
+  {
+   "id": 966,
+   "class": "AwardItemRendererExUI"
+  },
+  {
+   "id": 962,
+   "class": "BackButtonUI"
+  },
+  {
+   "id": 961,
+   "class": "BackButtonMainStatesUI"
+  },
+  {
+   "id": 960,
+   "class": "BackButtonTextUI"
+  },
+  {
+   "id": 955,
+   "class": "BackButtonSecondaryStatesUI"
+  },
+  {
+   "id": 954,
+   "class": "BackButtonDescrTextUI"
+  },
+  {
+   "id": 952,
+   "class": "BattleRoyaleMetaLevelUI"
+  },
+  {
+   "id": 951,
+   "class": "BattleRoyaleLevelTextElementUI"
+  },
+  {
+   "id": 936,
+   "class": "BattleRoyaleLevelTextOverlayUI"
+  },
+  {
+   "id": 930,
+   "class": "BattleRoyaleSeasonTextElementUI"
+  },
+  {
+   "id": 925,
+   "class": "BattleRoyaleTextOverlayUI"
+  },
+  {
+   "id": 918,
+   "class": "BigAccrodionSoundRenderer"
+  },
+  {
+   "id": 904,
+   "class": "BoosterSlotUI"
+  },
+  {
+   "id": 897,
+   "class": "guiControlsLobby_fla.BoosterSlotBG_14"
+  },
+  {
+   "id": 893,
+   "class": "BoostersPanelUI"
+  },
+  {
+   "id": 892,
+   "class": "BrowserUI"
+  },
+  {
+   "id": 891,
+   "class": "ServiceViewUI"
+  },
+  {
+   "id": 888,
+   "class": "ButtonAboutUI"
+  },
+  {
+   "id": 884,
+   "class": "ButtonAboutContent"
+  },
+  {
+   "id": 877,
+   "class": "ButtonAboutTextUI"
+  },
+  {
+   "id": 875,
+   "class": "ButtonCaps"
+  },
+  {
+   "id": 869,
+   "class": "guiControlsLobby_fla.ButtonCaps_AlertTint_146"
+  },
+  {
+   "id": 859,
+   "class": "guiControlsLobby_fla.ButtonCaps_FocusIndicator_142"
+  },
+  {
+   "id": 850,
+   "class": "ButtonCapsRed"
+  },
+  {
+   "id": 844,
+   "class": "guiControlsLobby_fla.alert_tint_156"
+  },
+  {
+   "id": 839,
+   "class": "guiControlsLobby_fla.ButtonCapsRed_FocusIndicator_153"
+  },
+  {
+   "id": 831,
+   "class": "ButtonIconBlackUI"
+  },
+  {
+   "id": 830,
+   "class": "guiControlsLobby_fla.ButtonIconBlackStates_161"
+  },
+  {
+   "id": 820,
+   "class": "ButtonIconTransparentUI"
+  },
+  {
+   "id": 817,
+   "class": "guiControlsLobby_fla.TransparentButtonl_FI_171"
+  },
+  {
+   "id": 813,
+   "class": "guiControlsLobby_fla.ButtonIconTransparentStates_167"
+  },
+  {
+   "id": 802,
+   "class": "CalendarDayUI"
+  },
+  {
+   "id": 795,
+   "class": "CalendarUI"
+  },
+  {
+   "id": 791,
+   "class": "BaseArrowButtonUI"
+  },
+  {
+   "id": 790,
+   "class": "guiControlsLobby_fla.arrowBtnArrowSmallStates_128"
+  },
+  {
+   "id": 781,
+   "class": "CalendarWeekDayUI"
+  },
+  {
+   "id": 778,
+   "class": "CheckBoxFilter"
+  },
+  {
+   "id": 771,
+   "class": "IconBorderUI"
+  },
+  {
+   "id": 768,
+   "class": "CheckBoxTankers"
+  },
+  {
+   "id": 759,
+   "class": "guiControlsLobby_fla.CheckBoxTankers_FocusIndicator_187"
+  },
+  {
+   "id": 755,
+   "class": "ClanEmblem"
+  },
+  {
+   "id": 754,
+   "class": "CompactCheckBoxUI"
+  },
+  {
+   "id": 749,
+   "class": "guiControlsLobby_fla.CheckBox_FocusIndicator_new_182"
+  },
+  {
+   "id": 747,
+   "class": "ComplexProgressIndicatorUI"
+  },
+  {
+   "id": 745,
+   "class": "ProgressBar_Green"
+  },
+  {
+   "id": 741,
+   "class": "CounterEx"
+  },
+  {
+   "id": 740,
+   "class": "NumberLine"
+  },
+  {
+   "id": 717,
+   "class": "CustomizationItemPropertyRendererUI"
+  },
+  {
+   "id": 714,
+   "class": "guiControlsLobby_fla.CustomizationItemPropertyRenderer_Icon_196"
+  },
+  {
+   "id": 644,
+   "class": "DashLineTextItem_UI"
+  },
+  {
+   "id": 639,
+   "class": "DashLineTextItemRenderer_bounds"
+  },
+  {
+   "id": 637,
+   "class": "DropDownImageText"
+  },
+  {
+   "id": 630,
+   "class": "DummyUI"
+  },
+  {
+   "id": 626,
+   "class": "EpicMetaLevelRegularUI"
+  },
+  {
+   "id": 625,
+   "class": "LevelTextElementUI"
+  },
+  {
+   "id": 620,
+   "class": "LevelTextOverlayUI"
+  },
+  {
+   "id": 611,
+   "class": "EpicProgressBarUI"
+  },
+  {
+   "id": 610,
+   "class": "guiControlsLobby_fla.EpicProgressMarker_209"
+  },
+  {
+   "id": 604,
+   "class": "EquipmentSlotUI"
+  },
+  {
+   "id": 603,
+   "class": "SlotGreenBorderMcUI"
+  },
+  {
+   "id": 599,
+   "class": "GreenCheckboxUI"
+  },
+  {
+   "id": 598,
+   "class": "GreenCheckboxWithLineUI"
+  },
+  {
+   "id": 579,
+   "class": "HelpLayoutControlUI"
+  },
+  {
+   "id": 577,
+   "class": "HelpLayoutBorder"
+  },
+  {
+   "id": 574,
+   "class": "ImageTextComponent"
+  },
+  {
+   "id": 573,
+   "class": "ImageComponent"
+  },
+  {
+   "id": 571,
+   "class": "IndicationOfStatus_UI"
+  },
+  {
+   "id": 560,
+   "class": "InteractiveSortingButton_UI"
+  },
+  {
+   "id": 555,
+   "class": "LineDescrIconText_UI"
+  },
+  {
+   "id": 553,
+   "class": "UnderlinedText_UI"
+  },
+  {
+   "id": 551,
+   "class": "LineIconTextBG_UI"
+  },
+  {
+   "id": 548,
+   "class": "ListItemRedererImageText"
+  },
+  {
+   "id": 532,
+   "class": "MainMenuButton"
+  },
+  {
+   "id": 516,
+   "class": "MainMenuBtnHighlight"
+  },
+  {
+   "id": 511,
+   "class": "moduleIconExtra"
+  },
+  {
+   "id": 510,
+   "class": "ModuleIconUI"
+  },
+  {
+   "id": 509,
+   "class": "SlotOverlayUI"
+  },
+  {
+   "id": 470,
+   "class": "SlotHighlightUI"
+  },
+  {
+   "id": 462,
+   "class": "ModuleSlotUI"
+  },
+  {
+   "id": 461,
+   "class": "NationDropdownMenuUI"
+  },
+  {
+   "id": 447,
+   "class": "ProfileSortingButton_UI"
+  },
+  {
+   "id": 439,
+   "class": "guiControlsLobby_fla.profileSortBtnBg_227"
+  },
+  {
+   "id": 436,
+   "class": "ProgressBarSmallUI"
+  },
+  {
+   "id": 417,
+   "class": "ProgressBarUI"
+  },
+  {
+   "id": 398,
+   "class": "ProgressIndicator_UI"
+  },
+  {
+   "id": 395,
+   "class": "guiControlsLobby_fla.ProgressLine_261"
+  },
+  {
+   "id": 385,
+   "class": "QuestsFlagsUI"
+  },
+  {
+   "id": 382,
+   "class": "ReserveBigTypesUI"
+  },
+  {
+   "id": 381,
+   "class": "ReserveSlotUI"
+  },
+  {
+   "id": 378,
+   "class": "ReserveTypesUI"
+  },
+  {
+   "id": 377,
+   "class": "RoundProgressBarUI"
+  },
+  {
+   "id": 267,
+   "class": "SaleBgAlignMiddleSmallUI"
+  },
+  {
+   "id": 264,
+   "class": "ScreenTabBackground_20_UI"
+  },
+  {
+   "id": 261,
+   "class": "ScreenTabButton_UI"
+  },
+  {
+   "id": 256,
+   "class": "myHitArea"
+  },
+  {
+   "id": 253,
+   "class": "ScreenTabButtonBg_UI"
+  },
+  {
+   "id": 252,
+   "class": "mcFirstLine"
+  },
+  {
+   "id": 251,
+   "class": "mcLastLine"
+  },
+  {
+   "id": 242,
+   "class": "TabButtonHighlight_UI"
+  },
+  {
+   "id": 239,
+   "class": "ScreenTabButtonBar_UI"
+  },
+  {
+   "id": 236,
+   "class": "ScreenTabHeaderGlow_20_UI"
+  },
+  {
+   "id": 233,
+   "class": "ScreenTabHeaderGlowGray_20_UI"
+  },
+  {
+   "id": 230,
+   "class": "ScrollBarBookmarked_UI"
+  },
+  {
+   "id": 229,
+   "class": "ScrollingList"
+  },
+  {
+   "id": 228,
+   "class": "ScrollingList_bg"
+  },
+  {
+   "id": 225,
+   "class": "ShellButtonUI"
+  },
+  {
+   "id": 224,
+   "class": "guiControlsLobby_fla.ShellButton_FocusIndicator_211"
+  },
+  {
+   "id": 218,
+   "class": "guiControlsLobby_fla.reserve_in_progress_indicator_anim_286"
+  },
+  {
+   "id": 211,
+   "class": "guiControlsLobby_fla.reloadOrrangeClip_284"
+  },
+  {
+   "id": 207,
+   "class": "DefaultShellBgUI"
+  },
+  {
+   "id": 206,
+   "class": "guiControlsLobby_fla.reloadGreenClip_281"
+  },
+  {
+   "id": 201,
+   "class": "CooldownController_UI"
+  },
+  {
+   "id": 195,
+   "class": "ShellsSetUI"
+  },
+  {
+   "id": 194,
+   "class": "simpleResizableContainer_UI"
+  },
+  {
+   "id": 192,
+   "class": "SlotCloseBtnUI"
+  },
+  {
+   "id": 182,
+   "class": "SlotRevertBtnUI"
+  },
+  {
+   "id": 175,
+   "class": "SortableHeaderButtonBar_UI"
+  },
+  {
+   "id": 172,
+   "class": "SortableScrollingList_UI"
+  },
+  {
+   "id": 171,
+   "class": "SortableTable_UI"
+  },
+  {
+   "id": 169,
+   "class": "statsItem_UI"
+  },
+  {
+   "id": 166,
+   "class": "StatusDeltaIndicatorAnimUI"
+  },
+  {
+   "id": 151,
+   "class": "StatusDeltaIndicatorBgBmp"
+  },
+  {
+   "id": 150,
+   "class": "StatusIndicatorBodyMod"
+  },
+  {
+   "id": 149,
+   "class": "StepSliderUI"
+  },
+  {
+   "id": 148,
+   "class": "Slider_ThumbUI"
+  },
+  {
+   "id": 143,
+   "class": "Step_Slider_TrackUI"
+  },
+  {
+   "id": 135,
+   "class": "Step_Slider_Track_Up_UI"
+  },
+  {
+   "id": 132,
+   "class": "TableRendererReserveBg_UI"
+  },
+  {
+   "id": 121,
+   "class": "TankIcon"
+  },
+  {
+   "id": 107,
+   "class": "guiControlsLobby_fla.double_exp_311"
+  },
+  {
+   "id": 100,
+   "class": "TankLevels"
+  },
+  {
+   "id": 72,
+   "class": "TaskAwardItemRendererUI"
+  },
+  {
+   "id": 70,
+   "class": "TextAreaSimple"
+  },
+  {
+   "id": 67,
+   "class": "textAreaBG"
+  },
+  {
+   "id": 65,
+   "class": "TextLoading_UI"
+  },
+  {
+   "id": 63,
+   "class": "ToggleButtonUI"
+  },
+  {
+   "id": 60,
+   "class": "TankTypes"
+  },
+  {
+   "id": 39,
+   "class": "rFlagsFrame"
+  },
+  {
+   "id": 28,
+   "class": "UILoaderCut"
+  },
+  {
+   "id": 25,
+   "class": "UserNameFieldUI"
+  },
+  {
+   "id": 23,
+   "class": "WalletResourcesStatus"
+  },
+  {
+   "id": 22,
+   "class": "hitHaveNotMoney"
+  },
+  {
+   "id": 16,
+   "class": "EpicProgressBgBmp"
+  },
+  {
+   "id": 15,
+   "class": "ActivationDisableTileBmp"
+  },
+  {
+   "id": 14,
+   "class": "DotsBitmapUI"
+  },
+  {
+   "id": 13,
+   "class": "EpicProgressBmp"
+  },
+  {
+   "id": 12,
+   "class": "EpicProgressGrayBmp"
+  },
+  {
+   "id": 11,
+   "class": "EpicProgressGreenBmp"
+  },
+  {
+   "id": 10,
+   "class": "smiley_happy"
+  },
+  {
+   "id": 9,
+   "class": "smiley_hmm"
+  },
+  {
+   "id": 8,
+   "class": "smiley_kiss"
+  },
+  {
+   "id": 7,
+   "class": "smiley_mad"
+  },
+  {
+   "id": 6,
+   "class": "smiley_madah"
+  },
+  {
+   "id": 5,
+   "class": "smiley_norm"
+  },
+  {
+   "id": 4,
+   "class": "smiley_oh"
+  },
+  {
+   "id": 3,
+   "class": "smiley_sad"
+  },
+  {
+   "id": 2,
+   "class": "smiley_tongue"
+  },
+  {
+   "id": 1,
+   "class": "smiley_wink"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 79515,
+   "classes": 203,
+   "methods": 1229,
+   "bodies": 1229,
+   "code_bytes": 32736
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quartic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Quadratic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ActivationDisableTileBmp",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DotsBitmapUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicProgressBgBmp",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicProgressBmp",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicProgressGrayBmp",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicProgressGreenBmp",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatusDeltaIndicatorBgBmp",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatusIndicatorBodyMod",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smiley_happy",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smiley_hmm",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smiley_kiss",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smiley_mad",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smiley_madah",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smiley_norm",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smiley_oh",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smiley_sad",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smiley_tongue",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "smiley_wink",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DashLineTextItemRenderer_bounds",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "actionPrice_hit",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "advancedImports",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hitHaveNotMoney",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mcFirstLine",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mcLastLine",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rFlagsFrame",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rudimentaryGCL",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "textAreaBG",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AccordionBg",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BlinkAddItemAnimationUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DefaultShellBgUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HelpLayoutBorder",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconBorderUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LineIconTextBG_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NumberLine",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SaleBgAlignMiddleSmallUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScreenTabBackground_20_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScreenTabHeaderGlowGray_20_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScreenTabHeaderGlow_20_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollingList_bg",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SlotGreenBorderMcUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SlotHighlightUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SlotOverlayUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TabButtonHighlight_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TableRendererBg_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TableRendererReserveBg_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankLevels",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankTypes",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.BlinkAnimationItem_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.BoosterSlotBG_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.ButtonCapsRed_FocusIndicator_153",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.ButtonCaps_AlertTint_146",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.ButtonCaps_FocusIndicator_142",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.ButtonIconBlackStates_161",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.ButtonIconTransparentStates_167",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.CheckBoxTankers_FocusIndicator_187",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.CheckBox_FocusIndicator_new_182",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.CustomizationItemPropertyRenderer_Icon_196",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.EpicProgressMarker_209",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.ProgressLine_261",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.ShellButton_FocusIndicator_211",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.TransparentButtonl_FI_171",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.alert_tint_156",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.arrowBtnArrowSmallStates_128",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.arrowHideAnimation_90",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.arrowLoopAnimation_91",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.arrowShowAnimation_92",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.bgHideAnimation_94",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.bgShowAnimation_95",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.boxHideAnimation_97",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.boxShowAnimation_98",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.double_exp_311",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.normalSortBtnArrow_55",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.normalSortBtnBg_53",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.normalSortBtnPressed_58",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.profileSortBtnBg_227",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.reloadGreenClip_281",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.reloadOrrangeClip_284",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLobby_fla.reserve_in_progress_indicator_anim_286",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "myHitArea",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BackButtonDescrTextUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.backButton.BackButtonText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BackButtonTextUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.backButton.BackButtonText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonAboutTextUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.backButton.BackButtonText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Step_Slider_Track_Up_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SliderBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TutorialHintTextUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.tutorial.TutorialHintText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UILoaderCut",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UILoaderCut",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UnderlinedText_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.UnderlinedText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TutorialHintBgAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.tutorial.TutorialHintAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TutorialHintBoxAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.tutorial.TutorialHintAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ActionPriceBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ActionPriceBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ArrowDownUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.ArrowDown",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BackButtonMainStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.backButton.BackButtonStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BackButtonSecondaryStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.backButton.BackButtonStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonAboutContent",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.backButton.BackButtonStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleLevelTextOverlayUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.MetaLevelTextWrapperOverlay",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleTextOverlayUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.MetaLevelTextWrapperOverlay",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LevelTextOverlayUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.MetaLevelTextWrapperOverlay",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextOverlayUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.MetaLevelTextWrapperOverlay",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CalendarWeekDayUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.calendar.WeekDayRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MainMenuBtnHighlight",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.MainMenuButtonHighlight",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TutorialHintTextHideAnimationMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.tutorial.TutorialHintTextAnimationMc",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TutorialHintTextShowAnimationMcUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.tutorial.TutorialHintTextAnimationMc",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TutorialHintArrowAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.tutorial.TutorialHintArrowAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TutorialHintTextAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.tutorial.TutorialHintTextAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScalableIconWrapper_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ScalableIconWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SortingIconLoader",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ScalableIconWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Slider_ThumbUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.Button",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Step_Slider_TrackUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.Button",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextLoading_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextLoading",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressBar_Green",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.StatusIndicatorEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollingList",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.ScrollingList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleSeasonTextElementUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.MetaLevelTextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LevelTextElementUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.MetaLevelTextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SeasonTextElementUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.MetaLevelTextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CalendarDayUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.calendar.DayRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ClanEmblem",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ClanEmblem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ComplexProgressIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ComplexProgressIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CooldownController_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.CooldownAnimationController",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CounterEx",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.CounterEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HelpLayoutControlUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.HelpLayoutControl",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ImageComponent",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ImageComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ImageTextComponent",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ImageTextComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IndicationOfStatus_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.IndicationOfStatus",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModuleIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ModuleIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressIndicator_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.ProgressIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestsFlagsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.quests.HeaderQuestsFlags",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScreenTabButtonBg_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.screenTab.ScreenTabButtonBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServiceViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.browser.ServiceView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShellsSetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ShellsSet",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankIcon",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.TankIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TutorialContextHintUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.tutorial.TutorialContextHint",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TutorialHintUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.tutorial.TutorialHint",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WalletResourcesStatus",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.WalletResourcesStatus",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "simpleResizableContainer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.ResizableContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statsItem_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.StatisticItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ActionPriceUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ActionPrice",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UserNameFieldUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.UserNameField",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardItemRendererExUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.AwardItemRendererEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DashLineTextItem_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.DashLineTextItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DummyUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.Dummy",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RoundProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.RoundProgressBarAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SortableTable_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SortableTable",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TaskAwardItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.quests.components.renderers.TaskAwardItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CheckBoxFilter",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.CheckBox",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CheckBoxTankers",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.CheckBox",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.common.EpicProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AccordionUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.Accordion",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScreenTabButtonBar_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.screenTab.ScreenTabButtonBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SortableHeaderButtonBar_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.SortableHeaderButtonBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StepSliderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.StepSlider",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextAreaSimple",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.TextAreaSimple",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleLevelTextElementUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.BattleRoyaleMetaLevelTextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "moduleIconExtra",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ExtraModuleIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleMetaLevelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.BattleRoyaleMetaLevel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicMetaLevelRegularUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.EpicBattleMetaLevel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LineDescrIconText_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.LineDescrIconText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReserveBigTypesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ReserveTypesUIWithFill",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReserveTypesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ReserveTypesUIWithFill",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationItemPropertyRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.CustomizationItemPropertyRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ActivationButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonCaps",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonCapsRed",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GreenCheckboxUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GreenCheckboxWithLineUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SlotCloseBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SlotRevertBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CompactCheckBoxUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.CompactCheckBox",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AccrodionSoundRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.AccordionSoundRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BigAccrodionSoundRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.AccordionSoundRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TableRenderer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TableRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DropDownImageText",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.DropDownImageText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NationDropdownMenuUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.NationDropDownMenu",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressBarSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ProgressBarAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ProgressBarAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatusDeltaIndicatorAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.StatusDeltaIndicatorAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdvancedLineDescrIconText_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.AdvancedLineDescrIconText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonAboutUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ButtonAbout",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MainMenuButton",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.MainMenuButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScalableIconButton_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ScalableIconButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScreenTabButton_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.screenTab.ScreenTabButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BackButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.BackButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BaseArrowButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.BaseArrowButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollBarBookmarked_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollBarBookmarked",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ListItemRedererImageText",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ListItemRedererImageText",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SortableScrollingList_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SortableTableList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BrowserUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.browser.Browser",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CalendarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.Calendar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EquipmentSlotUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.hangar.ammunitionPanel.EquipmentSlot",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModuleSlotUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.modulesPanel.components.ModuleSlot",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReserveSlotUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.reservesPanel.components.ReserveSlot",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShellButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ShellButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NormalSortBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.NormalSortingButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonIconBlackUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ButtonIconBlack",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonIconTransparentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ButtonIconTransparent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ToggleButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.ToggleButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BoostersPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.BoostersPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BoosterAddSlotUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.BoosterAddSlot",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BoosterSlotUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.BoosterSlot",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InteractiveSortingButton_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.InteractiveSortingButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileSortingButton_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.ProfileSortingButton",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

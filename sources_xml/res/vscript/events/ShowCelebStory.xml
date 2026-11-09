@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/vscript/events/ShowCelebStory.xml -->
+<root>
+	<name>ShowCelebStory</name>
+	<isDevelopment>false</isDevelopment>
+	<senderAspects>HANGAR</senderAspects>
+	<receiverAspects>HANGAR</receiverAspects>
+	<param>
+		<name>storyLevel</name>
+		<typecode>IntT</typecode>
+	</param>
+	<param>
+		<name>justReceived</name>
+		<typecode>BoolT</typecode>
+	</param>
+</root>

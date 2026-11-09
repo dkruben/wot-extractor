@@ -1,0 +1,88 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/account_helpers/client_ranked.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/account_helpers/client_ranked.py
+from __future__ import absolute_import
+from functools import partial
+import AccountCommands, season_common
+from shared_utils.account_helpers.diff_utils import synchronizeDicts
+from debug_utils import LOG_DEBUG_DEV
+from helpers import time_utils
+
+def _skipResponse(resultID, errorCode):
+    LOG_DEBUG_DEV('_skipResponse', resultID, errorCode)
+
+
+class ClientRanked(object):
+
+    def __init__(self, syncData):
+        self.__account = None
+        self.__syncData = syncData
+        self.__cache = {}
+        self.__ignore = True
+        return
+
+    def isEnabled(self):
+        rankedConfig = self.__account.serverSettings['ranked_config']
+        return rankedConfig is not None and rankedConfig.get('isEnabled', False)
+
+    def getSeason(self):
+        rankedConfig = self.__account.serverSettings['ranked_config']
+        return season_common.getSeason(rankedConfig, time_utils.getCurrentLocalServerTimestamp())
+
+    def getConfigs(self):
+        rankedConfig = self.__account.serverSettings['ranked_config']
+        cycleConfig = season_common.getActiveCycleConfig(rankedConfig, time_utils.getCurrentLocalServerTimestamp())
+        return (rankedConfig, cycleConfig)
+
+    def onAccountBecomePlayer(self):
+        self.__ignore = False
+
+    def onAccountBecomeNonPlayer(self):
+        self.__ignore = True
+
+    def setAccount(self, account):
+        self.__account = account
+
+    def synchronize(self, _, diff):
+        for item in ('ranked', ):
+            itemDiff = diff.get(item, None)
+            if itemDiff is not None:
+                synchronizeDicts(itemDiff, self.__cache.setdefault(item, {}))
+
+        return
+
+    def getCache(self, callback=None):
+        if self.__ignore:
+            if callback is not None:
+                callback(AccountCommands.RES_NON_PLAYER, None)
+            return
+        self.__syncData.waitForSync(partial(self.__onGetCacheResponse, callback))
+        return
+
+    def get(self, itemName, callback):
+        if self.__ignore:
+            if callback is not None:
+                callback(AccountCommands.RES_NON_PLAYER, None)
+            return
+        self.__syncData.waitForSync(partial(self.__onGetResponse, itemName, callback))
+        return
+
+    def __onGetCacheResponse(self, callback, resultID):
+        if resultID < 0:
+            if callback is not None:
+                callback(resultID, None)
+            return
+        if callback is not None:
+            callback(resultID, self.__cache)
+        return
+
+    def __onGetResponse(self, itemName, callback, resultID):
+        if resultID < 0:
+            if callback is not None:
+                callback(resultID, None)
+            return
+        if callback is not None:
+            callback(resultID, self.__cache['ranked'].get(itemName, None))
+        return

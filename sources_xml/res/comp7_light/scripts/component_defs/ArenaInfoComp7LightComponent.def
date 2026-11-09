@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/comp7_light/scripts/component_defs/ArenaInfoComp7LightComponent.def -->
+<root>
+	<Properties>
+		<teamsDamageDealt>
+			<Type>ARRAY<of>INT32</of>
+				<size>2</size>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</teamsDamageDealt>
+	</Properties>
+	<ofEntity>
+		<ArenaInfo />
+	</ofEntity>
+	<DefaultKeyName>comp7</DefaultKeyName>
+</root>

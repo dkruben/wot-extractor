@@ -1,0 +1,53 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/battle_royale/scripts/client/battle_royale/gui/Scaleform/daapi/view/lobby/battle_queue_provider.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: battle_royale/scripts/client/battle_royale/gui/Scaleform/daapi/view/lobby/battle_queue_provider.py
+from __future__ import absolute_import
+import constants
+from battle_royale.gui.constants import BattleRoyaleSubMode
+from gui.Scaleform.daapi.view.lobby.battle_queue.battle_queue import RandomQueueProvider
+from gui.impl import backport
+from gui.impl.gen import R
+from gui.impl.gen.view_models.views.battle_royale.battle_results.player_battle_type_status_model import BattleType
+from gui.prb_control import prb_getters
+from helpers import dependency
+from skeletons.gui.game_control import IBattleRoyaleController
+_SUBMODE_ID_TO_BATTLE_TYPE = {(BattleRoyaleSubMode.SOLO_MODE_ID): (BattleType.SOLO), 
+   (BattleRoyaleSubMode.SOLO_DYNAMIC_MODE_ID): (BattleType.RANDOMPLATOON), 
+   (BattleRoyaleSubMode.SQUAD_MODE_ID): (BattleType.PLATOON)}
+
+class BattleRoyaleQueueProvider(RandomQueueProvider):
+    __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
+
+    def processQueueInfo(self, qInfo):
+        playersCount = qInfo.get('players', 0)
+        self._createCommonPlayerString(playersCount)
+        modesData = []
+        for mode in constants.BattleRoyaleMode.ALL:
+            modesData.append({'type': (backport.text(R.strings.menu.prebattle.battleRoyale.dyn(mode)())), 
+               'icon': (backport.image(R.images.battle_royale.gui.maps.icons.battleQueue.dyn(mode)())), 
+               'count': (qInfo.get(mode, 0))})
+
+        self._proxy.as_setDPS(modesData)
+
+    def getLayoutStr(self):
+        if self.__battleRoyaleController.isStPatrick():
+            return 'stPatrick'
+        return 'battleRoyale'
+
+    def getIconPath(self, iconlabel):
+        if self.__battleRoyaleController.isStPatrick():
+            iconPath = R.images.battle_royale.gui.maps.st_patrick.icons.battleTypes.c_136x136.battle_royale()
+        else:
+            iconPath = R.images.gui.maps.icons.battleTypes.c_136x136.battle_royale()
+        return backport.image(iconPath)
+
+    def getAdditionalParams(self):
+        battleType = _SUBMODE_ID_TO_BATTLE_TYPE[self.__battleRoyaleController.getCurrentSubModeID()].value
+        iconPath = backport.image(R.images.battle_royale.gui.maps.icons.battleQueue.battleType.dyn(battleType)())
+        guiType = prb_getters.getArenaGUIType(queueType=self._queueType)
+        isStPatrick = self.__battleRoyaleController.isStPatrick()
+        titleRes = R.strings.menu.loading.battleTypes.subTitle.num(guiType) if isStPatrick else None
+        return {'battleTypeIconPath': iconPath, 
+           'subTitle': (backport.text(titleRes()) if titleRes is not None and titleRes.exists() else '')}

@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/comp7/gui/html_templates.xml -->
+<root>
+	<comp7>
+		<voiceChat>
+			<fullStatsStyle>&lt;font face='$FieldFont' size='12' color='#cbac77'&gt;%(message)s&lt;/font&gt;</fullStatsStyle>
+			<playersPanelStyle>&lt;font face='$FieldFont' size='12' color='#ffdd99'&gt;%(message)s&lt;/font&gt;</playersPanelStyle>
+		</voiceChat>
+		<tooltips>
+			<roleSkill>
+				<colorTagOpen>&lt;font color='#CBAC77'&gt;</colorTagOpen>
+				<colorTagClose>&lt;/font&gt;</colorTagClose>
+			</roleSkill>
+		</tooltips>
+	</comp7>
+</root>

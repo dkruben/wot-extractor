@@ -1,0 +1,46 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/comp7_core/scripts/component_defs/TeamInfoComp7Component.def -->
+<root>
+	<Properties>
+		<roleSkillLevels>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<Default>{}</Default>
+		</roleSkillLevels>
+		<teamVivoxChannel>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<Default>{}</Default>
+		</teamVivoxChannel>
+		<endPrepickTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</endPrepickTime>
+		<endVotingTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</endVotingTime>
+		<banVotingStates>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<Default>{}</Default>
+		</banVotingStates>
+		<candidatesForBan>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<Default>{}</Default>
+		</candidatesForBan>
+	</Properties>
+	<CellMethods>
+		<setVivoxPresence>
+			<Arg>BOOL</Arg>
+			<Exposed />
+		</setVivoxPresence>
+	</CellMethods>
+	<ofEntity>
+		<TeamInfo />
+	</ofEntity>
+</root>

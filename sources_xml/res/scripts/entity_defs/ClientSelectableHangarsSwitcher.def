@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/ClientSelectableHangarsSwitcher.def -->
+<root>
+	<Parent>ClientSelectableObject</Parent>
+	<Properties>
+		<destHangar>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Editable>true</Editable>
+		</destHangar>
+	</Properties>
+</root>

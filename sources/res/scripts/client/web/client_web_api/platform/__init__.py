@@ -1,0 +1,32 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/web/client_web_api/platform/__init__.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/web/client_web_api/platform/__init__.py
+from __future__ import absolute_import
+import typing
+from helpers import dependency
+from skeletons.helpers.platform import IPublishPlatform
+from web.client_web_api.api import C2WHandler, c2w
+
+class PlatformEventHandler(C2WHandler):
+    __platform = dependency.descriptor(IPublishPlatform)
+
+    def init(self):
+        super(PlatformEventHandler, self).init()
+        self.__platform.onPayment += self.__onPayment
+        self.__platform.onOverlay += self.__onOverlay
+
+    def fini(self):
+        self.__platform.onPayment -= self.__onPayment
+        self.__platform.onOverlay -= self.__onOverlay
+        super(PlatformEventHandler, self).fini()
+
+    @c2w(name='on_platform_payment')
+    def __onPayment(self, orderID, authorized):
+        return {'orderID': orderID, 
+           'authorized': (bool(authorized))}
+
+    @c2w(name='on_overlay_activated')
+    def __onOverlay(self, active):
+        return {'isActive': active}

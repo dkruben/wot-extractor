@@ -1,0 +1,4 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/scripts/entity_defs/SPGZone.def -->
+<root>
+	<Parent>AreaOfEffect</Parent>
+</root>

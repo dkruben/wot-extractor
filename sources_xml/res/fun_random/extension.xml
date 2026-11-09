@@ -1,0 +1,21 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fun_random/extension.xml -->
+<root>
+	<FeatureName>fun_random</FeatureName>
+	<IsEnabled>true</IsEnabled>
+	<Personality>FunRandomPersonality</Personality>
+	<EditorPersonality>editor_fun_random_personality</EditorPersonality>
+	<Entities>
+		<ServerOnlyEntities>
+			<FunRandomMgr />
+			<FunRandomUnitMgr />
+		</ServerOnlyEntities>
+	</Entities>
+	<Components>
+		<StaticComponents>
+			<AccountFunRandomComponent />
+			<FunRandomKafkaLoggingComponent />
+			<FunRandomArenaController />
+		</StaticComponents>
+		<DynamicComponents />
+	</Components>
+</root>

@@ -1,0 +1,53 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/last_stand/scripts/client/last_stand/gui/scaleform/daapi/view/battle/markers2d/vehicle_plugins.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import BigWorld as BigWorld
+from gui.battle_control.battle_constants import MARKER_HIT_EVENTS as MARKER_HIT_EVENTS
+from gui.Scaleform.daapi.view.battle.shared.markers2d.vehicle_plugins import RespawnableVehicleMarkerPlugin as RespawnableVehicleMarkerPlugin
+from gui.impl.gen import R as R
+from gui.impl import backport as backport
+from last_stand.gui.ls_gui_constants import BATTLE_CTRL_ID as BATTLE_CTRL_ID, FEEDBACK_EVENT_ID as FEEDBACK_EVENT_ID
+from last_stand.gui.ls_vehicle_role_helper import getVehicleRole as getVehicleRole
+from last_stand_common.last_stand_constants import LS_ROLE_PREFIX as LS_ROLE_PREFIX, PLAYERS_TEAM as PLAYERS_TEAM, LS_OBELISK_VEH_MARKER as LS_OBELISK_VEH_MARKER, LS_OBELISK_ACTIVE_TIME as LS_OBELISK_ACTIVE_TIME
+from LSTeamInfoStatsComponent import LSTeamInfoStatsComponent as LSTeamInfoStatsComponent
+VEHICLE_MARKER = 'LSVehicleMarkerUI'
+
+class LSVehicleMarkerPlugin(RespawnableVehicleMarkerPlugin):
+    ICON_HIT_BLOCKED = 'hit_blocked'
+    IGNORE_FEEDBACKS: Any
+    def init(self, *args):
+        ...
+    def fini(self):
+        ...
+    @property
+    def vehicleStats(self):
+        ...
+    @property
+    def lsBattleGuiCtrl(self):
+        ...
+    def invalidateVehicleStatus(self, flags, vInfoVO, arenaDP):
+        ...
+    def _getActiveCommandTime(self, action):
+        ...
+    def _hideVehicleMarker(self, vehicleID):
+        ...
+    def _getMarkerSymbol(self, vehicleID):
+        ...
+    def _restoreMarker(self, marker, vProxy, vInfo, guiProps):
+        ...
+    def _getVehicleClassTag(self, vInfo):
+        ...
+    def _getVehicleName(self, nameParts, vInfo):
+        ...
+    def _setMarkerInitialState(self, marker, vInfo):
+        ...
+    def _onVehicleFeedbackReceived(self, eventID, vehicleID, value):
+        ...
+    def _onClearObeliskMarker(self, vehicleID):
+        ...
+    def __onVehicleBuffIconAdded(self, vehicleId, icon):
+        ...
+    def __onVehicleInvulnerabilityChanged(self, vehicleID, isInvulnerable):
+        ...

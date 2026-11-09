@@ -1,0 +1,848 @@
+{
+ "source": "sources/res/gui/flash/damagePanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 247653,
+ "actual_length": 247653,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  800.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 103,
+  "ShowFrame": 3706,
+  "DefineShape": 142,
+  "DefineBits": 1,
+  "JPEGTables": 1,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 2725,
+  "RemoveObject2": 44,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 109,
+  "DefineEditText": 9,
+  "DefineSprite": 102,
+  "FrameLabel": 190,
+  "FileAttributes": 1,
+  "PlaceObject3": 13,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 7,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 110,
+  "shapes": 144,
+  "sprites": 102,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 9,
+  "fonts": 0,
+  "classes": 69,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 365,
+   "class": "DamagePanelUI"
+  },
+  {
+   "id": 350,
+   "class": "HealthBar"
+  },
+  {
+   "id": 341,
+   "class": "StunCounterUI"
+  },
+  {
+   "id": 335,
+   "class": "TankIndicatorUI"
+  },
+  {
+   "id": 333,
+   "class": "FireIndicatorUI"
+  },
+  {
+   "id": 325,
+   "class": "ModuleRepairAnimUI"
+  },
+  {
+   "id": 266,
+   "class": "WarningAnimUI"
+  },
+  {
+   "id": 262,
+   "class": "ATSPG_HULL_UI"
+  },
+  {
+   "id": 259,
+   "class": "at_spg_hullbase"
+  },
+  {
+   "id": 254,
+   "class": "at_spg_module_engine"
+  },
+  {
+   "id": 252,
+   "class": "at_spg_module_chassis"
+  },
+  {
+   "id": 246,
+   "class": "at_spg_module_fuelTank"
+  },
+  {
+   "id": 244,
+   "class": "at_spg_module_ammo"
+  },
+  {
+   "id": 239,
+   "class": "at_spg_module_surveyingDevice"
+  },
+  {
+   "id": 237,
+   "class": "at_spg_modile_radio"
+  },
+  {
+   "id": 235,
+   "class": "ATSPG_TURRET_UI"
+  },
+  {
+   "id": 227,
+   "class": "TankHullUI"
+  },
+  {
+   "id": 226,
+   "class": "module_fuelTank"
+  },
+  {
+   "id": 220,
+   "class": "module_chassis"
+  },
+  {
+   "id": 214,
+   "class": "hullBase"
+  },
+  {
+   "id": 207,
+   "class": "TankTurretUI"
+  },
+  {
+   "id": 206,
+   "class": "module_ammo"
+  },
+  {
+   "id": 201,
+   "class": "SPG_HULL_UI"
+  },
+  {
+   "id": 200,
+   "class": "spg_modile_radio"
+  },
+  {
+   "id": 194,
+   "class": "spg_module_surveyingDevice"
+  },
+  {
+   "id": 188,
+   "class": "spg_module_ammo"
+  },
+  {
+   "id": 183,
+   "class": "spg_module_fuelTank"
+  },
+  {
+   "id": 177,
+   "class": "spg_module_chassis"
+  },
+  {
+   "id": 171,
+   "class": "spg_module_engine"
+  },
+  {
+   "id": 169,
+   "class": "spg_hullbase"
+  },
+  {
+   "id": 162,
+   "class": "SPGTurretUI"
+  },
+  {
+   "id": 154,
+   "class": "WheelUI"
+  },
+  {
+   "id": 146,
+   "class": "WheelHullUI"
+  },
+  {
+   "id": 145,
+   "class": "wheel_modile_radio"
+  },
+  {
+   "id": 139,
+   "class": "wheel_module_surveyingDevice"
+  },
+  {
+   "id": 133,
+   "class": "wheel_module_ammo"
+  },
+  {
+   "id": 128,
+   "class": "wheel_module_fuelTank"
+  },
+  {
+   "id": 122,
+   "class": "wheel_module_engine"
+  },
+  {
+   "id": 116,
+   "class": "wheel_hullbase"
+  },
+  {
+   "id": 111,
+   "class": "WheelTurretUI"
+  },
+  {
+   "id": 110,
+   "class": "wheel_module_gun"
+  },
+  {
+   "id": 105,
+   "class": "wheel_module_turretRotator"
+  },
+  {
+   "id": 98,
+   "class": "TankYohHullUI"
+  },
+  {
+   "id": 97,
+   "class": "gunConstrainst"
+  },
+  {
+   "id": 95,
+   "class": "yoh_module_fuelTank"
+  },
+  {
+   "id": 89,
+   "class": "yoh_module_chassis"
+  },
+  {
+   "id": 68,
+   "class": "module_engine"
+  },
+  {
+   "id": 62,
+   "class": "yoh_module_ammo"
+  },
+  {
+   "id": 57,
+   "class": "yoh_hullBase"
+  },
+  {
+   "id": 50,
+   "class": "TankYohTurretUI"
+  },
+  {
+   "id": 49,
+   "class": "modile_radio"
+  },
+  {
+   "id": 43,
+   "class": "module_surveyingDevice"
+  },
+  {
+   "id": 37,
+   "class": "module_gun"
+  },
+  {
+   "id": 32,
+   "class": "module_turretRotator"
+  },
+  {
+   "id": 25,
+   "class": "BuffArrowUI"
+  },
+  {
+   "id": 21,
+   "class": "BuffCounterUI"
+  },
+  {
+   "id": 15,
+   "class": "StunArrowUI"
+  },
+  {
+   "id": 11,
+   "class": "LockChassis"
+  },
+  {
+   "id": 10,
+   "class": "Comander"
+  },
+  {
+   "id": 9,
+   "class": "Driver"
+  },
+  {
+   "id": 8,
+   "class": "Gunner"
+  },
+  {
+   "id": 7,
+   "class": "OrangeComander"
+  },
+  {
+   "id": 6,
+   "class": "OrangeDriver"
+  },
+  {
+   "id": 5,
+   "class": "OrangeGunner"
+  },
+  {
+   "id": 4,
+   "class": "OrangeRadist"
+  },
+  {
+   "id": 3,
+   "class": "OrangeShellman"
+  },
+  {
+   "id": 2,
+   "class": "Radist"
+  },
+  {
+   "id": 1,
+   "class": "Shellman"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 15175,
+   "classes": 69,
+   "methods": 353,
+   "bodies": 353,
+   "code_bytes": 5873
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comander",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Driver",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Gunner",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LockChassis",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OrangeComander",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OrangeDriver",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OrangeGunner",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OrangeRadist",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OrangeShellman",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Radist",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Shellman",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "gunConstrainst",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BuffCounterUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BuffArrowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.statusIndicator.StatusArrow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StunArrowUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.stunIndicator.StunArrow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StunCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.stunIndicator.StunCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ATSPG_TURRET_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SPGTurretUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "at_spg_hullbase",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "at_spg_modile_radio",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "at_spg_module_ammo",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "at_spg_module_chassis",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "at_spg_module_engine",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "at_spg_module_fuelTank",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "at_spg_module_surveyingDevice",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hullBase",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "modile_radio",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "module_ammo",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "module_chassis",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "module_engine",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "module_fuelTank",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "module_gun",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "module_surveyingDevice",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "module_turretRotator",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "spg_hullbase",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "spg_modile_radio",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "spg_module_ammo",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "spg_module_chassis",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "spg_module_engine",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "spg_module_fuelTank",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "spg_module_surveyingDevice",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "wheel_hullbase",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "wheel_modile_radio",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "wheel_module_ammo",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "wheel_module_engine",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "wheel_module_fuelTank",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "wheel_module_gun",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "wheel_module_surveyingDevice",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "wheel_module_turretRotator",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "yoh_hullBase",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "yoh_module_ammo",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "yoh_module_chassis",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "yoh_module_fuelTank",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.DamagePanelItemFrameStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HealthBar",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.HealthBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.tankIndicator.TankIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FireIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.FireIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModuleRepairAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.modules.ModuleRepairAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WarningAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.modules.ModuleWarningAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WheelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.tankIndicator.Wheel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankHullUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.tankIndicator.TankRotator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankYohHullUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.tankIndicator.TankRotator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankTurretUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.tankIndicator.VehicleTurret",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankYohTurretUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.tankIndicator.VehicleTurret",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WheelTurretUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.tankIndicator.WheelTurret",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ATSPG_HULL_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.tankIndicator.SPGRotator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SPG_HULL_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.tankIndicator.SPGRotator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WheelHullUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.components.tankIndicator.WheelRotator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DamagePanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damagePanel.DamagePanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

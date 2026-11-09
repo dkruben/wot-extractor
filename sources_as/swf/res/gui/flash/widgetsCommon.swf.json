@@ -1,0 +1,348 @@
+{
+ "source": "sources/res/gui/flash/widgetsCommon.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 255839,
+ "actual_length": 255839,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 43,
+  "ShowFrame": 581,
+  "DefineShape": 229,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 490,
+  "RemoveObject2": 17,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 32,
+  "DefineEditText": 10,
+  "DefineSprite": 42,
+  "FrameLabel": 27,
+  "FileAttributes": 1,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 10,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 5,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 32,
+  "shapes": 232,
+  "sprites": 42,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 10,
+  "fonts": 0,
+  "classes": 25,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 316,
+   "class": "BigShineUI"
+  },
+  {
+   "id": 313,
+   "class": "ContentSpriteUI"
+  },
+  {
+   "id": 312,
+   "class": "ForwardProgressUI"
+  },
+  {
+   "id": 211,
+   "class": "NotReadyBGUI"
+  },
+  {
+   "id": 208,
+   "class": "OrangeShineUI"
+  },
+  {
+   "id": 205,
+   "class": "ReverseProgressUI"
+  },
+  {
+   "id": 104,
+   "class": "SparkUI"
+  },
+  {
+   "id": 101,
+   "class": "ShineUI"
+  },
+  {
+   "id": 99,
+   "class": "DeviceCriticalUI"
+  },
+  {
+   "id": 98,
+   "class": "widgetsCommon_fla.deviceIconCritical_10"
+  },
+  {
+   "id": 93,
+   "class": "DeviceDestroyedUI"
+  },
+  {
+   "id": 92,
+   "class": "widgetsCommon_fla.deviceIconDestroyed_12"
+  },
+  {
+   "id": 85,
+   "class": "HotkeyUI"
+  },
+  {
+   "id": 65,
+   "class": "widgetsCommon_fla.hotKeyLid_31"
+  },
+  {
+   "id": 53,
+   "class": "HotkeyFilledBg"
+  },
+  {
+   "id": 52,
+   "class": "HotkeyFilledBgPlain"
+  },
+  {
+   "id": 45,
+   "class": "HotkeyFilledLongBgLong"
+  },
+  {
+   "id": 11,
+   "class": "HotkeyMaskUI"
+  },
+  {
+   "id": 6,
+   "class": "DevicesHolderUI"
+  },
+  {
+   "id": 5,
+   "class": "HotKeyTargetUI"
+  },
+  {
+   "id": 4,
+   "class": "RedTimerUI"
+  },
+  {
+   "id": 2,
+   "class": "WidgetTimerUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5647,
+   "classes": 25,
+   "methods": 116,
+   "bodies": 116,
+   "code_bytes": 2332
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BigShineUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ContentSpriteUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ForwardProgressUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HotKeyTargetUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NotReadyBGUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OrangeShineUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReverseProgressUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShineUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SparkUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "widgetsCommon_fla.deviceIconCritical_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "widgetsCommon_fla.deviceIconDestroyed_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "widgetsCommon_fla.hotKeyLid_31",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HotkeyFilledBg",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.HotkeyFilledBgContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HotkeyMaskUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.HotkeyMask",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DeviceCriticalUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.Device",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DeviceDestroyedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.Device",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DevicesHolderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.DevicesHolder",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HotkeyFilledBgPlain",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.HotkeyFilledBgPlain",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HotkeyUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.Hotkey",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RedTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.Timer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WidgetTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.Timer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HotkeyFilledLongBgLong",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.HotkeyFilledBgLong",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

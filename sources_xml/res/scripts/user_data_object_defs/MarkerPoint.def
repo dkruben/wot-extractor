@@ -1,0 +1,24 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/user_data_object_defs/MarkerPoint.def -->
+<root>
+	<Domain>CELL</Domain>
+	<Domain>CLIENT</Domain>
+	<SupportVSE>True</SupportVSE>
+	<Properties>
+		<name>
+			<Type>STRING</Type>
+			<Editable>True</Editable>
+		</name>
+		<style>
+			<Type>STRING</Type>
+			<Editable>True</Editable>
+		</style>
+		<eventEnable>
+			<Type>STRING</Type>
+			<Editable>True</Editable>
+		</eventEnable>
+		<eventDisable>
+			<Type>STRING</Type>
+			<Editable>True</Editable>
+		</eventDisable>
+	</Properties>
+</root>

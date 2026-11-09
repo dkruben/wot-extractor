@@ -1,0 +1,6 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/component_defs/AccountBattleRoyaleComponent.def -->
+<root>
+	<ofEntity>
+		<Account />
+	</ofEntity>
+</root>

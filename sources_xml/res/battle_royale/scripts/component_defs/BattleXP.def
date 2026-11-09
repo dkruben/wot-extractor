@@ -1,0 +1,22 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/component_defs/BattleXP.def -->
+<root>
+	<Properties>
+		<battleXP>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>-1</Default>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</battleXP>
+		<battleXpLvlData>
+			<Type>TUPLE<of>UINT16</of>
+				<size>3</size>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</battleXpLvlData>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>battleXP</DefaultKeyName>
+</root>

@@ -1,0 +1,256 @@
+{
+ "source": "sources/res/last_stand/gui/flash/animations/advancedHints/ls_invisibility.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 346738,
+ "actual_length": 346738,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#141410",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 53,
+  "ShowFrame": 2662,
+  "DefineShape": 27,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 53,
+  "PlaceObject2": 5290,
+  "RemoveObject2": 73,
+  "DefineShape3": 98,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 21,
+  "DefineSprite": 52,
+  "DefineMorphShape": 8,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 22,
+  "shapes": 192,
+  "sprites": 52,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 16,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "ls_invisibility_fla.MainTimeline"
+  },
+  {
+   "id": 263,
+   "class": "ls_invisibility_fla.tankShoot_47"
+  },
+  {
+   "id": 254,
+   "class": "ls_invisibility_fla.slotFx_46"
+  },
+  {
+   "id": 248,
+   "class": "ls_invisibility_fla.activeAbilityReload_44"
+  },
+  {
+   "id": 246,
+   "class": "ls_invisibility_fla.hpAllyIncrease8_43"
+  },
+  {
+   "id": 244,
+   "class": "ls_invisibility_fla.hpAllyIncrease7_42"
+  },
+  {
+   "id": 96,
+   "class": "ls_invisibility_fla.explosionCircle_38"
+  },
+  {
+   "id": 93,
+   "class": "ls_invisibility_fla.hpAllyIncrease6_37"
+  },
+  {
+   "id": 91,
+   "class": "ls_invisibility_fla.iconFxExplosion_34"
+  },
+  {
+   "id": 80,
+   "class": "ls_invisibility_fla.hpAllyIncrease5_32"
+  },
+  {
+   "id": 78,
+   "class": "ls_invisibility_fla.hpAllyIncrease4_31"
+  },
+  {
+   "id": 76,
+   "class": "ls_invisibility_fla.hpAllyIncrease3_30"
+  },
+  {
+   "id": 71,
+   "class": "ls_invisibility_fla.hpAllyIncrease2_28"
+  },
+  {
+   "id": 66,
+   "class": "ls_invisibility_fla.activeAbilityCountdown_24"
+  },
+  {
+   "id": 60,
+   "class": "ls_invisibility_fla.hpAllyIncrease1_23"
+  },
+  {
+   "id": 14,
+   "class": "ls_invisibility_fla.iconTankBodyStyleBig_6"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3426,
+   "classes": 16,
+   "methods": 64,
+   "bodies": 64,
+   "code_bytes": 1056
+  }
+ ],
+ "classes": [
+  {
+   "name": "ls_invisibility_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.activeAbilityCountdown_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.activeAbilityReload_44",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.explosionCircle_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.hpAllyIncrease1_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.hpAllyIncrease2_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.hpAllyIncrease3_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.hpAllyIncrease4_31",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.hpAllyIncrease5_32",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.hpAllyIncrease6_37",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.hpAllyIncrease7_42",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.hpAllyIncrease8_43",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.iconFxExplosion_34",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.iconTankBodyStyleBig_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.slotFx_46",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_invisibility_fla.tankShoot_47",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

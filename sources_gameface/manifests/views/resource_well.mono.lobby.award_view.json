@@ -1,0 +1,119 @@
+{
+  "rid": "R.views.resource_well.mono.lobby.award_view",
+  "rid_source": "sources/res/resource_well/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "award_view",
+  "dir": "resource_well/gui/gameface/_dist/production/mono/lobby/award_view",
+  "feature": "resource_well",
+  "files": [
+    {
+      "name": "award_view.css",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/award_view/award_view.css",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/award_view/award_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "award_view.html",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/award_view/award_view.html",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/award_view/award_view.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/resource_well/gui/gameface/_dist/production/mono/lobby/award_view/bundle.js",
+      "all": [
+        "res/resource_well/gui/gameface/_dist/production/mono/lobby/award_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/resource_well/gui/gameface/_dist/production/mono/lobby/award_view/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/award_view/award_view.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/award_view/award_view.css"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/award_view/bundle.js",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/award_view/bundle.js"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "resource_well/gui/gameface/_dist/production/mono/lobby/chunks/vehicle_info.css",
+      "key": "res/resource_well/gui/gameface/_dist/production/mono/lobby/chunks/vehicle_info.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "close",
+    "showInHangar"
+  ],
+  "link": {
+    "rid": "R.views.resource_well.mono.lobby.award_view",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.resource_well.mono.lobby.award_view no Python",
+      "ViewModel AwardViewModel (model=... no Python da view): 3/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/award_view.py",
+        26
+      ],
+      [
+        "sources/res/resource_well/scripts/client/resource_well/gui/shared/event_dispatcher.py",
+        77
+      ]
+    ],
+    "python_files": [
+      "sources/res/resource_well/scripts/client/resource_well/gui/impl/lobby/feature/award_view.py",
+      "sources/res/resource_well/scripts/client/resource_well/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/resource_well/scripts/client/resource_well/gui/impl/gen/view_models/views/lobby/award_view_model.py",
+      "class": "AwardViewModel",
+      "chain": [
+        "AwardViewModel"
+      ],
+      "properties": [
+        [
+          "vehicleInfo",
+          "ViewModel"
+        ],
+        [
+          "personalNumber",
+          "String"
+        ],
+        [
+          "rewardIndex",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "showInHangar",
+        "close"
+      ],
+      "coverage": {
+        "found": 3,
+        "total": 5,
+        "missing": [
+          "personalNumber",
+          "rewardIndex"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

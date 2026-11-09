@@ -1,0 +1,143 @@
+{
+  "rid": "R.views.fun_random.mono.lobby.hangar",
+  "rid_source": "sources/res/fun_random/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "hangar",
+  "dir": "fun_random/gui/gameface/_dist/production/mono/lobby/hangar",
+  "feature": "fun_random",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/fun_random/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+    },
+    {
+      "name": "hangar.css",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "hangar.html",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/hangar/hangar.html",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/hangar/hangar.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+    },
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "battle_modifiers.lobby.tooltips.ModifiersDomainTooltipView",
+    "mono.rest_bonus.tooltips.rest_bonus_tooltip",
+    "mono.tooltips.tooltips"
+  ],
+  "commands": [
+    "dealPanel.onAutoRenewalChanged",
+    "dealPanel.onDealCancelled",
+    "dealPanel.onDealConfirmed",
+    "onBuySlot",
+    "onCarouselTypeChange",
+    "onChangeSetupIndex",
+    "onCreate",
+    "onDiscard",
+    "onDogMoreInfoClick",
+    "onGetMoreCurrency",
+    "onGoBuyVehicle",
+    "onGoRecoverVehicle",
+    "onGoToAboutVehicle",
+    "onGroupClick",
+    "onMarkAsViewed",
+    "onMissionClick",
+    "onModify",
+    "onMouseOver3dScene",
+    "onMoveSpace",
+    "onNavigate",
+    "onOpenBarracks",
+    "onOpenCrew",
+    "onOpenSlotSpecDialog",
+    "onPresetSelected",
+    "onReset",
+    "onSave",
+    "onSaveFilter",
+    "onSelect",
+    "onSelectTelecomRentalVehicle",
+    "onSelectVehicle",
+    "onSetDirtyEdit",
+    "onShellUpdate",
+    "onShowInfo",
+    "onSlideChanged",
+    "onSlotAction",
+    "onToggleAcceleratedTraining",
+    "onToggleIntensiveTraining",
+    "onUpdateSetting",
+    "openDeleteConfirm",
+    "openImportConfirm"
+  ],
+  "link": {
+    "rid": "R.views.fun_random.mono.lobby.hangar",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.fun_random.mono.lobby.hangar no Python",
+      "ViewModel RouterModel (model=... no Python da view): 3/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/hangar/fun_random_hangar.py",
+        81
+      ]
+    ],
+    "python_files": [
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/hangar/fun_random_hangar.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/router_model.py",
+      "class": "RouterModel",
+      "chain": [
+        "RouterModel"
+      ],
+      "properties": [
+        [
+          "route",
+          "String"
+        ],
+        [
+          "params",
+          "String"
+        ]
+      ],
+      "commands": [
+        "navigateTo",
+        "navigateBack"
+      ],
+      "coverage": {
+        "found": 3,
+        "total": 4,
+        "missing": [
+          "navigateBack"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

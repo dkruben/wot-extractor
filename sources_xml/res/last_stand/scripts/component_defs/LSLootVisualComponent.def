@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/component_defs/LSLootVisualComponent.def -->
+<root>
+	<Properties>
+		<lootState>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</lootState>
+	</Properties>
+</root>

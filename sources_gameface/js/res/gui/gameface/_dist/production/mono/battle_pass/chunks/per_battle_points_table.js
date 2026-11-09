@@ -1,0 +1,94 @@
+/* wot-extractor: JavaScript FORMATADO a partir de sources/res/gui/gameface/_dist/production/mono/battle_pass/chunks/per_battle_points_table.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
+import{
+  r as a
+}
+from"./rolldown-runtime.js";
+import{
+  Yn as s,bt as e,ci as l,oi as i
+}
+from"./lib.js";
+var t=a(l(),1),n={
+  base:"Styles_f631575c",separator:"Styles_separator_46f5d10f",rewards:"Styles_rewards_34671e2f",separators:"Styles_separators_c0377bd4",tableHeader:"Styles_tableHeader_21f2f6a",label:"Styles_label_a324df6",label__table:"Styles_label__table_52585929",pointsColumn:"Styles_pointsColumn_28d0cee7",labelColumn:"Styles_labelColumn_bf6ee8a4",fadeInWithScale:"Styles_fadeInWithScale_8a923a08",slideUp:"Styles_slideUp_8a923a08",blink:"Styles_blink_8a923a08",scale:"Styles_scale_8a923a08",rotate:"Styles_rotate_8a923a08",windowIn:"Styles_windowIn_8a923a08",fadeOut:"Styles_fadeOut_8a923a08",fadeIn:"Styles_fadeIn_8a923a08"
+},
+o=s(),d=(0,t.memo)(({
+  columnWidth:a,header:s,labels:e,headerClassMix:l,labelClassMix:t
+})=>(0,o.jsxs)("div",{
+  className:n.labelColumn,style:{
+    width:`${a}rem`
+  },
+  children:[(0,o.jsx)("div",{
+    className:i(n.tableHeader,l),children:s
+  }),e.map((a,s)=>(0,o.jsx)("div",{
+    className:i(n.label,n.label__table,t),children:a
+  },s))]
+})),r="Point_2663b7cb",_="Point_points_2ee84436",c="Point_points__special_d4c6e82f",b="Point_base__hasAdditionalPoints_d8b7e333",p="Point_value_bcd55687",m="Point_additionalPoints_6e14e8ef",h="Point_additionalPoints__special_235764b3",x="Point_additionalPointsGlow_4455fb4d",P="Point_additionalPointsDivider_9b3c39ce",j="Point_additionalPointsText_7c0fdaec",v="Point_pointIcon_2442905f",y=({
+  value:a,hasAdditionalPoints:s=!1,externalValue:e=0,isSpecial:l=!1,showIcon:t=!0
+})=>(0,o.jsxs)("div",{
+  className:i(r,s&&b),children:[(0,o.jsxs)("div",{
+    className:i(_,l&&c),children:[(0,o.jsx)("div",{
+      className:p,children:a
+    }),s&&(0,o.jsxs)("div",{
+      className:i(m,l&&h),children:[(0,o.jsx)("div",{
+        className:x
+      }),(0,o.jsx)("div",{
+        className:P
+      }),(0,o.jsx)("div",{
+        className:j,children:a+e
+      })]
+    })]
+  }),t&&(0,o.jsx)("div",{
+    className:v
+  })]
+}),S=R.strings.battle_pass.tooltips,u=({
+  win:a,points:s,hasAdditionalPoints:e=!1,hasDraw:l=!0,battleType:i=""
+})=>{
+  const t=((a,s,e)=>a?e.win():s?e.lose():e.loseWithoutDraw())(a,l,"comp7"===i?S.prestigePoints:S.pointsTable);
+  return(0,o.jsxs)("div",{
+    className:n.pointsColumn,children:[(0,o.jsx)("div",{
+      className:n.tableHeader,children:t
+    }),s.items.map(({
+      value:s
+    },l)=>(0,o.jsx)("div",{
+      className:n.label,children:(0,o.jsx)(y,{
+        value:a?s.pointsWin:s.pointsLose,hasAdditionalPoints:e,externalValue:a?s.externalPointsWin:s.externalPointsLose,isSpecial:s.isSpecial,showIcon:!1
+      })
+    },l))]
+  })
+},
+w="PointsTable_pointIcon_363eb4a4",f="PointsTable_headerText_6ce716db",N=R.strings.battle_pass.tooltips.pointsTable,C=({
+  rewardPoints:a,hasAdditionalPoints:s=!1,topPlace:l=N.topPlace(),hasDraw:i=!0,tableColumnWidth:t=180,battleType:n=""
+})=>(0,o.jsxs)(o.Fragment,{
+  children:[(0,o.jsx)(d,{
+    header:(0,o.jsxs)("div",{
+      className:f,children:[(0,o.jsx)("div",{
+        className:w
+      }),N.header()]
+    }),columnWidth:t,labels:a.items.map(({
+      value:a
+    })=>(0,o.jsx)(e,{
+      text:l,binding:{
+        place:a.topCount
+      }
+    }))
+  }),(0,o.jsx)(u,{
+    points:a,hasAdditionalPoints:s,win:!0,battleType:n
+  }),(0,o.jsx)(u,{
+    points:a,hasAdditionalPoints:s,win:!1,hasDraw:i,battleType:n
+  })]
+}),I=({
+  separatorRows:a,children:s,showSeparator:e=!0,stretchBg:l=!1,mixClass:t=""
+})=>(0,o.jsxs)("div",{
+  className:i(t,n.base),style:l?{
+    width:"100%",backgroundSize:"100% 100%"
+  }:{},
+  children:[e&&(0,o.jsx)("div",{
+    className:n.separators,children:a.map((a,s)=>s>0&&(0,o.jsx)("div",{
+      className:n.separator,style:{
+        top:40*(s+1)+"rem"
+      }
+    },s))
+  }),s]
+});
+export{
+  n as a,d as i,C as n,y as r,I as t
+};

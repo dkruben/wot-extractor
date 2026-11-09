@@ -1,0 +1,29 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/02_malinovka/zones.xml -->
+<root>
+	<path>
+		<id>1485609077</id>
+		<name>path</name>
+		<node>
+			<name>02_plane_mill_crashing_01_flora_scale_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>196945911</id>
+			<transform>
+				<row0>80 0 0</row0>
+				<row1>0 32 0</row1>
+				<row2>0 0 72</row2>
+				<row3>426.04953 63.823643 423.36026</row3>
+			</transform>
+		</node>
+		<node>
+			<name>02_malinovka_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>708789877</id>
+			<transform>
+				<row0>62.108154 0 0</row0>
+				<row1>0 62.108154 0</row1>
+				<row2>0 0 62.108154</row2>
+				<row3>-146.662 -10.078135 -436.72726</row3>
+			</transform>
+		</node>
+	</path>
+</root>

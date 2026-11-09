@@ -1,0 +1,237 @@
+{
+ "source": "sources/res/gui/flash/battleMessages.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 21638,
+ "actual_length": 21638,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  800.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 19,
+  "ShowFrame": 19,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 10,
+  "DefineBitsLossless2": 3,
+  "DefineEditText": 14,
+  "DefineSprite": 18,
+  "FileAttributes": 1,
+  "PlaceObject3": 14,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 14,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 4,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 3,
+  "shapes": 3,
+  "sprites": 18,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 14,
+  "fonts": 0,
+  "classes": 14,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 38,
+   "class": "PlayerGoldMessageRenderer"
+  },
+  {
+   "id": 33,
+   "class": "PlayerGreenMessageRenderer"
+  },
+  {
+   "id": 30,
+   "class": "PlayerPurpleMessageRenderer"
+  },
+  {
+   "id": 28,
+   "class": "PlayerRedMessageRenderer"
+  },
+  {
+   "id": 23,
+   "class": "PlayerSelfMessageRenderer"
+  },
+  {
+   "id": 21,
+   "class": "PlayerYellowMessageRenderer"
+  },
+  {
+   "id": 16,
+   "class": "VehicleGreenMessageRenderer"
+  },
+  {
+   "id": 14,
+   "class": "VehicleHtmlRenderer"
+  },
+  {
+   "id": 12,
+   "class": "VehiclePurpleErrorRenderer"
+  },
+  {
+   "id": 10,
+   "class": "VehiclePurpleMessageRenderer"
+  },
+  {
+   "id": 8,
+   "class": "VehicleRedErrorRenderer"
+  },
+  {
+   "id": 6,
+   "class": "VehicleRedMessageRenderer"
+  },
+  {
+   "id": 4,
+   "class": "VehicleYellowErrorRenderer"
+  },
+  {
+   "id": 2,
+   "class": "VehicleYellowMessageRenderer"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2048,
+   "classes": 14,
+   "methods": 42,
+   "bodies": 42,
+   "code_bytes": 672
+  }
+ ],
+ "classes": [
+  {
+   "name": "PlayerGoldMessageRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerGreenMessageRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerPurpleMessageRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerRedMessageRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerSelfMessageRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerYellowMessageRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleGreenMessageRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleHtmlRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehiclePurpleErrorRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehiclePurpleMessageRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleRedErrorRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleRedMessageRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleYellowErrorRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleYellowMessageRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.messages.components.TextMessageRenderer",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

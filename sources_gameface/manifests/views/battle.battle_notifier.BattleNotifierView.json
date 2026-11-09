@@ -1,0 +1,133 @@
+{
+  "rid": "R.views.battle.battle_notifier.BattleNotifierView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "BattleNotifierView",
+  "dir": "gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView",
+  "feature": null,
+  "files": [
+    {
+      "name": "BattleNotifierView.css",
+      "effective": "res/gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView/BattleNotifierView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView/BattleNotifierView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleNotifierView.html",
+      "effective": "res/gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView/BattleNotifierView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView/BattleNotifierView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleNotifierView.js",
+      "effective": "res/gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView/BattleNotifierView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView/BattleNotifierView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView/BattleNotifierView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView/BattleNotifierView.css",
+      "key": "res/gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView/BattleNotifierView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView/BattleNotifierView.js",
+      "key": "res/gui/gameface/_dist/production/battle/battle_notifier/BattleNotifierView/BattleNotifierView.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/battle/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/battle/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle.battle_notifier.BattleNotifierView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.battle.battle_notifier.BattleNotifierView no Python",
+      "ViewModel BattleNotifierViewModel (convencao de nomes): 10/10 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/battle/battle_notifier/battle_notifier_view.py",
+        25
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/battle/battle_notifier/battle_notifier_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/battle/battle_notifier/battle_notifier_view_model.py",
+      "class": "BattleNotifierViewModel",
+      "chain": [
+        "BattleNotifierViewModel"
+      ],
+      "properties": [
+        [
+          "battleResult",
+          "Number"
+        ],
+        [
+          "battleStartTime",
+          "Number"
+        ],
+        [
+          "mapName",
+          "String"
+        ],
+        [
+          "vehicleName",
+          "String"
+        ],
+        [
+          "vehicleTier",
+          "Number"
+        ],
+        [
+          "vehicleClass",
+          "String"
+        ],
+        [
+          "creditsAmount",
+          "Number"
+        ],
+        [
+          "experienceAmount",
+          "Number"
+        ],
+        [
+          "crystalAmount",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onResultShown"
+      ],
+      "coverage": {
+        "found": 10,
+        "total": 10,
+        "missing": []
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

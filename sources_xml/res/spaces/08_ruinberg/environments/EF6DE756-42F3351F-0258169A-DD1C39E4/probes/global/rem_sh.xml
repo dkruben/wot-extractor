@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/08_ruinberg/environments/EF6DE756-42F3351F-0258169A-DD1C39E4/probes/global/rem_sh.xml -->
+<root>
+	<sh0>2.739999 2.868114 3.325949</sh0>
+	<sh1>1.971231 2.213446 2.921644</sh1>
+	<sh2>-0.899173 -0.882898 -0.850679</sh2>
+	<sh3>1.83461 1.801063 1.731989</sh3>
+	<sh4>1.471362 1.380396 1.270645</sh4>
+	<sh5>-0.63761 -0.621018 -0.612785</sh5>
+	<sh6>-0.092793 -0.079485 -0.062051</sh6>
+	<sh7>-1.09672 -1.097144 -1.091781</sh7>
+	<sh8>0.510964 0.493467 0.462646</sh8>
+	<dominant_vector>0.733381 0.571522 -0.368123</dominant_vector>
+	<max_lum>6.949934</max_lum>
+</root>

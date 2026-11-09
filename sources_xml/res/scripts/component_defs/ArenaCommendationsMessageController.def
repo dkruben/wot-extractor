@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/ArenaCommendationsMessageController.def -->
+<root>
+	<CellMethods>
+		<sendCommendation>
+			<Arg>OBJECT_ID</Arg>
+			<Arg>OBJECT_ID</Arg>
+			<Arg>STRING</Arg>
+		</sendCommendation>
+	</CellMethods>
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+	<DefaultKeyName>commendationsController</DefaultKeyName>
+</root>

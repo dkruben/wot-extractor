@@ -1,0 +1,71 @@
+{
+  "rid": "R.views.mono.user_missions.info_page",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "info_page",
+  "dir": "gui/gameface/_dist/production/mono/user_missions/info_page",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/info_page/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/info_page/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/user_missions/info_page/bundle.js"
+    },
+    {
+      "name": "info_page.css",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/info_page/info_page.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/info_page/info_page.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "info_page.html",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/info_page/info_page.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/info_page/info_page.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/info_page/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/info_page/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/info_page/info_page.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/info_page/info_page.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.mono.user_missions.info_page",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.mono.user_missions.info_page no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/user_missions/states.py",
+        37
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/user_missions/states.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

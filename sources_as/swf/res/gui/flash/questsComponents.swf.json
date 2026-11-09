@@ -1,0 +1,399 @@
+{
+ "source": "sources/res/gui/flash/questsComponents.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 20855,
+ "actual_length": 20855,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 33,
+  "ShowFrame": 190,
+  "DefineShape": 9,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 53,
+  "RemoveObject2": 2,
+  "DefineShape3": 4,
+  "DefineBitsLossless2": 9,
+  "DefineEditText": 23,
+  "DefineSprite": 32,
+  "FrameLabel": 20,
+  "FileAttributes": 1,
+  "PlaceObject3": 20,
+  "ImportAssets2": 6,
+  "CSMTextSettings": 23,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 9,
+  "shapes": 14,
+  "sprites": 32,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 23,
+  "fonts": 0,
+  "classes": 27,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLogin.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiLobbyBattleCarousels.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 78,
+   "class": "AwardCarouselUI"
+  },
+  {
+   "id": 77,
+   "class": "CommonConditionsBlock_UI"
+  },
+  {
+   "id": 74,
+   "class": "ConditionBlockUI"
+  },
+  {
+   "id": 70,
+   "class": "movableBlocksContainer_UI"
+  },
+  {
+   "id": 68,
+   "class": "DescriptionBlock_UI"
+  },
+  {
+   "id": 64,
+   "class": "ConditionElement_UI"
+  },
+  {
+   "id": 60,
+   "class": "ConditionSeparator_UI"
+  },
+  {
+   "id": 58,
+   "class": "CounterTextElement_UI"
+  },
+  {
+   "id": 56,
+   "class": "CustomizationItemRendererUI"
+  },
+  {
+   "id": 54,
+   "class": "CustomizationsBlockUI"
+  },
+  {
+   "id": 52,
+   "class": "InscriptionItemRenderer_UI"
+  },
+  {
+   "id": 51,
+   "class": "ItemRadioButtonScrollBarUI"
+  },
+  {
+   "id": 44,
+   "class": "LongQuestTextAwardBlockUI"
+  },
+  {
+   "id": 42,
+   "class": "QuestBigIconAwardBlockUI"
+  },
+  {
+   "id": 41,
+   "class": "QuestBigIconAwardItemUI"
+  },
+  {
+   "id": 39,
+   "class": "QuestIconAwardsBlockUI"
+  },
+  {
+   "id": 36,
+   "class": "QuestIconElement_UI"
+  },
+  {
+   "id": 33,
+   "class": "QuestTextAwardBlockUI"
+  },
+  {
+   "id": 31,
+   "class": "RadioButtonScrollBarUI"
+  },
+  {
+   "id": 28,
+   "class": "TextProgressElement_UI"
+  },
+  {
+   "id": 27,
+   "class": "StatusComponent_UI"
+  },
+  {
+   "id": 25,
+   "class": "QuestStatusIcon_UI"
+  },
+  {
+   "id": 14,
+   "class": "VehiclesBonusTextElement_UI"
+  },
+  {
+   "id": 12,
+   "class": "QuestsCounter_UI"
+  },
+  {
+   "id": 8,
+   "class": "VehicleBlock_UI"
+  },
+  {
+   "id": 7,
+   "class": "QuestsDashlineItem_UI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 11266,
+   "classes": 27,
+   "methods": 117,
+   "bodies": 117,
+   "code_bytes": 3508
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestStatusIcon_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.CustomizationItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DescriptionBlock_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.DescriptionBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InscriptionItemRenderer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.InscriptionItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestBigIconAwardItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.QuestBigIconAwardItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestsCounter_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.QuestsCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatusComponent_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.QuestStatusComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleBlock_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.VehicleBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardCarouselUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.quests.components.AwardCarousel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CommonConditionsBlock_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.CommonConditionsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ConditionBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.ConditionBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ConditionElement_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.ConditionElement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ConditionSeparator_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.ConditionSeparator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CounterTextElement_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.CounterTextElement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationsBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.CustomizationsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestBigIconAwardBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.QuestBigIconAwardBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestIconElement_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.QuestIconElement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestTextAwardBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.QuestTextAwardBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextProgressElement_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.TextProgressElement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehiclesBonusTextElement_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.VehicleBonusTextElement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestIconAwardsBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.QuestIconAwardsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QuestsDashlineItem_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.QuestsDashlineItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "movableBlocksContainer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.MovableBlocksContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ItemRadioButtonScrollBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadioButtonScrollBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.quests.components.RadioButtonScrollBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LongQuestTextAwardBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.questsWindow.components.LongQuestTextAwardBlock",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

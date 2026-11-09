@@ -1,0 +1,123 @@
+{
+  "rid": "R.views.advent_calendar.mono.lobby.purchase_dialog_view",
+  "rid_source": "sources/res/advent_calendar/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "purchase_dialog_view",
+  "dir": "advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view",
+  "feature": "advent_calendar",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view/bundle.js",
+      "all": [
+        "res/advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view/bundle.js"
+    },
+    {
+      "name": "purchase_dialog_view.css",
+      "effective": "res/advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view/purchase_dialog_view.css",
+      "all": [
+        "res/advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view/purchase_dialog_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "purchase_dialog_view.html",
+      "effective": "res/advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view/purchase_dialog_view.html",
+      "all": [
+        "res/advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view/purchase_dialog_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "advent_calendar/gui/gameface/_dist/production/mono/lobby/chunks/balance.css",
+      "key": "res/advent_calendar/gui/gameface/_dist/production/mono/lobby/chunks/balance.css"
+    },
+    {
+      "virtual": "advent_calendar/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/advent_calendar/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view/bundle.js",
+      "key": "res/advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view/bundle.js"
+    },
+    {
+      "virtual": "advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view/purchase_dialog_view.css",
+      "key": "res/advent_calendar/gui/gameface/_dist/production/mono/lobby/purchase_dialog_view/purchase_dialog_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onAccept",
+    "onCancel"
+  ],
+  "link": {
+    "rid": "R.views.advent_calendar.mono.lobby.purchase_dialog_view",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.advent_calendar.mono.lobby.purchase_dialog_view no Python",
+      "ViewModel PurchaseDialogModel (model=... no Python da view): 9/9 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/advent_calendar/scripts/client/advent_calendar/gui/impl/lobby/feature/purchase_dialog_view.py",
+        125
+      ]
+    ],
+    "python_files": [
+      "sources/res/advent_calendar/scripts/client/advent_calendar/gui/impl/lobby/feature/purchase_dialog_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/advent_calendar/scripts/client/advent_calendar/gui/impl/gen/view_models/views/lobby/purchase_dialog_model.py",
+      "class": "PurchaseDialogModel",
+      "chain": [
+        "PurchaseDialogModel"
+      ],
+      "properties": [
+        [
+          "dayId",
+          "Number"
+        ],
+        [
+          "isWalletAvailable",
+          "Bool"
+        ],
+        [
+          "currentResource",
+          "String"
+        ],
+        [
+          "balanceCurrencyValue",
+          "Number"
+        ],
+        [
+          "price",
+          "Number"
+        ],
+        [
+          "notEnoughResource",
+          "Bool"
+        ],
+        [
+          "currencyTooltipId",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onAccept",
+        "onCancel"
+      ],
+      "coverage": {
+        "found": 9,
+        "total": 9,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

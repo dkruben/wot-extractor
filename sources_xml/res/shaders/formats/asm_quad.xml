@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/shaders/formats/asm_quad.xml -->
+<root>
+	<elements>
+		<POSITION>
+			<type>FLOAT3</type>
+		</POSITION>
+	</elements>
+</root>

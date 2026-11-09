@@ -1,0 +1,117 @@
+{
+  "rid": "R.views.mono.lootbox.tooltips.random_national_bonus",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "random_national_bonus",
+  "dir": "gui/gameface/_dist/production/mono/lootbox/tooltips/random_national_bonus",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/random_national_bonus/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/random_national_bonus/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "random_national_bonus.css",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/random_national_bonus/random_national_bonus.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/random_national_bonus/random_national_bonus.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "random_national_bonus.html",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/random_national_bonus/random_national_bonus.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/random_national_bonus/random_national_bonus.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/tooltips/random_national_bonus/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/random_national_bonus/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/tooltips/random_national_bonus/random_national_bonus.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/random_national_bonus/random_national_bonus.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.lootbox.tooltips.random_national_bonus",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.mono.lootbox.tooltips.random_national_bonus no Python",
+      "ViewModel BonusModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/tooltips/random_national_bonus_tooltip_view.py",
+        15
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/bonuses_packers.py",
+        258
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/decorators.py",
+        100
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/tooltips/random_national_bonus_tooltip_view.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/bonuses_packers.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/decorators.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/common/bonus_model.py",
+      "class": "BonusModel",
+      "chain": [
+        "BonusModel"
+      ],
+      "properties": [
+        [
+          "localeName",
+          "String"
+        ],
+        [
+          "values",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "localeName",
+          "values"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/challenges/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/lootbox_system/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/lootbox_system/tooltips/random_national_bonus_tooltip_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/marathon/bonus_model.py"
+      ]
+    }
+  }
+}

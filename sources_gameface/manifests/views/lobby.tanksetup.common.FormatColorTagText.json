@@ -1,0 +1,70 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.FormatColorTagText",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "FormatColorTagText",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText",
+  "feature": null,
+  "files": [
+    {
+      "name": "FormatColorTagText.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText/FormatColorTagText.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText/FormatColorTagText.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "FormatColorTagText.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText/FormatColorTagText.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText/FormatColorTagText.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "FormatColorTagText.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText/FormatColorTagText.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText/FormatColorTagText.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText/FormatColorTagText.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText/FormatColorTagText.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText/FormatColorTagText.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText/FormatColorTagText.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/FormatColorTagText/FormatColorTagText.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.FormatColorTagText",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

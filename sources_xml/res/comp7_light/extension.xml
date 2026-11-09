@@ -1,0 +1,22 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/comp7_light/extension.xml -->
+<root>
+	<FeatureName>comp7_light</FeatureName>
+	<IsEnabled>true</IsEnabled>
+	<Personality>Comp7LightPersonality</Personality>
+	<Components>
+		<StaticComponents>
+			<AccountComp7LightComponent />
+			<ArenaComp7LightComponent />
+		</StaticComponents>
+		<DynamicComponents>
+			<VehicleComp7LightComponent />
+			<ArenaInfoComp7LightComponent />
+		</DynamicComponents>
+	</Components>
+	<Entities>
+		<ServerOnlyEntities>
+			<Comp7LightMgr />
+			<Comp7LightUnitMgr />
+		</ServerOnlyEntities>
+	</Entities>
+</root>

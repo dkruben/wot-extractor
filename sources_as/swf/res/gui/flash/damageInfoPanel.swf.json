@@ -1,0 +1,372 @@
+{
+ "source": "sources/res/gui/flash/damageInfoPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 55110,
+ "actual_length": 55110,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 152,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 190,
+  "DefineBitsLossless2": 24,
+  "DefineSprite": 6,
+  "FrameLabel": 3,
+  "FileAttributes": 1,
+  "PlaceObject3": 5,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 24,
+  "shapes": 1,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 27,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 31,
+   "class": "damageInfoPanelUI"
+  },
+  {
+   "id": 30,
+   "class": "damageInfoPanelItem"
+  },
+  {
+   "id": 28,
+   "class": "fireUI"
+  },
+  {
+   "id": 27,
+   "class": "damageInfoPanel_fla.fireAnim_4"
+  },
+  {
+   "id": 23,
+   "class": "DipLoaderDamagedUI"
+  },
+  {
+   "id": 22,
+   "class": "DipAmmoBayDestroyedUI"
+  },
+  {
+   "id": 21,
+   "class": "DipAmmoBayDamagedUI"
+  },
+  {
+   "id": 20,
+   "class": "DipDriverDamagedUI"
+  },
+  {
+   "id": 19,
+   "class": "DipEngineDestroyedUI"
+  },
+  {
+   "id": 18,
+   "class": "DipEngineDamagedUI"
+  },
+  {
+   "id": 17,
+   "class": "DipFuelTankDestroyedUI"
+  },
+  {
+   "id": 16,
+   "class": "DipFuelTankDamagedUI"
+  },
+  {
+   "id": 15,
+   "class": "DipGunDestroyedUI"
+  },
+  {
+   "id": 14,
+   "class": "DipGunDamagedUI"
+  },
+  {
+   "id": 13,
+   "class": "DipGunnerDamagedUI"
+  },
+  {
+   "id": 12,
+   "class": "DipTurretRotatorDestroyedUI"
+  },
+  {
+   "id": 11,
+   "class": "DipTurretRotatorDamagedUI"
+  },
+  {
+   "id": 10,
+   "class": "DipRadioDestroyedUI"
+  },
+  {
+   "id": 9,
+   "class": "DipRadioDamagedUI"
+  },
+  {
+   "id": 8,
+   "class": "DipRadiomanDamagedUI"
+  },
+  {
+   "id": 7,
+   "class": "DipTracksDestroyedUI"
+  },
+  {
+   "id": 6,
+   "class": "DipTracksDamagedUI"
+  },
+  {
+   "id": 5,
+   "class": "DipSurveyingDeviceDestroyedUI"
+  },
+  {
+   "id": 4,
+   "class": "DipSurveyingDeviceDamagedUI"
+  },
+  {
+   "id": 3,
+   "class": "DipCommanderDamagedUI"
+  },
+  {
+   "id": 2,
+   "class": "DipWheelDamagedUI"
+  },
+  {
+   "id": 1,
+   "class": "DipWheelDestroyedUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4098,
+   "classes": 27,
+   "methods": 88,
+   "bodies": 88,
+   "code_bytes": 1032
+  }
+ ],
+ "classes": [
+  {
+   "name": "DipAmmoBayDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipAmmoBayDestroyedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipCommanderDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipDriverDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipEngineDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipEngineDestroyedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipFuelTankDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipFuelTankDestroyedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipGunDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipGunDestroyedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipGunnerDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipLoaderDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipRadioDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipRadioDestroyedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipRadiomanDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipSurveyingDeviceDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipSurveyingDeviceDestroyedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipTracksDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipTracksDestroyedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipTurretRotatorDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipTurretRotatorDestroyedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipWheelDamagedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DipWheelDestroyedUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "damageInfoPanel_fla.fireAnim_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "damageInfoPanelItem",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damageInfoPanel.components.DamageItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fireUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damageInfoPanel.components.Fire",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "damageInfoPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.damageInfoPanel.DamageInfoPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

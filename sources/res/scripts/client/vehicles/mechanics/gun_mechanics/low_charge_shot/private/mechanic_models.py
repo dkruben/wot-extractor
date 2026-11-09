@@ -1,0 +1,84 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/vehicles/mechanics/gun_mechanics/low_charge_shot/private/mechanic_models.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/vehicles/mechanics/gun_mechanics/low_charge_shot/private/mechanic_models.py
+from __future__ import absolute_import
+import typing, BigWorld
+from constants import LowChargeShotReloadingState
+from gui.battle_control.battle_constants import CANT_SHOOT_ERROR
+from gui.battle_control.components_states.ammo import DefaultComponentAmmoState, AmmoShootPossibility
+from gui.battle_control.components_states.ammo.constants import ShellMode
+from gui.battle_control.components_states.ammo.shells import DefaultAmmoMode
+from gui.shared.utils.decorators import ReprInjector
+from vehicles.mechanics.mechanic_states import IMechanicState
+if typing.TYPE_CHECKING:
+    from gui.battle_control.components_states.ammo.interfaces import IAmmoMode
+
+@ReprInjector.simple('reloadingState', 'timeLeft', 'baseTime', 'endTime', 'lowChargeTime')
+class LowChargeShotMechanicState(typing.NamedTuple('LowChargeShotMechanicState', (
+ (
+  'reloadingState', LowChargeShotReloadingState),
+ (
+  'timeLeft', float),
+ (
+  'baseTime', float),
+ (
+  'endTime', float),
+ (
+  'lowChargeTime', float),
+ (
+  'almostFinishedTime', float),
+ (
+  'reloadTimeCoefficient', float))), IMechanicState):
+
+    @classmethod
+    def fromComponentStatus(cls, status, params):
+        return cls(status.reloadingState, status.timeLeft, status.baseTime, status.endTime, status.lowChargeTime, params.almostFinishedTime, params.reloadTimeCoefficient)
+
+    @property
+    def duration(self):
+        timeLeftCalculated = self.calculateTimeLeft()
+        if self.reloadingState == LowChargeShotReloadingState.INITIAL_RELOAD:
+            return self.lowChargeTime - (self.baseTime - timeLeftCalculated)
+        if self.reloadingState == LowChargeShotReloadingState.LOW_CHARGE:
+            return timeLeftCalculated - self.almostFinishedTime
+        if self.reloadingState == LowChargeShotReloadingState.ALMOST_FINISHED:
+            return timeLeftCalculated
+        if self.reloadingState == LowChargeShotReloadingState.QUICK_RELOAD:
+            return timeLeftCalculated
+        return self.timeLeft
+
+    def isTransition(self, other):
+        return self.reloadingState != other.reloadingState
+
+    def calculateTimeLeft(self):
+        return max(0.0, self.endTime - BigWorld.serverTime())
+
+
+class LowChargeShotAmmoMode(DefaultAmmoMode):
+
+    def getShellMode(self, shellIntCD):
+        return ShellMode.LOW_CHARGE_SHOT
+
+
+class LowChargeShotAmmoState(DefaultComponentAmmoState):
+
+    def __init__(self, mechanicState):
+        self.__mechanicState = mechanicState
+        self.__ammoMode = LowChargeShotAmmoMode()
+
+    def canShootValidation(self):
+        if self.__mechanicState.reloadingState == LowChargeShotReloadingState.ALMOST_FINISHED:
+            return (False, CANT_SHOOT_ERROR.LOW_CHARGE_SHOT_BLOCKING)
+        return super(LowChargeShotAmmoState, self).canShootValidation()
+
+    def getShootPossibility(self, currentShells):
+        if currentShells[0] > 0 and self.__mechanicState.reloadingState in (
+         LowChargeShotReloadingState.LOW_CHARGE,
+         LowChargeShotReloadingState.FULL_CHARGE):
+            return AmmoShootPossibility.ALLOWED
+        return AmmoShootPossibility.DENIED
+
+    def getAmmoMode(self):
+        return self.__ammoMode

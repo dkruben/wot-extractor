@@ -1,0 +1,64 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.SlotParts.Inside",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Inside",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside",
+  "feature": null,
+  "files": [
+    {
+      "name": "Inside.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside/Inside.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside/Inside.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Inside.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside/Inside.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside/Inside.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Inside.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside/Inside.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside/Inside.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside/Inside.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside/Inside.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside/Inside.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside/Inside.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Inside/Inside.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.SlotParts.Inside",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

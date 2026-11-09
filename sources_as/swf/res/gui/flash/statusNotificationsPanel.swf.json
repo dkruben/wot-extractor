@@ -1,0 +1,712 @@
+{
+ "source": "sources/res/gui/flash/statusNotificationsPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 615522,
+ "actual_length": 615522,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 39,
+  "ShowFrame": 907,
+  "DefineShape": 160,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 1042,
+  "RemoveObject2": 10,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 48,
+  "DefineEditText": 13,
+  "DefineSprite": 38,
+  "FrameLabel": 35,
+  "FileAttributes": 1,
+  "PlaceObject3": 19,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 12,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 49,
+  "shapes": 160,
+  "sprites": 38,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 13,
+  "fonts": 0,
+  "classes": 57,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "timersPanel.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 260,
+   "class": "DamageZoneIconContentCNUI"
+  },
+  {
+   "id": 259,
+   "class": "statusNotificationsPanel_fla.skullCNAnimation_2"
+  },
+  {
+   "id": 255,
+   "class": "DamageZoneIconContentUI"
+  },
+  {
+   "id": 254,
+   "class": "statusNotificationsPanel_fla.skullAnimation_5"
+  },
+  {
+   "id": 250,
+   "class": "OrangeZoneIconContentUI"
+  },
+  {
+   "id": 245,
+   "class": "RecoverIconContentUI"
+  },
+  {
+   "id": 234,
+   "class": "battleRoyaleDestroyTimersPanelImports"
+  },
+  {
+   "id": 233,
+   "class": "BattleRoyaleDestroyTimerUI"
+  },
+  {
+   "id": 230,
+   "class": "TimerDescUI"
+  },
+  {
+   "id": 228,
+   "class": "DestroyTimerContainerUI"
+  },
+  {
+   "id": 226,
+   "class": "barGreen"
+  },
+  {
+   "id": 80,
+   "class": "IconSwitcherUI"
+  },
+  {
+   "id": 79,
+   "class": "BattleRoyaleTimerUI"
+  },
+  {
+   "id": 78,
+   "class": "BattleRoyaleTimerContainerUI"
+  },
+  {
+   "id": 72,
+   "class": "BattleRoyaleTimerDescUI"
+  },
+  {
+   "id": 70,
+   "class": "statusNotificationsPanel_fla.bg_22"
+  },
+  {
+   "id": 64,
+   "class": "containerUI"
+  },
+  {
+   "id": 63,
+   "class": "resupplyTimerSmallUI"
+  },
+  {
+   "id": 59,
+   "class": "ResupplyTimerUI"
+  },
+  {
+   "id": 53,
+   "class": "statusNotificationsPanel_fla.resupplyIconSmall_28"
+  },
+  {
+   "id": 40,
+   "class": "statusNotificationsPanel_fla.resupplyIcon_33"
+  },
+  {
+   "id": 35,
+   "class": "StatusNotificationsPanelUI"
+  },
+  {
+   "id": 34,
+   "class": "NotificationsContainerUI"
+  },
+  {
+   "id": 33,
+   "class": "statusNotificationTimerUI"
+  },
+  {
+   "id": 32,
+   "class": "destroyTimerAirStrikeUI"
+  },
+  {
+   "id": 31,
+   "class": "Comp7AggressiveDetectionIconUI"
+  },
+  {
+   "id": 30,
+   "class": "Comp7AllySupportIconUI"
+  },
+  {
+   "id": 29,
+   "class": "Comp7AoeHealIconUI"
+  },
+  {
+   "id": 28,
+   "class": "Comp7AoeInspireIconUI"
+  },
+  {
+   "id": 27,
+   "class": "Comp7BerserkIconUI"
+  },
+  {
+   "id": 26,
+   "class": "Comp7ConcentrationIconUI"
+  },
+  {
+   "id": 25,
+   "class": "Comp7HunterIconUI"
+  },
+  {
+   "id": 24,
+   "class": "Comp7IlluminationFlareIconUI"
+  },
+  {
+   "id": 23,
+   "class": "Comp7JuggernautIconUI"
+  },
+  {
+   "id": 22,
+   "class": "Comp7MarchIconUI"
+  },
+  {
+   "id": 21,
+   "class": "Comp7RiskyAttackHealIconUI"
+  },
+  {
+   "id": 20,
+   "class": "Comp7RiskyAttackIconUI"
+  },
+  {
+   "id": 19,
+   "class": "Comp7SniperIconUI"
+  },
+  {
+   "id": 18,
+   "class": "Comp7SureShotIconUI"
+  },
+  {
+   "id": 17,
+   "class": "corrodingShotIconUI"
+  },
+  {
+   "id": 16,
+   "class": "destroyTimerDeathLandingUI"
+  },
+  {
+   "id": 15,
+   "class": "destroyTimerDangerZoneSmallUI"
+  },
+  {
+   "id": 14,
+   "class": "destroyTimerDangerZoneUI"
+  },
+  {
+   "id": 13,
+   "class": "fireCircleIconUI"
+  },
+  {
+   "id": 12,
+   "class": "HalfOverTurnedIconUI"
+  },
+  {
+   "id": 11,
+   "class": "secondaryTimerHealIconUI"
+  },
+  {
+   "id": 10,
+   "class": "hpRestoreOnDamageIconUI"
+  },
+  {
+   "id": 9,
+   "class": "secondaryTimerInspireSourceIconUI"
+  },
+  {
+   "id": 8,
+   "class": "destroyTimerRecoveryUI"
+  },
+  {
+   "id": 7,
+   "class": "secondaryTimerStealthIconUI"
+  },
+  {
+   "id": 6,
+   "class": "secondaryTimerStealthInactiveIconUI"
+  },
+  {
+   "id": 5,
+   "class": "secondaryAirStrikeUI"
+  },
+  {
+   "id": 4,
+   "class": "shotPassionIconUI"
+  },
+  {
+   "id": 3,
+   "class": "DamagingSmokeIconUI"
+  },
+  {
+   "id": 2,
+   "class": "enemySmokeIconUI"
+  },
+  {
+   "id": 1,
+   "class": "thunderStrikeIconUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 9571,
+   "classes": 57,
+   "methods": 205,
+   "bodies": 205,
+   "code_bytes": 2733
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7AggressiveDetectionIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7AllySupportIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7AoeHealIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7AoeInspireIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7BerserkIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7ConcentrationIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7HunterIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7IlluminationFlareIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7JuggernautIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7MarchIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7RiskyAttackHealIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7RiskyAttackIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7SniperIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7SureShotIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DamagingSmokeIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HalfOverTurnedIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "corrodingShotIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerAirStrikeUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerDangerZoneSmallUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerDangerZoneUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerDeathLandingUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "destroyTimerRecoveryUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "enemySmokeIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fireCircleIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "hpRestoreOnDamageIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryAirStrikeUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryTimerHealIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryTimerInspireSourceIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryTimerStealthIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "secondaryTimerStealthInactiveIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "shotPassionIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "thunderStrikeIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "IconSwitcherUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NotificationsContainerUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleTimerDescUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TimerDescUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextFieldContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OrangeZoneIconContentUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleRoyaleDestroyTimersPanelImports",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "containerUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statusNotificationsPanel_fla.bg_22",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statusNotificationsPanel_fla.resupplyIconSmall_28",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statusNotificationsPanel_fla.resupplyIcon_33",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statusNotificationsPanel_fla.skullAnimation_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statusNotificationsPanel_fla.skullCNAnimation_2",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BattleRoyaleTimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DestroyTimerContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.TimerContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RecoverIconContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BattleRoyaleIconContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "barGreen",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.components.CircleProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DamageZoneIconContentCNUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BRZoneDamageIconContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DamageZoneIconContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BRZoneDamageIconContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statusNotificationTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.StatusNotificationTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleDestroyTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.DestroyTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ResupplyTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.ResupplyTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "resupplyTimerSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.destroyTimers.ResupplyTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.battleRoyale.views.components.BattleRoyaleTimer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatusNotificationsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.StatusNotificationsPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

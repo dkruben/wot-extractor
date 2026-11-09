@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/VehicleSkillCounter.def -->
+<root>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<Properties>
+		<counterValue>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</counterValue>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>VehicleSkillCounter</DefaultKeyName>
+</root>

@@ -1,0 +1,78 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/shared/gui_items/vehicle_mechanics/constants.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/shared/gui_items/vehicle_mechanics/constants.py
+from __future__ import absolute_import
+from gui.impl.gen.view_models.common.vehicle_mechanic_model import MechanicsEnum
+from gui.shared.gui_items import GUI_ITEM_TYPE
+from items.vehicle_mechanics_types import VehicleMechanicKeys
+VEHICLE_MECHANICS_GUI_MAP = {(VehicleMechanicKeys.ACCURACY_STACKS): (MechanicsEnum.ACCURACY_STACKS), 
+   (VehicleMechanicKeys.AUTO_LOADER_GUN): (MechanicsEnum.AUTO_LOADER_GUN), 
+   (VehicleMechanicKeys.AUTO_LOADER_GUN_BOOST): (MechanicsEnum.AUTO_LOADER_GUN_BOOST), 
+   (VehicleMechanicKeys.AUTO_SHOOT_GUN): (MechanicsEnum.AUTO_SHOOT_GUN), 
+   (VehicleMechanicKeys.AUTORELOADER_SURGE): (MechanicsEnum.AUTORELOADER_SURGE), 
+   (VehicleMechanicKeys.AUXILIARY_ROCKET_LAUNCHER): (MechanicsEnum.AUXILIARY_ROCKET_LAUNCHER), 
+   (VehicleMechanicKeys.BATTLE_FURY): (MechanicsEnum.BATTLE_FURY), 
+   (VehicleMechanicKeys.BUSTLE_FEED): (MechanicsEnum.BUSTLE_FEED), 
+   (VehicleMechanicKeys.CHARGEABLE_BURST): (MechanicsEnum.CHARGEABLE_BURST), 
+   (VehicleMechanicKeys.CHARGE_SHOT): (MechanicsEnum.CHARGE_SHOT), 
+   (VehicleMechanicKeys.COMBAT_THROTTLE): (MechanicsEnum.COMBAT_THROTTLE), 
+   (VehicleMechanicKeys.CONCENTRATION_MODE): (MechanicsEnum.CONCENTRATION_MODE), 
+   (VehicleMechanicKeys.DAMAGE_MUTABLE): (MechanicsEnum.DAMAGE_MUTABLE), 
+   (VehicleMechanicKeys.DUAL_ACCURACY): (MechanicsEnum.DUAL_ACCURACY), 
+   (VehicleMechanicKeys.DUAL_GUN): (MechanicsEnum.DUAL_GUN), 
+   (VehicleMechanicKeys.EXTRA_SHOT_CLIP): (MechanicsEnum.EXTRA_SHOT_CLIP), 
+   (VehicleMechanicKeys.HEATING_ZONES_GUN): (MechanicsEnum.HEATING_ZONES_GUN), 
+   (VehicleMechanicKeys.HYDRAULIC_CHASSIS): (MechanicsEnum.HYDRAULIC_CHASSIS), 
+   (VehicleMechanicKeys.HYDRAULIC_WHEELED_CHASSIS): (MechanicsEnum.HYDRAULIC_WHEELED_CHASSIS), 
+   (VehicleMechanicKeys.IMPROVED_RAMMING): (MechanicsEnum.IMPROVED_RAMMING), 
+   (VehicleMechanicKeys.LOW_CHARGE_SHOT): (MechanicsEnum.LOW_CHARGE_SHOT), 
+   (VehicleMechanicKeys.MAGAZINE_GUN): (MechanicsEnum.MAGAZINE_GUN), 
+   (VehicleMechanicKeys.OVERHEAT_GUN): (MechanicsEnum.OVERHEAT_GUN), 
+   (VehicleMechanicKeys.OVERHEAT_STACKS): (MechanicsEnum.OVERHEAT_STACKS), 
+   (VehicleMechanicKeys.PILLBOX_SIEGE_MODE): (MechanicsEnum.PILLBOX_SIEGE_MODE), 
+   (VehicleMechanicKeys.POWER_MODE): (MechanicsEnum.POWER_MODE), 
+   (VehicleMechanicKeys.PROPELLANT_GUN): (MechanicsEnum.PROPELLANT_GUN), 
+   (VehicleMechanicKeys.RECHARGEABLE_NITRO): (MechanicsEnum.RECHARGEABLE_NITRO), 
+   (VehicleMechanicKeys.ROCKET_ACCELERATION): (MechanicsEnum.ROCKET_ACCELERATION), 
+   (VehicleMechanicKeys.SIEGE_MODE): (MechanicsEnum.SIEGE_MODE), 
+   (VehicleMechanicKeys.SHELL_CALIBRATION): (MechanicsEnum.SHELL_CALIBRATION), 
+   (VehicleMechanicKeys.SHELL_PARAMS_SWITCHER): (MechanicsEnum.SHELL_PARAMS_SWITCHER), 
+   (VehicleMechanicKeys.SIGHT_POINTER): (MechanicsEnum.SIGHT_POINTER), 
+   (VehicleMechanicKeys.STAGED_JET_BOOSTERS): (MechanicsEnum.STAGED_JET_BOOSTERS), 
+   (VehicleMechanicKeys.STANCE_DANCE): (MechanicsEnum.STANCE_DANCE), 
+   (VehicleMechanicKeys.STATIONARY_RELOAD): (MechanicsEnum.STATIONARY_RELOAD), 
+   (VehicleMechanicKeys.STUN): (MechanicsEnum.STUN), 
+   (VehicleMechanicKeys.SUPPORT_WEAPON): (MechanicsEnum.SUPPORT_WEAPON), 
+   (VehicleMechanicKeys.TARGET_DESIGNATOR): (MechanicsEnum.TARGET_DESIGNATOR), 
+   (VehicleMechanicKeys.TRACK_WITHIN_TRACK): (MechanicsEnum.TRACK_WITHIN_TRACK), 
+   (VehicleMechanicKeys.TURBOSHAFT_ENGINE): (MechanicsEnum.TURBOSHAFT_ENGINE), 
+   (VehicleMechanicKeys.TWIN_GUN): (MechanicsEnum.TWIN_GUN), 
+   (VehicleMechanicKeys.WHEELED_DASH): (MechanicsEnum.WHEELED_DASH)}
+MECHANIC_OVERRIDES = {(GUI_ITEM_TYPE.GUN): {(VehicleMechanicKeys.AUTO_LOADER_GUN_BOOST): {
+                                                                     VehicleMechanicKeys.AUTO_LOADER_GUN, VehicleMechanicKeys.MAGAZINE_GUN}, 
+                         (VehicleMechanicKeys.AUTO_LOADER_GUN): {
+                                                               VehicleMechanicKeys.MAGAZINE_GUN}, 
+                         (VehicleMechanicKeys.AUTO_SHOOT_GUN): {
+                                                              VehicleMechanicKeys.MAGAZINE_GUN}, 
+                         (VehicleMechanicKeys.OVERHEAT_GUN): {
+                                                            VehicleMechanicKeys.AUTO_SHOOT_GUN, VehicleMechanicKeys.TEMPERATURE_GUN}, 
+                         (VehicleMechanicKeys.HEATING_ZONES_GUN): {
+                                                                 VehicleMechanicKeys.TEMPERATURE_GUN}}, 
+   (GUI_ITEM_TYPE.CHASSIS): {(VehicleMechanicKeys.HYDRAULIC_WHEELED_CHASSIS): {
+                                                                             VehicleMechanicKeys.HYDRAULIC_CHASSIS}}, 
+   (GUI_ITEM_TYPE.VEHICLE): {(VehicleMechanicKeys.DUAL_GUN): {
+                                                            VehicleMechanicKeys.SIEGE_MODE}, 
+                             (VehicleMechanicKeys.DUAL_ACCURACY): {
+                                                                 VehicleMechanicKeys.SIEGE_MODE}, 
+                             (VehicleMechanicKeys.HYDRAULIC_WHEELED_CHASSIS): {
+                                                                             VehicleMechanicKeys.SIEGE_MODE}, 
+                             (VehicleMechanicKeys.LOW_CHARGE_SHOT): {
+                                                                   VehicleMechanicKeys.SIEGE_MODE}, 
+                             (VehicleMechanicKeys.SHELL_PARAMS_SWITCHER): {
+                                                                         VehicleMechanicKeys.SIEGE_MODE}, 
+                             (VehicleMechanicKeys.TURBOSHAFT_ENGINE): {
+                                                                     VehicleMechanicKeys.SIEGE_MODE}, 
+                             (VehicleMechanicKeys.TWIN_GUN): {
+                                                            VehicleMechanicKeys.SIEGE_MODE}}}

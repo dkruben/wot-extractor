@@ -1,0 +1,109 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/wgnc/xml/format_by_tags.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import re as re
+from debug_utils import LOG_CURRENT_EXCEPTION as LOG_CURRENT_EXCEPTION, LOG_WARNING as LOG_WARNING
+from gui.impl import backport as backport
+from helpers import i18n as i18n
+_RE_FLAGS: Any
+_LINK_HTML = '<a href="event:{0}">{1}</a>'
+_formatters: tuple
+
+class _TagFormatter(object):
+    __slots__: tuple
+    _compiled: Any
+    def __init__(self, name):
+        ...
+    def format(self, text):
+        ...
+    def _prepare(self, results):
+        ...
+    def _makePattern(self, name):
+        ...
+
+class _ValueFormatter(_TagFormatter):
+    def _prepare(self, results):
+        ...
+    def _getValue(self, value):
+        ...
+    def _makePattern(self, name):
+        ...
+
+class _GoldFormatter(_ValueFormatter):
+    def __init__(self):
+        ...
+    def _getValue(self, value):
+        ...
+
+class _IntegerFormatter(_ValueFormatter):
+    def __init__(self):
+        ...
+    def _getValue(self, value):
+        ...
+
+class _FloatFormatter(_ValueFormatter):
+    def __init__(self):
+        ...
+    def _getValue(self, value):
+        ...
+
+class _NiceNumberFormatter(_ValueFormatter):
+    def __init__(self):
+        ...
+    def _getValue(self, value):
+        ...
+
+class _TimeFormatter(_ValueFormatter):
+    def _getLocalTime(self, value):
+        ...
+
+class _ShortTimeFormatter(_TimeFormatter):
+    def __init__(self):
+        ...
+    def _getValue(self, value):
+        ...
+
+class _LongTimeFormatter(_TimeFormatter):
+    def __init__(self):
+        ...
+    def _getValue(self, value):
+        ...
+
+class _ShortDateFormatter(_TimeFormatter):
+    def __init__(self):
+        ...
+    def _getValue(self, value):
+        ...
+
+class _LongDateFormatter(_TimeFormatter):
+    def __init__(self):
+        ...
+    def _getValue(self, value):
+        ...
+
+class _DateTimeFormatter(_TimeFormatter):
+    def __init__(self):
+        ...
+    def _getValue(self, value):
+        ...
+
+class _LinkFormatter(_TagFormatter):
+    def __init__(self):
+        ...
+    def _prepare(self, results):
+        ...
+    def _makePattern(self, name):
+        ...
+
+class _LocalizationFormatter(_TagFormatter):
+    def __init__(self):
+        ...
+    def _prepare(self, results):
+        ...
+    def _makePattern(self, name):
+        ...
+
+def formatText(text):
+    ...

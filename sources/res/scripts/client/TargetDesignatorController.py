@@ -1,0 +1,119 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/TargetDesignatorController.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/TargetDesignatorController.py
+from __future__ import absolute_import, division
+import typing, BigWorld
+from constants import TARGET_DESIGNATOR_STATE as STATE
+from gui.shared.utils.decorators import ReprInjector
+from items.vehicle_mechanics_types import VehicleMechanicKey, VehicleMechanicKeys
+from vehicles.components.vehicle_component import VehicleDynamicComponent
+from vehicles.components.vehicle_prefabs import createMechanicPrefabSpawner
+from vehicles.mechanics.common import IMechanicComponent
+from vehicles.mechanics.mechanic_commands import IMechanicCommandsComponent, createMechanicCommandsEvents
+from vehicles.mechanics.mechanic_constants import VehicleMechanicCommand
+from vehicles.mechanics.mechanic_helpers import getVehicleDescrMechanicParams
+from vehicles.mechanics.mechanic_states import IMechanicState, IMechanicStatesComponent, createMechanicStatesEvents
+if typing.TYPE_CHECKING:
+    from typing import Optional
+    from items.components.shared_components import TargetDesignatorParams
+    from vehicles.mechanics.mechanic_commands import IMechanicCommandsEvents
+    from vehicles.mechanics.mechanic_states import IMechanicStatesEvents
+
+@ReprInjector.simple('state', 'startTime', 'endTime')
+class TargetDesignatorState(IMechanicState):
+    __slots__ = ('state', 'params', 'baseTime', 'startTime', 'endTime')
+
+    def __init__(self, state, params, startTime=0.0, endTime=0.0):
+        self.state = state
+        self.params = params
+        self.baseTime = endTime - startTime
+        self.startTime = startTime
+        self.endTime = endTime
+
+    def timeLeft(self):
+        if self.state == STATE.PRE_BATTLE:
+            if self.params is not None:
+                return self.params.deployTime
+            return 0
+        return max(0.0, self.endTime - BigWorld.serverTime() if self.endTime > 0 else self.baseTime)
+
+    def baseTimeLeft(self):
+        return max(0.0, self.startTime + self.baseTime - BigWorld.serverTime() if self.endTime > 0 else self.baseTime)
+
+    def progress(self, timeLeft):
+        if self.baseTime > 0:
+            return 1.0 - timeLeft / self.baseTime
+        return 1.0
+
+    def isTransition(self, other):
+        return self.state != other.state
+
+
+@ReprInjector.withParent()
+class TargetDesignatorController(VehicleDynamicComponent, IMechanicComponent, IMechanicCommandsComponent, IMechanicStatesComponent):
+
+    def __init__(self):
+        super(TargetDesignatorController, self).__init__()
+        self.__mechanicPrefabSpawner = createMechanicPrefabSpawner(self.entity, self)
+        self.__commandsEvents = createMechanicCommandsEvents(self)
+        self.__statesEvents = createMechanicStatesEvents(self)
+        self.__params = None
+        self.__state = self.__updateState()
+        self._initComponent()
+        return
+
+    @property
+    def vehicleMechanicKey(self):
+        return VehicleMechanicKeys.TARGET_DESIGNATOR
+
+    @property
+    def commandsEvents(self):
+        return self.__commandsEvents
+
+    @property
+    def statesEvents(self):
+        return self.__statesEvents
+
+    def getComponentParams(self):
+        return self.__params
+
+    def getMechanicState(self):
+        return self.__state
+
+    def set_abilityState(self, _):
+        self._updateComponentAppearance()
+
+    def onDestroy(self):
+        self.__params = None
+        self.__commandsEvents.destroy()
+        self.__statesEvents.destroy()
+        super(TargetDesignatorController, self).onDestroy()
+        return
+
+    def tryActivate(self):
+        self.__commandsEvents.processMechanicCommand(VehicleMechanicCommand.ACTIVATE)
+        if self.__state.state != STATE.READY:
+            return
+        self.cell.tryActivate()
+
+    def _onAppearanceReady(self):
+        super(TargetDesignatorController, self)._onAppearanceReady()
+        self.__state = self.__updateState()
+        self.__statesEvents.processStatePrepared()
+
+    def _onComponentAppearanceUpdate(self, **kwargs):
+        super(TargetDesignatorController, self)._onComponentAppearanceUpdate(**kwargs)
+        self.__state = newState = self.__updateState()
+        self.__statesEvents.updateMechanicState(newState)
+
+    def _collectComponentParams(self, typeDescriptor):
+        super(TargetDesignatorController, self)._collectComponentParams(typeDescriptor)
+        self.__params = getVehicleDescrMechanicParams(typeDescriptor, self.vehicleMechanicKey)
+
+    def __updateState(self):
+        if self.abilityState is None:
+            return TargetDesignatorState(STATE.PRE_BATTLE, self.__params)
+        else:
+            return TargetDesignatorState(self.abilityState.state, self.__params, self.abilityState.startTime, self.abilityState.endTime)

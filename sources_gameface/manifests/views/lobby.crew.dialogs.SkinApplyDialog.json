@@ -1,0 +1,134 @@
+{
+  "rid": "R.views.lobby.crew.dialogs.SkinApplyDialog",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SkinApplyDialog",
+  "dir": "gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog",
+  "feature": null,
+  "files": [
+    {
+      "name": "SkinApplyDialog.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog/SkinApplyDialog.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog/SkinApplyDialog.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SkinApplyDialog.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog/SkinApplyDialog.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog/SkinApplyDialog.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SkinApplyDialog.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog/SkinApplyDialog.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog/SkinApplyDialog.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog/SkinApplyDialog.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog/SkinApplyDialog.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog/SkinApplyDialog.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog/SkinApplyDialog.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/dialogs/SkinApplyDialog/SkinApplyDialog.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged",
+    "trigger:subView:destroy"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "dialogs.common.DialogTemplateGenericTooltip",
+    "lobby.common.tooltips.ExtendedTextTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.dialogs.SkinApplyDialog",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.crew.dialogs.SkinApplyDialog no Python",
+      "ViewModel SkinApplyDialogModel (convencao de nomes): 9/9 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/skin_apply_dialog.py",
+        22
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/skin_apply_dialog.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/dialogs/skin_apply_dialog_model.py",
+      "class": "SkinApplyDialogModel",
+      "chain": [
+        "SkinApplyDialogModel",
+        "DialogTemplateViewModel"
+      ],
+      "properties": [
+        [
+          "description",
+          "String"
+        ],
+        [
+          "focus",
+          "ViewModel"
+        ],
+        [
+          "buttons",
+          "Array"
+        ],
+        [
+          "placeHolders",
+          "Array"
+        ],
+        [
+          "background",
+          "Resource"
+        ],
+        [
+          "dimmerAlpha",
+          "Real"
+        ],
+        [
+          "displayFlags",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onButtonClicked",
+        "onCloseClicked"
+      ],
+      "coverage": {
+        "found": 9,
+        "total": 9,
+        "missing": []
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

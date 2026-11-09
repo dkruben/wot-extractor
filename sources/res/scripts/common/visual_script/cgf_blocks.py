@@ -1,0 +1,97 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/common/visual_script/cgf_blocks.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/common/visual_script/cgf_blocks.py
+from __future__ import absolute_import
+import typing, weakref
+from visual_script.block import Meta, Block
+from visual_script.misc import ASPECT
+from visual_script.contexts.cgf_context import GameObjectWrapper
+from visual_script.slot_types import SLOT_TYPE, arrayOf
+from visual_script.type import VScriptStructField, VScriptStruct
+from vehicle_filters import getVehicleFilters
+
+class CGFMeta(Meta):
+
+    @classmethod
+    def blockColor(cls):
+        return 16540163
+
+    @classmethod
+    def blockCategory(cls):
+        return 'CGF'
+
+    @classmethod
+    def blockIcon(cls):
+        return ':vse/blocks/cgf'
+
+    @classmethod
+    def blockAspects(cls):
+        return [ASPECT.CLIENT, ASPECT.HANGAR, ASPECT.SERVER]
+
+
+class GetEntityGameObject(Block, CGFMeta):
+
+    def __init__(self, *args, **kwargs):
+        super(GetEntityGameObject, self).__init__(*args, **kwargs)
+        self._entity = self._makeDataInputSlot('entity', SLOT_TYPE.ENTITY)
+        self._gameObject = self._makeDataOutputSlot('gameObject', SLOT_TYPE.GAME_OBJECT, self._exec)
+
+    def _exec(self):
+        entity = self._entity.getValue()
+        gameObject = entity.entityGameObject
+        goWrapper = GameObjectWrapper(gameObject)
+        self._gameObject.setValue(weakref.proxy(goWrapper))
+
+
+class PrefabsToVehFilter(VScriptStruct):
+    filter = VScriptStructField('filter', SLOT_TYPE.STR)
+    prefabs = VScriptStructField('prefabs', arrayOf(SLOT_TYPE.STR))
+
+    @classmethod
+    def vs_aspects(cls):
+        return [
+         ASPECT.CLIENT, ASPECT.SERVER]
+
+
+class GetPrefabsByVehicleFilter(Block, CGFMeta):
+
+    def __init__(self, *args, **kwargs):
+        super(GetPrefabsByVehicleFilter, self).__init__(*args, **kwargs)
+        self._in = self._makeEventInputSlot('in', self._execute)
+        self._vehicle = self._makeDataInputSlot('vehicle', SLOT_TYPE.VEHICLE)
+        self._filters = self._makeDataInputSlot('filters', arrayOf(PrefabsToVehFilter.slotType()))
+        self._defaultPrefabs = self._makeDataInputSlot('default', arrayOf(SLOT_TYPE.STR))
+        self._out = self._makeEventOutputSlot('out')
+        self._prefabs = self._makeDataOutputSlot('prefabs', arrayOf(SLOT_TYPE.STR), None)
+        return
+
+    @classmethod
+    def blockAspects(cls):
+        return [
+         ASPECT.CLIENT, ASPECT.SERVER]
+
+    def validate(self):
+        if not self._vehicle.hasValue():
+            return 'Vehicle value is required.'
+        if not self._filters.hasValue():
+            return 'Filters value is required.'
+        if not self._defaultPrefabs.hasValue():
+            return 'Default prefabs value is required.'
+        return super(GetPrefabsByVehicleFilter, self).validate()
+
+    def _execute(self):
+        vehicle = self._vehicle.getValue()
+        filtersModel = getVehicleFilters()
+        prefabs = None
+        for prefabsToFilter in self._filters.getValue():
+            if filtersModel.isVehicleMatchByFilter(prefabsToFilter.filter, vehicle.typeDescriptor):
+                prefabs = prefabsToFilter.prefabs
+                break
+
+        if prefabs is None:
+            prefabs = self._defaultPrefabs.getValue()
+        self._prefabs.setValue(prefabs)
+        self._out.call()
+        return

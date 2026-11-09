@@ -1,0 +1,23 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/VehicleLivesComponent.def -->
+<root>
+	<CellMethods />
+	<ClientMethods />
+	<Properties>
+		<lives>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</lives>
+		<usedLives>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</usedLives>
+		<lockedLives>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</lockedLives>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>VehicleLivesComponent</DefaultKeyName>
+</root>

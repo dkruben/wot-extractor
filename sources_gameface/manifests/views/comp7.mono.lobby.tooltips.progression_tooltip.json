@@ -1,0 +1,183 @@
+{
+  "rid": "R.views.comp7.mono.lobby.tooltips.progression_tooltip",
+  "rid_source": "sources/res/comp7/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "progression_tooltip",
+  "dir": "comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip",
+  "feature": "comp7",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/bundle.js",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/bundle.js"
+    },
+    {
+      "name": "progression_tooltip.css",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.css",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "progression_tooltip.html",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.html",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/qualification_battle_item.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/qualification_battle_item.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/rank_emblem.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/rank_emblem.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/tooltip_decorator.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/tooltip_decorator.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/tooltips.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/tooltips.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/bundle.js",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/bundle.js"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.comp7.mono.lobby.tooltips.progression_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "4 referencia(s) R.views.comp7.mono.lobby.tooltips.progression_tooltip no Python",
+      "ViewModel EntryPointModel (model=... no Python da view): 3/14 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/entry_point_presenter.py",
+        39
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/mode_selector/items/comp7_mode_selector_item.py",
+        43
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/tooltips/progression_tooltip.py",
+        21
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/prb_control/__init__.py",
+        26
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/entry_point_presenter.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/mode_selector/items/comp7_mode_selector_item.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/tooltips/progression_tooltip.py",
+      "sources/res/comp7/scripts/client/comp7/gui/prb_control/__init__.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/lobby/entry_point_model.py",
+      "class": "EntryPointModel",
+      "chain": [
+        "EntryPointModel"
+      ],
+      "properties": [
+        [
+          "divisionInfo",
+          "ViewModel"
+        ],
+        [
+          "qualificationModel",
+          "ViewModel"
+        ],
+        [
+          "seasonName",
+          "String"
+        ],
+        [
+          "isEnabled",
+          "Bool"
+        ],
+        [
+          "rank",
+          "Number"
+        ],
+        [
+          "currentScore",
+          "Number"
+        ],
+        [
+          "prevScore",
+          "Number"
+        ],
+        [
+          "topPercentage",
+          "Number"
+        ],
+        [
+          "rankInactivityCount",
+          "Number"
+        ],
+        [
+          "hasRankInactivity",
+          "Bool"
+        ],
+        [
+          "isEntryPointAnimationSeen",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onOpenMeta",
+        "onAnimationEnd",
+        "onEntryPointAnimationSeen"
+      ],
+      "coverage": {
+        "found": 3,
+        "total": 14,
+        "missing": [
+          "currentScore",
+          "hasRankInactivity",
+          "isEnabled",
+          "isEntryPointAnimationSeen",
+          "onAnimationEnd",
+          "onEntryPointAnimationSeen",
+          "onOpenMeta",
+          "prevScore",
+          "rank",
+          "rankInactivityCount",
+          "topPercentage"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/lobby/tooltips/progression_tooltip_model.py"
+      ]
+    }
+  }
+}

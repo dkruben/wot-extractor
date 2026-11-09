@@ -1,0 +1,43 @@
+/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable scss/dollar-variable-pattern */
+.EventWelcomeViewApp_566a7a4b {
+  background: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.bg") no-repeat 50%/cover;
+}
+
+.EventWelcomeViewApp_icon__image1_a88215bc {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_1_extraSmall");
+}
+.mediaSmall .EventWelcomeViewApp_icon__image1_a88215bc {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_1_small");
+}
+.mediaMedium .EventWelcomeViewApp_icon__image1_a88215bc {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_1_medium");
+}
+.mediaExtraLarge .EventWelcomeViewApp_icon__image1_a88215bc {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_1_extraLarge");
+}
+.EventWelcomeViewApp_icon__image2_3762aa2a {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_2_extraSmall");
+}
+.mediaSmall .EventWelcomeViewApp_icon__image2_3762aa2a {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_2_small");
+}
+.mediaMedium .EventWelcomeViewApp_icon__image2_3762aa2a {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_2_medium");
+}
+.mediaExtraLarge .EventWelcomeViewApp_icon__image2_3762aa2a {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_2_extraLarge");
+}
+.EventWelcomeViewApp_icon__image3_4343c2b1 {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_3_extraSmall");
+}
+.mediaSmall .EventWelcomeViewApp_icon__image3_4343c2b1 {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_3_small");
+}
+.mediaMedium .EventWelcomeViewApp_icon__image3_4343c2b1 {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_3_medium");
+}
+.mediaExtraLarge .EventWelcomeViewApp_icon__image3_4343c2b1 {
+  background-image: url("R.images.story_mode.gui.maps.icons.eventWelcomeScreen.card_3_extraLarge");
+}

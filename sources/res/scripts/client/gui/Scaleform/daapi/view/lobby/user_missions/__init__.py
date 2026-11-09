@@ -1,0 +1,47 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/user_missions/__init__.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/daapi/view/lobby/user_missions/__init__.py
+from __future__ import absolute_import
+from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
+from gui.Scaleform.daapi.view.lobby.user_missions.user_missions_hub_container_view import UserMissionsHubContainerView
+from gui.Scaleform.daapi.view.lobby.user_missions.user_missions_hub_content_inject import UserMissionsHubContentInject
+from gui.Scaleform.framework import WindowLayer, ScopeTemplates, ViewSettings, ComponentSettings
+from gui.Scaleform.framework.package_layout import PackageBusinessHandler
+from gui.Scaleform.genConsts.USERMISSSIONS_ALIASES import USERMISSSIONS_ALIASES
+from gui.app_loader import settings as app_settings
+from gui.impl.lobby.challenges.info_view import ChallengesInfoBrowserView
+from gui.shared.event_bus import EVENT_BUS_SCOPE
+
+def getStateMachineRegistrators():
+    from gui.Scaleform.daapi.view.lobby.user_missions.states import registerStates, registerTransitions
+    return (
+     registerStates, registerTransitions)
+
+
+def getContextMenuHandlers():
+    return ()
+
+
+def getViewSettings():
+    return (
+     ViewSettings(VIEW_ALIAS.USER_MISSIONS_HUB_CONTAINER, UserMissionsHubContainerView, 'userMissionsHubContainer.swf', WindowLayer.SUB_VIEW, VIEW_ALIAS.USER_MISSIONS_HUB_CONTAINER, ScopeTemplates.LOBBY_SUB_SCOPE),
+     ComponentSettings(USERMISSSIONS_ALIASES.USER_MISSIONS_HUB_CONTENT_INJECT, UserMissionsHubContentInject, ScopeTemplates.DEFAULT_SCOPE),
+     ViewSettings(VIEW_ALIAS.CHALLENGES_INFO, ChallengesInfoBrowserView, 'browserScreen.swf', WindowLayer.TOP_WINDOW, VIEW_ALIAS.CHALLENGES_INFO, ScopeTemplates.LOBBY_SUB_SCOPE))
+
+
+def getBusinessHandlers():
+    return (
+     UserMissionsHubPackageBusinessHandler(),)
+
+
+class UserMissionsHubPackageBusinessHandler(PackageBusinessHandler):
+
+    def __init__(self):
+        listeners = (
+         (
+          VIEW_ALIAS.USER_MISSIONS_HUB_CONTAINER, self.loadViewByCtxEvent),
+         (
+          VIEW_ALIAS.CHALLENGES_INFO, self.loadViewByCtxEvent))
+        super(UserMissionsHubPackageBusinessHandler, self).__init__(listeners, app_settings.APP_NAME_SPACE.SF_LOBBY, EVENT_BUS_SCOPE.LOBBY)

@@ -1,0 +1,143 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/statFirepower.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 136348,
+ "actual_length": 136348,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 21,
+  "ShowFrame": 952,
+  "DefineShape": 14,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 1234,
+  "RemoveObject2": 13,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 7,
+  "DefineSprite": 20,
+  "FileAttributes": 1,
+  "PlaceObject3": 10,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 7,
+  "shapes": 19,
+  "sprites": 20,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "statFirepower_fla.MainTimeline"
+  },
+  {
+   "id": 45,
+   "class": "statFirepower_fla.crosshairReloadFast_19"
+  },
+  {
+   "id": 44,
+   "class": "statFirepower_fla.crosshairReloadAnimFast_20"
+  },
+  {
+   "id": 43,
+   "class": "statFirepower_fla.crosshairReload_16"
+  },
+  {
+   "id": 42,
+   "class": "statFirepower_fla.crosshairReloadAnim_17"
+  },
+  {
+   "id": 35,
+   "class": "statFirepower_fla.tankShoot_12"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1444,
+   "classes": 6,
+   "methods": 24,
+   "bodies": 24,
+   "code_bytes": 397
+  }
+ ],
+ "classes": [
+  {
+   "name": "statFirepower_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statFirepower_fla.crosshairReloadAnimFast_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statFirepower_fla.crosshairReloadAnim_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statFirepower_fla.crosshairReloadFast_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statFirepower_fla.crosshairReload_16",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statFirepower_fla.tankShoot_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

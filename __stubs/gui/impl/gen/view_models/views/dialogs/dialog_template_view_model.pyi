@@ -1,0 +1,56 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/dialogs/dialog_template_view_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from gui.impl.gen import R as R
+from gui.impl.gen.view_models.views.dialogs.dialog_focus_view_model import DialogFocusViewModel as DialogFocusViewModel
+from gui.impl.gen.view_models.views.dialogs.dialog_template_button_view_model import DialogTemplateButtonViewModel as DialogTemplateButtonViewModel
+from gui.impl.gen.view_models.views.dialogs.dialog_template_place_holder_view_model import DialogTemplatePlaceHolderViewModel as DialogTemplatePlaceHolderViewModel
+
+class DialogTemplateViewModel(ViewModel):
+    __slots__: tuple
+    DEFAULT = 'default'
+    ESCAPE = 'escape'
+    onButtonClicked: Any
+    onCloseClicked: Any
+    def __init__(self, properties=6, commands=2):
+        ...
+    @property
+    def focus(self):
+        ...
+    @staticmethod
+    def getFocusType():
+        ...
+    def getButtons(self):
+        ...
+    def setButtons(self, value):
+        ...
+    @staticmethod
+    def getButtonsType():
+        ...
+    def getPlaceHolders(self):
+        ...
+    def setPlaceHolders(self, value):
+        ...
+    @staticmethod
+    def getPlaceHoldersType():
+        ...
+    def getBackground(self):
+        ...
+    def setBackground(self, value):
+        ...
+    def getDimmerAlpha(self):
+        ...
+    def setDimmerAlpha(self, value):
+        ...
+    def getDisplayFlags(self):
+        ...
+    def setDisplayFlags(self, value):
+        ...
+    @staticmethod
+    def getDisplayFlagsType():
+        ...
+    def _initialize(self):
+        ...

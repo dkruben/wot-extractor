@@ -1,0 +1,39 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/messenger/proto/bw_chat2/VOIPChatProvider.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from debug_utils import LOG_WARNING as LOG_WARNING, LOG_NOTE as LOG_NOTE
+from messenger.proto.bw_chat2 import errors as errors, provider as bw2_provider
+from messenger.proto.events import g_messengerEvents as g_messengerEvents
+from messenger.proto.interfaces import IVOIPChatProvider as IVOIPChatProvider
+from messenger_common_chat2 import MESSENGER_ACTION_IDS as _ACTIONS, messageArgs as messageArgs
+from messenger_common_chat2 import MESSENGER_LIMITS as _LIMITS
+_EMPTY_CHANNELS_PARAMS: tuple
+
+class VOIPChatProvider(bw2_provider.ResponseDictHandler, IVOIPChatProvider):
+    __channelParams: Any
+    def __init__(self, provider):
+        ...
+    def clear(self):
+        ...
+    def leave(self):
+        ...
+    def getChannelParams(self):
+        ...
+    def requestCredentials(self, reset=0, mode=0):
+        ...
+    def logVivoxLogin(self):
+        ...
+    def registerHandlers(self):
+        ...
+    def unregisterHandlers(self):
+        ...
+    def _onResponseSuccess(self, ids, args):
+        ...
+    def _onResponseFailure(self, ids, args):
+        ...
+    def __onChannelAvailable(self, _, args):
+        ...
+    def __onChannelLost(self, ids, args):
+        ...

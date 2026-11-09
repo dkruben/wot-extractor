@@ -1,0 +1,366 @@
+{
+ "source": "sources/res/gui/flash/customizationCarouselView.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 155940,
+ "actual_length": 155940,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  400.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#b9b9b9",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 54,
+  "ShowFrame": 1278,
+  "DefineShape": 56,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 903,
+  "RemoveObject2": 30,
+  "DefineShape3": 15,
+  "DefineBitsJPEG3": 2,
+  "DefineBitsLossless2": 52,
+  "DefineEditText": 7,
+  "DefineSprite": 53,
+  "FrameLabel": 40,
+  "DefineMorphShape": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 308,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 7,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 4,
+  "DoABC2": 1,
+  "DefineShape4": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 54,
+  "shapes": 78,
+  "sprites": 53,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 7,
+  "fonts": 0,
+  "classes": 24,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiLobbyBattleCarousels.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattleDynamic.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 192,
+   "class": "ItemArrowBigUI"
+  },
+  {
+   "id": 191,
+   "class": "ItemArrowSmallUI"
+  },
+  {
+   "id": 185,
+   "class": "SeparatorBigUI"
+  },
+  {
+   "id": 183,
+   "class": "SeparatorSmallUI"
+  },
+  {
+   "id": 180,
+   "class": "BorderNewUI"
+  },
+  {
+   "id": 178,
+   "class": "BorderNewWideUI"
+  },
+  {
+   "id": 174,
+   "class": "BookmarkBackingUI"
+  },
+  {
+   "id": 172,
+   "class": "BookmarkRendererUI"
+  },
+  {
+   "id": 167,
+   "class": "CarouselRendererAttachedDecalUI"
+  },
+  {
+   "id": 140,
+   "class": "CarouselRendererAttachedUI"
+  },
+  {
+   "id": 134,
+   "class": "CarouselRendererUI"
+  },
+  {
+   "id": 133,
+   "class": "ImageWithCustomHitUI"
+  },
+  {
+   "id": 100,
+   "class": "customizationCarouselView_fla.progressionLevelIcon_38"
+  },
+  {
+   "id": 75,
+   "class": "customizationCarouselView_fla.progressionStylesLevelIcon_37"
+  },
+  {
+   "id": 42,
+   "class": "customizationCarouselView_fla.progressionRewindIcon_36"
+  },
+  {
+   "id": 23,
+   "class": "CustomizationCarouselView_20_UI"
+  },
+  {
+   "id": 20,
+   "class": "CarouselHintUI"
+  },
+  {
+   "id": 18,
+   "class": "Empty3DAttachments_UI"
+  },
+  {
+   "id": 17,
+   "class": "VideoBtn_UI"
+  },
+  {
+   "id": 8,
+   "class": "LinkButton_UI"
+  },
+  {
+   "id": 6,
+   "class": "EmptySwatchUI"
+  },
+  {
+   "id": 2,
+   "class": "RadioRendererUI"
+  },
+  {
+   "id": 1,
+   "class": "cDisabledTextureUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 8969,
+   "classes": 24,
+   "methods": 119,
+   "bodies": 119,
+   "code_bytes": 2804
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "cDisabledTextureUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BorderNewUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BorderNewWideUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EmptySwatchUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ItemArrowBigUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ItemArrowSmallUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SeparatorBigUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SeparatorSmallUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "customizationCarouselView_fla.progressionLevelIcon_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "customizationCarouselView_fla.progressionRewindIcon_36",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "customizationCarouselView_fla.progressionStylesLevelIcon_37",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CarouselHintUI",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.UIComponentEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BookmarkBackingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.CustomizationCarouselBookmark",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CarouselRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.CarouselItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Empty3DAttachments_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.EmptyStateComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ImageWithCustomHitUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.ImageHitAreaWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadioRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.RadioRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CarouselRendererAttachedDecalUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.CarouselRendererAttachedDecal",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CarouselRendererAttachedUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.controls.CarouselRendererAttached",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationCarouselView_20_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.vehicleCustomization.CustomizationCarousel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BookmarkRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LinkButton_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VideoBtn_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

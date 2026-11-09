@@ -1,0 +1,122 @@
+{
+  "rid": "R.views.comp7.mono.lobby.season_statistics",
+  "rid_source": "sources/res/comp7/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "season_statistics",
+  "dir": "comp7/gui/gameface/_dist/production/mono/lobby/season_statistics",
+  "feature": "comp7",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/season_statistics/bundle.js",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/season_statistics/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7/gui/gameface/_dist/production/mono/lobby/season_statistics/bundle.js"
+    },
+    {
+      "name": "season_statistics.css",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/season_statistics/season_statistics.css",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/season_statistics/season_statistics.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "season_statistics.html",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/season_statistics/season_statistics.html",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/season_statistics/season_statistics.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/close_button.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/divine_glow.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/divine_glow.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/lace_divider.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/lace_divider.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/rank_emblem.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/rank_emblem.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/season_point.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/season_point.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/season_statistics/bundle.js",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/season_statistics/bundle.js"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/season_statistics/season_statistics.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/season_statistics/season_statistics.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "comp7.mono.lobby.tooltips.season_point_tooltip"
+  ],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.comp7.mono.lobby.season_statistics",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.comp7.mono.lobby.season_statistics no Python",
+      "ViewModel SeasonStatisticsModel (model=... no Python da view): 0/1 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/season_statistics.py",
+        249
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/season_statistics.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/lobby/meta_view/pages/season_statistics_model.py",
+      "class": "SeasonStatisticsModel",
+      "chain": [
+        "SeasonStatisticsModel"
+      ],
+      "properties": [
+        [
+          "dayOfMaxRatingIndex",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 1,
+        "missing": [
+          "dayOfMaxRatingIndex"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/lobby/season_statistics_model.py"
+      ]
+    }
+  }
+}

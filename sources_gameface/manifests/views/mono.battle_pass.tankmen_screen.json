@@ -1,0 +1,76 @@
+{
+  "rid": "R.views.mono.battle_pass.tankmen_screen",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "tankmen_screen",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tankmen_screen",
+  "feature": null,
+  "files": [
+    {
+      "name": "tankmen_screen.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tankmen_screen/tankmen_screen.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tankmen_screen/tankmen_screen.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "tankmen_screen.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tankmen_screen/tankmen_screen.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tankmen_screen/tankmen_screen.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/constants.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/constants.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/rolldown-runtime.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/rolldown-runtime.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/tankmen_screen.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/tankmen_screen.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/vendor.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/vendor.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tankmen_screen/tankmen_screen.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tankmen_screen/tankmen_screen.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.battle_pass.tankmen_screen",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

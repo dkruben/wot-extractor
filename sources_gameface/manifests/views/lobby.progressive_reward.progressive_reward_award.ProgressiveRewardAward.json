@@ -1,0 +1,95 @@
+{
+  "rid": "R.views.lobby.progressive_reward.progressive_reward_award.ProgressiveRewardAward",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "ProgressiveRewardAward",
+  "dir": "gui/unbound/views/lobby/progressive_reward",
+  "feature": null,
+  "files": [
+    {
+      "name": "progressive_reward_award.unbound",
+      "effective": "res/gui/unbound/views/lobby/progressive_reward/progressive_reward_award.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/progressive_reward/progressive_reward_award.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.progressive_reward.progressive_reward_award.ProgressiveRewardAward",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.progressive_reward.progressive_reward_award.ProgressiveRewardAward no Python",
+      "ViewModel ProgressiveRewardAwardModel (model=... no Python da view): 9/11 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/progressive_reward/progressive_reward_award_view.py",
+        174
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/progressive_reward/progressive_reward_award_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/progressive_reward/progressive_reward_award_model.py",
+      "class": "ProgressiveRewardAwardModel",
+      "chain": [
+        "ProgressiveRewardAwardModel"
+      ],
+      "properties": [
+        [
+          "awardType",
+          "String"
+        ],
+        [
+          "steps",
+          "Array"
+        ],
+        [
+          "stepIdx",
+          "Number"
+        ],
+        [
+          "hardReset",
+          "Bool"
+        ],
+        [
+          "fadeOut",
+          "Bool"
+        ],
+        [
+          "rewards",
+          "Array"
+        ],
+        [
+          "specialRewardType",
+          "String"
+        ],
+        [
+          "initialCongratsType",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onCloseAction",
+        "onSpecialActionBtnClick",
+        "onDestroyEvent"
+      ],
+      "coverage": {
+        "found": 9,
+        "total": 11,
+        "missing": [
+          "awardType",
+          "specialRewardType"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

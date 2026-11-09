@@ -1,0 +1,31 @@
+{
+  "rid": "R.views.common.pop_over_window.backport_pop_over.BackportPopOverWindow",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "BackportPopOverWindow",
+  "dir": "gui/unbound/views/common/pop_over_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "backport_pop_over.unbound",
+      "effective": "res/gui/unbound/views/common/pop_over_window/backport_pop_over.unbound",
+      "all": [
+        "res/gui/unbound/views/common/pop_over_window/backport_pop_over.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.pop_over_window.backport_pop_over.BackportPopOverWindow",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "rid": "R.views.lobby.crew.tooltips.CrewBookMouseTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "CrewBookMouseTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "CrewBookMouseTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip/CrewBookMouseTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip/CrewBookMouseTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CrewBookMouseTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip/CrewBookMouseTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip/CrewBookMouseTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CrewBookMouseTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip/CrewBookMouseTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip/CrewBookMouseTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip/CrewBookMouseTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip/CrewBookMouseTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip/CrewBookMouseTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip/CrewBookMouseTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/CrewBookMouseTooltip/CrewBookMouseTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.ExtendedTextTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.tooltips.CrewBookMouseTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.crew.tooltips.CrewBookMouseTooltip no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/quick_training/components/books_list_component.py",
+        25
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/crew_book_mouse_tooltip.py",
+        13
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/quick_training/components/books_list_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/crew_book_mouse_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

@@ -1,0 +1,34 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/ClientSelectableEasterEgg.def -->
+<root>
+	<Parent>ClientSelectableObject</Parent>
+	<Properties>
+		<imageName>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Editable>true</Editable>
+		</imageName>
+		<multiLanguageSupport>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Editable>true</Editable>
+		</multiLanguageSupport>
+		<outlineModelName>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Editable>true</Editable>
+			<Editor>
+				<Title>Outline Model</Title>
+				<ResourceType>MODEL</ResourceType>
+			</Editor>
+		</outlineModelName>
+		<animationSequence>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Editable>true</Editable>
+			<Editor>
+				<Title>Animation Sequence</Title>
+				<ResourceType>SEQUENCE</ResourceType>
+			</Editor>
+		</animationSequence>
+	</Properties>
+</root>

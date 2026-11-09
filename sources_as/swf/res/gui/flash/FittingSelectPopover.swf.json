@@ -1,0 +1,254 @@
+{
+ "source": "sources/res/gui/flash/FittingSelectPopover.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 24954,
+ "actual_length": 24954,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 18,
+  "ShowFrame": 792,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 46,
+  "RemoveObject2": 2,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 29,
+  "DefineSprite": 17,
+  "FrameLabel": 77,
+  "FileAttributes": 1,
+  "PlaceObject3": 77,
+  "ImportAssets2": 7,
+  "CSMTextSettings": 29,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 3,
+  "shapes": 6,
+  "sprites": 17,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 29,
+  "fonts": 0,
+  "classes": 13,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "iconLibrary.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 55,
+   "class": "FittingSelectPopoverUI"
+  },
+  {
+   "id": 51,
+   "class": "ScrollListUI"
+  },
+  {
+   "id": 48,
+   "class": "BattleAbilitiesBtnAreaUI"
+  },
+  {
+   "id": 46,
+   "class": "ChassisFittingItemRendererUI"
+  },
+  {
+   "id": 41,
+   "class": "EngineFittingBigItemRendererUI"
+  },
+  {
+   "id": 36,
+   "class": "EngineFittingItemRendererUI"
+  },
+  {
+   "id": 31,
+   "class": "GunTurretFittingItemRendererUI"
+  },
+  {
+   "id": 26,
+   "class": "ListOverlayUI"
+  },
+  {
+   "id": 21,
+   "class": "RadioFittingItemRendererUI"
+  },
+  {
+   "id": 16,
+   "class": "FittingSelectPopover_fla.ModulesTargetIcon_6"
+  },
+  {
+   "id": 11,
+   "class": "ReserveFittingItemRendererUI"
+  },
+  {
+   "id": 10,
+   "class": "containerUI"
+  },
+  {
+   "id": 3,
+   "class": "ReserveParamsItemRendererUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 14076,
+   "classes": 13,
+   "methods": 141,
+   "bodies": 141,
+   "code_bytes": 4934
+  }
+ ],
+ "classes": [
+  {
+   "name": "FittingSelectPopover_fla.ModulesTargetIcon_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "containerUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReserveParamsItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.reservesPanel.components.ReserveParamsItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleAbilitiesBtnAreaUI",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.UIComponentEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ListOverlayUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.modulesPanel.components.ListOverlay",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.EmptyItemsScrollingList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ReserveFittingItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.reservesPanel.components.ReserveFittingItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChassisFittingItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.modulesPanel.components.ModuleFittingItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EngineFittingBigItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.modulesPanel.components.ModuleFittingItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EngineFittingItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.modulesPanel.components.ModuleFittingItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GunTurretFittingItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.modulesPanel.components.ModuleFittingItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RadioFittingItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.modulesPanel.components.ModuleFittingItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FittingSelectPopoverUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.modulesPanel.FittingSelectPopover",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

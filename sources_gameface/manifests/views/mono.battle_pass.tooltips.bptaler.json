@@ -1,0 +1,151 @@
+{
+  "rid": "R.views.mono.battle_pass.tooltips.bptaler",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "bptaler",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler",
+  "feature": null,
+  "files": [
+    {
+      "name": "bptaler.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bptaler.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bundle.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/separator.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/separator.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.battle_pass.tooltips.bptaler",
+    "confidence": "provavel",
+    "evidence": [
+      "9 referencia(s) R.views.mono.battle_pass.tooltips.bptaler no Python",
+      "ViewModel BonusModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/decorators.py",
+        24
+      ],
+      [
+        "sources/res/open_bundle/scripts/client/open_bundle/helpers/bonuses/bonus_packers.py",
+        310
+      ],
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_bonuses_packers.py",
+        534
+      ],
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+        81
+      ],
+      [
+        "sources/res/scripts/client/gui/challenges/challenges_bonuses_packers.py",
+        377
+      ],
+      [
+        "sources/res/scripts/client/gui/challenges/challenges_decorators.py",
+        47
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_taler_tooltip.py",
+        16
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/bonuses_packers.py",
+        821
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/decorators.py",
+        84
+      ]
+    ],
+    "python_files": [
+      "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/decorators.py",
+      "sources/res/open_bundle/scripts/client/open_bundle/helpers/bonuses/bonus_packers.py",
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_bonuses_packers.py",
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+      "sources/res/scripts/client/gui/challenges/challenges_bonuses_packers.py",
+      "sources/res/scripts/client/gui/challenges/challenges_decorators.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_taler_tooltip.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/bonuses_packers.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/decorators.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/common/bonus_model.py",
+      "class": "BonusModel",
+      "chain": [
+        "BonusModel"
+      ],
+      "properties": [
+        [
+          "localeName",
+          "String"
+        ],
+        [
+          "values",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "localeName",
+          "values"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/token_bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/reward_item_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/vehicle_bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/reward_item_model.py"
+      ]
+    }
+  }
+}

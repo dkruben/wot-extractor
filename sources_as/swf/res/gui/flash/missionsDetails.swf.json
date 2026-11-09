@@ -1,0 +1,319 @@
+{
+ "source": "sources/res/gui/flash/missionsDetails.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 339242,
+ "actual_length": 339242,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 27,
+  "ShowFrame": 130,
+  "DefineShape": 12,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 54,
+  "DefineShape3": 5,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 10,
+  "DefineEditText": 12,
+  "DefineSprite": 26,
+  "FrameLabel": 14,
+  "FileAttributes": 1,
+  "PlaceObject3": 28,
+  "ImportAssets2": 9,
+  "CSMTextSettings": 12,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 11,
+  "shapes": 18,
+  "sprites": 26,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 12,
+  "fonts": 0,
+  "classes": 19,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "../flash/tankCarousel.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "missionsCmp.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyDynamic.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 67,
+   "class": "MissionDetailsContainerViewUI"
+  },
+  {
+   "id": 64,
+   "class": "MissionDetailedViewUI"
+  },
+  {
+   "id": 57,
+   "class": "MissionDetailedViewBgUI"
+  },
+  {
+   "id": 53,
+   "class": "missionsDetails_fla.MissionStatusBg_6"
+  },
+  {
+   "id": 46,
+   "class": "MissionRequirementsGroup"
+  },
+  {
+   "id": 45,
+   "class": "MissionDetailsConditionsPanelUI"
+  },
+  {
+   "id": 44,
+   "class": "MissionDetailsAccountRequirementsPanelUI"
+  },
+  {
+   "id": 29,
+   "class": "AccReqBtnUp"
+  },
+  {
+   "id": 24,
+   "class": "AccReqBtnDown"
+  },
+  {
+   "id": 19,
+   "class": "MissionDetailsAwardsPanelUI"
+  },
+  {
+   "id": 17,
+   "class": "ConditionsComponentPanelUI"
+  },
+  {
+   "id": 13,
+   "class": "MissionBattleRequirementRendererUI"
+  },
+  {
+   "id": 11,
+   "class": "MissionAccountRequirementRendererUI"
+  },
+  {
+   "id": 9,
+   "class": "MissionDetailsAwardsTileListUI"
+  },
+  {
+   "id": 7,
+   "class": "missionDetailsImporter"
+  },
+  {
+   "id": 6,
+   "class": "VehicleScrollListUI"
+  },
+  {
+   "id": 3,
+   "class": "MissionDetailsAchievementUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 9457,
+   "classes": 19,
+   "methods": 86,
+   "bodies": 86,
+   "code_bytes": 2520
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "missionDetailsImporter",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "missionsDetails_fla.MissionStatusBg_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailedViewBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.MissionDetailsBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionAccountRequirementRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionAccountRequirementRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsConditionsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionDetailsConditionsPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailedViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.MissionDetailedView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionRequirementsGroup",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AccReqBtnDown",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AccReqBtnUp",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionBattleRequirementRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionBattleRequirementRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleScrollListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ScrollingListEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsAwardsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionDetailsAwardsPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsAchievementUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionDetailsAchievement",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsAwardsTileListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableTileList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ConditionsComponentPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.ConditionsComponentPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsAccountRequirementsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionDetailsAccountRequirementsPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionDetailsContainerViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.MissionDetailsContainerView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

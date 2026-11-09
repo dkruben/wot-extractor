@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/advent_calendar/extension.xml -->
+<root>
+	<FeatureName>advent_calendar</FeatureName>
+	<IsEnabled>true</IsEnabled>
+	<Personality>AdventCalendarPersonality</Personality>
+	<Components>
+		<StaticComponents>
+			<AdventCalendarAccountComponent />
+		</StaticComponents>
+		<DynamicComponents />
+	</Components>
+</root>

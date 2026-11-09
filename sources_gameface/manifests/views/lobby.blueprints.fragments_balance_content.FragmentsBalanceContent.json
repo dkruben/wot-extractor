@@ -1,0 +1,69 @@
+{
+  "rid": "R.views.lobby.blueprints.fragments_balance_content.FragmentsBalanceContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "FragmentsBalanceContent",
+  "dir": "gui/unbound/views/lobby/blueprints",
+  "feature": null,
+  "files": [
+    {
+      "name": "fragments_balance_content.unbound",
+      "effective": "res/gui/unbound/views/lobby/blueprints/fragments_balance_content.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/blueprints/fragments_balance_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.blueprints.fragments_balance_content.FragmentsBalanceContent",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.blueprints.fragments_balance_content.FragmentsBalanceContent no Python",
+      "ViewModel BlueprintBalanceContentModel (model=... no Python da view): 3/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/blueprints/fragments_balance_content.py",
+        28
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/blueprints/fragments_balance_content.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/blueprints/blueprint_balance_content_model.py",
+      "class": "BlueprintBalanceContentModel",
+      "chain": [
+        "BlueprintBalanceContentModel",
+        "CommonBalanceContentModel"
+      ],
+      "properties": [
+        [
+          "intelligenceBalance",
+          "ViewModel"
+        ],
+        [
+          "allianceName",
+          "String"
+        ],
+        [
+          "currency",
+          "ViewModel"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 3,
+        "total": 3,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

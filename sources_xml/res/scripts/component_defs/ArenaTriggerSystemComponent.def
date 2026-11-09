@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/ArenaTriggerSystemComponent.def -->
+<root>
+	<Properties />
+	<CellMethods>
+		<setupArena>
+			<Arg>UINT64</Arg>
+			<Arg>PYTHON</Arg>
+		</setupArena>
+	</CellMethods>
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+	<DefaultKeyName>arenaTriggerSystemComponent</DefaultKeyName>
+</root>

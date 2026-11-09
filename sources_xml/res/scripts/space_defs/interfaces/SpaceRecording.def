@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/space_defs/interfaces/SpaceRecording.def -->
+<root>
+	<Properties>
+		<recorderFragment>
+			<Type>PYTHON</Type>
+		</recorderFragment>
+	</Properties>
+</root>

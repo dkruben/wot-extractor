@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/PoiVehicleComponent.def -->
+<root>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<Properties>
+		<pointID>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</pointID>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>PoiVehicleComponent</DefaultKeyName>
+</root>

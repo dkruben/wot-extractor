@@ -1,0 +1,197 @@
+{
+ "source": "sources/res/gui/flash/badgesPage.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 181321,
+ "actual_length": 181321,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 12,
+  "ShowFrame": 17,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 21,
+  "RemoveObject2": 2,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 6,
+  "DefineSprite": 11,
+  "FrameLabel": 3,
+  "FileAttributes": 1,
+  "PlaceObject3": 18,
+  "ImportAssets2": 7,
+  "CSMTextSettings": 6,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 4,
+  "sprites": 11,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 6,
+  "fonts": 0,
+  "classes": 8,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 23,
+   "class": "BadgesPageUI"
+  },
+  {
+   "id": 22,
+   "class": "BadgesScrollPaneUI"
+  },
+  {
+   "id": 21,
+   "class": "BadgesContentContainerUI"
+  },
+  {
+   "id": 19,
+   "class": "BadgesHeaderUI"
+  },
+  {
+   "id": 11,
+   "class": "BadgesSuffixSettingsUI"
+  },
+  {
+   "id": 10,
+   "class": "SuffixContainerUI"
+  },
+  {
+   "id": 9,
+   "class": "SuffixItemUI"
+  },
+  {
+   "id": 7,
+   "class": "BadgeRendererUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4752,
+   "classes": 8,
+   "methods": 34,
+   "bodies": 34,
+   "code_bytes": 1371
+  }
+ ],
+ "classes": [
+  {
+   "name": "BadgesContentContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.badges.BadgesContentContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BadgesHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.badges.BadgesHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BadgesSuffixSettingsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.badges.BadgesSuffixSettings",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SuffixContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.badges.SuffixContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SuffixItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.badges.SuffixItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BadgesScrollPaneUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BadgeRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.badges.components.BadgeRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BadgesPageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.badges.BadgesPage",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

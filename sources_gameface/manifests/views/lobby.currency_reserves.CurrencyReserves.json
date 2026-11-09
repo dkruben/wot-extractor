@@ -1,0 +1,80 @@
+{
+  "rid": "R.views.lobby.currency_reserves.CurrencyReserves",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "CurrencyReserves",
+  "dir": "gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves",
+  "feature": null,
+  "files": [
+    {
+      "name": "CurrencyReserves.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves/CurrencyReserves.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves/CurrencyReserves.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CurrencyReserves.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves/CurrencyReserves.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves/CurrencyReserves.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CurrencyReserves.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves/CurrencyReserves.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves/CurrencyReserves.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves/CurrencyReserves.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/currency_reserves/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/currency_reserves/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves/CurrencyReserves.css",
+      "key": "res/gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves/CurrencyReserves.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves/CurrencyReserves.js",
+      "key": "res/gui/gameface/_dist/production/lobby/currency_reserves/CurrencyReserves/CurrencyReserves.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "off:self.onPaddingsUpdated",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.currency_reserves.CurrencyReserves",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.currency_reserves.CurrencyReserves no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/currency_reserves/states.py",
+        26
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/currency_reserves/states.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

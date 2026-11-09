@@ -1,0 +1,155 @@
+{
+  "rid": "R.views.open_bundle.mono.lobby.main",
+  "rid_source": "sources/res/open_bundle/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "main",
+  "dir": "open_bundle/gui/gameface/_dist/production/mono/lobby/main",
+  "feature": "open_bundle",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/main/bundle.js",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/main/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/open_bundle/gui/gameface/_dist/production/mono/lobby/main/bundle.js"
+    },
+    {
+      "name": "main.css",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/main/main.css",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/main/main.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "main.html",
+      "effective": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/main/main.html",
+      "all": [
+        "res/open_bundle/gui/gameface/_dist/production/mono/lobby/main/main.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/arrow.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/arrow.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/background.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/background.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/base.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/base.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/reward.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/chunks/reward.css"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/main/bundle.js",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/main/bundle.js"
+    },
+    {
+      "virtual": "open_bundle/gui/gameface/_dist/production/mono/lobby/main/main.css",
+      "key": "res/open_bundle/gui/gameface/_dist/production/mono/lobby/main/main.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "open_bundle.mono.lobby.tooltips.fixed_rewards"
+  ],
+  "commands": [
+    "onItemShown",
+    "play",
+    "resetInterruption",
+    "showPreview"
+  ],
+  "link": {
+    "rid": "R.views.open_bundle.mono.lobby.main",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "3 referencia(s) R.views.open_bundle.mono.lobby.main no Python",
+      "ViewModel MainViewModel (model=... no Python da view): 8/11 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/main_view.py",
+        55
+      ],
+      [
+        "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/states.py",
+        40
+      ],
+      [
+        "sources/res/open_bundle/scripts/client/open_bundle/gui/shared/gui_items/processors/processors.py",
+        87
+      ]
+    ],
+    "python_files": [
+      "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/main_view.py",
+      "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/states.py",
+      "sources/res/open_bundle/scripts/client/open_bundle/gui/shared/gui_items/processors/processors.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/gen/view_models/views/lobby/main_view_model.py",
+      "class": "MainViewModel",
+      "chain": [
+        "MainViewModel"
+      ],
+      "properties": [
+        [
+          "stepPrice",
+          "ViewModel"
+        ],
+        [
+          "bundleType",
+          "String"
+        ],
+        [
+          "startTime",
+          "Number"
+        ],
+        [
+          "finishTime",
+          "Number"
+        ],
+        [
+          "isInterrupted",
+          "Bool"
+        ],
+        [
+          "cells",
+          "Array"
+        ],
+        [
+          "fixedReward",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "play",
+        "onItemShown",
+        "showPreview",
+        "resetInterruption"
+      ],
+      "coverage": {
+        "found": 8,
+        "total": 11,
+        "missing": [
+          "bundleType",
+          "finishTime",
+          "startTime"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

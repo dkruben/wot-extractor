@@ -1,0 +1,10 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/shaders/formats/xyznd.xml -->
+<root>
+	<elements>
+		<POSITION />
+		<NORMAL />
+		<COLOR>
+			<type>COLOR</type>
+		</COLOR>
+	</elements>
+</root>

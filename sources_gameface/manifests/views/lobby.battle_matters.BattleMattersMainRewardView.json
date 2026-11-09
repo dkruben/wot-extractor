@@ -1,0 +1,109 @@
+{
+  "rid": "R.views.lobby.battle_matters.BattleMattersMainRewardView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "BattleMattersMainRewardView",
+  "dir": "gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView",
+  "feature": null,
+  "files": [
+    {
+      "name": "BattleMattersMainRewardView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView/BattleMattersMainRewardView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView/BattleMattersMainRewardView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleMattersMainRewardView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView/BattleMattersMainRewardView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView/BattleMattersMainRewardView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleMattersMainRewardView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView/BattleMattersMainRewardView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView/BattleMattersMainRewardView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView/BattleMattersMainRewardView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/battle_matters/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/battle_matters/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView/BattleMattersMainRewardView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView/BattleMattersMainRewardView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView/BattleMattersMainRewardView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainRewardView/BattleMattersMainRewardView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [
+    "onBack",
+    "onClose",
+    "onPreview",
+    "onShowView"
+  ],
+  "link": {
+    "rid": "R.views.lobby.battle_matters.BattleMattersMainRewardView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.battle_matters.BattleMattersMainRewardView no Python",
+      "ViewModel BattleMattersMainRewardViewModel (model=... no Python da view): 5/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_matters/battle_matters_main_reward_view.py",
+        39
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_matters/battle_matters_main_reward_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_matters/battle_matters_main_reward_view_model.py",
+      "class": "BattleMattersMainRewardViewModel",
+      "chain": [
+        "BattleMattersMainRewardViewModel"
+      ],
+      "properties": [
+        [
+          "vehicles",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onShowView",
+        "onPreview",
+        "onBack",
+        "onClose"
+      ],
+      "coverage": {
+        "found": 5,
+        "total": 5,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

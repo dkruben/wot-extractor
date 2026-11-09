@@ -1,0 +1,103 @@
+{
+  "rid": "R.views.mono.user_missions.tooltips.all_quests_done_tooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "all_quests_done_tooltip",
+  "dir": "gui/gameface/_dist/production/mono/user_missions/tooltips/all_quests_done_tooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "all_quests_done_tooltip.html",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/all_quests_done_tooltip/all_quests_done_tooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/tooltips/all_quests_done_tooltip/all_quests_done_tooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/all_quests_done_tooltip/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/tooltips/all_quests_done_tooltip/bundle.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/divider.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/divider.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/extended_tooltip_decorator.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/extended_tooltip_decorator.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/tooltips/all_quests_done_tooltip/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/all_quests_done_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.user_missions.tooltips.all_quests_done_tooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "3 referencia(s) R.views.mono.user_missions.tooltips.all_quests_done_tooltip no Python",
+      "ViewModel AllQuestsDoneTooltipModel (model=... no Python da view): 1/1 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/user_missions/hangar_widget/presenters/quests_presenter.py",
+        73
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/hangar_widget/presenters/quests_presenter.py",
+        55
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/tooltips/all_quests_done_tooltip.py",
+        15
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/user_missions/hangar_widget/presenters/quests_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/hangar_widget/presenters/quests_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/tooltips/all_quests_done_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/user_missions/tooltips/all_quests_done_tooltip_model.py",
+      "class": "AllQuestsDoneTooltipModel",
+      "chain": [
+        "AllQuestsDoneTooltipModel"
+      ],
+      "properties": [
+        [
+          "countdown",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 1,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/user_missions/widget/quests_list_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/user_missions/widget/widget_quest_model.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/NetworkEntity.def -->
+<root>
+	<AppealRadius>3000</AppealRadius>
+	<shouldBackup>false</shouldBackup>
+	<Implements />
+	<Volatile>
+		<position />
+		<yaw />
+		<roll />
+		<pitch />
+	</Volatile>
+	<Properties>
+		<unique_id>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</unique_id>
+		<prefab_path>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</prefab_path>
+		<scale>
+			<Type>VECTOR3</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</scale>
+		<useDetailedPosition>
+			<Type>BOOL</Type>
+			<Flags>CELL_PRIVATE</Flags>
+			<default>FALSE</default>
+		</useDetailedPosition>
+		<name>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</name>
+	</Properties>
+	<ClientMethods />
+	<CellMethods />
+</root>

@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/ControlPoint.def -->
+<root>
+	<Implements>
+		<Interface>EntityTrap</Interface>
+	</Implements>
+	<TempProperties>
+		<_ControlPoint__p />
+	</TempProperties>
+</root>

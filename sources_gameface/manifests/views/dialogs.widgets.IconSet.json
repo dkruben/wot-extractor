@@ -1,0 +1,78 @@
+{
+  "rid": "R.views.dialogs.widgets.IconSet",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "IconSet",
+  "dir": "gui/gameface/_dist/production/dialogs/widgets/IconSet",
+  "feature": null,
+  "files": [
+    {
+      "name": "IconSet.css",
+      "effective": "res/gui/gameface/_dist/production/dialogs/widgets/IconSet/IconSet.css",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/widgets/IconSet/IconSet.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "IconSet.html",
+      "effective": "res/gui/gameface/_dist/production/dialogs/widgets/IconSet/IconSet.html",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/widgets/IconSet/IconSet.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "IconSet.js",
+      "effective": "res/gui/gameface/_dist/production/dialogs/widgets/IconSet/IconSet.js",
+      "all": [
+        "res/gui/gameface/_dist/production/dialogs/widgets/IconSet/IconSet.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/dialogs/widgets/IconSet/IconSet.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/dialogs/widgets/IconSet/IconSet.css",
+      "key": "res/gui/gameface/_dist/production/dialogs/widgets/IconSet/IconSet.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/dialogs/widgets/IconSet/IconSet.js",
+      "key": "res/gui/gameface/_dist/production/dialogs/widgets/IconSet/IconSet.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/dialogs/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/dialogs/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.dialogs.widgets.IconSet",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.dialogs.widgets.IconSet no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/notifications/punishment_notification_view.py",
+        100
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/hangar/notifications/punishment_notification_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

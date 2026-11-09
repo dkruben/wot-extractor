@@ -1,0 +1,124 @@
+{
+  "rid": "R.views.mono.lootbox.auto_open",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "auto_open",
+  "dir": "gui/gameface/_dist/production/mono/lootbox/auto_open",
+  "feature": null,
+  "files": [
+    {
+      "name": "auto_open.css",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/auto_open/auto_open.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/auto_open/auto_open.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "auto_open.html",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/auto_open/auto_open.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/auto_open/auto_open.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/auto_open/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/auto_open/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/lootbox/auto_open/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/auto_open/auto_open.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/auto_open/auto_open.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/auto_open/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/auto_open/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/loupe_button.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/loupe_button.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/scroll_with_lips.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/scroll_with_lips.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/utils.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/utils.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose",
+    "onPreview"
+  ],
+  "link": {
+    "rid": "R.views.mono.lootbox.auto_open",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.mono.lootbox.auto_open no Python",
+      "ViewModel AutoOpenViewModel (model=... no Python da view): 5/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/graphics_optimization_controller/settings.py",
+        40
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/auto_open_view.py",
+        23
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/graphics_optimization_controller/settings.py",
+      "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/auto_open_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/lootbox_system/auto_open_view_model.py",
+      "class": "AutoOpenViewModel",
+      "chain": [
+        "AutoOpenViewModel"
+      ],
+      "properties": [
+        [
+          "eventName",
+          "String"
+        ],
+        [
+          "boxesQuantity",
+          "Number"
+        ],
+        [
+          "rewardRows",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onPreview"
+      ],
+      "coverage": {
+        "found": 5,
+        "total": 5,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

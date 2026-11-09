@@ -1,0 +1,9 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/interfaces/SecondaryGunActivatorInterface.def -->
+<root>
+	<Properties />
+	<CellMethods>
+		<tryActivate>
+			<Exposed>OWN_CLIENT</Exposed>
+		</tryActivate>
+	</CellMethods>
+</root>

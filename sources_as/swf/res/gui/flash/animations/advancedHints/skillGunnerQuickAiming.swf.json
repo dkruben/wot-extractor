@@ -1,0 +1,122 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillGunnerQuickAiming.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 147145,
+ "actual_length": 147145,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 20,
+  "ShowFrame": 592,
+  "DefineShape": 16,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 1367,
+  "RemoveObject2": 4,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 9,
+  "DefineSprite": 19,
+  "FileAttributes": 1,
+  "PlaceObject3": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 103,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 9,
+  "shapes": 121,
+  "sprites": 19,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillGunnerQuickAiming_fla.MainTimeline"
+  },
+  {
+   "id": 148,
+   "class": "skillGunnerQuickAiming_fla.crosshairReloadAnimFast_18"
+  },
+  {
+   "id": 142,
+   "class": "skillGunnerQuickAiming_fla.tankShoot_14"
+  },
+  {
+   "id": 34,
+   "class": "skillGunnerQuickAiming_fla.slotActive_12"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1061,
+   "classes": 4,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 264
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillGunnerQuickAiming_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillGunnerQuickAiming_fla.crosshairReloadAnimFast_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillGunnerQuickAiming_fla.slotActive_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillGunnerQuickAiming_fla.tankShoot_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

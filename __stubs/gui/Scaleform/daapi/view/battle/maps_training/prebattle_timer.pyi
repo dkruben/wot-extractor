@@ -1,0 +1,40 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/battle/maps_training/prebattle_timer.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import BigWorld as BigWorld
+from gui.Scaleform.daapi.view.meta.MapsTrainingPrebattleTimerMeta import MapsTrainingPrebattleTimerMeta as MapsTrainingPrebattleTimerMeta
+from gui.impl import backport as backport
+from gui.impl.gen import R as R
+from helpers import dependency as dependency, isPlayerAvatar as isPlayerAvatar
+from items import vehicles as vehicles
+from maps_training_common.maps_training_constants import VEHICLE_CLASSES_ORDER as VEHICLE_CLASSES_ORDER
+from skeletons.gui.battle_session import IBattleSessionProvider as IBattleSessionProvider
+from skeletons.gui.game_control import IMapsTrainingController as IMapsTrainingController
+from vehicle_systems.stricted_loading import makeCallbackWeak as makeCallbackWeak
+from skeletons.account_helpers.settings_core import ISettingsCore as ISettingsCore
+from account_helpers.settings_core.settings_constants import OnceOnlyHints as OnceOnlyHints
+from maps_training_common.maps_training_constants import SCENARIO_INDEXES as SCENARIO_INDEXES
+from PlayerEvents import g_playerEvents as g_playerEvents
+import ArenaType as ArenaType
+_VOICEOVERS: tuple
+
+class MapsTrainingPreBattleTimer(MapsTrainingPrebattleTimerMeta):
+    sessionProvider: Any
+    mapsTrainingController: Any
+    settingsCore: Any
+    __playerClass: Any
+    __playerTeam: Any
+    def __init__(self):
+        ...
+    def _populate(self):
+        ...
+    def _isDisplayWinCondition(self):
+        ...
+    def __setGoalsData(self):
+        ...
+    def __onAvatarReady(self):
+        ...
+    def __playSoundNotification(self):
+        ...

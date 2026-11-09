@@ -1,0 +1,63 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/frontline/scripts/client/frontline/gui/Scaleform/daapi/view/battle/frontline_overviewmap_screen.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: frontline/scripts/client/frontline/gui/Scaleform/daapi/view/battle/frontline_overviewmap_screen.py
+from __future__ import absolute_import
+from collections import namedtuple
+from arena_component_system.sector_base_arena_component import ID_TO_BASENAME, _MISSION_SECTOR_ID_MAPPING
+from debug_utils import LOG_ERROR
+from frontline.gui.Scaleform.daapi.view.meta.FrontlineOverviewMapScreenMeta import FrontlineOverviewMapScreenMeta
+from gui.Scaleform.locale.EPIC_BATTLE import EPIC_BATTLE
+from gui.Scaleform.locale.READABLE_KEY_NAMES import READABLE_KEY_NAMES
+from helpers import dependency
+from helpers import i18n
+from skeletons.gui.battle_session import IBattleSessionProvider
+EpicOverviewMapScreenVO = namedtuple('EpicOverviewMapScreenVO', ('key1Text', 'key2Text',
+                                                                 'key3Text', 'key4Text',
+                                                                 'key5Text', 'key6Text'))
+
+class OverviewMapScreen(FrontlineOverviewMapScreenMeta):
+    sessionProvider = dependency.descriptor(IBattleSessionProvider)
+
+    def start(self):
+        pass
+
+    def _populate(self):
+        super(OverviewMapScreen, self)._populate()
+        sectorBaseComp = getattr(self.sessionProvider.arenaVisitor.getComponentSystem(), 'sectorBaseComponent', None)
+        if sectorBaseComp is not None:
+            sectorBaseComp.onSectorBaseCaptured += self.__onSectorBaseCaptured
+        else:
+            LOG_ERROR('Expected SectorBaseComponent not present!')
+        self.__updateLaneButtons()
+        self.__setKeyBindings()
+        return
+
+    def _dispose(self):
+        sectorBaseComp = getattr(self.sessionProvider.arenaVisitor.getComponentSystem(), 'sectorBaseComponent', None)
+        if sectorBaseComp is not None:
+            sectorBaseComp.onSectorBaseCaptured -= self.__onSectorBaseCaptured
+        super(OverviewMapScreen, self)._dispose()
+        return
+
+    def __setKeyBindings(self):
+        data = EpicOverviewMapScreenVO(key1Text=READABLE_KEY_NAMES.KEY_F4, key2Text=READABLE_KEY_NAMES.KEY_F5, key3Text=READABLE_KEY_NAMES.KEY_F6, key4Text=READABLE_KEY_NAMES.KEY_F7, key5Text=READABLE_KEY_NAMES.KEY_F8, key6Text=READABLE_KEY_NAMES.KEY_F9)
+        self.as_setKeyBindingsS(data._asdict())
+
+    def __getCurrentZoneNamePerLane(self, lane):
+        if lane > 0:
+            sectorBaseComp = getattr(self.sessionProvider.arenaVisitor.getComponentSystem(), 'sectorBaseComponent', None)
+            if sectorBaseComp is None:
+                LOG_ERROR('Expected SectorBaseComponent not present!')
+                return ''
+            nonCapturedBases = sectorBaseComp.getNumNonCapturedBasesByLane(lane)
+            return ID_TO_BASENAME[_MISSION_SECTOR_ID_MAPPING[lane][nonCapturedBases]]
+        else:
+            return ''
+
+    def __onSectorBaseCaptured(self, id_, isPlayerTeam):
+        self.__updateLaneButtons()
+
+    def __updateLaneButtons(self):
+        self.as_updateLaneButtonNamesS(i18n.makeString(EPIC_BATTLE.GLOBAL_MSG_LANE_WEST_SHORT, strArg1=self.__getCurrentZoneNamePerLane(1)), i18n.makeString(EPIC_BATTLE.GLOBAL_MSG_LANE_CENTER_SHORT, strArg1=self.__getCurrentZoneNamePerLane(2)), i18n.makeString(EPIC_BATTLE.GLOBAL_MSG_LANE_EAST_SHORT, strArg1=self.__getCurrentZoneNamePerLane(3)))

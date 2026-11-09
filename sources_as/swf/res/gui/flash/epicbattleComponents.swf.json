@@ -1,0 +1,518 @@
+{
+ "source": "sources/res/gui/flash/epicbattleComponents.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 4024701,
+ "actual_length": 4024701,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#82a2bb",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 67,
+  "ShowFrame": 1224,
+  "DefineShape": 135,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 1043,
+  "RemoveObject2": 22,
+  "DefineShape3": 10,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 32,
+  "DefineEditText": 28,
+  "DefineSprite": 66,
+  "FrameLabel": 81,
+  "FileAttributes": 1,
+  "PlaceObject3": 50,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 27,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 10,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 34,
+  "shapes": 145,
+  "sprites": 66,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 28,
+  "fonts": 0,
+  "classes": 38,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 273,
+   "class": "rewardRibbonAwardsAnim"
+  },
+  {
+   "id": 272,
+   "class": "AlignedIconTextButtonUI"
+  },
+  {
+   "id": 268,
+   "class": "epicbattleComponents_fla.iconContainer_21"
+  },
+  {
+   "id": 264,
+   "class": "AlignedIconTextButtonMainStatesUI"
+  },
+  {
+   "id": 263,
+   "class": "AlignedIconTextButtonTextUI"
+  },
+  {
+   "id": 258,
+   "class": "ButtonPrimaryLargeUI"
+  },
+  {
+   "id": 248,
+   "class": "ButtonPrimarySmallUI"
+  },
+  {
+   "id": 239,
+   "class": "ButtonSecondarySmallUI"
+  },
+  {
+   "id": 229,
+   "class": "EBbackgroundContainerUI"
+  },
+  {
+   "id": 225,
+   "class": "EpicAbilityPointsIconUI"
+  },
+  {
+   "id": 222,
+   "class": "EpicBattlesWidgetUI"
+  },
+  {
+   "id": 221,
+   "class": "EpicBattlesWidgetButtonUI"
+  },
+  {
+   "id": 220,
+   "class": "EpicBattlesWidgeComponentUI"
+  },
+  {
+   "id": 219,
+   "class": "EpicReservesPointsPanelWrapperUI"
+  },
+  {
+   "id": 218,
+   "class": "EpicReservesPointsPanelUI"
+  },
+  {
+   "id": 216,
+   "class": "epicbattleComponents_fla.EpicReservesPointsIcon_9"
+  },
+  {
+   "id": 213,
+   "class": "epicbattleComponents_fla.EpicReservesPointPanelBg_8"
+  },
+  {
+   "id": 211,
+   "class": "epicMetaLevelLargeUI"
+  },
+  {
+   "id": 206,
+   "class": "EpicMetaLevelProgressBarUI"
+  },
+  {
+   "id": 205,
+   "class": "FamePointCounterUI"
+  },
+  {
+   "id": 204,
+   "class": "famePointsTweenUI"
+  },
+  {
+   "id": 200,
+   "class": "FameBoostPointCounterU"
+  },
+  {
+   "id": 199,
+   "class": "fameBoostPointsTweenUI"
+  },
+  {
+   "id": 84,
+   "class": "epicMetaLevelSmallUI"
+  },
+  {
+   "id": 81,
+   "class": "EpicPanelBackgroundUI"
+  },
+  {
+   "id": 69,
+   "class": "EpicUpgradeButtonLargeUI"
+  },
+  {
+   "id": 56,
+   "class": "epicbattleComponents_fla.btnFocusIndicator_26"
+  },
+  {
+   "id": 50,
+   "class": "EpicUpgradeButtonSmallIconUI"
+  },
+  {
+   "id": 44,
+   "class": "epicbattleComponents_fla.UpgradeIcon_50"
+  },
+  {
+   "id": 39,
+   "class": "epicbattleComponents_fla.upgradeButtonSmallFocusIndicator_56"
+  },
+  {
+   "id": 29,
+   "class": "FlexButtonUI"
+  },
+  {
+   "id": 26,
+   "class": "MetaLevelSmallUI"
+  },
+  {
+   "id": 25,
+   "class": "epicbattleComponents_fla.levelupAnim_62"
+  },
+  {
+   "id": 20,
+   "class": "rewardRibbonUI"
+  },
+  {
+   "id": 19,
+   "class": "AwardRibbonAnimUI"
+  },
+  {
+   "id": 18,
+   "class": "awardItemRendererAnimUI"
+  },
+  {
+   "id": 17,
+   "class": "rewardRibbonLevelAnim"
+  },
+  {
+   "id": 15,
+   "class": "epicbattleComponents_fla.ribbon_66"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 11671,
+   "classes": 38,
+   "methods": 204,
+   "bodies": 204,
+   "code_bytes": 3896
+  }
+ ],
+ "classes": [
+  {
+   "name": "AlignedIconTextButtonTextUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicAbilityPointsIconUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicPanelBackgroundUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicbattleComponents_fla.EpicReservesPointPanelBg_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicbattleComponents_fla.EpicReservesPointsIcon_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicbattleComponents_fla.UpgradeIcon_50",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicbattleComponents_fla.btnFocusIndicator_26",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicbattleComponents_fla.iconContainer_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicbattleComponents_fla.levelupAnim_62",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicbattleComponents_fla.ribbon_66",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicbattleComponents_fla.upgradeButtonSmallFocusIndicator_56",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rewardRibbonAwardsAnim",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rewardRibbonLevelAnim",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicReservesPointsPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.EpicReservesPointsPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicReservesPointsPanelWrapperUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.EpicReservesPointsPanelWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AlignedIconTextButtonMainStatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.common.alignedIconTextButton.AlignedIconTextButtonMainStates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EBbackgroundContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.BackgroundComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicBattlesWidgetButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.EpicBattlesWidgetButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FameBoostPointCounterU",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.common.EpicBattlesFamePointsCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FamePointCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.common.EpicBattlesFamePointsCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MetaLevelSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.common.EpicMetaLevelProgressBarIcons",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "awardItemRendererAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.prestigeView.AwardRendererAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardRibbonAnimUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.prestigeView.AwardsRibbonAnim",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicBattlesWidgeComponentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.EpicBattlesWidgetComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicMetaLevelProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.common.EpicBattlesMetaLevelProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fameBoostPointsTweenUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.IconTextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "famePointsTweenUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.IconTextWrapper",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rewardRibbonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.prestigeView.RewardRibbon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMetaLevelLargeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.EpicBattleMetaLevel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicMetaLevelSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventProgression.components.metaLevel.EpicBattleMetaLevel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonPrimaryLargeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonPrimarySmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonSecondarySmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FlexButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AlignedIconTextButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.common.AlignedIconTextButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicUpgradeButtonLargeUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.EpicBattlesLevelUpSkillButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicUpgradeButtonSmallIconUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.EpicBattlesLevelUpSkillButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicBattlesWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.epicBattles.components.EpicBattlesWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

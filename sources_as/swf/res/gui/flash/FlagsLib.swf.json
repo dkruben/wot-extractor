@@ -1,0 +1,165 @@
+{
+ "source": "sources/res/gui/flash/FlagsLib.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 15,
+ "declared_length": 7239684,
+ "actual_length": 7239684,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 9,
+  "ShowFrame": 528,
+  "DefineShape": 89,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 39,
+  "PlaceObject2": 90,
+  "DefineShape3": 1,
+  "DefineBitsJPEG3": 2,
+  "DefineBitsLossless2": 48,
+  "DefineSprite": 8,
+  "FrameLabel": 90,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 89,
+  "shapes": 90,
+  "sprites": 8,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 8,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 187,
+   "class": "CrewTankmanInfoFlags"
+  },
+  {
+   "id": 164,
+   "class": "ResearchPageBGFlags"
+  },
+  {
+   "id": 140,
+   "class": "SkillDropWindowSwitcher"
+  },
+  {
+   "id": 117,
+   "class": "SkillsButtonFlagSwitcher"
+  },
+  {
+   "id": 94,
+   "class": "TankFlags"
+  },
+  {
+   "id": 71,
+   "class": "TankmenButtonBg"
+  },
+  {
+   "id": 46,
+   "class": "TankmenButtonBg2"
+  },
+  {
+   "id": 23,
+   "class": "TankMiniFlags"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4143,
+   "classes": 8,
+   "methods": 114,
+   "bodies": 114,
+   "code_bytes": 1598
+  }
+ ],
+ "classes": [
+  {
+   "name": "CrewTankmanInfoFlags",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ResearchPageBGFlags",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SkillsButtonFlagSwitcher",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankFlags",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankMiniFlags",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankmenButtonBg",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankmenButtonBg2",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SkillDropWindowSwitcher",
+   "kind": "class",
+   "extends": "scaleform.clik.core.UIComponent",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

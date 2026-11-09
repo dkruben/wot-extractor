@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/SmokeController_Vehicle.def -->
+<root>
+	<TempProperties>
+		<_smokeController />
+	</TempProperties>
+	<CellMethods>
+		<smokeController_onEnterSmoke>
+			<Arg>UINT32</Arg>
+			<Arg>FLOAT32</Arg>
+		</smokeController_onEnterSmoke>
+		<smokeController_onLeaveSmoke>
+			<Arg>UINT32</Arg>
+		</smokeController_onLeaveSmoke>
+	</CellMethods>
+</root>

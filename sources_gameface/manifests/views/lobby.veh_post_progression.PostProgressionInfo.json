@@ -1,0 +1,79 @@
+{
+  "rid": "R.views.lobby.veh_post_progression.PostProgressionInfo",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "PostProgressionInfo",
+  "dir": "gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo",
+  "feature": null,
+  "files": [
+    {
+      "name": "PostProgressionInfo.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo/PostProgressionInfo.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo/PostProgressionInfo.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PostProgressionInfo.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo/PostProgressionInfo.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo/PostProgressionInfo.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PostProgressionInfo.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo/PostProgressionInfo.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo/PostProgressionInfo.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo/PostProgressionInfo.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo/PostProgressionInfo.css",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo/PostProgressionInfo.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo/PostProgressionInfo.js",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/PostProgressionInfo/PostProgressionInfo.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.veh_post_progression.PostProgressionInfo",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.veh_post_progression.PostProgressionInfo no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_intro.py",
+        19
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_intro.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

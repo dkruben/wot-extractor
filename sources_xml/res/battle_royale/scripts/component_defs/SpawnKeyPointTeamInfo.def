@@ -1,0 +1,29 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/component_defs/SpawnKeyPointTeamInfo.def -->
+<root>
+	<Properties>
+		<availableSpawnKeyPoints>
+			<Type>ARRAY<of>SPAWN_KEY_POINT</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</availableSpawnKeyPoints>
+		<teamSpawnKeyPoints>
+			<Type>ARRAY<of>TEAM_SPAWN_KEY_POINT</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</teamSpawnKeyPoints>
+		<spawnKeyPointsCloseTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</spawnKeyPointsCloseTime>
+	</Properties>
+	<CellMethods>
+		<chooseSpawnKeyPoint>
+			<Exposed />
+			<Arg>STRING</Arg>
+		</chooseSpawnKeyPoint>
+		<placeVehicle>
+			<Exposed />
+		</placeVehicle>
+	</CellMethods>
+	<DefaultKeyName>spawnKeyPointTeamInfo</DefaultKeyName>
+</root>

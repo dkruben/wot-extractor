@@ -1,0 +1,27 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/VisualScriptEquipmentPublic.def -->
+<root>
+	<Properties>
+		<compactDescr>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</compactDescr>
+		<equipmentState>
+			<Type>VISUAL_SCRIPT_EQUIPMENT_STATE</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</equipmentState>
+		<equipmentStatePublic>
+			<Type>VISUAL_SCRIPT_EQUIPMENT_PUBLIC_STATE</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</equipmentStatePublic>
+		<errorState>
+			<Type>INT16</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</errorState>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>visualScriptEquipmentPublic</DefaultKeyName>
+</root>

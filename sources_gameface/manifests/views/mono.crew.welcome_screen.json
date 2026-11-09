@@ -1,0 +1,88 @@
+{
+  "rid": "R.views.mono.crew.welcome_screen",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "welcome_screen",
+  "dir": "gui/gameface/_dist/production/mono/crew/welcome_screen",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/crew/welcome_screen/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/crew/welcome_screen/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/crew/welcome_screen/bundle.js"
+    },
+    {
+      "name": "welcome_screen.css",
+      "effective": "res/gui/gameface/_dist/production/mono/crew/welcome_screen/welcome_screen.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/crew/welcome_screen/welcome_screen.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "welcome_screen.html",
+      "effective": "res/gui/gameface/_dist/production/mono/crew/welcome_screen/welcome_screen.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/crew/welcome_screen/welcome_screen.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/crew/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/crew/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/crew/welcome_screen/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/crew/welcome_screen/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/crew/welcome_screen/welcome_screen.css",
+      "key": "res/gui/gameface/_dist/production/mono/crew/welcome_screen/welcome_screen.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.mono.crew.welcome_screen",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.mono.crew.welcome_screen no Python",
+      "ViewModel WelcomeScreenViewModel (model=... no Python da view): 1/1 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/welcome_screen_view.py",
+        16
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/welcome_screen_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/welcome_screen_view_model.py",
+      "class": "WelcomeScreenViewModel",
+      "chain": [
+        "WelcomeScreenViewModel"
+      ],
+      "properties": [],
+      "commands": [
+        "onClose"
+      ],
+      "coverage": {
+        "found": 1,
+        "total": 1,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

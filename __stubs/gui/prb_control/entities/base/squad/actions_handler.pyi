@@ -1,0 +1,66 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/prb_control/entities/base/squad/actions_handler.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import typing as typing
+from BWUtil import AsyncReturn as AsyncReturn
+from CurrentVehicle import g_currentVehicle as g_currentVehicle
+from PlayerEvents import g_playerEvents as g_playerEvents
+from gui import SystemMessages as SystemMessages
+from gui.impl.gen import R as R
+from gui.prb_control.entities.base import checkVehicleAmmoFull as checkVehicleAmmoFull
+from gui.prb_control.entities.base.ctx import SendInvitesCtx as SendInvitesCtx
+from gui.prb_control.entities.base.unit.actions_handler import AbstractActionsHandler as AbstractActionsHandler
+from gui.prb_control.events_dispatcher import g_eventDispatcher as g_eventDispatcher
+from gui.prb_control.settings import REQUEST_TYPE as REQUEST_TYPE, FUNCTIONAL_FLAG as FUNCTIONAL_FLAG
+from gui.shared.event_dispatcher import showPlatoonInfoDialog as showPlatoonInfoDialog, showPlatoonWarningDialog as showPlatoonWarningDialog
+from messenger.storage import MessengerStorageDescriptor as MessengerStorageDescriptor, UsersStorage as UsersStorage
+from wg_async import await_callback as await_callback, wg_async as wg_async, wg_await as wg_await
+
+class SquadActionsHandler(AbstractActionsHandler):
+    usersStorage: Any
+    def __init__(self, entity):
+        ...
+    def setUnitChanged(self, loadHangar=False):
+        ...
+    def setPlayerInfoChanged(self):
+        ...
+    def setPlayersChanged(self):
+        ...
+    def executeInit(self, ctx):
+        ...
+    def executeFini(self):
+        ...
+    # decorador original: @wg_async
+    def execute(self):
+        ...
+    # decorador original: @wg_async
+    def _validateUnitState(self, entity):
+        ...
+    # decorador original: @wg_async
+    def _checkVehicleAmmo(self, vehicle):
+        ...
+    def exitFromQueue(self):
+        ...
+    def clear(self):
+        ...
+    def processInvites(self, accountsToInvite):
+        ...
+    def _goToQueueUI(self):
+        ...
+    def _loadWindow(self, ctx):
+        ...
+    def _setCreatorReady(self):
+        ...
+    def _getTeamReady(self):
+        ...
+    def _showInviteSentMessage(self, accountsToInvite):
+        ...
+    def _onKickedFromQueue(self, _):
+        ...
+    def _updateSquadCtx(self, initCtx, squadCtx):
+        ...
+    @staticmethod
+    def _isSquadHavePlayersInBattle(slotPlayer, playerInfo):
+        ...

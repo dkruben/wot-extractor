@@ -1,0 +1,171 @@
+{
+  "rid": "R.views.comp7.mono.lobby.hangar",
+  "rid_source": "sources/res/comp7/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "hangar",
+  "dir": "comp7/gui/gameface/_dist/production/mono/lobby/hangar",
+  "feature": "comp7",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+    },
+    {
+      "name": "hangar.css",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "hangar.html",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/hangar/hangar.html",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/hangar/hangar.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/date_range.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/date_range.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/rank_emblem.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/rank_emblem.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/hangar/bundle.js"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/hangar/hangar.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "mono.rest_bonus.tooltips.rest_bonus_tooltip",
+    "mono.tooltips.tooltips"
+  ],
+  "commands": [
+    "dealPanel.onAutoRenewalChanged",
+    "dealPanel.onDealCancelled",
+    "dealPanel.onDealConfirmed",
+    "onAnimationEnd",
+    "onAppearAnimationPlayed",
+    "onBuySlot",
+    "onCarouselTypeChange",
+    "onChangeSetupIndex",
+    "onClick",
+    "onClose",
+    "onCreate",
+    "onDealCancelled",
+    "onDealConfirmed",
+    "onDiscard",
+    "onDogMoreInfoClick",
+    "onEntryPointAnimationSeen",
+    "onEventClick",
+    "onGetMoreCurrency",
+    "onGoBuyVehicle",
+    "onGoRecoverVehicle",
+    "onGoToAboutVehicle",
+    "onGoToRewardsSelection",
+    "onGoToWeeklyQuests",
+    "onGroupClick",
+    "onIntroAnimationPlayed",
+    "onMarkAsViewed",
+    "onMissionClick",
+    "onModify",
+    "onMouseOver3dScene",
+    "onMoveSpace",
+    "onNavigate",
+    "onOpenBarracks",
+    "onOpenBattlePass",
+    "onOpenCrew",
+    "onOpenMeta",
+    "onOpenSlotSpecDialog",
+    "onPollServerTime",
+    "onPresetSelected",
+    "onReset",
+    "onSave",
+    "onSaveFilter",
+    "onSelect",
+    "onSelectProposal",
+    "onSelectTelecomRentalVehicle",
+    "onSelectVehicle",
+    "onSetDirtyEdit",
+    "onShellUpdate",
+    "onSlideChanged",
+    "onSlotAction",
+    "onSwapSlots",
+    "onSwitchPreset",
+    "onToggleAcceleratedTraining",
+    "onToggleIntensiveTraining",
+    "onUpdateSetting",
+    "onWidgetUnmounted",
+    "openDeleteConfirm",
+    "openImportConfirm"
+  ],
+  "link": {
+    "rid": "R.views.comp7.mono.lobby.hangar",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.comp7.mono.lobby.hangar no Python",
+      "ViewModel RouterModel (model=... no Python da view): 3/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/hangar/comp7_hangar.py",
+        83
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/hangar/comp7_hangar.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/router_model.py",
+      "class": "RouterModel",
+      "chain": [
+        "RouterModel"
+      ],
+      "properties": [
+        [
+          "route",
+          "String"
+        ],
+        [
+          "params",
+          "String"
+        ]
+      ],
+      "commands": [
+        "navigateTo",
+        "navigateBack"
+      ],
+      "coverage": {
+        "found": 3,
+        "total": 4,
+        "missing": [
+          "navigateBack"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

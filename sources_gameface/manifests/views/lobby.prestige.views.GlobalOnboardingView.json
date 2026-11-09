@@ -1,0 +1,112 @@
+{
+  "rid": "R.views.lobby.prestige.views.GlobalOnboardingView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "GlobalOnboardingView",
+  "dir": "gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView",
+  "feature": null,
+  "files": [
+    {
+      "name": "GlobalOnboardingView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView/GlobalOnboardingView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView/GlobalOnboardingView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "GlobalOnboardingView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView/GlobalOnboardingView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView/GlobalOnboardingView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "GlobalOnboardingView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView/GlobalOnboardingView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView/GlobalOnboardingView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView/GlobalOnboardingView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/prestige/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/prestige/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView/GlobalOnboardingView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView/GlobalOnboardingView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView/GlobalOnboardingView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/prestige/views/GlobalOnboardingView/GlobalOnboardingView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow"
+  ],
+  "commands": [
+    "onClose",
+    "onGoToVehicleStatistic"
+  ],
+  "link": {
+    "rid": "R.views.lobby.prestige.views.GlobalOnboardingView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.prestige.views.GlobalOnboardingView no Python",
+      "ViewModel GlobalOnboardingViewModel (model=... no Python da view): 4/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/prestige/global_onboarding_view.py",
+        100
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/prestige/global_onboarding_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/prestige/global_onboarding_view_model.py",
+      "class": "GlobalOnboardingViewModel",
+      "chain": [
+        "GlobalOnboardingViewModel"
+      ],
+      "properties": [
+        [
+          "eliteVehicleAmount",
+          "Number"
+        ],
+        [
+          "vehicles",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onGoToVehicleStatistic"
+      ],
+      "coverage": {
+        "found": 4,
+        "total": 4,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

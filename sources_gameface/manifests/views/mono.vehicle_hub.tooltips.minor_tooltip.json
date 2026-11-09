@@ -1,0 +1,74 @@
+{
+  "rid": "R.views.mono.vehicle_hub.tooltips.minor_tooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "minor_tooltip",
+  "dir": "gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip/bundle.js"
+    },
+    {
+      "name": "minor_tooltip.css",
+      "effective": "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip/minor_tooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip/minor_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "minor_tooltip.html",
+      "effective": "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip/minor_tooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip/minor_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/vehicle_hub/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/vehicle_hub/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip/minor_tooltip.css",
+      "key": "res/gui/gameface/_dist/production/mono/vehicle_hub/tooltips/minor_tooltip/minor_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.vehicle_hub.tooltips.minor_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.mono.vehicle_hub.tooltips.minor_tooltip no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/vehicle_hub/sub_presenters/armor/armor_sub_presenter.py",
+        232
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/vehicle_hub/sub_presenters/armor/minor_tooltip.py",
+        15
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/vehicle_hub/sub_presenters/armor/armor_sub_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/vehicle_hub/sub_presenters/armor/minor_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

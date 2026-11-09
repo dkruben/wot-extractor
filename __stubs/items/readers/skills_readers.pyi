@@ -1,0 +1,43 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/common/items/readers/skills_readers.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from collections import namedtuple as namedtuple
+import ResMgr as ResMgr
+from constants import IS_CLIENT as IS_CLIENT, IS_WEB as IS_WEB, TTC_TOOLTIP_SECTIONS as TTC_TOOLTIP_SECTIONS
+from items import _xml as _xml
+from items.components import component_constants as component_constants, skills_constants as skills_constants
+from items.components import skills_components as skills_components
+from items.components.skills_constants import ParamMeasureType as ParamMeasureType, ParamSignType as ParamSignType, SkillTypeName as SkillTypeName
+SkillUISettings: Any
+SkillDescrsArg: Any
+TTCParamsArg: Any
+_g_skillConfigReaders: dict
+
+def _readSkillBasics(xmlCtx, section, subsectionName):
+    ...
+def _readUISettings(xmlCtx, section, subsectionName):
+    ...
+def _readDescrArgs(xmlCtx, section, subsectionName):
+    ...
+def _readTTCParams(xmlCtx, section, subsectionName):
+    ...
+def _readRole(xmlCtx, section, subsectionName):
+    ...
+def _readBrotherhoodSkill(xmlCtx, section, subsectionName):
+    ...
+def _readCommanderTutorSkill(xmlCtx, section, subsectionName):
+    ...
+def _readCommanderSkillWithDelaySkill(xmlCtx, section, subsectionName):
+    ...
+def _readCommonSkill(xmlCtx, section, subsectionName):
+    ...
+def _readCrewMasterySkill(xmlCtx, section, subsectionName):
+    ...
+def _readCommanderEnemyShotPredictorSkill(xmlCtx, section, subsectionName):
+    ...
+def readSkillsConfig(xmlPath):
+    ...
+def readAutoFillConfig(xmlPath):
+    ...

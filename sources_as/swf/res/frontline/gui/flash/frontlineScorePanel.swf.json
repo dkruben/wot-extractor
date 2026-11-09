@@ -1,0 +1,168 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineScorePanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 53332,
+ "actual_length": 53332,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 18,
+  "ShowFrame": 478,
+  "DefineShape": 13,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 730,
+  "RemoveObject2": 7,
+  "DefineShape3": 2,
+  "DefineBitsJPEG3": 2,
+  "DefineBitsLossless2": 11,
+  "DefineEditText": 1,
+  "DefineSprite": 17,
+  "FrameLabel": 22,
+  "DefineMorphShape": 1,
+  "FileAttributes": 1,
+  "PlaceObject3": 7,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 16,
+  "sprites": 17,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "frontline|frontlineSharedAssets.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 47,
+   "class": "FrontlineScorePanelUI"
+  },
+  {
+   "id": 44,
+   "class": "BaseEntryAnimatedUI"
+  },
+  {
+   "id": 40,
+   "class": "BaseEntryUI"
+  },
+  {
+   "id": 35,
+   "class": "HeadquarterScoreEntryAnimatedUI"
+  },
+  {
+   "id": 31,
+   "class": "HeadquarterScoreEntryUI"
+  },
+  {
+   "id": 19,
+   "class": "frontlineScorePanel_fla.HQhealthBar_9"
+  },
+  {
+   "id": 10,
+   "class": "frontlineScorePanel_fla.LaneHighlight_15"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2701,
+   "classes": 7,
+   "methods": 46,
+   "bodies": 46,
+   "code_bytes": 739
+  }
+ ],
+ "classes": [
+  {
+   "name": "frontlineScorePanel_fla.HQhealthBar_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineScorePanel_fla.LaneHighlight_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BaseEntryAnimatedUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineScorePanel.components.SectorBaseEntryAnimated",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeadquarterScoreEntryAnimatedUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineScorePanel.components.HeadquarterEntryAnimated",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BaseEntryUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineScorePanel.components.SectorBaseScoreEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeadquarterScoreEntryUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineScorePanel.components.HeadquarterScoreEntry",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineScorePanelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.frontlineScorePanel.FrontlineScorePanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

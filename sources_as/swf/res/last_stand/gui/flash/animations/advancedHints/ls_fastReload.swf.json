@@ -1,0 +1,222 @@
+{
+ "source": "sources/res/last_stand/gui/flash/animations/advancedHints/ls_fastReload.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 211404,
+ "actual_length": 211404,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 44,
+  "ShowFrame": 2377,
+  "DefineShape": 33,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 4,
+  "PlaceObject2": 3194,
+  "RemoveObject2": 54,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 26,
+  "DefineSprite": 43,
+  "FileAttributes": 1,
+  "PlaceObject3": 9,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 5,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 26,
+  "shapes": 47,
+  "sprites": 43,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 13,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "ls_fastReload_fla.MainTimeline"
+  },
+  {
+   "id": 109,
+   "class": "ls_fastReload_fla.shelReloadFast2_41"
+  },
+  {
+   "id": 108,
+   "class": "ls_fastReload_fla.shelReloadFast1_40"
+  },
+  {
+   "id": 106,
+   "class": "ls_fastReload_fla.shelReload_38"
+  },
+  {
+   "id": 93,
+   "class": "ls_fastReload_fla.activeAbilityReloadImmediately_37"
+  },
+  {
+   "id": 88,
+   "class": "ls_fastReload_fla.slotFx_36"
+  },
+  {
+   "id": 82,
+   "class": "ls_fastReload_fla.activeAbilityReload_34"
+  },
+  {
+   "id": 78,
+   "class": "ls_fastReload_fla.crosshairReloadFast_31"
+  },
+  {
+   "id": 77,
+   "class": "ls_fastReload_fla.crosshairReloadAnimFast_32"
+  },
+  {
+   "id": 76,
+   "class": "ls_fastReload_fla.crosshairReload_29"
+  },
+  {
+   "id": 75,
+   "class": "ls_fastReload_fla.crosshairReloadAnim_30"
+  },
+  {
+   "id": 70,
+   "class": "ls_fastReload_fla.tankShoot_25"
+  },
+  {
+   "id": 59,
+   "class": "ls_fastReload_fla.activeAbilityCountdown_21"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2882,
+   "classes": 13,
+   "methods": 52,
+   "bodies": 52,
+   "code_bytes": 860
+  }
+ ],
+ "classes": [
+  {
+   "name": "ls_fastReload_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.activeAbilityCountdown_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.activeAbilityReloadImmediately_37",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.activeAbilityReload_34",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.crosshairReloadAnimFast_32",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.crosshairReloadAnim_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.crosshairReloadFast_31",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.crosshairReload_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.shelReloadFast1_40",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.shelReloadFast2_41",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.shelReload_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.slotFx_36",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_fastReload_fla.tankShoot_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

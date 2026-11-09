@@ -1,0 +1,60 @@
+{
+ "source": "sources/res/gui/flash/animations/resourceWell/DustAni_parts.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 72826,
+ "actual_length": 72826,
+ "frame_size_px": [
+  0.0,
+  1070.8,
+  0.0,
+  890.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "none",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 607,
+  "DefineShape": 5,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 5,
+  "PlaceObject2": 3005,
+  "DefineSprite": 6,
+  "FileAttributes": 1,
+  "PlaceObject3": 7,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 5,
+  "shapes": 5,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 0,
+  "abc_blocks": 0,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [],
+ "abc": [],
+ "classes": [],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

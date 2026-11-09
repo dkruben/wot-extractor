@@ -1,0 +1,39 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/loadout/panel/ammunition/slot_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from frameworks.wulf import ViewModel as ViewModel
+from gui.impl.gen.view_models.views.lobby.loadout.panel.ammunition.specialization import Specialization as Specialization
+
+class SlotModel(ViewModel):
+    __slots__: tuple
+    CONSUMABLE_ITEM_TYPE = 'consumable'
+    SHELL_ITEM_TYPE = 'shell'
+    EQUIPMENT_ITEM_TYPE = 'equipment'
+    INSTRUCTION_ITEM_TYPE = 'instruction'
+    def __init__(self, properties=5, commands=0):
+        ...
+    @property
+    def specialization(self):
+        ...
+    @staticmethod
+    def getSpecializationType():
+        ...
+    def getId(self):
+        ...
+    def setId(self, value):
+        ...
+    def getItemId(self):
+        ...
+    def setItemId(self, value):
+        ...
+    def getItemType(self):
+        ...
+    def setItemType(self, value):
+        ...
+    def getBindedKey(self):
+        ...
+    def setBindedKey(self, value):
+        ...
+    def _initialize(self):
+        ...

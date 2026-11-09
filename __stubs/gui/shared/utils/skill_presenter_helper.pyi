@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/shared/utils/skill_presenter_helper.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+import typing as typing
+from debug_utils import LOG_WARNING as LOG_WARNING
+from gui.impl import backport as backport
+from gui.impl.gen import R as R
+from items.components.component_constants import EMPTY_STRING as EMPTY_STRING
+from items.tankmen import getSkillsConfig as getSkillsConfig
+from items.readers.skills_readers import SkillDescrsArg as SkillDescrsArg
+from typing import List as List, Tuple as Tuple
+
+def getSkillIconName(skillName, customName=...):
+    ...
+def getSkillBigIconPath(skillName, customSkillName=...):
+    ...
+def getSkillDescrArgs(skillName):
+    ...
+def getSkillTypeName(skillName):
+    ...
+def getSkillUserName(skillName):
+    ...
+def getSkillUserDescription(skillName):
+    ...
+def getSkillMaxLvlDescription(skillName):
+    ...
+def getSkillCurrentLvlDescription(skillName):
+    ...
+def getSkillAltDescription(skillName):
+    ...
+def getSkillAltInfo(skillName):
+    ...

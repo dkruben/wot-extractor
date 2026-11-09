@@ -1,0 +1,122 @@
+{
+  "rid": "R.views.mono.post_battle.tooltips.critical_damage",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "critical_damage",
+  "dir": "gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/bundle.js"
+    },
+    {
+      "name": "critical_damage.css",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "critical_damage.html",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.post_battle.tooltips.critical_damage",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "5 referencia(s) R.views.mono.post_battle.tooltips.critical_damage no Python",
+      "ViewModel CriticalDamageTooltipModel (model=... no Python da view): 1/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+        38
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+        38
+      ],
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/presenters/sub_presenters/battle_efficiency.py",
+        48
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+        47
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tooltips/battle_efficiency_tooltips_views.py",
+        44
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/presenters/sub_presenters/battle_efficiency.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_results/submodel_presenters/battle_efficiency.py",
+      "sources/res/scripts/client/gui/impl/lobby/tooltips/battle_efficiency_tooltips_views.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/tooltips/critical_damage_tooltip_model.py",
+      "class": "CriticalDamageTooltipModel",
+      "chain": [
+        "CriticalDamageTooltipModel"
+      ],
+      "properties": [
+        [
+          "paramType",
+          "String"
+        ],
+        [
+          "details",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 2,
+        "missing": [
+          "paramType"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/tooltips/efficiency_tooltip_model.py"
+      ]
+    }
+  }
+}

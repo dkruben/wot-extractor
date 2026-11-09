@@ -1,0 +1,94 @@
+{
+ "source": "sources/res/gui/flash/battleMattersVideoInstructions.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 331165,
+ "actual_length": 331165,
+ "frame_size_px": [
+  0.0,
+  940.0,
+  0.0,
+  520.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 20,
+  "ShowFrame": 539,
+  "DefineShape": 11,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 12,
+  "PlaceObject2": 1338,
+  "RemoveObject2": 31,
+  "DefineBitsLossless2": 18,
+  "DefineSprite": 19,
+  "FileAttributes": 1,
+  "PlaceObject3": 77,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 18,
+  "shapes": 23,
+  "sprites": 19,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 1,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "battleMattersCommon.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 60,
+   "class": "ContentUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 434,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 60
+  }
+ ],
+ "classes": [
+  {
+   "name": "ContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleMatters.BattleMattersAnimation",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

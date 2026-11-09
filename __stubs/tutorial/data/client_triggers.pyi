@@ -1,0 +1,49 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/tutorial/data/client_triggers.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import logging as logging
+from future.utils import viewitems as viewitems
+from gui.Scaleform.genConsts.TUTORIAL_TRIGGER_TYPES import TUTORIAL_TRIGGER_TYPES as TUTORIAL_TRIGGER_TYPES
+_logger: Any
+_COMPONENT_STATE_TRIGGERS: dict
+
+class _ComponentState(object):
+    __previousState: Any
+    __actualState: Any
+    def __init__(self):
+        ...
+    def getActualState(self):
+        ...
+    def updateState(self, newState):
+        ...
+    def isStateChanged(self):
+        ...
+
+class ClientTriggers(object):
+    __hintNeededStates: Any
+    __hintRealStates: Any
+    __activeHints: Any
+    def __init__(self):
+        ...
+    def clear(self):
+        ...
+    def setStates(self, hints):
+        ...
+    def getNeededStates(self):
+        ...
+    def addActiveHint(self, itemID):
+        ...
+    def removeActiveHint(self, itemID):
+        ...
+    def removeActiveHints(self):
+        ...
+    def getNeededTriggersForComponent(self, itemID):
+        ...
+    def updateRealState(self, itemID, state=None, newStateValue=None):
+        ...
+    def checkState(self, itemID):
+        ...
+    def isStateChanged(self, itemID, state):
+        ...

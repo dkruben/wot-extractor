@@ -1,0 +1,58 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/battle_results/presenters/packers/personal_rewards.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/battle_results/presenters/packers/personal_rewards.py
+from gui.battle_results.presenters.packers.interfaces import IBattleResultsPacker
+from gui.battle_results.pbs_helpers.economics import hasAogasFine
+from gui.impl.gen.view_models.views.lobby.battle_results.reward_item_model import RewardItemModel
+
+class PersonalRewards(IBattleResultsPacker):
+    _AVAILABLE_REWARDS = []
+    _ITEM_MODEL_CLS = RewardItemModel
+    _REWARD_GETTERS = {}
+    _REWARDS_TO_CONDITION_MAP = {}
+
+    @classmethod
+    def packModel(cls, model, battleResults):
+        model.clear()
+        shownRewards = cls._getShownRewards(battleResults)
+        for rewardType, rewardValue in shownRewards:
+            item = cls._ITEM_MODEL_CLS()
+            item.setType(rewardType.value)
+            item.setValue(rewardValue)
+            model.addViewModel(item)
+
+        model.invalidate()
+
+    @classmethod
+    def _getAllRewardValues(cls, reusable):
+        rewardValues = {}
+        for rewardType in cls._AVAILABLE_REWARDS:
+            getter = cls._REWARD_GETTERS.get(rewardType)
+            if getter is None:
+                continue
+            value = getter(reusable)
+            rewardValues[rewardType] = value
+
+        return rewardValues
+
+    @classmethod
+    def _getShownRewards(cls, battleResults):
+        shownRewards = []
+        rewardValues = cls._getAllRewardValues(battleResults.reusable)
+        hasFines = cls._hasFines(battleResults)
+        for rewardType in cls._AVAILABLE_REWARDS:
+            value = rewardValues.get(rewardType)
+            if value is None:
+                continue
+            condition = cls._REWARDS_TO_CONDITION_MAP.get(rewardType)
+            if condition is not None and not condition(value, hasFines, rewardValues, battleResults.reusable):
+                continue
+            shownRewards.append((rewardType, value))
+
+        return shownRewards
+
+    @classmethod
+    def _hasFines(cls, battleResults):
+        return battleResults.reusable.personal.avatar.hasPenalties() or hasAogasFine(battleResults)[1]

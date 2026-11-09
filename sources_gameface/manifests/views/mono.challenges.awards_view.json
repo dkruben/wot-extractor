@@ -1,0 +1,117 @@
+{
+  "rid": "R.views.mono.challenges.awards_view",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "awards_view",
+  "dir": "gui/gameface/_dist/production/mono/challenges/awards_view",
+  "feature": null,
+  "files": [
+    {
+      "name": "awards_view.css",
+      "effective": "res/gui/gameface/_dist/production/mono/challenges/awards_view/awards_view.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/challenges/awards_view/awards_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "awards_view.html",
+      "effective": "res/gui/gameface/_dist/production/mono/challenges/awards_view/awards_view.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/challenges/awards_view/awards_view.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/challenges/awards_view/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/challenges/awards_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/challenges/awards_view/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/challenges/awards_view/awards_view.css",
+      "key": "res/gui/gameface/_dist/production/mono/challenges/awards_view/awards_view.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/challenges/awards_view/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/challenges/awards_view/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/challenges/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/challenges/chunks/lib.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onChallenges",
+    "onClose",
+    "onHangar"
+  ],
+  "link": {
+    "rid": "R.views.mono.challenges.awards_view",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.mono.challenges.awards_view no Python",
+      "ViewModel AwardsViewModel (model=... no Python da view): 8/8 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/challenges/awards_view.py",
+        29
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/challenges/awards_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/challenges/awards_view_model.py",
+      "class": "AwardsViewModel",
+      "chain": [
+        "AwardsViewModel"
+      ],
+      "properties": [
+        [
+          "challengeName",
+          "String"
+        ],
+        [
+          "mainRewardType",
+          "String"
+        ],
+        [
+          "isCompleted",
+          "Bool"
+        ],
+        [
+          "isAvailable",
+          "Bool"
+        ],
+        [
+          "rewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onHangar",
+        "onChallenges"
+      ],
+      "coverage": {
+        "found": 8,
+        "total": 8,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/collection/awards_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/awards_view_model.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,119 @@
+/* wot-extractor: JavaScript FORMATADO a partir de sources/res/gui/gameface/_dist/production/mono/pet_system/fullscreen_event_view/bundle.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
+import{
+  r as e
+}
+from"../chunks/rolldown-runtime.js";
+import{
+  C as s,Ct as a,E as t,G as r,J as p,L as l,Mt as i,N as o,Nt as d,S as n,U as c,W as _,X as m,Z as y,at as v,it as x,kt as j,nt as h,q as w,rt as g,ut as u,w as A,x as N,yt as f,z as b
+}
+from"../chunks/lib.js";
+import"../chunks/global.js";
+import{
+  t as k
+}
+from"../chunks/vendor.js";
+import{
+  t as E
+}
+from"../chunks/synergy_rewards.js";
+i();
+var C=d.resolve("aliases"),[O,S]=y()(({
+  observableModel:e
+})=>{
+  const s={
+    root:e.object(),rewards:e.array("rewards")
+  },
+  a=m(()=>f(s.rewards.get(),e=>({
+    ...e,image:_(e,w.Big),valueType:N(e.name),special:"overlayType"in e?e.overlayType:void 0,tooltipArgs:r({
+      tooltipId:e.tooltipId
+    },C.read(e=>e.hangar.shared.PetEvent("resId")))
+  })));
+  return{
+    ...s,computes:{
+      getRewards:a,hasRewards:m(()=>a().length>0)
+    }
+  }
+},({
+  externalModel:e
+})=>({
+  close:e.createCallbackNoArgs("onClose")
+})),I="App_1d40feee",$="App_contentWrapper_85695a2e",z="App_img_52297d37",T="App_video_ae425fb9",W="App_title_6c316ed4",B="App_descriptionWrapper_656353e9",M="App_descriptionScrollWrapper_a39002f9",L="App_descriptionContent_4f66c3aa",q="App_descriptionBar_b3366266",F="App_text_0",G="App_joke_14331c43",J="App_rewardsTitle_4923ec50",P="App_flexBreak_1ff3f8f2",U="App_rewards_d0d451da",X="App_reward_d2e6a341",Z="App_buttons_149abdc7",D=u(),H=d.resolve("strings"),K=d.resolve("images"),Q=d.resolve("sounds"),V=k(function(){
+  const{
+    model:e,controls:a
+  }=S(),r=e.root.get().eventId,p=H.readOrEmpty(`pet_events.joke.event_${r}`),i=K.read(`petSystem.event_view.reward_${r}_400x400`),d=[...Array(p?5:4).keys()],c=e.computes.getRewards(),_=e.computes.hasRewards();
+  v(a.close);
+  const m=g(d.length,d.map((e,s)=>({
+    from:{
+      y:20,opacity:0
+    },
+    to:{
+      y:0,opacity:1
+    },
+    delay:250*(s+1),config:{
+      duration:250,easing:x.easeOutSine
+    },
+    onStart:()=>{
+      let e="pet_system_window_item_02";
+      0===s?e="pet_system_window_item_01":s===d.length-1&&(e="pet_system_window_item_03"),Q.play(e)
+    }
+  })));
+  return(0,D.jsx)("div",{
+    className:I,children:(0,D.jsxs)("div",{
+      className:$,children:[(0,D.jsxs)(h.div,{
+        style:m[0],children:[i&&(0,D.jsxs)(D.Fragment,{
+          children:[(0,D.jsx)("div",{
+            className:z,style:{
+              backgroundImage:`url(${i})`
+            }
+          }),!j.isLow()&&(0,D.jsx)(n,{
+            className:T,src:R.videos.pet_system.pet_rays(),autoplay:!0,loop:!0
+          })]
+        }),(0,D.jsx)(l,{
+          className:W,text:H.readOrEmpty(`pet_events.title.event_${r}`)
+        })]
+      }),(0,D.jsx)(h.div,{
+        style:m[1],className:B,children:(0,D.jsxs)(s,{
+          children:[(0,D.jsx)(A,{
+            classNames:{
+              wrapper:M,content:L
+            },
+            children:(0,D.jsx)(b,{
+              text:H.readOrEmpty(`pet_events.text.event_${r}`),params:{
+                br:(0,D.jsx)("span",{
+                  className:P
+                })
+              },
+              className:F,split:!0
+            })
+          }),(0,D.jsx)(t,{
+            classNames:{
+              base:q
+            }
+          })]
+        })
+      }),(0,D.jsxs)(h.div,{
+        style:m[2],children:[(0,D.jsx)("div",{
+          className:J,children:H.readOrEmpty("pet_events.rewards.title")
+        }),(0,D.jsx)(E,{
+          rewards:c,hasRewards:_,className:U,classNames:{
+            reward:X
+          },
+          imageSize:80
+        })]
+      }),p&&(0,D.jsx)(h.div,{
+        style:m[3],children:(0,D.jsx)(l,{
+          className:G,text:p
+        })
+      }),(0,D.jsx)(h.div,{
+        style:m[p?4:3],className:Z,children:(0,D.jsx)(o,{
+          size:o.sizes.medium,onClick:a.close,children:H.readOrEmpty("pet_events.submit")
+        })
+      })]
+    })
+  })
+});
+p((0,D.jsx)(O,{
+  children:(0,D.jsx)(c,{
+    children:(0,D.jsx)(V,{})
+  })
+})).then(()=>a());

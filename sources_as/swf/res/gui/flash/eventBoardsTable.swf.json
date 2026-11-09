@@ -1,0 +1,443 @@
+{
+ "source": "sources/res/gui/flash/eventBoardsTable.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 1135442,
+ "actual_length": 1135442,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 50,
+  "ShowFrame": 1024,
+  "DefineShape": 40,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 162,
+  "RemoveObject2": 34,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 38,
+  "DefineEditText": 37,
+  "DefineSprite": 49,
+  "FrameLabel": 101,
+  "FileAttributes": 1,
+  "PlaceObject3": 18,
+  "ImportAssets2": 6,
+  "CSMTextSettings": 37,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 38,
+  "shapes": 43,
+  "sprites": 49,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 37,
+  "fonts": 0,
+  "classes": 31,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "windows.swf",
+   "symbols": []
+  },
+  {
+   "url": "../flash/waiting.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 167,
+   "class": "EventBoardsTableViewUI"
+  },
+  {
+   "id": 163,
+   "class": "TableViewStatusUI"
+  },
+  {
+   "id": 152,
+   "class": "eventBoardsTable_fla.back_4"
+  },
+  {
+   "id": 147,
+   "class": "AwardGroupsUI"
+  },
+  {
+   "id": 146,
+   "class": "WoodenBtnUI"
+  },
+  {
+   "id": 140,
+   "class": "FourthBtnUI"
+  },
+  {
+   "id": 134,
+   "class": "ThirdBtnUI"
+  },
+  {
+   "id": 128,
+   "class": "SecondBtnUI"
+  },
+  {
+   "id": 122,
+   "class": "FirstBtnUI"
+  },
+  {
+   "id": 116,
+   "class": "MyPlaceBtnUI"
+  },
+  {
+   "id": 112,
+   "class": "EventBoardsScrollPaneUI"
+  },
+  {
+   "id": 106,
+   "class": "ScrollPaneContentUI"
+  },
+  {
+   "id": 105,
+   "class": "PaginationUI"
+  },
+  {
+   "id": 103,
+   "class": "RightBtnUI"
+  },
+  {
+   "id": 96,
+   "class": "LeftBtnUI"
+  },
+  {
+   "id": 88,
+   "class": "maskUI"
+  },
+  {
+   "id": 86,
+   "class": "AwardStripeRendererUI"
+  },
+  {
+   "id": 83,
+   "class": "AwardsRibbonBgUI"
+  },
+  {
+   "id": 72,
+   "class": "AwardShadow"
+  },
+  {
+   "id": 69,
+   "class": "TableTopShadow"
+  },
+  {
+   "id": 66,
+   "class": "EventBoardTableHeaderUI"
+  },
+  {
+   "id": 60,
+   "class": "TableViewHeaderUI"
+  },
+  {
+   "id": 55,
+   "class": "MaintenanceCmpUI"
+  },
+  {
+   "id": 52,
+   "class": "MissionSeparatorUI"
+  },
+  {
+   "id": 49,
+   "class": "BoundsContainerUI"
+  },
+  {
+   "id": 47,
+   "class": "eventBoardsTableImports"
+  },
+  {
+   "id": 46,
+   "class": "BasePlayerAwardRendererUI"
+  },
+  {
+   "id": 24,
+   "class": "SpecialBackgroundUI"
+  },
+  {
+   "id": 21,
+   "class": "TopPlayerAwardRendererUI"
+  },
+  {
+   "id": 14,
+   "class": "AwardIconsGroupUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 13444,
+   "classes": 31,
+   "methods": 209,
+   "bodies": 209,
+   "code_bytes": 4760
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BoundsContainerUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardShadow",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MissionSeparatorUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SpecialBackgroundUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TableTopShadow",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventBoardsTableImports",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventBoardsTable_fla.back_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "maskUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardsRibbonBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.AwardsRibbonBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardTableHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.TableViewTableHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TableViewHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.TableViewHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TableViewStatusUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.TableViewStatus",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardIconsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FirstBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FourthBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LeftBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MyPlaceBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RightBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SecondBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ThirdBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WoodenBtnUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsScrollPaneUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.BorderShadowScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollPaneContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.view.EventBoardTableContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardStripeRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.AwardStripeRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BasePlayerAwardRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.BasePlayerAwardRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardGroupsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.AwardGroups",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MaintenanceCmpUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.MaintenanceComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PaginationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.Pagination",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TopPlayerAwardRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.TopPlayerAwardRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsTableViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.EventBoardsTableView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

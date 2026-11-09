@@ -1,0 +1,16 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/AvatarVehiclesInfo.def -->
+<root>
+	<Properties>
+		<vehiclesInfo>
+			<Type>ARRAY<of>VEHICLES_INFO</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+		</vehiclesInfo>
+	</Properties>
+	<ofEntity>
+		<AvatarInfo />
+	</ofEntity>
+	<CellMethods />
+	<DefaultKeyName>avatarVehiclesInfo</DefaultKeyName>
+</root>

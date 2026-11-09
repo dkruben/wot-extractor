@@ -1,0 +1,27 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/item_defs/vehicles/sweden/components/fuelTanks.xml -->
+<root>
+	<ids>
+		<Large_LS_BOT>6500</Large_LS_BOT>
+		<Heavy_LS_BOT>6501</Heavy_LS_BOT>
+	</ids>
+	<shared>
+		<Large_LS_BOT>
+			<tags />
+			<price>100</price>
+			<notInShop>true</notInShop>
+			<weight>300</weight>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>80</maxRegenHealth>
+			<repairCost>1.0</repairCost>
+		</Large_LS_BOT>
+		<Heavy_LS_BOT>
+			<tags />
+			<price>100</price>
+			<notInShop>true</notInShop>
+			<weight>275</weight>
+			<maxHealth>175</maxHealth>
+			<maxRegenHealth>70</maxRegenHealth>
+			<repairCost>1.0</repairCost>
+		</Heavy_LS_BOT>
+	</shared>
+</root>

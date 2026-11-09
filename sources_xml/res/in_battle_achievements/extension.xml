@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/in_battle_achievements/extension.xml -->
+<root>
+	<FeatureName>in_battle_achievements</FeatureName>
+	<Components>
+		<StaticComponents>
+			<InBattleAchievementsComponent />
+		</StaticComponents>
+		<DynamicComponents>
+			<ArenaAchievementsComponent />
+			<VehicleAchievementsComponent />
+		</DynamicComponents>
+	</Components>
+	<IsEnabled>True</IsEnabled>
+	<ExternalComponents />
+</root>

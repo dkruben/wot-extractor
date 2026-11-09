@@ -1,0 +1,133 @@
+{
+  "rid": "R.views.lobby.crew.tooltips.MentoringLicenseTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "MentoringLicenseTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "MentoringLicenseTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip/MentoringLicenseTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip/MentoringLicenseTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "MentoringLicenseTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip/MentoringLicenseTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip/MentoringLicenseTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "MentoringLicenseTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip/MentoringLicenseTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip/MentoringLicenseTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip/MentoringLicenseTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip/MentoringLicenseTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip/MentoringLicenseTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip/MentoringLicenseTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/MentoringLicenseTooltip/MentoringLicenseTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.tooltips.MentoringLicenseTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "5 referencia(s) R.views.lobby.crew.tooltips.MentoringLicenseTooltip no Python",
+      "ViewModel BonusModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/quick_training/components/mentoring_license_component.py",
+        26
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/mentor_assigment_view.py",
+        99
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/mentoring_license_tooltip.py",
+        16
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/bonuses_packers.py",
+        489
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/decorators.py",
+        73
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/quick_training/components/mentoring_license_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/mentor_assigment_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/mentoring_license_tooltip.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/bonuses_packers.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/decorators.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/common/bonus_model.py",
+      "class": "BonusModel",
+      "chain": [
+        "BonusModel"
+      ],
+      "properties": [
+        [
+          "localeName",
+          "String"
+        ],
+        [
+          "values",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "localeName",
+          "values"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/challenges/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/mentor_assigment_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/tooltips/mentoring_license_tooltip_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/lootbox_system/bonus_model.py"
+      ]
+    }
+  }
+}

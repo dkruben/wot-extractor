@@ -1,0 +1,10 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/h33_battle_royale_2021/environments/9265F18E-474701D0-D20CA28A-D3F70B7E/camera_effects.xml -->
+<root>
+	<effectMap />
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Null.vfx</name>
+		<alignToTerrain>false</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
+</root>

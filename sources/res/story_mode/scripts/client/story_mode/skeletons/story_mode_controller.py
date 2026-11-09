@@ -1,0 +1,157 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/story_mode/scripts/client/story_mode/skeletons/story_mode_controller.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: story_mode/scripts/client/story_mode/skeletons/story_mode_controller.py
+from __future__ import absolute_import
+import typing
+from skeletons.gui.game_control import IGameController
+if typing.TYPE_CHECKING:
+    from story_mode_common.configs.story_mode_missions import MissionsModel, MissionModel
+    from story_mode_common.configs.story_mode_settings import SettingsModel
+    from Event import Event
+    from story_mode_common.story_mode_constants import MissionType
+
+class IStoryModeController(IGameController):
+    onSyncDataUpdated = None
+    onMissionsConfigUpdated = None
+    onSettingsUpdated = None
+
+    @property
+    def isOnboarding(self):
+        raise NotImplementedError
+
+    @property
+    def isQuittingBattle(self):
+        raise NotImplementedError
+
+    @property
+    def selectedMissionId(self):
+        raise NotImplementedError
+
+    @property
+    def isSelectedMissionOnboarding(self):
+        raise NotImplementedError
+
+    @property
+    def storyModeInfoPageKey(self):
+        raise NotImplementedError
+
+    @selectedMissionId.setter
+    def selectedMissionId(self, value):
+        raise NotImplementedError
+
+    def isEventEntryPointVisible(self):
+        raise NotImplementedError
+
+    def isShowActiveModeState(self):
+        raise NotImplementedError
+
+    def isEnabled(self):
+        raise NotImplementedError
+
+    def isInPrb(self):
+        raise NotImplementedError
+
+    def switchPrb(self):
+        raise NotImplementedError
+
+    @property
+    def settings(self):
+        raise NotImplementedError
+
+    @property
+    def missions(self):
+        raise NotImplementedError
+
+    @property
+    def needToShowAward(self):
+        raise NotImplementedError
+
+    @property
+    def newMissionIdForNewbies(self):
+        raise NotImplementedError
+
+    def popMissionProgressDiff(self, missionId):
+        raise NotImplementedError
+
+    def getFirstMission(self):
+        raise NotImplementedError
+
+    def isMissionCompleted(self, missionId):
+        raise NotImplementedError
+
+    def isEventMissionSuitable(self, mission):
+        raise NotImplementedError
+
+    def isFirstTaskNotCompleted(self, mission):
+        raise NotImplementedError
+
+    def isAnyTaskNotCompleted(self, mission):
+        raise NotImplementedError
+
+    def isSelectedMissionLocked(self):
+        raise NotImplementedError
+
+    def getNextMission(self, missionId):
+        raise NotImplementedError
+
+    @staticmethod
+    def goToQueue():
+        raise NotImplementedError
+
+    @staticmethod
+    def exitQueue():
+        raise NotImplementedError
+
+    @staticmethod
+    def goToBattle():
+        raise NotImplementedError
+
+    def goToHangar(self, guiCtx=None):
+        raise NotImplementedError
+
+    def onOutroVideoComplete(self, arenaUniqueID):
+        raise NotImplementedError
+
+    def quitBattle(self):
+        raise NotImplementedError
+
+    def popWaitingToBeShownAwardData(self):
+        raise NotImplementedError
+
+    def awardShown(self):
+        raise NotImplementedError
+
+    def startMusic(self):
+        raise NotImplementedError
+
+    def stopMusic(self, forceStop=False):
+        raise NotImplementedError
+
+    def startBattleMusic(self):
+        raise NotImplementedError
+
+    def stopBattleMusic(self):
+        raise NotImplementedError
+
+    def isMissionTaskCompleted(self, missionId, taskId):
+        raise NotImplementedError
+
+    def filterMissions(self, missionType=None):
+        raise NotImplementedError
+
+    def isNewbieGuidanceNeeded(self):
+        raise NotImplementedError
+
+    def isNewNeededForNewbies(self):
+        raise NotImplementedError
+
+    def isMissionLocked(self, mission):
+        raise NotImplementedError
+
+    def setNewForNewbiesSeen(self):
+        raise NotImplementedError
+
+    def chooseSelectedMissionId(self, isEvent=False):
+        raise NotImplementedError

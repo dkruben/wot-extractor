@@ -1,0 +1,93 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/lobby/tournaments/tournament_view_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from enum import Enum as Enum
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from comp7.gui.impl.gen.view_models.views.lobby.tournaments.match_model import MatchModel as MatchModel
+from comp7.gui.impl.gen.view_models.views.lobby.tournaments.team_model import TeamModel as TeamModel
+
+class OverviewState(Enum):
+    SCHEDULE = 'schedule'
+    LIVE = 'live'
+    FINALRESULT = 'finalResult'
+    ERROR = 'error'
+
+class Streaming(Enum):
+    TWITCH = 'twitch'
+    HUYA = 'huya'
+    YOUTUBE = 'youtube'
+    DOUYIN = 'douyin'
+
+class PageState(Enum):
+    LOADING = 'loading'
+    CONTENT = 'content'
+
+class TournamentViewModel(ViewModel):
+    __slots__: tuple
+    onWatchStreamingOne: Any
+    onWatchStreamingTwo: Any
+    onGoToShop: Any
+    onGoToTokenStore: Any
+    onRefresh: Any
+    onClose: Any
+    pollServerTime: Any
+    def __init__(self, properties=12, commands=7):
+        ...
+    def getOverviewState(self):
+        ...
+    def setOverviewState(self, value):
+        ...
+    def getPageState(self):
+        ...
+    def setPageState(self, value):
+        ...
+    def getPrizeFund(self):
+        ...
+    def setPrizeFund(self, value):
+        ...
+    def getIsDynamicPrizePool(self):
+        ...
+    def setIsDynamicPrizePool(self, value):
+        ...
+    def getLastPrizePoolUpdate(self):
+        ...
+    def setLastPrizePoolUpdate(self, value):
+        ...
+    def getIsRefreshing(self):
+        ...
+    def setIsRefreshing(self, value):
+        ...
+    def getTokenStoreAvailabilityTimestamp(self):
+        ...
+    def setTokenStoreAvailabilityTimestamp(self, value):
+        ...
+    def getServerTimestamp(self):
+        ...
+    def setServerTimestamp(self, value):
+        ...
+    def getSchedule(self):
+        ...
+    def setSchedule(self, value):
+        ...
+    @staticmethod
+    def getScheduleType():
+        ...
+    def getFundDistribution(self):
+        ...
+    def setFundDistribution(self, value):
+        ...
+    @staticmethod
+    def getFundDistributionType():
+        ...
+    def getStreamingWithDrops(self):
+        ...
+    def setStreamingWithDrops(self, value):
+        ...
+    def getStreamingWithoutDrops(self):
+        ...
+    def setStreamingWithoutDrops(self, value):
+        ...
+    def _initialize(self):
+        ...

@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/208_bf_epic_normandy/environments/A7CE13A3-4D111AFE-7B3CC69E-D4A2FCE5/probes/global/rem_sh.xml -->
+<root>
+	<sh0>3.76357 3.875604 4.619404</sh0>
+	<sh1>0.445618 1.374368 2.976501</sh1>
+	<sh2>0.761397 0.643652 0.447768</sh2>
+	<sh3>0.379387 0.507609 0.819295</sh3>
+	<sh4>0.587913 0.77694 1.021727</sh4>
+	<sh5>0.695462 0.594292 0.446696</sh5>
+	<sh6>0.063885 0.048695 0.008914</sh6>
+	<sh7>-0.080851 -0.081865 -0.078418</sh7>
+	<sh8>0.418163 0.411095 0.363708</sh8>
+	<dominant_vector>0.605915 0.63702 0.476521</dominant_vector>
+	<max_lum>5.765296</max_lum>
+</root>

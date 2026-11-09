@@ -1,0 +1,54 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_quest_awards_view.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from future.utils import viewitems as viewitems
+from comp7_light.gui.impl.gen.view_models.views.lobby.battle_quest_awards_model import BattleQuestAwardsModel as BattleQuestAwardsModel, BattleStatus as BattleStatus
+from comp7_light.gui.impl.lobby.comp7_light_helpers.comp7_light_packers import getComp7LightBonusPacker as getComp7LightBonusPacker
+from comp7_light.gui.sounds_constants import GENERAL_SOUND_SPACE as GENERAL_SOUND_SPACE
+from frameworks.wulf import ViewSettings as ViewSettings, WindowFlags as WindowFlags, WindowLayer as WindowLayer
+from gui.battle_pass.battle_pass_bonuses_packers import packBonusModelAndTooltipData as packBonusModelAndTooltipData
+from gui.impl.gen import R as R
+from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator as createBackportTooltipDecorator
+from gui.impl.pub import ViewImpl as ViewImpl
+from gui.impl.pub.lobby_window import LobbyNotificationWindow as LobbyNotificationWindow
+from gui.server_events.bonuses import getNonQuestBonuses as getNonQuestBonuses
+
+class BattleQuestAwardsView(ViewImpl):
+    __slots__: tuple
+    _COMMON_SOUND_SPACE = GENERAL_SOUND_SPACE
+    __tooltipData: Any
+    _stage: Any
+    def __init__(self, stage):
+        ...
+    @property
+    def viewModel(self):
+        ...
+    # decorador original: @createBackportTooltipDecorator(...)
+    def createToolTip(self, event):
+        ...
+    def getTooltipData(self, event):
+        ...
+    def updateModel(self):
+        ...
+    def _onLoading(self, *args, **kwargs):
+        ...
+    def _finalize(self):
+        ...
+    def __addListeners(self):
+        ...
+    def __removeListeners(self):
+        ...
+    def __onClose(self):
+        ...
+    def __onApprove(self):
+        ...
+    @staticmethod
+    def __awardsFactory(items, ctx=None):
+        ...
+
+class BattleQuestAwardsViewWindow(LobbyNotificationWindow):
+    __slots__: tuple
+    def __init__(self, stage, parent=None):
+        ...

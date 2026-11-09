@@ -1,0 +1,1 @@
+import{ht as a,q as s}from"./lib.js";var e={base:"Arrow_529bb83f",base__right:"Arrow_base__right_b8dba905"},r=s(),t={left:"left",right:"right"};function b({image:s,side:b=t.left,className:i=""}){return(0,r.jsx)("div",{className:a(e.base,e[`base__${b}`],i),style:{backgroundImage:`url(${s})`}})}export{t as n,b as t};

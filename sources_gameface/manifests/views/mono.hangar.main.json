@@ -1,0 +1,170 @@
+{
+  "rid": "R.views.mono.hangar.main",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "main",
+  "dir": "gui/gameface/_dist/production/mono/hangar/main",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/hangar/main/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/hangar/main/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/hangar/main/bundle.js"
+    },
+    {
+      "name": "main.css",
+      "effective": "res/gui/gameface/_dist/production/mono/hangar/main/main.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/hangar/main/main.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "main.html",
+      "effective": "res/gui/gameface/_dist/production/mono/hangar/main/main.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/hangar/main/main.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/chunks/divider.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/chunks/divider.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/chunks/perk.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/chunks/perk.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/chunks/tankman_role.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/chunks/tankman_role.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/main/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/main/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/main/main.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/main/main.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "mono.rest_bonus.tooltips.rest_bonus_tooltip",
+    "mono.tooltips.tooltips"
+  ],
+  "commands": [
+    "dealPanel.onAutoRenewalChanged",
+    "dealPanel.onDealCancelled",
+    "dealPanel.onDealConfirmed",
+    "onAppearAnimationPlayed",
+    "onBuySlot",
+    "onCarouselTypeChange",
+    "onChangeSetupIndex",
+    "onClick",
+    "onClose",
+    "onCreate",
+    "onDealCancelled",
+    "onDealConfirmed",
+    "onDiscard",
+    "onDogMoreInfoClick",
+    "onEntryClick",
+    "onEventClick",
+    "onGetMoreCurrency",
+    "onGoBuyVehicle",
+    "onGoRecoverVehicle",
+    "onGoToAboutVehicle",
+    "onGroupClick",
+    "onIntroAnimationPlayed",
+    "onMarkAsViewed",
+    "onMissionClick",
+    "onModify",
+    "onMouseOver3dScene",
+    "onMoveSpace",
+    "onNavigate",
+    "onOpenBarracks",
+    "onOpenBattlePass",
+    "onOpenCrew",
+    "onOpenSlotSpecDialog",
+    "onPresetSelected",
+    "onReset",
+    "onSave",
+    "onSaveFilter",
+    "onSelect",
+    "onSelectProposal",
+    "onSelectTelecomRentalVehicle",
+    "onSelectVehicle",
+    "onSetDirtyEdit",
+    "onShellUpdate",
+    "onSlideChanged",
+    "onSlotAction",
+    "onSwapSlots",
+    "onSwitchPreset",
+    "onToggleAcceleratedTraining",
+    "onToggleIntensiveTraining",
+    "onUpdateSetting",
+    "onWidgetUnmounted",
+    "openDeleteConfirm",
+    "openImportConfirm"
+  ],
+  "link": {
+    "rid": "R.views.mono.hangar.main",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.mono.hangar.main no Python",
+      "ViewModel RouterModel (model=... no Python da view): 3/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/random/random_hangar.py",
+        84
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/hangar/random/random_hangar.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/router_model.py",
+      "class": "RouterModel",
+      "chain": [
+        "RouterModel"
+      ],
+      "properties": [
+        [
+          "route",
+          "String"
+        ],
+        [
+          "params",
+          "String"
+        ]
+      ],
+      "commands": [
+        "navigateTo",
+        "navigateBack"
+      ],
+      "coverage": {
+        "found": 3,
+        "total": 4,
+        "missing": [
+          "navigateBack"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

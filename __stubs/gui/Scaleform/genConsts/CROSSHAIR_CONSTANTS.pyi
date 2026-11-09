@@ -1,0 +1,18 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/genConsts/CROSSHAIR_CONSTANTS.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+
+class CROSSHAIR_CONSTANTS(object):
+    INVISIBLE = 0
+    VISIBLE_NET = 1
+    VISIBLE_AMMO_COUNT = 2
+    VISIBLE_ALL = 3
+    ART_SHOT_INDICATOR_NOT_ACTIVE = 0
+    ART_SHOT_INDICATOR_ACTIVE = 1
+    ART_SHOT_INDICATOR_EMPTY_SHELL = 2
+    CROSSHAIR_BLINK_INVISIBLE = 0
+    CROSSHAIR_BLINK_GREEN_HORIZONTAL = 1
+    NET_SEPARATOR_TYPE_DEFAULT = 'default'
+    NET_SEPARATOR_TYPE_SHORT = 'short'
+    NET_SEPARATOR_TYPE_EMPTY = 'empty'

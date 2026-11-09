@@ -1,0 +1,507 @@
+{
+ "source": "sources/res/gui/flash/swc/lobby.swc",
+ "container_member": "library.swf",
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 11,
+ "declared_length": 54131,
+ "actual_length": 54131,
+ "frame_size_px": [
+  0.0,
+  500.0,
+  0.0,
+  375.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": true,
+ "tags": {
+  "End": 1,
+  "ShowFrame": 1,
+  "SetBackgroundColor": 1,
+  "ProductInfo": 1,
+  "ScriptLimits": 1,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "Metadata": 1,
+  "DoABC2": 23
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 0,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 28,
+  "abc_blocks": 23,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "_338edbfa4713580cd6f490475db9f329645ec7267e8258fb49b7172ebd60038d_flash_display_Sprite"
+  }
+ ],
+ "abc": [
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/AnimBuilder",
+   "lazy": true,
+   "size": 939,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 10,
+   "code_bytes": 130
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/EventLogManager",
+   "lazy": true,
+   "size": 2420,
+   "classes": 1,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 577
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/animation/impl/TweenLinkedObjects",
+   "lazy": true,
+   "size": 970,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 150
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/PopoverManagerLobby",
+   "lazy": true,
+   "size": 905,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 166
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/VoiceChatManagerLobby",
+   "lazy": true,
+   "size": 725,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 102
+  },
+  {
+   "name": "net/wg/app/impl/LobbyApp",
+   "lazy": true,
+   "size": 7556,
+   "classes": 1,
+   "methods": 37,
+   "bodies": 37,
+   "code_bytes": 1187
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/ColorSchemeManagerLobby",
+   "lazy": true,
+   "size": 608,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 83
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/animation/impl/TweenWrapper",
+   "lazy": true,
+   "size": 2716,
+   "classes": 2,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 767
+  },
+  {
+   "name": "_338edbfa4713580cd6f490475db9f329645ec7267e8258fb49b7172ebd60038d_flash_display_Sprite",
+   "lazy": true,
+   "size": 601,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 88
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/ToolTipManagerLobby",
+   "lazy": true,
+   "size": 3520,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 589
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/Icons",
+   "lazy": true,
+   "size": 1042,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 348
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/HelpLayoutManager",
+   "lazy": true,
+   "size": 2883,
+   "classes": 1,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 939
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/CommonsLobby",
+   "lazy": true,
+   "size": 2094,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 862
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/Nations",
+   "lazy": true,
+   "size": 856,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 146
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/CacheManager",
+   "lazy": true,
+   "size": 5579,
+   "classes": 4,
+   "methods": 44,
+   "bodies": 44,
+   "code_bytes": 2161
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/DateTimeLobby",
+   "lazy": true,
+   "size": 676,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 90
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/LocaleLobby",
+   "lazy": true,
+   "size": 864,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 142
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/impl/VOManager",
+   "lazy": true,
+   "size": 590,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 66
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/ClassManager",
+   "lazy": true,
+   "size": 387,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 44
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/ContainerManagerLobby",
+   "lazy": true,
+   "size": 2428,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 772
+  },
+  {
+   "name": "net/wg/infrastructure/managers/utils/animation/impl/TweenConstruction",
+   "lazy": true,
+   "size": 6939,
+   "classes": 1,
+   "methods": 32,
+   "bodies": 32,
+   "code_bytes": 2559
+  },
+  {
+   "name": "net/wg/infrastructure/managers/impl/GameInputManager",
+   "lazy": true,
+   "size": 5532,
+   "classes": 2,
+   "methods": 31,
+   "bodies": 31,
+   "code_bytes": 2035
+  },
+  {
+   "name": "net/wg/data/TweenDataByType",
+   "lazy": true,
+   "size": 1349,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 10,
+   "code_bytes": 314
+  }
+ ],
+ "classes": [
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.AnimBuilder",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IAnimBuilder"
+   ],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.EventLogManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.EventLogManagerMeta",
+   "implements": [
+    "IEventLogManager"
+   ],
+   "abc": 1
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.animation.impl.TweenLinkedObjects",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 2
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.PopoverManagerLobby",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.PopoverManagerBase",
+   "implements": [],
+   "abc": 3
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.VoiceChatManagerLobby",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.VoiceChatManagerBase",
+   "implements": [
+    "IVoiceChatManager"
+   ],
+   "abc": 4
+  },
+  {
+   "name": "net.wg.app.impl.LobbyApp",
+   "kind": "class",
+   "extends": "net.wg.app.iml.base.AbstractApplication",
+   "implements": [],
+   "abc": 5
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.ColorSchemeManagerLobby",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.ColorSchemeManager",
+   "implements": [],
+   "abc": 6
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.animation.impl.TweenWrapper",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 7
+  },
+  {
+   "name": "LinkedObjects",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "private": true,
+   "abc": 7
+  },
+  {
+   "name": "_338edbfa4713580cd6f490475db9f329645ec7267e8258fb49b7172ebd60038d_flash_display_Sprite",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 8
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.ToolTipManagerLobby",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.TooltipMgr.ToolTipManagerBase",
+   "implements": [],
+   "abc": 9
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.Icons",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IIcons"
+   ],
+   "abc": 10
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.HelpLayoutManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IHelpLayout"
+   ],
+   "abc": 11
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.CommonsLobby",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.utils.impl.CommonsBase",
+   "implements": [],
+   "abc": 12
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.Nations",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "INations"
+   ],
+   "abc": 13
+  },
+  {
+   "name": "CacheSettings",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "private": true,
+   "abc": 14
+  },
+  {
+   "name": "CacheEntity",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "private": true,
+   "abc": 14
+  },
+  {
+   "name": "CacheStats",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "private": true,
+   "abc": 14
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.CacheManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.CacheManagerMeta",
+   "implements": [
+    "ICacheManager"
+   ],
+   "abc": 14
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.DateTimeLobby",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.DateTimeCommon",
+   "implements": [],
+   "abc": 15
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.LocaleLobby",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.utils.impl.LocaleBase",
+   "implements": [],
+   "abc": 16
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.impl.VOManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IVOManager"
+   ],
+   "abc": 17
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.ClassManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 18
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.ContainerManagerLobby",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.managers.impl.ContainerManagerBase",
+   "implements": [],
+   "abc": 19
+  },
+  {
+   "name": "net.wg.infrastructure.managers.utils.animation.impl.TweenConstruction",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITweenConstruction"
+   ],
+   "abc": 20
+  },
+  {
+   "name": "net.wg.infrastructure.managers.impl.GameInputManager",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.base.meta.impl.GameInputManagerMeta",
+   "implements": [
+    "IGameInputManager"
+   ],
+   "abc": 21
+  },
+  {
+   "name": "GameInputCallback",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "private": true,
+   "abc": 21
+  },
+  {
+   "name": "net.wg.data.TweenDataByType",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITweenTypesDuration"
+   ],
+   "abc": 22
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ },
+ "metadata": "<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'><rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1'><dc:format>application/x-shockwave-flash</dc:format><dc:title>swc lobby</dc:title><dc:date>11/3/26 1:48 PM</dc:date></rdf:Description></rdf:RDF>",
+ "product_info": {
+  "product": 3,
+  "edition": 6,
+  "version": "4.5",
+  "build": 21328
+ }
+}

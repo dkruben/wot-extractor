@@ -1,0 +1,238 @@
+{
+ "source": "sources/res/gui/flash/teamStatsComponents.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 126903,
+ "actual_length": 126903,
+ "frame_size_px": [
+  0.0,
+  1017.0,
+  0.0,
+  601.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 19,
+  "ShowFrame": 169,
+  "DefineShape": 16,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 6,
+  "DefineShape2": 3,
+  "PlaceObject2": 58,
+  "RemoveObject2": 3,
+  "DefineShape3": 5,
+  "DefineBitsLossless2": 14,
+  "DefineEditText": 9,
+  "DefineSprite": 18,
+  "FrameLabel": 26,
+  "FileAttributes": 1,
+  "PlaceObject3": 15,
+  "ImportAssets2": 8,
+  "CSMTextSettings": 9,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 20,
+  "shapes": 25,
+  "sprites": 18,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 9,
+  "fonts": 0,
+  "classes": 11,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "FlagsLib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "achievements.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 72,
+   "class": "TankResultsItemRenderer"
+  },
+  {
+   "id": 61,
+   "class": "statsLineEpicUI"
+  },
+  {
+   "id": 59,
+   "class": "statsLineUI"
+  },
+  {
+   "id": 57,
+   "class": "statsLineWideUI"
+  },
+  {
+   "id": 55,
+   "class": "EfficiencyIconRendererGUI"
+  },
+  {
+   "id": 51,
+   "class": "teamStatsComponents_fla.EfficiencyIcon_11"
+  },
+  {
+   "id": 26,
+   "class": "EpicTeamMemberStatsViewUI"
+  },
+  {
+   "id": 24,
+   "class": "TankResultsListUI"
+  },
+  {
+   "id": 17,
+   "class": "TeamMemberStatsViewUI"
+  },
+  {
+   "id": 13,
+   "class": "VehicleStatsScrollPane_UI"
+  },
+  {
+   "id": 12,
+   "class": "VehicleStats"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 8003,
+   "classes": 11,
+   "methods": 70,
+   "bodies": 70,
+   "code_bytes": 2540
+  }
+ ],
+ "classes": [
+  {
+   "name": "statsLineEpicUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statsLineUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "statsLineWideUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "teamStatsComponents_fla.EfficiencyIcon_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EfficiencyIconRendererGUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.EfficiencyIconRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleStats",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.VehicleDetails",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EpicTeamMemberStatsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.EpicTeamMemberStatsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TeamMemberStatsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.TeamMemberStatsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleStatsScrollPane_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankResultsItemRenderer",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.TankResultItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TankResultsListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.battleResults.components.MultipleTankList",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

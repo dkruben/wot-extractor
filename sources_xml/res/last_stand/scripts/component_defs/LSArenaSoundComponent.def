@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/last_stand/scripts/component_defs/LSArenaSoundComponent.def -->
+<root>
+	<ClientMethods>
+		<onBotCreated>
+			<Args>
+				<vehicleType>STRING</vehicleType>
+				<position>VECTOR3</position>
+			</Args>
+		</onBotCreated>
+	</ClientMethods>
+	<Properties />
+	<ofEntity>
+		<ArenaInfo />
+	</ofEntity>
+</root>

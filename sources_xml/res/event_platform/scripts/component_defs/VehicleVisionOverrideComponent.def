@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/event_platform/scripts/component_defs/VehicleVisionOverrideComponent.def -->
+<root>
+	<BaseMethods />
+	<CellMethods />
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+</root>

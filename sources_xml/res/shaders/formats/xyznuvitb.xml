@@ -1,0 +1,27 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/shaders/formats/xyznuvitb.xml -->
+<root>
+	<elements>
+		<POSITION />
+		<NORMAL>
+			<type>UBYTE4</type>
+		</NORMAL>
+		<TEXCOORD>
+			<type>FLOAT2</type>
+		</TEXCOORD>
+		<BLENDINDICES>
+			<type>SC_FLOAT1_MULT3_I</type>
+		</BLENDINDICES>
+		<TANGENT>
+			<type>UBYTE4</type>
+		</TANGENT>
+		<BINORMAL>
+			<type>UBYTE4</type>
+		</BINORMAL>
+	</elements>
+	<targets>
+		<target>
+			<name>D3D9</name>
+			<format>xyznuvitbpc</format>
+		</target>
+	</targets>
+</root>

@@ -1,0 +1,131 @@
+{
+ "source": "sources/res/gui/flash/manual.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 7263,
+ "actual_length": 7263,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 163,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 112,
+  "DefineShape3": 1,
+  "DefineEditText": 2,
+  "DefineSprite": 6,
+  "FrameLabel": 16,
+  "FileAttributes": 1,
+  "PlaceObject3": 12,
+  "ImportAssets2": 5,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 3,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 3,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "screen.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 11,
+   "class": "ManualMainViewUI"
+  },
+  {
+   "id": 10,
+   "class": "ChapterItemRendererUI"
+  },
+  {
+   "id": 8,
+   "class": "ChapterItemRendererWideUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4112,
+   "classes": 3,
+   "methods": 31,
+   "bodies": 31,
+   "code_bytes": 1104
+  }
+ ],
+ "classes": [
+  {
+   "name": "ChapterItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manual.controls.ChapterItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChapterItemRendererWideUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manual.controls.ChapterItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ManualMainViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.manual.ManualMainView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

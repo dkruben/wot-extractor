@@ -1,0 +1,164 @@
+{
+ "source": "sources/res/gui/flash/userMissionsHubContainer.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 4977,
+ "actual_length": 4977,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 7,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 9,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 1,
+  "DefineSprite": 6,
+  "FileAttributes": 1,
+  "PlaceObject3": 5,
+  "ImportAssets2": 6,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 1,
+  "shapes": 2,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "missionsCmp.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 10,
+   "class": "UserMissionsHubContainerUI"
+  },
+  {
+   "id": 9,
+   "class": "UserMissionsHubContentInjectUI"
+  },
+  {
+   "id": 8,
+   "class": "UserMissionsHubCategoriesViewUI"
+  },
+  {
+   "id": 7,
+   "class": "UserMissionsHubMissionsListUI"
+  },
+  {
+   "id": 5,
+   "class": "UserMissionsHubFilterUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3795,
+   "classes": 6,
+   "methods": 23,
+   "bodies": 23,
+   "code_bytes": 715
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UserMissionsHubFilterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.userMissions.components.MissionsFilter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UserMissionsHubMissionsListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.userMissions.components.MissionsList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UserMissionsHubContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.userMissions.UserMissionsHubContainerView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UserMissionsHubContentInjectUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.userMissions.components.UserMissionsHubContentInject",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "UserMissionsHubCategoriesViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.userMissions.components.MissionsGroupedView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

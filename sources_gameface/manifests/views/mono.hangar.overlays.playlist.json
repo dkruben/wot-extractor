@@ -1,0 +1,76 @@
+{
+  "rid": "R.views.mono.hangar.overlays.playlist",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "playlist",
+  "dir": "gui/gameface/_dist/production/mono/hangar/overlays/playlist",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/hangar/overlays/playlist/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/hangar/overlays/playlist/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/hangar/overlays/playlist/bundle.js"
+    },
+    {
+      "name": "playlist.css",
+      "effective": "res/gui/gameface/_dist/production/mono/hangar/overlays/playlist/playlist.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/hangar/overlays/playlist/playlist.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "playlist.html",
+      "effective": "res/gui/gameface/_dist/production/mono/hangar/overlays/playlist/playlist.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/hangar/overlays/playlist/playlist.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/overlays/playlist/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/overlays/playlist/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/overlays/playlist/playlist.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/overlays/playlist/playlist.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onAction",
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.mono.hangar.overlays.playlist",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.mono.hangar.overlays.playlist no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/dialogs/vehicle_playlists.py",
+        21
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/hangar/dialogs/vehicle_playlists.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

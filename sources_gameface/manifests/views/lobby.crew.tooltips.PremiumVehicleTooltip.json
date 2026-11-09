@@ -1,0 +1,113 @@
+{
+  "rid": "R.views.lobby.crew.tooltips.PremiumVehicleTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "PremiumVehicleTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "PremiumVehicleTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip/PremiumVehicleTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip/PremiumVehicleTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PremiumVehicleTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip/PremiumVehicleTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip/PremiumVehicleTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PremiumVehicleTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip/PremiumVehicleTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip/PremiumVehicleTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip/PremiumVehicleTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip/PremiumVehicleTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip/PremiumVehicleTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip/PremiumVehicleTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/PremiumVehicleTooltip/PremiumVehicleTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.ExtendedTextTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.tooltips.PremiumVehicleTooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.crew.tooltips.PremiumVehicleTooltip no Python",
+      "ViewModel PremiumVehicleTooltipViewModel (model=... no Python da view): 2/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/common/tankman_info_component.py",
+        112
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/premium_vehicle_tooltip.py",
+        18
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/common/tankman_info_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/premium_vehicle_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/tooltips/premium_vehicle_tooltip_view_model.py",
+      "class": "PremiumVehicleTooltipViewModel",
+      "chain": [
+        "PremiumVehicleTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "vehTypeName",
+          "String"
+        ],
+        [
+          "nationName",
+          "String"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 2,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

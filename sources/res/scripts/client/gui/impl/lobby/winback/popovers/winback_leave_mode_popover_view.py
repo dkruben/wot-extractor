@@ -1,0 +1,61 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/impl/lobby/winback/popovers/winback_leave_mode_popover_view.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/impl/lobby/winback/popovers/winback_leave_mode_popover_view.py
+from account_helpers.AccountSettings import Winback
+from constants import WINBACK_BATTLE_TOKEN_DRAW_REASON
+from frameworks.wulf import ViewFlags, ViewSettings
+from gui.impl.gen import R
+from gui.impl.gen.view_models.views.lobby.winback.popovers.winback_leave_mode_popover_view_model import WinbackLeaveModePopoverViewModel
+from gui.impl.lobby.winback.tooltips.mode_info_tooltip import ModeInfoTooltip
+from gui.impl.pub import PopOverViewImpl
+from gui.shared import g_eventBus
+from gui.shared.events import ModeSelectorPopoverEvent
+from gui.winback.winback_helpers import leaveWinbackMode, selectRandom, setWinbackSetting
+from helpers import dependency
+from skeletons.gui.game_control import IWinbackController
+
+class WinbackLeaveModePopoverView(PopOverViewImpl):
+    __slots__ = ()
+    _winbackController = dependency.descriptor(IWinbackController)
+
+    def __init__(self):
+        settings = ViewSettings(R.views.mono.winback.popovers.winback_leave_mode_popover_view())
+        settings.flags = ViewFlags.VIEW
+        settings.model = WinbackLeaveModePopoverViewModel()
+        super(WinbackLeaveModePopoverView, self).__init__(settings)
+
+    @property
+    def viewModel(self):
+        return super(WinbackLeaveModePopoverView, self).getViewModel()
+
+    def createToolTipContent(self, event, contentID):
+        if contentID == R.views.mono.winback.tooltips.mode_info_tooltip():
+            return ModeInfoTooltip()
+        return super(WinbackLeaveModePopoverView, self).createToolTipContent(event, contentID)
+
+    def _onLoading(self):
+        super(WinbackLeaveModePopoverView, self)._onLoading()
+        self.viewModel.setBattlesCount(self._winbackController.getWinbackBattlesCountLeft())
+        self.__updateBulletSetting()
+
+    def _initialize(self):
+        super(WinbackLeaveModePopoverView, self)._initialize()
+        g_eventBus.handleEvent(ModeSelectorPopoverEvent(ModeSelectorPopoverEvent.NAME, ctx={'active': True}))
+
+    def _finalize(self):
+        g_eventBus.handleEvent(ModeSelectorPopoverEvent(ModeSelectorPopoverEvent.NAME, ctx={'active': False}))
+        super(WinbackLeaveModePopoverView, self)._finalize()
+
+    def _getEvents(self):
+        return (
+         (
+          self.viewModel.onClick, self.__onClick),)
+
+    def __onClick(self):
+        leaveWinbackMode(WINBACK_BATTLE_TOKEN_DRAW_REASON.MANUAL, showConfirmDialog=True, callback=selectRandom)
+        self.destroyWindow()
+
+    def __updateBulletSetting(self):
+        setWinbackSetting(Winback.BATTLE_SELECTOR_SETTINGS_BULLET_SHOWN, True)

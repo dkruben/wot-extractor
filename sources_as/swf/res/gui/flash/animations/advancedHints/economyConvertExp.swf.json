@@ -1,0 +1,156 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/economyConvertExp.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 546221,
+ "actual_length": 546221,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 43,
+  "ShowFrame": 2824,
+  "DefineShape": 31,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 3,
+  "DefineShape2": 4,
+  "PlaceObject2": 6600,
+  "RemoveObject2": 68,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 25,
+  "DefineSprite": 42,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "SymbolClass": 2,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 28,
+  "shapes": 37,
+  "sprites": 42,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "economyConvertExp_fla.MainTimeline"
+  },
+  {
+   "id": 106,
+   "class": "economyConvertExp_fla.messageFreeExpConvert_35"
+  },
+  {
+   "id": 96,
+   "class": "economyConvertExp_fla.goldFx_38"
+  },
+  {
+   "id": 95,
+   "class": "economyConvertExp_fla.goldAnim_39"
+  },
+  {
+   "id": 82,
+   "class": "economyConvertExp_fla.messagePremiumTank_27"
+  },
+  {
+   "id": 63,
+   "class": "economyConvertExp_fla.fxTankUnlock_20"
+  },
+  {
+   "id": 54,
+   "class": "economyConvertExp_fla.fxAnim_18"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1635,
+   "classes": 7,
+   "methods": 28,
+   "bodies": 28,
+   "code_bytes": 464
+  }
+ ],
+ "classes": [
+  {
+   "name": "economyConvertExp_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "economyConvertExp_fla.fxAnim_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "economyConvertExp_fla.fxTankUnlock_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "economyConvertExp_fla.goldAnim_39",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "economyConvertExp_fla.goldFx_38",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "economyConvertExp_fla.messageFreeExpConvert_35",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "economyConvertExp_fla.messagePremiumTank_27",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

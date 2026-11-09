@@ -1,0 +1,22 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/la_pinger/scripts/component_defs/LaPingerComponent.def -->
+<root>
+	<CellMethods />
+	<BaseMethods>
+		<tillICanGetMySatisfaction>
+			<Arg>PYTHON</Arg>
+			<Arg>UINT16</Arg>
+		</tillICanGetMySatisfaction>
+	</BaseMethods>
+	<ClientMethods>
+		<pingMeAndThenJustTouchMe>
+			<Arg>STRING</Arg>
+			<Arg>UINT16</Arg>
+			<Arg>DB_ID</Arg>
+			<Arg>UINT16</Arg>
+			<Arg>UINT32</Arg>
+		</pingMeAndThenJustTouchMe>
+	</ClientMethods>
+	<ofEntity>
+		<Account />
+	</ofEntity>
+</root>

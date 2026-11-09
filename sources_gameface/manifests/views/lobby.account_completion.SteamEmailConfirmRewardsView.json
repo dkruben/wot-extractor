@@ -1,0 +1,107 @@
+{
+  "rid": "R.views.lobby.account_completion.SteamEmailConfirmRewardsView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SteamEmailConfirmRewardsView",
+  "dir": "gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView",
+  "feature": null,
+  "files": [
+    {
+      "name": "SteamEmailConfirmRewardsView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView/SteamEmailConfirmRewardsView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView/SteamEmailConfirmRewardsView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SteamEmailConfirmRewardsView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView/SteamEmailConfirmRewardsView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView/SteamEmailConfirmRewardsView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SteamEmailConfirmRewardsView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView/SteamEmailConfirmRewardsView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView/SteamEmailConfirmRewardsView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView/SteamEmailConfirmRewardsView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/account_completion/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/account_completion/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView/SteamEmailConfirmRewardsView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView/SteamEmailConfirmRewardsView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView/SteamEmailConfirmRewardsView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/account_completion/SteamEmailConfirmRewardsView/SteamEmailConfirmRewardsView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow"
+  ],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.lobby.account_completion.SteamEmailConfirmRewardsView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.account_completion.SteamEmailConfirmRewardsView no Python",
+      "ViewModel SteamEmailConfirmRewardsViewModel (model=... no Python da view): 2/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/account_completion/steam_email_confirm_rewards_view.py",
+        25
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/account_completion/steam_email_confirm_rewards_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/account_completion/steam_email_confirm_rewards_view_model.py",
+      "class": "SteamEmailConfirmRewardsViewModel",
+      "chain": [
+        "SteamEmailConfirmRewardsViewModel"
+      ],
+      "properties": [
+        [
+          "bonuses",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onClose"
+      ],
+      "coverage": {
+        "found": 2,
+        "total": 2,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

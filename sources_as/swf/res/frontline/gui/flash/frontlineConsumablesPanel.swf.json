@@ -1,0 +1,207 @@
+{
+ "source": "sources/res/frontline/gui/flash/frontlineConsumablesPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 226780,
+ "actual_length": 226780,
+ "frame_size_px": [
+  0.0,
+  806.0,
+  0.0,
+  58.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 28,
+  "ShowFrame": 546,
+  "DefineShape": 67,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 1022,
+  "RemoveObject2": 36,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 21,
+  "DefineEditText": 15,
+  "DefineSprite": 27,
+  "FrameLabel": 26,
+  "FileAttributes": 1,
+  "PlaceObject3": 75,
+  "ImportAssets2": 3,
+  "CSMTextSettings": 15,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 21,
+  "shapes": 70,
+  "sprites": 27,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 15,
+  "fonts": 0,
+  "classes": 11,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "consumablesPanel.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 133,
+   "class": "flConsumablesPanelImportsUI"
+  },
+  {
+   "id": 132,
+   "class": "FrontlineBattleConsumableButtonUI"
+  },
+  {
+   "id": 118,
+   "class": "frontlineConsumablesPanel_fla.ranksMc_21"
+  },
+  {
+   "id": 108,
+   "class": "frontlineConsumablesPanel_fla.reserveLevelMC_19"
+  },
+  {
+   "id": 96,
+   "class": "frontlineConsumablesPanel_fla.cooldownCounterBgUI_18"
+  },
+  {
+   "id": 90,
+   "class": "FLGlowUI"
+  },
+  {
+   "id": 59,
+   "class": "frontlineConsumablesPanel_fla.cooldownMc_17"
+  },
+  {
+   "id": 8,
+   "class": "frontlineConsumablesPanel_fla.greenGlowMc_15"
+  },
+  {
+   "id": 1,
+   "class": "FrontlineBattleConsumablesPanelUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5164,
+   "classes": 11,
+   "methods": 71,
+   "bodies": 71,
+   "code_bytes": 1266
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Circular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "flConsumablesPanelImportsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineConsumablesPanel_fla.cooldownCounterBgUI_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineConsumablesPanel_fla.cooldownMc_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineConsumablesPanel_fla.greenGlowMc_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineConsumablesPanel_fla.ranksMc_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "frontlineConsumablesPanel_fla.reserveLevelMC_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FLGlowUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.consumablesPanel.components.FrontlineBattleEquipmentButtonGlow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineBattleConsumableButtonUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.consumablesPanel.FrontlineBattleConsumableButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "FrontlineBattleConsumablesPanelUI",
+   "kind": "class",
+   "extends": "net.wg.frontline.gui.battle.views.consumablesPanel.FrontlineBattleConsumablesPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

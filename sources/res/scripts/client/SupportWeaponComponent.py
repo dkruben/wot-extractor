@@ -1,0 +1,95 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/SupportWeaponComponent.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/SupportWeaponComponent.py
+from __future__ import absolute_import, division
+import typing
+from collections import namedtuple
+import BigWorld
+from constants import SECONDARY_GUN_STATE, UNKNOWN_GUN_INSTALLATION_INDEX
+from gui.shared.utils.decorators import ReprInjector
+from items.vehicle_mechanics_types import VehicleMechanicKey, VehicleMechanicKeys
+from vehicles.components.vehicle_component import VehicleDynamicComponent
+from vehicles.components.vehicle_prefabs import createMechanicPrefabSpawner
+from vehicles.mechanics.common import IMechanicComponent
+from vehicles.mechanics.mechanic_commands import createMechanicCommandsEvents, IMechanicCommandsComponent
+from vehicles.mechanics.mechanic_constants import VehicleMechanicCommand
+from vehicles.mechanics.mechanic_states import IMechanicState, createMechanicStatesEvents, IMechanicStatesComponent
+if typing.TYPE_CHECKING:
+    from vehicles.mechanics.mechanic_commands import IMechanicCommandsEvents
+    from vehicles.mechanics.mechanic_states import IMechanicStatesEvents
+
+class SupportWeaponState(namedtuple('SupportWeaponState', ('gunInstallationIndex', 'state', 'baseTime', 'endTime')), IMechanicState):
+
+    @classmethod
+    def fromComponentStatus(cls, status):
+        return cls(status.gunInstallationIndex, status.state, status.baseTime, status.endTime)
+
+    @property
+    def progress(self):
+        if self.baseTime > 0:
+            return 1.0 - self.timeLeft / self.baseTime
+        return 1.0
+
+    @property
+    def timeLeft(self):
+        return max(0.0, self.endTime - BigWorld.serverTime() if self.endTime >= 0 else self.baseTime)
+
+    def isTransition(self, other):
+        return self.state != other.state
+
+
+@ReprInjector.withParent()
+class SupportWeaponComponent(VehicleDynamicComponent, IMechanicComponent, IMechanicCommandsComponent, IMechanicStatesComponent):
+    DEFAULT_WEAPON_STATE = SupportWeaponState(UNKNOWN_GUN_INSTALLATION_INDEX, SECONDARY_GUN_STATE.IDLE, 0.0, -1.0)
+
+    def __init__(self):
+        super(SupportWeaponComponent, self).__init__()
+        self.__mechanicPrefabSpawner = createMechanicPrefabSpawner(self.entity, self)
+        self.__commandsEvents = createMechanicCommandsEvents(self)
+        self.__statesEvents = createMechanicStatesEvents(self)
+        self._initComponent()
+
+    @property
+    def vehicleMechanicKey(self):
+        return VehicleMechanicKeys.SUPPORT_WEAPON
+
+    @property
+    def commandsEvents(self):
+        return self.__commandsEvents
+
+    @property
+    def statesEvents(self):
+        return self.__statesEvents
+
+    def getMechanicState(self):
+        if self.status:
+            return SupportWeaponState.fromComponentStatus(self.status)
+        return self.DEFAULT_WEAPON_STATE
+
+    def getSupportInstallationIndex(self):
+        if self.status:
+            return self.status.gunInstallationIndex
+        return UNKNOWN_GUN_INSTALLATION_INDEX
+
+    def set_status(self, _):
+        self._updateComponentAppearance()
+
+    def onDestroy(self):
+        self.__commandsEvents.destroy()
+        self.__statesEvents.destroy()
+        super(SupportWeaponComponent, self).onDestroy()
+
+    def tryActivate(self):
+        self.__commandsEvents.processMechanicCommand(VehicleMechanicCommand.ACTIVATE)
+        if self.getMechanicState().state == SECONDARY_GUN_STATE.READY:
+            self.cell.tryActivate()
+
+    def _onAppearanceReady(self):
+        super(SupportWeaponComponent, self)._onAppearanceReady()
+        self.__statesEvents.processStatePrepared()
+
+    def _onComponentAppearanceUpdate(self, **kwargs):
+        super(SupportWeaponComponent, self)._onComponentAppearanceUpdate(**kwargs)
+        self.__statesEvents.updateMechanicState(self.getMechanicState())

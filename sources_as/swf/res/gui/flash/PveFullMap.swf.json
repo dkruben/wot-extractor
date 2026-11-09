@@ -1,0 +1,129 @@
+{
+ "source": "sources/res/gui/flash/PveFullMap.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 14826,
+ "actual_length": 14826,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 7,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 7,
+  "DefineBitsLossless2": 2,
+  "DefineSprite": 6,
+  "FileAttributes": 1,
+  "PlaceObject3": 21,
+  "ImportAssets2": 2,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "PveMinimap.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 10,
+   "class": "PveFullMapUI"
+  },
+  {
+   "id": 6,
+   "class": "PveFullMapGridJacketUI"
+  },
+  {
+   "id": 5,
+   "class": "PveFullmapVerticalCoordinatesUI"
+  },
+  {
+   "id": 4,
+   "class": "PveFulmapHorizontalCoordinatesUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1335,
+   "classes": 4,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 260
+  }
+ ],
+ "classes": [
+  {
+   "name": "PveFullMapGridJacketUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.jacket.PveFullMapGridJacket",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveFullmapVerticalCoordinatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.jacket.grid.PveMinimapVerticalCoordinates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveFulmapHorizontalCoordinatesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.jacket.grid.PveMinimapHorizontalCoordinates",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PveFullMapUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.pveBase.views.minimap.PveFullMap",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,29 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/customization/vehicles_sidebar/vehicles_sidebar_item_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from frameworks.wulf import Array as Array
+from gui.impl.gen.view_models.views.lobby.common.vehicle_model import VehicleModel as VehicleModel
+from gui.impl.gen.view_models.views.lobby.customization.vehicles_sidebar.customization_3D_attachments import Customization3DAttachments as Customization3DAttachments
+
+class VehiclesSidebarItemModel(VehicleModel):
+    __slots__: tuple
+    def __init__(self, properties=13, commands=0):
+        ...
+    def getInDepot(self):
+        ...
+    def setInDepot(self, value):
+        ...
+    def getNationOrder(self):
+        ...
+    def setNationOrder(self, value):
+        ...
+    def getCustomization3DAttachments(self):
+        ...
+    def setCustomization3DAttachments(self, value):
+        ...
+    @staticmethod
+    def getCustomization3DAttachmentsType():
+        ...
+    def _initialize(self):
+        ...

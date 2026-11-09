@@ -1,0 +1,117 @@
+{
+  "rid": "R.views.fun_random.mono.lobby.tooltips.progression_tooltip",
+  "rid_source": "sources/res/fun_random/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "progression_tooltip",
+  "dir": "fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip",
+  "feature": "fun_random",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/bundle.js",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/bundle.js"
+    },
+    {
+      "name": "progression_tooltip.css",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.css",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "progression_tooltip.html",
+      "effective": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.html",
+      "all": [
+        "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/bundle.js",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/bundle.js"
+    },
+    {
+      "virtual": "fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.css",
+      "key": "res/fun_random/gui/gameface/_dist/production/mono/lobby/tooltips/progression_tooltip/progression_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.fun_random.mono.lobby.tooltips.progression_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "4 referencia(s) R.views.fun_random.mono.lobby.tooltips.progression_tooltip no Python",
+      "ViewModel FunRandomProgressionEntryPointModel (model=... no Python da view): 1/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/hangar/presenters/fun_random_progression_presenter.py",
+        30
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/mode_selector/fun_sub_selector_view.py",
+        85
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/tooltips/fun_random_progression_tooltip_view.py",
+        19
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/prb_control/__init__.py",
+        22
+      ]
+    ],
+    "python_files": [
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/hangar/presenters/fun_random_progression_presenter.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/mode_selector/fun_sub_selector_view.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/tooltips/fun_random_progression_tooltip_view.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/prb_control/__init__.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/fun_random/scripts/client/fun_random/gui/impl/gen/view_models/views/lobby/feature/fun_random_progression_entry_point_model.py",
+      "class": "FunRandomProgressionEntryPointModel",
+      "chain": [
+        "FunRandomProgressionEntryPointModel"
+      ],
+      "properties": [
+        [
+          "progressionState",
+          "ViewModel"
+        ],
+        [
+          "currentProgressionStage",
+          "ViewModel"
+        ]
+      ],
+      "commands": [
+        "onShowInfo"
+      ],
+      "coverage": {
+        "found": 1,
+        "total": 3,
+        "missing": [
+          "currentProgressionStage",
+          "onShowInfo"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/gen/view_models/views/lobby/feature/mode_selector/fun_random_sub_selector_model.py",
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/gen/view_models/views/lobby/tooltips/fun_random_progression_tooltip_view_model.py"
+      ]
+    }
+  }
+}

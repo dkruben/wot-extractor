@@ -1,0 +1,24 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/comp7_core/extension.xml -->
+<root>
+	<FeatureName>comp7_core</FeatureName>
+	<IsEnabled>true</IsEnabled>
+	<Personality />
+	<Components>
+		<StaticComponents />
+		<DynamicComponents>
+			<TeamInfoComp7Component />
+			<ArenaObserverInfoComp7Component />
+			<AvatarComp7BaseComponent />
+			<VehiclePrestigePoint />
+			<VehicleRoleSkill />
+			<VehicleInspireController />
+			<VehicleHealController />
+		</DynamicComponents>
+	</Components>
+	<Entities>
+		<ClientServerEntities>
+			<ApplicationPoint />
+		</ClientServerEntities>
+	</Entities>
+	<ExternalComponents />
+</root>

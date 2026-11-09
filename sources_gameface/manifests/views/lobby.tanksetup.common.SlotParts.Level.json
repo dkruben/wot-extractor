@@ -1,0 +1,64 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.SlotParts.Level",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Level",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Level",
+  "feature": null,
+  "files": [
+    {
+      "name": "Level.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Level/Level.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Level/Level.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Level.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Level/Level.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Level/Level.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Level.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Level/Level.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Level/Level.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Level/Level.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Level/Level.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Level/Level.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Level/Level.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.SlotParts.Level",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

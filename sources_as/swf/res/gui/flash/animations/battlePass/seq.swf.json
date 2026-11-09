@@ -1,0 +1,97 @@
+{
+ "source": "sources/res/gui/flash/animations/battlePass/seq.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 43,
+ "declared_length": 1815073,
+ "actual_length": 1815073,
+ "frame_size_px": [
+  0.0,
+  250.0,
+  0.0,
+  250.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 149,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 3,
+  "ShowFrame": 299,
+  "DefineShape": 75,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 77,
+  "DefineShape3": 1,
+  "DefineBitsJPEG3": 75,
+  "DefineSprite": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 75,
+  "shapes": 76,
+  "sprites": 2,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 2,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 153,
+   "class": "privatePkg.___LayerProp___"
+  },
+  {
+   "id": 0,
+   "class": "seq_blend_fla.MainTimeline"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 7124,
+   "classes": 2,
+   "methods": 29,
+   "bodies": 29,
+   "code_bytes": 3781
+  }
+ ],
+ "classes": [
+  {
+   "name": "privatePkg.___LayerProp___",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "seq_blend_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

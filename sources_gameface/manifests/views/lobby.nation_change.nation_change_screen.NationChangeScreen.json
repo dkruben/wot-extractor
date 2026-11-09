@@ -1,0 +1,40 @@
+{
+  "rid": "R.views.lobby.nation_change.nation_change_screen.NationChangeScreen",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "NationChangeScreen",
+  "dir": "gui/unbound/views/lobby/nation_change",
+  "feature": null,
+  "files": [
+    {
+      "name": "nation_change_screen.unbound",
+      "effective": "res/gui/unbound/views/lobby/nation_change/nation_change_screen.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/nation_change/nation_change_screen.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.nation_change.nation_change_screen.NationChangeScreen",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.nation_change.nation_change_screen.NationChangeScreen no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        287
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

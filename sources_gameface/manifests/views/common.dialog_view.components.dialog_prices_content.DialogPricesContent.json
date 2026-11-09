@@ -1,0 +1,72 @@
+{
+  "rid": "R.views.common.dialog_view.components.dialog_prices_content.DialogPricesContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "DialogPricesContent",
+  "dir": "gui/unbound/views/common/dialog_view/components",
+  "feature": null,
+  "files": [
+    {
+      "name": "dialog_prices_content.unbound",
+      "effective": "res/gui/unbound/views/common/dialog_view/components/dialog_prices_content.unbound",
+      "all": [
+        "res/gui/unbound/views/common/dialog_view/components/dialog_prices_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.dialog_view.components.dialog_prices_content.DialogPricesContent",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.common.dialog_view.components.dialog_prices_content.DialogPricesContent no Python",
+      "ViewModel DialogPricesContentModel (model=... no Python da view): 4/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dialogs/contents/prices_content.py",
+        18
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/dialogs/contents/prices_content.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/dialog_prices_content_model.py",
+      "class": "DialogPricesContentModel",
+      "chain": [
+        "DialogPricesContentModel"
+      ],
+      "properties": [
+        [
+          "valueMain",
+          "ViewModel"
+        ],
+        [
+          "valueAdditional",
+          "ViewModel"
+        ],
+        [
+          "tooltipId",
+          "Number"
+        ],
+        [
+          "hasAdditionalCost",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 4,
+        "total": 4,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

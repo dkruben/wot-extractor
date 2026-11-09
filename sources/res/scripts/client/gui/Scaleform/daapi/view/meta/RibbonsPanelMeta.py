@@ -1,0 +1,37 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/RibbonsPanelMeta.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/daapi/view/meta/RibbonsPanelMeta.py
+from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPIComponent
+
+class RibbonsPanelMeta(BaseDAAPIComponent):
+
+    def onShow(self, ribbonId):
+        self._printOverrideError('onShow')
+
+    def onChange(self):
+        self._printOverrideError('onChange')
+
+    def onHide(self, ribbonId):
+        self._printOverrideError('onHide')
+
+    def as_setupS(self, items, isExtendedAnim, isVisible, isWithRibbonName, isWithVehName, bonusLabels):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setup(items, isExtendedAnim, isVisible, isWithRibbonName, isWithVehName, bonusLabels)
+
+    def as_resetS(self):
+        if self._isDAAPIInited():
+            return self.flashObject.as_reset()
+
+    def as_addBattleEfficiencyEventS(self, ribbonType, ribbonId, leftFieldStr, vehName, vehType, rightFieldStr, bonusLabelIndex, role):
+        if self._isDAAPIInited():
+            return self.flashObject.as_addBattleEfficiencyEvent(ribbonType, ribbonId, leftFieldStr, vehName, vehType, rightFieldStr, bonusLabelIndex, role)
+
+    def as_updateBattleEfficiencyEventS(self, ribbonType, ribbonId, leftFieldStr, vehName, vehType, rightFieldStr, bonusLabelIndex, role):
+        if self._isDAAPIInited():
+            return self.flashObject.as_updateBattleEfficiencyEvent(ribbonType, ribbonId, leftFieldStr, vehName, vehType, rightFieldStr, bonusLabelIndex, role)
+
+    def as_setSettingsS(self, isVisible, isExtendedAnim, isWithRibbonName, isWithVehName):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setSettings(isVisible, isExtendedAnim, isWithRibbonName, isWithVehName)

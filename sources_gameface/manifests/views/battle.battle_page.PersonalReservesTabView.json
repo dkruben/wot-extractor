@@ -1,0 +1,112 @@
+{
+  "rid": "R.views.battle.battle_page.PersonalReservesTabView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "PersonalReservesTabView",
+  "dir": "gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView",
+  "feature": null,
+  "files": [
+    {
+      "name": "PersonalReservesTabView.css",
+      "effective": "res/gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView/PersonalReservesTabView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView/PersonalReservesTabView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PersonalReservesTabView.html",
+      "effective": "res/gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView/PersonalReservesTabView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView/PersonalReservesTabView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PersonalReservesTabView.js",
+      "effective": "res/gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView/PersonalReservesTabView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView/PersonalReservesTabView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView/PersonalReservesTabView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView/PersonalReservesTabView.css",
+      "key": "res/gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView/PersonalReservesTabView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView/PersonalReservesTabView.js",
+      "key": "res/gui/gameface/_dist/production/battle/battle_page/PersonalReservesTabView/PersonalReservesTabView.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/battle/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/battle/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.personal_reserves.ReservesDisabledTooltip",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.personal_reserves.BoosterTooltip"
+  ],
+  "commands": [
+    "onBoosterActivate"
+  ],
+  "link": {
+    "rid": "R.views.battle.battle_page.PersonalReservesTabView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.battle.battle_page.PersonalReservesTabView no Python",
+      "ViewModel PersonalReservesTabViewModel (convencao de nomes): 3/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/battle/battle_page/full_stats/personal_reserves_tab_view.py",
+        37
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/battle/battle_page/full_stats/personal_reserves_tab_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/battle/battle_page/personal_reserves_tab_view_model.py",
+      "class": "PersonalReservesTabViewModel",
+      "chain": [
+        "PersonalReservesTabViewModel"
+      ],
+      "properties": [
+        [
+          "reserveGroups",
+          "Array"
+        ],
+        [
+          "tabSelection",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onBoosterActivate"
+      ],
+      "coverage": {
+        "found": 3,
+        "total": 3,
+        "missing": []
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

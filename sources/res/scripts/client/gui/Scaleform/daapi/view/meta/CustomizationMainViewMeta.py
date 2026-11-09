@@ -1,0 +1,136 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/CustomizationMainViewMeta.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/daapi/view/meta/CustomizationMainViewMeta.py
+from gui.Scaleform.framework.entities.View import View
+
+class CustomizationMainViewMeta(View):
+
+    def showQuestProgressionInfoWindow(self):
+        self._printOverrideError('showQuestProgressionInfoWindow')
+
+    def showBuyWindow(self):
+        self._printOverrideError('showBuyWindow')
+
+    def onCloseWindow(self):
+        self._printOverrideError('onCloseWindow')
+
+    def fadeOutAnchors(self, value):
+        self._printOverrideError('fadeOutAnchors')
+
+    def changeSeason(self, season, keepSelect):
+        self._printOverrideError('changeSeason')
+
+    def onLobbyClick(self):
+        self._printOverrideError('onLobbyClick')
+
+    def onSelectAnchor(self, areaID, slotID, regionID):
+        self._printOverrideError('onSelectAnchor')
+
+    def onHoverAnchor(self, areaID, slotID, regionID, hover):
+        self._printOverrideError('onHoverAnchor')
+
+    def onDragAnchor(self, areaID, slotID, regionID):
+        self._printOverrideError('onDragAnchor')
+
+    def onReleaseItem(self):
+        self._printOverrideError('onReleaseItem')
+
+    def onAnchorsShown(self, anchors):
+        self._printOverrideError('onAnchorsShown')
+
+    def propertiesSheetSet(self, sheet, width, height, crnterX, centerY):
+        self._printOverrideError('propertiesSheetSet')
+
+    def onButtonPressed(self, name):
+        self._printOverrideError('onButtonPressed')
+
+    def onPressEscBtn(self):
+        self._printOverrideError('onPressEscBtn')
+
+    def onPressSelectNextItem(self, reverse):
+        self._printOverrideError('onPressSelectNextItem')
+
+    def playCustomSound(self, sound):
+        self._printOverrideError('playCustomSound')
+
+    def onRemoveSelectedItem(self):
+        self._printOverrideError('onRemoveSelectedItem')
+
+    def resetC11nItemsNovelty(self, itemsList):
+        self._printOverrideError('resetC11nItemsNovelty')
+
+    def onShopEntryPointClick(self):
+        self._printOverrideError('onShopEntryPointClick')
+
+    def onEntryPointClick(self, itemId):
+        self._printOverrideError('onEntryPointClick')
+
+    def as_hideS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_hide(value)
+
+    def as_setHeaderDataS(self, data):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setHeaderData(data)
+
+    def as_setAnchorInitS(self, data):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setAnchorInit(data)
+
+    def as_updateAnchorDataS(self, data):
+        if self._isDAAPIInited():
+            return self.flashObject.as_updateAnchorData(data)
+
+    def as_onRegionHighlightedS(self, slotId, highlightingType, highlightingResult, areaMouseBehavior):
+        if self._isDAAPIInited():
+            return self.flashObject.as_onRegionHighlighted(slotId, highlightingType, highlightingResult, areaMouseBehavior)
+
+    def as_updateSelectedRegionsS(self, slotId):
+        if self._isDAAPIInited():
+            return self.flashObject.as_updateSelectedRegions(slotId)
+
+    def as_setAnchorsDataS(self, data):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setAnchorsData(data)
+
+    def as_setSeasonsBarDataS(self, dataProvider):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setSeasonsBarData(dataProvider)
+
+    def as_enableDNDS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_enableDND(value)
+
+    def as_selectSeasonS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_selectSeason(value)
+
+    def as_releaseItemS(self, deselectAnchor=True):
+        if self._isDAAPIInited():
+            return self.flashObject.as_releaseItem(deselectAnchor)
+
+    def as_showCarouselsArrowsNotificationS(self, text):
+        if self._isDAAPIInited():
+            return self.flashObject.as_showCarouselsArrowsNotification(text)
+
+    def as_reselectS(self, data):
+        if self._isDAAPIInited():
+            return self.flashObject.as_reselect(data)
+
+    def as_setNotificationCountersS(self, counters):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setNotificationCounters(counters)
+
+    def as_setAnchorsStateS(self, data):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setAnchorsState(data)
+
+    def as_attachToCursorS(self, data):
+        if self._isDAAPIInited():
+            return self.flashObject.as_attachToCursor(data)
+
+    def as_updateInnerEntriesS(self, items):
+        if self._isDAAPIInited():
+            return self.flashObject.as_updateInnerEntries(items)

@@ -1,0 +1,53 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/common/events_handler.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from inspect import isfunction as isfunction, ismethod as ismethod, getmembers as getmembers
+from operator import attrgetter as attrgetter
+from typing import Callable as Callable, Type as Type
+from Event import Event as Event
+from metaclass import Metaclass as Metaclass
+from py2to3.patched_future import with_metaclass as with_metaclass
+
+# base nao representavel no stub: with_metaclass(...)
+class EventsHandler:
+    def subscribeTo(self, events, raiseException=True):
+        ...
+    def unsubscribeFrom(self, events):
+        ...
+    # decorador original: @eventHandler
+    def onEventsContainerDestroy(self, events):
+        ...
+    @classmethod
+    def __init_subclass__(cls, _, bases, attributes):
+        ...
+    def _subscribeToEvents(self, events, raiseException=True):
+        ...
+    def _unsubscribeFromEvents(self, events):
+        ...
+
+# base nao representavel no stub: with_metaclass(...)
+class EventsQuery:
+    EVENTS_PROPERTY_NAME = None
+    @classmethod
+    def __init_subclass__(cls, _, bases, attributes):
+        ...
+    def _getEvents(self, object):
+        ...
+
+def eventHandler(func):
+    ...
+def eventHandlerFor(events):
+    ...
+def _isEventHandler(func):
+    ...
+def _isMethodEventHandler(method):
+    ...
+def _isFunctionEventHandler(function):
+    ...
+def _getEventHandlers(handler):
+    ...
+def subscribeToEvents(handler, events, raiseException=True):
+    ...
+def unsubscribeFromEvents(handler, events):
+    ...

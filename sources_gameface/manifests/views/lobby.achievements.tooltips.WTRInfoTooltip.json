@@ -1,0 +1,82 @@
+{
+  "rid": "R.views.lobby.achievements.tooltips.WTRInfoTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "WTRInfoTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "WTRInfoTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip/WTRInfoTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip/WTRInfoTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "WTRInfoTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip/WTRInfoTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip/WTRInfoTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "WTRInfoTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip/WTRInfoTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip/WTRInfoTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip/WTRInfoTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/achievements/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/achievements/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip/WTRInfoTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip/WTRInfoTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip/WTRInfoTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WTRInfoTooltip/WTRInfoTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.achievements.tooltips.WTRInfoTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.achievements.tooltips.WTRInfoTooltip no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/achievements/summary/summary_view.py",
+        111
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/achievements/tooltips/wtr_info_tooltip.py",
+        13
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/achievements/summary/summary_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/achievements/tooltips/wtr_info_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

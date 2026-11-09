@@ -1,0 +1,16 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/advent_calendar/vscript/aspects/ac_aspect_client.xml -->
+<root>
+	<name>CLIENT</name>
+	<app_name>client</app_name>
+	<mask>1</mask>
+	<meta>
+		<display>Client</display>
+		<icon>:/vse/aspects/client</icon>
+	</meta>
+	<python>
+		<registrar>
+			<module>ac_visual_script_client</module>
+			<name>g_blockRegistrar</name>
+		</registrar>
+	</python>
+</root>

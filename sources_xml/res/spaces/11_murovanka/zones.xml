@@ -1,0 +1,106 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/11_murovanka/zones.xml -->
+<root>
+	<path>
+		<id>4010847478</id>
+		<name>path</name>
+		<node>
+			<name>comp7_patch_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2279281549</id>
+			<transform>
+				<row0>28.051882 0 0</row0>
+				<row1>0 28.051882 0</row1>
+				<row2>0 0 28.051882</row2>
+				<row3>7.150972 4.390553 -5.976982</row3>
+			</transform>
+		</node>
+		<node>
+			<name>comp7_patch_02</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1123740633</id>
+			<transform>
+				<row0>61.73434 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 46.706596</row2>
+				<row3>-55.796688 4.840085 28.063347</row3>
+			</transform>
+		</node>
+		<node>
+			<name>comp7_patch_03</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>966518876</id>
+			<transform>
+				<row0>82.76708 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 79.71042</row2>
+				<row3>-58.320293 4.443952 -43.11245</row3>
+			</transform>
+		</node>
+		<node>
+			<name>comp7_patch_04</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3585464496</id>
+			<transform>
+				<row0>64.1989 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 93.66929</row2>
+				<row3>-45.981136 4.718038 -172.82584</row3>
+			</transform>
+		</node>
+		<node>
+			<name>comp7_patch_05</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>620475454</id>
+			<transform>
+				<row0>89.801674 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 70.536026</row2>
+				<row3>-226.12009 5.40997 -374.2764</row3>
+			</transform>
+		</node>
+		<node>
+			<name>comp7_patch_06</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3648475600</id>
+			<transform>
+				<row0>37.93226 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 43.10849</row2>
+				<row3>-29.998026 4.201489 168.51462</row3>
+			</transform>
+		</node>
+		<node>
+			<name>comp7_patch_07</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>660743258</id>
+			<transform>
+				<row0>60.97738 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 52.58965</row2>
+				<row3>136.84914 4.66929 176.45662</row3>
+			</transform>
+		</node>
+		<node>
+			<name>comp7_patch_08</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2206903801</id>
+			<transform>
+				<row0>60.7439 0 0</row0>
+				<row1>0 30.784407 0</row1>
+				<row2>0 0 75.81049</row2>
+				<row3>-154.91388 5.362195 56.099724</row3>
+			</transform>
+		</node>
+		<node>
+			<name>11_murovanka_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2133911424</id>
+			<transform>
+				<row0>63.017384 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 50.95122</row2>
+				<row3>-262.04776 14.255994 120.86951</row3>
+			</transform>
+		</node>
+	</path>
+</root>

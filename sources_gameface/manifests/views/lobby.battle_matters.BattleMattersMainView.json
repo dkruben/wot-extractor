@@ -1,0 +1,129 @@
+{
+  "rid": "R.views.lobby.battle_matters.BattleMattersMainView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "BattleMattersMainView",
+  "dir": "gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView",
+  "feature": null,
+  "files": [
+    {
+      "name": "BattleMattersMainView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView/BattleMattersMainView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView/BattleMattersMainView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleMattersMainView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView/BattleMattersMainView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView/BattleMattersMainView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BattleMattersMainView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView/BattleMattersMainView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView/BattleMattersMainView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView/BattleMattersMainView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/battle_matters/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/battle_matters/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView/BattleMattersMainView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView/BattleMattersMainView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView/BattleMattersMainView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/battle_matters/BattleMattersMainView/BattleMattersMainView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.battle_matters.tooltips.BattleMattersTokenTooltipView",
+    "lobby.tooltips.AdditionalRewardsTooltip"
+  ],
+  "commands": [
+    "onClose",
+    "onSelectDelayedReward",
+    "onShowAnimForQuest",
+    "onShowMainReward",
+    "onShowManual",
+    "onShowManualForQuest",
+    "onShowView"
+  ],
+  "link": {
+    "rid": "R.views.lobby.battle_matters.BattleMattersMainView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.battle_matters.BattleMattersMainView no Python",
+      "ViewModel BattleMattersMainViewModel (model=... no Python da view): 10/10 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_matters/battle_matters_main_view.py",
+        132
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_matters/battle_matters_main_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_matters/battle_matters_main_view_model.py",
+      "class": "BattleMattersMainViewModel",
+      "chain": [
+        "BattleMattersMainViewModel"
+      ],
+      "properties": [
+        [
+          "questProgress",
+          "ViewModel"
+        ],
+        [
+          "isRewardsViewOpen",
+          "Bool"
+        ],
+        [
+          "quests",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onShowView",
+        "onShowManual",
+        "onShowManualForQuest",
+        "onShowAnimForQuest",
+        "onShowMainReward",
+        "onSelectDelayedReward",
+        "onClose"
+      ],
+      "coverage": {
+        "found": 10,
+        "total": 10,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

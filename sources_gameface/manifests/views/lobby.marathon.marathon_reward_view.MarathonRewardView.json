@@ -1,0 +1,91 @@
+{
+  "rid": "R.views.lobby.marathon.marathon_reward_view.MarathonRewardView",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "MarathonRewardView",
+  "dir": "gui/unbound/views/lobby/marathon",
+  "feature": null,
+  "files": [
+    {
+      "name": "marathon_reward_view.unbound",
+      "effective": "res/gui/unbound/views/lobby/marathon/marathon_reward_view.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/marathon/marathon_reward_view.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.marathon.marathon_reward_view.MarathonRewardView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.marathon.marathon_reward_view.MarathonRewardView no Python",
+      "ViewModel MarathonRewardViewModel (model=... no Python da view): 11/11 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/marathon/marathon_reward_helper.py",
+        44
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/marathon/marathon_reward_view.py",
+        24
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/marathon/marathon_reward_helper.py",
+      "sources/res/scripts/client/gui/impl/lobby/marathon/marathon_reward_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/marathon/marathon_reward_view_model.py",
+      "class": "MarathonRewardViewModel",
+      "chain": [
+        "MarathonRewardViewModel"
+      ],
+      "properties": [
+        [
+          "isGoToVehicleBtnEnabled",
+          "Bool"
+        ],
+        [
+          "videoSource",
+          "String"
+        ],
+        [
+          "vehicleIsElite",
+          "Bool"
+        ],
+        [
+          "vehicleType",
+          "String"
+        ],
+        [
+          "vehicleLvl",
+          "String"
+        ],
+        [
+          "vehicleName",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onGoToVehicleBtnClick",
+        "onViewRewardsBtnClick",
+        "onCloseBtnClick",
+        "onVideoStarted",
+        "onVideoStopped"
+      ],
+      "coverage": {
+        "found": 11,
+        "total": 11,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

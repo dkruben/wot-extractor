@@ -1,0 +1,72 @@
+{
+  "rid": "R.views.frontline.mono.lobby.post_battle_results_view",
+  "rid_source": "sources/res/frontline/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "post_battle_results_view",
+  "dir": "frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view",
+  "feature": "frontline",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view/bundle.js",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view/bundle.js"
+    },
+    {
+      "name": "post_battle_results_view.css",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view/post_battle_results_view.css",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view/post_battle_results_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "post_battle_results_view.html",
+      "effective": "res/frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view/post_battle_results_view.html",
+      "all": [
+        "res/frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view/post_battle_results_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view/bundle.js",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view/bundle.js"
+    },
+    {
+      "virtual": "frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view/post_battle_results_view.css",
+      "key": "res/frontline/gui/gameface/_dist/production/mono/lobby/post_battle_results_view/post_battle_results_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose",
+    "teamStats.onStatsSorted"
+  ],
+  "link": {
+    "rid": "R.views.frontline.mono.lobby.post_battle_results_view",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.frontline.mono.lobby.post_battle_results_view no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/views/frontline_battle_results_view.py",
+        28
+      ]
+    ],
+    "python_files": [
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/views/frontline_battle_results_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

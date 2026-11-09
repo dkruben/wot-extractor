@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/scripts/item_defs/vehicles/usa/components/chassis.xml -->
+<root>
+	<ids>
+		<Pershingchassis2_SM_SCC>64014</Pershingchassis2_SM_SCC>
+		<Chassis_A117_T26E5_SM_SCC>64015</Chassis_A117_T26E5_SM_SCC>
+	</ids>
+	<shared />
+</root>

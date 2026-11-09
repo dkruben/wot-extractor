@@ -1,0 +1,141 @@
+{
+  "rid": "R.views.comp7_light.mono.lobby.leaderboard_reward_tooltip_view",
+  "rid_source": "sources/res/comp7_light/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "leaderboard_reward_tooltip_view",
+  "dir": "comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view",
+  "feature": "comp7_light",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view/bundle.js",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view/bundle.js"
+    },
+    {
+      "name": "leaderboard_reward_tooltip_view.css",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.css",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "leaderboard_reward_tooltip_view.html",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.html",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view/bundle.js",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view/bundle.js"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/leaderboard_reward_tooltip_view/leaderboard_reward_tooltip_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.comp7_light.mono.lobby.leaderboard_reward_tooltip_view",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.comp7_light.mono.lobby.leaderboard_reward_tooltip_view no Python",
+      "ViewModel EntryPointModel (model=... no Python da view): 0/9 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/entry_point_presenter.py",
+        39
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/progression_main_view.py",
+        45
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/tooltips/leaderboard_reward_tooltip.py",
+        20
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/entry_point_presenter.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/progression_main_view.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/tooltips/leaderboard_reward_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/gen/view_models/views/lobby/entry_point_model.py",
+      "class": "EntryPointModel",
+      "chain": [
+        "EntryPointModel"
+      ],
+      "properties": [
+        [
+          "state",
+          "String"
+        ],
+        [
+          "curProgressPoints",
+          "Number"
+        ],
+        [
+          "prevProgressPoints",
+          "Number"
+        ],
+        [
+          "pointsForLevel",
+          "Number"
+        ],
+        [
+          "currentStage",
+          "Number"
+        ],
+        [
+          "isEntryPointAnimationSeen",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onOpenProgression",
+        "onAnimationEnd",
+        "onEntryPointAnimationSeen"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 9,
+        "missing": [
+          "curProgressPoints",
+          "currentStage",
+          "isEntryPointAnimationSeen",
+          "onAnimationEnd",
+          "onEntryPointAnimationSeen",
+          "onOpenProgression",
+          "pointsForLevel",
+          "prevProgressPoints",
+          "state"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/gen/view_models/views/lobby/progression/progression_main_view_model.py",
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/gen/view_models/views/lobby/tooltips/leaderboard_reward_tooltip_model.py"
+      ]
+    }
+  }
+}

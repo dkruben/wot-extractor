@@ -1,0 +1,129 @@
+{
+  "rid": "R.views.comp7.mono.lobby.tooltips.weekly_quest_widget_tooltip",
+  "rid_source": "sources/res/comp7/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "weekly_quest_widget_tooltip",
+  "dir": "comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip",
+  "feature": "comp7",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip/bundle.js",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip/bundle.js"
+    },
+    {
+      "name": "weekly_quest_widget_tooltip.css",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip/weekly_quest_widget_tooltip.css",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip/weekly_quest_widget_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "weekly_quest_widget_tooltip.html",
+      "effective": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip/weekly_quest_widget_tooltip.html",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip/weekly_quest_widget_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip/bundle.js",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip/bundle.js"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip/weekly_quest_widget_tooltip.css",
+      "key": "res/comp7/gui/gameface/_dist/production/mono/lobby/tooltips/weekly_quest_widget_tooltip/weekly_quest_widget_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.comp7.mono.lobby.tooltips.weekly_quest_widget_tooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.comp7.mono.lobby.tooltips.weekly_quest_widget_tooltip no Python",
+      "ViewModel WeeklyQuestWidgetTooltipModel (model=... no Python da view): 4/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/tooltips/weekly_quest_widget_tooltip.py",
+        21
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/weekly_quests_widget_presenter.py",
+        65
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/tooltips/weekly_quest_widget_tooltip.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/weekly_quests_widget_presenter.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/lobby/tooltips/weekly_quest_widget_tooltip_model.py",
+      "class": "WeeklyQuestWidgetTooltipModel",
+      "chain": [
+        "WeeklyQuestWidgetTooltipModel"
+      ],
+      "properties": [
+        [
+          "state",
+          "String"
+        ],
+        [
+          "description",
+          "String"
+        ],
+        [
+          "bonuses",
+          "Array"
+        ],
+        [
+          "questsPassed",
+          "Number"
+        ],
+        [
+          "totalQuests",
+          "Number"
+        ],
+        [
+          "questNumbersToRewards",
+          "Array"
+        ],
+        [
+          "timeToNewQuests",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 4,
+        "total": 7,
+        "missing": [
+          "questsPassed",
+          "timeToNewQuests",
+          "totalQuests"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/lobby/weekly_quests_widget_model.py"
+      ]
+    }
+  }
+}

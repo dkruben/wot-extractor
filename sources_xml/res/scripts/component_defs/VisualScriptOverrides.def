@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/VisualScriptOverrides.def -->
+<root>
+	<Properties>
+		<params>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<Default>{}</Default>
+		</params>
+	</Properties>
+	<ofEntity>
+		<ArenaInfo />
+	</ofEntity>
+	<DefaultKeyName>visualScriptOverrides</DefaultKeyName>
+</root>

@@ -1,0 +1,18 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/99_poland/zones.xml -->
+<root>
+	<path>
+		<id>1806496487</id>
+		<name>path</name>
+		<node>
+			<name>99_poland_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3401316367</id>
+			<transform>
+				<row0>51.05567 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 62.88311</row2>
+				<row3>-158.35405 8.168178 -100.396454</row3>
+			</transform>
+		</node>
+	</path>
+</root>

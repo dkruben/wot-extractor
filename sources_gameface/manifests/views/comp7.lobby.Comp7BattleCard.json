@@ -1,0 +1,90 @@
+{
+  "rid": "R.views.comp7.lobby.Comp7BattleCard",
+  "rid_source": "sources/res/comp7/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Comp7BattleCard",
+  "dir": "comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard",
+  "feature": "comp7",
+  "files": [
+    {
+      "name": "Comp7BattleCard.css",
+      "effective": "res/comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard/Comp7BattleCard.css",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard/Comp7BattleCard.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Comp7BattleCard.html",
+      "effective": "res/comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard/Comp7BattleCard.html",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard/Comp7BattleCard.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Comp7BattleCard.js",
+      "effective": "res/comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard/Comp7BattleCard.js",
+      "all": [
+        "res/comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard/Comp7BattleCard.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard/Comp7BattleCard.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/lib/comp7.vendors.js",
+      "key": "res/comp7/gui/gameface/_dist/production/lib/comp7.vendors.js"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard/Comp7BattleCard.css",
+      "key": "res/comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard/Comp7BattleCard.css"
+    },
+    {
+      "virtual": "comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard/Comp7BattleCard.js",
+      "key": "res/comp7/gui/gameface/_dist/production/lobby/Comp7BattleCard/Comp7BattleCard.js"
+    },
+    {
+      "virtual": "comp7/gui/gameface/styles/default.css",
+      "key": "res/comp7/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.simple_tooltip_content.SimpleTooltipContent",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "comp7.lobby.Comp7BattleCard",
+    "comp7.mono.lobby.tooltips.progression_tooltip",
+    "comp7.mono.lobby.tooltips.rank_inactivity_tooltip",
+    "lobby.common.tooltips.ExtendedTextTooltip",
+    "lobby.common.tooltips.SimpleIconTooltip",
+    "lobby.mode_selector.tooltips.SimplyFormatTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.comp7.lobby.Comp7BattleCard",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.comp7.lobby.Comp7BattleCard no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/mode_selector/items/comp7_mode_selector_item.py",
+        103
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/mode_selector/items/comp7_mode_selector_item.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

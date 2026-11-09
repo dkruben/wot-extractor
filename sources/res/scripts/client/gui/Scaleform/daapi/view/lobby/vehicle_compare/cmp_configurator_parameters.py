@@ -1,0 +1,66 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/vehicle_compare/cmp_configurator_parameters.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/Scaleform/daapi/view/lobby/vehicle_compare/cmp_configurator_parameters.py
+from __future__ import absolute_import
+from gui.Scaleform.daapi.view.lobby.hangar.VehicleParameters import VehicleParameters, VehPreviewParamsDataProvider
+from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
+
+class _CmpCacheWrapper(object):
+
+    def __init__(self):
+        super(_CmpCacheWrapper, self).__init__()
+        self.__vehicle = None
+        self.__defaultVehicle = None
+        return
+
+    def setVehicle(self, value):
+        self.__vehicle = value
+
+    def setDefaultVehicle(self, value):
+        self.__defaultVehicle = value
+
+    @property
+    def item(self):
+        return self.__vehicle
+
+    @property
+    def defaultItem(self):
+        return self.__defaultVehicle
+
+    def isPresent(self):
+        return self.__vehicle is not None
+
+    def dispose(self):
+        self.__vehicle = None
+        self.__defaultVehicle = None
+        return
+
+
+class VehicleCompareParameters(VehicleParameters):
+
+    def __init__(self):
+        super(VehicleCompareParameters, self).__init__()
+        self.__vehWrapper = _CmpCacheWrapper()
+
+    def init(self, vehicle, initialVehicle=None):
+        self.__vehWrapper.setVehicle(vehicle)
+        if initialVehicle:
+            self.__vehWrapper.setDefaultVehicle(initialVehicle)
+        self.update()
+
+    def getVehicle(self):
+        return self.__vehWrapper.item
+
+    def _createDataProvider(self):
+        return VehPreviewParamsDataProvider(TOOLTIPS_CONSTANTS.VEHICLE_CMP_PARAMETERS)
+
+    def _dispose(self):
+        self.__vehWrapper.dispose()
+        self.__vehWrapper = None
+        super(VehicleCompareParameters, self)._dispose()
+        return
+
+    def _getVehicleCache(self):
+        return self.__vehWrapper

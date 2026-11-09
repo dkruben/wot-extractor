@@ -1,0 +1,115 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/Listener.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/Listener.py
+from __future__ import absolute_import
+import copy, weakref
+
+class Listenable:
+
+    def __init__(self):
+        self.listeners = _Listeners()
+
+    def addListener(self, eventName, fn):
+        self.listeners.addListener(eventName, fn)
+
+    def removeListener(self, eventName, fn):
+        self.listeners.removeListener(eventName, fn)
+
+
+class _Listeners(object):
+
+    def __init__(self):
+        self.listeners = {}
+
+    def addListener(self, eventName, fn):
+        if eventName not in self.listeners:
+            self.listeners[eventName] = set()
+        self.listeners[eventName].add(fn)
+
+    def removeListener(self, eventName, fn):
+        if eventName in self.listeners and fn in self.listeners[eventName]:
+            self.listeners[eventName].remove(fn)
+        if eventName in self.listeners and len(self.listeners[eventName]) == 0:
+            del self.listeners[eventName]
+
+    def __getattribute__(self, name):
+        try:
+            return object.__getattribute__(self, name)
+        except AttributeError:
+            return _ListenerDispatch(self, name)
+
+
+class _ListenerDispatch:
+
+    def __init__(self, dispatcher, eventName):
+        self.dispatcher = dispatcher
+        self.eventName = eventName
+
+    def __call__(self, *args, **kargs):
+        if self.eventName not in self.dispatcher.listeners:
+            return
+        functions = self.dispatcher.listeners[self.eventName]
+        for fn in copy.copy(functions):
+            fn(*args, **kargs)
+
+
+class _ListenerFunc(object):
+
+    def __init__(self, func):
+        if hasattr(func, 'im_self'):
+            self.isBoundMethod = True
+            self.ref = weakref.ref(func.im_self)
+            self.func = func.im_func
+        else:
+            self.isBoundMethod = False
+            self.ref = weakref.ref(func)
+
+    def matches(self, func):
+        if not self.alive():
+            return False
+        if self.isBoundMethod:
+            return func == getattr(self.ref(), self.func.func_name)
+        return func == self.ref()
+
+    def alive(self):
+        return self.ref() is not None
+
+    def get(self):
+        obj = self.ref()
+        if obj is not None:
+            if self.isBoundMethod:
+                return getattr(obj, self.func.func_name)
+            return obj
+        return
+
+    def __call__(self, *args, **kwargs):
+        fn = self.get()
+        if fn is not None:
+            return fn(*args, **kwargs)
+        else:
+            return
+
+
+class FunctionListeners(object):
+
+    def __init__(self):
+        self.listeners = []
+
+    def append(self, func):
+        self.listeners.append(_ListenerFunc(func))
+
+    def remove(self, func):
+        for listener in self.listeners:
+            if listener.matches(func):
+                self.listeners.remove(listener)
+                break
+
+    def reset(self):
+        self.listeners = []
+
+    def __call__(self, *args, **kwargs):
+        self.listeners = [item for item in self.listeners if item.alive()]
+        for listener in self.listeners:
+            listener(*args, **kwargs)

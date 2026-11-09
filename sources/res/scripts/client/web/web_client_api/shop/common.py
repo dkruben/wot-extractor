@@ -1,0 +1,45 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/web/web_client_api/shop/common.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/web/web_client_api/shop/common.py
+from __future__ import absolute_import
+from past.builtins import basestring
+from account_helpers import AccountSettings
+from account_helpers.AccountSettings import CUSTOM_SHOP_SETTINGS
+from web.web_client_api import Field, W2CSchema, w2c
+
+class _KeySchema(W2CSchema):
+    key = Field(required=True, type=basestring)
+
+
+class _KeyValueSchema(_KeySchema):
+    key = Field(required=True, type=basestring)
+    value = Field(required=True, type=(bool, int, float, basestring))
+
+
+class SettingsWebApiMixin(object):
+
+    @w2c(_KeySchema, 'get_setting')
+    def getSetting(self, cmd):
+        return AccountSettings.getSettings(CUSTOM_SHOP_SETTINGS).get(cmd.key)
+
+    @w2c(_KeyValueSchema, 'set_setting')
+    def setSetting(self, cmd):
+        settings = AccountSettings.getSettings(CUSTOM_SHOP_SETTINGS)
+        settings[cmd.key] = cmd.value
+        AccountSettings.setSettings(CUSTOM_SHOP_SETTINGS, settings)
+
+    @w2c(_KeySchema, 'remove_setting')
+    def remove(self, cmd):
+        settings = AccountSettings.getSettings(CUSTOM_SHOP_SETTINGS)
+        settings.pop(cmd.key)
+        AccountSettings.setSettings(CUSTOM_SHOP_SETTINGS, settings)
+
+    @w2c(W2CSchema, 'get_settings')
+    def getSettings(self, _):
+        return AccountSettings.getSettings(CUSTOM_SHOP_SETTINGS)
+
+    @w2c(W2CSchema, 'clear_settings')
+    def clear(self, _):
+        AccountSettings.setSettings(CUSTOM_SHOP_SETTINGS, {})

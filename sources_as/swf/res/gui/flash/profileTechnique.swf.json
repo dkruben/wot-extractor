@@ -1,0 +1,393 @@
+{
+ "source": "sources/res/gui/flash/profileTechnique.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 810376,
+ "actual_length": 810376,
+ "frame_size_px": [
+  0.0,
+  988.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#cccccc",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 35,
+  "ShowFrame": 326,
+  "DefineShape": 11,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 3,
+  "PlaceObject2": 92,
+  "RemoveObject2": 11,
+  "DefineShape3": 7,
+  "DefineBitsLossless2": 13,
+  "DefineEditText": 31,
+  "DefineSprite": 34,
+  "FrameLabel": 32,
+  "FileAttributes": 1,
+  "PlaceObject3": 42,
+  "ImportAssets2": 7,
+  "CSMTextSettings": 31,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 21,
+  "sprites": 34,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 31,
+  "fonts": 0,
+  "classes": 26,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "profileComponents.swf",
+   "symbols": []
+  },
+  {
+   "url": "achievements.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 99,
+   "class": "ProfileTechniqueImportsUI"
+  },
+  {
+   "id": 98,
+   "class": "PrestigeTechniqueRenderer_UI"
+  },
+  {
+   "id": 90,
+   "class": "BattleRoyaleTechniqueRendererUI"
+  },
+  {
+   "id": 82,
+   "class": "ProfileTechniquePage_UI"
+  },
+  {
+   "id": 79,
+   "class": "ProfileTechniqueWindow_UI"
+  },
+  {
+   "id": 77,
+   "class": "ProfileTechniqueEmptyScreen_UI"
+  },
+  {
+   "id": 73,
+   "class": "TechniqueListComponent_UI"
+  },
+  {
+   "id": 69,
+   "class": "TechniqueList_UI"
+  },
+  {
+   "id": 67,
+   "class": "SortableButtonBar_UI"
+  },
+  {
+   "id": 61,
+   "class": "TechniqueStackComponent_UI"
+  },
+  {
+   "id": 60,
+   "class": "TechAwardsGradientLineButtonBar_UI"
+  },
+  {
+   "id": 58,
+   "class": "TechniqueViewStack_UI"
+  },
+  {
+   "id": 53,
+   "class": "TechniqueStatisticsPercentSign_UI"
+  },
+  {
+   "id": 51,
+   "class": "TechniqueRenderer_UI"
+  },
+  {
+   "id": 45,
+   "class": "TechMasteryIcon_UI"
+  },
+  {
+   "id": 33,
+   "class": "TechniqueTabButton_UI"
+  },
+  {
+   "id": 24,
+   "class": "TechniqueAchievementTab_UI"
+  },
+  {
+   "id": 17,
+   "class": "ScrollPaneTechnique_UI"
+  },
+  {
+   "id": 16,
+   "class": "TechAwardsMainContainer_UI"
+  },
+  {
+   "id": 15,
+   "class": "RankBlock_UI"
+  },
+  {
+   "id": 13,
+   "class": "TechniqueAchievementsBlock_UI"
+  },
+  {
+   "id": 11,
+   "class": "AchievementsTileList_UI"
+  },
+  {
+   "id": 9,
+   "class": "TechniqueStatisticTab_UI"
+  },
+  {
+   "id": 3,
+   "class": "TechniqueStatisticScrollPane_UI"
+  },
+  {
+   "id": 1,
+   "class": "RankRenderer_UI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 16356,
+   "classes": 26,
+   "methods": 137,
+   "bodies": 137,
+   "code_bytes": 5548
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileTechniqueImportsUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechniqueStatisticsPercentSign_UI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechMasteryIcon_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.components.TechMasteryIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileTechniqueEmptyScreen_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.ProfileTechniqueEmptyScreen",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechniqueListComponent_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.TechniqueListComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechniqueStackComponent_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.TechniqueStackComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankBlock_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.TechniqueAchievementsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechniqueAchievementsBlock_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.TechniqueAchievementsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollPaneTechnique_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechniqueStatisticScrollPane_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechAwardsMainContainer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.TechAwardsMainContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SortableButtonBar_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.advanced.SortableHeaderButtonBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechniqueAchievementTab_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.TechniqueAchievementTab",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechniqueStatisticTab_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.TechniqueStatisticTab",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechniqueViewStack_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.ResizableViewStack",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechAwardsGradientLineButtonBar_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.components.GradientLineButtonBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AchievementsTileList_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableTileList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleRoyaleTechniqueRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.BattleRoyaleTechniqueRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PrestigeTechniqueRenderer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.TechniqueRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechniqueRenderer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.TechniqueRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechniqueTabButton_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TabButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechniqueList_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.TechniqueList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankRenderer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.achievements.AchievementCommon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileTechniqueWindow_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.ProfileTechniqueWindow",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileTechniquePage_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.technique.ProfileTechniquePage",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

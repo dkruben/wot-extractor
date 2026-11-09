@@ -1,0 +1,211 @@
+{
+  "rid": "R.views.lobby.common.tooltips.ExtendedTextTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ExtendedTextTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "ExtendedTextTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip/ExtendedTextTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip/ExtendedTextTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ExtendedTextTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip/ExtendedTextTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip/ExtendedTextTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ExtendedTextTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip/ExtendedTextTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip/ExtendedTextTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip/ExtendedTextTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/common/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/common/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip/ExtendedTextTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip/ExtendedTextTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip/ExtendedTextTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/common/tooltips/ExtendedTextTooltip/ExtendedTextTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.ExtendedTextTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.common.tooltips.ExtendedTextTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "20 referencia(s) R.views.lobby.common.tooltips.ExtendedTextTooltip no Python",
+      "ViewModel ChallengesMissionsProgressModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/progression_main_view.py",
+        50
+      ],
+      [
+        "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/weekly_quests_widget_presenter.py",
+        67
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/missions_progress/comp7_light_progression_quests_progress.py",
+        62
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/progression_quests_presenter.py",
+        65
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/battle/full_stats.py",
+        38
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/battle_result_view.py",
+        96
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/difficulty_window_view.py",
+        49
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/hangar_view.py",
+        90
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_results/missions_progress/challenges_missions_progress.py",
+        62
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_results/missions_progress/common_battle_quests_progress.py",
+        63
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_results/missions_progress/daily_missions_progress.py",
+        63
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_results/missions_progress/weekly_missions_progress.py",
+        63
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/common/tooltips/extended_text_tooltip.py",
+        15
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/common/tankman_info_component.py",
+        116
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/skills_training/components/skills_list_component.py",
+        53
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/hangar_widget/presenters/quests_presenter.py",
+        57
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/hub/tabs/basic/daily_section/presenters/base_block_presenter.py",
+        47
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/hub/tabs/basic/personal_missions_widget.py",
+        49
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/hub/tabs/basic/weekly_missions.py",
+        79
+      ],
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/mission_selection_view.py",
+        102
+      ]
+    ],
+    "python_files": [
+      "sources/res/battle_royale/scripts/client/battle_royale/gui/impl/lobby/views/progression_main_view.py",
+      "sources/res/comp7/scripts/client/comp7/gui/impl/lobby/weekly_quests_widget_presenter.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_results/missions_progress/comp7_light_progression_quests_progress.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/progression_quests_presenter.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/battle/full_stats.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/battle_result_view.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/difficulty_window_view.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/hangar_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_results/missions_progress/challenges_missions_progress.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_results/missions_progress/common_battle_quests_progress.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_results/missions_progress/daily_missions_progress.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_results/missions_progress/weekly_missions_progress.py",
+      "sources/res/scripts/client/gui/impl/lobby/common/tooltips/extended_text_tooltip.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/common/tankman_info_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/skills_training/components/skills_list_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/hangar_widget/presenters/quests_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/hub/tabs/basic/daily_section/presenters/base_block_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/hub/tabs/basic/personal_missions_widget.py",
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/hub/tabs/basic/weekly_missions.py",
+      "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/mission_selection_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/progression/challenges_missions_progress_model.py",
+      "class": "ChallengesMissionsProgressModel",
+      "chain": [
+        "ChallengesMissionsProgressModel"
+      ],
+      "properties": [
+        [
+          "challengeQuest",
+          "ViewModel"
+        ]
+      ],
+      "commands": [
+        "onNavigate"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "challengeQuest",
+          "onNavigate"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/progression/common_battle_quest_progress_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/progression/common_battle_quests_progress_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/progression/daily_quest_progress_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/progression/daily_quests_progress_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/progression/weekly_quest_progress_model.py"
+      ]
+    }
+  }
+}

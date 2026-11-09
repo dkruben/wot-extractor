@@ -1,0 +1,115 @@
+{
+  "rid": "R.views.lobby.dog_tags.AnimatedDogTagGradeTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "AnimatedDogTagGradeTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "AnimatedDogTagGradeTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip/AnimatedDogTagGradeTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip/AnimatedDogTagGradeTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "AnimatedDogTagGradeTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip/AnimatedDogTagGradeTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip/AnimatedDogTagGradeTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "AnimatedDogTagGradeTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip/AnimatedDogTagGradeTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip/AnimatedDogTagGradeTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip/AnimatedDogTagGradeTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/dog_tags/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/dog_tags/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip/AnimatedDogTagGradeTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip/AnimatedDogTagGradeTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip/AnimatedDogTagGradeTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/dog_tags/AnimatedDogTagGradeTooltip/AnimatedDogTagGradeTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.dog_tags.AnimatedDogTagGradeTooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.dog_tags.AnimatedDogTagGradeTooltip no Python",
+      "ViewModel AnimatedDogTagGradeTooltipModel (model=... no Python da view): 4/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/achievements/summary/summary_view.py",
+        119
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dog_tags/animated_dog_tag_grade_tooltip.py",
+        19
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/achievements/summary/summary_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/dog_tags/animated_dog_tag_grade_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/dog_tags/animated_dog_tag_grade_tooltip_model.py",
+      "class": "AnimatedDogTagGradeTooltipModel",
+      "chain": [
+        "AnimatedDogTagGradeTooltipModel"
+      ],
+      "properties": [
+        [
+          "engravingId",
+          "Number"
+        ],
+        [
+          "backgroundId",
+          "Number"
+        ],
+        [
+          "stage",
+          "Number"
+        ],
+        [
+          "requiredItemsCount",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 4,
+        "total": 4,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

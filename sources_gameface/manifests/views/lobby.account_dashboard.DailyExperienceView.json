@@ -1,0 +1,141 @@
+{
+  "rid": "R.views.lobby.account_dashboard.DailyExperienceView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "DailyExperienceView",
+  "dir": "gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView",
+  "feature": null,
+  "files": [
+    {
+      "name": "DailyExperienceView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView/DailyExperienceView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView/DailyExperienceView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DailyExperienceView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView/DailyExperienceView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView/DailyExperienceView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DailyExperienceView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView/DailyExperienceView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView/DailyExperienceView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView/DailyExperienceView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/account_dashboard/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/account_dashboard/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView/DailyExperienceView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView/DailyExperienceView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView/DailyExperienceView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/account_dashboard/DailyExperienceView/DailyExperienceView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [
+    "onBackButtonClick",
+    "onWotPlusDetailsButtonClick",
+    "onWotPlusSubscribeButtonClick",
+    "onWotPremiumDetailsButtonClick",
+    "onWotPremiumUpgradeButtonClick"
+  ],
+  "link": {
+    "rid": "R.views.lobby.account_dashboard.DailyExperienceView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.account_dashboard.DailyExperienceView no Python",
+      "ViewModel DailyExperienceViewModel (convencao de nomes): 12/13 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/daily_experience/states.py",
+        28
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/daily_experience/states.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/account_dashboard/daily_experience_view_model.py",
+      "class": "DailyExperienceViewModel",
+      "chain": [
+        "DailyExperienceViewModel"
+      ],
+      "properties": [
+        [
+          "isWotPremium",
+          "Bool"
+        ],
+        [
+          "isWotPlus",
+          "Bool"
+        ],
+        [
+          "isWotPlusBonusEnabled",
+          "Bool"
+        ],
+        [
+          "multiplier",
+          "Number"
+        ],
+        [
+          "leftBonusCount",
+          "Number"
+        ],
+        [
+          "totalBonusCount",
+          "Number"
+        ],
+        [
+          "wotPremiumMaxApplications",
+          "Number"
+        ],
+        [
+          "wotPlusMaxApplications",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onBackButtonClick",
+        "onWotPremiumUpgradeButtonClick",
+        "onWotPlusSubscribeButtonClick",
+        "onWotPremiumDetailsButtonClick",
+        "onWotPlusDetailsButtonClick"
+      ],
+      "coverage": {
+        "found": 12,
+        "total": 13,
+        "missing": [
+          "multiplier"
+        ]
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

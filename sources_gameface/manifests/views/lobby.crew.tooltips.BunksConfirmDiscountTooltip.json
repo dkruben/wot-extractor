@@ -1,0 +1,182 @@
+{
+  "rid": "R.views.lobby.crew.tooltips.BunksConfirmDiscountTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "BunksConfirmDiscountTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "BunksConfirmDiscountTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip/BunksConfirmDiscountTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip/BunksConfirmDiscountTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BunksConfirmDiscountTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip/BunksConfirmDiscountTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip/BunksConfirmDiscountTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BunksConfirmDiscountTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip/BunksConfirmDiscountTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip/BunksConfirmDiscountTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip/BunksConfirmDiscountTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip/BunksConfirmDiscountTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip/BunksConfirmDiscountTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip/BunksConfirmDiscountTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/BunksConfirmDiscountTooltip/BunksConfirmDiscountTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.ExtendedTextTooltip"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.tooltips.BunksConfirmDiscountTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.lobby.crew.tooltips.BunksConfirmDiscountTooltip no Python",
+      "ViewModel BarracksViewModel (model=... no Python da view): 0/20 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/barracks_view.py",
+        69
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/enlarge_barracks_dialog.py",
+        47
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/bunks_confirm_discount_tooltip.py",
+        19
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/barracks_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/dialogs/enlarge_barracks_dialog.py",
+      "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/bunks_confirm_discount_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/barracks_view_model.py",
+      "class": "BarracksViewModel",
+      "chain": [
+        "BarracksViewModel"
+      ],
+      "properties": [
+        [
+          "berthsAmount",
+          "ViewModel"
+        ],
+        [
+          "itemsAmount",
+          "Number"
+        ],
+        [
+          "itemsOffset",
+          "Number"
+        ],
+        [
+          "tankmanList",
+          "Array"
+        ],
+        [
+          "isBerthsOnSale",
+          "Bool"
+        ],
+        [
+          "isBannerVisible",
+          "Bool"
+        ],
+        [
+          "hasFilters",
+          "Bool"
+        ],
+        [
+          "hasUndertrainedCrewMembers",
+          "Bool"
+        ],
+        [
+          "isCleanButtonEnabled",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onResetFilters",
+        "onRetireUndertrained",
+        "onBuyBerth",
+        "onTankmanSelected",
+        "onTankmanRecruit",
+        "onTankmanDismiss",
+        "onPlayTankmanVoiceover",
+        "onTankmanRestore",
+        "onLoadCards",
+        "showHangar",
+        "onNewTankmanHovered"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 20,
+        "missing": [
+          "berthsAmount",
+          "hasFilters",
+          "hasUndertrainedCrewMembers",
+          "isBannerVisible",
+          "isBerthsOnSale",
+          "isCleanButtonEnabled",
+          "itemsAmount",
+          "itemsOffset",
+          "onBuyBerth",
+          "onLoadCards",
+          "onNewTankmanHovered",
+          "onPlayTankmanVoiceover",
+          "onResetFilters",
+          "onRetireUndertrained",
+          "onTankmanDismiss",
+          "onTankmanRecruit",
+          "onTankmanRestore",
+          "onTankmanSelected",
+          "showHangar",
+          "tankmanList"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/tooltips/bunks_confirm_discount_tooltip_view_model.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+ "source": "sources/res/gui/flash/rankedBattleLoading.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 66899,
+ "actual_length": 66899,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 36,
+  "DefineShape": 1,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 6,
+  "DefineShape3": 1,
+  "DefineEditText": 127,
+  "DefineSprite": 6,
+  "FrameLabel": 3,
+  "FileAttributes": 1,
+  "PlaceObject3": 708,
+  "ImportAssets2": 7,
+  "CSMTextSettings": 127,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 2,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 127,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "minimapLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "eventInfoPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "iconLibrary.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 135,
+   "class": "RankedBattleTableRenderersUI"
+  },
+  {
+   "id": 74,
+   "class": "RankedBattleTipRenderersUI"
+  },
+  {
+   "id": 13,
+   "class": "TeamListBattleLoading"
+  },
+  {
+   "id": 11,
+   "class": "RankedBattleLoadingUI"
+  },
+  {
+   "id": 10,
+   "class": "RankedBattleLoadingFormUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 17234,
+   "classes": 5,
+   "methods": 84,
+   "bodies": 84,
+   "code_bytes": 5664
+  }
+ ],
+ "classes": [
+  {
+   "name": "RankedBattleTableRenderersUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.ranked.battleloading.renderers.RankedRendererContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattleTipRenderersUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.ranked.battleloading.renderers.RankedRendererContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattleLoadingFormUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.ranked.battleloading.BattleLoadingForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TeamListBattleLoading",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ReadOnlyScrollingList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattleLoadingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.ranked.battleloading.BattleLoading",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

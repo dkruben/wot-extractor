@@ -1,0 +1,109 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/shared/utils/plugins.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/shared/utils/plugins.py
+from __future__ import absolute_import
+import operator, weakref
+from future.utils import viewitems, viewvalues
+from debug_utils import LOG_ERROR
+from shared_utils import safeForEach
+
+class IPlugin(object):
+    __slots__ = ('_parentObj', )
+
+    def __init__(self, parentObj):
+        super(IPlugin, self).__init__()
+        self._parentObj = weakref.proxy(parentObj)
+
+    def init(self, *args):
+        pass
+
+    def fini(self):
+        self._parentObj = None
+        return
+
+    def start(self):
+        pass
+
+    def stop(self):
+        pass
+
+    def reset(self):
+        pass
+
+    def update(self):
+        pass
+
+    @property
+    def parentObj(self):
+        return self._parentObj
+
+    def setAllMarkersActive(self, value):
+        pass
+
+
+class PluginsCollection(IPlugin):
+    __slots__ = ('__parentObjRef', '__plugins', '__initArgs')
+
+    def __init__(self, parentObj):
+        super(PluginsCollection, self).__init__(parentObj)
+        self.__parentObjRef = weakref.ref(parentObj)
+        self.__plugins = {}
+        self.__initArgs = ()
+
+    def __iter__(self):
+        return iter(self.__plugins)
+
+    def addPlugins(self, plugins, autoStart=False):
+        for pluginName, pluginClass in viewitems(plugins):
+            if pluginName in self.__plugins:
+                LOG_ERROR('Plugin with this name was already added: ', pluginName, pluginClass)
+                continue
+            pluginObj = pluginClass(self.__parentObjRef())
+            self.__plugins[pluginName] = pluginObj
+            if autoStart:
+                pluginObj.init(*self.__initArgs)
+                pluginObj.start()
+
+    def removePlugins(self, *names):
+        for name in names:
+            plugin = self.__plugins.pop(name, None)
+            if plugin is not None:
+                plugin.stop()
+                plugin.fini()
+
+        return
+
+    def getPlugin(self, name):
+        if name in self.__plugins:
+            return self.__plugins[name]
+        else:
+            return
+
+    def init(self, *args):
+        self.__initArgs = args
+        self._invoke('init', *args)
+
+    def fini(self):
+        self._invoke('fini')
+        self.__plugins.clear()
+        self.__parentObjRef = None
+        self.__initArgs = ()
+        super(PluginsCollection, self).fini()
+        return
+
+    def start(self):
+        self._invoke('start')
+
+    def stop(self):
+        self._invoke('stop')
+
+    def reset(self):
+        self._invoke('reset')
+
+    def update(self):
+        self._invoke('update')
+
+    def _invoke(self, method, *args):
+        safeForEach(operator.methodcaller(method, *args), viewvalues(self.__plugins))

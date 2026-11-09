@@ -1,0 +1,26 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/entity_defs/InfluenceZone.def -->
+<root>
+	<Properties>
+		<equipmentID>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</equipmentID>
+		<team>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</team>
+		<zonesPosition>
+			<Type>ARRAY<of>VECTOR3</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</zonesPosition>
+		<dotCreatorId>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</dotCreatorId>
+		<dropOffset>
+			<Type>FLOAT</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</dropOffset>
+	</Properties>
+</root>

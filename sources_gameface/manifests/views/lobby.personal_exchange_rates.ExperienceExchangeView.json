@@ -1,0 +1,100 @@
+{
+  "rid": "R.views.lobby.personal_exchange_rates.ExperienceExchangeView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "ExperienceExchangeView",
+  "dir": "gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView",
+  "feature": null,
+  "files": [
+    {
+      "name": "ExperienceExchangeView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView/ExperienceExchangeView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView/ExperienceExchangeView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ExperienceExchangeView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView/ExperienceExchangeView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView/ExperienceExchangeView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "ExperienceExchangeView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView/ExperienceExchangeView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView/ExperienceExchangeView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView/ExperienceExchangeView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/personal_exchange_rates/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/personal_exchange_rates/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView/ExperienceExchangeView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView/ExperienceExchangeView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView/ExperienceExchangeView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/personal_exchange_rates/ExperienceExchangeView/ExperienceExchangeView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.personal_exchange_rates.tooltips.ExchangeLimitTooltip",
+    "lobby.personal_exchange_rates.tooltips.ExchangeRateTooltip"
+  ],
+  "commands": [
+    "onClose",
+    "onExchange",
+    "onOpenAllDiscountsWindow",
+    "onSelectedValueUpdated",
+    "onVehiclesSelected"
+  ],
+  "link": {
+    "rid": "R.views.lobby.personal_exchange_rates.ExperienceExchangeView",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.lobby.personal_exchange_rates.ExperienceExchangeView no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/customization/constants.py",
+        33
+      ],
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        855
+      ],
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        1983
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/customization/constants.py",
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

@@ -1,0 +1,23 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/shaders/formats/tracks.xml -->
+<root>
+	<elements>
+		<TEXCOORD>
+			<semanticIndex>7</semanticIndex>
+			<stream>9</stream>
+			<offset>0</offset>
+			<type>FLOAT3</type>
+		</TEXCOORD>
+		<TEXCOORD>
+			<semanticIndex>8</semanticIndex>
+			<stream>9</stream>
+			<offset>12</offset>
+			<type>FLOAT3</type>
+		</TEXCOORD>
+		<TEXCOORD>
+			<semanticIndex>9</semanticIndex>
+			<stream>9</stream>
+			<offset>24</offset>
+			<type>FLOAT3</type>
+		</TEXCOORD>
+	</elements>
+</root>

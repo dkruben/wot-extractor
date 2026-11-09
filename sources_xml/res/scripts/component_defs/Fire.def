@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/Fire.def -->
+<root>
+	<Properties>
+		<fireInfo>
+			<Type>FIRE_INFO</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</fireInfo>
+	</Properties>
+	<DefaultKeyName>fire</DefaultKeyName>
+</root>

@@ -1,0 +1,111 @@
+{
+  "rid": "R.views.mono.battle_pass.full_screen_video",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "full_screen_video",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/full_screen_video",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/full_screen_video/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/full_screen_video/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "full_screen_video.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/full_screen_video/full_screen_video.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/full_screen_video/full_screen_video.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "full_screen_video.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/full_screen_video/full_screen_video.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/full_screen_video/full_screen_video.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/full_screen_video/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/full_screen_video/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/full_screen_video/full_screen_video.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/full_screen_video/full_screen_video.css"
+    }
+  ],
+  "engine": [
+    "on:clientMinimized"
+  ],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.mono.battle_pass.full_screen_video",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.mono.battle_pass.full_screen_video no Python",
+      "ViewModel FullscreenVideoViewModel (model=... no Python da view): 1/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/fullscreen_video_view.py",
+        25
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/fullscreen_video_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/fullscreen_video_view_model.py",
+      "class": "FullscreenVideoViewModel",
+      "chain": [
+        "FullscreenVideoViewModel"
+      ],
+      "properties": [
+        [
+          "videoName",
+          "String"
+        ],
+        [
+          "audioName",
+          "String"
+        ],
+        [
+          "isWindowAccessible",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onClose"
+      ],
+      "coverage": {
+        "found": 1,
+        "total": 4,
+        "missing": [
+          "audioName",
+          "isWindowAccessible",
+          "videoName"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

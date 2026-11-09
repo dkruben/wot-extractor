@@ -1,0 +1,115 @@
+{
+  "rid": "R.views.comp7_light.mono.lobby.progression_main_view",
+  "rid_source": "sources/res/comp7_light/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "progression_main_view",
+  "dir": "comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view",
+  "feature": "comp7_light",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view/bundle.js",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view/bundle.js"
+    },
+    {
+      "name": "progression_main_view.css",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view/progression_main_view.css",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view/progression_main_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "progression_main_view.html",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view/progression_main_view.html",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view/progression_main_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/schedule_subheading.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/schedule_subheading.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view/bundle.js",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view/bundle.js"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view/progression_main_view.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/progression_main_view/progression_main_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "comp7_light.mono.lobby.leaderboard_reward_tooltip_view",
+    "lobby.tooltips.AdditionalRewardsTooltip"
+  ],
+  "commands": [
+    "onAboutClicked",
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.comp7_light.mono.lobby.progression_main_view",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.comp7_light.mono.lobby.progression_main_view no Python",
+      "ViewModel ProgressionMainViewModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/hangar/states.py",
+        152
+      ],
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/progression_main_view.py",
+        25
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/hangar/states.py",
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/progression_main_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/gen/view_models/views/lobby/progression/progression_main_view_model.py",
+      "class": "ProgressionMainViewModel",
+      "chain": [
+        "ProgressionMainViewModel"
+      ],
+      "properties": [
+        [
+          "progressionModel",
+          "ViewModel"
+        ],
+        [
+          "viewType",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "progressionModel",
+          "viewType"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

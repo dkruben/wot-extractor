@@ -1,0 +1,64 @@
+{
+  "rid": "R.views.battle.timer.TimerView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "TimerView",
+  "dir": "gui/gameface/_dist/production/battle/timer/TimerView",
+  "feature": null,
+  "files": [
+    {
+      "name": "TimerView.css",
+      "effective": "res/gui/gameface/_dist/production/battle/timer/TimerView/TimerView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/timer/TimerView/TimerView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "TimerView.html",
+      "effective": "res/gui/gameface/_dist/production/battle/timer/TimerView/TimerView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/timer/TimerView/TimerView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "TimerView.js",
+      "effective": "res/gui/gameface/_dist/production/battle/timer/TimerView/TimerView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/timer/TimerView/TimerView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/battle/timer/TimerView/TimerView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/battle/timer/TimerView/TimerView.css",
+      "key": "res/gui/gameface/_dist/production/battle/timer/TimerView/TimerView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/battle/timer/TimerView/TimerView.js",
+      "key": "res/gui/gameface/_dist/production/battle/timer/TimerView/TimerView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "createJSModel:ViewState",
+    "registerBindingAttribute:animated-timer",
+    "registerBindingAttribute:timer"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.battle.timer.TimerView",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

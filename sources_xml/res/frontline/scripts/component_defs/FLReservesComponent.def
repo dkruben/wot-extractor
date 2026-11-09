@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/frontline/scripts/component_defs/FLReservesComponent.def -->
+<root>
+	<CellMethods />
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+	<DefaultKeyName>FLReservesComponent</DefaultKeyName>
+</root>

@@ -1,0 +1,202 @@
+{
+  "rid": "R.views.lobby.crew.SkillsTrainingView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SkillsTrainingView",
+  "dir": "gui/gameface/_dist/production/lobby/crew/SkillsTrainingView",
+  "feature": null,
+  "files": [
+    {
+      "name": "SkillsTrainingView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/SkillsTrainingView/SkillsTrainingView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/SkillsTrainingView/SkillsTrainingView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SkillsTrainingView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/SkillsTrainingView/SkillsTrainingView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/SkillsTrainingView/SkillsTrainingView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SkillsTrainingView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/SkillsTrainingView/SkillsTrainingView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/SkillsTrainingView/SkillsTrainingView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/SkillsTrainingView/SkillsTrainingView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/SkillsTrainingView/SkillsTrainingView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/SkillsTrainingView/SkillsTrainingView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/SkillsTrainingView/SkillsTrainingView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/SkillsTrainingView/SkillsTrainingView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.BackportContextMenu",
+    "common.pop_over_window.backport_pop_over.BackportPopOverContent",
+    "common.pop_over_window.backport_pop_over.BackportPopOverWindow",
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.ExtendedTextTooltip",
+    "lobby.crew.BarracksView",
+    "lobby.crew.CrewHeaderTooltipView",
+    "lobby.crew.HangarCrewWidget",
+    "lobby.crew.MemberChangeView",
+    "lobby.crew.MentorAssigmentView",
+    "lobby.crew.QuickTrainingView",
+    "lobby.crew.SkillsTrainingView",
+    "lobby.crew.TankmanContainerView",
+    "lobby.crew.personal_case.PersonalDataView",
+    "lobby.crew.personal_case.PersonalFileView",
+    "lobby.crew.personal_case.ServiceRecordView",
+    "lobby.crew.tooltips.EmptySkillTooltip",
+    "lobby.crew.tooltips.SortingDropdownTooltip",
+    "lobby.crew.widgets.CrewWidget",
+    "lobby.hangar.subViews.VehicleParams"
+  ],
+  "commands": [
+    "buttonsBar.onAcceleratedTrainingClick",
+    "buttonsBar.onCrewBooksClick",
+    "buttonsBar.onWotPlusClick",
+    "onChangeCrewClick",
+    "onClose",
+    "onDogClick",
+    "onDogMoreInfoClick",
+    "onGroupClick",
+    "onSlotClick",
+    "onSortingSelectionChange",
+    "skillsList.onCancel",
+    "skillsList.onSkillClick",
+    "skillsList.onSkillHover",
+    "skillsList.onSkillOut",
+    "skillsList.onTrain"
+  ],
+  "link": {
+    "rid": "R.views.lobby.crew.SkillsTrainingView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "3 referencia(s) R.views.lobby.crew.SkillsTrainingView no Python",
+      "ViewModel SkillsTrainingViewModel (model=... no Python da view): 16/16 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/skills_training/skills_training_view.py",
+        45
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/skills_training/skills_training_view.py",
+        92
+      ],
+      [
+        "sources/res/scripts/client/gui/shared/event_dispatcher.py",
+        729
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/container_vews/skills_training/skills_training_view.py",
+      "sources/res/scripts/client/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/skills_training_view_model.py",
+      "class": "SkillsTrainingViewModel",
+      "chain": [
+        "SkillsTrainingViewModel"
+      ],
+      "properties": [
+        [
+          "vehicleInfo",
+          "ViewModel"
+        ],
+        [
+          "skillsList",
+          "ViewModel"
+        ],
+        [
+          "isFemale",
+          "Bool"
+        ],
+        [
+          "isMajorQualification",
+          "Bool"
+        ],
+        [
+          "role",
+          "String"
+        ],
+        [
+          "currentSkillsAmount",
+          "Number"
+        ],
+        [
+          "totalSkillsAmount",
+          "Number"
+        ],
+        [
+          "availableSkillsAmount",
+          "Number"
+        ],
+        [
+          "areAllSkillsLearned",
+          "Bool"
+        ],
+        [
+          "skillsEfficiency",
+          "Real"
+        ],
+        [
+          "isAnySkillSelected",
+          "Bool"
+        ],
+        [
+          "isTankmanInVehicle",
+          "Bool"
+        ],
+        [
+          "sortingDropDownItems",
+          "Array"
+        ],
+        [
+          "showSortingSelectionWarning",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onSortingSelectionChange"
+      ],
+      "coverage": {
+        "found": 16,
+        "total": 16,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/prb_control/entities/base/pre_queue/actions_validator.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/prb_control/entities/base/pre_queue/actions_validator.py
+import typing
+from gui.prb_control.entities.base.actions_validator import BaseActionsValidator, ActionsValidatorComposite, CurrentVehicleActionsValidator, TutorialActionsValidator, CurrentPreviewVehicleActionsValidator
+from gui.prb_control.items import ValidationResult
+if typing.TYPE_CHECKING:
+    from gui.prb_control.entities.base.entity import BasePrbEntity
+
+class InQueueValidator(BaseActionsValidator):
+
+    def _validate(self):
+        if self._entity.isInQueue():
+            return ValidationResult(False)
+        return super(InQueueValidator, self)._validate()
+
+
+class PreQueueActionsValidator(ActionsValidatorComposite):
+
+    def __init__(self, entity):
+        self._stateValidator = self._createStateValidator(entity)
+        self._vehiclesValidator = self._createVehiclesValidator(entity)
+        self._tutorialValidator = self._createTutorialValidator(entity)
+        self._previewVehiclesValidator = self._createPreviewVehiclesValidator(entity)
+        validators = [
+         self._stateValidator,
+         self._vehiclesValidator,
+         self._tutorialValidator,
+         self._previewVehiclesValidator]
+        super(PreQueueActionsValidator, self).__init__(entity, validators)
+
+    def _createStateValidator(self, entity):
+        return InQueueValidator(entity)
+
+    def _createVehiclesValidator(self, entity):
+        return CurrentVehicleActionsValidator(entity)
+
+    def _createTutorialValidator(self, entity):
+        return TutorialActionsValidator(entity)
+
+    def _createPreviewVehiclesValidator(self, entity):
+        return CurrentPreviewVehicleActionsValidator(entity)

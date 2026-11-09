@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/PveMinimapController.def -->
+<root>
+	<CellMethods />
+	<Properties>
+		<minimapData>
+			<Type>PVE_MINIMAP_DATA</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</minimapData>
+	</Properties>
+	<ofEntity>
+		<ArenaInfo />
+	</ofEntity>
+</root>

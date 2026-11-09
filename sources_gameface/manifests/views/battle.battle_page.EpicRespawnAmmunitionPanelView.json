@@ -1,0 +1,147 @@
+{
+  "rid": "R.views.battle.battle_page.EpicRespawnAmmunitionPanelView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "EpicRespawnAmmunitionPanelView",
+  "dir": "gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView",
+  "feature": null,
+  "files": [
+    {
+      "name": "EpicRespawnAmmunitionPanelView.css",
+      "effective": "res/gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView/EpicRespawnAmmunitionPanelView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView/EpicRespawnAmmunitionPanelView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "EpicRespawnAmmunitionPanelView.html",
+      "effective": "res/gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView/EpicRespawnAmmunitionPanelView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView/EpicRespawnAmmunitionPanelView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "EpicRespawnAmmunitionPanelView.js",
+      "effective": "res/gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView/EpicRespawnAmmunitionPanelView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView/EpicRespawnAmmunitionPanelView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView/EpicRespawnAmmunitionPanelView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView/EpicRespawnAmmunitionPanelView.css",
+      "key": "res/gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView/EpicRespawnAmmunitionPanelView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView/EpicRespawnAmmunitionPanelView.js",
+      "key": "res/gui/gameface/_dist/production/battle/battle_page/EpicRespawnAmmunitionPanelView/EpicRespawnAmmunitionPanelView.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/battle/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/battle/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "off:clientResized",
+    "on:Ready",
+    "on:clientResized",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.BackportContextMenu",
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow"
+  ],
+  "commands": [
+    "ammunitionPanel.onChangeSetupIndex",
+    "ammunitionPanel.onDragDropSwap",
+    "ammunitionPanel.onSectionResized",
+    "ammunitionPanel.onSectionSelect",
+    "ammunitionPanel.onSlotClear",
+    "ammunitionPanel.onSpecializationSelect",
+    "onEscKeyDown"
+  ],
+  "link": {
+    "rid": "R.views.battle.battle_page.EpicRespawnAmmunitionPanelView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.battle.battle_page.EpicRespawnAmmunitionPanelView no Python",
+      "ViewModel RespawnAmmunitionPanelViewModel (model=... no Python da view): 8/9 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/battle/battle_page/respawn_ammunition_panel_view.py",
+        21
+      ]
+    ],
+    "python_files": [
+      "sources/res/frontline/scripts/client/frontline/gui/impl/battle/battle_page/respawn_ammunition_panel_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/battle/battle_page/respawn_ammunition_panel_view_model.py",
+      "class": "RespawnAmmunitionPanelViewModel",
+      "chain": [
+        "RespawnAmmunitionPanelViewModel",
+        "AmmunitionPanelViewModel"
+      ],
+      "properties": [
+        [
+          "vehicleInfo",
+          "ViewModel"
+        ],
+        [
+          "ammunitionPanel",
+          "ViewModel"
+        ],
+        [
+          "lastSlotAction",
+          "ViewModel"
+        ],
+        [
+          "roleSkillSlot",
+          "ViewModel"
+        ],
+        [
+          "vehicleCD",
+          "Number"
+        ],
+        [
+          "isMaintenanceEnabled",
+          "Bool"
+        ],
+        [
+          "isDisabled",
+          "Bool"
+        ],
+        [
+          "isReady",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onEscKeyDown"
+      ],
+      "coverage": {
+        "found": 8,
+        "total": 9,
+        "missing": [
+          "isMaintenanceEnabled"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

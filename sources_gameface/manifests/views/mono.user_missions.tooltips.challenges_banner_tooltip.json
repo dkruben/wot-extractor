@@ -1,0 +1,115 @@
+{
+  "rid": "R.views.mono.user_missions.tooltips.challenges_banner_tooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "challenges_banner_tooltip",
+  "dir": "gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip/bundle.js"
+    },
+    {
+      "name": "challenges_banner_tooltip.css",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip/challenges_banner_tooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip/challenges_banner_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "challenges_banner_tooltip.html",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip/challenges_banner_tooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip/challenges_banner_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip/challenges_banner_tooltip.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/tooltips/challenges_banner_tooltip/challenges_banner_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.user_missions.tooltips.challenges_banner_tooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.mono.user_missions.tooltips.challenges_banner_tooltip no Python",
+      "ViewModel ChallengesBannerTooltipModel (model=... no Python da view): 5/6 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/user_missions/tooltips/challenges_banner_tooltip.py",
+        22
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/user_missions/tooltips/challenges_banner_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/user_missions/tooltips/challenges_banner_tooltip_model.py",
+      "class": "ChallengesBannerTooltipModel",
+      "chain": [
+        "ChallengesBannerTooltipModel"
+      ],
+      "properties": [
+        [
+          "mission",
+          "ViewModel"
+        ],
+        [
+          "time",
+          "Number"
+        ],
+        [
+          "challengeName",
+          "String"
+        ],
+        [
+          "completedMissions",
+          "Number"
+        ],
+        [
+          "totalMissions",
+          "Number"
+        ],
+        [
+          "remainingAttempts",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 5,
+        "total": 6,
+        "missing": [
+          "mission"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

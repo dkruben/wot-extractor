@@ -1,0 +1,46 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/shared/utils/ListPaginator.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import weakref as weakref
+from past.utils import old_div as old_div
+import Event as Event
+
+class ListPaginator(object):
+    _eManager: Any
+    onListUpdated: Any
+    _offset: Any
+    _prevOffset: Any
+    _count: Any
+    _selectedID: Any
+    _requester: Any
+    __initialOffset: Any
+    def __init__(self, requester, offset=None, count=20):
+        ...
+    def init(self):
+        ...
+    def fini(self):
+        ...
+    def canMoveLeft(self):
+        ...
+    def canMoveRight(self):
+        ...
+    def right(self):
+        ...
+    def left(self):
+        ...
+    def reset(self):
+        ...
+    def getInitialOffset(self):
+        ...
+    def revertOffset(self):
+        ...
+    def refresh(self, *args, **kwargs):
+        ...
+    def setSelectedID(self, selectedID):
+        ...
+    def getSelectedID(self):
+        ...
+    def _request(self, isReset=False):
+        ...

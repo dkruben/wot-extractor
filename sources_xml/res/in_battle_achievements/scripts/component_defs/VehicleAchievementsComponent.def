@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/in_battle_achievements/scripts/component_defs/VehicleAchievementsComponent.def -->
+<root>
+	<Properties>
+		<achievements>
+			<Type>ARRAY<of>UINT16</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</achievements>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>achievementsComponent</DefaultKeyName>
+</root>

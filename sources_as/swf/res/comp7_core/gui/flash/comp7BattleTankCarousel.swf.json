@@ -1,0 +1,209 @@
+{
+ "source": "sources/res/comp7_core/gui/flash/comp7BattleTankCarousel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 101842,
+ "actual_length": 101842,
+ "frame_size_px": [
+  0.0,
+  100.0,
+  0.0,
+  100.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#e5e5e5",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 20,
+  "ShowFrame": 317,
+  "DefineShape": 9,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 2,
+  "PlaceObject2": 253,
+  "RemoveObject2": 13,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 3,
+  "DefineEditText": 9,
+  "DefineSprite": 19,
+  "FrameLabel": 32,
+  "FileAttributes": 1,
+  "PlaceObject3": 35,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 9,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 5,
+  "shapes": 11,
+  "sprites": 19,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 9,
+  "fonts": 0,
+  "classes": 10,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiLobbyBattleCarousels.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 44,
+   "class": "EmptySlotBgUI"
+  },
+  {
+   "id": 43,
+   "class": "Comp7BattleTankCarouselItemRendererUI"
+  },
+  {
+   "id": 37,
+   "class": "Comp7BattleTankIconUI"
+  },
+  {
+   "id": 34,
+   "class": "Comp7BattleTankCarouselUI"
+  },
+  {
+   "id": 33,
+   "class": "Comp7BattleTankCarouselFiltersUI"
+  },
+  {
+   "id": 22,
+   "class": "Comp7FilterRendererUI"
+  },
+  {
+   "id": 21,
+   "class": "Comp7SmallBattleTankCarouselItemRendererUI"
+  },
+  {
+   "id": 11,
+   "class": "comp7BattleTankCarousel_fla.tankCarouselRenderer_focusIndicator_9"
+  },
+  {
+   "id": 8,
+   "class": "Comp7BattleTankIconSmallUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 9823,
+   "classes": 10,
+   "methods": 80,
+   "bodies": 80,
+   "code_bytes": 2793
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Circular",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EmptySlotBgUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "comp7BattleTankCarousel_fla.tankCarouselRenderer_focusIndicator_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7BattleTankIconUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.views.battleTankCarousel.renderers.BaseBattleTankIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7BattleTankIconSmallUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.views.battleTankCarousel.renderers.SmallBattleTankIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7FilterRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ToggleRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7BattleTankCarouselFiltersUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.views.battleTankCarousel.BattleTankCarouselFilters",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7BattleTankCarouselItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.views.battleTankCarousel.renderers.BattleTankCarouselItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7SmallBattleTankCarouselItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.views.battleTankCarousel.renderers.SmallBattleTankCarouselItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Comp7BattleTankCarouselUI",
+   "kind": "class",
+   "extends": "net.wg.comp7_core.battle.views.battleTankCarousel.BattleTankCarousel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

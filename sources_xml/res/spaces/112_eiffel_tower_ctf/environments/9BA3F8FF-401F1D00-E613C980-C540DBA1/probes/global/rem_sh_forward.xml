@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/112_eiffel_tower_ctf/environments/9BA3F8FF-401F1D00-E613C980-C540DBA1/probes/global/rem_sh_forward.xml -->
+<root>
+	<sh0>0.552826 0.595732 0.58961</sh0>
+	<sh1>0.245776 0.285349 0.327362</sh1>
+	<sh2>-0.080629 -0.076876 -0.05031</sh2>
+	<sh3>0.058759 0.037749 0.014423</sh3>
+	<sh4>-0.04352 -0.027252 -0.016413</sh4>
+	<sh5>0.072073 0.052305 0.030528</sh5>
+	<sh6>0.010098 0.006556 0.003851</sh6>
+	<sh7>0.027632 0.04371 0.043746</sh7>
+	<sh8>0.01342 -0.000178 -0.007142</sh8>
+	<dominant_vector>-0.499781 0.722847 0.477192</dominant_vector>
+	<max_lum>7.257161</max_lum>
+</root>

@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/101_dday/environments/1BBAF0F3-45B65B39-8B1482A9-5A5AA0AE/probes/sh_grid/00000000.00000000.00000000.00000000_rem_sh.xml -->
+<root>
+	<sh0>1.824548 1.974247 2.3278</sh0>
+	<sh1>0.569936 0.847677 1.554602</sh1>
+	<sh2>-0.304497 -0.384852 -0.523263</sh2>
+	<sh3>-0.121895 -0.157511 -0.280808</sh3>
+	<sh4>-0.061988 -0.082966 -0.116422</sh4>
+	<sh5>-0.416858 -0.448656 -0.47835</sh5>
+	<sh6>0.068682 0.081531 0.076072</sh6>
+	<sh7>0.144282 0.141853 0.111242</sh7>
+	<sh8>0.041092 0.070593 0.092887</sh8>
+</root>

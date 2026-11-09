@@ -1,0 +1,23 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/common/maps_training_common/helpers.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from future.utils import listvalues as listvalues, viewitems as viewitems
+import bonus_readers as bonus_readers
+from constants import VEHICLE_CLASS_INDICES as VEHICLE_CLASS_INDICES, VEHICLE_CLASSES as VEHICLE_CLASSES, MAPS_REWARDS_INDEX as MAPS_REWARDS_INDEX
+from maps_training_common.maps_training_constants import PROGRESS_DATA_MASK as PROGRESS_DATA_MASK, VEHICLE_TYPE as VEHICLE_TYPE, MAX_SCENARIO_PROGRESS as MAX_SCENARIO_PROGRESS
+
+def extractScenarioProgress(progress, team, veh_type):
+    ...
+def getUpdatedScenarioProgress(progress, team, veh_type, new_level):
+    ...
+def packMapsTrainingScenarios(scenarios):
+    ...
+def unpackMapsTrainingScenarios(scenarios):
+    ...
+def packMapsTrainingRewards(rewards):
+    ...
+def unpackMapsTrainingRewards(rewards):
+    ...
+def getMapsTrainingAwards(mapRewards, historyBestResult, currentResult, mapComplete):
+    ...

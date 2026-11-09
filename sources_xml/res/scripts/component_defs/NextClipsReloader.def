@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/NextClipsReloader.def -->
+<root>
+	<Parent>GunReloadBoost</Parent>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>NextClipsReloader</DefaultKeyName>
+</root>

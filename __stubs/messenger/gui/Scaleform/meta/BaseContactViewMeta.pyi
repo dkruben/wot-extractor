@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/messenger/gui/Scaleform/meta/BaseContactViewMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPIComponent as BaseDAAPIComponent
+
+class BaseContactViewMeta(BaseDAAPIComponent):
+    def onOk(self, data):
+        ...
+    def onCancel(self):
+        ...
+    def as_updateS(self, data):
+        ...
+    def as_setOkBtnEnabledS(self, isEnabled):
+        ...
+    def as_setInitDataS(self, data):
+        ...
+    def as_closeViewS(self):
+        ...

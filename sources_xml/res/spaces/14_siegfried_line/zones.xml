@@ -1,0 +1,29 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/14_siegfried_line/zones.xml -->
+<root>
+	<path>
+		<id>378049427</id>
+		<name>path</name>
+		<node>
+			<name>14_city_bombing_01_building_12_destroyed</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>533191416</id>
+			<transform>
+				<row0>39.37972 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 39.37972</row2>
+				<row3>55.434834 10.202271 -36.771103</row3>
+			</transform>
+		</node>
+		<node>
+			<name>14_siegfried_line_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1969565348</id>
+			<transform>
+				<row0>195.2038 0 0</row0>
+				<row1>0 50.938023 0</row1>
+				<row2>0 0 164.61572</row2>
+				<row3>-102.771286 -4.297641 -218.53265</row3>
+			</transform>
+		</node>
+	</path>
+</root>

@@ -1,0 +1,21 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/server_events/events_constants.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from constants import DailyQuestsTokensPrefixes as DailyQuestsTokensPrefixes
+BATTLE_MATTERS_QUEST_ID = 'battle_matters'
+BATTLE_MATTERS_INTERMEDIATE_QUEST_ID = 'intermediate_battle_matters'
+MARATHON_GROUP_PREFIX = 'marathon:'
+PREMIUM_GROUP_PREFIX = 'prem_acc'
+EPIC_BATTLE_GROUPS_ID = 'frontline_group'
+BATTLE_ROYALE_GROUPS_ID = 'battleroyale_group'
+MAPS_TRAINING_GROUPS_ID = 'MTBattleQuestsGroup'
+MAPS_TRAINING_QUEST_PREFIX = 'mt_battle_quest_'
+BATTLE_MATTERS_COMPENSATION_QUEST_ID = 'compensation_battle_matters'
+RANKED_DAILY_GROUP_ID = 'ranked_daily'
+RANKED_PLATFORM_GROUP_ID = 'ranked_platform'
+DAILY_QUEST_ID_PREFIX = DailyQuestsTokensPrefixes.QUEST_TOKEN
+DAILY_QUEST_TOKEN_PREFIX = DailyQuestsTokensPrefixes.QUEST_TICKET
+WEEKLY_QUEST_ID_PREFIX = 'wq::'
+TECH_TREE_ACTION_POSTFIX = '_techtree'
+EPIC_QUEST_REWARD_ID = 'QUEST_EPIC_REWARD'

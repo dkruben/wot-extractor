@@ -1,0 +1,16 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/RecoveryMechanic_Vehicle.def -->
+<root>
+	<TempProperties>
+		<_recoveryMechanic />
+	</TempProperties>
+	<CellMethods>
+		<recoveryMechanic_onActivate />
+		<recoveryMechanic_onDeactivate />
+		<recoveryMechanic_startRecovering>
+			<Exposed />
+		</recoveryMechanic_startRecovering>
+		<recoveryMechanic_stopRecovering>
+			<Exposed />
+		</recoveryMechanic_stopRecovering>
+	</CellMethods>
+</root>

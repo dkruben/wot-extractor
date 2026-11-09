@@ -1,0 +1,59 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/arena_components/battle_royale_component.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/arena_components/battle_royale_component.py
+from __future__ import absolute_import
+import BigWorld, Event
+from arena_component_system.client_arena_component_system import ClientArenaComponent
+from constants import ARENA_BONUS_TYPE
+from debug_utils import LOG_DEBUG_DEV
+from helpers import dependency
+from skeletons.gui.battle_session import IBattleSessionProvider
+from skeletons.gui.game_control import IBattleRoyaleController
+
+class BattleRoyaleComponent(ClientArenaComponent):
+    __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
+    __sessionProvider = dependency.descriptor(IBattleSessionProvider)
+
+    def __init__(self, componentSystem):
+        ClientArenaComponent.__init__(self, componentSystem)
+        self.__place = None
+        self.__defeatedTeams = []
+        self.onBattleRoyalePlaceUpdated = Event.Event(self._eventManager)
+        self.onBattleRoyaleDefeatedTeamsUpdate = Event.Event(self._eventManager)
+        self.onRespawnTimeFinished = Event.Event(self._eventManager)
+        return
+
+    def setBattleRoyalePlace(self, place):
+        LOG_DEBUG_DEV('setBattleRoyalePlace', place)
+        self.__place = place
+        self.onBattleRoyalePlaceUpdated(place)
+
+    def setDefeatedTeams(self, defeatedTeams):
+        LOG_DEBUG_DEV('setDefeatedTeams', defeatedTeams)
+        self.__defeatedTeams = defeatedTeams
+        self.onBattleRoyaleDefeatedTeamsUpdate(defeatedTeams)
+
+    @property
+    def place(self):
+        return self.__place
+
+    @property
+    def defeatedTeams(self):
+        return self.__defeatedTeams
+
+    @property
+    def dailyBonusFactor(self):
+        defaultFactor = 1
+        vehicle = BigWorld.entity(BigWorld.player().playerVehicleID)
+        stPatrickComp = vehicle.dynamicComponents.get('vehicleBRStPatrickComponent')
+        if not stPatrickComp or not stPatrickComp.isDailyBonusAvailable:
+            return defaultFactor
+        stpDailyBonusConf = self.__battleRoyaleController.getModeSettings().dailyBonus
+        arenaBonusType = self.__sessionProvider.arenaVisitor.getArenaBonusType()
+        topPlaceKey = 'squadTopPlaces' if arenaBonusType in ARENA_BONUS_TYPE.BATTLE_ROYALE_SQUAD_RANGE else 'soloTopPlaces'
+        topPlace = stpDailyBonusConf.get(topPlaceKey, 0)
+        if self.place <= topPlace:
+            return stpDailyBonusConf['bonusFactor']
+        return defaultFactor

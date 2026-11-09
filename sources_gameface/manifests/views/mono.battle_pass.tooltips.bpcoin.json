@@ -1,0 +1,162 @@
+{
+  "rid": "R.views.mono.battle_pass.tooltips.bpcoin",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "bpcoin",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin",
+  "feature": null,
+  "files": [
+    {
+      "name": "bpcoin.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bpcoin.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bundle.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.battle_pass.tooltips.bpcoin",
+    "confidence": "provavel",
+    "evidence": [
+      "12 referencia(s) R.views.mono.battle_pass.tooltips.bpcoin no Python",
+      "ViewModel BonusModel (model=... no Python da view): 0/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/decorators.py",
+        21
+      ],
+      [
+        "sources/res/open_bundle/scripts/client/open_bundle/helpers/bonuses/bonus_packers.py",
+        328
+      ],
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_bonuses_packers.py",
+        554
+      ],
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+        71
+      ],
+      [
+        "sources/res/scripts/client/gui/challenges/challenges_bonuses_packers.py",
+        395
+      ],
+      [
+        "sources/res/scripts/client/gui/challenges/challenges_decorators.py",
+        45
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/auxiliary/collections_helper.py",
+        70
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_coin_tooltip_view.py",
+        16
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/collection/awards_view.py",
+        51
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/collection/collection.py",
+        59
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/bonuses_packers.py",
+        843
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/decorators.py",
+        82
+      ]
+    ],
+    "python_files": [
+      "sources/res/open_bundle/scripts/client/open_bundle/gui/impl/lobby/decorators.py",
+      "sources/res/open_bundle/scripts/client/open_bundle/helpers/bonuses/bonus_packers.py",
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_bonuses_packers.py",
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+      "sources/res/scripts/client/gui/challenges/challenges_bonuses_packers.py",
+      "sources/res/scripts/client/gui/challenges/challenges_decorators.py",
+      "sources/res/scripts/client/gui/impl/auxiliary/collections_helper.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/battle_pass_coin_tooltip_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/collection/awards_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/collection/collection.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/bonuses_packers.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/decorators.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/common/bonus_model.py",
+      "class": "BonusModel",
+      "chain": [
+        "BonusModel"
+      ],
+      "properties": [
+        [
+          "localeName",
+          "String"
+        ],
+        [
+          "values",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 2,
+        "missing": [
+          "localeName",
+          "values"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/common/missions/bonuses/token_bonus_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/awards/reward_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/reward_item_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/vehicle_bonus_model.py"
+      ]
+    }
+  }
+}

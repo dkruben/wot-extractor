@@ -1,0 +1,121 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillFirefighting.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 243768,
+ "actual_length": 243768,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 22,
+  "ShowFrame": 596,
+  "DefineShape": 50,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 52,
+  "PlaceObject2": 1263,
+  "RemoveObject2": 11,
+  "DefineShape3": 97,
+  "DefineBitsLossless2": 9,
+  "DefineSprite": 21,
+  "DefineMorphShape": 2,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 9,
+  "shapes": 201,
+  "sprites": 21,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillFirefighting_fla.MainTimeline"
+  },
+  {
+   "id": 230,
+   "class": "skillFirefighting_fla.iconSmokeWhite_21"
+  },
+  {
+   "id": 41,
+   "class": "skillFirefighting_fla.iconFxExplosion_15"
+  },
+  {
+   "id": 9,
+   "class": "skillFirefighting_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1046,
+   "classes": 4,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 264
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillFirefighting_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillFirefighting_fla.iconFxExplosion_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillFirefighting_fla.iconSmokeWhite_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillFirefighting_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

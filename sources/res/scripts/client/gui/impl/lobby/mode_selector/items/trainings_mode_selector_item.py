@@ -1,0 +1,26 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/impl/lobby/mode_selector/items/trainings_mode_selector_item.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/impl/lobby/mode_selector/items/trainings_mode_selector_item.py
+from gui.impl import backport
+from gui.impl.gen import R
+from gui.impl.lobby.mode_selector.items.base_item import ModeSelectorLegacyItem
+from gui.prb_control.entities.training.legacy.requester import TrainingListRequester
+
+class TrainingsModeSelectorItem(ModeSelectorLegacyItem):
+    __slots__ = ('__requester', )
+
+    def _onInitializing(self):
+        super(TrainingsModeSelectorItem, self)._onInitializing()
+        self.__requester = TrainingListRequester()
+        self.__requester.start(self._onListReceived)
+        self._onListReceived([])
+
+    def _onDisposing(self):
+        self.__requester.stop()
+        super(TrainingsModeSelectorItem, self)._onDisposing()
+
+    def _onListReceived(self, prebattles):
+        count = sum(1 for _ in prebattles)
+        self.viewModel.setStatusActive(backport.text(R.strings.mode_selector.mode.trainingsList.call.c_1(), amount=backport.getIntegralFormat(count)))

@@ -1,0 +1,143 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/skillSniper.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 145453,
+ "actual_length": 145453,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 26,
+  "ShowFrame": 385,
+  "DefineShape": 16,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 535,
+  "DefineShape3": 3,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 12,
+  "DefineSprite": 25,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 21,
+  "sprites": 25,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 6,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "skillSniper_fla.MainTimeline"
+  },
+  {
+   "id": 58,
+   "class": "skillSniper_fla.iconLog2AppearAnim_24"
+  },
+  {
+   "id": 54,
+   "class": "skillSniper_fla.iconFxExplosion_21"
+  },
+  {
+   "id": 43,
+   "class": "skillSniper_fla.glareAnim_18"
+  },
+  {
+   "id": 39,
+   "class": "skillSniper_fla.tankShoot_14"
+  },
+  {
+   "id": 9,
+   "class": "skillSniper_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1406,
+   "classes": 6,
+   "methods": 24,
+   "bodies": 24,
+   "code_bytes": 396
+  }
+ ],
+ "classes": [
+  {
+   "name": "skillSniper_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillSniper_fla.glareAnim_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillSniper_fla.iconFxExplosion_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillSniper_fla.iconLog2AppearAnim_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillSniper_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "skillSniper_fla.tankShoot_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

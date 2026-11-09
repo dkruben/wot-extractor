@@ -1,0 +1,156 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/bulletAPCR.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 291554,
+ "actual_length": 291554,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  406.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#141410",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 33,
+  "ShowFrame": 657,
+  "DefineShape": 18,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 3,
+  "PlaceObject2": 901,
+  "RemoveObject2": 12,
+  "DefineShape3": 2,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 12,
+  "DefineSprite": 32,
+  "FileAttributes": 1,
+  "PlaceObject3": 2,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 13,
+  "shapes": 24,
+  "sprites": 32,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "bulletAPCR_fla.MainTimeline"
+  },
+  {
+   "id": 68,
+   "class": "bulletAPCR_fla.iconRicochetteAnim_31"
+  },
+  {
+   "id": 64,
+   "class": "bulletAPCR_fla.glareAnim_29"
+  },
+  {
+   "id": 58,
+   "class": "bulletAPCR_fla.iconFxExplosion_25"
+  },
+  {
+   "id": 49,
+   "class": "bulletAPCR_fla.iconTankHeadBigShootAnim_23"
+  },
+  {
+   "id": 48,
+   "class": "bulletAPCR_fla.tankShoot_20"
+  },
+  {
+   "id": 11,
+   "class": "bulletAPCR_fla.iconTankBodyStyleBig_6"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1618,
+   "classes": 7,
+   "methods": 28,
+   "bodies": 28,
+   "code_bytes": 462
+  }
+ ],
+ "classes": [
+  {
+   "name": "bulletAPCR_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletAPCR_fla.glareAnim_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletAPCR_fla.iconFxExplosion_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletAPCR_fla.iconRicochetteAnim_31",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletAPCR_fla.iconTankBodyStyleBig_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletAPCR_fla.iconTankHeadBigShootAnim_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletAPCR_fla.tankShoot_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

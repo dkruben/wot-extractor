@@ -1,0 +1,33 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/frontline/scripts/client/frontline/gui/impl/gen/view_models/views/lobby/views/frontline_reward_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from enum import Enum as Enum
+from gui.impl.gen.view_models.common.missions.bonuses.icon_bonus_model import IconBonusModel as IconBonusModel
+
+class ClaimState(Enum):
+    STATIC = 'static'
+    CLAIMABLE = 'claimable'
+
+class FrontlineRewardModel(IconBonusModel):
+    __slots__: tuple
+    def __init__(self, properties=13, commands=0):
+        ...
+    def getId(self):
+        ...
+    def setId(self, value):
+        ...
+    def getClaimState(self):
+        ...
+    def setClaimState(self, value):
+        ...
+    def getType(self):
+        ...
+    def setType(self, value):
+        ...
+    def getOverlayType(self):
+        ...
+    def setOverlayType(self, value):
+        ...
+    def _initialize(self):
+        ...

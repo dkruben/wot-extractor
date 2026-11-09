@@ -1,0 +1,19 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/GunMarkerComponent.def -->
+<root>
+	<Volatile>
+		<Properties>
+			<gunMarker />
+		</Properties>
+	</Volatile>
+	<DetailLevel>GUN_MARKER</DetailLevel>
+	<Properties>
+		<gunMarker>
+			<Type>GUN_MARKER</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</gunMarker>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>gunMarkerComponent</DefaultKeyName>
+</root>

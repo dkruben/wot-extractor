@@ -1,0 +1,95 @@
+{
+  "rid": "R.views.lobby.common.SelectableRewardBase",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SelectableRewardBase",
+  "dir": "gui/gameface/_dist/production/lobby/common/SelectableRewardBase",
+  "feature": null,
+  "files": [
+    {
+      "name": "SelectableRewardBase.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/SelectableRewardBase/SelectableRewardBase.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/SelectableRewardBase/SelectableRewardBase.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SelectableRewardBase.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/SelectableRewardBase/SelectableRewardBase.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/SelectableRewardBase/SelectableRewardBase.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SelectableRewardBase.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/SelectableRewardBase/SelectableRewardBase.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/SelectableRewardBase/SelectableRewardBase.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/common/SelectableRewardBase/SelectableRewardBase.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/common/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/common/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/common/SelectableRewardBase/SelectableRewardBase.css",
+      "key": "res/gui/gameface/_dist/production/lobby/common/SelectableRewardBase/SelectableRewardBase.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/common/SelectableRewardBase/SelectableRewardBase.js",
+      "key": "res/gui/gameface/_dist/production/lobby/common/SelectableRewardBase/SelectableRewardBase.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.simple_tooltip_content"
+  ],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.common.SelectableRewardBase",
+    "confidence": "provavel",
+    "evidence": [
+      "ViewModel SelectableRewardBaseModel (convencao de nomes): 0/1 nomes no JS"
+    ],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/selectable_reward_base_model.py",
+      "class": "SelectableRewardBaseModel",
+      "chain": [
+        "SelectableRewardBaseModel"
+      ],
+      "properties": [
+        [
+          "selectableRewardModel",
+          "ViewModel"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 1,
+        "missing": [
+          "selectableRewardModel"
+        ]
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

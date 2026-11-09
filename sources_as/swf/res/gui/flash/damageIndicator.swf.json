@@ -1,0 +1,4569 @@
+{
+ "source": "sources/res/gui/flash/damageIndicator.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 307561,
+ "actual_length": 307561,
+ "frame_size_px": [
+  0.0,
+  680.0,
+  0.0,
+  680.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#000000",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 14,
+  "ShowFrame": 433,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 413,
+  "DefineEditText": 2,
+  "DefineSprite": 13,
+  "FrameLabel": 2,
+  "FileAttributes": 1,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DoABC2": 257,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 0,
+  "sprites": 13,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 259,
+  "abc_blocks": 257,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 15,
+   "class": "DamageIndicatorUI"
+  },
+  {
+   "id": 14,
+   "class": "DamageIndicatorItemUI"
+  },
+  {
+   "id": 13,
+   "class": "StandardAnimationUI"
+  },
+  {
+   "id": 12,
+   "class": "DefaultStateContainerUI"
+  },
+  {
+   "id": 11,
+   "class": "ExtendedAnimationUI"
+  },
+  {
+   "id": 10,
+   "class": "ExtendedStateContainerUI"
+  },
+  {
+   "id": 9,
+   "class": "damageIndicator_fla.offsetContainer_5"
+  },
+  {
+   "id": 7,
+   "class": "ItemWithRotationUI"
+  },
+  {
+   "id": 5,
+   "class": "TankIconContainerUI"
+  },
+  {
+   "id": 3,
+   "class": "DamageUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "net/wg/infrastructure/interfaces/entity/IDisposable",
+   "lazy": true,
+   "size": 436,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/entity/IDisplayable",
+   "lazy": true,
+   "size": 426,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/data/constants/Values",
+   "lazy": true,
+   "size": 840,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 100
+  },
+  {
+   "name": "net/wg/data/constants/generated/ATLAS_CONSTANTS",
+   "lazy": true,
+   "size": 986,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 88
+  },
+  {
+   "name": "net/wg/data/constants/generated/DAMAGEINDICATOR",
+   "lazy": true,
+   "size": 5508,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 567
+  },
+  {
+   "name": "scaleform/gfx/DisplayObjectEx",
+   "lazy": true,
+   "size": 730,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 54
+  },
+  {
+   "name": "App",
+   "lazy": true,
+   "size": 3103,
+   "classes": 1,
+   "methods": 34,
+   "bodies": 34,
+   "code_bytes": 464
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IEnvironmentManager",
+   "lazy": true,
+   "size": 712,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/ITweenManager",
+   "lazy": true,
+   "size": 568,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/ITooltipMgr",
+   "lazy": true,
+   "size": 934,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IGraphicsOptimizationManager",
+   "lazy": true,
+   "size": 617,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/ITextManager",
+   "lazy": true,
+   "size": 443,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "scaleform/gfx/Extensions",
+   "lazy": true,
+   "size": 1464,
+   "classes": 1,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 125
+  },
+  {
+   "name": "net/wg/data/constants/LobbyMetrics",
+   "lazy": true,
+   "size": 633,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 69
+  },
+  {
+   "name": "DebugUtils",
+   "lazy": true,
+   "size": 992,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 141
+  },
+  {
+   "name": "net/wg/data/constants/Errors",
+   "lazy": true,
+   "size": 1549,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 130
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/entity/IIdentifiable",
+   "lazy": true,
+   "size": 423,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/ITooltipFormatter",
+   "lazy": true,
+   "size": 543,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IClosePopoverCallback",
+   "lazy": true,
+   "size": 444,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IPopOverCaller",
+   "lazy": true,
+   "size": 444,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/StageBreakPoint",
+   "lazy": true,
+   "size": 606,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 58
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IImageUrlProperties",
+   "lazy": true,
+   "size": 637,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IStrCaseProperties",
+   "lazy": true,
+   "size": 296,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IStyleSheetManager",
+   "lazy": true,
+   "size": 460,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IPopUpManager",
+   "lazy": true,
+   "size": 633,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IAssertable",
+   "lazy": true,
+   "size": 560,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/entity/ISerializable",
+   "lazy": true,
+   "size": 440,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IAnimBuilder",
+   "lazy": true,
+   "size": 689,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/INations",
+   "lazy": true,
+   "size": 478,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IIcons",
+   "lazy": true,
+   "size": 307,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IDateTime",
+   "lazy": true,
+   "size": 1388,
+   "classes": 1,
+   "methods": 29,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IDataUtils",
+   "lazy": true,
+   "size": 792,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/ILocale",
+   "lazy": true,
+   "size": 829,
+   "classes": 1,
+   "methods": 16,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/entity/ICloneable",
+   "lazy": true,
+   "size": 386,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/entity/IFocusContainer",
+   "lazy": true,
+   "size": 443,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IStats",
+   "lazy": true,
+   "size": 352,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/ITweenHandler",
+   "lazy": true,
+   "size": 422,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/ITweenConstructionHandler",
+   "lazy": true,
+   "size": 567,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "org/idmedia/as3commons/util/Map",
+   "lazy": true,
+   "size": 729,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IFormattedInt",
+   "lazy": true,
+   "size": 419,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IUserProps",
+   "lazy": true,
+   "size": 998,
+   "classes": 1,
+   "methods": 26,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "scaleform/clik/utils/Padding",
+   "lazy": true,
+   "size": 1090,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 347
+  },
+  {
+   "name": "net/wg/data/constants/KeyProps",
+   "lazy": true,
+   "size": 675,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 69
+  },
+  {
+   "name": "net/wg/utils/ICounterProps",
+   "lazy": true,
+   "size": 573,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/data/daapi/ViewRestrictionVO",
+   "lazy": true,
+   "size": 834,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 105
+  },
+  {
+   "name": "scaleform/clik/ui/InputDetails",
+   "lazy": true,
+   "size": 905,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 126
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/ITweenAnimatorHandler",
+   "lazy": true,
+   "size": 403,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/data/constants/ImageCacheTypes",
+   "lazy": true,
+   "size": 475,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 46
+  },
+  {
+   "name": "scaleform/clik/layout/LayoutData",
+   "lazy": true,
+   "size": 1146,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 153
+  },
+  {
+   "name": "lesta/unbound2/type_system/UbNumber",
+   "lazy": true,
+   "size": 494,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 37
+  },
+  {
+   "name": "lesta/unbound2/UbBackgroundPainter",
+   "lazy": true,
+   "size": 4267,
+   "classes": 1,
+   "methods": 18,
+   "bodies": 18,
+   "code_bytes": 1290
+  },
+  {
+   "name": "scaleform/clik/constants/InvalidationType",
+   "lazy": true,
+   "size": 759,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 82
+  },
+  {
+   "name": "scaleform/clik/core/CLIK",
+   "lazy": true,
+   "size": 2245,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 10,
+   "code_bytes": 687
+  },
+  {
+   "name": "scaleform/gfx/FocusManager",
+   "lazy": true,
+   "size": 1278,
+   "classes": 1,
+   "methods": 19,
+   "bodies": 19,
+   "code_bytes": 91
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IGlobalVO",
+   "lazy": true,
+   "size": 374,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IReusable",
+   "lazy": true,
+   "size": 364,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "org/idmedia/as3commons/util/Collection",
+   "lazy": true,
+   "size": 685,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "lesta/managers/windows/BitmapManager",
+   "lazy": true,
+   "size": 2987,
+   "classes": 2,
+   "methods": 21,
+   "bodies": 21,
+   "code_bytes": 1033
+  },
+  {
+   "name": "scaleform/clik/utils/ConstrainedElement",
+   "lazy": true,
+   "size": 898,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 126
+  },
+  {
+   "name": "lesta/unbound2/type_system/UbUnits",
+   "lazy": true,
+   "size": 444,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 46
+  },
+  {
+   "name": "scaleform/clik/managers/FocusHandler",
+   "lazy": true,
+   "size": 6069,
+   "classes": 1,
+   "methods": 22,
+   "bodies": 22,
+   "code_bytes": 2614
+  },
+  {
+   "name": "scaleform/clik/managers/PopUpManager",
+   "lazy": true,
+   "size": 2106,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 655
+  },
+  {
+   "name": "scaleform/clik/constants/ConstrainMode",
+   "lazy": true,
+   "size": 456,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 40
+  },
+  {
+   "name": "org/idmedia/as3commons/util/Iterator",
+   "lazy": true,
+   "size": 418,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "scaleform/clik/utils/WeakReference",
+   "lazy": true,
+   "size": 609,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 85
+  },
+  {
+   "name": "scaleform/clik/constants/NavigationCode",
+   "lazy": true,
+   "size": 1491,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 184
+  },
+  {
+   "name": "scaleform/clik/constants/FocusMode",
+   "lazy": true,
+   "size": 545,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 52
+  },
+  {
+   "name": "scaleform/clik/constants/InputValue",
+   "lazy": true,
+   "size": 480,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 46
+  },
+  {
+   "name": "net/wg/utils/StaticUtils",
+   "lazy": true,
+   "size": 1470,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 667
+  },
+  {
+   "name": "net/wg/gui/components/damageIndicator/DamageIndicatorStandardSetting",
+   "lazy": true,
+   "size": 1169,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 106
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IAtlasItemVO",
+   "lazy": true,
+   "size": 661,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IPopoverManager",
+   "lazy": true,
+   "size": 680,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IColorScheme",
+   "lazy": true,
+   "size": 646,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/wulf/IChildViewProxy",
+   "lazy": true,
+   "size": 764,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/entity/IDAAPIEntity",
+   "lazy": true,
+   "size": 314,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/ITweenManagerHelper",
+   "lazy": true,
+   "size": 1207,
+   "classes": 1,
+   "methods": 21,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/data/managers/IToolTipParams",
+   "lazy": true,
+   "size": 531,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IClassFactory",
+   "lazy": true,
+   "size": 649,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IVOManager",
+   "lazy": true,
+   "size": 418,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/pool/IPoolManager",
+   "lazy": true,
+   "size": 599,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IElementBlurAdapter",
+   "lazy": true,
+   "size": 597,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/ICommons",
+   "lazy": true,
+   "size": 2485,
+   "classes": 1,
+   "methods": 37,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/helpLayout/IHelpLayout",
+   "lazy": true,
+   "size": 581,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/ICounterManager",
+   "lazy": true,
+   "size": 583,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IUniversalBtnStyles",
+   "lazy": true,
+   "size": 516,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IViewRestrictions",
+   "lazy": true,
+   "size": 675,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IScheduler",
+   "lazy": true,
+   "size": 661,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IFocusHandler",
+   "lazy": true,
+   "size": 756,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IIME",
+   "lazy": true,
+   "size": 542,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/helpLayout/PopupLayoutVO",
+   "lazy": true,
+   "size": 731,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 39
+  },
+  {
+   "name": "net/wg/utils/IUniversalBtnStyledDisplayObjects",
+   "lazy": true,
+   "size": 604,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IDisplayObject",
+   "lazy": true,
+   "size": 2074,
+   "classes": 1,
+   "methods": 51,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IAtlas",
+   "lazy": true,
+   "size": 816,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IColorSchemeManagerMeta",
+   "lazy": true,
+   "size": 554,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IGlobalVarsMgrMeta",
+   "lazy": true,
+   "size": 1108,
+   "classes": 1,
+   "methods": 20,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IAtlasManager",
+   "lazy": true,
+   "size": 829,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IStageSizeManager",
+   "lazy": true,
+   "size": 723,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IUtilsManagerMeta",
+   "lazy": true,
+   "size": 1096,
+   "classes": 1,
+   "methods": 16,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IApplicationMeta",
+   "lazy": true,
+   "size": 2245,
+   "classes": 1,
+   "methods": 34,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IUILoggerManagerMeta",
+   "lazy": true,
+   "size": 463,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IEventLogManagerMeta",
+   "lazy": true,
+   "size": 510,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/ITutorialManagerMeta",
+   "lazy": true,
+   "size": 1278,
+   "classes": 1,
+   "methods": 21,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IVoiceChatManagerMeta",
+   "lazy": true,
+   "size": 649,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IWaitingViewMeta",
+   "lazy": true,
+   "size": 534,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/ISoundManagerMeta",
+   "lazy": true,
+   "size": 448,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IContextMenuManagerMeta",
+   "lazy": true,
+   "size": 647,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/ICacheManagerMeta",
+   "lazy": true,
+   "size": 430,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/ICursorManagerMeta",
+   "lazy": true,
+   "size": 442,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IImageManagerMeta",
+   "lazy": true,
+   "size": 536,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IGameInputManagerMeta",
+   "lazy": true,
+   "size": 571,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IBaseDAAPIModuleMeta",
+   "lazy": true,
+   "size": 470,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IGraphicsOptimizationComponent",
+   "lazy": true,
+   "size": 561,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IStageSizeDependComponent",
+   "lazy": true,
+   "size": 413,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/ILoaderManagerMeta",
+   "lazy": true,
+   "size": 709,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/ITutorialCustomComponent",
+   "lazy": true,
+   "size": 575,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/entity/ISoundable",
+   "lazy": true,
+   "size": 515,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/entity/IDragDropHitArea",
+   "lazy": true,
+   "size": 474,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IImageData",
+   "lazy": true,
+   "size": 490,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/base/meta/IAbstractTweenMeta",
+   "lazy": true,
+   "size": 1201,
+   "classes": 1,
+   "methods": 22,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/ISimpleTweenPropertiesVO",
+   "lazy": true,
+   "size": 1120,
+   "classes": 1,
+   "methods": 19,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/pool/IPool",
+   "lazy": true,
+   "size": 514,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/helpLayout/IHelpLayoutComponent",
+   "lazy": true,
+   "size": 454,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/events/AtlasEvent",
+   "lazy": true,
+   "size": 616,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 67
+  },
+  {
+   "name": "net/wg/infrastructure/events/TutorialEvent",
+   "lazy": true,
+   "size": 1066,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 145
+  },
+  {
+   "name": "scaleform/clik/events/InputEvent",
+   "lazy": true,
+   "size": 811,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 98
+  },
+  {
+   "name": "lesta/unbound2/proxy/base/UbProxyEvent",
+   "lazy": true,
+   "size": 462,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 39
+  },
+  {
+   "name": "net/wg/infrastructure/events/LifeCycleEvent",
+   "lazy": true,
+   "size": 966,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 103
+  },
+  {
+   "name": "scaleform/clik/events/ComponentEvent",
+   "lazy": true,
+   "size": 574,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 55
+  },
+  {
+   "name": "scaleform/clik/events/ResizeEvent",
+   "lazy": true,
+   "size": 751,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 91
+  },
+  {
+   "name": "scaleform/clik/events/FocusHandlerEvent",
+   "lazy": true,
+   "size": 781,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 95
+  },
+  {
+   "name": "net/wg/infrastructure/exceptions/base/WGGUIException",
+   "lazy": true,
+   "size": 466,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 36
+  },
+  {
+   "name": "scaleform/gfx/InteractiveObjectEx",
+   "lazy": true,
+   "size": 629,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 48
+  },
+  {
+   "name": "net/wg/mock/MockEnvironmentManager",
+   "lazy": true,
+   "size": 889,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 57
+  },
+  {
+   "name": "net/wg/mock/MockTweenManager",
+   "lazy": true,
+   "size": 772,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 45
+  },
+  {
+   "name": "net/wg/mock/MockTooltipMgr",
+   "lazy": true,
+   "size": 1138,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 68
+  },
+  {
+   "name": "net/wg/mock/MockTextManager",
+   "lazy": true,
+   "size": 597,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 40
+  },
+  {
+   "name": "lesta/unbound2/UBPopoverCallerWrapper",
+   "lazy": true,
+   "size": 611,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 44
+  },
+  {
+   "name": "net/wg/mock/utils/MockStyleSheetManager",
+   "lazy": true,
+   "size": 688,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 43
+  },
+  {
+   "name": "net/wg/mock/utils/MockPopUpManager",
+   "lazy": true,
+   "size": 835,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 49
+  },
+  {
+   "name": "net/wg/mock/utils/MockAssertable",
+   "lazy": true,
+   "size": 737,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 43
+  },
+  {
+   "name": "net/wg/mock/utils/MockJSON",
+   "lazy": true,
+   "size": 514,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 37
+  },
+  {
+   "name": "net/wg/mock/utils/MockAnimBuilder",
+   "lazy": true,
+   "size": 1116,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 68
+  },
+  {
+   "name": "net/wg/mock/utils/MockNations",
+   "lazy": true,
+   "size": 675,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 51
+  },
+  {
+   "name": "net/wg/mock/utils/MockIcons",
+   "lazy": true,
+   "size": 450,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 33
+  },
+  {
+   "name": "net/wg/mock/utils/MockDateTime",
+   "lazy": true,
+   "size": 1856,
+   "classes": 1,
+   "methods": 29,
+   "bodies": 29,
+   "code_bytes": 147
+  },
+  {
+   "name": "net/wg/mock/MockDataUtils",
+   "lazy": true,
+   "size": 1152,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 63
+  },
+  {
+   "name": "net/wg/mock/utils/MockLocale",
+   "lazy": true,
+   "size": 1113,
+   "classes": 1,
+   "methods": 16,
+   "bodies": 16,
+   "code_bytes": 92
+  },
+  {
+   "name": "net/wg/data/managers/ITooltipProps",
+   "lazy": true,
+   "size": 617,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/ITweenAnimator",
+   "lazy": true,
+   "size": 1057,
+   "classes": 1,
+   "methods": 16,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/animation/ITweenConstruction",
+   "lazy": true,
+   "size": 938,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IWalletStatusVO",
+   "lazy": true,
+   "size": 569,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/pool/IPoolItem",
+   "lazy": true,
+   "size": 561,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "org/idmedia/as3commons/util/Set",
+   "lazy": true,
+   "size": 272,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/gui/components/damageIndicator/DamageIndicatorExtendedSetting",
+   "lazy": true,
+   "size": 1219,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 123
+  },
+  {
+   "name": "net/wg/data/VO/AtlasItemVO",
+   "lazy": true,
+   "size": 1101,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 106
+  },
+  {
+   "name": "net/wg/mock/MockPopoverManager",
+   "lazy": true,
+   "size": 933,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 55
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IContainerManager",
+   "lazy": true,
+   "size": 1077,
+   "classes": 1,
+   "methods": 16,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IDAAPIDataClass",
+   "lazy": true,
+   "size": 588,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/mock/utils/MockClassFactory",
+   "lazy": true,
+   "size": 1850,
+   "classes": 1,
+   "methods": 11,
+   "bodies": 11,
+   "code_bytes": 358
+  },
+  {
+   "name": "net/wg/mock/utils/MockVOManager",
+   "lazy": true,
+   "size": 613,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 39
+  },
+  {
+   "name": "net/wg/mock/utils/MockCommons",
+   "lazy": true,
+   "size": 3024,
+   "classes": 1,
+   "methods": 39,
+   "bodies": 39,
+   "code_bytes": 155
+  },
+  {
+   "name": "net/wg/mock/utils/MockHelpLayout",
+   "lazy": true,
+   "size": 737,
+   "classes": 1,
+   "methods": 10,
+   "bodies": 10,
+   "code_bytes": 51
+  },
+  {
+   "name": "net/wg/mock/MockCounterManager",
+   "lazy": true,
+   "size": 779,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 8,
+   "code_bytes": 47
+  },
+  {
+   "name": "net/wg/mock/MockViewRestrictions",
+   "lazy": true,
+   "size": 926,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 68
+  },
+  {
+   "name": "net/wg/mock/utils/MockScheduler",
+   "lazy": true,
+   "size": 901,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 57
+  },
+  {
+   "name": "net/wg/mock/utils/MockFocusHandler",
+   "lazy": true,
+   "size": 1003,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 59
+  },
+  {
+   "name": "net/wg/mock/utils/MockIME",
+   "lazy": true,
+   "size": 743,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 9,
+   "code_bytes": 48
+  },
+  {
+   "name": "net/wg/utils/helpLayout/HelpLayoutVO",
+   "lazy": true,
+   "size": 513,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 34
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IRootAppMainContent",
+   "lazy": true,
+   "size": 377,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IInteractiveObject",
+   "lazy": true,
+   "size": 689,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/gui/utils/RootSWFAtlasManager",
+   "lazy": true,
+   "size": 3608,
+   "classes": 2,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 1022
+  },
+  {
+   "name": "lesta/unbound2/proxy/base/UbProxy",
+   "lazy": true,
+   "size": 703,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 64
+  },
+  {
+   "name": "scaleform/clik/utils/Constraints",
+   "lazy": true,
+   "size": 4209,
+   "classes": 1,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 1713
+  },
+  {
+   "name": "scaleform/clik/managers/InputDelegate",
+   "lazy": true,
+   "size": 2980,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 1015
+  },
+  {
+   "name": "net/wg/gui/components/containers/Atlas",
+   "lazy": true,
+   "size": 4231,
+   "classes": 1,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 1036
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IColorSchemeManager",
+   "lazy": true,
+   "size": 695,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IGlobalVarsManager",
+   "lazy": true,
+   "size": 351,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IUtils",
+   "lazy": true,
+   "size": 2177,
+   "classes": 1,
+   "methods": 33,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/app/IApplication",
+   "lazy": true,
+   "size": 2088,
+   "classes": 1,
+   "methods": 34,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IUILoggerManager",
+   "lazy": true,
+   "size": 468,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IEventLogManager",
+   "lazy": true,
+   "size": 901,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/ITutorialManager",
+   "lazy": true,
+   "size": 1092,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IVoiceChatManager",
+   "lazy": true,
+   "size": 445,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/ISoundManager",
+   "lazy": true,
+   "size": 585,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IContextMenuManager",
+   "lazy": true,
+   "size": 640,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/ICacheManager",
+   "lazy": true,
+   "size": 582,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/ICursorManager",
+   "lazy": true,
+   "size": 1073,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IImageManager",
+   "lazy": true,
+   "size": 557,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/utils/IGameInputManager",
+   "lazy": true,
+   "size": 708,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IDAAPIModule",
+   "lazy": true,
+   "size": 504,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/managers/ILoaderManager",
+   "lazy": true,
+   "size": 544,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/ITweenPropertiesVO",
+   "lazy": true,
+   "size": 1057,
+   "classes": 1,
+   "methods": 19,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "scaleform/gfx/MouseEventEx",
+   "lazy": true,
+   "size": 641,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 59
+  },
+  {
+   "name": "scaleform/gfx/KeyboardEventEx",
+   "lazy": true,
+   "size": 473,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 41
+  },
+  {
+   "name": "scaleform/gfx/FocusEventEx",
+   "lazy": true,
+   "size": 461,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 41
+  },
+  {
+   "name": "net/wg/infrastructure/exceptions/DAAPIBindException",
+   "lazy": true,
+   "size": 527,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 42
+  },
+  {
+   "name": "net/wg/infrastructure/exceptions/LifecycleException",
+   "lazy": true,
+   "size": 519,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 42
+  },
+  {
+   "name": "net/wg/infrastructure/exceptions/AssertionException",
+   "lazy": true,
+   "size": 527,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 42
+  },
+  {
+   "name": "net/wg/infrastructure/exceptions/InfrastructureException",
+   "lazy": true,
+   "size": 552,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 42
+  },
+  {
+   "name": "net/wg/infrastructure/exceptions/ArgumentException",
+   "lazy": true,
+   "size": 516,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 42
+  },
+  {
+   "name": "net/wg/infrastructure/exceptions/TypeCastException",
+   "lazy": true,
+   "size": 516,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 42
+  },
+  {
+   "name": "scaleform/gfx/TextFieldEx",
+   "lazy": true,
+   "size": 2369,
+   "classes": 1,
+   "methods": 27,
+   "bodies": 27,
+   "code_bytes": 196
+  },
+  {
+   "name": "net/wg/mock/utils/MockTweenAnimator",
+   "lazy": true,
+   "size": 1525,
+   "classes": 1,
+   "methods": 21,
+   "bodies": 21,
+   "code_bytes": 90
+  },
+  {
+   "name": "net/wg/mock/MockContainerManager",
+   "lazy": true,
+   "size": 2100,
+   "classes": 1,
+   "methods": 30,
+   "bodies": 30,
+   "code_bytes": 131
+  },
+  {
+   "name": "net/wg/data/daapi/base/DAAPIDataClass",
+   "lazy": true,
+   "size": 2924,
+   "classes": 1,
+   "methods": 17,
+   "bodies": 17,
+   "code_bytes": 895
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IDisplayObjectContainer",
+   "lazy": true,
+   "size": 1153,
+   "classes": 1,
+   "methods": 21,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "lesta/unbound2/proxy/UbPlayerProxy",
+   "lazy": true,
+   "size": 1139,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 103
+  },
+  {
+   "name": "lesta/unbound2/proxy/UbElementProxy",
+   "lazy": true,
+   "size": 886,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 74
+  },
+  {
+   "name": "net/wg/mock/MockColorSchemeManager",
+   "lazy": true,
+   "size": 1220,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 75
+  },
+  {
+   "name": "net/wg/mock/MockGlobalVarsManager",
+   "lazy": true,
+   "size": 1699,
+   "classes": 1,
+   "methods": 25,
+   "bodies": 25,
+   "code_bytes": 115
+  },
+  {
+   "name": "net/wg/mock/MockUtils",
+   "lazy": true,
+   "size": 5049,
+   "classes": 1,
+   "methods": 53,
+   "bodies": 53,
+   "code_bytes": 444
+  },
+  {
+   "name": "net/wg/mock/MockApplication",
+   "lazy": true,
+   "size": 5701,
+   "classes": 1,
+   "methods": 65,
+   "bodies": 65,
+   "code_bytes": 441
+  },
+  {
+   "name": "net/wg/mock/MockVoiceChatManager",
+   "lazy": true,
+   "size": 1128,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 73
+  },
+  {
+   "name": "net/wg/mock/MockSoundManager",
+   "lazy": true,
+   "size": 1031,
+   "classes": 1,
+   "methods": 12,
+   "bodies": 12,
+   "code_bytes": 58
+  },
+  {
+   "name": "net/wg/mock/MockContextMenuManager",
+   "lazy": true,
+   "size": 1378,
+   "classes": 1,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 84
+  },
+  {
+   "name": "net/wg/mock/MockCacheManager",
+   "lazy": true,
+   "size": 1032,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 66
+  },
+  {
+   "name": "net/wg/mock/MockCursorManager",
+   "lazy": true,
+   "size": 9075,
+   "classes": 1,
+   "methods": 170,
+   "bodies": 170,
+   "code_bytes": 645
+  },
+  {
+   "name": "net/wg/mock/MockImageManager",
+   "lazy": true,
+   "size": 1126,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 14,
+   "code_bytes": 66
+  },
+  {
+   "name": "net/wg/mock/MockGameInputManager",
+   "lazy": true,
+   "size": 1315,
+   "classes": 1,
+   "methods": 18,
+   "bodies": 18,
+   "code_bytes": 77
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/ITween",
+   "lazy": true,
+   "size": 568,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/mock/MockLoaderManager",
+   "lazy": true,
+   "size": 1413,
+   "classes": 1,
+   "methods": 18,
+   "bodies": 18,
+   "code_bytes": 78
+  },
+  {
+   "name": "net/wg/infrastructure/exceptions/InvalidComponentCastException",
+   "lazy": true,
+   "size": 580,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 48
+  },
+  {
+   "name": "net/wg/data/TutorialBuilderVO",
+   "lazy": true,
+   "size": 709,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 72
+  },
+  {
+   "name": "net/wg/data/daapi/LoadViewVO",
+   "lazy": true,
+   "size": 959,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 110
+  },
+  {
+   "name": "net/wg/data/daapi/ViewSettingsVO",
+   "lazy": true,
+   "size": 839,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 41
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/ITutorialView",
+   "lazy": true,
+   "size": 544,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/ISprite",
+   "lazy": true,
+   "size": 841,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/wulf/IViewWrapper",
+   "lazy": true,
+   "size": 1617,
+   "classes": 1,
+   "methods": 31,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IMovieClip",
+   "lazy": true,
+   "size": 1049,
+   "classes": 1,
+   "methods": 22,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IImage",
+   "lazy": true,
+   "size": 803,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "scaleform/clik/interfaces/IUIComponent",
+   "lazy": true,
+   "size": 685,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/gui/components/damageIndicator/DamageIndicatorItem",
+   "lazy": true,
+   "size": 2668,
+   "classes": 1,
+   "methods": 18,
+   "bodies": 18,
+   "code_bytes": 587
+  },
+  {
+   "name": "net/wg/gui/components/damageIndicator/DamageIndicator",
+   "lazy": true,
+   "size": 3988,
+   "classes": 1,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 1025
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IUIComponentEx",
+   "lazy": true,
+   "size": 804,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "DamageIndicatorItemUI",
+   "lazy": true,
+   "size": 564,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 64
+  },
+  {
+   "name": "DamageIndicatorUI",
+   "lazy": true,
+   "size": 552,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 64
+  },
+  {
+   "name": "TankIconContainerUI",
+   "lazy": true,
+   "size": 510,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 64
+  },
+  {
+   "name": "damageIndicator_fla/offsetContainer_5",
+   "lazy": true,
+   "size": 745,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 100
+  },
+  {
+   "name": "net/wg/gui/components/damageIndicator/ItemWithRotation",
+   "lazy": true,
+   "size": 879,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 81
+  },
+  {
+   "name": "net/wg/gui/components/damageIndicator/StandardStateContainer",
+   "lazy": true,
+   "size": 2862,
+   "classes": 1,
+   "methods": 15,
+   "bodies": 15,
+   "code_bytes": 588
+  },
+  {
+   "name": "net/wg/gui/components/damageIndicator/AnimationContainer",
+   "lazy": true,
+   "size": 961,
+   "classes": 1,
+   "methods": 6,
+   "bodies": 6,
+   "code_bytes": 99
+  },
+  {
+   "name": "scaleform/clik/core/UIComponent",
+   "lazy": true,
+   "size": 12628,
+   "classes": 1,
+   "methods": 97,
+   "bodies": 97,
+   "code_bytes": 3789
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IManagedContent",
+   "lazy": true,
+   "size": 531,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/ISimpleManagedContainer",
+   "lazy": true,
+   "size": 573,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IUniversalBtn",
+   "lazy": true,
+   "size": 755,
+   "classes": 1,
+   "methods": 9,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IUniversalBtnToggleIndicator",
+   "lazy": true,
+   "size": 474,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "DamageUI",
+   "lazy": true,
+   "size": 554,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 70
+  },
+  {
+   "name": "ItemWithRotationUI",
+   "lazy": true,
+   "size": 574,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 70
+  },
+  {
+   "name": "DefaultStateContainerUI",
+   "lazy": true,
+   "size": 590,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 70
+  },
+  {
+   "name": "net/wg/gui/components/damageIndicator/ExtendedStateContainer",
+   "lazy": true,
+   "size": 7405,
+   "classes": 1,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 2140
+  },
+  {
+   "name": "ExtendedAnimationUI",
+   "lazy": true,
+   "size": 663,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 90
+  },
+  {
+   "name": "StandardAnimationUI",
+   "lazy": true,
+   "size": 663,
+   "classes": 1,
+   "methods": 4,
+   "bodies": 4,
+   "code_bytes": 90
+  },
+  {
+   "name": "net/wg/infrastructure/interfaces/IView",
+   "lazy": true,
+   "size": 895,
+   "classes": 1,
+   "methods": 14,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "ExtendedStateContainerUI",
+   "lazy": true,
+   "size": 624,
+   "classes": 1,
+   "methods": 3,
+   "bodies": 3,
+   "code_bytes": 76
+  },
+  {
+   "name": "net/wg/infrastructure/managers/IWaitingView",
+   "lazy": true,
+   "size": 529,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/infrastructure/wulf/IBaseContainerWrapper",
+   "lazy": true,
+   "size": 655,
+   "classes": 1,
+   "methods": 8,
+   "bodies": 2,
+   "code_bytes": 11
+  },
+  {
+   "name": "net/wg/mock/MockWaitingView",
+   "lazy": true,
+   "size": 8479,
+   "classes": 1,
+   "methods": 162,
+   "bodies": 162,
+   "code_bytes": 622
+  }
+ ],
+ "classes": [
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IDisposable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IDisplayable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 1
+  },
+  {
+   "name": "net.wg.data.constants.Values",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 2
+  },
+  {
+   "name": "net.wg.data.constants.generated.ATLAS_CONSTANTS",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 3
+  },
+  {
+   "name": "net.wg.data.constants.generated.DAMAGEINDICATOR",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 4
+  },
+  {
+   "name": "scaleform.gfx.DisplayObjectEx",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 5
+  },
+  {
+   "name": "App",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 6
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IEnvironmentManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 7
+  },
+  {
+   "name": "net.wg.utils.ITweenManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 8
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ITooltipMgr",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 9
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IGraphicsOptimizationManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 10
+  },
+  {
+   "name": "net.wg.utils.ITextManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 11
+  },
+  {
+   "name": "scaleform.gfx.Extensions",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 12
+  },
+  {
+   "name": "net.wg.data.constants.LobbyMetrics",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 13
+  },
+  {
+   "name": "DebugUtils",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 14
+  },
+  {
+   "name": "net.wg.data.constants.Errors",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 15
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IIdentifiable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 16
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ITooltipFormatter",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 17
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IClosePopoverCallback",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 18
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IPopOverCaller",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 19
+  },
+  {
+   "name": "net.wg.utils.StageBreakPoint",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 20
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IImageUrlProperties",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 21
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IStrCaseProperties",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 22
+  },
+  {
+   "name": "net.wg.utils.IStyleSheetManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 23
+  },
+  {
+   "name": "net.wg.utils.IPopUpManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 24
+  },
+  {
+   "name": "net.wg.utils.IAssertable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 25
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.ISerializable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 26
+  },
+  {
+   "name": "net.wg.utils.IAnimBuilder",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 27
+  },
+  {
+   "name": "net.wg.utils.INations",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 28
+  },
+  {
+   "name": "net.wg.utils.IIcons",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 29
+  },
+  {
+   "name": "net.wg.utils.IDateTime",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 30
+  },
+  {
+   "name": "net.wg.utils.IDataUtils",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 31
+  },
+  {
+   "name": "net.wg.utils.ILocale",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 32
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.ICloneable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 33
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IFocusContainer",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 34
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IStats",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 35
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITweenHandler",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 36
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITweenConstructionHandler",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 37
+  },
+  {
+   "name": "org.idmedia.as3commons.util.Map",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 38
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IFormattedInt",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 39
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IUserProps",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 40
+  },
+  {
+   "name": "scaleform.clik.utils.Padding",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 41
+  },
+  {
+   "name": "net.wg.data.constants.KeyProps",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 42
+  },
+  {
+   "name": "net.wg.utils.ICounterProps",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 43
+  },
+  {
+   "name": "net.wg.data.daapi.ViewRestrictionVO",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 44
+  },
+  {
+   "name": "scaleform.clik.ui.InputDetails",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 45
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITweenAnimatorHandler",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 46
+  },
+  {
+   "name": "net.wg.data.constants.ImageCacheTypes",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 47
+  },
+  {
+   "name": "scaleform.clik.layout.LayoutData",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 48
+  },
+  {
+   "name": "lesta.unbound2.type_system.UbNumber",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 49
+  },
+  {
+   "name": "lesta.unbound2.UbBackgroundPainter",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 50
+  },
+  {
+   "name": "scaleform.clik.constants.InvalidationType",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 51
+  },
+  {
+   "name": "scaleform.clik.core.CLIK",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 52
+  },
+  {
+   "name": "scaleform.gfx.FocusManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 53
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IGlobalVO",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 54
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IReusable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 55
+  },
+  {
+   "name": "org.idmedia.as3commons.util.Collection",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 56
+  },
+  {
+   "name": "lesta.managers.windows.BitmapManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 57
+  },
+  {
+   "name": "BitmapWrapper",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "private": true,
+   "abc": 57
+  },
+  {
+   "name": "scaleform.clik.utils.ConstrainedElement",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 58
+  },
+  {
+   "name": "lesta.unbound2.type_system.UbUnits",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 59
+  },
+  {
+   "name": "scaleform.clik.managers.FocusHandler",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 60
+  },
+  {
+   "name": "scaleform.clik.managers.PopUpManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 61
+  },
+  {
+   "name": "scaleform.clik.constants.ConstrainMode",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 62
+  },
+  {
+   "name": "org.idmedia.as3commons.util.Iterator",
+   "kind": "interface",
+   "extends": null,
+   "implements": [],
+   "abc": 63
+  },
+  {
+   "name": "scaleform.clik.utils.WeakReference",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 64
+  },
+  {
+   "name": "scaleform.clik.constants.NavigationCode",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 65
+  },
+  {
+   "name": "scaleform.clik.constants.FocusMode",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 66
+  },
+  {
+   "name": "scaleform.clik.constants.InputValue",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 67
+  },
+  {
+   "name": "net.wg.utils.StaticUtils",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 68
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.DamageIndicatorStandardSetting",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 69
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IAtlasItemVO",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 70
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IPopoverManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 71
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IColorScheme",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 72
+  },
+  {
+   "name": "net.wg.infrastructure.wulf.IChildViewProxy",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 73
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IDAAPIEntity",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 74
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ITweenManagerHelper",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 75
+  },
+  {
+   "name": "net.wg.data.managers.IToolTipParams",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 76
+  },
+  {
+   "name": "net.wg.utils.IClassFactory",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 77
+  },
+  {
+   "name": "net.wg.utils.IVOManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 78
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.pool.IPoolManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 79
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IElementBlurAdapter",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 80
+  },
+  {
+   "name": "net.wg.utils.ICommons",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 81
+  },
+  {
+   "name": "net.wg.utils.helpLayout.IHelpLayout",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 82
+  },
+  {
+   "name": "net.wg.utils.ICounterManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 83
+  },
+  {
+   "name": "net.wg.utils.IUniversalBtnStyles",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 84
+  },
+  {
+   "name": "net.wg.utils.IViewRestrictions",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 85
+  },
+  {
+   "name": "net.wg.utils.IScheduler",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 86
+  },
+  {
+   "name": "net.wg.utils.IFocusHandler",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 87
+  },
+  {
+   "name": "net.wg.utils.IIME",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 88
+  },
+  {
+   "name": "net.wg.utils.helpLayout.PopupLayoutVO",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 89
+  },
+  {
+   "name": "net.wg.utils.IUniversalBtnStyledDisplayObjects",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 90
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IDisplayObject",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IDisplayable"
+   ],
+   "abc": 91
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IAtlas",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IEventDispatcher"
+   ],
+   "abc": 92
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IColorSchemeManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 93
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IGlobalVarsMgrMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 94
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IAtlasManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IDisposable"
+   ],
+   "abc": 95
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IStageSizeManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IEventDispatcher"
+   ],
+   "abc": 96
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IUtilsManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 97
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IApplicationMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 98
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IUILoggerManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 99
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IEventLogManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 100
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.ITutorialManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 101
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IVoiceChatManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 102
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IWaitingViewMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 103
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.ISoundManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 104
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IContextMenuManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 105
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.ICacheManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 106
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.ICursorManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 107
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IImageManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 108
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IGameInputManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 109
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IBaseDAAPIModuleMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 110
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IGraphicsOptimizationComponent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 111
+  },
+  {
+   "name": "net.wg.utils.IStageSizeDependComponent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 112
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.ILoaderManagerMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 113
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITutorialCustomComponent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 114
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.ISoundable",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 115
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.entity.IDragDropHitArea",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 116
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IImageData",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 117
+  },
+  {
+   "name": "net.wg.infrastructure.base.meta.IAbstractTweenMeta",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 118
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ISimpleTweenPropertiesVO",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IDisposable"
+   ],
+   "abc": 119
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.pool.IPool",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IEventDispatcher"
+   ],
+   "abc": 120
+  },
+  {
+   "name": "net.wg.utils.helpLayout.IHelpLayoutComponent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher"
+   ],
+   "abc": 121
+  },
+  {
+   "name": "net.wg.infrastructure.events.AtlasEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 122
+  },
+  {
+   "name": "net.wg.infrastructure.events.TutorialEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 123
+  },
+  {
+   "name": "scaleform.clik.events.InputEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 124
+  },
+  {
+   "name": "lesta.unbound2.proxy.base.UbProxyEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 125
+  },
+  {
+   "name": "net.wg.infrastructure.events.LifeCycleEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 126
+  },
+  {
+   "name": "scaleform.clik.events.ComponentEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 127
+  },
+  {
+   "name": "scaleform.clik.events.ResizeEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 128
+  },
+  {
+   "name": "scaleform.clik.events.FocusHandlerEvent",
+   "kind": "class",
+   "extends": "flash.events.Event",
+   "implements": [],
+   "abc": 129
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "kind": "class",
+   "extends": "Error",
+   "implements": [],
+   "abc": 130
+  },
+  {
+   "name": "scaleform.gfx.InteractiveObjectEx",
+   "kind": "class",
+   "extends": "scaleform.gfx.DisplayObjectEx",
+   "implements": [],
+   "abc": 131
+  },
+  {
+   "name": "net.wg.mock.MockEnvironmentManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IEnvironmentManager"
+   ],
+   "abc": 132
+  },
+  {
+   "name": "net.wg.mock.MockTweenManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITweenManager"
+   ],
+   "abc": 133
+  },
+  {
+   "name": "net.wg.mock.MockTooltipMgr",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITooltipMgr"
+   ],
+   "abc": 134
+  },
+  {
+   "name": "net.wg.mock.MockTextManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITextManager"
+   ],
+   "abc": 135
+  },
+  {
+   "name": "lesta.unbound2.UBPopoverCallerWrapper",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IPopOverCaller"
+   ],
+   "abc": 136
+  },
+  {
+   "name": "net.wg.mock.utils.MockStyleSheetManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IStyleSheetManager"
+   ],
+   "abc": 137
+  },
+  {
+   "name": "net.wg.mock.utils.MockPopUpManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IPopUpManager"
+   ],
+   "abc": 138
+  },
+  {
+   "name": "net.wg.mock.utils.MockAssertable",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IAssertable"
+   ],
+   "abc": 139
+  },
+  {
+   "name": "net.wg.mock.utils.MockJSON",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ISerializable"
+   ],
+   "abc": 140
+  },
+  {
+   "name": "net.wg.mock.utils.MockAnimBuilder",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IAnimBuilder"
+   ],
+   "abc": 141
+  },
+  {
+   "name": "net.wg.mock.utils.MockNations",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "INations"
+   ],
+   "abc": 142
+  },
+  {
+   "name": "net.wg.mock.utils.MockIcons",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IIcons"
+   ],
+   "abc": 143
+  },
+  {
+   "name": "net.wg.mock.utils.MockDateTime",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDateTime"
+   ],
+   "abc": 144
+  },
+  {
+   "name": "net.wg.mock.MockDataUtils",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDataUtils"
+   ],
+   "abc": 145
+  },
+  {
+   "name": "net.wg.mock.utils.MockLocale",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ILocale"
+   ],
+   "abc": 146
+  },
+  {
+   "name": "net.wg.data.managers.ITooltipProps",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ICloneable"
+   ],
+   "abc": 147
+  },
+  {
+   "name": "net.wg.utils.ITweenAnimator",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ITweenHandler",
+    "IDisposable"
+   ],
+   "abc": 148
+  },
+  {
+   "name": "net.wg.utils.animation.ITweenConstruction",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ITweenHandler",
+    "IDisposable"
+   ],
+   "abc": 149
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IWalletStatusVO",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IGlobalVO"
+   ],
+   "abc": 150
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.pool.IPoolItem",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IReusable",
+    "IDisposable"
+   ],
+   "abc": 151
+  },
+  {
+   "name": "org.idmedia.as3commons.util.Set",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "Collection"
+   ],
+   "abc": 152
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.DamageIndicatorExtendedSetting",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.DamageIndicatorStandardSetting",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 153
+  },
+  {
+   "name": "net.wg.data.VO.AtlasItemVO",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IAtlasItemVO"
+   ],
+   "abc": 154
+  },
+  {
+   "name": "net.wg.mock.MockPopoverManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IPopoverManager"
+   ],
+   "abc": 155
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IContainerManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventDispatcher",
+    "IChildViewProxy"
+   ],
+   "abc": 156
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IDAAPIDataClass",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IDAAPIEntity"
+   ],
+   "abc": 157
+  },
+  {
+   "name": "net.wg.mock.utils.MockClassFactory",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IClassFactory"
+   ],
+   "abc": 158
+  },
+  {
+   "name": "net.wg.mock.utils.MockVOManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IVOManager"
+   ],
+   "abc": 159
+  },
+  {
+   "name": "net.wg.mock.utils.MockCommons",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ICommons"
+   ],
+   "abc": 160
+  },
+  {
+   "name": "net.wg.mock.utils.MockHelpLayout",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IHelpLayout"
+   ],
+   "abc": 161
+  },
+  {
+   "name": "net.wg.mock.MockCounterManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ICounterManager"
+   ],
+   "abc": 162
+  },
+  {
+   "name": "net.wg.mock.MockViewRestrictions",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IViewRestrictions"
+   ],
+   "abc": 163
+  },
+  {
+   "name": "net.wg.mock.utils.MockScheduler",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IScheduler"
+   ],
+   "abc": 164
+  },
+  {
+   "name": "net.wg.mock.utils.MockFocusHandler",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IFocusHandler"
+   ],
+   "abc": 165
+  },
+  {
+   "name": "net.wg.mock.utils.MockIME",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IIME"
+   ],
+   "abc": 166
+  },
+  {
+   "name": "net.wg.utils.helpLayout.HelpLayoutVO",
+   "kind": "class",
+   "extends": "net.wg.utils.helpLayout.PopupLayoutVO",
+   "implements": [],
+   "abc": 167
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IRootAppMainContent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisplayObject",
+    "IDisposable"
+   ],
+   "abc": 168
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IInteractiveObject",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisplayObject"
+   ],
+   "abc": 169
+  },
+  {
+   "name": "net.wg.gui.utils.RootSWFAtlasManager",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 170
+  },
+  {
+   "name": "AtlasItemData",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IDisposable"
+   ],
+   "private": true,
+   "abc": 170
+  },
+  {
+   "name": "lesta.unbound2.proxy.base.UbProxy",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [],
+   "abc": 171
+  },
+  {
+   "name": "scaleform.clik.utils.Constraints",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 172
+  },
+  {
+   "name": "scaleform.clik.managers.InputDelegate",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [],
+   "abc": 173
+  },
+  {
+   "name": "net.wg.gui.components.containers.Atlas",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IAtlas"
+   ],
+   "abc": 174
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IColorSchemeManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IColorSchemeManagerMeta",
+    "IEventDispatcher"
+   ],
+   "abc": 175
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IGlobalVarsManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IGlobalVarsMgrMeta"
+   ],
+   "abc": 176
+  },
+  {
+   "name": "net.wg.utils.IUtils",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUtilsManagerMeta",
+    "IDisposable"
+   ],
+   "abc": 177
+  },
+  {
+   "name": "net.wg.app.IApplication",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IApplicationMeta"
+   ],
+   "abc": 178
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IUILoggerManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUILoggerManagerMeta"
+   ],
+   "abc": 179
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IEventLogManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IEventLogManagerMeta"
+   ],
+   "abc": 180
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ITutorialManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ITutorialManagerMeta"
+   ],
+   "abc": 181
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IVoiceChatManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IVoiceChatManagerMeta"
+   ],
+   "abc": 182
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ISoundManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ISoundManagerMeta"
+   ],
+   "abc": 183
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IContextMenuManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IContextMenuManagerMeta",
+    "IDisposable"
+   ],
+   "abc": 184
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ICacheManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ICacheManagerMeta"
+   ],
+   "abc": 185
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ICursorManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ICursorManagerMeta"
+   ],
+   "abc": 186
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IImageManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IImageManagerMeta",
+    "IDisposable"
+   ],
+   "abc": 187
+  },
+  {
+   "name": "net.wg.utils.IGameInputManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisposable",
+    "IGameInputManagerMeta"
+   ],
+   "abc": 188
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IDAAPIModule",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IBaseDAAPIModuleMeta",
+    "IDAAPIEntity"
+   ],
+   "abc": 189
+  },
+  {
+   "name": "net.wg.infrastructure.managers.ILoaderManager",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ILoaderManagerMeta",
+    "IStats"
+   ],
+   "abc": 190
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITweenPropertiesVO",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ISimpleTweenPropertiesVO"
+   ],
+   "abc": 191
+  },
+  {
+   "name": "scaleform.gfx.MouseEventEx",
+   "kind": "class",
+   "extends": "flash.events.MouseEvent",
+   "implements": [],
+   "abc": 192
+  },
+  {
+   "name": "scaleform.gfx.KeyboardEventEx",
+   "kind": "class",
+   "extends": "flash.events.KeyboardEvent",
+   "implements": [],
+   "abc": 193
+  },
+  {
+   "name": "scaleform.gfx.FocusEventEx",
+   "kind": "class",
+   "extends": "flash.events.FocusEvent",
+   "implements": [],
+   "abc": 194
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.DAAPIBindException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 195
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.LifecycleException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 196
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.AssertionException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 197
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.InfrastructureException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 198
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.ArgumentException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 199
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.TypeCastException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.base.WGGUIException",
+   "implements": [],
+   "abc": 200
+  },
+  {
+   "name": "scaleform.gfx.TextFieldEx",
+   "kind": "class",
+   "extends": "scaleform.gfx.InteractiveObjectEx",
+   "implements": [],
+   "abc": 201
+  },
+  {
+   "name": "net.wg.mock.utils.MockTweenAnimator",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ITweenAnimator"
+   ],
+   "abc": 202
+  },
+  {
+   "name": "net.wg.mock.MockContainerManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IContainerManager"
+   ],
+   "abc": 203
+  },
+  {
+   "name": "net.wg.data.daapi.base.DAAPIDataClass",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IDAAPIDataClass"
+   ],
+   "abc": 204
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IDisplayObjectContainer",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IInteractiveObject"
+   ],
+   "abc": 205
+  },
+  {
+   "name": "lesta.unbound2.proxy.UbPlayerProxy",
+   "kind": "class",
+   "extends": "lesta.unbound2.proxy.base.UbProxy",
+   "implements": [],
+   "abc": 206
+  },
+  {
+   "name": "lesta.unbound2.proxy.UbElementProxy",
+   "kind": "class",
+   "extends": "lesta.unbound2.proxy.base.UbProxy",
+   "implements": [],
+   "abc": 207
+  },
+  {
+   "name": "net.wg.mock.MockColorSchemeManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IColorSchemeManager"
+   ],
+   "abc": 208
+  },
+  {
+   "name": "net.wg.mock.MockGlobalVarsManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IGlobalVarsManager"
+   ],
+   "abc": 209
+  },
+  {
+   "name": "net.wg.mock.MockUtils",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IUtils"
+   ],
+   "abc": 210
+  },
+  {
+   "name": "net.wg.mock.MockApplication",
+   "kind": "class",
+   "extends": "flash.events.EventDispatcher",
+   "implements": [
+    "IApplication"
+   ],
+   "abc": 211
+  },
+  {
+   "name": "net.wg.mock.MockVoiceChatManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IVoiceChatManager"
+   ],
+   "abc": 212
+  },
+  {
+   "name": "net.wg.mock.MockSoundManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ISoundManager"
+   ],
+   "abc": 213
+  },
+  {
+   "name": "net.wg.mock.MockContextMenuManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IContextMenuManager"
+   ],
+   "abc": 214
+  },
+  {
+   "name": "net.wg.mock.MockCacheManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ICacheManager"
+   ],
+   "abc": 215
+  },
+  {
+   "name": "net.wg.mock.MockCursorManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ICursorManager"
+   ],
+   "abc": 216
+  },
+  {
+   "name": "net.wg.mock.MockImageManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IImageManager"
+   ],
+   "abc": 217
+  },
+  {
+   "name": "net.wg.mock.MockGameInputManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IGameInputManager"
+   ],
+   "abc": 218
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITween",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IAbstractTweenMeta",
+    "IDAAPIModule"
+   ],
+   "abc": 219
+  },
+  {
+   "name": "net.wg.mock.MockLoaderManager",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "ILoaderManager"
+   ],
+   "abc": 220
+  },
+  {
+   "name": "net.wg.infrastructure.exceptions.InvalidComponentCastException",
+   "kind": "class",
+   "extends": "net.wg.infrastructure.exceptions.TypeCastException",
+   "implements": [],
+   "abc": 221
+  },
+  {
+   "name": "net.wg.data.TutorialBuilderVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 222
+  },
+  {
+   "name": "net.wg.data.daapi.LoadViewVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 223
+  },
+  {
+   "name": "net.wg.data.daapi.ViewSettingsVO",
+   "kind": "class",
+   "extends": "net.wg.data.daapi.base.DAAPIDataClass",
+   "implements": [],
+   "abc": 224
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ITutorialView",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisplayObjectContainer",
+    "IDisposable"
+   ],
+   "abc": 225
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ISprite",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDisplayObjectContainer"
+   ],
+   "abc": 226
+  },
+  {
+   "name": "net.wg.infrastructure.wulf.IViewWrapper",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ITutorialView",
+    "IFocusContainer"
+   ],
+   "abc": 227
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IMovieClip",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ISprite"
+   ],
+   "abc": 228
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IImage",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "ISprite",
+    "IDisposable"
+   ],
+   "abc": 229
+  },
+  {
+   "name": "scaleform.clik.interfaces.IUIComponent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IMovieClip",
+    "IDisposable",
+    "IIdentifiable"
+   ],
+   "abc": 230
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.DamageIndicatorItem",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 231
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.DamageIndicator",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [
+    "IRootAppMainContent"
+   ],
+   "abc": 232
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IUIComponentEx",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponent"
+   ],
+   "abc": 233
+  },
+  {
+   "name": "DamageIndicatorItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.DamageIndicatorItem",
+   "implements": [],
+   "abc": 234
+  },
+  {
+   "name": "DamageIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.DamageIndicator",
+   "implements": [],
+   "abc": 235
+  },
+  {
+   "name": "TankIconContainerUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 236
+  },
+  {
+   "name": "damageIndicator_fla.offsetContainer_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 237
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.ItemWithRotation",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 238
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.StandardStateContainer",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 239
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.AnimationContainer",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IDisposable"
+   ],
+   "abc": 240
+  },
+  {
+   "name": "scaleform.clik.core.UIComponent",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [
+    "IUIComponent"
+   ],
+   "abc": 241
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IManagedContent",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponentEx"
+   ],
+   "abc": 242
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.ISimpleManagedContainer",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponentEx"
+   ],
+   "abc": 243
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IUniversalBtn",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponentEx"
+   ],
+   "abc": 244
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IUniversalBtnToggleIndicator",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponentEx"
+   ],
+   "abc": 245
+  },
+  {
+   "name": "DamageUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.ItemWithRotation",
+   "implements": [],
+   "abc": 246
+  },
+  {
+   "name": "ItemWithRotationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.ItemWithRotation",
+   "implements": [],
+   "abc": 247
+  },
+  {
+   "name": "DefaultStateContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.StandardStateContainer",
+   "implements": [],
+   "abc": 248
+  },
+  {
+   "name": "net.wg.gui.components.damageIndicator.ExtendedStateContainer",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.StandardStateContainer",
+   "implements": [],
+   "abc": 249
+  },
+  {
+   "name": "ExtendedAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.AnimationContainer",
+   "implements": [],
+   "abc": 250
+  },
+  {
+   "name": "StandardAnimationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.AnimationContainer",
+   "implements": [],
+   "abc": 251
+  },
+  {
+   "name": "net.wg.infrastructure.interfaces.IView",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IDAAPIModule",
+    "IManagedContent",
+    "IUIComponentEx",
+    "ITutorialView"
+   ],
+   "abc": 252
+  },
+  {
+   "name": "ExtendedStateContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.damageIndicator.ExtendedStateContainer",
+   "implements": [],
+   "abc": 253
+  },
+  {
+   "name": "net.wg.infrastructure.managers.IWaitingView",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IWaitingViewMeta",
+    "IUIComponentEx",
+    "IView"
+   ],
+   "abc": 254
+  },
+  {
+   "name": "net.wg.infrastructure.wulf.IBaseContainerWrapper",
+   "kind": "interface",
+   "extends": null,
+   "implements": [
+    "IUIComponentEx",
+    "IView"
+   ],
+   "abc": 255
+  },
+  {
+   "name": "net.wg.mock.MockWaitingView",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [
+    "IWaitingView"
+   ],
+   "abc": 256
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

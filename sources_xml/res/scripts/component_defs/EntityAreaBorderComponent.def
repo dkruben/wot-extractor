@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/EntityAreaBorderComponent.def -->
+<root>
+	<Properties>
+		<isVisible>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isVisible>
+		<udoGuid>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</udoGuid>
+	</Properties>
+	<ofEntity>
+		<Entity />
+	</ofEntity>
+	<DefaultKeyName>entityAreaBorder</DefaultKeyName>
+</root>

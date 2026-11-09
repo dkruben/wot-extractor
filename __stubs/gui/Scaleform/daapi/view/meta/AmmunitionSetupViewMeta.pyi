@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/AmmunitionSetupViewMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.framework.entities.View import View as View
+
+class AmmunitionSetupViewMeta(View):
+    def onClose(self):
+        ...
+    def onEscapePress(self):
+        ...
+    def as_gfSizeUpdatedS(self, x, width, bottomMargin):
+        ...
+    def as_showCloseAnimS(self):
+        ...
+    def as_onAnimationEndS(self):
+        ...
+    def as_toggleParamsS(self, isVisible):
+        ...

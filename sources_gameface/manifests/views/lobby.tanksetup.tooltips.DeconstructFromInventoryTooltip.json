@@ -1,0 +1,107 @@
+{
+  "rid": "R.views.lobby.tanksetup.tooltips.DeconstructFromInventoryTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "DeconstructFromInventoryTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "DeconstructFromInventoryTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip/DeconstructFromInventoryTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip/DeconstructFromInventoryTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DeconstructFromInventoryTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip/DeconstructFromInventoryTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip/DeconstructFromInventoryTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "DeconstructFromInventoryTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip/DeconstructFromInventoryTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip/DeconstructFromInventoryTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip/DeconstructFromInventoryTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip/DeconstructFromInventoryTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip/DeconstructFromInventoryTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip/DeconstructFromInventoryTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/tooltips/DeconstructFromInventoryTooltip/DeconstructFromInventoryTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.tooltips.DeconstructFromInventoryTooltip",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.tanksetup.tooltips.DeconstructFromInventoryTooltip no Python",
+      "ViewModel DeconstructFromInventoryTooltipModel (model=... no Python da view): 2/2 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tank_setup/dialogs/deconstruct_confirm.py",
+        89
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tank_setup/tooltips/deconstruct_from_inventory_tooltip.py",
+        14
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/tank_setup/dialogs/deconstruct_confirm.py",
+      "sources/res/scripts/client/gui/impl/lobby/tank_setup/tooltips/deconstruct_from_inventory_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/tank_setup/tooltips/deconstruct_from_inventory_tooltip_model.py",
+      "class": "DeconstructFromInventoryTooltipModel",
+      "chain": [
+        "DeconstructFromInventoryTooltipModel"
+      ],
+      "properties": [
+        [
+          "equipmentName",
+          "String"
+        ],
+        [
+          "equipmentAmount",
+          "Number"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 2,
+        "total": 2,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

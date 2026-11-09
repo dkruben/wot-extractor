@@ -1,0 +1,17 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7/scripts/client/comp7/gui/impl/gen/view_models/views/battle/constants.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7/scripts/client/comp7/gui/impl/gen/view_models/views/battle/constants.py
+from frameworks.wulf import ViewModel
+
+class Constants(ViewModel):
+    __slots__ = ()
+    NO_SELECTED_VEHICLE_CD = -1
+    NO_ANY_SELECTIONS_CD = -2
+
+    def __init__(self, properties=0, commands=0):
+        super(Constants, self).__init__(properties=properties, commands=commands)
+
+    def _initialize(self):
+        super(Constants, self)._initialize()

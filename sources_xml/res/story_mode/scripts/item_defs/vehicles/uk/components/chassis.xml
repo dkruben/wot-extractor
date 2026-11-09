@@ -1,0 +1,8 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/scripts/item_defs/vehicles/uk/components/chassis.xml -->
+<root>
+	<ids>
+		<Chassis_GB23_Centurion_2_SM_SCC>64004</Chassis_GB23_Centurion_2_SM_SCC>
+		<Chassis_GB125_Saladin_2_SM_SCC>64005</Chassis_GB125_Saladin_2_SM_SCC>
+	</ids>
+	<shared />
+</root>

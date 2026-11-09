@@ -1,0 +1,12 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/vehicles/mechanics/generic_mechanics/spec_boost_mode/__init__.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/vehicles/mechanics/generic_mechanics/spec_boost_mode/__init__.py
+from __future__ import absolute_import
+from vehicles.mechanics.generic_mechanics.spec_boost_mode.mechanic_interfaces import ISpecBoostModeMechanicParams, ISpecBoostModeMechanicState
+from vehicles.mechanics.generic_mechanics.spec_boost_mode.mechanic_models import SpecBoostModeMechanicParams, SpecBoostModeMechanicState
+__all__ = ('ISpecBoostModeMechanicParams', 'ISpecBoostModeMechanicState', 'SpecBoostModeMechanicParams',
+           'SpecBoostModeMechanicState', 'DEFAULT_SPEC_BOOST_MODE_PARAMS', 'DEFAULT_SPEC_BOOST_MODE_STATE')
+DEFAULT_SPEC_BOOST_MODE_PARAMS = SpecBoostModeMechanicParams(None)
+DEFAULT_SPEC_BOOST_MODE_STATE = SpecBoostModeMechanicState(0, 0.0, -1.0)

@@ -1,0 +1,16 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/shaders/formats/xyznuv.xml -->
+<root>
+	<elements>
+		<POSITION />
+		<NORMAL />
+		<TEXCOORD>
+			<type>FLOAT2</type>
+		</TEXCOORD>
+	</elements>
+	<targets>
+		<target>
+			<name>D3D9</name>
+			<format>xyznuvpc</format>
+		</target>
+	</targets>
+</root>

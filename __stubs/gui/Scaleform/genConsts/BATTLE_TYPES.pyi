@@ -1,0 +1,36 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/genConsts/BATTLE_TYPES.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+
+class BATTLE_TYPES(object):
+    NEUTRAL = 'neutral'
+    RANDOM = 'random'
+    TRAINING = 'training'
+    EPIC_TRAINING = 'epicTraining'
+    TEAM = 'team'
+    CTF = 'ctf'
+    HISTORICAL = 'historical'
+    DOMINATION = 'domination'
+    ASSAULT = 'assault'
+    NATION = 'nations'
+    ESCORT = 'escort'
+    ASSAULT1 = 'assault1'
+    ASSAULT2 = 'assault2'
+    TEAM_7X7 = 'team7x7'
+    platoon = 'platoon'
+    SQUAD = 'squad'
+    FORTIFICATION = 'fortifications'
+    FALLOUT_CLASSIC = 'fallout_classic'
+    FALLOUT_MULTITEAM = 'fallout_multiteam'
+    FALLOUT = 'fallout'
+    CLAN = 'clan'
+    RESOURCE_POINT = 'resourcePoints'
+    EVENT = 'event'
+    RANKED = 'ranked'
+    RANKED_10X10 = 'ranked_10x10'
+    EPIC_RANDOM = 'epicRandom'
+    CTF_30X30 = 'ctf30x30'
+    DOMINATION_30X30 = 'domination30x30'
+    EPIC_BATTLE = 'epicbattle'
+    COMP7 = 'comp7'

@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/la_pinger/extension.xml -->
+<root>
+	<FeatureName>la_pinger</FeatureName>
+	<IsEnabled>True</IsEnabled>
+	<Personality>la_pinger_ext_personality</Personality>
+	<Components>
+		<StaticComponents>
+			<LaPingerComponent />
+		</StaticComponents>
+	</Components>
+</root>

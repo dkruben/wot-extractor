@@ -1,0 +1,48 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.MaybeWrapper",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "MaybeWrapper",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/MaybeWrapper",
+  "feature": null,
+  "files": [
+    {
+      "name": "MaybeWrapper.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/MaybeWrapper/MaybeWrapper.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/MaybeWrapper/MaybeWrapper.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "MaybeWrapper.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/MaybeWrapper/MaybeWrapper.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/MaybeWrapper/MaybeWrapper.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/MaybeWrapper/MaybeWrapper.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/MaybeWrapper/MaybeWrapper.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.MaybeWrapper",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

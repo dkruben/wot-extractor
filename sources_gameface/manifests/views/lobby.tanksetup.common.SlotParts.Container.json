@@ -1,0 +1,64 @@
+{
+  "rid": "R.views.lobby.tanksetup.common.SlotParts.Container",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "Container",
+  "dir": "gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Container",
+  "feature": null,
+  "files": [
+    {
+      "name": "Container.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Container/Container.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Container/Container.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Container.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Container/Container.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Container/Container.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "Container.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Container/Container.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Container/Container.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/tanksetup/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Container/Container.css",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Container/Container.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Container/Container.js",
+      "key": "res/gui/gameface/_dist/production/lobby/tanksetup/common/SlotParts/Container/Container.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.tanksetup.common.SlotParts.Container",
+    "confidence": "nao-encontrada",
+    "evidence": [],
+    "python_refs": [],
+    "python_files": [],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

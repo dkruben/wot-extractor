@@ -1,0 +1,157 @@
+{
+ "source": "sources/res/last_stand/gui/flash/animations/advancedHints/ls_healSituational.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 277315,
+ "actual_length": 277315,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#141410",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 35,
+  "ShowFrame": 903,
+  "DefineShape": 21,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 53,
+  "PlaceObject2": 1231,
+  "RemoveObject2": 13,
+  "DefineShape3": 99,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 14,
+  "DefineSprite": 34,
+  "DefineMorphShape": 1,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineMorphShape2": 4,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 15,
+  "shapes": 180,
+  "sprites": 34,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "ls_healSituational_fla.MainTimeline"
+  },
+  {
+   "id": 228,
+   "class": "ls_healSituational_fla.hpAllyIncrease1_34"
+  },
+  {
+   "id": 224,
+   "class": "ls_healSituational_fla.slotFx_33"
+  },
+  {
+   "id": 218,
+   "class": "ls_healSituational_fla.activeAbilityReload_30"
+  },
+  {
+   "id": 62,
+   "class": "ls_healSituational_fla.explosionCircle_25"
+  },
+  {
+   "id": 59,
+   "class": "ls_healSituational_fla.tankShoot_21"
+  },
+  {
+   "id": 9,
+   "class": "ls_healSituational_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1650,
+   "classes": 7,
+   "methods": 28,
+   "bodies": 28,
+   "code_bytes": 462
+  }
+ ],
+ "classes": [
+  {
+   "name": "ls_healSituational_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_healSituational_fla.activeAbilityReload_30",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_healSituational_fla.explosionCircle_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_healSituational_fla.hpAllyIncrease1_34",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_healSituational_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_healSituational_fla.slotFx_33",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ls_healSituational_fla.tankShoot_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

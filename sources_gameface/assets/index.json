@@ -1,0 +1,306 @@
+{
+  "note": "Os assets ficam em sources/ (nao sao duplicados).",
+  "assets": [
+    {
+      "key": "res/battle_modifiers/gui/gameface/_dist/production/lib/battle_modifiers.vendors.js.LICENSE.txt",
+      "source": "sources/res/battle_modifiers/gui/gameface/_dist/production/lib/battle_modifiers.vendors.js.LICENSE.txt",
+      "virtual": "battle_modifiers/gui/gameface/_dist/production/lib/battle_modifiers.vendors.js.LICENSE.txt",
+      "category": "text",
+      "size": 730
+    },
+    {
+      "key": "res/battle_royale/gui/gameface/_dist/production/lib/battle_royale.vendors.js.LICENSE.txt",
+      "source": "sources/res/battle_royale/gui/gameface/_dist/production/lib/battle_royale.vendors.js.LICENSE.txt",
+      "virtual": "battle_royale/gui/gameface/_dist/production/lib/battle_royale.vendors.js.LICENSE.txt",
+      "category": "text",
+      "size": 730
+    },
+    {
+      "key": "res/comp7/gui/gameface/_dist/production/lib/comp7.vendors.js.LICENSE.txt",
+      "source": "sources/res/comp7/gui/gameface/_dist/production/lib/comp7.vendors.js.LICENSE.txt",
+      "virtual": "comp7/gui/gameface/_dist/production/lib/comp7.vendors.js.LICENSE.txt",
+      "category": "text",
+      "size": 730
+    },
+    {
+      "key": "res/comp7_light/gui/gameface/_dist/production/lib/comp7_light.vendors.js.LICENSE.txt",
+      "source": "sources/res/comp7_light/gui/gameface/_dist/production/lib/comp7_light.vendors.js.LICENSE.txt",
+      "virtual": "comp7_light/gui/gameface/_dist/production/lib/comp7_light.vendors.js.LICENSE.txt",
+      "category": "text",
+      "size": 730
+    },
+    {
+      "key": "res/frontline/gui/gameface/_dist/production/lib/frontline.vendors.js.LICENSE.txt",
+      "source": "sources/res/frontline/gui/gameface/_dist/production/lib/frontline.vendors.js.LICENSE.txt",
+      "virtual": "frontline/gui/gameface/_dist/production/lib/frontline.vendors.js.LICENSE.txt",
+      "category": "text",
+      "size": 124
+    },
+    {
+      "key": "res/fun_random/gui/gameface/_dist/production/lib/fun_random.vendors.js.LICENSE.txt",
+      "source": "sources/res/fun_random/gui/gameface/_dist/production/lib/fun_random.vendors.js.LICENSE.txt",
+      "virtual": "fun_random/gui/gameface/_dist/production/lib/fun_random.vendors.js.LICENSE.txt",
+      "category": "text",
+      "size": 1539
+    },
+    {
+      "key": "res/gui/gameface/.prettierrc",
+      "source": "sources/res/gui/gameface/.prettierrc",
+      "virtual": "gui/gameface/.prettierrc",
+      "category": "other",
+      "size": 177
+    },
+    {
+      "key": "res/gui/gameface/.stylelintignore",
+      "source": "sources/res/gui/gameface/.stylelintignore",
+      "virtual": "gui/gameface/.stylelintignore",
+      "category": "other",
+      "size": 24
+    },
+    {
+      "key": "res/gui/gameface/externalBuilder/modificationsIndexing/cache.json",
+      "source": "sources/res/gui/gameface/externalBuilder/modificationsIndexing/cache.json",
+      "virtual": "gui/gameface/externalBuilder/modificationsIndexing/cache.json",
+      "category": "json",
+      "size": 1746
+    },
+    {
+      "key": "res/gui/gameface/fonts/DINRoundPro-Bold.ttf",
+      "source": "sources/res/gui/gameface/fonts/DINRoundPro-Bold.ttf",
+      "virtual": "gui/gameface/fonts/DINRoundPro-Bold.ttf",
+      "category": "font",
+      "size": 248568
+    },
+    {
+      "key": "res/gui/gameface/fonts/Jura-Bold.ttf",
+      "source": "sources/res/gui/gameface/fonts/Jura-Bold.ttf",
+      "virtual": "gui/gameface/fonts/Jura-Bold.ttf",
+      "category": "font",
+      "size": 150836
+    },
+    {
+      "key": "res/gui/gameface/fonts/Jura-Regular.ttf",
+      "source": "sources/res/gui/gameface/fonts/Jura-Regular.ttf",
+      "virtual": "gui/gameface/fonts/Jura-Regular.ttf",
+      "category": "font",
+      "size": 151216
+    },
+    {
+      "key": "res/gui/gameface/fonts/Pacifico-Regular.ttf",
+      "source": "sources/res/gui/gameface/fonts/Pacifico-Regular.ttf",
+      "virtual": "gui/gameface/fonts/Pacifico-Regular.ttf",
+      "category": "font",
+      "size": 315408
+    },
+    {
+      "key": "res/gui/gameface/fonts/Warhelios-Bold.ttf",
+      "source": "sources/res/gui/gameface/fonts/Warhelios-Bold.ttf",
+      "virtual": "gui/gameface/fonts/Warhelios-Bold.ttf",
+      "category": "font",
+      "size": 152696
+    },
+    {
+      "key": "res/gui/gameface/fonts/Warhelios-Regular.ttf",
+      "source": "sources/res/gui/gameface/fonts/Warhelios-Regular.ttf",
+      "virtual": "gui/gameface/fonts/Warhelios-Regular.ttf",
+      "category": "font",
+      "size": 162660
+    },
+    {
+      "key": "res/gui/gameface/fonts/WarheliosJA-Bold.ttf",
+      "source": "sources/res/gui/gameface/fonts/WarheliosJA-Bold.ttf",
+      "virtual": "gui/gameface/fonts/WarheliosJA-Bold.ttf",
+      "category": "font",
+      "size": 9661924
+    },
+    {
+      "key": "res/gui/gameface/fonts/WarheliosJA-Medium.ttf",
+      "source": "sources/res/gui/gameface/fonts/WarheliosJA-Medium.ttf",
+      "virtual": "gui/gameface/fonts/WarheliosJA-Medium.ttf",
+      "category": "font",
+      "size": 9686800
+    },
+    {
+      "key": "res/gui/gameface/fonts/WarheliosKO-Bold.ttf",
+      "source": "sources/res/gui/gameface/fonts/WarheliosKO-Bold.ttf",
+      "virtual": "gui/gameface/fonts/WarheliosKO-Bold.ttf",
+      "category": "font",
+      "size": 7128572
+    },
+    {
+      "key": "res/gui/gameface/fonts/WarheliosKO-Medium.ttf",
+      "source": "sources/res/gui/gameface/fonts/WarheliosKO-Medium.ttf",
+      "virtual": "gui/gameface/fonts/WarheliosKO-Medium.ttf",
+      "category": "font",
+      "size": 6972084
+    },
+    {
+      "key": "res/gui/gameface/fonts/WarheliosZHCN-Bold.ttf",
+      "source": "sources/res/gui/gameface/fonts/WarheliosZHCN-Bold.ttf",
+      "virtual": "gui/gameface/fonts/WarheliosZHCN-Bold.ttf",
+      "category": "font",
+      "size": 18444116
+    },
+    {
+      "key": "res/gui/gameface/fonts/WarheliosZHCN-Medium.ttf",
+      "source": "sources/res/gui/gameface/fonts/WarheliosZHCN-Medium.ttf",
+      "virtual": "gui/gameface/fonts/WarheliosZHCN-Medium.ttf",
+      "category": "font",
+      "size": 18531136
+    },
+    {
+      "key": "res/gui/gameface/fonts/WarheliosZHTW-Bold.ttf",
+      "source": "sources/res/gui/gameface/fonts/WarheliosZHTW-Bold.ttf",
+      "virtual": "gui/gameface/fonts/WarheliosZHTW-Bold.ttf",
+      "category": "font",
+      "size": 11680828
+    },
+    {
+      "key": "res/gui/gameface/fonts/WarheliosZHTW-Medium.ttf",
+      "source": "sources/res/gui/gameface/fonts/WarheliosZHTW-Medium.ttf",
+      "virtual": "gui/gameface/fonts/WarheliosZHTW-Medium.ttf",
+      "category": "font",
+      "size": 11689872
+    },
+    {
+      "key": "res/gui/gameface/fonts/pfdinmax/PFDINMax-CompressedBold.ttf",
+      "source": "sources/res/gui/gameface/fonts/pfdinmax/PFDINMax-CompressedBold.ttf",
+      "virtual": "gui/gameface/fonts/pfdinmax/PFDINMax-CompressedBold.ttf",
+      "category": "font",
+      "size": 205292
+    },
+    {
+      "key": "res/gui/gameface/fonts/pfdinmax/PFDINMax-CompressedBook.ttf",
+      "source": "sources/res/gui/gameface/fonts/pfdinmax/PFDINMax-CompressedBook.ttf",
+      "virtual": "gui/gameface/fonts/pfdinmax/PFDINMax-CompressedBook.ttf",
+      "category": "font",
+      "size": 203296
+    },
+    {
+      "key": "res/gui/gameface/fonts/pfdinmax/PFDINMax-CompressedMedium.ttf",
+      "source": "sources/res/gui/gameface/fonts/pfdinmax/PFDINMax-CompressedMedium.ttf",
+      "virtual": "gui/gameface/fonts/pfdinmax/PFDINMax-CompressedMedium.ttf",
+      "category": "font",
+      "size": 207216
+    },
+    {
+      "key": "res/gui/gameface/fonts/pfdinmax/PFDINMax-CompressedRegular.ttf",
+      "source": "sources/res/gui/gameface/fonts/pfdinmax/PFDINMax-CompressedRegular.ttf",
+      "virtual": "gui/gameface/fonts/pfdinmax/PFDINMax-CompressedRegular.ttf",
+      "category": "font",
+      "size": 203312
+    },
+    {
+      "key": "res/gui/gameface/fonts/pfdinmax/PFDINMax-CompressedSemiBold.ttf",
+      "source": "sources/res/gui/gameface/fonts/pfdinmax/PFDINMax-CompressedSemiBold.ttf",
+      "virtual": "gui/gameface/fonts/pfdinmax/PFDINMax-CompressedSemiBold.ttf",
+      "category": "font",
+      "size": 206372
+    },
+    {
+      "key": "res/gui/gameface/pnpm-lock.yaml",
+      "source": "sources/res/gui/gameface/pnpm-lock.yaml",
+      "virtual": "gui/gameface/pnpm-lock.yaml",
+      "category": "text",
+      "size": 388787
+    },
+    {
+      "key": "res/gui/gameface/scripts/migration-ui/.prettierrc",
+      "source": "sources/res/gui/gameface/scripts/migration-ui/.prettierrc",
+      "virtual": "gui/gameface/scripts/migration-ui/.prettierrc",
+      "category": "other",
+      "size": 402
+    },
+    {
+      "key": "res/gui/gameface/scripts/migration-ui/README.md",
+      "source": "sources/res/gui/gameface/scripts/migration-ui/README.md",
+      "virtual": "gui/gameface/scripts/migration-ui/README.md",
+      "category": "other",
+      "size": 627
+    },
+    {
+      "key": "res/gui/gameface/scripts/migration-ui/package-lock.json",
+      "source": "sources/res/gui/gameface/scripts/migration-ui/package-lock.json",
+      "virtual": "gui/gameface/scripts/migration-ui/package-lock.json",
+      "category": "json",
+      "size": 128933
+    },
+    {
+      "key": "res/gui/gameface/scripts/migration-ui/package.json",
+      "source": "sources/res/gui/gameface/scripts/migration-ui/package.json",
+      "virtual": "gui/gameface/scripts/migration-ui/package.json",
+      "category": "json",
+      "size": 1093
+    },
+    {
+      "key": "res/gui/gameface/scripts/migration-ui/pnpm-lock.yaml",
+      "source": "sources/res/gui/gameface/scripts/migration-ui/pnpm-lock.yaml",
+      "virtual": "gui/gameface/scripts/migration-ui/pnpm-lock.yaml",
+      "category": "text",
+      "size": 68462
+    },
+    {
+      "key": "res/gui/gameface/scripts/migration-ui/tsconfig.json",
+      "source": "sources/res/gui/gameface/scripts/migration-ui/tsconfig.json",
+      "virtual": "gui/gameface/scripts/migration-ui/tsconfig.json",
+      "category": "json",
+      "size": 12144
+    },
+    {
+      "key": "res/gui/gameface/tsconfig.json.config",
+      "source": "sources/res/gui/gameface/tsconfig.json.config",
+      "virtual": "gui/gameface/tsconfig.json.config",
+      "category": "other",
+      "size": 637
+    },
+    {
+      "key": "res/last_stand/gui/gameface/_dist/production/lib/last_stand.vendors.js.LICENSE.txt",
+      "source": "sources/res/last_stand/gui/gameface/_dist/production/lib/last_stand.vendors.js.LICENSE.txt",
+      "virtual": "last_stand/gui/gameface/_dist/production/lib/last_stand.vendors.js.LICENSE.txt",
+      "category": "text",
+      "size": 730
+    },
+    {
+      "key": "res/scripts/client/messenger/gui/gameface/__init__.pyc",
+      "source": "sources/res/scripts/client/messenger/gui/gameface/__init__.pyc",
+      "virtual": "scripts/client/messenger/gui/gameface/__init__.pyc",
+      "category": "python_bytecode",
+      "size": 136
+    },
+    {
+      "key": "res/scripts/client/messenger/gui/gameface/channels/GFChannelController.pyc",
+      "source": "sources/res/scripts/client/messenger/gui/gameface/channels/GFChannelController.pyc",
+      "virtual": "scripts/client/messenger/gui/gameface/channels/GFChannelController.pyc",
+      "category": "python_bytecode",
+      "size": 8804
+    },
+    {
+      "key": "res/scripts/client/messenger/gui/gameface/channels/__init__.pyc",
+      "source": "sources/res/scripts/client/messenger/gui/gameface/channels/__init__.pyc",
+      "virtual": "scripts/client/messenger/gui/gameface/channels/__init__.pyc",
+      "category": "python_bytecode",
+      "size": 145
+    },
+    {
+      "key": "res/scripts/client/messenger/gui/gameface/view/__init__.pyc",
+      "source": "sources/res/scripts/client/messenger/gui/gameface/view/__init__.pyc",
+      "virtual": "scripts/client/messenger/gui/gameface/view/__init__.pyc",
+      "category": "python_bytecode",
+      "size": 141
+    },
+    {
+      "key": "res/scripts/client/messenger/gui/gameface/view/gf_channel_view_interface.pyc",
+      "source": "sources/res/scripts/client/messenger/gui/gameface/view/gf_channel_view_interface.pyc",
+      "virtual": "scripts/client/messenger/gui/gameface/view/gf_channel_view_interface.pyc",
+      "category": "python_bytecode",
+      "size": 838
+    },
+    {
+      "key": "res/server_side_replay/gui/gameface/_dist/production/lib/server_side_replay.vendors.js.LICENSE.txt",
+      "source": "sources/res/server_side_replay/gui/gameface/_dist/production/lib/server_side_replay.vendors.js.LICENSE.txt",
+      "virtual": "server_side_replay/gui/gameface/_dist/production/lib/server_side_replay.vendors.js.LICENSE.txt",
+      "category": "text",
+      "size": 730
+    }
+  ]
+}

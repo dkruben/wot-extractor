@@ -1,0 +1,62 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/shared/utils/vehicle_collector_helper.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/shared/utils/vehicle_collector_helper.py
+from __future__ import absolute_import
+import typing
+from backports.functools_lru_cache import lru_cache
+from account_helpers import AccountSettings
+from account_helpers.AccountSettings import MODULES_ANIMATION_SHOWN
+from constants import MIN_VEHICLE_LEVEL
+from gui.shared.utils.requesters import REQ_CRITERIA
+from helpers.dependency import replace_none_kwargs
+from nations import ALL_NATIONS_INDEX
+from skeletons.gui.shared import IItemsCache
+if typing.TYPE_CHECKING:
+    from gui.shared.gui_items import ItemsCollection
+    from gui.shared.gui_items.Vehicle import Vehicle
+
+@replace_none_kwargs(itemsCache=IItemsCache)
+def isAvailableForPurchase(vehicle, itemsCache=None):
+    if vehicle is None:
+        return False
+    else:
+        maxUnlockedLevel = itemsCache.items.stats.getMaxResearchedLevelByNations().get(vehicle.nationID, MIN_VEHICLE_LEVEL)
+        return maxUnlockedLevel >= vehicle.level
+
+
+def wasModulesAnimationShown():
+    wasAnimShown = AccountSettings.getSettings(MODULES_ANIMATION_SHOWN)
+    if not wasAnimShown:
+        AccountSettings.setSettings(MODULES_ANIMATION_SHOWN, True)
+    return wasAnimShown
+
+
+@replace_none_kwargs(itemsCache=IItemsCache)
+def getCollectibleVehicles(nationID=ALL_NATIONS_INDEX, itemsCache=None):
+    criteria = REQ_CRITERIA.COLLECTIBLE if nationID == ALL_NATIONS_INDEX else REQ_CRITERIA.NATIONS((nationID,)) | REQ_CRITERIA.COLLECTIBLE | ~REQ_CRITERIA.HIDDEN
+    items = itemsCache.items.getVehicles(criteria)
+    return items
+
+
+@replace_none_kwargs(itemsCache=IItemsCache)
+def getCollectibleVehiclesInInventory(nationID=ALL_NATIONS_INDEX, itemsCache=None):
+    if nationID == ALL_NATIONS_INDEX:
+        criteria = REQ_CRITERIA.COLLECTIBLE | REQ_CRITERIA.INVENTORY
+    else:
+        criteria = REQ_CRITERIA.NATIONS((nationID,)) | REQ_CRITERIA.COLLECTIBLE | REQ_CRITERIA.INVENTORY
+    items = itemsCache.items.getVehicles(criteria)
+    return items
+
+
+@lru_cache()
+def hasCollectibleVehicles(nationID=ALL_NATIONS_INDEX):
+    collectibleVehicles = getCollectibleVehicles(nationID)
+    return len(collectibleVehicles) > 0
+
+
+def isAllCollectionPurchased(nationID):
+    purchasedVehicles = getCollectibleVehiclesInInventory(nationID)
+    totalVehicles = getCollectibleVehicles(nationID)
+    return totalVehicles != 0 and purchasedVehicles == totalVehicles

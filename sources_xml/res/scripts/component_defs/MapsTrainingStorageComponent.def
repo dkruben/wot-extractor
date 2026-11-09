@@ -1,0 +1,19 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/MapsTrainingStorageComponent.def -->
+<root>
+	<Properties>
+		<globalGoals>
+			<Type>ARRAY<of>INT8</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</globalGoals>
+		<localGoal>
+			<Type>ARRAY<of>OBJECT_ID</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</localGoal>
+	</Properties>
+	<ofEntity>
+		<ArenaInfo />
+	</ofEntity>
+	<DefaultKeyName>mapsTrainingStorageComponent</DefaultKeyName>
+</root>

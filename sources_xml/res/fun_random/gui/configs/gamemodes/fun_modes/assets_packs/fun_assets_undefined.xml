@@ -1,0 +1,24 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/fun_random/gui/configs/gamemodes/fun_modes/assets_packs/fun_assets_undefined.xml -->
+<root>
+	<hangarEventBanner>
+		<borderColor>#61BAFF</borderColor>
+	</hangarEventBanner>
+	<progressionView>
+		<pointsTitleFontColors>
+			<ordinary>#656565</ordinary>
+			<unusual>#606636</unusual>
+			<rare>#556486</rare>
+			<epic>#826796</epic>
+			<legendary>#9a6f10</legendary>
+		</pointsTitleFontColors>
+		<pointsValueFontColor>#e9e2bf</pointsValueFontColor>
+		<stagesFontColors>
+			<ordinary>#656565</ordinary>
+			<unusual>#606636</unusual>
+			<rare>#556486</rare>
+			<epic>#826796</epic>
+			<legendary>#9a6f10</legendary>
+		</stagesFontColors>
+		<rewardCounterFontColor>#37362e</rewardCounterFontColor>
+	</progressionView>
+</root>

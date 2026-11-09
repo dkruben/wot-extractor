@@ -1,0 +1,151 @@
+{
+  "rid": "R.views.mono.battle_pass.tooltips.crew_member_skill",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "crew_member_skill",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill/bundle.js"
+    },
+    {
+      "name": "crew_member_skill.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill/crew_member_skill.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill/crew_member_skill.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "crew_member_skill.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill/crew_member_skill.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill/crew_member_skill.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill/crew_member_skill.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/crew_member_skill/crew_member_skill.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.battle_pass.tooltips.crew_member_skill",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.mono.battle_pass.tooltips.crew_member_skill no Python",
+      "ViewModel TankmanModel (model=... no Python da view): 0/9 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+        85
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/tankmen_voiceover_view.py",
+        54
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/crew_member_skill_tooltip.py",
+        16
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/battle_pass/battle_pass_decorators.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/tankmen_voiceover_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/battle_pass/tooltips/crew_member_skill_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/tankman_model.py",
+      "class": "TankmanModel",
+      "chain": [
+        "TankmanModel"
+      ],
+      "properties": [
+        [
+          "fullName",
+          "String"
+        ],
+        [
+          "groupName",
+          "String"
+        ],
+        [
+          "state",
+          "String"
+        ],
+        [
+          "chapterID",
+          "Number"
+        ],
+        [
+          "progressionLevel",
+          "Number"
+        ],
+        [
+          "count",
+          "Number"
+        ],
+        [
+          "availableCount",
+          "Number"
+        ],
+        [
+          "hasVoiceover",
+          "Bool"
+        ],
+        [
+          "skills",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 0,
+        "total": 9,
+        "missing": [
+          "availableCount",
+          "chapterID",
+          "count",
+          "fullName",
+          "groupName",
+          "hasVoiceover",
+          "progressionLevel",
+          "skills",
+          "state"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/tankmen_voiceover_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_pass/tooltips/crew_member_skill_tooltip_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/tankman_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/loadout/crew/tankman_model.py"
+      ]
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "rid": "R.views.mono.seniority_awards.tooltips.seniority_tooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "seniority_tooltip",
+  "dir": "gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip/bundle.js"
+    },
+    {
+      "name": "seniority_tooltip.css",
+      "effective": "res/gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip/seniority_tooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip/seniority_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "seniority_tooltip.html",
+      "effective": "res/gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip/seniority_tooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip/seniority_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/seniority_awards/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/seniority_awards/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip/seniority_tooltip.css",
+      "key": "res/gui/gameface/_dist/production/mono/seniority_awards/tooltips/seniority_tooltip/seniority_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.seniority_awards.tooltips.seniority_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.mono.seniority_awards.tooltips.seniority_tooltip no Python",
+      "ViewModel SeniorityAwardsTooltipModel (model=... no Python da view): 1/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/seniority_awards/seniority_awards_vehicles_view.py",
+        120
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/seniority_awards/seniority_reward_award_view.py",
+        78
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/seniority_awards/tooltip/seniority_awards_tooltip.py",
+        19
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/seniority_awards/seniority_awards_vehicles_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/seniority_awards/seniority_reward_award_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/seniority_awards/tooltip/seniority_awards_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/seniority_awards/seniority_awards_tooltip_model.py",
+      "class": "SeniorityAwardsTooltipModel",
+      "chain": [
+        "SeniorityAwardsTooltipModel"
+      ],
+      "properties": [
+        [
+          "category",
+          "String"
+        ],
+        [
+          "maxCategory",
+          "String"
+        ],
+        [
+          "years",
+          "Number"
+        ],
+        [
+          "categories",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 1,
+        "total": 4,
+        "missing": [
+          "category",
+          "maxCategory",
+          "years"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/seniority_awards/seniority_awards_vehicles_view_model.py",
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/seniority_awards/seniority_reward_award_view_model.py"
+      ]
+    }
+  }
+}

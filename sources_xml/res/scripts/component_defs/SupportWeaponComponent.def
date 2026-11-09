@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/SupportWeaponComponent.def -->
+<root>
+	<Implements>
+		<Interface>SecondaryGunActivatorInterface</Interface>
+	</Implements>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<Properties>
+		<status>
+			<Type>SUPPORT_WEAPON_STATUS</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</status>
+	</Properties>
+	<ClientMethods />
+	<DefaultKeyName>supportWeaponComponent</DefaultKeyName>
+</root>

@@ -1,0 +1,14 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/frontline/scripts/component_defs/FLStealthRadarComponent.def -->
+<root>
+	<Properties>
+		<stealthRadar>
+			<Type>STEALTH_RADAR_INFO</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</stealthRadar>
+	</Properties>
+	<CellMethods />
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>FLStealthRadarComponent</DefaultKeyName>
+</root>

@@ -1,0 +1,28 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/comp7/scripts/client/comp7/gui/hangar_presets/comp7_dynamic_gui_provider.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: comp7/scripts/client/comp7/gui/hangar_presets/comp7_dynamic_gui_provider.py
+from __future__ import absolute_import
+from battle_modifiers_common import BattleModifiers
+from comp7.gui.impl.lobby.missions.missions_helpers import Comp7MissionsGuiHelper
+from comp7.gui.Scaleform.daapi.view.lobby.header.helpers.controls_helpers import Comp7LobbyHeaderHelper
+from constants import QUEUE_TYPE, ARENA_BONUS_TYPE
+from gui.hangar_presets.providers.default_dynamic_gui_provider import DefaultHangarDynamicGuiProvider
+from helpers import dependency
+from skeletons.gui.game_control import IComp7Controller
+
+@dependency.replace_none_kwargs(comp7Controller=IComp7Controller)
+def getComp7BattleModifiers(comp7Controller=None):
+    return BattleModifiers(comp7Controller.battleModifiers)
+
+
+class Comp7HangarDynamicGuiProvider(DefaultHangarDynamicGuiProvider):
+    _QUEUE_TYPE = QUEUE_TYPE.COMP7
+    _BONUS_TYPES = (ARENA_BONUS_TYPE.COMP7,)
+    _LOBBY_HEADER_HELPER = Comp7LobbyHeaderHelper
+    _MISSIONS_HELPER = Comp7MissionsGuiHelper
+    __comp7Controller = dependency.descriptor(IComp7Controller)
+
+    def getBattleModifiers(self):
+        return getComp7BattleModifiers()

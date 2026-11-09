@@ -1,0 +1,81 @@
+{
+  "rid": "R.views.story_mode.mono.lobby.newbie_advertising_view",
+  "rid_source": "sources/res/story_mode/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "newbie_advertising_view",
+  "dir": "story_mode/gui/gameface/_dist/production/mono/lobby/newbie_advertising_view",
+  "feature": "story_mode",
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/newbie_advertising_view/bundle.js",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/newbie_advertising_view/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "newbie_advertising_view.css",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/newbie_advertising_view/newbie_advertising_view.css",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/newbie_advertising_view/newbie_advertising_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "newbie_advertising_view.html",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/newbie_advertising_view/newbie_advertising_view.html",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/newbie_advertising_view/newbie_advertising_view.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/chunks/welcome_view_layout.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/welcome_view_layout.css"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/newbie_advertising_view/bundle.js",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/newbie_advertising_view/bundle.js"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/newbie_advertising_view/newbie_advertising_view.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/newbie_advertising_view/newbie_advertising_view.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose",
+    "onSubmit"
+  ],
+  "link": {
+    "rid": "R.views.story_mode.mono.lobby.newbie_advertising_view",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.story_mode.mono.lobby.newbie_advertising_view no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/newbie_advertising_view.py",
+        19
+      ],
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/shared/event_dispatcher.py",
+        148
+      ]
+    ],
+    "python_files": [
+      "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/newbie_advertising_view.py",
+      "sources/res/story_mode/scripts/client/story_mode/gui/shared/event_dispatcher.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

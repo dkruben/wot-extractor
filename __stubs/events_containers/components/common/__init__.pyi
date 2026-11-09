@@ -1,0 +1,6 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/events_containers/components/common/__init__.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from events_containers.components.common.events import ClientComponentEventsDebugger as ClientComponentEventsDebugger
+__all__: tuple

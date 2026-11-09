@@ -1,0 +1,98 @@
+{
+ "source": "sources/res/last_stand/gui/flash/nitroPanel.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 399028,
+ "actual_length": 399028,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 13,
+  "ShowFrame": 1030,
+  "DefineShape": 37,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 24,
+  "PlaceObject2": 1137,
+  "RemoveObject2": 23,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 13,
+  "DefineEditText": 11,
+  "DefineSprite": 12,
+  "FrameLabel": 7,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 11,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 4,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 37,
+  "shapes": 38,
+  "sprites": 12,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 11,
+  "fonts": 0,
+  "classes": 1,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 98,
+   "class": "LSNitroPanelUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 954,
+   "classes": 1,
+   "methods": 7,
+   "bodies": 7,
+   "code_bytes": 137
+  }
+ ],
+ "classes": [
+  {
+   "name": "LSNitroPanelUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.nitroPanel.NitroPanel",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

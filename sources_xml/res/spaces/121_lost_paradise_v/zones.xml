@@ -1,0 +1,40 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/121_lost_paradise_v/zones.xml -->
+<root>
+	<path>
+		<id>3464296333</id>
+		<name>path</name>
+		<node>
+			<name>FloraScale_Comp7_Rock</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2735471254</id>
+			<transform>
+				<row0>38.092808 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 30</row2>
+				<row3>-78.39744 9.669013 187.63002</row3>
+			</transform>
+		</node>
+		<node>
+			<name>FloraScale_Comp7_Base</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3917054676</id>
+			<transform>
+				<row0>37.17203 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 39.597576</row2>
+				<row3>-102.41631 9.790631 156.6413</row3>
+			</transform>
+		</node>
+		<node>
+			<name>121_lost_paradise_v_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1983517782</id>
+			<transform>
+				<row0>40 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 40</row2>
+				<row3>-72.73655 4.998689 126.936615</row3>
+			</transform>
+		</node>
+	</path>
+</root>

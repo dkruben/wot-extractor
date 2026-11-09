@@ -1,0 +1,26 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/wgcg/rank/contexts.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.wgcg.base.contexts import CommonWebRequestCtx as CommonWebRequestCtx
+from gui.wgcg.settings import WebRequestDataType as WebRequestDataType
+
+class RankedPositionCtx(CommonWebRequestCtx):
+    def getRequestType(self):
+        ...
+    def isAuthorizationRequired(self):
+        ...
+    def isClanSyncRequired(self):
+        ...
+    def isCaching(self):
+        ...
+
+class RankedYearPositionCtx(CommonWebRequestCtx):
+    def getRequestType(self):
+        ...
+    def isAuthorizationRequired(self):
+        ...
+    def isClanSyncRequired(self):
+        ...
+    def isCaching(self):
+        ...

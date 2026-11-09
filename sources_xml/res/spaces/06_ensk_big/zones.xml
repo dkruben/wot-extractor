@@ -1,0 +1,18 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/06_ensk_big/zones.xml -->
+<root>
+	<path>
+		<id>1855973347</id>
+		<name>path</name>
+		<node>
+			<name>06_ensk_big_pbh_z_1</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3515607375</id>
+			<transform>
+				<row0>59.166218 0 0</row0>
+				<row1>0 59.166218 0</row1>
+				<row2>0 0 59.166218</row2>
+				<row3>118.824776 -14.267436 -24.938517</row3>
+			</transform>
+		</node>
+	</path>
+</root>

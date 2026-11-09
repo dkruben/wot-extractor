@@ -1,0 +1,300 @@
+{
+ "source": "sources/res/gui/flash/profileStatistics.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 432199,
+ "actual_length": 432199,
+ "frame_size_px": [
+  0.0,
+  988.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 20,
+  "ShowFrame": 525,
+  "DefineShape": 9,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 537,
+  "DefineShape3": 1,
+  "DefineBitsLossless2": 7,
+  "DefineEditText": 11,
+  "DefineSprite": 19,
+  "FrameLabel": 6,
+  "FileAttributes": 1,
+  "PlaceObject3": 15,
+  "ImportAssets2": 9,
+  "CSMTextSettings": 11,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 3,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 7,
+  "shapes": 10,
+  "sprites": 19,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 11,
+  "fonts": 0,
+  "classes": 17,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "iconLibrary.swf",
+   "symbols": []
+  },
+  {
+   "url": "statisticsComponents.swf",
+   "symbols": []
+  },
+  {
+   "url": "profileComponents.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 47,
+   "class": "ChartsStatisticsView_UI"
+  },
+  {
+   "id": 45,
+   "class": "ChartsStatisticsGroup_UI"
+  },
+  {
+   "id": 44,
+   "class": "StatisticsBarChart_UI"
+  },
+  {
+   "id": 43,
+   "class": "StatisticsBarChartAxis_UI"
+  },
+  {
+   "id": 42,
+   "class": "LineTextComponent_UI"
+  },
+  {
+   "id": 35,
+   "class": "mcStatisticBarChartAxisBG"
+  },
+  {
+   "id": 32,
+   "class": "ClassBarChartItem_UI"
+  },
+  {
+   "id": 30,
+   "class": "LevelBarChartItem_UI"
+  },
+  {
+   "id": 28,
+   "class": "NationBarChartItem_UI"
+  },
+  {
+   "id": 26,
+   "class": "PlaceBarChartItem_UI"
+  },
+  {
+   "id": 24,
+   "class": "TypeBarChartItem_UI"
+  },
+  {
+   "id": 22,
+   "class": "mcStatisticBarItemThumb"
+  },
+  {
+   "id": 17,
+   "class": "ProfileStatisticsImports"
+  },
+  {
+   "id": 16,
+   "class": "ProfileStatistics_UI"
+  },
+  {
+   "id": 11,
+   "class": "HeaderContainer_UI"
+  },
+  {
+   "id": 10,
+   "class": "HeaderBGImage_UI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 7771,
+   "classes": 17,
+   "methods": 68,
+   "bodies": 68,
+   "code_bytes": 2175
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mcStatisticBarItemThumb",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileStatisticsImports",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "mcStatisticBarChartAxisBG",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeaderBGImage_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.header.HeaderBGImage",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HeaderContainer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.header.HeaderContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LineTextComponent_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.components.LineTextComponent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChartsStatisticsView_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.body.ChartsStatisticsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ChartsStatisticsGroup_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.body.ChartsStatisticsGroup",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatisticsBarChartAxis_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.StatisticsBarChartAxis",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StatisticsBarChart_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.StatisticsBarChart",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ClassBarChartItem_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.ClassBarChartItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LevelBarChartItem_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.LevelBarChartItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NationBarChartItem_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.NationBarChartItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlaceBarChartItem_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.PlaceBarChartItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TypeBarChartItem_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.TypeBarChartItem",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ProfileStatistics_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.profile.pages.statistics.ProfileStatistics",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

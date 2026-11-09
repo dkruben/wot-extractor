@@ -1,0 +1,141 @@
+{
+  "rid": "R.views.mono.post_battle.random",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "random",
+  "dir": "gui/gameface/_dist/production/mono/post_battle/random",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/random/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/random/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/post_battle/random/bundle.js"
+    },
+    {
+      "name": "random.css",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/random/random.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/random/random.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "random.html",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/random/random.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/random/random.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/random/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/random/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/random/random.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/random/random.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "additionalBonus.onPremiumXpBonusApplied",
+    "additionalBonus.onShowDetails",
+    "onClose",
+    "onOpenMissions",
+    "playerSatisfaction.onSatisfactionRatingSelected",
+    "teamStats.onStatsSorted"
+  ],
+  "link": {
+    "rid": "R.views.mono.post_battle.random",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.mono.post_battle.random no Python",
+      "ViewModel RandomBattleResultsViewModel (model=... no Python da view): 11/12 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/battle_results/random_battle_results_view.py",
+        53
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/battle_results/random_battle_results_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/battle_results/random/random_battle_results_view_model.py",
+      "class": "RandomBattleResultsViewModel",
+      "chain": [
+        "RandomBattleResultsViewModel"
+      ],
+      "properties": [
+        [
+          "battleInfo",
+          "ViewModel"
+        ],
+        [
+          "teamStats",
+          "ViewModel"
+        ],
+        [
+          "baseCaptureInfo",
+          "ViewModel"
+        ],
+        [
+          "financialReport",
+          "ViewModel"
+        ],
+        [
+          "additionalBonus",
+          "ViewModel"
+        ],
+        [
+          "playerSatisfaction",
+          "ViewModel"
+        ],
+        [
+          "router",
+          "ViewModel"
+        ],
+        [
+          "achievements",
+          "Array"
+        ],
+        [
+          "detailedPersonalEfficiency",
+          "Array"
+        ],
+        [
+          "pathToPlugins",
+          "Map"
+        ]
+      ],
+      "commands": [
+        "onClose",
+        "onOpenMissions"
+      ],
+      "coverage": {
+        "found": 11,
+        "total": 12,
+        "missing": [
+          "router"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

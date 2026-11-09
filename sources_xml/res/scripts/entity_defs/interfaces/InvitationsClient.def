@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/InvitationsClient.def -->
+<root>
+	<ClientMethods>
+		<processInvitations>
+			<Arg>PYTHON</Arg>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<VariableLengthHeaderSize>1<WarnLevel>none</WarnLevel>
+			</VariableLengthHeaderSize>
+		</processInvitations>
+	</ClientMethods>
+</root>

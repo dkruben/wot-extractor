@@ -1,0 +1,29 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/frontline/scripts/client/frontline/gui/impl/gen/view_models/views/lobby/views/post_battle_results_view/battle_financial_report_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from frameworks.wulf import Array as Array, ViewModel as ViewModel
+from frontline.gui.impl.gen.view_models.views.lobby.views.post_battle_results_view.vehicle_financial_report_model import VehicleFinancialReportModel as VehicleFinancialReportModel
+
+class BattleFinancialReportModel(ViewModel):
+    __slots__: tuple
+    PLAYER_RANK_XP = 'playerRankXP'
+    def __init__(self, properties=3, commands=0):
+        ...
+    def getHasAnyPremium(self):
+        ...
+    def setHasAnyPremium(self, value):
+        ...
+    def getHasWotPlus(self):
+        ...
+    def setHasWotPlus(self, value):
+        ...
+    def getVehiclesFinancialStats(self):
+        ...
+    def setVehiclesFinancialStats(self, value):
+        ...
+    @staticmethod
+    def getVehiclesFinancialStatsType():
+        ...
+    def _initialize(self):
+        ...

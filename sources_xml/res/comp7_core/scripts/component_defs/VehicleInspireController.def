@@ -1,0 +1,17 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/comp7_core/scripts/component_defs/VehicleInspireController.def -->
+<root>
+	<Properties>
+		<isActive>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isActive>
+		<displayedState>
+			<Type>STATE_WITH_TIME_INTERVAL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</displayedState>
+	</Properties>
+	<ofEntity>
+		<Vehicle />
+	</ofEntity>
+	<DefaultKeyName>VehicleInspireController</DefaultKeyName>
+</root>

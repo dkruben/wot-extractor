@@ -1,0 +1,143 @@
+{
+ "source": "sources/res/gui/flash/rankedBattlesIntro.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 93497,
+ "actual_length": 93497,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 7,
+  "ShowFrame": 7,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 8,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 4,
+  "DefineSprite": 6,
+  "FileAttributes": 1,
+  "PlaceObject3": 11,
+  "ImportAssets2": 5,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 6,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 4,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "rankedBattlesCmp.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 14,
+   "class": "RankedBattlesIntroUI"
+  },
+  {
+   "id": 10,
+   "class": "BeforeSeasonBlockUI"
+  },
+  {
+   "id": 4,
+   "class": "RankedIntroBlocksUI"
+  },
+  {
+   "id": 3,
+   "class": "RankedIntroBlockItemUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2707,
+   "classes": 4,
+   "methods": 13,
+   "bodies": 13,
+   "code_bytes": 426
+  }
+ ],
+ "classes": [
+  {
+   "name": "RankedIntroBlockItemUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.intro.RankedIntroBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BeforeSeasonBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.intro.RankedIntroBeforeSeasonBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedIntroBlocksUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.intro.RankedIntroBlocks",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattlesIntroUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.intro.RankedBattlesIntro",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

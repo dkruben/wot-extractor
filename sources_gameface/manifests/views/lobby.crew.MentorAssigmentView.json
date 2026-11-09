@@ -1,0 +1,195 @@
+{
+  "rid": "R.views.lobby.crew.MentorAssigmentView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "MentorAssigmentView",
+  "dir": "gui/gameface/_dist/production/lobby/crew/MentorAssigmentView",
+  "feature": null,
+  "files": [
+    {
+      "name": "MentorAssigmentView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/MentorAssigmentView/MentorAssigmentView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/MentorAssigmentView/MentorAssigmentView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "MentorAssigmentView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/MentorAssigmentView/MentorAssigmentView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/MentorAssigmentView/MentorAssigmentView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "MentorAssigmentView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/MentorAssigmentView/MentorAssigmentView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/MentorAssigmentView/MentorAssigmentView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/MentorAssigmentView/MentorAssigmentView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/MentorAssigmentView/MentorAssigmentView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/MentorAssigmentView/MentorAssigmentView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/MentorAssigmentView/MentorAssigmentView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/MentorAssigmentView/MentorAssigmentView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.BackportContextMenu",
+    "common.pop_over_window.backport_pop_over.BackportPopOverContent",
+    "common.pop_over_window.backport_pop_over.BackportPopOverWindow",
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.ExtendedTextTooltip",
+    "lobby.crew.BarracksView",
+    "lobby.crew.CrewHeaderTooltipView",
+    "lobby.crew.HangarCrewWidget",
+    "lobby.crew.MemberChangeView",
+    "lobby.crew.MentorAssigmentView",
+    "lobby.crew.QuickTrainingView",
+    "lobby.crew.SkillsTrainingView",
+    "lobby.crew.TankmanContainerView",
+    "lobby.crew.personal_case.PersonalDataView",
+    "lobby.crew.personal_case.PersonalFileView",
+    "lobby.crew.personal_case.ServiceRecordView",
+    "lobby.crew.popovers.FilterPopoverView",
+    "lobby.crew.tooltips.EmptySkillTooltip",
+    "lobby.crew.tooltips.MentoringLicenseTooltip",
+    "lobby.crew.widgets.CrewWidget",
+    "lobby.crew.widgets.FilterPanelWidget"
+  ],
+  "commands": [
+    "buttonsBar.onAcceleratedTrainingClick",
+    "buttonsBar.onCrewBooksClick",
+    "buttonsBar.onWotPlusClick",
+    "onBack",
+    "onCardMouseEnter",
+    "onCardMouseLeave",
+    "onChangeCrewClick",
+    "onClose",
+    "onDogClick",
+    "onDogMoreInfoClick",
+    "onLoadCards",
+    "onResetFilter",
+    "onResetFilters",
+    "onSearch",
+    "onSlotClick",
+    "onTankmanSelected",
+    "onTipClose",
+    "onTipsReadyToShow",
+    "onUpdateFilter"
+  ],
+  "link": {
+    "rid": "R.views.lobby.crew.MentorAssigmentView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.crew.MentorAssigmentView no Python",
+      "ViewModel MentorAssigmentViewModel (model=... no Python da view): 19/21 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/mentor_assigment_view.py",
+        60
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/mentor_assigment_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/mentor_assigment_view_model.py",
+      "class": "MentorAssigmentViewModel",
+      "chain": [
+        "MentorAssigmentViewModel",
+        "BaseCrewViewModel"
+      ],
+      "properties": [
+        [
+          "selectedTankmanID",
+          "Number"
+        ],
+        [
+          "licensesAmount",
+          "Number"
+        ],
+        [
+          "nation",
+          "String"
+        ],
+        [
+          "hasFilters",
+          "Bool"
+        ],
+        [
+          "itemsAmount",
+          "Number"
+        ],
+        [
+          "itemsOffset",
+          "Number"
+        ],
+        [
+          "tankmanList",
+          "Array"
+        ],
+        [
+          "tips",
+          "Array"
+        ],
+        [
+          "backButtonLabel",
+          "Resource"
+        ],
+        [
+          "isButtonBarVisible",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onResetFilters",
+        "onLoadCards",
+        "onTankmanSelected",
+        "onCardMouseEnter",
+        "onCardMouseLeave",
+        "onTipClose",
+        "onTipsReadyToShow",
+        "onAbout",
+        "onClose",
+        "onBack",
+        "onHangar"
+      ],
+      "coverage": {
+        "found": 19,
+        "total": 21,
+        "missing": [
+          "onAbout",
+          "onHangar"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

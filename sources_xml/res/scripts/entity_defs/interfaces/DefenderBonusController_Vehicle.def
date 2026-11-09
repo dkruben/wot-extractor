@@ -1,0 +1,11 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/entity_defs/interfaces/DefenderBonusController_Vehicle.def -->
+<root>
+	<TempProperties>
+		<_defenderBonus />
+	</TempProperties>
+	<CellMethods>
+		<defenderBonus_onOwnSectorCaptured />
+		<defenderBonus_onOwnDestructibleDestroyed />
+		<defenderBonus_onPlayerGroupChanged />
+	</CellMethods>
+</root>

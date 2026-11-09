@@ -1,0 +1,95 @@
+{
+  "rid": "R.views.mono.lootbox.main",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "main",
+  "dir": "gui/gameface/_dist/production/mono/lootbox/main",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/main/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/main/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/lootbox/main/bundle.js"
+    },
+    {
+      "name": "main.css",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/main/main.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/main/main.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "main.html",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/main/main.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/main/main.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/main/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/main/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/main/main.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/main/main.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onResourcesLoadCompleted"
+  ],
+  "link": {
+    "rid": "R.views.mono.lootbox.main",
+    "confidence": "provavel",
+    "evidence": [
+      "5 referencia(s) R.views.mono.lootbox.main no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/graphics_optimization_controller/settings.py",
+        39
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/main_view.py",
+        52
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/lootbox_system/states.py",
+        167
+      ],
+      [
+        "sources/res/scripts/client/gui/lootbox_system/base/views_loaders.py",
+        57
+      ],
+      [
+        "sources/res/scripts/client/notification/listeners.py",
+        353
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/graphics_optimization_controller/settings.py",
+      "sources/res/scripts/client/gui/impl/lobby/lootbox_system/base/main_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/lootbox_system/states.py",
+      "sources/res/scripts/client/gui/lootbox_system/base/views_loaders.py",
+      "sources/res/scripts/client/notification/listeners.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

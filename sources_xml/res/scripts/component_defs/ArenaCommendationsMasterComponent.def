@@ -1,0 +1,20 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/ArenaCommendationsMasterComponent.def -->
+<root>
+	<CellMethods>
+		<setupArena>
+			<Args>
+				<config>PYTHON</config>
+			</Args>
+		</setupArena>
+		<clearMessageState />
+	</CellMethods>
+	<BaseMethods>
+		<receiveBattleStatistics>
+			<Arg>COMMENDATIONS_BATTLE_STATISTICS_LIST</Arg>
+		</receiveBattleStatistics>
+	</BaseMethods>
+	<ofEntity>
+		<Arena />
+	</ofEntity>
+	<DefaultKeyName>commendationsComponent</DefaultKeyName>
+</root>

@@ -1,0 +1,77 @@
+{
+  "rid": "R.views.lobby.crew.tooltips.SkillUntrainedAdditionalTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SkillUntrainedAdditionalTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "SkillUntrainedAdditionalTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip/SkillUntrainedAdditionalTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip/SkillUntrainedAdditionalTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SkillUntrainedAdditionalTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip/SkillUntrainedAdditionalTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip/SkillUntrainedAdditionalTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SkillUntrainedAdditionalTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip/SkillUntrainedAdditionalTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip/SkillUntrainedAdditionalTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip/SkillUntrainedAdditionalTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip/SkillUntrainedAdditionalTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip/SkillUntrainedAdditionalTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip/SkillUntrainedAdditionalTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/SkillUntrainedAdditionalTooltip/SkillUntrainedAdditionalTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.crew.tooltips.SkillUntrainedAdditionalTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.crew.tooltips.SkillUntrainedAdditionalTooltip no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/skill_untrained_additional_tooltip.py",
+        13
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/tooltips/skill_untrained_additional_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

@@ -1,0 +1,12 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/250_br_battle_city2-1/environments/0B9A784A-4398FCE3-AD30579C-36431AD6/probes/global/rem_sh_forward.xml -->
+<root>
+	<sh0>0.531597 0.5491 0.585377</sh0>
+	<sh1>0.019914 0.000687 0.041677</sh1>
+	<sh2>0.0056 -0.008789 -0.00848</sh2>
+	<sh3>-0.02284 -0.015445 -0.012512</sh3>
+	<sh4>-0.020442 -0.0142 -0.009795</sh4>
+	<sh5>0.054679 0.055033 0.041445</sh5>
+	<sh6>-0.005081 -0.004232 -0.001475</sh6>
+	<sh7>-0.019866 -0.013581 -0.011459</sh7>
+	<sh8>0.019216 0.011608 0.015004</sh8>
+</root>

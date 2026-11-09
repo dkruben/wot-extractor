@@ -1,0 +1,26 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/user_missions/info_page_model.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+from frameworks.wulf import ViewModel as ViewModel
+
+class InfoPageModel(ViewModel):
+    __slots__: tuple
+    onClose: Any
+    def __init__(self, properties=3, commands=1):
+        ...
+    def getRerollInterval(self):
+        ...
+    def setRerollInterval(self, value):
+        ...
+    def getIsWeeklySectionAvailable(self):
+        ...
+    def setIsWeeklySectionAvailable(self, value):
+        ...
+    def getStandardBlockPlugin(self):
+        ...
+    def setStandardBlockPlugin(self, value):
+        ...
+    def _initialize(self):
+        ...

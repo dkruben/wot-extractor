@@ -1,0 +1,757 @@
+{
+ "source": "sources/res/gui/flash/storageView.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 870550,
+ "actual_length": 870550,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 77,
+  "ShowFrame": 270,
+  "DefineShape": 36,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 269,
+  "DefineShape3": 2,
+  "DefineBitsJPEG3": 4,
+  "DefineBitsLossless2": 32,
+  "DefineEditText": 80,
+  "DefineSprite": 76,
+  "FrameLabel": 46,
+  "FileAttributes": 1,
+  "PlaceObject3": 113,
+  "ImportAssets2": 10,
+  "CSMTextSettings": 80,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 36,
+  "shapes": 39,
+  "sprites": 76,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 80,
+  "fonts": 0,
+  "classes": 58,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "carousels.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyDynamic2.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyDynamic.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 231,
+   "class": "storageViewUI"
+  },
+  {
+   "id": 230,
+   "class": "AllVehiclesTabViewUI"
+  },
+  {
+   "id": 229,
+   "class": "InHangarFilterBlockUI"
+  },
+  {
+   "id": 226,
+   "class": "BlueprintCostRendererUI"
+  },
+  {
+   "id": 221,
+   "class": "BlueprintsCardUI"
+  },
+  {
+   "id": 207,
+   "class": "storageView_fla.blueprintBg_19"
+  },
+  {
+   "id": 202,
+   "class": "CustomizationCardUI"
+  },
+  {
+   "id": 194,
+   "class": "PreviewButtonUI"
+  },
+  {
+   "id": 188,
+   "class": "DefaultCardUI"
+  },
+  {
+   "id": 181,
+   "class": "storageView_fla.equipmentType_32"
+  },
+  {
+   "id": 147,
+   "class": "SpecializationUI"
+  },
+  {
+   "id": 146,
+   "class": "ExtraParamsUI"
+  },
+  {
+   "id": 145,
+   "class": "ExtraParamsRendererUI"
+  },
+  {
+   "id": 143,
+   "class": "OfferCardUI"
+  },
+  {
+   "id": 140,
+   "class": "PersonalReservesCardUI"
+  },
+  {
+   "id": 133,
+   "class": "RentVehicleCardUI"
+  },
+  {
+   "id": 130,
+   "class": "RestoreVehicleCardUI"
+  },
+  {
+   "id": 126,
+   "class": "SelectableCardUI"
+  },
+  {
+   "id": 118,
+   "class": "SpecializationItemRendererUI"
+  },
+  {
+   "id": 117,
+   "class": "VehicleCardUI"
+  },
+  {
+   "id": 102,
+   "class": "ConsumablesTabViewUI"
+  },
+  {
+   "id": 101,
+   "class": "CrewBooksTabViewUI"
+  },
+  {
+   "id": 100,
+   "class": "StorageTypeAndNationFilterBlockUI"
+  },
+  {
+   "id": 95,
+   "class": "DevicesTabViewUI"
+  },
+  {
+   "id": 94,
+   "class": "BalanceBlockUI"
+  },
+  {
+   "id": 92,
+   "class": "StorageModulesAndVehicleFilterBlockUI"
+  },
+  {
+   "id": 87,
+   "class": "ModulesTabViewUI"
+  },
+  {
+   "id": 86,
+   "class": "RegularItemsTabViewUI"
+  },
+  {
+   "id": 85,
+   "class": "RentVehiclesTabViewUI"
+  },
+  {
+   "id": 84,
+   "class": "RestoreVehiclesTabViewUI"
+  },
+  {
+   "id": 83,
+   "class": "InhangarNoItemsViewUI"
+  },
+  {
+   "id": 81,
+   "class": "ShellsTabViewUI"
+  },
+  {
+   "id": 80,
+   "class": "StorageNoItemsViewUI"
+  },
+  {
+   "id": 78,
+   "class": "StorageTypeAndVehicleFilterBlockUI"
+  },
+  {
+   "id": 73,
+   "class": "StorageCategoryBlueprintsViewUI"
+  },
+  {
+   "id": 70,
+   "class": "BlueprintFragmentRendererUI"
+  },
+  {
+   "id": 69,
+   "class": "BlueprintFragmentsBarUI"
+  },
+  {
+   "id": 68,
+   "class": "BlueprintsFilterBlockUI"
+  },
+  {
+   "id": 65,
+   "class": "BlueprintsNoItemsUI"
+  },
+  {
+   "id": 46,
+   "class": "StorageCategoryCustomizationViewUI"
+  },
+  {
+   "id": 44,
+   "class": "CustomizationNoItemsViewUI"
+  },
+  {
+   "id": 42,
+   "class": "StorageTypeFilterBlockUI"
+  },
+  {
+   "id": 38,
+   "class": "StorageCategoryForSellViewUI"
+  },
+  {
+   "id": 36,
+   "class": "BuyBlockUI"
+  },
+  {
+   "id": 34,
+   "class": "ForSellNoItemsViewUI"
+  },
+  {
+   "id": 32,
+   "class": "StorageCategoryInHangarViewUI"
+  },
+  {
+   "id": 30,
+   "class": "StorageCategoryOffersViewUI"
+  },
+  {
+   "id": 28,
+   "class": "OffersNoItemsViewUI"
+  },
+  {
+   "id": 26,
+   "class": "StorageCategoryPersonalReservesViewUI"
+  },
+  {
+   "id": 24,
+   "class": "PersonalReserveFiltersBlockUI"
+  },
+  {
+   "id": 23,
+   "class": "StorageTankFilterCounterUI"
+  },
+  {
+   "id": 20,
+   "class": "storageView_fla.glow_10"
+  },
+  {
+   "id": 8,
+   "class": "reservesFilterBlock"
+  },
+  {
+   "id": 6,
+   "class": "StorageCarouselUI"
+  },
+  {
+   "id": 5,
+   "class": "PersonalReservesNoItemsViewUI"
+  },
+  {
+   "id": 3,
+   "class": "StorageCategoryStorageViewUI"
+  },
+  {
+   "id": 1,
+   "class": "SlotButtonDisableTextureUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 40804,
+   "classes": 58,
+   "methods": 260,
+   "bodies": 260,
+   "code_bytes": 16729
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SlotButtonDisableTextureUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storageView_fla.blueprintBg_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storageView_fla.equipmentType_32",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storageView_fla.glow_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BalanceBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.BalanceBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BlueprintCostRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.blueprints.BlueprintCostRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BlueprintFragmentRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.blueprints.BlueprintFragmentRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BlueprintsCardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.cards.BlueprintsCard",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BlueprintsNoItemsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.blueprints.BlueprintsNoItemsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BuyBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.forsell.BuyBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationNoItemsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.NoItemsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ForSellNoItemsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.NoItemsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InhangarNoItemsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.NoItemsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OffersNoItemsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.NoItemsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalReservesNoItemsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.NoItemsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageNoItemsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.NoItemsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DefaultCardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.cards.BaseCard",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ExtraParamsRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.ExtraParamsRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SpecializationItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.SpecializationItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageTankFilterCounterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.carousels.filters.FilterCounter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CustomizationCardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.cards.CustomizationCard",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OfferCardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.cards.OfferCard",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalReservesCardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.cards.PersonalReservesCard",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RentVehicleCardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.cards.RentVehicleCard",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RestoreVehicleCardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.cards.RestoreVehicleCard",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SelectableCardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.cards.SelectableCard",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleCardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.cards.VehicleCard",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalReserveFiltersBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.personalreserves.PersonalReserveFilterBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageTypeFilterBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.StorageTypeFilterBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SpecializationUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageCarouselUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.StorageCarousel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PreviewButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageTypeAndNationFilterBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.StorageTypeAndNationFilterBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageTypeAndVehicleFilterBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.StorageTypeAndVehicleFilterBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BlueprintsFilterBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.blueprints.BlueprintsFilterBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InHangarFilterBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.inhangar.InHangarFilterBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BlueprintFragmentsBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.blueprints.BlueprintFragmentsBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ExtraParamsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.ExtraParams",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "reservesFilterBlock",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.ButtonFilters",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageModulesAndVehicleFilterBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.StorageModulesAndVehicleFilterBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageCategoryInHangarViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.inhangar.StorageCategoryInHangarView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageCategoryStorageViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.StorageCategoryStorageView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ConsumablesTabViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.ItemsWithTypeFilterTabView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RegularItemsTabViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.RegularItemsTabView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RentVehiclesTabViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.inhangar.RentVehiclesTabView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageCategoryForSellViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.forsell.StorageCategoryForSellView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageCategoryOffersViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.offers.StorageCategoryOffersView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageCategoryPersonalReservesViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.personalreserves.StorageCategoryPersonalReservesView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AllVehiclesTabViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.inhangar.AllVehiclesTabView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RestoreVehiclesTabViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.inhangar.RestoreVehiclesTabView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageCategoryBlueprintsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.blueprints.StorageCategoryBlueprintsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "storageViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.StorageView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CrewBooksTabViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.ItemsWithTypeAndNationFilterTabView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ModulesTabViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.ItemsWithVehicleFilterTabView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShellsTabViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.ItemsWithVehicleFilterTabView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StorageCategoryCustomizationViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.customization.StorageCategoryCustomizationView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DevicesTabViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.storage.categories.storage.StorageDevicesTabView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

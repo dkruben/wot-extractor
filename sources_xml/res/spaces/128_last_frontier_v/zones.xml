@@ -1,0 +1,51 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/128_last_frontier_v/zones.xml -->
+<root>
+	<path>
+		<id>261935676</id>
+		<name>path</name>
+		<node>
+			<name>Zone 1</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2766831855</id>
+			<transform>
+				<row0>140.09883 0 0</row0>
+				<row1>0 42.43048 0</row1>
+				<row2>0 0 148.1613</row2>
+				<row3>98.49251 -35.935833 -109.70797</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 4 - Comp7</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1649961031</id>
+			<transform>
+				<row0>36.025337 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 32.45195</row2>
+				<row3>42.96775 -37.769753 170.58438</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 3</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>33802668</id>
+			<transform>
+				<row0>50.987263 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 46.427628</row2>
+				<row3>-187.39622 -45.920597 211.25516</row3>
+			</transform>
+		</node>
+		<node>
+			<name>128_last_frontier_v_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1475501623</id>
+			<transform>
+				<row0>118.61584 0 0</row0>
+				<row1>0 20 0</row1>
+				<row2>0 0 117.97023</row2>
+				<row3>79.41827 -39.10201 324.5618</row3>
+			</transform>
+		</node>
+	</path>
+</root>

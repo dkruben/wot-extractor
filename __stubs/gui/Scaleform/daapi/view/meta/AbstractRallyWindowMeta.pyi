@@ -1,0 +1,19 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/Scaleform/daapi/view/meta/AbstractRallyWindowMeta.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from gui.Scaleform.framework.entities.abstract.AbstractWindowView import AbstractWindowView as AbstractWindowView
+
+class AbstractRallyWindowMeta(AbstractWindowView):
+    def canGoBack(self):
+        ...
+    def onBrowseRallies(self):
+        ...
+    def onCreateRally(self):
+        ...
+    def onJoinRally(self, rallyId, slotIndex, peripheryId):
+        ...
+    def as_loadViewS(self, flashAlias, pyAlias):
+        ...
+    def as_enableWndCloseBtnS(self, value):
+        ...

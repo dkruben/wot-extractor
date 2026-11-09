@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/event_platform/extension.xml -->
+<root>
+	<FeatureName>event_platform</FeatureName>
+	<IsEnabled>True</IsEnabled>
+	<Personality>EventPlatformPersonality</Personality>
+	<Components>
+		<StaticComponents>
+			<KafkaLoggingComponent />
+			<VehicleHealthBroadcastComponent />
+			<VehicleVisionOverrideComponent />
+		</StaticComponents>
+	</Components>
+</root>

@@ -1,0 +1,16 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/battle_royale/scripts/component_defs/VehicleCorrodingShotComponent.def -->
+<root>
+	<Properties>
+		<finishTime>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</finishTime>
+		<canBeStoppedRepairKit>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</canBeStoppedRepairKit>
+	</Properties>
+	<DefaultKeyName>vehicleCorrodingShotComponent</DefaultKeyName>
+</root>

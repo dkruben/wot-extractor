@@ -1,0 +1,41 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/mission_tooltip.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: story_mode/scripts/client/story_mode/gui/impl/lobby/mission_tooltip.py
+from __future__ import absolute_import
+import typing
+from debug_utils import LOG_ERROR
+from frameworks.wulf.view.view import ViewSettings
+from gui.impl.gen import R
+from story_mode.gui.impl.gen.view_models.views.lobby.mission_selection_tooltip_model import MissionSelectionTooltipModel
+from gui.impl.pub import ViewImpl
+if typing.TYPE_CHECKING:
+    from gui.shared.gui_items import Vehicle
+
+class MissionTooltip(ViewImpl):
+
+    def __init__(self, vehicle):
+        settings = ViewSettings(R.views.story_mode.mono.lobby.tooltips.mission_tooltip(), model=MissionSelectionTooltipModel())
+        super(MissionTooltip, self).__init__(settings)
+        self._vehicle = vehicle
+
+    @property
+    def viewModel(self):
+        return super(MissionTooltip, self).getViewModel()
+
+    def _onLoading(self, *args, **kwargs):
+        super(MissionTooltip, self)._onLoading(*args, **kwargs)
+        self.viewModel.setVehicleName(self._vehicle.userName)
+        self.viewModel.setVehicleDescription(self._vehicle.fullDescription)
+        vehicleName = self._vehicle.name.split(':', 1)[-1].lower()
+        iconRes = R.images.story_mode.gui.maps.icons.missionSelection.tooltip.vehicle.dyn(vehicleName)
+        if iconRes.exists():
+            self.viewModel.setVehicleIcon(iconRes())
+        else:
+            LOG_ERROR('Tooltip icon not found for vehicle %s.' % vehicleName)
+
+    def _finalize(self):
+        super(MissionTooltip, self)._finalize()
+        self._vehicle = None
+        return

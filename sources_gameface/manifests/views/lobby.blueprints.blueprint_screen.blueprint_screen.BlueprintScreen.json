@@ -1,0 +1,45 @@
+{
+  "rid": "R.views.lobby.blueprints.blueprint_screen.blueprint_screen.BlueprintScreen",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "BlueprintScreen",
+  "dir": "gui/unbound/views/lobby/blueprints/blueprint_screen",
+  "feature": null,
+  "files": [
+    {
+      "name": "blueprint_screen.unbound",
+      "effective": "res/gui/unbound/views/lobby/blueprints/blueprint_screen/blueprint_screen.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/blueprints/blueprint_screen/blueprint_screen.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.blueprints.blueprint_screen.blueprint_screen.BlueprintScreen",
+    "confidence": "provavel",
+    "evidence": [
+      "2 referencia(s) R.views.lobby.blueprints.blueprint_screen.blueprint_screen.BlueprintScreen no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/game_control/AwardController.py",
+        363
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/blueprints/states.py",
+        25
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/game_control/AwardController.py",
+      "sources/res/scripts/client/gui/impl/lobby/blueprints/states.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

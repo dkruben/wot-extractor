@@ -1,0 +1,119 @@
+{
+  "rid": "R.views.lobby.crew.widgets.CrewBannerWidget",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "CrewBannerWidget",
+  "dir": "gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget",
+  "feature": null,
+  "files": [
+    {
+      "name": "CrewBannerWidget.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget/CrewBannerWidget.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget/CrewBannerWidget.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CrewBannerWidget.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget/CrewBannerWidget.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget/CrewBannerWidget.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CrewBannerWidget.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget/CrewBannerWidget.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget/CrewBannerWidget.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget/CrewBannerWidget.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget/CrewBannerWidget.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget/CrewBannerWidget.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget/CrewBannerWidget.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/widgets/CrewBannerWidget/CrewBannerWidget.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.common.tooltips.ExtendedTextTooltip",
+    "lobby.crew.widgets.CrewBannerWidget"
+  ],
+  "commands": [
+    "onFill",
+    "onReset"
+  ],
+  "link": {
+    "rid": "R.views.lobby.crew.widgets.CrewBannerWidget",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.crew.widgets.CrewBannerWidget no Python",
+      "ViewModel CrewBannerWidgetModel (model=... no Python da view): 5/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/crew/widget/crew_banner_widget.py",
+        19
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/crew/widget/crew_banner_widget.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/crew_banner_widget_model.py",
+      "class": "CrewBannerWidgetModel",
+      "chain": [
+        "CrewBannerWidgetModel"
+      ],
+      "properties": [
+        [
+          "secondsLeft",
+          "Number"
+        ],
+        [
+          "isFillDisabled",
+          "Bool"
+        ],
+        [
+          "isResetDisabled",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onReset",
+        "onFill"
+      ],
+      "coverage": {
+        "found": 5,
+        "total": 5,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

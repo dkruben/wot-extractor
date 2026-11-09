@@ -1,0 +1,418 @@
+{
+ "source": "sources/res/gui/flash/epicSharedAssets.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 236933,
+ "actual_length": 236933,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 34,
+  "ShowFrame": 647,
+  "DefineShape": 521,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 688,
+  "RemoveObject2": 281,
+  "DefineShape3": 2,
+  "DefineBitsJPEG3": 11,
+  "DefineBitsLossless2": 87,
+  "DefineSprite": 33,
+  "FrameLabel": 18,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 98,
+  "shapes": 523,
+  "sprites": 33,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 31,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 654,
+   "class": "epicBaseId"
+  },
+  {
+   "id": 639,
+   "class": "epicBaseIdAlly"
+  },
+  {
+   "id": 638,
+   "class": "epicSharedAssets_fla.baseHighlightAlly_4"
+  },
+  {
+   "id": 625,
+   "class": "epicSharedAssets_fla.baseRepliedAlly_3"
+  },
+  {
+   "id": 612,
+   "class": "epicBaseIdColorblind"
+  },
+  {
+   "id": 611,
+   "class": "epicSharedAssets_fla.baseHighlightColorblind_7"
+  },
+  {
+   "id": 598,
+   "class": "epicSharedAssets_fla.baseRepliedColorblind_6"
+  },
+  {
+   "id": 585,
+   "class": "epicBaseIdEnemy"
+  },
+  {
+   "id": 584,
+   "class": "epicSharedAssets_fla.baseHighlightEnemy_10"
+  },
+  {
+   "id": 571,
+   "class": "epicSharedAssets_fla.baseRepliedEnemy_9"
+  },
+  {
+   "id": 558,
+   "class": "epicCaptureCircleSmallUI"
+  },
+  {
+   "id": 557,
+   "class": "epicSharedAssets_fla.epicCaptureCircleAnimSmallUI_13"
+  },
+  {
+   "id": 377,
+   "class": "epicCaptureCircleUI"
+  },
+  {
+   "id": 376,
+   "class": "epicCaptureCircleAnimUI"
+  },
+  {
+   "id": 218,
+   "class": "epicHQId"
+  },
+  {
+   "id": 205,
+   "class": "epicHQIdAlly"
+  },
+  {
+   "id": 204,
+   "class": "epicSharedAssets_fla.hqHighlightAlly_18"
+  },
+  {
+   "id": 193,
+   "class": "epicSharedAssets_fla.hqRepliedAlly_17"
+  },
+  {
+   "id": 182,
+   "class": "epicHQIdColorblind"
+  },
+  {
+   "id": 181,
+   "class": "epicSharedAssets_fla.hqHighlightColorblind_21"
+  },
+  {
+   "id": 170,
+   "class": "epicSharedAssets_fla.hqRepliedColorblind_20"
+  },
+  {
+   "id": 159,
+   "class": "epicHQIdEnemy"
+  },
+  {
+   "id": 158,
+   "class": "epicSharedAssets_fla.hqHighlightEnemy_24"
+  },
+  {
+   "id": 147,
+   "class": "epicSharedAssets_fla.hqRepliedEnemy_23"
+  },
+  {
+   "id": 136,
+   "class": "epicListRanks"
+  },
+  {
+   "id": 123,
+   "class": "epicObjectiveTargetMarker"
+  },
+  {
+   "id": 120,
+   "class": "epicRankLarge"
+  },
+  {
+   "id": 107,
+   "class": "SectorBaseAlly"
+  },
+  {
+   "id": 104,
+   "class": "SectorBaseEnemy"
+  },
+  {
+   "id": 101,
+   "class": "TimerCircleAnimationUI"
+  },
+  {
+   "id": 5,
+   "class": "WaypointMarkerAnimated"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 8252,
+   "classes": 31,
+   "methods": 198,
+   "bodies": 198,
+   "code_bytes": 3038
+  }
+ ],
+ "classes": [
+  {
+   "name": "SectorBaseAlly",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SectorBaseEnemy",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TimerCircleAnimationUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "WaypointMarkerAnimated",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicBaseId",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicCaptureCircleAnimUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicHQId",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicListRanks",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicObjectiveTargetMarker",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicRankLarge",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.baseHighlightAlly_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.baseHighlightColorblind_7",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.baseHighlightEnemy_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.baseRepliedAlly_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.baseRepliedColorblind_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.baseRepliedEnemy_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.epicCaptureCircleAnimSmallUI_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.hqHighlightAlly_18",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.hqHighlightColorblind_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.hqHighlightEnemy_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.hqRepliedAlly_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.hqRepliedColorblind_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicSharedAssets_fla.hqRepliedEnemy_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicBaseIdAlly",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.ObjectiveIdReplyState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicBaseIdColorblind",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.ObjectiveIdReplyState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicBaseIdEnemy",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.ObjectiveIdReplyState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicHQIdAlly",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.ObjectiveIdReplyState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicHQIdColorblind",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.ObjectiveIdReplyState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicHQIdEnemy",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.staticMarkers.epic.ObjectiveIdReplyState",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicCaptureCircleSmallUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.EpicProgressCircle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicCaptureCircleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.EpicProgressCircle",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

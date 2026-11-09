@@ -1,0 +1,212 @@
+{
+ "source": "sources/res/gui/flash/epicRandomBattleLoading.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 1530460,
+ "actual_length": 1530460,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 11,
+  "ShowFrame": 12,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 16,
+  "DefineShape3": 2,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 1,
+  "DefineEditText": 15,
+  "DefineSprite": 10,
+  "FrameLabel": 2,
+  "FileAttributes": 1,
+  "PlaceObject3": 72,
+  "ImportAssets2": 8,
+  "CSMTextSettings": 15,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 5,
+  "sprites": 10,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 15,
+  "fonts": 0,
+  "classes": 9,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "minimapLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "eventInfoPanel.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "iconLibrary.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 32,
+   "class": "epicRandomLoadingTableRendererLeftUI"
+  },
+  {
+   "id": 29,
+   "class": "epicRandomLoadingTableRendererRightUI"
+  },
+  {
+   "id": 26,
+   "class": "epicRandomLoadingTipRendererLeftUI"
+  },
+  {
+   "id": 23,
+   "class": "epicRandomLoadingTipRendererRightUI"
+  },
+  {
+   "id": 19,
+   "class": "epicRandomBattleLoadingUI"
+  },
+  {
+   "id": 18,
+   "class": "epicRandomBattleLoadingForm"
+  },
+  {
+   "id": 10,
+   "class": "EpicRandomStatsTableUI"
+  },
+  {
+   "id": 9,
+   "class": "epicRandomBattleLoadingScrollingListUI"
+  },
+  {
+   "id": 5,
+   "class": "epicRandomBattleLoading_fla.bg_8"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 7206,
+   "classes": 9,
+   "methods": 43,
+   "bodies": 43,
+   "code_bytes": 1930
+  }
+ ],
+ "classes": [
+  {
+   "name": "EpicRandomStatsTableUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.battleloading.components.EpicRandomStatsTable",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicRandomBattleLoading_fla.bg_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicRandomBattleLoadingScrollingListUI",
+   "kind": "class",
+   "extends": "scaleform.clik.controls.ScrollingList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicRandomBattleLoadingForm",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.battleloading.EpicRandomBattleLoadingForm",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicRandomLoadingTableRendererLeftUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.battleloading.renderers.TableEpicRandomPlayerItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicRandomLoadingTableRendererRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.battleloading.renderers.TableEpicRandomPlayerItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicRandomLoadingTipRendererLeftUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.battleloading.renderers.TipEpicRandomPlayerItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicRandomLoadingTipRendererRightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.battleloading.renderers.TipEpicRandomPlayerItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "epicRandomBattleLoadingUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.epicRandom.battleloading.EpicRandomBattleLoading",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

@@ -1,0 +1,1 @@
+var e=function(e){return e[e.Default=0]="Default",e[e.Active=1]="Active",e[e.Claimed=2]="Claimed",e}({});export{e as t};

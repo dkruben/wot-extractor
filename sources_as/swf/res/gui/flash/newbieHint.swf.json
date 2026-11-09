@@ -1,0 +1,165 @@
+{
+ "source": "sources/res/gui/flash/newbieHint.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 8220,
+ "actual_length": 8220,
+ "frame_size_px": [
+  0.0,
+  1920.0,
+  0.0,
+  1080.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 11,
+  "ShowFrame": 88,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 281,
+  "RemoveObject2": 1,
+  "DefineShape3": 3,
+  "DefineEditText": 2,
+  "DefineSprite": 10,
+  "FrameLabel": 5,
+  "FileAttributes": 1,
+  "PlaceObject3": 6,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 2,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 0,
+  "shapes": 3,
+  "sprites": 10,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 15,
+   "class": "NewbieHintUI"
+  },
+  {
+   "id": 14,
+   "class": "NewbieHintContainerUI"
+  },
+  {
+   "id": 13,
+   "class": "NewbieHintTextContainerUI"
+  },
+  {
+   "id": 10,
+   "class": "NewbieHintIconContainerUI"
+  },
+  {
+   "id": 9,
+   "class": "NewbieBackgroundTxtContainerUI"
+  },
+  {
+   "id": 6,
+   "class": "NewbieBackgroundIconContainerUI"
+  },
+  {
+   "id": 3,
+   "class": "NewbieMaskContainerUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2414,
+   "classes": 7,
+   "methods": 26,
+   "bodies": 26,
+   "code_bytes": 549
+  }
+ ],
+ "classes": [
+  {
+   "name": "NewbieBackgroundIconContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.newbieHint.containers.HintComponentContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NewbieBackgroundTxtContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.newbieHint.containers.HintComponentContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NewbieMaskContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.newbieHint.containers.HintComponentContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NewbieHintContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.newbieHint.containers.HintContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NewbieHintIconContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.newbieHint.containers.HintIconContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NewbieHintTextContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.newbieHint.containers.HintTextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "NewbieHintUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.newbieHint.NewbieHint",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

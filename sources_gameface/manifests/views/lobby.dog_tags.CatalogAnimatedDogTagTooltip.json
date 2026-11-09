@@ -1,0 +1,142 @@
+{
+  "rid": "R.views.lobby.dog_tags.CatalogAnimatedDogTagTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "CatalogAnimatedDogTagTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "CatalogAnimatedDogTagTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip/CatalogAnimatedDogTagTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip/CatalogAnimatedDogTagTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CatalogAnimatedDogTagTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip/CatalogAnimatedDogTagTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip/CatalogAnimatedDogTagTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CatalogAnimatedDogTagTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip/CatalogAnimatedDogTagTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip/CatalogAnimatedDogTagTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip/CatalogAnimatedDogTagTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/dog_tags/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/dog_tags/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip/CatalogAnimatedDogTagTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip/CatalogAnimatedDogTagTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip/CatalogAnimatedDogTagTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/dog_tags/CatalogAnimatedDogTagTooltip/CatalogAnimatedDogTagTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.dog_tags.CatalogAnimatedDogTagTooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "4 referencia(s) R.views.lobby.dog_tags.CatalogAnimatedDogTagTooltip no Python",
+      "ViewModel AnimatedDogTagsViewModel (model=... no Python da view): 0/10 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/achievements/profile_utils.py",
+        289
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/achievements/profile_utils.py",
+        453
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dog_tags/animated_dog_tags_view.py",
+        99
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/dog_tags/catalog_animated_dog_tag_tooltip.py",
+        26
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/achievements/profile_utils.py",
+      "sources/res/scripts/client/gui/impl/lobby/dog_tags/animated_dog_tags_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/dog_tags/catalog_animated_dog_tag_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/dog_tags/animated_dog_tags_view_model.py",
+      "class": "AnimatedDogTagsViewModel",
+      "chain": [
+        "AnimatedDogTagsViewModel"
+      ],
+      "properties": [
+        [
+          "dogTags",
+          "Array"
+        ],
+        [
+          "onboardingEnabled",
+          "Bool"
+        ],
+        [
+          "initialIndex",
+          "Number"
+        ]
+      ],
+      "commands": [
+        "onEquip",
+        "onGoToAchievement",
+        "onInfoButtonClick",
+        "onPlayVideo",
+        "onOnboardingCloseClick",
+        "onHideNewBubble",
+        "onClose"
+      ],
+      "coverage": {
+        "found": 0,
+        "total": 10,
+        "missing": [
+          "dogTags",
+          "initialIndex",
+          "onClose",
+          "onEquip",
+          "onGoToAchievement",
+          "onHideNewBubble",
+          "onInfoButtonClick",
+          "onOnboardingCloseClick",
+          "onPlayVideo",
+          "onboardingEnabled"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/dog_tags/catalog_animated_dog_tag_tooltip_model.py"
+      ]
+    }
+  }
+}

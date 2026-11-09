@@ -1,0 +1,133 @@
+{
+  "rid": "R.views.lobby.veh_post_progression.tooltip.PostProgressionLevelTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "PostProgressionLevelTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "PostProgressionLevelTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PostProgressionLevelTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PostProgressionLevelTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.veh_post_progression.tooltip.PostProgressionLevelTooltipView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "4 referencia(s) R.views.lobby.veh_post_progression.tooltip.PostProgressionLevelTooltipView no Python",
+      "ViewModel PostProgressionLevelTooltipViewModel (model=... no Python da view): 5/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_cfg_component.py",
+        97
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_cmp_component.py",
+        52
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/tooltips/level_tooltip_view.py",
+        25
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/vehicle_compare/modifications_panel.py",
+        47
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_cfg_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/post_progression_cmp_component.py",
+      "sources/res/scripts/client/gui/impl/lobby/veh_post_progression/tooltips/level_tooltip_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/vehicle_compare/modifications_panel.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/post_progression/tooltip/post_progression_level_tooltip_view_model.py",
+      "class": "PostProgressionLevelTooltipViewModel",
+      "chain": [
+        "PostProgressionLevelTooltipViewModel"
+      ],
+      "properties": [
+        [
+          "modifier",
+          "ViewModel"
+        ],
+        [
+          "level",
+          "Number"
+        ],
+        [
+          "type",
+          "String"
+        ],
+        [
+          "nameRes",
+          "Resource"
+        ],
+        [
+          "isUnlocked",
+          "Bool"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 5,
+        "total": 5,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/vehicle_compare/compare_modifications_panel_view_model.py"
+      ]
+    }
+  }
+}

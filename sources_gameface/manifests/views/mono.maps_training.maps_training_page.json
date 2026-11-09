@@ -1,0 +1,93 @@
+{
+  "rid": "R.views.mono.maps_training.maps_training_page",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "maps_training_page",
+  "dir": "gui/gameface/_dist/production/mono/maps_training/maps_training_page",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/maps_training/maps_training_page/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/maps_training/maps_training_page/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/maps_training/maps_training_page/bundle.js"
+    },
+    {
+      "name": "maps_training_page.css",
+      "effective": "res/gui/gameface/_dist/production/mono/maps_training/maps_training_page/maps_training_page.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/maps_training/maps_training_page/maps_training_page.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "maps_training_page.html",
+      "effective": "res/gui/gameface/_dist/production/mono/maps_training/maps_training_page/maps_training_page.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/maps_training/maps_training_page/maps_training_page.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/maps_training/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/maps_training/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/maps_training/maps_training_page/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/maps_training/maps_training_page/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/maps_training/maps_training_page/maps_training_page.css",
+      "key": "res/gui/gameface/_dist/production/mono/maps_training/maps_training_page/maps_training_page.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "common.tooltip_window.backport_tooltip_content.BackportTooltipContent",
+    "mono.maps_training.scenario_tooltip"
+  ],
+  "commands": [
+    "onBack",
+    "onBlurRectUpdated",
+    "onClose",
+    "onFilteringChange",
+    "onInfoClicked",
+    "onMouseOver3dScene",
+    "onMoveSpace",
+    "onNavigate",
+    "onScenarioSelect",
+    "onSelect"
+  ],
+  "link": {
+    "rid": "R.views.mono.maps_training.maps_training_page",
+    "confidence": "provavel",
+    "evidence": [
+      "3 referencia(s) R.views.mono.maps_training.maps_training_page no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/vehicle_preview/vehicle_preview.py",
+        248
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/maps_training/maps_training_view.py",
+        84
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/maps_training/states.py",
+        39
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/Scaleform/daapi/view/lobby/vehicle_preview/vehicle_preview.py",
+      "sources/res/scripts/client/gui/impl/lobby/maps_training/maps_training_view.py",
+      "sources/res/scripts/client/gui/impl/lobby/maps_training/states.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

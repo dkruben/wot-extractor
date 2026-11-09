@@ -1,0 +1,103 @@
+{
+  "rid": "R.views.last_stand.mono.lobby.tooltips.banner_tooltip",
+  "rid_source": "sources/res/last_stand/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "banner_tooltip",
+  "dir": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip",
+  "feature": "last_stand",
+  "files": [
+    {
+      "name": "banner_tooltip.css",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "banner_tooltip.html",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.html",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js",
+      "all": [
+        "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/banner_tooltip.css"
+    },
+    {
+      "virtual": "last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js",
+      "key": "res/last_stand/gui/gameface/_dist/production/mono/lobby/tooltips/banner_tooltip/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.last_stand.mono.lobby.tooltips.banner_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.last_stand.mono.lobby.tooltips.banner_tooltip no Python",
+      "ViewModel EventBannerViewModel (model=... no Python da view): 1/4 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/tooltips/event_banner_tooltip.py",
+        23
+      ]
+    ],
+    "python_files": [
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/tooltips/event_banner_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/last_stand/scripts/client/last_stand/gui/impl/gen/view_models/views/lobby/event_banner_view_model.py",
+      "class": "EventBannerViewModel",
+      "chain": [
+        "EventBannerViewModel"
+      ],
+      "properties": [
+        [
+          "date",
+          "Number"
+        ],
+        [
+          "endDate",
+          "Number"
+        ],
+        [
+          "performanceRisk",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onClick"
+      ],
+      "coverage": {
+        "found": 1,
+        "total": 4,
+        "missing": [
+          "date",
+          "endDate",
+          "onClick"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

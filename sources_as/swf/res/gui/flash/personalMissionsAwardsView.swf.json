@@ -1,0 +1,195 @@
+{
+ "source": "sources/res/gui/flash/personalMissionsAwardsView.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 664926,
+ "actual_length": 664926,
+ "frame_size_px": [
+  0.0,
+  400.0,
+  0.0,
+  240.0
+ ],
+ "frame_rate": 24.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 23,
+  "ShowFrame": 55,
+  "DefineShape": 13,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 49,
+  "RemoveObject2": 10,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 4,
+  "DefineSprite": 22,
+  "FrameLabel": 17,
+  "FileAttributes": 1,
+  "PlaceObject3": 17,
+  "ImportAssets2": 4,
+  "CSMTextSettings": 4,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 13,
+  "sprites": 22,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 4,
+  "fonts": 0,
+  "classes": 9,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "personalMissionsCmp.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "screen.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 41,
+   "class": "PersonalMissionsAwardsViewUI"
+  },
+  {
+   "id": 37,
+   "class": "VehicleAwardUI"
+  },
+  {
+   "id": 36,
+   "class": "personalMissionsAwardsView_fla.animatorMc_4"
+  },
+  {
+   "id": 34,
+   "class": "PersonalMissionsVehicleSlotUI"
+  },
+  {
+   "id": 11,
+   "class": "AdditionalAwardsUI"
+  },
+  {
+   "id": 9,
+   "class": "AdditionalAwardsGroupUI"
+  },
+  {
+   "id": 8,
+   "class": "AwardHeaderUI"
+  },
+  {
+   "id": 4,
+   "class": "SmokeUI"
+  },
+  {
+   "id": 1,
+   "class": "PersonalMissionsAwardsViewImporterUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 4682,
+   "classes": 9,
+   "methods": 49,
+   "bodies": 49,
+   "code_bytes": 1222
+  }
+ ],
+ "classes": [
+  {
+   "name": "PersonalMissionsAwardsViewImporterUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SmokeUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "personalMissionsAwardsView_fla.animatorMc_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdditionalAwardsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.awardsView.AdditionalAwards",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.awardsView.AwardHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionsVehicleSlotUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.awardsView.PersonalMissionsVehicleSlot",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleAwardUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.awardsView.VehicleAward",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AdditionalAwardsGroupUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.containers.GroupEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalMissionsAwardsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.personalMissions.components.PersonalMissionsAwardsView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

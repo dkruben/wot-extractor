@@ -1,0 +1,148 @@
+{
+ "source": "sources/res/gui/flash/rechargeableNitro.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 119704,
+ "actual_length": 119704,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 26,
+  "ShowFrame": 537,
+  "DefineShape": 16,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 774,
+  "RemoveObject2": 4,
+  "DefineBitsLossless2": 18,
+  "DefineSprite": 25,
+  "FrameLabel": 13,
+  "FileAttributes": 1,
+  "PlaceObject3": 26,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 18,
+  "shapes": 18,
+  "sprites": 25,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "widgetsCommon.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 61,
+   "class": "RechargeableNitroPanelUI"
+  },
+  {
+   "id": 54,
+   "class": "rechargeableNitro_fla.fier_end_20"
+  },
+  {
+   "id": 30,
+   "class": "rechargeableNitro_fla.TProgressUI_8"
+  },
+  {
+   "id": 10,
+   "class": "rechargeableNitro_fla.emptyUI_3"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3105,
+   "classes": 7,
+   "methods": 42,
+   "bodies": 42,
+   "code_bytes": 1174
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rechargeableNitro_fla.TProgressUI_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rechargeableNitro_fla.emptyUI_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rechargeableNitro_fla.fier_end_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RechargeableNitroPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.RechargeableNitroWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

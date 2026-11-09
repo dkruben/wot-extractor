@@ -1,0 +1,97 @@
+{
+  "rid": "R.views.mono.attachments_preview.attachments_preview",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "attachments_preview",
+  "dir": "gui/gameface/_dist/production/mono/attachments_preview/attachments_preview",
+  "feature": null,
+  "files": [
+    {
+      "name": "attachments_preview.css",
+      "effective": "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "attachments_preview.html",
+      "effective": "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.css",
+      "key": "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/attachments_preview/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/attachments_preview/chunks/lib.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.attachments_preview.attachments_preview",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.mono.attachments_preview.attachments_preview no Python",
+      "ViewModel AttachmentsPreviewModel (model=... no Python da view): 3/3 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/customization/attachments_preview/attachments_preview.py",
+        26
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/customization/attachments_preview/attachments_preview.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/customization/attachments_preview/attachments_preview_model.py",
+      "class": "AttachmentsPreviewModel",
+      "chain": [
+        "AttachmentsPreviewModel"
+      ],
+      "properties": [
+        [
+          "attachmentSetID",
+          "String"
+        ],
+        [
+          "feature",
+          "String"
+        ],
+        [
+          "attachments",
+          "Array"
+        ]
+      ],
+      "commands": [],
+      "coverage": {
+        "found": 3,
+        "total": 3,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

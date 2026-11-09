@@ -1,0 +1,15 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/user_data_object_defs/PrebattleMarker.def -->
+<root>
+	<Domain>NONE</Domain>
+	<NonChunk>True</NonChunk>
+	<Properties>
+		<Teams>
+			<Type>STRING</Type>
+			<Editable>True</Editable>
+		</Teams>
+		<LocationName>
+			<Type>STRING</Type>
+			<Editable>True</Editable>
+		</LocationName>
+	</Properties>
+</root>

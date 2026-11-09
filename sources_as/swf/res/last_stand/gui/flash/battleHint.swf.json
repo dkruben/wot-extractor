@@ -1,0 +1,376 @@
+{
+ "source": "sources/res/last_stand/gui/flash/battleHint.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 271984,
+ "actual_length": 271984,
+ "frame_size_px": [
+  0.0,
+  1920.0,
+  0.0,
+  1080.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 34,
+  "ShowFrame": 1044,
+  "DefineShape": 21,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 2,
+  "PlaceObject2": 1352,
+  "RemoveObject2": 3,
+  "DefineBitsJPEG3": 2,
+  "DefineBitsLossless2": 16,
+  "DefineEditText": 8,
+  "DefineSprite": 33,
+  "FrameLabel": 19,
+  "FileAttributes": 1,
+  "PlaceObject3": 35,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 6,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 20,
+  "shapes": 21,
+  "sprites": 33,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 8,
+  "fonts": 0,
+  "classes": 26,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 82,
+   "class": "LSBattleHintUI"
+  },
+  {
+   "id": 81,
+   "class": "LSConvoyBattlePinnableProgressHintUI"
+  },
+  {
+   "id": 80,
+   "class": "LSConvoyTaskBarUI"
+  },
+  {
+   "id": 75,
+   "class": "LSConvoyContainerUI"
+  },
+  {
+   "id": 73,
+   "class": "TaskBarProgressConvoyUI"
+  },
+  {
+   "id": 72,
+   "class": "battleHint_fla.taskBarProgressFxConvoy_14"
+  },
+  {
+   "id": 67,
+   "class": "battleHint_fla.barConvoyMC_13"
+  },
+  {
+   "id": 59,
+   "class": "BattleHintNumDefConvoyUI"
+  },
+  {
+   "id": 57,
+   "class": "LSWaveBreakIndicatorUI"
+  },
+  {
+   "id": 52,
+   "class": "LSBattlePinnableHintUI"
+  },
+  {
+   "id": 51,
+   "class": "LSBattlePinnableProgressHintUI"
+  },
+  {
+   "id": 50,
+   "class": "LSTaskBarUI"
+  },
+  {
+   "id": 45,
+   "class": "battleHint_fla.taskBarProgress_27"
+  },
+  {
+   "id": 37,
+   "class": "LSDefenceBattlePinnableProgressHintUI"
+  },
+  {
+   "id": 36,
+   "class": "PinnableHintContainerUI"
+  },
+  {
+   "id": 35,
+   "class": "txtPinnableInfoUI"
+  },
+  {
+   "id": 33,
+   "class": "HintContainerUI"
+  },
+  {
+   "id": 32,
+   "class": "txtInfoUI"
+  },
+  {
+   "id": 30,
+   "class": "battleHint_fla.glow_3"
+  },
+  {
+   "id": 25,
+   "class": "LSDefenceTaskBarUI"
+  },
+  {
+   "id": 24,
+   "class": "BattleHintNumDefUI"
+  },
+  {
+   "id": 22,
+   "class": "BattleHintNumUI"
+  },
+  {
+   "id": 19,
+   "class": "TaskBarProgressDefUI"
+  },
+  {
+   "id": 18,
+   "class": "battleHint_fla.taskBarProgressFxDef_25"
+  },
+  {
+   "id": 13,
+   "class": "battleHint_fla.barMC_24"
+  },
+  {
+   "id": 6,
+   "class": "battleHint_fla.barBG_23"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5584,
+   "classes": 26,
+   "methods": 102,
+   "bodies": 102,
+   "code_bytes": 1869
+  }
+ ],
+ "classes": [
+  {
+   "name": "LSWaveBreakIndicatorUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleHint_fla.barBG_23",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleHint_fla.barConvoyMC_13",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleHint_fla.barMC_24",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleHint_fla.glow_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleHint_fla.taskBarProgressFxConvoy_14",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleHint_fla.taskBarProgressFxDef_25",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleHint_fla.taskBarProgress_27",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleHintNumDefConvoyUI",
+   "kind": "class",
+   "extends": "net.wg.gui.eventcomponents.NumberProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleHintNumDefUI",
+   "kind": "class",
+   "extends": "net.wg.gui.eventcomponents.NumberProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleHintNumUI",
+   "kind": "class",
+   "extends": "net.wg.gui.eventcomponents.NumberProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HintContainerUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.components.InfoContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PinnableHintContainerUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.components.InfoContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSConvoyContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.vehicleMarkers.VehicleIconAnimation",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TaskBarProgressConvoyUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.components.ProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TaskBarProgressDefUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.components.ProgressBar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "txtInfoUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.components.TextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "txtPinnableInfoUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.components.TextContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSTaskBarUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.components.LSBattleHintTaskbar",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSDefenceTaskBarUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.components.LSBattleHintTaskbarDefence",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSConvoyTaskBarUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.components.LSBattleHintTaskbarConvoy",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSBattleHintUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.LSBattleHint",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSBattlePinnableHintUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.LSBattleHint",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSBattlePinnableProgressHintUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.LSBattleHintProgress",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSDefenceBattlePinnableProgressHintUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.LSBattleHintProgressDefence",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LSConvoyBattlePinnableProgressHintUI",
+   "kind": "class",
+   "extends": "net.wg.last_stand.gui.battle.views.battleHints.LSBattleHintProgressConvoy",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

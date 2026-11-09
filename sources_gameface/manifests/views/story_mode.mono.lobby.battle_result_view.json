@@ -1,0 +1,158 @@
+{
+  "rid": "R.views.story_mode.mono.lobby.battle_result_view",
+  "rid_source": "sources/res/story_mode/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "battle_result_view",
+  "dir": "story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view",
+  "feature": "story_mode",
+  "files": [
+    {
+      "name": "battle_result_view.css",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view/battle_result_view.css",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view/battle_result_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "battle_result_view.html",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view/battle_result_view.html",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view/battle_result_view.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view/bundle.js",
+      "all": [
+        "res/story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view/battle_result_view.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view/battle_result_view.css"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view/bundle.js",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/battle_result_view/bundle.js"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "story_mode/gui/gameface/_dist/production/mono/lobby/chunks/uilogging_constants.css",
+      "key": "res/story_mode/gui/gameface/_dist/production/mono/lobby/chunks/uilogging_constants.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "story_mode.mono.lobby.tooltips.battle_result_stat_tooltip"
+  ],
+  "commands": [
+    "onContinue",
+    "onQuit"
+  ],
+  "link": {
+    "rid": "R.views.story_mode.mono.lobby.battle_result_view",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "2 referencia(s) R.views.story_mode.mono.lobby.battle_result_view no Python",
+      "ViewModel BattleResultViewModel (model=... no Python da view): 16/16 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/battle_result_view.py",
+        56
+      ],
+      [
+        "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/mission_selection_view.py",
+        69
+      ]
+    ],
+    "python_files": [
+      "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/battle_result_view.py",
+      "sources/res/story_mode/scripts/client/story_mode/gui/impl/lobby/mission_selection_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/story_mode/scripts/client/story_mode/gui/impl/gen/view_models/views/lobby/battle_result_view_model.py",
+      "class": "BattleResultViewModel",
+      "chain": [
+        "BattleResultViewModel"
+      ],
+      "properties": [
+        [
+          "missionProgress",
+          "ViewModel"
+        ],
+        [
+          "missionId",
+          "Number"
+        ],
+        [
+          "isVictory",
+          "Bool"
+        ],
+        [
+          "title",
+          "Resource"
+        ],
+        [
+          "subTitle",
+          "Resource"
+        ],
+        [
+          "infoName",
+          "String"
+        ],
+        [
+          "infoDescription",
+          "String"
+        ],
+        [
+          "vehicleName",
+          "String"
+        ],
+        [
+          "playerStatus",
+          "String"
+        ],
+        [
+          "hasAutoCompleteTasks",
+          "Bool"
+        ],
+        [
+          "isOnboarding",
+          "Bool"
+        ],
+        [
+          "progressLevels",
+          "Array"
+        ],
+        [
+          "mainRewards",
+          "Array"
+        ],
+        [
+          "otherRewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onQuit",
+        "onContinue"
+      ],
+      "coverage": {
+        "found": 16,
+        "total": 16,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

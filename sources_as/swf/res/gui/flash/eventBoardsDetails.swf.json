@@ -1,0 +1,431 @@
+{
+ "source": "sources/res/gui/flash/eventBoardsDetails.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 289084,
+ "actual_length": 289084,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#999999",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 43,
+  "ShowFrame": 343,
+  "DefineShape": 18,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 2,
+  "PlaceObject2": 143,
+  "RemoveObject2": 12,
+  "DefineShape3": 2,
+  "DefineBitsLossless2": 17,
+  "DefineEditText": 45,
+  "DefineSprite": 42,
+  "FrameLabel": 30,
+  "FileAttributes": 1,
+  "PlaceObject3": 68,
+  "ImportAssets2": 9,
+  "CSMTextSettings": 45,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 1,
+  "DoABC2": 1,
+  "DefineShape4": 2,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 17,
+  "shapes": 24,
+  "sprites": 42,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 45,
+  "fonts": 0,
+  "classes": 29,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobby.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "iconLibrary.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "assets.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyDynamic.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobbyDynamic2.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 128,
+   "class": "EventBoardsDetailsContainerViewUI"
+  },
+  {
+   "id": 124,
+   "class": "container"
+  },
+  {
+   "id": 123,
+   "class": "EventBoardsDetailsTopPanelUI"
+  },
+  {
+   "id": 121,
+   "class": "OverlayAwardsRendererUI"
+  },
+  {
+   "id": 116,
+   "class": "BasePlayerBattleRendererUI"
+  },
+  {
+   "id": 94,
+   "class": "EventBoardsDetailsBattleViewUI"
+  },
+  {
+   "id": 90,
+   "class": "BattleExperienceBlockUI"
+  },
+  {
+   "id": 87,
+   "class": "eventBoardsDetails_fla.ribbon_17"
+  },
+  {
+   "id": 73,
+   "class": "BattleStatisticsBlockUI"
+  },
+  {
+   "id": 52,
+   "class": "EventBoardsScrollPaneUI"
+  },
+  {
+   "id": 46,
+   "class": "ScrollPaneContentUI"
+  },
+  {
+   "id": 45,
+   "class": "TableHeaderBattleUI"
+  },
+  {
+   "id": 36,
+   "class": "EventBoardsDetailsImporter"
+  },
+  {
+   "id": 35,
+   "class": "EventBoardsDetailsAwardsViewUI"
+  },
+  {
+   "id": 33,
+   "class": "AwardsTableUI"
+  },
+  {
+   "id": 32,
+   "class": "AwardsListUI"
+  },
+  {
+   "id": 31,
+   "class": "AwardsTableHeaderUI"
+  },
+  {
+   "id": 26,
+   "class": "ScrollPaneUI"
+  },
+  {
+   "id": 25,
+   "class": "BoundsContainerUI"
+  },
+  {
+   "id": 23,
+   "class": "EventBoardsDetailsBrowserViewUI"
+  },
+  {
+   "id": 21,
+   "class": "EventBoardsDetailsVehiclesViewUI"
+  },
+  {
+   "id": 17,
+   "class": "VehicleSelectorFilterUI"
+  },
+  {
+   "id": 16,
+   "class": "EventBoardsDetailsViewUI"
+  },
+  {
+   "id": 14,
+   "class": "EventBoardsDetailsViewBgUI"
+  },
+  {
+   "id": 11,
+   "class": "LevelTypeFlagRendererUI"
+  },
+  {
+   "id": 7,
+   "class": "VehicleOverlayItemRendererUI"
+  },
+  {
+   "id": 1,
+   "class": "InHangarIcon"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 15780,
+   "classes": 29,
+   "methods": 144,
+   "bodies": 144,
+   "code_bytes": 5289
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BoundsContainerUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "container",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardsTableHeaderUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.AwardsTableHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsDetailsImporter",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsDetailsViewBgUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InHangarIcon",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "eventBoardsDetails_fla.ribbon_17",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardsTableUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.view.EventBoardsDetailsAwardsTableContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleExperienceBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.battleComponents.BattleExperienceBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleStatisticsBlockUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.battleComponents.BattleStatisticsBlock",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsDetailsTopPanelUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionDetailsTopPanel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TableHeaderBattleUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.BattleViewTableHeader",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleSelectorFilterUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.VehicleSelectorFilter",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsDetailsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.missions.MissionDetailedView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollPaneUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "OverlayAwardsRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.OverlayAwardsRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsScrollPaneUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.BorderShadowScrollPane",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ScrollPaneContentUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.view.EventBoardTableContent",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BasePlayerBattleRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.BasePlayerBattleRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LevelTypeFlagRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.LevelTypeFlagRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "AwardsListUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ResizableTileList",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsDetailsAwardsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.view.EventBoardsDetailsAwardsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsDetailsBattleViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.view.EventBoardsDetailsBattleView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsDetailsBrowserViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.view.EventBoardsDetailsBrowserView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsDetailsVehiclesViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.view.EventBoardsDetailsVehiclesView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleOverlayItemRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.components.VehicleItemRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "EventBoardsDetailsContainerViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.eventBoards.EventBoardsDetailsContainerView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

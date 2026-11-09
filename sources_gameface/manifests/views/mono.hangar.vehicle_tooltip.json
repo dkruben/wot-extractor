@@ -1,0 +1,182 @@
+{
+  "rid": "R.views.mono.hangar.vehicle_tooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "vehicle_tooltip",
+  "dir": "gui/gameface/_dist/production/mono/hangar/vehicle_tooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/hangar/vehicle_tooltip/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/hangar/vehicle_tooltip/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/hangar/vehicle_tooltip/bundle.js"
+    },
+    {
+      "name": "vehicle_tooltip.css",
+      "effective": "res/gui/gameface/_dist/production/mono/hangar/vehicle_tooltip/vehicle_tooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/hangar/vehicle_tooltip/vehicle_tooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "vehicle_tooltip.html",
+      "effective": "res/gui/gameface/_dist/production/mono/hangar/vehicle_tooltip/vehicle_tooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/hangar/vehicle_tooltip/vehicle_tooltip.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/chunks/tankman_role.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/chunks/tankman_role.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/vehicle_tooltip/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/vehicle_tooltip/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/hangar/vehicle_tooltip/vehicle_tooltip.css",
+      "key": "res/gui/gameface/_dist/production/mono/hangar/vehicle_tooltip/vehicle_tooltip.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.mono.hangar.vehicle_tooltip",
+    "confidence": "provavel",
+    "evidence": [
+      "5 referencia(s) R.views.mono.hangar.vehicle_tooltip no Python",
+      "ViewModel VehiclesInventoryModel (model=... no Python da view): 1/16 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/presenters/fl_vehicle_inventory_presenter.py",
+        17
+      ],
+      [
+        "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/hangar/presenters/fun_random_vehicle_inventory_presenter.py",
+        16
+      ],
+      [
+        "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/vehicles_data_providers/ls_vehicle_inventory_presenter.py",
+        51
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/vehicle_inventory_presenter.py",
+        44
+      ],
+      [
+        "sources/res/scripts/client/gui/impl/lobby/tooltips/carousel_vehicle_tooltip.py",
+        35
+      ]
+    ],
+    "python_files": [
+      "sources/res/frontline/scripts/client/frontline/gui/impl/lobby/presenters/fl_vehicle_inventory_presenter.py",
+      "sources/res/fun_random/scripts/client/fun_random/gui/impl/lobby/hangar/presenters/fun_random_vehicle_inventory_presenter.py",
+      "sources/res/last_stand/scripts/client/last_stand/gui/impl/lobby/vehicles_data_providers/ls_vehicle_inventory_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/hangar/presenters/vehicle_inventory_presenter.py",
+      "sources/res/scripts/client/gui/impl/lobby/tooltips/carousel_vehicle_tooltip.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/hangar/sub_views/vehicles_inventory_model.py",
+      "class": "VehiclesInventoryModel",
+      "chain": [
+        "VehiclesInventoryModel"
+      ],
+      "properties": [
+        [
+          "currentVehicleIntCD",
+          "Number"
+        ],
+        [
+          "currentVehicleInventoryId",
+          "Number"
+        ],
+        [
+          "freeSlotsCount",
+          "Number"
+        ],
+        [
+          "recoverableVehicleCount",
+          "Number"
+        ],
+        [
+          "slotPrice",
+          "Number"
+        ],
+        [
+          "defaultSlotPrice",
+          "Number"
+        ],
+        [
+          "bpEntityValid",
+          "Bool"
+        ],
+        [
+          "bpStatus",
+          "String"
+        ],
+        [
+          "slotPriceCurrency",
+          "String"
+        ],
+        [
+          "hasDiscont",
+          "Bool"
+        ],
+        [
+          "telecomRentStatus",
+          "String"
+        ]
+      ],
+      "commands": [
+        "onSelect",
+        "onBuySlot",
+        "onGoBuyVehicle",
+        "onGoRecoverVehicle",
+        "onSelectTelecomRentalVehicle"
+      ],
+      "coverage": {
+        "found": 1,
+        "total": 16,
+        "missing": [
+          "bpStatus",
+          "currentVehicleIntCD",
+          "currentVehicleInventoryId",
+          "defaultSlotPrice",
+          "freeSlotsCount",
+          "hasDiscont",
+          "onBuySlot",
+          "onGoBuyVehicle",
+          "onGoRecoverVehicle",
+          "onSelect",
+          "onSelectTelecomRentalVehicle",
+          "recoverableVehicleCount",
+          "slotPrice",
+          "slotPriceCurrency",
+          "telecomRentStatus"
+        ]
+      },
+      "found_by": "model=... no Python da view",
+      "other_candidates": [
+        "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/tooltips/carousel_vehicle_tooltip_model.py"
+      ]
+    }
+  }
+}

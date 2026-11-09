@@ -1,0 +1,106 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/spaces/34_redshire/zones.xml -->
+<root>
+	<path>
+		<id>1158861748</id>
+		<name>path</name>
+		<node>
+			<name>34_airshipCrash_01_destroyed_part01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3084716414</id>
+			<transform>
+				<row0>78.57249 0 0</row0>
+				<row1>0 78.57249 0</row1>
+				<row2>0 0 78.57249</row2>
+				<row3>-393.79117 15.641614 -2.905802</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_01_destroyed_part02</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>303314733</id>
+			<transform>
+				<row0>70 0 0</row0>
+				<row1>0 77.793625 0</row1>
+				<row2>0 0 77.793625</row2>
+				<row3>-330.61896 13.83949 -1.120281</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_01_destroyed_part03</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2451781455</id>
+			<transform>
+				<row0>80 0 0</row0>
+				<row1>0 80 0</row1>
+				<row2>0 0 120</row2>
+				<row3>-273.07574 18.050732 15.478222</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_01_destroyed_part04</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1209849109</id>
+			<transform>
+				<row0>80 0 0</row0>
+				<row1>0 80 0</row1>
+				<row2>0 0 110.9583</row2>
+				<row3>-199.16422 22.527493 34.267086</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_02_destroyed_part03</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1463815960</id>
+			<transform>
+				<row0>121.67538 0 0</row0>
+				<row1>0 121.67538 0</row1>
+				<row2>0 0 121.67538</row2>
+				<row3>493.61743 13.462064 30.25219</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_02_destroyed_part01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>2233197782</id>
+			<transform>
+				<row0>75.89949 0 0</row0>
+				<row1>0 75.89949 0</row1>
+				<row2>0 0 75.89949</row2>
+				<row3>336.12244 22.727444 -7.518832</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 7</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1922416849</id>
+			<transform>
+				<row0>61.097538 0 0</row0>
+				<row1>0 61.097538 0</row1>
+				<row2>0 0 85</row2>
+				<row3>403.83047 20.65739 6.431427</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_01_destroyed_bridge</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>3646558161</id>
+			<transform>
+				<row0>37.295643 0 0</row0>
+				<row1>0 60.50487 0</row1>
+				<row2>0 0 49.613518</row2>
+				<row3>-351.32635 6.908244 -6.336331</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_redshire_pbh_z_01</name>
+			<colour>0.2 0.8 0.4 0.5</colour>
+			<id>1124641169</id>
+			<transform>
+				<row0>55 0 0</row0>
+				<row1>0 23.524092 0</row1>
+				<row2>0 0 44.03004</row2>
+				<row3>-366.93387 6.3668 217.43376</row3>
+			</transform>
+		</node>
+	</path>
+</root>

@@ -1,0 +1,40 @@
+{
+  "rid": "R.views.common.context_menu_window.context_menu_content.ContextMenuContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "ContextMenuContent",
+  "dir": "gui/unbound/views/common/context_menu_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "context_menu_content.unbound",
+      "effective": "res/gui/unbound/views/common/context_menu_window/context_menu_content.unbound",
+      "all": [
+        "res/gui/unbound/views/common/context_menu_window/context_menu_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.common.context_menu_window.context_menu_content.ContextMenuContent",
+    "confidence": "provavel",
+    "evidence": [
+      "1 referencia(s) R.views.common.context_menu_window.context_menu_content.ContextMenuContent no Python"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/pub/context_menu_window.py",
+        19
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/pub/context_menu_window.py"
+    ],
+    "coui_refs": [],
+    "view_model": null
+  }
+}

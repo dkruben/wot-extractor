@@ -1,0 +1,24 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/story_mode/gui/postmortem_panel.xml -->
+<root>
+	<settings />
+	<messages>
+		<message>
+			<name>DEATH_FROM_BUNKER</name>
+			<type>list</type>
+			<value>
+				<item>_(#story_mode.ingame_gui.extend:postmortem_messages/DEATH_FROM_BUNKER)</item>
+				<item>#FF2717,#800080</item>
+			</value>
+		</message>
+	</messages>
+	<messages>
+		<message>
+			<name>DEATH_FROM_BOT</name>
+			<type>list</type>
+			<value>
+				<item>_(#story_mode.ingame_gui.extend:postmortem_messages/DEATH_FROM_BOT)</item>
+				<item>#FF2717,#800080</item>
+			</value>
+		</message>
+	</messages>
+</root>

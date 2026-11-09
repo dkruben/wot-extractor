@@ -1,0 +1,133 @@
+{
+ "source": "sources/res/gui/flash/animations/advancedHints/bulletAPCRMutable.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 279323,
+ "actual_length": 279323,
+ "frame_size_px": [
+  0.0,
+  416.0,
+  0.0,
+  406.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 2,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 25,
+  "ShowFrame": 385,
+  "DefineShape": 14,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 537,
+  "RemoveObject2": 6,
+  "DefineShape3": 2,
+  "DefineBitsJPEG3": 1,
+  "DefineBitsLossless2": 8,
+  "DefineSprite": 24,
+  "FileAttributes": 1,
+  "SymbolClass": 2,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 9,
+  "shapes": 18,
+  "sprites": 24,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 5,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 0,
+   "class": "bulletAPCRMutable_fla.MainTimeline"
+  },
+  {
+   "id": 49,
+   "class": "bulletAPCRMutable_fla.iconFxExplosion_21"
+  },
+  {
+   "id": 40,
+   "class": "bulletAPCRMutable_fla.iconTankHeadBigShootAnim_19"
+  },
+  {
+   "id": 39,
+   "class": "bulletAPCRMutable_fla.tankShoot_16"
+  },
+  {
+   "id": 9,
+   "class": "bulletAPCRMutable_fla.iconTankBodyStyleBig_5"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 1263,
+   "classes": 5,
+   "methods": 20,
+   "bodies": 20,
+   "code_bytes": 330
+  }
+ ],
+ "classes": [
+  {
+   "name": "bulletAPCRMutable_fla.MainTimeline",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletAPCRMutable_fla.iconFxExplosion_21",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletAPCRMutable_fla.iconTankBodyStyleBig_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletAPCRMutable_fla.iconTankHeadBigShootAnim_19",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "bulletAPCRMutable_fla.tankShoot_16",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

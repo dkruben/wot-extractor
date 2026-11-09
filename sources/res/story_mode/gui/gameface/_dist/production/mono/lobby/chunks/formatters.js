@@ -1,0 +1,1 @@
+import{u as r}from"./lib.js";var e=r=>r.replace(/\s+/g,"").replace(",","").replace(".",""),a=(a,s)=>{if(void 0===a)return a;switch(s){case r.MULTI:return a.substring(1);case r.CURRENCY:case r.NUMBER:return e(a);default:return a}};export{a as n,e as t};

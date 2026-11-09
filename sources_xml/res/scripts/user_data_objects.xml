@@ -1,0 +1,43 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/user_data_objects.xml -->
+<root>
+	<MegalodChunkModel />
+	<PatrolNode />
+	<SpawnPoint />
+	<MapsTrainingSpawnPoint />
+	<PillboxBotSpawnPoint />
+	<Artillery />
+	<ArtilleryAimingPoint />
+	<ArtilleryEquipment />
+	<CameraNode />
+	<BenchmarkLocation />
+	<AimTrigger />
+	<AreaTrigger />
+	<SimplePatrolNode />
+	<CircularFlyer />
+	<LootAdvanced />
+	<LootBasic />
+	<TankHangarShadowProxy />
+	<BotPoint />
+	<Viewpoint />
+	<SpawnKeyPoint />
+	<MarkerPoint />
+	<SectorWayPoint />
+	<AiScenarioSpawnPoint />
+	<AiZoneNode />
+	<AiNavDirtyArea />
+	<AiNotAiZone />
+	<AiDeathZone />
+	<AiZoneCenter />
+	<AiZoneEntryPoint />
+	<BadNavmeshZone />
+	<PVESpawnPoint />
+	<PrebattleMarker />
+	<TriggerVehicleArea />
+	<TriggerVehicleAreaEx />
+	<DeathZoneAreaTrigger />
+	<DeathZoneAreaTriggerMask />
+	<PointOfInterestUDO />
+	<PolygonalAreaTriggerUDO />
+	<PolygonalDeathZoneAreaTrigger />
+	<AIMovementLimitZone />
+</root>

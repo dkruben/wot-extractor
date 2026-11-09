@@ -1,0 +1,121 @@
+{
+  "rid": "R.views.lobby.customization.CustomizationRarityRewardScreen",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "CustomizationRarityRewardScreen",
+  "dir": "gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen",
+  "feature": null,
+  "files": [
+    {
+      "name": "CustomizationRarityRewardScreen.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen/CustomizationRarityRewardScreen.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen/CustomizationRarityRewardScreen.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CustomizationRarityRewardScreen.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen/CustomizationRarityRewardScreen.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen/CustomizationRarityRewardScreen.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CustomizationRarityRewardScreen.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen/CustomizationRarityRewardScreen.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen/CustomizationRarityRewardScreen.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen/CustomizationRarityRewardScreen.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/customization/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/customization/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen/CustomizationRarityRewardScreen.css",
+      "key": "res/gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen/CustomizationRarityRewardScreen.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen/CustomizationRarityRewardScreen.js",
+      "key": "res/gui/gameface/_dist/production/lobby/customization/CustomizationRarityRewardScreen/CustomizationRarityRewardScreen.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [
+    "goToExterior",
+    "goToGarage"
+  ],
+  "link": {
+    "rid": "R.views.lobby.customization.CustomizationRarityRewardScreen",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.customization.CustomizationRarityRewardScreen no Python",
+      "ViewModel CustomizationRarityRewardScreenModel (convencao de nomes): 7/7 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/customization/customization_rarity_reward_screen/customization_rarity_reward_screen.py",
+        31
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/customization/customization_rarity_reward_screen/customization_rarity_reward_screen.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/customization/customization_rarity_reward_screen_model.py",
+      "class": "CustomizationRarityRewardScreenModel",
+      "chain": [
+        "CustomizationRarityRewardScreenModel"
+      ],
+      "properties": [
+        [
+          "isFirstAttachment",
+          "Bool"
+        ],
+        [
+          "name",
+          "String"
+        ],
+        [
+          "title",
+          "String"
+        ],
+        [
+          "rarity",
+          "String"
+        ],
+        [
+          "isExteriorEnabled",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "goToExterior",
+        "goToGarage"
+      ],
+      "coverage": {
+        "found": 7,
+        "total": 7,
+        "missing": []
+      },
+      "found_by": "convencao de nomes"
+    }
+  }
+}

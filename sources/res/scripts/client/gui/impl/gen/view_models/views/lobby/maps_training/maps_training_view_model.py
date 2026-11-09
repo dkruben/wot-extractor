@@ -1,0 +1,125 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/maps_training/maps_training_view_model.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/impl/gen/view_models/views/lobby/maps_training/maps_training_view_model.py
+from frameworks.wulf import Array, ViewModel
+from gui.impl.gen.view_models.views.lobby.hangar.menu_item_model import MenuItemModel
+from gui.impl.gen.view_models.views.lobby.maps_training.maps_training_group_model import MapsTrainingGroupModel
+from gui.impl.gen.view_models.views.lobby.maps_training.maps_training_map_model import MapsTrainingMapModel
+from gui.impl.gen.view_models.views.lobby.maps_training.maps_training_selected_map_model import MapsTrainingSelectedMapModel
+from gui.impl.gen.view_models.views.lobby.maps_training.maps_training_vehicle_marker_model import MapsTrainingVehicleMarkerModel
+
+class MapsTrainingViewModel(ViewModel):
+    __slots__ = ('onBack', 'onSelect', 'onScenarioSelect', 'onFilteringChange', 'onBlurRectUpdated',
+                 'onMoveSpace', 'onMouseOver3dScene', 'onInfoClicked', 'onClose',
+                 'onNavigate')
+
+    def __init__(self, properties=11, commands=10):
+        super(MapsTrainingViewModel, self).__init__(properties=properties, commands=commands)
+
+    @property
+    def selectedMapModel(self):
+        return self._getViewModel(0)
+
+    @staticmethod
+    def getSelectedMapModelType():
+        return MapsTrainingSelectedMapModel
+
+    @property
+    def vehicleMarker(self):
+        return self._getViewModel(1)
+
+    @staticmethod
+    def getVehicleMarkerType():
+        return MapsTrainingVehicleMarkerModel
+
+    def getIsMapSelected(self):
+        return self._getBool(2)
+
+    def setIsMapSelected(self, value):
+        self._setBool(2, value)
+
+    def getIncompleteFilter(self):
+        return self._getBool(3)
+
+    def setIncompleteFilter(self, value):
+        self._setBool(3, value)
+
+    def getTitleFilter(self):
+        return self._getString(4)
+
+    def setTitleFilter(self, value):
+        self._setString(4, value)
+
+    def getIsDataLoaded(self):
+        return self._getBool(5)
+
+    def setIsDataLoaded(self, value):
+        self._setBool(5, value)
+
+    def getMaps(self):
+        return self._getArray(6)
+
+    def setMaps(self, value):
+        self._setArray(6, value)
+
+    @staticmethod
+    def getMapsType():
+        return MapsTrainingMapModel
+
+    def getGroups(self):
+        return self._getArray(7)
+
+    def setGroups(self, value):
+        self._setArray(7, value)
+
+    @staticmethod
+    def getGroupsType():
+        return MapsTrainingGroupModel
+
+    def getMenuItems(self):
+        return self._getArray(8)
+
+    def setMenuItems(self, value):
+        self._setArray(8, value)
+
+    @staticmethod
+    def getMenuItemsType():
+        return MenuItemModel
+
+    def getModeName(self):
+        return self._getString(9)
+
+    def setModeName(self, value):
+        self._setString(9, value)
+
+    def getModeId(self):
+        return self._getString(10)
+
+    def setModeId(self, value):
+        self._setString(10, value)
+
+    def _initialize(self):
+        super(MapsTrainingViewModel, self)._initialize()
+        self._addViewModelProperty('selectedMapModel', MapsTrainingSelectedMapModel())
+        self._addViewModelProperty('vehicleMarker', MapsTrainingVehicleMarkerModel())
+        self._addBoolProperty('isMapSelected', False)
+        self._addBoolProperty('incompleteFilter', False)
+        self._addStringProperty('titleFilter', '')
+        self._addBoolProperty('isDataLoaded', False)
+        self._addArrayProperty('maps', Array())
+        self._addArrayProperty('groups', Array())
+        self._addArrayProperty('menuItems', Array())
+        self._addStringProperty('modeName', '')
+        self._addStringProperty('modeId', '')
+        self.onBack = self._addCommand('onBack')
+        self.onSelect = self._addCommand('onSelect')
+        self.onScenarioSelect = self._addCommand('onScenarioSelect')
+        self.onFilteringChange = self._addCommand('onFilteringChange')
+        self.onBlurRectUpdated = self._addCommand('onBlurRectUpdated')
+        self.onMoveSpace = self._addCommand('onMoveSpace')
+        self.onMouseOver3dScene = self._addCommand('onMouseOver3dScene')
+        self.onInfoClicked = self._addCommand('onInfoClicked')
+        self.onClose = self._addCommand('onClose')
+        self.onNavigate = self._addCommand('onNavigate')

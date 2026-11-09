@@ -1,0 +1,3157 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/common/constants.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from typing import Any
+import calendar as calendar
+import enum as enum
+import time as time
+import typing as typing
+from enum import IntEnum as IntEnum
+from builtins import zip as zip
+from math import cos as cos, radians as radians
+from time import time as timestamp
+from collections import namedtuple as namedtuple
+from itertools import chain as chain
+from functools import reduce as reduce
+from future.utils import iteritems as iteritems, lmap as lmap, lrange as lrange, viewitems as viewitems
+from past.builtins import xrange as xrange
+from Math import Vector3 as Vector3, Vector2 as Vector2
+from py2to3.patched_future import with_metaclass as with_metaclass
+from realm import CURRENT_REALM as CURRENT_REALM
+from typing import Sequence as Sequence, Union as Union
+import ResMgr as ResMgr
+IS_VS_EDITOR: Any
+IS_UE_EDITOR: Any
+IS_CLIENT: Any
+IS_EDITOR: Any
+IS_BOT: Any
+IS_CELLAPP: Any
+IS_BASEAPP: Any
+IS_WEB: Any
+IS_DYNUPDATER = False
+IS_LOAD_GLOSSARY = False
+IS_CGF_DUMP: Any
+IS_PROCESS_REPLAY: Any
+IS_UNKNOWN: Any
+IS_COMMON_ENV: Any
+DEFAULT_LANGUAGE = 'ru'
+AUTH_REALM = 'RU'
+IS_DEVELOPMENT: Any
+IS_CHINA: Any
+IS_KOREA: Any
+IS_SINGAPORE: Any
+IS_SANDBOX: Any
+IS_CT: Any
+REALMS: Any
+OVERRIDE_CODES: Any
+REGIONAL_REALMS: Any
+CURRENT_REALM_IS_REGIONAL: Any
+NULL_CLUSTER_ID = BigWorld.NULL_CLUSTER_ID
+STANDALONE_CLUSTER_ID = BigWorld.DEFAULT_CLUSTER_ID
+SPECIAL_OL_FILTER: Any
+IS_RENTALS_ENABLED = True
+IS_SHOW_SERVER_STATS: Any
+LEAKS_DETECTOR_MAX_EXECUTION_TIME = 2.0
+IS_IGR_ENABLED: Any
+SERVER_TICK_LENGTH = 0.1
+HALF_SERVER_TICK: Any
+NULL_ENTITY_ID = 0
+SHELL_TRAJECTORY_EPSILON_CLIENT = 0.03
+SHELL_TRAJECTORY_EPSILON_SERVER = 0.1
+SHELL_TRAJECTORY_EPSILON_AI = 1.0
+ARENA_TYPE_XML_PATH = 'scripts/arena_defs/'
+ITEM_DEFS_PATH = 'scripts/item_defs/'
+VOICE_CHAT_INIT_TIMEOUT = 10
+MAX_OPENED_ANOTHER_DOSSIERS = 4
+ENABLE_DEBUG_DYNAMICS_INFO = False
+IS_CLIENT_BUILD = False
+ENABLE_TKILL_BANS = True
+HAS_DEV_RESOURCES: Any
+IS_DEVELOPMENT_BUILD: Any
+MODULE_NAME_SEPARATOR = ', '
+MAX_LOG_EXT_INFO_LEN = 255
+INT_POWERS_OF_2: tuple
+ARENA_GAMEPLAY_NAMES: tuple
+ARENA_GAMEPLAY_READABLE_NAMES: tuple
+ARENA_GAMEPLAY_IDS: Any
+ARENA_GAMEPLAY_MASK_DEFAULT = 1048575
+VALID_TRAINING_ARENA_GAMEPLAY_IDS: Any
+VALID_PREBATTLE_GAMEPLAY_IDS = VALID_TRAINING_ARENA_GAMEPLAY_IDS
+ARENA_BONUS_TYPE_NAMES: dict
+ARENA_BONUS_TYPE_IDS: dict
+ARENA_PERIOD_NAMES: dict
+ARENA_SYNC_OBJECT_NAMES: dict
+JOIN_FAILURE_NAMES: dict
+KICK_REASON_NAMES: dict
+FINISH_REASON_NAMES: dict
+PREBATTLE_TYPE_NAMES: dict
+PREBATTLE_COMMENT_MAX_LENGTH = 400
+PREBATTLE_MAX_OBSERVERS_IN_TEAM = 5
+OBSERVERS_BONUS_TYPES: tuple
+UNIT_COMMENT_MAX_LENGTH = 400
+UNIT_MAX_SEND_INVITES = 100
+PRIME_GAMING_SUBSCRIPTION_PRODUCT = 'prime_subscription'
+ENTITLEMENT_TO_PREM_TYPE: dict
+PREM_TYPE_TO_ENTITLEMENT: dict
+BASE_PREM_FACTOR = 1.0
+DAILY_QUESTS_CONFIG = 'daily_quests_config'
+DOG_TAGS_CONFIG = 'dog_tags_config'
+OPTIONAL_DEVICES_USAGE_CONFIG = 'optional_devices_usage_config'
+PLAYER_SUBSCRIPTIONS_CONFIG = 'player_subscriptions_config'
+IS_LOOT_BOXES_ENABLED = 'isLootBoxesEnabled'
+MAGNETIC_AUTO_AIM_CONFIG = 'magnetic_auto_aim_config'
+BATTLE_NOTIFIER_CONFIG = 'battle_notifier_config'
+BATTLE_ACHIEVEMENTS_CONFIG = 'battle_achievements_config'
+ACTIVE_TEST_CONFIRMATION_CONFIG = 'active_test_confirmation_config'
+TOURNAMENT_CONFIG = 'tournament_config'
+MISC_GUI_SETTINGS = 'misc_gui_settings'
+META_GAME_SETTINGS = 'meta_game_settings'
+MAPS_TRAINING_ENABLED_KEY = 'isMapsTrainingEnabled'
+OFFERS_ENABLED_KEY = 'isOffersEnabled'
+INBATTLE_CONFIGS: list
+SPA_RESTR_NAME_TO_RESTR_TYPE: dict
+RESTR_TYPE_TO_SPA_NAME: dict
+BAN_REASONS: list
+BAN_REASON_BY_ID: Any
+ID_BY_BAN_REASON: dict
+ATTACK_REASONS: list
+ATTACK_REASON_INDICES: dict
+BOT_RAM_REASONS: tuple
+WORLD_ATTACK_REASONS: tuple
+BATTLE_FEEDBACK_REASONS_AFTER_DEATH: Any
+DEATH_REASON_ALIVE = -1
+VEHICLE_HIT_FLAGS_BY_NAME: dict
+FIRE_NOTIFICATION_CODES: tuple
+FIRE_NOTIFICATION_INDICES: Any
+DAMAGE_INFO_CODES: list
+DEFAULT_QUEST_START_TIME = 1
+DEFAULT_QUEST_FINISH_TIME = 4102444800
+PERSONAL_MISSION_FREE_TOKEN_NAME = 'free_award_list'
+PERSONAL_MISSION_2_FREE_TOKEN_NAME = 'free_award_list_2'
+PERSONAL_MISSION_FREE_TOKEN_EXPIRE = 4104777660
+PERSONAL_MISSION_PAWN_COST = 1
+PERSONAL_MISSION_FINAL_PAWN_COST = 4
+PERSONAL_MISSION_2_FINAL_PAWN_COST = 3
+PERSONAL_MISSION_FREE_TOKENS_LIMIT = 21
+RESOURCE_TOKEN_PREFIX = 'resource:'
+CURRENCY_TOKEN_PREFIX = 'currency:'
+PREMIUM_TOKEN_PREFIX = 'prem_acc'
+EPIC_ABILITY_PTS_NAME = 'abilityPts'
+OFFER_TOKEN_PREFIX = 'offer:'
+ENDLESS_TOKEN_TIME_STRING = '28.01.2100 00:01'
+ENDLESS_TOKEN_TIME: Any
+END_OF_GAME_DAY: dict
+LOOTBOX_TOKEN_PREFIX = 'lootBox:'
+REROLL_STOP_TOKEN_PREFIX = 'reroll_stop:'
+TWITCH_TOKEN_PREFIX = 'token:twitch'
+CUSTOMIZATION_PROGRESS_PREFIX = 'cust_progress_'
+STYLE_3D_PROGRESS_PREFIX = 'style_3D_progress'
+EMAIL_CONFIRMATION_QUEST_ID = 'email_confirmation'
+EMAIL_CONFIRMATION_TOKEN_NAME = 'acc_completion:email_confirm'
+DEMO_ACCOUNT_ATTR = 'isDemoAccount'
+HAS_PM1_COMPLETED_TOKEN = 'has_completed_pm1'
+HAS_PM2_COMPLETED_TOKEN = 'has_completed_pm2'
+HAS_PM3_COMPLETED_TOKEN = 'has_completed_pm3'
+HAS_PM4_COMPLETED_TOKEN = 'has_completed_pm4'
+HAS_PM_BRANCH_COMPLETED_TOKEN = 'has_completed_pm_branch'
+PM_FINISHED_OPERATION_TEMPLATE = 'token:pt:s{}:t{}:finished:base'
+PM_FINISHED_WITH_HONOR_OPERATION_TEMPLATE = 'token:pt:s{}:t{}:finished:honor'
+PM_FINISHED_WITH_HONOR_SEASON_TEMPLATE = 'token:pt:s{}:finished:honor'
+LINKED_SET_UNFINISHED_TOKEN = 'linkedset_unfinished'
+FREE_PREMIUM_CREW_LOG_EXT_PREFIX = 'free_premium_crew:level:'
+ATTACHMENTS_SET_TOKEN_PREFIX = 'attachments_set'
+DAMAGE_INFO_INDICES: dict
+DAMAGE_INFO_CODES_PER_ATTACK_REASON: dict
+CLIENT_INACTIVITY_TIMEOUT = 40
+CHAT_MESSAGE_MAX_LENGTH = 1024
+CHAT_MESSAGE_MAX_LENGTH_IN_BATTLE = 140
+VEHICLE_CLASSES: tuple
+VEHICLE_CLASS_INDICES: Any
+VEHICLE_CLASSES_DETECTED_BY_ENEMY_SHOT_PREDICTOR: set
+MIN_VEHICLE_LEVEL = 1
+MAX_VEHICLE_LEVEL = 11
+VEHICLE_NO_INV_ID = -1
+QUEUE_TYPE_NAMES: dict
+QUEUE_TYPE_IDS: dict
+ARENA_BONUS_TYPE_TO_QUEUE_TYPE: dict
+USER_ACTIVE_CHANNELS_LIMIT = 100
+SEASON_TYPE_BY_NAME: dict
+SEASON_NAME_BY_TYPE: dict
+CHANNEL_SEARCH_RESULTS_LIMIT = 50
+USER_SEARCH_RESULTS_LIMIT = 50
+USE_SERVER_BAD_WORDS_FILTER = IS_CHINA
+CURRENT_SERVER_BAD_WORDS_FILTER_MODE = SERVER_BAD_WORDS_FILTER_MODE.CHANNEL
+CREDENTIALS_RESTRICTION_SET = CREDENTIALS_RESTRICTION.BASIC
+IS_SHOW_INGAME_HELP_FIRST_TIME = False
+DENUNCIATIONS_PER_DAY = 10
+GROUND_TYPE_BY_NAME: dict
+GROUND_TYPE_NAME_BY_INDEX: dict
+TREE_TAG = 'tree'
+CUSTOM_DESTRUCTIBLE_TAGS: tuple
+DESTR_CODES_BY_TAGS: dict
+DESTR_TAGS_BY_CODES: dict
+SYS_MESSAGE_CLAN_EVENT_NAMES: dict
+SYS_MESSAGE_FORT_EVENT_NAMES: dict
+FORT_BUILDING_TYPE_NAMES: dict
+FORT_ORDER_TYPE_NAMES: dict
+INT_USER_SETTINGS_KEYS: dict
+AUTH_TOKEN_REQUEST_TIMEOUT = 35.0
+OBSERVER_VEH_INVENTORY_ID = -5000
+OBSERVER_VEH_NAME = 'ussr:Observer'
+PREBATTLE_INVITE_STATUS_NAMES: dict
+FLAG_VOLUME_RADIUS = 10.0
+GLOBAL_MAP_DIVISION_NAMES: dict
+DEFAULT_EXTERNAL_UNIT_DIVISION = 10
+VEHICLE_MODES: tuple
+VEHICLE_MODE_INDICES: Any
+VEHICLE_ATTRS_TO_SYNC: Any
+VEHICLE_ATTRS_TO_SYNC_ALIASES: dict
+SHELL_TYPES_LIST: tuple
+BATTLE_RESULT_WAITING_TIMEOUT = 0.1
+SHELL_TYPES_INDICES: Any
+BATTLE_LOG_SHELL_TYPES_MAP: tuple
+PIERCING_POWER_INTERPOLATION_DIST_FIRST = 50.0
+PIERCING_POWER_INTERPOLATION_DIST_LAST = 500.0
+DAMAGE_INTERPOLATION_DIST_FIRST = 50.0
+DAMAGE_INTERPOLATION_DIST_LAST = 500.0
+EPIC_RANDOM_GROUPS = 3
+EPIC_RANDOM_GAMEPLAY_NAMES: tuple
+EPIC_RANDOM_GAMEPLAY_IDS: Any
+EPIC_RANDOM_GAMEPLAY_MASK: Any
+WGC_PUBLICATION_TO_DISTRIBUTION_PLATFORM: dict
+GIFT_TANKMAN_TOKEN_NAME = 'WOTD-95479_gift_tankman'
+GRACE_PERIOD_RESET_PERK = 'grace_period_reset_perk'
+ENABLE_FREE_PREMIUM_CREW = False
+GAMEPLAY_NAMES_WITH_DISABLED_QUESTS: tuple
+BotNamingConfig: Any
+EMPTY_GEOMETRY_ID = 0
+ROLE_LEVELS: Any
+ROLE_LABEL_TO_TYPE: dict
+ROLE_TYPE_TO_LABEL: Any
+COMMON_ROLE_TO_ROLE_TYPE: dict
+ROLE_TYPE_TO_COMMON_ROLE: dict
+ACTION_LABEL_TO_TYPE: dict
+ACTION_TYPE_TO_LABEL: Any
+ROLES_COLLAPSE = 'rolesSectionCollapsed'
+UNKNOWN_VEHICLE_ID = 0
+UNKNOWN_RESPAWN_ID = -1
+UNKNOWN_GUN_INDEX = -1
+DEFAULT_GUN_INDEX = 0
+DUPLET_GUN_INDEXES: list
+DUPLET_GUN_INDEXES_TUPLE: Any
+UNKNOWN_GUN_INSTALLATION_INDEX = -1
+DEFAULT_GUN_INSTALLATION_INDEX = 0
+SECONDS_IN_DAY = 86400
+DailyQuestDecorationMap: dict
+DEFAULT_VECTOR_3: tuple
+DamageAbsorptionLabelToType: dict
+DamageAbsorptionTypeToLabel: Any
+EQUIPMENT_COOLDOWN_MOD_SUFFIX = 'CooldownMod'
+CHANCE_TO_HIT_SUFFIX_FACTOR = 'ChanceToHitDeviceMod'
+MAPS_REWARDS_INDEX: dict
+BATTLE_MODE_VEHICLE_TAGS: set
+BATTLE_MODE_VEH_TAGS_EXCEPT_REGULAR: Any
+BATTLE_MODE_VEH_TAGS_EXCEPT_EVENT: Any
+BATTLE_MODE_VEH_TAGS_EXCEPT_EPIC: Any
+BATTLE_MODE_VEH_TAGS_EXCEPT_CLAN: Any
+DEFAULT_POSTMORTEM_SETTINGS: dict
+QUESTS_SUPPORTED_EXCLUDE_TAGS: set
+VEHICLE_HEALTH_DECIMALS = 1
+INVALID_TIMESTAMP = -1
+DEFAULT_HANGAR_SCENE = 'DEFAULT'
+BATTLE_ROYALE_SCENE = 'BATTLE_ROYALE'
+FESTIVAL_SCENE = 'FESTIVAL'
+COMP7_SCENE = 'COMP7'
+COMP7_LIGHT_SCENE = 'COMP7_LIGHT'
+VEHICLE_SELECTION_BLOCK_DELAY = 2
+CURFEW_PLAY_LIMIT = 'curfew'
+WEEKLY_PLAY_LIMIT = 'weeklyPlayLimit'
+DAILY_PLAY_LIMIT = 'dailyPlayLimit'
+SESSION_PLAY_LIMIT = 'sessionLimit'
+PLAY_LIMITS: tuple
+VEHICLE_NO_CREW_TRANSFER_PENALTY_TAG = 'noCrewTransferPenalty'
+VEHICLE_PREMIUM_TAG = 'premium'
+VEHICLE_WOT_PLUS_TAG = 'wotPlus'
+VEHICLE_SECRET_TAG = 'secret'
+DEATH_ZONE_MASK_PATTERN = 'deathzone_mask_'
+PVE_MINIMAP_DEFAULT_ZOOM = 1.0
+PVE_MINIMAP_DEFAULT_BORDERS: tuple
+INFINITE_SHELL_TAG = 'infinite'
+INFINITE_SHELL_COUNT = 9
+FORCE_FINITE_SHELL_TAG = 'forceFinite'
+PICKLER_PROTOCOL_METHODS: Any
+DEFAULT_VEHICLE_BOUNDING_RADIUS = 11.2
+RAMMING_EFFECT_THRESHOLD = 600
+IMPROVED_RAMMING_EFFECT_THRESHOLD = 100
+VEHICLE_MIN_ABS_INITIAL_SPEED_IN_KM_PER_HOUR = 1
+VEHICLE_MIN_ABS_INITIAL_SPEED_IN_METERS_PER_SECOND = 0.1
+VEHICLE_MIN_ABS_INITIAL_SPEED = 0.1
+SHOT_PREDICTION_BUFFER = 0.3
+QUEST_BONUS_TYPES: set
+
+class BigWorld:
+    component = 'Unknown'
+
+class REALM_HELPER:
+    @staticmethod
+    def toRealm(override_code):
+        ...
+    @staticmethod
+    def toOverride(realm):
+        ...
+
+class BIN_FLAGS_META(type):
+    def __init__(cls, name, bases, dct):
+        ...
+
+# base nao representavel no stub: with_metaclass(...)
+class BIN_FLAGS:
+    @classmethod
+    def getBinFlagNames(cls, binFlags, force=...):
+        ...
+
+class SPT_MATKIND:
+    SOLID = 71
+    LEAVES = 72
+
+class DESTRUCTIBLE_MATKIND:
+    MIN = 71
+    MAX = 100
+    NORMAL_MIN = 73
+    NORMAL_MAX = 86
+    DAMAGED_MIN = 87
+    DAMAGED_MAX = 100
+
+class DOSSIER_TYPE:
+    ACCOUNT = 1
+    VEHICLE = 2
+    TANKMAN = 4
+    FORTIFIED_REGIONS = 8
+    RATED7X7 = 16
+    CLUB = 32
+    CLAN = 64
+
+class DOSSIER_RECORD_COMBINATION_TYPE:
+    ADD = 0
+    MAX = 1
+
+class HANGAR_VISIBILITY_TAGS:
+    LAYERS: tuple
+    FIRST_BIT_RANKED: Any
+    RANKED_TAGS: tuple
+    FIRST_BIT_REGIONS = 16
+    REGIONS: tuple
+    IDS: Any
+    NAMES: Any
+    ALL_BITS_DEFAULT: Any
+
+class ARENA_GUI_TYPE:
+    UNKNOWN = 0
+    RANDOM = 1
+    TRAINING = 2
+    CYBERSPORT = 5
+    FALLOUT = 6
+    EVENT_BATTLES = 7
+    FALLOUT_CLASSIC = 13
+    FALLOUT_MULTITEAM = 14
+    SORTIE_2 = 15
+    FORT_BATTLE_2 = 16
+    RANKED = 17
+    EPIC_RANDOM = 19
+    EPIC_RANDOM_TRAINING = 20
+    EPIC_BATTLE = 21
+    EPIC_TRAINING = 22
+    BATTLE_ROYALE = 23
+    MAPBOX = 24
+    MAPS_TRAINING = 25
+    RTS = 26
+    RTS_TRAINING = 27
+    RTS_BOOTCAMP = 28
+    WINBACK = 31
+    STORY_MODE_ONBOARDING = 100
+    STORY_MODE_REGULAR = 104
+    RANGE: tuple
+    RANDOM_RANGE: tuple
+    FALLOUT_RANGE: tuple
+    EPIC_RANGE: tuple
+    STRONGHOLD_RANGE: tuple
+    VOIP_SUPPORTED: Any
+    BATTLE_CHAT_SETTING_SUPPORTED: tuple
+    NON_DESERTION_ARENAS: tuple
+    REPLAY_DISABLE_RANGE: list
+
+class ARENA_GUI_TYPE_LABEL:
+    LABELS: dict
+
+class ARENA_BONUS_TYPE:
+    UNKNOWN = 0
+    REGULAR = 1
+    TRAINING = 2
+    TOURNAMENT = 4
+    CLAN = 5
+    CYBERSPORT = 7
+    EVENT_BATTLES = 9
+    GLOBAL_MAP = 13
+    TOURNAMENT_REGULAR = 14
+    TOURNAMENT_CLAN = 15
+    FALLOUT_CLASSIC = 18
+    FALLOUT_MULTITEAM = 19
+    SORTIE_2 = 20
+    FORT_BATTLE_2 = 21
+    RANKED = 22
+    EPIC_RANDOM = 24
+    EPIC_RANDOM_TRAINING = 25
+    EVENT_BATTLES_2 = 26
+    EPIC_BATTLE = 27
+    EPIC_BATTLE_TRAINING = 28
+    BATTLE_ROYALE_SOLO = 29
+    BATTLE_ROYALE_SQUAD = 30
+    TOURNAMENT_EVENT = 31
+    BOB = 32
+    EVENT_RANDOM = 33
+    BATTLE_ROYALE_TRN_SOLO = 34
+    BATTLE_ROYALE_TRN_SQUAD = 35
+    WEEKEND_BRAWL = 36
+    MAPBOX = 37
+    MAPS_TRAINING = 38
+    RTS = 39
+    RTS_1x1 = 40
+    RTS_BOOTCAMP = 41
+    COMP7 = 43
+    WINBACK = 44
+    RANDOM_NP2 = 46
+    TOURNAMENT_COMP7 = 47
+    TRAINING_COMP7 = 48
+    COMP7_LIGHT = 49
+    STORY_MODE_ONBOARDING = 100
+    STORY_MODE_REGULAR = 104
+    RANGE: tuple
+    RANDOM_RANGE: tuple
+    FALLOUT_RANGE: tuple
+    TOURNAMENT_RANGE: tuple
+    BATTLE_ROYALE_RANGE: tuple
+    BATTLE_ROYALE_REGULAR_RANGE: tuple
+    BATTLE_ROYALE_SQUAD_RANGE: tuple
+    RTS_RANGE: tuple
+    RTS_BATTLES: tuple
+    EXTERNAL_RANGE: tuple
+
+class ARENA_BONUS_MASK:
+    TYPE_BITS: Any
+    ANY: Any
+    @staticmethod
+    def mask(*args):
+        ...
+    @staticmethod
+    def exclude(*args):
+        ...
+    @classmethod
+    def reInit(cls):
+        ...
+
+class ARENA_PERIOD:
+    IDLE = 0
+    WAITING = 1
+    PREBATTLE = 2
+    BATTLE = 3
+    AFTERBATTLE = 4
+
+class ARENA_UPDATE:
+    VEHICLE_LIST = 1
+    VEHICLE_ADDED = 2
+    PERIOD = 3
+    STATISTICS = 4
+    VEHICLE_STATISTICS = 5
+    VEHICLE_KILLED = 6
+    AVATAR_READY = 7
+    BASE_POINTS = 8
+    BASE_CAPTURED = 9
+    TEAM_KILLER = 10
+    VEHICLE_UPDATED = 11
+    COMBAT_EQUIPMENT_USED = 12
+    FLAG_TEAMS = 16
+    FLAG_STATE_CHANGED = 17
+    INTERACTIVE_STATS = 19
+    RESOURCE_POINT_STATE_CHANGED = 21
+    OWN_VEHICLE_INSIDE_RP = 22
+    OWN_VEHICLE_LOCKED_FOR_RP = 23
+    SYNC_OBJECTS = 24
+    SYNC_OBJECTS_DIFF = 25
+    VIEW_POINTS = 26
+    FOG_OF_WAR = 27
+    VEHICLE_RECOVERED = 28
+    RADAR_INFO_RECEIVED = 29
+    SETTINGS = 30
+    VEHICLE_DESCR = 31
+
+class ARENA_SYNC_OBJECTS:
+    PLAYER_GROUP = 1
+    RESPAWN = 2
+    PLAYER_RANK = 3
+    FRONT_LINE = 4
+    SECTOR = 5
+    OVERTIME = 6
+    SMOKE = 7
+    BR_DEATH_ZONE = 8
+
+class JOIN_FAILURE:
+    TIME_OUT = 1
+    NOT_FOUND = 2
+    ACCOUNT_LOCK = 3
+    WRONG_VEHICLE = 4
+    TEAM_IS_FULL = 5
+    WRONG_ARGS = 6
+    WRONG_ARENA_STATE = 8
+    CANNOT_CREATE = 9
+    PRIVACY = 10
+    WRONG_ACCOUNT_TYPE = 11
+    COOLDOWN = 12
+    FORBIDDEN_IN_THIS_REGION = 13
+    EVENT_DISABLED = 14
+    WRONG_PERIPHERY_ID = 15
+    WRONG_VEHICLE_LVL = 16
+    QUEUE_FULL = 17
+    QUEUE_FAILURE = 18
+    QUEUE_FORBIDDEN = 19
+    NOT_ENOUGH_VEHICLES = 20
+
+class KICK_REASON:
+    ARENA_CREATION_FAILURE = 1
+    AVATAR_CREATION_FAILURE = 2
+    VEHICLE_CREATION_FAILURE = 3
+    PREBATTLE_CREATION_FAILURE = 4
+    BASEAPP_CRASH = 5
+    CELLAPP_CRASH = 6
+    UNKNOWN_FAILURE = 7
+    FINISHED = 8
+    CREATOR_LEFT = 9
+    PLAYERKICK = 10
+    TIMEOUT = 11
+    MODE_DISABLED = 12
+    SERVER_SHUT_DOWN = 13
+
+class FINISH_REASON:
+    UNKNOWN = 0
+    EXTERMINATION = 1
+    BASE = 2
+    TIMEOUT = 3
+    FAILURE = 4
+    TECHNICAL = 5
+    WIN_POINTS_CAP = 6
+    WIN_POINTS = 7
+    ALLY_KILLED = 8
+    OWN_VEHICLE_DESTROYED = 9
+    DESTROYED_OBJECTS = 10
+    OBJECTIVES_COMPLETED = 11
+    RIGGED_BATTLE = 12
+    AFK = 101
+
+class ARENA_EXT_MSG:
+    UNKNOWN = 0
+    ACCEPTED = 1
+    CREATED = 2
+    STARTED = 3
+    FINISHED = 4
+    FAILED = 5
+    PLAYER_JOINED = 6
+    PLAYER_LEFT = 7
+    ALL_JOINED = STARTED
+
+class PREBATTLE_TYPE:
+    NONE = 0
+    SQUAD = 1
+    TRAINING = 2
+    COMPANY = 3
+    TOURNAMENT = 4
+    CLAN = 5
+    UNIT = 6
+    CLUBS = 9
+    FALLOUT = 10
+    EVENT = 11
+    STRONGHOLD = 12
+    E_SPORT_COMMON = 14
+    EPIC = 15
+    EPIC_TRAINING = 16
+    BATTLE_ROYALE = 17
+    BATTLE_ROYALE_TOURNAMENT = 18
+    MAPBOX = 19
+    MAPS_TRAINING = 20
+    RTS = 21
+    RTS_TRAINING = 22
+    FUN_RANDOM = 23
+    STORY_MODE = 100
+    RANGE: tuple
+    LEGACY_PREBATTLES: tuple
+    SQUAD_PREBATTLES: tuple
+    UNIT_MGR_PREBATTLES: tuple
+    CREATE_FROM_CLIENT: tuple
+    CREATE_FROM_WEB: tuple
+    TRAININGS: tuple
+    EXTERNAL_PREBATTLES: tuple
+    CREATE_EX_FROM_SERVER: tuple
+    CREATE_EX_FROM_WEB: tuple
+    JOIN_EX: tuple
+    EPIC_PREBATTLES: tuple
+    RTS_PREBATTLES: tuple
+    REMOVED: tuple
+    TRANSFER_PREBATTLES: tuple
+
+class PREBATTLE_START_TYPE:
+    DIRECT = 1
+    SQUAD = 2
+    RANGE: tuple
+
+class PREBATTLE_ROLE:
+    TEAM_READY_1 = 1
+    TEAM_READY_2 = 2
+    ASSIGNMENT_1 = 4
+    ASSIGNMENT_2 = 8
+    ASSIGNMENT_1_2 = 16
+    SEE_1 = 32
+    SEE_2 = 64
+    SELF_ASSIGNMENT_1 = 128
+    SELF_ASSIGNMENT_2 = 256
+    KICK_1 = 512
+    KICK_2 = 1024
+    CHANGE_ARENA = 2048
+    CHANGE_COMMENT = 4096
+    OPEN_CLOSE = 8192
+    INVITE = 16384
+    CHANGE_ARENA_VOIP = 32768
+    CHANGE_DIVISION = 65536
+    CHANGE_GAMEPLAYSMASK = 131072
+    TRAINING_DEFAULT: Any
+    TRAINING_CREATOR: Any
+    SQUAD_DEFAULT = SEE_1
+    SQUAD_CREATOR: Any
+
+class PREBATTLE_SEQUENCE_EVENT_NAMES:
+    ON_ANIMATION = 'onAnimation'
+    ON_START_PBH_STAGE = 'onStartPbhStage'
+    ON_PBH_ENDS = 'onPbhEnds'
+    ON_FOCUS_CAMERA_0 = 'onFocusCamera0'
+    ON_FOCUS_CAMERA_1 = 'onFocusCamera1'
+    ON_FOCUS_CAMERA_2 = 'onFocusCamera2'
+    ON_PET_HIGHLIGHT_ANIM = 'onPetHighlightAnim'
+
+class PREBATTLE_STATE:
+    IDLE = 0
+    IN_QUEUE = 1
+    IN_BATTLE = 2
+
+class PREBATTLE_TEAM_STATE:
+    NOT_READY = 1
+    READY = 2
+    LOCKED = 3
+
+class PREBATTLE_ACCOUNT_STATE:
+    UNKNOWN = 0
+    NOT_READY = 1
+    AFK: Any
+    READY = 4
+    IN_BATTLE = 8
+    OFFLINE = 16
+    MAIN_STATE_MASK: Any
+
+class PREBATTLE_ERRORS:
+    ROSTER_LIMIT = 'ROSTER_LIMIT'
+    ONSLAUGHT_ROSTER_LIMIT = 'ONSLAUGHT_ROSTER_LIMIT'
+    INVALID_VEHICLE = 'INVALID_VEHICLE'
+    OBSERVERS_LIMIT = 'OBSERVERS_LIMIT'
+    PLAYERS_LIMIT = 'PLAYERS_LIMIT'
+    INSUFFICIENT_ROLE = 'INSUFFICIENT_ROLE'
+    PROHIBITED_ARENA_TYPE = 'PROHIBITED_ARENA_TYPE'
+
+class PREBATTLE_UPDATE:
+    ROSTER = 1
+    PLAYER_ADDED = 2
+    PLAYER_REMOVED = 3
+    PLAYER_STATE = 4
+    PLAYER_ROSTER = 5
+    TEAM_STATES = 6
+    SETTINGS = 7
+    SETTING = 8
+    KICKED_FROM_QUEUE = 9
+    PROPERTIES = 10
+    PROPERTY = 11
+    PLAYER_GROUP = 12
+
+class PREBATTLE_CACHE_KEY:
+    TYPE = 1
+    IS_OPENED = 2
+    STATE = 3
+    IS_FULL = 4
+    PLAYER_COUNT = 5
+    CREATOR = 6
+    CREATE_TIME = 7
+    START_TIME = 8
+    COMMENT = 9
+    DESCRIPTION = 10
+    ARENA_TYPE_ID = 11
+    ROUND_LENGTH = 12
+    CREATOR_CLAN_DB_ID = 14
+    CREATOR_CLAN_ABBREV = 15
+    CREATOR_IGR_TYPE = 17
+    CREATOR_DB_ID = 18
+    CREATOR_BADGES = 19
+    CLUSTER_ID = 20
+
+class PREBATTLE_INVITE_STATE:
+    ACTIVE = 1
+    ACCEPTED = 2
+    DECLINED = 3
+    EXPIRED = 4
+
+class UNIT_FINDER:
+    RESULTSET_SIZE = 20
+
+class ACCOUNT_TYPE2:
+    FIRST_FLAG = 1
+    LAST_FLAG = 16384
+    ACCOUNT_TYPE_DEFAULT = 16777216
+    EXHIBITION = 67108864
+    TOURNAMENT = 83886080
+    DEMONSTRATOR = 100663296
+    DEMONSTRATOR_EXP = 117440512
+    EXHIBITION_CLAN = 134217728
+    BOOTCAMP = 184549376
+    PLAYER_ROAMING = 1677721600
+    MODERATOR = 65536
+    ADMIN = 131072
+    ADMIN_MODERATOR = 196608
+    MODERATOR_500 = 458752
+    MODERATOR_250 = 524288
+    MODERATOR_750 = 589824
+    ADMIN_500 = 655360
+    ADMIN_250 = 720896
+    ADMIN_750 = 786432
+    ADMIN_MODERATOR_500 = 851968
+    ADMIN_MODERATOR_250 = 917504
+    ADMIN_MODERATOR_750 = 983040
+    AOGAS = 1114112
+    @staticmethod
+    def getPrimaryGroup(type):
+        ...
+    @staticmethod
+    def getSecondaryGroup(type):
+        ...
+    @staticmethod
+    def getFlags(type):
+        ...
+    @staticmethod
+    def getAttrs(cache, type):
+        ...
+    @staticmethod
+    def makeAccountType(primary, secondary, flags):
+        ...
+
+class ACCOUNT_FLAGS:
+    ALPHA = 1
+    CBETA = 2
+    OBETA = 4
+
+class ACCOUNT_ATTR:
+    RANDOM_BATTLES = 1
+    CLAN = 4
+    MERCENARY = 8
+    RATING = 16
+    USER_INFO = 32
+    STATISTICS = 64
+    ARENA_CHANGE = 128
+    CHAT_ADMIN = 256
+    ADMIN = 512
+    ROAMING = 1024
+    DAILY_MULTIPLIED_XP = 2048
+    PAYMENTS = 4096
+    OUT_OF_SESSION_WALLET = 8192
+    EXCLUDED_FROM_FAIRPLAY = 16384
+    BATTLE_TYPE_CHANGE = 32768
+    DAILY_BONUS_1 = 2097152
+    DAILY_BONUS_2 = 4194304
+    ALPHA = 536870912
+    CBETA = 1073741824
+    OBETA = 2147483648
+    PREMIUM = 4294967296
+    AOGAS = 8589934592
+    IGR_BASE = 34359738368
+    IGR_PREMIUM = 68719476736
+    SUSPENDED = 137438953472
+    NEWBIE_FEATURES_DISABLED = 274877906944
+
+class PREMIUM_TYPE:
+    NONE = 0
+    BASIC = 1
+    PLUS = 2
+    VIP = 4
+    TYPES_SORTED: tuple
+    ANY: Any
+    AFFECTING_TYPES: Any
+    AFFECTING_TYPES_SET: tuple
+    @classmethod
+    def activePremium(cls, premMask):
+        ...
+    @classmethod
+    def initialData(cls):
+        ...
+
+class PREMIUM_ENTITLEMENTS:
+    BASIC = 'premium'
+    PLUS = 'premium_plus'
+    VIP = 'premium_vip'
+    ALL_TYPES: tuple
+
+class RENEWABLE_SUBSCRIPTION_ENTITLEMENTS(object):
+    CORE = 'premium_subs'
+    PRO = 'premium_pro_subs'
+    ALL_TYPES: tuple
+
+class ENTITLEMENT_OPS:
+    GRANT = 'grant'
+    FORCED_GRANT = 'forced_grant'
+    CONSUME = 'consume'
+    FORCED_CONSUME = 'forced_consume'
+    ALL: tuple
+    GRANT_ALL: tuple
+    CONSUME_ALL: tuple
+
+class PREM_BONUS_TYPES:
+    CREDITS = 0
+    XP = 1
+    TMEN_XP = 2
+    DYN_CURRENCIES = 3
+
+class PremiumConfigs(object):
+    DAILY_BONUS = 'additionalBonus_config'
+    PREM_QUESTS = 'premQuests_config'
+    PIGGYBANK = 'piggyBank_config'
+    IS_PREFERRED_MAPS_ENABLED = 'isPreferredMapsEnabled'
+    PREFERRED_MAPS = 'preferredMaps_config'
+    PREM_SQUAD = 'premSquad_config'
+
+class Configs(enum.Enum):
+    BATTLE_ROYALE_CONFIG = 'battle_royale_config'
+    EPIC_CONFIG = 'epic_config'
+    MAPBOX_CONFIG = 'mapbox_config'
+    GIFTS_CONFIG = 'gifts_config'
+    CRYSTAL_REWARDS_CONFIG = 'crystal_rewards_config'
+    CUSTOMIZATION_QUESTS = 'customizationQuests'
+    UI_LOGGING = 'ui_logging_config'
+    BATTLE_MATTERS_CONFIG = 'battle_matters_config'
+    PERIPHERY_ROUTING_CONFIG = 'periphery_routing_config'
+    PERSONAL_RESERVES_CONFIG = 'personal_reserves_config'
+    PLAY_LIMITS_CONFIG = 'play_limits_config'
+    PRE_MODERATION_CONFIG = 'pre_moderation_config'
+    SPAM_PROTECTION_CONFIG = 'spam_protection_config'
+    COLLECTIONS_CONFIG = 'collections_config'
+    WINBACK_CONFIG = 'winback_config'
+    ACHIEVEMENTS20_CONFIG = 'achievements20_config'
+    AB_FEATURE_TEST = 'ab_feature_test'
+    LIMITED_UI_CONFIG = 'limited_ui_config'
+    MAPS_IN_DEVELOPMENT_CONFIG = 'maps_in_development'
+    NOVICE_MATCHMAKING_SYSTEM = 'novice_matchmaking_system'
+    TRIGGER_SYSTEM_CONFIG = 'trigger_system_config'
+    PRESTIGE_CONFIG = 'prestige_config'
+    PRESTIGE_MILESTONES_CONFIG = 'prestige_milestones_config'
+    STEAM_SHADE_CONFIG = 'steam_shade_config'
+    SYSTEM_CHANNELS = 'system_channels'
+    REFERRAL_PROGRAM_CONFIG = 'referral_program_config'
+    FAIRPLAY_CONFIG = 'fairplay_config'
+    ARENA_DYN_OBSTACLES_CONFIG = 'arena_dyn_obstacles_config'
+    POSTMORTEM_SETTINGS_CONFIG = 'postmortem_settings_config'
+    LIVE_OPS_EVENTS_CONFIG = 'live_ops_events_config'
+    ADVANCED_ACHIEVEMENTS_CONFIG = 'advanced_achievements_config'
+    LOOTBOXES_TOOLTIP_CONFIG = 'lootboxes_tooltip_config'
+    UNIT_ASSEMBLER_CONFIG = 'unit_assembler_config'
+    EASY_TANK_EQUIP_CONFIG = 'easy_tank_equip_config'
+    PLAYER_SATISFACTION_CONFIG = 'player_satisfaction_config'
+    COMMENDATIONS_CONFIG = 'commendations_config'
+    VEH_PLAYLISTS_CONFIG = 'veh_playlists_config'
+    SENIORITY_AWARDS_CONFIG = 'seniority_awards_config'
+    WTR_CONFIG = 'wtr_config'
+    WEEKLY_QUESTS_CONFIG = 'weekly_quests_config'
+    WEEKLY_QUESTS_CONFIGS = 'weekly_quests_configs'
+    RENEWABLE_SUBSCRIPTION_CONFIG = 'renewable_subscription_config'
+    INGAME_TOURNAMENT_CONFIG = 'ingame_tournament_config'
+    W2GT_CONFIG = 'w2gt_config'
+    CHALLENGES_CONFIG = 'challenges_config'
+    PRE_BATTLE_HIGHLIGHTS_CONFIG = 'pbh_config'
+    GAMEFACE_HUD_CONFIG = 'gameface_hud_config'
+
+class RESTRICTION_TYPE:
+    NONE = 0
+    BAN = 1
+    CHAT_BAN = 3
+    CLAN = 5
+    MINORS_RESTRICTION = 6
+    ARENA_BAN = 7
+    RANGE: tuple
+
+class RESTRICTION_SOURCE:
+    UNKNOWN = 0
+    SERVER = 1
+    CLIENT = 2
+    BACKYARD = 3
+    MIGRATOR = 4
+    FORUM = 5
+    PAYMENT_SYSTEM = 6
+    WARGAG = 7
+    SUPPORT = 8
+    WGRS = 9
+    WGCOMMENTS = 10
+    XMPPCS = 11
+    WGPS = 12
+    WGATS = 13
+    ADIOS = 14
+    PADRE = 15
+    AUTOMAGIC_SCRIPTS = 16
+    CSA = 17
+    SPA = 18
+
+class SPA_ATTRS:
+    ANONYM_RESTRICTED = '/wot/game/anonym_restricted/'
+    GOLFISH_BONUS_APPLIED = '/common/goldfish_bonus_applied/'
+    LOGGING_ENABLED = '/wot/game/logging_enabled/'
+    STEAM_ALLOW = '/wot/steam/allow/'
+    RSS = '/wot/game/service/rss/'
+    USER_COUNTRY = 'user_stated_country'
+    @staticmethod
+    def toClientAttrs():
+        ...
+
+class CLAN_MEMBER_FLAGS(object):
+    LEADER = 1
+    VICE_LEADER = 2
+    RECRUITER = 4
+    TREASURER = 8
+    DIPLOMAT = 16
+    COMMANDER = 32
+    PRIVATE = 64
+    RECRUIT = 128
+    STAFF = 256
+    JUNIOR = 512
+    RESERVIST = 1024
+    MAY_CHANGE_SETTINGS: Any
+    MAY_EDIT_RECRUIT_PROFILE: Any
+    MAY_CHANGE_ROLE: Any
+    MAY_CHANGE_COMMANDER = LEADER
+    MAY_HANDLE_INVITES: Any
+    MAY_INVITE: Any
+    MAY_REMOVE_MEMBERS: Any
+    MAY_REMOVE_CLAN = LEADER
+    MAY_ACTIVATE_ORDER: Any
+    MAY_EXCHANGE_MONEY: Any
+
+class BAN_TYPE(object):
+    ACCESS_DENIED = 'access_denied'
+    COMMUNICATION_DENIED = 'communication_denied'
+    PUBLIC_COMMUNICATION_DENIED = 'public_communication_denied'
+    PRIVATE_COMMUNICATION_DENIED = 'private_communication_denied'
+    NONFRIEND_PRIVATE_COMMUNICATION_DENIED = 'nonfriend_private_communication_denied'
+    ARENA_BAN_PREFIX = 'arena_ban_'
+    _PRIVATE_MESSAGE_BANS: tuple
+    _COMMUNICATION_BANS: Any
+    _BATTLE_MESSAGES_BANS: tuple
+    @classmethod
+    def isAnyCommunicationBan(cls, ban):
+        ...
+    @classmethod
+    def isPrivateMessagesBan(cls, ban):
+        ...
+    @classmethod
+    def isBattleMessagesBan(cls, ban):
+        ...
+    @classmethod
+    def isArenaBan(cls, ban):
+        ...
+    @classmethod
+    def makeArenaBanType(cls, bonusType):
+        ...
+
+class BAN_REASON(object):
+    PARENTAL_CONTROL = '#ban_reason:parental_control'
+    COUNTRY = '#ban_reason:country'
+    OTHER = '#ban_reason:other'
+
+class RESTRICTION_KEY(object):
+    PRIVATE_CHAT = 'privateChat'
+    PUBLIC_CHAT = 'publicChat'
+    SETTINGS = 'settings'
+    SESSION = 'session'
+    PAYMENT = 'payment'
+
+class CLAN_ROLES(object):
+    LEADER = 'commander'
+    VICE_LEADER = 'executive_officer'
+    RECRUITER = 'recruitment_officer'
+    TREASURER = 'quartermaster'
+    DIPLOMAT = 'intelligence_officer'
+    COMMANDER = 'combat_officer'
+    PRIVATE = 'private'
+    RECRUIT = 'recruit'
+    STAFF = 'personnel_officer'
+    JUNIOR = 'junior_officer'
+    RESERVIST = 'reservist'
+    FLAGS_TO_ROLES: dict
+    @classmethod
+    def getRole(cls, memberFlags):
+        ...
+    @classmethod
+    def getFlagByRole(cls, memberRole):
+        ...
+
+class AIMING_MODE:
+    SHOOTING = 1
+    TARGET_LOCK = 16
+    USER_DISABLED = 256
+
+class VEHICLE_SETTING:
+    CURRENT_SHELLS = 0
+    NEXT_SHELLS = 1
+    AUTOROTATION_ENABLED = 2
+    SIEGE_MODE_ENABLED = 3
+    ACTIVATE_EQUIPMENT = 16
+    RELOAD_PARTIAL_CLIP = 17
+    RESET_FULL_CLIP = 18
+
+class VEHICLE_TTC_ASPECTS:
+    DEFAULT = 0
+    WHEN_MOVING = 1
+    WHEN_STILL = 2
+    WHEN_SIEGE = 3
+    RANGE: tuple
+
+class VEHICLE_MISC_STATUS:
+    OTHER_VEHICLE_DAMAGED_DEVICES_VISIBLE = 0
+    IS_OBSERVED_BY_ENEMY = 1
+    _NOT_USED = 2
+    VEHICLE_IS_OVERTURNED = 3
+    VEHICLE_DROWN_WARNING = 4
+    IN_DEATH_ZONE = 5
+    DESTROYED_DEVICE_IS_REPAIRING = 7
+    SIEGE_MODE_STATE_CHANGED = 9
+    BURNOUT_WARNING = 10
+    BURNOUT_UNAVAILABLE_DUE_TO_BROKEN_ENGINE = 11
+    DUALGUN_CHARGER_STATE = 14
+
+class DUALGUN_CHARGER_STATUS:
+    BEFORE_PREPARING = -1
+    APPLIED = 0
+    CANCELED = 1
+    PREPARING = 2
+    UNAVAILABLE = 3
+
+class DUALGUN_CHARGER_ACTION_TYPE:
+    CANCEL = 0
+    START_WITH_DELAY = 1
+    START_IMMEDIATELY = 2
+
+class EQUIPMENT_STAGES:
+    NOT_RUNNING = 0
+    DEPLOYING = 1
+    UNAVAILABLE = 2
+    READY = 3
+    PREPARING = 4
+    ACTIVE = 5
+    COOLDOWN = 6
+    SHARED_COOLDOWN = 7
+    STARTUP_COOLDOWN = 8
+    WAIT_FOR_CHOICE = 9
+    INTERRUPTED = 10
+    EXHAUSTED = 255
+    ALL: tuple
+    @classmethod
+    def toString(cls, value):
+        ...
+
+class TEAM_BASE_STAGES:
+    NONE = 0
+    CAPTURING = 1
+    BLOCKED = 2
+    CAPTURED = 3
+
+class VEHICLE_SPECIAL_DEATH:
+    NONE = 0
+    AMMO_BAY_EXPLOSION = 1
+
+class DEVELOPMENT_INFO:
+    ATTACK_RESULT = 1
+    FIRE_RESULT = 2
+    BONUSES = 3
+    VISIBILITY = 4
+    VEHICLE_ATTRS = 5
+    QUERY_RESULT = 6
+    EXPLOSION_RAY = 7
+    FRONTLINE = 9
+    SERVER_DEBUG = 10
+    ENABLE_SENDING_VEH_ATTRS_TO_CLIENT = False
+
+class AMMOBAY_DESTRUCTION_MODE:
+    POWDER_BURN_OFF = 0
+    POWDER_EXPLOSION = 1
+    HE_DETONATION = 2
+
+class SPECIAL_VEHICLE_HEALTH:
+    DESTR_BY_FALL_RAMMING = -2
+    FUEL_EXPLODED = -3
+    AMMO_BAY_DESTROYED = -5
+    AMMO_BAY_EXPLODED: Any
+    TURRET_DETACHED: Any
+    @staticmethod
+    def IS_DESTR_BY_FALL_RAMMING(health):
+        ...
+    @staticmethod
+    def IS_FUEL_EXPLODED(health):
+        ...
+    @staticmethod
+    def IS_AMMO_BAY_DESTROYED(health):
+        ...
+    @staticmethod
+    def IS_AMMO_BAY_EXPLODED(health):
+        ...
+    @staticmethod
+    def IS_TURRET_DETACHED(health):
+        ...
+
+class AOI:
+    ENABLE_MANUAL_RULES = True
+    VEHICLE_CIRCULAR_AOI_RADIUS = 565.0
+    CIRCULAR_AOI_MARGIN = 5.0
+    VEHICLE_CIRCULAR_AOI_RADIUS_HYSTERESIS_MARGIN: Any
+    UPDATE_INTERVAL = 1
+
+class ATTACK_REASON(object):
+    SHOT = 'shot'
+    FIRE = 'fire'
+    RAM = 'ramming'
+    WORLD_COLLISION = 'world_collision'
+    DEATH_ZONE = 'death_zone'
+    DROWNING = 'drowning'
+    GAS_ATTACK = 'gas_attack'
+    OVERTURN = 'overturn'
+    MANUAL = 'manual'
+    ARTILLERY_PROTECTION = 'artillery_protection'
+    ARTILLERY_SECTOR = 'artillery_sector'
+    BOMBERS = 'bombers'
+    RECOVERY = 'recovery'
+    ARTILLERY_EQ = 'artillery_eq'
+    BOMBER_EQ = 'bomber_eq'
+    MINEFIELD_EQ = 'minefield_eq'
+    SPAWNED_BOT_EXPLOSION = 'spawned_bot_explosion'
+    BERSERKER = 'berserker_eq'
+    SMOKE = 'smoke'
+    CORRODING_SHOT = 'corrodingShot'
+    ADAPTATION_HEALTH_RESTORE = 'AdaptationHealthRestore'
+    THUNDER_STRIKE = 'thunderStrike'
+    FIRE_CIRCLE = 'fireCircle'
+    CLING_BRANDER = 'clingBrander'
+    CLING_BRANDER_RAM = 'ram_cling_brander'
+    BRANDER_RAM = 'ram_brander'
+    FORT_ARTILLERY_EQ = 'fort_artillery_eq'
+    STATIC_DEATH_ZONE = 'static_deathzone'
+    CGF_WORLD = 'cgf_world'
+    VEHICLE_EXPLOSION = 'vehicle_explosion'
+    BUNKER_DESTROYED = 'bunker_destroyed'
+    MINEFIELD_ZONE = 'minefield_zone'
+    BATTLESHIP = 'battleship'
+    DESTROYER = 'destroyer'
+    DAMAGE_ZONE = 'damage_zone'
+    ULTIMATE = 'ultimate'
+    OVERHEAT_EXECUTE = 'overheat_execute'
+    HE_ROCKET = 'he_rocket'
+    NONE = 'none'
+    @classmethod
+    def getIndex(cls, attackReason):
+        ...
+    @classmethod
+    def getValue(cls, index):
+        ...
+
+class REPAIR_TYPE:
+    AUTO = 0
+    KIT = 1
+
+class VEHICLE_HIT_EFFECT:
+    ARMOR_PIERCED_NO_DAMAGE = 0
+    INTERMEDIATE_RICOCHET = 1
+    FINAL_RICOCHET = 2
+    ARMOR_NOT_PIERCED = 3
+    ARMOR_PIERCED = 4
+    CRITICAL_HIT = 5
+    ARMOR_PIERCED_DEVICE_DAMAGED = 6
+    MAX_CODE = ARMOR_PIERCED_DEVICE_DAMAGED
+    RICOCHETS: tuple
+    PIERCED_HITS: tuple
+    PIERCED_DAMAGED_HITS: tuple
+    INVALID = 15
+    _GROUP_MAPPING: dict
+    @classmethod
+    def getEffectGroup(cls, hitEffect):
+        ...
+
+class VEHICLE_HIT_FLAGS(BIN_FLAGS):
+    VEHICLE_KILLED = 1
+    VEHICLE_WAS_DEAD_BEFORE_ATTACK = 2
+    FIRE_STARTED = 4
+    RICOCHET = 8
+    MATERIAL_WITH_POSITIVE_DF_PIERCED_BY_PROJECTILE = 16
+    MATERIAL_WITH_POSITIVE_DF_NOT_PIERCED_BY_PROJECTILE = 32
+    ARMOR_WITH_ZERO_DF_PIERCED_BY_PROJECTILE = 64
+    ARMOR_WITH_ZERO_DF_NOT_PIERCED_BY_PROJECTILE = 128
+    DEVICE_PIERCED_BY_PROJECTILE = 256
+    DEVICE_NOT_PIERCED_BY_PROJECTILE = 512
+    DEVICE_DAMAGED_BY_PROJECTILE = 1024
+    CHASSIS_DAMAGED_BY_PROJECTILE = 2048
+    GUN_DAMAGED_BY_PROJECTILE = 4096
+    MATERIAL_WITH_POSITIVE_DF_PIERCED_BY_EXPLOSION = 8192
+    ARMOR_WITH_ZERO_DF_PIERCED_BY_EXPLOSION = 16384
+    DEVICE_PIERCED_BY_EXPLOSION = 32768
+    DEVICE_DAMAGED_BY_EXPLOSION = 65536
+    CHASSIS_DAMAGED_BY_EXPLOSION = 131072
+    GUN_DAMAGED_BY_EXPLOSION = 262144
+    CHASSIS_DAMAGED_BY_RAMMING = 524288
+    ATTACK_IS_DIRECT_PROJECTILE = 1048576
+    ATTACK_IS_EXTERNAL_EXPLOSION = 2097152
+    STUN_STARTED = 4194304
+    ATTACK_IS_RICOCHET_PROJECTILE = 8388608
+    ATTACK_IS_COMPRESSION = 16777216
+    MATERIAL_WITH_POSITIVE_DF_NOT_PIERCED_WITH_DAMAGE_BY_PROJECTILE = 33554432
+    HAS_DESTRUCTIBLE_TARGET = 67108864
+    IS_ANY_DAMAGE_MASK: Any
+    IS_ANY_PIERCING_MASK: Any
+    IS_ANY_IMPACT_MASK: Any
+    IS_ANY_PIERCING_BY_PROJECTILE_MASK: Any
+    IS_SHELL_HIT_TO_VEHICLE_MASK: Any
+    IS_ANY_PIERCING_DAMAGE_PROJECTILE_MASK: Any
+
+class IGR_TYPE:
+    NONE = 0
+    BASE = 1
+    PREMIUM = 2
+    RANGE: tuple
+
+class EVENT_TYPE:
+    ACTION = 1
+    BATTLE_QUEST = 2
+    TOKEN_QUEST = 3
+    PERSONAL_QUEST = 6
+    REF_SYSTEM_QUEST_DEPRECATED = 7
+    POTAPOV_QUEST = 8
+    PERSONAL_MISSION = 8
+    GROUP = 9
+    TUTORIAL = 11
+    MOTIVE_QUEST = 12
+    RANKED_QUEST = 13
+    ELEN_QUEST = 14
+    HANGAR_QUEST = 15
+    NT_QUEST = 16
+    C11N_PROGRESSION = 17
+    LAST = 17
+    NAME_TO_TYPE: dict
+    TYPE_TO_NAME: Any
+    QUEST_RANGE: tuple
+    LIKE_BATTLE_QUESTS: tuple
+    LIKE_TOKEN_QUESTS: tuple
+    ONE_BONUS_QUEST: tuple
+    QUEST_WITH_DYNAMIC_CLIENT_DATA: tuple
+    SHARED_QUESTS: tuple
+    QUESTS_WITH_SHOP_BUTTON: tuple
+    QUEST_WITHOUT_DYNAMIC_UPDATE: tuple
+    QUEST_USE_FOR_C11N_PROGRESS: tuple
+    MISC_DATA_RANGE: tuple
+
+class BATTLE_PROGRESS_CATEGORY:
+    DAILY_QUESTS = 0
+    WEEKLY_QUESTS = 1
+    BATTLE_MATTERS = 2
+    BATTLE_PASS = 3
+    PERSONAL_MISSONS_3 = 4
+    PRESTIGE = 5
+    RESEARCH_NEW_MODULES_AND_VEHICLES = 6
+    COMMON_QUESTS = 7
+    CHALLENGES_MISSIONS = 10
+
+class QUEST_DATA_IDX:
+    QUESTS = 0
+    IN_VARS = 1
+    OUT_VARS = 2
+    ALIASES = 3
+    KILLED_CLAN_SETS = 4
+    VEHICLE_SETS = 5
+    ACHIEVEMENT_SETS = 6
+    IN_CLAN_SETS = 7
+    CLAN_CAMOUFLAGES = 8
+    MISC = 9
+    TOKEN2IDXS = 10
+    INVENTORY_SETS = 11
+
+class QUEST_SOURCE:
+    DYNAMIC = 1
+    STATIC = 2
+    AUTO_GENERATED = 3
+    BATTLE_AND_TOKEN = 4
+    ALIAS_PREFIXES: dict
+
+class QUEST_RUN_FLAGS:
+    POSTBATTLE = 1
+    LOGIN = 2
+    CLICK = 3
+    POSTRANKED = 4
+    RANGE: tuple
+    NAME_TO_TYPE: dict
+    TYPE_TO_NAME: dict
+
+class QUEST_CODE_TYPE:
+    XMLAUTOGENERATED = 0
+    HANDCODED = 1
+
+class CHAT_LOG:
+    NONE = 0
+    MESSAGES = 1
+    ACTIONS = 2
+
+class PROMO_CUTOUT:
+    OFF = 0
+    ON = 1
+
+class VEHICLE_CLASS:
+    LIGHT_TANK = 'lightTank'
+    MEDIUM_TANK = 'mediumTank'
+    HEAVY_TANK = 'heavyTank'
+    SPG = 'SPG'
+    AT_SPG = 'AT-SPG'
+
+class TEAMS_IN_ARENA:
+    MAX_TEAMS = 40
+    MIN_TEAMS = 2
+    ANY_TEAM = 0
+
+class QUEUE_TYPE:
+    UNKNOWN = 0
+    RANDOMS = 1
+    COMPANIES = 2
+    VOLUNTEERS = 3
+    UNITS = 5
+    EVENT_BATTLES = 7
+    UNIT_ASSEMBLER = 8
+    SPEC_BATTLE = 13
+    FALLOUT_CLASSIC = 14
+    FALLOUT_MULTITEAM = 15
+    STRONGHOLD_UNITS = 16
+    RANKED = 17
+    EPIC = 19
+    TOURNAMENT_UNITS = 20
+    BATTLE_ROYALE = 21
+    BATTLE_ROYALE_TOURNAMENT = 22
+    MAPBOX = 23
+    MAPS_TRAINING = 24
+    RTS = 25
+    RTS_1x1 = 26
+    RTS_BOOTCAMP = 27
+    FUN_RANDOM = 28
+    COMP7 = 29
+    WINBACK = 30
+    RANDOM_NP2 = 32
+    COMP7_LIGHT = 33
+    STORY_MODE = 100
+    FALLOUT: tuple
+    FUN_RANDOM_RANGE: tuple
+    ALL: tuple
+    REMOVED: tuple
+    BASE_ON_DEQUEUE: tuple
+
+class INVOICE_EMITTER:
+    PAYMENT_SYSTEM = 1
+    BACKYARD = 2
+    COMMUNITY = 3
+    PORTAL = 4
+    DEVELOPMENT = 5
+    CN_GIFT = 6
+    CN_BUY = 7
+    ACTION_APPLIER = 9
+    WG = 10
+    WGCW = 11
+    PSS = 12
+    WOTRP = 13
+    NEGATIVE: tuple
+    RANGE: tuple
+
+class INVOICE_ASSET:
+    GOLD = 1
+    CREDITS = 2
+    PREMIUM = 3
+    DATA = 4
+    FREE_XP = 5
+    FORT_RESOURCE = 6
+    CRYSTAL = 7
+    EVENT_COIN = 8
+    BPCOIN = 9
+    PURCHASE = 10
+    EQUIP_COIN = 11
+
+class INVOICE_LIMITS:
+    GOLD_MAX = 1000000
+    CRYSTAL_MAX = 1000000
+    CREDITS_MAX = 100000000
+    FORT_RESOURCE_MAX = 100000000
+    FREEXP_MAX = 100000000
+    EVENT_COIN_MAX = 1000000
+    BPCOIN_MAX = 1000000
+    SLOTS_MAX = 1000
+    BERTHS_MAX = 1000
+    TOKENS_MAX = 10000
+    GOODIES_MAX = 1000
+    PERMANENT_CUST_MAX = 100
+    NON_PERMANENT_CUST_MAX = 365
+    TMAN_FREEXP_MAX = 100000000
+    TMAN_SKILLS_MAX = 5
+    CREW_SKINS = 100
+    BLUEPRINTS_MAX = 1000
+    PREMIUM_DAYS_MAX = 1830
+    BATTLE_PASS_POINTS = 100000
+    ENTITLEMENTS_MAX = 10000
+    RANKED_DAILY_BATTLES_MAX = 1000
+    RANKED_BONUS_BATTLES_MAX = 1000
+    EQUIP_COIN_MAX = 1000000
+
+class RentType(object):
+    NO_RENT = 0
+    TIME_RENT = 1
+    BATTLES_RENT = 2
+    WINS_RENT = 3
+    SEASON_RENT = 4
+    SEASON_CYCLE_RENT = 5
+    WOTPLUS_RENT = 6
+    TELECOM_RENT = 7
+
+class GameSeasonType(object):
+    NONE = 0
+    RANKED = 1
+    EPIC = 2
+    BATTLE_ROYALE = 3
+    MAPBOX = 4
+    EVENT_BATTLES = 5
+
+class USER_SEARCH_MODE:
+    ALL = 0
+    ONLINE = 1
+    OFFLINE = 2
+
+class AOGAS_TIME:
+    REDUCED_GAIN = 10200
+    NO_GAIN = 17400
+    RESET = 18000
+
+class SERVER_BAD_WORDS_FILTER_MODE:
+    ACCOUNT = 1
+    CHANNEL = 2
+
+class CREDENTIALS_RESTRICTION:
+    BASIC = 0
+    CHINESE = 1
+    KOREA = 3
+    SANDBOX = 4
+    CT = 5
+
+class AUTO_MAINTENANCE_TYPE:
+    REPAIR = 1
+    LOAD_AMMO = 2
+    EQUIP = 3
+    EQUIP_BOOSTER = 4
+    CUSTOMIZATION = 5
+
+class AUTO_MAINTENANCE_RESULT:
+    OK = 0
+    NOT_ENOUGH_ASSETS = 1
+    NOT_PERFORMED = 2
+    DISABLED_OPTION = 3
+    RENT_IS_OVER = 5
+    RENT_IS_ALMOST_OVER = 6
+    BUY_NOT_AUTO_EQUIP = 7
+
+class REQUEST_COOLDOWN:
+    PLAYER_DOSSIER = 1.0
+    PLAYER_CLAN_INFO = 1.0
+    PLAYER_GLOBAL_RATING = 1.0
+    PLAYERS_GLOBAL_RATING = 1.0
+    PREBATTLE_CREATION = 4.0
+    PREBATTLE_NOT_READY = 2.0
+    PREBATTLE_TEAM_NOT_READY = 1.0
+    PREBATTLE_JOIN = 1.0
+    PREBATTLE_INVITES = 8.0
+    REQUEST_CHAT_TOKEN = 10.0
+    REQUEST_WEB_TOKEN = 4.0
+    REQUEST_TOKEN = 10.0
+    UNIT_CHANGE_FLAGS = 4.0
+    UNIT_SET_READY = 2.0
+    UNIT_BROWSER_REFRESH = 4.0
+    CLIENT_LOG_UX_DATA_COOLDOWN = 2.0
+    CLIENT_LOG_XMPP_DATA_COOLDOWN = 10.0
+    CALL_GM_METHOD = 0.5
+    GM_KEEP_ALIVE = 60.0
+    SEND_INVITATION_COOLDOWN = 1.0
+    RUN_QUEST = 1.0
+    PAWN_FREE_AWARD_LIST = 1.0
+    LOOTBOX = 1.0
+    LOOTBOX_REROLL = 1.0
+    BADGES = 2.0
+    CREW_SKINS = 0.3
+    BPF_COMMAND = 1.0
+    BPF_SEEN = 0.2
+    FL_REWARD = 5.0
+    NATION_CHANGE = 5.0
+    MAKE_DENUNCIATION = 1.0
+    PREFERRED_MAPS = 1.0
+    APPLY_ADDITIONAL_XP = 2.0
+    SINGLE_TOKEN = 5.0
+    CMD_BUY_VEHICLE = 5.0
+    ANONYMIZER = 1.0
+    UPDATE_IN_BATTLE_PLAYER_RELATIONS = 1.0
+    FLUSH_RELATIONS = 1.0
+    EQUIP_ENHANCEMENT = 1.0
+    DISMOUNT_ENHANCEMENT = 1.0
+    BUY_BATTLE_PASS = 1.0
+    BUY_BATTLE_PASS_LEVELS = 1.0
+    ABILITIES = 1.0
+    CREW_BOOKS = 0.5
+    REPAIR_VEHICLE = 0.5
+    RECEIVE_OFFER_GIFT = 1.0
+    RECEIVE_OFFER_GIFT_MULTIPLE = 1.0
+    SET_OFFER_BANNER_SEEN = 0.3
+    EQUIP_OPTDEV = 1.0
+    CHANGE_EVENT_ENQUEUE_DATA = 1.0
+    CMD_EQUIP_OPT_DEVS_SEQUENCE = 1.0
+    MAPS_TRAINING_INITIAL_CONFIGURATION = 2.5
+    BLUEPRINTS_CONVERT_SALE = 1.0
+    TANKMAN_RESPECIALIZE = 1.0
+    POST_PROGRESSION_BASE = 1.0
+    POST_PROGRESSION_CELL = 0.5
+    SYNC_GIFTS = 0.5
+    WATCH_REPLAY = 5.0
+    VEHICLE_IN_BATTLE_SWITCH = 2.0
+    VEHICLE_BAN_SELECTION = 0.5
+    SET_VIVOX_PRESENCE = 0.5
+    UNIT_UPDATE_EXTRAS = 2.0
+    SET_ACHIEVEMENTS20_LAYOUT = 1.0
+    COMPLEX_OPERATION = 10.0
+    CMD_EQUIP_TMAN = 0.5
+    CMD_TMAN_RESTORE = 1.0
+    CMD_REMOVE_ONBOARDING = 10
+    CMD_EXCHANGE = 1.0
+    CMD_FREE_XP_CONV = 1.0
+    RESET_ALL_TANKMEN_SKILLS = 60.0
+    FILL_ALL_TANKMEN_SKILLS = 60.0
+    CMD_EASY_TANK_EQUIP_APPLY = 1.0
+    CMD_SELLING = 3.0
+    CMD_PET_SYSTEM_BUY_PET = 1.0
+    CMD_PET_SYSTEM_SELECT_ACTIVE_PET = 1.0
+    CMD_PET_SYSTEM_INTERACT_WITH_EVENT = 0.5
+    CMD_PET_SYSTEM_SELECT_PET_STATE_BEHAVIOR = 1.0
+    CMD_PET_SYSTEM_SELECT_PET_NAME = 1.0
+    CMD_PET_SYSTEM_SELECT_ACTIVE_PET_BONUS = 0.5
+    CMD_PET_SYSTEM_ADD_SYNERGY = 1.0
+    CMD_CHALLENGE_ACTIVATE = 5.0
+    CMD_CHALLENGE_RESTART = 5.0
+    CMD_CHALLENGE_SURRENDER = 5.0
+    CMD_CHALLENGES_CHEAT = 1.0
+
+class REQUEST_RATE_LIMIT:
+    RESET_NOVELTY_MARKERS: tuple
+
+class DENUNCIATION:
+    NOT_FAIR_PLAY = 1
+    FORBIDDEN_NICK = 2
+    BOT = 3
+    INCORRECT_BEHAVIOR = 7
+
+class VIOLATOR_KIND:
+    UNKNOWN = 0
+    ENEMY = 1
+    ALLY = 2
+
+class DROWN_WARNING_LEVEL:
+    SAFE = 0
+    CAUTION = 1
+    DANGER = 2
+    @classmethod
+    def isDrowning(cls, warningLevel):
+        ...
+
+class OVERTURN_WARNING_LEVEL:
+    SAFE = 0
+    CAUTION = 1
+    DANGER = 2
+    BLOCKED = 3
+    @classmethod
+    def isOverturned(cls, warningLevel):
+        ...
+
+class OVERTURN_CONDITION:
+    IGNORING_DELAY = 0.3
+    ONBOARD_COSINE: Any
+    OVERTURN_COSINE: Any
+    HULL_PRESSURE = 0.1
+
+class ARTILLERY_STRIKE_ZONE_STATUS:
+    OUTSIDE_ZONE = 0
+    INSIDE_ZONE = 1
+
+class SYS_MESSAGE_CLAN_EVENT:
+    LEFT_CLAN = 1
+
+class SYS_MESSAGE_FORT_EVENT:
+    FORT_READY = 1
+    RESERVE_ACTIVATED = 2
+    RESERVE_EXPIRED = 3
+    RESERVE_PRODUCED = 4
+    STORAGE_OVERFLOW = 5
+    ORDER_CANCELED = 6
+    REATTACHED_TO_BASE = 7
+    DEF_HOUR_ACTIVATED = 8
+    OFF_DAY_ACTIVATED = 9
+    VACATION_STARTED = 10
+    VACATION_FINISHED = 11
+    DEF_HOUR_SHUTDOWN = 12
+    DEF_HOUR_CHANGED = 13
+    PERIPHERY_CHANGED = 14
+    BUILDING_DAMAGED = 15
+    BASE_DESTROYED = 16
+    SPECIAL_ORDER_EXPIRED = 17
+    ORDER_COMPENSATED = 18
+    ATTACK_PLANNED = 19
+    DEFENCE_PLANNED = 20
+    BATTLE_DELETED = 21
+    RESOURCE_SET = 22
+    RESERVE_SET = 23
+    FORT_GOT_8_LEVEL = 24
+    BATTLE_DELETED_LEVEL = 25
+
+class FORT_BUILDING_TYPE:
+    MILITARY_BASE = 1
+    FINANCIAL_DEPT = 2
+    TANKODROME = 3
+    TRAINING_DEPT = 4
+    MILITARY_ACADEMY = 5
+    TRANSPORT_DEPT = 6
+    INTENDANT_SERVICE = 7
+    TROPHY_BRIGADE = 8
+    OFFICE = 9
+    MILITARY_SHOP = 10
+    ARTILLERY_SHOP = 11
+    BOMBER_SHOP = 12
+    _ALL: tuple
+
+class FORT_ORDER_TYPE:
+    COMBAT_PAYMENTS = 1
+    TACTICAL_TRAINING = 2
+    ADDITIONAL_BRIEFING = 3
+    MILITARY_EXERCISES = 4
+    HEAVY_TRANSPORT = 5
+    EVACUATION = 6
+    REQUISITION = 7
+    SPECIAL_MISSION = 8
+    EVACUATION_EXPIRE = 9
+    REQUISITION_EXPIRE = 10
+    ARTILLERY = 11
+    BOMBER = 12
+    COMBAT_PAYMENTS_2_0 = 13
+    MILITARY_EXERCISES_2_0 = 14
+    TACTICAL_TRAINING_2_0 = 15
+    ADDITIONAL_BRIEFING_2_0 = 16
+    HEAVY_TRANSPORT_2_0 = 17
+    REQUISITION_2_0 = 18
+    ALL: tuple
+    ACTIVATED: tuple
+    CONSUMABLES: tuple
+    _EXPIRATION_TO_SOURCE: dict
+    COMPATIBLES: tuple
+    @staticmethod
+    def isOrderPermanent(orderID):
+        ...
+    @staticmethod
+    def isOrderCompatible(orderID):
+        ...
+
+class USER_SERVER_SETTINGS:
+    VERSION = 0
+    GAME = 1
+    HIDE_MARKS_ON_GUN = 500
+    GAME_EXTENDED = 59
+    GAME_EXTENDED_2 = 102
+    EULA_VERSION = 54
+    ARCADE_AIM_1 = 43
+    ARCADE_AIM_2 = 44
+    ARCADE_AIM_3 = 45
+    ARCADE_AIM_4 = 63
+    SNIPER_AIM_1 = 46
+    SNIPER_AIM_2 = 47
+    SNIPER_AIM_3 = 48
+    SNIPER_AIM_4 = 64
+    SPG_AIM = 65
+    DOG_TAGS = 68
+    BATTLE_COMM = 69
+    BATTLE_HUD = 71
+    BATTLE_EVENTS = 84
+    BATTLE_MATTERS_QUESTS = 89
+    QUESTS_PROGRESS = 90
+    SESSION_STATS = 96
+    CONTOUR = 106
+    UI_STORAGE_2 = 109
+    SENIORITY_AWARDS = 113
+    REFERRAL_PROGRAM = 114
+    ADVANCED_ACHIEVEMENTS_STORAGE = 115
+    PERSONAL_MISSION_3 = 124
+    PERSONAL_MISSION_4 = 129
+    _ALL: tuple
+    @classmethod
+    def isBattleInvitesForbidden(cls, settings):
+        ...
+
+class WG_GAMES:
+    TANKS = 'wot'
+    WARPLANES = 'wowp'
+    WARSHIPS = 'wows'
+    GENERALS = 'wotg'
+    BLITZ = 'wotb'
+    WEB = 'web'
+    MOB = 'mob'
+    ALL: tuple
+
+class TOKEN_TYPE:
+    XMPPCS = 1
+    WGNI = 2
+    WOTG = 3
+    WOTB = 4
+    WGNI_JWT = 5
+    SERVICE_NAMES: dict
+    COOLDOWNS: dict
+
+class NC_MESSAGE_TYPE:
+    INFO = 1
+    GOLD = 2
+    PREMIUM = 3
+    BACKYARD = 4
+    POLL = 5
+    REFERRAL = 6
+    DEFAULT = INFO
+    RANGE: tuple
+
+class NC_MESSAGE_PRIORITY:
+    LOW = 1
+    MEDIUM = 2
+    HIGH = 3
+    DEFAULT = MEDIUM
+    ORDER: tuple
+
+class NC_CONTEXT_ITEM_TYPE:
+    GOLD = 1
+    INTEGRAL = 2
+    FRACTIONAL = 3
+    NICE_NUMBER = 4
+    SHORT_TIME = 5
+    LONG_TIME = 6
+    SHORT_DATE = 7
+    LONG_DATE = 8
+    DATETIME = 9
+    STRING = 10
+
+class WIN_XP_FACTOR_MODE:
+    DAILY = 0
+    ALWAYS = 1
+
+class PREBATTLE_INVITE_STATUS:
+    OK = 0
+    WRONG_CLAN = 1
+    LEGIONARIES_NOT_ALLOWED = 2
+
+class INVALID_CLIENT_STATS:
+    OK = 0
+    CLIENT_DEATH = 1
+    CLIENT_FOCUS_LOST = 2
+    CLIENT_STRAIGHT_INTO_BATTLE = 4
+    CLIENT_GS_MAJOR_CHANGED = 8
+    CLIENT_GS_MINOR_CHANGED = 16
+    CLIENT_RESOLUTION_CHANGED = 32
+    CLIENT_WM_CHANGED = 64
+    CLIENT_DRR_SCALE_CHANGED = 128
+
+class EQUIP_TMAN_CODE:
+    OK = 0
+    NO_VEHICLE = 1
+    VEHICLE_LOCKED = 2
+    NO_FREE_SLOT = 3
+
+class CustomizationInvData(object):
+    ITEMS = 1
+    OUTFITS = 2
+    NOVELTY_DATA = 3
+    DRESSED = 4
+    PROGRESSION = 5
+    OUTFITS_POOL = 6
+    SERIAL_NUMBERS = 7
+
+class SkinInvData(object):
+    ITEMS = 1
+    OUTFITS = 2
+
+class EVENT_CLIENT_DATA:
+    ACTION = 1
+    ACTION_REV = 2
+    QUEST = 3
+    QUEST_REV = 4
+    INGAME_EVENTS = 7
+    INGAME_EVENTS_REV = 8
+    NOTIFICATIONS = 9
+    NOTIFICATIONS_REV = 10
+    PERSONAL_QUEST = 11
+    PERSONAL_QUEST_REV = 12
+    FALLOUT = 15
+    FALLOUT_REV = 16
+    SQUAD_BONUSES = 17
+    SQUAD_BONUSES_REV = 18
+    FEATURES_SWITCH = 19
+    FEATURES_SWITCH_REV = 20
+    ACTION_ENTITIES = 21
+    ACTION_ENTITIES_REV = 22
+    ANNOUNCED_ACTION_DATA = 23
+    ANNOUNCED_ACTION_DATA_REV = 24
+    DAILY_QUESTS = 25
+    DAILY_QUESTS_REV = 26
+    OFFER = 27
+    OFFER_REV = 28
+    WEEKLY_QUESTS = 29
+    WEEKLY_QUESTS_REV = 30
+    NUMBER_OF_ANNOUNCED_ACTIONS_STEPS = 1
+    @staticmethod
+    def REVISION(id):
+        ...
+
+class FLAG_TYPES:
+    BIG = 0
+    MEDIUM = 1
+    SMALL = 2
+    RANGE: tuple
+
+class FLAG_SPAWN_COOLDOWN:
+    ABSORB = 10.0
+    SOLO_ABSORB = 10.0
+    DROP = 15.0
+
+class FLAG_STATE:
+    UNKNOWN = 0
+    ON_SPAWN = 1
+    ON_GROUND = 2
+    ON_VEHICLE = 3
+    ABSORBED = 4
+    WAITING_FIRST_SPAWN = 5
+
+class FLAG_ACTION:
+    PICKED_UP_FROM_BASE = 0
+    PICKED_UP_FROM_GROUND = 1
+    CAPTURED = 2
+    LOST = 3
+    RANGE: tuple
+
+class INVITATION_STATUS:
+    ERROR = -1
+    PENDING = 0
+    ACCEPTED = 1
+    DECLINED = 2
+    REVOKED = 3
+    CANCELED = 4
+    POSTPONED = 5
+
+class INVITATION_TYPE:
+    SQUAD = PREBATTLE_TYPE.SQUAD
+    EPIC = PREBATTLE_TYPE.EPIC
+    EVENT = PREBATTLE_TYPE.EVENT
+    BATTLE_ROYALE = PREBATTLE_TYPE.BATTLE_ROYALE
+    MAPBOX = PREBATTLE_TYPE.MAPBOX
+    RANGE: tuple
+    TYPES_WITH_EXTRA_DATA: tuple
+    INVITATION_TYPE_FROM_ARENA_BONUS_TYPE_MAPPING: dict
+    @staticmethod
+    def invitationTypeFromArenaBonusType(arenaBonusType):
+        ...
+
+class REPAIR_FLAGS:
+    STOP_FIRE = 1
+    HEAL_VEHICLE = 2
+    HEAL_CREW = 4
+    HEAL_DEVICES = 8
+    REPLENISH_AMMO = 16
+    REPLENISH_EQUIP = 32
+    RELOAD_GUN = 64
+    ALL: Any
+
+class REPAIR_POINT_STATE:
+    READY = 0
+    REPAIRING = 1
+    COOLDOWN_VEH_INSIDE = 2
+    COOLDOWN_VEH_OUTSIDE = 3
+    DISABLED = 4
+    FULL = 5
+
+class REPAIR_POINT_ACTION:
+    START_REPAIR = 0
+    RESTART_REPAIR = 1
+    CANCEL_REPAIR = 2
+    COMPLETE_REPAIR = 3
+    ENTER_WHILE_CD = 4
+    LEAVE_WHILE_CD = 5
+    BECOME_READY = 6
+    BECOME_DISABLED = 7
+    REPAIR_STEP = 8
+    ENTER_WHILE_FULL = 9
+    COOLDOWN = 10
+    COOLDOWN_AFTER_COMPLETE = 11
+
+class GLOBAL_MAP_DIVISION(object):
+    MIDDLE = 0
+    CHAMPION = 1
+    ABSOLUTE = 2
+    _ORDER: tuple
+
+class RESOURCE_POINT_STATE:
+    UNKNOWN = 0
+    FREE = 1
+    COOLDOWN = 2
+    CAPTURED = 3
+    CAPTURED_LOCKED = 4
+    BLOCKED = 5
+
+class VEHICLE_PHYSICS_MODE:
+    STANDARD = 0
+    DETAILED = 1
+
+class VEHICLE_MODE:
+    DEFAULT = 0
+    SIEGE = 1
+
+class VEHICLE_SIEGE_STATE:
+    DISABLED = 0
+    SWITCHING_ON = 1
+    ENABLED = 2
+    SWITCHING_OFF = 3
+    PILLBOX_ENABLED = 4
+    SWITCHING: set
+    PERSISTENT: set
+    DEFAULT_MODE: set
+    SIEGE_MODE: set
+    @classmethod
+    def getMode(cls, siegeState):
+        ...
+    @classmethod
+    def isEnabled(cls, siegeState):
+        ...
+    @classmethod
+    def toString(cls, siegeState):
+        ...
+
+class ROCKET_ACCELERATION_STATE:
+    NOT_RUNNING = 0
+    DEPLOYING = 1
+    PREPARING = 2
+    READY = 3
+    ACTIVE = 4
+    DISABLED = 5
+    EMPTY = 6
+    @classmethod
+    def toString(cls, value):
+        ...
+
+class DUAL_ACCURACY_STATE:
+    NONE = 0
+    ACTIVE = 1
+    NOT_ACTIVE = 2
+    @classmethod
+    def toString(cls, value):
+        ...
+
+class SIGHT_POINTER_STATE(enum.IntEnum):
+    DISABLED = 0
+    PREPARING = 1
+    READY = 2
+    ACTIVE = 3
+    COOLDOWN = 4
+
+class SIGHT_POINTER_COMMON_CONSTANTS(object):
+    ANIMATION_DELAY = 3
+    MIN_ACTIVE_DURATION = 1.5
+
+class CONTENT_TYPE:
+    DEFAULT = 0
+    SD_TEXTURES = 1
+    HD_TEXTURES = 2
+    INCOMPLETE = 3
+    TUTORIAL = 4
+    SANDBOX = 5
+    CEF = 6
+
+class DEATH_ZONES:
+    STATIC = 0
+    SECTOR_BOMBING = 1
+    SECTOR_AIRSTRIKE = 2
+    SECTOR_AIRSUPPORT = 3
+
+class FALLOUT_ARENA_TYPE:
+    GAMEPLAY_NAMES: dict
+    @staticmethod
+    def fromGameplayName(gameplayName):
+        ...
+
+class RespawnState(object):
+    VEHICLE_ALIVE = 0
+    VEHICLE_DEAD = 1
+    RESPAWNING = 2
+
+class VISIBILITY:
+    MAX_RADIUS = 445.0
+    MIN_RADIUS = 50.0
+
+class OBSTACLE_KIND:
+    CHUNK_DESTRUCTIBLE = 1
+    ENTITY_DESTRUCTIBLE = 2
+    SMOKE = 3
+    STATIC_GAME_OBJECT = 4
+
+class SHELL_TYPES(object):
+    HOLLOW_CHARGE = 'HOLLOW_CHARGE'
+    HIGH_EXPLOSIVE = 'HIGH_EXPLOSIVE'
+    ARMOR_PIERCING = 'ARMOR_PIERCING'
+    ARMOR_PIERCING_HE = 'ARMOR_PIERCING_HE'
+    ARMOR_PIERCING_CR = 'ARMOR_PIERCING_CR'
+    SMOKE = 'SMOKE'
+    HIGH_EXPLOSIVE_MODERN = 'HIGH_EXPLOSIVE_MODERN'
+    HIGH_EXPLOSIVE_LEGACY_STUN = 'HIGH_EXPLOSIVE_LEGACY_STUN'
+    HIGH_EXPLOSIVE_LEGACY_NO_STUN = 'HIGH_EXPLOSIVE_LEGACY_NO_STUN'
+    IMPROVED_POSTFIX = '_GOLD'
+
+class SHELL_MECHANICS_TYPE:
+    LEGACY = 'LEGACY'
+    MODERN = 'MODERN'
+    NON_PIERCING_DAMAGE = 'NON_PIERCING_DAMAGE'
+
+class BATTLE_LOG_SHELL_TYPES(enum.IntEnum):
+    HOLLOW_CHARGE = 0
+    ARMOR_PIERCING = 1
+    ARMOR_PIERCING_HE = 2
+    ARMOR_PIERCING_CR = 3
+    SMOKE = 4
+    HE_MODERN = 5
+    HE_LEGACY_STUN = 6
+    HE_LEGACY_NO_STUN = 7
+    @classmethod
+    def getType(cls, shellDescr):
+        ...
+    @classmethod
+    def getIndex(cls, shellDescr):
+        ...
+    @classmethod
+    def getShellType(cls, shellDescr, withGold=True):
+        ...
+
+class BATTLE_LOG_MECHANIC_SHOT(enum.IntEnum):
+    NOT_DEFINED = 0
+    SHELL_SWITCHER_NOT_CHARGED = 1
+    SHELL_SWITCHER_CHARGED = 2
+    BUSTLE_FEED_ACTIVE = 3
+
+class HIT_INDIRECTION:
+    DIRECT_HIT = 0
+    HIT_BY_EXTERNAL_EXPLOSION = 1
+    HIT_BY_RICOCHET = 2
+    MISS = 3
+    CEILING_HIT = 4
+
+class VEHICLE_FRICTION_STATE(object):
+    VFS_START = 1
+    VFS_UPDATE = 2
+    VFS_FINISHED = 3
+    _ALL: tuple
+
+class WGC_STATE:
+    OFF = 0
+    READY_TO_LOGIN = 1
+    LOGIN_IN_PROGRESS = 2
+    WAITING_TOKEN_1 = 3
+    DISABLED = 4
+    ERROR = 5
+    LOGGEDIN = 6
+
+class WGC_PUBLICATION:
+    WGC_UNKNOWN = -1
+    WGC_PC = 0
+    WGC_360 = 1
+    WGC_STEAM = 2
+    NAMES: dict
+
+class DISTRIBUTION_PLATFORM(enum.Enum):
+    WG = 'wg_platform'
+    CHINA_360 = 'china_360'
+    STEAM = 'steam'
+    WIN_STORE = 'winstore'
+    EPIC = 'epic'
+
+class TARGET_LOST_FLAGS:
+    INVALID = 1
+    KILLED_BY_ME = 2
+    KILLED_BY_OTHERS = 4
+    UNREACHABLE = 8
+
+class BASE_TYPE:
+    TEAM_BASE = 1
+    SECTOR_BASE = 2
+
+class SECTOR_STATE:
+    CLOSED = 0
+    OPEN = 1
+    TRANSITION = 2
+    CAPTURED = 3
+    BOMBING = 4
+
+class SECTOR_BASE_ACTION:
+    ENTER = 0
+    ENTER_WHILE_CD = 1
+    COOLDOWN = 2
+    LEAVE = 3
+    LEAVE_WHILE_CD = 4
+    RESUME = 5
+    CAPTURED = 6
+
+class PLAYER_RANK:
+    NO_RANK = 0
+    PRIVATE = 1
+    SERGEANT = 2
+    LIEUTENANT = 3
+    CAPTAIN = 4
+    MAJOR = 5
+    GENERAL = 6
+    DEFAULT_RANK = NO_RANK
+    MAX_RANK = GENERAL
+    NAMES: dict
+    RANK_BY_NAME: dict
+    @staticmethod
+    def getPlayerRankByName(name):
+        ...
+
+class CHAT_COMMAND_FLAGS:
+    EPIC_BATTLE_COMMANDS = 1
+    NAMES: dict
+    FLAG_BY_NAME: dict
+
+class RM_STATE:
+    NOT_RECOVERING = 0
+    RECOVERING = 1
+    TEMPORARILY_BLOCKED_FROM_RECOVERING = 2
+    PERMANENTLY_BLOCKED_FROM_RECOVERING = 3
+    RECOVERING_RESPAWNING = 4
+    TEMPORARILY_BLOCKED_RECOVER_TRY = 5
+    NAMES: dict
+
+class RM_TEMPORARY_BLOCKING_REASON:
+    HAS_SHOT = 0
+    HAS_RECEIVED_DAMAGE = 1
+    NAMES: dict
+
+class QUEST_PROGRESS_STATE:
+    NOT_STARTED = 1
+    IN_PROGRESS = 2
+    FAILED = 3
+    PRELIMINARY_FAILED = 4
+    COMPLETED = 5
+    PRELIMINARY_COMPLETED = 6
+    COMPLETED_STATES: tuple
+    FINISHED_STATES: tuple
+
+class QUEST_TYPE_OPERATION_FOR_KAFKA:
+    START = 1
+    STOP = 2
+    COMPLETED = 3
+    FAILED = 4
+    START_PAUSE = 5
+    STOP_PAUSE = 6
+    RESET = 7
+    COMPLETED_AFTER_REBALANCE = 8
+
+class BRANCH_TYPE_OPERATION_FOR_KAFKA:
+    ACTIVATE = 1
+    DEACTIVATE = 2
+
+class BotNamingType(object):
+    CREW_MEMBER = 1
+    VEHICLE_MODEL = 2
+    CUSTOM = 3
+    DEFAULT = CREW_MEMBER
+    CONFIG_TYPE: tuple
+    _parseDict: dict
+    _descriptions: dict
+    @classmethod
+    def parse(cls, typeString):
+        ...
+
+class LocalizableBotName(object):
+    CONFIGS: dict
+    @staticmethod
+    def create(namingType, *args):
+        ...
+    @staticmethod
+    def parse(name):
+        ...
+
+class LOOT_TYPE(object):
+    NONE = 0
+    BASIC = 1
+    ADVANCED = 2
+    AIRDROP = 3
+    CORPSE = 4
+
+class AirdropType(object):
+    LOOT = 1
+    BOT = 2
+    BOT_CLING = 3
+
+class LootAction(object):
+    PICKUP_STARTED = 0
+    PICKUP_FAILED = 1
+    PICKUP_SUCCEEDED = 2
+
+class BattleRoyaleMode(object):
+    SOLO = 'solo'
+    SQUAD = 'squad'
+    ALL: tuple
+
+class CLIENT_COMMAND_SOURCES:
+    UNDEFINED = 0
+    RENTED_STYLE_RADIAL_MENU = 1
+    RANGE: tuple
+
+class ROLE_TYPE:
+    NOT_DEFINED = 0
+    SPG = 1
+    HT_ASSAULT = 2
+    HT_BREAK = 3
+    HT_UNIVERSAL = 4
+    HT_SUPPORT = 5
+    MT_ASSAULT = 6
+    MT_SUPPORT = 7
+    MT_UNIVERSAL = 8
+    MT_SNIPER = 9
+    ATSPG_ASSAULT = 10
+    ATSPG_UNIVERSAL = 11
+    ATSPG_SNIPER = 12
+    ATSPG_SUPPORT = 13
+    LT_UNIVERSAL = 14
+    LT_SCOUT = 16
+    LT_SUPPORT = 17
+
+class COMMON_ROLE:
+    ASSAULT = 'Assault'
+    SNIPER = 'Sniper'
+    SUPPORT = 'Support'
+    ALL_ORDER: tuple
+    ALL: Any
+
+class ACTION_TYPE:
+    BLOCK_AND_TAKE_DAMAGE = 1
+    DO_NEAR_DAMAGE = 2
+    DO_OWN_DAMAGE = 3
+    BLOCK_DAMAGE = 4
+    SEARCH_ENEMY = 5
+    DO_FAR_DAMAGE = 6
+    FRAG_ASSIST = 7
+    DO_STUN = 8
+    DO_SPG_DAMAGE = 9
+    DO_NEAR_DAMAGE_SQ = 10
+    DO_GROUP_STUN = 11
+    DO_INVIS_ASSIST = 12
+    DO_RADIO_ASSIST = 13
+    DO_TRACK_ASSIST = 14
+    DO_CRIT = 15
+    DO_KILL = 16
+    BASE_CAPTURE_POINTS = 17
+    BASE_CAPTURE_DROPPED = 18
+    DO_ARTILLERY_EQ = 19
+    DO_HEAL_ALLY = 20
+    DO_CAPTURE_ENTITY = 21
+    DO_VISIBLE_ALL_ENEMIES = 22
+    DO_INSPIRE_ASSIST = 23
+
+class ASSIST_TYPES(object):
+    TRACK = 0
+    RADIO = 1
+    STUN = 2
+    SMOKE = 3
+    INSPIRE = 4
+
+class DUAL_GUN:
+    class ACTIVE_GUN:
+        LEFT = 0
+        RIGHT = 1
+    class GUN_STATE:
+        EMPTY = 0
+        RELOADING = 1
+        READY = 2
+    class RELOAD_ORDER:
+        FIRST = 0
+        SECOND = 1
+    class COOLDOWNS:
+        LEFT = 0
+        RIGHT = 1
+        SWITCH = 2
+        DEBUFF = 3
+        COUNT = 4
+
+class MarathonConfig(object):
+    EMPTY_PATH = ''
+    URL = 'marathonUrl'
+    REWARD_VEHICLE_URL = 'rewardVehicleUrl'
+    REWARD_VEHICLE_URL_IGB = 'rewardVehicleUrlIgb'
+    REWARD_STYLE_URL_IGB = 'rewardStyleUrlIgb'
+    FINISH_SALE_TIME = 'finishSaleTime'
+
+class ClansConfig(object):
+    SECTION_NAME = 'clans_config'
+    NOTIFICATION_ENABLED = 'isClanNotificationEnabled'
+    QUEST_URL = 'clanQuestUrl'
+    CRAFT_MACHINE_URL = 'craftMachineUrl'
+    STRONGHOLD_EVENT_URL = 'strongholdEventUrl'
+    NOTIFICATION_START_TIME = 'notificationStartTime'
+    ON_ENTER_CLAN_BONUS = 'onEnterClanBonus'
+    STRONGHOLD_EVENT_ENABLED = 'strongholdEventEnabled'
+    STRONGHOLD_EVENT_BATTLE_MODE = 'strongholdEventBattleMode'
+    CLAN_SUPPLY_ENABLED = 'clanSupplyEnabled'
+
+class EnhancementsConfig(object):
+    SECTION_NAME = 'enhancements_config'
+    ENABLED = 'enabled'
+
+class BattleUserActions(object):
+    ADD_FRIEND = 1
+    REMOVE_FRIEND = 2
+    ADD_IGNORED = 4
+    REMOVE_IGNORED = 8
+
+class DailyQuestsDecorations(object):
+    WIN = 'win'
+    DEAL_DAMAGE = 'hurt_vehicles'
+    GET_EXPERIENCE = 'experience'
+    DESTROY_TANK = 'kill_vehicles'
+    DAMAGE_TANK = 'damage'
+    FINISH_TOP1 = 'top1'
+    FINISH_TOP3 = 'top3'
+    FINISH_TOP5 = 'top5'
+    FINISH_TOP7 = 'top7'
+    DAMAGE_A_MODULE = 'module_crit'
+    SPOT = 'discover'
+    BATTLES = 'battles'
+    ALL: tuple
+
+class DailyQuestsLevels(object):
+    NONE = ''
+    EASY = 'easy'
+    MEDIUM = 'medium'
+    HARD = 'hard'
+    BONUS = 'bonus'
+    EPIC = 'epic'
+    ALL: tuple
+    DAILY: tuple
+    DAILY_SIMPLE: tuple
+
+class DailyQuestsTokensPrefixes(object):
+    QUEST_TOKEN = 'dq:'
+    QUEST_TICKET = 'dqt:'
+
+class OVERRIDDEN_BADGE(object):
+    NONE = 0
+    ENHANCEMENTS_LEVEL_1 = 1
+
+class BonusTypes(object):
+    SKILL = 'skill'
+    ROLE = 'role'
+    EXTRA = 'extra'
+    PERK = 'perk'
+    OPTIONAL_DEVICE = 'optionalDevice'
+    EQUIPMENT = 'equipment'
+    BATTLE_BOOSTER = 'battleBooster'
+    PAIR_MODIFICATION = 'postProgressionPairModifications'
+    BASE_MODIFICATION = 'postProgressionBaseModifications'
+    POSSIBLE: tuple
+
+class TTC_TOOLTIP_SECTIONS(object):
+    EQUIPMENT = 'equipment'
+    SKILLS = 'skills'
+    CREW_MASTERY = 'crew_mastery'
+    ALL: tuple
+
+class GF_RES_PROTOCOL(object):
+    IMG = 'img://'
+    CAMO = 'camo://'
+    PNUM = 'pnum://'
+    SWF = 'swf://'
+    CACHED_IMG = 'imgc://'
+
+class CollisionFlags(object):
+    TRIANGLE_NOT_IN_BSP = 255
+    TRIANGLE_CAMERANOCOLLIDE = 1
+    TRIANGLE_TRANSPARENT = 2
+    TRIANGLE_BLENDED = 4
+    TRIANGLE_TERRAIN = 8
+    TRIANGLE_NOCOLLIDE = 16
+    TRIANGLE_DOUBLESIDED = 32
+    TRIANGLE_WATER = 64
+    TRIANGLE_PROJECTILENOCOLLIDE = 128
+    TRIANGLE_COLLISIONFLAG_MASK = 255
+    TRIANGLE_MATERIALKIND_MASK = 65280
+    TRIANGLE_MATERIALKIND_SHIFT = 8
+
+class UpgradeProhibitionReason(object):
+    UNDEFINED = 0
+    COMBATING = 1
+    DROWNING = 2
+    OVERTURNED = 3
+    SETTLING = 4
+    NOT_DROWN = 5
+
+class AreaTriggerActionType(enum.IntEnum):
+    ENTER = 0
+    LEAVE = 1
+
+class EPlatoonButtonState(enum.Enum):
+    SEARCHING_STATE = 'SEARCHING'
+    IN_PLATOON_STATE = 'IN_PLATOON'
+    CREATE_STATE = 'CREATE'
+
+class HighExplosiveImpact(object):
+    BLAST_WAVE = 'blastWave'
+    SHELL_FRAGMENTS = 'shellFragments'
+    ARMOR_SPALLS = 'armorSpalls'
+    ALL: tuple
+
+class DamageAbsorptionTypes(object):
+    FRAGMENTS = 0
+    BLAST = 1
+    SPALLS = 2
+
+class AbilitySystemScopeNames(object):
+    DETACHMENT = 'detachment'
+    CREW = 'crew'
+
+# base nao representavel no stub: namedtuple(...)
+class PerkData:
+    ...
+
+# base nao representavel no stub: namedtuple(...)
+class CrewContextArgs:
+    ...
+
+class SkillProcessorArgs(object):
+    __slots__: tuple
+    level: Any
+    levelIncrease: Any
+    skillsEfficiency: Any
+    isActive: Any
+    isFire: Any
+    skillConfig: Any
+    tankmenSkillConfig: Any
+    hasActiveTankmanForBooster: Any
+    isBoostedSkill: Any
+    def __init__(self, level, levelIncrease, skillsEfficiency, isActive, isFire, skillConfig, hasActiveTankmanForBooster, isBoostedSkill=False):
+        ...
+    def isSkillActive(self):
+        ...
+    def isBoosterApplicable(self):
+        ...
+    def _isZeroLevelActive(self):
+        ...
+
+class GroupSkillProcessorArgs(object):
+    __slots__: tuple
+    factor: Any
+    baseAvgLevel: Any
+    skillEfficiency: Any
+    def __init__(self, factor, baseAvgLevel, skillEfficiency=1.0):
+        ...
+
+class ReloadRestriction(object):
+    CYCLE_RELOAD = 1.0
+    OTHER_RELOAD = 2.5
+    NON_CYCLIC_TAGS: Any
+    @classmethod
+    def getBy(cls, vehTypeDescr):
+        ...
+
+class MapsTrainingParameters(enum.IntEnum):
+    MAPS = 0
+    VEHICLES = 1
+    VISUAL_SCRIPT = 2
+    SCENARIOS = 3
+    MAP_SCENARIOS = 4
+    MATCHMAKER = 5
+    BOTS = 6
+    MAP_REWARDS = 7
+
+class EquipSideEffect(enum.IntEnum):
+    AMMO_AUTO_LOADED = 1
+    AMMO_AUTO_LOAD_FAILED = 2
+
+class TrackBreakMode(enum.IntEnum):
+    STOP = 0
+    SLOW = 1
+
+class VehicleSide(enum.IntEnum):
+    FRONT = 0
+    BACK = 1
+    LEFT = 2
+    RIGHT = 3
+
+class SwitchState(enum.Enum):
+    ENABLED = 'enabled'
+    DISABLED = 'disabled'
+    INACTIVE = 'inactive'
+
+class DeviceRepairMode(enum.IntEnum):
+    NORMAL = 0
+    SLOWED = 1
+    SUSPENDED = 2
+
+class LoadoutParams(object):
+    groupId = 'groupId'
+    sectionName = 'sectionName'
+    slotIndex = 'slotIndex'
+
+# decorador original: @enum.unique
+class EventPhase(enum.Enum):
+    NOT_STARTED = 0
+    IN_PROGRESS = 1
+    FINISHED = 2
+
+class ACCOUNT_KICK_REASONS(object):
+    UNAVAILABLE_PERIPHERY = -4
+    VERSION_MISMATCH = -3
+    NO_CONNECTION = -2
+    UNKNOWN = 0
+    LOGIN_TO_OTHER_GAME = 1
+    SESSION_TRACKER_KICK = 2
+    CLIENT_INACTIVE = 4
+    SYSTEM_FAILURE = 5
+    SERVER_SHUT_DOWN = 7
+    BAN = 8
+    STEAM_LOGIN_NOT_ALLOWED = 9
+    DOSSIERS_UNAVAILABLE = 10
+    PRIVATE_CHANNEL_NAME_PROTECTION = 11
+    PRIVATE_CHANNEL_IS_DISABLED = 12
+    ACCOUNT_WAS_RESTORED = 13
+    SPAM_PROTECTION_PDATA = 14
+    SPAM_PROTECTION_SHOP = 15
+    SPAM_PROTECTION_DOSSIER = 16
+    CURFEW_BAN = 17
+    DEMO_ACCOUNT_BOOTCAMP_FAILURE = 18
+    BAN_RANGE: tuple
+
+class BATTLE_MODE_LOCK_MASKS(object):
+    _COMMON_FIRST_BIT = 0
+    _CLAN_RENTED_VEHICLE_FIRST_BIT = 4
+    _COMMON: Any
+    _CLAN_RENTED_VEHICLE: Any
+    @staticmethod
+    def getCommonVehLockMode(vehLockMode):
+        ...
+    @staticmethod
+    def getClanRentedVehLockMode(vehLockMode):
+        ...
+    @staticmethod
+    def makeCompactVehLockMode(commonVehLockMode, clanRentedVehLockMode):
+        ...
+    @staticmethod
+    def getUnpackedVehLockMode(vehLockMode, vehType):
+        ...
+
+class POSTMORTEM_MODIFIERS(object):
+    ENABLED_IF_NO_ALLY = 'enabledIfNoAlly'
+    DISABLE_TANK_TARGET_FOLLOW = 'disableTankFollow'
+    DISABLE_TANK_CYCLE = 'disableTankCycle'
+    FORCED_IF_NO_LIVES = 'forcedIfNoLives'
+    POSTMORTEM: set
+    KILLCAM: set
+    DEATHFREECAM: set
+    ALL: set
+
+class KILL_CAM_STATUS_CODE(enum.IntEnum):
+    SUCCESS = 0
+    NO_SHOT = 1
+    INCORRECT_SERVER_DATA = 2
+    ALLY_SHOT = 3
+    FOW_NOT_SUPPORTED = 4
+
+class KillCamVehicleRole(enum.IntEnum):
+    ATTACKER = 0
+    VICTIM = 1
+
+class IMPACT_TYPES:
+    PENETRATION = 0
+    LEGACY_HE = 1
+    MODERN_HE = 2
+    NON_PENETRATION_DAMAGE = 3
+
+class VehicleDirection(object):
+    FORWARD: Any
+    SIDE: Any
+    UP: Any
+
+class Progress(object):
+    DEFAULT = 0
+    START = 1
+    STOP = 2
+    FAILED = 3
+    SUCCEED = 4
+
+class EQUIPMENT_ERROR_STATES(object):
+    CAN_BE_ACTIVATED = 0
+    CANNOT_BE_ACTIVATED = 1
+    VEHICLE_IS_NOT_DAMAGED = 2
+    NO_DAMAGED_ENEMY_VEHICLES = 4
+    ALREADY_ACTIVATED = 8
+    NOT_SUITABLE_LOADING_STATE = 16
+    GUN_TEMPERATURE_LOW = 32
+    ALL: tuple
+
+class BuffDisplayedState(enum.IntEnum):
+    EMPTY = 0
+    AOE_INSPIRE = 1
+    AOE_HEAL = 2
+    RISKY_ATTACK_BUFF = 3
+    RISKY_ATTACK_HEAL = 4
+    BERSERK = 5
+    SNIPER = 6
+    HUNTER = 7
+    FAST_RECHARGE = 8
+    ALLY_SUPPORT = 9
+    JUGGERNAUT = 10
+    SURE_SHOT = 11
+    CONCENTRATION = 12
+    MARCH = 13
+    AGGRESSIVE_DETECTION = 14
+
+class EntityCaptured(object):
+    POI_CAPTURABLE = 'poiCapturable'
+
+class VehicleSelectionPlayerStatus(object):
+    NOT_CONFIRMED = 0
+    CONFIRMED = 1
+
+class WoTPlusBonusType(object):
+    GOLD_BANK = 'gold_bank'
+    IDLE_CREW_XP = 'idle_crew_xp'
+    EXCLUDED_MAP = 'excluded_map'
+    FREE_EQUIPMENT_DEMOUNTING = 'free_equipment_demounting'
+    EXCLUSIVE_VEHICLE = 'exclusive_vehicle'
+    ATTENDANCE_REWARD = 'attendance_reward'
+    BATTLE_BONUSES = 'battle_bonuses'
+    BADGES = 'badges'
+    ADDITIONAL_BONUSES = 'additional_bonuses'
+    OPTIONAL_DEVICES_ASSISTANT = 'optional_devices_assistant'
+    PRO_BOOST = 'pro_boost'
+    SERVICE_RECORD_CUSTOMIZATION = 'service_record_customization'
+    BATTLE_PASS_PLUS = 'battle_pass_plus'
+
+class WoTPlusDailyAttendance(object):
+    INITIAL_CYCLE_STEP = 1
+    MAXIMUM_DISPLAYED_REWARDS = 3
+    CYCLE_STEPS = 5
+
+class InitialVehsAdditionStrategy(object):
+    REALM_AND_COUNTRY = 0
+    COUNTRY = 1
+
+class WINBACK_BATTLE_TOKEN_DRAW_REASON(enum.IntEnum):
+    REGULAR = 0
+    MANUAL = 1
+    SQUAD = 2
+
+class BOT_DISPLAY_CLASS_NAMES(enum.Enum):
+    LIGHT_TANK_ELITE = 'lightTank_elite'
+    MEDIUM_TANK_ELITE = 'mediumTank_elite'
+    HEAVY_TANK_ELITE = 'heavyTank_elite'
+    SPG_ELITE = 'SPG_elite'
+    AT_SPG_ELITE = 'AT-SPG_elite'
+    BOSS = 'boss'
+
+class BOT_DISPLAY_STATUS(enum.IntEnum):
+    REGULAR = 0
+    ELITE = 1
+    BOSS = 2
+
+class TEAM_PANEL_MODE(enum.IntEnum):
+    SHOW = 0
+    SHOW_WITH_HP = 1
+    HIDE = 2
+
+class AchievementsLayoutStates(enum.IntEnum):
+    AUTO = 0
+    MANUAL = 1
+
+class DamageResistanceReason(object):
+    NONE = 0
+    NITRO = 1
+
+class ShootImpulseApplicationPoint(object):
+    VEHICLE_COM = 'vehicleCOM'
+    SHOOT_POINT = 'shootPoint'
+    ALL: set
+
+class MinimapLayerType(object):
+    BASE = 'base'
+    ALERT = 'alert'
+    ALL: tuple
+
+class RandomizationType(object):
+    NORMAL = 'NORMAL'
+    UNIFORM = 'UNIFORM'
+
+class PENALTY_TYPES(enum.Enum):
+    WARNING = 'warning'
+    PENALTY = 'penalty'
+    BAN = 'ban'
+
+class FAIRPLAY_VIOLATION_SYS_MSG_SAVED_DATA:
+    ARENA_BONUS_TYPE = 'arenaBonusType'
+    PENALTY_TYPE = 'penaltyType'
+    ARENA_TYPE_ID = 'arenaTypeID'
+    ARENA_TIME = 'arenaTime'
+    PUNISHMENT_REASON = 'punishmentReason'
+    BAN_DURATION = 'banDuration'
+    IS_AFK_VIOLATION = 'isAfkViolation'
+    COMP7_PENALTY = 'comp7Penalty'
+    COMP7_IS_QUALIFICATION = 'comp7IsQualification'
+
+class FairplayViolationType(object):
+    DESERTER = 1
+    SUICIDE = 2
+    AFK = 4
+    PRIORITY: list
+
+class LivesOperationalFlag(enum.Enum):
+    ADD_LIFE = 'addLife'
+    ON_DEATH = 'onDeath'
+
+class SCENARIO_RESULT:
+    LOSE = -1
+    PARTIAL = 0
+    WIN = 1
+
+class NEW_PERK_SYSTEM:
+    MAX_MAJOR_PERKS = 6
+    MAX_BONUS_SKILLS_PER_ROLE = 3
+    BONUS_SKILL_ENABLING_FREQUENCY: Any
+
+class DIRECT_DETECTION_TYPE:
+    RAYTRACE = 0
+    RECON = 1
+    FORCED = 2
+    STEALTH_RADAR = 3
+    SPECIAL_RECON = 4
+    UNSPOTTED = 5
+    SIGHT_POINTER_IN_SECTOR = 6
+    SIGHT_POINTER_DETECTION = 7
+    ILLUMINATION_FLARE = 8
+    SPECIAL_SIXTH_SENSE_TYPES: tuple
+
+class PlayerSatisfactionRatingInterface(IntEnum):
+    POST_BATTLE_RESULTS = 0
+    POST_MORTEM = 1
+
+class PlayerSatisfactionRating(IntEnum):
+    NONE = -500
+    USUAL = 0
+    BETTER = 1
+    WORSE = -1
+
+class SquadManStates(enum.Enum):
+    IN_BATTLE = 'inBattle'
+    READY = 'ready'
+    NOT_READY = 'notReady'
+    NOT_READY_PLAYER = 'notReadyPlayer'
+    SEARCHING = 'searching'
+    EMPTY = 'empty'
+
+class SPAWN_POINT_MODE:
+    SPAWN = 0
+    RESPAWN = 1
+    SPAWN_AND_RESPAWN = 2
+
+class CommendationsState(IntEnum):
+    UNSENT = 0
+    SENT = 1
+    RECEIVED = 2
+    MUTUAL = 3
+    @property
+    def isSent(self):
+        ...
+    @property
+    def isReceived(self):
+        ...
+    def canSend(self):
+        ...
+    def transition(self, isSender):
+        ...
+    def _transitionStateOnSend(self):
+        ...
+    def _transitionStateOnReceive(self):
+        ...
+
+class VehiclePartName(object):
+    CHASSIS = 'chassis'
+    HULL = 'hull'
+    TURRET = 'turret'
+    GUN = 'gun'
+    ALL: tuple
+    _NAME_TO_IDX: dict
+    _IDX_TO_NAME: Any
+    @classmethod
+    def getIdx(cls, name):
+        ...
+    @classmethod
+    def getName(cls, idx):
+        ...
+
+class VehicleArmorTags(str, enum.Enum):
+    HULL = 'hull'
+    TURRET = 'turret'
+    CHASSIS = 'chassis'
+    SCREEN = 'screen'
+    GUN = 'gun'
+    WHEELS = 'wheels'
+    SURVEYING = 'surveying'
+    GUN_MASK = 'gunMask'
+
+class VehicleTurretTags(str, enum.Enum):
+    CANNOT_DETACH = 'cannotDetach'
+    GUN_CARRIAGE = 'gunCarriage'
+    TURRETLESS = 'turretless'
+    OSCILLATING = 'oscillating'
+
+class DGVehicleRepairReason(object):
+    BASIC_REPAIR = 1
+
+class ModuleKind(object):
+    INTERNAL = 'internal'
+    EXTERNAL = 'external'
+    TANKMEN = 'tankmen'
+    ALL: tuple
+
+class CONCENTRATION_MODE_STATE:
+    IDLE = 0
+    DEPLOYING = 1
+    READY = 2
+    ACTIVE = 3
+    COOLDOWN = 4
+    DISABLED = 5
+    @classmethod
+    def toString(cls, value):
+        ...
+
+class TEMPERATURE_MECHANIC_STATE(object):
+    IDLE = 0
+    HEATING = 1
+    COOLING = 2
+
+class TEMPERATURE_GUN_STATE(TEMPERATURE_MECHANIC_STATE):
+    COOLING_DELAY = 3
+    COOLING_STATES: tuple
+    STATIC_STATES: tuple
+
+class OVERHEAT_GUN_STATE(object):
+    IDLE = 0
+    WARNING = 1
+    OVERHEATING = 2
+
+class HEATING_ZONES_GUN_STATE(object):
+    IDLE = 0
+    LOW = 1
+    MEDIUM = 2
+    HIGH = 3
+    ALL: tuple
+    @classmethod
+    def toString(cls, value):
+        ...
+
+class POWER_MODE_STATE:
+    NOT_ACTIVE = 0
+    PREPARING = 1
+    ACTIVE = 2
+    MAX_MODE = 3
+    ACTIVE_MODES: tuple
+    STATIC_MODES: tuple
+
+class ExtraShotClipStates(object):
+    NONE = 0
+    EXTRA_FULL_RELOAD = 1
+    FULL_RELOAD_WITH_EXTRA_TIME = 2
+
+class LowChargeShotReloadingState(object):
+    NONE = 0
+    INITIAL_RELOAD = 1
+    LOW_CHARGE = 2
+    ALMOST_FINISHED = 3
+    FULL_CHARGE = 4
+    QUICK_RELOAD = 5
+    EMPTY = 6
+
+class LowChargeShotVisualState(object):
+    NONE = 0
+    QUICK_SHOT = 1
+    FULL_SHOT = 2
+
+class SECONDARY_GUN_STATE:
+    IDLE = 0
+    READY = 1
+    ACTIVE = 2
+    COOLDOWN = 3
+    DISABLED = 4
+    @classmethod
+    def toString(cls, value):
+        ...
+
+# decorador original: @enum.unique
+class OVERHEAT_GAIN_STATE(enum.IntEnum):
+    NULL_STATE = 1
+    NO_SHELL_IN_CHAMBER = 2
+    DT_GAIN = 4
+    DT_LOOSE = 8
+    STACK_GAIN = 16
+    STACK_LOOSE = 32
+    CHARGE_MIN = 64
+    CHARGE_MAX = 128
+    DT_PROGRESS_FULL: Any
+    DT_PROGRESS_ZERO: Any
+
+class CHARGE_SHOT_FLAGS(BIN_FLAGS):
+    CHARGING = 1
+    SHOT_BLOCK = 2
+    UNDER_WATER = 4
+    GUN_DIVING = 8
+    OVERTURN = 16
+    UNDER_PRESSURE = 32
+    RELOADING = 64
+    GUN_DESTROYED = 128
+    LAST_SHELL_FIRED = 256
+    PUBLIC_MASK: Any
+    PRIVATE_MASK: Any
+    MUST_CANCEL_MASK: Any
+    CANT_START_MASK: Any
+    RESPAWN_MASK: Any
+    LOG_AS_DISABLED: Any
+
+class RECHARGEABLE_NITRO_STATE:
+    NOT_RUNNING = 0
+    DEPLOYING = 1
+    PREPARING = 2
+    READY = 3
+    ACTIVE = 4
+    DISABLED = 5
+    PRIMED = 7
+    DEPLETING = 8
+    ACTIVE_STATES: tuple
+    READY_STATES: tuple
+    @classmethod
+    def toString(cls, value):
+        ...
+
+class STANCE_DANCE_STATE:
+    STANCE_MASK = 1
+    STANCE_FIGHT = 0
+    STANCE_TURBO = 1
+    SWITCHING_STANCE = 2
+    ACTIVE_ABILITY_FIGHT = 4
+    ACTIVE_ABILITY_TURBO = 8
+    ENERGY_TIMER_ON = 16
+    ENERGY_SPD_BOOSTED = 32
+    ENGINE_DEAD = 64
+    ACTIVE_ABILITY_MASK: Any
+    FACTOR_BONUS_MASK: Any
+    TURBO_PASSIVE_BONUSES_MASK: Any
+    ENERGY_GAIN_MASK: Any
+
+class STANCE_CMD_RESULT:
+    OK = 0
+    BATTLE_NOT_STARTED = 1
+    SWITCHING_STANCE = 2
+    NOT_ENOUGH_ENERGY = 3
+    WRONG_STANCE = 4
+    WRONG_SOURCE_ID = 5
+    DEAD_VEHICLE = 6
+    ENGINE_DESTROYED = 7
+
+# decorador original: @enum.unique
+class AUTORELOADER_SURGE_STATE(enum.IntEnum):
+    UNAVAILABLE = 0
+    CHARGING = 1
+    IN_USE = 2
+    MAX_CHARGES = 4
+
+# decorador original: @enum.unique
+class AUTORELOADER_SURGE_RESTRICTION(enum.IntEnum):
+    NO_RESTRICTION = 0
+    UNAVAILABLE = 1
+    NO_CHARGES = 2
+    CLIP_FULL = 4
+    SHORT_RELOAD_TIME = 8
+    NO_AMMO = 16
+    ALREADY_ACTIVE = 32
+    @classmethod
+    def getTopPriorityRestriction(cls, restrictions):
+        ...
+
+# decorador original: @enum.unique
+class CREST_MOVING_STATE(enum.IntEnum):
+    STOPPED = 0
+    RUNNING_UP = 1
+    RUNNING_DOWN = 2
+    @property
+    def isRunning(self):
+        ...
+
+# decorador original: @enum.unique
+class CREST_MOVING_DIRECTION(enum.IntEnum):
+    UP = 0
+    DOWN = 1
+
+class GUN_LOCK_REASONS:
+    NONE = 0
+    OVERTURN = 1
+    UNDER_WATER = 2
+    UNDER_PRESSURE = 4
+    DEATH_ZONE = 8
+    TELEPORTING = 16
+    TURRET_ROTATOR_DESTROYED = 32
+
+class STATIONARY_RELOAD_STATE:
+    IDLE = 0
+    FIXING_GUN = 1
+    PREPARING = 2
+    RELOADING = 3
+    FINISHING = 4
+    TO_RELOADING_STATES: tuple
+    TRANSITION_STATES: tuple
+    @classmethod
+    def toString(cls, value):
+        ...
+
+class TARGET_DESIGNATOR_STATE:
+    READY = 0
+    ACTIVE = 1
+    COOLDOWN = 2
+    PRE_BATTLE = 3
+
+class DEBUFFS_TYPES:
+    OVERTURN = 0
+    STUN = 1
+    AMMOBAY = 2
+    FIRE = 3
+    GUNNER1 = 4
+    GUNNER2 = 5
+    LOADER1 = 6
+    LOADER2 = 7
+    RADIOMAN1 = 8
+    RADIOMAN2 = 9
+    COMMANDER = 10
+    DRIVER = 11
+    _NAME_TO_IDX: dict
+    @classmethod
+    def getIdx(cls, name):
+        ...
+
+class PHASED_MECHANIC_STATE:
+    NOT_RUNNING = 0
+    DEPLOYING = 1
+    PREPARING = 2
+    READY = 3
+    ACTIVE = 4
+    DISABLED = 5
+    EMPTY = 6
+    @classmethod
+    def toString(cls, value):
+        ...
+
+class AcceleratorStatus(enum.IntEnum):
+    NONE = 0
+    LEFT = 1
+    RIGHT = 2
+    BOTH: Any
+
+class WheeledDashDirection(enum.IntEnum):
+    NONE = 0
+    FORWARD = 1
+    BACKWARD = 2
+
+class SHELL_PARAMS_SWITCHER_STATE:
+    NOT_CHARGED = 0
+    CHARGED = 1
+    SWITCHING_OFF = 2
+    SWITCHING_ON = 3
+    ACTIVE_STATES_ALL: tuple
+    SWITCHING_STATES: tuple
+    _IDX_TO_NAME: dict
+    @classmethod
+    def toString(cls, value):
+        ...
+
+class SHELL_PARAMS_SWITCHER_MASK:
+    NONE = 0
+    MODULE_CRIT = 1
+    NO_AMMO = 2
+
+class SHELL_CALIBRATION_STATE(enum.IntEnum):
+    INACTIVE = 0
+    READY = 1
+    PENETRATION_BONUS = 2
+    NON_PENETRATION_BONUS = 4
+    WAITING_RESULT = 8
+
+class W2GT_STAGES(object):
+    STAGE1 = 'stage1'
+    STAGE2 = 'stage2'
+    ALL: tuple
+
+class PROPELLANT_GUN_STATE:
+    IDLE = 0
+    CHARGING = 1
+    PAUSE = 2
+    DISCHARGING = 3
+    STATIC_STATES: tuple
+    _STATE_TO_NAME: dict
+    @classmethod
+    def toString(cls, value):
+        ...
+
+class BUSTLE_FEED_STATE:
+    INACTIVE = 0
+    ACTIVATION = 1
+    ACTIVE = 2
+    DEACTIVATION = 3
+    _STATE_TO_NAME: dict
+    @classmethod
+    def toString(cls, value):
+        ...
+
+class BUSTLE_FEED_SWITCH_ACCESS:
+    ENABLED = 0
+    LOCKED = 1
+    DISABLED = 2
+    @staticmethod
+    def fromData(isLocked=False, isDisabled=False):
+        ...
+    @staticmethod
+    def isLocked(status):
+        ...
+    @staticmethod
+    def isDisabled(status):
+        ...
+
+def personalMissionFreeTokenName(branch):
+    ...
+def getArenaStartTime(arenaUniqueID):
+    ...
+def getTimeOnArena(arenaUniqueID):
+    ...

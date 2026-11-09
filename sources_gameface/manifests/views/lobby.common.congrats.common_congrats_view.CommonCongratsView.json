@@ -1,0 +1,92 @@
+{
+  "rid": "R.views.lobby.common.congrats.common_congrats_view.CommonCongratsView",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "CommonCongratsView",
+  "dir": "gui/unbound/views/lobby/common/congrats",
+  "feature": null,
+  "files": [
+    {
+      "name": "common_congrats_view.unbound",
+      "effective": "res/gui/unbound/views/lobby/common/congrats/common_congrats_view.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/common/congrats/common_congrats_view.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": [],
+  "link": {
+    "rid": "R.views.lobby.common.congrats.common_congrats_view.CommonCongratsView",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.lobby.common.congrats.common_congrats_view.CommonCongratsView no Python",
+      "ViewModel CommonCongratsViewModel (model=... no Python da view): 11/11 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/scripts/client/gui/impl/lobby/common/congrats/common_congrats_view.py",
+        18
+      ]
+    ],
+    "python_files": [
+      "sources/res/scripts/client/gui/impl/lobby/common/congrats/common_congrats_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/common/congrats/common_congrats_view_model.py",
+      "class": "CommonCongratsViewModel",
+      "chain": [
+        "CommonCongratsViewModel"
+      ],
+      "properties": [
+        [
+          "background",
+          "Resource"
+        ],
+        [
+          "title",
+          "Resource"
+        ],
+        [
+          "description",
+          "String"
+        ],
+        [
+          "image",
+          "String"
+        ],
+        [
+          "imageAlt",
+          "String"
+        ],
+        [
+          "confirmLbl",
+          "Resource"
+        ],
+        [
+          "backLbl",
+          "Resource"
+        ],
+        [
+          "needReset",
+          "Bool"
+        ]
+      ],
+      "commands": [
+        "onCloseClick",
+        "onConfirmClick",
+        "onBackClick"
+      ],
+      "coverage": {
+        "found": 11,
+        "total": 11,
+        "missing": []
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

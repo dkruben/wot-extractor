@@ -1,0 +1,48 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/last_stand/scripts/client/last_stand/gui/prb_control/entities/pre_queue/actions_validator.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: last_stand/scripts/client/last_stand/gui/prb_control/entities/pre_queue/actions_validator.py
+from __future__ import absolute_import
+from gui.prb_control.settings import PREBATTLE_RESTRICTION, PRE_QUEUE_RESTRICTION
+from helpers import dependency
+from CurrentVehicle import g_currentVehicle
+from gui.prb_control.entities.base.pre_queue.actions_validator import PreQueueActionsValidator
+from gui.prb_control.items import ValidationResult
+from gui.prb_control.entities.base.actions_validator import BaseActionsValidator, ActionsValidatorComposite
+from last_stand.skeletons.ls_controller import ILSController
+from last_stand.skeletons.difficulty_level_controller import IDifficultyLevelController
+
+class LastStandStateValidator(BaseActionsValidator):
+    lsCtrl = dependency.descriptor(ILSController)
+
+    def _validate(self):
+        if not self.lsCtrl.isBattlesEnabled():
+            return ValidationResult(False, PRE_QUEUE_RESTRICTION.MODE_NOT_AVAILABLE)
+        return super(LastStandStateValidator, self)._validate()
+
+
+class LastStandVehiclesValidator(BaseActionsValidator):
+    lsCtrl = dependency.descriptor(ILSController)
+    __difficultyLevelCtrl = dependency.descriptor(IDifficultyLevelController)
+
+    def _validate(self):
+        vehicle = g_currentVehicle.item
+        if vehicle:
+            vehLimits = self.lsCtrl.getVehiclesConfig()
+            if vehicle.intCD not in vehLimits.allowedVehicles:
+                if vehicle.level not in vehLimits.allowedLevels or vehicle.intCD in vehLimits.forbiddenVehicles or vehicle.type in vehLimits.forbiddenClassTags:
+                    return ValidationResult(False, PREBATTLE_RESTRICTION.VEHICLE_NOT_SUPPORTED)
+        else:
+            return ValidationResult(False)
+        return super(LastStandVehiclesValidator, self)._validate()
+
+
+class LastStandActionsValidator(PreQueueActionsValidator):
+
+    def _createVehiclesValidator(self, entity):
+        baseValidator = super(LastStandActionsValidator, self)._createVehiclesValidator(entity)
+        return ActionsValidatorComposite(entity, [
+         LastStandVehiclesValidator(entity),
+         LastStandStateValidator(entity),
+         baseValidator])

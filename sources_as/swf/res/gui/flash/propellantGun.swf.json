@@ -1,0 +1,319 @@
+{
+ "source": "sources/res/gui/flash/propellantGun.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 142528,
+ "actual_length": 142528,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 9,
+  "ShowFrame": 49,
+  "DefineShape": 3,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 51,
+  "RemoveObject2": 3,
+  "DefineShape3": 3,
+  "DefineBitsLossless2": 16,
+  "DefineEditText": 2,
+  "DefineSprite": 8,
+  "FrameLabel": 14,
+  "FileAttributes": 1,
+  "PlaceObject3": 31,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 2,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 16,
+  "shapes": 6,
+  "sprites": 8,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 2,
+  "fonts": 0,
+  "classes": 22,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "widgetsCommon.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 32,
+   "class": "PropellantGunWidgetUI"
+  },
+  {
+   "id": 25,
+   "class": "PropellantGunScaleCursorUI"
+  },
+  {
+   "id": 24,
+   "class": "propellantGun_fla.cursorMC_3"
+  },
+  {
+   "id": 21,
+   "class": "PropellantGunScaleSectorHighlightUI"
+  },
+  {
+   "id": 20,
+   "class": "PropellantGunScaleSectorUI"
+  },
+  {
+   "id": 18,
+   "class": "PropellantGunDamageIndicatorUI"
+  },
+  {
+   "id": 13,
+   "class": "PropellantGunChargePathActiveUI"
+  },
+  {
+   "id": 12,
+   "class": "PropellantGunChargePathActiveAltUI"
+  },
+  {
+   "id": 11,
+   "class": "PropellantGunChargePathReadyUI"
+  },
+  {
+   "id": 10,
+   "class": "PropellantGunChargePathReadyAltUI"
+  },
+  {
+   "id": 9,
+   "class": "PropellantGunChargeProgressUI"
+  },
+  {
+   "id": 8,
+   "class": "PropellantGunChargeProgressAltUI"
+  },
+  {
+   "id": 7,
+   "class": "PropellantGunOverchargePathActiveUI"
+  },
+  {
+   "id": 6,
+   "class": "PropellantGunOverchargePathActiveAltUI"
+  },
+  {
+   "id": 5,
+   "class": "PropellantGunOverchargePathReadyUI"
+  },
+  {
+   "id": 4,
+   "class": "PropellantGunOverchargePathReadyAltUI"
+  },
+  {
+   "id": 3,
+   "class": "PropellantGunOverchargeProgressUI"
+  },
+  {
+   "id": 2,
+   "class": "PropellantGunOverchargeProgressAltUI"
+  },
+  {
+   "id": 1,
+   "class": "PropellantGunOverchargeWarningUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 5097,
+   "classes": 22,
+   "methods": 86,
+   "bodies": 86,
+   "code_bytes": 1667
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunChargePathActiveAltUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunChargePathActiveUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunChargePathReadyAltUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunChargePathReadyUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunChargeProgressAltUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunChargeProgressUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunOverchargePathActiveAltUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunOverchargePathActiveUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunOverchargePathReadyAltUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunOverchargePathReadyUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunOverchargeProgressAltUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunOverchargeProgressUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunOverchargeWarningUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunScaleCursorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.propellantGun.PropellantGunScaleCursor",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "propellantGun_fla.cursorMC_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunDamageIndicatorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.propellantGun.PropellantGunDamageIndicator",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunScaleSectorHighlightUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.propellantGun.PropellantGunScaleSector",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunScaleSectorUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.propellantGun.PropellantGunScaleSector",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PropellantGunWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.PropellantGunWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

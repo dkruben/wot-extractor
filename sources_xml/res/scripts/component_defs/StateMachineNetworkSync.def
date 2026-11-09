@@ -1,0 +1,13 @@
+<!-- Copia descodificada (XML binario BigWorld) gerada pelo wot-extractor. Original: sources/res/scripts/component_defs/StateMachineNetworkSync.def -->
+<root>
+	<Implements>
+		<Interface>ReplicableComponent</Interface>
+	</Implements>
+	<Properties>
+		<replicableStateIndex>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</replicableStateIndex>
+	</Properties>
+	<DefaultKeyName>stateMachineNetworkSync</DefaultKeyName>
+</root>

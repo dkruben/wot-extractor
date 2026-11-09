@@ -1,0 +1,110 @@
+{
+  "rid": "R.views.comp7_light.mono.lobby.battle_quest_awards_view",
+  "rid_source": "sources/res/comp7_light/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "battle_quest_awards_view",
+  "dir": "comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view",
+  "feature": "comp7_light",
+  "files": [
+    {
+      "name": "battle_quest_awards_view.css",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.css",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "battle_quest_awards_view.html",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.html",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/bundle.js",
+      "all": [
+        "res/comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/battle_quest_awards_view.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/bundle.js",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/battle_quest_awards_view/bundle.js"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/globals.css"
+    },
+    {
+      "virtual": "comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/comp7_light/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onApprove",
+    "onClose"
+  ],
+  "link": {
+    "rid": "R.views.comp7_light.mono.lobby.battle_quest_awards_view",
+    "confidence": "provavel-forte",
+    "evidence": [
+      "1 referencia(s) R.views.comp7_light.mono.lobby.battle_quest_awards_view no Python",
+      "ViewModel BattleQuestAwardsModel (model=... no Python da view): 3/5 nomes no JS"
+    ],
+    "python_refs": [
+      [
+        "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_quest_awards_view.py",
+        24
+      ]
+    ],
+    "python_files": [
+      "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/lobby/battle_quest_awards_view.py"
+    ],
+    "coui_refs": [],
+    "view_model": {
+      "file": "sources/res/comp7_light/scripts/client/comp7_light/gui/impl/gen/view_models/views/lobby/battle_quest_awards_model.py",
+      "class": "BattleQuestAwardsModel",
+      "chain": [
+        "BattleQuestAwardsModel"
+      ],
+      "properties": [
+        [
+          "battleStatus",
+          "String"
+        ],
+        [
+          "level",
+          "Number"
+        ],
+        [
+          "rewards",
+          "Array"
+        ]
+      ],
+      "commands": [
+        "onApprove",
+        "onClose"
+      ],
+      "coverage": {
+        "found": 3,
+        "total": 5,
+        "missing": [
+          "battleStatus",
+          "level"
+        ]
+      },
+      "found_by": "model=... no Python da view"
+    }
+  }
+}

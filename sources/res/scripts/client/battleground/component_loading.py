@@ -1,0 +1,92 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/battleground/component_loading.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/battleground/component_loading.py
+from __future__ import absolute_import
+import functools, weakref
+from future.utils import viewitems, viewvalues
+import BigWorld
+from battleground.iself_assembler import ISelfAssembler
+from components_base.component_controller import ComponentController
+from components_base.component_descriptor import ComponentDescriptorTyped
+from vehicle_systems import stricted_loading
+
+class Loader(object):
+
+    def __init__(self, resourceLoader, *args, **kwargs):
+        self.resourceLoader = resourceLoader
+        self.args = args
+        self.kwargs = kwargs
+
+
+class CompositeLoaderMixin(object):
+
+    def __init__(self):
+        self.__pieces = 1
+        self.__callback = None
+        return
+
+    def prepareCompositeLoader(self, callback):
+        self.__pieces = self._piecesNum()
+        self.__callback = stricted_loading.makeCallbackWeak(callback)
+
+    def appendPiece(self, *_):
+        self.__pieces -= 1
+        if self.__pieces == 0:
+            self.__invoke()
+
+    def __invoke(self):
+        if self.__callback is not None:
+            self.__callback(self)
+        return
+
+    def _piecesNum(self):
+        return 1
+
+
+def loadComponentSystem(componentSystem, callback, resourceMapping=None, forceForegroundLoad=False):
+    componentSystem = weakref.ref(componentSystem)
+    resourceLoadingList = [loader.resourceLoader for loader in viewvalues(resourceMapping)]
+    if forceForegroundLoad:
+        loadedRes = BigWorld.loadResourceListFG(resourceLoadingList)
+        _processLoadedList(componentSystem, callback, resourceMapping, loadedRes)
+        return
+    else:
+        wrappedCallback = None if callback is None else stricted_loading.makeCallbackWeak(callback)
+        loadingCallback = functools.partial(_processLoadedList, componentSystem, wrappedCallback, resourceMapping)
+        BigWorld.loadResourceListBG(resourceLoadingList, loadingCallback)
+        return
+
+
+def loadResourceMapping(resourceMapping, callback, *args, **kwargs):
+    resourceLoadingList = [loader.resourceLoader for loader in viewvalues(resourceMapping)]
+    BigWorld.loadResourceListBG(resourceLoadingList, stricted_loading.makeCallbackWeak(callback, *args, **kwargs))
+
+
+def _processLoadedList(componentSystemWeak, callback, resourceMapping, resourceList):
+    componentSystem = componentSystemWeak()
+    if componentSystem is None:
+        return
+    else:
+        if getattr(componentSystem, 'stopLoading', False):
+            return
+        for componentName, loader in viewitems(resourceMapping):
+            classMember = getattr(componentSystem.__class__, componentName)
+            resourceLoader = loader.resourceLoader
+            componentFactory = classMember.allowedType
+            if isinstance(resourceLoader, str):
+                resourceName = resourceLoader
+            else:
+                resourceName = resourceLoader.name
+            if resourceName in resourceList.failedIDs:
+                return
+            resourceLoaded = resourceList[resourceName]
+            component = componentFactory(resourceLoaded, *loader.args, **loader.kwargs)
+            setattr(componentSystem, componentName, component)
+
+        if isinstance(componentSystem, ISelfAssembler):
+            componentSystem.assembleOnLoad()
+        if callback is not None:
+            callback(componentSystem)
+        return

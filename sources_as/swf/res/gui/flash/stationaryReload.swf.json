@@ -1,0 +1,149 @@
+{
+ "source": "sources/res/gui/flash/stationaryReload.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 6461,
+ "actual_length": 6461,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 5,
+  "ShowFrame": 62,
+  "DefineShape": 2,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 3,
+  "RemoveObject2": 3,
+  "DefineBitsLossless2": 2,
+  "DefineEditText": 1,
+  "DefineSprite": 4,
+  "FrameLabel": 14,
+  "FileAttributes": 1,
+  "PlaceObject3": 3,
+  "ImportAssets2": 1,
+  "CSMTextSettings": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 2,
+  "shapes": 2,
+  "sprites": 4,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 1,
+  "fonts": 0,
+  "classes": 7,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 9,
+   "class": "StationaryReloadWidgetUI"
+  },
+  {
+   "id": 8,
+   "class": "StationaryReloadTimerUI"
+  },
+  {
+   "id": 6,
+   "class": "stationaryReload_fla.activeStatusIndicator_4"
+  },
+  {
+   "id": 3,
+   "class": "stationaryReload_fla.preparingStatusIndicator_3"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 3135,
+   "classes": 7,
+   "methods": 41,
+   "bodies": 41,
+   "code_bytes": 1164
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Linear",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Elastic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stationaryReload_fla.activeStatusIndicator_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "stationaryReload_fla.preparingStatusIndicator_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StationaryReloadTimerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.common.Timer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StationaryReloadWidgetUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.views.widgetsPanel.StationaryReloadWidget",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

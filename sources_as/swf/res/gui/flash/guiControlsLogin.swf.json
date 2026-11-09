@@ -1,0 +1,357 @@
+{
+ "source": "sources/res/gui/flash/guiControlsLogin.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 2018567,
+ "actual_length": 2018567,
+ "frame_size_px": [
+  0.0,
+  550.0,
+  0.0,
+  440.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 59,
+  "ShowFrame": 1193,
+  "DefineShape": 64,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 5,
+  "DefineShape2": 2,
+  "PlaceObject2": 1010,
+  "RemoveObject2": 65,
+  "DefineShape3": 7,
+  "DefineBitsLossless2": 59,
+  "DefineEditText": 35,
+  "DefineSprite": 58,
+  "FrameLabel": 87,
+  "FileAttributes": 1,
+  "PlaceObject3": 35,
+  "ImportAssets2": 2,
+  "CSMTextSettings": 35,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 5,
+  "DoABC2": 1,
+  "DefineShape4": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 64,
+  "shapes": 74,
+  "sprites": 58,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 35,
+  "fonts": 0,
+  "classes": 24,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 231,
+   "class": "ButtonRed"
+  },
+  {
+   "id": 225,
+   "class": "guiControlsLogin_fla.button_red_alert_state_anim_4"
+  },
+  {
+   "id": 213,
+   "class": "CollectibleStatusUI"
+  },
+  {
+   "id": 209,
+   "class": "HyperLinkUI"
+  },
+  {
+   "id": 208,
+   "class": "externalLinkIco"
+  },
+  {
+   "id": 204,
+   "class": "LinkBtn_UI"
+  },
+  {
+   "id": 202,
+   "class": "guiControlsLogin_fla.linkBtnFocusIndicator_10"
+  },
+  {
+   "id": 198,
+   "class": "LinkPlusBtn_UI"
+  },
+  {
+   "id": 195,
+   "class": "guiControlsLogin_fla.linkPlusBtnFocusIndicator_15"
+  },
+  {
+   "id": 188,
+   "class": "RedButton"
+  },
+  {
+   "id": 183,
+   "class": "RedButton_UI"
+  },
+  {
+   "id": 166,
+   "class": "guiControlsLogin_fla.RedButton_FocusIndicator_29"
+  },
+  {
+   "id": 156,
+   "class": "RedStartButtonUI"
+  },
+  {
+   "id": 144,
+   "class": "guiControlsLogin_fla.RedButton_FocusIndicator_20"
+  },
+  {
+   "id": 133,
+   "class": "ServerDropDownUI"
+  },
+  {
+   "id": 128,
+   "class": "guiControlsLogin_fla.serverDropDownBackground_39"
+  },
+  {
+   "id": 120,
+   "class": "ServerLabelBackgroundUI"
+  },
+  {
+   "id": 117,
+   "class": "ServerRenderer_UI"
+  },
+  {
+   "id": 115,
+   "class": "guiControlsLogin_fla.selectedOutAnimation_52"
+  },
+  {
+   "id": 113,
+   "class": "guiControlsLogin_fla.outAnimation_51"
+  },
+  {
+   "id": 100,
+   "class": "serverAlertUI"
+  },
+  {
+   "id": 92,
+   "class": "ShineAnimSmallUI"
+  },
+  {
+   "id": 15,
+   "class": "TextInput"
+  },
+  {
+   "id": 1,
+   "class": "toogleBtnContainer"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 9508,
+   "classes": 24,
+   "methods": 170,
+   "bodies": 170,
+   "code_bytes": 3151
+  }
+ ],
+ "classes": [
+  {
+   "name": "serverAlertUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "toogleBtnContainer",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServerLabelBackgroundUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ShineAnimSmallUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "externalLinkIco",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLogin_fla.RedButton_FocusIndicator_20",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLogin_fla.RedButton_FocusIndicator_29",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLogin_fla.button_red_alert_state_anim_4",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLogin_fla.linkBtnFocusIndicator_10",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLogin_fla.linkPlusBtnFocusIndicator_15",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLogin_fla.outAnimation_51",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLogin_fla.selectedOutAnimation_52",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "guiControlsLogin_fla.serverDropDownBackground_39",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CollectibleStatusUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.components.CollectibleStatus",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "HyperLinkUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.HyperLink",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RedButton",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RedStartButtonUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TextInput",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.TextInput",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ButtonRed",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LinkBtn_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LinkPlusBtn_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.SoundButtonEx",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RedButton_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.FightButton",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServerDropDownUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.serverStats.ServerDropDown",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServerRenderer_UI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.controls.ServerRenderer",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

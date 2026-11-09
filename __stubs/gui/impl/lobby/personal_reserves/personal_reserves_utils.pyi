@@ -1,0 +1,59 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/impl/lobby/personal_reserves/personal_reserves_utils.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+import typing as typing
+from frameworks.wulf import Array as Array
+from goodies.goodie_constants import GOODIE_RESOURCE_TYPE as GOODIE_RESOURCE_TYPE, GOODIE_STATE as GOODIE_STATE, BoosterCategory as BoosterCategory
+from gui.impl.common.personal_reserves.personal_reserves_shared_constants import PERSONAL_RESOURCE_ORDER as PERSONAL_RESOURCE_ORDER, EVENT_RESOURCE_ORDER as EVENT_RESOURCE_ORDER, CLAN_RESOURCE_ORDER_BY_GROUP as CLAN_RESOURCE_ORDER_BY_GROUP, PREMIUM_BOOSTER_IDS as PREMIUM_BOOSTER_IDS
+from gui.impl.gen.view_models.views.lobby.personal_reserves.disabled_category import DisabledCategory as DisabledCategory, CategoryType as CategoryType
+from gui.shared.utils.requesters import REQ_CRITERIA as REQ_CRITERIA, RequestCriteria as RequestCriteria
+from helpers.dependency import replace_none_kwargs as replace_none_kwargs
+from helpers.time_utils import ONE_DAY as ONE_DAY
+from skeletons.gui.goodies import IGoodiesCache as IGoodiesCache, IBoostersStateProvider as IBoostersStateProvider
+from skeletons.gui.web import IWebController as IWebController
+from typing import List as List, Union as Union, Dict as Dict, Tuple as Tuple
+from skeletons.gui.game_control import IBoostersController as IBoostersController
+from skeletons.gui.shared import IItemsCache as IItemsCache
+from gui.goodies.goodie_items import BoostersType as BoostersType, Booster as Booster, BoosterUICommon as BoosterUICommon
+_BOOSTER_CATEGORY_TO_MODEL_ENUM: dict
+
+def generatePersonalReserveTick(boosters):
+    ...
+# decorador original: @replace_none_kwargs(...)
+def getActiveBoosters(goodiesCache, webController):
+    ...
+# decorador original: @replace_none_kwargs(...)
+def getActiveClanBoosters(cache=None, controller=None):
+    ...
+# decorador original: @replace_none_kwargs(...)
+def isCategoryActive(category, cache=None):
+    ...
+def getGUIResourceOrder(category, boostersByResource):
+    ...
+def getTotalReadyReserves(cache):
+    ...
+def getTotalLimitedReserves(cache):
+    ...
+def getTotalLimitedBoostersByResourceType(category, resourceType, cache):
+    ...
+def getNearestExpiryTimeForToday(cache):
+    ...
+def getTotalBoostersByResourceType(category, resourceType, cache):
+    ...
+def getNearestExpirationTimeAndCountForToday(boosters):
+    ...
+def findNearestExpiryTimeInBoostersList(goodies):
+    ...
+def getNearestExpiryTimeAndAmountByGroup(category, resourceType, cache):
+    ...
+def canBuyBooster(booster, itemsCache):
+    ...
+def addDisabledCategories(modelArray, controller):
+    ...
+def getTotalBoostersByResourceAndPremium(booster, cache):
+    ...
+def getSummedBoosterCount(criteria, cache, filter_=None):
+    ...
+def getBoostersInGroup(booster, cache):
+    ...

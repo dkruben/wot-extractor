@@ -1,0 +1,844 @@
+{
+ "source": "sources/res/gui/flash/IconLibrary.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 907547,
+ "actual_length": 907547,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  500.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#ffffff",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 13,
+  "ShowFrame": 212,
+  "DefineShape": 62,
+  "SetBackgroundColor": 1,
+  "DefineShape2": 1,
+  "PlaceObject2": 384,
+  "RemoveObject2": 3,
+  "DefineShape3": 1,
+  "DefineBitsJPEG3": 2,
+  "DefineBitsLossless2": 121,
+  "DefineSprite": 12,
+  "FrameLabel": 52,
+  "FileAttributes": 1,
+  "PlaceObject3": 4,
+  "ImportAssets2": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 123,
+  "shapes": 64,
+  "sprites": 12,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 69,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 199,
+   "class": "rudimentaryIconLibrary"
+  },
+  {
+   "id": 198,
+   "class": "battleType"
+  },
+  {
+   "id": 126,
+   "class": "commanderMc"
+  },
+  {
+   "id": 121,
+   "class": "PlayerActionMarker"
+  },
+  {
+   "id": 117,
+   "class": "SquadIcon"
+  },
+  {
+   "id": 116,
+   "class": "VehicleLevelIconUI"
+  },
+  {
+   "id": 93,
+   "class": "VehicleTypeIconUI"
+  },
+  {
+   "id": 62,
+   "class": "AccountTypeChangedIcon"
+  },
+  {
+   "id": 61,
+   "class": "Action"
+  },
+  {
+   "id": 60,
+   "class": "actionBgFill"
+  },
+  {
+   "id": 59,
+   "class": "Discount"
+  },
+  {
+   "id": 58,
+   "class": "inHangarBitmap"
+  },
+  {
+   "id": 57,
+   "class": "onVehicleBitmap"
+  },
+  {
+   "id": 56,
+   "class": "BattlePassIcon"
+  },
+  {
+   "id": 55,
+   "class": "BattleResultIcon"
+  },
+  {
+   "id": 54,
+   "class": "ClanBattleResultIcon"
+  },
+  {
+   "id": 53,
+   "class": "CreditsIcon"
+  },
+  {
+   "id": 52,
+   "class": "ErrorIcon"
+  },
+  {
+   "id": 51,
+   "class": "GiftIcon"
+  },
+  {
+   "id": 50,
+   "class": "squadGold1"
+  },
+  {
+   "id": 49,
+   "class": "squadGold10"
+  },
+  {
+   "id": 48,
+   "class": "squadGold11"
+  },
+  {
+   "id": 47,
+   "class": "squadGold12"
+  },
+  {
+   "id": 46,
+   "class": "squadGold13"
+  },
+  {
+   "id": 45,
+   "class": "squadGold14"
+  },
+  {
+   "id": 44,
+   "class": "squadGold2"
+  },
+  {
+   "id": 43,
+   "class": "squadGold3"
+  },
+  {
+   "id": 42,
+   "class": "squadGold4"
+  },
+  {
+   "id": 41,
+   "class": "squadGold5"
+  },
+  {
+   "id": 40,
+   "class": "squadGold6"
+  },
+  {
+   "id": 39,
+   "class": "squadGold7"
+  },
+  {
+   "id": 38,
+   "class": "squadGold8"
+  },
+  {
+   "id": 37,
+   "class": "squadGold9"
+  },
+  {
+   "id": 36,
+   "class": "GoldIcon"
+  },
+  {
+   "id": 35,
+   "class": "GoldStarIcon"
+  },
+  {
+   "id": 34,
+   "class": "InformationIcon"
+  },
+  {
+   "id": 33,
+   "class": "InvoiceIcon"
+  },
+  {
+   "id": 32,
+   "class": "MagazineGunIcon"
+  },
+  {
+   "id": 31,
+   "class": "MessageIcon"
+  },
+  {
+   "id": 30,
+   "class": "PersonalAchievementsIcon"
+  },
+  {
+   "id": 29,
+   "class": "PowerlevelIcon"
+  },
+  {
+   "id": 28,
+   "class": "PremiumAccountExpiryIcon"
+  },
+  {
+   "id": 27,
+   "class": "ServerRebootCancelledIcon"
+  },
+  {
+   "id": 26,
+   "class": "ServerRebootIcon"
+  },
+  {
+   "id": 25,
+   "class": "squadSilver1"
+  },
+  {
+   "id": 24,
+   "class": "squadSilver10"
+  },
+  {
+   "id": 23,
+   "class": "squadSilver11"
+  },
+  {
+   "id": 22,
+   "class": "squadSilver12"
+  },
+  {
+   "id": 21,
+   "class": "squadSilver13"
+  },
+  {
+   "id": 20,
+   "class": "squadSilver14"
+  },
+  {
+   "id": 19,
+   "class": "squadSilver2"
+  },
+  {
+   "id": 18,
+   "class": "squadSilver3"
+  },
+  {
+   "id": 17,
+   "class": "squadSilver4"
+  },
+  {
+   "id": 16,
+   "class": "squadSilver5"
+  },
+  {
+   "id": 15,
+   "class": "squadSilver6"
+  },
+  {
+   "id": 14,
+   "class": "squadSilver7"
+  },
+  {
+   "id": 13,
+   "class": "squadSilver8"
+  },
+  {
+   "id": 12,
+   "class": "squadSilver9"
+  },
+  {
+   "id": 11,
+   "class": "SmallCreditsIcon"
+  },
+  {
+   "id": 10,
+   "class": "superSquadGold"
+  },
+  {
+   "id": 9,
+   "class": "superSquadSilver"
+  },
+  {
+   "id": 8,
+   "class": "TechTreeDiscount"
+  },
+  {
+   "id": 7,
+   "class": "TournamentBattleResultIcon"
+  },
+  {
+   "id": 6,
+   "class": "TurbineEngineIconUI"
+  },
+  {
+   "id": 5,
+   "class": "VehicleLock"
+  },
+  {
+   "id": 4,
+   "class": "inHangarSmall"
+  },
+  {
+   "id": 3,
+   "class": "onVehicleSmall"
+  },
+  {
+   "id": 2,
+   "class": "warningIcon"
+  },
+  {
+   "id": 1,
+   "class": "XPCostIcon"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 9722,
+   "classes": 69,
+   "methods": 237,
+   "bodies": 237,
+   "code_bytes": 2721
+  }
+ ],
+ "classes": [
+  {
+   "name": "AccountTypeChangedIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Action",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattlePassIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "BattleResultIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ClanBattleResultIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "CreditsIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "Discount",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ErrorIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GiftIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GoldIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "GoldStarIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InformationIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "InvoiceIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MagazineGunIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "MessageIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PersonalAchievementsIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PowerlevelIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PremiumAccountExpiryIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServerRebootCancelledIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "ServerRebootIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SmallCreditsIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TechTreeDiscount",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TournamentBattleResultIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "TurbineEngineIconUI",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleLock",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "XPCostIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "actionBgFill",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "inHangarBitmap",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "inHangarSmall",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "onVehicleBitmap",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "onVehicleSmall",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold1",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold10",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold11",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold12",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold13",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold14",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold2",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold3",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold4",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold5",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold6",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold7",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold8",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadGold9",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver1",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver10",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver11",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver12",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver13",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver14",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver2",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver3",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver4",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver5",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver6",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver7",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver8",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "squadSilver9",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "superSquadGold",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "superSquadSilver",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "warningIcon",
+   "kind": "class",
+   "extends": "flash.display.BitmapData",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "rudimentaryIconLibrary",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "SquadIcon",
+   "kind": "class",
+   "extends": "net.wg.gui.components.icons.SquadIcon",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleLevelIconUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "VehicleTypeIconUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "commanderMc",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayerActionMarker",
+   "kind": "class",
+   "extends": "net.wg.gui.components.icons.PlayerActionMarker",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "battleType",
+   "kind": "class",
+   "extends": "net.wg.gui.components.icons.BattleTypeIcon",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

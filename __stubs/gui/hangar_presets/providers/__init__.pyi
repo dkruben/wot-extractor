@@ -1,0 +1,13 @@
+# wot-extractor: STUB (.pyi) gerado a partir de sources/res/scripts/client/gui/hangar_presets/providers/__init__.py (arvore sintatica do codigo descompilado/original).
+# So contem o que foi verificado no codigo: nomes, parametros, valores por omissao literais, docstrings e
+# atributos atribuidos. 'Any' = tipo desconhecido; nenhuma assinatura, tipo ou comportamento foi inventado.
+
+from constants import QUEUE_TYPE as QUEUE_TYPE
+from gui.hangar_presets.providers.default_dynamic_gui_provider import DefaultHangarDynamicGuiProvider as DefaultHangarDynamicGuiProvider
+from gui.hangar_presets.providers.random_dynamic_gui_providers import RandomHangarDynamicGuiProvider as RandomHangarDynamicGuiProvider, WinbackHangarDynamicGuiProvider as WinbackHangarDynamicGuiProvider, RandomNP2HangarDynamicGuiProvider as RandomNP2HangarDynamicGuiProvider
+from gui.hangar_presets.providers.event_dynamic_gui_provider import EventHangarDynamicGuiProvider as EventHangarDynamicGuiProvider
+from gui.hangar_presets.providers.ranked_dynamic_gui_provider import RankedHangarDynamicGuiProvider as RankedHangarDynamicGuiProvider
+from gui.hangar_presets.providers.mapbox_dynamic_gui_provider import MapboxHangarDynamicGuiProvider as MapboxHangarDynamicGuiProvider
+from gui.hangar_presets.providers.maps_training_dynamic_gui_provider import MapsTrainingHangarDynamicGuiProvider as MapsTrainingHangarDynamicGuiProvider
+from gui.hangar_presets.providers.spec_battle_dynamic_gui_providers import SpecBattleHangarDynamicGuiProvider as SpecBattleHangarDynamicGuiProvider
+from gui.shared.system_factory import registerHangarDynamicGuiProvider as registerHangarDynamicGuiProvider

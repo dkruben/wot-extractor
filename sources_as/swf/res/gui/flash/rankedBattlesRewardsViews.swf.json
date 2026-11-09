@@ -1,0 +1,430 @@
+{
+ "source": "sources/res/gui/flash/rankedBattlesRewardsViews.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 17875640,
+ "actual_length": 17875640,
+ "frame_size_px": [
+  0.0,
+  1024.0,
+  0.0,
+  768.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#333333",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 45,
+  "ShowFrame": 427,
+  "DefineShape": 46,
+  "SetBackgroundColor": 1,
+  "DefineBitsLossless": 1,
+  "PlaceObject2": 291,
+  "RemoveObject2": 3,
+  "DefineShape3": 5,
+  "DefineBitsJPEG3": 6,
+  "DefineBitsLossless2": 37,
+  "DefineEditText": 9,
+  "DefineSprite": 44,
+  "FrameLabel": 90,
+  "FileAttributes": 1,
+  "PlaceObject3": 67,
+  "ImportAssets2": 6,
+  "CSMTextSettings": 8,
+  "SymbolClass": 1,
+  "DefineScalingGrid": 4,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 44,
+  "shapes": 51,
+  "sprites": 44,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 9,
+  "fonts": 0,
+  "classes": 30,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [
+  {
+   "url": "guiControlsLobbyBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginBattle.swf",
+   "symbols": []
+  },
+  {
+   "url": "gfxfontlib.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLoginLoading.swf",
+   "symbols": []
+  },
+  {
+   "url": "guiControlsLobby2.swf",
+   "symbols": []
+  },
+  {
+   "url": "rankedBattlesCmp.swf",
+   "symbols": []
+  }
+ ],
+ "symbol_classes": [
+  {
+   "id": 148,
+   "class": "RBRewardLeagueRendererUI"
+  },
+  {
+   "id": 144,
+   "class": "StyleRewardWrapper"
+  },
+  {
+   "id": 143,
+   "class": "StyleRewardSmallIcon"
+  },
+  {
+   "id": 124,
+   "class": "StyleRewardBigIcon"
+  },
+  {
+   "id": 99,
+   "class": "RBRewardLeagueRendererBgUI"
+  },
+  {
+   "id": 91,
+   "class": "RBRewardHorizontalSeparatorUI"
+  },
+  {
+   "id": 88,
+   "class": "RBRewardRankRendererUI"
+  },
+  {
+   "id": 87,
+   "class": "LineToNextUI"
+  },
+  {
+   "id": 82,
+   "class": "RBRewardRankRendererBgUI"
+  },
+  {
+   "id": 69,
+   "class": "shieldUI"
+  },
+  {
+   "id": 62,
+   "class": "RankedBattlesRewardsLeaguesUI"
+  },
+  {
+   "id": 61,
+   "class": "RBRewardsLeagueContainerUI"
+  },
+  {
+   "id": 56,
+   "class": "RankedBattlesRewardsRanksUI"
+  },
+  {
+   "id": 55,
+   "class": "QualificationRewardsViewUI"
+  },
+  {
+   "id": 54,
+   "class": "DivisionRewardsViewUI"
+  },
+  {
+   "id": 53,
+   "class": "RanksMaskMcUI"
+  },
+  {
+   "id": 51,
+   "class": "RBRewardsRanksContainerUI"
+  },
+  {
+   "id": 50,
+   "class": "RanksDragAreaUI"
+  },
+  {
+   "id": 48,
+   "class": "RankedBattlesRewardsUI"
+  },
+  {
+   "id": 47,
+   "class": "RankedBattlesRewardsYearUI"
+  },
+  {
+   "id": 46,
+   "class": "RewardsYeaTitleArea"
+  },
+  {
+   "id": 42,
+   "class": "YearRewardsContainerUI"
+  },
+  {
+   "id": 40,
+   "class": "YearRewardBtn0"
+  },
+  {
+   "id": 33,
+   "class": "YearRewardBtn1"
+  },
+  {
+   "id": 26,
+   "class": "YearRewardBtn2"
+  },
+  {
+   "id": 19,
+   "class": "YearRewardBtn3"
+  },
+  {
+   "id": 16,
+   "class": "YearRewardPointsUI"
+  },
+  {
+   "id": 8,
+   "class": "RewardsYearBgUI"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 9264,
+   "classes": 30,
+   "methods": 138,
+   "bodies": 138,
+   "code_bytes": 2873
+  }
+ ],
+ "classes": [
+  {
+   "name": "fl.motion.easing.Cubic",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "fl.transitions.easing.Strong",
+   "kind": "class",
+   "extends": "Object",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RanksDragAreaUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RanksMaskMcUI",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RewardsYeaTitleArea",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RBRewardHorizontalSeparatorUI",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RBRewardsLeagueContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.league.RewardsLeagueContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RBRewardsRanksContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.ranks.RewardsRanksContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "YearRewardsContainerUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.year.RankedBattlesYearRewardContainer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RewardsYearBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.year.RankedBattlesRewardsYearBg",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StyleRewardWrapper",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.league.RewardsLeagueStyleReward",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "DivisionRewardsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.ranks.DivisionRewardsView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "LineToNextUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RBRewardLeagueRendererBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RBRewardRankRendererBgUI",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StyleRewardBigIcon",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "StyleRewardSmallIcon",
+   "kind": "class",
+   "extends": "net.wg.gui.components.common.FrameStateCmpnt",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RBRewardLeagueRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.league.RewardsLeagueRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RBRewardRankRendererUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.ranks.RewardsRankRenderer",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "YearRewardPointsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.year.RankedBattlesYearRewardPoints",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "shieldUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.ranks.RankShieldLevel",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "YearRewardBtn0",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.year.RankedBattlesYearRewardBtn",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "YearRewardBtn1",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.year.RankedBattlesYearRewardBtn",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "YearRewardBtn2",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.year.RankedBattlesYearRewardBtn",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "YearRewardBtn3",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.year.RankedBattlesYearRewardBtn",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattlesRewardsLeaguesUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.RankedBattlesRewardsLeaguesView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattlesRewardsRanksUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.RankedBattlesRewardsRanksView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattlesRewardsUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.RankedBattlesRewards",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "RankedBattlesRewardsYearUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.RankedBattlesRewardsYearView",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "QualificationRewardsViewUI",
+   "kind": "class",
+   "extends": "net.wg.gui.lobby.rankedBattles19.view.rewards.ranks.QualificationRewardsView",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

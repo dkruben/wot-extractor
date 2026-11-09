@@ -1,0 +1,176 @@
+{
+ "source": "sources/res/gui/flash/poiProgressBar.swf",
+ "container_member": null,
+ "signature": "CWS",
+ "compression": "zlib",
+ "version": 17,
+ "declared_length": 127436,
+ "actual_length": 127436,
+ "frame_size_px": [
+  0.0,
+  1014.0,
+  0.0,
+  630.0
+ ],
+ "frame_rate": 50.0,
+ "frame_count": 1,
+ "background": "#666666",
+ "actionscript": "as3",
+ "as3_flag": true,
+ "use_network": false,
+ "tags": {
+  "End": 13,
+  "ShowFrame": 1116,
+  "DefineShape": 306,
+  "SetBackgroundColor": 1,
+  "PlaceObject2": 1122,
+  "RemoveObject2": 1090,
+  "DefineShape3": 1,
+  "DefineBitsJPEG3": 7,
+  "DefineBitsLossless2": 20,
+  "DefineSprite": 12,
+  "FrameLabel": 25,
+  "FileAttributes": 1,
+  "SymbolClass": 1,
+  "DoABC2": 1,
+  "DefineSceneAndFrameLabelData": 1
+ },
+ "counts": {
+  "images": 27,
+  "shapes": 307,
+  "sprites": 12,
+  "sounds": 0,
+  "binary_data": 0,
+  "texts": 0,
+  "fonts": 0,
+  "classes": 9,
+  "abc_blocks": 1,
+  "as2_action_tags": 0
+ },
+ "exports": [],
+ "imports": [],
+ "symbol_classes": [
+  {
+   "id": 346,
+   "class": "PlayersPanelPoiProgressBarUI"
+  },
+  {
+   "id": 345,
+   "class": "poiProgressBar_fla.captureCircleAnimationRedPlayersPanelUI_6"
+  },
+  {
+   "id": 342,
+   "class": "poiProgressBar_fla.captureCircleAnimationPurplePlayersPanelUI_5"
+  },
+  {
+   "id": 332,
+   "class": "poiProgressBar_fla.captureCircleAnimationGreenPlayersPanelUI_3"
+  },
+  {
+   "id": 199,
+   "class": "PoiProgressBarUI"
+  },
+  {
+   "id": 198,
+   "class": "poiProgressBar_fla.captureCircleAnimationRedUI_12"
+  },
+  {
+   "id": 195,
+   "class": "poiProgressBar_fla.captureCircleAnimationPurpleUI_11"
+  },
+  {
+   "id": 167,
+   "class": "poiProgressBar_fla.captureCircleAnimationGreenUI_9"
+  },
+  {
+   "id": 9,
+   "class": "poiProgressBar_fla.PoiIndicatorBg_8"
+  }
+ ],
+ "abc": [
+  {
+   "name": "",
+   "lazy": true,
+   "size": 2929,
+   "classes": 9,
+   "methods": 55,
+   "bodies": 55,
+   "code_bytes": 877
+  }
+ ],
+ "classes": [
+  {
+   "name": "poiProgressBar_fla.PoiIndicatorBg_8",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiProgressBar_fla.captureCircleAnimationGreenPlayersPanelUI_3",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiProgressBar_fla.captureCircleAnimationGreenUI_9",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiProgressBar_fla.captureCircleAnimationPurplePlayersPanelUI_5",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiProgressBar_fla.captureCircleAnimationPurpleUI_11",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiProgressBar_fla.captureCircleAnimationRedPlayersPanelUI_6",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "poiProgressBar_fla.captureCircleAnimationRedUI_12",
+   "kind": "class",
+   "extends": "flash.display.MovieClip",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PlayersPanelPoiProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.poi.components.PoiProgressCircle",
+   "implements": [],
+   "abc": 0
+  },
+  {
+   "name": "PoiProgressBarUI",
+   "kind": "class",
+   "extends": "net.wg.gui.battle.components.poi.components.PoiProgressCircle",
+   "implements": [],
+   "abc": 0
+  }
+ ],
+ "fonts": [],
+ "external_resources": [],
+ "frame_labels": [],
+ "scenes": [
+  "Scene 1"
+ ],
+ "parser": {
+  "swf": 1,
+  "abc": 1
+ }
+}

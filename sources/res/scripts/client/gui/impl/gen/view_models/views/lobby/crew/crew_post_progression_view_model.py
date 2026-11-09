@@ -1,0 +1,73 @@
+# wot-extractor: codigo DESCOMPILADO de sources/res/scripts/client/gui/impl/gen/view_models/views/lobby/crew/crew_post_progression_view_model.pyc (uncompyle6 3.9.2 / Python 2.7.18) - nao e o codigo original
+# uncompyle6 version 3.9.2
+# Python bytecode version base 2.7 (62211)
+# Decompiled from: Python 2.7.18 (v2.7.18:8d21aa21f2, Apr 20 2020, 13:25:05) [MSC v.1500 64 bit (AMD64)]
+# Embedded file name: scripts/client/gui/impl/gen/view_models/views/lobby/crew/crew_post_progression_view_model.py
+from enum import Enum
+from frameworks.wulf import ViewModel
+from gui.impl.gen import R
+
+class PauseReasonType(Enum):
+    NONE = ''
+    LOWEFFICIENCY = 'lowEfficiency'
+    RETIRE = 'retire'
+
+
+class CrewPostProgressionViewModel(ViewModel):
+    __slots__ = ('onClaim', )
+
+    def __init__(self, properties=7, commands=1):
+        super(CrewPostProgressionViewModel, self).__init__(properties=properties, commands=commands)
+
+    def getTitle(self):
+        return self._getResource(0)
+
+    def setTitle(self, value):
+        self._setResource(0, value)
+
+    def getDescription(self):
+        return self._getString(1)
+
+    def setDescription(self, value):
+        self._setString(1, value)
+
+    def getIcon(self):
+        return self._getResource(2)
+
+    def setIcon(self, value):
+        self._setResource(2, value)
+
+    def getCount(self):
+        return self._getNumber(3)
+
+    def setCount(self, value):
+        self._setNumber(3, value)
+
+    def getProgressCurrent(self):
+        return self._getNumber(4)
+
+    def setProgressCurrent(self, value):
+        self._setNumber(4, value)
+
+    def getProgressMax(self):
+        return self._getNumber(5)
+
+    def setProgressMax(self, value):
+        self._setNumber(5, value)
+
+    def getPauseReason(self):
+        return PauseReasonType(self._getString(6))
+
+    def setPauseReason(self, value):
+        self._setString(6, value.value)
+
+    def _initialize(self):
+        super(CrewPostProgressionViewModel, self)._initialize()
+        self._addResourceProperty('title', R.invalid())
+        self._addStringProperty('description', '')
+        self._addResourceProperty('icon', R.invalid())
+        self._addNumberProperty('count', 0)
+        self._addNumberProperty('progressCurrent', 0)
+        self._addNumberProperty('progressMax', 0)
+        self._addStringProperty('pauseReason', PauseReasonType.NONE.value)
+        self.onClaim = self._addCommand('onClaim')
