@@ -15,3 +15,6 @@ __pycache__/
 build/
 dist/
 .venv/
+
+# repositorios git dos branches EU/CT (pasta de trabalho = wot_src_<R>)
+/.publish/
