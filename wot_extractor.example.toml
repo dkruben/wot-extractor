@@ -1,0 +1,51 @@
+# Configuracao do wot-extractor.
+# Copiar para "wot_extractor.toml" (na raiz do projeto) e ajustar.
+# Todos os campos sao opcionais.
+
+[paths]
+# Pasta onde serao criadas as arvores wot_src_<REALM>. Relativa a este ficheiro.
+output_root = "."
+
+[detect]
+# Pesquisa limitada nos discos quando as outras fontes falham.
+scan_drives = true
+# Profundidade maxima da pesquisa (a partir da raiz do disco).
+scan_depth = 2
+
+[decompile]
+# Python 2.7 com uncompyle6 (descompila e valida o bytecode 2.7). Vazio = detecao
+# automatica (variavel WOT_EXTRACTOR_PY27, lancador "py -2.7", C:..H:\Python27).
+python27 = ""
+# Python 3 com uncompyle6 para o descompilador alternativo. Vazio = o interpretador atual.
+python3 = ""
+# Tempo limite por ficheiro, em segundos.
+timeout = 120
+
+[actionscript]
+# FFDec (JPEXS Free Flash Decompiler): ffdec-cli.jar, ffdec.jar ou a pasta. Vazio = detecao
+# automatica (variavel WOT_EXTRACTOR_FFDEC, "Program Files (x86)\FFDec", "Program Files\FFDec").
+ffdec = ""
+# Java para o FFDec. Vazio = JAVA_HOME ou o "java" do PATH.
+java = ""
+# Memoria maxima de cada JVM (um processo por SWF em paralelo).
+java_heap = "4g"
+# RABCDAsm (pasta com abcexport.exe e rabcdasm.exe): desmontagem .asasm sem perdas dos SWF onde o FFDec
+# nao reconstroi o codigo. Vazio = variavel WOT_EXTRACTOR_RABCDASM ou o PATH. (O XVM traz uma copia em
+# xvm-master/src_build/bin/windows_i686/rabcdasm.)
+rabcdasm = ""
+# Tempo limite por SWF, em segundos (o lobby.swf leva ~17 min).
+timeout = 3600
+
+[gameface]
+# node.exe usado so para verificar a sintaxe do JavaScript formatado (node --check; nada e executado).
+# Vazio = o "node" do PATH; sem node, a verificacao e so token a token.
+node = ""
+
+[realms.EU]
+# Vazio = detecao automatica.
+install = ""
+preferred_drive = "D:"
+
+[realms.CT]
+install = ""
+preferred_drive = "C:"

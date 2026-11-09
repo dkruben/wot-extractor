@@ -1,0 +1,17 @@
+# arvores extraidas do jogo (publicadas nos branches EU e CT, nao no main)
+/wot_src_*/
+/compare/
+*.sqlite
+*.sqlite.tmp
+
+# configuracao local e copias de seguranca
+/wot_extractor.toml
+/backups/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
