@@ -4,7 +4,7 @@ import{
 }
 from"../../chunks/rolldown-runtime.js";
 import{
-  G as e,J as s,Jt as r,Mr as n,Qr as i,Rr as t,Tt as o,Vr as l,X as d,Yn as c,_n as _,ci as f,di as m,fn as b,gn as p,n as w,oi as v,q as u,qn as j
+  G as e,J as s,Mr as r,Ot as n,Qr as i,Rr as t,Vr as o,X as l,Yn as d,_n as c,ci as _,di as f,en as m,fn as b,gn as p,n as w,oi as v,q as u,qn as j
 }
 from"../../chunks/lib.js";
 import"../../chunks/global.js";
@@ -20,24 +20,24 @@ import{
   t as R
 }
 from"../../chunks/tank_name.js";
-f();
-var[I,N]=_()(({
+_();
+var[I,N]=c()(({
   observableModel:a
 })=>{
   const e={
     root:a.object(),initialRewardsArray:a.array("initialReward"),compensationRewardsArray:a.array("compensationReward")
   },
-  s=p((a=0)=>n(e.initialRewardsArray.get().items,a),{
+  s=p((a=0)=>r(e.initialRewardsArray.get().items,a),{
     equals:t
-  }),r=p((a=0)=>n(e.compensationRewardsArray.get().items,a),{
+  }),n=p((a=0)=>r(e.compensationRewardsArray.get().items,a),{
     equals:t
   });
   return{
     ...e,computes:{
-      initialReward:s,compensationReward:r
+      initialReward:s,compensationReward:n
     }
   }
-},l),k="Arrow_c612004f",g="Arrow_icon_ca620234",y=c();
+},o),k="Arrow_c612004f",g="Arrow_icon_ca620234",y=d();
 function D({
   className:a
 }){
@@ -47,15 +47,15 @@ function D({
     })
   })
 }
-var A={
+var O={
   base:"Divider_d6b67ddd",base__top:"Divider_base__top_6e207943",base__bottom:"Divider_base__bottom_6fbb70c2",fadeInWithScale:"Divider_fadeInWithScale_76b1f722",slideUp:"Divider_slideUp_76b1f722",blink:"Divider_blink_76b1f722",scale:"Divider_scale_76b1f722",rotate:"Divider_rotate_76b1f722",windowIn:"Divider_windowIn_76b1f722",fadeOut:"Divider_fadeOut_76b1f722",fadeIn:"Divider_fadeIn_76b1f722"
 },
-O="top",C="bottom";
+A="top",C="bottom";
 function E({
   position:a
 }){
   return(0,y.jsx)("div",{
-    className:v(A.base,A[`base__${a}`])
+    className:v(O.base,O[`base__${a}`])
   })
 }
 var S={
@@ -63,22 +63,22 @@ var S={
 },
 q=a=>{
   const{
-    name:e,value:r,userName:n
+    name:e,value:r,userName:i
   }=a;
-  if(e===d.Vehicles&&(a=>["vehicleName","vehicleType","vehicleLvl","isElite"].every(e=>e in a))(a)){
+  if(e===l.Vehicles&&(a=>["vehicleName","vehicleType","vehicleLvl","isElite"].every(e=>e in a))(a)){
     const e={
       base:S.label,name:S.tankName,level:S.tankLevel
     };
     return(0,y.jsx)(R,{
-      ...a,vehicleTypeIconSize:o.x24x24,classNames:e
+      ...a,vehicleTypeIconSize:n.x24x24,classNames:e
     })
   }
-  if(e===d.Customizations)return(0,y.jsx)("span",{
-    className:S.label,children:n
+  if(e===l.Customizations)return(0,y.jsx)("span",{
+    className:S.label,children:i
   });
-  const i=u(r,s(e));
+  const t=u(r,s(e));
   return(0,y.jsx)("span",{
-    className:v(S.label,S[`label__${e}`]),children:"string"==typeof i?i:r
+    className:v(S.label,S[`label__${e}`]),children:"string"==typeof t?t:r
   })
 };
 function L({
@@ -101,7 +101,7 @@ function F({
     className:U,children:[(0,y.jsx)("div",{
       className:W
     }),(0,y.jsx)(E,{
-      position:O
+      position:A
     }),(0,y.jsx)(L,{
       reward:a
     }),(0,y.jsx)(D,{
@@ -113,28 +113,28 @@ function F({
     })]
   })
 }
-var T="Footer_9d3d3a12",z="Footer_compensation_b57b9f53",J=m.resolve("images"),M=m.resolve("strings");
-function P(){
-  const a=j(J.readOrEmpty("battlePass.tooltips.compensation"),J.readOrEmpty("battlePass.tooltips.compensation_large"));
+var z="Footer_9d3d3a12",M="Footer_compensation_b57b9f53",P=f.resolve("images"),T=f.resolve("strings");
+function V(){
+  const a=j(P.readOrEmpty("battlePass.tooltips.compensation"),P.readOrEmpty("battlePass.tooltips.compensation_large"));
   return(0,y.jsxs)("div",{
-    className:T,children:[(0,y.jsx)("div",{
-      className:z,style:{
+    className:z,children:[(0,y.jsx)("div",{
+      className:M,style:{
         backgroundImage:`url(${a})`
       }
     }),(0,y.jsx)("span",{
-      children:M.readOrEmpty("battle_pass.tooltips.rewardCompensation.footer")
+      children:T.readOrEmpty("battle_pass.tooltips.rewardCompensation.footer")
     })]
   })
 }
-var V="Header_title_487f6f3f",G=m.resolve("strings");
-function H({
+var G="Header_title_487f6f3f",H=f.resolve("strings");
+function J({
   rewardName:a
 }){
   return(0,y.jsxs)(y.Fragment,{
     children:[(0,y.jsx)("span",{
-      className:V,children:i(a)
-    }),(0,y.jsx)(r,{
-      text:G.readOrEmpty(`battle_pass.tooltips.rewardCompensation.description.${a}`)
+      className:G,children:i(a)
+    }),(0,y.jsx)(m,{
+      text:H.readOrEmpty(`battle_pass.tooltips.rewardCompensation.description.${a}`)
     })]
   })
 }
@@ -143,11 +143,11 @@ var Q="App_fc800ea3",X=h(()=>{
     model:a
   }=N(),e=a.computes.initialReward(),s=a.computes.compensationReward();
   return(0,y.jsxs)("div",{
-    className:Q,children:[(0,y.jsx)(H,{
+    className:Q,children:[(0,y.jsx)(J,{
       rewardName:s.name
     }),(0,y.jsx)(F,{
       initialReward:e,compensationReward:s
-    }),(0,y.jsx)(P,{})]
+    }),(0,y.jsx)(V,{})]
   })
 });
 b((0,y.jsx)(I,{

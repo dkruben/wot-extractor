@@ -4,8 +4,8 @@
  "signature": "CWS",
  "compression": "zlib",
  "version": 11,
- "declared_length": 6421274,
- "actual_length": 6421274,
+ "declared_length": 6422265,
+ "actual_length": 6422265,
  "frame_size_px": [
   0.0,
   500.0,
@@ -46,7 +46,7 @@
  "symbol_classes": [
   {
    "id": 0,
-   "class": "_70a9e2495bb2d3950a225ed1eef1cc66e82451bf7bf3980f4f8486e6f8f23255_flash_display_Sprite"
+   "class": "_55d4697dc0a141dea82610e957dbb9a04ba8ab52a363c6cbdd485e87257ed5a3_flash_display_Sprite"
   }
  ],
  "abc": [
@@ -548,7 +548,7 @@
   {
    "name": "net/wg/gui/components/tooltips/inblocks/blocks/TextParameterWithIconBlock",
    "lazy": true,
-   "size": 1355,
+   "size": 1350,
    "classes": 1,
    "methods": 7,
    "bodies": 7,
@@ -773,7 +773,7 @@
   {
    "name": "net/wg/gui/interfaces/IDropList",
    "lazy": true,
-   "size": 299,
+   "size": 304,
    "classes": 1,
    "methods": 7,
    "bodies": 2,
@@ -1088,7 +1088,7 @@
   {
    "name": "net/wg/gui/lobby/rankedBattles19/view/base/RankedScreen",
    "lazy": true,
-   "size": 2301,
+   "size": 2306,
    "classes": 1,
    "methods": 10,
    "bodies": 10,
@@ -1097,7 +1097,7 @@
   {
    "name": "net/wg/gui/lobby/rankedBattles19/view/base/HangarRankedScreen",
    "lazy": true,
-   "size": 1023,
+   "size": 1028,
    "classes": 1,
    "methods": 4,
    "bodies": 4,
@@ -1385,7 +1385,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/AbstractRallyViewMeta",
    "lazy": true,
-   "size": 816,
+   "size": 821,
    "classes": 1,
    "methods": 4,
    "bodies": 4,
@@ -1493,7 +1493,7 @@
   {
    "name": "net/wg/gui/lobby/missions/components/detailedView/AbstractPopoverWithScrollableGroupPanel",
    "lazy": true,
-   "size": 1954,
+   "size": 1959,
    "classes": 1,
    "methods": 11,
    "bodies": 11,
@@ -1547,7 +1547,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IBaseStorageCategoryViewMeta",
    "lazy": true,
-   "size": 480,
+   "size": 475,
    "classes": 1,
    "methods": 10,
    "bodies": 2,
@@ -1673,7 +1673,7 @@
   {
    "name": "net/wg/gui/lobby/badges/BadgesContentContainer",
    "lazy": true,
-   "size": 3443,
+   "size": 3448,
    "classes": 1,
    "methods": 12,
    "bodies": 12,
@@ -2780,7 +2780,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/VehiclePreviewModulesTabMeta",
    "lazy": true,
-   "size": 846,
+   "size": 841,
    "classes": 1,
    "methods": 4,
    "bodies": 4,
@@ -2789,7 +2789,7 @@
   {
    "name": "net/wg/gui/components/controls/TradeIco",
    "lazy": true,
-   "size": 2312,
+   "size": 2307,
    "classes": 1,
    "methods": 10,
    "bodies": 10,
@@ -2879,7 +2879,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IAmmunitionPanelInjectMeta",
    "lazy": true,
-   "size": 363,
+   "size": 368,
    "classes": 1,
    "methods": 6,
    "bodies": 2,
@@ -3005,7 +3005,7 @@
   {
    "name": "net/wg/gui/lobby/rankedBattles19/components/divisionSelector/DivisionSelector",
    "lazy": true,
-   "size": 4726,
+   "size": 4720,
    "classes": 1,
    "methods": 25,
    "bodies": 25,
@@ -3365,11 +3365,11 @@
   {
    "name": "net/wg/gui/lobby/vehiclePreview/bottomPanel/VPBottomPanelShowcaseStyleBuying",
    "lazy": true,
-   "size": 6666,
+   "size": 7048,
    "classes": 1,
-   "methods": 20,
-   "bodies": 20,
-   "code_bytes": 2261
+   "methods": 21,
+   "bodies": 21,
+   "code_bytes": 2497
   },
   {
    "name": "net/wg/gui/lobby/battleResults/event/BattleResultsViewEvent",
@@ -3428,7 +3428,7 @@
   {
    "name": "net/wg/gui/prebattle/meta/impl/PrebattleWindowMeta",
    "lazy": true,
-   "size": 3144,
+   "size": 3149,
    "classes": 1,
    "methods": 17,
    "bodies": 17,
@@ -3482,7 +3482,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IProgressiveRewardWidgetMeta",
    "lazy": true,
-   "size": 311,
+   "size": 306,
    "classes": 1,
    "methods": 5,
    "bodies": 2,
@@ -3527,7 +3527,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/RssNewsFeedMeta",
    "lazy": true,
-   "size": 1869,
+   "size": 1874,
    "classes": 1,
    "methods": 7,
    "bodies": 7,
@@ -3545,7 +3545,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IVehicleSelectPopoverMeta",
    "lazy": true,
-   "size": 501,
+   "size": 496,
    "classes": 1,
    "methods": 10,
    "bodies": 2,
@@ -3752,7 +3752,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/BaseRallyIntroViewMeta",
    "lazy": true,
-   "size": 692,
+   "size": 697,
    "classes": 1,
    "methods": 3,
    "bodies": 3,
@@ -4166,11 +4166,11 @@
   {
    "name": "net/wg/infrastructure/tutorial/helpBtnControllers/TutorialWindowHelpBtnCtrllr",
    "lazy": true,
-   "size": 1023,
+   "size": 1018,
    "classes": 1,
    "methods": 4,
    "bodies": 4,
-   "code_bytes": 213
+   "code_bytes": 208
   },
   {
    "name": "net/wg/gui/lobby/profile/data/SectionInfoVO",
@@ -4373,7 +4373,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/ICustomizationKitPopoverMeta",
    "lazy": true,
-   "size": 527,
+   "size": 532,
    "classes": 1,
    "methods": 10,
    "bodies": 2,
@@ -4580,7 +4580,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/SystemMessageDialogMeta",
    "lazy": true,
-   "size": 1423,
+   "size": 1428,
    "classes": 1,
    "methods": 8,
    "bodies": 8,
@@ -4616,7 +4616,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IClanInvitesViewWithTableMeta",
    "lazy": true,
-   "size": 503,
+   "size": 508,
    "classes": 1,
    "methods": 11,
    "bodies": 2,
@@ -4841,7 +4841,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/BadgesPageMeta",
    "lazy": true,
-   "size": 2726,
+   "size": 2731,
    "classes": 1,
    "methods": 20,
    "bodies": 20,
@@ -5021,7 +5021,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IUseAwardSheetWindowMeta",
    "lazy": true,
-   "size": 337,
+   "size": 342,
    "classes": 1,
    "methods": 7,
    "bodies": 2,
@@ -5192,7 +5192,7 @@
   {
    "name": "net/wg/gui/lobby/profile/pages/awards/StageAwardsBlock",
    "lazy": true,
-   "size": 583,
+   "size": 588,
    "classes": 1,
    "methods": 3,
    "bodies": 3,
@@ -5318,7 +5318,7 @@
   {
    "name": "net/wg/gui/components/advanced/interfaces/ITutorialHintAnimation",
    "lazy": true,
-   "size": 420,
+   "size": 415,
    "classes": 1,
    "methods": 6,
    "bodies": 2,
@@ -5678,11 +5678,11 @@
   {
    "name": "net/wg/gui/lobby/vehicleCompare/VehicleCompareConfiguratorView",
    "lazy": true,
-   "size": 5946,
+   "size": 6151,
    "classes": 1,
    "methods": 24,
    "bodies": 24,
-   "code_bytes": 1305
+   "code_bytes": 1382
   },
   {
    "name": "net/wg/gui/lobby/battleResults/components/BattleResultImageSwitcherView",
@@ -5696,7 +5696,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IVehiclePreviewBottomPanelWellMeta",
    "lazy": true,
-   "size": 185,
+   "size": 180,
    "classes": 1,
    "methods": 3,
    "bodies": 2,
@@ -5813,7 +5813,7 @@
   {
    "name": "net/wg/gui/lobby/battleResults/components/IncomeDetailsBase",
    "lazy": true,
-   "size": 2113,
+   "size": 2118,
    "classes": 1,
    "methods": 8,
    "bodies": 8,
@@ -5903,7 +5903,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IPersonalMissionsAwardsViewMeta",
    "lazy": true,
-   "size": 454,
+   "size": 459,
    "classes": 1,
    "methods": 9,
    "bodies": 2,
@@ -5984,7 +5984,7 @@
   {
    "name": "net/wg/gui/lobby/userMissions/UserMissionsHubContainerView",
    "lazy": true,
-   "size": 3350,
+   "size": 3355,
    "classes": 1,
    "methods": 18,
    "bodies": 18,
@@ -6164,7 +6164,7 @@
   {
    "name": "net/wg/gui/messenger/controls/ContactsListHighlightArea",
    "lazy": true,
-   "size": 779,
+   "size": 774,
    "classes": 1,
    "methods": 5,
    "bodies": 5,
@@ -6308,7 +6308,7 @@
   {
    "name": "net/wg/gui/components/advanced/interfaces/IDashLineTextItem",
    "lazy": true,
-   "size": 417,
+   "size": 422,
    "classes": 1,
    "methods": 7,
    "bodies": 2,
@@ -6587,11 +6587,11 @@
   {
    "name": "net/wg/gui/lobby/vehiclePreview/additionalInfo/VPAdditionalInfoPanel",
    "lazy": true,
-   "size": 3415,
+   "size": 3420,
    "classes": 1,
    "methods": 13,
    "bodies": 13,
-   "code_bytes": 1102
+   "code_bytes": 1107
   },
   {
    "name": "net/wg/infrastructure/tutorial/builders/TutorialBuilder",
@@ -6821,7 +6821,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IEventBoardsVehiclesOverlayMeta",
    "lazy": true,
-   "size": 425,
+   "size": 430,
    "classes": 1,
    "methods": 8,
    "bodies": 2,
@@ -6965,7 +6965,7 @@
   {
    "name": "net/wg/gui/lobby/modulesPanel/interfaces/IDeviceSlot",
    "lazy": true,
-   "size": 595,
+   "size": 600,
    "classes": 1,
    "methods": 11,
    "bodies": 2,
@@ -7829,7 +7829,7 @@
   {
    "name": "net/wg/gui/lobby/components/interfaces/IBoosterSlot",
    "lazy": true,
-   "size": 337,
+   "size": 342,
    "classes": 1,
    "methods": 4,
    "bodies": 2,
@@ -8081,7 +8081,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/ConfirmDialogMeta",
    "lazy": true,
-   "size": 1371,
+   "size": 1376,
    "classes": 1,
    "methods": 7,
    "bodies": 7,
@@ -8117,7 +8117,7 @@
   {
    "name": "net/wg/gui/lobby/profile/components/SimpleLoader",
    "lazy": true,
-   "size": 1940,
+   "size": 1945,
    "classes": 1,
    "methods": 19,
    "bodies": 19,
@@ -8225,11 +8225,11 @@
   {
    "name": "net/wg/gui/lobby/vehiclePreview/bottomPanel/VPBottomPanelStyleBuying",
    "lazy": true,
-   "size": 1317,
+   "size": 1290,
    "classes": 1,
    "methods": 7,
    "bodies": 7,
-   "code_bytes": 201
+   "code_bytes": 193
   },
   {
    "name": "net/wg/gui/components/tooltips/ToolTipMap",
@@ -9026,7 +9026,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/WGNCPollWindowMeta",
    "lazy": true,
-   "size": 1050,
+   "size": 1055,
    "classes": 1,
    "methods": 5,
    "bodies": 5,
@@ -9107,7 +9107,7 @@
   {
    "name": "net/wg/gui/lobby/profile/pages/technique/TechAwardsMainContainer",
    "lazy": true,
-   "size": 1417,
+   "size": 1422,
    "classes": 1,
    "methods": 6,
    "bodies": 6,
@@ -9602,7 +9602,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/RankedBattlesSeasonGapViewMeta",
    "lazy": true,
-   "size": 1763,
+   "size": 1768,
    "classes": 1,
    "methods": 11,
    "bodies": 11,
@@ -9827,7 +9827,7 @@
   {
    "name": "net/wg/gui/lobby/clans/common/IClanNameField",
    "lazy": true,
-   "size": 316,
+   "size": 311,
    "classes": 1,
    "methods": 7,
    "bodies": 2,
@@ -9863,11 +9863,11 @@
   {
    "name": "net/wg/gui/lobby/vehiclePreview/bottomPanel/VPBottomPanelWell",
    "lazy": true,
-   "size": 1289,
+   "size": 1262,
    "classes": 1,
    "methods": 7,
    "bodies": 7,
-   "code_bytes": 201
+   "code_bytes": 193
   },
   {
    "name": "net/wg/infrastructure/base/meta/impl/CyberSportIntroMeta",
@@ -9953,7 +9953,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IVehicleCompareCommonViewMeta",
    "lazy": true,
-   "size": 271,
+   "size": 276,
    "classes": 1,
    "methods": 4,
    "bodies": 2,
@@ -10259,7 +10259,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/BattleRoyaleVehicleInfoMeta",
    "lazy": true,
-   "size": 1300,
+   "size": 1305,
    "classes": 1,
    "methods": 7,
    "bodies": 7,
@@ -11105,7 +11105,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IEventBoardsDetailsContainerViewMeta",
    "lazy": true,
-   "size": 322,
+   "size": 327,
    "classes": 1,
    "methods": 5,
    "bodies": 2,
@@ -11492,7 +11492,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IPrestigeProgressInjectMeta",
    "lazy": true,
-   "size": 173,
+   "size": 178,
    "classes": 1,
    "methods": 3,
    "bodies": 2,
@@ -11501,7 +11501,7 @@
   {
    "name": "net/wg/gui/messenger/meta/IChannelComponentMeta",
    "lazy": true,
-   "size": 534,
+   "size": 529,
    "classes": 1,
    "methods": 13,
    "bodies": 2,
@@ -11573,7 +11573,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IProfileTabNavigatorMeta",
    "lazy": true,
-   "size": 383,
+   "size": 378,
    "classes": 1,
    "methods": 7,
    "bodies": 2,
@@ -11798,7 +11798,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/CustomizationFiltersPopoverMeta",
    "lazy": true,
-   "size": 2496,
+   "size": 2501,
    "classes": 1,
    "methods": 16,
    "bodies": 16,
@@ -11870,7 +11870,7 @@
   {
    "name": "net/wg/gui/lobby/modulesPanel/interfaces/IModulesPanel",
    "lazy": true,
-   "size": 296,
+   "size": 301,
    "classes": 1,
    "methods": 3,
    "bodies": 2,
@@ -12032,7 +12032,7 @@
   {
    "name": "net/wg/gui/lobby/profile/components/chart/ChartItemBase",
    "lazy": true,
-   "size": 975,
+   "size": 978,
    "classes": 1,
    "methods": 15,
    "bodies": 15,
@@ -12239,7 +12239,7 @@
   {
    "name": "net/wg/gui/lobby/missions/components/detailedView/MissionDetailsAwardsPanel",
    "lazy": true,
-   "size": 2603,
+   "size": 2608,
    "classes": 1,
    "methods": 9,
    "bodies": 9,
@@ -12248,7 +12248,7 @@
   {
    "name": "net/wg/gui/lobby/rankedBattles19/components/rankAward/AwardDivisionBase",
    "lazy": true,
-   "size": 1514,
+   "size": 1519,
    "classes": 1,
    "methods": 10,
    "bodies": 10,
@@ -12329,7 +12329,7 @@
   {
    "name": "net/wg/gui/lobby/hangar/quests/HeaderSecondaryWidgetInject",
    "lazy": true,
-   "size": 1266,
+   "size": 1269,
    "classes": 1,
    "methods": 8,
    "bodies": 8,
@@ -12545,7 +12545,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/BrowserMeta",
    "lazy": true,
-   "size": 1554,
+   "size": 1559,
    "classes": 1,
    "methods": 12,
    "bodies": 12,
@@ -12806,11 +12806,11 @@
   {
    "name": "net/wg/gui/lobby/window/ConfirmItemWindow",
    "lazy": true,
-   "size": 6412,
+   "size": 6405,
    "classes": 1,
    "methods": 15,
    "bodies": 15,
-   "code_bytes": 2129
+   "code_bytes": 2128
   },
   {
    "name": "net/wg/gui/lobby/confirmModuleWindow/ConfirmModuleWindow",
@@ -12905,7 +12905,7 @@
   {
    "name": "net/wg/gui/lobby/dialogs/IconDialog",
    "lazy": true,
-   "size": 1481,
+   "size": 1486,
    "classes": 1,
    "methods": 7,
    "bodies": 7,
@@ -13022,11 +13022,11 @@
   {
    "name": "net/wg/gui/lobby/components/PerPixelTileList",
    "lazy": true,
-   "size": 7393,
+   "size": 7400,
    "classes": 1,
    "methods": 22,
    "bodies": 22,
-   "code_bytes": 3177
+   "code_bytes": 3178
   },
   {
    "name": "net/wg/infrastructure/base/meta/impl/VehicleSelectorPopupMeta",
@@ -13337,7 +13337,7 @@
   {
    "name": "net/wg/gui/lobby/eventBoards/data/AwardsTableVO",
    "lazy": true,
-   "size": 904,
+   "size": 909,
    "classes": 1,
    "methods": 6,
    "bodies": 6,
@@ -13436,7 +13436,7 @@
   {
    "name": "net/wg/gui/prebattle/meta/IBattleSessionListMeta",
    "lazy": true,
-   "size": 325,
+   "size": 330,
    "classes": 1,
    "methods": 6,
    "bodies": 2,
@@ -13895,7 +13895,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/CrewOperationsPopOverMeta",
    "lazy": true,
-   "size": 1566,
+   "size": 1561,
    "classes": 1,
    "methods": 8,
    "bodies": 8,
@@ -13913,7 +13913,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IStorageCategoryForSellViewMeta",
    "lazy": true,
-   "size": 422,
+   "size": 427,
    "classes": 1,
    "methods": 9,
    "bodies": 2,
@@ -13985,7 +13985,7 @@
   {
    "name": "net/wg/gui/lobby/missions/interfaces/IMissionPackBody",
    "lazy": true,
-   "size": 352,
+   "size": 347,
    "classes": 1,
    "methods": 4,
    "bodies": 2,
@@ -14246,7 +14246,7 @@
   {
    "name": "net/wg/gui/lobby/battleResults/commendation/PlayerSatisfactionWidget",
    "lazy": true,
-   "size": 3829,
+   "size": 3824,
    "classes": 1,
    "methods": 12,
    "bodies": 12,
@@ -14327,7 +14327,7 @@
   {
    "name": "net/wg/gui/lobby/personalMissions/data/BasicFooterBlockVO",
    "lazy": true,
-   "size": 710,
+   "size": 715,
    "classes": 1,
    "methods": 6,
    "bodies": 6,
@@ -15281,7 +15281,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/CheckBoxDialogMeta",
    "lazy": true,
-   "size": 1053,
+   "size": 1048,
    "classes": 1,
    "methods": 4,
    "bodies": 4,
@@ -15578,7 +15578,7 @@
   {
    "name": "net/wg/gui/lobby/profile/pages/statistics/body/ChartsStatisticsGroup",
    "lazy": true,
-   "size": 2224,
+   "size": 2219,
    "classes": 1,
    "methods": 8,
    "bodies": 8,
@@ -15659,11 +15659,11 @@
   {
    "name": "net/wg/gui/lobby/training/TrainingRoom",
    "lazy": true,
-   "size": 4984,
+   "size": 4991,
    "classes": 1,
    "methods": 26,
    "bodies": 26,
-   "code_bytes": 1289
+   "code_bytes": 1290
   },
   {
    "name": "net/wg/gui/lobby/eventBoards/components/MissionsEventBoardsCardRenderer",
@@ -16145,11 +16145,11 @@
   {
    "name": "net/wg/gui/lobby/vehiclePreview/bottomPanel/VPBottomPanelStyleProgression",
    "lazy": true,
-   "size": 1337,
+   "size": 1310,
    "classes": 1,
    "methods": 7,
    "bodies": 7,
-   "code_bytes": 201
+   "code_bytes": 193
   },
   {
    "name": "net/wg/gui/lobby/questsWindow/data/QuestIconElementVO",
@@ -16739,7 +16739,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/RankedBattlesRewardsMeta",
    "lazy": true,
-   "size": 2476,
+   "size": 2481,
    "classes": 1,
    "methods": 9,
    "bodies": 9,
@@ -18035,7 +18035,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/IVehicleCompareViewMeta",
    "lazy": true,
-   "size": 668,
+   "size": 663,
    "classes": 1,
    "methods": 15,
    "bodies": 2,
@@ -18062,7 +18062,7 @@
   {
    "name": "net/wg/gui/lobby/sessionStats/components/SessionBattleStatsRenderer",
    "lazy": true,
-   "size": 1779,
+   "size": 1784,
    "classes": 1,
    "methods": 11,
    "bodies": 11,
@@ -18323,7 +18323,7 @@
   {
    "name": "net/wg/gui/lobby/eventBoards/components/interfaces/IMaintenanceComponent",
    "lazy": true,
-   "size": 322,
+   "size": 327,
    "classes": 1,
    "methods": 3,
    "bodies": 2,
@@ -19430,7 +19430,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/CustomizationStyleInfoMeta",
    "lazy": true,
-   "size": 1609,
+   "size": 1614,
    "classes": 1,
    "methods": 11,
    "bodies": 11,
@@ -19655,7 +19655,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/RankedBattlesBattleResultsMeta",
    "lazy": true,
-   "size": 1599,
+   "size": 1604,
    "classes": 1,
    "methods": 9,
    "bodies": 9,
@@ -20114,7 +20114,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/StorageCategoryInHangarViewMeta",
    "lazy": true,
-   "size": 1918,
+   "size": 1923,
    "classes": 1,
    "methods": 7,
    "bodies": 7,
@@ -20933,7 +20933,7 @@
   {
    "name": "net/wg/gui/lobby/clans/invites/views/ClanRequestsView",
    "lazy": true,
-   "size": 2076,
+   "size": 2081,
    "classes": 1,
    "methods": 9,
    "bodies": 9,
@@ -21320,7 +21320,7 @@
   {
    "name": "net/wg/gui/lobby/profile/pages/technique/TechniqueAchievementsBlock",
    "lazy": true,
-   "size": 1709,
+   "size": 1714,
    "classes": 1,
    "methods": 8,
    "bodies": 8,
@@ -21914,11 +21914,11 @@
   {
    "name": "net/wg/gui/lobby/profile/pages/awards/ProfileAwards",
    "lazy": true,
-   "size": 6312,
+   "size": 6319,
    "classes": 1,
    "methods": 14,
    "bodies": 14,
-   "code_bytes": 1818
+   "code_bytes": 1819
   },
   {
    "name": "net/wg/infrastructure/base/meta/IUnboundInjectWindowMeta",
@@ -22103,7 +22103,7 @@
   {
    "name": "net/wg/gui/lobby/sessionStats/settings/SessionStatsSettingsHeader",
    "lazy": true,
-   "size": 2159,
+   "size": 2154,
    "classes": 1,
    "methods": 9,
    "bodies": 9,
@@ -23037,15 +23037,6 @@
    "code_bytes": 11
   },
   {
-   "name": "_70a9e2495bb2d3950a225ed1eef1cc66e82451bf7bf3980f4f8486e6f8f23255_flash_display_Sprite",
-   "lazy": true,
-   "size": 601,
-   "classes": 1,
-   "methods": 5,
-   "bodies": 5,
-   "code_bytes": 88
-  },
-  {
    "name": "net/wg/gui/lobby/missions/components/MissionVehicleItemRenderer",
    "lazy": true,
    "size": 2173,
@@ -23080,6 +23071,15 @@
    "methods": 6,
    "bodies": 6,
    "code_bytes": 209
+  },
+  {
+   "name": "_55d4697dc0a141dea82610e957dbb9a04ba8ab52a363c6cbdd485e87257ed5a3_flash_display_Sprite",
+   "lazy": true,
+   "size": 601,
+   "classes": 1,
+   "methods": 5,
+   "bodies": 5,
+   "code_bytes": 88
   },
   {
    "name": "net/wg/gui/lobby/eventBoards/MissionsEventBoardsView",
@@ -23741,7 +23741,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/StrongholdBattlesListViewMeta",
    "lazy": true,
-   "size": 1006,
+   "size": 1011,
    "classes": 1,
    "methods": 5,
    "bodies": 5,
@@ -25073,7 +25073,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/ITrainingWindowMeta",
    "lazy": true,
-   "size": 339,
+   "size": 334,
    "classes": 1,
    "methods": 5,
    "bodies": 2,
@@ -26099,7 +26099,7 @@
   {
    "name": "net/wg/infrastructure/base/meta/impl/RankedBattlesRewardsYearMeta",
    "lazy": true,
-   "size": 1386,
+   "size": 1391,
    "classes": 1,
    "methods": 7,
    "bodies": 7,
@@ -27494,11 +27494,11 @@
   {
    "name": "net/wg/gui/lobby/vehiclePreview/VehicleBasePreviewPage",
    "lazy": true,
-   "size": 7031,
+   "size": 7316,
    "classes": 1,
-   "methods": 28,
-   "bodies": 28,
-   "code_bytes": 1682
+   "methods": 29,
+   "bodies": 29,
+   "code_bytes": 1825
   },
   {
    "name": "net/wg/infrastructure/base/meta/ITradeOffWidgetMeta",
@@ -27692,7 +27692,7 @@
   {
    "name": "net/wg/gui/lobby/storage/categories/storage/ItemsWithTypeAndNationFilterTabView",
    "lazy": true,
-   "size": 1942,
+   "size": 1947,
    "classes": 1,
    "methods": 8,
    "bodies": 8,
@@ -28223,7 +28223,7 @@
   {
    "name": "net/wg/gui/lobby/eventProgression/components/metaLevel/BattleRoyaleMetaLevelTextWrapper",
    "lazy": true,
-   "size": 2592,
+   "size": 2597,
    "classes": 1,
    "methods": 9,
    "bodies": 9,
@@ -28565,7 +28565,7 @@
   {
    "name": "net/wg/gui/lobby/storage/categories/customization/StorageCategoryCustomizationView",
    "lazy": true,
-   "size": 2505,
+   "size": 2510,
    "classes": 1,
    "methods": 11,
    "bodies": 11,
@@ -28754,7 +28754,7 @@
   {
    "name": "net/wg/gui/lobby/questsWindow/data/VehicleBlockVO",
    "lazy": true,
-   "size": 1196,
+   "size": 1201,
    "classes": 1,
    "methods": 17,
    "bodies": 17,
@@ -29132,7 +29132,7 @@
   {
    "name": "net/wg/gui/lobby/rankedBattles19/view/RankedBattlesUnreachableView",
    "lazy": true,
-   "size": 4449,
+   "size": 4454,
    "classes": 1,
    "methods": 13,
    "bodies": 13,
@@ -29204,7 +29204,7 @@
   {
    "name": "net/wg/gui/lobby/profile/pages/technique/ProfileSortingButton",
    "lazy": true,
-   "size": 2207,
+   "size": 2212,
    "classes": 1,
    "methods": 8,
    "bodies": 8,
@@ -29213,7 +29213,7 @@
   {
    "name": "net/wg/gui/lobby/questsWindow/data/QuestVehicleRendererVO",
    "lazy": true,
-   "size": 787,
+   "size": 782,
    "classes": 1,
    "methods": 13,
    "bodies": 13,
@@ -49912,13 +49912,6 @@
    "abc": 2553
   },
   {
-   "name": "_70a9e2495bb2d3950a225ed1eef1cc66e82451bf7bf3980f4f8486e6f8f23255_flash_display_Sprite",
-   "kind": "class",
-   "extends": "flash.display.Sprite",
-   "implements": [],
-   "abc": 2554
-  },
-  {
    "name": "net.wg.gui.lobby.missions.components.MissionVehicleItemRenderer",
    "kind": "class",
    "extends": "net.wg.infrastructure.base.UIComponentEx",
@@ -49926,7 +49919,7 @@
     "IListItemRenderer",
     "IUpdatable"
    ],
-   "abc": 2555
+   "abc": 2554
   },
   {
    "name": "net.wg.gui.lobby.vehicleCompare.controls.view.VehCompareVehicleRenderer",
@@ -49936,19 +49929,26 @@
     "IScrollerItemRenderer",
     "IPopOverCaller"
    ],
-   "abc": 2556
+   "abc": 2555
   },
   {
    "name": "net.wg.gui.lobby.eventBoards.data.AwardsListRendererVO",
    "kind": "class",
    "extends": "net.wg.data.daapi.base.DAAPIDataClass",
    "implements": [],
-   "abc": 2557
+   "abc": 2556
   },
   {
    "name": "net.wg.gui.lobby.missions.components.detailedView.MissionDetailsConditionRendererSmall",
    "kind": "class",
    "extends": "net.wg.gui.lobby.missions.components.detailedView.MissionDetailsConditionRendererAbstract",
+   "implements": [],
+   "abc": 2557
+  },
+  {
+   "name": "_55d4697dc0a141dea82610e957dbb9a04ba8ab52a363c6cbdd485e87257ed5a3_flash_display_Sprite",
+   "kind": "class",
+   "extends": "flash.display.Sprite",
    "implements": [],
    "abc": 2558
   },
@@ -55799,7 +55799,7 @@
   "swf": 1,
   "abc": 1
  },
- "metadata": "<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'><rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1'><dc:format>application/x-shockwave-flash</dc:format><dc:title>swc gui_lobby</dc:title><dc:date>11/3/26 1:47 PM</dc:date></rdf:Description></rdf:RDF>",
+ "metadata": "<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'><rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1'><dc:format>application/x-shockwave-flash</dc:format><dc:title>swc gui_lobby</dc:title><dc:date>11/10/26 2:15 PM</dc:date></rdf:Description></rdf:RDF>",
  "product_info": {
   "product": 3,
   "edition": 6,

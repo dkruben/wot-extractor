@@ -26,7 +26,7 @@ from items import ITEM_TYPE_NAMES as ITEM_TYPE_NAMES, vehicles as vehicles, EQUI
 from items.vehicles import VehicleDescr as VehicleDescr
 from nation_change_helpers.client_nation_change_helper import getValidVehicleCDForNationChange as getValidVehicleCDForNationChange
 from post_progression_common import VehicleState as VehicleState
-from skeletons.gui.game_control import IVehicleComparisonBasket as IVehicleComparisonBasket
+from skeletons.gui.game_control import IVehicleComparisonBasket as IVehicleComparisonBasket, IEpicBattleMetaGameController as IEpicBattleMetaGameController
 from skeletons.gui.lobby_context import ILobbyContext as ILobbyContext
 from skeletons.gui.shared import IItemsCache as IItemsCache
 from soft_exception import SoftException as SoftException
@@ -310,6 +310,9 @@ def getInstalledModulesCDs(vehicle):
 def getStockCrewSkills(vehicle):
     ...
 def getCrewSkills(vehicle):
+    ...
+# decorador original: @dependency.replace_none_kwargs(...)
+def _isCmpEpicVehicle(vehicleName, epicController=None):
     ...
 def _removeVehicleCamouflages(vehicle):
     ...

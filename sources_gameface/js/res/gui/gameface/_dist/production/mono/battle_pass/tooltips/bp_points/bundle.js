@@ -4,7 +4,7 @@ import{
 }
 from"../../chunks/rolldown-runtime.js";
 import{
-  Er as e,Jn as t,Vr as i,Xt as a,Yn as n,Zn as l,_n as o,bt as r,ci as c,fn as d,n as h,pn as _,tn as m
+  Er as e,Jn as t,Qt as i,Vr as a,Yn as n,Zn as l,_n as o,bt as r,ci as c,fn as d,n as h,pn as _,tn as m
 }
 from"../../chunks/lib.js";
 import"../../chunks/global.js";
@@ -21,7 +21,7 @@ import{
 }
 from"../../chunks/per_battle_points_table.js";
 c();
-var u=s(a(),1),f="VehicleList_82a6a4d",N="VehicleList_info_41a84ef",g="VehicleList_points_9c8e2f92",w="VehicleList_top_af361d05",P=n(),C=({
+var u=s(i(),1),f="VehicleList_82a6a4d",N="VehicleList_info_41a84ef",g="VehicleList_points_9c8e2f92",w="VehicleList_top_af361d05",P=n(),C=({
   vehiclesList:s
 })=>{
   const t=({
@@ -53,7 +53,7 @@ var u=s(a(),1),f="VehicleList_82a6a4d",N="VehicleList_info_41a84ef",g="VehicleLi
   observableModel:s
 })=>({
   ...s.primitives(["isWotPlusShown"]),rewardPoints:s.array("rewardPoints"),vehiclesList:s.array("vehiclesList")
-}),i),V="Header_a103bd21",S="Header_icon_eed746ab",W="Header_labels_f416515f",H="Header_title_381c9f5b",y="Header_subtitle_632b6de",E=R.strings.battle_pass.tooltips.points,T=()=>(0,P.jsxs)("div",{
+}),a),V="Header_a103bd21",S="Header_icon_eed746ab",W="Header_labels_f416515f",H="Header_title_381c9f5b",y="Header_subtitle_632b6de",E=R.strings.battle_pass.tooltips.points,T=()=>(0,P.jsxs)("div",{
   className:V,children:[(0,P.jsx)("div",{
     className:S
   }),(0,P.jsxs)("div",{
@@ -80,7 +80,7 @@ var u=s(a(),1),f="VehicleList_82a6a4d",N="VehicleList_info_41a84ef",g="VehicleLi
       })
     })]
   })
-}),J="Content_d4d03eba",X="Content_separator_774f59ff",Y="Content_subtitleRules_2104a67e",Z="Content_subtitleVehicles_ead57094",q="Content_pointsWrapper_21e79339",z="Content_footerSeparator_a66c0c84",G="Content_footer_92eb1524",I="Content_footer__offset_9202885e",K=R.strings.battle_pass.tooltips.points,O=x(()=>{
+}),J="Content_d4d03eba",Q="Content_separator_774f59ff",Y="Content_subtitleRules_2104a67e",Z="Content_subtitleVehicles_ead57094",q="Content_pointsWrapper_21e79339",z="Content_footerSeparator_a66c0c84",G="Content_footer_92eb1524",I="Content_footer__offset_9202885e",K=R.strings.battle_pass.tooltips.points,O=x(()=>{
   const{
     model:s
   }=k(),{
@@ -91,7 +91,7 @@ var u=s(a(),1),f="VehicleList_82a6a4d",N="VehicleList_info_41a84ef",g="VehicleLi
       className:Y,children:K.rules()
     }),(0,P.jsxs)("div",{
       className:q,children:[(0,P.jsx)(F,{}),t&&(0,P.jsx)(p,{}),(0,P.jsx)("div",{
-        className:X
+        className:Q
       })]
     }),e.length>0&&(0,P.jsxs)(P.Fragment,{
       children:[(0,P.jsx)("div",{
@@ -100,7 +100,7 @@ var u=s(a(),1),f="VehicleList_82a6a4d",N="VehicleList_info_41a84ef",g="VehicleLi
         vehiclesList:e
       }),(0,P.jsx)("div",{
         className:z,children:(0,P.jsx)("div",{
-          className:X
+          className:Q
         })
       })]
     }),(0,P.jsx)("div",{
@@ -109,9 +109,9 @@ var u=s(a(),1),f="VehicleList_82a6a4d",N="VehicleList_info_41a84ef",g="VehicleLi
       })
     })]
   })
-}),Q=()=>(0,P.jsx)(h,{
+}),U=()=>(0,P.jsx)(h,{
   children:(0,P.jsx)(h.Decorator,{
     children:(0,P.jsx)(O,{})
   })
 });
-d((new _).add(m).addWithProps(L,{}).render((0,P.jsx)(Q,{})));
+d((new _).add(m).addWithProps(L,{}).render((0,P.jsx)(U,{})));

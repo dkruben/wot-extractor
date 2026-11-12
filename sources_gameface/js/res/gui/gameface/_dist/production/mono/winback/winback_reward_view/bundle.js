@@ -12,7 +12,7 @@ import{
   n as H,r as G,t as $
 }
 from"../chunks/winback_reward_view_model.js";
-var B=e(j(),1),U=e(p(),1),W=[H.SELECTABLE_VEHICLE_FOR_GIFT,H.SELECTABLE_VEHICLE_DISCOUNT],K=[H.VEHICLE_FOR_GIFT,H.VEHICLE_FOR_RENT,H.VEHICLE_DISCOUNT,H.SELECTABLE_VEHICLE_FOR_GIFT,H.SELECTABLE_VEHICLE_DISCOUNT],[Q,q]=E("WinbackRewardViewModel")(({
+var B=e(j(),1),U=e(P(),1),W=[H.SELECTABLE_VEHICLE_FOR_GIFT,H.SELECTABLE_VEHICLE_DISCOUNT],K=[H.VEHICLE_FOR_GIFT,H.VEHICLE_FOR_RENT,H.VEHICLE_DISCOUNT,H.SELECTABLE_VEHICLE_FOR_GIFT,H.SELECTABLE_VEHICLE_DISCOUNT],[Q,q]=E("WinbackRewardViewModel")(({
   observableModel:e
 })=>{
   const a={
@@ -43,7 +43,7 @@ var B=e(j(),1),U=e(p(),1),W=[H.SELECTABLE_VEHICLE_FOR_GIFT,H.SELECTABLE_VEHICLE_
   externalModel:e,model:a
 })=>({
   close:e.createCallbackNoArgs("onClose"),selectReward:e.createCallbackNoArgs("onSelectReward"),showVehicle:e.createCallbackNoArgs("showInHangar"),showQuests:e.createCallbackNoArgs("showQuests"),setFirstRowMaxRewardsCount:z(e=>a.firstRowMaxRewardsCount.set(e))
-})),Y="Actions_afedde92",X="Actions_button_d816f92b",Z=e(v(),1),J=x.resolve("strings"),ee=P(function(){
+})),Y="Actions_afedde92",X="Actions_button_d816f92b",Z=e(v(),1),J=x.resolve("strings"),ee=p(function(){
   const{
     model:e,controls:a
   }=q(),{
@@ -60,34 +60,34 @@ var B=e(j(),1),U=e(p(),1),W=[H.SELECTABLE_VEHICLE_FOR_GIFT,H.SELECTABLE_VEHICLE_
     return(0,B.useEffect)(()=>(window.addEventListener("resize",r),r(),()=>{
       window.removeEventListener("resize",r),s.current()
     }),[s,r]),[a,r]
-  })(`.${c.base}`),i={
-    size:o.medium,mixClass:X,disabled:!s
+  })(`.${b.base}`),i={
+    size:c.medium,mixClass:X,disabled:!s
   };
   return e.isFirstProgressionStep.get()?(0,Z.jsx)("div",{
-    className:Y,ref:r,children:(0,Z.jsx)(b,{
-      onClick:a.showQuests,type:w.primary,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.showQuests")
+    className:Y,ref:r,children:(0,Z.jsx)(u,{
+      onClick:a.showQuests,type:o.primary,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.showQuests")
     })
   }):e.computes.hasSelectableRewards()&&e.isSelectableAwardAvailable.get()?(0,Z.jsxs)("div",{
-    className:Y,ref:r,children:[(0,Z.jsx)(b,{
-      onClick:a.selectReward,type:w.primary,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.selectReward")
-    }),(0,Z.jsx)(b,{
-      onClick:a.close,type:w.secondary,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.confirm")
+    className:Y,ref:r,children:[(0,Z.jsx)(u,{
+      onClick:a.selectReward,type:o.primary,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.selectReward")
+    }),(0,Z.jsx)(u,{
+      onClick:a.close,type:o.secondary,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.confirm")
     })]
   }):e.computes.hasOnlyVehicleForGiftReward()?(0,Z.jsxs)("div",{
-    className:Y,ref:r,children:[(0,Z.jsx)(b,{
-      onClick:a.showVehicle,type:w.primary,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.showVehicle")
-    }),(0,Z.jsx)(b,{
-      onClick:a.close,type:w.secondary,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.confirm")
+    className:Y,ref:r,children:[(0,Z.jsx)(u,{
+      onClick:a.showVehicle,type:o.primary,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.showVehicle")
+    }),(0,Z.jsx)(u,{
+      onClick:a.close,type:o.secondary,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.confirm")
     })]
   }):(0,Z.jsx)("div",{
-    className:Y,ref:r,children:(0,Z.jsx)(b,{
-      type:w.primary,onClick:a.close,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.confirm")
+    className:Y,ref:r,children:(0,Z.jsx)(u,{
+      type:o.primary,onClick:a.close,...i,children:J.readOrEmpty("winback.winbackRewardView.buttons.confirm")
     })
   })
 }),ae={
   base:"Header_ee5a2d07",subTitle:"Header_subTitle_2d69d505",subTitle__top:"Header_subTitle__top_b56fd68e",subTitle__bottom:"Header_subTitle__bottom_dc0477c7",title:"Header_title_fdc2e497",title__welcome:"Header_title__welcome_ea86e315"
 },
-se=x.resolve("strings"),re=[G.SELECTED_REWARDS,G.PROGRESSION_STEP,G.WINBACK_PROGRESSION_COMPLETED],ie=[G.REGULAR_PROGRESSION_COMPLETED],te=P(function(){
+se=x.resolve("strings"),re=[G.SELECTED_REWARDS,G.PROGRESSION_STEP,G.WINBACK_PROGRESSION_COMPLETED],ie=[G.REGULAR_PROGRESSION_COMPLETED],te=p(function(){
   const{
     model:e
   }=q(),a=e.state.get();
@@ -265,7 +265,7 @@ ge={
 fe={
   [a.extraSmall]:[360,360,180,180],[a.small]:[360,360,360,180],[a.medium]:[360,360,360,360],[a.large]:[600,600,360,360,360,360],[a.extraLarge]:[600,600,600,360,360]
 },
-ve=P(function({
+ve=p(function({
   reward:e
 }){
   const{
@@ -333,7 +333,7 @@ function Ce({
 var je={
   base:"Rewards_29ff7300",firstRow:"Rewards_firstRow_75f0bf4b",lines:"Rewards_lines_82087aad",fadeInUp:"Rewards_fadeInUp_405577a5",rotate:"Rewards_rotate_405577a5",glow:"Rewards_glow_c42cea67",fadeIn:"Rewards_fadeIn_405577a5",ribbonWrapper:"Rewards_ribbonWrapper_bd859d5e",ribbon:"Rewards_ribbon_1743da87",ribbon__gold:"Rewards_ribbon__gold_bacbdbe7",secondRow:"Rewards_secondRow_1669ad5b",secondRowTitle:"Rewards_secondRowTitle_1e87b46e",secondRowRewards:"Rewards_secondRowRewards_a1e37c96"
 },
-Ie=x.resolve("strings"),ke=P(function(){
+Ie=x.resolve("strings"),ke=p(function(){
   const{
     model:e
   }=q(),a=e.computes.isRibbonGold(),s=e.computes.isLinesVisible(),r=e.computes.isGlowVisible(),i=e.computes.getFirstRowRewards(),t=e.computes.getSecondRowRewards(),{
@@ -372,7 +372,7 @@ Ie=x.resolve("strings"),ke=P(function(){
       })]
     })]
   })
-}),Ve="App_483c1d8c",Te="App_closeButton_f5179698",Oe="App_header_36a9021",Le="App_rewards_73e9682",ye="App_rewards__twoRows_a4fcb094",Ae="App_actions_3dc4d043",De="App_actions__appear_13271a7f",ze=(0,B.createContext)({}),Me=x.resolve("strings"),Fe=P(function(){
+}),Ve="App_483c1d8c",Te="App_closeButton_f5179698",Oe="App_header_36a9021",Le="App_rewards_73e9682",ye="App_rewards__twoRows_a4fcb094",Ae="App_actions_3dc4d043",De="App_actions__appear_13271a7f",ze=(0,B.createContext)({}),Me=x.resolve("strings"),Fe=p(function(){
   const{
     model:e,controls:a
   }=q(),{
@@ -387,7 +387,7 @@ Ie=x.resolve("strings"),ke=P(function(){
   return(0,Z.jsx)(ze.Provider,{
     value:c,children:(0,Z.jsxs)("div",{
       className:Ve,children:[(0,Z.jsx)("div",{
-        className:Te,children:(0,Z.jsx)(u,{
+        className:Te,children:(0,Z.jsx)(w,{
           caption:Me.readOrEmpty("winback.winbackRewardView.buttons.close"),type:"close",side:"right",onClick:a.close
         })
       }),(0,Z.jsx)("div",{

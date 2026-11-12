@@ -9,7 +9,7 @@ import{
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
 import{
-  a as M,i as Q,r as $
+  a as M,i as Q,n as $
 }
 from"../chunks/vendor.js";
 /* empty css               */import{

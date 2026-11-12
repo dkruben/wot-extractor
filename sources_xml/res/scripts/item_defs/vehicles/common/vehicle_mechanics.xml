@@ -669,18 +669,18 @@
 				<params>
 					<param>60<name>combatThrottleCooldown</name>
 					</param>
-					<param>20<name>combatThrottleDuration</name>
+					<param>25<name>combatThrottleDuration</name>
 					</param>
-					<param>+10%<name>enginePower</name>
+					<param>+60%<name>enginePower</name>
 					</param>
-					<param>+10%<name>chassisRotationSpeed</name>
+					<param>+75%<name>chassisRotationSpeed</name>
 					</param>
-					<param>+50%<name>speedLimits</name>
+					<param>+30%/+50%<name>speedLimits</name>
 					</param>
-					<param>-30%<name>vehicleGunShotDispersionChassisMovement</name>
+					<param>-60%<name>vehicleGunShotDispersionChassisMovement</name>
 						<kpiSign>negative</kpiSign>
 					</param>
-					<param>-30%<name>vehicleGunShotDispersionChassisRotation</name>
+					<param>-60%<name>vehicleGunShotDispersionChassisRotation</name>
 						<kpiSign>negative</kpiSign>
 					</param>
 				</params>

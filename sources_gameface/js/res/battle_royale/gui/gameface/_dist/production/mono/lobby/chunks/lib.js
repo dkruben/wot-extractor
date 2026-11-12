@@ -18138,7 +18138,182 @@ function Currency({
     }),formatCurrencyValue(e,t)]
   })
 }
+function NotLoaded(){
+  return null
+}
+function LazyModel(e){
+  return useLazyModel(e.id)?e.children:(e.fallback||NotLoaded)()
+}
+function useLazyModel(e){
+  const[t,n]=(0,import_react.useState)(!1);
+  return(0,import_react.useEffect)(()=>{
+    if("number"==typeof e)return n(ids().includes(e)),subscribe$1(e,e=>{
+      n("added"===e.type)
+    })
+  },[e]),t
+}
 Currency.sizes=sizes$4,Currency.types=types$2;
+var ErrorHandler=class extends import_react.Component{
+  state={
+    failure:!1,error:null
+  };
+  static getDerivedStateFromError(e){
+    return console.error(e),{
+      failure:!0,error:e
+    }
+  }
+  failure(){
+    return(0,import_jsx_runtime.jsxs)("div",{
+      children:[(0,import_jsx_runtime.jsx)("h1",{
+        children:"Something went wrong."
+      }),this.state.error&&(0,import_jsx_runtime.jsx)("pre",{
+        children:this.state.error.toString()
+      })]
+    })
+  }
+  render(){
+    return this.state.failure?this.props.failure?this.props.failure(this.state.error):this.failure():this.props.children
+  }
+},
+UNKNOWN_NATION="none",list=["ussr","germany","usa","china","france","uk","japan","czech","sweden","poland","italy"],nationById=e=>list[e]??"none",LIGHT_TANK="lightTank",MEDIUM_TANK="mediumTank",HEAVY_TANK="heavyTank",AT_SPG="AT-SPG",types$1={
+  lightTank:LIGHT_TANK,mediumTank:MEDIUM_TANK,heavyTank:HEAVY_TANK,SPG:"SPG","AT-SPG":AT_SPG
+},
+typeValues=Object.values(types$1),isTypeValidValue=e=>typeValues.includes(e);
+function getVehicleImageKey(e){
+  const t=e.indexOf(":");
+  return normalizeResource(t<0?e.toLowerCase():e.substring(t+1).toLowerCase())
+}
+var WITHOUT_ROLE="without_role",roles={
+  assault:"assault",sniper:"sniper",support:"support",universal:"universal",break:"break",scout:"scout",spg:"spg"
+},
+mapRoleByKey=[WITHOUT_ROLE,roles.spg,roles.assault,roles.break,roles.universal,roles.support,roles.assault,roles.support,roles.universal,roles.sniper,roles.assault,roles.universal,roles.sniper,roles.support,roles.universal,WITHOUT_ROLE,roles.scout,roles.support],atSpgRoles=[roles.assault,roles.universal,roles.sniper,roles.support],heavyTankRoles=[roles.assault,roles.break,roles.universal,roles.support],mediumTankRoles=[roles.assault,roles.support,roles.universal,roles.sniper],lightTankRoles=[roles.universal,roles.scout,roles.support],vehicleState={
+  DAMAGED:"damaged",EXPLODED:"exploded",DESTROYED:"destroyed",UNDAMAGED:"undamaged",BATTLE:"battle",IN_PREBATTLE:"inPrebattle",LOCKED:"locked",CREW_NOT_FULL:"crewNotFull",AMMO_NOT_FULL:"ammoNotFull",AMMO_NOT_FULL_EVENTS:"ammoNotFullEvents",SERVER_RESTRICTION:"serverRestriction",RENTAL_IS_OVER:"rentalIsOver",IGR_RENTAL_IS_OVER:"igrRentalIsOver",IN_PREMIUM_IGR_ONLY:"inPremiumIgrOnly",GROUP_IS_NOT_READY:"group_is_not_ready",NOT_PRESENT:"notpresent",UNAVAILABLE:"unavailable",UNSUITABLE_TO_QUEUE:"unsuitableToQueue",UNSUITABLE_TO_UNIT:"unsuitableToUnit",WILL_BE_UNLOCKED_IN_BATTLE:"willBeUnlockedInBattle",DEAL_IS_OVER:"dealIsOver",ROTATION_GROUP_UNLOCKED:"rotationGroupUnlocked",ROTATION_GROUP_LOCKED:"rotationGroupLocked",RENTABLE:"rentable",RENTABLE_AGAIN:"rentableAgain",DISABLED:"disabled",SUBSCRIPTION_SUSPENDED:"subscription_suspended",WOT_PLUS_EXCLUSIVE_VEHICLE_DISABLED:"wot_plus_exclusive_vehicle_disabled"
+},
+stateValues=Object.values(vehicleState),base__x120x96="VehicleImage_base__x120x96_32ca06f1",base__x190x152="VehicleImage_base__x190x152_41379c70",base__x380x304="VehicleImage_base__x380x304_274f87fe",vehicle_image_module_default={
+  base__x120x96:base__x120x96,base__x190x152:base__x190x152,base__x380x304:base__x380x304
+},
+sizes$3={
+  x120x96:"x120x96",x190x152:"x190x152",x380x304:"x380x304"
+},
+Base$2=defineStyledComponent("VehicleImage",{
+  element:Image$1,className:vehicle_image_module_default.base,cva:{
+    variants:{
+      size:{
+        [sizes$3.x120x96]:vehicle_image_module_default.base__x120x96,[sizes$3.x190x152]:vehicle_image_module_default.base__x190x152,[sizes$3.x380x304]:vehicle_image_module_default.base__x380x304
+      }
+    }
+  }
+});
+function UnknownVehicleImage({
+  size:e=sizes$3.x380x304,...t
+}){
+  return(0,import_jsx_runtime.jsx)(Base$2,{
+    ...t,size:e,path:`vehicle.${e}.tank_empty`
+  })
+}
+var VehicleImage=(0,import_react.forwardRef)(function({
+  size:e=sizes$3.x380x304,name:t,width:n,height:r,className:a,...o
+},i){
+  const s=resources.resolve("images"),u=`vehicle.${e}.${getVehicleImageKey(t)}`;
+  return s.has(u)?(0,import_jsx_runtime.jsx)(Base$2,{
+    ...o,ref:i,size:e,className:a,path:u,width:n,height:r
+  }):(console.warn(`Fail to retrieve icon maps/icons/vehicle/${e}/${getVehicleImageKey(t)}`),(0,import_jsx_runtime.jsx)(UnknownVehicleImage,{
+    size:e,className:a,width:n,height:r
+  }))
+});
+VehicleImage.UnknownVehicleImage=UnknownVehicleImage,VehicleImage.size=sizes$3;
+var base$15="VehicleLevel_3c938122",vehicle_level_module_default={
+  base:base$15
+},
+numberTypes={
+  arabic:"arabic",roman:"roman"
+};
+function getLevelType(e,t){
+  return e||(t?numberTypes.arabic:numberTypes.roman)
+}
+var VehicleLevel=(0,import_react.forwardRef)(function({
+  value:e,numberType:t,...n
+},r){
+  const a=getLevelType(t,useRomanForbidden())===numberTypes.roman?arabicToRoman(e):e;
+  return(0,import_jsx_runtime.jsx)("div",{
+    ...n,"data-name":"VehicleLevel",className:clsx(vehicle_level_module_default.base,n.className),ref:r,children:a
+  })
+});
+VehicleLevel.numberTypes=numberTypes;
+var TYPE_PRESTIGE="prestige",directions$1={
+  left:"left",right:"right"
+},
+lengths={
+  short:"short",medium:"medium",long:"long"
+},
+iconLength=e=>e<10?lengths.short:e<100?lengths.medium:lengths.long,icon$5=(e,t,n)=>"prestige"===t?TYPE_PRESTIGE:`${t}.${iconLength(e)}.c_${n}`,base$14="VehiclePrestigeLevel_a750cce",icon$4="VehiclePrestigeLevel_icon_ef024cc3",base__left="VehiclePrestigeLevel_base__left_4426b46c",level="VehiclePrestigeLevel_level_10f410ba",level__short="VehiclePrestigeLevel_level__short_d1939fb1",base__right="VehiclePrestigeLevel_base__right_4426b46c",level__medium="VehiclePrestigeLevel_level__medium_90aed80f",level__long="VehiclePrestigeLevel_level__long_26625167",base__iron="VehiclePrestigeLevel_base__iron_4426b46c",base__bronze="VehiclePrestigeLevel_base__bronze_4426b46c",base__silver="VehiclePrestigeLevel_base__silver_4426b46c",base__gold="VehiclePrestigeLevel_base__gold_4426b46c",base__enamel="VehiclePrestigeLevel_base__enamel_4426b46c",vehicle_prestige_level_module_default={
+  base:base$14,icon:icon$4,base__left:base__left,level:level,level__short:level__short,base__right:base__right,level__medium:level__medium,level__long:level__long,base__iron:base__iron,base__bronze:base__bronze,base__silver:base__silver,base__gold:base__gold,base__enamel:base__enamel
+};
+function PrestigeLevel({
+  level:e,grade:t,type:n,direction:r,classNames:a,...o
+}){
+  return e<1||"undefined"===n?null:(0,import_jsx_runtime.jsxs)("div",{
+    ...o,className:clsx(vehicle_prestige_level_module_default.base,vehicle_prestige_level_module_default[`base__${n}`],vehicle_prestige_level_module_default[`base__${r}`],o.className,a?.base),children:[(0,import_jsx_runtime.jsx)(Image$1,{
+      path:`prestige.tab.${icon$5(e,n,t)}`,className:clsx(vehicle_prestige_level_module_default.icon,a?.icon)
+    }),"prestige"!==n&&(0,import_jsx_runtime.jsx)("div",{
+      className:clsx(vehicle_prestige_level_module_default.level,vehicle_prestige_level_module_default[`level__${iconLength(e)}`],a?.level),children:e
+    })]
+  })
+}
+PrestigeLevel.direction=directions$1;
+var base$13="VehicleRole_e70537d3",icon__x16x16$1="VehicleRole_icon__x16x16_f444f190",icon__x24x24$1="VehicleRole_icon__x24x24_cc02d077",icon__x32x32$1="VehicleRole_icon__x32x32_2180a099",icon__x48x48$1="VehicleRole_icon__x48x48_2a01e86c",vehicle_role_module_default={
+  base:base$13,icon__x16x16:icon__x16x16$1,icon__x24x24:icon__x24x24$1,icon__x32x32:icon__x32x32$1,icon__x48x48:icon__x48x48$1
+},
+sizes$2={
+  x16x16:"x16x16",x24x24:"x24x24",x32x32:"x32x32",x48x48:"x48x48"
+},
+images$1=resources.resolve("images"),VehicleRole=(0,import_react.forwardRef)(function({
+  roleKey:e,size:t=sizes$2.x24x24,classNames:n,...r
+},a){
+  const o=useUpscale(t,sizes$2.x32x32);
+  return(0,import_jsx_runtime.jsx)("div",{
+    ...r,ref:a,className:clsx(vehicle_role_module_default.base,n?.base),children:(0,import_jsx_runtime.jsx)("img",{
+      className:clsx(vehicle_role_module_default[`icon__${t}`],n?.icon),src:images$1.readOrEmpty(`vehicleRoles.${o}.${e}`)
+    })
+  })
+});
+VehicleRole.sizes=sizes$2;
+var sizes$1={
+  x24x24:"x24x24",x48x48:"x48x48",x64x64:"x64x64",x96x96:"x96x96"
+},
+upscaledSizes={
+  x24x24:"x64x64",x48x48:"x96x96",x64x64:"x96x96",x96x96:"x96x96"
+},
+mapTypes={
+  [types$1.lightTank]:"light_tank",[types$1.mediumTank]:"medium_tank",[types$1.heavyTank]:"heavy_tank",[types$1.SPG]:"spg",[types$1["AT-SPG"]]:"tank_destroyer"
+},
+base$12="VehicleType_30b4aab0",base__x24x24="VehicleType_base__x24x24_a3dc7aa3",base__x48x48="VehicleType_base__x48x48_cb59f57a",base__x64x64="VehicleType_base__x64x64_bb9b890",base__x96x96="VehicleType_base__x96x96_919f9f92",base__premium__x24x24="VehicleType_base__premium__x24x24_92335fef",base__premium__x48x48="VehicleType_base__premium__x48x48_e19c5d21",base__premium__x64x64="VehicleType_base__premium__x64x64_ba9a2a05",base__premium__x96x96="VehicleType_base__premium__x96x96_d837a523",icon$3="VehicleType_icon_b15d2628",vehicle_type_module_default={
+  base:base$12,base__x24x24:base__x24x24,base__x48x48:base__x48x48,base__x64x64:base__x64x64,base__x96x96:base__x96x96,base__premium__x24x24:base__premium__x24x24,base__premium__x48x48:base__premium__x48x48,base__premium__x64x64:base__premium__x64x64,base__premium__x96x96:base__premium__x96x96,icon:icon$3
+},
+VehicleType=(0,import_react.forwardRef)(function({
+  type:e,size:t=sizes$1.x48x48,premium:n=!1,fit:r="contain",...a
+},o){
+  const i=useUpscale(sizes$1[t],upscaledSizes[t]);
+  return(0,import_jsx_runtime.jsx)(Image$1,{
+    ...a,ref:o,fit:r,className:clsx(vehicle_type_module_default.base,n?vehicle_type_module_default[`base__premium__${t}`]:vehicle_type_module_default[`base__${t}`],a.className),path:`ui_kit.vehicle_type.${i}.${n?"premium_":""}${normalizeResource(mapTypes[e])}_${i}`
+  })
+});
+VehicleType.types=types$1,VehicleType.sizes=sizes$1;
+var base$11="VehicleInfo_1732f1f0",name="VehicleInfo_name_3989ca04",name__premium="VehicleInfo_name__premium_258b3b93",vehicle_info_module_default={
+  base:base$11,name:name,name__premium:name__premium
+},
+VehicleName=defineStyledComponent("VehicleName",vehicle_info_module_default.name,{
+  variants:{
+    premium:{
+      true:vehicle_info_module_default.name__premium
+    }
+  }
+}),VehicleInfo=(0,import_react.forwardRef)(function(e,t){
+  return(0,import_jsx_runtime.jsx)("div",{
+    ...e,ref:t,className:clsx(vehicle_info_module_default.base,e.className)
+  })
+});
+VehicleInfo.Prestige=PrestigeLevel,VehicleInfo.Level=VehicleLevel,VehicleInfo.Type=VehicleType,VehicleInfo.Name=VehicleName,VehicleInfo.Role=VehicleRole;
 var NodeTypes={
   Text:1,Tag:2,Var:3
 };
@@ -18187,8 +18362,8 @@ function parse$1(e,t){
     type:NodeTypes.Text,value:a
   })),n
 }
-var COLORS="blackReal, whiteReal, white, whiteOrange, whiteSpanish, par, parSecondary, parTertiary, infoRed, red, redDark, yellow, orange, cream, brown, greenBright, green, greenDark, blueBooster, blueTeamkiller, cred, gold, bond, prom",base$15="FormatText_db904f12",base__fullSize="FormatText_base__fullSize_a514958e",nowrap="FormatText_nowrap_ff69eca3",format_text_module_default={
-  COLORS:COLORS,base:base$15,base__fullSize:base__fullSize,nowrap:nowrap
+var COLORS="blackReal, whiteReal, white, whiteOrange, whiteSpanish, par, parSecondary, parTertiary, infoRed, red, redDark, yellow, orange, cream, brown, greenBright, green, greenDark, blueBooster, blueTeamkiller, cred, gold, bond, prom",base$10="FormatText_db904f12",base__fullSize="FormatText_base__fullSize_a514958e",nowrap="FormatText_nowrap_ff69eca3",format_text_module_default={
+  COLORS:COLORS,base:base$10,base__fullSize:base__fullSize,nowrap:nowrap
 },
 legacyColors=new Set(format_text_module_default.COLORS?.split(", ")??[]),keyId=0;
 function takeKey(){
@@ -18347,487 +18522,6 @@ function FormatString({
     text:resources.resolve("strings").readOrEmpty(e),...t
   })
 }
-var DAYS_IN_WEEK=7,HOURS_IN_DAY=24,MS_IN_SECOND=1e3,ONE_MINUTE=60,ONE_HOUR=3600,ONE_DAY=24*ONE_HOUR,ONE_WEEK=7*ONE_DAY,NOW_IN_SECONDS=Date.now()/1e3,getRegionalDateTime=RegionalDateTime.getRegionalDateTime,getFormattedDateTime=RegionalDateTime.getFormattedDateTime;
-function getTimeUnits(e=0){
-  let t=e;
-  const n=Math.trunc(t/ONE_DAY);
-  t-=n*ONE_DAY;
-  const r=Math.trunc(t/ONE_HOUR);
-  t-=r*ONE_HOUR;
-  const a=Math.trunc(t/60);
-  return t-=60*a,{
-    days:n,hours:r,minutes:a,seconds:t
-  }
-}
-var getRoundedTimeUnitDescription=(e,t=!0)=>e.days>7&&t?format(R.strings.common.duration.days(),{
-  days:e.days
-}):e.days>=1?0===e.hours?format(R.strings.common.duration.days(),{
-  days:e.days
-}):`${format(R.strings.common.duration.days(),{
-  days:e.days
-})} ${format(R.strings.common.duration.hours(),{
-  hours:e.hours
-})}`:e.hours>=1?0===e.minutes?format(R.strings.common.duration.hours(),{
-  hours:e.hours
-}):`${format(R.strings.common.duration.hours(),{
-  hours:e.hours
-})} ${format(R.strings.common.duration.minutes(),{
-  minutes:e.minutes
-})}`:format(R.strings.common.duration.minutes(),{
-  minutes:e.minutes||1
-}),DateTime=({
-  datetime:e,format:t=DateTimeFormatsEnum.ShortDate,isConvertedToLocal:n=!0
-})=>Object.values(DateTimeFormatsEnum).includes(t)?getRegionalDateTime(e,t,n):getFormattedDateTime(e,t,n),DateTime_default=(0,import_react.memo)(DateTime),blackReal="Formattextwithcolortags_blackReal_55a1402e",whiteReal="Formattextwithcolortags_whiteReal_3cbb298b",white="Formattextwithcolortags_white_e509d98",whiteOrange="Formattextwithcolortags_whiteOrange_7338e183",whiteSpanish="Formattextwithcolortags_whiteSpanish_e4b7820a",par="Formattextwithcolortags_par_485c5228",parSecondary="Formattextwithcolortags_parSecondary_19563067",parTertiary="Formattextwithcolortags_parTertiary_f9aabcb9",red="Formattextwithcolortags_red_9f8bd43",redDark="Formattextwithcolortags_redDark_5f4161da",yellow="Formattextwithcolortags_yellow_cfb15b8d",orange="Formattextwithcolortags_orange_11869493",cream="Formattextwithcolortags_cream_12fdbea3",brown="Formattextwithcolortags_brown_e49e35ef",greenBright="Formattextwithcolortags_greenBright_93ef1ba5",green="Formattextwithcolortags_green_55b7d967",greenDark="Formattextwithcolortags_greenDark_2b347344",blueBooster="Formattextwithcolortags_blueBooster_837aca9f",blueTeamkiller="Formattextwithcolortags_blueTeamkiller_94b7ca24",cred="Formattextwithcolortags_cred_b30a4efa",gold="Formattextwithcolortags_gold_616e4d7",bond="Formattextwithcolortags_bond_b29091",prom="Formattextwithcolortags_prom_85aada4f",parNoWidth="Formattextwithcolortags_parNoWidth_bb0f73ce",FormatTextWithColorTags_module_default={
-  blackReal:blackReal,whiteReal:whiteReal,white:white,whiteOrange:whiteOrange,whiteSpanish:whiteSpanish,par:par,parSecondary:parSecondary,parTertiary:parTertiary,red:red,redDark:redDark,yellow:yellow,orange:orange,cream:cream,brown:brown,greenBright:greenBright,green:green,greenDark:greenDark,blueBooster:blueBooster,blueTeamkiller:blueTeamkiller,cred:cred,gold:gold,bond:bond,prom:prom,parNoWidth:parNoWidth
-},
-TAGGED_PHRASE_REGEXP=/(?:%\(|{)\w*(?:_[Oo]pen|Start)(?:\)s|})?(.*?)(?:%\(|{)\w*(?:_[Cc]lose|End)(?:\)s|})?/g,COLOR_REGEXP=/(?<=(?:%\(|{))(.*?)(?=(?:_[Oo]pen|Start))/,WORDS_REGEXP=/(?<=(?:_[Oo]pen|Start)(?:\)s?|}))(.*?)(?=(?:%\(|{))/,FormatTextWithColorTagsComponent=({
-  text:e,binding:t,classMix:n
-})=>{
-  const r=(0,import_react.useCallback)(e=>({
-    color:`#${e}`
-  }),[]),a=(0,import_react.useMemo)(()=>t||{},[t]);
-  let o=TAGGED_PHRASE_REGEXP.exec(e),i=e,s=0;
-  for(;o;){
-    const n=o[0],u=COLOR_REGEXP.exec(n),l=WORDS_REGEXP.exec(n),c=o[1];
-    if(u&&l){
-      const e=u[0],o=e+s+++e;
-      i=i.replace(n,`%(${o})`),a[o]=FormatTextWithColorTags_module_default[e]?(0,import_jsx_runtime.jsx)("span",{
-        className:FormatTextWithColorTags_module_default[e],children:(0,import_jsx_runtime.jsx)(FormatText$1,{
-          text:c,binding:t
-        })
-      }):(0,import_jsx_runtime.jsx)("span",{
-        style:r(e),children:(0,import_jsx_runtime.jsx)(FormatText$1,{
-          text:c,binding:t
-        })
-      })
-    }
-    o=TAGGED_PHRASE_REGEXP.exec(e)
-  }
-  return(0,import_jsx_runtime.jsx)(FormatText$1,{
-    text:i,classMix:n,binding:a
-  })
-},
-FormatTextWithColorTags=(0,import_react.memo)(FormatTextWithColorTagsComponent),RewardComponent=({
-  reward:e,size:t
-})=>{
-  const n=e.RewardWrapper||null;
-  return n?(0,import_jsx_runtime.jsx)(n,{
-    ...e.rewardWrapperProps,children:(0,import_jsx_runtime.jsx)(Reward$1,{
-      size:t,...e
-    })
-  }):(0,import_jsx_runtime.jsx)(Reward$1,{
-    size:t,...e
-  })
-},
-base$14="Rewards_36f5662a",base__vertical$1="Rewards_base__vertical_32f04b98",reward$1="Rewards_reward_9abc0f4a",reward__vertical$1="Rewards_reward__vertical_dd4a02c5",Rewards_module_default={
-  base:base$14,base__vertical:base__vertical$1,reward:reward$1,reward__vertical:reward__vertical$1
-},
-Rewards$1=({
-  data:e,size:t=ImageSize$1.Big,isVertical:n=!1,count:r,classMix:a,rewardItemClassMix:o,boxRewardTooltip:i,boxRewardValue:s,boxRewardClassName:u,boxRewardClassNames:l
-})=>{
-  const c=r&&r<e.length,d=(0,import_classnames.default)(Rewards_module_default.reward,n&&Rewards_module_default.reward__vertical,o),f=c?r:e.length;
-  return(0,import_jsx_runtime.jsxs)("div",{
-    className:(0,import_classnames.default)(Rewards_module_default.base,n&&Rewards_module_default.base__vertical,a),children:[e.slice(0,f).map((e,n)=>(0,import_jsx_runtime.jsx)("div",{
-      className:d,children:(0,import_jsx_runtime.jsx)(RewardComponent,{
-        reward:e,size:t
-      })
-    },n)),c&&(0,import_jsx_runtime.jsx)("div",{
-      className:d,children:(0,import_jsx_runtime.jsx)(Reward$1,{
-        name:"more",image:`R.images.gui.maps.icons.quests.bonuses.${t}.default`,size:t,value:s||formatPrintf$1(R.strings.tooltips.quests.awards.additional.bottom(),{
-          count:e.length-(r||0)
-        }),tooltipArgs:i,className:u,classNames:l
-      })
-    })]
-  })
-},
-Alignment=function(e){
-  return e.FlexStart="flex-start",e.Center="center",e.FlexEnd="flex-end",e
-}({}),THAI_LANGUAGE_CODE="th",SPLIT_BY_SYMBOL_LANGUAGE_CODES=["zh_cn","zh_sg","zh_tw","ja","th"],IS_SPLIT_BY_SYMBOL=SPLIT_BY_SYMBOL_LANGUAGE_CODES.includes(R.strings.settings.LANGUAGE_CODE().toLowerCase());
-function isSerializableReactNode(e){
-  return!(null!=e&&!["string","number","boolean"].includes(typeof e))||!(0,import_react.isValidElement)(e)&&(!!Array.isArray(e)&&e.every(isSerializableReactNode))
-}
-var base$13="MultilineOverflow_ec9f8e47",content="MultilineOverflow_content_b539970d",multiline_overflow_module_default={
-  base:base$13,content:content
-};
-function isSerializableParams(e){
-  return!e||Object.values(e).every(isSerializableReactNode)
-}
-function cloneNode(e){
-  return e instanceof HTMLElement?e.cloneNode(!0):e.nodeType===Node.TEXT_NODE?document.createTextNode(e.nodeValue??""):void 0
-}
-var MultilineOverflow=(0,import_react.forwardRef)(function({
-  text:e,brackets:t,params:n,formatters:r,upgradeLegacy:a,split:o=!0,onMouseEnter:i,onMouseLeave:s,onClick:u,tooltipDisabled:l=!1,tooltip:c,className:d,classNames:f,style:p,styleBase:m,styleText:_,...h
-},g){
-  const b=(0,import_react.useRef)(null),v=(0,import_react.useRef)(null),[y,E]=(0,import_react.useState)(!1);
-  (0,import_react.useEffect)(()=>{
-    if(0===e.length)return;
-    const t=b.current,n=v.current;
-    if(!t||!n)return;
-    const r=document.createElement("div");
-    function a(){
-      if(!t||!n)return;
-      const e=t.children[0];
-      if(!e)return console.warn("MultilineOverflow can't get first child to handle it",t);
-      r.remove(),r.className=clsx(multiline_overflow_module_default.content,t.children[0].className),r.innerHTML="",e instanceof HTMLElement&&(r.style.cssText=e.style.cssText);
-      const a=e.childNodes.length-1;
-      let o=a;
-      for(;o>=0;o--){
-        const n=e.childNodes[o];
-        if(n instanceof HTMLElement&&!(n.offsetTop+n.offsetHeight>t.clientHeight))break
-      }
-      if(o===a)E(!1);
-      else{
-        E(!0);
-        const a=relativeOffset(t.getBoundingClientRect(),e.getBoundingClientRect());
-        for(r.style.visibility="",r.style.left=`${a.x}px`,r.style.top=`${a.y}px`;o>=0;o--){
-          const t=e.childNodes[o];
-          if(t instanceof HTMLElement&&!(t.offsetLeft+t.offsetWidth+n.offsetWidth>e.clientWidth))break
-        }
-        for(let t=0;t<=o;t++){
-          const n=e.childNodes[t];
-          if(!(n instanceof HTMLElement))continue;
-          const a=cloneNode(n);
-          a?r.appendChild(a):console.warn("Unexpected type of target node",n)
-        }
-        const i=n.cloneNode(!0);
-        i.removeAttribute("style"),r.appendChild(i),t.appendChild(r)
-      }
-    }
-    const o=new ResizeObserver(a);
-    return o.observe(t),(new DisposeBuilder).add(addEventListener(window,"resize",a)).add(o.disconnect.bind(o)).add(r.remove.bind(r)).dispose
-  },[g,e]);
-  const A=isSerializableParams(n),S=useParamTooltip("format_text",(0,import_react.useMemo)(()=>({
-    text:e,params:A?n:void 0,split:o,upgradeLegacy:a,brackets:t,resId:resources.resolve("views").read(e=>e.mono.tooltips.tooltips("resId"))
-  }),[e,t,o,a,n,A])),w=c??S;
-  if((0,import_react.useEffect)(()=>{
-    l||y||w.onMouseLeave()
-  },[y,w,c,l,A]),0===e.length)return null;
-  return(0,import_jsx_runtime.jsxs)("div",{
-    ...h,onMouseEnter:function(e){
-      i?.(e),y&&!l&&w.onMouseEnter(e)
-    },
-    onClick:function(e){
-      u?.(e),l||w.onClick()
-    },
-    onMouseLeave:function(e){
-      s?.(e),l||w.onMouseLeave()
-    },
-    ref:assignRefs([g,b]),className:clsx(multiline_overflow_module_default.base,d,f?.base),style:{
-      ...p,...m
-    },
-    children:[(0,import_jsx_runtime.jsx)(FormatText,{
-      text:e,brackets:t,params:n,upgradeLegacy:a,split:o,formatters:r,className:f?.text,style:{
-        ..._,visibility:y?"hidden":void 0
-      }
-    }),(0,import_jsx_runtime.jsx)("div",{
-      ref:v,style:{
-        visibility:"hidden",position:"absolute"
-      },
-      children:"..."
-    })]
-  })
-});
-function FormatTextSplited({
-  className:e,...t
-}){
-  return(0,import_jsx_runtime.jsx)("div",{
-    className:e,children:t.text.split("\n").map(e=>(0,import_jsx_runtime.jsx)(FormatText,{
-      ...t,text:e
-    },e))
-  })
-}
-function ExtendedText(e){
-  return void 0!==e.onSizeChanged&&console.warn('[ExtendedText Adapter] Property "onSizeChanged" doesn\'t support'),void 0!==e.targetId&&console.warn('[ExtendedText Adapter] Property "targetId" doesn\'t support'),(0,import_jsx_runtime.jsx)(e.isTruncationAvailable||e.truncateIdentify?MultilineOverflow:FormatTextSplited,{
-    split:e.split??!0,text:e.text,params:e.binding,style:{
-      alignContent:e.alignContent,justifyContent:e.justifyContent
-    },
-    upgradeLegacy:!0,className:clsx(e.className,e.classMix)
-  })
-}
-var defaultOnFinish=()=>{},
-useCountdown$1=(e=0,t,n=0,r=defaultOnFinish)=>{
-  const[a,o]=(0,import_react.useState)(e);
-  return(0,import_react.useEffect)(()=>{
-    if(e>0){
-      o(e);
-      const a=Date.now(),i=setInterval(()=>{
-        const t=e-Math.floor((Date.now()-a)/MS_IN_SECOND);
-        null!==n&&t<=n?(o(n),r&&r(),clearInterval(i)):o(t)
-      },(t||(e>120?60:1))*MS_IN_SECOND);
-      return()=>{
-        clearInterval(i)
-      }
-    }
-  },[e,t,n,r]),a
-},
-tracker$1=DataTracker.instance,tracker=DataTracker.instance,useCountdown=useCountdown$1,useScaleState=()=>{
-  const[e,t]=(0,import_react.useState)(env.view.getScale());
-  return(0,import_react.useEffect)(()=>{
-    const e=()=>{
-      t(env.view.getScale())
-    };
-    return window.addEventListener("resize",e),()=>{
-      window.removeEventListener("resize",e)
-    }
-  },[]),e
-},
-CountdownIcon=function(e){
-  return e.Timer="timer",e.Countdown="countdown",e.Cooldown="cooldown",e.None="none",e
-}({}),CountdownStyle=function(e){
-  return e.Description="description",e.Short="short",e.Long="long",e.Extended="extended",e
-}({}),base$12="Countdown_99fa8328",icon$5="Countdown_icon_b50ebafb",description="Countdown_description_91ad95d2",Countdown_module_default={
-  base:base$12,icon:icon$5,description:description
-},
-formatUnit=e=>e.toString().padStart(2,"0"),formatTimeUnits=(e,t)=>{
-  switch(t){
-    case CountdownStyle.Description:return getRoundedTimeUnitDescription(e);
-    case CountdownStyle.Short:return`${formatUnit(e.minutes)}:${formatUnit(e.seconds)}`;
-    case CountdownStyle.Long:return`${formatUnit(e.hours)}:${formatUnit(e.minutes)}:${formatUnit(e.seconds)}`;
-    case CountdownStyle.Extended:return`${format(R.strings.common.duration.days(),{
-      days:e.days
-    })} | ${formatUnit(e.hours)}:${formatUnit(e.minutes)}:${formatUnit(e.seconds)}`
-  }
-},
-IMAGES=R.images.gui.maps.icons.components.countdown,getIcon=(e,t)=>{
-  const n=2===t?IMAGES.big:IMAGES;
-  switch(e){
-    case CountdownIcon.Timer:return n.clock();
-    case CountdownIcon.Countdown:return n.hourglass();
-    case CountdownIcon.Cooldown:return n.lock()
-  }
-},
-Countdown=({
-  duration:e,icon:t=CountdownIcon.Timer,style:n=CountdownStyle.Description,onTimeReached:r,refreshRate:a,className:o="",classNames:i={}
-})=>{
-  const s=useCountdown(e,a??(n!==CountdownStyle.Description?1:void 0)),u=useScaleState();
-  r&&r[s]&&r[s]();
-  const l=formatTimeUnits(getTimeUnits(s),n);
-  return(0,import_jsx_runtime.jsxs)("div",{
-    className:(0,import_classnames.default)(Countdown_module_default.base,o),children:[t!==CountdownIcon.None&&(0,import_jsx_runtime.jsx)("div",{
-      className:(0,import_classnames.default)(Countdown_module_default.icon,i.icon),style:{
-        backgroundImage:`url('${getIcon(t,u)}')`
-      }
-    }),(0,import_jsx_runtime.jsx)("div",{
-      className:(0,import_classnames.default)(Countdown_module_default.description,i.text),children:l
-    })]
-  })
-},
-Countdown_default=(0,import_react.memo)(Countdown),base$11="Optimizedprogressbar_e894d6c",wrapper$1="Optimizedprogressbar_wrapper_70ce38b3",line="Optimizedprogressbar_line_5190e4c3",backgroundWrapper="Optimizedprogressbar_backgroundWrapper_405830ed",background$1="Optimizedprogressbar_background_74cf6541",OptimizedProgressBar_module_default={
-  base:base$11,wrapper:wrapper$1,line:line,backgroundWrapper:backgroundWrapper,background:background$1
-},
-MAX_WIDTH=8e3,getInitialApi=()=>({
-  update:()=>{}
-}),getLeftOffset=(e,t)=>"number"==typeof t?t:e.offsetLeft,moveLine=({
-  horizontalScrollPosition:e,leftOffset:t
-},n,{
-  container:r,line:a
-})=>{
-  const o=clamp(0,Math.max(0,Math.floor(r.offsetWidth*n)-MAX_WIDTH),e-getLeftOffset(r,t)|0);
-  a.style.transform=`translateX(${o}px)`
-},
-moveBackground=({
-  horizontalScrollPosition:e,leftOffset:t
-},n,r)=>{
-  const a=e-getLeftOffset(n,t)|0,o=clamp(0,n.offsetWidth,a);
-  r.style.transform=`translateX(${o}px)`
-},
-OptimizedProgressBar=({
-  api:e,value:t,maxValue:n=100,theme:r=defaultTheme,className:a,...o
-})=>{
-  const i=(0,import_react.useRef)(null),s=(0,import_react.useRef)(null),u=(0,import_react.useRef)(null),l=clamp(0,t,n)/n,c=(0,import_react.useCallback)(e=>{
-    u.current&&i.current&&moveBackground(e,i.current,u.current),s.current&&i.current&&moveLine(e,l,{
-      line:s.current,container:i.current
-    })
-  },[l]),d=(0,import_react.useMemo)(()=>createSkin(r),[r]);
-  return e.current.update=c,(0,import_jsx_runtime.jsx)("div",{
-    className:(0,import_classnames.default)(OptimizedProgressBar_module_default.base,a),ref:i,children:(0,import_jsx_runtime.jsxs)("div",{
-      className:OptimizedProgressBar_module_default.wrapper,children:[(0,import_jsx_runtime.jsx)("div",{
-        className:OptimizedProgressBar_module_default.backgroundWrapper,children:(0,import_jsx_runtime.jsx)("div",{
-          style:d,className:OptimizedProgressBar_module_default.background,ref:u,children:(0,import_jsx_runtime.jsx)(ProgressBarBackground,{
-            size:o.size
-          })
-        })
-      }),(0,import_jsx_runtime.jsx)(ProgressBar$1,{
-        ...o,lineRef:s,value:t,theme:r,maxValue:n,withoutBackground:!0
-      })]
-    })
-  })
-};
-function NotLoaded(){
-  return null
-}
-function LazyModel(e){
-  return useLazyModel(e.id)?e.children:(e.fallback||NotLoaded)()
-}
-function useLazyModel(e){
-  const[t,n]=(0,import_react.useState)(!1);
-  return(0,import_react.useEffect)(()=>{
-    if("number"==typeof e)return n(ids().includes(e)),subscribe$1(e,e=>{
-      n("added"===e.type)
-    })
-  },[e]),t
-}
-var ErrorHandler=class extends import_react.Component{
-  state={
-    failure:!1,error:null
-  };
-  static getDerivedStateFromError(e){
-    return console.error(e),{
-      failure:!0,error:e
-    }
-  }
-  failure(){
-    return(0,import_jsx_runtime.jsxs)("div",{
-      children:[(0,import_jsx_runtime.jsx)("h1",{
-        children:"Something went wrong."
-      }),this.state.error&&(0,import_jsx_runtime.jsx)("pre",{
-        children:this.state.error.toString()
-      })]
-    })
-  }
-  render(){
-    return this.state.failure?this.props.failure?this.props.failure(this.state.error):this.failure():this.props.children
-  }
-},
-UNKNOWN_NATION="none",list=["ussr","germany","usa","china","france","uk","japan","czech","sweden","poland","italy"],nationById=e=>list[e]??"none",LIGHT_TANK="lightTank",MEDIUM_TANK="mediumTank",HEAVY_TANK="heavyTank",AT_SPG="AT-SPG",types$1={
-  lightTank:LIGHT_TANK,mediumTank:MEDIUM_TANK,heavyTank:HEAVY_TANK,SPG:"SPG","AT-SPG":AT_SPG
-},
-typeValues=Object.values(types$1),isTypeValidValue=e=>typeValues.includes(e);
-function getVehicleImageKey(e){
-  const t=e.indexOf(":");
-  return normalizeResource(t<0?e.toLowerCase():e.substring(t+1).toLowerCase())
-}
-var WITHOUT_ROLE="without_role",roles={
-  assault:"assault",sniper:"sniper",support:"support",universal:"universal",break:"break",scout:"scout",spg:"spg"
-},
-mapRoleByKey=[WITHOUT_ROLE,roles.spg,roles.assault,roles.break,roles.universal,roles.support,roles.assault,roles.support,roles.universal,roles.sniper,roles.assault,roles.universal,roles.sniper,roles.support,roles.universal,WITHOUT_ROLE,roles.scout,roles.support],atSpgRoles=[roles.assault,roles.universal,roles.sniper,roles.support],heavyTankRoles=[roles.assault,roles.break,roles.universal,roles.support],mediumTankRoles=[roles.assault,roles.support,roles.universal,roles.sniper],lightTankRoles=[roles.universal,roles.scout,roles.support],vehicleState={
-  DAMAGED:"damaged",EXPLODED:"exploded",DESTROYED:"destroyed",UNDAMAGED:"undamaged",BATTLE:"battle",IN_PREBATTLE:"inPrebattle",LOCKED:"locked",CREW_NOT_FULL:"crewNotFull",AMMO_NOT_FULL:"ammoNotFull",AMMO_NOT_FULL_EVENTS:"ammoNotFullEvents",SERVER_RESTRICTION:"serverRestriction",RENTAL_IS_OVER:"rentalIsOver",IGR_RENTAL_IS_OVER:"igrRentalIsOver",IN_PREMIUM_IGR_ONLY:"inPremiumIgrOnly",GROUP_IS_NOT_READY:"group_is_not_ready",NOT_PRESENT:"notpresent",UNAVAILABLE:"unavailable",UNSUITABLE_TO_QUEUE:"unsuitableToQueue",UNSUITABLE_TO_UNIT:"unsuitableToUnit",WILL_BE_UNLOCKED_IN_BATTLE:"willBeUnlockedInBattle",DEAL_IS_OVER:"dealIsOver",ROTATION_GROUP_UNLOCKED:"rotationGroupUnlocked",ROTATION_GROUP_LOCKED:"rotationGroupLocked",RENTABLE:"rentable",RENTABLE_AGAIN:"rentableAgain",DISABLED:"disabled",SUBSCRIPTION_SUSPENDED:"subscription_suspended",WOT_PLUS_EXCLUSIVE_VEHICLE_DISABLED:"wot_plus_exclusive_vehicle_disabled"
-},
-stateValues=Object.values(vehicleState),base__x120x96="VehicleImage_base__x120x96_32ca06f1",base__x190x152="VehicleImage_base__x190x152_41379c70",base__x380x304="VehicleImage_base__x380x304_274f87fe",vehicle_image_module_default={
-  base__x120x96:base__x120x96,base__x190x152:base__x190x152,base__x380x304:base__x380x304
-},
-sizes$3={
-  x120x96:"x120x96",x190x152:"x190x152",x380x304:"x380x304"
-},
-Base$2=defineStyledComponent("VehicleImage",{
-  element:Image$1,className:vehicle_image_module_default.base,cva:{
-    variants:{
-      size:{
-        [sizes$3.x120x96]:vehicle_image_module_default.base__x120x96,[sizes$3.x190x152]:vehicle_image_module_default.base__x190x152,[sizes$3.x380x304]:vehicle_image_module_default.base__x380x304
-      }
-    }
-  }
-});
-function UnknownVehicleImage({
-  size:e=sizes$3.x380x304,...t
-}){
-  return(0,import_jsx_runtime.jsx)(Base$2,{
-    ...t,size:e,path:`vehicle.${e}.tank_empty`
-  })
-}
-var VehicleImage=(0,import_react.forwardRef)(function({
-  size:e=sizes$3.x380x304,name:t,width:n,height:r,className:a,...o
-},i){
-  const s=resources.resolve("images"),u=`vehicle.${e}.${getVehicleImageKey(t)}`;
-  return s.has(u)?(0,import_jsx_runtime.jsx)(Base$2,{
-    ...o,ref:i,size:e,className:a,path:u,width:n,height:r
-  }):(console.warn(`Fail to retrieve icon maps/icons/vehicle/${e}/${getVehicleImageKey(t)}`),(0,import_jsx_runtime.jsx)(UnknownVehicleImage,{
-    size:e,className:a,width:n,height:r
-  }))
-});
-VehicleImage.UnknownVehicleImage=UnknownVehicleImage,VehicleImage.size=sizes$3;
-var base$10="VehicleLevel_3c938122",vehicle_level_module_default={
-  base:base$10
-},
-numberTypes={
-  arabic:"arabic",roman:"roman"
-};
-function getLevelType(e,t){
-  return e||(t?numberTypes.arabic:numberTypes.roman)
-}
-var VehicleLevel=(0,import_react.forwardRef)(function({
-  value:e,numberType:t,...n
-},r){
-  const a=getLevelType(t,useRomanForbidden())===numberTypes.roman?arabicToRoman(e):e;
-  return(0,import_jsx_runtime.jsx)("div",{
-    ...n,"data-name":"VehicleLevel",className:clsx(vehicle_level_module_default.base,n.className),ref:r,children:a
-  })
-});
-VehicleLevel.numberTypes=numberTypes;
-var TYPE_PRESTIGE="prestige",directions$1={
-  left:"left",right:"right"
-},
-lengths={
-  short:"short",medium:"medium",long:"long"
-},
-iconLength=e=>e<10?lengths.short:e<100?lengths.medium:lengths.long,icon$4=(e,t,n)=>"prestige"===t?TYPE_PRESTIGE:`${t}.${iconLength(e)}.c_${n}`,base$9="VehiclePrestigeLevel_a750cce",icon$3="VehiclePrestigeLevel_icon_ef024cc3",base__left="VehiclePrestigeLevel_base__left_4426b46c",level="VehiclePrestigeLevel_level_10f410ba",level__short="VehiclePrestigeLevel_level__short_d1939fb1",base__right="VehiclePrestigeLevel_base__right_4426b46c",level__medium="VehiclePrestigeLevel_level__medium_90aed80f",level__long="VehiclePrestigeLevel_level__long_26625167",base__iron="VehiclePrestigeLevel_base__iron_4426b46c",base__bronze="VehiclePrestigeLevel_base__bronze_4426b46c",base__silver="VehiclePrestigeLevel_base__silver_4426b46c",base__gold="VehiclePrestigeLevel_base__gold_4426b46c",base__enamel="VehiclePrestigeLevel_base__enamel_4426b46c",vehicle_prestige_level_module_default={
-  base:base$9,icon:icon$3,base__left:base__left,level:level,level__short:level__short,base__right:base__right,level__medium:level__medium,level__long:level__long,base__iron:base__iron,base__bronze:base__bronze,base__silver:base__silver,base__gold:base__gold,base__enamel:base__enamel
-};
-function PrestigeLevel({
-  level:e,grade:t,type:n,direction:r,classNames:a,...o
-}){
-  return e<1||"undefined"===n?null:(0,import_jsx_runtime.jsxs)("div",{
-    ...o,className:clsx(vehicle_prestige_level_module_default.base,vehicle_prestige_level_module_default[`base__${n}`],vehicle_prestige_level_module_default[`base__${r}`],o.className,a?.base),children:[(0,import_jsx_runtime.jsx)(Image$1,{
-      path:`prestige.tab.${icon$4(e,n,t)}`,className:clsx(vehicle_prestige_level_module_default.icon,a?.icon)
-    }),"prestige"!==n&&(0,import_jsx_runtime.jsx)("div",{
-      className:clsx(vehicle_prestige_level_module_default.level,vehicle_prestige_level_module_default[`level__${iconLength(e)}`],a?.level),children:e
-    })]
-  })
-}
-PrestigeLevel.direction=directions$1;
-var base$8="VehicleRole_e70537d3",icon__x16x16$1="VehicleRole_icon__x16x16_f444f190",icon__x24x24$1="VehicleRole_icon__x24x24_cc02d077",icon__x32x32$1="VehicleRole_icon__x32x32_2180a099",icon__x48x48$1="VehicleRole_icon__x48x48_2a01e86c",vehicle_role_module_default={
-  base:base$8,icon__x16x16:icon__x16x16$1,icon__x24x24:icon__x24x24$1,icon__x32x32:icon__x32x32$1,icon__x48x48:icon__x48x48$1
-},
-sizes$2={
-  x16x16:"x16x16",x24x24:"x24x24",x32x32:"x32x32",x48x48:"x48x48"
-},
-images$1=resources.resolve("images"),VehicleRole=(0,import_react.forwardRef)(function({
-  roleKey:e,size:t=sizes$2.x24x24,classNames:n,...r
-},a){
-  const o=useUpscale(t,sizes$2.x32x32);
-  return(0,import_jsx_runtime.jsx)("div",{
-    ...r,ref:a,className:clsx(vehicle_role_module_default.base,n?.base),children:(0,import_jsx_runtime.jsx)("img",{
-      className:clsx(vehicle_role_module_default[`icon__${t}`],n?.icon),src:images$1.readOrEmpty(`vehicleRoles.${o}.${e}`)
-    })
-  })
-});
-VehicleRole.sizes=sizes$2;
-var sizes$1={
-  x24x24:"x24x24",x48x48:"x48x48",x64x64:"x64x64",x96x96:"x96x96"
-},
-upscaledSizes={
-  x24x24:"x64x64",x48x48:"x96x96",x64x64:"x96x96",x96x96:"x96x96"
-},
-mapTypes={
-  [types$1.lightTank]:"light_tank",[types$1.mediumTank]:"medium_tank",[types$1.heavyTank]:"heavy_tank",[types$1.SPG]:"spg",[types$1["AT-SPG"]]:"tank_destroyer"
-},
-base$7="VehicleType_30b4aab0",base__x24x24="VehicleType_base__x24x24_a3dc7aa3",base__x48x48="VehicleType_base__x48x48_cb59f57a",base__x64x64="VehicleType_base__x64x64_bb9b890",base__x96x96="VehicleType_base__x96x96_919f9f92",base__premium__x24x24="VehicleType_base__premium__x24x24_92335fef",base__premium__x48x48="VehicleType_base__premium__x48x48_e19c5d21",base__premium__x64x64="VehicleType_base__premium__x64x64_ba9a2a05",base__premium__x96x96="VehicleType_base__premium__x96x96_d837a523",icon$2="VehicleType_icon_b15d2628",vehicle_type_module_default={
-  base:base$7,base__x24x24:base__x24x24,base__x48x48:base__x48x48,base__x64x64:base__x64x64,base__x96x96:base__x96x96,base__premium__x24x24:base__premium__x24x24,base__premium__x48x48:base__premium__x48x48,base__premium__x64x64:base__premium__x64x64,base__premium__x96x96:base__premium__x96x96,icon:icon$2
-},
-VehicleType=(0,import_react.forwardRef)(function({
-  type:e,size:t=sizes$1.x48x48,premium:n=!1,fit:r="contain",...a
-},o){
-  const i=useUpscale(sizes$1[t],upscaledSizes[t]);
-  return(0,import_jsx_runtime.jsx)(Image$1,{
-    ...a,ref:o,fit:r,className:clsx(vehicle_type_module_default.base,n?vehicle_type_module_default[`base__premium__${t}`]:vehicle_type_module_default[`base__${t}`],a.className),path:`ui_kit.vehicle_type.${i}.${n?"premium_":""}${normalizeResource(mapTypes[e])}_${i}`
-  })
-});
-VehicleType.types=types$1,VehicleType.sizes=sizes$1;
-var base$6="VehicleInfo_1732f1f0",name="VehicleInfo_name_3989ca04",name__premium="VehicleInfo_name__premium_258b3b93",vehicle_info_module_default={
-  base:base$6,name:name,name__premium:name__premium
-},
-VehicleName=defineStyledComponent("VehicleName",vehicle_info_module_default.name,{
-  variants:{
-    premium:{
-      true:vehicle_info_module_default.name__premium
-    }
-  }
-}),VehicleInfo=(0,import_react.forwardRef)(function(e,t){
-  return(0,import_jsx_runtime.jsx)("div",{
-    ...e,ref:t,className:clsx(vehicle_info_module_default.base,e.className)
-  })
-});
-VehicleInfo.Prestige=PrestigeLevel,VehicleInfo.Level=VehicleLevel,VehicleInfo.Type=VehicleType,VehicleInfo.Name=VehicleName,VehicleInfo.Role=VehicleRole;
 var directions={
   horizontal:"horizontal",vertical:"vertical"
 },
@@ -18929,8 +18623,8 @@ function List(e){
   })
 }
 List.displayName="VirtualList";
-var base$5="SceneWrapper_52fcfc1e",base__down="SceneWrapper_base__down_4ece5089",base__moveSpaceDisabled="SceneWrapper_base__moveSpaceDisabled_1b1cd939",scene_wrapper_module_default={
-  base:base$5,base__down:base__down,base__moveSpaceDisabled:base__moveSpaceDisabled
+var base$9="SceneWrapper_52fcfc1e",base__down="SceneWrapper_base__down_4ece5089",base__moveSpaceDisabled="SceneWrapper_base__moveSpaceDisabled_1b1cd939",scene_wrapper_module_default={
+  base:base$9,base__down:base__down,base__moveSpaceDisabled:base__moveSpaceDisabled
 },
 MOUSE_BUTTONS_LEFT=1,DELTA_Z=600;
 function SceneWrapper({
@@ -19006,6 +18700,107 @@ function isEmptyObject(e){
   for(const t in e)return!1;
   return!0
 }
+function isSerializableReactNode(e){
+  return!(null!=e&&!["string","number","boolean"].includes(typeof e))||!(0,import_react.isValidElement)(e)&&(!!Array.isArray(e)&&e.every(isSerializableReactNode))
+}
+var base$8="MultilineOverflow_ec9f8e47",content="MultilineOverflow_content_b539970d",multiline_overflow_module_default={
+  base:base$8,content:content
+};
+function isSerializableParams(e){
+  return!e||Object.values(e).every(isSerializableReactNode)
+}
+function cloneNode(e){
+  return e instanceof HTMLElement?e.cloneNode(!0):e.nodeType===Node.TEXT_NODE?document.createTextNode(e.nodeValue??""):void 0
+}
+var MultilineOverflow=(0,import_react.forwardRef)(function({
+  text:e,brackets:t,params:n,formatters:r,upgradeLegacy:a,split:o=!0,onMouseEnter:i,onMouseLeave:s,onClick:u,tooltipDisabled:l=!1,tooltip:c,className:d,classNames:f,style:p,styleBase:m,styleText:_,...h
+},g){
+  const b=(0,import_react.useRef)(null),v=(0,import_react.useRef)(null),[y,E]=(0,import_react.useState)(!1);
+  (0,import_react.useEffect)(()=>{
+    if(0===e.length)return;
+    const t=b.current,n=v.current;
+    if(!t||!n)return;
+    const r=document.createElement("div");
+    function a(){
+      if(!t||!n)return;
+      const e=t.children[0];
+      if(!e)return console.warn("MultilineOverflow can't get first child to handle it",t);
+      r.remove(),r.className=clsx(multiline_overflow_module_default.content,t.children[0].className),r.innerHTML="",e instanceof HTMLElement&&(r.style.cssText=e.style.cssText);
+      const a=e.childNodes.length-1;
+      let o=a;
+      for(;o>=0;o--){
+        const n=e.childNodes[o];
+        if(n instanceof HTMLElement&&!(n.offsetTop+n.offsetHeight>t.clientHeight))break
+      }
+      if(o===a)E(!1);
+      else{
+        E(!0);
+        const a=relativeOffset(t.getBoundingClientRect(),e.getBoundingClientRect());
+        for(r.style.visibility="",r.style.left=`${a.x}px`,r.style.top=`${a.y}px`;o>=0;o--){
+          const t=e.childNodes[o];
+          if(t instanceof HTMLElement&&!(t.offsetLeft+t.offsetWidth+n.offsetWidth>e.clientWidth))break
+        }
+        for(let t=0;t<=o;t++){
+          const n=e.childNodes[t];
+          if(!(n instanceof HTMLElement))continue;
+          const a=cloneNode(n);
+          a?r.appendChild(a):console.warn("Unexpected type of target node",n)
+        }
+        const i=n.cloneNode(!0);
+        i.removeAttribute("style"),r.appendChild(i),t.appendChild(r)
+      }
+    }
+    const o=new ResizeObserver(a);
+    return o.observe(t),(new DisposeBuilder).add(addEventListener(window,"resize",a)).add(o.disconnect.bind(o)).add(r.remove.bind(r)).dispose
+  },[g,e]);
+  const A=isSerializableParams(n),S=useParamTooltip("format_text",(0,import_react.useMemo)(()=>({
+    text:e,params:A?n:void 0,split:o,upgradeLegacy:a,brackets:t,resId:resources.resolve("views").read(e=>e.mono.tooltips.tooltips("resId"))
+  }),[e,t,o,a,n,A])),w=c??S;
+  if((0,import_react.useEffect)(()=>{
+    l||y||w.onMouseLeave()
+  },[y,w,c,l,A]),0===e.length)return null;
+  return(0,import_jsx_runtime.jsxs)("div",{
+    ...h,onMouseEnter:function(e){
+      i?.(e),y&&!l&&w.onMouseEnter(e)
+    },
+    onClick:function(e){
+      u?.(e),l||w.onClick()
+    },
+    onMouseLeave:function(e){
+      s?.(e),l||w.onMouseLeave()
+    },
+    ref:assignRefs([g,b]),className:clsx(multiline_overflow_module_default.base,d,f?.base),style:{
+      ...p,...m
+    },
+    children:[(0,import_jsx_runtime.jsx)(FormatText,{
+      text:e,brackets:t,params:n,upgradeLegacy:a,split:o,formatters:r,className:f?.text,style:{
+        ..._,visibility:y?"hidden":void 0
+      }
+    }),(0,import_jsx_runtime.jsx)("div",{
+      ref:v,style:{
+        visibility:"hidden",position:"absolute"
+      },
+      children:"..."
+    })]
+  })
+});
+function FormatTextSplited({
+  className:e,...t
+}){
+  return(0,import_jsx_runtime.jsx)("div",{
+    className:e,children:t.text.split("\n").map(e=>(0,import_jsx_runtime.jsx)(FormatText,{
+      ...t,text:e
+    },e))
+  })
+}
+function ExtendedText(e){
+  return void 0!==e.onSizeChanged&&console.warn('[ExtendedText Adapter] Property "onSizeChanged" doesn\'t support'),void 0!==e.targetId&&console.warn('[ExtendedText Adapter] Property "targetId" doesn\'t support'),(0,import_jsx_runtime.jsx)(e.isTruncationAvailable||e.truncateIdentify?MultilineOverflow:FormatTextSplited,{
+    split:e.split??!0,text:e.text,params:e.binding,style:{
+      alignContent:e.alignContent,justifyContent:e.justifyContent
+    },
+    upgradeLegacy:!0,className:clsx(e.className,e.classMix)
+  })
+}
 var formats={
   superCompact:"superCompact",compact:"compact",default:"default",detailed:"detailed"
 },
@@ -19067,8 +18862,8 @@ function compactFormatter(e,t){
   for(let o=0;o<n;++o)if(Number(e[o])>0)return a.items=[LOCALE_FORMATTERS[r[o]]?.(e[o])],a;
   return a.items=[LOCALE_FORMATTERS[MINUTES_FORMAT]?.(DEFAULT_MIN_VALUE)],a
 }
-var formatValue=(e,t)=>FORMATTER[t]?.(format$2(e,FORMAT_PARTS[t]),t),base$4="Timer_dac0a0aa",icon$1="Timer_icon_a61415df",icon__x16x16="Timer_icon__x16x16_5bab55e2",icon__accent="Timer_icon__accent_2cf70c3b",icon__cooldown="Timer_icon__cooldown_4a26d3f",icon__x24x24="Timer_icon__x24x24_31571381",icon__x32x32="Timer_icon__x32x32_807dde34",icon__x48x48="Timer_icon__x48x48_ae779a9e",icon__x80x80="Timer_icon__x80x80_251aafea",label="Timer_label_1565f308",label__x16x16="Timer_label__x16x16_e3ff224",label__x24x24="Timer_label__x24x24_ca748cca",label__x32x32="Timer_label__x32x32_13cccf38",label__x48x48="Timer_label__x48x48_e3a9b542",label__x80x80="Timer_label__x80x80_10a84ee6",label__accent="Timer_label__accent_ac7d4f7b",label__cooldown="Timer_label__cooldown_c2349ab9",timer_module_default={
-  base:base$4,icon:icon$1,icon__x16x16:icon__x16x16,icon__accent:icon__accent,icon__cooldown:icon__cooldown,icon__x24x24:icon__x24x24,icon__x32x32:icon__x32x32,icon__x48x48:icon__x48x48,icon__x80x80:icon__x80x80,label:label,label__x16x16:label__x16x16,label__x24x24:label__x24x24,label__x32x32:label__x32x32,label__x48x48:label__x48x48,label__x80x80:label__x80x80,label__accent:label__accent,label__cooldown:label__cooldown
+var formatValue=(e,t)=>FORMATTER[t]?.(format$2(e,FORMAT_PARTS[t]),t),base$7="Timer_dac0a0aa",icon$2="Timer_icon_a61415df",icon__x16x16="Timer_icon__x16x16_5bab55e2",icon__accent="Timer_icon__accent_2cf70c3b",icon__cooldown="Timer_icon__cooldown_4a26d3f",icon__x24x24="Timer_icon__x24x24_31571381",icon__x32x32="Timer_icon__x32x32_807dde34",icon__x48x48="Timer_icon__x48x48_ae779a9e",icon__x80x80="Timer_icon__x80x80_251aafea",label="Timer_label_1565f308",label__x16x16="Timer_label__x16x16_e3ff224",label__x24x24="Timer_label__x24x24_ca748cca",label__x32x32="Timer_label__x32x32_13cccf38",label__x48x48="Timer_label__x48x48_e3a9b542",label__x80x80="Timer_label__x80x80_10a84ee6",label__accent="Timer_label__accent_ac7d4f7b",label__cooldown="Timer_label__cooldown_c2349ab9",timer_module_default={
+  base:base$7,icon:icon$2,icon__x16x16:icon__x16x16,icon__accent:icon__accent,icon__cooldown:icon__cooldown,icon__x24x24:icon__x24x24,icon__x32x32:icon__x32x32,icon__x48x48:icon__x48x48,icon__x80x80:icon__x80x80,label:label,label__x16x16:label__x16x16,label__x24x24:label__x24x24,label__x32x32:label__x32x32,label__x48x48:label__x48x48,label__x80x80:label__x80x80,label__accent:label__accent,label__cooldown:label__cooldown
 };
 function Timer({
   start:e,limit:t=0,tick:n=1,size:r=sizes.x24x24,type:a=types.accent,format:o=formats.default,autostart:i=!0,className:s,classNames:u
@@ -19194,8 +18989,8 @@ function useProgressBar(){
   if(!e)throw new Error("useProgressBar must be used within a ProgressBar");
   return e
 }
-var fill="Filled_fill_32930ca9",filled="Filled_228d842a",wrapper="Filled_wrapper_11d7cc85",filled__small="Filled_filled__small_94d1350d",pattern="Filled_pattern_6ec8608d",filled__medium="Filled_filled__medium_94d1350d",filled_module_default={
-  fill:fill,filled:filled,wrapper:wrapper,filled__small:filled__small,pattern:pattern,filled__medium:filled__medium
+var fill="Filled_fill_32930ca9",filled="Filled_228d842a",wrapper$1="Filled_wrapper_11d7cc85",filled__small="Filled_filled__small_94d1350d",pattern="Filled_pattern_6ec8608d",filled__medium="Filled_filled__medium_94d1350d",filled_module_default={
+  fill:fill,filled:filled,wrapper:wrapper$1,filled__small:filled__small,pattern:pattern,filled__medium:filled__medium
 };
 function HeadlessFilled({
   className:e,classNames:t,size:n,left:r=0,percentage:a,ref:o,...i
@@ -19250,8 +19045,8 @@ function ProgressBarProvider(e){
     value:d,children:e.children
   })
 }
-var background="ProgressBar_background_b40cdfdf",base$3="ProgressBar_27c2305c",base__small$1="ProgressBar_base__small_61ccd4be",base__medium="ProgressBar_base__medium_478d985a",base__full="ProgressBar_base__full_be7f12da",base_full="ProgressBar_base_full_13ab2776",base_small="ProgressBar_base_small_13ab2776",backgroundPattern="ProgressBar_backgroundPattern_7e932276",progress_bar_module_default={
-  background:background,base:base$3,base__small:base__small$1,base__medium:base__medium,base__full:base__full,base_full:base_full,base_small:base_small,backgroundPattern:backgroundPattern
+var background$1="ProgressBar_background_b40cdfdf",base$6="ProgressBar_27c2305c",base__small$1="ProgressBar_base__small_61ccd4be",base__medium="ProgressBar_base__medium_478d985a",base__full="ProgressBar_base__full_be7f12da",base_full="ProgressBar_base_full_13ab2776",base_small="ProgressBar_base_small_13ab2776",backgroundPattern="ProgressBar_backgroundPattern_7e932276",progress_bar_module_default={
+  background:background$1,base:base$6,base__small:base__small$1,base__medium:base__medium,base__full:base__full,base_full:base_full,base_small:base_small,backgroundPattern:backgroundPattern
 },
 Base$1=defineStyledComponent("ProgressBar",progress_bar_module_default.base,{
   variants:{
@@ -19538,8 +19333,8 @@ getFormattedValue=(e,t)=>{
 formatPrintf=(e,t)=>e.replace(/(\{|%\()\w+(\}|\)s)/g,e=>{
   const n=0===e.indexOf("%")?2:1;
   return String(t[e.slice(n,-n)])
-}),base__s24x24="Reward_base__s24x24_954b5cee",base__s48x48="Reward_base__s48x48_21f091ec",base__small="Reward_base__small_3eddf28d",base__s80x80="Reward_base__s80x80_21f091ec",base__big="Reward_base__big_e23f2c77",base__s128x100="Reward_base__s128x100_1e08e04b",base__s180x135="Reward_base__s180x135_93fc57c",base__s232x174="Reward_base__s232x174_2904ea89",base__s296x222="Reward_base__s296x222_52f0615b",base__s400x300="Reward_base__s400x300_a8627e1b",base__s600x450="Reward_base__s600x450_e27f3852",base__s300x300="Reward_base__s300x300_b3d79936",base__s450x450="Reward_base__s450x450_8b0abaf7",base$2="Reward_d65e1e12",base__dynamicBox="Reward_base__dynamicBox_45d7782b",tooltipWrapper="Reward_tooltipWrapper_75b925a5",icon="Reward_icon_e152f13b",overlay="Reward_overlay_8cbe65c9",highlight="Reward_highlight_f1cd08e0",image__s24x24="Reward_image__s24x24_954b5cee",image__s48x48="Reward_image__s48x48_21f091ec",image__small="Reward_image__small_3eddf28d",image__s80x80="Reward_image__s80x80_21f091ec",image__big="Reward_image__big_e23f2c77",image__s128x100="Reward_image__s128x100_1e08e04b",image__s180x135="Reward_image__s180x135_93fc57c",image__s232x174="Reward_image__s232x174_2904ea89",image__s296x222="Reward_image__s296x222_52f0615b",image__s400x300="Reward_image__s400x300_a8627e1b",image__s600x450="Reward_image__s600x450_e27f3852",image__s300x300="Reward_image__s300x300_b3d79936",image__s450x450="Reward_image__s450x450_8b0abaf7",image="Reward_image_810ec3a2",image__fixedBox="Reward_image__fixedBox_e45bdd8a",info="Reward_info_26d38c48",info__multi="Reward_info__multi_465d34bd",info__credits="Reward_info__credits_1643219",info__gold="Reward_info__gold_c751be5d",info__crystal="Reward_info__crystal_18ccfdd0",info__premiumTank="Reward_info__premiumTank_7862152",title="Reward_title_fbcf4b5",timer="Reward_timer_22ba7b8b",reward_module_default={
-  base__s24x24:base__s24x24,base__s48x48:base__s48x48,base__small:base__small,base__s80x80:base__s80x80,base__big:base__big,base__s128x100:base__s128x100,base__s180x135:base__s180x135,base__s232x174:base__s232x174,base__s296x222:base__s296x222,base__s400x300:base__s400x300,base__s600x450:base__s600x450,base__s300x300:base__s300x300,base__s450x450:base__s450x450,base:base$2,base__dynamicBox:base__dynamicBox,tooltipWrapper:tooltipWrapper,icon:icon,overlay:overlay,highlight:highlight,image__s24x24:image__s24x24,image__s48x48:image__s48x48,image__small:image__small,image__s80x80:image__s80x80,image__big:image__big,image__s128x100:image__s128x100,image__s180x135:image__s180x135,image__s232x174:image__s232x174,image__s296x222:image__s296x222,image__s400x300:image__s400x300,image__s600x450:image__s600x450,image__s300x300:image__s300x300,image__s450x450:image__s450x450,image:image,image__fixedBox:image__fixedBox,info:info,info__multi:info__multi,info__credits:info__credits,info__gold:info__gold,info__crystal:info__crystal,info__premiumTank:info__premiumTank,title:title,timer:timer
+}),base__s24x24="Reward_base__s24x24_954b5cee",base__s48x48="Reward_base__s48x48_21f091ec",base__small="Reward_base__small_3eddf28d",base__s80x80="Reward_base__s80x80_21f091ec",base__big="Reward_base__big_e23f2c77",base__s128x100="Reward_base__s128x100_1e08e04b",base__s180x135="Reward_base__s180x135_93fc57c",base__s232x174="Reward_base__s232x174_2904ea89",base__s296x222="Reward_base__s296x222_52f0615b",base__s400x300="Reward_base__s400x300_a8627e1b",base__s600x450="Reward_base__s600x450_e27f3852",base__s300x300="Reward_base__s300x300_b3d79936",base__s450x450="Reward_base__s450x450_8b0abaf7",base$5="Reward_d65e1e12",base__dynamicBox="Reward_base__dynamicBox_45d7782b",tooltipWrapper="Reward_tooltipWrapper_75b925a5",icon$1="Reward_icon_e152f13b",overlay="Reward_overlay_8cbe65c9",highlight="Reward_highlight_f1cd08e0",image__s24x24="Reward_image__s24x24_954b5cee",image__s48x48="Reward_image__s48x48_21f091ec",image__small="Reward_image__small_3eddf28d",image__s80x80="Reward_image__s80x80_21f091ec",image__big="Reward_image__big_e23f2c77",image__s128x100="Reward_image__s128x100_1e08e04b",image__s180x135="Reward_image__s180x135_93fc57c",image__s232x174="Reward_image__s232x174_2904ea89",image__s296x222="Reward_image__s296x222_52f0615b",image__s400x300="Reward_image__s400x300_a8627e1b",image__s600x450="Reward_image__s600x450_e27f3852",image__s300x300="Reward_image__s300x300_b3d79936",image__s450x450="Reward_image__s450x450_8b0abaf7",image="Reward_image_810ec3a2",image__fixedBox="Reward_image__fixedBox_e45bdd8a",info="Reward_info_26d38c48",info__multi="Reward_info__multi_465d34bd",info__credits="Reward_info__credits_1643219",info__gold="Reward_info__gold_c751be5d",info__crystal="Reward_info__crystal_18ccfdd0",info__premiumTank="Reward_info__premiumTank_7862152",title="Reward_title_fbcf4b5",timer="Reward_timer_22ba7b8b",reward_module_default={
+  base__s24x24:base__s24x24,base__s48x48:base__s48x48,base__small:base__small,base__s80x80:base__s80x80,base__big:base__big,base__s128x100:base__s128x100,base__s180x135:base__s180x135,base__s232x174:base__s232x174,base__s296x222:base__s296x222,base__s400x300:base__s400x300,base__s600x450:base__s600x450,base__s300x300:base__s300x300,base__s450x450:base__s450x450,base:base$5,base__dynamicBox:base__dynamicBox,tooltipWrapper:tooltipWrapper,icon:icon$1,overlay:overlay,highlight:highlight,image__s24x24:image__s24x24,image__s48x48:image__s48x48,image__small:image__small,image__s80x80:image__s80x80,image__big:image__big,image__s128x100:image__s128x100,image__s180x135:image__s180x135,image__s232x174:image__s232x174,image__s296x222:image__s296x222,image__s400x300:image__s400x300,image__s600x450:image__s600x450,image__s300x300:image__s300x300,image__s450x450:image__s450x450,image:image,image__fixedBox:image__fixedBox,info:info,info__multi:info__multi,info__credits:info__credits,info__gold:info__gold,info__crystal:info__crystal,info__premiumTank:info__premiumTank,title:title,timer:timer
 },
 images=resources.resolve("images"),SIZE_MAP=new Map([[ImageSize.S24x24,ImageSize.Small],[ImageSize.S48x48,ImageSize.Small]]),Reward=({
   name:e,image:t,isPeriodic:n=!1,isFixedBoxSize:r=!0,size:a=ImageSize.Big,special:o,value:i,valueType:s,title:u,style:l,className:c,classNames:d,tooltipArgs:f,periodicIconTooltipArgs:p
@@ -19580,13 +19375,13 @@ function renderString(e,t={}){
   const n=parse$1(e,defaultBrackets);
   return String(render(n,formatters,t))
 }
-var base$1="RewardsList_b956755b",base__vertical="RewardsList_base__vertical_59db3c9f",reward="RewardsList_reward_fc200613",reward__vertical="RewardsList_reward__vertical_5f09c6e0",boxRewardClassName="RewardsList_boxRewardClassName_882c908d",rewards_list_module_default={
-  base:base$1,base__vertical:base__vertical,reward:reward,reward__vertical:reward__vertical,boxRewardClassName:boxRewardClassName
+var base$4="RewardsList_b956755b",base__vertical$1="RewardsList_base__vertical_59db3c9f",reward$1="RewardsList_reward_fc200613",reward__vertical$1="RewardsList_reward__vertical_5f09c6e0",boxRewardClassName="RewardsList_boxRewardClassName_882c908d",rewards_list_module_default={
+  base:base$4,base__vertical:base__vertical$1,reward:reward$1,reward__vertical:reward__vertical$1,boxRewardClassName:boxRewardClassName
 },
 sizeToDefault={
   [ImageSize.S24x24]:ImageSize.Small,[ImageSize.S48x48]:ImageSize.Small
 },
-Rewards=(0,import_react.memo)(function({
+Rewards$1=(0,import_react.memo)(function({
   data:e,isFixedBoxSize:t,size:n=ImageSize.Big,isVertical:r=!1,count:a,classMix:o,rewardItemClassMix:i,boxRewardTooltip:s,boxRewardValue:u,boxRewardClassName:l,boxRewardClassNames:c
 }){
   const d=resources.resolve("strings"),f=resources.resolve("images"),p="number"==typeof a&&a<e.length?`${f.readOrEmpty(`quests.bonuses.${sizeToDefault[n]??n}.default`)}`:void 0,m=u||renderString(upgradeLegacy(d.readOrEmpty("tooltips.quests.awards.additional.bottom")),{
@@ -19648,7 +19443,211 @@ Delta=(0,import_react.memo)(function({
       className:clsx(delta_module_default.glow,a?.glow),ref:u
     }),i.children]
   })
-}),base="Tooltip_6d997cee",decorator="Tooltip_decorator_b3486d4e",tooltip_module_default={
+}),RewardComponent=({
+  reward:e,size:t
+})=>{
+  const n=e.RewardWrapper||null;
+  return n?(0,import_jsx_runtime.jsx)(n,{
+    ...e.rewardWrapperProps,children:(0,import_jsx_runtime.jsx)(Reward$1,{
+      size:t,...e
+    })
+  }):(0,import_jsx_runtime.jsx)(Reward$1,{
+    size:t,...e
+  })
+},
+base$3="Rewards_36f5662a",base__vertical="Rewards_base__vertical_32f04b98",reward="Rewards_reward_9abc0f4a",reward__vertical="Rewards_reward__vertical_dd4a02c5",Rewards_module_default={
+  base:base$3,base__vertical:base__vertical,reward:reward,reward__vertical:reward__vertical
+},
+Rewards=({
+  data:e,size:t=ImageSize$1.Big,isVertical:n=!1,count:r,classMix:a,rewardItemClassMix:o,boxRewardTooltip:i,boxRewardValue:s,boxRewardClassName:u,boxRewardClassNames:l
+})=>{
+  const c=r&&r<e.length,d=(0,import_classnames.default)(Rewards_module_default.reward,n&&Rewards_module_default.reward__vertical,o),f=c?r:e.length;
+  return(0,import_jsx_runtime.jsxs)("div",{
+    className:(0,import_classnames.default)(Rewards_module_default.base,n&&Rewards_module_default.base__vertical,a),children:[e.slice(0,f).map((e,n)=>(0,import_jsx_runtime.jsx)("div",{
+      className:d,children:(0,import_jsx_runtime.jsx)(RewardComponent,{
+        reward:e,size:t
+      })
+    },n)),c&&(0,import_jsx_runtime.jsx)("div",{
+      className:d,children:(0,import_jsx_runtime.jsx)(Reward$1,{
+        name:"more",image:`R.images.gui.maps.icons.quests.bonuses.${t}.default`,size:t,value:s||formatPrintf$1(R.strings.tooltips.quests.awards.additional.bottom(),{
+          count:e.length-(r||0)
+        }),tooltipArgs:i,className:u,classNames:l
+      })
+    })]
+  })
+},
+Alignment=function(e){
+  return e.FlexStart="flex-start",e.Center="center",e.FlexEnd="flex-end",e
+}({}),THAI_LANGUAGE_CODE="th",SPLIT_BY_SYMBOL_LANGUAGE_CODES=["zh_cn","zh_sg","zh_tw","ja","th"],IS_SPLIT_BY_SYMBOL=SPLIT_BY_SYMBOL_LANGUAGE_CODES.includes(R.strings.settings.LANGUAGE_CODE().toLowerCase()),DAYS_IN_WEEK=7,HOURS_IN_DAY=24,MS_IN_SECOND=1e3,ONE_MINUTE=60,ONE_HOUR=3600,ONE_DAY=24*ONE_HOUR,ONE_WEEK=7*ONE_DAY,NOW_IN_SECONDS=Date.now()/1e3,getRegionalDateTime=RegionalDateTime.getRegionalDateTime,getFormattedDateTime=RegionalDateTime.getFormattedDateTime;
+function getTimeUnits(e=0){
+  let t=e;
+  const n=Math.trunc(t/ONE_DAY);
+  t-=n*ONE_DAY;
+  const r=Math.trunc(t/ONE_HOUR);
+  t-=r*ONE_HOUR;
+  const a=Math.trunc(t/60);
+  return t-=60*a,{
+    days:n,hours:r,minutes:a,seconds:t
+  }
+}
+var getRoundedTimeUnitDescription=(e,t=!0)=>e.days>7&&t?format(R.strings.common.duration.days(),{
+  days:e.days
+}):e.days>=1?0===e.hours?format(R.strings.common.duration.days(),{
+  days:e.days
+}):`${format(R.strings.common.duration.days(),{
+  days:e.days
+})} ${format(R.strings.common.duration.hours(),{
+  hours:e.hours
+})}`:e.hours>=1?0===e.minutes?format(R.strings.common.duration.hours(),{
+  hours:e.hours
+}):`${format(R.strings.common.duration.hours(),{
+  hours:e.hours
+})} ${format(R.strings.common.duration.minutes(),{
+  minutes:e.minutes
+})}`:format(R.strings.common.duration.minutes(),{
+  minutes:e.minutes||1
+}),defaultOnFinish=()=>{},
+useCountdown$1=(e=0,t,n=0,r=defaultOnFinish)=>{
+  const[a,o]=(0,import_react.useState)(e);
+  return(0,import_react.useEffect)(()=>{
+    if(e>0){
+      o(e);
+      const a=Date.now(),i=setInterval(()=>{
+        const t=e-Math.floor((Date.now()-a)/MS_IN_SECOND);
+        null!==n&&t<=n?(o(n),r&&r(),clearInterval(i)):o(t)
+      },(t||(e>120?60:1))*MS_IN_SECOND);
+      return()=>{
+        clearInterval(i)
+      }
+    }
+  },[e,t,n,r]),a
+},
+tracker$1=DataTracker.instance,tracker=DataTracker.instance,useCountdown=useCountdown$1,useScaleState=()=>{
+  const[e,t]=(0,import_react.useState)(env.view.getScale());
+  return(0,import_react.useEffect)(()=>{
+    const e=()=>{
+      t(env.view.getScale())
+    };
+    return window.addEventListener("resize",e),()=>{
+      window.removeEventListener("resize",e)
+    }
+  },[]),e
+},
+CountdownIcon=function(e){
+  return e.Timer="timer",e.Countdown="countdown",e.Cooldown="cooldown",e.None="none",e
+}({}),CountdownStyle=function(e){
+  return e.Description="description",e.Short="short",e.Long="long",e.Extended="extended",e
+}({}),base$2="Countdown_99fa8328",icon="Countdown_icon_b50ebafb",description="Countdown_description_91ad95d2",Countdown_module_default={
+  base:base$2,icon:icon,description:description
+},
+formatUnit=e=>e.toString().padStart(2,"0"),formatTimeUnits=(e,t)=>{
+  switch(t){
+    case CountdownStyle.Description:return getRoundedTimeUnitDescription(e);
+    case CountdownStyle.Short:return`${formatUnit(e.minutes)}:${formatUnit(e.seconds)}`;
+    case CountdownStyle.Long:return`${formatUnit(e.hours)}:${formatUnit(e.minutes)}:${formatUnit(e.seconds)}`;
+    case CountdownStyle.Extended:return`${format(R.strings.common.duration.days(),{
+      days:e.days
+    })} | ${formatUnit(e.hours)}:${formatUnit(e.minutes)}:${formatUnit(e.seconds)}`
+  }
+},
+IMAGES=R.images.gui.maps.icons.components.countdown,getIcon=(e,t)=>{
+  const n=2===t?IMAGES.big:IMAGES;
+  switch(e){
+    case CountdownIcon.Timer:return n.clock();
+    case CountdownIcon.Countdown:return n.hourglass();
+    case CountdownIcon.Cooldown:return n.lock()
+  }
+},
+Countdown=({
+  duration:e,icon:t=CountdownIcon.Timer,style:n=CountdownStyle.Description,onTimeReached:r,refreshRate:a,className:o="",classNames:i={}
+})=>{
+  const s=useCountdown(e,a??(n!==CountdownStyle.Description?1:void 0)),u=useScaleState();
+  r&&r[s]&&r[s]();
+  const l=formatTimeUnits(getTimeUnits(s),n);
+  return(0,import_jsx_runtime.jsxs)("div",{
+    className:(0,import_classnames.default)(Countdown_module_default.base,o),children:[t!==CountdownIcon.None&&(0,import_jsx_runtime.jsx)("div",{
+      className:(0,import_classnames.default)(Countdown_module_default.icon,i.icon),style:{
+        backgroundImage:`url('${getIcon(t,u)}')`
+      }
+    }),(0,import_jsx_runtime.jsx)("div",{
+      className:(0,import_classnames.default)(Countdown_module_default.description,i.text),children:l
+    })]
+  })
+},
+Countdown_default=(0,import_react.memo)(Countdown),base$1="Optimizedprogressbar_e894d6c",wrapper="Optimizedprogressbar_wrapper_70ce38b3",line="Optimizedprogressbar_line_5190e4c3",backgroundWrapper="Optimizedprogressbar_backgroundWrapper_405830ed",background="Optimizedprogressbar_background_74cf6541",OptimizedProgressBar_module_default={
+  base:base$1,wrapper:wrapper,line:line,backgroundWrapper:backgroundWrapper,background:background
+},
+MAX_WIDTH=8e3,getInitialApi=()=>({
+  update:()=>{}
+}),getLeftOffset=(e,t)=>"number"==typeof t?t:e.offsetLeft,moveLine=({
+  horizontalScrollPosition:e,leftOffset:t
+},n,{
+  container:r,line:a
+})=>{
+  const o=clamp(0,Math.max(0,Math.floor(r.offsetWidth*n)-MAX_WIDTH),e-getLeftOffset(r,t)|0);
+  a.style.transform=`translateX(${o}px)`
+},
+moveBackground=({
+  horizontalScrollPosition:e,leftOffset:t
+},n,r)=>{
+  const a=e-getLeftOffset(n,t)|0,o=clamp(0,n.offsetWidth,a);
+  r.style.transform=`translateX(${o}px)`
+},
+OptimizedProgressBar=({
+  api:e,value:t,maxValue:n=100,theme:r=defaultTheme,className:a,...o
+})=>{
+  const i=(0,import_react.useRef)(null),s=(0,import_react.useRef)(null),u=(0,import_react.useRef)(null),l=clamp(0,t,n)/n,c=(0,import_react.useCallback)(e=>{
+    u.current&&i.current&&moveBackground(e,i.current,u.current),s.current&&i.current&&moveLine(e,l,{
+      line:s.current,container:i.current
+    })
+  },[l]),d=(0,import_react.useMemo)(()=>createSkin(r),[r]);
+  return e.current.update=c,(0,import_jsx_runtime.jsx)("div",{
+    className:(0,import_classnames.default)(OptimizedProgressBar_module_default.base,a),ref:i,children:(0,import_jsx_runtime.jsxs)("div",{
+      className:OptimizedProgressBar_module_default.wrapper,children:[(0,import_jsx_runtime.jsx)("div",{
+        className:OptimizedProgressBar_module_default.backgroundWrapper,children:(0,import_jsx_runtime.jsx)("div",{
+          style:d,className:OptimizedProgressBar_module_default.background,ref:u,children:(0,import_jsx_runtime.jsx)(ProgressBarBackground,{
+            size:o.size
+          })
+        })
+      }),(0,import_jsx_runtime.jsx)(ProgressBar$1,{
+        ...o,lineRef:s,value:t,theme:r,maxValue:n,withoutBackground:!0
+      })]
+    })
+  })
+},
+DateTime=({
+  datetime:e,format:t=DateTimeFormatsEnum.ShortDate,isConvertedToLocal:n=!0
+})=>Object.values(DateTimeFormatsEnum).includes(t)?getRegionalDateTime(e,t,n):getFormattedDateTime(e,t,n),DateTime_default=(0,import_react.memo)(DateTime),blackReal="Formattextwithcolortags_blackReal_55a1402e",whiteReal="Formattextwithcolortags_whiteReal_3cbb298b",white="Formattextwithcolortags_white_e509d98",whiteOrange="Formattextwithcolortags_whiteOrange_7338e183",whiteSpanish="Formattextwithcolortags_whiteSpanish_e4b7820a",par="Formattextwithcolortags_par_485c5228",parSecondary="Formattextwithcolortags_parSecondary_19563067",parTertiary="Formattextwithcolortags_parTertiary_f9aabcb9",red="Formattextwithcolortags_red_9f8bd43",redDark="Formattextwithcolortags_redDark_5f4161da",yellow="Formattextwithcolortags_yellow_cfb15b8d",orange="Formattextwithcolortags_orange_11869493",cream="Formattextwithcolortags_cream_12fdbea3",brown="Formattextwithcolortags_brown_e49e35ef",greenBright="Formattextwithcolortags_greenBright_93ef1ba5",green="Formattextwithcolortags_green_55b7d967",greenDark="Formattextwithcolortags_greenDark_2b347344",blueBooster="Formattextwithcolortags_blueBooster_837aca9f",blueTeamkiller="Formattextwithcolortags_blueTeamkiller_94b7ca24",cred="Formattextwithcolortags_cred_b30a4efa",gold="Formattextwithcolortags_gold_616e4d7",bond="Formattextwithcolortags_bond_b29091",prom="Formattextwithcolortags_prom_85aada4f",parNoWidth="Formattextwithcolortags_parNoWidth_bb0f73ce",FormatTextWithColorTags_module_default={
+  blackReal:blackReal,whiteReal:whiteReal,white:white,whiteOrange:whiteOrange,whiteSpanish:whiteSpanish,par:par,parSecondary:parSecondary,parTertiary:parTertiary,red:red,redDark:redDark,yellow:yellow,orange:orange,cream:cream,brown:brown,greenBright:greenBright,green:green,greenDark:greenDark,blueBooster:blueBooster,blueTeamkiller:blueTeamkiller,cred:cred,gold:gold,bond:bond,prom:prom,parNoWidth:parNoWidth
+},
+TAGGED_PHRASE_REGEXP=/(?:%\(|{)\w*(?:_[Oo]pen|Start)(?:\)s|})?(.*?)(?:%\(|{)\w*(?:_[Cc]lose|End)(?:\)s|})?/g,COLOR_REGEXP=/(?<=(?:%\(|{))(.*?)(?=(?:_[Oo]pen|Start))/,WORDS_REGEXP=/(?<=(?:_[Oo]pen|Start)(?:\)s?|}))(.*?)(?=(?:%\(|{))/,FormatTextWithColorTagsComponent=({
+  text:e,binding:t,classMix:n
+})=>{
+  const r=(0,import_react.useCallback)(e=>({
+    color:`#${e}`
+  }),[]),a=(0,import_react.useMemo)(()=>t||{},[t]);
+  let o=TAGGED_PHRASE_REGEXP.exec(e),i=e,s=0;
+  for(;o;){
+    const n=o[0],u=COLOR_REGEXP.exec(n),l=WORDS_REGEXP.exec(n),c=o[1];
+    if(u&&l){
+      const e=u[0],o=e+s+++e;
+      i=i.replace(n,`%(${o})`),a[o]=FormatTextWithColorTags_module_default[e]?(0,import_jsx_runtime.jsx)("span",{
+        className:FormatTextWithColorTags_module_default[e],children:(0,import_jsx_runtime.jsx)(FormatText$1,{
+          text:c,binding:t
+        })
+      }):(0,import_jsx_runtime.jsx)("span",{
+        style:r(e),children:(0,import_jsx_runtime.jsx)(FormatText$1,{
+          text:c,binding:t
+        })
+      })
+    }
+    o=TAGGED_PHRASE_REGEXP.exec(e)
+  }
+  return(0,import_jsx_runtime.jsx)(FormatText$1,{
+    text:i,classMix:n,binding:a
+  })
+},
+FormatTextWithColorTags=(0,import_react.memo)(FormatTextWithColorTagsComponent),base="Tooltip_6d997cee",decorator="Tooltip_decorator_b3486d4e",tooltip_module_default={
   base:base,decorator:decorator
 },
 Base=defineStyledComponent("Base",tooltip_module_default.base),Decorator=defineStyledComponent("Decorator",tooltip_module_default.decorator),Tooltip=(0,import_react.forwardRef)(function({
@@ -19676,5 +19675,5 @@ Base=defineStyledComponent("Base",tooltip_module_default.base),Decorator=defineS
 });
 Tooltip.Decorator=Decorator;
 export{
-  defaultAnimationSettings as $,getAdministration$1 as $n,ImagesRClassProvider as $r,useParamTooltip as $t,ErrorHandler as A,useAdaptive as An,identity as Ar,getRewardTooltipConfig$1 as At,Rewards$1 as B,delay as Bn,getRegionalDateTime$1 as Br,runView as Bt,isEmptyObject as C,autorun as Cn,toArray$1 as Cr,addChunkIndexToEndPath as Ct,VehicleImage as D,makeObservable as Dn,promiseWithResolvers as Dr,BackportTooltip as Dt,VehicleInfo as E,getDependencyTree as En,keyCodes as Er,SimpleTooltip as Et,Countdown_default as F,breakpointsByType as Fn,setContentReady as Fr,CloseButton as Ft,defaultBrackets as G,chunks as Gn,ONE_DAY$1 as Gr,initializeModelWithContext as Gt,DateTime_default as H,assert$1 as Hn,format$1 as Hr,assignRefs as Ht,CountdownIcon as I,comparer$1 as In,sendEvent$2 as Ir,require_classnames as It,parse$1 as J,ObservableMap$1 as Jn,require_react_dom as Jr,useSounds as Jt,defaultFormatters as K,makeActions as Kn,ONE_HOUR$1 as Kr,useServerTimePolling as Kt,CountdownStyle as L,MAX_i32 as Ln,play$1 as Lr,Button as Lt,useLazyModel as M,useMedia as Mn,clamp$2 as Mr,FormatNumber as Mt,OptimizedProgressBar as N,require_jsx_runtime as Nn,pxToRem$1 as Nr,ImageSize$1 as Nt,isTypeValidValue as O,observable as On,DisposeBuilder as Or,Tooltip$1 as Ot,getInitialApi as P,MediaSize as Pn,remToPx$1 as Pr,RewardType$1 as Pt,ProgressBar$1 as Q,extendObservable$1 as Qn,DateTimeFormatsEnum as Qr,useBackdropTooltip as Qt,ExtendedText as R,calcPercent as Rn,graphicsQuality$1 as Rr,defineStyledComponent as Rt,types as S,Reaction as Sn,some as Sr,CanvasSequence as St,List as T,configure as Tn,unwrapItem as Tr,Reward$1 as Tt,FormatString as U,createTimeoutInEffect$1 as Un,normalizeResource as Ur,computeds as Ut,FormatTextWithColorTags as V,mapRange as Vn,capitalize as Vr,JSXBuilder as Vt,FormatText as W,createLayoutReadyInEffect$1 as Wn,MS_IN_SECOND$1 as Wr,computedFn as Wt,types$2 as X,autorun$1 as Xn,SoundsRClassProvider as Xr,createSoundPlay as Xt,Currency as Y,action$1 as Yn,require_react as Yr,useSoundsOptional as Yt,Image$1 as Z,computed$1 as Zn,intl$2 as Zr,createTargetOverrides as Zt,ProgressBar as _,useMount as _n,forEach as _r,Alignment$1 as _t,formatPrintf as a,useSkipFrame as an,isObservableArray$1 as ar,Base$4 as at,formats as b,useEvent as bn,mapFilter as br,formatString as bt,getRewardValueType as c,useSpring as cn,keys$1 as cr,useHorizontalDrag as ct,array as d,useTransition$1 as dn,observe$1 as dr,Area$1 as dt,logBySeverity as ei,useSimpleTooltip as en,getGlobalState$1 as er,GreenNoise as et,enum_ as f,useLoop as fn,onBecomeUnobserved$1 as fr,Bar$1 as ft,string as g,useIsFirstRender as gn,filterMap as gr,FormatText$1 as gt,parse as h,useHandleKeydown as hn,transaction$1 as hr,Tabs as ht,Reward as i,useTimeout as in,isComputingDerivation$1 as ir,BackportContextMenu as it,LazyModel as j,useUpscale as jn,noop$3 as jr,getRewardValueType$1 as jt,nationById as k,runInAction as kn,constFalse as kr,getRewardImage$1 as kt,ImageSize as l,useSpringValue as ln,makeObservable$1 as lr,dragDirections as lt,object as m,useKeydownListener as mn,runInAction$1 as mr,useHorizontalScroll as mt,Delta as n,resources as ni,useTooltip as nn,isComputed$1 as nr,Size as nt,getRewardImage as o,animated as on,isObservableMap$1 as or,DefaultScroll as ot,number as p,useCallbackOnEsc as pn,reaction$1 as pr,useScrollBounding as pt,render as q,$mobx$1 as qn,clsx as qr,useSpecialContextMenu as qt,Rewards as r,usePreloadImagesState as rn,isComputedProp$1 as rr,TextOverflow as rt,getRewardTooltipConfig as s,config as sn,isObservableObject$1 as sr,Base$5 as st,Tooltip as t,concatWithPath as ti,useSpecialTooltip as tn,isAction$1 as tr,AnimationType as tt,createParser as u,useSprings as un,observable$1 as ur,useScrollByDragElements as ut,Video as v,useUnmount as vn,get as vr,format as vt,SceneWrapper as w,comparer as wn,unsafeGet as wr,createGridImgSourceGetter as wt,sizes as x,usePrevious as xn,reduce as xr,snakeToCamel as xt,Timer as y,useEmitter as yn,map as yr,formatPrintf$1 as yt,Alignment as z,arabicToRoman as zn,onRescale as zr,UIProvider as zt
+  defaultAnimationSettings as $,getAdministration$1 as $n,ImagesRClassProvider as $r,useParamTooltip as $t,sizes as A,useAdaptive as An,identity as Ar,getRewardTooltipConfig$1 as At,render as B,delay as Bn,getRegionalDateTime$1 as Br,runView as Bt,object as C,autorun as Cn,toArray$1 as Cr,addChunkIndexToEndPath as Ct,Video as D,makeObservable as Dn,promiseWithResolvers as Dr,BackportTooltip as Dt,ProgressBar as E,getDependencyTree as En,keyCodes as Er,SimpleTooltip as Et,List as F,breakpointsByType as Fn,setContentReady as Fr,CloseButton as Ft,nationById as G,chunks as Gn,ONE_DAY$1 as Gr,initializeModelWithContext as Gt,VehicleInfo as H,assert$1 as Hn,format$1 as Hr,assignRefs as Ht,FormatString as I,comparer$1 as In,sendEvent$2 as Ir,require_classnames as It,useLazyModel as J,ObservableMap$1 as Jn,require_react_dom as Jr,useSounds as Jt,ErrorHandler as K,makeActions as Kn,ONE_HOUR$1 as Kr,useServerTimePolling as Kt,FormatText as L,MAX_i32 as Ln,play$1 as Lr,Button as Lt,ExtendedText as M,useMedia as Mn,clamp$2 as Mr,FormatNumber as Mt,isEmptyObject as N,require_jsx_runtime as Nn,pxToRem$1 as Nr,ImageSize$1 as Nt,Timer as O,observable as On,DisposeBuilder as Or,Tooltip$1 as Ot,SceneWrapper as P,MediaSize as Pn,remToPx$1 as Pr,RewardType$1 as Pt,ProgressBar$1 as Q,extendObservable$1 as Qn,DateTimeFormatsEnum as Qr,useBackdropTooltip as Qt,defaultBrackets as R,calcPercent as Rn,graphicsQuality$1 as Rr,defineStyledComponent as Rt,number as S,Reaction as Sn,some as Sr,CanvasSequence as St,string as T,configure as Tn,unwrapItem as Tr,Reward$1 as Tt,VehicleImage as U,createTimeoutInEffect$1 as Un,normalizeResource as Ur,computeds as Ut,parse$1 as V,mapRange as Vn,capitalize as Vr,JSXBuilder as Vt,isTypeValidValue as W,createLayoutReadyInEffect$1 as Wn,MS_IN_SECOND$1 as Wr,computedFn as Wt,types$2 as X,autorun$1 as Xn,SoundsRClassProvider as Xr,createSoundPlay as Xt,Currency as Y,action$1 as Yn,require_react as Yr,useSoundsOptional as Yt,Image$1 as Z,computed$1 as Zn,intl$2 as Zr,createTargetOverrides as Zt,getRewardValueType as _,useMount as _n,forEach as _r,Alignment$1 as _t,getInitialApi as a,useSkipFrame as an,isObservableArray$1 as ar,Base$4 as at,array as b,useEvent as bn,mapFilter as br,formatString as bt,CountdownStyle as c,useSpring as cn,keys$1 as cr,useHorizontalDrag as ct,Delta as d,useTransition$1 as dn,observe$1 as dr,Area$1 as dt,logBySeverity as ei,useSimpleTooltip as en,getGlobalState$1 as er,GreenNoise as et,Rewards$1 as f,useLoop as fn,onBecomeUnobserved$1 as fr,Bar$1 as ft,getRewardTooltipConfig as g,useIsFirstRender as gn,filterMap as gr,FormatText$1 as gt,getRewardImage as h,useHandleKeydown as hn,transaction$1 as hr,Tabs as ht,OptimizedProgressBar as i,useTimeout as in,isComputingDerivation$1 as ir,BackportContextMenu as it,types as j,useUpscale as jn,noop$3 as jr,getRewardValueType$1 as jt,formats as k,runInAction as kn,constFalse as kr,getRewardImage$1 as kt,Alignment as l,useSpringValue as ln,makeObservable$1 as lr,dragDirections as lt,formatPrintf as m,useKeydownListener as mn,runInAction$1 as mr,useHorizontalScroll as mt,FormatTextWithColorTags as n,resources as ni,useTooltip as nn,isComputed$1 as nr,Size as nt,Countdown_default as o,animated as on,isObservableMap$1 as or,DefaultScroll as ot,Reward as p,useCallbackOnEsc as pn,reaction$1 as pr,useScrollBounding as pt,LazyModel as q,$mobx$1 as qn,clsx as qr,useSpecialContextMenu as qt,DateTime_default as r,usePreloadImagesState as rn,isComputedProp$1 as rr,TextOverflow as rt,CountdownIcon as s,config as sn,isObservableObject$1 as sr,Base$5 as st,Tooltip as t,concatWithPath as ti,useSpecialTooltip as tn,isAction$1 as tr,AnimationType as tt,Rewards as u,useSprings as un,observable$1 as ur,useScrollByDragElements as ut,ImageSize as v,useUnmount as vn,get as vr,format as vt,parse as w,comparer as wn,unsafeGet as wr,createGridImgSourceGetter as wt,enum_ as x,usePrevious as xn,reduce as xr,snakeToCamel as xt,createParser as y,useEmitter as yn,map as yr,formatPrintf$1 as yt,defaultFormatters as z,arabicToRoman as zn,onRescale as zr,UIProvider as zt
 };

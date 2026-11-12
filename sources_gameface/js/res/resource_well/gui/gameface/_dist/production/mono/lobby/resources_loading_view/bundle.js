@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  A as s,B as t,M as a,N as r,O as o,P as n,Q as c,R as i,S as l,V as u,Y as d,a as _,c as m,ct as p,d as b,f,ft as g,ht as x,i as v,it as h,k as C,l as N,m as j,o as S,ot as w,p as I,pt as E,r as y,s as T,tt as A,u as k,ut as P,w as V,y as D
+  A as s,B as t,M as a,N as r,O as o,P as n,Q as c,R as i,S as l,V as u,Y as d,a as _,c as m,ct as p,d as b,f,ft as g,g as x,h as v,ht as h,it as C,k as N,l as j,m as S,o as w,ot as I,p as E,pt as y,s as T,tt as A,u as k,ut as P,w as V,y as D
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
@@ -48,7 +48,7 @@ var X=e(g(),1),Q=function(e){
   return t
 };
 function te(e){
-  return E.formatNumber("gold",e)
+  return y.formatNumber("gold",e)
 }
 var ae=d(),re=(0,X.createContext)({}),oe=z(function({
   children:e
@@ -88,7 +88,7 @@ function ce({
       e.stopPropagation(),e.preventDefault(),r?.()
     },
     onMouseUp:n,onMouseLeave:n,onMouseEnter:()=>{
-      s&&w.sound("highlight")
+      s&&I.sound("highlight")
     },
     children:(0,ae.jsx)("span",{
       className:ne.arrow
@@ -106,45 +106,45 @@ function he({
   currentValue:e,step:s,addResources:t,minimum:a,maximum:r,canIncrease:o,canDecrease:c,onChangeValue:i,onInputMouseDown:l,onInputMouseUp:d
 }){
   const{
-    focused:_,setFocused:m,inputRef:p,disabled:b,value:f,focus:g
-  }=T(),x=u(e),v=(0,X.useRef)(f),R=(0,X.useRef)(!1);
+    focused:_,setFocused:p,inputRef:b,disabled:f,value:g,focus:x
+  }=j(),v=u(e),h=(0,X.useRef)(g),R=(0,X.useRef)(!1);
   (0,X.useEffect)(()=>{
-    v.current=f
-  },[f]),(0,X.useEffect)(()=>{
-    const e=p.current;
+    h.current=g
+  },[g]),(0,X.useEffect)(()=>{
+    const e=b.current;
     if(!e)return;
-    const s=te(ve(f)).length,t=e?.selectionStart??0,a=e?.selectionEnd??0;
+    const s=te(ve(g)).length,t=e?.selectionStart??0,a=e?.selectionEnd??0;
     0!==t||a!==s?e.setSelectionRange(t===a?s:t,s):e.setSelectionRange(s,s)
-  },[p,f]),(0,X.useEffect)(()=>{
+  },[b,g]),(0,X.useEffect)(()=>{
     const e=e=>{
-      const s=p.current;
+      const s=b.current;
       if(!s||!_)return;
       const t=e.target;
-      t===s||s.contains(t)||(m(!1),R.current=!1)
+      t===s||s.contains(t)||(p(!1),R.current=!1)
     };
     return document.addEventListener("mousedown",e),()=>document.removeEventListener("mousedown",e)
-  },[_,p,m]),(0,X.useEffect)(()=>{
-    const e=p.current;
-    R.current&&e&&document.activeElement!==e&&g()
-  },[p,g]);
-  const C=(0,X.useCallback)(()=>{
-    b||(m(!1),R.current=!1)
-  },[m,b]),N=(0,X.useCallback)(()=>{
-    b||(m(!0),R.current=!0)
-  },[m,b]),j=()=>{
-    const e=h(a,r,xe(ve(v.current)+s,s));
-    t(e),i(te(e)),w.sound(F)
+  },[_,b,p]),(0,X.useEffect)(()=>{
+    const e=b.current;
+    R.current&&e&&document.activeElement!==e&&x()
+  },[b,x]);
+  const N=(0,X.useCallback)(()=>{
+    f||(p(!1),R.current=!1)
+  },[p,f]),S=(0,X.useCallback)(()=>{
+    f||(p(!0),R.current=!0)
+  },[p,f]),w=()=>{
+    const e=C(a,r,xe(ve(h.current)+s,s));
+    t(e),i(te(e)),I.sound(F)
   },
-  I=()=>{
-    const e=h(a,r,xe(ve(v.current)-s,s));
-    t(e),i(te(e)),w.sound(O)
+  E=()=>{
+    const e=C(a,r,xe(ve(h.current)-s,s));
+    t(e),i(te(e)),I.sound(O)
   },
-  E=(e,s)=>{
-    p.current&&p.current.setSelectionRange(e,s),setTimeout(()=>{
-      p.current&&p.current.setSelectionRange(e,s)
+  y=(e,s)=>{
+    b.current&&b.current.setSelectionRange(e,s),setTimeout(()=>{
+      b.current&&b.current.setSelectionRange(e,s)
     })
   },
-  y=e=>{
+  T=e=>{
     const{
       selectionStart:s,selectionEnd:t,value:a
     }=e.target;
@@ -154,16 +154,16 @@ function he({
     const u=n.test(a[i]??"");
     if(o&&u)for(;n.test(a[l]??"")&&l<c;)l++;
     if(r&&u)for(;n.test(a[l]??"")&&l>0;)l--;
-    if(l!==i||r&&u)return e.preventDefault(),l=l<0?0:l,void E(l,l);
+    if(l!==i||r&&u)return e.preventDefault(),l=l<0?0:l,void y(l,l);
     (r&&1===s&&1===c||o)&&(e.preventDefault(),V(e.code))
   },
   k=n(),V=(e="")=>{
-    const o=e===A.BACKSPACE,n=e===A.DELETE,c=p.current?.selectionStart||0,l=p.current?.selectionEnd||0;
-    let u=p.current?.value||"";
+    const o=e===A.BACKSPACE,n=e===A.DELETE,c=b.current?.selectionStart||0,l=b.current?.selectionEnd||0;
+    let u=b.current?.value||"";
     const d=Math.max(c,l);
     n&&(u=u.substring(0,d)+u.substring(d+1,u.length)),o&&1===c&&1===u.length&&(u="0");
-    const m=Number(u.trim().replace(/\D/g,"")),b=Number.isSafeInteger(m)?m:Number.MAX_SAFE_INTEGER,f=te(b);
-    v.current=f;
+    const m=Number(u.trim().replace(/\D/g,"")),p=Number.isSafeInteger(m)?m:Number.MAX_SAFE_INTEGER,f=te(p);
+    h.current=f;
     let g=0;
     for(let s=0;s<d;s++){
       const e=u[s]||"",t=f[g]||"";
@@ -172,37 +172,37 @@ function he({
         g++
       }
     }
-    ""===u&&(g=1),p.current&&p.current.setSelectionRange(0,0),E(g,g),i(f),k.run(()=>{
-      const e=h(a,r,xe(b,s)),o=e-(x??0);
-      o>0?w.sound(F):o<0&&w.sound(O),_&&(t(e),i(te(e))),k.clear()
+    ""===u&&(g=1),b.current&&b.current.setSelectionRange(0,0),y(g,g),i(f),k.run(()=>{
+      const e=C(a,r,xe(p,s)),o=e-(v??0);
+      o>0?I.sound(F):o<0&&I.sound(O),_&&(t(e),i(te(e))),k.clear()
     },800)
   };
-  return(0,ae.jsxs)(S.Decoration,{
-    className:P(ie,_&&le,b&&de,e>0&&ue),children:[(0,ae.jsx)(S.Field,{
+  return(0,ae.jsxs)(m.Decoration,{
+    className:P(ie,_&&le,f&&de,e>0&&ue),children:[(0,ae.jsx)(m.Field,{
       className:P(_e,_&&pe,e>0&&me),onChange:()=>{
-        b||V()
+        f||V()
       },
       onWheel:e=>{
-        !b&&_&&(e.preventDefault(),e.stopPropagation(),e.deltaY<0&&c&&I(),e.deltaY>0&&o&&j())
+        !f&&_&&(e.preventDefault(),e.stopPropagation(),e.deltaY<0&&c&&E(),e.deltaY>0&&o&&w())
       },
       onKeyDown:e=>{
         if(_)switch(e.code){
-          case A.ARROW_UP:case A.NUMPAD_ADD:case"Equals":e.preventDefault(),o&&j();
+          case A.ARROW_UP:case A.NUMPAD_ADD:case"Equals":e.preventDefault(),o&&w();
           break;
-          case A.ARROW_DOWN:case A.MINUS:case A.NUMPAD_SUBTRACT:e.preventDefault(),c&&I();
+          case A.ARROW_DOWN:case A.MINUS:case A.NUMPAD_SUBTRACT:e.preventDefault(),c&&E();
           break;
           case A.PAGE_DOWN:case A.HOME:e.preventDefault(),t(a),i(te(a));
           break;
           case A.PAGE_UP:case A.END:e.preventDefault(),t(r),i(te(r));
           break;
-          case A.BACKSPACE:case A.DELETE:y(e)
+          case A.BACKSPACE:case A.DELETE:T(e)
         }
       },
-      onMouseUp:d,onMouseDown:l,onFocus:N,onBlur:C
+      onMouseUp:d,onMouseDown:l,onFocus:S,onBlur:N
     }),(0,ae.jsx)(ce,{
-      className:P(be,fe),direction:"up",enabled:o,onChange:j,onClick:N
+      className:P(be,fe),direction:"up",enabled:o,onChange:w,onClick:S
     }),(0,ae.jsx)(ce,{
-      className:P(be,ge),direction:"down",enabled:c,onChange:I,onClick:N
+      className:P(be,ge),direction:"down",enabled:c,onChange:E,onClick:S
     })]
   })
 }
@@ -223,8 +223,8 @@ var Re="ResourceStepper_7487cb5a",Ce=({
     u(te(t))
   },[t]);
   return(0,ae.jsx)("div",{
-    className:P(Re,a),children:(0,ae.jsx)(S.Provider,{
-      value:l,type:S.types.text,disabled:o,children:(0,ae.jsx)(he,{
+    className:P(Re,a),children:(0,ae.jsx)(m.Provider,{
+      value:l,type:m.types.text,disabled:o,children:(0,ae.jsx)(he,{
         step:s,minimum:0,maximum:e,canIncrease:!o&&t<e,canDecrease:!o&&t>0,addResources:d,currentValue:t,onChangeValue:e=>{
           u(e)
         },
@@ -239,7 +239,7 @@ Ne={
 je=function({
   type:e,rate:s
 }){
-  const t=x.resolve("intl");
+  const t=h.resolve("intl");
   return(0,ae.jsx)(D,{
     className:P(Ne.text,Ne[`text__${e}`]),text:R.strings.resource_well.resourcesLoadingView.resourceRate.text(),params:{
       icon:(0,ae.jsx)("span",{
@@ -260,8 +260,8 @@ Se="Storage_icon_ee526815",we="Storage_icon__reverse_e8e0a133",Ie="Storage_value
 function ye({
   itemsInStorage:e,valueFirst:s
 }){
-  return(0,ae.jsx)(y,{
-    type:_.depot,reverse:s,size:v.extraSmall,enough:e>0,classNames:{
+  return(0,ae.jsx)(_,{
+    type:T.depot,reverse:s,size:w.extraSmall,enough:e>0,classNames:{
       base:P(Ie,0===e&&Ee),icon:P(Se,s&&we)
     },
     children:e
@@ -277,14 +277,14 @@ Ae=R.strings.resource_well,ke=({
     type:a,inventoryCount:r,rate:n,limit:c,tooltipId:i,balance:u
   }=e,{
     setResources:d,progression:_,delta:m
-  }=(0,X.useContext)(re),b=x.resolve("intl"),g=s+u>=c,v=_+m>=100,h=t===Q.NoVehicles,C=c/n<100,N=Math.min(Math.round((100-_-m+s/n)*n),r-r%n),S=0===r&&0===s||u===c||0===s&&v||h,w=v?s:Math.min(c-u,N),I=(0,X.useRef)(!1);
+  }=(0,X.useContext)(re),b=h.resolve("intl"),f=s+u>=c,g=_+m>=100,v=t===Q.NoVehicles,C=c/n<100,N=Math.min(Math.round((100-_-m+s/n)*n),r-r%n),j=0===r&&0===s||u===c||0===s&&g||v,w=g?s:Math.min(c-u,N),I=(0,X.useRef)(!1);
   (0,X.useEffect)(()=>{
-    h&&d({
+    v&&d({
       [a]:{
         value:0,rate:n
       }
     })
-  },[h,n,d,a]);
+  },[v,n,d,a]);
   const E=(e=>{
     const s=e&&R.strings.blueprints.nations.$dyn(e),t=R.strings.quests.bonusName.$dyn(e);
     switch(!0){
@@ -293,15 +293,15 @@ Ae=R.strings.resource_well,ke=({
       case Boolean(t):return p(R.strings.quests.bonusName.$dyn(e)?.toString()||"");
       default:console.error("title for reward is not provided")
     }
-  })(a),y=h||0===r||S;
-  return(0,ae.jsx)(j,{
+  })(a),y=v||0===r||j;
+  return(0,ae.jsx)(x,{
     className:Te.card,classNames:{
       status:{
         wrapper:Te.statusWrapper
       }
     },
-    status:f.done,selected:Boolean(s),disableMouse:y,disabled:y,onClick:()=>{
-      if(h)return;
+    status:S.done,selected:Boolean(s),disableMouse:y,disabled:y,onClick:()=>{
+      if(v)return;
       if(I.current)return void(I.current=!1);
       const e=(({
         value:e,rate:s
@@ -320,7 +320,7 @@ Ae=R.strings.resource_well,ke=({
       }))
     },
     soundTarget:"resource-card",children:(0,ae.jsxs)("div",{
-      className:P(Te.base,h||0===r&&Te.base__disabled,!h&&Te.base__hasVehicle),children:[(0,ae.jsx)("div",{
+      className:P(Te.base,v||0===r&&Te.base__disabled,!v&&Te.base__hasVehicle),children:[(0,ae.jsx)("div",{
         className:Te.storage,children:(0,ae.jsx)(ye,{
           itemsInStorage:r-s
         })
@@ -329,7 +329,7 @@ Ae=R.strings.resource_well,ke=({
           tooltipId:i
         },
         children:(0,ae.jsx)(l,{
-          className:P(Te.image,S&&Te.image__disabled),path:`R.images.resource_well.gui.maps.icons.resourcesLoading.resources.${a}`,width:180,height:135
+          className:P(Te.image,j&&Te.image__disabled),path:`R.images.resource_well.gui.maps.icons.resourcesLoading.resources.${a}`,width:180,height:135
         })
       }),"string"==typeof E&&(0,ae.jsx)("div",{
         className:Te.name,children:E
@@ -338,7 +338,7 @@ Ae=R.strings.resource_well,ke=({
           type:a,rate:n
         })
       }),(0,ae.jsx)(Ce,{
-        currentValue:s,limit:w,rate:n,type:a,disabled:S,onInputMouseDown:()=>{
+        currentValue:s,limit:w,rate:n,type:a,disabled:j,onInputMouseDown:()=>{
           I.current=!0
         },
         onInputMouseUp:()=>{
@@ -346,7 +346,7 @@ Ae=R.strings.resource_well,ke=({
             I.current=!1
           })
         }
-      }),v&&(0,ae.jsx)(K,{
+      }),g&&(0,ae.jsx)(K,{
         header:Ae.tooltips.resourcesLoadingView.resourcesLoaded.header(),body:Ae.tooltips.resourcesLoadingView.resourcesLoaded.body(),children:(0,ae.jsx)(D,{
           className:P(Te.limitText,Te.limitText__loaded,Te.limitText__show),text:Ae.resourcesLoadingView.resourceRate.resourceLoadedText(),params:{
             iconLoaded:(0,ae.jsx)("div",{
@@ -355,11 +355,11 @@ Ae=R.strings.resource_well,ke=({
           },
           upgradeLegacy:!0
         })
-      }),C&&!v&&!h&&(0,ae.jsx)(o,{
+      }),C&&!g&&!v&&(0,ae.jsx)(o,{
         contentId:R.views.resource_well.mono.lobby.tooltips.max_progress_tooltip("resId"),args:{
           currentValue:s+u,maxValue:c,type:a
         },
-        children:g?(0,ae.jsx)(D,{
+        children:f?(0,ae.jsx)(D,{
           className:P(Te.limitText,Te.limitText__max),text:Ae.resourcesLoadingView.resourceRate.maxReachedText(),params:{
             iconMax:(0,ae.jsx)("div",{
               className:P(Te.icon,Te.icon__max)
@@ -397,7 +397,7 @@ var We=z(function({
     progressionState:o
   }=a.root.get(),{
     api:n
-  }=b(),i=r[e],[l,d]=(0,X.useState)(Ve),[_,m]=(0,X.useState)(He);
+  }=E(),i=r[e],[l,d]=(0,X.useState)(Ve),[_,m]=(0,X.useState)(He);
   (0,X.useLayoutEffect)(()=>{
     const s=()=>{
       var e,s,t;
@@ -412,20 +412,20 @@ var We=z(function({
       n.events.off("resizeHandled",t),n.events.off("change",t),n.events.off("recalculateContent",t)
     }
   },[n,e,l]);
-  const p=u(e),f=t(()=>{
+  const p=u(e),g=t(()=>{
     p&&e!==p&&l[e]&&n.applyScroll(l[e].position,{
       immediate:!0
     })
   });
   return(0,X.useEffect)(()=>{
-    f()
-  },[f,e]),(0,ae.jsxs)("div",{
-    className:P(Pe.base,Pe[`base__${_}`]),children:[(0,ae.jsx)(N,{
+    g()
+  },[g,e]),(0,ae.jsxs)("div",{
+    className:P(Pe.base,Pe[`base__${_}`]),children:[(0,ae.jsx)(b,{
       classNames:{
         wrapper:Pe.scrollWrapper,content:Pe.scrollContent
       },
       children:(()=>{
-        if(i&&0!==i.value.resources.length)return(0,ae.jsx)(I,{
+        if(i&&0!==i.value.resources.length)return(0,ae.jsx)(v,{
           className:Pe.cardsWrapper,children:c(i.value.resources,(t,a)=>(0,ae.jsx)("div",{
             className:Pe.item,children:(0,ae.jsx)(ke,{
               value:t,currentValue:s[t.type]?.value||0,progressionState:o
@@ -433,7 +433,7 @@ var We=z(function({
           },`card_${a}_${t.type}_${e}`))
         })
       })()
-    }),(0,ae.jsx)(k,{
+    }),(0,ae.jsx)(f,{
       classNames:{
         base:Pe.scrollBarPosition
       }
@@ -441,7 +441,7 @@ var We=z(function({
   })
 });
 function Ue(e){
-  return(0,ae.jsx)(m,{
+  return(0,ae.jsx)(k,{
     children:(0,ae.jsx)(We,{
       ...e
     })
@@ -458,10 +458,10 @@ $e=R.strings.resource_well,Oe=({
   }=(0,X.useContext)(re);
   return(0,ae.jsxs)("div",{
     className:P(Be.base,t===a&&Be.base__active,n[e]&&n[e]>0&&t!==a&&o&&Be.base__animated),onClick:()=>{
-      w.sound($),r(a)
+      I.sound($),r(a)
     },
     onMouseEnter:()=>{
-      w.sound(M)
+      I.sound(M)
     },
     children:[(0,ae.jsx)("div",{
       className:Be.glow
@@ -556,12 +556,12 @@ Fe="ResourcesHeader_839e69c3",ze=z(function({
     Boolean(t)&&void 0!==d&&t!==d&&p(!0)
   },[d,t,p,a]),(0,X.useEffect)(()=>{
     const e=a===Q.NoProgress;
-    (Boolean(t)&&e||m>0)&&(t!==d&&w.sound("resources_well_progress_done_start"),_(!0))
+    (Boolean(t)&&e||m>0)&&(t!==d&&I.sound("resources_well_progress_done_start"),_(!0))
   },[d,t,_,a,m]),(0,X.useEffect)(()=>{
-    t+m===100&&100!==t&&w.sound(H)
+    t+m===100&&100!==t&&I.sound(H)
   },[t,m]);
   const g=(0,X.useCallback)(()=>{
-    l(t),m||t!==d&&w.sound("resources_well_progress_done_stop"),b({}),f({}),p(!1)
+    l(t),m||t!==d&&I.sound("resources_well_progress_done_stop"),b({}),f({}),p(!1)
   },[l,t,m,b,f,p,d]);
   return(0,ae.jsxs)("div",{
     className:P(ss,o&&ts),children:[(0,ae.jsx)("div",{
@@ -583,7 +583,7 @@ Fe="ResourcesHeader_839e69c3",ze=z(function({
     })]
   })
 });
-s((0,ae.jsx)(C,{
+s((0,ae.jsx)(N,{
   soundsOverrides:r(W),children:(0,ae.jsx)(J,{
     children:(0,ae.jsx)(oe,{
       children:(0,ae.jsx)(us,{})

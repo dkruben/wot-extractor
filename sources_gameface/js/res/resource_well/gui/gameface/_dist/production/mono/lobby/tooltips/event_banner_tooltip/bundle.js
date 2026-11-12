@@ -1,6 +1,6 @@
 /* wot-extractor: JavaScript FORMATADO a partir de sources/res/resource_well/gui/gameface/_dist/production/mono/lobby/tooltips/event_banner_tooltip/bundle.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
 import{
-  A as e,M as t,Y as a,g as s,k as r,mt as n,n as c,rt as o,st as i,ut as l,y as _
+  A as e,M as t,Y as a,i as s,k as r,mt as n,n as c,rt as o,st as i,ut as l,y as _
 }
 from"../../chunks/lib.js";
 import"../../chunks/_wg-global-styles.js";

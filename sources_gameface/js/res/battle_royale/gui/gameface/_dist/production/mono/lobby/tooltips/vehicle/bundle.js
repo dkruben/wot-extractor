@@ -4,7 +4,7 @@ import{
 }
 from"../../chunks/rolldown-runtime.js";
 import{
-  Bt as s,E as a,Gt as i,Nn as t,O as n,Ut as c,Yr as o,gt as l,jr as r,ni as d,qr as _,t as p,zt as u
+  Bt as s,Gt as a,H as i,Nn as t,Ut as n,W as c,Yr as o,gt as l,jr as r,ni as d,qr as _,t as p,zt as u
 }
 from"../../chunks/lib.js";
 import"../../chunks/globals.js";
@@ -16,13 +16,13 @@ import{
   t as h
 }
 from"../../chunks/daily_bonus.js";
-var[v,y]=i()(({
+var[v,y]=a()(({
   observableModel:e
 })=>{
   const s={
     vehicleInfo:e.object(),techParams:e.object("tech"),eventInfo:e.object("eventInfo"),dailyBonus:e.object("dailyBonus")
   },
-  a=c.structural(()=>Object.entries(s.techParams.get()).map(([e,s])=>{
+  a=n.structural(()=>Object.entries(s.techParams.get()).map(([e,s])=>{
     return{
       type:e,indicatorsValue:(a=s,Array.from({
         length:5
@@ -97,7 +97,7 @@ M=e(o(),1),q=m(function(){
   const{
     model:e
   }=y(),{
-    vehicleName:s,vehicleNation:i,vehicleType:t,statusLevel:c,statusText:o
+    vehicleName:s,vehicleNation:a,vehicleType:t,statusLevel:n,statusText:o
   }=e.vehicleInfo.get(),{
     hasDailyBonus:r,dailyBonusFactor:d,soloTopPlaces:p,squadTopPlaces:u,coinType:m
   }=e.dailyBonus.get(),v=e.eventInfo.get().subMode,j=e.computes.techParams();
@@ -105,10 +105,10 @@ M=e(o(),1),q=m(function(){
     className:_(C.base,C[`base__${v}`]),children:[(0,$.jsx)("div",{
       className:C.bg
     }),(0,$.jsxs)("div",{
-      className:C.vehicleInfo,children:[n(t)&&(0,$.jsx)(a.Type,{
-        type:t,size:a.Type.sizes.x64x64
+      className:C.vehicleInfo,children:[c(t)&&(0,$.jsx)(i.Type,{
+        type:t,size:i.Type.sizes.x64x64
       }),(0,$.jsxs)("div",{
-        className:C.vehicleContainer,children:[(0,$.jsx)(a.Name,{
+        className:C.vehicleContainer,children:[(0,$.jsx)(i.Name,{
           className:C.vehicleName,children:s
         }),(0,$.jsx)("div",{
           className:C.modeDescription,children:R.strings.battle_royale.tooltips.vehicle.description()
@@ -137,13 +137,13 @@ M=e(o(),1),q=m(function(){
     }),(0,$.jsx)("div",{
       className:C.separator
     }),(0,$.jsx)("div",{
-      className:C.vehicleDescription,children:`${R.strings.tooltips.battle_royale.hangar.vehicle.description.$dyn(i)}`
+      className:C.vehicleDescription,children:`${R.strings.tooltips.battle_royale.hangar.vehicle.description.$dyn(a)}`
     }),(0,$.jsx)("div",{
       className:C.separator
     }),j.map((e,s)=>(0,M.createElement)(w,{
       ...e,key:s,className:C.section
     })),(0,$.jsx)("div",{
-      className:_(C.status,C[`status__${c}`]),children:o
+      className:_(C.status,C[`status__${n}`]),children:o
     })]
   })
 });

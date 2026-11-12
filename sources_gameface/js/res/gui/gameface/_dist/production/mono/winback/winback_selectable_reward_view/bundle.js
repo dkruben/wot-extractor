@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  B as a,C as s,H as t,I as l,L as i,N as r,P as c,R as n,T as o,U as d,V as m,W as b,X as u,Z as _,_ as w,_t as h,at as p,d as x,dt as v,et as f,f as j,gt as g,h as N,ht as S,it as k,k as y,l as C,lt as V,m as E,mt as I,nt as F,ot as T,p as D,q as P,rt as B,st as L,tt as A,u as O,ut as $,v as H,w as M,x as z,y as W,z as Q
+  B as a,C as s,F as t,H as l,I as i,L as r,N as c,R as n,T as o,U as d,V as m,W as b,X as u,Z as _,_ as w,_t as h,at as p,d as x,dt as v,et as f,f as j,gt as g,h as N,ht as S,it as k,k as y,l as C,lt as V,m as E,mt as I,nt as F,ot as T,p as D,q as B,rt as L,st as P,tt as A,u as O,ut as $,v as H,w as M,x as z,y as W,z as Q
 }
 from"../chunks/lib.js";
 import"../chunks/global.js";
@@ -16,7 +16,7 @@ import{
   n as q,t as U
 }
 from"../chunks/use_preload_images_state.js";
-var X=e(n(),1),Z="vehicleLevel",J="rewardIndex",K=h.resolve("intl"),Y={
+var X=e(Q(),1),Z="vehicleLevel",J="rewardIndex",K=h.resolve("intl"),Y={
   isDiscount:!1,isSelected:!1,isCompensation:!1,vehicleLevel:0,rewardsSelected:0
 },
 [ee,ae]=d("WinbackSelectableRewardViewModel")(({
@@ -25,19 +25,19 @@ var X=e(n(),1),Z="vehicleLevel",J="rewardIndex",K=h.resolve("intl"),Y={
   const a=k.box(""),s={
     primitives:e.primitives(["totalRewardsCount","selectedRewardsCount"]),categories:e.array("categories"),selectableRewards:e.array("selectableRewards")
   },
-  l=t(()=>{
+  t=l(()=>{
     const e=V(s.categories.get(),v);
     return e.find(e=>e.isSelected)||e[0]||Y
   },{
     equals:$
-  }),i=t(()=>{
-    if(l().isCompensation)return V(s.selectableRewards.get(),v);
+  }),i=l(()=>{
+    if(t().isCompensation)return V(s.selectableRewards.get(),v);
     const e=a.get();
     return T(s.selectableRewards.get(),a=>K.toLowerCase(a.userName).includes(e&&K.toLowerCase(e)))
-  }),r=t(()=>i().length),c=t(()=>r()<s.primitives.totalRewardsCount.get());
+  }),r=l(()=>i().length),c=l(()=>r()<s.primitives.totalRewardsCount.get());
   return{
     ...s.primitives,categories:s.categories,filterQuery:a,computes:{
-      selectedCategory:l,selectableRewards:i,selectableRewardsLength:r,isFilterApplied:c
+      selectedCategory:t,selectableRewards:i,selectableRewardsLength:r,isFilterApplied:c
     }
   }
 },({
@@ -47,15 +47,15 @@ var X=e(n(),1),Z="vehicleLevel",J="rewardIndex",K=h.resolve("intl"),Y={
     [Z]:e
   }),"onCategorySelect"),t=e.createCallbackNoArgs("onFilterReset");
   return{
-    handleCategorySelect:B(e=>{
+    handleCategorySelect:L(e=>{
       a.filterQuery.set(""),s(e)
     }),selectReward:e.createCallback(e=>({
       [J]:e
-    }),"onSelectReward"),close:e.createCallbackNoArgs("onClose"),confirm:e.createCallbackNoArgs("onConfirm"),setFilterQuery:B(e=>a.filterQuery.set(e)),resetFilter:B(()=>{
+    }),"onSelectReward"),close:e.createCallbackNoArgs("onClose"),confirm:e.createCallbackNoArgs("onConfirm"),setFilterQuery:L(e=>a.filterQuery.set(e)),resetFilter:L(()=>{
       a.filterQuery.set(""),t()
     })
   }
-}),se="ErrorScreen_6fa54c0f",te="ErrorScreen_icon_5cfee7d",le="ErrorScreen_title_c5b4d9cb",ie="ErrorScreen_description_164c1cd6",re="ErrorScreen_button_4c0ae438",ce=e(_(),1),ne=h.resolve("strings"),oe=Q(function(){
+}),se="ErrorScreen_6fa54c0f",te="ErrorScreen_icon_5cfee7d",le="ErrorScreen_title_c5b4d9cb",ie="ErrorScreen_description_164c1cd6",re="ErrorScreen_button_4c0ae438",ce=e(_(),1),ne=h.resolve("strings"),oe=n(function(){
   const{
     controls:e
   }=ae();
@@ -70,31 +70,31 @@ var X=e(n(),1),Z="vehicleLevel",J="rewardIndex",K=h.resolve("intl"),Y={
       mixClass:re,onClick:e.close,children:ne.readOrEmpty("winback.winbackSelectableRewardView.error.button")
     })]
   })
-}),de="Footer_2bc55d13",me="Footer_infoIcon_fd977a0b",be="Footer_amountRewards_68a1b3f6",ue="Footer_text_af3f22d1",_e="Footer_text__active_ade58048",we="Footer_actions_877c593c",he="Footer_button_c9561362",pe=h.resolve("strings"),xe=Q(function({
+}),de="Footer_2bc55d13",me="Footer_infoIcon_fd977a0b",be="Footer_amountRewards_68a1b3f6",ue="Footer_text_af3f22d1",_e="Footer_text__active_ade58048",we="Footer_actions_877c593c",he="Footer_button_c9561362",pe=h.resolve("strings"),xe=n(function({
   className:e
 }){
   const{
     controls:a,model:s
-  }=ae(),t=s.selectedRewardsCount.get();
+  }=ae(),l=s.selectedRewardsCount.get();
   return(0,ce.jsxs)("div",{
-    className:(0,X.default)(de,e),children:[t?(0,ce.jsx)(z,{
+    className:(0,X.default)(de,e),children:[l?(0,ce.jsx)(z,{
       path:"winback.winbackSelectableRewardView.footer.actionText.active",params:{
         infoIcon:(0,ce.jsx)(o,{
           contentId:R.views.mono.winback.tooltips.selected_rewards_tooltip("resId"),children:(0,ce.jsx)("div",{
             className:me
           })
         }),amountRewards:(0,ce.jsx)("div",{
-          className:be,children:t
+          className:be,children:l
         })
       },
-      split:!0,className:(0,X.default)(ue,Boolean(t)&&_e)
+      split:!0,className:(0,X.default)(ue,Boolean(l)&&_e)
     }):(0,ce.jsx)("div",{
       className:ue,children:pe.readOrEmpty("winback.winbackSelectableRewardView.footer.actionText.disable")
     }),(0,ce.jsxs)("div",{
       className:we,children:[(0,ce.jsx)(c,{
-        size:l.medium,mixClass:he,type:i.primary,disabled:!t,onClick:a.confirm,children:pe.readOrEmpty("winback.winbackSelectableRewardView.buttons.confirm")
+        size:t.medium,mixClass:he,type:i.primary,disabled:!l,onClick:a.confirm,children:pe.readOrEmpty("winback.winbackSelectableRewardView.buttons.confirm")
       }),(0,ce.jsx)(c,{
-        size:l.medium,mixClass:he,type:i.secondary,onClick:a.close,children:pe.readOrEmpty("winback.winbackSelectableRewardView.buttons.cancel")
+        size:t.medium,mixClass:he,type:i.secondary,onClick:a.close,children:pe.readOrEmpty("winback.winbackSelectableRewardView.buttons.cancel")
       })]
     })]
   })
@@ -132,7 +132,7 @@ function Ee({
     })]
   })
 }
-var Ie="Categories_f4d88e4e",Fe="Categories_tab_68d8ebb1",Te="Categories_separator_748175df",De=Q(function({
+var Ie="Categories_f4d88e4e",Fe="Categories_tab_68d8ebb1",Te="Categories_separator_748175df",De=n(function({
   className:e
 }){
   const{
@@ -154,15 +154,15 @@ var Ie="Categories_f4d88e4e",Fe="Categories_tab_68d8ebb1",Te="Categories_separat
       })]
     },a))
   })
-}),Pe="SearchDetails_ee38a013",Be="SearchDetails_shown_bc5c6253",Le="SearchDetails_searchResults_14601553",Ae="SearchDetails_searchResults__empty_f8d756ca",Oe="SearchDetails_glow_e7fb29b2",$e="SearchDetails_glow__shown_4d2a544d",He="SearchDetails_button_ecea6969",Me="SearchDetails_buttonGradient_a070aa17",ze="SearchDetails_buttonIcon_d4d9488f",We="SearchDetails_noResults_8abf95a0",Qe=h.resolve("strings"),Ge=Q(function(){
+}),Be="SearchDetails_ee38a013",Le="SearchDetails_shown_bc5c6253",Pe="SearchDetails_searchResults_14601553",Ae="SearchDetails_searchResults__empty_f8d756ca",Oe="SearchDetails_glow_e7fb29b2",$e="SearchDetails_glow__shown_4d2a544d",He="SearchDetails_button_ecea6969",Me="SearchDetails_buttonGradient_a070aa17",ze="SearchDetails_buttonIcon_d4d9488f",We="SearchDetails_noResults_8abf95a0",Qe=h.resolve("strings"),Ge=n(function(){
   const{
     model:e,controls:a
   }=ae(),s=e.totalRewardsCount.get(),t=e.computes.isFilterApplied(),l=e.computes.selectableRewardsLength();
   return(0,ce.jsxs)("div",{
-    className:Pe,children:[(0,ce.jsx)(z,{
-      className:Be,path:"winback.winbackSelectableRewardView.filter.shown"
+    className:Be,children:[(0,ce.jsx)(z,{
+      className:Le,path:"winback.winbackSelectableRewardView.filter.shown"
     }),(0,ce.jsxs)("div",{
-      className:(0,X.default)(Le,!l&&Ae),children:[t?(0,ce.jsx)(z,{
+      className:(0,X.default)(Pe,!l&&Ae),children:[t?(0,ce.jsx)(z,{
         path:"winback.winbackSelectableRewardView.filter.searchResult",params:{
           itemsShown:l||(0,ce.jsx)("span",{
             className:We,children:l
@@ -186,7 +186,7 @@ var Ie="Categories_f4d88e4e",Fe="Categories_tab_68d8ebb1",Te="Categories_separat
       })
     })]
   })
-}),qe="Filter_769b2910",Ue="Filter_wrapper_1810d630",Xe="Filter_controls_5318de77",Ze="Filter_input_22a531be",Je="Filter_button_24015e2",Ke="Filter_buttonIcon_bf5f2b43",Ye="Filter_compensationPlaceholder_c721d50",ea=h.resolve("strings"),aa=Q(function(){
+}),qe="Filter_769b2910",Ue="Filter_wrapper_1810d630",Xe="Filter_controls_5318de77",Ze="Filter_input_22a531be",Je="Filter_button_24015e2",Ke="Filter_buttonIcon_bf5f2b43",Ye="Filter_compensationPlaceholder_c721d50",ea=h.resolve("strings"),aa=n(function(){
   const{
     model:e,controls:a
   }=ae(),s=e.computes.selectedCategory();
@@ -241,7 +241,7 @@ var ma=e(g(),1),ba=function(e){
     default:return 3
   }
 },
-pa=Q(function({
+pa=n(function({
   children:e,isSelected:a,index:s
 }){
   const{
@@ -289,8 +289,8 @@ function ka({
     })
   })
 }
-var Ra="Discount_contentTitle_aabc06c6",ya="Discount_vehicleName_593705d2",Ca="Discount_columns_dd37923e",Va="Discount_column_4474715f",Ea="Discount_title_8aa44d07",Ia="Discount_customCurrency_bccb8a2e",Fa="Discount_oldData_5a3ff475",Ta="Discount_strikethrough_a35446e6",Da=h.resolve("strings"),Pa=h.resolve("intl");
-function Ba({
+var Ra="Discount_contentTitle_aabc06c6",ya="Discount_vehicleName_593705d2",Ca="Discount_columns_dd37923e",Va="Discount_column_4474715f",Ea="Discount_title_8aa44d07",Ia="Discount_customCurrency_bccb8a2e",Fa="Discount_oldData_5a3ff475",Ta="Discount_strikethrough_a35446e6",Da=h.resolve("strings"),Ba=h.resolve("intl");
+function La({
   vehicle:e,price:a,experience:s,className:t
 }){
   return(0,ce.jsxs)("div",{
@@ -310,7 +310,7 @@ function Ba({
             value:s.new,size:O.small,type:x.xp,stockBackgroundName:j.Blue,isEnough:!0,isDiscount:!0
           })
         }),(0,ce.jsxs)("div",{
-          className:Fa,children:[Pa.formatNumber("integral",s.old),(0,ce.jsx)("div",{
+          className:Fa,children:[Ba.formatNumber("integral",s.old),(0,ce.jsx)("div",{
             className:Ta
           })]
         })]
@@ -322,7 +322,7 @@ function Ba({
             value:a.new,size:O.small,type:x.credits,isEnough:!0,isDiscount:!0
           })
         }),(0,ce.jsxs)("div",{
-          className:Fa,children:[Pa.formatNumber("integral",a.old),(0,ce.jsx)("span",{
+          className:Fa,children:[Ba.formatNumber("integral",a.old),(0,ce.jsx)("span",{
             className:Ta
           })]
         })]
@@ -330,12 +330,12 @@ function Ba({
     })]
   })
 }
-var La="ForGift_8de3d134",Aa="ForGift_vehicleName_bea2b226",Oa=h.resolve("strings");
+var Pa="ForGift_8de3d134",Aa="ForGift_vehicleName_bea2b226",Oa=h.resolve("strings");
 function $a({
   vehicle:e,className:a
 }){
   return(0,ce.jsx)("div",{
-    className:(0,X.default)(La,a),children:(0,ce.jsx)(z,{
+    className:(0,X.default)(Pa,a),children:(0,ce.jsx)(z,{
       path:"winback.winbackSelectableRewardView.vehicleName",params:{
         type:Oa.readOrEmpty(`winback.winbackSelectableRewardView.vehicleType.${S(e.type)}`),level:A(e.level),name:e.userName,color:"#fd9"
       },
@@ -370,7 +370,7 @@ var Wa="Cards_9470dddc",Qa="Cards_discount_10f68e4b",Ga="Cards_forGift_12751c8f"
   old:e.oldPrice,new:e.newPrice
 }),Ua=e=>({
   old:e.oldExp,new:e.newExp
-}),Xa=Q((0,ma.forwardRef)(function({
+}),Xa=n((0,ma.forwardRef)(function({
   className:e
 },a){
   const{
@@ -400,7 +400,7 @@ var Wa="Cards_9470dddc",Qa="Cards_discount_10f68e4b",Ga="Cards_forGift_12751c8f"
           throw new Error("Variable oldPrice or newPrice does not exist")
         })(e);
         return(0,ce.jsx)(za,{
-          tooltipId:s.tooltipId,tooltipContentId:s.tooltipContentId,vehicle:l,isSelected:s.isSelected,index:s.index,children:t?(0,ce.jsx)(Ba,{
+          tooltipId:s.tooltipId,tooltipContentId:s.tooltipContentId,vehicle:l,isSelected:s.isSelected,index:s.index,children:t?(0,ce.jsx)(La,{
             vehicle:l,price:qa(i),experience:Ua(i),className:Qa
           }):(0,ce.jsx)($a,{
             vehicle:l,className:Ga
@@ -410,7 +410,7 @@ var Wa="Cards_9470dddc",Qa="Cards_discount_10f68e4b",Ga="Cards_forGift_12751c8f"
       var a
     })
   })
-})),Za="NoFilteredVehicles_68489788",Ja="NoFilteredVehicles_info_d7361714",Ka="NoFilteredVehicles_alertIcon_68b8edf4",Ya="NoFilteredVehicles_text_179ecf3f",es="NoFilteredVehicles_button_deeba065",as=h.resolve("strings"),ss=Q(function({
+})),Za="NoFilteredVehicles_68489788",Ja="NoFilteredVehicles_info_d7361714",Ka="NoFilteredVehicles_alertIcon_68b8edf4",Ya="NoFilteredVehicles_text_179ecf3f",es="NoFilteredVehicles_button_deeba065",as=h.resolve("strings"),ss=n(function({
   className:e
 }){
   const{
@@ -424,10 +424,10 @@ var Wa="Cards_9470dddc",Qa="Cards_discount_10f68e4b",Ga="Cards_forGift_12751c8f"
         className:Ya,children:as.readOrEmpty("winback.winbackSelectableRewardView.resetInf.text")
       })]
     }),(0,ce.jsx)(c,{
-      size:l.medium,mixClass:es,type:i.secondary,onClick:a.resetFilter,children:as.readOrEmpty("winback.winbackSelectableRewardView.buttons.reset")
+      size:t.medium,mixClass:es,type:i.secondary,onClick:a.resetFilter,children:as.readOrEmpty("winback.winbackSelectableRewardView.buttons.reset")
     })]
   })
-}),ts="ScrollableCards_cefbdf39",ls="ScrollableCards_shadow_cae4b9f5",is="ScrollableCards_shadow__visible_d6b82f2",rs="ScrollableCards_shadow__top_d356f13f",cs="ScrollableCards_shadow__bottom_19ddd9b2",ns="ScrollableCards_noFilteredVehicles_53905af9",os="ScrollableCards_cards_5afe2eb9",ds="ScrollableCards_scrollBar_6694810f",ms="ScrollableCards_barThumb_ec5fb105",bs="ScrollableCards_barRail_a535aa69",us=[ba.Start,ba.WithoutScroll],_s=[ba.End,ba.WithoutScroll],ws=Q(function(){
+}),ts="ScrollableCards_cefbdf39",ls="ScrollableCards_shadow_cae4b9f5",is="ScrollableCards_shadow__visible_d6b82f2",rs="ScrollableCards_shadow__top_d356f13f",cs="ScrollableCards_shadow__bottom_19ddd9b2",ns="ScrollableCards_noFilteredVehicles_53905af9",os="ScrollableCards_cards_5afe2eb9",ds="ScrollableCards_scrollBar_6694810f",ms="ScrollableCards_barThumb_ec5fb105",bs="ScrollableCards_barRail_a535aa69",us=[ba.Start,ba.WithoutScroll],_s=[ba.End,ba.WithoutScroll],ws=n(function(){
   const{
     model:e,controls:a
   }=ae(),s=E(),t=e.computes.selectableRewardsLength(),{
@@ -441,11 +441,11 @@ var Wa="Cards_9470dddc",Qa="Cards_discount_10f68e4b",Ga="Cards_forGift_12751c8f"
     },[s.scrollPosition,t,l]);
     return(0,ma.useEffect)(()=>(i.on("change",n),()=>i.off("change",n)),[i,n]),(0,ma.useEffect)(()=>F(n),[n,...a]),r
   })(s,[t,l,i]),c=(0,ma.useRef)(null),n=b();
-  P(a.close);
+  B(a.close);
   const o=!1===us.includes(r),d=!1===_s.includes(r);
   return(0,ma.useEffect)(()=>{
     const a=p(()=>e.computes.selectedCategory(),()=>{
-      const a=L(e.computes.selectableRewards(),e=>(e=>{
+      const a=P(e.computes.selectableRewards(),e=>(e=>{
         if((e=>"isSelected"in e)(e))return e;
         throw new Error("isSelected property is missing in the reward")
       })(e).isSelected);
@@ -486,11 +486,11 @@ var Wa="Cards_9470dddc",Qa="Cards_discount_10f68e4b",Ga="Cards_forGift_12751c8f"
       className:(0,X.default)(ls,cs,d&&is)
     })]
   })
-}),hs="App_9ac57ea8",ps="App_base__error_6a777ff1",xs="App_base__hidden_1de0b422",vs="App_closeButton_f5179698",fs="App_container_913d6f7c",js="App_footer_2e9c7b89",gs=h.resolve("strings"),Ns=[R.images.gui.maps.icons.winback.selectableRewardView.background()],Ss=Q(()=>{
+}),hs="App_9ac57ea8",ps="App_base__error_6a777ff1",xs="App_base__hidden_1de0b422",vs="App_closeButton_f5179698",fs="App_container_913d6f7c",js="App_footer_2e9c7b89",gs=h.resolve("strings"),Ns=[R.images.gui.maps.icons.winback.selectableRewardView.background()],Ss=n(()=>{
   const{
     model:e,controls:a
   }=ae(),s=0===e.categories.get().length;
-  P(a.close);
+  B(a.close);
   const t=q(Ns)!==U.Pending;
   return(0,ce.jsx)("div",{
     className:(0,X.default)(hs,s&&ps,!t&&xs),children:t&&(0,ce.jsxs)(ce.Fragment,{

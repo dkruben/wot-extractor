@@ -81,6 +81,7 @@ class SPECIAL_VOICE_TAG(object):
     BP_19_M: tuple
     BP_20_M: tuple
     BP_21_M: tuple
+    BP_21_NM: tuple
     MT_LB_4 = 'tankmen_mtlb4_1'
     ALL: Any
 

@@ -4,12 +4,12 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  A as a,Ct as s,D as t,E as n,K as o,T as i,W as c,_t as r,at as l,gt as d,h as p,ht as _,i as u,k as m,lt as g,mt as f,p as v,q as b,r as h
+  A as a,Ct as s,D as t,E as n,K as o,T as i,W as c,_ as r,_t as l,at as d,gt as _,ht as p,k as u,lt as m,m as g,mt as f,q as v,r as b,w as j
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
 import{
-  n as j,t as x
+  n as h,t as x
 }
 from"../chunks/vendor.js";
 import{
@@ -26,11 +26,11 @@ var A=e(s(),1),N=function(e){
     withPlugins:{
       backgroundPlugin:"coui://advent_calendar_ho/gui/gameface/_dist/production/mono/plugins/lobby/advent_calendar_notification_background/advent_calendar_notification_background.js",descriptionPlugin:"coui://advent_calendar_ho/gui/gameface/_dist/production/mono/plugins/lobby/advent_calendar_notification_description/advent_calendar_notification_description.js",eventEndDate:1786579200,isButtonDisabled:!1,isPopUp:!1,state:N.DOORS_AVAILABLE,onClick:f
     }
-  }.withPlugins),controls:()=>g({
+  }.withPlugins),controls:()=>m({
     onClick:()=>console.log("onClick")
   })
 },
-E=e(j(),1),[P,B]=m()(({
+E=e(x(),1),[P,B]=u()(({
   observableModel:e
 })=>({
   root:e.object()
@@ -38,8 +38,8 @@ E=e(j(),1),[P,B]=m()(({
   externalModel:e
 })=>({
   onClick:e.createCallbackNoArgs("onClick")
-})),C="Background_bdd74931",U="Background_base__popUp_e2773e75",O="Background_border_96e049c8",T="Background_image_c86a58b6",I=e(l(),1);
-function L({
+})),C="Background_bdd74931",U="Background_base__popUp_e2773e75",O="Background_border_96e049c8",T="Background_image_c86a58b6",I=e(d(),1);
+function w({
   isPopUp:e
 }){
   return(0,I.jsxs)("div",{
@@ -50,11 +50,11 @@ function L({
     })]
   })
 }
-var S="CloseButton_6ff70f96",w=({
+var L="CloseButton_6ff70f96",S=({
   classNames:e
 })=>(0,I.jsx)("div",{
-  className:(0,E.default)(S,e?.base),onMouseEnter:()=>r.sound(R.sounds.highlight()),onClick:()=>r.sound(R.sounds.cancelcloseno())
-}),y="Decorator_4202b3ce",V="Decorator_base__popUp_aeffa563",M="Decorator_closeButton_81d519e7",F="Decorator_content_2fd93777",W="Decorator_backgroundWrapper_481f57ee",Y="Decorator_lipTop_977ea454",q="Decorator_lipBottom_fc59f66d",z=x(function({
+  className:(0,E.default)(L,e?.base),onMouseEnter:()=>l.sound(R.sounds.highlight()),onClick:()=>l.sound(R.sounds.cancelcloseno())
+}),y="Decorator_4202b3ce",V="Decorator_base__popUp_aeffa563",M="Decorator_closeButton_81d519e7",F="Decorator_content_2fd93777",W="Decorator_backgroundWrapper_481f57ee",Y="Decorator_lipTop_977ea454",q="Decorator_lipBottom_fc59f66d",z=h(function({
   children:e,className:a
 }){
   const{
@@ -63,22 +63,22 @@ var S="CloseButton_6ff70f96",w=({
     isPopUp:t,backgroundPlugin:n
   }=s.root.get(),i=(0,A.useRef)(null);
   return c(()=>{
-    t&&r.sound("adv_notification")
-  }),o(i,b(()=>{
+    t&&l.sound("adv_notification")
+  }),o(i,v(()=>{
     if(!i.current)return;
-    const e=Math.min(i.current.getBoundingClientRect().height,_(500)),a=_(288);
-    d(a,e)
+    const e=Math.min(i.current.getBoundingClientRect().height,p(500)),a=p(288);
+    _(a,e)
   })),(0,I.jsxs)("div",{
     ref:i,className:(0,E.default)(y,t&&V,a),children:[(0,I.jsx)("div",{
       className:F,children:e
-    }),t&&(0,I.jsx)(w,{
+    }),t&&(0,I.jsx)(S,{
       classNames:{
         base:M
       }
     }),(0,I.jsx)("div",{
-      className:W,children:n?(0,I.jsx)(u,{
+      className:W,children:n?(0,I.jsx)(g,{
         src:n,isPopUp:t
-      }):(0,I.jsx)(L,{
+      }):(0,I.jsx)(w,{
         isPopUp:t
       })
     }),!t&&(0,I.jsxs)(I.Fragment,{
@@ -100,39 +100,39 @@ var S="CloseButton_6ff70f96",w=({
     title:ae.postEvent.title(),description:ae.postEvent.description(),action:ae.postEvent.action()
   }
 },
-te=x(function(){
+te=h(function(){
   const{
     model:e,controls:a
   }=B(),{
-    state:s,eventEndDate:t,isPopUp:n,isButtonDisabled:o,descriptionPlugin:c,rewardImagePath:r
+    state:s,eventEndDate:t,isPopUp:n,isButtonDisabled:o,descriptionPlugin:i,rewardImagePath:c
   }=e.root.get(),{
     title:l,description:d,action:_
-  }=se[s],m=!!d,g=k(t);
-  return(0,I.jsx)(h,{
+  }=se[s],p=!!d,u=k(t);
+  return(0,I.jsx)(b,{
     children:(0,I.jsx)(z,{
       isPopUp:n,children:(0,I.jsxs)("div",{
-        className:(0,E.default)(K,n&&$,m&&Q),children:[(0,I.jsx)("div",{
-          className:G,children:(0,I.jsx)(i,{
+        className:(0,E.default)(K,n&&$,p&&Q),children:[(0,I.jsx)("div",{
+          className:G,children:(0,I.jsx)(r,{
             text:l,className:H
           })
         }),(0,I.jsx)("div",{
           style:{
-            backgroundImage:`url(${r})`
+            backgroundImage:`url(${c})`
           },
           className:J
-        }),m&&(c?(0,I.jsx)(u,{
-          src:c,state:s,date:g,fallback:(0,I.jsx)(i,{
+        }),p&&(i?(0,I.jsx)(g,{
+          src:i,state:s,date:u,fallback:(0,I.jsx)(r,{
             text:d,className:(0,E.default)(X,Z),params:{
-              date:g
+              date:u
             }
           })
-        }):(0,I.jsx)(i,{
+        }):(0,I.jsx)(r,{
           text:d,className:X,params:{
-            date:g
+            date:u
           }
         })),(0,I.jsx)("div",{
-          children:(0,I.jsx)(p,{
-            theme:p.themes.secondary,onClick:a.onClick,size:"small",className:ee,disabled:o,children:(0,I.jsx)(i,{
+          children:(0,I.jsx)(j,{
+            theme:j.themes.secondary,onClick:a.onClick,size:"small",className:ee,disabled:o,children:(0,I.jsx)(r,{
               text:_
             })
           })
@@ -141,7 +141,7 @@ te=x(function(){
     })
   })
 });
-v(),t((0,I.jsx)(n,{
+n(),t((0,I.jsx)(i,{
   children:(0,I.jsx)(P,{
     mode:"real",mocks:D,children:(0,I.jsx)(te,{})
   })

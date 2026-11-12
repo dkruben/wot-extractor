@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  $t as s,Bi as a,Gt as r,H as t,Kr as o,Ri as n,U as i,Va as l,W as c,_r as d,bi as m,fo as _,gi as u,h as v,l as f,or as b,u as g,uo as p,ur as x,wn as j,wr as N,xa as h,xi as S,yo as w
+  $t as s,Bi as a,E as r,Gt as t,H as o,Kr as n,Ri as i,T as c,U as l,Va as d,W as m,_r as _,bi as u,fo as v,gi as f,or as b,uo as g,ur as p,w as x,wn as j,wr as N,xa as h,xi as S,yo as w
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
@@ -24,7 +24,7 @@ import{
   t as y
 }
 from"../chunks/custom_reward.js";
-var[z,T]=x()(({
+var[T,z]=p()(({
   observableModel:e
 })=>({
   ...e.primitives(["frontlineState","countdownSeconds","level","isMaxLevel","currentPoints","neededPoints","amountRewardsToClaim","areRewardsJustEarned"]),tiersSections:e.arrayClone("tiersSections")
@@ -32,39 +32,39 @@ var[z,T]=x()(({
   externalModel:e
 })=>({
   claimRewards:e.createCallbackNoArgs("onClaimRewards"),close:e.createCallbackNoArgs("onClose")
-})),I=e(_(),1),E="Glow_fb7467e0",M="Glow_sparksBgFx_d40a78ff",O="Glow_base__appearing_a44066b8",$="Glow_sparksBg_80ab367d",A="Glow_video_8a929657",G="Glow_base__visible_a44066b8",F=S(),V=w.resolve("videos");
+})),I=e(v(),1),E="Glow_fb7467e0",M="Glow_sparksBgFx_d40a78ff",O="Glow_base__appearing_a44066b8",$="Glow_sparksBg_80ab367d",A="Glow_video_8a929657",G="Glow_base__visible_a44066b8",F=S(),V=w.resolve("videos");
 function W({
   isAppearing:e,className:s
 }){
   return(0,F.jsxs)("div",{
-    className:p(E,e?O:G,s),children:[(0,F.jsx)("div",{
+    className:g(E,e?O:G,s),children:[(0,F.jsx)("div",{
       className:M
     }),(0,F.jsx)("div",{
       className:$
-    }),(0,F.jsx)(i,{
+    }),(0,F.jsx)(l,{
       className:A,src:V.readOrEmpty("flProgressionScreen.sparks_orange"),loop:!0,autoplay:!0
     })]
   })
 }
 var J="ClaimRewardButton_6a9b8fa0",H="ClaimRewardButton_glow_433d746e",K="ClaimRewardButton_container_741d3600",U="ClaimRewardButton_base__appearing_a2ccee13",q="ClaimRewardButton_base__visible_a2ccee13",D="ClaimRewardButton_button_7e382552",Q="ClaimRewardButton_bubble_66a9d9b0",X="ClaimRewardButton_valueContainer_937dcb63",Y=w.resolve("strings");
 function Z({
-  amount:e,isAppearing:a,size:r,onClick:t
+  amount:e,isAppearing:a,size:t,onClick:o
 }){
-  const o=N({
+  const n=N({
     body:Y.readOrEmpty("fl_progression_screen.claimRewardsTooltip")
-  }),n=d();
+  }),i=_();
   return(0,I.useEffect)(()=>{
-    a&&n.play("progression_rewards_appearing")
-  },[a,n]),(0,F.jsxs)("div",{
-    className:p(J,a?U:q),children:[(0,F.jsx)(W,{
+    a&&i.play("progression_rewards_appearing")
+  },[a,i]),(0,F.jsxs)("div",{
+    className:g(J,a?U:q),children:[(0,F.jsx)(W,{
       isAppearing:a,className:H
     }),(0,F.jsxs)("div",{
       className:K,children:[(0,F.jsx)(s,{
-        ...o,theme:s.themes.primary,size:r,className:D,onClick:t,children:Y.readOrEmpty("fl_progression_screen.claimRewards")
+        ...n,theme:s.themes.primary,size:t,className:D,onClick:o,children:Y.readOrEmpty("fl_progression_screen.claimRewards")
       }),(0,F.jsx)("div",{
-        className:Q,children:(0,F.jsx)(f.Root,{
-          children:(0,F.jsx)(f.Value,{
-            value:e,size:g.medium,classNames:{
+        className:Q,children:(0,F.jsx)(c.Root,{
+          children:(0,F.jsx)(c.Value,{
+            value:e,size:r.medium,classNames:{
               valueContainer:X
             }
           })
@@ -73,12 +73,12 @@ function Z({
     })]
   })
 }
-var ee="LevelInformation_9271d1b9",se="LevelInformation_glow_6d32019",ae="LevelInformation_labelContainer_e9afd167",re="LevelInformation_eventState_b7f5b33e",te="LevelInformation_timerLabel_bfb2cd22",oe="LevelInformation_timerIcon_9d27acc0",ne="LevelInformation_maxLevelContainer_9271d1b9",ie="LevelInformation_maxLevelReachedMessage_c2d7a634",le="LevelInformation_currentPoints_6c13d58c",ce="LevelInformation_separator_b7f5b33e",de="LevelInformation_needPoints_e8a11fbf",me="LevelInformation_upIcon_efa7dc88",_e=w.resolve("strings"),ue=w.resolve("intl");
+var ee="LevelInformation_9271d1b9",se="LevelInformation_glow_6d32019",ae="LevelInformation_labelContainer_e9afd167",re="LevelInformation_eventState_b7f5b33e",te="LevelInformation_timerLabel_bfb2cd22",oe="LevelInformation_timerIcon_9d27acc0",ne="LevelInformation_maxLevelContainer_9271d1b9",ie="LevelInformation_maxLevelReachedMessage_c2d7a634",ce="LevelInformation_currentPoints_6c13d58c",le="LevelInformation_separator_b7f5b33e",de="LevelInformation_needPoints_e8a11fbf",me="LevelInformation_upIcon_efa7dc88",_e=w.resolve("strings"),ue=w.resolve("intl");
 function ve({
   level:e,isMaxLevel:s,currentPoints:a,needPoints:r,className:t,badgeSize:o,frontlineState:n,countdownSeconds:i
 }){
   return(0,F.jsxs)("div",{
-    className:p(ee,t),children:[(0,F.jsx)(R,{
+    className:g(ee,t),children:[(0,F.jsx)(R,{
       level:e,size:o,showAnimation:s
     }),"finished"===n?(0,F.jsx)("div",{
       className:ae,children:(0,F.jsx)(j,{
@@ -93,7 +93,7 @@ function ve({
     }):(0,F.jsx)("div",{
       className:ae,children:"announce"===n?(0,F.jsx)(j,{
         text:_e.readOrEmpty("fl_progression_screen.eventStarts"),className:re,params:{
-          left:(0,F.jsx)(c,{
+          left:(0,F.jsx)(m,{
             classNames:{
               icon:oe,label:te
             },
@@ -102,9 +102,9 @@ function ve({
         }
       }):(0,F.jsxs)(F.Fragment,{
         children:[(0,F.jsx)("div",{
-          className:le,children:ue.formatNumber("integral",a)
+          className:ce,children:ue.formatNumber("integral",a)
         }),(0,F.jsx)("div",{
-          className:ce,children:_e.readOrEmpty("common.common.slash")
+          className:le,children:_e.readOrEmpty("common.common.slash")
         }),(0,F.jsx)("div",{
           className:de,children:ue.formatNumber("gold",r)
         }),(0,F.jsx)("div",{
@@ -119,7 +119,7 @@ var fe="LevelBlock_4febf6d6",be="LevelBlock_level_d685b90a",ge=k(function({
 }){
   const{
     model:a,controls:r
-  }=T(),t=a.frontlineState.get(),o=a.amountRewardsToClaim.get(),n=u({
+  }=z(),t=a.frontlineState.get(),o=a.amountRewardsToClaim.get(),n=f({
     buttonSize:s.sizes.small,badgeSize:P.x130
   },{
     large:{
@@ -127,7 +127,7 @@ var fe="LevelBlock_4febf6d6",be="LevelBlock_level_d685b90a",ge=k(function({
     }
   });
   return(0,F.jsxs)("div",{
-    className:p(fe,e),children:[(0,F.jsx)(ve,{
+    className:g(fe,e),children:[(0,F.jsx)(ve,{
       level:"announce"===t?0:a.level.get(),isMaxLevel:a.isMaxLevel.get(),currentPoints:a.currentPoints.get(),frontlineState:t,countdownSeconds:a.countdownSeconds.get(),needPoints:a.neededPoints.get(),className:be,badgeSize:n.badgeSize
     }),o>0&&(0,F.jsx)(Z,{
       amount:o,size:n.buttonSize,onClick:r.claimRewards,isAppearing:a.areRewardsJustEarned.get()
@@ -138,31 +138,31 @@ var fe="LevelBlock_4febf6d6",be="LevelBlock_level_d685b90a",ge=k(function({
 }){
   const{
     model:s
-  }=T(),r=s.level.get(),o=s.tiersSections.get(),i=s.currentPoints.get(),c=s.neededPoints.get(),d=(0,I.useMemo)(()=>{
-    const e=100/o.length;
+  }=z(),r=s.level.get(),t=s.tiersSections.get(),n=s.currentPoints.get(),c=s.neededPoints.get(),l=(0,I.useMemo)(()=>{
+    const e=100/t.length;
     let s=0;
     const a=[0];
-    return o.map(s=>{
+    return t.map(s=>{
       if(s.start===s.end)a.push(e);
       else{
         const r=s.end-s.start+1;
-        n(r,()=>a.push(e/r))
+        i(r,()=>a.push(e/r))
       }
-    }),n(r,e=>{
-      s+=a[e]||0,e===r-1&&a.length>e+1&&(s+=(a[e+1]||0)*i/c)
+    }),i(r,e=>{
+      s+=a[e]||0,e===r-1&&a.length>e+1&&(s+=(a[e+1]||0)*n/c)
     }),s
-  },[o,r,i,c]),[_,u]=(0,I.useState)(0),v=(0,I.useRef)(null),{
+  },[t,r,n,c]),[m,_]=(0,I.useState)(0),v=(0,I.useRef)(null),{
     breakpoint:f
-  }=m();
+  }=u();
   return(0,I.useEffect)(()=>{
     a(()=>{
       const e=v.current;
-      e&&u(Math.round(l(e.offsetWidth)*d/100)-2)
+      e&&_(Math.round(d(e.offsetWidth)*l/100)-2)
     })
-  },[v,d,f]),(0,F.jsx)("div",{
-    className:p(pe,e),children:(0,F.jsxs)("div",{
-      className:xe,ref:v,children:[(0,F.jsx)(t,{
-        value:d,maxValue:100,classNames:{
+  },[v,l,f]),(0,F.jsx)("div",{
+    className:g(pe,e),children:(0,F.jsxs)("div",{
+      className:xe,ref:v,children:[(0,F.jsx)(o,{
+        value:l,maxValue:100,classNames:{
           background:je
         },
         filledClassNames:{
@@ -170,7 +170,7 @@ var fe="LevelBlock_4febf6d6",be="LevelBlock_level_d685b90a",ge=k(function({
         }
       }),(0,F.jsx)("div",{
         className:Se,style:{
-          left:`${_}rem`
+          left:`${m}rem`
         }
       }),s.isMaxLevel.get()&&(0,F.jsx)("div",{
         className:he
@@ -184,17 +184,17 @@ function Be({
   state:e,className:s
 }){
   return(0,F.jsxs)("div",{
-    className:p(ke.base,ke[`base__${e}`],s),children:[e===Ue.Completed&&(0,F.jsxs)("div",{
+    className:g(ke.base,ke[`base__${e}`],s),children:[e===Ue.Completed&&(0,F.jsxs)("div",{
       className:ke.layer,children:[(0,F.jsx)("div",{
-        className:p(ke.top,ke.top__black)
+        className:g(ke.top,ke.top__black)
       }),(0,F.jsx)("div",{
-        className:p(ke.bottom,ke.bottom__black)
+        className:g(ke.bottom,ke.bottom__black)
       })]
     }),(0,F.jsxs)("div",{
       className:ke.layer,children:[(0,F.jsx)("div",{
-        className:p(ke.top,ke.top__white)
+        className:g(ke.top,ke.top__white)
       }),(0,F.jsx)("div",{
-        className:p(ke.bottom,ke.bottom__white)
+        className:g(ke.bottom,ke.bottom__white)
       })]
     })]
   })
@@ -204,32 +204,32 @@ function Re({
   className:e
 }){
   return(0,F.jsxs)("div",{
-    className:p(Ce,e),children:[(0,F.jsx)("div",{
+    className:g(Ce,e),children:[(0,F.jsx)("div",{
       className:Pe
     }),(0,F.jsx)("div",{
       className:Le
     })]
   })
 }
-var ye="TiersSeparators_be26eda0",ze="TiersSeparators_container_879f1c8",Te="TiersSeparators_top_dd3750ab",Ie="TiersSeparators_bottom_9f4aa714";
+var ye="TiersSeparators_be26eda0",Te="TiersSeparators_container_879f1c8",ze="TiersSeparators_top_dd3750ab",Ie="TiersSeparators_bottom_9f4aa714";
 function Ee({
   amount:e,className:s
 }){
   const[r,t]=(0,I.useState)(0),o=(0,I.useRef)(null),{
-    breakpoint:i
-  }=m();
+    breakpoint:n
+  }=u();
   return(0,I.useEffect)(()=>{
     a(()=>{
       const s=o.current;
-      s&&t(Math.floor(l(s.offsetWidth)/(e+1))-2)
+      s&&t(Math.floor(d(s.offsetWidth)/(e+1))-2)
     })
-  },[o,e,i]),(0,F.jsx)("div",{
-    className:p(ye,s),ref:o,children:n(e,e=>(0,F.jsxs)("div",{
-      className:ze,style:{
+  },[o,e,n]),(0,F.jsx)("div",{
+    className:g(ye,s),ref:o,children:i(e,e=>(0,F.jsxs)("div",{
+      className:Te,style:{
         marginLeft:`${r}rem`
       },
       children:[(0,F.jsx)("div",{
-        className:Te
+        className:ze
       }),(0,F.jsx)("div",{
         className:Ie
       })]
@@ -242,21 +242,21 @@ var Me="TiersSection_b122bb9f",Oe="TiersSection_background_ddc4d980",$e="TiersSe
 function qe({
   start:e,end:s,rewards:a,currentLevel:r,withSeparator:t=!1,frontlineState:o
 }){
-  const n=e!==s,i=n?`${e}-${s}`:e,l=(0,I.useMemo)(()=>r<e-1?"locked":r>=s?"completed":"inProgress",[r,e,s]),c="locked"===l,d=o===C,m=u({
-    rewardSize:v.Small
+  const n=e!==s,i=n?`${e}-${s}`:e,c=(0,I.useMemo)(()=>r<e-1?"locked":r>=s?"completed":"inProgress",[r,e,s]),l="locked"===c,d=o===C,m=f({
+    rewardSize:x.Small
   },{
     medium:{
-      rewardSize:v.Big
+      rewardSize:x.Big
     }
   });
   return(0,F.jsxs)("div",{
-    className:Me,children:[!c&&!d&&(0,F.jsx)(Be,{
-      className:Oe,state:l
+    className:Me,children:[!l&&!d&&(0,F.jsx)(Be,{
+      className:Oe,state:c
     }),(0,F.jsxs)("div",{
-      className:We,children:["completed"===l&&(0,F.jsx)("div",{
+      className:We,children:["completed"===c&&(0,F.jsx)("div",{
         className:$e
       }),(0,F.jsxs)("div",{
-        className:p(Ge,(c||d)&&Fe),children:["inProgress"===l&&!d&&(0,F.jsx)("div",{
+        className:g(Ge,(l||d)&&Fe),children:["inProgress"===c&&!d&&(0,F.jsx)("div",{
           className:Ae
         }),i]
       }),n&&(0,F.jsx)(Ee,{
@@ -278,9 +278,9 @@ var De="ProgressBlock_22f7d395",Qe="ProgressBlock_progressBar_7da7bc49",Xe=k(fun
 }){
   const{
     model:s
-  }=T(),a=s.level.get(),r=s.tiersSections.get();
+  }=z(),a=s.level.get(),r=s.tiersSections.get();
   return(0,F.jsxs)("div",{
-    className:p(De,e),children:[h(r,(e,r)=>(0,F.jsx)(I.Fragment,{
+    className:g(De,e),children:[h(r,(e,r)=>(0,F.jsx)(I.Fragment,{
       children:(0,F.jsx)(qe,{
         ...e,currentLevel:a,withSeparator:r>0,frontlineState:s.frontlineState.get()
       })
@@ -291,8 +291,8 @@ var De="ProgressBlock_22f7d395",Qe="ProgressBlock_progressBar_7da7bc49",Xe=k(fun
 }),Ye="ProgressionScreen_64dc73b7",Ze="ProgressionScreen_content_8178663f",es="ProgressionScreen_levelBlock_5336bf8c",ss="ProgressionScreen_progressBlock_241efddb",as=k(()=>{
   const{
     controls:e
-  }=T();
-  return o(e.close),(0,F.jsx)("div",{
+  }=z();
+  return n(e.close),(0,F.jsx)("div",{
     className:Ye,children:(0,F.jsxs)("div",{
       className:Ze,children:[(0,F.jsx)(ge,{
         className:es
@@ -302,8 +302,8 @@ var De="ProgressBlock_22f7d395",Qe="ProgressBlock_progressBar_7da7bc49",Xe=k(fun
     })
   })
 });
-b((0,F.jsx)(r,{
-  soundsOverrides:L,children:(0,F.jsx)(z,{
+b((0,F.jsx)(t,{
+  soundsOverrides:L,children:(0,F.jsx)(T,{
     children:(0,F.jsx)(as,{})
   })
 }),{

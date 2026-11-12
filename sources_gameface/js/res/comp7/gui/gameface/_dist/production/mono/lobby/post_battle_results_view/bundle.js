@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  $a as a,$o as t,$r as s,Ai as r,C as n,Co as i,Cs as l,Da as o,Es as c,Fa as d,Fn as m,Gi as u,Gr as _,H as f,Hi as p,Ho as b,Hr as h,Io as v,Ji as g,Jo as y,Kr as x,La as N,Li as j,Ma as I,Mi as w,Mn as A,Mr as C,Na as B,Ni as S,Nn as P,Oa as k,Oo as T,Ot as E,Pi as H,Pt as D,Qa as O,Qi as V,Qn as z,Qo as W,Ra as M,Ri as G,Rn as $,Rr as L,Rt as U,Si as X,Ta as F,Ti as K,Ts as q,Ua as Q,V as Y,Va as Z,W as J,Wr as ee,Xr as ae,Yi as te,Yr as se,Zi as re,Zn as ne,Zo as ie,Zt as le,_ as oe,_a as ce,_i as de,a as me,ai as ue,ar as _e,bi as fe,bs as pe,c as be,ca as he,ci as ve,cr as ge,d as ye,di as xe,ea as Ne,ei as je,f as Ie,fi as we,g as Ae,gn as Ce,h as Be,ha as Se,hi as Pe,ho as Re,ht as ke,i as Te,ii as Ee,io as He,ir as De,ji as Oe,jn as Ve,jo as ze,ki as We,kr as Me,l as Ge,lr as $e,m as Le,mo as Ue,mt as Xe,nn as Fe,no as Ke,ns as qe,o as Qe,os as Ye,p as Ze,pi as Je,qi as ea,qn as aa,qo as ta,qr as sa,r as ra,ra as na,rr as ia,s as la,si as oa,ti as ca,tn as da,to as ma,u as ua,ua as _a,ui as fa,v as pa,vr as ba,w as ha,wr as va,ws as ga,xo as ya,xs as xa,y as Na,ya as ja,yn as Ia,yo as wa,zi as Aa,zo as Ca,zt as Ba
+  $a as a,$o as t,$r as s,Ai as r,C as n,Co as i,Cs as l,Da as o,Es as c,Fa as d,Fn as m,Gi as u,Gr as _,H as f,Hi as p,Ho as b,Hr as h,Io as v,Ji as g,Jo as y,Kr as x,La as N,Li as j,Ma as I,Mi as w,Mn as A,Mr as C,Na as B,Ni as S,Nn as P,Oa as k,Oo as T,Ot as E,Pi as H,Pt as D,Qa as O,Qi as V,Qn as z,Qo as W,Ra as M,Ri as G,Rn as $,Rr as L,Rt as U,S as X,Si as F,Ta as K,Ti as q,Ts as Q,Ua as Y,V as Z,Va as J,W as ee,Wr as ae,Xr as te,Yi as se,Yr as re,Zi as ne,Zn as ie,Zo as le,Zt as oe,_ as ce,_a as de,_i as me,ai as ue,ar as _e,b as fe,bi as pe,bs as be,c as he,ca as ve,ci as ge,cr as ye,d as xe,di as Ne,ea as je,ei as Ie,f as we,fi as Ae,g as Ce,gn as Be,h as Se,ha as Pe,hi as Re,ho as ke,ht as Te,ii as Ee,io as He,ir as De,ji as Oe,jn as Ve,jo as ze,ki as We,kr as Me,l as Ge,lr as $e,m as Le,mo as Ue,mt as Xe,nn as Fe,no as Ke,ns as qe,o as Qe,os as Ye,p as Ze,pi as Je,qi as ea,qn as aa,qo as ta,qr as sa,ra,rr as na,s as ia,si as la,ti as oa,tn as ca,to as da,u as ma,ua,ui as _a,v as fa,vr as pa,w as ba,wr as ha,ws as va,x as ga,xo as ya,xs as xa,y as Na,ya as ja,yn as Ia,yo as wa,zi as Aa,zo as Ca,zt as Ba
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
@@ -13,7 +13,7 @@ import{
 }
 from"../chunks/common.js";
 import{
-  a as Fa,i as Ka,n as qa
+  a as Fa,i as Ka,r as qa
 }
 from"../chunks/vendor.js";
 /* empty css               */import{
@@ -48,11 +48,11 @@ var ot=e(l()),ct="BattleInfo_6333ab61",dt="BattleInfo_group_161b6f97",mt="Battle
   className:e,finishReasonKey:a,status:t,modeName:s,arenaType:r,...n
 })=>{
   const i=`battle_results.finish.reason.c_${a}${yt.includes(a)?t:""}`,l=gt.includes(r)?`arenas.type.${s}.name`:`menu.loading.battleTypes.c_${r}`;
-  return(0,vt.jsx)(ge,{
+  return(0,vt.jsx)(ye,{
     ...n,upgradeLegacy:!0,path:"battle_results.common.arena.fullName",params:{
-      0:(0,vt.jsx)(ge,{
+      0:(0,vt.jsx)(ye,{
         path:l
-      }),1:(0,vt.jsx)(ge,{
+      }),1:(0,vt.jsx)(ye,{
         path:i
       })
     },
@@ -68,7 +68,7 @@ var jt=(0,ot.forwardRef)(function(e,a){
 jt.Arena=function({
   arenaName:e,className:a,...t
 }){
-  return(0,vt.jsx)(ge,{
+  return(0,vt.jsx)(ye,{
     className:xa(dt,a),path:"battle_results.common.arena.nameAndMode",params:{
       0:e,1:(0,vt.jsx)(xt,{
         ...t
@@ -78,16 +78,16 @@ jt.Arena=function({
 },
 jt.StartTime=({
   startTime:e,className:a,...t
-})=>(0,vt.jsx)(ge,{
+})=>(0,vt.jsx)(ye,{
   ...t,className:xa(dt,a),path:"battle_results.common.startTime",params:{
-    0:ga.formatDateTime(q.ShortDate,e),1:ga.formatDateTime(q.ShortTime,e)
+    0:va.formatDateTime(Q.ShortDate,e),1:va.formatDateTime(Q.ShortTime,e)
   }
 }),jt.Player=function({
-  className:e,vehicleLevel:a,vehicleType:t,vehicleName:s,userName:r,clan:n,teamKiller:i,vehicleTypeSize:l=Ce.sizes.x24x24,classNames:o,...c
+  className:e,vehicleLevel:a,vehicleType:t,vehicleName:s,userName:r,clan:n,teamKiller:i,vehicleTypeSize:l=Be.sizes.x24x24,classNames:o,...c
 }){
-  return(0,vt.jsx)(ge,{
+  return(0,vt.jsx)(ye,{
     ...c,upgradeLegacy:!0,className:xa(dt,i&&ut,e),path:"battle_results.common.arena.fullName",params:{
-      0:n?(0,vt.jsx)(ge,{
+      0:n?(0,vt.jsx)(ye,{
         className:_t,path:"battle_results.common.player.nameWithClan",params:{
           name:r,clan:n
         }
@@ -96,7 +96,7 @@ jt.StartTime=({
       }),1:(0,vt.jsxs)("div",{
         className:xa(ft,o?.vehicleName),children:[(0,vt.jsx)(Ia,{
           value:a,className:xa(mt,o?.vehicleLevel)
-        }),(0,vt.jsx)(Ce,{
+        }),(0,vt.jsx)(Be,{
           className:o?.vehicleType,type:t,size:l
         }),s]
       })
@@ -117,9 +117,9 @@ jt.PlayerStatus=function({
     return Boolean(Nt.read(`battle_results.common.vehicleState.${e}_with_killername`))
   }(n)){
     const a=t.anonymizer?t.fakeUsername:t.username;
-    return(0,vt.jsx)(ge,{
+    return(0,vt.jsx)(ye,{
       ...r,className:xa(dt,t.teamKiller&&ut,e),path:`battle_results.common.vehicleState.${n}_with_killername`,params:{
-        killername:t.clanAbbreviation?(0,vt.jsx)(ge,{
+        killername:t.clanAbbreviation?(0,vt.jsx)(ye,{
           className:_t,path:"battle_results.common.player.nameWithClan",params:{
             name:a,clan:t.clanAbbreviation
           }
@@ -129,7 +129,7 @@ jt.PlayerStatus=function({
       }
     })
   }
-  return(0,vt.jsx)(ge,{
+  return(0,vt.jsx)(ye,{
     ...r,className:xa(dt,e),path:`battle_results.common.vehicleState.${n}`
   })
 },
@@ -147,7 +147,7 @@ jt.CommendationScore=function({
     })]
   }):null
 };
-var It="AnimatedValue_d9f4b2f0",wt="AnimatedValue_animatedValue_4c490d83",At=pe.cubicBezier(.33,0,.25,1);
+var It="AnimatedValue_d9f4b2f0",wt="AnimatedValue_animatedValue_4c490d83",At=be.cubicBezier(.33,0,.25,1);
 function Ct(e){
   return{
     enterElements:document.querySelectorAll(`.js-animated-value-${e}-enter`),leftElements:document.querySelectorAll(`.js-animated-value-${e}-leave`)
@@ -225,14 +225,14 @@ function kt(){
 var Tt={
   valueContainer:"Bubble_valueContainer_8b7ced74",valueContainer__medium:"Bubble_valueContainer__medium_a9175d93",value:"Bubble_value_5eacd6f5",value__medium:"Bubble_value__medium_3232d6e8",fadeIn:"Bubble_fadeIn_fdf0621f",fadeInThreeQuarters:"Bubble_fadeInThreeQuarters_fdf0621f",fadeInHalf:"Bubble_fadeInHalf_fdf0621f",fadeOut:"Bubble_fadeOut_fdf0621f",fadeInWithScale:"Bubble_fadeInWithScale_fdf0621f",slideUp:"Bubble_slideUp_fdf0621f",scale:"Bubble_scale_fdf0621f",raysAppearance:"Bubble_raysAppearance_fdf0621f",rotate:"Bubble_rotate_fdf0621f","reverse-rotate":"Bubble_reverse-rotate_fdf0621f",glowAppearance:"Bubble_glowAppearance_fdf0621f",highlightAppearance:"Bubble_highlightAppearance_fdf0621f",blink:"Bubble_blink_fdf0621f",slideUpIn:"Bubble_slideUpIn_fdf0621f"
 },
-Et=pe.cubicBezier(.75,0,.67,1),Ht=pe.cubicBezier(.33,0,.25,1);
+Et=be.cubicBezier(.75,0,.67,1),Ht=be.cubicBezier(.33,0,.25,1);
 function Dt(e,a){
   return"number"==typeof e?function(e,a){
-    return e>a?(0,vt.jsx)(ge,{
+    return e>a?(0,vt.jsx)(ye,{
       path:"common.valuePlus",params:{
-        value:ga.formatNumber("integral",a)
+        value:va.formatNumber("integral",a)
       }
-    }):ga.formatNumber("integral",e)
+    }):va.formatNumber("integral",e)
   }(e,a):e
 }
 var Ot=(0,ot.memo)(function({
@@ -240,11 +240,11 @@ var Ot=(0,ot.memo)(function({
 }){
   const{
     state:i,items:l
-  }=kt(),c=K(),d=i.value===St.progress||i.value===St.waiting&&!1===i.read,m=o({
-    value:ha.small
+  }=kt(),c=q(),d=i.value===St.progress||i.value===St.waiting&&!1===i.read,m=o({
+    value:ba.small
   },{
     medium:{
-      value:ha.medium
+      value:ba.medium
     }
   }),u=(0,ot.useMemo)(()=>({
     ...r?.rootTransition,initial:{
@@ -305,7 +305,7 @@ var Ot=(0,ot.memo)(function({
       })
     })
   })
-}),Vt="Items_9477a756",zt="Items_animatedValue_c7d2e119",Wt="Items_plug_a7a8cadf",Mt=pe.cubicBezier(.75,0,.67,1),Gt=pe.cubicBezier(.1,0,.9,1),$t=pe.cubicBezier(.33,0,.25,1),Lt=ve("NotificationItem",Vt),Ut=(0,ot.memo)(function({
+}),Vt="Items_9477a756",zt="Items_animatedValue_c7d2e119",Wt="Items_plug_a7a8cadf",Mt=be.cubicBezier(.75,0,.67,1),Gt=be.cubicBezier(.1,0,.9,1),$t=be.cubicBezier(.33,0,.25,1),Lt=ge("NotificationItem",Vt),Ut=(0,ot.memo)(function({
   transition:e,...a
 }){
   const{
@@ -348,7 +348,7 @@ var Ot=(0,ot.memo)(function({
     })),r=(0,ot.useMemo)(()=>e.some(({
       id:e
     })=>!1===t.shownNotifications.has(e)),[e,t.shownNotifications]);
-    _a(()=>{
+    ua(()=>{
       s(a=>{
         const t=e.find(({
           id:e
@@ -399,7 +399,7 @@ var Ot=(0,ot.memo)(function({
 Ft={
   initial:"initial",navigation:"navigation",battleStatus:"battleStatus",progressBarDelta:"progressBarDelta",first:"first",second:"second",third:"third",fourth:"fourth",fifth:"fifth",sixth:"sixth",immediate:"immediate"
 },
-Kt=pe.cubicBezier(.33,0,.25,1),qt=(0,ot.createContext)(null);
+Kt=be.cubicBezier(.33,0,.25,1),qt=(0,ot.createContext)(null);
 function Qt(){
   const e=(0,ot.useContext)(qt);
   if(null===e)throw new Error("You can use the animation context hooks only with the AnimationProvider component");
@@ -408,9 +408,9 @@ function Qt(){
 function Yt({
   children:e,hasProgressAnimation:a
 }){
-  const[t,s]=(0,ot.useState)(Ft.initial),[r,n]=(0,ot.useState)(new Set),[i,l]=(0,ot.useState)(!1),[o,c]=(0,ot.useState)(!1),d=j(),m=K(),{
+  const[t,s]=(0,ot.useState)(Ft.initial),[r,n]=(0,ot.useState)(new Set),[i,l]=(0,ot.useState)(!1),[o,c]=(0,ot.useState)(!1),d=j(),m=q(),{
     active:u
-  }=J(),_=te(),f=te(),p=te(),b=te(),h=te(),v=te(),g=te(),y=te(),x=te(),N=(0,ot.useCallback)(function(e){
+  }=ee(),_=se(),f=se(),p=se(),b=se(),h=se(),v=se(),g=se(),y=se(),x=se(),N=(0,ot.useCallback)(function(e){
     s(e)
   },[s]);
   (0,ot.useEffect)(()=>{
@@ -524,11 +524,11 @@ var Zt="BattleInfo_group_161b6f97",Jt=[1,19],es=({
   className:e,finishReasonKey:a,status:t,modeName:s,arenaType:r,...n
 })=>{
   const i=`battle_results.finish.reason.c_${a}${t}`,l=Jt.includes(r)?`arenas.type.${s}.name`:`menu.loading.battleTypes.c_${r}`;
-  return(0,vt.jsx)(ge,{
+  return(0,vt.jsx)(ye,{
     ...n,upgradeLegacy:!0,path:"battle_results.common.arena.fullName",params:{
-      0:(0,vt.jsx)(ge,{
+      0:(0,vt.jsx)(ye,{
         path:l
-      }),1:(0,vt.jsx)(ge,{
+      }),1:(0,vt.jsx)(ye,{
         path:i
       })
     },
@@ -538,7 +538,7 @@ var Zt="BattleInfo_group_161b6f97",Jt=[1,19],es=({
 function as({
   arenaName:e,className:a,...t
 }){
-  return(0,vt.jsx)(ge,{
+  return(0,vt.jsx)(ye,{
     className:xa(Zt,a),path:"battle_results.common.arena.nameAndMode",params:{
       0:e,1:(0,vt.jsx)(es,{
         ...t
@@ -551,19 +551,19 @@ function ss({
   classNames:e
 }){
   return(0,vt.jsx)("div",{
-    className:xa(ts,e?.base),children:(0,vt.jsx)(ia,{
+    className:xa(ts,e?.base),children:(0,vt.jsx)(na,{
       className:e?.image,width:"100%",height:"100%",path:"post_battle.row_divider",fit:"cover"
     })
   })
 }
-var rs="Header_content_b9e0be90",ns="Header_title_91e5448a",is="Header_divider_eb019c6",ls="Header_dividerImage_19f6e11",os=ve("Header","Header_70aa1da5"),cs=(0,ot.forwardRef)(({
+var rs="Header_content_b9e0be90",ns="Header_title_91e5448a",is="Header_divider_eb019c6",ls="Header_dividerImage_19f6e11",os=ge("Header","Header_70aa1da5"),cs=(0,ot.forwardRef)(({
   title:e,children:a,classNames:t,...s
 },r)=>{
   const n=c.resolve("strings");
   return(0,vt.jsxs)(os,{
     ...s,ref:r,children:[(0,vt.jsxs)("div",{
       className:xa(rs,t?.content),children:[(0,vt.jsx)("div",{
-        className:xa(ns,t?.title),children:ga.toUpperCase(n.readOrEmpty(e))
+        className:xa(ns,t?.title),children:va.toUpperCase(n.readOrEmpty(e))
       }),a]
     }),(0,vt.jsx)(ss,{
       classNames:{
@@ -590,7 +590,7 @@ var rs="Header_content_b9e0be90",ns="Header_title_91e5448a",is="Header_divider_e
     }
   },[e]),a
 },
-us="IncomeStatement_c4136bc5",_s="IncomeStatement_verticalBar_5fb90511",fs="IncomeStatement_scrollWrapper_ce2dde41",ps="IncomeStatement_scrollContent_31153602",bs="IncomeStatement_scrollContent__initialized_ce1144d0",hs=ve("CreditsIncomeStatement"),vs=({
+us="IncomeStatement_c4136bc5",_s="IncomeStatement_verticalBar_5fb90511",fs="IncomeStatement_scrollWrapper_ce2dde41",ps="IncomeStatement_scrollContent_31153602",bs="IncomeStatement_scrollContent__initialized_ce1144d0",hs=ge("CreditsIncomeStatement"),vs=({
   children:e
 })=>{
   const a=ms($().api);
@@ -798,7 +798,7 @@ function Nn({
     earned:a.earned,expenses:a.expenses,total:a.total
   }))
 }
-var jn=e=>e.wotPlusType!==Ea.None,[In,wn]=de()(({
+var jn=e=>e.wotPlusType!==Ea.None,[In,wn]=me()(({
   observableModel:e
 })=>{
   const a={
@@ -817,21 +817,21 @@ var jn=e=>e.wotPlusType!==Ea.None,[In,wn]=de()(({
       earned:e.arrayClone("financialReport.crystals.earned"),expenses:e.arrayClone("financialReport.crystals.expenses"),total:e.arrayClone("financialReport.crystals.total")
     }
   },
-  t=Pe.model(()=>xn({
+  t=Re.model(()=>xn({
     xp:{
       earned:a.xp.earned.get(),expenses:a.xp.expenses.get(),total:a.xp.total.get()
     },
     freeXp:{
       earned:a.xp.free.earned.get(),expenses:a.xp.free.expenses.get(),total:a.xp.free.total.get()
     }
-  })),s=Pe.model(()=>Nn({
+  })),s=Re.model(()=>Nn({
     credits:{
       earned:a.credits.earned.get(),expenses:a.credits.expenses.get(),total:a.credits.total.get()
     },
     gold:{
       earned:a.gold.earned.get(),expenses:a.gold.expenses.get(),total:a.gold.total.get()
     }
-  })),r=Pe.model(()=>function({
+  })),r=Re.model(()=>function({
     earned:e,expenses:a,total:t
   }){
     const s=un({
@@ -848,7 +848,7 @@ var jn=e=>e.wotPlusType!==Ea.None,[In,wn]=de()(({
       experience:t,credits:s,crystals:r
     }
   }
-},b),An="ListItem_received_ffdc3010",Cn="ListItem_separator_71797768",Bn="ListItem_label_4ab3c391",Sn="ListItem_label__withIcon_c2381aa",Pn="ListItem_labelIcon_acb0da4",Rn=ve("ListItem","ListItem_bcdaabbd"),kn=(0,ot.forwardRef)(({
+},b),An="ListItem_received_ffdc3010",Cn="ListItem_separator_71797768",Bn="ListItem_label_4ab3c391",Sn="ListItem_label__withIcon_c2381aa",Pn="ListItem_labelIcon_acb0da4",Rn=ge("ListItem","ListItem_bcdaabbd"),kn=(0,ot.forwardRef)(({
   labelKey:e,children:a,classNames:t,params:s,labelIconPath:r,...n
 },i)=>{
   const l=c.resolve("images");
@@ -859,7 +859,7 @@ var jn=e=>e.wotPlusType!==Ea.None,[In,wn]=de()(({
           backgroundImage:`url(${l.readOrEmpty(r)})`
         },
         className:xa(Pn,t?.icon)
-      }),(0,vt.jsx)(ge,{
+      }),(0,vt.jsx)(ye,{
         upgradeLegacy:!0,path:e,params:s
       })]
     }),(0,vt.jsxs)("div",{
@@ -875,18 +875,18 @@ var jn=e=>e.wotPlusType!==Ea.None,[In,wn]=de()(({
   const i=t===Gr||a<0;
   return(0,vt.jsxs)("div",{
     className:xa(Tn,r?.base),children:[(0,vt.jsxs)("div",{
-      className:xa(En,i&&Hn,r?.value),"data-test-id":`${s}`,children:[qa(t).with(Mr,()=>(0,vt.jsx)(ge,{
+      className:xa(En,i&&Hn,r?.value),"data-test-id":`${s}`,children:[qa(t).with(Mr,()=>(0,vt.jsx)(ye,{
         path:"common.multiplierSmall"
-      })).with(Wr,()=>(0,vt.jsx)(ge,{
+      })).with(Wr,()=>(0,vt.jsx)(ye,{
         path:"common.multiplierSmall"
-      })).with(Gr,()=>(0,vt.jsx)(ge,{
+      })).with(Gr,()=>(0,vt.jsx)(ye,{
         path:"common.multiplierSmall"
-      })).with(Lr,()=>(0,vt.jsx)(ge,{
+      })).with(Lr,()=>(0,vt.jsx)(ye,{
         path:"common.plus"
-      })).otherwise(()=>null),e(a,s),t===$r&&(0,vt.jsx)(ge,{
+      })).otherwise(()=>null),e(a,s),t===$r&&(0,vt.jsx)(ye,{
         path:"common.common.percent"
       })]
-    }),n&&(0,vt.jsx)(ia,{
+    }),n&&(0,vt.jsx)(na,{
       width:24,height:24,path:n
     })]
   })
@@ -911,9 +911,9 @@ var qn=({
 })=>{
   function o(a){
     switch(e){
-      case Ps:return ga.formatReal("woZeroDigits",a);
-      case Ar:return ga.formatReal("fractional",a);
-      default:return ga.formatNumber("integral",a)
+      case Ps:return va.formatReal("woZeroDigits",a);
+      case Ar:return va.formatReal("fractional",a);
+      default:return va.formatNumber("integral",a)
     }
   }
   return(0,vt.jsxs)("div",{
@@ -955,7 +955,7 @@ si={
   [Ea.None]:void 0,[Ea.Core]:ai,[Ea.Pro]:ti
 },
 ri=new Set([Ms,er,Gs,ar]),ni=()=>(0,vt.jsx)("span",{
-  className:Zn,children:(0,vt.jsx)(ge,{
+  className:Zn,children:(0,vt.jsx)(ye,{
     path:"battle_results.details.calculations.maximum"
   })
 }),ii=_e(({
@@ -1000,7 +1000,7 @@ ri=new Set([Ms,er,Gs,ar]),ni=()=>(0,vt.jsx)("span",{
       record:e,className:ci
     },e.paramName))
   })
-})),mi="Total_item_a8580361",ui="Total_divider_1de1ca28",_i="Total_dividerImage_ab06168d",fi=ve("ExperienceTotal","Total_19236d49"),pi=_e((0,ot.forwardRef)((e,a)=>{
+})),mi="Total_item_a8580361",ui="Total_divider_1de1ca28",_i="Total_dividerImage_ab06168d",fi=ge("ExperienceTotal","Total_19236d49"),pi=_e((0,ot.forwardRef)((e,a)=>{
   const{
     model:t
   }=wn(),s=t.computes.experience();
@@ -1013,7 +1013,7 @@ ri=new Set([Ms,er,Gs,ar]),ni=()=>(0,vt.jsx)("span",{
       record:e,className:mi,total:!0
     },e.paramName))]
   })
-})),bi="Experience_a014c8c",hi="Experience_base__scroll_f75d07c6",vi=ve("Experience"),gi=(0,ot.forwardRef)(({
+})),bi="Experience_a014c8c",hi="Experience_base__scroll_f75d07c6",vi=ge("Experience"),gi=(0,ot.forwardRef)(({
   scrollable:e,className:a,...t
 },s)=>(0,vt.jsx)(vi,{
   ...t,ref:s,className:xa(bi,e&&hi,a)
@@ -1028,15 +1028,15 @@ var yi="Header_cbd845ec",xi="Header_content_a63fb46c",Ni="Header_title_7b852a7",
   return(0,vt.jsx)(cs,{
     ...a,ref:t,className:xa(yi,e),title:"battle_results.details.credits",children:(0,vt.jsxs)("div",{
       className:xi,children:[(0,vt.jsx)("div",{
-        className:xa(Ni,!r&&ji),children:(0,vt.jsx)(ge,{
+        className:xa(Ni,!r&&ji),children:(0,vt.jsx)(ye,{
           path:"battle_results.common.details.noPremTitle"
         })
       }),(0,vt.jsxs)("div",{
         className:xa(Ni,r&&ji,Ii),children:[(0,vt.jsx)("div",{
-          className:wi,children:(0,vt.jsx)(ia,{
+          className:wi,children:(0,vt.jsx)(na,{
             width:32,height:32,path:"post_battle.wot_premium_32x32"
           })
-        }),(0,vt.jsx)(ge,{
+        }),(0,vt.jsx)(ye,{
           path:"battle_results.getPremiumPopover.prem"
         })]
       })]
@@ -1056,7 +1056,7 @@ var Vi=({
   credits:e,gold:a,modifier:t,inactive:s=!1,total:r,paramName:n,wotPlusActive:i
 })=>{
   function l(e,a){
-    return"aogasFactor"===n?ga.formatReal("fractional",e):ga.formatNumber("gold"===a?"gold":"integral",e)
+    return"aogasFactor"===n?va.formatReal("fractional",e):va.formatNumber("gold"===a?"gold":"integral",e)
   }
   return(0,vt.jsxs)("div",{
     className:xa(Ci,s&&Bi),children:[(0,vt.jsx)("div",{
@@ -1135,7 +1135,7 @@ Xi=[ur,_r],Fi=_e(({
       record:e,className:Qi
     },e.paramName))
   })
-})),Zi="Total_item_de53c8b0",Ji="Total_divider_1de1ca28",el="Total_dividerImage_ab06168d",al=ve("CreditsTotal","Total_19236d49"),tl=_e((0,ot.forwardRef)((e,a)=>{
+})),Zi="Total_item_de53c8b0",Ji="Total_divider_1de1ca28",el="Total_dividerImage_ab06168d",al=ge("CreditsTotal","Total_19236d49"),tl=_e((0,ot.forwardRef)((e,a)=>{
   const{
     model:t
   }=wn(),s=t.computes.credits();
@@ -1148,7 +1148,7 @@ Xi=[ur,_r],Fi=_e(({
       record:e,className:Zi,total:!0
     },e.paramName))]
   })
-})),sl="Credits_68f91d81",rl="Credits_base__scroll_759f08f3",nl=ve("Credits"),il=(0,ot.forwardRef)(({
+})),sl="Credits_68f91d81",rl="Credits_base__scroll_759f08f3",nl=ge("Credits"),il=(0,ot.forwardRef)(({
   scrollable:e,className:a,...t
 },s)=>(0,vt.jsx)(nl,{
   ...t,ref:s,className:xa(sl,e&&rl,a)
@@ -1167,14 +1167,14 @@ ul=({
     ...t,labelKey:ml[s],classNames:{
       label:dl,...t.classNames
     },
-    children:(0,vt.jsx)(le,{
-      reverse:!0,type:"crystal",size:da.small,children:(0,vt.jsx)("div",{
-        className:xa(ll,r<0&&cl,a&&ol),children:ga.formatNumber("integral",r)
+    children:(0,vt.jsx)(oe,{
+      reverse:!0,type:"crystal",size:ca.small,children:(0,vt.jsx)("div",{
+        className:xa(ll,r<0&&cl,a&&ol),children:va.formatNumber("integral",r)
       })
     })
   }):(console.error(`Parameter name "${s} is not valid for bonds`),null)
 },
-_l="IncomeStatement_item_48b34a63",fl=ve("BondsIncomeStatement"),pl=_e((0,ot.forwardRef)((e,a)=>{
+_l="IncomeStatement_item_48b34a63",fl=ge("BondsIncomeStatement"),pl=_e((0,ot.forwardRef)((e,a)=>{
   const{
     model:t
   }=wn(),s=t.computes.crystals();
@@ -1183,7 +1183,7 @@ _l="IncomeStatement_item_48b34a63",fl=ve("BondsIncomeStatement"),pl=_e((0,ot.for
       record:e,className:_l
     },e.paramName))
   })
-})),bl="Total_item_a8580361",hl="Total_item__extinguished_4be8343f",vl="Total_divider_1de1ca28",gl="Total_dividerImage_ab06168d",yl=ve("BondsTotal","Total_120fb0c4"),xl=_e((0,ot.forwardRef)((e,a)=>{
+})),bl="Total_item_a8580361",hl="Total_item__extinguished_4be8343f",vl="Total_divider_1de1ca28",gl="Total_dividerImage_ab06168d",yl=ge("BondsTotal","Total_120fb0c4"),xl=_e((0,ot.forwardRef)((e,a)=>{
   const{
     model:t
   }=wn(),s=t.computes.crystals();
@@ -1198,9 +1198,9 @@ _l="IncomeStatement_item_48b34a63",fl=ve("BondsIncomeStatement"),pl=_e((0,ot.for
   })
 })),Nl=(0,ot.forwardRef)((e,a)=>(0,vt.jsx)(cs,{
   ...e,title:"battle_results.details.crystal",ref:a
-})),jl=ve("Bonds");
+})),jl=ge("Bonds");
 jl.Header=Nl,jl.Item=ul,jl.Total=xl,jl.IncomeStatement=pl;
-var Il="FinancialReport_content_99bf970f",wl="FinancialReport_leftContent_75c21204",Al="FinancialReport_bonds_cc81cbc0",Cl="FinancialReport_headerContent_aad9188f",Bl="FinancialReport_experience_7219d4d3",Sl="FinancialReport_credits_7712b0c",Pl="FinancialReport_header_d56ebc61",Rl="FinancialReport_total_bdf3e42b",kl=ve("FinancialReport","FinancialReport_c3cc562a"),Tl=({
+var Il="FinancialReport_content_99bf970f",wl="FinancialReport_leftContent_75c21204",Al="FinancialReport_bonds_cc81cbc0",Cl="FinancialReport_headerContent_aad9188f",Bl="FinancialReport_experience_7219d4d3",Sl="FinancialReport_credits_7712b0c",Pl="FinancialReport_header_d56ebc61",Rl="FinancialReport_total_bdf3e42b",kl=ge("FinancialReport","FinancialReport_c3cc562a"),Tl=({
   className:e
 })=>{
   const[a,t]=(0,ot.useState)({
@@ -1218,7 +1218,7 @@ var Il="FinancialReport_content_99bf970f",wl="FinancialReport_leftContent_75c212
       margin:30
     }
   });
-  return Se(s,(0,ot.useCallback)(()=>{
+  return Pe(s,(0,ot.useCallback)(()=>{
     if(!s.current||!r.current||!n.current)return;
     const{
       height:e
@@ -1274,26 +1274,26 @@ var Il="FinancialReport_content_99bf970f",wl="FinancialReport_leftContent_75c212
 },
 El=function(e){
   return e.Done="done",e.Locked="notAvailable",e.Active="",e
-}({}),Hl=je({
-  index:s(),name:ue(),value:ue(),isCompensation:_(),tooltipId:ue(),tooltipContentId:ue(),label:ue(),probability:s(),item:ca(ue()),icon:ca(ue()),iconBig:ca(ue()),iconSmall:ca(ue())
-}),Dl=je({
+}({}),Hl=Ie({
+  index:s(),name:ue(),value:ue(),isCompensation:_(),tooltipId:ue(),tooltipContentId:ue(),label:ue(),probability:s(),item:oa(ue()),icon:oa(ue()),iconBig:oa(ue()),iconSmall:oa(ue())
+}),Dl=Ie({
   conditionType:ue()
-}),Ol=je({
+}),Ol=Ie({
   ...Dl.entries,titleData:ue(),descrData:ue(),iconKey:ue(),current:s(),total:s(),earned:s(),progressType:ue(),sortKey:ue()
-}),Vl=je({
-  ...Dl.entries,items:ee(oa([Ol,se(()=>Vl)]))
-}),zl=je({
+}),Vl=Ie({
+  ...Dl.entries,items:ae(la([Ol,re(()=>Vl)]))
+}),zl=Ie({
   id:ue(),groupId:ue(),type:s(),title:ue(),description:ue(),decoration:s(),status:sa(El)
-}),Wl=(je({
-  ...zl.entries,bonuses:ee(Hl),preBattleCondition:Vl,bonusCondition:Vl,postBattleCondition:Vl
-}),je({
-  animated:ca(_()),completed:ca(_()),component:x(e=>Ae(e)),categoryOrder:s(),notifications:ca(ee(je({
+}),Wl=(Ie({
+  ...zl.entries,bonuses:ae(Hl),preBattleCondition:Vl,bonusCondition:Vl,postBattleCondition:Vl
+}),Ie({
+  animated:oa(_()),completed:oa(_()),component:x(e=>fe(e)),categoryOrder:s(),notifications:oa(ae(Ie({
     id:ue(),item:x(e=>(0,ot.isValidElement)(e))
   })))
-})),Ml=oa([je({
-  status:ae("loaded"),result:Wl
-}),je({
-  status:ae("loading")
+})),Ml=la([Ie({
+  status:te("loaded"),result:Wl
+}),Ie({
+  status:te("loading")
 })]),Gl=c.resolve("strings"),$l=["huntsman","medalGore","medalStark"],Ll="markOfMastery",Ul="marksOnGun",Xl="epic",Fl="specialAchievements",Kl="right",ql="left",Ql="other",Yl=[Ll,Ul,Xl,Fl,Kl,ql,Ql];
 function Zl(e){
   return e.groupID===Ll?Ll:e.groupID===Ul?Ul:e.epic?Xl:$l.includes(e.name)?Fl:e.groupID===Kl?Kl:e.groupID===ql?ql:(console.error(`Achievement ${e.name} with a group ${e.groupID} is not detected`),Ql)
@@ -1371,10 +1371,10 @@ function No(e){
   }
 }
 function jo(e){
-  const a=Re(e.detailedStatistics,e=>e.labelKey===fo.TeamHitsDamage)?.value,t=void 0!==a?wa(a,0):0,s=e.efficiencyValues.kills-(t??0);
+  const a=ke(e.detailedStatistics,e=>e.labelKey===fo.TeamHitsDamage)?.value,t=void 0!==a?wa(a,0):0,s=e.efficiencyValues.kills-(t??0);
   return{
     personal:e.isPersonal,isQualification:e.isQualification,rank:e.rank,division:e.division,squadIndex:e.squadIndex,achievements:i(e.achievements,yo),account:E(e.userNames),userStatus:bo(e.userStatus),killer:E(e.userStatus.killer),vehicle:Pa(e.vehicle.vehicleCD,e.vehicle.techName)?void 0:{
-      ...ba(e.vehicle),longName:e.vehicle.longName
+      ...pa(e.vehicle),longName:e.vehicle.longName
     },
     efficiencyValues:{
       substractedAlliesKills:s,...(r=e.efficiencyValues,{
@@ -1405,7 +1405,7 @@ function ko({
 }){
   return!(a||!e)&&(t===Po||null===t)
 }
-var[To,Eo]=de()(e=>{
+var[To,Eo]=me()(e=>{
   const{
     observableModel:a,cleanup:t
   }=e,s={
@@ -1429,20 +1429,20 @@ var[To,Eo]=de()(e=>{
     }
   },
   r={
-    battleInfo:a.transform(po,"battleInfo"),additionalBonus:a.transform(go,"additionalBonus"),allPlayersDictionary:F.box({}),personalEfficiency:{
-      opened:F.box(!1),achievements:a.transform(e=>Jl(i(e,yo)),"achievements"),statistics:{
-        details:F.box([]),capturePoints:F.box(0),droppedCapturePoints:F.box(0)
+    battleInfo:a.transform(po,"battleInfo"),additionalBonus:a.transform(go,"additionalBonus"),allPlayersDictionary:K.box({}),personalEfficiency:{
+      opened:K.box(!1),achievements:a.transform(e=>Jl(i(e,yo)),"achievements"),statistics:{
+        details:K.box([]),capturePoints:K.box(0),droppedCapturePoints:K.box(0)
       }
     },
     teamsStatistic:{
-      allies:F.box([]),enemies:F.box([]),sorting:F.box({
+      allies:K.box([]),enemies:K.box([]),sorting:K.box({
         column:mo.Vehicle,sortDirection:uo.Desc
-      }),selectedRow:F.box()
+      }),selectedRow:K.box()
     },
     user:{
-      names:F.box(),status:F.box()
+      names:K.box(),status:K.box()
     },
-    playerSatisfaction:a.object("playerSatisfaction"),pathToPlugins:a.dict("pathToPlugins"),notificationList:F.box([]),bansModel:a.object("bansModel"),bannedByAlliesVehicle:a.object("bansModel.bannedByAlliesVehicle"),bannedByEnemiesVehicle:a.object("bansModel.bannedByEnemiesVehicle"),qualificationModel:a.object("qualificationModel"),progressionItems:a.array("progressionItems"),unRankedBattleTypes:a.array("unRankedBattleTypes"),...a.primitives(["warningType","topPercentage","ratingDelta","previousScore","currentScore"]),currentProgressionItemIndex:a.primitives(["currentItemIndex"]).currentItemIndex
+    playerSatisfaction:a.object("playerSatisfaction"),pathToPlugins:a.dict("pathToPlugins"),notificationList:K.box([]),bansModel:a.object("bansModel"),bannedByAlliesVehicle:a.object("bansModel.bannedByAlliesVehicle"),bannedByEnemiesVehicle:a.object("bansModel.bannedByEnemiesVehicle"),qualificationModel:a.object("qualificationModel"),progressionItems:a.array("progressionItems"),unRankedBattleTypes:a.array("unRankedBattleTypes"),...a.primitives(["warningType","topPercentage","ratingDelta","previousScore","currentScore"]),currentProgressionItemIndex:a.primitives(["currentItemIndex"]).currentItemIndex
   };
   Da(t)(()=>{
     const e={};
@@ -1465,24 +1465,24 @@ var[To,Eo]=de()(e=>{
   }),Da(t)(()=>{
     r.personalEfficiency.statistics.capturePoints.set(s.personalEffiency.capturePoints.get()),r.personalEfficiency.statistics.droppedCapturePoints.set(s.personalEffiency.droppedCapturePoints.get())
   });
-  const n=Pe.structural(()=>function({
+  const n=Re.structural(()=>function({
     anyPremium:e,credits:a,crystals:t,gold:s,xp:r
   }){
-    const n=Re(a,e=>e.paramName===yr),i=Re(s,e=>e.paramName===wr),l=Re(r,e=>e.paramName===$s),o=Re(t,e=>e.paramName===As),c=[];
+    const n=ke(a,e=>e.paramName===yr),i=ke(s,e=>e.paramName===wr),l=ke(r,e=>e.paramName===$s),o=ke(t,e=>e.paramName===As),c=[];
     return n&&c.push(vo(n,e)),i&&c.push(vo(i,e)),l&&c.push(vo(l,e)),o&&c.push(vo(o,e)),c
   }({
     anyPremium:s.additionalBonus.get().hasAnyPremium,credits:s.credits.total.get(),crystals:s.crystals.total.get(),gold:s.gold.total.get(),xp:s.xp.total.get()
-  })),l=Pe.structural(()=>r.pathToPlugins.values().map(e=>({
+  })),l=Re.structural(()=>r.pathToPlugins.values().map(e=>({
     url:e.get()
-  }))),o=Pe.shallow(()=>{
-    const e=Re(r.teamsStatistic.allies.get(),e=>e.personal);
+  }))),o=Re.shallow(()=>{
+    const e=ke(r.teamsStatistic.allies.get(),e=>e.personal);
     return Ke(void 0!==e,"Personal info is not found"),Ke(Wa(e),"There is no vehicle data in the personal info"),e
-  }),c=Pe.shallow(()=>{
+  }),c=Re.shallow(()=>{
     const e=r.teamsStatistic.selectedRow.get();
     if(void 0===e)return;
     const a=(e.team===wo?r.teamsStatistic.allies:r.teamsStatistic.enemies).get();
-    return Re(a,a=>a.account.username===e.username)
-  }),d=Pe.shallow(()=>{
+    return ke(a,a=>a.account.username===e.username)
+  }),d=Re.shallow(()=>{
     const e=r.allPlayersDictionary.get();
     return{
       assault:r.personalEfficiency.statistics.capturePoints.get(),defend:r.personalEfficiency.statistics.droppedCapturePoints.get(),rows:T(s.personalEffiency.details.get(),(a,t)=>{
@@ -1514,7 +1514,7 @@ var[To,Eo]=de()(e=>{
           })
         }(t);
         if(function(e){
-          return Z.structural(e,Io)
+          return J.structural(e,Io)
         }(s))return a;
         const r=e[t.userName];
         return Ke(void 0!==r,`Such enemy ${t.userName} is not found`),a.push({
@@ -1522,26 +1522,26 @@ var[To,Eo]=de()(e=>{
         }),a
       },[])
     }
-  }),m=Pe.shallow(()=>{
-    const e=Re(s.xp.total.get(),e=>"totalXP"===e.paramName);
+  }),m=Re.shallow(()=>{
+    const e=ke(s.xp.total.get(),e=>"totalXP"===e.paramName);
     Ke(void 0!==e,"totalXP record is not found in the financial report");
-    const a=Re(s.credits.total.get(),e=>"totalCredits"===e.paramName),t=Re(s.credits.total.get(),e=>"intermediateTotalCredits"===e.paramName);
+    const a=ke(s.credits.total.get(),e=>"totalCredits"===e.paramName),t=ke(s.credits.total.get(),e=>"intermediateTotalCredits"===e.paramName);
     return Ke(void 0!==a,"totalCredits record is not found in the financial report"),Ke(void 0!==t,"intermediateTotalCredits record is not found in the financial report"),{
       baseCredits:t.baseValue,baseVehicleXP:e.baseValue,premiumCredits:t.premiumValue,premiumVehicleXP:e.premiumValue,creditsDiff:a.premiumValue-a.baseValue,vehicleXPDiff:e.premiumValue-e.baseValue
     }
-  }),u=Pe.model(e=>{
+  }),u=Re.model(e=>{
     const a=wa(r.progressionItems.get(),e);
     if(!a)throw new Error(`item with index ${e} was not found`);
     return i(a.divisions,e=>({
       ...e
     }))
-  }),_=Pe.shallow(e=>{
+  }),_=Re.shallow(e=>{
     const a=wa(r.progressionItems.get(),e);
     if(!a)throw new Error(`item with index ${e} was not found`);
     return{
-      ...a,division:Re(u(e),e=>e.state===it.Current)?.name
+      ...a,division:ke(u(e),e=>e.state===it.Current)?.name
     }
-  }),f=Pe.primitive(()=>{
+  }),f=Re.primitive(()=>{
     const{
       status:e,leave:a
     }=r.battleInfo.get();
@@ -1596,7 +1596,7 @@ var[To,Eo]=de()(e=>{
     })]
   })
 });
-var zo="MissionsProgress_ca7ca547",Wo="MissionsProgress_content_b1e9d53b",Mo="MissionsProgress_verticalBar_a9f04f7f",Go=pe.cubicBezier(.23,0,.57,1),$o=ve("MissionsProgress",zo);
+var zo="MissionsProgress_ca7ca547",Wo="MissionsProgress_content_b1e9d53b",Mo="MissionsProgress_verticalBar_a9f04f7f",Go=be.cubicBezier(.23,0,.57,1),$o=ge("MissionsProgress",zo);
 function Lo(e){
   return e.reduce((e,a)=>(a.result.notifications&&e.push(...a.result.notifications),e),[])
 }
@@ -1610,7 +1610,7 @@ var Xo=Fa(function({
     model:a,controls:t
   }=Eo(),{
     active:s
-  }=J(),[r,n]=(0,ot.useState)(!1),[l,o]=(0,ot.useState)(!1),[c,d]=(0,ot.useState)(-1),_=function(e){
+  }=ee(),[r,n]=(0,ot.useState)(!1),[l,o]=(0,ot.useState)(!1),[c,d]=(0,ot.useState)(-1),_=function(e){
     const[a,t]=(0,ot.useState)({}),s=(0,ot.useRef)({}),r=(0,ot.useRef)({});
     return(0,ot.useEffect)(()=>{
       const n=[];
@@ -1624,7 +1624,7 @@ var Xo=Fa(function({
               status:"loading"
             }
           }));
-          const a=await pa(e.url);
+          const a=await X(e.url);
           return n.includes(e.url)?(i(a,e.url),{
             type:"rejected"
           }):(s.current[e.url]=a,a.init(...e.args??[]).then(a=>({
@@ -1662,7 +1662,7 @@ var Xo=Fa(function({
   }=(0,ot.useMemo)(()=>({
     notifications:Lo(f),animatablePluginIndexes:Uo(f)
   }),[f]);
-  _a(()=>d(e=>e+1),c>-1&&c<b.length?600:void 0);
+  ua(()=>d(e=>e+1),c>-1&&c<b.length?600:void 0);
   const[h,v]=g(()=>({
     from:{
       opacity:0
@@ -1684,7 +1684,7 @@ var Xo=Fa(function({
     l&&s!==Xa.progression&&n(!0)
   },[l,s]),(0,vt.jsx)($o,{
     className:e,children:(0,vt.jsx)(u.div,{
-      style:h,className:Wo,children:ke(_)?(0,vt.jsx)(Vo,{}):(0,vt.jsxs)(Ve,{
+      style:h,className:Wo,children:Te(_)?(0,vt.jsx)(Vo,{}):(0,vt.jsxs)(Ve,{
         children:[(0,vt.jsx)(P,{
           children:i(Object.entries(f),([e,a],s)=>{
             const n=a.result.component;
@@ -1714,7 +1714,7 @@ var qo={
 function Qo({
   children:e,achievements:a,springsProps:t,vehicleNation:s
 }){
-  const[r,n]=(0,ot.useState)(new Set),[i,l]=(0,ot.useState)(void 0),[o,c]=re(a.length,()=>({
+  const[r,n]=(0,ot.useState)(new Set),[i,l]=(0,ot.useState)(void 0),[o,c]=ne(a.length,()=>({
     from:{
       ...qo,...t?.from
     },
@@ -1736,7 +1736,7 @@ Zo=(0,ot.forwardRef)(function({
     args:(0,ot.useMemo)(()=>({
       tooltipId:e.tooltipId,tooltipArgs:e.tooltipArgs
     }),[e.tooltipId,e.tooltipArgs])
-  }),o=K(),{
+  }),o=q(),{
     hoverIndex:c,setHoverIndex:d,vehicleNation:m
   }=Ko();
   return(0,vt.jsx)("div",{
@@ -1748,13 +1748,13 @@ Zo=(0,ot.forwardRef)(function({
     onMouseLeave:()=>{
       l.onMouseLeave(),d(void 0)
     },
-    children:(0,vt.jsx)(ia,{
+    children:(0,vt.jsx)(na,{
       width:t,height:s,path:no({
         groupID:e.groupID,iconName:e.iconName,vehicleNation:m
       }),className:xa(Yo.achievementIcon,n?.icon)
     },e.iconName)
   })
-}),Jo=ve("Rewards",Yo.base),ec=((0,ot.memo)(function({
+}),Jo=ge("Rewards",Yo.base),ec=((0,ot.memo)(function({
   width:e,height:a,classNames:t,className:s
 }){
   const{
@@ -1773,7 +1773,7 @@ Zo=(0,ot.forwardRef)(function({
   const d=(0,ot.useRef)(null),{
     springs:m,achievements:_,completedAnimationIndexes:f,hoverIndex:p
   }=Ko();
-  return Ne(()=>{
+  return je(()=>{
     if(null===d.current)return;
     const a=d.current.offsetWidth+Math.floor(t/e.length*2),r=y(l);
     c(s,a<r?Math.floor((r-a)/2):0)
@@ -1881,11 +1881,11 @@ var sc=(0,ot.memo)(function({
   },[n]);
   return 0===t.length?null:(0,vt.jsxs)("div",{
     className:xa(ec.base,void 0!==r.epicAndHeroic&&void 0!==r.others&&ec.base__visible,e),children:[s.marks.length>0&&(0,vt.jsx)(sc,{
-      medalWidth:a.epicAndHeroic.width,medalHeight:a.epicAndHeroic.height,achievements:ne(s.marks),startIndex:0,hasSiblingGroups:s.epicAndHeroic.length+s.others.length>0
+      medalWidth:a.epicAndHeroic.width,medalHeight:a.epicAndHeroic.height,achievements:ie(s.marks),startIndex:0,hasSiblingGroups:s.epicAndHeroic.length+s.others.length>0
     }),s.epicAndHeroic.length>0&&(0,vt.jsx)(ac,{
-      group:lo,medalWidth:a.epicAndHeroic.width,medalHeight:a.epicAndHeroic.height,maxContainerWidth:a.epicAndHeroic.maxContainerWidth,achievements:ne(s.epicAndHeroic),startIndex:s.marks.length,updateGroupIndent:i,indent:r.epicAndHeroic,hasSiblingGroups:s.others.length>0
+      group:lo,medalWidth:a.epicAndHeroic.width,medalHeight:a.epicAndHeroic.height,maxContainerWidth:a.epicAndHeroic.maxContainerWidth,achievements:ie(s.epicAndHeroic),startIndex:s.marks.length,updateGroupIndent:i,indent:r.epicAndHeroic,hasSiblingGroups:s.others.length>0
     }),s.others.length>0&&(0,vt.jsx)(ac,{
-      group:oo,medalWidth:a.others.width,medalHeight:a.others.height,maxContainerWidth:a.others.maxContainerWidth,achievements:ne(s.others),startIndex:s.marks.length+s.epicAndHeroic.length,updateGroupIndent:i,indent:r.others
+      group:oo,medalWidth:a.others.width,medalHeight:a.others.height,maxContainerWidth:a.others.maxContainerWidth,achievements:ie(s.others),startIndex:s.marks.length+s.epicAndHeroic.length,updateGroupIndent:i,indent:r.others
     })]
   })
 }),nc=(0,ot.createContext)(null);
@@ -1913,12 +1913,12 @@ function cc({
   size:e,type:a,classNames:t,withoutPlus:s=!1,value:r
 }){
   const n="gold"===a?"gold":"integral";
-  return(0,vt.jsx)(le,{
+  return(0,vt.jsx)(oe,{
     reverse:!0,size:e,type:a,className:xa(oc.currency,t?.currency),children:s?(0,vt.jsx)("div",{
-      className:xa(oc.value,t?.value),children:ga.formatNumber(n,r)
-    }):(0,vt.jsx)(ge,{
+      className:xa(oc.value,t?.value),children:va.formatNumber(n,r)
+    }):(0,vt.jsx)(ye,{
       className:xa(oc.value,t?.value),path:"common.plusValueWithSpace",params:{
-        value:ga.formatNumber(n,r)
+        value:va.formatNumber(n,r)
       }
     })
   })
@@ -1928,15 +1928,15 @@ function pc(){
   const{
     state:e,supportedAdvertisements:a,bonusMultiplier:t,durationInDays:s,creditsThreshold:r,handleAdvertisement:n
   }=ic();
-  he(()=>{
+  ve(()=>{
     void 0!==a&&(!1!==Ua(a,e)?void 0!==n?n(e):console.error("The handler for advertisments is not provided. THe logic with cycled adverts will not work."):console.error(`The state in the component should be on of the followings ${a.join(", ")}`))
   });
   const i=c.resolve("strings");
   switch(e){
-    case Ma.creditsAdvertising:return(0,vt.jsx)(ge,{
+    case Ma.creditsAdvertising:return(0,vt.jsx)(ye,{
       className:dc,path:"battle_results.common.details.premiumAdvertising.credits",params:{
         bonusCredits:(0,vt.jsx)(cc,{
-          withoutPlus:!0,type:"credits",size:da.small,value:r,classNames:{
+          withoutPlus:!0,type:"credits",size:ca.small,value:r,classNames:{
             currency:_c,value:fc
           }
         }),durationInDays:s
@@ -1963,10 +1963,10 @@ var bc="LeftBonusAttempts_a541b0b8",hc="LeftBonusAttempts_count_24f93d48";
 function vc({
   count:e
 }){
-  return(0,vt.jsx)(ge,{
+  return(0,vt.jsx)(ye,{
     upgradeLegacy:!0,params:{
       count:(0,vt.jsx)("span",{
-        className:hc,children:ga.formatNumber("integral",e)
+        className:hc,children:va.formatNumber("integral",e)
       })
     },
     path:"battle_results.common.premiumBonus.bonusLeft",className:bc
@@ -2000,12 +2000,12 @@ function Sc(){
         className:Ic,children:e.readOrEmpty("battle_results.common.details.noPremTitle")
       }),(0,vt.jsxs)("div",{
         className:Ac,children:[(0,vt.jsx)(cc,{
-          withoutPlus:!0,size:da.small,type:"credits",classNames:{
+          withoutPlus:!0,size:ca.small,type:"credits",classNames:{
             currency:Cc,value:Bc
           },
           value:a.baseCredits
         }),(0,vt.jsx)(cc,{
-          withoutPlus:!0,size:da.small,type:"tankXP",classNames:{
+          withoutPlus:!0,size:ca.small,type:"tankXP",classNames:{
             currency:Cc,value:Bc
           },
           value:a.baseVehicleXP
@@ -2016,12 +2016,12 @@ function Sc(){
         className:xa(Ic,wc),children:e.readOrEmpty("battle_results.common.details.premTitle")
       }),(0,vt.jsxs)("div",{
         className:Ac,children:[(0,vt.jsx)(cc,{
-          withoutPlus:!0,size:da.small,type:"credits",classNames:{
+          withoutPlus:!0,size:ca.small,type:"credits",classNames:{
             currency:Cc,value:Bc
           },
           value:a.premiumCredits
         }),(0,vt.jsx)(cc,{
-          withoutPlus:!0,size:da.small,type:"tankXP",classNames:{
+          withoutPlus:!0,size:ca.small,type:"tankXP",classNames:{
             currency:Cc,value:Bc
           },
           value:a.premiumVehicleXP
@@ -2030,13 +2030,13 @@ function Sc(){
     })]
   })
 }
-var Pc="PremiumInfoCurrencies_value_5b83491e",Rc="PremiumInfoCurrencies_currency_6908b9d9",kc=ve("PremiumInfoCurrencies","PremiumInfoCurrencies_8b21f7ee");
+var Pc="PremiumInfoCurrencies_value_5b83491e",Rc="PremiumInfoCurrencies_currency_6908b9d9",kc=ge("PremiumInfoCurrencies","PremiumInfoCurrencies_8b21f7ee");
 function Tc(){
   const e=k({
-    size:da.small
+    size:ca.small
   },{
     medium:{
-      size:da.large
+      size:ca.large
     }
   }),{
     premiumAndStandartEarnings:a
@@ -2055,7 +2055,7 @@ function Tc(){
     })]
   })
 }
-var Ec=ve("Content"),Hc=(0,ot.forwardRef)(function(e,a){
+var Ec=ge("Content"),Hc=(0,ot.forwardRef)(function(e,a){
   const{
     state:t
   }=ic(),s=c.resolve("strings");
@@ -2089,7 +2089,7 @@ function Vc(){
   return(0,vt.jsxs)("div",{
     className:Dc,children:[(0,vt.jsx)("div",{
       className:Oc
-    }),(0,vt.jsx)(ge,{
+    }),(0,vt.jsx)(ye,{
       path:"battle_results.common.premiumBonus.appliedBonus"
     })]
   })
@@ -2099,10 +2099,10 @@ function Gc(){
   const e=c.resolve("strings"),{
     bonusXpDiff:a,applyBonus:t
   }=ic(),s=k({
-    iconSize:da.small,buttonSize:L.sizes.small
+    iconSize:ca.small,buttonSize:L.sizes.small
   },{
     large:{
-      iconSize:da.large
+      iconSize:ca.large
     },
     extraLarge:{
       buttonSize:L.sizes.medium
@@ -2136,7 +2136,7 @@ function Yc({
         className:Uc,onClick:e,children:a.readOrEmpty(Qc[l])
       })]
     }),(0,vt.jsx)(cc,{
-      type:"tankXP",size:t.weight>=M.medium.weight?da.large:da.small,value:n,classNames:{
+      type:"tankXP",size:t.weight>=M.medium.weight?ca.large:ca.small,value:n,classNames:{
         currency:Xc,value:Fc
       }
     })]
@@ -2154,7 +2154,7 @@ function sd(){
         className:ed,children:e.readOrEmpty("battle_results.common.plusBonus.youRock")
       })," ",e.readOrEmpty("battle_results.common.plusBonus.earnedMessage")]
     }),(0,vt.jsx)(cc,{
-      type:"tankXP",size:a.weight>=M.medium.weight?da.large:da.small,value:t,classNames:{
+      type:"tankXP",size:a.weight>=M.medium.weight?ca.large:ca.small,value:t,classNames:{
         currency:ad,value:td
       }
     })]
@@ -2183,7 +2183,7 @@ function dd({
 }){
   const t=w(a);
   return(0,vt.jsx)("div",{
-    className:id,children:(0,vt.jsx)(ge,{
+    className:id,children:(0,vt.jsx)(ye,{
       path:e,className:cd,params:{
         info:(0,vt.jsx)("span",{
           ...t,className:ld,children:(0,vt.jsx)(De,{
@@ -2194,7 +2194,7 @@ function dd({
     })
   })
 }
-var md=ve("Footer"),ud=(0,ot.forwardRef)(function(e,a){
+var md=ge("Footer"),ud=(0,ot.forwardRef)(function(e,a){
   const{
     state:t,showBonusDetails:s
   }=ic(),r=c.resolve("strings");
@@ -2243,7 +2243,7 @@ var md=ve("Footer"),ud=(0,ot.forwardRef)(function(e,a){
 }),_d={
   icon:"Header_icon_6d03683a",base__premiumInfo:"Header_base__premiumInfo_65f475ba",base__premiumEarnings:"Header_base__premiumEarnings_65f475ba",base__premiumAdvertising:"Header_base__premiumAdvertising_65f475ba",base__applyBonus:"Header_base__applyBonus_65f475ba",base__appliedBonus:"Header_base__appliedBonus_65f475ba",base__noVehicle:"Header_base__noVehicle_65f475ba",base__fasterEducationCrewActive:"Header_base__fasterEducationCrewActive_65f475ba",base__fasterEducationCrewNotActive:"Header_base__fasterEducationCrewNotActive_65f475ba",base__noCrew:"Header_base__noCrew_65f475ba",base__plusInfo:"Header_base__plusInfo_65f475ba",base__plusEarnings:"Header_base__plusEarnings_65f475ba",base__plusYouRock:"Header_base__plusYouRock_65f475ba",base__bonusAdvertising:"Header_base__bonusAdvertising_65f475ba",base__isNotVictory:"Header_base__isNotVictory_65f475ba",base__requiredRecentBattleAndVehicle:"Header_base__requiredRecentBattleAndVehicle_65f475ba",base__invalidBattleType:"Header_base__invalidBattleType_65f475ba",base__creditsAdvertising:"Header_base__creditsAdvertising_65f475ba",base__squadAdvertising:"Header_base__squadAdvertising_65f475ba",base__questsAdvertising:"Header_base__questsAdvertising_65f475ba",bonusMultiplier:"Header_bonusMultiplier_f62ee8c5",text:"Header_text_52d638",text__textOverlay:"Header_text__textOverlay_90669143",fadeIn:"Header_fadeIn_65f475ba",fadeInThreeQuarters:"Header_fadeInThreeQuarters_65f475ba",fadeInHalf:"Header_fadeInHalf_65f475ba",fadeOut:"Header_fadeOut_65f475ba",fadeInWithScale:"Header_fadeInWithScale_65f475ba",slideUp:"Header_slideUp_65f475ba",scale:"Header_scale_65f475ba",raysAppearance:"Header_raysAppearance_65f475ba",rotate:"Header_rotate_65f475ba","reverse-rotate":"Header_reverse-rotate_65f475ba",glowAppearance:"Header_glowAppearance_65f475ba",highlightAppearance:"Header_highlightAppearance_65f475ba",blink:"Header_blink_65f475ba",slideUpIn:"Header_slideUpIn_65f475ba"
 },
-fd=ve("Header"),pd=(0,ot.forwardRef)(function({
+fd=ge("Header"),pd=(0,ot.forwardRef)(function({
   className:e,classNames:a,...t
 },s){
   const{
@@ -2259,7 +2259,7 @@ fd=ve("Header"),pd=(0,ot.forwardRef)(function({
       })
     })
   })
-}),bd=ve("ManagableBonus","ManagableBonus_55c8d52d"),hd=(0,ot.memo)(bd);
+}),bd=ge("ManagableBonus","ManagableBonus_55c8d52d"),hd=(0,ot.memo)(bd);
 hd.Header=pd,hd.Content=Hc,hd.Footer=ud;
 var vd={
   bonus__disabled:"Bonus_bonus__disabled_d9abacdd",content:"Bonus_content_58a93521",bonus__premiumInfo:"Bonus_bonus__premiumInfo_d9abacdd",bonus__applyBonus:"Bonus_bonus__applyBonus_d9abacdd",bonus__appliedBonus:"Bonus_bonus__appliedBonus_d9abacdd",bonus__isNotVictory:"Bonus_bonus__isNotVictory_d9abacdd",bonus__invalidBattleType:"Bonus_bonus__invalidBattleType_d9abacdd",bonus__requiredRecentBattleAndVehicle:"Bonus_bonus__requiredRecentBattleAndVehicle_d9abacdd",bonus__noVehicle:"Bonus_bonus__noVehicle_d9abacdd",bonus__fasterEducationCrewActive:"Bonus_bonus__fasterEducationCrewActive_d9abacdd",bonus__fasterEducationCrewNotActive:"Bonus_bonus__fasterEducationCrewNotActive_d9abacdd",bonus__noCrew:"Bonus_bonus__noCrew_d9abacdd",bonus__premiumEarnings:"Bonus_bonus__premiumEarnings_d9abacdd",bonus__plusInfo:"Bonus_bonus__plusInfo_d9abacdd",bonus__plusEarnings:"Bonus_bonus__plusEarnings_d9abacdd",bonus__plusYouRock:"Bonus_bonus__plusYouRock_d9abacdd",bonus__creditsAdvertising:"Bonus_bonus__creditsAdvertising_d9abacdd",bonus__premiumAdvertising:"Bonus_bonus__premiumAdvertising_d9abacdd",bonus__squadAdvertising:"Bonus_bonus__squadAdvertising_d9abacdd",bonus__questsAdvertising:"Bonus_bonus__questsAdvertising_d9abacdd",bonus__bonusAdvertising:"Bonus_bonus__bonusAdvertising_d9abacdd",footer:"Bonus_footer_9b2e3fe3",fadeIn:"Bonus_fadeIn_d9abacdd",fadeInThreeQuarters:"Bonus_fadeInThreeQuarters_d9abacdd",fadeInHalf:"Bonus_fadeInHalf_d9abacdd",fadeOut:"Bonus_fadeOut_d9abacdd",fadeInWithScale:"Bonus_fadeInWithScale_d9abacdd",slideUp:"Bonus_slideUp_d9abacdd",scale:"Bonus_scale_d9abacdd",raysAppearance:"Bonus_raysAppearance_d9abacdd",rotate:"Bonus_rotate_d9abacdd","reverse-rotate":"Bonus_reverse-rotate_d9abacdd",glowAppearance:"Bonus_glowAppearance_d9abacdd",highlightAppearance:"Bonus_highlightAppearance_d9abacdd",blink:"Bonus_blink_d9abacdd",slideUpIn:"Bonus_slideUpIn_d9abacdd"
@@ -2280,7 +2280,7 @@ function gd({
     })]
   })
 }
-var yd="AnimatedNumber_958fc84e",xd="AnimatedNumber_slotMachineDigit_a9587a5a",Nd="AnimatedNumber_plugChar_c66678",jd="AnimatedNumber_digitsList_2065427d",Id=pe.cubicBezier(.33,0,.25,1);
+var yd="AnimatedNumber_958fc84e",xd="AnimatedNumber_slotMachineDigit_a9587a5a",Nd="AnimatedNumber_plugChar_c66678",jd="AnimatedNumber_digitsList_2065427d",Id=be.cubicBezier(.33,0,.25,1);
 function wd({
   immediate:e,symbol:a,step:t,delay:s,first:r,handleFirstRest:n
 }){
@@ -2311,7 +2311,7 @@ function wd({
     className:xd,children:[(0,vt.jsx)("div",{
       className:Nd,children:a
     }),(0,vt.jsx)(u.div,{
-      style:o,className:jd,children:ma(0,m+1,e=>d?(0,vt.jsx)("div",{
+      style:o,className:jd,children:da(0,m+1,e=>d?(0,vt.jsx)("div",{
         children:e
       },e):(0,vt.jsx)("div",{
         style:{
@@ -2325,10 +2325,10 @@ function wd({
 var Ad=(0,ot.memo)(function({
   immediate:e,value:a,readyToAnimate:t,className:s,handleAnimationFinished:r,type:n
 }){
-  const[i,l]=Be(),o=(0,ot.useMemo)(()=>a.split(""),[a]),c=(0,ot.useCallback)(()=>r(n),[r,n]);
+  const[i,l]=fa(),o=(0,ot.useMemo)(()=>a.split(""),[a]),c=(0,ot.useCallback)(()=>r(n),[r,n]);
   return(0,vt.jsx)("div",{
     ref:i,className:xa(yd,s),children:o.map((s,r)=>(0,vt.jsx)(wd,{
-      first:0===r,handleFirstRest:c,immediate:e,delay:200*(o.length-r),symbol:s,step:l.type===Le.measured&&t?l.size.height:0
+      first:0===r,handleFirstRest:c,immediate:e,delay:200*(o.length-r),symbol:s,step:l.type===ce.measured&&t?l.size.height:0
     },`${a}-${r}`))
   })
 }),Cd="Currency_10720e2d",Bd="Currency_icon_4d923f64",Sd="Currency_icon__visible_9c676b12",Pd="Currency_value_b21680b3",Rd={
@@ -2338,30 +2338,30 @@ kd=Object.keys(Rd);
 function Td({
   immediate:e,type:a,value:t,size:s,visibleIfZero:r,readyToAnimate:n,handleAnimationFinished:i
 }){
-  return(e=>kd.includes(e))(a)?0!==t||r?(0,vt.jsx)(le,{
+  return(e=>kd.includes(e))(a)?0!==t||r?(0,vt.jsx)(oe,{
     reverse:!0,type:Rd[a],size:s,className:Cd,classNames:{
       icon:xa(Bd,(n||e)&&Sd)
     },
     children:(0,vt.jsx)(Ad,{
-      className:Pd,immediate:e,readyToAnimate:n,type:a,handleAnimationFinished:i,value:ga.formatNumber(a===Fe.gold?"gold":"integral",t)
+      className:Pd,immediate:e,readyToAnimate:n,type:a,handleAnimationFinished:i,value:va.formatNumber(a===Fe.gold?"gold":"integral",t)
     })
   }):null:(console.error(`There is no such currency in the template literal: ${a}`),null)
 }
-var Ed=ve("Currencies","Currencies_5b11a533"),Hd=Fa(function({
+var Ed=ge("Currencies","Currencies_5b11a533"),Hd=Fa(function({
   className:e
 }){
   const[t,s]=(0,ot.useState)(!1),[r,n]=(0,ot.useState)(new Set),[l,o]=(0,ot.useState)(!1),{
     model:c
-  }=Eo(),d=c.computes.earnedCurrencies(),m=c.additionalBonus.get(),u=ce(d),_=K(),{
+  }=Eo(),d=c.computes.earnedCurrencies(),m=c.additionalBonus.get(),u=de(d),_=q(),{
     step:f,setAllCurrenciesAniamted:p
   }=Qt(),b=k({
-    value:da.medium
+    value:ca.medium
   },{
     medium:{
-      value:da.large
+      value:ca.large
     },
     large:{
-      value:da.extraLarge
+      value:ca.extraLarge
     }
   });
   (0,ot.useEffect)(()=>{
@@ -2392,7 +2392,7 @@ var Ed=ve("Currencies","Currencies_5b11a533"),Hd=Fa(function({
     model:e
   }=Eo(),{
     active:a
-  }=J(),[{
+  }=ee(),[{
     x:s
   },r]=g(()=>({
     x:0
@@ -2443,7 +2443,7 @@ function am({
     value:_,children:e
   })
 }
-var tm="HintKey_keyButton_e4149405",sm="HintKey_background_e4149405",rm="HintKey_border_71616e63",nm="HintKey_content_63ecef8",im="HintKey_triangle_fb0bc682",lm="HintKey_triangleNoise_6e72dfca",om=ve("PersoanlEfficiencyHintKey","HintKey_2efc42a0");
+var tm="HintKey_keyButton_e4149405",sm="HintKey_background_e4149405",rm="HintKey_border_71616e63",nm="HintKey_content_63ecef8",im="HintKey_triangle_fb0bc682",lm="HintKey_triangleNoise_6e72dfca",om=ge("PersoanlEfficiencyHintKey","HintKey_2efc42a0");
 var cm={
   base:"OverlayDivider_fcc0c30",divider:"OverlayDivider_divider_1acaec30",divider__right:"OverlayDivider_divider__right_546d0e74",base__closed:"OverlayDivider_base__closed_ceb65522",dividerImageElement:"OverlayDivider_dividerImageElement_9babecb0",fadeIn:"OverlayDivider_fadeIn_ceb65522",fadeInThreeQuarters:"OverlayDivider_fadeInThreeQuarters_ceb65522",fadeInHalf:"OverlayDivider_fadeInHalf_ceb65522",fadeOut:"OverlayDivider_fadeOut_ceb65522",fadeInWithScale:"OverlayDivider_fadeInWithScale_ceb65522",slideUp:"OverlayDivider_slideUp_ceb65522",scale:"OverlayDivider_scale_ceb65522",raysAppearance:"OverlayDivider_raysAppearance_ceb65522",rotate:"OverlayDivider_rotate_ceb65522","reverse-rotate":"OverlayDivider_reverse-rotate_ceb65522",glowAppearance:"OverlayDivider_glowAppearance_ceb65522",highlightAppearance:"OverlayDivider_highlightAppearance_ceb65522",blink:"OverlayDivider_blink_ceb65522",slideUpIn:"OverlayDivider_slideUpIn_ceb65522"
 },
@@ -2469,7 +2469,7 @@ dm=(0,ot.forwardRef)(function({
 },a){
   const{
     opened:t,handleOpen:s,overlayStyles:r,shadowStyles:n
-  }=em(),i=K();
+  }=em(),i=q();
   return(0,ot.useEffect)(()=>{
     function e(e){
       s(!1),t&&i.play("closeOverlay",{
@@ -2495,7 +2495,7 @@ fm.HintKey=function({
 }){
   const{
     handleOpen:n,arrowStyles:i
-  }=em(),l=K(),o=G(a=>{
+  }=em(),l=q(),o=G(a=>{
     e||(l.play("click",{
       original:a,target:"expandable-overlay:hint-key"
     }),n(e=>(l.play(e?"closeOverlay":"openOverlay",{
@@ -2515,7 +2515,7 @@ fm.HintKey=function({
         },
         soundTarget:"expandable-overlay:hint-key",onActive:o,children:(0,vt.jsx)(D.Code,{})
       }),(0,vt.jsx)(u.div,{
-        className:xa(im,t?.triangle),style:i,children:(0,vt.jsx)(ia,{
+        className:xa(im,t?.triangle),style:i,children:(0,vt.jsx)(na,{
           fit:"cover",path:r,className:xa(lm,t?.triangleNoise)
         })
       })]
@@ -2532,7 +2532,7 @@ function Im({
       resId:R.views.comp7.mono.lobby.tooltips.prestige_points_info_tooltip("resId")
     }),[])),className:xa(bm,hm,a),children:(0,vt.jsxs)("div",{
       className:gm,children:[(0,vt.jsx)("div",{
-        className:xm,children:ga.formatNumber("integral",e)
+        className:xm,children:va.formatNumber("integral",e)
       }),(0,vt.jsx)("div",{
         className:ym,children:(0,vt.jsx)("div",{
           className:pm
@@ -2545,35 +2545,35 @@ var wm="account",Am="vehicle",Cm="targetKills",Bm="damageDealt",Sm="damageBlocke
   [Cm]:"library.crossed_tank",[Bm]:"library.cross_with_gap",[Sm]:"library.blocked",[Pm]:"library.double_target",[Rm]:"library.arrow_with_fading",[km]:"library.eyebrow",[Tm]:"library.gear_with_gap"
 };
 var Hm={
-  behaviour:Ge.contentResponsive,minSize:"0rem",maxSize:"1000rem"
+  behaviour:we.contentResponsive,minSize:"0rem",maxSize:"1000rem"
 },
 Dm={
   [wm]:{
     [N.extraSmall]:{
-      behaviour:Ge.static,size:"200rem"
+      behaviour:we.static,size:"200rem"
     },
     [N.medium]:{
-      behaviour:Ge.static,size:"200rem"
+      behaviour:we.static,size:"200rem"
     },
     [N.large]:{
-      behaviour:Ge.static,size:"200rem"
+      behaviour:we.static,size:"200rem"
     },
     [N.extraLarge]:{
-      behaviour:Ge.static,size:"229rem"
+      behaviour:we.static,size:"229rem"
     }
   },
   [Am]:{
     [N.extraSmall]:{
-      behaviour:Ge.static,size:"182rem"
+      behaviour:we.static,size:"182rem"
     },
     [N.medium]:{
-      behaviour:Ge.static,size:"186rem"
+      behaviour:we.static,size:"186rem"
     },
     [N.large]:{
-      behaviour:Ge.static,size:"216rem"
+      behaviour:we.static,size:"216rem"
     },
     [N.extraLarge]:{
-      behaviour:Ge.static,size:"239rem"
+      behaviour:we.static,size:"239rem"
     }
   }
 },
@@ -2598,13 +2598,13 @@ function Vm({
     }),(0,vt.jsxs)("div",{
       ...i,className:Om.wrapper,children:[(0,vt.jsx)("div",{
         className:xa(Om.value,t?.value),children:e
-      }),(0,vt.jsx)(ia,{
+      }),(0,vt.jsx)(na,{
         path:"post_battle.assault",width:"32rem",height:"32rem",className:xa(Om.icon,t?.icon)
       })]
     }),(0,vt.jsxs)("div",{
       ...l,className:Om.wrapper,children:[(0,vt.jsx)("div",{
         className:xa(Om.value,t?.value),children:a
-      }),(0,vt.jsx)(ia,{
+      }),(0,vt.jsx)(na,{
         path:"post_battle.defend",width:"32rem",height:"32rem",className:xa(Om.icon,t?.icon)
       })]
     })]
@@ -2641,7 +2641,7 @@ var Gm="IconCell_99b0caec",$m=(0,ot.memo)(function({
   if(0===e)return null;
   const i=r[a]??"";
   return(0,vt.jsx)("div",{
-    ...n,className:xa(Gm,s),children:(0,vt.jsx)(ia,{
+    ...n,className:xa(Gm,s),children:(0,vt.jsx)(na,{
       width:"32rem",height:"32rem",path:i
     })
   })
@@ -2654,7 +2654,7 @@ var Gm="IconCell_99b0caec",$m=(0,ot.memo)(function({
     }),[t,a])
   });
   return 0===e?null:(0,vt.jsx)("div",{
-    ...r,className:xa(Lm,s),children:ga.formatNumber("integral",e)
+    ...r,className:xa(Lm,s),children:va.formatNumber("integral",e)
   })
 }),Xm={
   base:"NumberWithCounterCell_f729c44",counter:"NumberWithCounterCell_counter_8bb0eb59",counter__hidden:"NumberWithCounterCell_counter__hidden_468e7d52",counterValue:"NumberWithCounterCell_counterValue_566cc1fa",roundedCount:"NumberWithCounterCell_roundedCount_c97dad37",fadeIn:"NumberWithCounterCell_fadeIn_f75bc9d5",fadeInThreeQuarters:"NumberWithCounterCell_fadeInThreeQuarters_f75bc9d5",fadeInHalf:"NumberWithCounterCell_fadeInHalf_f75bc9d5",fadeOut:"NumberWithCounterCell_fadeOut_f75bc9d5",fadeInWithScale:"NumberWithCounterCell_fadeInWithScale_f75bc9d5",slideUp:"NumberWithCounterCell_slideUp_f75bc9d5",scale:"NumberWithCounterCell_scale_f75bc9d5",raysAppearance:"NumberWithCounterCell_raysAppearance_f75bc9d5",rotate:"NumberWithCounterCell_rotate_f75bc9d5","reverse-rotate":"NumberWithCounterCell_reverse-rotate_f75bc9d5",glowAppearance:"NumberWithCounterCell_glowAppearance_f75bc9d5",highlightAppearance:"NumberWithCounterCell_highlightAppearance_f75bc9d5",blink:"NumberWithCounterCell_blink_f75bc9d5",slideUpIn:"NumberWithCounterCell_slideUpIn_f75bc9d5"
@@ -2669,9 +2669,9 @@ function Fm({
   }(e,1e3);
   return(0,vt.jsx)("div",{
     className:Xm.counterValue,children:t===e?e:(0,vt.jsx)("div",{
-      ...a,className:Xm.roundedCount,children:(0,vt.jsx)(ge,{
+      ...a,className:Xm.roundedCount,children:(0,vt.jsx)(ye,{
         path:"common.numberAbbrev",params:{
-          value:ga.formatNumber("integral",Math.min(t,99))
+          value:va.formatNumber("integral",Math.min(t,99))
         }
       })
     })
@@ -2690,8 +2690,8 @@ var Km=(0,ot.memo)(function({
   if(0===e&&0===a)return null;
   const l=n[t]??"";
   return(0,vt.jsxs)("div",{
-    ...i,className:xa(Xm.base,r),children:[e>0&&ga.formatNumber("integral",e),(0,vt.jsxs)("div",{
-      className:xa(Xm.counter,0===a&&Xm.counter__hidden),children:[(0,vt.jsx)(ia,{
+    ...i,className:xa(Xm.base,r),children:[e>0&&va.formatNumber("integral",e),(0,vt.jsxs)("div",{
+      className:xa(Xm.counter,0===a&&Xm.counter__hidden),children:[(0,vt.jsx)(na,{
         className:Xm.icon,width:"32rem",height:"32rem",path:l
       }),a>=2&&(0,vt.jsx)(Fm,{
         count:a
@@ -2712,12 +2712,12 @@ function au({
       children:[(0,vt.jsx)(Ia,{
         value:e.tier,className:Zm
       }),(0,vt.jsx)("div",{
-        className:Ym,children:(0,vt.jsx)(Ce,{
+        className:Ym,children:(0,vt.jsx)(Be,{
           size:"x24x24",type:e.type
         })
       })]
     }),(0,vt.jsx)("div",{
-      className:xa(Jm,a&&eu),children:a?(0,vt.jsx)(ge,{
+      className:xa(Jm,a&&eu),children:a?(0,vt.jsx)(ye,{
         path:"ingame_gui.players_panel.unknown_vehicle"
       }):(0,vt.jsx)(z,{
         text:e.name
@@ -2742,19 +2742,19 @@ var tu=Fa(function({
 function du({
   account:e,isRankedBattle:a,rank:t,division:s,isQualification:r
 }){
-  return(0,vt.jsxs)(me,{
+  return(0,vt.jsxs)(he,{
     className:ru,children:[a?(0,vt.jsx)(tu,{
       rank:t,division:s,isQualification:r,className:xa(su,lu)
     }):null,""!==e.badge&&(0,vt.jsx)("div",{
-      className:xa(cu,lu),children:(0,vt.jsx)(me.Badge,{
-        size:me.Badge.sizes.x24x24,badgeId:e.badge,className:lu
+      className:xa(cu,lu),children:(0,vt.jsx)(he.Badge,{
+        size:he.Badge.sizes.x24x24,badgeId:e.badge,className:lu
       })
-    }),(0,vt.jsx)(me.Name,{
+    }),(0,vt.jsx)(he.Name,{
       className:xa(nu,lu),children:(0,vt.jsx)(z,{
         text:e.anonymizer?e.fakeUsername:e.username
       })
-    }),""!==e.clanAbbreviation&&!e.anonymizer&&(0,vt.jsx)(me.ClanTag,{
-      className:xa(iu,lu),children:(0,vt.jsx)(ge,{
+    }),""!==e.clanAbbreviation&&!e.anonymizer&&(0,vt.jsx)(he.ClanTag,{
+      className:xa(iu,lu),children:(0,vt.jsx)(ye,{
         path:"common.clanTag",params:{
           abbrev:e.clanAbbreviation
         },
@@ -2762,12 +2762,12 @@ function du({
           start:"{",end:"}"
         }
       })
-    }),0!==e.igrType&&(0,vt.jsx)(me.IgrIcon,{
-      size:me.IgrIcon.sizes.x34x16,className:lu
-    }),""!==e.suffixBadge&&(0,vt.jsx)(me.Stripe,{
-      size:me.Stripe.sizes.default,badgeId:e.suffixBadge,className:lu
-    }),e.anonymizer&&(0,vt.jsx)(me.AnonymizerIcon,{
-      size:me.AnonymizerIcon.sizes.x24x24,className:ou
+    }),0!==e.igrType&&(0,vt.jsx)(he.IgrIcon,{
+      size:he.IgrIcon.sizes.x34x16,className:lu
+    }),""!==e.suffixBadge&&(0,vt.jsx)(he.Stripe,{
+      size:he.Stripe.sizes.default,badgeId:e.suffixBadge,className:lu
+    }),e.anonymizer&&(0,vt.jsx)(he.AnonymizerIcon,{
+      size:he.AnonymizerIcon.sizes.x24x24,className:ou
     })]
   })
 }
@@ -2781,15 +2781,15 @@ function mu({
       paramType:a
     }
   }),n=T(e.table.getRowModel().rows,(e,t)=>{
-    const s=t.getValue(a),r=Q(s)?s:s.value;
+    const s=t.getValue(a),r=Y(s)?s:s.value;
     return e+(a===km&&r>0?1:r)
   },0),i=s[a]??"";
   return(0,vt.jsx)("div",{
     className:xa(bm,t),children:(0,vt.jsxs)("div",{
       ...r,className:gm,children:[(0,vt.jsx)("div",{
-        className:xm,children:ga.formatNumber("integral",n)
+        className:xm,children:va.formatNumber("integral",n)
       }),(0,vt.jsx)("div",{
-        className:ym,children:(0,vt.jsx)(ia,{
+        className:ym,children:(0,vt.jsx)(na,{
           width:"100%",height:"100%",path:i
         })
       })]
@@ -2812,7 +2812,7 @@ function uu({
     default:return console.error(`Unknown column ${e}`),null
   }
 }
-var _u="Index_align_5032d1bf",fu="Index_align__right_9d371d4f",pu="Index_align__left_7938cc",bu="Index_offsetCell_c4e68915",hu="Index_offsetCell__number_2c760167",vu=Ie();
+var _u="Index_align_5032d1bf",fu="Index_align__right_9d371d4f",pu="Index_align__left_7938cc",bu="Index_offsetCell_c4e68915",hu="Index_offsetCell__number_2c760167",vu=Se();
 function gu(){
   return[vu.accessor("killed",{
     id:Cm,header:e=>(0,vt.jsx)(uu,{
@@ -2862,18 +2862,18 @@ var yu="BodyRow_b47fe37f",xu="BodyRow_rowDivider_eb49c679",Nu="BodyRow_rowDivide
 function ju({
   classNames:e,row:a,rowIndex:t
 }){
-  const s=X({
+  const s=F({
     args:(0,ot.useMemo)(()=>({
       vehicleCD:a.original.vehicle?.vehicleCD,databaseID:a.original.databaseId
     }),[a.original.databaseId,a.original.vehicle?.vehicleCD])
   });
-  return(0,ot.createElement)(Qe.Row,{
+  return(0,ot.createElement)(Ge.Row,{
     ...void 0!==a.original.databaseId&&s,key:a.id,className:xa(yu,e?.row)
-  },i(a.getVisibleCells(),(a,s)=>(0,vt.jsx)(Qe.Cell,{
+  },i(a.getVisibleCells(),(a,s)=>(0,vt.jsx)(Ge.Cell,{
     className:e?.cell,cell:{
-      ...a,rowIndex:t,index:s,tablePart:ua.body
+      ...a,rowIndex:t,index:s,tablePart:Ze.body
     },
-    children:ye(a.column.columnDef.cell,a.getContext())
+    children:Le(a.column.columnDef.cell,a.getContext())
   },a.id)),(0,vt.jsx)(ss,{
     classNames:{
       base:xa(xu,e?.divider?.base),image:xa(Nu,e?.divider?.image)
@@ -2888,12 +2888,12 @@ wu=(0,ot.memo)(function({
 }){
   const{
     table:t
-  }=be(),s=Aa(),{
+  }=xe(),s=Aa(),{
     api:r
   }=$();
-  na(v.ARROW_UP,()=>{
+  ra(v.ARROW_UP,()=>{
     r.applyStepTo(aa.Next)
-  }),na(v.ARROW_DOWN,()=>{
+  }),ra(v.ARROW_DOWN,()=>{
     r.applyStepTo(aa.Prev)
   });
   const[n,l]=g(()=>({
@@ -2917,7 +2917,7 @@ wu=(0,ot.memo)(function({
     return r.events.on("recalculateContent",e),r.events.on("rest",e),r.events.on("change",e),r.events.on("resizeHandled",e),e(),()=>{
       r.events.off("recalculateContent",e),r.events.off("rest",e),r.events.off("change",e),r.events.off("resizeHandled",e)
     }
-  },[r,s,l]),(0,vt.jsxs)(Qe.Body,{
+  },[r,s,l]),(0,vt.jsxs)(Ge.Body,{
     className:xa(Iu.base,e?.base),children:[(0,vt.jsxs)(u.div,{
       className:Iu.mask,style:n,children:[(0,vt.jsx)(ss,{
         classNames:{
@@ -2944,14 +2944,14 @@ wu=(0,ot.memo)(function({
 }){
   const{
     table:a
-  }=be();
-  return(0,vt.jsx)(Qe.Footer,{
-    className:xa(Au,e?.base),children:i(a.getFooterGroups(),(a,t)=>(0,vt.jsx)(Qe.Row,{
-      className:xa(Cu,e?.row),children:i(a.headers,(a,s)=>(0,vt.jsx)(Qe.Cell,{
+  }=xe();
+  return(0,vt.jsx)(Ge.Footer,{
+    className:xa(Au,e?.base),children:i(a.getFooterGroups(),(a,t)=>(0,vt.jsx)(Ge.Row,{
+      className:xa(Cu,e?.row),children:i(a.headers,(a,s)=>(0,vt.jsx)(Ge.Cell,{
         onClick:a.column.getToggleSortingHandler(),className:e?.cell,cell:{
-          ...a,rowIndex:t,index:s,tablePart:ua.footer
+          ...a,rowIndex:t,index:s,tablePart:Ze.footer
         },
-        children:!a.isPlaceholder&&ye(a.column.columnDef.footer,a.getContext())
+        children:!a.isPlaceholder&&Le(a.column.columnDef.footer,a.getContext())
       },a.id))
     },a.id))
   })
@@ -2960,14 +2960,14 @@ wu=(0,ot.memo)(function({
 }){
   const{
     table:a
-  }=be();
-  return(0,vt.jsx)(Qe.Header,{
-    className:e?.base,children:i(a.getHeaderGroups(),(a,t)=>(0,vt.jsx)(Qe.Row,{
-      className:xa(Su,e?.row),children:i(a.headers,(a,s)=>(0,vt.jsx)(Qe.Cell,{
+  }=xe();
+  return(0,vt.jsx)(Ge.Header,{
+    className:e?.base,children:i(a.getHeaderGroups(),(a,t)=>(0,vt.jsx)(Ge.Row,{
+      className:xa(Su,e?.row),children:i(a.headers,(a,s)=>(0,vt.jsx)(Ge.Cell,{
         onClick:a.column.getToggleSortingHandler(),className:e?.cell,cell:{
-          ...a,rowIndex:t,index:s,tablePart:ua.header
+          ...a,rowIndex:t,index:s,tablePart:Ze.header
         },
-        children:!a.isPlaceholder&&ye(a.column.columnDef.header,a.getContext())
+        children:!a.isPlaceholder&&Le(a.column.columnDef.header,a.getContext())
       },a.id))
     },a.id))
   })
@@ -2978,8 +2978,8 @@ wu=(0,ot.memo)(function({
     columnOrder:s,columnVisibility:r
   }),[s,r]);
   return(0,vt.jsx)(Mm,{
-    iconsConfig:i,children:(0,vt.jsx)(la,{
-      columns:n,data:e.rows,enableMultiRowSelection:!1,getRowId:e=>e.account.username,initialState:o,children:(0,vt.jsx)(Qe,{
+    iconsConfig:i,children:(0,vt.jsx)(ma,{
+      columns:n,data:e.rows,enableMultiRowSelection:!1,getRowId:e=>e.account.username,initialState:o,children:(0,vt.jsx)(Ge,{
         className:a,children:(0,vt.jsx)(Ve,{
           children:t
         })
@@ -2995,8 +2995,8 @@ var ku=function({
     columnOrder:s,columnVisibility:r
   }),[s,r]);
   return(0,vt.jsx)(Mm,{
-    iconsConfig:i,children:(0,vt.jsx)(la,{
-      columns:n,data:e.rows,enableMultiRowSelection:!1,getRowId:e=>e.account.username,initialState:o,children:(0,vt.jsx)(Qe,{
+    iconsConfig:i,children:(0,vt.jsx)(ma,{
+      columns:n,data:e.rows,enableMultiRowSelection:!1,getRowId:e=>e.account.username,initialState:o,children:(0,vt.jsx)(Ge,{
         className:a,children:(0,vt.jsx)(Ve,{
           children:t
         })
@@ -3028,7 +3028,7 @@ function Ju(){
     })]
   })
 }
-var e_=pe.cubicBezier(.33,0,.25,1),a_="first",t_="second",s_="closedArrowInLoop",r_="openedArrowInLoop",n_=Fa(function({
+var e_=be.cubicBezier(.33,0,.25,1),a_="first",t_="second",s_="closedArrowInLoop",r_="openedArrowInLoop",n_=Fa(function({
   visible:e,totalEfficiencyStylesApi:a
 }){
   const{
@@ -3223,7 +3223,7 @@ var e_=pe.cubicBezier(.33,0,.25,1),a_="first",t_="second",s_="closedArrowInLoop"
 }),i_=Fa(function(){
   const{
     model:e
-  }=Eo(),a=e.computes.personalEffiency(),t=e.computes.personalInfo().efficiencyValues.prestigePoints,s=e.battleInfo.get().finishReasonClarification,r=c.resolve("strings"),n=K(),{
+  }=Eo(),a=e.computes.personalEffiency(),t=e.computes.personalInfo().efficiencyValues.prestigePoints,s=e.battleInfo.get().finishReasonClarification,r=c.resolve("strings"),n=q(),{
     hintKeyRef:i,overlayDividerRef:l,personalEfficiencyRef:o,completedSteps:d
   }=Qt(),m=!1===d.has(Ft.fifth),[_]=g(()=>({
     from:{
@@ -3254,12 +3254,12 @@ var e_=pe.cubicBezier(.33,0,.25,1),a_="first",t_="second",s_="closedArrowInLoop"
     }
   }),{
     active:h
-  }=J(),v=(0,ot.useRef)(null),[y,x]=(0,ot.useState)(0),[N,j]=(0,ot.useState)(!1),[I,w]=g(()=>({
+  }=ee(),v=(0,ot.useRef)(null),[y,x]=(0,ot.useState)(0),[N,j]=(0,ot.useState)(!1),[I,w]=g(()=>({
     opacity:N?0:1
   }));
   (0,ot.useEffect)(()=>{
     h!==Xa.overview&&j(!1)
-  },[h]),Se(v,(0,ot.useCallback)(()=>{
+  },[h]),Pe(v,(0,ot.useCallback)(()=>{
     const e=v.current?.getBoundingClientRect().height||0;
     e>0&&x(Math.round(e))
   },[x]));
@@ -3362,10 +3362,10 @@ x_=Fa(function({
     })]
   })
 }),N_="ProgressBar_813bb1b3",j_="ProgressBar_range_e5bfc429",I_="ProgressBar_rangeGap_2384cd24",w_="ProgressBar_currentScore_d49d64a8",A_="ProgressBar_barWrapper_fd13c839",C_="ProgressBar_rank_61a259a7",B_="ProgressBar_delta_3a201655",S_="ProgressBar_barDelta_874ea9e2",P_="ProgressBar_barDeltaInside_88f119d7",R_="ProgressBar_barDelta__negative_f0761b90",k_="ProgressBar_backgroundPattern_7f22cc1e",T_={
-  duration:600,easing:pe.easeInOutCubic
+  duration:600,easing:be.easeInOutCubic
 },
 E_={
-  duration:0,easing:pe.easeInOutCubic
+  duration:0,easing:be.easeInOutCubic
 },
 H_=Fa(function({
   className:e
@@ -3400,13 +3400,13 @@ H_=Fa(function({
         }),(0,vt.jsx)("div",{
           children:r+d*(m+1)
         })]
-      }),(0,vt.jsxs)(Te,{
-        size:"large",value:f,maxValue:_.maxValue,animationType:Te.animations.grow,status:"doneInactive",classNames:{
+      }),(0,vt.jsxs)(ia,{
+        size:"large",value:f,maxValue:_.maxValue,animationType:ia.animations.grow,status:"doneInactive",classNames:{
           backgroundPattern:k_
         },
-        backgroundPattern:"R.images.comp7.gui.maps.icons.progressbar.bg_pattern_base_large",children:[(0,vt.jsx)(Te.Fill,{
+        backgroundPattern:"R.images.comp7.gui.maps.icons.progressbar.bg_pattern_base_large",children:[(0,vt.jsx)(ia.Fill,{
           filledPattern:"R.images.comp7.gui.maps.icons.progressbar.bg_pattern_base_filled_large",animationConfig:v.current
-        }),b&&(0,vt.jsx)(Te.Delta,{
+        }),b&&(0,vt.jsx)(ia.Delta,{
           from:_.value,steps:["growing","shrinking"],className:xa(S_,c<0&&R_),classNames:{
             inside:P_
           },
@@ -3503,10 +3503,10 @@ H_=Fa(function({
       })]
     })]
   })
-}),nf=ve("Overview",Vd),lf=Fa(function({
+}),nf=ge("Overview",Vd),lf=Fa(function({
   className:e
 }){
-  const a=K(),{
+  const a=q(),{
     model:t,controls:s
   }=Eo(),r=t.additionalBonus.get(),n=t.battleInfo.get(),i=t.personalEfficiency.achievements.get(),l=t.computes.isRankedBattle(),{
     step:o,battleStatusRef:c,dividerRef:d,earnedCurrenciesRef:m,bonusRef:_,setAllMedalsAnimated:f
@@ -3538,14 +3538,14 @@ H_=Fa(function({
   },[i.length,f]),(0,ot.useEffect)(()=>{
     if(o===Ft.immediate)return y.start(()=>({
       x:0,y:0,scale:1,opacity:1,immediate:!0
-    })),f(!0),void x(new Set(ma(i.length,e=>e)));
+    })),f(!0),void x(new Set(da(i.length,e=>e)));
     if(o===Ft.first){
       const e=500*Math.log(i.length),t=150*Math.log(i.length);
       y.start(s=>{
         const r=e-500*Math.log(i.length-s),n=t-150*Math.log(i.length-s);
         return{
           x:0,y:0,scale:1,delay:200*s+r,config:{
-            duration:400+n,easing:pe.cubicBezier(1,0,.95,1)
+            duration:400+n,easing:be.cubicBezier(1,0,.95,1)
           },
           onRest(){
             a.play("achievementAppeared",{
@@ -3555,7 +3555,7 @@ H_=Fa(function({
         }
       }),y.start(a=>({
         opacity:1,delay:150+200*a+(e-500*Math.log(i.length-a)),config:{
-          duration:250+(t-150*Math.log(i.length-a)),easing:pe.cubicBezier(.33,0,.25,1)
+          duration:250+(t-150*Math.log(i.length-a)),easing:be.cubicBezier(.33,0,.25,1)
         }
       }))
     }
@@ -3614,7 +3614,7 @@ function gf({
 }){
   const o=w({
     body:R.strings.comp7_ext.banWidget.tooltip()
-  }),c=te(),d=te(),m=V(t.techName,{
+  }),c=se(),d=se(),m=V(t.techName,{
     ref:c,from:{
       opacity:l?0:1,transform:l?"translate(-50%, -50%) scale(2)":"translate(-50%, -50%) scale(1)"
     },
@@ -3699,7 +3699,7 @@ var yf="allies",xf="enemies",Nf="BanResult_674191e3",jf="BanResult_container_b47
   },[]),b=(0,ot.useCallback)(()=>{
     d.current||(d.current=!0,W.sound("comp_7_bans_crossed_label"))
   },[]);
-  return he(()=>{
+  return ve(()=>{
     i&&W.sound("comp_7_bans_text_animation")
   }),(0,vt.jsxs)("div",{
     className:(0,l_.default)(Nf,l),children:[(0,vt.jsx)(u.div,{
@@ -3749,7 +3749,7 @@ Ef=(0,ot.forwardRef)(function({
   classNames:e,className:a,...t
 },s){
   return(0,vt.jsx)("div",{
-    ...t,ref:s,className:xa(Tf.divider,e?.base,a),children:(0,vt.jsx)(ia,{
+    ...t,ref:s,className:xa(Tf.divider,e?.base,a),children:(0,vt.jsx)(na,{
       className:xa(Tf.dividerImage,e?.image),width:"100%",height:"100%",path:"post_battle.row_divider",fit:"cover"
     })
   })
@@ -3763,7 +3763,7 @@ function Df(e,a){
 var Of=(0,ot.forwardRef)(function({
   achievement:e,achievementsLength:a,index:t,hoverIndex:s,setHoverIndex:r,...n
 },i){
-  const l=K(),o=S(e.tooltipId,(0,ot.useMemo)(()=>JSON.parse(e.tooltipArgs),[e.tooltipArgs])),c=k({
+  const l=q(),o=S(e.tooltipId,(0,ot.useMemo)(()=>JSON.parse(e.tooltipArgs),[e.tooltipArgs])),c=k({
     width:"48rem",height:"48rem",path:`achievement.c_48x48.${e.iconName}`
   },{
     medium:{
@@ -3782,7 +3782,7 @@ var Of=(0,ot.forwardRef)(function({
     onMouseLeave:()=>{
       o.onMouseLeave(),r(void 0)
     },
-    children:(0,vt.jsx)(ia,{
+    children:(0,vt.jsx)(na,{
       ref:i,className:Hf.achievementIcon,...c
     },e.iconName)
   })
@@ -3833,15 +3833,15 @@ var Wf=Fa(function({
         name:N?"tank_empty":s.techName,width:b.width,height:b.height
       })
     }),(0,vt.jsxs)("div",{
-      className:Hf.info,children:[(0,vt.jsxs)(me,{
-        className:xa(Hf.accountInfo,!a&&Hf.accountInfo__simplified),children:[a?(0,vt.jsx)(Vf,{}):null,""!==t.badge&&(0,vt.jsx)(me.Badge,{
-          className:Hf.accountInfoGap,size:me.Badge.sizes.x48x48,badgeId:t.badge
-        }),(0,vt.jsx)(me.Name,{
+      className:Hf.info,children:[(0,vt.jsxs)(he,{
+        className:xa(Hf.accountInfo,!a&&Hf.accountInfo__simplified),children:[a?(0,vt.jsx)(Vf,{}):null,""!==t.badge&&(0,vt.jsx)(he.Badge,{
+          className:Hf.accountInfoGap,size:he.Badge.sizes.x48x48,badgeId:t.badge
+        }),(0,vt.jsx)(he.Name,{
           className:xa(Hf.accountName,Hf.accountInfoGap,t.teamKiller&&Hf.accountName__teamKiller),children:(0,vt.jsx)(z,{
             text:h?t.fakeUsername:t.username
           })
-        }),""!==t.clanAbbreviation&&!h&&(0,vt.jsx)(me.ClanTag,{
-          className:xa(Hf.clanAbbreviation,t.teamKiller&&Hf.clanAbbreviation__teamKiller),children:(0,vt.jsx)(ge,{
+        }),""!==t.clanAbbreviation&&!h&&(0,vt.jsx)(he.ClanTag,{
+          className:xa(Hf.clanAbbreviation,t.teamKiller&&Hf.clanAbbreviation__teamKiller),children:(0,vt.jsx)(ye,{
             path:"common.clanTag",params:{
               abbrev:t.clanAbbreviation
             },
@@ -3849,27 +3849,27 @@ var Wf=Fa(function({
               start:"{",end:"}"
             }
           })
-        }),0!==t.igrType&&(0,vt.jsx)(me.IgrIcon,{
-          size:me.IgrIcon.sizes.x64x28,className:Hf.accountInfoGap
-        }),""!==t.suffixBadge&&(0,vt.jsx)(me.Stripe,{
-          size:me.Stripe.sizes.regular,badgeId:t.suffixBadge,className:Hf.accountInfoGap
-        }),t.anonymizer&&(0,vt.jsx)(me.AnonymizerIcon,{
-          ...v,size:me.AnonymizerIcon.sizes.x32x32,className:Hf.anonymizerIcon
+        }),0!==t.igrType&&(0,vt.jsx)(he.IgrIcon,{
+          size:he.IgrIcon.sizes.x64x28,className:Hf.accountInfoGap
+        }),""!==t.suffixBadge&&(0,vt.jsx)(he.Stripe,{
+          size:he.Stripe.sizes.regular,badgeId:t.suffixBadge,className:Hf.accountInfoGap
+        }),t.anonymizer&&(0,vt.jsx)(he.AnonymizerIcon,{
+          ...v,size:he.AnonymizerIcon.sizes.x32x32,className:Hf.anonymizerIcon
         })]
       }),(0,vt.jsx)("div",{
-        className:xa(Hf.vehicle,t.teamKiller&&Hf.vehicle__teamKiller),children:N?(0,vt.jsx)(ge,{
+        className:xa(Hf.vehicle,t.teamKiller&&Hf.vehicle__teamKiller),children:N?(0,vt.jsx)(ye,{
           path:"ingame_gui.players_panel.unknown_vehicle"
         }):(0,vt.jsxs)(vt.Fragment,{
           children:[(0,vt.jsx)(Ia,{
             value:s.tier,className:xa(Hf.vehicleLevel,Hf.vehicleGap)
-          }),(0,vt.jsx)(Ce,{
+          }),(0,vt.jsx)(Be,{
             type:s.type,size:"x24x24",className:xa(Hf.vehicleType,Hf.vehicleGap)
           }),(0,vt.jsx)("div",{
             className:Hf.vehicleName,children:s.longName
           })]
         })
       }),(0,vt.jsx)("div",{
-        className:Hf.vehicleState,children:(0,vt.jsx)(ge,{
+        className:Hf.vehicleState,children:(0,vt.jsx)(ye,{
           path:zf({
             vehicleStatusKey:g,anonymized:h,personal:l,clanAbbrev:d.clanAbbreviation,abbondonBattle:o.abandonBattle
           }),params:{
@@ -3883,7 +3883,7 @@ var Wf=Fa(function({
       })]
     })]
   })
-}),Mf=ve("StatisticsLabel"),Gf=c.resolve("strings"),$f=(0,ot.forwardRef)(function({
+}),Mf=ge("StatisticsLabel"),Gf=c.resolve("strings"),$f=(0,ot.forwardRef)(function({
   labelKey:e,...a
 },t){
   return(0,vt.jsx)(Mf,{
@@ -3892,12 +3892,12 @@ var Wf=Fa(function({
 }),Lf="Value_798a6cdd",Uf="Value_separator_798a6cdd",Xf=c.resolve("strings");
 function Ff(e,a){
   switch(e){
-    case _o.Integer:return ga.formatNumber("integral",a);
-    case _o.Float:return ga.formatReal("fractional",a);
+    case _o.Integer:return va.formatNumber("integral",a);
+    case _o.Float:return va.formatReal("fractional",a);
     default:return a
   }
 }
-var Kf=ve("StatisticsValue",Lf),qf=(0,ot.forwardRef)(function({
+var Kf=ge("StatisticsValue",Lf),qf=(0,ot.forwardRef)(function({
   labelKey:e,value:a,type:t,valueSeparatorKey:s="common.common.slash",className:r,classNames:n,...l
 },o){
   return(0,vt.jsx)(Kf,{
@@ -3909,7 +3909,7 @@ var Kf=ve("StatisticsValue",Lf),qf=(0,ot.forwardRef)(function({
       })]
     },`${e}_value_${i}`))
   })
-}),Qf="Index_scrollAreaContent_52a570a",Yf="Index_scrollAreaContent__initialized_b2629fde",Zf="Index_item_6b7cdfb0",Jf="Index_separator_add04e19",ep=ve("Statistics","Index_statistics_638478ff"),ap=ve("StatisticsItem",Zf),tp=ve("StatisticsItemSeparator",Jf);
+}),Qf="Index_scrollAreaContent_52a570a",Yf="Index_scrollAreaContent__initialized_b2629fde",Zf="Index_item_6b7cdfb0",Jf="Index_separator_add04e19",ep=ge("Statistics","Index_statistics_638478ff"),ap=ge("StatisticsItem",Zf),tp=ge("StatisticsItemSeparator",Jf);
 function sp({
   children:e,scrollbarProps:a,scrollAreaProps:t
 }){
@@ -3999,7 +3999,7 @@ function hp({
     },e.labelKey))
   })
 }
-var vp="EfficiencyDetails_efficiencyDetails__reduced_908fdbe9",gp="EfficiencyDetails_efficiencyDetails__allies_20b1febc",yp="EfficiencyDetails_efficiencyDetails__enemies_23a29af",xp="EfficiencyDetails_divider_85b11efd",Np="EfficiencyDetails_dividerImage_5b9d06d2",jp="EfficiencyDetails_closeIcon_8d81da90",Ip="EfficiencyDetails_statistics_30a81815",wp=ve("EfficiencyDetails","EfficiencyDetails_efficiencyDetails_1f97f967",{
+var vp="EfficiencyDetails_efficiencyDetails__reduced_908fdbe9",gp="EfficiencyDetails_efficiencyDetails__allies_20b1febc",yp="EfficiencyDetails_efficiencyDetails__enemies_23a29af",xp="EfficiencyDetails_divider_85b11efd",Np="EfficiencyDetails_dividerImage_5b9d06d2",jp="EfficiencyDetails_closeIcon_8d81da90",Ip="EfficiencyDetails_statistics_30a81815",wp=ge("EfficiencyDetails","EfficiencyDetails_efficiencyDetails_1f97f967",{
   variants:{
     team:{
       [wo]:gp,[Ao]:yp
@@ -4010,7 +4010,7 @@ var vp="EfficiencyDetails_efficiencyDetails__reduced_908fdbe9",gp="EfficiencyDet
 }){
   const{
     model:t,controls:s
-  }=Eo(),r=t.bansModel.get().isEnabled,n=t.computes.efficiencyDetails(),i=t.computes.isRankedBattle(),l=K(),o=(0,ot.useRef)(null);
+  }=Eo(),r=t.bansModel.get().isEnabled,n=t.computes.efficiencyDetails(),i=t.computes.isRankedBattle(),l=q(),o=(0,ot.useRef)(null);
   return(0,ot.useEffect)(()=>{
     const e=qe.down(([,e])=>{
       "outside"===e&&s.teamEfficiency.selectRow(void 0)
@@ -4034,7 +4034,7 @@ var vp="EfficiencyDetails_efficiencyDetails__reduced_908fdbe9",gp="EfficiencyDet
       classNames:{
         base:xp,image:Np
       }
-    }),(0,vt.jsx)(ia,{
+    }),(0,vt.jsx)(na,{
       className:jp,width:"24rem",height:"24rem",path:"library.close",onMouseEnter:()=>{
         l.play("mouse-enter",{
           target:"team-efficiency:efficiency-details:close"
@@ -4068,15 +4068,15 @@ var vp="EfficiencyDetails_efficiencyDetails__reduced_908fdbe9",gp="EfficiencyDet
   }=Eo(),l=i.computes.personalInfo(),o=ko({
     personal:l.account.username===e.username,platoonType:Ro(a,l.squadIndex,t),anonymizer:e.anonymizer
   });
-  return(0,vt.jsxs)(me,{
-    ...n,className:xa(Vp,s),children:[""!==e.badge&&(0,vt.jsx)(me.Badge,{
-      size:me.Badge.sizes.x24x24,badgeId:e.badge,className:xa(Mp,r?.badge)
-    }),(0,vt.jsx)(me.Name,{
+  return(0,vt.jsxs)(he,{
+    ...n,className:xa(Vp,s),children:[""!==e.badge&&(0,vt.jsx)(he.Badge,{
+      size:he.Badge.sizes.x24x24,badgeId:e.badge,className:xa(Mp,r?.badge)
+    }),(0,vt.jsx)(he.Name,{
       className:xa(zp,r?.username),children:(0,vt.jsx)(z,{
         text:o?e.fakeUsername:e.username
       })
-    }),""!==e.clanAbbreviation&&!o&&(0,vt.jsx)(me.ClanTag,{
-      className:xa(Wp,r?.clanAbbreviation),children:(0,vt.jsx)(ge,{
+    }),""!==e.clanAbbreviation&&!o&&(0,vt.jsx)(he.ClanTag,{
+      className:xa(Wp,r?.clanAbbreviation),children:(0,vt.jsx)(ye,{
         path:"common.clanTag",params:{
           abbrev:e.clanAbbreviation
         },
@@ -4084,12 +4084,12 @@ var vp="EfficiencyDetails_efficiencyDetails__reduced_908fdbe9",gp="EfficiencyDet
           start:"{",end:"}"
         }
       })
-    }),0!==e.igrType&&(0,vt.jsx)(me.IgrIcon,{
-      size:me.IgrIcon.sizes.x34x16,className:xa($p,r?.igrIcon)
-    }),""!==e.suffixBadge&&(0,vt.jsx)(me.Stripe,{
-      size:me.Stripe.sizes.default,badgeId:e.suffixBadge,className:Lp,classNames:r?.suffixBadge
-    }),e.anonymizer&&(0,vt.jsx)(me.AnonymizerIcon,{
-      size:me.AnonymizerIcon.sizes.x24x24,className:xa(Gp,r?.anonymizerIcon)
+    }),0!==e.igrType&&(0,vt.jsx)(he.IgrIcon,{
+      size:he.IgrIcon.sizes.x34x16,className:xa($p,r?.igrIcon)
+    }),""!==e.suffixBadge&&(0,vt.jsx)(he.Stripe,{
+      size:he.Stripe.sizes.default,badgeId:e.suffixBadge,className:Lp,classNames:r?.suffixBadge
+    }),e.anonymizer&&(0,vt.jsx)(he.AnonymizerIcon,{
+      size:he.AnonymizerIcon.sizes.x24x24,className:xa(Gp,r?.anonymizerIcon)
     })]
   })
 }),Xp="AchievementsCell_achievementCell_e9bf973c",Fp="AchievementsCell_achievementsAmount_349c209a";
@@ -4100,84 +4100,84 @@ function Kp({
     body:i(Jl(e),e=>a.readOrEmpty(`achievements.${e.name}`)).join("\n")
   }),s=e.length;
   return 0===s?null:(0,vt.jsxs)("div",{
-    ...t,className:Xp,children:[(0,vt.jsx)(ia,{
+    ...t,className:Xp,children:[(0,vt.jsx)(na,{
       path:"library.medal",width:"32rem",height:"32rem"
     }),(0,vt.jsx)("div",{
-      className:Fp,children:ga.formatNumber("integral",s)
+      className:Fp,children:va.formatNumber("integral",s)
     })]
   })
 }
 var qp={
-  behaviour:Ge.static,size:"32rem"
+  behaviour:we.static,size:"32rem"
 },
 Qp={
-  behaviour:Ge.static,size:"32rem"
+  behaviour:we.static,size:"32rem"
 },
 Yp={
-  behaviour:Ge.static,size:"138rem"
+  behaviour:we.static,size:"138rem"
 },
 Zp={
-  behaviour:Ge.static,size:"212rem"
+  behaviour:we.static,size:"212rem"
 },
 Jp={
-  behaviour:Ge.static,size:"240rem"
+  behaviour:we.static,size:"240rem"
 },
 eb={
-  behaviour:Ge.static,size:"106rem"
+  behaviour:we.static,size:"106rem"
 },
 ab={
-  behaviour:Ge.static,size:"180rem"
+  behaviour:we.static,size:"180rem"
 },
 tb={
-  behaviour:Ge.static,size:"208rem"
+  behaviour:we.static,size:"208rem"
 },
 sb={
-  behaviour:Ge.static,size:"180rem"
+  behaviour:we.static,size:"180rem"
 },
 rb={
-  behaviour:Ge.static,size:"236rem"
+  behaviour:we.static,size:"236rem"
 },
 nb={
-  behaviour:Ge.static,size:"292rem"
+  behaviour:we.static,size:"292rem"
 },
 ib={
-  behaviour:Ge.static,size:"56rem"
+  behaviour:we.static,size:"56rem"
 },
 lb={
-  behaviour:Ge.static,size:"60rem"
+  behaviour:we.static,size:"60rem"
 },
 ob={
-  behaviour:Ge.static,size:"80rem"
+  behaviour:we.static,size:"80rem"
 },
 cb={
-  behaviour:Ge.static,size:"40rem"
+  behaviour:we.static,size:"40rem"
 },
 db={
-  behaviour:Ge.static,size:"60rem"
+  behaviour:we.static,size:"60rem"
 },
 mb={
-  behaviour:Ge.static,size:"60rem"
+  behaviour:we.static,size:"60rem"
 },
 ub={
-  behaviour:Ge.static,size:"56rem"
+  behaviour:we.static,size:"56rem"
 },
 _b={
-  behaviour:Ge.static,size:"60rem"
+  behaviour:we.static,size:"60rem"
 },
 fb={
-  behaviour:Ge.static,size:"80rem"
+  behaviour:we.static,size:"80rem"
 },
 pb={
-  behaviour:Ge.static,size:"40rem"
+  behaviour:we.static,size:"40rem"
 },
 bb={
-  behaviour:Ge.static,size:"56rem"
+  behaviour:we.static,size:"56rem"
 },
 hb={
-  behaviour:Ge.static,size:"60rem"
+  behaviour:we.static,size:"60rem"
 },
 vb={
-  behaviour:Ge.static,size:"80rem"
+  behaviour:we.static,size:"80rem"
 };
 var gb={
   headerCell__asc:"HeaderCell_headerCell__asc_204e6a44",headerCell__desc:"HeaderCell_headerCell__desc_dc5a7202",headerCell:"HeaderCell_headerCell_5b34d1b1",headerCell__icon:"HeaderCell_headerCell__icon_cfa14ddf",headerCell__text:"HeaderCell_headerCell__text_b476890c",fadeIn:"HeaderCell_fadeIn_204e6a44",fadeInThreeQuarters:"HeaderCell_fadeInThreeQuarters_204e6a44",fadeInHalf:"HeaderCell_fadeInHalf_204e6a44",fadeOut:"HeaderCell_fadeOut_204e6a44",fadeInWithScale:"HeaderCell_fadeInWithScale_204e6a44",slideUp:"HeaderCell_slideUp_204e6a44",scale:"HeaderCell_scale_204e6a44",raysAppearance:"HeaderCell_raysAppearance_204e6a44",rotate:"HeaderCell_rotate_204e6a44","reverse-rotate":"HeaderCell_reverse-rotate_204e6a44",glowAppearance:"HeaderCell_glowAppearance_204e6a44",highlightAppearance:"HeaderCell_highlightAppearance_204e6a44",blink:"HeaderCell_blink_204e6a44",slideUpIn:"HeaderCell_slideUpIn_204e6a44"
@@ -4195,7 +4195,7 @@ Nb=(0,ot.forwardRef)(function({
     header:l.readOrEmpty(`battle_results.team.${xb[e]}.header`),body:l.readOrEmpty(`battle_results.team.${xb[e]}.body`)
   }),d=e===Sp;
   return(0,vt.jsx)("div",{
-    ...r,...o,ref:n,className:xa(gb.headerCell,d?gb.headerCell__text:gb.headerCell__icon,i&&gb[`headerCell__${i}`],s),children:d?l.readOrEmpty(`battle_results.team.stats.${a}`):(0,vt.jsx)(ia,{
+    ...r,...o,ref:n,className:xa(gb.headerCell,d?gb.headerCell__text:gb.headerCell__icon,i&&gb[`headerCell__${i}`],s),children:d?l.readOrEmpty(`battle_results.team.stats.${a}`):(0,vt.jsx)(na,{
       width:"32rem",height:"32rem",path:yb[e]
     })
   })
@@ -4204,7 +4204,7 @@ function Ib({
   value:e,className:a,showZero:t=!0
 }){
   return!1===t&&0===e?null:(0,vt.jsx)("div",{
-    className:xa(jb,a),children:ga.formatNumber("integral",e)
+    className:xa(jb,a),children:va.formatNumber("integral",e)
   })
 }
 var wb={
@@ -4222,7 +4222,7 @@ Cb=Fa(function({
   if(null===s)return null;
   const r=Ab[s];
   return(0,vt.jsxs)("div",{
-    className:wb.platoon,children:[(0,vt.jsx)(ia,{
+    className:wb.platoon,children:[(0,vt.jsx)(na,{
       path:r(a),width:"32rem",height:"32rem"
     }),s!==Bo&&(0,vt.jsx)("div",{
       className:xa(wb.platoonText,wb[`platoonText__${s}`]),children:e
@@ -4242,12 +4242,12 @@ function Eb({
       children:[(0,vt.jsx)(Ia,{
         value:e.tier,className:xa(Rb,a?.level)
       }),(0,vt.jsx)("div",{
-        className:xa(Pb,a?.typeWrapper),children:(0,vt.jsx)(Ce,{
+        className:xa(Pb,a?.typeWrapper),children:(0,vt.jsx)(Be,{
           size:"x24x24",type:e.type,className:a?.type
         })
       })]
     }),(0,vt.jsx)("div",{
-      className:xa(kb,s&&Tb,a?.name),children:s?(0,vt.jsx)(ge,{
+      className:xa(kb,s&&Tb,a?.name),children:s?(0,vt.jsx)(ye,{
         path:"ingame_gui.players_panel.unknown_vehicle"
       }):(0,vt.jsx)(z,{
         text:e.name
@@ -4261,7 +4261,7 @@ var Hb={
 Db={
   tableBodyRow:"TableBodyRow_tableBodyRow_be19874",tableBodyRow__selected:"TableBodyRow_tableBodyRow__selected_9cd5fe77",hoverOverlay:"TableBodyRow_hoverOverlay_dab11111",selectedRowTail:"TableBodyRow_selectedRowTail_595bad28",selectedRowTail__enemies:"TableBodyRow_selectedRowTail__enemies_15d3ff4e",rowDivider:"TableBodyRow_rowDivider_7f22c0ad",rowDividerImage:"TableBodyRow_rowDividerImage_9c09afd1",accountInfo:"TableBodyRow_accountInfo_5ecfc9f2",vehicleText:"TableBodyRow_vehicleText_ddbf2e39",numberValue:"TableBodyRow_numberValue_c854dd1b",vehicleType:"TableBodyRow_vehicleType_e090b6ac",tableBodyRow__personalSquad:"TableBodyRow_tableBodyRow__personalSquad_5ecfc9f2",tableBodyRow__killed:"TableBodyRow_tableBodyRow__killed_5ecfc9f2",tableBodyRow__personal:"TableBodyRow_tableBodyRow__personal_5ecfc9f2",vehicleImage:"TableBodyRow_vehicleImage_e48d0479",accountName:"TableBodyRow_accountName_5ecfc9f2",tableBodyRow__teamKiller:"TableBodyRow_tableBodyRow__teamKiller_5ecfc9f2",clanAbbreviation:"TableBodyRow_clanAbbreviation_5ecfc9f2",selectedOverlay:"TableBodyRow_selectedOverlay_7f267587",selectedOverlayDivider:"TableBodyRow_selectedOverlayDivider_35a0f807",selectedOverlayDivider__bottom:"TableBodyRow_selectedOverlayDivider__bottom_20b949b4",selectedOverlayImage:"TableBodyRow_selectedOverlayImage_9c09afd1",fadeIn:"TableBodyRow_fadeIn_5ecfc9f2",fadeInThreeQuarters:"TableBodyRow_fadeInThreeQuarters_5ecfc9f2",fadeInHalf:"TableBodyRow_fadeInHalf_5ecfc9f2",fadeOut:"TableBodyRow_fadeOut_5ecfc9f2",fadeInWithScale:"TableBodyRow_fadeInWithScale_5ecfc9f2",slideUp:"TableBodyRow_slideUp_5ecfc9f2",scale:"TableBodyRow_scale_5ecfc9f2",raysAppearance:"TableBodyRow_raysAppearance_5ecfc9f2",rotate:"TableBodyRow_rotate_5ecfc9f2","reverse-rotate":"TableBodyRow_reverse-rotate_5ecfc9f2",glowAppearance:"TableBodyRow_glowAppearance_5ecfc9f2",highlightAppearance:"TableBodyRow_highlightAppearance_5ecfc9f2",blink:"TableBodyRow_blink_5ecfc9f2",slideUpIn:"TableBodyRow_slideUpIn_5ecfc9f2"
 },
-Ob=Ie();
+Ob=Se();
 function Vb(e,a,t){
   const s=e.getValue("account"),r=e.getValue("squadIndex");
   return ko({
@@ -4284,7 +4284,7 @@ function Wb(e,a){
   return e.getValue("damageDealt").damageDealt-a.getValue("damageDealt").damageDealt
 }
 var Mb={
-  [va.heavyTank]:5,[va.mediumTank]:4,[va["AT-SPG"]]:3,[va.lightTank]:2,[va.SPG]:1
+  [ha.heavyTank]:5,[ha.mediumTank]:4,[ha["AT-SPG"]]:3,[ha.lightTank]:2,[ha.SPG]:1
 };
 function Gb({
   team:e,personalInfo:a,breakpointName:t,isRankedBattle:s
@@ -4424,15 +4424,15 @@ function Fb({
 }){
   const{
     table:a
-  }=be(),t=K();
-  return(0,vt.jsxs)(Qe.Header,{
+  }=xe(),t=q();
+  return(0,vt.jsxs)(Ge.Header,{
     className:e,children:[(0,vt.jsx)(Ef,{
       classNames:{
         base:Lb,image:Ub
       }
-    }),i(a.getHeaderGroups(),(e,a)=>(0,vt.jsx)(Qe.Row,{
+    }),i(a.getHeaderGroups(),(e,a)=>(0,vt.jsx)(Ge.Row,{
       className:$b,children:i(e.headers,(e,s)=>{
-        return(0,vt.jsx)(Qe.Cell,{
+        return(0,vt.jsx)(Ge.Cell,{
           onClick:(r=e.column.getToggleSortingHandler(),function(e){
             r?.(e),t.play("click",{
               original:e,target:"team-efficiency:efficiency-table:header:cell"
@@ -4440,9 +4440,9 @@ function Fb({
           }),onMouseEnter:e=>t.play("mouse-enter",{
             target:"team-efficiency:efficiency-table:header:cell",original:e
           }),cell:{
-            ...e,rowIndex:a,index:s,tablePart:ua.header
+            ...e,rowIndex:a,index:s,tablePart:Ze.header
           },
-          className:Xb,children:!e.isPlaceholder&&ye(e.column.columnDef.header,e.getContext())
+          className:Xb,children:!e.isPlaceholder&&Le(e.column.columnDef.header,e.getContext())
         },e.id);
         var r
       })
@@ -4474,18 +4474,18 @@ var th="personal",sh="personalSquad",rh="none",nh=Fa(function({
 }){
   const{
     model:r,controls:n
-  }=Eo(),l=K(),o=G(t=>{
+  }=Eo(),l=q(),o=G(t=>{
     t.stopPropagation(),l.play("click",{
       original:t,target:"team-efficiency:efficiency-table:body:row"
     }),n.teamEfficiency.selectRow({
       team:a,username:e.original.account.username
     })
-  },[n.teamEfficiency,e.original.account.username,l,a],400),c=r.teamsStatistic.selectedRow.get(),d=r.computes.personalInfo(),m=d.account.username===e.original.account.username?th:Ro(a,d.squadIndex,e.original.squadIndex)===So?sh:rh,u=e.original.account.teamKiller,_=e.original.account.killed,f=c?.team===a&&c.username===e.original.account.username,p=X({
+  },[n.teamEfficiency,e.original.account.username,l,a],400),c=r.teamsStatistic.selectedRow.get(),d=r.computes.personalInfo(),m=d.account.username===e.original.account.username?th:Ro(a,d.squadIndex,e.original.squadIndex)===So?sh:rh,u=e.original.account.teamKiller,_=e.original.account.killed,f=c?.team===a&&c.username===e.original.account.username,p=F({
     args:(0,ot.useMemo)(()=>({
       vehicleCD:e.original.vehicle?.vehicleCD,databaseID:e.original.databaseId
     }),[e.original])
   });
-  return(0,vt.jsxs)(Qe.Row,{
+  return(0,vt.jsxs)(Ge.Row,{
     ...m!==th&&p,onMouseEnter:e=>l.play("mouse-enter",{
       target:"team-efficiency:efficiency-table:body:row",original:e
     }),className:xa(Db.tableBodyRow,f&&Db.tableBodyRow__selected,m!==rh&&Db[`tableBodyRow__${m}`],u&&Db.tableBodyRow__teamKiller,_&&Db.tableBodyRow__killed),onClick:o,children:[(0,vt.jsxs)("div",{
@@ -4504,11 +4504,11 @@ var th="personal",sh="personalSquad",rh="none",nh=Fa(function({
       classNames:{
         base:xa(Db.rowDivider,f&&Db.rowDivider__selected),image:Db.rowDividerImage
       }
-    }),i(e.getVisibleCells(),(e,a)=>(0,vt.jsx)(Qe.Cell,{
+    }),i(e.getVisibleCells(),(e,a)=>(0,vt.jsx)(Ge.Cell,{
       cell:{
-        ...e,rowIndex:t,index:a,tablePart:ua.body
+        ...e,rowIndex:t,index:a,tablePart:Ze.body
       },
-      children:ye(e.column.columnDef.cell,e.getContext())
+      children:Le(e.column.columnDef.cell,e.getContext())
     },e.id)),(0,vt.jsx)("div",{
       className:Db.hoverOverlay
     })]
@@ -4519,7 +4519,7 @@ function ih({
 }){
   const{
     table:a
-  }=be(),{
+  }=xe(),{
     api:t
   }=$(),s=Aa(),r=(0,ot.useRef)(null),[n,l]=(0,ot.useState)(!1),[o,c]=g(()=>({
     from:{
@@ -4545,7 +4545,7 @@ function ih({
     return t.events.on("recalculateContent",e),t.events.on("rest",e),t.events.on("change",e),t.events.on("resizeHandled",e),e(),()=>{
       t.events.off("recalculateContent",e),t.events.off("rest",e),t.events.off("change",e),t.events.off("resizeHandled",e)
     }
-  },[t,s,c]),(0,vt.jsxs)(Qe.Body,{
+  },[t,s,c]),(0,vt.jsxs)(Ge.Body,{
     className:Hb.tableBody,children:[(0,vt.jsx)(u.div,{
       className:Hb.mask,style:o,children:(0,vt.jsx)(A,{
         classNames:{
@@ -4564,7 +4564,7 @@ function ih({
     })]
   })
 }
-var lh=ve("TeamEfficiencyTable",Hb.efficiencyTable,{
+var lh=ge("TeamEfficiencyTable",Hb.efficiencyTable,{
   variants:{
     team:{
       [wo]:Hb.efficiencyTable__allies,[Ao]:Hb.efficiencyTable__enemies
@@ -4590,12 +4590,12 @@ ch=Fa(({
   },[o,r.teamEfficiency]),m=(0,ot.useMemo)(()=>Gb({
     team:e,personalInfo:n,breakpointName:c,isRankedBattle:i
   }),[e,c,n,i]);
-  return Ke(ra(c),`Such breakpoint ${c} is not supported`),(0,vt.jsx)(la,{
-    columns:m,data:a,enableMultiRowSelection:!1,enableSortingRemoval:!1,sorting:o,onSortingChange:d,getRowId:e=>e.account.username,getFilteredRowModel:Ze(),globalFilterFn:e=>65281!==e.original.vehicle?.vehicleCD,enableSorting:!0,initialState:{
+  return Ke(Qe(c),`Such breakpoint ${c} is not supported`),(0,vt.jsx)(ma,{
+    columns:m,data:a,enableMultiRowSelection:!1,enableSortingRemoval:!1,sorting:o,onSortingChange:d,getRowId:e=>e.account.username,getFilteredRowModel:Ce(),globalFilterFn:e=>65281!==e.original.vehicle?.vehicleCD,enableSorting:!0,initialState:{
       globalFilter:!0
     },
     children:(0,vt.jsx)(lh,{
-      team:e,className:t,children:(0,vt.jsxs)(Qe,{
+      team:e,className:t,children:(0,vt.jsxs)(Ge,{
         className:Hb.table,children:[(0,vt.jsx)(Fb,{
           className:Hb.header
         }),(0,vt.jsx)(Ve,{
@@ -4609,14 +4609,14 @@ ch=Fa(({
 }),dh={
   base:"TeamEfficiency_adc1788b",banInfoContainer:"TeamEfficiency_banInfoContainer_c7e8623e",wrapper:"TeamEfficiency_wrapper_a2a49ce",table:"TeamEfficiency_table_5763cf17",table__hidden:"TeamEfficiency_table__hidden_e8864815",details:"TeamEfficiency_details_f087bb8e",details__visible:"TeamEfficiency_details__visible_eaf91b76",fadeIn:"TeamEfficiency_fadeIn_f795cecf",fadeInThreeQuarters:"TeamEfficiency_fadeInThreeQuarters_f795cecf",fadeInHalf:"TeamEfficiency_fadeInHalf_f795cecf",fadeOut:"TeamEfficiency_fadeOut_f795cecf",fadeInWithScale:"TeamEfficiency_fadeInWithScale_f795cecf",slideUp:"TeamEfficiency_slideUp_f795cecf",scale:"TeamEfficiency_scale_f795cecf",raysAppearance:"TeamEfficiency_raysAppearance_f795cecf",rotate:"TeamEfficiency_rotate_f795cecf","reverse-rotate":"TeamEfficiency_reverse-rotate_f795cecf",glowAppearance:"TeamEfficiency_glowAppearance_f795cecf",highlightAppearance:"TeamEfficiency_highlightAppearance_f795cecf",blink:"TeamEfficiency_blink_f795cecf",slideUpIn:"TeamEfficiency_slideUpIn_f795cecf"
 },
-mh=ve("TeamEfficiency",dh.base),uh=Fa(function({
+mh=ge("TeamEfficiency",dh.base),uh=Fa(function({
   className:e
 }){
   const{
     model:a
   }=Eo(),{
     active:t
-  }=J(),s=a.bansModel.get().isEnabled,r=a.teamsStatistic.allies.get(),n=a.teamsStatistic.enemies.get(),i=a.teamsStatistic.selectedRow.get();
+  }=ee(),s=a.bansModel.get().isEnabled,r=a.teamsStatistic.allies.get(),n=a.teamsStatistic.enemies.get(),i=a.teamsStatistic.selectedRow.get();
   return(0,vt.jsxs)(mh,{
     className:xa(dh[`base__${i?.team}`],e),children:[(0,vt.jsxs)("div",{
       className:dh.wrapper,children:[(0,vt.jsx)(Ap,{
@@ -4635,11 +4635,11 @@ mh=ve("TeamEfficiency",dh.base),uh=Fa(function({
 }),_h={
   tab:"App_tab_5d913562",vignette:"App_vignette_6896e5b7",base:"App_e782cff0",navigation:"App_navigation_24ac5b4",navigation__disabled:"App_navigation__disabled_f8c46244",switcher:"App_switcher_b0c0c74b",mainBorderSwitcher:"App_mainBorderSwitcher_edb9d39b",content__overview:"App_content__overview_0",tab__overview:"App_tab__overview_83066945",content__teamScore:"App_content__teamScore_0",tab__teamScore:"App_tab__teamScore_83066945",content__financialReport:"App_content__financialReport_0",tab__financialReport:"App_tab__financialReport_83066945",content__missionProgress:"App_content__missionProgress_0",tab__missionProgress:"App_tab__missionProgress_83066945",progressionNotificationItems:"App_progressionNotificationItems_50f548a8",notificationBubble:"App_notificationBubble_e3b77ec5",notificationValueContainer:"App_notificationValueContainer_17678555",notificationValue:"App_notificationValue_e7f1f67c",info:"App_info_ad190031",fadeIn:"App_fadeIn_0",fadeInThreeQuarters:"App_fadeInThreeQuarters_0",fadeInHalf:"App_fadeInHalf_0",fadeOut:"App_fadeOut_0",fadeInWithScale:"App_fadeInWithScale_0",slideUp:"App_slideUp_0",scale:"App_scale_0",raysAppearance:"App_raysAppearance_0",rotate:"App_rotate_0","reverse-rotate":"App_reverse-rotate_0",glowAppearance:"App_glowAppearance_0",highlightAppearance:"App_highlightAppearance_0",blink:"App_blink_0",slideUpIn:"App_slideUpIn_0"
 },
-fh=ve("PostBattle",_h.base),ph=ve("PostBattleNavigation",_h.navigation);
+fh=ge("PostBattle",_h.base),ph=ge("PostBattleNavigation",_h.navigation);
 function bh(){
   const{
     active:e
-  }=J();
+  }=ee();
   return(0,vt.jsxs)("div",{
     className:xa(_h.content,_h[`content__${e}`]),children:[(0,vt.jsx)(of,{
       className:xa(_h.tab,_h.tab__overview)
@@ -4653,7 +4653,7 @@ function bh(){
   })
 }
 var hh=Fa(function(){
-  const e=c.resolve("strings"),a=K(),t=fe(),{
+  const e=c.resolve("strings"),a=q(),t=pe(),{
     battleInfoRef:s,navigationRef:r,completedSteps:n,step:i,readyForNotifications:l
   }=Qt(),o=kt(),[d]=g(()=>({
     from:{
@@ -4669,10 +4669,10 @@ var hh=Fa(function(){
     model:_,controls:f
   }=Eo(),p=_.computes.personalInfo(),b=_.battleInfo.get(),{
     active:h
-  }=J();
-  return na(v.ESCAPE,f.close),he(()=>{
+  }=ee();
+  return ra(v.ESCAPE,f.close),ve(()=>{
     function e(e){
-      e.altKey||e.shiftKey||e.ctrlKey||ie.tooltip.hideAll()
+      e.altKey||e.shiftKey||e.ctrlKey||le.tooltip.hideAll()
     }
     return document.addEventListener("keydown",e),()=>{
       document.removeEventListener("keydown",e)
@@ -4691,22 +4691,22 @@ var hh=Fa(function(){
       className:_h.vignette
     }),(0,vt.jsx)(bh,{}),(0,vt.jsx)(u.div,{
       style:d,children:(0,vt.jsx)(ph,{
-        className:!1===n.has(Ft.navigation)&&_h.navigation__disabled,children:(0,vt.jsxs)(Y.Switcher,{
+        className:!1===n.has(Ft.navigation)&&_h.navigation__disabled,children:(0,vt.jsxs)(Z.Switcher,{
           className:_h.switcher,classNames:{
             mainBorder:_h.mainBorderSwitcher
           },
-          children:[(0,vt.jsx)(Y.Tab,{
-            tabId:Xa.overview,children:ga.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.battleResults"))
-          }),(0,vt.jsx)(Y.Tab,{
-            tabId:Xa.teamsStatistics,children:ga.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.teamEfficiency"))
-          }),(0,vt.jsxs)(Y.Tab,{
-            tabId:Xa.progression,children:[ga.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.missionsProgress")),(0,vt.jsx)(Xt.Bubble,{
+          children:[(0,vt.jsx)(Z.Tab,{
+            tabId:Xa.overview,children:va.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.battleResults"))
+          }),(0,vt.jsx)(Z.Tab,{
+            tabId:Xa.teamsStatistics,children:va.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.teamEfficiency"))
+          }),(0,vt.jsxs)(Z.Tab,{
+            tabId:Xa.progression,children:[va.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.missionsProgress")),(0,vt.jsx)(Xt.Bubble,{
               className:_h.notificationBubble
             }),(0,vt.jsx)(Xt.Items,{
               className:_h.progressionNotificationItems
             })]
-          }),(0,vt.jsx)(Y.Tab,{
-            tabId:Xa.financialReport,children:ga.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.financialReport"))
+          }),(0,vt.jsx)(Z.Tab,{
+            tabId:Xa.financialReport,children:va.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.financialReport"))
           })]
         })
       })
@@ -4727,7 +4727,7 @@ var hh=Fa(function(){
     })]
   })
 }),vh=Fa(function(){
-  const e=xe(),{
+  const e=Ne(),{
     model:a
   }=Eo(),t=a.computes.hasProgressAnimation(),{
     size:s
@@ -4741,7 +4741,7 @@ var hh=Fa(function(){
       size:f.large
     }
   });
-  return(0,vt.jsx)(Y,{
+  return(0,vt.jsx)(Z,{
     theme:"primary",size:s,active:La(e.location),onActiveChange:a=>{
       a in $a?e.push($a[a]):console.error(`Invalid tab ID: ${a}`)
     },
@@ -4784,13 +4784,13 @@ var hh=Fa(function(){
   }
 }),yh=(new Je).add(To).addWithProps(h,{
   soundsOverrides:gh
-}).addWithProps(fa,{
+}).addWithProps(_a,{
   context:"model.router"
 }).addWithProps(Ya,{
   options:{
     context:"model.scheduleInfo"
   }
 });
-oe(),we(yh.render((0,vt.jsx)(vh,{})),{
+ga(),Ae(yh.render((0,vt.jsx)(vh,{})),{
   fullScreen:!0
 });

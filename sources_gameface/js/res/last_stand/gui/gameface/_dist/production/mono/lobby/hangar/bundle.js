@@ -3451,7 +3451,7 @@ var Cu="Progression_de15ce34",ju="Progression_label_67b446d",wu="Progression_lev
   const g=qu.get(s);
   return(0,Mr.jsxs)(ec,{
     ...u,id:bc,groupId:ll,position:0,className:Yt($u,!r&&Hu),isDisabled:r,onClick:()=>{
-      u.onClick(),r||(h(),t.openBattlePass())
+      u.onClick(),r||(a("click"),h(),t.openBattlePass())
     },
     onMouseEnter:e=>{
       u.onMouseEnter(e),r||(a("mouse-enter"),s===Xl.Intro&&(l.current=!0,a(Ll.umg_widget_event_hover_loop)))

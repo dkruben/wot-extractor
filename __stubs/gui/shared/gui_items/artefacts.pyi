@@ -19,7 +19,7 @@ from gui.shared.gui_items.fitting_item import FittingItem as FittingItem
 from gui.shared.gui_items.gui_item_economics import ItemPrice as ItemPrice, ITEM_PRICE_EMPTY as ITEM_PRICE_EMPTY
 from gui.shared.money import Money as Money, Currency as Currency, MONEY_UNDEFINED as MONEY_UNDEFINED
 from gui.shared.utils.functions import stripColorTagDescrTags as stripColorTagDescrTags, replaceHyphenToUnderscore as replaceHyphenToUnderscore
-from gui.shared.utils.role_presenter_helper import getRoleUserName as getRoleUserName
+from gui.shared.utils.skill_presenter_helper import getSkillUserName as getSkillUserName
 from helpers import i18n as i18n, dependency as dependency
 from items import artefacts as artefacts, tankmen as tankmen, ITEM_OPERATION as ITEM_OPERATION
 from skeletons.gui.game_control import IEpicBattleMetaGameController as IEpicBattleMetaGameController

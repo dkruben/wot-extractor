@@ -132,102 +132,6 @@ html[lang=th] input {
   --color-team-killer: #09e2ff;
   --color-team-killer-rgb: 9, 226, 255;
 }/* stylelint-disable selector-no-qualifying-type */
-.FormatText_db904f12 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 0;
-  white-space: pre-wrap;
-}
-.FormatText_base__fullSize_a514958e {
-  flex: 1 1 auto;
-  width: 100%;
-}
-.FormatText_db904f12 span {
-  flex-wrap: wrap;
-  white-space: normal;
-  overflow-wrap: normal;
-}
-[lang=ja] .FormatText_db904f12 span, [lang=ko] .FormatText_db904f12 span, [lang=zh_tw] .FormatText_db904f12 span, [lang=zh_sg] .FormatText_db904f12 span, [lang=zh_cn] .FormatText_db904f12 span, [lang=vi] .FormatText_db904f12 span, [lang=el] .FormatText_db904f12 span, [lang=th] .FormatText_db904f12 span {
-  overflow-wrap: anywhere;
-}
-
-.FormatText_nowrap_ff69eca3 {
-  white-space: nowrap;
-}
-
-.FormatText_colorLegacy__blackReal {
-  color: #000;
-}
-.FormatText_colorLegacy__whiteReal {
-  color: #fff;
-}
-.FormatText_colorLegacy__white {
-  color: #f2f2f7;
-}
-.FormatText_colorLegacy__whiteOrange {
-  color: #fefeec;
-}
-.FormatText_colorLegacy__whiteSpanish {
-  color: #e9e2bf;
-}
-.FormatText_colorLegacy__par {
-  color: #8c8c7e;
-}
-.FormatText_colorLegacy__parSecondary {
-  color: #595950;
-}
-.FormatText_colorLegacy__parTertiary {
-  color: #37362e;
-}
-.FormatText_colorLegacy__infoRed {
-  color: #f00;
-}
-.FormatText_colorLegacy__red {
-  color: #ff2717;
-}
-.FormatText_colorLegacy__redDark {
-  color: #b70000;
-}
-.FormatText_colorLegacy__yellow {
-  color: #feab34;
-}
-.FormatText_colorLegacy__orange {
-  color: #ee7000;
-}
-.FormatText_colorLegacy__cream {
-  color: #fd9;
-}
-.FormatText_colorLegacy__brown {
-  color: #cbac77;
-}
-.FormatText_colorLegacy__greenBright {
-  color: #80d43a;
-}
-.FormatText_colorLegacy__green {
-  color: #7ab300;
-}
-.FormatText_colorLegacy__greenDark {
-  color: #497212;
-}
-.FormatText_colorLegacy__blueBooster {
-  color: #cff;
-}
-.FormatText_colorLegacy__blueTeamkiller {
-  color: #09e2ff;
-}
-.FormatText_colorLegacy__cred {
-  color: #ced9d9;
-}
-.FormatText_colorLegacy__gold {
-  color: #ffc363;
-}
-.FormatText_colorLegacy__bond {
-  color: #c9c9b6;
-}
-.FormatText_colorLegacy__prom {
-  color: #a29b70;
-}/* stylelint-disable selector-no-qualifying-type */
 .HeadlessButton_df8536fc {
   border: none;
   background: none;
@@ -441,6 +345,130 @@ html[lang=th] input {
 .Button_base__size-large_83da852e .Button_content_298de63f {
   font-size: 28rem;
 }/* stylelint-disable selector-no-qualifying-type */
+.Currency_72d4be39 {
+  display: flex;
+  align-items: center;
+  color: var(--color-general-secondary);
+  text-shadow: 0 1rem 7rem rgba(0, 0, 0, 0.3);
+}
+.Currency_base__reverse_f12e61b0 {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.Currency_base__notEnough_9a7842f {
+  color: var(--color-status-error);
+}
+.Currency_base__credits_7b9ae721 {
+  color: var(--color-currency-credits);
+}
+.Currency_base__gold_d6e3cbc {
+  color: var(--color-currency-gold);
+}
+.Currency_base__freeXP_d29d5a57 {
+  color: var(--color-currency-free-experience);
+}
+.Currency_base__crystal_f830cb47 {
+  color: var(--color-currency-bond);
+}
+.Currency_base__tankXP_1707c68b {
+  color: var(--color-currency-combat-experience);
+}/* stylelint-disable selector-no-qualifying-type */
+.FormatText_db904f12 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  white-space: pre-wrap;
+}
+.FormatText_base__fullSize_a514958e {
+  flex: 1 1 auto;
+  width: 100%;
+}
+.FormatText_db904f12 span {
+  flex-wrap: wrap;
+  white-space: normal;
+  overflow-wrap: normal;
+}
+[lang=ja] .FormatText_db904f12 span, [lang=ko] .FormatText_db904f12 span, [lang=zh_tw] .FormatText_db904f12 span, [lang=zh_sg] .FormatText_db904f12 span, [lang=zh_cn] .FormatText_db904f12 span, [lang=vi] .FormatText_db904f12 span, [lang=el] .FormatText_db904f12 span, [lang=th] .FormatText_db904f12 span {
+  overflow-wrap: anywhere;
+}
+
+.FormatText_nowrap_ff69eca3 {
+  white-space: nowrap;
+}
+
+.FormatText_colorLegacy__blackReal {
+  color: #000;
+}
+.FormatText_colorLegacy__whiteReal {
+  color: #fff;
+}
+.FormatText_colorLegacy__white {
+  color: #f2f2f7;
+}
+.FormatText_colorLegacy__whiteOrange {
+  color: #fefeec;
+}
+.FormatText_colorLegacy__whiteSpanish {
+  color: #e9e2bf;
+}
+.FormatText_colorLegacy__par {
+  color: #8c8c7e;
+}
+.FormatText_colorLegacy__parSecondary {
+  color: #595950;
+}
+.FormatText_colorLegacy__parTertiary {
+  color: #37362e;
+}
+.FormatText_colorLegacy__infoRed {
+  color: #f00;
+}
+.FormatText_colorLegacy__red {
+  color: #ff2717;
+}
+.FormatText_colorLegacy__redDark {
+  color: #b70000;
+}
+.FormatText_colorLegacy__yellow {
+  color: #feab34;
+}
+.FormatText_colorLegacy__orange {
+  color: #ee7000;
+}
+.FormatText_colorLegacy__cream {
+  color: #fd9;
+}
+.FormatText_colorLegacy__brown {
+  color: #cbac77;
+}
+.FormatText_colorLegacy__greenBright {
+  color: #80d43a;
+}
+.FormatText_colorLegacy__green {
+  color: #7ab300;
+}
+.FormatText_colorLegacy__greenDark {
+  color: #497212;
+}
+.FormatText_colorLegacy__blueBooster {
+  color: #cff;
+}
+.FormatText_colorLegacy__blueTeamkiller {
+  color: #09e2ff;
+}
+.FormatText_colorLegacy__cred {
+  color: #ced9d9;
+}
+.FormatText_colorLegacy__gold {
+  color: #ffc363;
+}
+.FormatText_colorLegacy__bond {
+  color: #c9c9b6;
+}
+.FormatText_colorLegacy__prom {
+  color: #a29b70;
+}/* stylelint-disable selector-no-qualifying-type */
 .CloseButton_7488a1b8 {
   display: flex;
   justify-content: center;
@@ -503,34 +531,6 @@ html[lang=th] input {
 }
 .media-upscale .CloseButton_base__x32x32_6466ea31:hover {
   background-image: url(R.images.gui.maps.icons.ui_kit.close_button.icon_x32x32_hover);
-}/* stylelint-disable selector-no-qualifying-type */
-.Currency_72d4be39 {
-  display: flex;
-  align-items: center;
-  color: var(--color-general-secondary);
-  text-shadow: 0 1rem 7rem rgba(0, 0, 0, 0.3);
-}
-.Currency_base__reverse_f12e61b0 {
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-}
-.Currency_base__notEnough_9a7842f {
-  color: var(--color-status-error);
-}
-.Currency_base__credits_7b9ae721 {
-  color: var(--color-currency-credits);
-}
-.Currency_base__gold_d6e3cbc {
-  color: var(--color-currency-gold);
-}
-.Currency_base__freeXP_d29d5a57 {
-  color: var(--color-currency-free-experience);
-}
-.Currency_base__crystal_f830cb47 {
-  color: var(--color-currency-bond);
-}
-.Currency_base__tankXP_1707c68b {
-  color: var(--color-currency-combat-experience);
 }/* stylelint-disable selector-no-qualifying-type */
 .NotificationWrapper_6fe65b7 {
   display: flex;

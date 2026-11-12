@@ -1,6 +1,6 @@
 /* wot-extractor: JavaScript FORMATADO a partir de sources/res/open_bundle/gui/gameface/_dist/production/mono/lobby/notifications/special_rewards_notification/bundle.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
 import{
-  C as e,S as s,_ as a,at as n,b as t,d as i,h as o,ht as r,lt as c,n as l,nt as d,o as _,ot as m,p as u,q as b,r as p,s as h,v as x,w,x as f,xt as g
+  C as e,S as s,_ as a,at as n,b as t,d as i,h as o,ht as r,lt as c,n as l,nt as d,o as _,ot as m,p as u,q as b,s as p,t as h,v as x,w,x as f,xt as g
 }
 from"../../chunks/lib.js";
 import{
@@ -68,7 +68,7 @@ function z({
 var O={
   base:"Reward_7179eaa8",base__main:"Reward_base__main_93fc57c",image:"Reward_image_fff4eee5",highlight:"Reward_highlight_f1cd08e0",overlay:"Reward_overlay_76a9c830",base__trophy:"Reward_base__trophy_21f091ec",count:"Reward_count_39163b1",base__additional:"Reward_base__additional_21f091ec",base__battle_bonus_x5:"Reward_base__battle_bonus_x5_21f091ec",base__crew_bonus_x3:"Reward_base__crew_bonus_x3_21f091ec",description:"Reward_description_66c1a2d7"
 },
-q="main",Q="additional",Y=g.resolve("images"),G=[h.EQUIPMENT_TROPHY_BASIC,h.EQUIPMENT_TROPHY_UPGRADED],V=N(function({
+q="main",Q="additional",Y=g.resolve("images"),G=[p.EQUIPMENT_TROPHY_BASIC,p.EQUIPMENT_TROPHY_UPGRADED],V=N(function({
   reward:e,type:s=Q,className:a=""
 }){
   const{
@@ -120,20 +120,20 @@ var X="Preview_d1fe5e07",Z="Preview_button_95fc3ad0",ee=N(function({
     model:s,controls:a
   }=$(),n=s.bundleType.get(),t=s.isButtonDisabled.get(),{
     getText:c
-  }=j(n),d=s.computes.mainBonus(),_=c((e=>{
+  }=j(n),l=s.computes.mainBonus(),d=c((e=>{
     switch(e){
       case P.vehicles:return"notifications.specialReward.showVehicle";
       case P.attachmentsSet:return"notifications.specialReward.showAttachments";
       default:return"notifications.specialReward.showStyle"
     }
-  })(d.name));
+  })(l.name));
   return(0,D.jsx)("div",{
     className:r(X,e),children:(0,D.jsx)(i,{
       className:Z,disabled:t,theme:u.secondary,size:o.small,onClick:function(){
-        a.showPreview(d.name,d.id)
+        a.showPreview(l.name,l.id)
       },
-      children:(0,D.jsx)(l,{
-        text:_
+      children:(0,D.jsx)(h,{
+        text:d
       })
     })
   })
@@ -144,18 +144,18 @@ var X="Preview_d1fe5e07",Z="Preview_button_95fc3ad0",ee=N(function({
     isPopUp:s
   }=e.root.get(),n=e.bundleType.get(),{
     getExtImage:t
-  }=j(n),i=e.computes.mainBonus(),o=e.computes.additionalBonuses(),l=Boolean(i),d=o.length>0,_=l&&k(i);
-  return(0,D.jsxs)(p,{
-    className:r(ae,s&&ne,!d&&te,!_&&ie),children:[(0,D.jsx)(v,{
+  }=j(n),i=e.computes.mainBonus(),o=e.computes.additionalBonuses(),d=Boolean(i),_=o.length>0,m=d&&k(i);
+  return(0,D.jsxs)(l,{
+    className:r(ae,s&&ne,!_&&te,!m&&ie),children:[(0,D.jsx)(v,{
       image:t("specialRewardsNotification.background"),className:se
     }),s&&(0,D.jsx)(a,{
       size:x.small,onClose:c,className:oe
     }),(0,D.jsxs)("div",{
       className:re,children:[(0,D.jsx)(W,{
         bundleType:n
-      }),l&&(0,D.jsx)(V,{
+      }),d&&(0,D.jsx)(V,{
         reward:i,type:q,className:ce
-      }),d&&(0,D.jsx)(K,{}),_&&(0,D.jsx)(ee,{})]
+      }),_&&(0,D.jsx)(K,{}),m&&(0,D.jsx)(ee,{})]
     })]
   })
 });

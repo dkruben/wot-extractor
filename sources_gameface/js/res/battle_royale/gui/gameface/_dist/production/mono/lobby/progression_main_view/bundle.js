@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  $ as s,B as t,Bt as a,Dt as r,Er as o,F as n,Gt as i,H as l,I as d,In as c,Kn as _,Kt as m,L as p,Lr as u,Mn as b,Mr as g,N as v,Nn as h,Nt as f,On as x,Ot as C,P as w,Pt as j,Q as N,Qr as B,R as T,Tr as k,Tt as S,Un as L,Wn as P,Wt as y,Yr as A,Zr as I,_n as Q,_t as V,an as W,bt as E,ct as F,dt as $,et as D,ft as M,gt as z,jr as G,mn as H,mt as q,nt as K,qr as O,st as U,tt as X,vr as Y,wr as Z,yr as J,yt as ee,z as se,zt as te
+  $ as s,Bt as t,Dt as a,Er as r,Gt as o,In as n,Kn as i,Kt as l,Lr as d,M as c,Mn as _,Mr as m,Nn as p,Nt as u,On as b,Ot as g,Pt as v,Q as h,Qr as f,Tr as x,Tt as C,Un as w,Wn as j,Wt as N,Yr as B,Zr as T,_n as k,_t as S,a as L,an as P,bt as y,c as A,ct as I,dt as Q,et as V,ft as W,gt as E,i as $,jr as F,l as D,mn as M,mt as z,nt as G,o as H,qr as q,r as K,s as O,st as U,tt as X,u as Y,vr as Z,wr as J,yr as ee,yt as se,zt as te
 }
 from"../chunks/lib.js";
 import"../chunks/globals.js";
@@ -51,7 +51,7 @@ le="inProgress",de="completed",ce="completedWasVisited",_e={
 me=(e,s)=>{
   const t=[];
   if("or"===e.conditionType||"and"===e.conditionType)e.items.forEach(e=>{
-    const a=k(e);
+    const a=x(e);
     a&&t.push(...me(a,s))
   });
   else{
@@ -61,7 +61,7 @@ me=(e,s)=>{
     let{
       titleData:r,current:o,total:n,earned:i,iconKey:l
     }=e;
-    const d=Y(s,0);
+    const d=Z(s,0);
     d&&(r=a||d.descrData,l=l||d.iconKey,({
       current:o,total:n,earned:i
     }=d)),0===n&&(r=a),t.push({
@@ -77,7 +77,7 @@ pe=(e,s,t)=>{
   return me(e,s).forEach(({
     condition:e,lastValue:s,currentValue:t,maxValue:n,icon:i
   },l)=>{
-    a[_e[l]]=((e,s)=>E(e,V.left).flat().map((e,t)=>(0===t&&s>0&&(e=e.toLowerCase()),e)))(e,l),o=i,r={
+    a[_e[l]]=((e,s)=>y(e,S.left).flat().map((e,t)=>(0===t&&s>0&&(e=e.toLowerCase()),e)))(e,l),o=i,r={
       lastValue:s,currentValue:t,maxValue:n
     }
   }),{
@@ -90,42 +90,42 @@ pe=(e,s,t)=>{
 },
 ue=function(e){
   return e[e.Scrolling=0]="Scrolling",e[e.ProgressChange=1]="ProgressChange",e[e.HighlightCard=2]="HighlightCard",e[e.ChangeCompleted=3]="ChangeCompleted",e[e.ProgressFinished=4]="ProgressFinished",e[e.ProgressAlreadyFinished=5]="ProgressAlreadyFinished",e
-}({}),[be,ge]=i()(({
+}({}),[be,ge]=o()(({
   observableModel:e
 })=>{
   const s={
-    ...e.primitives(["currentTimerDate","showPrimeTime","showEventEnded"],"battleQuests"),battleQuests:e.array("battleQuests.tasksBattle"),missionsCompletedVisited:e.array("battleQuests.missionsCompletedVisited"),progressLevels:e.array("progressLevels"),eventInfo:e.object("eventInfo"),...e.primitives(["state","curProgressPoints","prevProgressPoints","pointsForLevel","startTimestamp","endTimestamp","serverTimestamp","calendarTooltipId"]),progressAnimationState:x.box(0)
+    ...e.primitives(["currentTimerDate","showPrimeTime","showEventEnded"],"battleQuests"),battleQuests:e.array("battleQuests.tasksBattle"),missionsCompletedVisited:e.array("battleQuests.missionsCompletedVisited"),progressLevels:e.array("progressLevels"),eventInfo:e.object("eventInfo"),...e.primitives(["state","curProgressPoints","prevProgressPoints","pointsForLevel","startTimestamp","endTimestamp","serverTimestamp","calendarTooltipId"]),progressAnimationState:b.box(0)
   },
-  t=y(()=>Math.floor(s.curProgressPoints.get()/s.pointsForLevel.get())),a=y(()=>Math.floor(s.prevProgressPoints.get()/s.pointsForLevel.get())),r=y(e=>({
+  t=N(()=>Math.floor(s.curProgressPoints.get()/s.pointsForLevel.get())),a=N(()=>Math.floor(s.prevProgressPoints.get()/s.pointsForLevel.get())),r=N(e=>({
     wasProgressionVisited:a()===t(),isRecentlyCompletedLevel:a()<=e&&e<=t(),isPrevLevel:e<=a()
   }),{
-    equals:c.shallow
-  }),o=y(e=>g(0,s.pointsForLevel.get(),s.curProgressPoints.get()-e*s.pointsForLevel.get())),n=y(()=>J(s.battleQuests.get(),e=>({
+    equals:n.shallow
+  }),o=N(e=>m(0,s.pointsForLevel.get(),s.curProgressPoints.get()-e*s.pointsForLevel.get())),i=N(()=>ee(s.battleQuests.get(),e=>({
     ...pe(e.postBattleCondition,e.bonusCondition.items,e.status),awardsBattle:e.bonuses
-  }))),i=y(()=>4>=n().length),l=y(()=>{
+  }))),l=N(()=>4>=i().length),d=N(()=>{
     let e=0;
-    return n().forEach(s=>{
+    return i().forEach(s=>{
       "done"===s.taskConditions[0].progression.status&&++e
     }),e
-  }),d=y(()=>{
+  }),c=N(()=>{
     const e=t(),a=s.progressLevels.get();
-    return J(s.progressLevels.get(),({
+    return ee(s.progressLevels.get(),({
       rewards:s
     },t)=>({
       level:t+1,isCompleted:t<e,isActive:t===e,isLast:t===a.length-1,rewards:s
     }))
-  }),_=y(e=>{
-    const t=Z(n(),e).taskConditions[0].progression.status,a=s.missionsCompletedVisited.get()[e].value;
+  }),_=N(e=>{
+    const t=J(i(),e).taskConditions[0].progression.status,a=s.missionsCompletedVisited.get()[e].value;
     return"done"!==t?le:a?ce:de
-  }),m=y(()=>{
+  }),p=N(()=>{
     const e=s.pointsForLevel.get()*s.progressLevels.get().length;
     return s.curProgressPoints.get()>=e
-  }),p=y(()=>m()&&s.curProgressPoints.get()===s.prevProgressPoints.get()),u=y(()=>{
+  }),u=N(()=>p()&&s.curProgressPoints.get()===s.prevProgressPoints.get()),g=N(()=>{
     const e=s.currentTimerDate.get(),t=s.showPrimeTime.get();
     return{
       text:t?R.strings.battle_royale_extention.progressionView.battleQuests.timer.eventResetTime.text():R.strings.battle_royale_extention.progressionView.battleQuests.timer.inProgress.text(),time:e,showPrimeTime:t
     }
-  }),b=y(()=>p()?5:s.progressAnimationState.get()),v=y(()=>{
+  }),v=N(()=>u()?5:s.progressAnimationState.get()),h=N(()=>{
     const{
       subMode:e
     }=s.eventInfo.get();
@@ -133,30 +133,30 @@ ue=function(e){
   });
   return{
     ...s,computes:{
-      levels:d,battleQuests:n,currentLevel:t,levelStatus:r,currentPointsForLevel:o,isProgressionCompleted:m,wasProgressionCompletedBeforeStart:p,missionCompletedVisitedStatus:_,areDefaultNumberQuests:i,numberCompletedQuests:l,timerContent:u,animationState:b,progressBarTheme:v
+      levels:c,battleQuests:i,currentLevel:t,levelStatus:r,currentPointsForLevel:o,isProgressionCompleted:p,wasProgressionCompletedBeforeStart:u,missionCompletedVisitedStatus:_,areDefaultNumberQuests:l,numberCompletedQuests:d,timerContent:g,animationState:v,progressBarTheme:h
     }
   }
 },({
   externalModel:e,model:s
 })=>({
-  ..._({
+  ...i({
     finishScrolling:()=>s.progressAnimationState.set(1),finishProgressionChange:()=>s.progressAnimationState.set(2),finishHighlightCard:()=>s.progressAnimationState.set(3),completeProgression:()=>s.progressAnimationState.set(4)
   }),onClose:e.createCallbackNoArgs("onClose"),pollServerTime:e.createCallbackNoArgs("pollServerTime")
-})),ve=e(A()),he={
+})),ve=e(B()),he={
   base:"ArrowButton_6b3aeda7",base__disabled:"ArrowButton_base__disabled_66128a31",base__large:"ArrowButton_base__large_ad074d68",base__medium:"ArrowButton_base__medium_8edb18ea",base__small:"ArrowButton_base__small_bfd38674",base__extraSmall:"ArrowButton_base__extraSmall_374b168f",layers:"ArrowButton_layers_2cf2a988",base__right:"ArrowButton_base__right_5327085d",layer:"ArrowButton_layer_62eed5ed",layer__default:"ArrowButton_layer__default_5f556b05",layer__hover:"ArrowButton_layer__hover_5f556b05",layer__active:"ArrowButton_layer__active_a807ac2e",layer__disabled:"ArrowButton_layer__disabled_2af2a5f5"
 },
-fe=h(),xe=["default","hover","active","disabled"];
+fe=p(),xe=["default","hover","active","disabled"];
 function Ce({
   size:e="large",direction:s="left",disabled:t=!1,mouseEnterSound:a="highlight",className:r,classNames:o,onMouseEnter:n,...i
 }){
-  const l=O(he.layer,o?.layer);
+  const l=q(he.layer,o?.layer);
   return(0,fe.jsx)("div",{
-    className:O(he.base,he[`base__${s}`],he[`base__${e}`],t&&he.base__disabled,r),onMouseEnter:e=>{
-      n?.(e),u.sound(a)
+    className:q(he.base,he[`base__${s}`],he[`base__${e}`],t&&he.base__disabled,r),onMouseEnter:e=>{
+      n?.(e),d.sound(a)
     },
     ...i,children:(0,fe.jsx)("div",{
       className:he.layers,children:xe.map(s=>(0,fe.jsx)("div",{
-        className:O(l,he[`layer__${s}`]),style:{
+        className:q(l,he[`layer__${s}`]),style:{
           backgroundImage:`url(R.images.battle_royale.gui.maps.icons.arrows.${s}_${e})`
         }
       },s))
@@ -170,38 +170,38 @@ je="active",Ne="locked",Be="hidden",Te=(e,s)=>s?Be:e?je:Ne,ke=({
   children:e,areDefaultNumberQuests:s,className:t
 })=>{
   const[a,r]=(0,ve.useState)(0),[o,n]=(0,ve.useState)(0),i=(0,ve.useRef)(null),l=(0,ve.useRef)(null),{
-    screenWidthRem:d
-  }=b(),c=((e,s,t)=>!(!s||!t)&&e===s.offsetWidth-t.offsetWidth)(a,i.current,l.current),_=Te(a,s),m=Te(!c,s),p=e=>{
-    e||u.sound("highlight")
+    screenWidthRem:c
+  }=_(),m=((e,s,t)=>!(!s||!t)&&e===s.offsetWidth-t.offsetWidth)(a,i.current,l.current),p=Te(a,s),u=Te(!m,s),b=e=>{
+    e||d.sound("highlight")
   };
-  return(0,ve.useEffect)(()=>P(()=>{
+  return(0,ve.useEffect)(()=>j(()=>{
     const e=i.current,s=l.current;
     if(e&&s&&e.offsetWidth>s.offsetWidth){
       const[s,t]=e.children;
       n(t.getBoundingClientRect().left-s.getBoundingClientRect().left),r(0)
     }else n(0),r(0)
-  }),[d,s]),(0,fe.jsxs)("div",{
-    className:O(we.base,t),children:[(0,fe.jsx)("div",{
+  }),[c,s]),(0,fe.jsxs)("div",{
+    className:q(we.base,t),children:[(0,fe.jsx)("div",{
       className:we.block,ref:l,children:(0,fe.jsx)("div",{
-        ref:i,className:O(we.content,!s&&we.content__scroll),style:{
+        ref:i,className:q(we.content,!s&&we.content__scroll),style:{
           transform:`translateX(-${a}px)`
         },
         children:e
       })
     }),(0,fe.jsx)(Ce,{
-      size:"small",onMouseEnter:()=>p(!a),direction:"left",disabled:_===Ne,className:O(we.button,we[`button__${_}`],we.button__back),onClick:()=>{
-        a&&(u.sound("play"),r(e=>e-o))
+      size:"small",onMouseEnter:()=>b(!a),direction:"left",disabled:p===Ne,className:q(we.button,we[`button__${p}`],we.button__back),onClick:()=>{
+        a&&(d.sound("play"),r(e=>e-o))
       }
     }),(0,fe.jsx)(Ce,{
-      size:"small",onMouseEnter:()=>p(c),direction:"right",disabled:m===Ne,className:O(we.button,we[`button__${m}`],we.button__forward),onClick:()=>{
-        c||(u.sound("play"),r(e=>e+o))
+      size:"small",onMouseEnter:()=>b(m),direction:"right",disabled:u===Ne,className:q(we.button,we[`button__${u}`],we.button__forward),onClick:()=>{
+        m||(d.sound("play"),r(e=>e+o))
       }
     })]
   })
 };
 function Se(e){
-  return(0,fe.jsx)(N,{
-    theme:D,...e
+  return(0,fe.jsx)(h,{
+    theme:V,...e
   })
 }
 var Le={
@@ -214,18 +214,18 @@ Pe=ae(({
     model:o
   }=ge(),n=o.computes.progressBarTheme();
   return(0,fe.jsx)("div",{
-    className:O(Le.base,Le[`base__${a}`]),children:(0,fe.jsxs)("div",{
+    className:q(Le.base,Le[`base__${a}`]),children:(0,fe.jsxs)("div",{
       className:Le.progression,children:[(0,fe.jsxs)("div",{
         className:Le.progressionNumerical,children:[(0,fe.jsx)("span",{
-          className:O(Le.currentValue,Boolean(e)&&Le.currentValue__inProgress),children:I.formatNumber("integral",e)
+          className:q(Le.currentValue,Boolean(e)&&Le.currentValue__inProgress),children:T.formatNumber("integral",e)
         }),(0,fe.jsx)("span",{
           className:Le.separator,children:R.strings.common.common.slash()
         }),(0,fe.jsx)("span",{
-          children:I.formatNumber("integral",s)
+          children:T.formatNumber("integral",s)
         })]
       }),(0,fe.jsx)("div",{
         className:Le.progressBar,children:(0,fe.jsx)(Se,{
-          size:K.Small,value:e,deltaFrom:e-t,maxValue:s,onComplete:r,theme:n
+          size:G.Small,value:e,deltaFrom:e-t,maxValue:s,onComplete:r,theme:n
         })
       })]
     })
@@ -244,17 +244,17 @@ Ae=ae(({
     ...a,statusAnimation:t,updateStatusAnimation:i
   },
   {
-    maxValue:d,status:c
-  }=a,_=0===d;
+    maxValue:d,status:_
+  }=a,m=0===d;
   (0,ve.useEffect)(()=>{
-    "done"===c?_&&i():s(le)
-  },[_,s,c,i]);
-  const m=ee(`${R.strings.battle_royale_extention.progressionView.battleQuests.$dyn((e=>"secondCondition"in e?"multiConditions":"oneCondition")(e))}`,{
+    "done"===_?m&&i():s(le)
+  },[m,s,_,i]);
+  const p=se(`${R.strings.battle_royale_extention.progressionView.battleQuests.$dyn((e=>"secondCondition"in e?"multiConditions":"oneCondition")(e))}`,{
     firstCondition:e.firstCondition?.join(""),secondCondition:e.secondCondition?.join("")
   });
   return(0,fe.jsxs)("div",{
-    className:O(ye.base,ye[`base__${t}`]),children:[(0,fe.jsx)(T,{
-      text:m,classMix:ye.text,isTooltipEnable:!0,isTruncationAvailable:!0,justifyContent:se.Center
+    className:q(ye.base,ye[`base__${t}`]),children:[(0,fe.jsx)(c,{
+      text:p,classMix:ye.text,isTooltipEnable:!0,isTruncationAvailable:!0,justifyContent:D.Center
     }),Boolean(d)&&(0,fe.jsx)(Pe,{
       ...l
     })]
@@ -265,7 +265,7 @@ Ae=ae(({
 Ie=({
   taskBattleIcon:e,statusAnimation:s,className:t
 })=>(0,fe.jsxs)("div",{
-  className:O(Re.base,t,Re[`base__${s}`]),children:[(0,fe.jsx)("div",{
+  className:q(Re.base,t,Re[`base__${s}`]),children:[(0,fe.jsx)("div",{
     className:Re.typeIcon,style:{
       backgroundImage:`url('${R.images.gui.maps.icons.userMissions.missionIcons.c_32.$dyn(`${e}_silver`)}')`
     }
@@ -276,16 +276,16 @@ Ie=({
   base:"TaskBattle_23293950",taskType:"TaskBattle_taskType_41ef2b29",conditions:"TaskBattle_conditions_be83a381",base__completed:"TaskBattle_base__completed_79672d7f",base__completedWasVisited:"TaskBattle_base__completedWasVisited_79672d7f",awards:"TaskBattle_awards_f631c565",awardsList:"TaskBattle_awardsList_2518e26b","add-blur":"TaskBattle_add-blur_79672d7f",topGlow:"TaskBattle_topGlow_d555aeae",award:"TaskBattle_award_6bf9fb91",topBorderGradient:"TaskBattle_topBorderGradient_3695c66f",centerBorderCommon:"TaskBattle_centerBorderCommon_46b065cf",outerBorderCommon:"TaskBattle_outerBorderCommon_2cbdf79",innerBorderCommon:"TaskBattle_innerBorderCommon_de37a82",centerBorderBottom:"TaskBattle_centerBorderBottom_445802c8",outerBorderBottom:"TaskBattle_outerBorderBottom_38b316f3",innerBorderBottom:"TaskBattle_innerBorderBottom_10bddc9",separator__left:"TaskBattle_separator__left_e95c3100",separator__right:"TaskBattle_separator__right_6bf9fb91",separator:"TaskBattle_separator_696fed61","add-shadow":"TaskBattle_add-shadow_79672d7f"
 },
 Ve=ae(({
-  taskConditions:e,awardsBattle:s,taskBattleIcon:a,index:r,className:o
+  taskConditions:e,awardsBattle:s,taskBattleIcon:t,index:a,className:r
 })=>{
-  const[n,i]=(0,ve.useState)(le);
-  b();
+  const[o,n]=(0,ve.useState)(le);
+  _();
   const{
-    parsedRewards:l
-  }=oe(s,f.Small),d=l.length>(c=3)?c-1:void 0;
-  var c;
+    parsedRewards:i
+  }=oe(s,u.Small),l=i.length>(d=3)?d-1:void 0;
+  var d;
   return(0,fe.jsxs)("div",{
-    className:O(Qe.base,Qe[`base__${n}`],o),children:[(0,fe.jsx)("div",{
+    className:q(Qe.base,Qe[`base__${o}`],r),children:[(0,fe.jsx)("div",{
       className:Qe.centerBorderCommon
     }),(0,fe.jsx)("div",{
       className:Qe.outerBorderCommon
@@ -296,16 +296,16 @@ Ve=ae(({
     }),(0,fe.jsx)("div",{
       className:Qe.topBorderGradient
     }),(0,fe.jsx)(Ie,{
-      taskBattleIcon:a,statusAnimation:n,className:Qe.taskType
+      taskBattleIcon:t,statusAnimation:o,className:Qe.taskType
     }),(0,fe.jsx)("div",{
-      className:Qe.conditions,children:J(e,({
+      className:Qe.conditions,children:ee(e,({
         conditions:e,progression:s
       })=>(0,fe.jsx)(Ae,{
-        conditionIndex:r,progression:s,conditions:e,setStatusAnimation:i,statusAnimation:n
+        conditionIndex:a,progression:s,conditions:e,setStatusAnimation:n,statusAnimation:o
       },s.currentValue))
     }),(0,fe.jsxs)("div",{
       className:Qe.awards,children:[(0,fe.jsxs)("div",{
-        className:O(Qe.separator,Qe.separator__left),children:[(0,fe.jsx)("div",{
+        className:q(Qe.separator,Qe.separator__left),children:[(0,fe.jsx)("div",{
           className:Qe.centerBorderBottom
         }),(0,fe.jsx)("div",{
           className:Qe.outerBorderBottom
@@ -313,15 +313,15 @@ Ve=ae(({
           className:Qe.innerBorderBottom
         })]
       }),(0,fe.jsx)("div",{
-        className:Qe.awardsList,children:(0,fe.jsx)(t,{
-          data:l,rewardItemClassMix:Qe.award,count:d,size:f.Small,boxRewardTooltip:{
+        className:Qe.awardsList,children:(0,fe.jsx)(Y,{
+          data:i,rewardItemClassMix:Qe.award,count:l,size:u.Small,boxRewardTooltip:{
             contentId:R.views.lobby.tooltips.AdditionalRewardsTooltip("resId"),args:{
-              fromIndex:d,index:r
+              fromIndex:l,index:a
             }
           }
         })
       }),(0,fe.jsxs)("div",{
-        className:O(Qe.separator,Qe.separator__right),children:[(0,fe.jsx)("div",{
+        className:q(Qe.separator,Qe.separator__right),children:[(0,fe.jsx)("div",{
           className:Qe.centerBorderBottom
         }),(0,fe.jsx)("div",{
           className:Qe.outerBorderBottom
@@ -336,11 +336,11 @@ Ve=ae(({
 },
 Ee=function(e){
   return e.Awards="awards",e.Condition="condition",e.CompletedBattleQuests="completedBattleQuests",e.InProgressBattleQuests="inProgressBattleQuests",e
-}({}),Fe=({
+}({}),$e=({
   children:e,statusAnimation:s,type:t
 })=>(0,fe.jsxs)("div",{
-  className:O(We.base,We[`base__${t}`],We[`base__${s}`]),children:[(0,fe.jsx)("div",{
-    className:O(We.separator,We.separator__left),children:(0,fe.jsx)("div",{
+  className:q(We.base,We[`base__${t}`],We[`base__${s}`]),children:[(0,fe.jsx)("div",{
+    className:q(We.separator,We.separator__left),children:(0,fe.jsx)("div",{
       className:We.ellipse,children:(0,fe.jsx)("div",{
         className:We.firstLayer,children:(0,fe.jsx)("div",{
           className:We.secondLayer
@@ -348,7 +348,7 @@ Ee=function(e){
       })
     })
   }),e,(0,fe.jsx)("div",{
-    className:O(We.separator,We.separator__right),children:(0,fe.jsx)("div",{
+    className:q(We.separator,We.separator__right),children:(0,fe.jsx)("div",{
       className:We.ellipse,children:(0,fe.jsx)("div",{
         className:We.firstLayer,children:(0,fe.jsx)("div",{
           className:We.secondLayer
@@ -356,7 +356,7 @@ Ee=function(e){
       })
     })
   })]
-}),$e={
+}),Fe={
   base:"Timer_c60caffd",block:"Timer_block_3a90095a",redGlow:"Timer_redGlow_4bcca278",countdown:"Timer_countdown_dac0a0aa",countDownText:"Timer_countDownText_26e9a5c8",countDownIcon:"Timer_countDownIcon_9e8dc66f"
 },
 De=ae(()=>{
@@ -366,18 +366,18 @@ De=ae(()=>{
     text:s,time:t
   }=e.computes.timerContent();
   return(0,fe.jsx)("div",{
-    className:$e.base,children:(0,fe.jsx)(Fe,{
+    className:Fe.base,children:(0,fe.jsx)($e,{
       type:Ee.InProgressBattleQuests,children:(0,fe.jsxs)("div",{
-        className:$e.block,children:[(0,fe.jsx)("div",{
-          className:$e.text,children:s
+        className:Fe.block,children:[(0,fe.jsx)("div",{
+          className:Fe.text,children:s
         }),(0,fe.jsxs)("div",{
-          className:$e.countdown,children:[(0,fe.jsx)("div",{
-            className:$e.countDownIcon
-          }),(0,fe.jsx)(n,{
-            duration:t,icon:d.None,style:p.Description,classNames:{
-              text:$e.countDownText
+          className:Fe.countdown,children:[(0,fe.jsx)("div",{
+            className:Fe.countDownIcon
+          }),(0,fe.jsx)(H,{
+            duration:t,icon:O.None,style:A.Description,classNames:{
+              text:Fe.countDownText
             },
-            className:$e.countdown
+            className:Fe.countdown
           })]
         })]
       })
@@ -398,18 +398,18 @@ De=ae(()=>{
           className:He,children:t
         }),(0,fe.jsx)("div",{
           className:qe
-        }),(0,fe.jsx)(n,{
-          icon:d.None,duration:a,style:p.Description,classNames:{
+        }),(0,fe.jsx)(H,{
+          icon:O.None,duration:a,style:A.Description,classNames:{
             text:Ke
           }
         })]
       }),(0,fe.jsxs)("div",{
         className:Oe,children:[(0,fe.jsx)("div",{
-          className:O(Xe,Ye)
+          className:q(Xe,Ye)
         }),(0,fe.jsx)("div",{
           className:Ue
         }),(0,fe.jsx)("div",{
-          className:O(Xe,Ze)
+          className:q(Xe,Ze)
         })]
       }),(0,fe.jsxs)("div",{
         className:as,children:[(0,fe.jsx)("div",{
@@ -433,12 +433,12 @@ De=ae(()=>{
     model:s
   }=ge(),t=s.computes.battleQuests(),a=s.computes.areDefaultNumberQuests();
   return(0,fe.jsxs)("div",{
-    className:O(os,e,s.showEventEnded.get()&&ls),children:[s.currentTimerDate.get()>0&&!s.showEventEnded.get()&&(0,fe.jsx)(fe.Fragment,{
+    className:q(os,e,s.showEventEnded.get()&&ls),children:[s.currentTimerDate.get()>0&&!s.showEventEnded.get()&&(0,fe.jsx)(fe.Fragment,{
       children:a?(0,fe.jsx)(De,{}):(0,fe.jsx)(rs,{
         questsNumber:t.length
       })
     }),(0,fe.jsx)(ke,{
-      areDefaultNumberQuests:a,className:O(ns,a&&is),children:J(t,(e,s)=>(0,fe.jsx)(Ve,{
+      areDefaultNumberQuests:a,className:q(ns,a&&is),children:ee(t,(e,s)=>(0,fe.jsx)(Ve,{
         ...e,index:s,className:ds
       },s))
     })]
@@ -453,9 +453,9 @@ var us=R.views.battle_royale.mono.lobby.tooltips.leaderboard_reward_tooltip_view
     return e?"endEvent":s>=ue.ProgressFinished?"completed":"inProgress"
   }(s.showEventEnded.get(),t);
   return(0,fe.jsx)("div",{
-    className:O(_s,e),children:(0,fe.jsx)(z,{
+    className:q(_s,e),children:(0,fe.jsx)(E,{
       text:`${R.strings.battle_royale_extention.progressionView.subTitle.$dyn(a)}`,classMix:ms,binding:{
-        infotip:(0,fe.jsx)(C,{
+        infotip:(0,fe.jsx)(g,{
           contentId:us,children:(0,fe.jsx)("div",{
             className:ps
           })
@@ -463,7 +463,7 @@ var us=R.views.battle_royale.mono.lobby.tooltips.leaderboard_reward_tooltip_view
       }
     })
   })
-}),gs=(e,s,t)=>O(e[t],s===ue.ProgressAlreadyFinished?e[`${t}__fast`]:s>=ue.ProgressFinished?e[`${t}__completed`]:void 0),vs={
+}),gs=(e,s,t)=>q(e[t],s===ue.ProgressAlreadyFinished?e[`${t}__fast`]:s>=ue.ProgressFinished?e[`${t}__completed`]:void 0),vs={
   base:"Container_969e325f",progressWrapper:"Container_progressWrapper_d0e81d78",progressWrapper__completed:"Container_progressWrapper__completed_c4afdc69",progressWrapper__fast:"Container_progressWrapper__fast_ba1096eb",bg:"Container_bg_81bf9d2b",progressBar:"Container_progressBar_ebe2af86"
 },
 hs={
@@ -479,32 +479,32 @@ fs=ae(({
 })=>{
   const{
     model:s,controls:t
-  }=ge(),a=s.computes.animationState(),r=s.computes.levels().length,o=s.computes.progressBarTheme(),n=s.prevProgressPoints.get(),i=s.curProgressPoints.get(),l=s.pointsForLevel.get(),d=(0,ve.useRef)(w());
+  }=ge(),a=s.computes.animationState(),r=s.computes.levels().length,o=s.computes.progressBarTheme(),n=s.prevProgressPoints.get(),i=s.curProgressPoints.get(),l=s.pointsForLevel.get(),c=(0,ve.useRef)(L());
   e.current.moveProgressBars=(0,ve.useCallback)(e=>{
-    d.current.update(e)
+    c.current.update(e)
   },[]);
   const[{
-    previousEarnedPoints:c,maxPoints:_,progressionSize:m
-  },p]=(0,ve.useState)({
+    previousEarnedPoints:_,maxPoints:m,progressionSize:p
+  },u]=(0,ve.useState)({
     maxPoints:r*l,previousEarnedPoints:n,progressionSize:n
   });
   return(0,ve.useEffect)(()=>{
-    p(e=>{
+    u(e=>{
       const s=0===e.progressionSize?n:e.progressionSize;
       return{
         maxPoints:r*l,previousEarnedPoints:s,progressionSize:i
       }
-    }),n!==i&&u.sound("pr_progress_bar")
+    }),n!==i&&d.sound("pr_progress_bar")
   },[n,l,i,r]),(0,ve.useEffect)(()=>{
-    if(a===ue.ProgressChange)return L(()=>{
+    if(a===ue.ProgressChange)return w(()=>{
       t.finishProgressionChange()
     },700)
   },[t,a]),(0,fe.jsxs)("div",{
     className:vs.base,children:[(0,fe.jsx)("div",{
       className:vs.bg
     }),(0,fe.jsx)("div",{
-      className:gs(vs,a,"progressWrapper"),children:(0,fe.jsx)(v,{
-        animationSettings:hs,deltaFrom:c,value:m,maxValue:_,api:d,theme:o,className:vs.progressBar
+      className:gs(vs,a,"progressWrapper"),children:(0,fe.jsx)($,{
+        animationSettings:hs,deltaFrom:_,value:p,maxValue:m,api:c,theme:o,className:vs.progressBar
       })
     })]
   })
@@ -520,12 +520,12 @@ Cs=ae(({
     subMode:r
   }=a.eventInfo.get();
   return(0,fe.jsxs)("div",{
-    className:O(xs.base,xs[`base__${r}`]),children:[(0,fe.jsx)("div",{
-      className:O(xs.activeGlow,s&&xs.activeGlow__completed)
+    className:q(xs.base,xs[`base__${r}`]),children:[(0,fe.jsx)("div",{
+      className:q(xs.activeGlow,s&&xs.activeGlow__completed)
     }),(0,fe.jsx)("div",{
-      className:O(xs.levelCurrent,s&&xs.levelCurrent__completed),children:e
+      className:q(xs.levelCurrent,s&&xs.levelCurrent__completed),children:e
     }),(0,fe.jsx)("div",{
-      className:O(xs.level,t&&xs.level__completed,s&&xs.level__active),children:e
+      className:q(xs.level,t&&xs.level__completed,s&&xs.level__active),children:e
     })]
   })
 }),ws={
@@ -537,26 +537,26 @@ js="prevLevel",Ns="completed",Bs="inProgress",Ts=(e,s,t)=>e?Ns:s?Bs:t,ks=ae(({
   const[r,o]=(0,ve.useState)(),{
     model:n
   }=ge(),i=(0,ve.useRef)(null),{
-    wasProgressionVisited:l,isRecentlyCompletedLevel:d,isPrevLevel:c
+    wasProgressionVisited:l,isRecentlyCompletedLevel:c,isPrevLevel:_
   }=n.computes.levelStatus(e);
   (0,ve.useEffect)(()=>{
-    t&&!l&&d&&o(js)
-  },[t,l,d]);
-  const _=(0,ve.useCallback)(()=>{
-    u.sound("pr_progress_tick")
+    t&&!l&&c&&o(js)
+  },[t,l,c]);
+  const m=(0,ve.useCallback)(()=>{
+    d.sound("pr_progress_tick")
   },[]);
   return(0,ve.useEffect)(()=>{
     const e=i.current;
-    return P(()=>{
-      if(e)return e.addEventListener("transitionstart",_),()=>{
-        e.removeEventListener("transitionstart",_)
+    return j(()=>{
+      if(e)return e.addEventListener("transitionstart",m),()=>{
+        e.removeEventListener("transitionstart",m)
       }
     })
-  },[i,_]),(0,fe.jsxs)("div",{
+  },[i,m]),(0,fe.jsxs)("div",{
     className:ws.base,children:[(0,fe.jsx)("div",{
-      className:O(ws.bgCompleted,(s||t)&&ws.bgCompleted__completed),ref:i
+      className:q(ws.bgCompleted,(s||t)&&ws.bgCompleted__completed),ref:i
     }),(0,fe.jsxs)("div",{
-      className:O(ws.completedIconContainer,ws[`completedIconContainer__${Ts(c,!t,r)}`]),children:[(0,fe.jsx)("div",{
+      className:q(ws.completedIconContainer,ws[`completedIconContainer__${Ts(_,!t,r)}`]),children:[(0,fe.jsx)("div",{
         className:ws.completedIconGlow
       }),(0,fe.jsx)("div",{
         className:ws.completedIcon
@@ -566,7 +566,7 @@ js="prevLevel",Ns="completed",Bs="inProgress",Ts=(e,s,t)=>e?Ns:s?Bs:t,ks=ae(({
     }),(0,fe.jsx)("div",{
       className:ws.border
     }),a&&(0,fe.jsx)("div",{
-      className:O(ws.border,ws.border__right)
+      className:q(ws.border,ws.border__right)
     })]
   })
 }),Ss="LevelCards_4068501d",Ls=ae((0,ve.forwardRef)(function(e,s){
@@ -574,13 +574,13 @@ js="prevLevel",Ns="completed",Bs="inProgress",Ts=(e,s,t)=>e?Ns:s?Bs:t,ks=ae(({
     model:t
   }=ge();
   return(0,fe.jsx)("div",{
-    className:Ss,ref:s,children:J(t.computes.levels(),e=>(0,fe.jsx)(ks,{
+    className:Ss,ref:s,children:ee(t.computes.levels(),e=>(0,fe.jsx)(ks,{
       ...e
     },e.level))
   })
 })),Ps="Rewards_3f7d20d",ys="Rewards_base__completed_62b5a47f",As="Rewards_base__wide_e3c609b4",Rs="Rewards_reward_1f8103c2",Is="Rewards_info_2ee481cc";
 function Qs(e){
-  if(e===j.BrCoin||e===j.EquipCoin)return{
+  if(e===v.BrCoin||e===v.EquipCoin)return{
     info:Is
   }
 }
@@ -589,9 +589,9 @@ var Vs=ae(({
 })=>{
   const{
     parsedRewards:a,imageSize:r
-  }=oe(t),o=r===f.Small&&a.length>2;
+  }=oe(t),o=r===u.Small&&a.length>2;
   return(0,fe.jsx)("div",{
-    className:O(Ps,o&&As,e&&!s&&ys),children:J(a,(e,s)=>(0,ve.createElement)(S,{
+    className:q(Ps,o&&As,e&&!s&&ys),children:ee(a,(e,s)=>(0,ve.createElement)(C,{
       ...e,key:`${e.name}_${s}`,className:Rs,classNames:Qs(e.name)
     }))
   })
@@ -607,9 +607,9 @@ Es=ae(({
     subMode:l
   }=i.eventInfo.get();
   return(0,fe.jsxs)("div",{
-    className:O(Ws.base,Ws[`base__${l}`]),children:[(0,fe.jsx)("div",{
-      className:O(Ws.activeBlock,r&&Ws.activeBlock__completed),children:(0,fe.jsxs)("div",{
-        className:Ws.pointsContainer,children:[(0,fe.jsx)(z,{
+    className:q(Ws.base,Ws[`base__${l}`]),children:[(0,fe.jsx)("div",{
+      className:q(Ws.activeBlock,r&&Ws.activeBlock__completed),children:(0,fe.jsxs)("div",{
+        className:Ws.pointsContainer,children:[(0,fe.jsx)(E,{
           classMix:Ws.points,text:R.strings.battle_royale_extention.progressionView.card.points(),binding:{
             current:(0,fe.jsx)("div",{
               className:Ws.current,children:t
@@ -628,17 +628,17 @@ Es=ae(({
     }),(0,fe.jsx)("div",{
       className:Ws.pointsBorder,children:e
     }),o&&(0,fe.jsx)("div",{
-      className:O(Ws.border,Ws.border__right)
+      className:q(Ws.border,Ws.border__right)
     }),o&&(0,fe.jsx)("div",{
-      className:O(Ws.pointsBorder,Ws.pointsBorder__right),children:e+s
+      className:q(Ws.pointsBorder,Ws.pointsBorder__right),children:e+s
     })]
   })
-}),Fs="RewardCards_168ad5c7",$s=ae(()=>{
+}),$s="RewardCards_168ad5c7",Fs=ae(()=>{
   const{
     model:e
   }=ge();
   return(0,fe.jsx)("div",{
-    className:Fs,children:J(e.computes.levels(),({
+    className:$s,children:ee(e.computes.levels(),({
       level:s,isCompleted:t,isActive:a,isLast:r,rewards:o
     },n)=>(0,fe.jsx)(Es,{
       pointsMin:n*e.pointsForLevel.get(),pointsForCard:e.pointsForLevel.get(),pointsCurrent:e.computes.currentPointsForLevel(s-1),isCompleted:t,isActive:a,isLast:r,rewards:o
@@ -655,18 +655,18 @@ Hs=ae(function(){
     model:e
   }=ge(),{
     api:s
-  }=q(),[t,a]=(0,ve.useState)(!1),r=e.computes.animationState(),o=e.curProgressPoints.get(),{
+  }=z(),[t,a]=(0,ve.useState)(!1),r=e.computes.animationState(),o=e.curProgressPoints.get(),{
     computes:n
   }=e,i=(0,ve.useRef)({
-    moveProgressBars:G
-  }),l=(0,ve.useRef)(null),d=(0,ve.useRef)(null),c=W(),_=F(s,s.settings.animationConfig),m=(0,ve.useCallback)(()=>{
+    moveProgressBars:F
+  }),l=(0,ve.useRef)(null),d=(0,ve.useRef)(null),c=P(),_=I(s,s.settings.animationConfig),p=(0,ve.useCallback)(()=>{
     const e=s.contentRef.current,t=n.levels().length;
     if(e&&t>0){
       const r=s.getContainerSize()||0,o=s.getWrapperSize()||0,i=r/t,l=n.currentLevel()*i,d=(o-e.offsetLeft-i)/2;
-      s.applyScroll(g(0,r-o,l-d)),a(o>r)
+      s.applyScroll(m(0,r-o,l-d)),a(o>r)
     }
   },[n,s]);
-  return Q(()=>c.run(m)),(0,ve.useEffect)(()=>P(()=>{
+  return k(()=>c.run(p)),(0,ve.useEffect)(()=>j(()=>{
     "idle"===_.type&&s.animationScroll.scrollPosition.idle&&s.applyScroll(s.animationScroll.scrollPosition.get())
   }),[s,_]),(0,ve.useEffect)(()=>{
     const e=s.getContainerSize();
@@ -674,20 +674,20 @@ Hs=ae(function(){
       immediate:!0
     })
   },[r,s]),(0,ve.useEffect)(()=>{
-    m()
-  },[o,m]),(0,ve.useEffect)(()=>{
-    const e=()=>c.run(m);
+    p()
+  },[o,p]),(0,ve.useEffect)(()=>{
+    const e=()=>c.run(p);
     return s.events.on("recalculateContent",e),s.events.on("resizeHandled",e),()=>{
       c.clear(),s.events.off("recalculateContent",e),s.events.off("resizeHandled",e)
     }
-  },[s,m,c]),(0,fe.jsxs)("div",{
-    className:O(Ds,t&&Ms),ref:l,children:[(0,fe.jsxs)($,{
+  },[s,p,c]),(0,fe.jsxs)("div",{
+    className:q(Ds,t&&Ms),ref:l,children:[(0,fe.jsxs)(Q,{
       classNames:zs,children:[(0,fe.jsx)(Ls,{
         ref:d
       }),(0,fe.jsx)(fs,{
         api:i
-      }),(0,fe.jsx)($s,{})]
-    }),(0,fe.jsx)(M,{
+      }),(0,fe.jsx)(Fs,{})]
+    }),(0,fe.jsx)(W,{
       classNames:Gs
     })]
   })
@@ -701,7 +701,7 @@ Ks=ae(function({
     model:s,controls:t
   }=ge(),a=s.computes.animationState(),r=ve.useRef(null),o=ve.useRef(null),n=s.computes.isProgressionCompleted(),i=s.computes.wasProgressionCompletedBeforeStart(),{
     api:l
-  }=q();
+  }=z();
   return(0,ve.useEffect)(()=>{
     const e=()=>{
       const e=r.current,s=o.current;
@@ -715,35 +715,35 @@ Ks=ae(function({
     return l.events.on("change",e),l.events.on("resizeHandled",e),()=>{
       l.events.off("change",e),l.events.off("resizeHandled",e)
     }
-  },[l]),(0,ve.useEffect)(()=>a===ue.ChangeCompleted&&n?L(()=>{
+  },[l]),(0,ve.useEffect)(()=>a===ue.ChangeCompleted&&n?w(()=>{
     t.completeProgression()
-  },1600):a!==ue.Scrolling||i?a===ue.HighlightCard?L(()=>{
+  },1600):a!==ue.Scrolling||i?a===ue.HighlightCard?w(()=>{
     t.finishHighlightCard()
-  },500):void 0:L(()=>{
+  },500):void 0:w(()=>{
     t.finishScrolling()
   },1200),[a,i,n,t]),(0,fe.jsxs)("div",{
-    className:O(gs(qs,a,"base"),e),children:[(0,fe.jsx)("div",{
-      className:O(qs.shadow,qs.shadow__left),ref:r
+    className:q(gs(qs,a,"base"),e),children:[(0,fe.jsx)("div",{
+      className:q(qs.shadow,qs.shadow__left),ref:r
     }),(0,fe.jsx)("div",{
-      className:O(qs.shadow,qs.shadow__right),ref:o
+      className:q(qs.shadow,qs.shadow__right),ref:o
     }),(0,fe.jsx)(Hs,{})]
   })
 }),Os="ScheduleSubheading_35580d17",Us="ScheduleSubheading_calendarIcon_ec4b9215",Xs="ScheduleSubheading_calendarText_5779804",Ys=ae(()=>{
   const{
     model:e,controls:s
-  }=ge(),t=e.startTimestamp.get(),a=e.endTimestamp.get(),o=e.serverTimestamp.get(),n=e.calendarTooltipId.get(),i=(0,ve.useMemo)(()=>({
+  }=ge(),t=e.startTimestamp.get(),r=e.endTimestamp.get(),o=e.serverTimestamp.get(),n=e.calendarTooltipId.get(),i=(0,ve.useMemo)(()=>({
     tooltipId:n
   }),[n]);
-  return m(o,a,s.pollServerTime),(0,fe.jsx)(r,{
+  return l(o,r,s.pollServerTime),(0,fe.jsx)(a,{
     args:i,children:(0,fe.jsxs)("div",{
       className:Os,children:[(0,fe.jsx)("div",{
         className:Us
-      }),(0,fe.jsx)(z,{
+      }),(0,fe.jsx)(E,{
         text:R.strings.battle_royale_extention.progressionView.seasonRange(),binding:{
-          startDate:(0,fe.jsx)(l,{
-            datetime:t,format:B.ShortDate
-          }),endDate:(0,fe.jsx)(l,{
-            datetime:a,format:B.ShortDate
+          startDate:(0,fe.jsx)(K,{
+            datetime:t,format:f.ShortDate
+          }),endDate:(0,fe.jsx)(K,{
+            datetime:r,format:f.ShortDate
           })
         },
         classMix:Xs
@@ -759,8 +759,8 @@ Js=ae(()=>{
   }=ge(),{
     subMode:t
   }=e.eventInfo.get();
-  return H(o.ESCAPE,s.onClose),(0,fe.jsxs)("div",{
-    className:O(Zs.base,Zs[`base__${t}`]),children:[(0,fe.jsxs)("div",{
+  return M(r.ESCAPE,s.onClose),(0,fe.jsxs)("div",{
+    className:q(Zs.base,Zs[`base__${t}`]),children:[(0,fe.jsxs)("div",{
       className:Zs.bgContainer,children:[(0,fe.jsx)("div",{
         className:Zs.bg
       }),(0,fe.jsx)("div",{
@@ -779,7 +779,7 @@ Js=ae(()=>{
     })]
   })
 });
-a((0,fe.jsx)(te,{
+t((0,fe.jsx)(te,{
   children:(0,fe.jsx)(be,{
     options:{
       context:"model.progressionModel"

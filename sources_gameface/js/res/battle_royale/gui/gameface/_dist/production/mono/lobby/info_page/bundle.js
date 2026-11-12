@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  Bt as t,Ft as i,Gt as a,H as s,Lr as l,Nn as r,Qr as o,Ut as n,V as c,Vt as g,W as p,Wt as m,Yr as _,at as b,gt as d,kr as f,ot as h,pn as u,qr as y,rn as x,vr as v,yr as k,zt as j
+  Bt as t,Ft as i,Gt as a,L as s,Lr as l,Nn as r,Qr as o,Ut as n,Vt as c,Wt as g,Yr as p,at as m,gt as _,kr as b,n as d,ot as f,pn as h,qr as u,r as y,rn as x,vr as v,yr as k,zt as j
 }
 from"../chunks/lib.js";
 import"../chunks/globals.js";
@@ -34,13 +34,13 @@ var[T,w]=a()(({
     if(!e)throw Error("Tables of BP are undefined");
     return e
   },{
-    equals:f
-  }),s=m(()=>{
+    equals:b
+  }),s=g(()=>{
     const{
       subMode:e
     }=t.eventInfo.get();
     return e===P.StPatrick?R.strings.battle_royale_infopage.stPatrickSubTitle():""
-  }),l=m(()=>{
+  }),l=g(()=>{
     const{
       subMode:e
     }=t.eventInfo.get();
@@ -179,12 +179,12 @@ G={
     subtitle:R.strings.battle_royale_infopage.articleBP.subtitle()
   }]
 },
-W={
+F={
   title:R.strings.battle_royale_infopage.pointsBPDetailsSettings.title(),textBlock:[{
     text:R.strings.battle_royale_infopage.pointsBPDetailsSettings.subtitle()
   }],imagePath:R.images.battle_royale.gui.maps.infopage.pointsBP()
 },
-F={
+W={
   textBlock:[{
     text:R.strings.battle_royale_infopage.respawn.text(),subtitle:R.strings.battle_royale_infopage.respawn.title()
   },{
@@ -218,33 +218,33 @@ Z={
 E={
   default:R.strings.battle_royale_infopage.footer(),stPatrick:R.strings.battle_royale_infopage.stPatrickFooter()
 },
-Y=e(_(),1),$={
+Y=e(p(),1),$={
   base:"Article_4c8e50ad",title:"Article_title_659722c4",subtitle:"Article_subtitle_49e05acb",head:"Article_head_1804b7a",images:"Article_images_1c3d2987",imageContainer:"Article_imageContainer_8e95068",images__mapStyle:"Article_images__mapStyle_b9623d81",text:"Article_text_ece10432",accent:"Article_accent_c8f4f12c",accent_color:"Article_accent_color_a3a8f0eb",divider:"Article_divider_c3c15108"
 },
 q=r(),O=({
   description:e,className:t,classNames:i,mapsStyle:a
 })=>(0,q.jsxs)("div",{
-  className:y($.base,i?.alignCenter,t),children:[(0,q.jsxs)("div",{
-    className:y($.head,i?.head),children:[(0,q.jsx)("div",{
-      className:y($.title,i?.title),children:e.title
+  className:u($.base,i?.alignCenter,t),children:[(0,q.jsxs)("div",{
+    className:u($.head,i?.head),children:[(0,q.jsx)("div",{
+      className:u($.title,i?.title),children:e.title
     }),e.subtitles.map(({
       subtitle:e
     },t)=>(0,q.jsx)("div",{
-      className:$.subtitle,children:(0,q.jsx)(p,{
+      className:$.subtitle,children:(0,q.jsx)(s,{
         text:e,split:!0,className:i?.alignCenter
       })
     },t)),e.accent&&(0,q.jsx)("div",{
       className:$.accent,children:e.accent
     })]
   }),e.images&&(0,q.jsx)("div",{
-    className:y($.images,a&&$.images__mapStyle),children:e.images.map(({
+    className:u($.images,a&&$.images__mapStyle),children:e.images.map(({
       imagePath:e,title:t,subtitle:a
     },s)=>(0,q.jsxs)(Y.Fragment,{
       children:[(0,q.jsxs)("div",{
         className:$.imageContainer,children:[(0,q.jsx)("img",{
-          className:y($.image,i?.image),src:e,alt:t
+          className:u($.image,i?.image),src:e,alt:t
         }),(0,q.jsx)("div",{
-          className:y($.text,i?.text),children:t
+          className:u($.text,i?.text),children:t
         }),a&&(0,q.jsx)("div",{
           className:$.subtitle,children:a
         })]
@@ -254,23 +254,23 @@ q=r(),O=({
     },s))
   })]
 }),Q="Details_82317705",U="Details_base__reverse_e972fe9f",X="Details_base__noIndent_ee7aedc9",J="Details_title_b7b0344f",ee="Details_subtitle_90dc25e7",te="Details_text_96c8da9a",ie="Details_image_e176a953",ae="Details_description_27a0d131",se="Details_devider_eb6cc254",le="Details_textBlock_51423ea5",re=({
-  description:e,reverse:t,smallImage:i,classNames:a,className:s,binding:l
+  description:e,reverse:t,smallImage:i,classNames:a,className:l,binding:r
 })=>(0,q.jsxs)("div",{
-  className:y(Q,t&&U,i&&X,s),children:[(0,q.jsxs)("div",{
-    className:y(ae,a?.description),children:[e.title&&(0,q.jsx)("div",{
-      className:y(J,a?.titleStyling),children:e.title
+  className:u(Q,t&&U,i&&X,l),children:[(0,q.jsxs)("div",{
+    className:u(ae,a?.description),children:[e.title&&(0,q.jsx)("div",{
+      className:u(J,a?.titleStyling),children:e.title
     }),e.textBlock.map(({
       subtitle:e,text:t
     },i)=>(0,q.jsxs)("div",{
       className:le,children:[e&&(0,q.jsx)("div",{
         className:ee,children:e
       }),t&&(0,q.jsx)("div",{
-        className:te,children:(0,q.jsx)(p,{
-          params:l,split:!0,text:t
+        className:te,children:(0,q.jsx)(s,{
+          params:r,split:!0,text:t
         })
       })]
     },i)),e.list?.map((e,t)=>(0,q.jsx)("div",{
-      className:te,children:(0,q.jsx)(p,{
+      className:te,children:(0,q.jsx)(s,{
         text:e
       })
     },t)),e.footer&&(0,q.jsx)("div",{
@@ -279,7 +279,7 @@ q=r(),O=({
   }),(0,q.jsx)("div",{
     className:se
   }),(0,q.jsx)("img",{
-    className:y(!i&&ie,a?.image),src:e.imagePath,alt:e.title
+    className:u(!i&&ie,a?.image),src:e.imagePath,alt:e.title
   })]
 }),oe="InfoBlock_bc3a412a",ne="InfoBlock_cardsWrapper_f2cef6b3",ce="InfoBlock_card_77d87e0a",ge="InfoBlock_img_52fe2f9f",pe="InfoBlock_cardTitle_665d1b88",me="InfoBlock_cardSubtitle_24d2f638",_e="InfoBlock_divider_6e3dd538",be=[{
   img:R.images.battle_royale.gui.maps.st_patrick.infopage.specialAwards(),title:R.strings.battle_royale_infopage.infoBlock.specialAwards.title(),subtitle:R.strings.battle_royale_infopage.infoBlock.specialAwards.subtitle()
@@ -311,26 +311,26 @@ q=r(),O=({
   }=w(),{
     openVideo:i
   }=e,{
-    startDate:a,endDate:r
-  }=t.root.get(),n=t.computes.headerSubtitle(),c=t.computes.hasHeaderInfoBlock();
+    startDate:a,endDate:s
+  }=t.root.get(),r=t.computes.headerSubtitle(),n=t.computes.hasHeaderInfoBlock();
   return(0,q.jsxs)("div",{
     className:fe,children:[(0,q.jsxs)("div",{
       className:he,children:[(0,q.jsx)("div",{
         className:ue,children:R.strings.battle_royale_infopage.title()
-      }),n&&(0,q.jsx)("div",{
-        className:ye,children:n
+      }),r&&(0,q.jsx)("div",{
+        className:ye,children:r
       }),(0,q.jsx)("div",{
-        className:xe,children:(0,q.jsx)(d,{
+        className:xe,children:(0,q.jsx)(_,{
           text:R.strings.battle_royale_infopage.eventTime(),binding:{
-            startDate:(0,q.jsx)(s,{
+            startDate:(0,q.jsx)(y,{
               datetime:a,format:o.ShortDate
-            }),endDate:(0,q.jsx)(s,{
-              datetime:r,format:o.ShortDate
+            }),endDate:(0,q.jsx)(y,{
+              datetime:s,format:o.ShortDate
             })
           }
         })
       })]
-    }),c&&(0,q.jsx)(de,{}),(0,q.jsxs)("div",{
+    }),n&&(0,q.jsx)(de,{}),(0,q.jsxs)("div",{
       onClick:()=>{
         l.click(),i()
       },
@@ -375,7 +375,7 @@ Ve="points",He="text",ze="none",Me=N(()=>{
       },s)=>{
         const l=a&&a[s].text;
         return(0,q.jsxs)("div",{
-          className:y(Ie.cell,l&&Ie.cell__text,0===t&&Ie.cell__inFirstRow,1===s&&Ie.cell__inSecondCell),children:[(()=>{
+          className:u(Ie.cell,l&&Ie.cell__text,0===t&&Ie.cell__inFirstRow,1===s&&Ie.cell__inSecondCell),children:[(()=>{
             switch(((e,t,i)=>!e&&!t&&i>0?ze:e?Ve:He)(i,e,t)){
               case Ve:return(0,q.jsx)("div",{
                 className:Ie.points,children:i
@@ -388,7 +388,7 @@ Ve="points",He="text",ze="none",Me=N(()=>{
               })
             }
           })(),(0,q.jsx)("div",{
-            className:y(l&&Ie.border)
+            className:u(l&&Ie.border)
           })]
         },s)
       })
@@ -397,7 +397,7 @@ Ve="points",He="text",ze="none",Me=N(()=>{
 }),Ge={
   base:"Column_dc60da96",battleType:"Column_battleType_7ef70ce0",cell:"Column_cell_734531dc",pointContainer:"Column_pointContainer_b43f5997",point:"Column_point_90602b2",reward:"Column_reward_bb1636fd"
 },
-We=({
+Fe=({
   type:e,rewards:t
 })=>(0,q.jsxs)("div",{
   className:Ge.base,children:[(0,q.jsx)("div",{
@@ -417,12 +417,12 @@ We=({
       className:Ge.dash,children:R.strings.common.common.dash()
     })]
   },i))]
-}),Fe="TableSh_ef0a0d78",Ke=N(()=>{
+}),We="TableSh_ef0a0d78",Ke=N(()=>{
   const{
     model:e
   }=w();
   return(0,q.jsx)("div",{
-    className:Fe,children:k(e.sh.modes.get(),(t,i)=>(0,q.jsx)(We,{
+    className:We,children:k(e.sh.modes.get(),(t,i)=>(0,q.jsx)(Fe,{
       rewards:t,type:e.computes.battleTypeSH(i)
     },i))
   })
@@ -525,14 +525,14 @@ var nt=()=>{
   return"success"===x(ot)&&(0,q.jsxs)("div",{
     className:rt.base,children:[(0,q.jsx)("div",{
       className:rt.header,children:at.map((i,a)=>(0,q.jsxs)("div",{
-        className:y(rt.tab,e===a&&rt.tab__active),onClick:()=>(t(a),void l.click()),children:[(0,q.jsx)("img",{
+        className:u(rt.tab,e===a&&rt.tab__active),onClick:()=>(t(a),void l.click()),children:[(0,q.jsx)("img",{
           className:rt.tabImage,src:lt[i].tabImagePath,alt:lt[i].name
         }),(0,q.jsx)("div",{
           className:rt.tabTitle,children:lt[i].name
         }),(0,q.jsx)("div",{
-          className:y(rt.tabGlow,rt.tabGlow__upper)
+          className:u(rt.tabGlow,rt.tabGlow__upper)
         }),(0,q.jsx)("div",{
-          className:y(rt.tabGlow,rt.tabGlow__bottom)
+          className:u(rt.tabGlow,rt.tabGlow__bottom)
         })]
       },a))
     }),(0,q.jsxs)("div",{
@@ -558,7 +558,7 @@ var nt=()=>{
             className:rt.abilitiesText,children:[(0,q.jsx)("div",{
               className:rt.abilitiesTitle,children:e.title
             }),(0,q.jsx)("div",{
-              className:rt.abilitiesSubtitle,children:(0,q.jsx)(c,{
+              className:rt.abilitiesSubtitle,children:(0,q.jsx)(d,{
                 text:e.description
               })
             })]
@@ -578,11 +578,11 @@ pt=N(()=>{
   const{
     model:e,controls:t
   }=w(),a=e.eventInfo.get().subMode;
-  return u(t.closeWindow),(0,q.jsxs)("div",{
-    className:y(ct.base,ct[`base__${a}`]),children:[(0,q.jsx)(i,{
+  return h(t.closeWindow),(0,q.jsxs)("div",{
+    className:u(ct.base,ct[`base__${a}`]),children:[(0,q.jsx)(i,{
       className:ct.closeButton,onClose:t.closeWindow
-    }),(0,q.jsx)(b,{
-      children:(0,q.jsx)(h,{
+    }),(0,q.jsx)(m,{
+      children:(0,q.jsx)(f,{
         className:ct.scroll,barClassNames:gt,children:(0,q.jsx)("div",{
           className:ct.containerWrapper,children:(0,q.jsxs)("div",{
             className:ct.container,children:[(0,q.jsx)(je,{}),(0,q.jsx)(Ce,{
@@ -598,10 +598,10 @@ pt=N(()=>{
               className:ct.divider
             }),(0,q.jsx)(O,{
               description:S,classNames:{
-                alignCenter:y(ct.alignCenter,ct.generalDescription)
+                alignCenter:u(ct.alignCenter,ct.generalDescription)
               }
             }),(0,q.jsx)(nt,{}),(0,q.jsx)(re,{
-              description:F,binding:{
+              description:W,binding:{
                 soloRespawnPeriod:e.soloRespawnPeriod.get(),platoonTimeToResurrect:e.platoonTimeToResurrect.get(),platoonRespawnPeriod:e.platoonRespawnPeriod.get()
               },
               className:ct.respawnContainer,classNames:{
@@ -666,7 +666,7 @@ pt=N(()=>{
                   alignCenter:ct.articleBPSettings
                 }
               }),(0,q.jsx)(re,{
-                description:W,classNames:{
+                description:F,classNames:{
                   titleStyling:ct.bpTitleStyling,image:ct.pointsBattleTask
                 },
                 smallImage:!0,reverse:!0
@@ -678,7 +678,7 @@ pt=N(()=>{
                 className:ct.divider
               })]
             }),(0,q.jsx)("div",{
-              className:ct.footer,children:(0,q.jsx)(p,{
+              className:ct.footer,children:(0,q.jsx)(s,{
                 text:E[a]
               })
             })]
@@ -688,6 +688,6 @@ pt=N(()=>{
     })]
   })
 });
-t((new g).add(j).add(T).render((0,q.jsx)(pt,{})),{
+t((new c).add(j).add(T).render((0,q.jsx)(pt,{})),{
   fullScreen:!0
 });

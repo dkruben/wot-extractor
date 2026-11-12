@@ -4,12 +4,12 @@ import{
 }
 from"../../chunks/rolldown-runtime.js";
 import{
-  Ct as s,D as a,E as r,H as t,L as n,R as o,Tt as i,at as c,ct as l,gt as d,it as m,k as _,mt as p,xt as f
+  Ct as s,D as a,H as r,L as t,R as n,T as o,Tt as i,at as c,ct as l,gt as d,it as m,k as _,mt as p,xt as f
 }
 from"../../chunks/lib.js";
 import"../../chunks/_wg-global-styles.js";
 import{
-  t as x
+  n as x
 }
 from"../../chunks/vendor.js";
 var j=e(s(),1),[u,h]=_("MarkerViewModel")(({
@@ -25,9 +25,9 @@ var j=e(s(),1),[u,h]=_("MarkerViewModel")(({
     className:g,children:e
   })]
 }),C="InfoDecorator_19b56383",y="InfoDecorator_background_f009b811",A="InfoDecorator_arrow_a021bdd2",E=({
-  children:e,className:s,startColor:a="#213da1",endColor:r="#4361c8",classNames:t
+  children:e,className:s,startColor:a="#213da1",endColor:r="#4361c8",classNames:n
 })=>{
-  const o=n();
+  const o=t();
   return(0,N.jsxs)("div",{
     className:f(C,s),children:[(0,N.jsxs)("svg",{
       className:y,viewBox:"0 0 100% 100%",children:[(0,N.jsx)("defs",{
@@ -42,12 +42,12 @@ var j=e(s(),1),[u,h]=_("MarkerViewModel")(({
         x:"0%",y:"0%",width:"100%",height:"100%",rx:8*o,fill:"url(#bg-gradient)"
       })]
     }),e,(0,N.jsx)("div",{
-      className:f(A,t?.arrow)
+      className:f(A,n?.arrow)
     })]
   })
 },
 w="MarkerContent_1467a141",M="MarkerContent_content_133418e",D="MarkerContent_gradient_393ed7e1",O=j.memo(e=>{
-  const s=t(e,{
+  const s=r(e,{
     from:{
       opacity:0,transform:"translate(-50%, 50%)"
     },
@@ -64,13 +64,13 @@ w="MarkerContent_1467a141",M="MarkerContent_content_133418e",D="MarkerContent_gr
   return(0,N.jsx)("div",{
     className:f(w,e.className),children:s((e,{
       markerContent:s
-    })=>(0,N.jsxs)(o.div,{
+    })=>(0,N.jsxs)(n.div,{
       style:e,className:M,children:[s,(0,N.jsx)("div",{
         className:D,children:s
       })]
     }))
   })
-}),G="App_db51d7ae",I="App_base__activeEvent_47048290",U="App_base__postEvent_d9ddad6f",H="App_base__hidden_4f2b7a98",L="App_base__animated_3a64b9d0",R="App_inner_ee191014",V="App_icon_92c2e8f4",B="App_counter_293a558e",P=i.resolve("strings"),S=x(function(){
+}),G="App_db51d7ae",I="App_base__activeEvent_47048290",U="App_base__postEvent_d9ddad6f",H="App_base__hidden_4f2b7a98",L="App_base__animated_3a64b9d0",R="App_inner_ee191014",T="App_icon_92c2e8f4",V="App_counter_293a558e",B=i.resolve("strings"),P=x(function(){
   const{
     model:e
   }=h(),{
@@ -81,21 +81,21 @@ w="MarkerContent_1467a141",M="MarkerContent_content_133418e",D="MarkerContent_gr
   return(0,j.useEffect)(()=>l(()=>{
     a.current&&d(a.current.offsetWidth,a.current.offsetHeight)
   }),[t,s.name]),(0,N.jsx)("div",{
-    className:f(G,I,(!r||0===o)&&H,t&&U,n&&L),ref:a,lang:P.readOrEmpty("settings.LANGUAGE_CODE"),children:t?(0,N.jsx)("div",{
+    className:f(G,I,(!r||0===o)&&H,t&&U,n&&L),ref:a,lang:B.readOrEmpty("settings.LANGUAGE_CODE"),children:t?(0,N.jsx)("div",{
       className:R,children:(0,N.jsx)("div",{
-        className:V,children:(0,N.jsx)(O,{
-          markerContent:P.readOrEmpty("advent_calendar.marker.exclamationMark")
+        className:T,children:(0,N.jsx)(O,{
+          markerContent:B.readOrEmpty("advent_calendar.marker.exclamationMark")
         })
       })
     }):(0,N.jsx)(E,{
-      className:B,children:(0,N.jsx)(k,{
+      className:V,children:(0,N.jsx)(k,{
         count:o
       })
     })
   })
 });
-a((0,N.jsx)(r,{
+a((0,N.jsx)(o,{
   children:(0,N.jsx)(u,{
-    children:(0,N.jsx)(S,{})
+    children:(0,N.jsx)(P,{})
   })
 }));

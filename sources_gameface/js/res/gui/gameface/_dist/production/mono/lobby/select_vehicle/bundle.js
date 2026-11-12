@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  $ as t,$t as s,A as a,An as r,At as i,B as l,Bn as o,C as n,Cn as c,Ct as d,D as u,Dt as _,E as p,En as m,Et as h,G as f,Gt as v,Hn as g,Ht as x,J as y,Jt as b,K as j,Kt as C,L as N,Ln as w,Mn as S,Mt as I,O as k,On as P,Q as V,Qt as E,Rt as D,S as B,St as L,T as F,Tn as M,Tt as T,U as z,Ut as A,V as O,W as R,X as $,Xt as H,Y as q,Z as U,Zt as G,_ as W,_t as Z,at as J,b as X,bn as K,ct as Q,d as Y,en as ee,et as te,f as se,fn as ae,g as re,gt as ie,h as le,in as oe,j as ne,jn as ce,jt as de,k as ue,kn as _e,l as pe,m as me,mn as he,mt as fe,nn as ve,nt as ge,on as xe,p as ye,q as be,rn as je,rt as Ce,sn as Ne,st as we,tn as Se,tt as Ie,u as ke,v as Pe,vn as Ve,vt as Ee,w as De,wn as Be,wt as Le,x as Fe,y as Me,z as Te,zn as ze
+  $ as t,$t as s,A as a,An as r,At as i,B as l,Bn as o,C as n,Cn as c,Ct as d,D as u,Dt as _,E as p,En as m,Et as h,G as f,Gt as v,Hn as g,Ht as x,J as y,Jt as b,Kt as j,L as C,Ln as N,Mn as w,Mt as S,O as I,On as k,Q as P,Qt as V,Rt as E,S as D,St as B,T as L,Tn as F,Tt as M,Ut as T,X as z,Xt as A,Z as O,Zt as R,_ as $,_t as H,at as q,b as U,bn as G,ct as W,d as Z,dt as J,en as X,et as K,f as Q,fn as Y,ft as ee,g as te,h as se,in as ae,it as re,j as ie,jn as le,jt as oe,k as ne,kn as ce,l as de,lt as ue,m as _e,mn as pe,nn as me,nt as he,on as fe,ot as ve,p as ge,pt as xe,q as ye,rn as be,rt as je,sn as Ce,st as Ne,tn as we,tt as Se,u as Ie,ut as ke,v as Pe,vn as Ve,vt as Ee,w as De,wn as Be,wt as Le,x as Fe,y as Me,z as Te,zn as ze
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
@@ -18,11 +18,11 @@ var Ye="role",et="type",tt="tier",st="nations",at={
 rt={
   type:"vehicleTypes",role:"role",tier:"tier",nations:"nations",bonus:"bonus",favorite:"favorite",premium:"premium",elite:"elite",crystals:"crystals",canInstallAttachments:"customization.canInstallAttachments",own3DStyle:"customization.own3DStyle",rented:"rented",clanRented:"clanRented",isCommonProgression:"isCommonProgression"
 },
-it="isCommonProgression",lt=[V.assault,V.universal,V.break,V.sniper,V.scout,V.support],ot=["bonus","favorite","premium","elite","crystals","canInstallAttachments","own3DStyle","rented"],nt=[Ce.lightTank,Ce.mediumTank,Ce.heavyTank,Ce["AT-SPG"],Ce.SPG],ct=Se(1,12,P),dt="vehicle_types",ut="nations",_t="levels",pt="specials",mt="battle_pass",ht={
-  heavy_tank:q,medium_tank:U,light_tank:$,at_spg:be
+it="isCommonProgression",lt=[q.assault,q.universal,q.break,q.sniper,q.scout,q.support],ot=["bonus","favorite","premium","elite","crystals","canInstallAttachments","own3DStyle","rented"],nt=[ke.lightTank,ke.mediumTank,ke.heavyTank,ke["AT-SPG"],ke.SPG],ct=we(1,12,k),dt="vehicle_types",ut="nations",_t="levels",pt="specials",mt="battle_pass",ht={
+  heavy_tank:he,medium_tank:re,light_tank:je,at_spg:K
 };
-function ft(e,t){
-  return"isCommonProgression"===e&&(t.status!==j.UNSUITABLE_TO_QUEUE&&t.bpProgress<t.maxBpScore)
+function ft(e,s){
+  return"isCommonProgression"===e&&(s.status!==t.UNSUITABLE_TO_QUEUE&&s.bpProgress<s.maxBpScore)
 }
 function vt(e,t,s,a){
   switch(t){
@@ -47,11 +47,11 @@ function xt(e,t,s){
   for(const i of r)if("rented"!==i){
     if(!vt(r,i,t,s))return!1
   }else a=!0;
-  if(!a&&te(t)&&!s?.fromWotPlus)return!1;
+  if(!a&&Ne(t)&&!s?.fromWotPlus)return!1;
   if(s&&e.battle_pass&&e.battle_pass.length>0)for(const i of e.battle_pass)if(!ft(i,s))return!1;
   for(const i of Object.keys(e))if(i in gt&&!gt[i](e,t))return!1;
   return((e,t)=>{
-    const s=y(t.role);
+    const s=Se(t.role);
     let a=!1;
     for(const r of Object.keys(ht))if(r in e&&(a=!0,e[r].some(e=>e.includes(s))))return!0;
     return!a
@@ -99,21 +99,21 @@ var[Nt,wt]=h("FilterVehiclesProvider")(({
   }=s(t("filters")),i={
     ...e.primitives(["defaultFilters"])
   },
-  l=T.structural(()=>s(i.defaultFilters.get())),o={
-    ...e.primitives(["carouselRowCount"]),filters:ae.box(r,{
+  l=M.structural(()=>s(i.defaultFilters.get())),o={
+    ...e.primitives(["carouselRowCount"]),filters:Y.box(r,{
       deep:!1
-    }),searchName:ae.box(a?.[0]??""),nations:e.arrayClone("nationsOrder")
+    }),searchName:Y.box(a?.[0]??""),nations:e.arrayClone("nationsOrder")
   };
   return{
     ...o,computes:{
-      hasFilters:T.primitive(()=>!H.structural(l(),o.filters.get())||o.searchName.get().length>0),nations:()=>o.nations.get(),nationToIndex:T.shallow(()=>o.nations.get().reduce((e,t,s)=>(e[t]=s,e),{})),default:l
+      hasFilters:M.primitive(()=>!A.structural(l(),o.filters.get())||o.searchName.get().length>0),nations:()=>o.nations.get(),nationToIndex:M.shallow(()=>o.nations.get().reduce((e,t,s)=>(e[t]=s,e),{})),default:l
     }
   }
 },({
   cleanup:e,model:t,externalModel:s
 })=>{
   const a=s.createCallback(e=>e,"onSaveFilter");
-  return e(Ne(()=>{
+  return e(Ce(()=>{
     var e,s;
     e=t.filters.get(),s=t.searchName.get(),a({
       filters:JSON.stringify({
@@ -121,63 +121,63 @@ var[Nt,wt]=h("FilterVehiclesProvider")(({
       })
     })
   })),{
-    reset:xe(()=>{
+    reset:fe(()=>{
       t.filters.set(t.computes.default()),t.searchName.set("")
-    }),search:xe(e=>{
+    }),search:fe(e=>{
       t.searchName.set(e)
-    }),change:xe(e=>{
+    }),change:fe(e=>{
       t.filters.set(jt(t.filters.get(),e))
     }),carouselTypeChange:s.createCallback(e=>({
       rowCount:e
     }),"onCarouselTypeChange")
   }
-}),St=e(ze()),It=[Ce.lightTank,Ce.mediumTank,Ce.heavyTank,Ce["AT-SPG"],Ce.SPG].reduce((e,t,s)=>(e[t]=s,e),{}),[kt,Pt]=h("VehicleStatisticsProvider")(({
+}),St=e(ze()),It=[ke.lightTank,ke.mediumTank,ke.heavyTank,ke["AT-SPG"],ke.SPG].reduce((e,t,s)=>(e[t]=s,e),{}),[kt,Pt]=h("VehicleStatisticsProvider")(({
   observableModel:e
 })=>{
-  const t=e.dict("statistics"),s=T.structural(e=>t.get(e));
+  const t=e.dict("statistics"),s=M.structural(e=>t.get(e));
   return{
-    ids:T.primitive(()=>t.keys),get:s
+    ids:M.primitive(()=>t.keys),get:s
   }
 }),[Vt,Et]=h("VehiclesProvider")(({
   observableModel:e
 })=>{
-  const s={
+  const t={
     vehicles:e.dictRef("vehicles")
   };
   return{
-    get:T.structural(e=>{
+    get:M.structural(e=>{
       if(-1===e)return;
-      const a=s.vehicles.get(e);
-      if(!a)return void console.error(`Error getting vehicle with id: ${e}`);
-      const r=function(e){
+      const s=t.vehicles.get(e);
+      if(!s)return void console.error(`Error getting vehicle with id: ${e}`);
+      const a=function(e){
         try{
           const t=JSON.parse(e);
           return t.shortName=t.shortName.replace(/<img.+\/>/,""),t
         }catch(t){
           throw console.error(`Error parsing JSON for element ${e}:`,t),t
         }
-      }(a);
+      }(s);
       return{
-        ...r,imageKey:t(r.name)
+        ...a,imageKey:ve(a.name)
       }
-    }),has:T.primitive(e=>Boolean(s.vehicles.get(e))),ids:T.shallow(()=>[...s.vehicles.keys.values()]),amount:T.primitive(()=>s.vehicles.length),list:T.shallow(()=>{
+    }),has:M.primitive(e=>Boolean(t.vehicles.get(e))),ids:M.shallow(()=>[...t.vehicles.keys.values()]),amount:M.primitive(()=>t.vehicles.length),list:M.shallow(()=>{
       let e=[];
-      for(const[a,r]of s.vehicles.entries())try{
+      for(const[a,r]of t.vehicles.entries())try{
         e.push(JSON.parse(r.get()))
-      }catch(t){
-        console.error(`Error parsing JSON for element ${a}:`,t)
+      }catch(s){
+        console.error(`Error parsing JSON for element ${a}:`,s)
       }
       return e
     })
   }
-},_e,{
+},ce,{
   useRequires:()=>({
     statistics:Pt()
   })
 }),[Dt,Bt]=h("MyVehiclesProvider")(e=>{
-  const t=e.requires.statistic.model.ids,s=T.structural(s=>{
+  const t=e.requires.statistic.model.ids,s=M.structural(s=>{
     if(t().has(s))return e.requires.vehicles.model.get(s)
-  }),a=T.shallow(()=>{
+  }),a=M.shallow(()=>{
     const s=[];
     for(const a of t().values()){
       const t=e.requires.vehicles.model.get(a);
@@ -186,19 +186,19 @@ var[Nt,wt]=h("FilterVehiclesProvider")(({
     return s
   });
   return{
-    get:s,getAll:a,amount:T.primitive(()=>a().length),ids:t
+    get:s,getAll:a,amount:M.primitive(()=>a().length),ids:t
   }
-},_e,{
+},ce,{
   useRequires:()=>({
     vehicles:Et(),statistic:Pt()
   })
 }),Lt=g.resolve("strings");
 function Ft(e,t,s="..."){
-  return ve(t-s.length>=0,`Incorrect tranticate config max(${t}) - rest.length(${s.length}) must be greater than 0`),e.length<=t?[e,!1]:[`${e.slice(0,t-s.length)}${s}`,!0]
+  return me(t-s.length>=0,`Incorrect tranticate config max(${t}) - rest.length(${s.length}) must be greater than 0`),e.length<=t?[e,!1]:[`${e.slice(0,t-s.length)}${s}`,!0]
 }
-var Mt=ee(E+s),Tt=()=>`${Date.now().toString(16)}_${Mt(3)}`;
+var Mt=X(V+s),Tt=()=>`${Date.now().toString(16)}_${Mt(3)}`;
 function zt(e,t,s=1){
-  const a=we(t,{
+  const a=l(t,{
     count:s
   });
   return e.has(a)?zt(e,t,s+1):a
@@ -228,23 +228,23 @@ var Ot=e=>({
   requires:e,observableModel:t
 })=>{
   const s=t.dict("storage"),a=t.primitives(["selectedID","enabled","dirtyEdit"]),r=e.filters.model.computes.default,i={
-    vehicles:e.vehicles.model,myVehicles:e.myVehicles.model,enabled:a.enabled,selectedID:a.selectedID,nationsOrder:e.filters.model.nations,filters:ae.box(r(),{
+    vehicles:e.vehicles.model,myVehicles:e.myVehicles.model,enabled:a.enabled,selectedID:a.selectedID,nationsOrder:e.filters.model.nations,filters:Y.box(r(),{
       deep:!1
-    }),searchName:ae.box("",{
+    }),searchName:Y.box("",{
       deep:!1
     }),edit:{
-      initial:ae.box(void 0,{
+      initial:Y.box(void 0,{
         deep:!1
       }),dirty:a.dirtyEdit
     }
   },
-  l=T.shallow(()=>s.keys),o=T.primitive(()=>qe(Ut,i.selectedID.get())),n=T.structural(e=>{
+  l=M.shallow(()=>s.keys),o=M.primitive(()=>qe(Ut,i.selectedID.get())),n=M.structural(e=>{
     try{
       const t=s.get(e);
       if(!t)return Ot(void 0);
       const a=qe(qt,JSON.parse(t)),r=new Set;
-      for(const e of a.list)if(ge[e]){
-        const t=ge[e].find(e=>Boolean(i.myVehicles.get(e.toString())));
+      for(const e of a.list)if(ue[e]){
+        const t=ue[e].find(e=>Boolean(i.myVehicles.get(e.toString())));
         r.add(t??e)
       }else r.add(e);
       return Ot({
@@ -253,33 +253,33 @@ var Ot=e=>({
     }catch(t){
       return console.error(`Error getting playlist with ${e} id`,t),Rt("PARSE_ERROR",String(t))
     }
-  }),d=T.shallow(()=>Be(l().values()).map(e=>n(e)).filter(e=>"ok"===e.type&&void 0!==e.value).map(e=>e.value.title).reduce((e,t)=>e.add(t),new Set)),u=T.primitive(e=>{
+  }),d=M.shallow(()=>Be(l().values()).map(e=>n(e)).filter(e=>"ok"===e.type&&void 0!==e.value).map(e=>e.value.title).reduce((e,t)=>e.add(t),new Set)),u=M.primitive(e=>{
     const t=n(e);
     if("ok"!==t.type||void 0===t.value)throw new Error(`Can't get playlist by id ${e}`);
     return t.value
-  }),_=T.structural(e=>{
+  }),_=M.structural(e=>{
     const t=n(e);
     if("ok"===t.type&&void 0!==t.value)return{
       id:e,...t.value
     }
-  }),p=T.shallow(()=>Be(l().values()).map(e=>_(e)).filter(e=>void 0!==e).toArray().sort((e,t)=>e.title.localeCompare(t.title)).map(e=>e.id)),m=T.primitive(()=>{
+  }),p=M.shallow(()=>Be(l().values()).map(e=>_(e)).filter(e=>void 0!==e).toArray().sort((e,t)=>e.title.localeCompare(t.title)).map(e=>e.id)),m=M.primitive(()=>{
     const e=o();
     if(e)return _(e)
-  }),h=T.shallow(()=>{
+  }),h=M.shallow(()=>{
     const t=e.filters.model.computes.nationToIndex();
     return c(e.myVehicles.model.getAll(),(e,s)=>Ct(t,It,e,s))
-  }),f=T.primitive(e=>{
+  }),f=M.primitive(e=>{
     const t=_(e),s=g();
     if(void 0===t||0===t.list.length)return;
     const a=new Set(t.list);
     for(let r=0;r<s.length;r+=1){
       const e=Number(s[r]?.id);
-      if(G(e)&&a.has(e))return r
+      if(R(e)&&a.has(e))return r
     }
-  }),v=T.primitive(()=>!1===H.structural(r(),i.filters.get())||i.searchName.get().length>0),g=T.shallow(()=>{
+  }),v=M.primitive(()=>!1===A.structural(r(),i.filters.get())||i.searchName.get().length>0),g=M.shallow(()=>{
     const t=i.filters.get(),s=h(),a=i.searchName.get();
     return s.filter(s=>!!yt(a,s)&&xt(t,s,e.statistic.model.get(s.id)))
-  }),x=T.primitive(t=>Boolean(e.statistic.model.get(t)?.elite)),y=T.shallow(t=>e.vehicles.model.get(t)?.imageKey),b=T.primitive(()=>g().length),j=T.shallow(()=>m()?.list.map(i.vehicles.get));
+  }),x=M.primitive(t=>Boolean(e.statistic.model.get(t)?.elite)),y=M.shallow(t=>e.vehicles.model.get(t)?.imageKey),b=M.primitive(()=>g().length),j=M.shallow(()=>m()?.list.map(i.vehicles.get));
   return{
     ...i,current:m,titles:d,currentId:o,byIdUnsafe:u,byId:n,byIdFull:_,filtered:g,filteredAmount:b,defaultFilters:r,hasFilters:v,vehicleImage:y,currentVehicles:j,ids:l,sortedIds:p,isElite:x,firstAddedVehicleIndexByPlaylistId:f
   }
@@ -292,7 +292,7 @@ var Ot=e=>({
     id:e
   }),"onSelect");
   return{
-    filters:oe({
+    filters:ae({
       update:t=>{
         e.filters.set(jt(e.filters.get(),t))
       },
@@ -302,7 +302,7 @@ var Ot=e=>({
       search:t=>e.searchName.set(t),change:t=>{
         e.filters.set(jt(e.filters.get(),t))
       }
-    }),create:xe(t=>{
+    }),create:fe(t=>{
       const{
         id:a=Tt(),vehicleIds:r=[],skipRedirect:i=!1
       }=t??{};
@@ -316,7 +316,7 @@ var Ot=e=>({
         value:e
       }),"onSetDirtyEdit")
     },
-    select:xe((t="")=>{
+    select:fe((t="")=>{
       e.selectedID.set(t),a(t)
     }),save:t.createCallback(e=>({
       id:e
@@ -324,7 +324,7 @@ var Ot=e=>({
       id:e
     }),"onDiscard"),goToAboutVehicle:t.createCallback(e=>({
       intCD:e
-    }),"onGoToAboutVehicle"),openImport:t.createCallback(xe(()=>({
+    }),"onGoToAboutVehicle"),openImport:t.createCallback(fe(()=>({
       type:Ht,params:JSON.stringify({
         titles:Array.from(e.titles().values())
       })
@@ -339,34 +339,34 @@ var Ot=e=>({
     vehicles:Et(),myVehicles:Bt(),filters:wt(),statistic:Pt()
   })
 })),Kt=()=>(0,St.useContext)(Xt),[Qt,Yt]=h("VehiclesInventoryProvider")(e=>{
-  const t=e.observableModel.primitives(["freeSlotsCount","defaultSlotPrice","slotPrice","slotPriceCurrency","recoverableVehicleCount","currentVehicleIntCD","currentVehicleInventoryId","hasDiscont","bpEntityValid","bpStatus","telecomRentStatus"]),s=ae.box([],{
+  const t=e.observableModel.primitives(["freeSlotsCount","defaultSlotPrice","slotPrice","slotPriceCurrency","recoverableVehicleCount","currentVehicleIntCD","currentVehicleInventoryId","hasDiscont","bpEntityValid","bpStatus","telecomRentStatus"]),s=Y.box([],{
     deep:!1
   }),a={
     intCD:t.currentVehicleIntCD,inventoryId:t.currentVehicleInventoryId
   },
-  r=T.shallow(()=>{
+  r=M.shallow(()=>{
     const t=a.intCD.get();
     return e.requires.vehicles.model.get(t)
-  }),i=T.shallow(t=>{
+  }),i=M.shallow(t=>{
     if(void 0===t)return;
     const s=a.intCD.get();
     return-1===s?e.requires.vehicles.model.get(t):e.requires.vehicles.model.get(s)
-  }),l=T.shallow(()=>{
+  }),l=M.shallow(()=>{
     const t=a.intCD.get();
     return e.requires.statistic.model.get(t)
-  }),o=T.primitive(()=>-1!==a.intCD.get()),n=T.shallow(e=>K(e,e=>c.get(String(e)))),c=e.requires.myVehicles.model,d=T.structural(()=>e.requires.vehicles.model.list().filter(e=>e.rent.isRented)),u=T.primitive(()=>e.requires.vehicles.model.list().some(t=>{
+  }),o=M.primitive(()=>-1!==a.intCD.get()),n=M.shallow(e=>G(e,e=>c.get(String(e)))),c=e.requires.myVehicles.model,d=M.structural(()=>e.requires.vehicles.model.list().filter(e=>e.rent.isRented)),u=M.primitive(()=>e.requires.vehicles.model.list().some(t=>{
     const s=e.requires.statistic.model.get(t.vehicleId);
     if(s)return"inPrebattle"===s.status
-  })),_=T.primitive(()=>{
+  })),_=M.primitive(()=>{
     const t=[...c.getAll()],s=e.requires.filters.model.computes.nationToIndex();
     return t.sort((e,t)=>Ct(s,It,e,t)),t
   });
-  return e.cleanup(Ne(()=>{
+  return e.cleanup(Ce(()=>{
     const t=e.requires.filters.model.filters.get(),a=e.requires.filters.model.searchName.get(),r=e.requires.playlists?.model.current(),i=c.ids(),l=(r?n(r.list):_()).filter(s=>!1!==i.has(s.id)&&(!!xt(t,s,e.requires.statistic.model.get(s.id))&&yt(a,s)));
-    he(()=>s.set(l))
+    pe(()=>s.set(l))
   })),{
     vehicles:e.requires.myVehicles.model,vehicle:i,selectedVehicle:r,isVehicleSelected:o,selectedVehicleStatistics:l,accumulateByIds:n,rentVehiclesList:d,prebattleModeActive:u,current:{
-      intCD:t.currentVehicleIntCD,inventoryId:t.currentVehicleInventoryId,amount:T.primitive(()=>s.get().length),list:()=>s.get(),ids:T.shallow(()=>s.get().map(e=>e.id)),playlist:e.requires.playlists?e.requires.playlists.model.current:()=>{}
+      intCD:t.currentVehicleIntCD,inventoryId:t.currentVehicleInventoryId,amount:M.primitive(()=>s.get().length),list:()=>s.get(),ids:M.shallow(()=>s.get().map(e=>e.id)),playlist:e.requires.playlists?e.requires.playlists.model.current:()=>{}
     },
     slots:{
       free:t.freeSlotsCount,price:{
@@ -388,21 +388,21 @@ var Ot=e=>({
     myVehicles:Bt(),vehicles:Et(),statistic:Pt(),filters:wt(),playlists:Kt()
   })
 }),[es,ts]=h("SelectVehiclesProvider")(e=>{
-  const t=e.observableModel.primitives(["title","currentVehicleCD","isAllVehicles"]),s=e.requires.vehicles.model,a=e.requires.statistic.model,r=ae.box([],{
+  const t=e.observableModel.primitives(["title","currentVehicleCD","isAllVehicles"]),s=e.requires.vehicles.model,a=e.requires.statistic.model,r=Y.box([],{
     deep:!1
-  }),i=T.shallow(e=>K(e,e=>s.get(String(e)))),l=T.primitive(()=>{
+  }),i=M.shallow(e=>G(e,e=>s.get(String(e)))),l=M.primitive(()=>{
     let r=s.list();
     t.isAllVehicles.get()||(r=r.filter(e=>Boolean(a.get(e.id))));
     const i=e.requires.filters.model.computes.nationToIndex();
     return r.sort((e,t)=>Ct(i,It,e,t)),r
   });
-  e.cleanup(Ne(()=>{
+  e.cleanup(Ce(()=>{
     const t=e.requires.playlists?.model.current(),s=(t?i(t.list):l()).filter(t=>!!xt(e.requires.filters.model.filters.get(),t,a.get(t.id))&&yt(e.requires.filters.model.searchName.get(),t));
-    he(()=>r.set(s))
+    pe(()=>r.set(s))
   }));
-  const o=T.shallow(()=>r.get().map(e=>e.id)),n=T.primitive(()=>t.currentVehicleCD.get().toString());
+  const o=M.shallow(()=>r.get().map(e=>e.id)),n=M.primitive(()=>t.currentVehicleCD.get().toString());
   return{
-    title:t.title,currentVehicleCD:n,currentIndex:T.primitive(()=>o().indexOf(n())),isAllVehicles:t.isAllVehicles,total:T.primitive(()=>{
+    title:t.title,currentVehicleCD:n,currentIndex:M.primitive(()=>o().indexOf(n())),isAllVehicles:t.isAllVehicles,total:M.primitive(()=>{
       const t=e.requires.playlists?.model.current();
       return t?t.list.length:l().length
     }),list:()=>r.get(),ids:o
@@ -448,7 +448,7 @@ cs=b(),ds=Ue(function(e){
     return s[e.event.field]?.includes(e.event.value)
   },[e.event,s]);
   return(0,cs.jsx)(Me,{
-    ...e.tooltip,theme:Fe.primary,size:X.extraSmall,className:w(ns.toggle,a&&ns.toggle__activated,e.className),activated:a,onClick:()=>{
+    ...e.tooltip,theme:Fe.primary,size:U.extraSmall,className:N(ns.toggle,a&&ns.toggle__activated,e.className),activated:a,onClick:()=>{
       t.change(e.event),e.tooltip&&e.tooltip.onClick()
     },
     children:e.children
@@ -456,7 +456,7 @@ cs=b(),ds=Ue(function(e){
 });
 function _s(e){
   return(0,cs.jsx)("div",{
-    className:w(ns.toggleContainer,e.className),children:lt.map(e=>(0,cs.jsx)(ds,{
+    className:N(ns.toggleContainer,e.className),children:lt.map(e=>(0,cs.jsx)(ds,{
       tooltip:{
         header:e,body:Ye
       },
@@ -471,22 +471,22 @@ function _s(e){
 }
 function ps(e){
   return(0,cs.jsx)("div",{
-    className:w(ns.toggleContainer,ns.toggleContainer__type,e.className),children:nt.map(e=>(0,cs.jsx)(ds,{
+    className:N(ns.toggleContainer,ns.toggleContainer__type,e.className),children:nt.map(e=>(0,cs.jsx)(ds,{
       tooltip:{
         header:e,body:et
       },
       event:{
         field:dt,type:"regular",value:e
       },
-      className:ns.toggle__type,children:(0,cs.jsx)(O,{
-        type:e,size:O.sizes.x24x24
+      className:ns.toggle__type,children:(0,cs.jsx)(y,{
+        type:e,size:y.sizes.x24x24
       })
     },e))
   })
 }
 function ms(e){
   return(0,cs.jsx)("div",{
-    className:w(ns.toggleContainer,e.className),children:e.orderedNations.map(e=>(0,cs.jsx)(ds,{
+    className:N(ns.toggleContainer,e.className),children:e.orderedNations.map(e=>(0,cs.jsx)(ds,{
       tooltip:{
         header:e,body:st
       },
@@ -494,7 +494,7 @@ function ms(e){
         field:ut,type:"regular",value:e
       },
       children:(0,cs.jsx)("div",{
-        className:ns.nationWrapper,children:(0,cs.jsx)(J,{
+        className:ns.nationWrapper,children:(0,cs.jsx)(H,{
           className:ns.nationIcon,path:`flags.c_60x40.${e}`
         })
       })
@@ -503,14 +503,14 @@ function ms(e){
 }
 function hs(e){
   return(0,cs.jsx)("div",{
-    className:w(ns.toggleContainer,e.className),children:ct.map(e=>(0,cs.jsx)(ds,{
+    className:N(ns.toggleContainer,e.className),children:ct.map(e=>(0,cs.jsx)(ds,{
       tooltip:{
         header:"tier",body:tt
       },
       event:{
         field:_t,type:"regular",value:`level_${e}`
       },
-      children:(0,cs.jsx)(f,{
+      children:(0,cs.jsx)(P,{
         className:ns.vehicleLevel,value:e
       })
     },e))
@@ -525,8 +525,8 @@ function fs(e){
     event:{
       field:pt,type:"regular",value:e.special
     },
-    children:(0,cs.jsx)(J,{
-      className:w(ns.specialsIcons,"favorite"===e.special&&ns.specialsIcons__favorite),path:t
+    children:(0,cs.jsx)(H,{
+      className:N(ns.specialsIcons,"favorite"===e.special&&ns.specialsIcons__favorite),path:t
     })
   },e.special)
 }
@@ -539,7 +539,7 @@ function vs(){
     event:{
       field:mt,type:"regular",value:it
     },
-    children:(0,cs.jsx)(J,{
+    children:(0,cs.jsx)(H,{
       className:ns.specialsIcons,path:e
     })
   })
@@ -547,7 +547,7 @@ function vs(){
 var gs=Ue(function(e){
   const t=os(),s=t.specialIds??ot,a=Yt(),r=a.model.bpState.active.get(),i=a.model.rentVehiclesList(),l=is()?.model,o=!l||l.isCrystalEarnEnabled.get(),n=!l||l.isDailyMultipliedXpEnabled.get(),c=s.filter(e=>(0!==i.length||"rented"!==e)&&(n||"bonus"!==e)&&(o||"crystals"!==e));
   return(0,cs.jsxs)("div",{
-    className:w(ns.toggleContainer,e.className),children:[c.map(e=>(0,cs.jsx)(fs,{
+    className:N(ns.toggleContainer,e.className),children:[c.map(e=>(0,cs.jsx)(fs,{
       imagePath:t.imagesMap?.[e]??e,special:e
     },e)),r&&(0,cs.jsx)(vs,{}),e.children]
   })
@@ -567,7 +567,7 @@ function xs(){
   },[e,t]),null
 }(0,St.memo)(function(e){
   return(0,cs.jsxs)(ys,{
-    ...e,className:e.className??ns.scroll,children:[(0,cs.jsx)(Q,{
+    ...e,className:e.className??ns.scroll,children:[(0,cs.jsx)(Ee,{
       className:ns.category,path:"tank_carousel_filter.popover.label.specials"
     }),(0,cs.jsx)(gs,{
       children:e.children
@@ -576,16 +576,16 @@ function xs(){
 });
 var ys=(0,St.memo)(function(e){
   return(0,cs.jsx)(u,{
-    children:(0,cs.jsxs)(ue,{
-      className:e.className,barClassNames:e.barClassNames,scrollClassNames:e.scrollClassNames,children:[(0,cs.jsx)(Q,{
+    children:(0,cs.jsxs)(ne,{
+      className:e.className,barClassNames:e.barClassNames,scrollClassNames:e.scrollClassNames,children:[(0,cs.jsx)(Ee,{
         className:ns.category,path:"tank_carousel_filter.popover.label.vehicleTypes"
-      }),(0,cs.jsx)(ps,{}),(0,cs.jsx)(Q,{
+      }),(0,cs.jsx)(ps,{}),(0,cs.jsx)(Ee,{
         className:ns.category,path:"tank_carousel_filter.popover.label.vehicleRole"
-      }),(0,cs.jsx)(_s,{}),(0,cs.jsx)(Q,{
+      }),(0,cs.jsx)(_s,{}),(0,cs.jsx)(Ee,{
         className:ns.category,path:"tank_carousel_filter.popover.label.nations"
       }),(0,cs.jsx)(ms,{
         orderedNations:e.orderedNations
-      }),(0,cs.jsx)(Q,{
+      }),(0,cs.jsx)(Ee,{
         className:ns.category,path:"tank_carousel_filter.popover.label.levels"
       }),(0,cs.jsx)(hs,{}),e.children]
     })
@@ -605,8 +605,8 @@ var ys=(0,St.memo)(function(e){
       })]
     }),(0,cs.jsx)("div",{
       className:Ns,children:t.formatNumber("integral",r.total())
-    }),a&&(0,cs.jsx)(ie,{
-      className:ws,autoAlignContent:!1,theme:ie.themes.secondary,size:ie.sizes.extraSmall,onClick:s.reset,children:(0,cs.jsx)("div",{
+    }),a&&(0,cs.jsx)(J,{
+      className:ws,autoAlignContent:!1,theme:J.themes.secondary,size:J.sizes.extraSmall,onClick:s.reset,children:(0,cs.jsx)("div",{
         className:Ss
       })
     })]
@@ -848,13 +848,13 @@ var ys=(0,St.memo)(function(e){
 function Ps({
   value:e,...t
 }){
-  return(0,cs.jsx)(me,{
+  return(0,cs.jsx)(_e,{
     ...t,sprite:ks,path:"hangar.playlists.icons",icon:e,className:t.className
   })
 }
-var Vs=Ee("IconContainer","Icon_container_83f4dd0e"),Es=Ue(function(e){
+var Vs=xe("IconContainer","Icon_container_83f4dd0e"),Es=Ue(function(e){
   const t=Yt(),s=Jt().model.byIdUnsafe(e.id);
-  ve(void 0!==s,`Playlist with ${e.id} is not found`);
+  me(void 0!==s,`Playlist with ${e.id} is not found`);
   const a=t.model.accumulateByIds(s.list).length;
   return s.list.length<=a?null:(0,cs.jsx)(Ds,{
     className:e.className,classNames:e.classNames,displayAmount:a,size:e.size,realAmountInPlaylist:s.list.length
@@ -865,7 +865,7 @@ function Ds(e){
     header:t.readOrEmpty("playlists.validation.unavailable.title").replace("{{display}}",e.displayAmount.toString()).replace("{{total}}",e.realAmountInPlaylist.toString()),body:t.readOrEmpty("playlists.validation.unavailable.body")
   }),a="lg"===e.size?"alert_lg":"alert";
   return(0,cs.jsx)("lg"===e.size?Vs:"div",{
-    ...s,className:w(e.classNames?.container,e.className),children:(0,cs.jsx)(Ps,{
+    ...s,className:N(e.classNames?.container,e.className),children:(0,cs.jsx)(Ps,{
       className:e.classNames?.icon,value:a
     })
   })
@@ -946,17 +946,17 @@ var Bs=e=>(0,cs.jsxs)("svg",{
   base:"CopyButton_67fe8760",base__enabled:"CopyButton_base__enabled_49d34ed8",base__disabled:"CopyButton_base__disabled_4ef2eeda",icon:"CopyButton_icon_e339ed33",base__copyStatus:"CopyButton_base__copyStatus_49d34ed8",icon__export:"CopyButton_icon__export_49d34ed8",base__copiedStatus:"CopyButton_base__copiedStatus_49d34ed8",icon__exportDone:"CopyButton_icon__exportDone_8d5db080"
 },
 Ms=g.resolve("strings"),Ts=function(e){
-  const[t,s]=(0,St.useState)("copy"),a=I(),r=i({
+  const[t,s]=(0,St.useState)("copy"),a=S(),r=i({
     header:Ms.readOrEmpty("playlists.share.copy_button.title"),body:Ms.readOrEmpty("playlists.share.copy_button.body")
   }),l=_();
   return(0,cs.jsxs)("div",{
-    ...r,"data-test-id":"copyButton",className:w(Fs.base,Fs[`base__${t}Status`],e.disabled?Fs.base__disabled:Fs.base__enabled),onClick:t=>{
+    ...r,"data-test-id":"copyButton",className:N(Fs.base,Fs[`base__${t}Status`],e.disabled?Fs.base__disabled:Fs.base__enabled),onClick:t=>{
       if(r.onClick(),e.disabled)return;
       l.play("click",{
         target:"vehicle:playlists:copy_button",original:t
       });
       const i=e.onCopy();
-      "string"==typeof i&&S(i).then(e=>{
+      "string"==typeof i&&w(i).then(e=>{
         e?s("copied"):console.error("Write to clipboard has been failure"),a.run(()=>s("copy"),1e3)
       }).catch(e=>console.error(e))
     },
@@ -966,9 +966,9 @@ Ms=g.resolve("strings"),Ts=function(e){
       })
     },
     children:[(0,cs.jsx)(Bs,{
-      className:w(Fs.icon,Fs.icon__export)
+      className:N(Fs.icon,Fs.icon__export)
     }),(0,cs.jsx)(Ls,{
-      className:w(Fs.icon,Fs.icon__exportDone)
+      className:N(Fs.icon,Fs.icon__exportDone)
     })]
   })
 },
@@ -1030,11 +1030,11 @@ zs=e=>(0,cs.jsxs)("svg",{
 function $s({
   id:e,className:t
 }){
-  const s=_(),a=se(),r=i({
+  const s=_(),a=Q(),r=i({
     header:Rs.readOrEmpty("playlists.edit_button.title"),body:Rs.readOrEmpty("playlists.edit_button.body")
   });
   return(0,cs.jsx)("div",{
-    ...r,className:w(As,t),"data-test-id":"editButton",onClick:t=>{
+    ...r,className:N(As,t),"data-test-id":"editButton",onClick:t=>{
       r.onClick(),s.play("click",{
         target:"vehicle:playlists:edit_button",original:t
       }),a.push("/hangar/editVehiclePlaylists",{
@@ -1052,23 +1052,23 @@ function $s({
   })
 }
 var Hs="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
-var qs="Item_background_5cb932c1",Us="Item_c5163bf",Gs="Item_base__selected_5f6fcc69",Ws="Item_button_8b3e738d",Zs="Item_selectedIcon_eb50b3a6",Js="Item_content_db9841ac",Xs="Item_title_3edba705",Ks="Item_actions_63add2d",Qs=le({
+var qs="Item_background_5cb932c1",Us="Item_c5163bf",Gs="Item_base__selected_5f6fcc69",Ws="Item_button_8b3e738d",Zs="Item_selectedIcon_eb50b3a6",Js="Item_content_db9841ac",Xs="Item_title_3edba705",Ks="Item_actions_63add2d",Qs=se({
   container:"Item_alert_31c28fa6",icon:"Item_alertIcon_f872f769"
 }),Ys=Ue(function(e){
   const{
     playlist:t
   }=e,s=Jt(),a=p();
   return(0,cs.jsxs)("div",{
-    className:w(Us,s.model.currentId()===e.id&&Gs),children:[(0,cs.jsx)("div",{
+    className:N(Us,s.model.currentId()===e.id&&Gs),children:[(0,cs.jsx)("div",{
       className:qs
-    }),(0,cs.jsxs)(Z,{
+    }),(0,cs.jsxs)(ee,{
       className:Ws,onClick:()=>{
         s.controls.select(e.id),a.close()
       },
       "data-test-id":`playlist-${t.title}`,children:[(0,cs.jsxs)("span",{
         className:Js,children:[(0,cs.jsx)(Ps,{
           value:"checked",className:Zs
-        }),(0,cs.jsx)(re,{
+        }),(0,cs.jsx)(te,{
           text:t.title,className:Xs
         }),(0,cs.jsx)(Es,{
           id:e.id,classNames:Qs
@@ -1127,9 +1127,9 @@ var qs="Item_background_5cb932c1",Us="Item_c5163bf",Gs="Item_base__selected_5f6f
 }),ta=Ue(function(){
   const e=Jt(),t=p();
   return(0,cs.jsxs)("div",{
-    className:w(Us,!e.model.currentId()&&Gs),children:[(0,cs.jsx)("div",{
+    className:N(Us,!e.model.currentId()&&Gs),children:[(0,cs.jsx)("div",{
       className:qs
-    }),(0,cs.jsx)(Z,{
+    }),(0,cs.jsx)(ee,{
       className:Ws,onClick:()=>{
         e.controls.select(void 0),t.close()
       },
@@ -1147,9 +1147,9 @@ var qs="Item_background_5cb932c1",Us="Item_c5163bf",Gs="Item_base__selected_5f6f
       id:e
     },e))]
   })
-}),oa=Ee("Divider",sa),na=Ue(function(e){
-  const t=Jt(),s=g.resolve("strings"),[a,r]=ye("add");
-  return(0,cs.jsxs)(e.asChild?W:Z,{
+}),oa=xe("Divider",sa),na=Ue(function(e){
+  const t=Jt(),s=g.resolve("strings"),[a,r]=ge("add");
+  return(0,cs.jsxs)(e.asChild?$:ee,{
     className:ra,"data-test-id":"createPlaylist",onMouseEnter:()=>r(!0),onMouseLeave:()=>r(!1),onClick:()=>t.controls.create(),children:[(0,cs.jsx)(Vs,{
       className:aa,children:(0,cs.jsx)(Ps,{
         value:a
@@ -1159,8 +1159,8 @@ var qs="Item_background_5cb932c1",Us="Item_c5163bf",Gs="Item_base__selected_5f6f
     })]
   })
 }),ca=function(e){
-  const t=Jt(),s=g.resolve("strings"),[a,r]=ye("import");
-  return(0,cs.jsxs)(e.asChild?W:Z,{
+  const t=Jt(),s=g.resolve("strings"),[a,r]=ge("import");
+  return(0,cs.jsxs)(e.asChild?$:ee,{
     className:ra,"data-test-id":"importPlaylist",onClick:t.controls.openImport,onMouseEnter:()=>r(!0),onMouseLeave:()=>r(!1),children:[(0,cs.jsx)(Vs,{
       className:aa,children:(0,cs.jsx)(Ps,{
         value:a
@@ -1170,20 +1170,20 @@ var qs="Item_background_5cb932c1",Us="Item_c5163bf",Gs="Item_base__selected_5f6f
     })]
   })
 },
-da="Dropdown_popover_b5203d93",ua="Dropdown_scrollContent_7363dda3",_a="Dropdown_bar_2d94e05e",pa="Dropdown_area_a34c2ecf",ma="Dropdown_area__begin_af756086",ha="Dropdown_area__end_3b89247a",fa="Dropdown_list_41b8eefe",va="Dropdown_triggers_b8372e20",ga="Dropdown_currentTitle_11ba3707",xa="Dropdown_trigger_f754201d",ya="Dropdown_currentTitleText_13099382",ba="Dropdown_alert_8195eae1",ja="Dropdown_alertIcon_61f05dd3",Ca="Dropdown_arrow_5a21c825",Na="Dropdown_arrow__opened_ef9f7c1d",wa=g.resolve("strings"),Sa=[25,25],Ia=le({
+da="Dropdown_popover_b5203d93",ua="Dropdown_scrollContent_7363dda3",_a="Dropdown_bar_2d94e05e",pa="Dropdown_area_a34c2ecf",ma="Dropdown_area__begin_af756086",ha="Dropdown_area__end_3b89247a",fa="Dropdown_list_41b8eefe",va="Dropdown_triggers_b8372e20",ga="Dropdown_currentTitle_11ba3707",xa="Dropdown_trigger_f754201d",ya="Dropdown_currentTitleText_13099382",ba="Dropdown_alert_8195eae1",ja="Dropdown_alertIcon_61f05dd3",Ca="Dropdown_arrow_5a21c825",Na="Dropdown_arrow__opened_ef9f7c1d",wa=g.resolve("strings"),Sa=[25,25],Ia=se({
   container:ba,icon:ja
-}),ka=le({
+}),ka=se({
   container:ba
 }),Pa=Ue(function(){
   const{
     api:e
-  }=ne(),[t,s]=N(e,Sa),{
+  }=ie(),[t,s]=C(e,Sa),{
     opened:a
   }=p();
   return(0,St.useEffect)(()=>{
-    if(a)return je(()=>je(e.recalculateContent))
-  },[a,e.recalculateContent]),(0,cs.jsx)(k,{
-    className:w(pa,!t&&ma,!s&&ha),classNames:{
+    if(a)return be(()=>be(e.recalculateContent))
+  },[a,e.recalculateContent]),(0,cs.jsx)(I,{
+    className:N(pa,!t&&ma,!s&&ha),classNames:{
       content:ua
     },
     children:(0,cs.jsx)(la,{})
@@ -1191,10 +1191,10 @@ da="Dropdown_popover_b5203d93",ua="Dropdown_scrollContent_7363dda3",_a="Dropdown
 });
 Ue(function(e){
   const t=Kt();
-  return t&&t.model.enabled.get()?(0,cs.jsx)(F.Portal,{
-    position:"bottom",...e,children:(0,cs.jsx)(C,{
-      children:(0,cs.jsxs)(F.Display,{
-        "data-name":"playlist-dropdown-content",className:da,children:[(0,cs.jsx)(F.Tip,{}),(0,cs.jsx)("div",{
+  return t&&t.model.enabled.get()?(0,cs.jsx)(L.Portal,{
+    position:"bottom",...e,children:(0,cs.jsx)(j,{
+      children:(0,cs.jsxs)(L.Display,{
+        "data-name":"playlist-dropdown-content",className:da,children:[(0,cs.jsx)(L.Tip,{}),(0,cs.jsx)("div",{
           className:fa,children:(0,cs.jsxs)(u,{
             children:[(0,cs.jsx)(Pa,{}),(0,cs.jsx)(a,{
               classNames:{
@@ -1212,13 +1212,13 @@ Ue(function(e){
 function Va(e){
   const t=p();
   return(0,cs.jsx)(Ps,{
-    value:"arrow_down",className:w(Ca,t.opened&&Na,e.className)
+    value:"arrow_down",className:N(Ca,t.opened&&Na,e.className)
   })
 }
 var Ea=Ue(function(e){
   const t=e.limit?Ft(e.title,e.limit)[0]:e.title;
   return(0,cs.jsxs)("div",{
-    className:w(ga,e.className),children:[(0,cs.jsx)(re,{
+    className:N(ga,e.className),children:[(0,cs.jsx)(te,{
       text:t,className:ya
     }),e.id&&(0,cs.jsx)(Es,{
       classNames:"lg"===e.alertSize?ka:Ia,id:e.id,size:e.alertSize
@@ -1229,8 +1229,8 @@ var Ea=Ue(function(e){
     header:s?.title,body:wa.readOrEmpty("playlists.trigger.explain")
   });
   if(!t||!1===t.model.enabled.get())return e.fallback;
-  const l=e.asChild?W:"div";
-  return(0,cs.jsx)(F.Trigger,{
+  const l=e.asChild?$:"div";
+  return(0,cs.jsx)(L.Trigger,{
     children:t=>(0,cs.jsx)(cs.Fragment,{
       children:(0,cs.jsxs)(l,{
         ...t,onMouseEnter:e=>{
@@ -1243,7 +1243,7 @@ var Ea=Ue(function(e){
             target:"vehicle:playlists:dropdown_trigger",original:e
           }),t.onClick(e)
         },
-        onMouseLeave:r?.onMouseLeave,"data-name":"playlist-dropdown-trigger","data-test-id":"playlistDropdown",className:w(xa,e.className),children:[(0,cs.jsx)(Pe,{
+        onMouseLeave:r?.onMouseLeave,"data-name":"playlist-dropdown-trigger","data-test-id":"playlistDropdown",className:N(xa,e.className),children:[(0,cs.jsx)(Pe,{
           children:e.children
         }),s?(0,cs.jsx)(Ea,{
           limit:e.limit,id:s.id,title:s.title,alertSize:e.alertSize
@@ -1260,9 +1260,9 @@ var Ea=Ue(function(e){
     body:t.title
   }),[l,o]=Ft(t.title,20);
   return(0,cs.jsxs)("div",{
-    ...o&&r,className:w(Ba,s.model.currentId()===e.id&&La),children:[(0,cs.jsx)("div",{
+    ...o&&r,className:N(Ba,s.model.currentId()===e.id&&La),children:[(0,cs.jsx)("div",{
       className:Da
-    }),(0,cs.jsx)(Z,{
+    }),(0,cs.jsx)(ee,{
       className:Fa,onClick:()=>{
         s.controls.select(e.id),a.close()
       },
@@ -1283,9 +1283,9 @@ var Ea=Ue(function(e){
     model:s,controls:a
   }=ts();
   return(0,cs.jsxs)("div",{
-    className:w(Ba,s.isAllVehicles.get()&&!e.model.currentId()&&La),children:[(0,cs.jsx)("div",{
+    className:N(Ba,s.isAllVehicles.get()&&!e.model.currentId()&&La),children:[(0,cs.jsx)("div",{
       className:Da
-    }),(0,cs.jsx)(Z,{
+    }),(0,cs.jsx)(ee,{
       className:Fa,onClick:()=>{
         e.controls.select(void 0),a.setAllVehicles(!0),t.close()
       },
@@ -1301,9 +1301,9 @@ var Ea=Ue(function(e){
     model:s,controls:a
   }=ts();
   return(0,cs.jsxs)("div",{
-    className:w(Ba,!s.isAllVehicles.get()&&!e.model.currentId()&&La),children:[(0,cs.jsx)("div",{
+    className:N(Ba,!s.isAllVehicles.get()&&!e.model.currentId()&&La),children:[(0,cs.jsx)("div",{
       className:Da
-    }),(0,cs.jsx)(Z,{
+    }),(0,cs.jsx)(ee,{
       className:Fa,onClick:()=>{
         e.controls.select(void 0),a.setAllVehicles(!1),t.close()
       },
@@ -1327,13 +1327,13 @@ $a=[25,25],Ha=Ue(function(){
 }),qa=Ue(function(){
   const{
     api:e
-  }=ne(),[t,s]=N(e,$a),{
+  }=ie(),[t,s]=C(e,$a),{
     opened:a
   }=p();
   return(0,St.useEffect)(()=>{
-    if(a)return je(()=>je(e.recalculateContent))
-  },[a,e.recalculateContent]),(0,cs.jsx)(k,{
-    className:w(Ra.area,!t&&Ra.area__begin,!s&&Ra.area__end),classNames:{
+    if(a)return be(()=>be(e.recalculateContent))
+  },[a,e.recalculateContent]),(0,cs.jsx)(I,{
+    className:N(Ra.area,!t&&Ra.area__begin,!s&&Ra.area__end),classNames:{
       content:Ra.scrollContent
     },
     children:(0,cs.jsx)(Ha,{})
@@ -1345,8 +1345,8 @@ $a=[25,25],Ha=Ue(function(){
     header:s?.title,body:r.readOrEmpty("playlists.trigger.explain")
   });
   if(!t||!1===t.model.enabled.get())return e.fallback;
-  const n=e.asChild?W:"div";
-  return(0,cs.jsx)(F.Trigger,{
+  const n=e.asChild?$:"div";
+  return(0,cs.jsx)(L.Trigger,{
     children:t=>(0,cs.jsx)(cs.Fragment,{
       children:(0,cs.jsxs)(n,{
         ...t,onMouseEnter:e=>{
@@ -1359,7 +1359,7 @@ $a=[25,25],Ha=Ue(function(){
             target:"vehicle:playlists:dropdown_trigger",original:e
           }),t.onClick(e)
         },
-        onMouseLeave:o?.onMouseLeave,"data-name":"playlist-dropdown-trigger","data-test-id":"playlistDropdown",className:w(Ra.trigger,e.className),children:[(0,cs.jsx)(Pe,{
+        onMouseLeave:o?.onMouseLeave,"data-name":"playlist-dropdown-trigger","data-test-id":"playlistDropdown",className:N(Ra.trigger,e.className),children:[(0,cs.jsx)(Pe,{
           children:e.children
         }),s?(0,cs.jsx)(Ea,{
           limit:e.limit,id:s.id,title:s.title,alertSize:e.alertSize
@@ -1370,11 +1370,11 @@ $a=[25,25],Ha=Ue(function(){
     })
   })
 }),Ga=function(){
-  return(0,cs.jsxs)(F,{
-    children:[(0,cs.jsx)(F.Portal,{
-      position:"bottom",children:(0,cs.jsx)(C,{
-        children:(0,cs.jsxs)(F.Display,{
-          "data-name":"playlist-dropdown-content",className:Ra.popover,children:[(0,cs.jsx)(F.Tip,{
+  return(0,cs.jsxs)(L,{
+    children:[(0,cs.jsx)(L.Portal,{
+      position:"bottom",children:(0,cs.jsx)(j,{
+        children:(0,cs.jsxs)(L.Display,{
+          "data-name":"playlist-dropdown-content",className:Ra.popover,children:[(0,cs.jsx)(L.Tip,{
             position:"top",size:"80rem",offset:"120rem"
           }),(0,cs.jsx)("div",{
             className:Ra.list,children:(0,cs.jsxs)(u,{
@@ -1388,7 +1388,7 @@ $a=[25,25],Ha=Ue(function(){
         })
       })
     }),(0,cs.jsx)(Ua,{
-      asChild:!0,className:Ra.playlistTrigger,fallback:null,limit:15,children:(0,cs.jsx)(ie,{
+      asChild:!0,className:Ra.playlistTrigger,fallback:null,limit:15,children:(0,cs.jsx)(J,{
         theme:"secondary",classNames:{
           content:Ra.playlistTitle
         }
@@ -1399,22 +1399,22 @@ $a=[25,25],Ha=Ue(function(){
 Wa="Filters_toggleContainer_d9b9fbcd",Za="Filters_typeToggle_e818e249",Ja="Filters_nationWrapper_752636a8",Xa="Filters_nationIcon_f766f25f",Ka="Filters_toggle_3ee9f5ac",Qa="Filters_vehicleLevel_2598a7f7",Ya="Filters_specialsIcons_94a8606c",er="Filters_specialsIcons__favorite_8d12da90",tr="Filters_search_54176870",sr="Filters_inputField_8f369261",ar="Filters_inputPlaceholder_b010dc5a",rr=["favorite","premium","elite"];
 function ir(e){
   return(0,cs.jsx)("div",{
-    className:w(Wa,e.className),children:nt.map(e=>(0,cs.jsx)(ds,{
+    className:N(Wa,e.className),children:nt.map(e=>(0,cs.jsx)(ds,{
       tooltip:{
         header:e,body:et
       },
       event:{
         field:dt,type:"regular",value:e
       },
-      className:Za,children:(0,cs.jsx)(O,{
-        type:e,size:O.sizes.x24x24
+      className:Za,children:(0,cs.jsx)(y,{
+        type:e,size:y.sizes.x24x24
       })
     },e))
   })
 }
 function lr(e){
   return(0,cs.jsx)("div",{
-    className:w(Wa,e.className),children:e.orderedNations.map(e=>(0,cs.jsx)(ds,{
+    className:N(Wa,e.className),children:e.orderedNations.map(e=>(0,cs.jsx)(ds,{
       tooltip:{
         header:e,body:st
       },
@@ -1422,7 +1422,7 @@ function lr(e){
         field:ut,type:"regular",value:e
       },
       className:Ka,children:(0,cs.jsx)("div",{
-        className:Ja,children:(0,cs.jsx)(J,{
+        className:Ja,children:(0,cs.jsx)(H,{
           className:Xa,path:`flags.c_60x40.${e}`
         })
       })
@@ -1431,14 +1431,14 @@ function lr(e){
 }
 function or(e){
   return(0,cs.jsx)("div",{
-    className:w(Wa,e.className),children:ct.map(e=>(0,cs.jsx)(ds,{
+    className:N(Wa,e.className),children:ct.map(e=>(0,cs.jsx)(ds,{
       tooltip:{
         header:"tier",body:tt
       },
       event:{
         field:_t,type:"regular",value:`level_${e}`
       },
-      className:Ka,children:(0,cs.jsx)(f,{
+      className:Ka,children:(0,cs.jsx)(P,{
         className:Qa,value:e
       })
     },e))
@@ -1453,14 +1453,14 @@ function nr(e){
     event:{
       field:pt,type:"regular",value:e.special
     },
-    className:Ka,children:(0,cs.jsx)(J,{
-      className:w(Ya,"favorite"===e.special&&er),path:t
+    className:Ka,children:(0,cs.jsx)(H,{
+      className:N(Ya,"favorite"===e.special&&er),path:t
     })
   },e.special)
 }
 function cr(e){
   return(0,cs.jsx)("div",{
-    className:w(Wa,e.className),children:rr.map(e=>(0,cs.jsx)(nr,{
+    className:N(Wa,e.className),children:rr.map(e=>(0,cs.jsx)(nr,{
       special:e,imagePath:e
     },e))
   })
@@ -1468,20 +1468,20 @@ function cr(e){
 var dr=Ue(function(e){
   const t=wt(),s=g.resolve("strings"),a=t.model.searchName.get();
   function r(e){
-    e.keyCode!==M.ESCAPE&&e.stopPropagation()
+    e.keyCode!==F.ESCAPE&&e.stopPropagation()
   }
-  return(0,cs.jsxs)(B.Provider,{
-    value:a,children:[(0,cs.jsx)(xs,{}),(0,cs.jsxs)(B.Decoration,{
-      className:w(tr,e.className),children:[(0,cs.jsx)(B.Icon,{
-        icon:B.icons.search
-      }),(0,cs.jsx)(B.Field,{
+  return(0,cs.jsxs)(D.Provider,{
+    value:a,children:[(0,cs.jsx)(xs,{}),(0,cs.jsxs)(D.Decoration,{
+      className:N(tr,e.className),children:[(0,cs.jsx)(D.Icon,{
+        icon:D.icons.search
+      }),(0,cs.jsx)(D.Field,{
         ...e,className:sr,classNames:{
           placeholder:ar
         },
         maxLength:50,placeholderVisibility:De.value,onKeyDown:r,onKeyUp:r,onChange:e=>t.controls.search(e.target.value),children:s.readOrEmpty("tank_carousel_filter.popover.label.searchNameVehicle")
-      }),a.length>0&&(0,cs.jsx)(B.ClearButton,{
+      }),a.length>0&&(0,cs.jsx)(D.ClearButton,{
         onClick:()=>{
-          ce.tooltip.hideAll()
+          le.tooltip.hideAll()
         }
       })]
     })]
@@ -1492,7 +1492,7 @@ function yr({
   children:e,selected:t,disabled:s,empty:a
 }){
   return(0,cs.jsxs)("div",{
-    "data-name":"Content",className:w(hr,a&&xr,t&&gr,s&&vr),children:[e,s&&(0,cs.jsx)("div",{
+    "data-name":"Content",className:N(hr,a&&xr,t&&gr,s&&vr),children:[e,s&&(0,cs.jsx)("div",{
       className:fr
     })]
   })
@@ -1502,11 +1502,11 @@ var br="Slot_977dd8f1",jr="Slot_base__wrapper_ae3081b5",Cr="Slot_base__disabled_
 }){
   const l=s||void 0===i.onClick;
   return(0,cs.jsx)("div",{
-    ...i,"data-name":"Slot",className:w(br,a&&Sr,t&&Ir,s&&Cr,l&&Nr,jr,r),children:(0,cs.jsxs)("div",{
+    ...i,"data-name":"Slot",className:N(br,a&&Sr,t&&Ir,s&&Cr,l&&Nr,jr,r),children:(0,cs.jsxs)("div",{
       className:wr,children:[(0,cs.jsx)(yr,{
         selected:t,disabled:s,empty:l,children:e
       }),t&&(0,cs.jsx)("div",{
-        className:w(kr,Pr)
+        className:N(kr,Pr)
       }),(0,cs.jsx)("div",{
         className:kr
       })]
@@ -1522,8 +1522,8 @@ function Tr(e,t,s){
 var zr={
   base:"Information_dd628d50",info:"Information_info_b2948982",details:"Information_details_e5340a0c",base__double:"Information_base__double_6e8d4f26",text:"Information_text_a2b2c19b",text__level:"Information_text__level_e5a9014e",text__premium:"Information_text__premium_741ebb2f",truncatedText:"Information_truncatedText_ede7ae03",battlePass:"Information_battlePass_63749625",battlePass__bonus:"Information_battlePass__bonus_6e8d4f26",battlePass__active:"Information_battlePass__active_960b5eed",bpPoints:"Information_bpPoints_21ee2e63",points:"Information_points_b67585b1",points__slash:"Information_points__slash_b8c7004e",bpShadow:"Information_bpShadow_4248ba9f",bpIcon:"Information_bpIcon_a622154",prestige:"Information_prestige_95cc4ef2",prestige__active:"Information_prestige__active_960b5eed",identifier:"Information_identifier_1bcd619a",identifier__changeNation:"Information_identifier__changeNation_665b13a2",identifier__alpha:"Information_identifier__alpha_6e8d4f26",identifier__super:"Information_identifier__super_46b1ed0d",identifier__rent:"Information_identifier__rent_1fba5dce",identifierIcon:"Information_identifierIcon_3636b34b",identifierIcon__alpha:"Information_identifierIcon__alpha_ddf4d235",identifierIcon__super:"Information_identifierIcon__super_34b8f5c2",identifierIcon__changeNation:"Information_identifierIcon__changeNation_dfee83c8"
 },
-Ar=Ee("VehicleName",{
-  element:e=>(0,cs.jsx)(l.Name,{
+Ar=xe("VehicleName",{
+  element:e=>(0,cs.jsx)(ye.Name,{
     ...e
   }),className:zr.text,cva:{
     variants:{
@@ -1536,13 +1536,13 @@ Ar=Ee("VehicleName",{
 function Or({
   statistic:e,vehicle:t,className:s,status:a
 }){
-  const r=g.resolve("views"),i=g.resolve("aliases"),l=g.resolve("strings"),n=de({
+  const r=g.resolve("views"),i=g.resolve("aliases"),l=g.resolve("strings"),n=oe({
     resId:i.read(e=>e.hangar.shared.VehiclesStatistics("resId")),contentId:r.read(e=>"paused"!==a?e.mono.battle_pass.tooltips.vehicle_bp_points("resId"):e.mono.battle_pass.tooltips.on_pause("resId")),args:{
       intCD:t?.vehicleId
     }
   });
   return(0,cs.jsxs)("div",{
-    className:w(zr.battlePass,e.maxBpScore>0&&zr.battlePass__active,e.bpSpecial&&zr.battlePass__bonus,s),onMouseEnter:function(e){
+    className:N(zr.battlePass,e.maxBpScore>0&&zr.battlePass__active,e.bpSpecial&&zr.battlePass__bonus,s),onMouseEnter:function(e){
       n?.onMouseEnter(e)
     },
     onMouseLeave:function(e){
@@ -1552,7 +1552,7 @@ function Or({
       className:zr.bpPoints,children:[(0,cs.jsx)("div",{
         className:zr.points,children:o.formatNumber("integral",e.bpProgress)
       }),(0,cs.jsx)("div",{
-        className:w(zr.points,zr.points__slash),children:l.readOrEmpty("common.common.slash")
+        className:N(zr.points,zr.points__slash),children:l.readOrEmpty("common.common.slash")
       }),(0,cs.jsx)("div",{
         className:zr.points,children:o.formatNumber("integral",e.maxBpScore)
       }),(0,cs.jsx)("div",{
@@ -1567,12 +1567,12 @@ function Rr({
   statistic:e,elite:t,vehicle:s,selected:a,classNames:r,className:i
 }){
   return(0,cs.jsxs)("div",{
-    className:w(zr.details,i),children:[e&&(0,cs.jsx)(l.Prestige,{
-      level:e.prestigeLevel,grade:e.prestigeGrade,type:e.prestigeType,direction:R.left,className:w(zr.prestige,a&&zr.prestige__active,r?.prestige)
-    }),(0,cs.jsx)(l.Level,{
-      className:w(zr.text,zr.text__level,r?.level),value:s.level
-    }),Ie(s.type)&&(0,cs.jsx)(l.Type,{
-      type:s.type,premium:t||e?.elite,size:l.Type.sizes.x24x24,className:r?.type
+    className:N(zr.details,i),children:[e&&(0,cs.jsx)(ye.Prestige,{
+      level:e.prestigeLevel,grade:e.prestigeGrade,type:e.prestigeType,direction:O.left,className:N(zr.prestige,a&&zr.prestige__active,r?.prestige)
+    }),(0,cs.jsx)(ye.Level,{
+      className:N(zr.text,zr.text__level,r?.level),value:s.level
+    }),W(s.type)&&(0,cs.jsx)(ye.Type,{
+      type:s.type,premium:t||e?.elite,size:ye.Type.sizes.x24x24,className:r?.type
     })]
   })
 }
@@ -1581,23 +1581,23 @@ function $r({
 }){
   const a=Fr[e.id],r=e.nationChangeAvailable,i=e.rent.leftTime>0||e.rent.leftWins>0||e.rent.leftBattles>0;
   return(0,cs.jsxs)("div",{
-    className:w(zr.identifier,zr[`identifier__${a}`],r&&zr.identifier__changeNation,i&&zr.identifier__rent,t),children:[(0,cs.jsx)(Ar,{
-      className:s?.name,premium:e.premium,children:(0,cs.jsx)(re,{
+    className:N(zr.identifier,zr[`identifier__${a}`],r&&zr.identifier__changeNation,i&&zr.identifier__rent,t),children:[(0,cs.jsx)(Ar,{
+      className:s?.name,premium:e.premium,children:(0,cs.jsx)(te,{
         className:zr.truncatedText,text:e.shortName
       })
     }),(a||r)&&(0,cs.jsx)("div",{
-      className:w(zr.identifierIcon,zr[`identifierIcon__${a}`],r&&zr.identifierIcon__changeNation,s?.icon)
+      className:N(zr.identifierIcon,zr[`identifierIcon__${a}`],r&&zr.identifierIcon__changeNation,s?.icon)
     })]
   })
 }
 Ue(function({
   vehicle:e,statistic:t,selected:s,doubleRow:a,...r
 }){
-  const i=Yt(),o=i.model.bpState.active.get(),n=i.model.bpState.status.get();
+  const i=Yt(),l=i.model.bpState.active.get(),o=i.model.bpState.status.get();
   return(0,cs.jsxs)("div",{
-    ...r,className:w(zr.base,a&&zr.base__double,r.className),children:[t&&Tr(o,n,t)&&(0,cs.jsx)(Or,{
-      vehicle:e,statistic:t,status:n
-    }),(0,cs.jsxs)(l,{
+    ...r,className:N(zr.base,a&&zr.base__double,r.className),children:[t&&Tr(l,o,t)&&(0,cs.jsx)(Or,{
+      vehicle:e,statistic:t,status:o
+    }),(0,cs.jsxs)(ye,{
       className:zr.info,children:[(0,cs.jsx)(Rr,{
         vehicle:e,statistic:t,selected:s
       }),(0,cs.jsx)($r,{
@@ -1616,18 +1616,18 @@ function Ur({
   className:e,doubleRow:t,state:s="inactive",isCornerHidden:a=!1
 }){
   return"inactive"===s?null:(0,cs.jsxs)("div",{
-    className:w(Hr.base,s&&qr[s],t&&Hr.base__double,e),children:[(0,cs.jsx)("div",{
+    className:N(Hr.base,s&&qr[s],t&&Hr.base__double,e),children:[(0,cs.jsx)("div",{
       className:Hr.glow
     }),!a&&(0,cs.jsx)("div",{
       className:Hr.corner
     }),(0,cs.jsx)("div",{
       className:Hr.arrow
     }),[Hr.triangle__1,Hr.triangle__2,Hr.triangle__3].map(e=>(0,cs.jsx)("div",{
-      className:w(Hr.triangle,e)
+      className:N(Hr.triangle,e)
     },e))]
   })
 }
-var Gr="Background_wotPlus_3cf6035a",Wr="Background_crystal_6112fa42",Zr="Background_bpBonus_cf76872",Jr="Background_multiplier_284cda6c",Xr="Background_flag_beb58b8",Kr="Background_flag__active_de322c1b",Qr="Background_crystal__limit_61072361",Yr=Ee("Favorite","Background_favorite_d98f92cc",{
+var Gr="Background_wotPlus_3cf6035a",Wr="Background_crystal_6112fa42",Zr="Background_bpBonus_cf76872",Jr="Background_multiplier_284cda6c",Xr="Background_flag_beb58b8",Kr="Background_flag__active_de322c1b",Qr="Background_crystal__limit_61072361",Yr=xe("Favorite","Background_favorite_d98f92cc",{
   variants:{
     active:{
       true:"Background_favorite__active_7f14a6c7"
@@ -1637,8 +1637,8 @@ var Gr="Background_wotPlus_3cf6035a",Wr="Background_crystal_6112fa42",Zr="Backgr
 function ei({
   nationId:e,selected:t,active:s,className:a
 }){
-  return(0,cs.jsx)(J,{
-    className:w(Xr,t||s&&Kr,a),path:`hangar.carousel.cards.flags.x400x300.${Te(e)}`,position:"top left"
+  return(0,cs.jsx)(H,{
+    className:N(Xr,t||s&&Kr,a),path:`hangar.carousel.cards.flags.x400x300.${Te(e)}`,position:"top left"
   })
 }
 Ue(function({
@@ -1649,13 +1649,13 @@ Ue(function({
   }(Number(t?.bonusMultiplier)),p=(0,St.useMemo)(()=>n?!1===u?"activating":"active":u?"deactivating":"inactive",[n,u]);
   return(0,cs.jsxs)(cs.Fragment,{
     children:[c&&(0,cs.jsx)("div",{
-      className:w(Gr,r?.wotPlus)
+      className:N(Gr,r?.wotPlus)
     }),(0,cs.jsx)(Ur,{
       state:p,className:r?.proBoostIcon,doubleRow:a,isCornerHidden:d
     }),d&&(0,cs.jsx)("div",{
-      className:w(Wr,o&&Qr,r?.crystal)
+      className:N(Wr,o&&Qr,r?.crystal)
     }),t?.bpSpecial&&s&&(0,cs.jsx)("div",{
-      className:w(Zr,r?.bpBonus)
+      className:N(Zr,r?.bpBonus)
     }),_&&(0,cs.jsx)("div",{
       className:Jr
     })]
@@ -1668,7 +1668,7 @@ function ai({
   return(0,cs.jsxs)("div",{
     ...t,className:ti,children:[(0,cs.jsx)(ei,{
       nationId:e.nationId
-    }),(0,cs.jsx)(pe,{
+    }),(0,cs.jsx)(de,{
       className:si,name:e.name
     }),(0,cs.jsx)(Yr,{
       active:e.favorite
@@ -1685,7 +1685,7 @@ var ri="Card_74e86576",ii="Card_overlay_701a3ab4",li="Card_checkMark_ad3837d8",o
     ...a
   });
   return(0,cs.jsxs)(Vr,{
-    ...a,className:w("vehicle-card",a.className),selected:t,"data-test-id":`vehicleCard-${e}`,onMouseEnter:function(e){
+    ...a,className:N("vehicle-card",a.className),selected:t,"data-test-id":`vehicleCard-${e}`,onMouseEnter:function(e){
       l.play("mouse-enter",{
         target:"vehicle-card",original:e
       }),a.onMouseEnter?.(e)
@@ -1735,7 +1735,7 @@ function pi({
 function mi({
   vehicle:e,selected:t,statistic:s
 }){
-  return(0,cs.jsxs)(l,{
+  return(0,cs.jsxs)(ye,{
     className:ni,children:[(0,cs.jsx)(Rr,{
       vehicle:e,statistic:s,selected:t,elite:e.premium
     }),(0,cs.jsx)($r,{
@@ -1751,8 +1751,8 @@ function fi({
 }){
   const{
     api:s
-  }=ne();
-  return(0,cs.jsx)(ke,{
+  }=ie();
+  return(0,cs.jsx)(Ie,{
     ...t,api:s,className:hi.content,children:e
   })
 }
@@ -1775,12 +1775,12 @@ xi=Ue(function(){
     model:e
   }=ts(),{
     api:t
-  }=ne(),s=A(vi,gi),i=r(s.height),[l,o]=N(t),n=e.ids(),c=e.list(),d=function(e,t,s){
+  }=ie(),s=T(vi,gi),i=r(s.height),[l,o]=C(t),n=e.ids(),c=e.list(),d=function(e,t,s){
     const[a,r]=(0,St.useState)(0);
     return(0,St.useLayoutEffect)(()=>{
       function a(){
         const a=e.getWrapperSize();
-        G(a)&&r(Math.floor(a/t)*s)
+        R(a)&&r(Math.floor(a/t)*s)
       }
       const i=e.events.on("resizeHandled",a),l=e.events.on("recalculateContent",a);
       return()=>{
@@ -1816,15 +1816,15 @@ xi=Ue(function(){
   const h=(0,St.useMemo)(()=>({
     height:`${i}px`
   }),[i]);
-  return(0,cs.jsx)(Y,{
+  return(0,cs.jsx)(Z,{
     api:t,elementHeight:i-r(1),direction:"vertical",totalElements:p,wrappers:{
       Content:fi
     },
     renderScroll:e=>{
       return(0,cs.jsxs)("div",{
-        className:w(hi.scroll,hi[`scroll__${s=l,r=o,s||r?s?r?mr:_r:ur:pr}`]),children:[(0,cs.jsx)(k,{
+        className:N(hi.scroll,hi[`scroll__${s=l,r=o,s||r?s?r?mr:_r:ur:pr}`]),children:[(0,cs.jsx)(I,{
           ...e,classNames:{
-            wrapper:hi.scrollWrapper,content:w(hi.scrollContent,0===c.length&&hi.scrollContent__empty)
+            wrapper:hi.scrollWrapper,content:N(hi.scrollContent,0===c.length&&hi.scrollContent__empty)
           },
           children:e.children
         }),!t.disabled&&(0,cs.jsx)(a,{
@@ -1838,9 +1838,9 @@ xi=Ue(function(){
     itemsPerRow:s.row,renderElement:t=>{
       const s=n[t];
       return n.length<=t||void 0===s?(0,cs.jsx)(Vr,{
-        className:w(ci,hi.card),style:h
+        className:N(ci,hi.card),style:h
       }):(0,cs.jsx)(di,{
-        vehicleId:s,selected:n[t]===e.currentVehicleCD(),className:w(ci,hi.card),style:h
+        vehicleId:s,selected:n[t]===e.currentVehicleCD(),className:N(ci,hi.card),style:h
       },s)
     }
   })
@@ -1856,16 +1856,16 @@ xi=Ue(function(){
     className:bi,children:[(0,cs.jsxs)("div",{
       className:ji,children:[(0,cs.jsxs)(ls.Provider,{
         value:r,children:[(0,cs.jsx)(Ga,{}),(0,cs.jsx)(Is,{}),(0,cs.jsx)("div",{
-          className:w(wi,Si)
-        }),(0,cs.jsx)(Q,{
+          className:N(wi,Si)
+        }),(0,cs.jsx)(Ee,{
           className:Ni,path:"tank_carousel_filter.popover.label.vehicleTypes"
-        }),(0,cs.jsx)(ir,{}),(0,cs.jsx)(Q,{
+        }),(0,cs.jsx)(ir,{}),(0,cs.jsx)(Ee,{
           className:Ni,path:"tank_carousel_filter.popover.label.nations"
         }),(0,cs.jsx)(lr,{
           orderedNations:a
-        }),(0,cs.jsx)(Q,{
+        }),(0,cs.jsx)(Ee,{
           className:Ni,path:"tank_carousel_filter.popover.label.levels"
-        }),(0,cs.jsx)(or,{}),(0,cs.jsx)(Q,{
+        }),(0,cs.jsx)(or,{}),(0,cs.jsx)(Ee,{
           className:Ni,path:"tank_carousel_filter.popover.label.specials"
         }),(0,cs.jsx)(cr,{})]
       }),(0,cs.jsx)("div",{
@@ -1889,15 +1889,15 @@ xi=Ue(function(){
   const{
     model:e
   }=ts();
-  return D(M.ESCAPE,ce.closeView),(0,cs.jsxs)("div",{
+  return E(F.ESCAPE,le.closeView),(0,cs.jsxs)("div",{
     className:Vi,children:[(0,cs.jsx)("div",{
       className:Ei,children:e.title.get()
-    }),(0,cs.jsx)(fe,{
-      onClose:ce.closeView,className:Di
+    }),(0,cs.jsx)(f,{
+      onClose:le.closeView,className:Di
     }),(0,cs.jsx)(Pi,{})]
   })
 }),Li=g.resolve("aliases");
-d((new Le).add(L).addWithProps(kt,{
+d((new Le).add(B).addWithProps(kt,{
   options:{
     rootId:Li.read(e=>e.select_vehicle.select_vehicle.VehiclesStatistics("resId"))
   }

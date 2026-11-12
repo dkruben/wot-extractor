@@ -1,6 +1,6 @@
 /* wot-extractor: JavaScript FORMATADO a partir de sources/res/battle_royale/gui/gameface/_dist/production/mono/lobby/tooltips/ceasefire/bundle.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
 import{
-  Bt as e,Gt as s,Nn as a,Ut as r,W as t,f as i,h as l,jr as c,m as d,ni as n,t as p,zt as o
+  Bt as e,C as s,Gt as a,L as r,Nn as t,Ut as i,jr as l,ni as c,t as d,w as n,x as p,zt as o
 }
 from"../../chunks/lib.js";
 import"../../chunks/globals.js";
@@ -12,15 +12,15 @@ import{
   i as m,n as u
 }
 from"../../chunks/model.js";
-var j=d({
-  alertType:i(m),battleSchedule:u
-}),[_,b]=s()(e=>{
+var j=s({
+  alertType:p(m),battleSchedule:u
+}),[_,x]=a()(e=>{
   const s=e.observableModel.primitives(["params","type"]);
   return{
     type:s.type,computes:{
-      params:r.primitive(()=>{
+      params:i.primitive(()=>{
         try{
-          return l(j,JSON.parse(s.params.get()))
+          return n(j,JSON.parse(s.params.get()))
         }catch(e){
           return console.error(e),{
             alertType:m.None,battleSchedule:[]
@@ -29,17 +29,17 @@ var j=d({
       })
     }
   }
-},c);
-function x(){
-  return b().model.computes.params()
+},l);
+function b(){
+  return x().model.computes.params()
 }
 var v={
   base:"App_b217f952",header:"App_header_7064cb34",description:"App_description_254da56e",battleSchedule:"App_battleSchedule_c84dc551",scheduleIcon:"App_scheduleIcon_f2261e5a",scheduleContainer:"App_scheduleContainer_2cf619f6",scheduleTitle:"App_scheduleTitle_bc482b99",periodsContainer:"App_periodsContainer_3e673754",periodList:"App_periodList_72a48a31",period:"App_period_b93939b2",goal:"App_goal_d5b93517"
 },
-f=a(),N=n.resolve("strings"),y=R.strings.battle_royale.ceasefire,A=h(function(){
+f=t(),N=c.resolve("strings"),y=R.strings.battle_royale.ceasefire,A=h(function(){
   const{
     battleSchedule:e
-  }=x();
+  }=b();
   return(0,f.jsxs)("div",{
     className:v.battleSchedule,children:[(0,f.jsx)("div",{
       className:v.scheduleIcon
@@ -50,7 +50,7 @@ f=a(),N=n.resolve("strings"),y=R.strings.battle_royale.ceasefire,A=h(function(){
         goal:e,periods:s
       },a)=>(0,f.jsxs)("div",{
         className:v.periodsContainer,children:[(0,f.jsx)("div",{
-          className:v.periodList,children:s.map(([e,s],a)=>(0,f.jsx)(t,{
+          className:v.periodList,children:s.map(([e,s],a)=>(0,f.jsx)(r,{
             text:y.template.schedule(),params:{
               start:e,end:s
             },
@@ -65,15 +65,15 @@ f=a(),N=n.resolve("strings"),y=R.strings.battle_royale.ceasefire,A=h(function(){
 }),C=h(function(){
   const{
     alertType:e
-  }=x(),s=e===m.CeasefireAllServers||e===m.CeasefireCurrentServer;
-  return(0,f.jsx)(p,{
-    children:(0,f.jsx)(p.Decorator,{
+  }=b(),s=e===m.CeasefireAllServers||e===m.CeasefireCurrentServer;
+  return(0,f.jsx)(d,{
+    children:(0,f.jsx)(d.Decorator,{
       children:(0,f.jsxs)("div",{
         className:v.base,children:[(0,f.jsxs)("div",{
           className:v.headerContainer,children:[(0,f.jsx)("div",{
             className:v.header,children:N.readOrEmpty(`battle_royale.ceasefire.header.${e}`)
           }),(0,f.jsx)("div",{
-            className:v.description,children:(0,f.jsx)(t,{
+            className:v.description,children:(0,f.jsx)(r,{
               text:N.readOrEmpty(`battle_royale.ceasefire.text.${e}`),split:!0
             })
           })]

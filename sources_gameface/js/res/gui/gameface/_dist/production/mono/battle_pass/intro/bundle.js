@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  $r as s,$t as t,Er as a,Fn as n,Fr as l,Jn as r,Ln as o,Rr as d,Xn as i,Xr as c,Yn as _,Yr as u,Yt as m,Zn as b,Zt as p,_n as f,ci as h,di as C,en as v,fn as x,gn as j,ir as g,oi as k,pn as S,tn as N
+  $r as s,Er as t,Et as a,Fn as n,Fr as l,Jn as r,Ln as o,Rr as d,Tt as i,Xn as c,Xr as _,Yn as u,Yr as m,Zn as b,Zt as p,_n as f,ci as h,di as C,fn as v,gn as x,ir as j,oi as g,pn as k,tn as S,wt as N
 }
 from"../chunks/lib.js";
 import"../chunks/global.js";
@@ -12,13 +12,13 @@ import{
   h as w
 }
 from"../chunks/vendor.js";
-var y=e(h(),1),I="Bullets_212d5391",E="Bullets_bullet_ba77929c",W="Bullets_bullet__active_abbe1a09",B=_();
+var y=e(h(),1),E="Bullets_212d5391",I="Bullets_bullet_ba77929c",W="Bullets_bullet__active_abbe1a09",B=u();
 function O({
   count:e,current:s,className:t
 }){
   return(0,B.jsx)("div",{
-    className:k(I,t),children:g(e,e=>(0,B.jsx)("div",{
-      className:k(E,e+1===s&&W)
+    className:g(E,t),children:j(e,e=>(0,B.jsx)("div",{
+      className:g(I,e+1===s&&W)
     },e))
   })
 }
@@ -40,13 +40,13 @@ L=({
   },[]),(0,y.useEffect)(()=>(window.addEventListener("resize",i),()=>{
     window.removeEventListener("resize",i)
   }),[]),(0,B.jsx)("div",{
-    className:k($.base,n&&$.base__large),children:(0,B.jsx)("div",{
+    className:g($.base,n&&$.base__large),children:(0,B.jsx)("div",{
       className:$.trackWrapper,ref:t,children:(0,B.jsx)("div",{
         className:$.track,style:{
           transform:`translateX(-${o*(s-1)}rem)`
         },
         children:l.map((e,t)=>(0,B.jsx)("div",{
-          className:k($.slide,n&&$.slide__large,t+1===s&&$.slide__active),style:{
+          className:g($.slide,n&&$.slide__large,t+1===s&&$.slide__active),style:{
             width:`${o}rem`
           },
           children:e
@@ -76,17 +76,17 @@ D="DescriptioBlock_cd7c382c",F="DescriptioBlock_icon_be43f59b",M="DescriptioBloc
 z={
   base:"Content_90bca771",bg:"Content_bg_3c3188a8",shadow:"Content_shadow_7e9b4ef",content:"Content_77ec8abc",sliderControl:"Content_sliderControl_d45c0238",sliderControl__prev:"Content_sliderControl__prev_964ca0e4",sliderControl__next:"Content_sliderControl__next_30dcc216",next:"Content_next_f3b98def",prev:"Content_prev_b66800aa",bottomContainer:"Content_bottomContainer_ccf84a96",buttonWrapper:"Content_buttonWrapper_a1158cfa",actionButton:"Content_actionButton_76948240",closeButton:"Content_closeButton_b94862e0",fadeInWithScale:"Content_fadeInWithScale_da09528a",slideUp:"Content_slideUp_da09528a",blink:"Content_blink_da09528a",scale:"Content_scale_da09528a",rotate:"Content_rotate_da09528a",windowIn:"Content_windowIn_da09528a",fadeOut:"Content_fadeOut_da09528a",fadeIn:"Content_fadeIn_da09528a"
 },
-X=C.resolve("images"),Y=C.resolve("strings"),A=({
+T=C.resolve("images"),X=C.resolve("strings"),A=({
   slides:e,onClose:s
 })=>{
-  const[a,n]=(0,y.useState)(1),d=1===a,_=a===e.length,u=e.length<=1,{
+  const[t,n]=(0,y.useState)(1),d=1===t,u=t===e.length,m=e.length<=1,{
     breakpoint:b
-  }=r(),f=b.height<=i.Small?t.small:t.medium,h=X.readOrEmpty("battlePass.backgrounds.common","silent"),C=(0,y.useCallback)(function(){
-    d||(n(a-1),c.sound(R.sounds.play()),c.sound(R.sounds.bp_glide_01()))
-  },[d,a]),x=(0,y.useCallback)(function(){
-    _||(n(a+1),c.sound(R.sounds.play()),c.sound(R.sounds.bp_glide_01()))
-  },[_,a]),j=()=>c.sound(R.sounds.highlight());
-  return o(l.ARROW_LEFT,C),o(l.ARROW_RIGHT,x),(0,B.jsxs)("div",{
+  }=r(),f=b.height<=c.Small?i.small:i.medium,h=T.readOrEmpty("battlePass.backgrounds.common","silent"),C=(0,y.useCallback)(function(){
+    d||(n(t-1),_.sound(R.sounds.play()),_.sound(R.sounds.bp_glide_01()))
+  },[d,t]),v=(0,y.useCallback)(function(){
+    u||(n(t+1),_.sound(R.sounds.play()),_.sound(R.sounds.bp_glide_01()))
+  },[u,t]),x=()=>_.sound(R.sounds.highlight());
+  return o(l.ARROW_LEFT,C),o(l.ARROW_RIGHT,v),(0,B.jsxs)("div",{
     className:z.base,style:{
       backgroundImage:`url(${h})`
     },
@@ -98,45 +98,45 @@ X=C.resolve("images"),Y=C.resolve("strings"),A=({
       }),(0,B.jsx)("div",{
         className:z.shadow
       })]
-    }),(0,B.jsx)(m,{
+    }),(0,B.jsx)(p,{
       onClose:s,className:z.closeButton
     }),(0,B.jsxs)("div",{
-      className:z.content,children:[!u&&(0,B.jsx)(p,{
-        theme:v.secondary,onClick:C,onMouseEnter:j,className:k(z.sliderControl,z.sliderControl__prev),disabled:d,children:(0,B.jsx)("div",{
+      className:z.content,children:[!m&&(0,B.jsx)(N,{
+        theme:a.secondary,onClick:C,onMouseEnter:x,className:g(z.sliderControl,z.sliderControl__prev),disabled:d,children:(0,B.jsx)("div",{
           className:z.prev
         })
-      }),!u&&(0,B.jsx)(p,{
-        theme:v.secondary,onClick:x,onMouseEnter:j,className:k(z.sliderControl,z.sliderControl__next),disabled:_,children:(0,B.jsx)("div",{
+      }),!m&&(0,B.jsx)(N,{
+        theme:a.secondary,onClick:v,onMouseEnter:x,className:g(z.sliderControl,z.sliderControl__next),disabled:u,children:(0,B.jsx)("div",{
           className:z.next
         })
       }),(0,B.jsx)(L,{
-        currentSlide:a,children:e.map((e,s)=>(0,B.jsx)(U,{
-          icon:X.readOrEmpty(`battlePass.intro.${e}`),title:Y.readOrEmpty(`battle_pass.intro.${e}.title`),descr:Y.readOrEmpty(`battle_pass.intro.${e}.text`)
+        currentSlide:t,children:e.map((e,s)=>(0,B.jsx)(U,{
+          icon:T.readOrEmpty(`battlePass.intro.${e}`),title:X.readOrEmpty(`battle_pass.intro.${e}.title`),descr:X.readOrEmpty(`battle_pass.intro.${e}.text`)
         },s))
       }),(0,B.jsxs)("div",{
         className:z.bottomContainer,children:[(0,B.jsx)("div",{
-          className:z.buttonWrapper,children:(0,B.jsx)(p,{
-            theme:v.primary,size:f,className:z.actionButton,onClick:_?s:x,children:_?Y.readOrEmpty("battle_pass.intro.affirmative.button"):Y.readOrEmpty("battle_pass.intro.next.button")
+          className:z.buttonWrapper,children:(0,B.jsx)(N,{
+            theme:a.primary,size:f,className:z.actionButton,onClick:u?s:v,children:u?X.readOrEmpty("battle_pass.intro.affirmative.button"):X.readOrEmpty("battle_pass.intro.next.button")
           })
         }),(0,B.jsx)(O,{
-          count:e.length,current:a,className:z.bullets
+          count:e.length,current:t,className:z.bullets
         })]
       })]
     })]
   })
 },
-[T,Z]=f()(({
+[Y,Z]=f()(({
   observableModel:e
 })=>{
   const s={
     root:e.object(),slides:e.array("slides")
   },
-  t=j(()=>a(s.slides.get(),e=>e),{
+  a=x(()=>t(s.slides.get(),e=>e),{
     equals:d
   });
   return{
     ...s,computes:{
-      getSlides:t
+      getSlides:a
     }
   }
 },({
@@ -145,8 +145,8 @@ X=C.resolve("images"),Y=C.resolve("strings"),A=({
   const{
     model:e
   }=Z(),s=e.computes.getSlides();
-  return n(()=>u.close()),(0,B.jsx)(A,{
-    slides:s,onClose:u.close
+  return n(()=>m.close()),(0,B.jsx)(A,{
+    slides:s,onClose:m.close
   })
 });
-x((new S).add(N).addWithProps(T,{}).render((0,B.jsx)(q,{})));
+v((new k).add(S).addWithProps(Y,{}).render((0,B.jsx)(q,{})));

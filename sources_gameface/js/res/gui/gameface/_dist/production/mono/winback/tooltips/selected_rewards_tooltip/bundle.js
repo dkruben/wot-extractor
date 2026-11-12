@@ -8,7 +8,7 @@ import{
 }
 from"../../chunks/lib.js";
 import"../../chunks/global.js";
-var b=e(t(),1),[_,p]=s("SelectedRewardsTooltipModel")(({
+var b=e(m(),1),[_,p]=s("SelectedRewardsTooltipModel")(({
   observableModel:e
 })=>{
   const t={
@@ -76,7 +76,7 @@ function D({
 }
 var A="App_980cfdcc",G="App_header_50f09035",O="App_divider_206a979d",y="App_reward_e895979a",U="App_reward__lastInColumn_6a1828d9",P=e(d(),1),B=e=>({
   exp:e.expDiscount,credit:e.creditDiscount
-}),M=m(function(){
+}),M=t(function(){
   const{
     model:e
   }=p(),a=e.computes.selectedRewardsLength();

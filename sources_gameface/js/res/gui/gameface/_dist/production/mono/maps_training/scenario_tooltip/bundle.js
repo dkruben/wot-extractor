@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  $ as i,C as a,D as s,F as r,K as c,W as t,_ as l,at as o,b as n,et as d,h as m,it as _,nt as v,t as h,w as g,x as p,y as T
+  $ as i,C as a,D as s,F as r,K as c,W as t,_ as l,at as o,b as n,et as d,h as m,it as _,n as v,nt as h,w as g,x as p,y as T
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
@@ -49,9 +49,9 @@ function I(){
         className:S.descrHighlight,children:e.targets.get().length
       })
     }
-  },[e]),g=v(S.base,a&&S.base__complete),x=v(S.title,a&&S.title__green),f=v(S.vehicle,S[`vehicle__${e.vehicleType.get()}`]);
-  return(0,N.jsx)(h,{
-    "data-name":"ScenarioTooltip",children:(0,N.jsx)(h.Decorator,{
+  },[e]),g=h(S.base,a&&S.base__complete),x=h(S.title,a&&S.title__green),f=h(S.vehicle,S[`vehicle__${e.vehicleType.get()}`]);
+  return(0,N.jsx)(v,{
+    "data-name":"ScenarioTooltip",children:(0,N.jsx)(v.Decorator,{
       children:(0,N.jsxs)("div",{
         className:g,children:[(0,N.jsx)("div",{
           className:S.scenarioTitle,children:o

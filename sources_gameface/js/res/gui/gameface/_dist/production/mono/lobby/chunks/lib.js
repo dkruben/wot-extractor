@@ -13522,210 +13522,6 @@ function UIProvider(e){
     })
   })
 }
-var DEFAULT_NAME_KEYFRAME="Point",THRESHOLD=.02;
-function createLoop(e){
-  let t=0;
-  return[function n(){
-    e(),t=requestAnimationFrame(n)
-  },function(){
-    cancelAnimationFrame(t)
-  }]
-}
-var VideoForwarded=(0,import_react.forwardRef)(function({
-  src:e,className:t,autoplay:n=!1,style:r,loop:a=!1,isPrebufferKeyframes:o,keyframesNameConfig:i,onClick:s,...l
-},u){
-  const c=u,d=(0,import_react.useRef)(null);
-  return useMount(()=>{
-    let e=!1;
-    return events$2.onDisplayChanged((t,n)=>{
-      const r=d.current;
-      r&&(n===displayStatus$1.hidden?(e=r.paused,r.pause()):e||n!==displayStatus$1.shown||r.play())
-    })
-  }),useMount(()=>{
-    let e=!1;
-    return onMinimize$1(t=>{
-      const n=d.current;
-      n&&(t?(e=n.paused,n.pause()):e||n.play())
-    })
-  }),(0,import_react.useEffect)(()=>createLayoutReadyInEffect(()=>{
-    const e=d.current;
-    if(!c||!e||!o)return void(e?.cohFastSeek&&(e.cohFastSeek=!1));
-    const t=e.cohGetKeyframeTimestamps?e.cohGetKeyframeTimestamps():[];
-    t.length>0?(e.cohFastSeek=!0,t.map(t=>{
-      e?.cohPrebufferKeyframe&&e.cohPrebufferKeyframe(t)
-    })):console.warn("Can't prebuffered keyframes, keyframes was not found")
-  }),[o,c]),(0,import_react.useEffect)(()=>{
-    if(c&&d.current){
-      const e={
-        changeTimeHandlers:[],changeKeyframeHandlers:[],changeTimeLoop:noop$2
-      },
-      t=()=>{
-        let t=0;
-        const[n,r]=createLoop(()=>{
-          if(d.current){
-            const{
-              currentTime:n,duration:r
-            }=d.current;
-            if(t!==n&&(e.changeTimeHandlers.forEach(e=>e({
-              currentTime:n,duration:r
-            })),t=n),d.current.paused||!c||!o)return;
-            const a=d.current.cohGetKeyframeTimestamps?d.current.cohGetKeyframeTimestamps():[];
-            a.forEach((t,r)=>{
-              void 0!==a[r]&&n>a[r]-THRESHOLD&&n<a[r]&&e.changeKeyframeHandlers.forEach(e=>{
-                const n=Object.keys(i??{})[r];
-                return e({
-                  time:t,name:`${i?n:`${DEFAULT_NAME_KEYFRAME}_${r}`}`
-                })
-              })
-            })
-          }
-        });
-        return n(),r
-      };
-      e.changeTimeLoop=t();
-      const n=t=>(e.changeTimeHandlers.push(t),()=>{
-        const{
-          changeTimeHandlers:n
-        }=e,r=n.indexOf(t);
-        r<0?console.warn("Can't unsubscribe changeTimeHandler, this reference was not found"):n.splice(r,1)
-      }),r=t=>(e.changeKeyframeHandlers.push(t),()=>{
-        const{
-          changeKeyframeHandlers:n
-        }=e,r=n.indexOf(t);
-        r<0?console.warn("Can't unsubscribe changeKeyframeHandlers, this reference was not found"):n.splice(r,1)
-      }),a=()=>d.current?.currentTime,s=()=>d.current?.duration,l=e=>{
-        d.current&&(d.current.currentTime=clamp$1(0,d.current.duration,e))
-      },
-      u=()=>d.current?.play(),f=()=>d.current?.pause(),p=()=>{
-        f(),l(0)
-      },
-      m=()=>d.current?.cohGetKeyframeTimestamps?d.current.cohGetKeyframeTimestamps():[],_=e=>{
-        l(e),u()
-      },
-      h=e=>{
-        l(e),f()
-      },
-      g=()=>{
-        e.changeTimeHandlers=[],e.changeKeyframeHandlers=[],e.changeTimeLoop?.()
-      },
-      b=(e,t)=>(d.current?.addEventListener(e,t),()=>d.current?.removeEventListener(e,t)),v=(e,t)=>(d.current?.removeEventListener(e,t),()=>d.current?.removeEventListener(e,t));
-      return c.current={
-        on:b,off:v,play:u,pause:f,stop:p,cleanup:g,getCurrentTime:a,getDuration:s,getCachedKeyframes:m,goToAndPlay:_,goToAndStop:h,setCurrentTime:l,domRef:d.current,onChangeTime:n,onKeyframes:r
-      },
-      ()=>{
-        g(),c.current=null
-      }
-    }
-  },[i,c,o]),(0,import_react.useEffect)(()=>{
-    d.current&&n&&d.current.play()
-  },[n,a]),useUnmount(()=>{
-    d.current?.pause()
-  }),(0,import_jsx_runtime.jsx)("video",{
-    src:e,className:t,style:r,loop:a,ref:d,onClick:s,...l
-  })
-}),Video=(0,import_react.memo)(VideoForwarded),themes={
-  primary:"primary",secondary:"secondary",custom:"custom"
-},
-sizes$7={
-  extraSmall:"extraSmall",small:"small",medium:"medium",large:"large"
-},
-falsyToString=e=>"boolean"==typeof e?`${e}`:0===e?"0":e,cx$5=clsx,cva=(e,t)=>n=>{
-  var r;
-  if(null==(null==t?void 0:t.variants))return cx$5(e,null==n?void 0:n.class,null==n?void 0:n.className);
-  const{
-    variants:a,defaultVariants:o
-  }=t,i=Object.keys(a).map(e=>{
-    const t=null==n?void 0:n[e],r=null==o?void 0:o[e];
-    if(null===t)return null;
-    const i=falsyToString(t)||falsyToString(r);
-    return a[e][i]
-  }),s=n&&Object.entries(n).reduce((e,t)=>{
-    let[n,r]=t;
-    return void 0===r||(e[n]=r),e
-  },{});
-  return cx$5(e,i,null==t||null===(r=t.compoundVariants)||void 0===r?void 0:r.reduce((e,t)=>{
-    let{
-      class:n,className:r,...a
-    }=t;
-    return Object.entries(a).every(e=>{
-      let[t,n]=e;
-      return Array.isArray(n)?n.includes({
-        ...o,...s
-      }[t]):{
-        ...o,...s
-      }[t]===n
-    })?[...e,n,r]:e
-  },[]),null==n?void 0:n.class,null==n?void 0:n.className)
-};
-function defineStyledComponent(e,t,n){
-  const r="object"==typeof t&&"cva"in t?t.cva?.variants:n?.variants,a=r?Object.keys(r):[];
-  if("object"==typeof t){
-    const n=t,r=cva(n.className,n.cva),o=n.element,i=(0,import_react.forwardRef)(function(e,t){
-      return(0,import_react.createElement)(o,{
-        ..."function"==typeof o?e:cleanProps(a,e),ref:t,className:r(e)
-      })
-    });
-    return i.displayName=e,n.cva&&(i.cva=n.cva),i
-  }
-  const o=cva(t,n),i=(0,import_react.forwardRef)(function(t,n){
-    return(0,import_jsx_runtime.jsx)("div",{
-      "data-name":e,...cleanProps(a,t),ref:n,className:o(t)
-    })
-  });
-  return i.displayName=e,n&&(i.cva=n),i
-}
-function cleanProps(e,t){
-  if(0===e.length)return t;
-  const n={
-    ...t
-  };
-  for(const r of e)delete n[r];
-  return n
-}
-var base$27="HeadlessButton_df8536fc",headless_button_module_default={
-  base:base$27
-},
-HeadlessButtonBase=defineStyledComponent("Button",{
-  element:"button",className:headless_button_module_default.base
-}),HeadlessButton=(0,import_react.forwardRef)(function({
-  children:e,onClick:t,onMouseEnter:n,soundTarget:r,disabled:a=!1,silent:o=!1,...i
-},s){
-  const l=useSounds();
-  return(0,import_jsx_runtime.jsx)(HeadlessButtonBase,{
-    ...i,ref:s,onMouseEnter:function(e){
-      a||o||l.play("mouse-enter",{
-        target:r||"Button",original:e
-      }),n?.(e)
-    },
-    onClick:function(e){
-      a||(o||l.play("click",{
-        target:r||"Button",original:e
-      }),t?.(e))
-    },
-    children:e
-  })
-}),background$2="Button_background_98ebcfb8",border$3="Button_border_7e6390d7",overlay$3="Button_overlay_174632c8",base$26="Button_70871946",base__enabled="Button_base__enabled_96634d40",base__disabled$2="Button_base__disabled_b713e04a",content$4="Button_content_298de63f",content__fontAligned="Button_content__fontAligned_66115778",button_module_default={
-  background:background$2,border:border$3,overlay:overlay$3,base:base$26,base__enabled:base__enabled,base__disabled:base__disabled$2,"base__size-extraSmall":"Button_base__size-extraSmall_d0cdb5ed","base__size-small":"Button_base__size-small_fc7095a4","base__size-medium":"Button_base__size-medium_814d61f0","base__size-large":"Button_base__size-large_83da852e","base__theme-primary":"Button_base__theme-primary_8ba55469","base__theme-secondary":"Button_base__theme-secondary_3fa4afc",content:content$4,content__fontAligned:content__fontAligned
-},
-Button=(0,import_react.forwardRef)(function({
-  children:e,size:t=sizes$7.large,theme:n=themes.primary,disabled:r=!1,silent:a=!1,autoAlignContent:o=!0,classNames:i,className:s,...l
-},u){
-  return(0,import_jsx_runtime.jsxs)(HeadlessButton,{
-    ...l,ref:u,silent:a,disabled:r,className:clsx(button_module_default.base,button_module_default[`base__size-${t}`],button_module_default[`base__theme-${n}`],r?button_module_default.base__disabled:button_module_default.base__enabled,s,i?.base),onClick:function(e){
-      r||l.onClick?.(e)
-    },
-    children:[(0,import_jsx_runtime.jsx)("div",{
-      className:clsx(button_module_default.background,i?.background)
-    }),(0,import_jsx_runtime.jsx)("div",{
-      className:clsx(button_module_default.border,i?.border)
-    }),(0,import_jsx_runtime.jsx)("div",{
-      className:clsx(button_module_default.overlay,i?.overlay)
-    }),(0,import_jsx_runtime.jsx)("div",{
-      className:clsx(button_module_default.content,o&&button_module_default.content__fontAligned,i?.content),children:e
-    })]
-  })
-});
-Button.themes=themes,Button.sizes=sizes$7;
 var require_classnames=__commonJSMin((e,t)=>{
   !function(){
     var e={}.hasOwnProperty;
@@ -13752,416 +13548,7 @@ var require_classnames=__commonJSMin((e,t)=>{
       return n
     }):window.classNames=n
   }()
-}),import_classnames=__toESM(require_classnames()),base$25="CloseButton_7488a1b8",base__medium="CloseButton_base__medium_97d04067",base__small$2="CloseButton_base__small_c1b29bae",base__extraSmall="CloseButton_base__extraSmall_f52764c1",base__x96x96$1="CloseButton_base__x96x96_8157b84d",base__x32x32="CloseButton_base__x32x32_6466ea31",close_button_module_default={
-  base:base$25,base__medium:base__medium,base__small:base__small$2,base__extraSmall:base__extraSmall,base__x96x96:base__x96x96$1,base__x32x32:base__x32x32
-},
-sizes$6={
-  medium:"medium",small:"small",extraSmall:"extraSmall"
-},
-upscaleImageSizes={
-  [sizes$6.medium]:"x96x96",[sizes$6.small]:sizes$6.medium,[sizes$6.extraSmall]:"x32x32"
-};
-function CloseButton({
-  size:e=sizes$6.medium,hoverSound:t=sounds$1.highlight,clickSound:n=sounds$1.click,className:r,onHover:a,onClose:o
-}){
-  const i=useUpscale(close_button_module_default[`base__${e}`],close_button_module_default[`base__${upscaleImageSizes[e]}`]);
-  return(0,import_jsx_runtime.jsx)("div",{
-    className:(0,import_classnames.default)(close_button_module_default.base,i,r),onMouseEnter:()=>{
-      play$1.sound(t),a?.()
-    },
-    onClick:()=>{
-      play$1.sound(n),o()
-    }
-  })
-}
-CloseButton.size=sizes$6;
-var RewardType$1=function(e){
-  return e.Items="items",e.Equipment="equipment",e.Xp="xp",e.XpFactor="xpFactor",e.Blueprints="blueprints",e.BlueprintsAny="blueprintsAny",e.Goodies="goodies",e.Berths="berths",e.Slots="slots",e.Tokens="tokens",e.CrewSkins="crewSkins",e.CrewBooks="crewBooks",e.Customizations="customizations",e.CreditsFactor="creditsFactor",e.Tankman="tankman",e.Tankwoman="tankwoman",e.TankmenXp="tankmenXP",e.TankmenXpFactor="tankmenXPFactor",e.FreeXpFactor="freeXPFactor",e.BattleToken="battleToken",e.PremiumUniversal="premium_universal",e.Gold="gold",e.Credits="credits",e.Crystal="crystal",e.FreeXp="freeXP",e.Premium="premium",e.PremiumPlus="premium_plus",e.BattlePassPoints="battlePassPoints",e.BattlePassSelectToken="battlePassSelectToken",e.StyleProgressToken="styleProgressToken",e.TmanToken="tmanToken",e.NaturalCover="naturalCover",e.BpCoin="bpcoin",e.BattlaPassFinalAchievement="dossier_achievement",e.BattleBadge="dossier_badge",e.BonusX5="battle_bonus_x5",e.CrewBonusX3="crew_bonus_x3",e.Vehicles="vehicles",e.EpicSelectToken="epicSelectToken",e.Comp7TokenWeeklyReward="comp7TokenWeeklyReward",e.DeluxeGift="deluxe_gift",e.BattleBoosterGift="battleBooster_gift",e.OptionalDevice="optionalDevice",e.EquipCoin="equipCoin",e.LootBox="lootBox",e.BrCoin="brcoin",e.Pet="pet",e
-}({}),ImageSize$1=function(e){
-  return e.Big="big",e.Small="small",e.Mini="mini",e.S600x450="s600x450",e.S400x300="s400x300",e.S296x222="s296x222",e.S232x174="s232x174",e.S180x135="s180x135",e.S128x100="s128x100",e.S80x80="s80x80",e.S64x64="s64x64",e.S48x48="s48x48",e.S24x24="s24x24",e.S300x300="s300x300",e.S450x450="s450x450",e
-}({}),ValueTypes$1=function(e){
-  return e.MULTI="multi",e.CURRENCY="currency",e.PREMIUM_PLUS="premium_plus",e.NUMBER="number",e.STRING="string",e
-}({}),Specials$1=function(e){
-  return e.ATTACHMENT_RARE="rare",e.ATTACHMENT_EPIC="epic",e.ATTACHMENT_LEGENDARY="legendary",e.BATTLE_BOOSTER="battleBooster",e.BATTLE_BOOSTER_REPLACE="battleBoosterReplace",e.BUILT_IN_EQUIPMENT="builtInEquipment",e.EQUIPMENT_PLUS="equipmentPlus",e.EQUIPMENT_TROPHY_BASIC="equipmentTrophyBasic",e.EQUIPMENT_TROPHY_UPGRADED="equipmentTrophyUpgraded",e.EQUIPMENT_MODERNIZED_UPGRADED_1="equipmentModernized_1",e.EQUIPMENT_MODERNIZED_UPGRADED_2="equipmentModernized_2",e.EQUIPMENT_MODERNIZED_UPGRADED_3="equipmentModernized_3",e.PROGRESSION_STYLE_UPGRADED_1="progressionStyleUpgraded_1",e.PROGRESSION_STYLE_UPGRADED_2="progressionStyleUpgraded_2",e.PROGRESSION_STYLE_UPGRADED_3="progressionStyleUpgraded_3",e.PROGRESSION_STYLE_UPGRADED_4="progressionStyleUpgraded_4",e.PROGRESSION_STYLE_UPGRADED_5="progressionStyleUpgraded_5",e.PROGRESSION_STYLE_UPGRADED_6="progressionStyleUpgraded_6",e
-}({}),HighlightClasses$1=function(e){
-  return e.BATTLE_BOOSTER="battleBooster",e
-}({}),OverlayClasses$1=function(e){
-  return e.ATTACHMENT_RARE="rare",e.ATTACHMENT_EPIC="epic",e.ATTACHMENT_LEGENDARY="legendary",e.BATTLE_BOOSTER="battleBooster",e.BATTLE_BOOSTER_REPLACE="battleBoosterReplace",e.BUILT_IN_EQUIPMENT="builtInEquipment",e.EQUIPMENT_PLUS="equipmentPlus",e.EQUIPMENT_TROPHY_BASIC="equipmentTrophyBasic",e.EQUIPMENT_TROPHY_UPGRADED="equipmentTrophyUpgraded",e.EQUIPMENT_MODERNIZED_UPGRADED_1="equipmentModernized_1",e.EQUIPMENT_MODERNIZED_UPGRADED_2="equipmentModernized_2",e.EQUIPMENT_MODERNIZED_UPGRADED_3="equipmentModernized_3",e.PROGRESSION_STYLE_UPGRADED_1="progressionStyleUpgraded_1",e.PROGRESSION_STYLE_UPGRADED_2="progressionStyleUpgraded_2",e.PROGRESSION_STYLE_UPGRADED_3="progressionStyleUpgraded_3",e.PROGRESSION_STYLE_UPGRADED_4="progressionStyleUpgraded_4",e.PROGRESSION_STYLE_UPGRADED_5="progressionStyleUpgraded_5",e.PROGRESSION_STYLE_UPGRADED_6="progressionStyleUpgraded_6",e
-}({}),multiValueTypes$1=[RewardType$1.Items,RewardType$1.Equipment,RewardType$1.Xp,RewardType$1.XpFactor,RewardType$1.Blueprints,RewardType$1.BlueprintsAny,RewardType$1.Goodies,RewardType$1.Berths,RewardType$1.Slots,RewardType$1.Tokens,RewardType$1.CrewSkins,RewardType$1.CrewBooks,RewardType$1.Customizations,RewardType$1.CreditsFactor,RewardType$1.TankmenXp,RewardType$1.TankmenXpFactor,RewardType$1.FreeXpFactor,RewardType$1.BattleToken,RewardType$1.LootBox,RewardType$1.PremiumUniversal,RewardType$1.NaturalCover,RewardType$1.BpCoin,RewardType$1.BattlePassSelectToken,RewardType$1.BattlaPassFinalAchievement,RewardType$1.BattleBadge,RewardType$1.BonusX5,RewardType$1.CrewBonusX3,RewardType$1.EpicSelectToken,RewardType$1.Comp7TokenWeeklyReward,RewardType$1.DeluxeGift,RewardType$1.BattleBoosterGift,RewardType$1.OptionalDevice,RewardType$1.TmanToken,RewardType$1.Pet],currencyValueTypes$1=[RewardType$1.Gold,RewardType$1.Credits,RewardType$1.Crystal,RewardType$1.FreeXp],numberValueTypes$1=[RewardType$1.BattlePassPoints,RewardType$1.EquipCoin],premiumValueTypes$1=[RewardType$1.PremiumPlus,RewardType$1.Premium],getSizeFolder$1=e=>{
-  switch(e){
-    case ImageSize$1.S600x450:return"c_600x450";
-    case ImageSize$1.S400x300:return"c_400x300";
-    case ImageSize$1.S296x222:return"c_296x222";
-    case ImageSize$1.S232x174:return"c_232x174";
-    case ImageSize$1.Big:return"c_80x80";
-    case ImageSize$1.Small:return"c_48x48";
-    default:return e
-  }
-},
-DOG_TAG_FOLDER_NAMES$1=["engravings","backgrounds"],DOG_TAG_DEFAULT_ICON_NAME$1=["engraving","background"],getDogTypeImage$1=(e,t,n)=>{
-  const r=DOG_TAG_FOLDER_NAMES$1[e];
-  if(r){
-    const a=R.images.gui.maps.icons.dogtags.$dyn(t).$dyn(r),o=a.$dyn(n);
-    return!o&&DOG_TAG_DEFAULT_ICON_NAME$1[e]?`${a.$dyn(DOG_TAG_DEFAULT_ICON_NAME$1[e])}`:`${o}`
-  }
-  return console.error("Unreachable branch: add dogTagType and icon folder for corresponding icon matching"),""
-},
-getRewardImage$1=(e,t=ImageSize$1.Small)=>{
-  const{
-    name:n,type:r,value:a,icon:o,item:i,dogTagType:s
-  }=e,l=t===ImageSize$1.S24x24?ImageSize$1.Small:t,u=getSizeFolder$1(l);
-  switch(n){
-    case"basic":case"plus":return`R.images.gui.maps.icons.quests.bonuses.${l}.${r}_${a}`;
-    case"premium":case"premium_plus":return`R.images.gui.maps.icons.quests.bonuses.${l}.${n}_${a}`;
-    case"items":return`R.images.gui.maps.icons.quests.bonuses.${l}.${i}`;
-    case"blueprints":case"blueprintsAny":case"finalBlueprints":return`R.images.gui.maps.icons.blueprints.fragment.${l}.${o}`;
-    case"tokens":case"lootBox":case"battleToken":return"big"===t?e.iconBig.replace("..","img://gui"):e.iconSmall.replace("..","img://gui");
-    case"customizations":case"styleProgress":case"crewSkins":case"goodies":case"groups":case"tmanToken":case"battlePassSelectToken":case"pet":return`R.images.gui.maps.icons.quests.bonuses.${l}.${o}`;
-    case"crewBooks":return`R.images.gui.maps.icons.crewBooks.books.${l}.${o}`;
-    case"dogTagComponents":return getDogTypeImage$1(s,l,o);
-    case"dossier_badge":return`R.images.gui.maps.icons.quests.bonuses.badges.${u}.${o}`;
-    case"dossier_achievement":return`R.images.gui.maps.icons.achievement.${u}.${o}`;
-    case"xp":case"xpFactor":return`R.images.gui.maps.icons.quests.bonuses.${l}.exp`;
-    case"creditsFactor":return`R.images.gui.maps.icons.quests.bonuses.${l}.credits`;
-    case"tankmenXPFactor":return`R.images.gui.maps.icons.quests.bonuses.${l}.tankmenXP`;
-    case"dailyXPFactor":case"freeXPFactor":return`R.images.gui.maps.icons.quests.bonuses.${l}.freeXP`;
-    case"premiumTank":return`R.images.gui.maps.icons.quests.bonuses.${l}.vehicles`;
-    case"styleProgressToken":return`R.images.gui.maps.icons.quests.bonuses.${l}.style_3d`;
-    case"collectionItem":return`R.images.gui.maps.icons.collectionItems.${u}.${o}`;
-    default:return`R.images.gui.maps.icons.quests.bonuses.${l}.${n}`
-  }
-},
-getRewardTooltipConfig=(e,t)=>({
-  args:e,contentId:t
-}),SIZES_WITH_BOTTOM_HIGHLIGHT$1=[ImageSize$1.Small,ImageSize$1.Big],getBottomHighlight$1=(e,t)=>{
-  if(void 0===t||!SIZES_WITH_BOTTOM_HIGHLIGHT$1.includes(e))return null;
-  switch(t){
-    case Specials$1.BATTLE_BOOSTER:case Specials$1.BATTLE_BOOSTER_REPLACE:return HighlightClasses$1.BATTLE_BOOSTER
-  }
-},
-getOverlay$1=e=>{
-  if(void 0===e)return null;
-  switch(e){
-    case Specials$1.BATTLE_BOOSTER:return OverlayClasses$1.BATTLE_BOOSTER;
-    case Specials$1.BATTLE_BOOSTER_REPLACE:return OverlayClasses$1.BATTLE_BOOSTER_REPLACE;
-    case Specials$1.BUILT_IN_EQUIPMENT:return OverlayClasses$1.BUILT_IN_EQUIPMENT;
-    case Specials$1.EQUIPMENT_PLUS:return OverlayClasses$1.EQUIPMENT_PLUS;
-    case Specials$1.EQUIPMENT_TROPHY_BASIC:return OverlayClasses$1.EQUIPMENT_TROPHY_BASIC;
-    case Specials$1.EQUIPMENT_TROPHY_UPGRADED:return OverlayClasses$1.EQUIPMENT_TROPHY_UPGRADED;
-    case Specials$1.EQUIPMENT_MODERNIZED_UPGRADED_1:return OverlayClasses$1.EQUIPMENT_MODERNIZED_UPGRADED_1;
-    case Specials$1.EQUIPMENT_MODERNIZED_UPGRADED_2:return OverlayClasses$1.EQUIPMENT_MODERNIZED_UPGRADED_2;
-    case Specials$1.EQUIPMENT_MODERNIZED_UPGRADED_3:return OverlayClasses$1.EQUIPMENT_MODERNIZED_UPGRADED_3;
-    case Specials$1.PROGRESSION_STYLE_UPGRADED_1:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_1;
-    case Specials$1.PROGRESSION_STYLE_UPGRADED_2:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_2;
-    case Specials$1.PROGRESSION_STYLE_UPGRADED_3:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_3;
-    case Specials$1.PROGRESSION_STYLE_UPGRADED_4:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_4;
-    case Specials$1.PROGRESSION_STYLE_UPGRADED_5:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_5;
-    case Specials$1.PROGRESSION_STYLE_UPGRADED_6:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_6;
-    case Specials$1.ATTACHMENT_RARE:return OverlayClasses$1.ATTACHMENT_RARE;
-    case Specials$1.ATTACHMENT_EPIC:return OverlayClasses$1.ATTACHMENT_EPIC;
-    case Specials$1.ATTACHMENT_LEGENDARY:return OverlayClasses$1.ATTACHMENT_LEGENDARY
-  }
-},
-getFormattedValue$1=(e,t)=>{
-  const n=resources.resolve("intl");
-  if(void 0===e)return null;
-  switch(t){
-    case ValueTypes$1.MULTI:{
-      const t=Number(e);
-      return isFinite(t)&&t>1?`x${Math.floor(t)}`:null
-    }
-    case ValueTypes$1.CURRENCY:case ValueTypes$1.NUMBER:return n.formatNumber(n.numberFormats[0]||"integral",Number(e));
-    case ValueTypes$1.PREMIUM_PLUS:{
-      const t=Number(e);
-      return isNaN(t)?e:null
-    }
-    default:return e
-  }
-},
-base__s24x24="Reward_base__s24x24_954b5cee",base__s48x48$1="Reward_base__s48x48_21f091ec",base__small$1="Reward_base__small_3eddf28d",base__s80x80$1="Reward_base__s80x80_21f091ec",base__big$1="Reward_base__big_e23f2c77",base__s128x100$1="Reward_base__s128x100_1e08e04b",base__s180x135$1="Reward_base__s180x135_93fc57c",base__s232x174$1="Reward_base__s232x174_2904ea89",base__s296x222$1="Reward_base__s296x222_52f0615b",base__s400x300$1="Reward_base__s400x300_a8627e1b",base__s600x450$1="Reward_base__s600x450_e27f3852",base__s300x300="Reward_base__s300x300_b3d79936",base__s450x450="Reward_base__s450x450_8b0abaf7",base$24="Reward_d65e1e12",base__dynamicBox="Reward_base__dynamicBox_45d7782b",tooltipWrapper$1="Reward_tooltipWrapper_75b925a5",icon$10="Reward_icon_e152f13b",overlay$2="Reward_overlay_8cbe65c9",highlight$1="Reward_highlight_f1cd08e0",image__s24x24="Reward_image__s24x24_954b5cee",image__s48x48="Reward_image__s48x48_21f091ec",image__small="Reward_image__small_3eddf28d",image__s80x80="Reward_image__s80x80_21f091ec",image__big="Reward_image__big_e23f2c77",image__s128x100="Reward_image__s128x100_1e08e04b",image__s180x135="Reward_image__s180x135_93fc57c",image__s232x174="Reward_image__s232x174_2904ea89",image__s296x222="Reward_image__s296x222_52f0615b",image__s400x300="Reward_image__s400x300_a8627e1b",image__s600x450="Reward_image__s600x450_e27f3852",image__s300x300="Reward_image__s300x300_b3d79936",image__s450x450="Reward_image__s450x450_8b0abaf7",image$1="Reward_image_810ec3a2",image__fixedBox="Reward_image__fixedBox_e45bdd8a",info$1="Reward_info_26d38c48",info__multi$1="Reward_info__multi_465d34bd",info__credits$1="Reward_info__credits_1643219",info__gold$1="Reward_info__gold_c751be5d",info__crystal$1="Reward_info__crystal_18ccfdd0",info__premiumTank$1="Reward_info__premiumTank_7862152",title$2="Reward_title_fbcf4b5",timer$1="Reward_timer_22ba7b8b",reward_module_default={
-  base__s24x24:base__s24x24,base__s48x48:base__s48x48$1,base__small:base__small$1,base__s80x80:base__s80x80$1,base__big:base__big$1,base__s128x100:base__s128x100$1,base__s180x135:base__s180x135$1,base__s232x174:base__s232x174$1,base__s296x222:base__s296x222$1,base__s400x300:base__s400x300$1,base__s600x450:base__s600x450$1,base__s300x300:base__s300x300,base__s450x450:base__s450x450,base:base$24,base__dynamicBox:base__dynamicBox,tooltipWrapper:tooltipWrapper$1,icon:icon$10,overlay:overlay$2,highlight:highlight$1,image__s24x24:image__s24x24,image__s48x48:image__s48x48,image__small:image__small,image__s80x80:image__s80x80,image__big:image__big,image__s128x100:image__s128x100,image__s180x135:image__s180x135,image__s232x174:image__s232x174,image__s296x222:image__s296x222,image__s400x300:image__s400x300,image__s600x450:image__s600x450,image__s300x300:image__s300x300,image__s450x450:image__s450x450,image:image$1,image__fixedBox:image__fixedBox,info:info$1,info__multi:info__multi$1,info__credits:info__credits$1,info__gold:info__gold$1,info__crystal:info__crystal$1,info__premiumTank:info__premiumTank$1,title:title$2,timer:timer$1
-},
-images$1=resources.resolve("images"),SIZE_MAP=new Map([[ImageSize$1.S24x24,ImageSize$1.Small],[ImageSize$1.S48x48,ImageSize$1.Small]]),Reward$1=({
-  name:e,image:t,isPeriodic:n=!1,isFixedBoxSize:r=!0,size:a=ImageSize$1.Big,special:o,value:i,valueType:s,title:l,style:u,className:c,classNames:d,tooltipArgs:f,periodicIconTooltipArgs:p
-})=>{
-  const m=SIZE_MAP.has(a)?SIZE_MAP.get(a):a,_=getBottomHighlight$1(a,o),h=getOverlay$1(o),g=getFormattedValue$1(i,s),b=useTooltip({
-    contentId:f?.contentId??0,args:f?.args,resId:f?.resId,decoratorId:f?.decoratorId
-  }),v=useSimpleTooltip({
-    header:p?.header,body:p?.body
-  });
-  return(0,import_jsx_runtime.jsxs)("div",{
-    className:(0,import_classnames.default)(reward_module_default.base,reward_module_default[`base__${a}`],!r&&reward_module_default.base__dynamicBox,c),style:u,...b,children:[(0,import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment,{
-      children:[(0,import_jsx_runtime.jsxs)("div",{
-        className:(0,import_classnames.default)(reward_module_default.image,r?reward_module_default.image__fixedBox:reward_module_default[`image__${a}`],d?.image),children:[_&&(0,import_jsx_runtime.jsx)("div",{
-          className:(0,import_classnames.default)(reward_module_default.highlight,d?.highlight),style:{
-            backgroundImage:`url(${images$1.readOrEmpty(`quests.bonuses.${m}.${_}_highlight`)})`
-          }
-        }),t&&(0,import_jsx_runtime.jsx)("div",{
-          className:(0,import_classnames.default)(reward_module_default.icon,d?.rewardIcon),style:{
-            backgroundImage:`url(${t})`
-          }
-        }),h&&(0,import_jsx_runtime.jsx)("div",{
-          className:(0,import_classnames.default)(reward_module_default.overlay,d?.overlay),style:{
-            backgroundImage:`url(${images$1.readOrEmpty(`quests.bonuses.${m}.${h}_overlay`)})`
-          }
-        })]
-      }),g&&(0,import_jsx_runtime.jsx)("div",{
-        className:(0,import_classnames.default)(reward_module_default.info,reward_module_default[`info__${e}`],s===ValueTypes$1.MULTI&&reward_module_default.info__multi,d?.info),children:g
-      }),l&&(0,import_jsx_runtime.jsx)("div",{
-        className:reward_module_default.title,children:l
-      })]
-    }),n&&(0,import_jsx_runtime.jsx)("div",{
-      className:(0,import_classnames.default)(reward_module_default.timer,d?.periodicIcon),...v
-    })]
-  })
-},
-NodeTypes={
-  Text:1,Tag:2,Var:3
-};
-function parseArguments(e){
-  const t=[];
-  let n="",r=!1,a=!1,o="";
-  for(let i=0;i<e.length;i++){
-    const s=e[i];
-    "'"!==s&&'"'!==s||a||r?s===o&&a?(a=!1,n+=s):"("!==s||a?")"===s&&r&&!a?(r=!1,n+=s):" "!==s||r||a?n+=s:n&&(t.push(n),n=""):(r=!0,n+=s):(a=!0,o=s,n+=s)
-  }
-  return n&&t.push(n),t
-}
-function parse(e,t){
-  const n=[],r=[];
-  let a="",o=!1,i="",s=0;
-  for(let l=0;l<e.length;l++){
-    const u=e[l];
-    if(u===t.start[0]&&e.slice(l,l+t.start.length)===t.start)a&&(r.length>0?r[r.length-1].node.children.push({
-      type:NodeTypes.Text,value:a
-    }):n.push({
-      type:NodeTypes.Text,value:a
-    }),a=""),o=!0,l+=t.start.length-1;
-    else if(u===t.end[0]&&e.slice(l,l+t.end.length)===t.end){
-      o=!1,l+=t.end.length-1;
-      const e=i.trim();
-      if(e.startsWith("@")){
-        const t=e.slice(1).trim(),a={
-          type:NodeTypes.Tag,attrs:t.split("|"),instanceId:++s,children:[]
-        };
-        r.length>0?r[r.length-1].node.children.push(a):n.push(a),r.push({
-          node:a,startIndex:n.length
-        })
-      }else if("/"===e)r.length>0&&r.pop();
-      else{
-        const t={
-          type:NodeTypes.Var,instanceId:++s,name:e
-        };
-        r.length>0?r[r.length-1].node.children.push(t):n.push(t)
-      }
-      i=""
-    }else o?i+=u:a+=u
-  }
-  return a&&(r.length?r[r.length-1].node.children.push({
-    type:NodeTypes.Text,value:a
-  }):n.push({
-    type:NodeTypes.Text,value:a
-  })),n
-}
-var COLORS="blackReal, whiteReal, white, whiteOrange, whiteSpanish, par, parSecondary, parTertiary, infoRed, red, redDark, yellow, orange, cream, brown, greenBright, green, greenDark, blueBooster, blueTeamkiller, cred, gold, bond, prom",base$23="FormatText_db904f12",base__fullSize="FormatText_base__fullSize_a514958e",nowrap="FormatText_nowrap_ff69eca3",format_text_module_default={
-  COLORS:COLORS,base:base$23,base__fullSize:base__fullSize,nowrap:nowrap
-},
-legacyColors=new Set(format_text_module_default.COLORS?.split(", ")??[]),keyId=0;
-function takeKey(){
-  return++keyId
-}
-var startsWithPunctuationRe=/^[*"'ー.,、。，:;：；！？》」•%)(!?\u0EAF\u0E3B\u0E3F\u0E31\u0E32\u0E33\u0E47-\u0E4F\u0E5A-\u0E5F\u0E00-\u0E7F\u3000-\u303F\uFF00-\uFFEF\]]/u;
-function splitString(e){
-  const t=resources.resolve("langCode");
-  return addSpaceAndMap(splitLocale(e,t),t,(e,t)=>e&&(0,import_jsx_runtime.jsx)("span",{
-    children:e
-  },`${e}${t}`))
-}
-function splitArray(e){
-  const t=[];
-  for(let n=0;n<e.length;n++){
-    const r=e[n],a=e[n+1];
-    if("string"!=typeof a||!startsWithPunctuationRe.test(a)){
-      t.push(split(r));
-      continue
-    }
-    const o=splitString(a.slice(1));
-    t.push((0,import_jsx_runtime.jsxs)(import_react.Fragment,{
-      children:[(0,import_jsx_runtime.jsxs)("span",{
-        className:format_text_module_default.nowrap,children:[split(r),a[0]]
-      }),o]
-    },takeKey())),n+=1
-  }
-  return t
-}
-function split(e){
-  return Array.isArray(e)?splitArray(e):"string"==typeof e?(0,import_jsx_runtime.jsx)(import_react.Fragment,{
-    children:splitString(e)
-  },takeKey()):e
-}
-function style(e,...t){
-  return(0,import_jsx_runtime.jsx)("span",{
-    style:t.reduce((n,r)=>{
-      if(Array.isArray(r)){
-        const[e,t]=r;
-        return n[e]=t,n
-      }
-      return console.warn(`Invalid argument ${r} in ${e}: ${t}`),n
-    },{}),children:e
-  },takeKey())
-}
-function className(e,...t){
-  return(0,import_jsx_runtime.jsx)("span",{
-    className:t.filter(e=>"string"==typeof e&&e.length>0).join(" "),children:e
-  },takeKey())
-}
-var color=(e,t)=>["color",t],fontSize=(e,t)=>["fontSize",t],fontWeight=(e,t)=>["fontWeight",t],textDecoration=(e,t)=>["textDecoration",t],bold=e=>["fontWeight","bold"];
-function colorLegacy(e,t){
-  const n=takeKey();
-  return legacyColors.has(String(t))?(0,import_jsx_runtime.jsx)("span",{
-    className:`FormatText_colorLegacy__${t}`,children:e
-  },n):(0,import_jsx_runtime.jsx)("span",{
-    style:{
-      color:`#${t}`
-    },
-    children:e
-  },n)
-}
-var defaultFormatters={
-  class:className,colorLegacy:colorLegacy,bold:bold,split:split,style:style,color:color,fontSize:fontSize,fontWeight:fontWeight,textDecoration:textDecoration
-};
-function applyFunction(e,t,n,r){
-  const a=n.map(t=>{
-    if("string"!=typeof t)return t;
-    const n=t.trim();
-    if(n.startsWith("(")&&n.endsWith(")")){
-      const[t,...a]=n.slice(1,-1).split(" ");
-      return t?applyFunction(e,t,a,r):e
-    }
-    return n.startsWith("'")&&n.endsWith("'")?n.slice(1,-1):n
-  }),o=r[t];
-  return o?o(e,...a):(console.error(`Function ${t} is not registered`),e)
-}
-function applyFunctions(e,t,n){
-  return e.reduce((e,t)=>{
-    const[r,...a]=parseArguments(t.trim());
-    return r?applyFunction(e,r,a,n):e
-  },t)
-}
-function isEnd(e){
-  return!(e>="a"&&e<="z"||e>="A"&&e<="Z"||e>="0"&&e<="9"||"_"===e)
-}
-function resolveAttrParams(e,t){
-  for(let n=0;n<e.length;n++)if("$"===e[n]){
-    let r=n+1;
-    for(;r<e.length&&!isEnd(e[r]);)r++;
-    const a=e.slice(n+1,r),o=t[a];
-    if(o)return resolveAttrParams(e.replace(`$${a}`,String(o)),t)
-  }
-  return e
-}
-function resolveAttrsParams(e,t){
-  const n=[];
-  for(let r=0;r<e.length;r++)n[r]=resolveAttrParams(e[r],t);
-  return n
-}
-var primitives=["number","string","undefined"];
-function render(e,t,n={},r=!0){
-  r&&(keyId=0);
-  const a=[];
-  function o(e){
-    if(primitives.includes(typeof e)){
-      const t=a.at(-1);
-      if("string"==typeof t)return void(a[a.length-1]=t+e)
-    }
-    a.push(e)
-  }
-  for(const i of e)if(i.type===NodeTypes.Text)o(i.value);
-  else if(i.type===NodeTypes.Var)null===n[i.name]||primitives.includes(typeof n[i.name])?o(n[i.name]??`{{${i.name}}}`):a.push((0,import_jsx_runtime.jsx)(import_react.Fragment,{
-    children:n[i.name]
-  },`var-${i.name}-${i.instanceId}`));
-  else if(i.type===NodeTypes.Tag){
-    const e=render(i.children,t,n,!1),r=applyFunctions(resolveAttrsParams(i.attrs,n),e,t);
-    a.push(r)
-  }
-  return a
-}
-function upgradeColorTag(e){
-  return e.replace(/%\(([a-zA-Z0-9]+)_(Open|Start)\)s(.+?)%\(\1_(Close|End)\)s/,"{{@ colorLegacy '$1'}}$3{{/}}").replace(/\{([a-zA-Z0-9]+)_(Open|Start)\}(.+?)\{\1_(Close|End)\}/gi,"{{@ colorLegacy '$1'}}$3{{/}}")
-}
-function upgradeVariables(e){
-  return e.replace(/%\((\w+|\d)\)(?:s|d)?/gi,"{{$1}}").replace(/(?<!\{)\{(\w+|\d)\}/g,"{{$1}}")
-}
-function upgradeSymbols(e){
-  return e.replaceAll("&nbsp;"," ").replaceAll("&zwnbsp;","\ufeff")
-}
-function upgradeLegacy(e){
-  return pipe(e,upgradeSymbols,upgradeColorTag,upgradeVariables)
-}
-var defaultBrackets={
-  start:"{{",end:"}}"
-},
-FormatText=(0,import_react.memo)(function(e){
-  const{
-    brackets:t=defaultBrackets,text:n,params:r,upgradeLegacy:a,fullSize:o,inline:i,formatters:s,split:l,...u
-  }=e,c=(0,import_react.useMemo)(()=>e.upgradeLegacy?upgradeLegacy(e.text):e.text,[e.text,e.upgradeLegacy]),d=(0,import_react.useMemo)(()=>e.formatters?{
-    ...defaultFormatters,...e.formatters
-  }:defaultFormatters,[e.formatters]),f=(0,import_react.useMemo)(()=>parse(l?`{{@ split}}${c}{{/}}`:c,t),[t,c,l]),p=(0,import_react.useMemo)(()=>render(f,d,e.params),[f,d,e.params]),m=clsx(format_text_module_default.base,o&&format_text_module_default.base__fullSize,u.className);
-  return e.inline?(console.warn("[FormatText] using the 'inline' props causes memory leaks due to incorrect working of the 'cohinline' attribute in GF version 1.48.2.3. Can cause client crashes.","Use 'split' prop instead."),(0,import_jsx_runtime.jsx)("p",{
-    ...u,className:m,ref:e=>{
-      e?.setAttribute("cohinline","true")
-    },
-    children:p
-  })):(0,import_jsx_runtime.jsx)("span",{
-    ...u,className:m,children:p
-  })
-});
-function FormatString({
-  path:e,...t
-}){
-  return(0,import_jsx_runtime.jsx)(FormatText,{
-    text:resources.resolve("strings").readOrEmpty(e),...t
-  })
-}
-var formatters=Object.fromEntries(Object.entries(defaultFormatters).map(([e])=>[e,e=>e]));
-function renderString(e,t={}){
-  const n=parse(e,defaultBrackets);
-  return String(render(n,formatters,t))
-}
-function renderResolvedString(e,t={}){
-  const n=resources.resolve("strings").readOrEmpty(e);
-  return 0===n.length?n:renderString(n,t)
-}
-var base$22="RewardsList_b956755b",base__vertical$1="RewardsList_base__vertical_59db3c9f",reward="RewardsList_reward_fc200613",reward__vertical="RewardsList_reward__vertical_5f09c6e0",boxRewardClassName="RewardsList_boxRewardClassName_882c908d",rewards_list_module_default={
-  base:base$22,base__vertical:base__vertical$1,reward:reward,reward__vertical:reward__vertical,boxRewardClassName:boxRewardClassName
-},
-sizeToDefault={
-  [ImageSize$1.S24x24]:ImageSize$1.Small,[ImageSize$1.S48x48]:ImageSize$1.Small
-},
-Rewards=(0,import_react.memo)(function({
-  data:e,isFixedBoxSize:t,size:n=ImageSize$1.Big,isVertical:r=!1,count:a,classMix:o,rewardItemClassMix:i,boxRewardTooltip:s,boxRewardValue:l,boxRewardClassName:u,boxRewardClassNames:c
-}){
-  const d=resources.resolve("strings"),f=resources.resolve("images"),p="number"==typeof a&&a<e.length?`${f.readOrEmpty(`quests.bonuses.${sizeToDefault[n]??n}.default`)}`:void 0,m=l||renderString(upgradeLegacy(d.readOrEmpty("tooltips.quests.awards.additional.bottom")),{
-    count:e.length-(a||0)
-  });
-  return(0,import_jsx_runtime.jsx)("div",{
-    className:(0,import_classnames.default)(rewards_list_module_default.base,r&&rewards_list_module_default.base__vertical,o),children:void 0!==p?(0,import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment,{
-      children:[e.slice(0,a).map((e,a)=>(0,import_jsx_runtime.jsx)("div",{
-        className:(0,import_classnames.default)(rewards_list_module_default.reward,r&&rewards_list_module_default.reward__vertical,i),children:(0,import_jsx_runtime.jsx)(Reward$1,{
-          size:n,isFixedBoxSize:t,...e
-        })
-      },a)),(0,import_jsx_runtime.jsx)("div",{
-        className:(0,import_classnames.default)(rewards_list_module_default.reward,r&&rewards_list_module_default.reward__vertical,i),children:(0,import_jsx_runtime.jsx)(Reward$1,{
-          name:"more",isFixedBoxSize:t,image:p,size:n,value:m,tooltipArgs:s,className:(0,import_classnames.default)(rewards_list_module_default.boxRewardClassName,u),classNames:c
-        })
-      })]
-    }):e.map((e,a)=>(0,import_jsx_runtime.jsx)("div",{
-      className:(0,import_classnames.default)(rewards_list_module_default.reward,r&&rewards_list_module_default.reward__vertical,i),children:(0,import_jsx_runtime.jsx)(Reward$1,{
-        size:n,isFixedBoxSize:t,...e
-      })
-    },a))
-  })
-});
+}),import_classnames=__toESM(require_classnames());
 function makeEngineEvent(e){
   return t=>(engine.on(e,t),()=>{
     engine.off(e,t)
@@ -14411,8 +13798,8 @@ function initExternalPaddings(e){
 var env={
   view:view_exports,client:client_exports,sound:sound_default,intl:intl$1
 },
-base$21="Textbutton_b1283086",base__right$1="Textbutton_base__right_78d4c03f",icon$9="Textbutton_icon_9ba4c60",icon__back="Textbutton_icon__back_599b35e4",icon__forward="Textbutton_icon__forward_4ef35d4d",icon__close="Textbutton_icon__close_b2af8bd5",icon__info="Textbutton_icon__info_6cbc7293",glow$1="Textbutton_glow_1ddc70ba",caption="Textbutton_caption_4350685c",caption__back="Textbutton_caption__back_599b35e4",caption__forward="Textbutton_caption__forward_599b35e4",caption__close="Textbutton_caption__close_c29bdb5",caption__info="Textbutton_caption__info_ccd96b67",goto="Textbutton_goto_d2c81cbd",base__left$1="Textbutton_base__left_599b35e4",shine="Textbutton_shine_527e4656",TextButton_module_default={
-  base:base$21,base__right:base__right$1,icon:icon$9,icon__back:icon__back,icon__forward:icon__forward,icon__close:icon__close,icon__info:icon__info,glow:glow$1,caption:caption,caption__back:caption__back,caption__forward:caption__forward,caption__close:caption__close,caption__info:caption__info,goto:goto,base__left:base__left$1,shine:shine
+base$27="Textbutton_b1283086",base__right$1="Textbutton_base__right_78d4c03f",icon$10="Textbutton_icon_9ba4c60",icon__back="Textbutton_icon__back_599b35e4",icon__forward="Textbutton_icon__forward_4ef35d4d",icon__close="Textbutton_icon__close_b2af8bd5",icon__info="Textbutton_icon__info_6cbc7293",glow$1="Textbutton_glow_1ddc70ba",caption="Textbutton_caption_4350685c",caption__back="Textbutton_caption__back_599b35e4",caption__forward="Textbutton_caption__forward_599b35e4",caption__close="Textbutton_caption__close_c29bdb5",caption__info="Textbutton_caption__info_ccd96b67",goto="Textbutton_goto_d2c81cbd",base__left$1="Textbutton_base__left_599b35e4",shine="Textbutton_shine_527e4656",TextButton_module_default={
+  base:base$27,base__right:base__right$1,icon:icon$10,icon__back:icon__back,icon__forward:icon__forward,icon__close:icon__close,icon__info:icon__info,glow:glow$1,caption:caption,caption__back:caption__back,caption__forward:caption__forward,caption__close:caption__close,caption__info:caption__info,goto:goto,base__left:base__left$1,shine:shine
 },
 TextButton=({
   caption:e,onClick:t,goto:n,classNames:r,onMouseEnter:a,onMouseLeave:o,onMouseDown:i,onMouseUp:s,side:l="left",type:u="back",soundHover:c="highlight",soundClick:d="play",...f
@@ -14440,7 +13827,215 @@ TextButton=({
     })]
   })
 },
-undef=()=>{};
+NodeTypes={
+  Text:1,Tag:2,Var:3
+};
+function parseArguments(e){
+  const t=[];
+  let n="",r=!1,a=!1,o="";
+  for(let i=0;i<e.length;i++){
+    const s=e[i];
+    "'"!==s&&'"'!==s||a||r?s===o&&a?(a=!1,n+=s):"("!==s||a?")"===s&&r&&!a?(r=!1,n+=s):" "!==s||r||a?n+=s:n&&(t.push(n),n=""):(r=!0,n+=s):(a=!0,o=s,n+=s)
+  }
+  return n&&t.push(n),t
+}
+function parse(e,t){
+  const n=[],r=[];
+  let a="",o=!1,i="",s=0;
+  for(let l=0;l<e.length;l++){
+    const u=e[l];
+    if(u===t.start[0]&&e.slice(l,l+t.start.length)===t.start)a&&(r.length>0?r[r.length-1].node.children.push({
+      type:NodeTypes.Text,value:a
+    }):n.push({
+      type:NodeTypes.Text,value:a
+    }),a=""),o=!0,l+=t.start.length-1;
+    else if(u===t.end[0]&&e.slice(l,l+t.end.length)===t.end){
+      o=!1,l+=t.end.length-1;
+      const e=i.trim();
+      if(e.startsWith("@")){
+        const t=e.slice(1).trim(),a={
+          type:NodeTypes.Tag,attrs:t.split("|"),instanceId:++s,children:[]
+        };
+        r.length>0?r[r.length-1].node.children.push(a):n.push(a),r.push({
+          node:a,startIndex:n.length
+        })
+      }else if("/"===e)r.length>0&&r.pop();
+      else{
+        const t={
+          type:NodeTypes.Var,instanceId:++s,name:e
+        };
+        r.length>0?r[r.length-1].node.children.push(t):n.push(t)
+      }
+      i=""
+    }else o?i+=u:a+=u
+  }
+  return a&&(r.length?r[r.length-1].node.children.push({
+    type:NodeTypes.Text,value:a
+  }):n.push({
+    type:NodeTypes.Text,value:a
+  })),n
+}
+var COLORS="blackReal, whiteReal, white, whiteOrange, whiteSpanish, par, parSecondary, parTertiary, infoRed, red, redDark, yellow, orange, cream, brown, greenBright, green, greenDark, blueBooster, blueTeamkiller, cred, gold, bond, prom",base$26="FormatText_db904f12",base__fullSize="FormatText_base__fullSize_a514958e",nowrap="FormatText_nowrap_ff69eca3",format_text_module_default={
+  COLORS:COLORS,base:base$26,base__fullSize:base__fullSize,nowrap:nowrap
+},
+legacyColors=new Set(format_text_module_default.COLORS?.split(", ")??[]),keyId=0;
+function takeKey(){
+  return++keyId
+}
+var startsWithPunctuationRe=/^[*"'ー.,、。，:;：；！？》」•%)(!?\u0EAF\u0E3B\u0E3F\u0E31\u0E32\u0E33\u0E47-\u0E4F\u0E5A-\u0E5F\u0E00-\u0E7F\u3000-\u303F\uFF00-\uFFEF\]]/u;
+function splitString(e){
+  const t=resources.resolve("langCode");
+  return addSpaceAndMap(splitLocale(e,t),t,(e,t)=>e&&(0,import_jsx_runtime.jsx)("span",{
+    children:e
+  },`${e}${t}`))
+}
+function splitArray(e){
+  const t=[];
+  for(let n=0;n<e.length;n++){
+    const r=e[n],a=e[n+1];
+    if("string"!=typeof a||!startsWithPunctuationRe.test(a)){
+      t.push(split(r));
+      continue
+    }
+    const o=splitString(a.slice(1));
+    t.push((0,import_jsx_runtime.jsxs)(import_react.Fragment,{
+      children:[(0,import_jsx_runtime.jsxs)("span",{
+        className:format_text_module_default.nowrap,children:[split(r),a[0]]
+      }),o]
+    },takeKey())),n+=1
+  }
+  return t
+}
+function split(e){
+  return Array.isArray(e)?splitArray(e):"string"==typeof e?(0,import_jsx_runtime.jsx)(import_react.Fragment,{
+    children:splitString(e)
+  },takeKey()):e
+}
+function style(e,...t){
+  return(0,import_jsx_runtime.jsx)("span",{
+    style:t.reduce((n,r)=>{
+      if(Array.isArray(r)){
+        const[e,t]=r;
+        return n[e]=t,n
+      }
+      return console.warn(`Invalid argument ${r} in ${e}: ${t}`),n
+    },{}),children:e
+  },takeKey())
+}
+function className(e,...t){
+  return(0,import_jsx_runtime.jsx)("span",{
+    className:t.filter(e=>"string"==typeof e&&e.length>0).join(" "),children:e
+  },takeKey())
+}
+var color=(e,t)=>["color",t],fontSize=(e,t)=>["fontSize",t],fontWeight=(e,t)=>["fontWeight",t],textDecoration=(e,t)=>["textDecoration",t],bold=e=>["fontWeight","bold"];
+function colorLegacy(e,t){
+  const n=takeKey();
+  return legacyColors.has(String(t))?(0,import_jsx_runtime.jsx)("span",{
+    className:`FormatText_colorLegacy__${t}`,children:e
+  },n):(0,import_jsx_runtime.jsx)("span",{
+    style:{
+      color:`#${t}`
+    },
+    children:e
+  },n)
+}
+var defaultFormatters={
+  class:className,colorLegacy:colorLegacy,bold:bold,split:split,style:style,color:color,fontSize:fontSize,fontWeight:fontWeight,textDecoration:textDecoration
+};
+function applyFunction(e,t,n,r){
+  const a=n.map(t=>{
+    if("string"!=typeof t)return t;
+    const n=t.trim();
+    if(n.startsWith("(")&&n.endsWith(")")){
+      const[t,...a]=n.slice(1,-1).split(" ");
+      return t?applyFunction(e,t,a,r):e
+    }
+    return n.startsWith("'")&&n.endsWith("'")?n.slice(1,-1):n
+  }),o=r[t];
+  return o?o(e,...a):(console.error(`Function ${t} is not registered`),e)
+}
+function applyFunctions(e,t,n){
+  return e.reduce((e,t)=>{
+    const[r,...a]=parseArguments(t.trim());
+    return r?applyFunction(e,r,a,n):e
+  },t)
+}
+function isEnd(e){
+  return!(e>="a"&&e<="z"||e>="A"&&e<="Z"||e>="0"&&e<="9"||"_"===e)
+}
+function resolveAttrParams(e,t){
+  for(let n=0;n<e.length;n++)if("$"===e[n]){
+    let r=n+1;
+    for(;r<e.length&&!isEnd(e[r]);)r++;
+    const a=e.slice(n+1,r),o=t[a];
+    if(o)return resolveAttrParams(e.replace(`$${a}`,String(o)),t)
+  }
+  return e
+}
+function resolveAttrsParams(e,t){
+  const n=[];
+  for(let r=0;r<e.length;r++)n[r]=resolveAttrParams(e[r],t);
+  return n
+}
+var primitives=["number","string","undefined"];
+function render(e,t,n={},r=!0){
+  r&&(keyId=0);
+  const a=[];
+  function o(e){
+    if(primitives.includes(typeof e)){
+      const t=a.at(-1);
+      if("string"==typeof t)return void(a[a.length-1]=t+e)
+    }
+    a.push(e)
+  }
+  for(const i of e)if(i.type===NodeTypes.Text)o(i.value);
+  else if(i.type===NodeTypes.Var)null===n[i.name]||primitives.includes(typeof n[i.name])?o(n[i.name]??`{{${i.name}}}`):a.push((0,import_jsx_runtime.jsx)(import_react.Fragment,{
+    children:n[i.name]
+  },`var-${i.name}-${i.instanceId}`));
+  else if(i.type===NodeTypes.Tag){
+    const e=render(i.children,t,n,!1),r=applyFunctions(resolveAttrsParams(i.attrs,n),e,t);
+    a.push(r)
+  }
+  return a
+}
+function upgradeColorTag(e){
+  return e.replace(/%\(([a-zA-Z0-9]+)_(Open|Start)\)s(.+?)%\(\1_(Close|End)\)s/,"{{@ colorLegacy '$1'}}$3{{/}}").replace(/\{([a-zA-Z0-9]+)_(Open|Start)\}(.+?)\{\1_(Close|End)\}/gi,"{{@ colorLegacy '$1'}}$3{{/}}")
+}
+function upgradeVariables(e){
+  return e.replace(/%\((\w+|\d)\)(?:s|d)?/gi,"{{$1}}").replace(/(?<!\{)\{(\w+|\d)\}/g,"{{$1}}")
+}
+function upgradeSymbols(e){
+  return e.replaceAll("&nbsp;"," ").replaceAll("&zwnbsp;","\ufeff")
+}
+function upgradeLegacy(e){
+  return pipe(e,upgradeSymbols,upgradeColorTag,upgradeVariables)
+}
+var defaultBrackets={
+  start:"{{",end:"}}"
+},
+FormatText=(0,import_react.memo)(function(e){
+  const{
+    brackets:t=defaultBrackets,text:n,params:r,upgradeLegacy:a,fullSize:o,inline:i,formatters:s,split:l,...u
+  }=e,c=(0,import_react.useMemo)(()=>e.upgradeLegacy?upgradeLegacy(e.text):e.text,[e.text,e.upgradeLegacy]),d=(0,import_react.useMemo)(()=>e.formatters?{
+    ...defaultFormatters,...e.formatters
+  }:defaultFormatters,[e.formatters]),f=(0,import_react.useMemo)(()=>parse(l?`{{@ split}}${c}{{/}}`:c,t),[t,c,l]),p=(0,import_react.useMemo)(()=>render(f,d,e.params),[f,d,e.params]),m=clsx(format_text_module_default.base,o&&format_text_module_default.base__fullSize,u.className);
+  return e.inline?(console.warn("[FormatText] using the 'inline' props causes memory leaks due to incorrect working of the 'cohinline' attribute in GF version 1.48.2.3. Can cause client crashes.","Use 'split' prop instead."),(0,import_jsx_runtime.jsx)("p",{
+    ...u,className:m,ref:e=>{
+      e?.setAttribute("cohinline","true")
+    },
+    children:p
+  })):(0,import_jsx_runtime.jsx)("span",{
+    ...u,className:m,children:p
+  })
+});
+function FormatString({
+  path:e,...t
+}){
+  return(0,import_jsx_runtime.jsx)(FormatText,{
+    text:resources.resolve("strings").readOrEmpty(e),...t
+  })
+}
+var undef=()=>{};
 function withResolvePath(e){
   const t=e;
   return(0,import_react.forwardRef)(function(e,n){
@@ -14514,7 +14109,7 @@ ResourceImage=(0,import_react.forwardRef)(function(e,t){
 })),grades={
   iron:"iron",bronze:"bronze",silver:"silver",gold:"gold",enamel:"enamel",prestige:"prestige"
 },
-sizes$5={
+sizes$7={
   xs:"xs",sm:"sm",md:"md",mdLg:"mdLg",lg:"lg",xl:"xl",xxl:"xxl"
 },
 sizesEmblems={
@@ -14523,11 +14118,11 @@ sizesEmblems={
 sizesFonts={
   xs:"6x12",sm:"9x19",md:"16x33",mdLg:"20x41",lg:"23x48",xl:"53x120",xxl:"77x176"
 };
-function icon$8(e,t,n){
+function icon$9(e,t,n){
   return t===grades.prestige?`.c_${sizesEmblems[n]}.${t}`:`.c_${sizesEmblems[n]}.${t}.c_${e}`
 }
-var icon$7="VehiclePrestigeEmblem_icon_940474a9",base__xs="VehiclePrestigeEmblem_base__xs_678b197f",base__sm="VehiclePrestigeEmblem_base__sm_f0368fa3",base__md="VehiclePrestigeEmblem_base__md_63f722e6",base__mdLg="VehiclePrestigeEmblem_base__mdLg_bb48be4b",base__lg="VehiclePrestigeEmblem_base__lg_69373327",base__xl="VehiclePrestigeEmblem_base__xl_3144948a",base__xxl="VehiclePrestigeEmblem_base__xxl_fec732e8",base$20="VehiclePrestigeEmblem_24849b0a",level$1="VehiclePrestigeEmblem_level_8cc4a042",levelIcon__xs="VehiclePrestigeEmblem_levelIcon__xs_d11b6645",levelIcon__sm="VehiclePrestigeEmblem_levelIcon__sm_900b8c7f",levelIcon__md="VehiclePrestigeEmblem_levelIcon__md_914fcef3",levelIcon__mdLg="VehiclePrestigeEmblem_levelIcon__mdLg_cf5f7370",levelIcon__lg="VehiclePrestigeEmblem_levelIcon__lg_2fd402cc",levelIcon__xl="VehiclePrestigeEmblem_levelIcon__xl_8c7e5b4d",levelIcon__xxl="VehiclePrestigeEmblem_levelIcon__xxl_f852cb4e",vehicle_prestige_emblem_module_default={
-  icon:icon$7,base__xs:base__xs,base__sm:base__sm,base__md:base__md,base__mdLg:base__mdLg,base__lg:base__lg,base__xl:base__xl,base__xxl:base__xxl,base:base$20,level:level$1,levelIcon__xs:levelIcon__xs,levelIcon__sm:levelIcon__sm,levelIcon__md:levelIcon__md,levelIcon__mdLg:levelIcon__mdLg,levelIcon__lg:levelIcon__lg,levelIcon__xl:levelIcon__xl,levelIcon__xxl:levelIcon__xxl
+var icon$8="VehiclePrestigeEmblem_icon_940474a9",base__xs="VehiclePrestigeEmblem_base__xs_678b197f",base__sm="VehiclePrestigeEmblem_base__sm_f0368fa3",base__md="VehiclePrestigeEmblem_base__md_63f722e6",base__mdLg="VehiclePrestigeEmblem_base__mdLg_bb48be4b",base__lg="VehiclePrestigeEmblem_base__lg_69373327",base__xl="VehiclePrestigeEmblem_base__xl_3144948a",base__xxl="VehiclePrestigeEmblem_base__xxl_fec732e8",base$25="VehiclePrestigeEmblem_24849b0a",level$1="VehiclePrestigeEmblem_level_8cc4a042",levelIcon__xs="VehiclePrestigeEmblem_levelIcon__xs_d11b6645",levelIcon__sm="VehiclePrestigeEmblem_levelIcon__sm_900b8c7f",levelIcon__md="VehiclePrestigeEmblem_levelIcon__md_914fcef3",levelIcon__mdLg="VehiclePrestigeEmblem_levelIcon__mdLg_cf5f7370",levelIcon__lg="VehiclePrestigeEmblem_levelIcon__lg_2fd402cc",levelIcon__xl="VehiclePrestigeEmblem_levelIcon__xl_8c7e5b4d",levelIcon__xxl="VehiclePrestigeEmblem_levelIcon__xxl_f852cb4e",vehicle_prestige_emblem_module_default={
+  icon:icon$8,base__xs:base__xs,base__sm:base__sm,base__md:base__md,base__mdLg:base__mdLg,base__lg:base__lg,base__xl:base__xl,base__xxl:base__xxl,base:base$25,level:level$1,levelIcon__xs:levelIcon__xs,levelIcon__sm:levelIcon__sm,levelIcon__md:levelIcon__md,levelIcon__mdLg:levelIcon__mdLg,levelIcon__lg:levelIcon__lg,levelIcon__xl:levelIcon__xl,levelIcon__xxl:levelIcon__xxl
 };
 function Level({
   level:e,type:t,size:n,classNames:r,...a
@@ -14544,7 +14139,7 @@ var PrestigeEmblem=(0,import_react.forwardRef)(function({
 },i){
   return e<1?null:(0,import_jsx_runtime.jsxs)("div",{
     ...o,ref:i,className:clsx(vehicle_prestige_emblem_module_default.base,vehicle_prestige_emblem_module_default[`base__${r}`],a?.base),children:[(0,import_jsx_runtime.jsx)(Image$1,{
-      path:`prestige.emblem${icon$8(t,n,r)}`,className:clsx(vehicle_prestige_emblem_module_default.icon,a?.icon)
+      path:`prestige.emblem${icon$9(t,n,r)}`,className:clsx(vehicle_prestige_emblem_module_default.icon,a?.icon)
     }),n!==grades.prestige&&(0,import_jsx_runtime.jsx)(Level,{
       level:e,type:n,size:r,classNames:{
         levelIcon:a?.level
@@ -14552,7 +14147,110 @@ var PrestigeEmblem=(0,import_react.forwardRef)(function({
     })]
   })
 });
-PrestigeEmblem.sizes=sizes$5;
+PrestigeEmblem.sizes=sizes$7;
+var themes={
+  primary:"primary",secondary:"secondary",custom:"custom"
+},
+sizes$6={
+  extraSmall:"extraSmall",small:"small",medium:"medium",large:"large"
+},
+falsyToString=e=>"boolean"==typeof e?`${e}`:0===e?"0":e,cx$4=clsx,cva=(e,t)=>n=>{
+  var r;
+  if(null==(null==t?void 0:t.variants))return cx$4(e,null==n?void 0:n.class,null==n?void 0:n.className);
+  const{
+    variants:a,defaultVariants:o
+  }=t,i=Object.keys(a).map(e=>{
+    const t=null==n?void 0:n[e],r=null==o?void 0:o[e];
+    if(null===t)return null;
+    const i=falsyToString(t)||falsyToString(r);
+    return a[e][i]
+  }),s=n&&Object.entries(n).reduce((e,t)=>{
+    let[n,r]=t;
+    return void 0===r||(e[n]=r),e
+  },{});
+  return cx$4(e,i,null==t||null===(r=t.compoundVariants)||void 0===r?void 0:r.reduce((e,t)=>{
+    let{
+      class:n,className:r,...a
+    }=t;
+    return Object.entries(a).every(e=>{
+      let[t,n]=e;
+      return Array.isArray(n)?n.includes({
+        ...o,...s
+      }[t]):{
+        ...o,...s
+      }[t]===n
+    })?[...e,n,r]:e
+  },[]),null==n?void 0:n.class,null==n?void 0:n.className)
+};
+function defineStyledComponent(e,t,n){
+  const r="object"==typeof t&&"cva"in t?t.cva?.variants:n?.variants,a=r?Object.keys(r):[];
+  if("object"==typeof t){
+    const n=t,r=cva(n.className,n.cva),o=n.element,i=(0,import_react.forwardRef)(function(e,t){
+      return(0,import_react.createElement)(o,{
+        ..."function"==typeof o?e:cleanProps(a,e),ref:t,className:r(e)
+      })
+    });
+    return i.displayName=e,n.cva&&(i.cva=n.cva),i
+  }
+  const o=cva(t,n),i=(0,import_react.forwardRef)(function(t,n){
+    return(0,import_jsx_runtime.jsx)("div",{
+      "data-name":e,...cleanProps(a,t),ref:n,className:o(t)
+    })
+  });
+  return i.displayName=e,n&&(i.cva=n),i
+}
+function cleanProps(e,t){
+  if(0===e.length)return t;
+  const n={
+    ...t
+  };
+  for(const r of e)delete n[r];
+  return n
+}
+var base$24="HeadlessButton_df8536fc",headless_button_module_default={
+  base:base$24
+},
+HeadlessButtonBase=defineStyledComponent("Button",{
+  element:"button",className:headless_button_module_default.base
+}),HeadlessButton=(0,import_react.forwardRef)(function({
+  children:e,onClick:t,onMouseEnter:n,soundTarget:r,disabled:a=!1,silent:o=!1,...i
+},s){
+  const l=useSounds();
+  return(0,import_jsx_runtime.jsx)(HeadlessButtonBase,{
+    ...i,ref:s,onMouseEnter:function(e){
+      a||o||l.play("mouse-enter",{
+        target:r||"Button",original:e
+      }),n?.(e)
+    },
+    onClick:function(e){
+      a||(o||l.play("click",{
+        target:r||"Button",original:e
+      }),t?.(e))
+    },
+    children:e
+  })
+}),background$2="Button_background_98ebcfb8",border$3="Button_border_7e6390d7",overlay$3="Button_overlay_174632c8",base$23="Button_70871946",base__enabled="Button_base__enabled_96634d40",base__disabled$2="Button_base__disabled_b713e04a",content$4="Button_content_298de63f",content__fontAligned="Button_content__fontAligned_66115778",button_module_default={
+  background:background$2,border:border$3,overlay:overlay$3,base:base$23,base__enabled:base__enabled,base__disabled:base__disabled$2,"base__size-extraSmall":"Button_base__size-extraSmall_d0cdb5ed","base__size-small":"Button_base__size-small_fc7095a4","base__size-medium":"Button_base__size-medium_814d61f0","base__size-large":"Button_base__size-large_83da852e","base__theme-primary":"Button_base__theme-primary_8ba55469","base__theme-secondary":"Button_base__theme-secondary_3fa4afc",content:content$4,content__fontAligned:content__fontAligned
+},
+Button=(0,import_react.forwardRef)(function({
+  children:e,size:t=sizes$6.large,theme:n=themes.primary,disabled:r=!1,silent:a=!1,autoAlignContent:o=!0,classNames:i,className:s,...l
+},u){
+  return(0,import_jsx_runtime.jsxs)(HeadlessButton,{
+    ...l,ref:u,silent:a,disabled:r,className:clsx(button_module_default.base,button_module_default[`base__size-${t}`],button_module_default[`base__theme-${n}`],r?button_module_default.base__disabled:button_module_default.base__enabled,s,i?.base),onClick:function(e){
+      r||l.onClick?.(e)
+    },
+    children:[(0,import_jsx_runtime.jsx)("div",{
+      className:clsx(button_module_default.background,i?.background)
+    }),(0,import_jsx_runtime.jsx)("div",{
+      className:clsx(button_module_default.border,i?.border)
+    }),(0,import_jsx_runtime.jsx)("div",{
+      className:clsx(button_module_default.overlay,i?.overlay)
+    }),(0,import_jsx_runtime.jsx)("div",{
+      className:clsx(button_module_default.content,o&&button_module_default.content__fontAligned,i?.content),children:e
+    })]
+  })
+});
+Button.themes=themes,Button.sizes=sizes$6;
 var LIGHT_TANK="lightTank",MEDIUM_TANK="mediumTank",HEAVY_TANK="heavyTank",AT_SPG="AT-SPG",types$2={
   lightTank:LIGHT_TANK,mediumTank:MEDIUM_TANK,heavyTank:HEAVY_TANK,SPG:"SPG","AT-SPG":AT_SPG
 },
@@ -14573,8 +14271,8 @@ WITHOUT_ROLE="without_role",roles={
 mapRoleByKey=[WITHOUT_ROLE,roles.spg,roles.assault,roles.break,roles.universal,roles.support,roles.assault,roles.support,roles.universal,roles.sniper,roles.assault,roles.universal,roles.sniper,roles.support,roles.universal,WITHOUT_ROLE,roles.scout,roles.support],getRoleByKey=e=>mapRoleByKey[e]??"without_role",atSpgRoles=[roles.assault,roles.universal,roles.sniper,roles.support],heavyTankRoles=[roles.assault,roles.break,roles.universal,roles.support],mediumTankRoles=[roles.assault,roles.support,roles.universal,roles.sniper],lightTankRoles=[roles.universal,roles.scout,roles.support],vehicleState={
   DAMAGED:"damaged",EXPLODED:"exploded",DESTROYED:"destroyed",UNDAMAGED:"undamaged",BATTLE:"battle",IN_PREBATTLE:"inPrebattle",LOCKED:"locked",CREW_NOT_FULL:"crewNotFull",AMMO_NOT_FULL:"ammoNotFull",AMMO_NOT_FULL_EVENTS:"ammoNotFullEvents",SERVER_RESTRICTION:"serverRestriction",RENTAL_IS_OVER:"rentalIsOver",IGR_RENTAL_IS_OVER:"igrRentalIsOver",IN_PREMIUM_IGR_ONLY:"inPremiumIgrOnly",GROUP_IS_NOT_READY:"group_is_not_ready",NOT_PRESENT:"notpresent",UNAVAILABLE:"unavailable",UNSUITABLE_TO_QUEUE:"unsuitableToQueue",UNSUITABLE_TO_UNIT:"unsuitableToUnit",WILL_BE_UNLOCKED_IN_BATTLE:"willBeUnlockedInBattle",DEAL_IS_OVER:"dealIsOver",ROTATION_GROUP_UNLOCKED:"rotationGroupUnlocked",ROTATION_GROUP_LOCKED:"rotationGroupLocked",RENTABLE:"rentable",RENTABLE_AGAIN:"rentableAgain",DISABLED:"disabled",SUBSCRIPTION_SUSPENDED:"subscription_suspended",WOT_PLUS_EXCLUSIVE_VEHICLE_DISABLED:"wot_plus_exclusive_vehicle_disabled"
 },
-stateValues=Object.values(vehicleState),base$19="VehicleLevel_3c938122",vehicle_level_module_default={
-  base:base$19
+stateValues=Object.values(vehicleState),base$22="VehicleLevel_3c938122",vehicle_level_module_default={
+  base:base$22
 },
 numberTypes={
   arabic:"arabic",roman:"roman"
@@ -14597,39 +14295,39 @@ var TYPE_PRESTIGE="prestige",directions$1={
 lengths={
   short:"short",medium:"medium",long:"long"
 },
-iconLength=e=>e<10?lengths.short:e<100?lengths.medium:lengths.long,icon$6=(e,t,n)=>"prestige"===t?TYPE_PRESTIGE:`${t}.${iconLength(e)}.c_${n}`,base$18="VehiclePrestigeLevel_a750cce",icon$5="VehiclePrestigeLevel_icon_ef024cc3",base__left="VehiclePrestigeLevel_base__left_4426b46c",level="VehiclePrestigeLevel_level_10f410ba",level__short="VehiclePrestigeLevel_level__short_d1939fb1",base__right="VehiclePrestigeLevel_base__right_4426b46c",level__medium="VehiclePrestigeLevel_level__medium_90aed80f",level__long="VehiclePrestigeLevel_level__long_26625167",base__iron="VehiclePrestigeLevel_base__iron_4426b46c",base__bronze="VehiclePrestigeLevel_base__bronze_4426b46c",base__silver="VehiclePrestigeLevel_base__silver_4426b46c",base__gold$1="VehiclePrestigeLevel_base__gold_4426b46c",base__enamel="VehiclePrestigeLevel_base__enamel_4426b46c",vehicle_prestige_level_module_default={
-  base:base$18,icon:icon$5,base__left:base__left,level:level,level__short:level__short,base__right:base__right,level__medium:level__medium,level__long:level__long,base__iron:base__iron,base__bronze:base__bronze,base__silver:base__silver,base__gold:base__gold$1,base__enamel:base__enamel
+iconLength=e=>e<10?lengths.short:e<100?lengths.medium:lengths.long,icon$7=(e,t,n)=>"prestige"===t?TYPE_PRESTIGE:`${t}.${iconLength(e)}.c_${n}`,base$21="VehiclePrestigeLevel_a750cce",icon$6="VehiclePrestigeLevel_icon_ef024cc3",base__left="VehiclePrestigeLevel_base__left_4426b46c",level="VehiclePrestigeLevel_level_10f410ba",level__short="VehiclePrestigeLevel_level__short_d1939fb1",base__right="VehiclePrestigeLevel_base__right_4426b46c",level__medium="VehiclePrestigeLevel_level__medium_90aed80f",level__long="VehiclePrestigeLevel_level__long_26625167",base__iron="VehiclePrestigeLevel_base__iron_4426b46c",base__bronze="VehiclePrestigeLevel_base__bronze_4426b46c",base__silver="VehiclePrestigeLevel_base__silver_4426b46c",base__gold$1="VehiclePrestigeLevel_base__gold_4426b46c",base__enamel="VehiclePrestigeLevel_base__enamel_4426b46c",vehicle_prestige_level_module_default={
+  base:base$21,icon:icon$6,base__left:base__left,level:level,level__short:level__short,base__right:base__right,level__medium:level__medium,level__long:level__long,base__iron:base__iron,base__bronze:base__bronze,base__silver:base__silver,base__gold:base__gold$1,base__enamel:base__enamel
 };
 function PrestigeLevel({
   level:e,grade:t,type:n,direction:r,classNames:a,...o
 }){
   return e<1||"undefined"===n?null:(0,import_jsx_runtime.jsxs)("div",{
     ...o,className:clsx(vehicle_prestige_level_module_default.base,vehicle_prestige_level_module_default[`base__${n}`],vehicle_prestige_level_module_default[`base__${r}`],o.className,a?.base),children:[(0,import_jsx_runtime.jsx)(Image$1,{
-      path:`prestige.tab.${icon$6(e,n,t)}`,className:clsx(vehicle_prestige_level_module_default.icon,a?.icon)
+      path:`prestige.tab.${icon$7(e,n,t)}`,className:clsx(vehicle_prestige_level_module_default.icon,a?.icon)
     }),"prestige"!==n&&(0,import_jsx_runtime.jsx)("div",{
       className:clsx(vehicle_prestige_level_module_default.level,vehicle_prestige_level_module_default[`level__${iconLength(e)}`],a?.level),children:e
     })]
   })
 }
 PrestigeLevel.direction=directions$1;
-var base$17="VehicleRole_e70537d3",icon__x16x16="VehicleRole_icon__x16x16_f444f190",icon__x24x24="VehicleRole_icon__x24x24_cc02d077",icon__x32x32="VehicleRole_icon__x32x32_2180a099",icon__x48x48="VehicleRole_icon__x48x48_2a01e86c",vehicle_role_module_default={
-  base:base$17,icon__x16x16:icon__x16x16,icon__x24x24:icon__x24x24,icon__x32x32:icon__x32x32,icon__x48x48:icon__x48x48
+var base$20="VehicleRole_e70537d3",icon__x16x16="VehicleRole_icon__x16x16_f444f190",icon__x24x24="VehicleRole_icon__x24x24_cc02d077",icon__x32x32="VehicleRole_icon__x32x32_2180a099",icon__x48x48="VehicleRole_icon__x48x48_2a01e86c",vehicle_role_module_default={
+  base:base$20,icon__x16x16:icon__x16x16,icon__x24x24:icon__x24x24,icon__x32x32:icon__x32x32,icon__x48x48:icon__x48x48
 },
-sizes$4={
+sizes$5={
   x16x16:"x16x16",x24x24:"x24x24",x32x32:"x32x32",x48x48:"x48x48"
 },
-images=resources.resolve("images"),VehicleRole=(0,import_react.forwardRef)(function({
-  roleKey:e,size:t=sizes$4.x24x24,classNames:n,...r
+images$1=resources.resolve("images"),VehicleRole=(0,import_react.forwardRef)(function({
+  roleKey:e,size:t=sizes$5.x24x24,classNames:n,...r
 },a){
-  const o=useUpscale(t,sizes$4.x32x32);
+  const o=useUpscale(t,sizes$5.x32x32);
   return(0,import_jsx_runtime.jsx)("div",{
     ...r,ref:a,className:clsx(vehicle_role_module_default.base,n?.base),children:(0,import_jsx_runtime.jsx)("img",{
-      className:clsx(vehicle_role_module_default[`icon__${t}`],n?.icon),src:images.readOrEmpty(`vehicleRoles.${o}.${e}`)
+      className:clsx(vehicle_role_module_default[`icon__${t}`],n?.icon),src:images$1.readOrEmpty(`vehicleRoles.${o}.${e}`)
     })
   })
 });
-VehicleRole.sizes=sizes$4;
-var sizes$3={
+VehicleRole.sizes=sizes$5;
+var sizes$4={
   x24x24:"x24x24",x48x48:"x48x48",x64x64:"x64x64",x96x96:"x96x96"
 },
 upscaledSizes={
@@ -14638,20 +14336,20 @@ upscaledSizes={
 mapTypes={
   [types$2.lightTank]:"light_tank",[types$2.mediumTank]:"medium_tank",[types$2.heavyTank]:"heavy_tank",[types$2.SPG]:"spg",[types$2["AT-SPG"]]:"tank_destroyer"
 },
-base$16="VehicleType_30b4aab0",base__x24x24="VehicleType_base__x24x24_a3dc7aa3",base__x48x48="VehicleType_base__x48x48_cb59f57a",base__x64x64="VehicleType_base__x64x64_bb9b890",base__x96x96="VehicleType_base__x96x96_919f9f92",base__premium__x24x24="VehicleType_base__premium__x24x24_92335fef",base__premium__x48x48="VehicleType_base__premium__x48x48_e19c5d21",base__premium__x64x64="VehicleType_base__premium__x64x64_ba9a2a05",base__premium__x96x96="VehicleType_base__premium__x96x96_d837a523",icon$4="VehicleType_icon_b15d2628",vehicle_type_module_default={
-  base:base$16,base__x24x24:base__x24x24,base__x48x48:base__x48x48,base__x64x64:base__x64x64,base__x96x96:base__x96x96,base__premium__x24x24:base__premium__x24x24,base__premium__x48x48:base__premium__x48x48,base__premium__x64x64:base__premium__x64x64,base__premium__x96x96:base__premium__x96x96,icon:icon$4
+base$19="VehicleType_30b4aab0",base__x24x24="VehicleType_base__x24x24_a3dc7aa3",base__x48x48="VehicleType_base__x48x48_cb59f57a",base__x64x64="VehicleType_base__x64x64_bb9b890",base__x96x96$1="VehicleType_base__x96x96_919f9f92",base__premium__x24x24="VehicleType_base__premium__x24x24_92335fef",base__premium__x48x48="VehicleType_base__premium__x48x48_e19c5d21",base__premium__x64x64="VehicleType_base__premium__x64x64_ba9a2a05",base__premium__x96x96="VehicleType_base__premium__x96x96_d837a523",icon$5="VehicleType_icon_b15d2628",vehicle_type_module_default={
+  base:base$19,base__x24x24:base__x24x24,base__x48x48:base__x48x48,base__x64x64:base__x64x64,base__x96x96:base__x96x96$1,base__premium__x24x24:base__premium__x24x24,base__premium__x48x48:base__premium__x48x48,base__premium__x64x64:base__premium__x64x64,base__premium__x96x96:base__premium__x96x96,icon:icon$5
 },
 VehicleType=(0,import_react.forwardRef)(function({
-  type:e,size:t=sizes$3.x48x48,premium:n=!1,fit:r="contain",...a
+  type:e,size:t=sizes$4.x48x48,premium:n=!1,fit:r="contain",...a
 },o){
-  const i=useUpscale(sizes$3[t],upscaledSizes[t]);
+  const i=useUpscale(sizes$4[t],upscaledSizes[t]);
   return(0,import_jsx_runtime.jsx)(Image$1,{
     ...a,ref:o,fit:r,className:clsx(vehicle_type_module_default.base,n?vehicle_type_module_default[`base__premium__${t}`]:vehicle_type_module_default[`base__${t}`],a.className),path:`ui_kit.vehicle_type.${i}.${n?"premium_":""}${normalizeResource(mapTypes[e])}_${i}`
   })
 });
-VehicleType.types=types$2,VehicleType.sizes=sizes$3;
-var base$15="VehicleInfo_1732f1f0",name="VehicleInfo_name_3989ca04",name__premium="VehicleInfo_name__premium_258b3b93",vehicle_info_module_default={
-  base:base$15,name:name,name__premium:name__premium
+VehicleType.types=types$2,VehicleType.sizes=sizes$4;
+var base$18="VehicleInfo_1732f1f0",name="VehicleInfo_name_3989ca04",name__premium="VehicleInfo_name__premium_258b3b93",vehicle_info_module_default={
+  base:base$18,name:name,name__premium:name__premium
 },
 VehicleName=defineStyledComponent("VehicleName",vehicle_info_module_default.name,{
   variants:{
@@ -14665,7 +14363,309 @@ VehicleName=defineStyledComponent("VehicleName",vehicle_info_module_default.name
   })
 });
 VehicleInfo.Prestige=PrestigeLevel,VehicleInfo.Level=VehicleLevel,VehicleInfo.Type=VehicleType,VehicleInfo.Name=VehicleName,VehicleInfo.Role=VehicleRole;
-var UNKNOWN_NATION="none",list=["ussr","germany","usa","china","france","uk","japan","czech","sweden","poland","italy"],nationById=e=>list[e]??"none",Context$1=(0,import_react.createContext)(void 0);
+var DEFAULT_NAME_KEYFRAME="Point",THRESHOLD=.02;
+function createLoop(e){
+  let t=0;
+  return[function n(){
+    e(),t=requestAnimationFrame(n)
+  },function(){
+    cancelAnimationFrame(t)
+  }]
+}
+var VideoForwarded=(0,import_react.forwardRef)(function({
+  src:e,className:t,autoplay:n=!1,style:r,loop:a=!1,isPrebufferKeyframes:o,keyframesNameConfig:i,onClick:s,...l
+},u){
+  const c=u,d=(0,import_react.useRef)(null);
+  return useMount(()=>{
+    let e=!1;
+    return events$2.onDisplayChanged((t,n)=>{
+      const r=d.current;
+      r&&(n===displayStatus$1.hidden?(e=r.paused,r.pause()):e||n!==displayStatus$1.shown||r.play())
+    })
+  }),useMount(()=>{
+    let e=!1;
+    return onMinimize$1(t=>{
+      const n=d.current;
+      n&&(t?(e=n.paused,n.pause()):e||n.play())
+    })
+  }),(0,import_react.useEffect)(()=>createLayoutReadyInEffect(()=>{
+    const e=d.current;
+    if(!c||!e||!o)return void(e?.cohFastSeek&&(e.cohFastSeek=!1));
+    const t=e.cohGetKeyframeTimestamps?e.cohGetKeyframeTimestamps():[];
+    t.length>0?(e.cohFastSeek=!0,t.map(t=>{
+      e?.cohPrebufferKeyframe&&e.cohPrebufferKeyframe(t)
+    })):console.warn("Can't prebuffered keyframes, keyframes was not found")
+  }),[o,c]),(0,import_react.useEffect)(()=>{
+    if(c&&d.current){
+      const e={
+        changeTimeHandlers:[],changeKeyframeHandlers:[],changeTimeLoop:noop$2
+      },
+      t=()=>{
+        let t=0;
+        const[n,r]=createLoop(()=>{
+          if(d.current){
+            const{
+              currentTime:n,duration:r
+            }=d.current;
+            if(t!==n&&(e.changeTimeHandlers.forEach(e=>e({
+              currentTime:n,duration:r
+            })),t=n),d.current.paused||!c||!o)return;
+            const a=d.current.cohGetKeyframeTimestamps?d.current.cohGetKeyframeTimestamps():[];
+            a.forEach((t,r)=>{
+              void 0!==a[r]&&n>a[r]-THRESHOLD&&n<a[r]&&e.changeKeyframeHandlers.forEach(e=>{
+                const n=Object.keys(i??{})[r];
+                return e({
+                  time:t,name:`${i?n:`${DEFAULT_NAME_KEYFRAME}_${r}`}`
+                })
+              })
+            })
+          }
+        });
+        return n(),r
+      };
+      e.changeTimeLoop=t();
+      const n=t=>(e.changeTimeHandlers.push(t),()=>{
+        const{
+          changeTimeHandlers:n
+        }=e,r=n.indexOf(t);
+        r<0?console.warn("Can't unsubscribe changeTimeHandler, this reference was not found"):n.splice(r,1)
+      }),r=t=>(e.changeKeyframeHandlers.push(t),()=>{
+        const{
+          changeKeyframeHandlers:n
+        }=e,r=n.indexOf(t);
+        r<0?console.warn("Can't unsubscribe changeKeyframeHandlers, this reference was not found"):n.splice(r,1)
+      }),a=()=>d.current?.currentTime,s=()=>d.current?.duration,l=e=>{
+        d.current&&(d.current.currentTime=clamp$1(0,d.current.duration,e))
+      },
+      u=()=>d.current?.play(),f=()=>d.current?.pause(),p=()=>{
+        f(),l(0)
+      },
+      m=()=>d.current?.cohGetKeyframeTimestamps?d.current.cohGetKeyframeTimestamps():[],_=e=>{
+        l(e),u()
+      },
+      h=e=>{
+        l(e),f()
+      },
+      g=()=>{
+        e.changeTimeHandlers=[],e.changeKeyframeHandlers=[],e.changeTimeLoop?.()
+      },
+      b=(e,t)=>(d.current?.addEventListener(e,t),()=>d.current?.removeEventListener(e,t)),v=(e,t)=>(d.current?.removeEventListener(e,t),()=>d.current?.removeEventListener(e,t));
+      return c.current={
+        on:b,off:v,play:u,pause:f,stop:p,cleanup:g,getCurrentTime:a,getDuration:s,getCachedKeyframes:m,goToAndPlay:_,goToAndStop:h,setCurrentTime:l,domRef:d.current,onChangeTime:n,onKeyframes:r
+      },
+      ()=>{
+        g(),c.current=null
+      }
+    }
+  },[i,c,o]),(0,import_react.useEffect)(()=>{
+    d.current&&n&&d.current.play()
+  },[n,a]),useUnmount(()=>{
+    d.current?.pause()
+  }),(0,import_jsx_runtime.jsx)("video",{
+    src:e,className:t,style:r,loop:a,ref:d,onClick:s,...l
+  })
+}),Video=(0,import_react.memo)(VideoForwarded),base$17="CloseButton_7488a1b8",base__medium="CloseButton_base__medium_97d04067",base__small$2="CloseButton_base__small_c1b29bae",base__extraSmall="CloseButton_base__extraSmall_f52764c1",base__x96x96="CloseButton_base__x96x96_8157b84d",base__x32x32="CloseButton_base__x32x32_6466ea31",close_button_module_default={
+  base:base$17,base__medium:base__medium,base__small:base__small$2,base__extraSmall:base__extraSmall,base__x96x96:base__x96x96,base__x32x32:base__x32x32
+},
+sizes$3={
+  medium:"medium",small:"small",extraSmall:"extraSmall"
+},
+upscaleImageSizes={
+  [sizes$3.medium]:"x96x96",[sizes$3.small]:sizes$3.medium,[sizes$3.extraSmall]:"x32x32"
+};
+function CloseButton({
+  size:e=sizes$3.medium,hoverSound:t=sounds$1.highlight,clickSound:n=sounds$1.click,className:r,onHover:a,onClose:o
+}){
+  const i=useUpscale(close_button_module_default[`base__${e}`],close_button_module_default[`base__${upscaleImageSizes[e]}`]);
+  return(0,import_jsx_runtime.jsx)("div",{
+    className:(0,import_classnames.default)(close_button_module_default.base,i,r),onMouseEnter:()=>{
+      play$1.sound(t),a?.()
+    },
+    onClick:()=>{
+      play$1.sound(n),o()
+    }
+  })
+}
+CloseButton.size=sizes$3;
+var RewardType$1=function(e){
+  return e.Items="items",e.Equipment="equipment",e.Xp="xp",e.XpFactor="xpFactor",e.Blueprints="blueprints",e.BlueprintsAny="blueprintsAny",e.Goodies="goodies",e.Berths="berths",e.Slots="slots",e.Tokens="tokens",e.CrewSkins="crewSkins",e.CrewBooks="crewBooks",e.Customizations="customizations",e.CreditsFactor="creditsFactor",e.Tankman="tankman",e.Tankwoman="tankwoman",e.TankmenXp="tankmenXP",e.TankmenXpFactor="tankmenXPFactor",e.FreeXpFactor="freeXPFactor",e.BattleToken="battleToken",e.PremiumUniversal="premium_universal",e.Gold="gold",e.Credits="credits",e.Crystal="crystal",e.FreeXp="freeXP",e.Premium="premium",e.PremiumPlus="premium_plus",e.BattlePassPoints="battlePassPoints",e.BattlePassSelectToken="battlePassSelectToken",e.StyleProgressToken="styleProgressToken",e.TmanToken="tmanToken",e.NaturalCover="naturalCover",e.BpCoin="bpcoin",e.BattlaPassFinalAchievement="dossier_achievement",e.BattleBadge="dossier_badge",e.BonusX5="battle_bonus_x5",e.CrewBonusX3="crew_bonus_x3",e.Vehicles="vehicles",e.EpicSelectToken="epicSelectToken",e.Comp7TokenWeeklyReward="comp7TokenWeeklyReward",e.DeluxeGift="deluxe_gift",e.BattleBoosterGift="battleBooster_gift",e.OptionalDevice="optionalDevice",e.EquipCoin="equipCoin",e.LootBox="lootBox",e.BrCoin="brcoin",e.Pet="pet",e
+}({}),ImageSize$1=function(e){
+  return e.Big="big",e.Small="small",e.Mini="mini",e.S600x450="s600x450",e.S400x300="s400x300",e.S296x222="s296x222",e.S232x174="s232x174",e.S180x135="s180x135",e.S128x100="s128x100",e.S80x80="s80x80",e.S64x64="s64x64",e.S48x48="s48x48",e.S24x24="s24x24",e.S300x300="s300x300",e.S450x450="s450x450",e
+}({}),ValueTypes$1=function(e){
+  return e.MULTI="multi",e.CURRENCY="currency",e.PREMIUM_PLUS="premium_plus",e.NUMBER="number",e.STRING="string",e
+}({}),Specials$1=function(e){
+  return e.ATTACHMENT_RARE="rare",e.ATTACHMENT_EPIC="epic",e.ATTACHMENT_LEGENDARY="legendary",e.BATTLE_BOOSTER="battleBooster",e.BATTLE_BOOSTER_REPLACE="battleBoosterReplace",e.BUILT_IN_EQUIPMENT="builtInEquipment",e.EQUIPMENT_PLUS="equipmentPlus",e.EQUIPMENT_TROPHY_BASIC="equipmentTrophyBasic",e.EQUIPMENT_TROPHY_UPGRADED="equipmentTrophyUpgraded",e.EQUIPMENT_MODERNIZED_UPGRADED_1="equipmentModernized_1",e.EQUIPMENT_MODERNIZED_UPGRADED_2="equipmentModernized_2",e.EQUIPMENT_MODERNIZED_UPGRADED_3="equipmentModernized_3",e.PROGRESSION_STYLE_UPGRADED_1="progressionStyleUpgraded_1",e.PROGRESSION_STYLE_UPGRADED_2="progressionStyleUpgraded_2",e.PROGRESSION_STYLE_UPGRADED_3="progressionStyleUpgraded_3",e.PROGRESSION_STYLE_UPGRADED_4="progressionStyleUpgraded_4",e.PROGRESSION_STYLE_UPGRADED_5="progressionStyleUpgraded_5",e.PROGRESSION_STYLE_UPGRADED_6="progressionStyleUpgraded_6",e
+}({}),HighlightClasses$1=function(e){
+  return e.BATTLE_BOOSTER="battleBooster",e
+}({}),OverlayClasses$1=function(e){
+  return e.ATTACHMENT_RARE="rare",e.ATTACHMENT_EPIC="epic",e.ATTACHMENT_LEGENDARY="legendary",e.BATTLE_BOOSTER="battleBooster",e.BATTLE_BOOSTER_REPLACE="battleBoosterReplace",e.BUILT_IN_EQUIPMENT="builtInEquipment",e.EQUIPMENT_PLUS="equipmentPlus",e.EQUIPMENT_TROPHY_BASIC="equipmentTrophyBasic",e.EQUIPMENT_TROPHY_UPGRADED="equipmentTrophyUpgraded",e.EQUIPMENT_MODERNIZED_UPGRADED_1="equipmentModernized_1",e.EQUIPMENT_MODERNIZED_UPGRADED_2="equipmentModernized_2",e.EQUIPMENT_MODERNIZED_UPGRADED_3="equipmentModernized_3",e.PROGRESSION_STYLE_UPGRADED_1="progressionStyleUpgraded_1",e.PROGRESSION_STYLE_UPGRADED_2="progressionStyleUpgraded_2",e.PROGRESSION_STYLE_UPGRADED_3="progressionStyleUpgraded_3",e.PROGRESSION_STYLE_UPGRADED_4="progressionStyleUpgraded_4",e.PROGRESSION_STYLE_UPGRADED_5="progressionStyleUpgraded_5",e.PROGRESSION_STYLE_UPGRADED_6="progressionStyleUpgraded_6",e
+}({}),multiValueTypes$1=[RewardType$1.Items,RewardType$1.Equipment,RewardType$1.Xp,RewardType$1.XpFactor,RewardType$1.Blueprints,RewardType$1.BlueprintsAny,RewardType$1.Goodies,RewardType$1.Berths,RewardType$1.Slots,RewardType$1.Tokens,RewardType$1.CrewSkins,RewardType$1.CrewBooks,RewardType$1.Customizations,RewardType$1.CreditsFactor,RewardType$1.TankmenXp,RewardType$1.TankmenXpFactor,RewardType$1.FreeXpFactor,RewardType$1.BattleToken,RewardType$1.LootBox,RewardType$1.PremiumUniversal,RewardType$1.NaturalCover,RewardType$1.BpCoin,RewardType$1.BattlePassSelectToken,RewardType$1.BattlaPassFinalAchievement,RewardType$1.BattleBadge,RewardType$1.BonusX5,RewardType$1.CrewBonusX3,RewardType$1.EpicSelectToken,RewardType$1.Comp7TokenWeeklyReward,RewardType$1.DeluxeGift,RewardType$1.BattleBoosterGift,RewardType$1.OptionalDevice,RewardType$1.TmanToken,RewardType$1.Pet],currencyValueTypes$1=[RewardType$1.Gold,RewardType$1.Credits,RewardType$1.Crystal,RewardType$1.FreeXp],numberValueTypes$1=[RewardType$1.BattlePassPoints,RewardType$1.EquipCoin],premiumValueTypes$1=[RewardType$1.PremiumPlus,RewardType$1.Premium],getSizeFolder$1=e=>{
+  switch(e){
+    case ImageSize$1.S600x450:return"c_600x450";
+    case ImageSize$1.S400x300:return"c_400x300";
+    case ImageSize$1.S296x222:return"c_296x222";
+    case ImageSize$1.S232x174:return"c_232x174";
+    case ImageSize$1.Big:return"c_80x80";
+    case ImageSize$1.Small:return"c_48x48";
+    default:return e
+  }
+},
+DOG_TAG_FOLDER_NAMES$1=["engravings","backgrounds"],DOG_TAG_DEFAULT_ICON_NAME$1=["engraving","background"],getDogTypeImage$1=(e,t,n)=>{
+  const r=DOG_TAG_FOLDER_NAMES$1[e];
+  if(r){
+    const a=R.images.gui.maps.icons.dogtags.$dyn(t).$dyn(r),o=a.$dyn(n);
+    return!o&&DOG_TAG_DEFAULT_ICON_NAME$1[e]?`${a.$dyn(DOG_TAG_DEFAULT_ICON_NAME$1[e])}`:`${o}`
+  }
+  return console.error("Unreachable branch: add dogTagType and icon folder for corresponding icon matching"),""
+},
+getRewardImage$1=(e,t=ImageSize$1.Small)=>{
+  const{
+    name:n,type:r,value:a,icon:o,item:i,dogTagType:s
+  }=e,l=t===ImageSize$1.S24x24?ImageSize$1.Small:t,u=getSizeFolder$1(l);
+  switch(n){
+    case"basic":case"plus":return`R.images.gui.maps.icons.quests.bonuses.${l}.${r}_${a}`;
+    case"premium":case"premium_plus":return`R.images.gui.maps.icons.quests.bonuses.${l}.${n}_${a}`;
+    case"items":return`R.images.gui.maps.icons.quests.bonuses.${l}.${i}`;
+    case"blueprints":case"blueprintsAny":case"finalBlueprints":return`R.images.gui.maps.icons.blueprints.fragment.${l}.${o}`;
+    case"tokens":case"lootBox":case"battleToken":return"big"===t?e.iconBig.replace("..","img://gui"):e.iconSmall.replace("..","img://gui");
+    case"customizations":case"styleProgress":case"crewSkins":case"goodies":case"groups":case"tmanToken":case"battlePassSelectToken":case"pet":return`R.images.gui.maps.icons.quests.bonuses.${l}.${o}`;
+    case"crewBooks":return`R.images.gui.maps.icons.crewBooks.books.${l}.${o}`;
+    case"dogTagComponents":return getDogTypeImage$1(s,l,o);
+    case"dossier_badge":return`R.images.gui.maps.icons.quests.bonuses.badges.${u}.${o}`;
+    case"dossier_achievement":return`R.images.gui.maps.icons.achievement.${u}.${o}`;
+    case"xp":case"xpFactor":return`R.images.gui.maps.icons.quests.bonuses.${l}.exp`;
+    case"creditsFactor":return`R.images.gui.maps.icons.quests.bonuses.${l}.credits`;
+    case"tankmenXPFactor":return`R.images.gui.maps.icons.quests.bonuses.${l}.tankmenXP`;
+    case"dailyXPFactor":case"freeXPFactor":return`R.images.gui.maps.icons.quests.bonuses.${l}.freeXP`;
+    case"premiumTank":return`R.images.gui.maps.icons.quests.bonuses.${l}.vehicles`;
+    case"styleProgressToken":return`R.images.gui.maps.icons.quests.bonuses.${l}.style_3d`;
+    case"collectionItem":return`R.images.gui.maps.icons.collectionItems.${u}.${o}`;
+    default:return`R.images.gui.maps.icons.quests.bonuses.${l}.${n}`
+  }
+},
+getRewardTooltipConfig=(e,t)=>({
+  args:e,contentId:t
+}),SIZES_WITH_BOTTOM_HIGHLIGHT$1=[ImageSize$1.Small,ImageSize$1.Big],getBottomHighlight$1=(e,t)=>{
+  if(void 0===t||!SIZES_WITH_BOTTOM_HIGHLIGHT$1.includes(e))return null;
+  switch(t){
+    case Specials$1.BATTLE_BOOSTER:case Specials$1.BATTLE_BOOSTER_REPLACE:return HighlightClasses$1.BATTLE_BOOSTER
+  }
+},
+getOverlay$1=e=>{
+  if(void 0===e)return null;
+  switch(e){
+    case Specials$1.BATTLE_BOOSTER:return OverlayClasses$1.BATTLE_BOOSTER;
+    case Specials$1.BATTLE_BOOSTER_REPLACE:return OverlayClasses$1.BATTLE_BOOSTER_REPLACE;
+    case Specials$1.BUILT_IN_EQUIPMENT:return OverlayClasses$1.BUILT_IN_EQUIPMENT;
+    case Specials$1.EQUIPMENT_PLUS:return OverlayClasses$1.EQUIPMENT_PLUS;
+    case Specials$1.EQUIPMENT_TROPHY_BASIC:return OverlayClasses$1.EQUIPMENT_TROPHY_BASIC;
+    case Specials$1.EQUIPMENT_TROPHY_UPGRADED:return OverlayClasses$1.EQUIPMENT_TROPHY_UPGRADED;
+    case Specials$1.EQUIPMENT_MODERNIZED_UPGRADED_1:return OverlayClasses$1.EQUIPMENT_MODERNIZED_UPGRADED_1;
+    case Specials$1.EQUIPMENT_MODERNIZED_UPGRADED_2:return OverlayClasses$1.EQUIPMENT_MODERNIZED_UPGRADED_2;
+    case Specials$1.EQUIPMENT_MODERNIZED_UPGRADED_3:return OverlayClasses$1.EQUIPMENT_MODERNIZED_UPGRADED_3;
+    case Specials$1.PROGRESSION_STYLE_UPGRADED_1:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_1;
+    case Specials$1.PROGRESSION_STYLE_UPGRADED_2:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_2;
+    case Specials$1.PROGRESSION_STYLE_UPGRADED_3:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_3;
+    case Specials$1.PROGRESSION_STYLE_UPGRADED_4:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_4;
+    case Specials$1.PROGRESSION_STYLE_UPGRADED_5:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_5;
+    case Specials$1.PROGRESSION_STYLE_UPGRADED_6:return OverlayClasses$1.PROGRESSION_STYLE_UPGRADED_6;
+    case Specials$1.ATTACHMENT_RARE:return OverlayClasses$1.ATTACHMENT_RARE;
+    case Specials$1.ATTACHMENT_EPIC:return OverlayClasses$1.ATTACHMENT_EPIC;
+    case Specials$1.ATTACHMENT_LEGENDARY:return OverlayClasses$1.ATTACHMENT_LEGENDARY
+  }
+},
+getFormattedValue$1=(e,t)=>{
+  const n=resources.resolve("intl");
+  if(void 0===e)return null;
+  switch(t){
+    case ValueTypes$1.MULTI:{
+      const t=Number(e);
+      return isFinite(t)&&t>1?`x${Math.floor(t)}`:null
+    }
+    case ValueTypes$1.CURRENCY:case ValueTypes$1.NUMBER:return n.formatNumber(n.numberFormats[0]||"integral",Number(e));
+    case ValueTypes$1.PREMIUM_PLUS:{
+      const t=Number(e);
+      return isNaN(t)?e:null
+    }
+    default:return e
+  }
+},
+base__s24x24="Reward_base__s24x24_954b5cee",base__s48x48$1="Reward_base__s48x48_21f091ec",base__small$1="Reward_base__small_3eddf28d",base__s80x80$1="Reward_base__s80x80_21f091ec",base__big$1="Reward_base__big_e23f2c77",base__s128x100$1="Reward_base__s128x100_1e08e04b",base__s180x135$1="Reward_base__s180x135_93fc57c",base__s232x174$1="Reward_base__s232x174_2904ea89",base__s296x222$1="Reward_base__s296x222_52f0615b",base__s400x300$1="Reward_base__s400x300_a8627e1b",base__s600x450$1="Reward_base__s600x450_e27f3852",base__s300x300="Reward_base__s300x300_b3d79936",base__s450x450="Reward_base__s450x450_8b0abaf7",base$16="Reward_d65e1e12",base__dynamicBox="Reward_base__dynamicBox_45d7782b",tooltipWrapper$1="Reward_tooltipWrapper_75b925a5",icon$4="Reward_icon_e152f13b",overlay$2="Reward_overlay_8cbe65c9",highlight$1="Reward_highlight_f1cd08e0",image__s24x24="Reward_image__s24x24_954b5cee",image__s48x48="Reward_image__s48x48_21f091ec",image__small="Reward_image__small_3eddf28d",image__s80x80="Reward_image__s80x80_21f091ec",image__big="Reward_image__big_e23f2c77",image__s128x100="Reward_image__s128x100_1e08e04b",image__s180x135="Reward_image__s180x135_93fc57c",image__s232x174="Reward_image__s232x174_2904ea89",image__s296x222="Reward_image__s296x222_52f0615b",image__s400x300="Reward_image__s400x300_a8627e1b",image__s600x450="Reward_image__s600x450_e27f3852",image__s300x300="Reward_image__s300x300_b3d79936",image__s450x450="Reward_image__s450x450_8b0abaf7",image$1="Reward_image_810ec3a2",image__fixedBox="Reward_image__fixedBox_e45bdd8a",info$1="Reward_info_26d38c48",info__multi$1="Reward_info__multi_465d34bd",info__credits$1="Reward_info__credits_1643219",info__gold$1="Reward_info__gold_c751be5d",info__crystal$1="Reward_info__crystal_18ccfdd0",info__premiumTank$1="Reward_info__premiumTank_7862152",title$2="Reward_title_fbcf4b5",timer$1="Reward_timer_22ba7b8b",reward_module_default={
+  base__s24x24:base__s24x24,base__s48x48:base__s48x48$1,base__small:base__small$1,base__s80x80:base__s80x80$1,base__big:base__big$1,base__s128x100:base__s128x100$1,base__s180x135:base__s180x135$1,base__s232x174:base__s232x174$1,base__s296x222:base__s296x222$1,base__s400x300:base__s400x300$1,base__s600x450:base__s600x450$1,base__s300x300:base__s300x300,base__s450x450:base__s450x450,base:base$16,base__dynamicBox:base__dynamicBox,tooltipWrapper:tooltipWrapper$1,icon:icon$4,overlay:overlay$2,highlight:highlight$1,image__s24x24:image__s24x24,image__s48x48:image__s48x48,image__small:image__small,image__s80x80:image__s80x80,image__big:image__big,image__s128x100:image__s128x100,image__s180x135:image__s180x135,image__s232x174:image__s232x174,image__s296x222:image__s296x222,image__s400x300:image__s400x300,image__s600x450:image__s600x450,image__s300x300:image__s300x300,image__s450x450:image__s450x450,image:image$1,image__fixedBox:image__fixedBox,info:info$1,info__multi:info__multi$1,info__credits:info__credits$1,info__gold:info__gold$1,info__crystal:info__crystal$1,info__premiumTank:info__premiumTank$1,title:title$2,timer:timer$1
+},
+images=resources.resolve("images"),SIZE_MAP=new Map([[ImageSize$1.S24x24,ImageSize$1.Small],[ImageSize$1.S48x48,ImageSize$1.Small]]),Reward$1=({
+  name:e,image:t,isPeriodic:n=!1,isFixedBoxSize:r=!0,size:a=ImageSize$1.Big,special:o,value:i,valueType:s,title:l,style:u,className:c,classNames:d,tooltipArgs:f,periodicIconTooltipArgs:p
+})=>{
+  const m=SIZE_MAP.has(a)?SIZE_MAP.get(a):a,_=getBottomHighlight$1(a,o),h=getOverlay$1(o),g=getFormattedValue$1(i,s),b=useTooltip({
+    contentId:f?.contentId??0,args:f?.args,resId:f?.resId,decoratorId:f?.decoratorId
+  }),v=useSimpleTooltip({
+    header:p?.header,body:p?.body
+  });
+  return(0,import_jsx_runtime.jsxs)("div",{
+    className:(0,import_classnames.default)(reward_module_default.base,reward_module_default[`base__${a}`],!r&&reward_module_default.base__dynamicBox,c),style:u,...b,children:[(0,import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment,{
+      children:[(0,import_jsx_runtime.jsxs)("div",{
+        className:(0,import_classnames.default)(reward_module_default.image,r?reward_module_default.image__fixedBox:reward_module_default[`image__${a}`],d?.image),children:[_&&(0,import_jsx_runtime.jsx)("div",{
+          className:(0,import_classnames.default)(reward_module_default.highlight,d?.highlight),style:{
+            backgroundImage:`url(${images.readOrEmpty(`quests.bonuses.${m}.${_}_highlight`)})`
+          }
+        }),t&&(0,import_jsx_runtime.jsx)("div",{
+          className:(0,import_classnames.default)(reward_module_default.icon,d?.rewardIcon),style:{
+            backgroundImage:`url(${t})`
+          }
+        }),h&&(0,import_jsx_runtime.jsx)("div",{
+          className:(0,import_classnames.default)(reward_module_default.overlay,d?.overlay),style:{
+            backgroundImage:`url(${images.readOrEmpty(`quests.bonuses.${m}.${h}_overlay`)})`
+          }
+        })]
+      }),g&&(0,import_jsx_runtime.jsx)("div",{
+        className:(0,import_classnames.default)(reward_module_default.info,reward_module_default[`info__${e}`],s===ValueTypes$1.MULTI&&reward_module_default.info__multi,d?.info),children:g
+      }),l&&(0,import_jsx_runtime.jsx)("div",{
+        className:reward_module_default.title,children:l
+      })]
+    }),n&&(0,import_jsx_runtime.jsx)("div",{
+      className:(0,import_classnames.default)(reward_module_default.timer,d?.periodicIcon),...v
+    })]
+  })
+},
+formatters=Object.fromEntries(Object.entries(defaultFormatters).map(([e])=>[e,e=>e]));
+function renderString(e,t={}){
+  const n=parse(e,defaultBrackets);
+  return String(render(n,formatters,t))
+}
+function renderResolvedString(e,t={}){
+  const n=resources.resolve("strings").readOrEmpty(e);
+  return 0===n.length?n:renderString(n,t)
+}
+var base$15="RewardsList_b956755b",base__vertical$1="RewardsList_base__vertical_59db3c9f",reward="RewardsList_reward_fc200613",reward__vertical="RewardsList_reward__vertical_5f09c6e0",boxRewardClassName="RewardsList_boxRewardClassName_882c908d",rewards_list_module_default={
+  base:base$15,base__vertical:base__vertical$1,reward:reward,reward__vertical:reward__vertical,boxRewardClassName:boxRewardClassName
+},
+sizeToDefault={
+  [ImageSize$1.S24x24]:ImageSize$1.Small,[ImageSize$1.S48x48]:ImageSize$1.Small
+},
+Rewards=(0,import_react.memo)(function({
+  data:e,isFixedBoxSize:t,size:n=ImageSize$1.Big,isVertical:r=!1,count:a,classMix:o,rewardItemClassMix:i,boxRewardTooltip:s,boxRewardValue:l,boxRewardClassName:u,boxRewardClassNames:c
+}){
+  const d=resources.resolve("strings"),f=resources.resolve("images"),p="number"==typeof a&&a<e.length?`${f.readOrEmpty(`quests.bonuses.${sizeToDefault[n]??n}.default`)}`:void 0,m=l||renderString(upgradeLegacy(d.readOrEmpty("tooltips.quests.awards.additional.bottom")),{
+    count:e.length-(a||0)
+  });
+  return(0,import_jsx_runtime.jsx)("div",{
+    className:(0,import_classnames.default)(rewards_list_module_default.base,r&&rewards_list_module_default.base__vertical,o),children:void 0!==p?(0,import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment,{
+      children:[e.slice(0,a).map((e,a)=>(0,import_jsx_runtime.jsx)("div",{
+        className:(0,import_classnames.default)(rewards_list_module_default.reward,r&&rewards_list_module_default.reward__vertical,i),children:(0,import_jsx_runtime.jsx)(Reward$1,{
+          size:n,isFixedBoxSize:t,...e
+        })
+      },a)),(0,import_jsx_runtime.jsx)("div",{
+        className:(0,import_classnames.default)(rewards_list_module_default.reward,r&&rewards_list_module_default.reward__vertical,i),children:(0,import_jsx_runtime.jsx)(Reward$1,{
+          name:"more",isFixedBoxSize:t,image:p,size:n,value:m,tooltipArgs:s,className:(0,import_classnames.default)(rewards_list_module_default.boxRewardClassName,u),classNames:c
+        })
+      })]
+    }):e.map((e,a)=>(0,import_jsx_runtime.jsx)("div",{
+      className:(0,import_classnames.default)(rewards_list_module_default.reward,r&&rewards_list_module_default.reward__vertical,i),children:(0,import_jsx_runtime.jsx)(Reward$1,{
+        size:n,isFixedBoxSize:t,...e
+      })
+    },a))
+  })
+}),UNKNOWN_NATION="none",list=["ussr","germany","usa","china","france","uk","japan","czech","sweden","poland","italy"],nationById=e=>list[e]??"none",Context$1=(0,import_react.createContext)(void 0);
 function useHorizontalScroll(){
   const e=(0,import_react.useContext)(Context$1);
   if(!e)throw new Error("useHorizontalScroll must be used within a Scroll.Horizontal.Base component");
@@ -16543,7 +16543,24 @@ function Currency({
   })
 }
 Currency.sizes=sizes,Currency.types=types;
-var CardContext=(0,import_react.createContext)(void 0);
+var base$4="NotificationWrapper_6fe65b7",notification_wrapper_module_default={
+  base:base$4
+},
+NOTIFICATION_WIDTH=288,NOTIFICATION_MIN_HEIGHT=1,NOTIFICATION_MAX_HEIGHT=500,NotificationWrapper=({
+  children:e,ref:t,className:n
+})=>{
+  const r=(0,import_react.useRef)(null),a=288*getScale$2(),o=500*getScale$2();
+  return useMount(()=>{
+    resize$1(a,1)
+  }),useLayoutReady(()=>{
+    if(!r.current)return;
+    const e=r.current.scrollHeight;
+    e>o?(console.warn(`maximum height exceeded ${e}`),resize$1(a,o)):resize$1(a,e)
+  },[]),(0,import_jsx_runtime.jsx)("div",{
+    ref:assignRefs(t?[t,r]:[r]),className:clsx(notification_wrapper_module_default.base,n),children:e
+  })
+},
+CardContext=(0,import_react.createContext)(void 0);
 function useCardContext(){
   const e=(0,import_react.useContext)(CardContext);
   if(!e)throw new Error("Card context must be used only within its provider");
@@ -16563,8 +16580,8 @@ var CardsWrapperContext=(0,import_react.createContext)(null);
 function useCardsWrapperContextOptional(){
   return(0,import_react.useContext)(CardsWrapperContext)
 }
-var CardsWrapperContextProvider=CardsWrapperContext.Provider,base$4="Content_8eaaf71a",content$1="Content_ab8563af",disabledOverlay="Content_disabledOverlay_af87c441",base__multiple="Content_base__multiple_da09528a",base__disabled="Content_base__disabled_da09528a",base__hover$1="Content_base__hover_da09528a",base__selectedHover$1="Content_base__selectedHover_da09528a",base__selected$1="Content_base__selected_da09528a",multipleCorner="Content_multipleCorner_151c26ee",content_module_default={
-  base:base$4,content:content$1,disabledOverlay:disabledOverlay,base__multiple:base__multiple,base__disabled:base__disabled,base__hover:base__hover$1,base__selectedHover:base__selectedHover$1,base__selected:base__selected$1,multipleCorner:multipleCorner
+var CardsWrapperContextProvider=CardsWrapperContext.Provider,base$3="Content_8eaaf71a",content$1="Content_ab8563af",disabledOverlay="Content_disabledOverlay_af87c441",base__multiple="Content_base__multiple_da09528a",base__disabled="Content_base__disabled_da09528a",base__hover$1="Content_base__hover_da09528a",base__selectedHover$1="Content_base__selectedHover_da09528a",base__selected$1="Content_base__selected_da09528a",multipleCorner="Content_multipleCorner_151c26ee",content_module_default={
+  base:base$3,content:content$1,disabledOverlay:disabledOverlay,base__multiple:base__multiple,base__disabled:base__disabled,base__hover:base__hover$1,base__selectedHover:base__selectedHover$1,base__selected:base__selected$1,multipleCorner:multipleCorner
 },
 MULTIPLE_CORNER_SIZE=20,Base$3=defineStyledComponent("Content",content_module_default.base,{
   variants:{
@@ -16605,8 +16622,8 @@ MULTIPLE_CORNER_SIZE=20,Base$3=defineStyledComponent("Content",content_module_de
     })]
   })
 },
-base$3="Status_68bd9bc6",icon="Status_icon_cef4536",base__done="Status_base__done_35b9a31c",base__doneSmall="Status_base__doneSmall_35b9a31c",base__alert="Status_base__alert_35b9a31c",base__alertSmall="Status_base__alertSmall_35b9a31c",line="Status_line_8f933ea7",shadow="Status_shadow_fc30bf98",base__lockedSmall="Status_base__lockedSmall_35b9a31c",glowInner="Status_glowInner_f8eb475a",blur="Status_blur_5675b854",glowBig="Status_glowBig_5954041c",status_module_default={
-  base:base$3,icon:icon,base__done:base__done,base__doneSmall:base__doneSmall,base__alert:base__alert,base__alertSmall:base__alertSmall,line:line,shadow:shadow,base__lockedSmall:base__lockedSmall,glowInner:glowInner,blur:blur,glowBig:glowBig
+base$2="Status_68bd9bc6",icon="Status_icon_cef4536",base__done="Status_base__done_35b9a31c",base__doneSmall="Status_base__doneSmall_35b9a31c",base__alert="Status_base__alert_35b9a31c",base__alertSmall="Status_base__alertSmall_35b9a31c",line="Status_line_8f933ea7",shadow="Status_shadow_fc30bf98",base__lockedSmall="Status_base__lockedSmall_35b9a31c",glowInner="Status_glowInner_f8eb475a",blur="Status_blur_5675b854",glowBig="Status_glowBig_5954041c",status_module_default={
+  base:base$2,icon:icon,base__done:base__done,base__doneSmall:base__doneSmall,base__alert:base__alert,base__alertSmall:base__alertSmall,line:line,shadow:shadow,base__lockedSmall:base__lockedSmall,glowInner:glowInner,blur:blur,glowBig:glowBig
 },
 strings=resources.resolve("strings"),Base$2=defineStyledComponent("Status",status_module_default.base,{
   variants:{
@@ -16648,8 +16665,8 @@ strings=resources.resolve("strings"),Base$2=defineStyledComponent("Status",statu
     })]
   })
 },
-base$2="Card_f0963ece",base__wrapped="Card_base__wrapped_c6eb8737",base__disableMouse="Card_base__disableMouse_5cd80216",base__hover="Card_base__hover_f4c22d1c",base__selected="Card_base__selected_f4c22d1c",base__hoverSelected="Card_base__hoverSelected_43ce242d",card$1="Card_f7ddaa4a",content="Card_content_b6f6a22a",base__active="Card_base__active_f4c22d1c",base__activeHover="Card_base__activeHover_f4c22d1c",base__selectedHover="Card_base__selectedHover_f4c22d1c",centerBorder="Card_centerBorder_8a0f28ae",card_module_default={
-  base:base$2,base__wrapped:base__wrapped,base__disableMouse:base__disableMouse,base__hover:base__hover,base__selected:base__selected,base__hoverSelected:base__hoverSelected,card:card$1,content:content,base__active:base__active,base__activeHover:base__activeHover,base__selectedHover:base__selectedHover,centerBorder:centerBorder
+base$1="Card_f0963ece",base__wrapped="Card_base__wrapped_c6eb8737",base__disableMouse="Card_base__disableMouse_5cd80216",base__hover="Card_base__hover_f4c22d1c",base__selected="Card_base__selected_f4c22d1c",base__hoverSelected="Card_base__hoverSelected_43ce242d",card$1="Card_f7ddaa4a",content="Card_content_b6f6a22a",base__active="Card_base__active_f4c22d1c",base__activeHover="Card_base__activeHover_f4c22d1c",base__selectedHover="Card_base__selectedHover_f4c22d1c",centerBorder="Card_centerBorder_8a0f28ae",card_module_default={
+  base:base$1,base__wrapped:base__wrapped,base__disableMouse:base__disableMouse,base__hover:base__hover,base__selected:base__selected,base__hoverSelected:base__hoverSelected,card:card$1,content:content,base__active:base__active,base__activeHover:base__activeHover,base__selectedHover:base__selectedHover,centerBorder:centerBorder
 },
 Base$1=defineStyledComponent("Card",card_module_default.base,{
   variants:{
@@ -16833,8 +16850,8 @@ var Lines=(0,import_react.memo)(({
       }
     },t))
   })
-}),base$1="CardsWrapper_3b6cc4f6",card="CardsWrapper_card_c7fc9ee7",centerBorderCommon="CardsWrapper_centerBorderCommon_b4b27a11",outerBorderCommon="CardsWrapper_outerBorderCommon_f4887371",cards_wrapper_module_default={
-  base:base$1,card:card,centerBorderCommon:centerBorderCommon,outerBorderCommon:outerBorderCommon
+}),base="CardsWrapper_3b6cc4f6",card="CardsWrapper_card_c7fc9ee7",centerBorderCommon="CardsWrapper_centerBorderCommon_b4b27a11",outerBorderCommon="CardsWrapper_outerBorderCommon_f4887371",cards_wrapper_module_default={
+  base:base,card:card,centerBorderCommon:centerBorderCommon,outerBorderCommon:outerBorderCommon
 },
 Base=defineStyledComponent("CardsWrapper",cards_wrapper_module_default.base),CardsWrapper=(0,import_react.forwardRef)(function({
   children:e,className:t,threshold:n,border:r=borderTypes.contour,enabled:a=!0,cardSelector:o,...i
@@ -16875,23 +16892,7 @@ Base=defineStyledComponent("CardsWrapper",cards_wrapper_module_default.base),Car
   }),(0,import_jsx_runtime.jsx)(Card,{
     className:clsx(cards_wrapper_module_default.card,e,t?.card),classNames:t,...n,ref:r
   })]
-})),base="NotificationWrapper_6fe65b7",notification_wrapper_module_default={
-  base:base
-},
-NOTIFICATION_WIDTH=288,NOTIFICATION_MIN_HEIGHT=1,NOTIFICATION_MAX_HEIGHT=500,NotificationWrapper=({
-  children:e,ref:t,className:n
-})=>{
-  const r=(0,import_react.useRef)(null),a=288*getScale$2(),o=500*getScale$2();
-  return useMount(()=>{
-    resize$1(a,1)
-  }),useLayoutReady(()=>{
-    if(!r.current)return;
-    const e=r.current.scrollHeight;
-    e>o?(console.warn(`maximum height exceeded ${e}`),resize$1(a,o)):resize$1(a,e)
-  },[]),(0,import_jsx_runtime.jsx)("div",{
-    ref:assignRefs(t?[t,r]:[r]),className:clsx(notification_wrapper_module_default.base,n),children:e
-  })
-};
+}));
 export{
-  getVehicleImageKey as $,NUMBERS_ALPHABET as $t,Bar as A,remToPx$1 as An,useSimpleTooltip as At,VehicleInfo as B,intl$2 as Bn,useEvent as Bt,useInput as C,sort as Cn,runView as Ct,Base$7 as D,addEventListener as Dn,useSounds as Dt,usePopover as E,DisposeBuilder as En,initializeModelWithContext as Et,Bar$1 as F,normalizeResource as Fn,config as Ft,VehicleLevel as G,useUpscale as Gt,sizes$3 as H,resources as Hn,usePrevious as Ht,scrollOrientations as I,easings$1 as In,useSpring as It,getRoleByKey as J,require_jsx_runtime as Jt,vehicleState as K,MediaWrapperElement as Kt,useScrollBounding as L,clsx as Ln,useTransition$1 as Lt,Base$8 as M,writeClipboard as Mn,useTimeout as Mt,useScrollByDragElements as N,onRescale as Nn,useScaleState as Nt,Area as O,identity as On,createTargetOverrides as Ot,Area$1 as P,convertNbsp as Pn,animated as Pt,roles as Q,LOWER_ALPHABET as Qt,useHorizontalScroll as R,require_react_dom as Rn,useHandleKeydown as Rt,Input as S,some as Sn,UIProvider as St,Popover as T,keyCodes as Tn,computeds as Tt,VehicleRole as U,useAdaptiveWidth as Ut,VehicleType as V,ImagesRClassProvider as Vn,useScreenSize as Vt,directions$1 as W,useAdaptive as Wt,lightTankRoles as X,comparer as Xt,heavyTankRoles as Y,breakpoints as Yt,mediumTankRoles as Z,isNumber as Zt,Slot as _,forEach as _n,HeadlessButton as _t,types as a,Reaction as an,Image$1 as at,toggleSizes as b,mapNonNullable as bn,themes as bt,ImageSize as c,comparer$1 as cn,FormatString as ct,List as d,makeObservable as dn,getRewardImage$1 as dt,createString as en,isRentVehicle as et,useRouter as f,observable as fn,getRewardTooltipConfig as ft,TruncatedText as g,filter as gn,Button as gt,asMemoized as h,when as hn,require_classnames as ht,sizes as i,makeActions as in,PrestigeEmblem as it,useVerticalScroll as j,sendEvent$2 as jn,useTooltip as jt,DefaultScroll as k,noop$2 as kn,useParamTooltip as kt,VehicleImage as l,configure as ln,FormatText as lt,Sprite as m,runInAction as mn,CloseButton as mt,CardSingle as n,assert as nn,sameTanksRemap as nt,Reward as o,action as on,TextButton as ot,useHoverState as p,reaction as pn,ImageSize$1 as pt,atSpgRoles as q,useMedia as qt,Currency as r,createLayoutReadyInEffect as rn,types$2 as rt,getRewardImage as s,autorun as sn,renderResolvedString as st,NotificationWrapper as t,mapRange as tn,isTypeValidValue as tt,ScrollVelocityGuardContent as u,getDependencyTree as un,Reward$1 as ut,Slottable as v,get as vn,defineStyledComponent as vt,placeholderVisibility as w,iter as wn,JSXBuilder as wt,toggleThemes as x,reduce as xn,Video as xt,Toggle as y,map as yn,sizes$7 as yt,nationById as z,require_react as zn,useIsFirstRender as zt
+  vehicleState as $,NUMBERS_ALPHABET as $t,Bar as A,remToPx$1 as An,useSimpleTooltip as At,renderResolvedString as B,intl$2 as Bn,useEvent as Bt,useInput as C,sort as Cn,runView as Ct,Base$7 as D,addEventListener as Dn,useSounds as Dt,usePopover as E,DisposeBuilder as En,initializeModelWithContext as Et,Bar$1 as F,normalizeResource as Fn,config as Ft,CloseButton as G,useUpscale as Gt,getRewardImage$1 as H,resources as Hn,usePrevious as Ht,scrollOrientations as I,easings$1 as In,useSpring as It,VehicleType as J,require_jsx_runtime as Jt,Video as K,MediaWrapperElement as Kt,useScrollBounding as L,clsx as Ln,useTransition$1 as Lt,Base$8 as M,writeClipboard as Mn,useTimeout as Mt,useScrollByDragElements as N,onRescale as Nn,useScaleState as Nt,Area as O,identity as On,createTargetOverrides as Ot,Area$1 as P,convertNbsp as Pn,animated as Pt,VehicleLevel as Q,LOWER_ALPHABET as Qt,useHorizontalScroll as R,require_react_dom as Rn,useHandleKeydown as Rt,Input as S,some as Sn,UIProvider as St,Popover as T,keyCodes as Tn,computeds as Tt,getRewardTooltipConfig as U,useAdaptiveWidth as Ut,Reward$1 as V,ImagesRClassProvider as Vn,useScreenSize as Vt,ImageSize$1 as W,useAdaptive as Wt,VehicleRole as X,comparer as Xt,sizes$4 as Y,breakpoints as Yt,directions$1 as Z,isNumber as Zt,Slot as _,forEach as _n,Image$1 as _t,types as a,Reaction as an,roles as at,toggleSizes as b,mapNonNullable as bn,TextButton as bt,ImageSize as c,comparer$1 as cn,isTypeValidValue as ct,List as d,makeObservable as dn,Button as dt,createString as en,atSpgRoles as et,useRouter as f,observable as fn,HeadlessButton as ft,TruncatedText as g,filter as gn,PrestigeEmblem as gt,asMemoized as h,when as hn,themes as ht,sizes as i,makeActions as in,mediumTankRoles as it,useVerticalScroll as j,sendEvent$2 as jn,useTooltip as jt,DefaultScroll as k,noop$2 as kn,useParamTooltip as kt,VehicleImage as l,configure as ln,sameTanksRemap as lt,Sprite as m,runInAction as mn,sizes$6 as mt,NotificationWrapper as n,assert as nn,heavyTankRoles as nt,Reward as o,action as on,getVehicleImageKey as ot,useHoverState as p,reaction as pn,defineStyledComponent as pt,VehicleInfo as q,useMedia as qt,Currency as r,createLayoutReadyInEffect as rn,lightTankRoles as rt,getRewardImage as s,autorun as sn,isRentVehicle as st,CardSingle as t,mapRange as tn,getRoleByKey as tt,ScrollVelocityGuardContent as u,getDependencyTree as un,types$2 as ut,Slottable as v,get as vn,FormatString as vt,placeholderVisibility as w,iter as wn,JSXBuilder as wt,toggleThemes as x,reduce as xn,require_classnames as xt,Toggle as y,map as yn,FormatText as yt,nationById as z,require_react as zn,useIsFirstRender as zt
 };

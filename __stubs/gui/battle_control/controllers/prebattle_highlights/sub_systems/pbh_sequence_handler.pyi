@@ -32,6 +32,7 @@ class PbhSequenceHandler(BasePbhSubSystem):
     __stopCallback: Any
     __onStartPbhStageEvent: Any
     __sequenceLayer: Any
+    __isFlowActive: Any
     def __init__(self, readyCallback, stopCallback, onStartPbhStageEvent):
         ...
     def subscribe(self):
@@ -58,6 +59,8 @@ class PbhSequenceHandler(BasePbhSubSystem):
     def __handleStartPbhStageEvent(self):
         ...
     def __handlePbhEndsEvent(self):
+        ...
+    def __notifyAnimationEnded(self):
         ...
     def __handlePbhPetHighlightAnim(self):
         ...

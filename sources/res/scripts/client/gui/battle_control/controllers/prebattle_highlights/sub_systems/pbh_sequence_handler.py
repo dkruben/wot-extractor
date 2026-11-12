@@ -35,6 +35,7 @@ class PbhSequenceHandler(BasePbhSubSystem):
         self.__stopCallback = stopCallback
         self.__onStartPbhStageEvent = onStartPbhStageEvent
         self.__sequenceLayer = None
+        self.__isFlowActive = False
         super(PbhSequenceHandler, self).__init__(readyCallback)
         return
 
@@ -66,9 +67,10 @@ class PbhSequenceHandler(BasePbhSubSystem):
         go, sequenceCMP = self.getSequenceData()
         self.prepareSequences(go, layer)
         sequenceCMP.start()
+        self.__isFlowActive = True
 
     def stopFlow(self):
-        pass
+        self.__notifyAnimationEnded()
 
     def clear(self):
         self.__stopCallback = None
@@ -133,8 +135,14 @@ class PbhSequenceHandler(BasePbhSubSystem):
         _logger.info('[PBH] PrebattleHighlightsController.PbhSequenceHandler __handlePbhEndsEvent')
         if self.__stopCallback is not None:
             self.__stopCallback()
-        g_eventBus.handleEvent(PrebattleEvent(PrebattleEvent.ANIMATION_ENDED, ctx={}), scope=EVENT_BUS_SCOPE.BATTLE)
+        self.__notifyAnimationEnded()
         return
+
+    def __notifyAnimationEnded(self):
+        if not self.__isFlowActive:
+            return
+        self.__isFlowActive = False
+        g_eventBus.handleEvent(PrebattleEvent(PrebattleEvent.ANIMATION_ENDED, ctx={}), scope=EVENT_BUS_SCOPE.BATTLE)
 
     def __handlePbhPetHighlightAnim(self):
         _logger.info('[PBH] PrebattleHighlightsController.PbhSequenceHandler __handlePbhPetHighlightAnim')

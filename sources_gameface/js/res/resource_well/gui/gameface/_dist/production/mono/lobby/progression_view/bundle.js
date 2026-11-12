@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  $ as s,A as t,J as a,M as r,O as n,Q as i,R as l,T as c,X as o,Y as d,Z as _,at as u,b as m,et as h,ft as v,g as A,h as E,j as f,k as x,mt as b,pt as I,st as w,ut as g,y as N
+  $ as s,A as t,J as a,M as r,O as n,Q as i,R as l,T as c,X as o,Y as d,Z as _,at as u,b as m,et as h,ft as v,i as A,j as E,k as f,mt as x,pt as b,r as I,st as w,ut as g,y as N
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
@@ -13,13 +13,13 @@ import{
 }
 from"../chunks/vendor.js";
 /* empty css               */import{
-  t as S
-}
-from"../chunks/enums.js";
-import{
-  n as j,r as C,t as p
+  n as S,r as j,t as C
 }
 from"../chunks/footer.js";
+import{
+  t as p
+}
+from"../chunks/enums.js";
 var T=e(v(),1),D=function(e){
   return e.ACTIVE="ACTIVE",e.NOT_AVAILABLE="NOT_AVAILABLE",e.ALREADY_IN_GARAGE="ALREADY_IN_GARAGE",e.ALREADY_RECEIVED="ALREADY_RECEIVED",e.SOLD_OUT="SOLD_OUT",e.COUNT_NOT_AVAILABLE="COUNT_NOT_AVAILABLE",e
 }({}),[V,y]=r()(({
@@ -28,11 +28,11 @@ var T=e(v(),1),D=function(e){
   const s={
     root:e.object(),rewards:e.arrayClone("rewards")
   },
-  t=f.model(()=>{
+  t=E.model(()=>{
     const e=s.root.get().eventMode;
-    return e===S.TWO_PARALLEL_PRODUCTS?_(s.rewards.get(),({
+    return e===p.TWO_PARALLEL_PRODUCTS?_(s.rewards.get(),({
       rewardId:e
-    })=>e===s.root.get().currentRewardId):e===S.SEQUENTIAL_PRODUCT||e===S.ONE_SERIAL_PRODUCT?_(s.rewards.get(),({
+    })=>e===s.root.get().currentRewardId):e===p.SEQUENTIAL_PRODUCT||e===p.ONE_SERIAL_PRODUCT?_(s.rewards.get(),({
       state:e
     })=>e===D.ACTIVE):void 0
   });
@@ -65,9 +65,9 @@ var T=e(v(),1),D=function(e){
       buttonSize:"large"
     }
   }),_=(0,T.useCallback)(()=>l&&s.contributeResources(l),[s,l]),u=(0,T.useCallback)(()=>l&&s.returnResources(l),[s,l]),m=e.rewards.get(),h=!o(m,e=>e.state===D.SOLD_OUT)&&o(m,e=>[D.ALREADY_IN_GARAGE,D.ALREADY_RECEIVED,D.SOLD_OUT].includes(e.state));
-  return n===S.TWO_PARALLEL_PRODUCTS&&r!==C.Forbidden&&h?(0,k.jsx)(c,{
+  return n===p.TWO_PARALLEL_PRODUCTS&&r!==j.Forbidden&&h?(0,k.jsx)(c,{
     className:O,onClick:s.showHangar,size:d.buttonSize,theme:"primary",children:R.strings.resource_well.mainView.affirmative.button()
-  }):(0,k.jsx)(p,{
+  }):(0,k.jsx)(C,{
     variant:"main",progressionState:r,vehicleInfo:i?.vehicleInfo,onResourcesSelect:_,onHangarShow:s.showHangar,onResourcesReturn:u,eventMode:n,progressValue:t
   })
 }),P={
@@ -96,7 +96,7 @@ G=R.strings.resource_well,Y=w,B=({
       }),(0,k.jsx)("span",{
         className:P.text,children:" "
       }),(0,k.jsx)("div",{
-        className:P.time,children:Y(e,b.DayMonthFullTime)
+        className:P.time,children:Y(e,x.DayMonthFullTime)
       })]
     })
   })
@@ -124,14 +124,14 @@ M="Header_5380af7a",z="Header_subTitle_3e27bdfc",W="Header_title_c278441",$="Hea
       className:g(z,!u().subTitle&&$),children:u().subTitle
     }),(0,k.jsx)("div",{
       className:W,children:u().title
-    }),a===S.SEQUENTIAL_PRODUCT&&(0,k.jsx)(N,{
+    }),a===p.SEQUENTIAL_PRODUCT&&(0,k.jsx)(N,{
       className:F,text:Q.eventInfo.description.sequentialEventMode(),params:{
-        styleTanksCount:I.formatNumber("integral",d.withStyleCount),withoutStyleTanksCount:I.formatNumber("integral",d.withoutStyleCount),br:H
+        styleTanksCount:b.formatNumber("integral",d.withStyleCount),withoutStyleTanksCount:b.formatNumber("integral",d.withoutStyleCount),br:H
       },
       upgradeLegacy:!0
-    }),a===S.TWO_PARALLEL_PRODUCTS&&r!==C.Forbidden&&h(c,e=>e.state===D.ACTIVE&&Boolean(e.vehiclesLeftCount))&&(0,k.jsx)("div",{
+    }),a===p.TWO_PARALLEL_PRODUCTS&&r!==j.Forbidden&&h(c,e=>e.state===D.ACTIVE&&Boolean(e.vehiclesLeftCount))&&(0,k.jsx)("div",{
       className:F,children:Q.eventInfo.description.inParallelEventMode()
-    }),a===S.ONE_SERIAL_PRODUCT&&(0,k.jsx)("div",{
+    }),a===p.ONE_SERIAL_PRODUCT&&(0,k.jsx)("div",{
       className:F,children:Q.eventInfo.description.oneSerialEventMode()
     })]
   })
@@ -150,12 +150,12 @@ M="Header_5380af7a",z="Header_subTitle_3e27bdfc",W="Header_title_c278441",$="Hea
 ee="Counter_counterBackground_8ac9070",se="Counter_202f6dcc",te="Counter_8743d17f",ae="Counter_counter__glow_5214be6e",re="Counter_counter__over_76b00b88",ne="Counter_counterNumber_202f6dcc",ie=({
   vehiclesLeftCount:e,showCounterGlow:s
 })=>(0,k.jsx)("div",{
-  className:se,children:e?(0,k.jsx)(j,{
+  className:se,children:e?(0,k.jsx)(S,{
     body:R.strings.resource_well.tooltips.counter.warning.text(),children:(0,k.jsxs)("div",{
       className:g(te,s&&ae),children:[(0,k.jsx)("div",{
         className:ee
       }),(0,k.jsx)("div",{
-        className:ne,children:I.formatNumber("integral",e)
+        className:ne,children:b.formatNumber("integral",e)
       })]
     })
   }):(0,k.jsxs)("div",{
@@ -182,7 +182,7 @@ ee="Counter_counterBackground_8ac9070",se="Counter_202f6dcc",te="Counter_8743d17
     large:{
       buttonSize:"medium"
     }
-  }),A=i===S.TWO_PARALLEL_PRODUCTS&&u===D.ACTIVE&&o!==d&&l!==C.Forbidden&&Boolean(_),E=[S.ONE_SERIAL_PRODUCT,S.SEQUENTIAL_PRODUCT].includes(i)&&m||_<=1e4,f=i===S.TWO_PARALLEL_PRODUCTS?ue.eventInfo.inParallelEventMode.tanksLeftText():m?ue.eventInfo.top.tanksLeftText():ue.eventInfo.withoutStyle.tanksLeftText();
+  }),A=i===p.TWO_PARALLEL_PRODUCTS&&u===D.ACTIVE&&o!==d&&l!==j.Forbidden&&Boolean(_),E=[p.ONE_SERIAL_PRODUCT,p.SEQUENTIAL_PRODUCT].includes(i)&&m||_<=1e4,f=i===p.TWO_PARALLEL_PRODUCTS?ue.eventInfo.inParallelEventMode.tanksLeftText():m?ue.eventInfo.top.tanksLeftText():ue.eventInfo.withoutStyle.tanksLeftText();
   return(0,k.jsxs)(k.Fragment,{
     children:[(0,k.jsxs)("div",{
       className:g(le,t&&ce,s),children:[(0,k.jsx)(ie,{
@@ -190,7 +190,7 @@ ee="Counter_counterBackground_8ac9070",se="Counter_202f6dcc",te="Counter_8743d17
       }),Boolean(_)&&(0,k.jsx)("div",{
         className:g(oe,E&&de),children:f
       })]
-    }),A&&(0,k.jsx)(j,{
+    }),A&&(0,k.jsx)(S,{
       body:ue.tooltips.mainView.selectVehicle.button(),children:(0,k.jsx)(c,{
         onClick:()=>h(d),size:v.buttonSize,className:_e,theme:"secondary",children:ue.counterStates.activeState.selectVehicleButton()
       })
@@ -201,13 +201,13 @@ ee="Counter_counterBackground_8ac9070",se="Counter_202f6dcc",te="Counter_8743d17
 })=>(0,k.jsx)("div",{
   className:g(ve,s),children:(0,k.jsx)(N,{
     className:he,text:R.strings.resource_well.eventInfo.withoutStyle.blocked.textInfo(),params:{
-      regularRewardVehiclesCount:I.formatNumber("integral",e)
+      regularRewardVehiclesCount:b.formatNumber("integral",e)
     },
     upgradeLegacy:!0
   })
 }),Ee="ErrorState_icon_f0d58ac7",fe="ErrorState_c264cc6b",Re=({
   className:e
-})=>(0,k.jsx)(j,{
+})=>(0,k.jsx)(S,{
   body:R.strings.resource_well.tooltips.counter.error.text(),children:(0,k.jsx)("div",{
     className:g(fe,e),children:(0,k.jsx)("div",{
       className:Ee
@@ -232,7 +232,7 @@ ee="Counter_counterBackground_8ac9070",se="Counter_202f6dcc",te="Counter_8743d17
           className:we,vehiclesLeftCount:a
         });
         default:{
-          const a=[S.SEQUENTIAL_PRODUCT,S.ONE_SERIAL_PRODUCT].includes(s);
+          const a=[p.SEQUENTIAL_PRODUCT,p.ONE_SERIAL_PRODUCT].includes(s);
           return(0,k.jsx)(me,{
             className:g(xe,a&&be),reward:e,disabled:t
           })
@@ -286,7 +286,7 @@ Le="VehicleDust_27e6230e",Se="VehicleDust_base__state--show_b8954185",je="Vehicl
       }),(0,k.jsx)(m.Name,{
         className:Ye,children:e.vehicleName
       })]
-    }),[S.SEQUENTIAL_PRODUCT,S.ONE_SERIAL_PRODUCT].includes(i)&&(0,k.jsx)("div",{
+    }),[p.SEQUENTIAL_PRODUCT,p.ONE_SERIAL_PRODUCT].includes(i)&&(0,k.jsx)("div",{
       className:Me,children:t?(0,k.jsx)(n,{
         contentId:R.views.resource_well.mono.lobby.tooltips.serial_number_tooltip("resId"),children:(0,k.jsxs)("div",{
           className:ze,children:[(0,k.jsx)("div",{
@@ -314,7 +314,7 @@ He=R.images.resource_well.gui.maps.icons,Qe=R.strings.resource_well,qe=L(functio
     className:Fe.base,children:i(a,(e,a)=>{
       const{
         vehiclesLeftCount:n,rewardId:i,state:l
-      }=e,c=[D.ALREADY_RECEIVED,D.ALREADY_IN_GARAGE].includes(l),o=Boolean(n)&&l===D.ACTIVE&&r===i,d=Boolean(n)&&l===D.ACTIVE&&!r||D.ACTIVE&&r===i||c,_=!c&&0===n,u=t===S.TWO_PARALLEL_PRODUCTS&&Boolean(r)&&r!==i&&![D.ALREADY_IN_GARAGE,D.ALREADY_RECEIVED].includes(l),m=_||u;
+      }=e,c=[D.ALREADY_RECEIVED,D.ALREADY_IN_GARAGE].includes(l),o=Boolean(n)&&l===D.ACTIVE&&r===i,d=Boolean(n)&&l===D.ACTIVE&&!r||D.ACTIVE&&r===i||c,_=!c&&0===n,u=t===p.TWO_PARALLEL_PRODUCTS&&Boolean(r)&&r!==i&&![D.ALREADY_IN_GARAGE,D.ALREADY_RECEIVED].includes(l),m=_||u;
       return(0,k.jsxs)(T.Fragment,{
         children:[(0,k.jsx)(ke,{
           isVehicleActive:d,isLightsActive:o,activeVehicleImageSrc:He.tanksBg.$dyn(`tank_${a}_active`),defaultVehicleImageSrc:He.tanksBg.$dyn(`tank_${a}_default`),lightsImageSrc:He.tanksBg.$dyn(`tank_${a}_shine`)
@@ -323,7 +323,7 @@ He=R.images.resource_well.gui.maps.icons,Qe=R.strings.resource_well,qe=L(functio
             base:Fe[`index--${a}`],parts:Fe.dustParts,dust:Fe.dust
           }
         }),(0,k.jsxs)("div",{
-          className:g(Fe[`index--${a}`],Fe.vehicleInfoWrapper),children:[!c&&(0,k.jsx)(E,{
+          className:g(Fe[`index--${a}`],Fe.vehicleInfoWrapper),children:[!c&&(0,k.jsx)(I,{
             className:Fe.preview,type:"preview",onClick:()=>s.preview(e.rewardId),children:(0,k.jsx)("div",{
               className:Fe.previewLabel,children:Qe.mainView.preview.label()
             })
@@ -356,7 +356,7 @@ He=R.images.resource_well.gui.maps.icons,Qe=R.strings.resource_well,qe=L(functio
     })]
   })
 });
-t((0,k.jsx)(x,{
+t((0,k.jsx)(f,{
   children:(0,k.jsx)(V,{
     children:(0,k.jsx)(ss,{})
   })

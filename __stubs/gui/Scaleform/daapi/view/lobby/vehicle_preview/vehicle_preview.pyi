@@ -89,7 +89,6 @@ class VehiclePreview(LobbySelectableView, VehiclePreviewMeta):
     __style: Any
     __outfit: Any
     __subscriptions: Any
-    __unmodifiedItemsPack: Any
     _heroInteractive: Any
     __haveCustomCrew: Any
     __obtainingMethod: Any

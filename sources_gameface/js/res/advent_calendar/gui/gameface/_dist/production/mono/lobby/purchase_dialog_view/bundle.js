@@ -4,19 +4,19 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  D as s,E as a,T as r,Tt as c,U as t,at as l,f as n,h as o,k as i,m as d,rt as u,xt as p
+  C as s,D as a,T as r,Tt as c,U as t,_ as l,at as n,k as o,p as i,rt as d,w as u,xt as p
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
 import{
-  t as m
+  n as m
 }
 from"../chunks/vendor.js";
 import{
-  n as g,t as _
+  n as _,t as g
 }
 from"../chunks/balance.js";
-var[b,h]=i("AdventCalednarPurchaseDialogModel")(({
+var[b,h]=o("AdventCalednarPurchaseDialogModel")(({
   observableModel:e
 })=>({
   ...e.primitives(["dayId","currentResource","price","notEnoughResource","balanceCurrencyValue","isWalletAvailable","currencyTooltipId"])
@@ -24,14 +24,14 @@ var[b,h]=i("AdventCalednarPurchaseDialogModel")(({
   externalModel:e
 })=>({
   close:e.createCallbackNoArgs("onCancel"),accept:e.createCallbackNoArgs("onAccept")
-})),v="Footer_buttons_b9d265f2",j="Footer_buttons__notEnough_4ef8895d",x="Footer_button_fe8f1050",y="Footer_separator_ca6ad547",N="Footer_title_e93267fa",f="Footer_subTitle_7454c09a",A="Footer_alertIcon_8f0e5ff",z=e(l(),1),C=c.resolve("strings"),E=m(()=>{
+})),v="Footer_buttons_b9d265f2",j="Footer_buttons__notEnough_4ef8895d",x="Footer_button_fe8f1050",y="Footer_separator_ca6ad547",N="Footer_title_e93267fa",f="Footer_subTitle_7454c09a",A="Footer_alertIcon_8f0e5ff",z=e(n(),1),C=c.resolve("strings"),E=m(()=>{
   const{
     model:e,controls:s
-  }=h(),a=e.isWalletAvailable.get(),r=u({
-    buttonSize:o.sizes.medium
+  }=h(),a=e.isWalletAvailable.get(),r=d({
+    buttonSize:u.sizes.medium
   },{
     large:{
-      buttonSize:o.sizes.large
+      buttonSize:u.sizes.large
     }
   });
   return e.notEnoughResource.get()?(0,z.jsxs)(z.Fragment,{
@@ -44,59 +44,59 @@ var[b,h]=i("AdventCalednarPurchaseDialogModel")(({
     }),(0,z.jsx)("div",{
       className:f,children:C.readOrEmpty("R.strings.advent_calendar.purchaseView.notEnoughCurrency.subTitle")
     }),(0,z.jsx)("div",{
-      className:p(v,j),children:(0,z.jsx)(o,{
+      className:p(v,j),children:(0,z.jsx)(u,{
         theme:"secondary",size:r.buttonSize,onClick:s.close,className:x,children:C.readOrEmpty("R.strings.advent_calendar.purchaseView.cancel")
       })
     })]
   }):(0,z.jsxs)("div",{
-    className:v,children:[(0,z.jsx)(g,{
+    className:v,children:[(0,z.jsx)(_,{
       tooltipArgs:{
         body:R.strings.advent_calendar.server_error()
       },
-      disabled:a,children:(0,z.jsx)(o,{
+      disabled:a,children:(0,z.jsx)(u,{
         size:r.buttonSize,onClick:s.accept,disabled:!a,className:x,children:C.readOrEmpty("R.strings.advent_calendar.purchaseView.open")
       })
-    }),(0,z.jsx)(o,{
+    }),(0,z.jsx)(u,{
       theme:"secondary",size:r.buttonSize,onClick:s.close,className:x,children:C.readOrEmpty("R.strings.advent_calendar.purchaseView.cancel")
     })]
   })
-}),k="Navigation_close_6db0c433",V=m(()=>{
+}),k="Navigation_close_6db0c433",w=m(()=>{
   const{
     controls:e
   }=h();
-  return(0,z.jsx)(d,{
+  return(0,z.jsx)(i,{
     onClose:e.close,className:k
   })
-}),w="App_9f64e833",F="App_balancePanel_9bceebfc",S="App_content_e154287a",T="App_title_b5f9b4b0",I="App_separator_1c92eefa",O="App_ice_889c18d5",W="App_price_46993a6f",M=c.resolve("strings"),D=m(()=>{
+}),V="App_9f64e833",F="App_balancePanel_9bceebfc",S="App_content_e154287a",T="App_title_b5f9b4b0",I="App_separator_1c92eefa",O="App_ice_889c18d5",W="App_price_46993a6f",M=c.resolve("strings"),D=m(()=>{
   const{
-    model:e,controls:s
-  }=h(),a=u({
-    currencySize:n.sizes.large
+    model:e,controls:a
+  }=h(),r=d({
+    currencySize:s.sizes.large
   },{
     large:{
-      currencySize:n.sizes.extraLarge
+      currencySize:s.sizes.extraLarge
     }
   });
-  return t(s.close),(0,z.jsxs)("div",{
-    className:w,children:[(0,z.jsx)("div",{
+  return t(a.close),(0,z.jsxs)("div",{
+    className:V,children:[(0,z.jsx)("div",{
       className:O
-    }),(0,z.jsx)(_,{
+    }),(0,z.jsx)(g,{
       currencyName:e.currentResource.get(),balanceCurrencyValue:e.balanceCurrencyValue.get(),isWalletAvailable:e.isWalletAvailable.get(),currencyTooltipId:e.currencyTooltipId.get(),className:F
-    }),(0,z.jsx)(V,{}),(0,z.jsxs)("div",{
-      className:S,children:[(0,z.jsx)(r,{
+    }),(0,z.jsx)(w,{}),(0,z.jsxs)("div",{
+      className:S,children:[(0,z.jsx)(l,{
         text:M.readOrEmpty("R.strings.advent_calendar.purchaseView.title"),params:{
           day:e.dayId.get(),color:"#ffe4c0"
         },
         className:T
       }),(0,z.jsx)("div",{
         className:I
-      }),(0,z.jsx)(n,{
-        type:e.currentResource.get(),reverse:!0,enough:!e.notEnoughResource.get()&&e.isWalletAvailable.get(),size:a.currencySize,className:W,children:e.price.get()
+      }),(0,z.jsx)(s,{
+        type:e.currentResource.get(),reverse:!0,enough:!e.notEnoughResource.get()&&e.isWalletAvailable.get(),size:r.currencySize,className:W,children:e.price.get()
       }),(0,z.jsx)(E,{})]
     })]
   })
 });
-s((0,z.jsx)(a,{
+a((0,z.jsx)(r,{
   children:(0,z.jsx)(b,{
     children:(0,z.jsx)(D,{})
   })

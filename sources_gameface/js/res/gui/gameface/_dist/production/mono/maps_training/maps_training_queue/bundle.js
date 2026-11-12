@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  A as s,C as a,D as i,F as r,G as n,S as t,Y as o,at as c,f as l,it as u,n as p,nt as d,q as m,w as _,x as T
+  A as s,C as a,D as i,F as r,G as n,S as t,Y as o,at as c,f as l,it as u,nt as p,q as d,r as m,w as _,x as T
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
@@ -25,12 +25,12 @@ function E({
       })]
     }),(0,k.jsxs)("div",{
       className:b,children:[(0,k.jsx)("div",{
-        className:d(j,w,i===F.PrevTip&&M),onClick:function(){
+        className:p(j,w,i===F.PrevTip&&M),onClick:function(){
           o.click(),s()
         },
         onMouseOver:o.highlight
       }),(0,k.jsx)("div",{
-        className:d(j,S,i===F.NextTip&&M),onClick:function(){
+        className:p(j,S,i===F.NextTip&&M),onClick:function(){
           o.click(),a()
         },
         onMouseOver:o.highlight
@@ -61,9 +61,9 @@ var[C,O]=i()(({
     }
   },[r]),c="long"===i?z.readOrEmpty("maps_training.queue.longTime"):"normal"===i?z.readOrEmpty("maps_training.queue.delayTime"):"";
   s(n.ESCAPE,a.menu);
-  const[u,m]=(0,v.useState)(-1);
+  const[u,d]=(0,v.useState)(-1);
   return s(n.TAB,function(){
-    m((u+1)%3)
+    d((u+1)%3)
   }),s(n.ENTER,function(){
     0===u?a.quit():1===u?a.showPrevTip():2===u&&a.showNextTip()
   }),(0,k.jsxs)("div",{
@@ -72,10 +72,10 @@ var[C,O]=i()(({
         moveSpace:a.sceneWrapper.moveSpace,onMouseOver3dScene:a.sceneWrapper.mouseOver3dScene
       })
     }),(0,k.jsxs)("div",{
-      className:Q,children:[(0,k.jsx)(p,{
+      className:Q,children:[(0,k.jsx)(m,{
         classMix:A,text:z.readOrEmpty("maps_training.queue.time"),binding:o
       }),(0,k.jsx)(l,{
-        className:d(D,0===u&&W),theme:l.themes.secondary,size:l.sizes.small,onClick:a.quit,children:z.readOrEmpty("maps_training.queue.quitButton")
+        className:p(D,0===u&&W),theme:l.themes.secondary,size:l.sizes.small,onClick:a.quit,children:z.readOrEmpty("maps_training.queue.quitButton")
       }),c&&(0,k.jsx)("div",{
         className:I,children:c
       })]
@@ -90,4 +90,4 @@ _((0,k.jsx)(a,{
   })
 }),{
   fullScreen:!0
-}).then(()=>m(document.getElementById("root")));
+}).then(()=>d(document.getElementById("root")));

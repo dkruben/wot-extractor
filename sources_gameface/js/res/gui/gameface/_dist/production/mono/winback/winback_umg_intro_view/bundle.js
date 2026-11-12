@@ -36,7 +36,7 @@ function N({
     })]
   })
 }
-var A=s(a(),1);
+var A=s(f(),1);
 function B({
   src:s
 }){
@@ -52,7 +52,7 @@ var[V,y]=i("WinbackUmgIntroViewModel")(({
   externalModel:s
 })=>({
   close:s.createCallbackNoArgs("onClose")
-})),E="App_a630decb",P="App_base__hidden_1de0b422",$="App_background_c144dcf",q="App_bgFoggingAndBlurring_46add9c6",C="App_container_4d03d2df",M="App_closeButton_f5179698",z="App_title_90cd7d2b",L="App_content_1d3433ea",O="App_spacer_1025ce59",U="App_confirmButton_d8666e75",D=r.resolve("strings"),F=[R.images.gui.maps.icons.winback.umgIntro.background()],Q=f(function(){
+})),E="App_a630decb",P="App_base__hidden_1de0b422",$="App_background_c144dcf",q="App_bgFoggingAndBlurring_46add9c6",C="App_container_4d03d2df",M="App_closeButton_f5179698",z="App_title_90cd7d2b",L="App_content_1d3433ea",O="App_spacer_1025ce59",U="App_confirmButton_d8666e75",D=r.resolve("strings"),F=[R.images.gui.maps.icons.winback.umgIntro.background()],Q=a(function(){
   const{
     model:s,controls:e
   }=y(),{

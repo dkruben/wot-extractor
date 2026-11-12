@@ -9763,7 +9763,7 @@ var mM="Progression_de15ce34",pM="Progression_label_67b446d",_M="Progression_lev
   const f=LM.get(s);
   return(0,$r.jsxs)(UP,{
     ...u,id:cE,groupId:wn.battlePass,position:0,className:Js(AM,!r&&MM),isDisabled:r,onClick:()=>{
-      u.onClick(),r||(h(),t.openBattlePass())
+      u.onClick(),r||(a("click"),h(),t.openBattlePass())
     },
     onMouseEnter:e=>{
       u.onMouseEnter(e),r||(a("mouse-enter"),s===$P.Intro&&(l.current=!0,a(CP.umg_widget_event_hover_loop)))

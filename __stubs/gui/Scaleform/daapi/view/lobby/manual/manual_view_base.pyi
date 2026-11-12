@@ -18,6 +18,7 @@ class ManualViewBase(View):
     SOUND_SPACE = 'manual'
     SOUND_STATE_PLACE = 'STATE_hangar_place'
     STATE_PLACE_MENU_GUIDE = 'STATE_hangar_place_menu_guide'
+    STATE_PLACE_GARAGE = 'STATE_hangar_place_garage'
     BC_HANGAR_MUSIC_GUIDE_ENTER_SOUND_ID = 'bc_hangar_music_guide_enter'
     BC_HANGAR_MUSIC_GUIDE_EXIT_SOUND_ID = 'bc_hangar_music_guide_exit'
     _COMMON_SOUND_SPACE: Any

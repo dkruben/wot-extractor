@@ -19,6 +19,7 @@ class PbhGameLogicObserver(BasePbhSubSystem, BaseStateObserver):
     __gameplayLogic: Any
     __stateReached: Any
     __prebattlePeriodReached: Any
+    __pbhEnded: Any
     def __init__(self, readyCallback):
         ...
     def subscribe(self):

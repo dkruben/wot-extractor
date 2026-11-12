@@ -4665,6 +4665,21 @@ class TOOLTIPS(object):
     NOTRECRUITEDTANKMAN_NY24_GIRL_2_26_LABEL = '#tooltips:notrecruitedtankman/ny24_girl_2_26/label'
     NOTRECRUITEDTANKMAN_NY24_GIRL_2_26_DESC = '#tooltips:notrecruitedtankman/ny24_girl_2_26/desc'
     NOTRECRUITEDTANKMAN_NY24_GIRL_2_26_HOWTOGETINFO = '#tooltips:notrecruitedtankman/ny24_girl_2_26/howToGetInfo'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_10_LABEL = '#tooltips:notrecruitedtankman/tankmen_bp21_10/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_10_DESC = '#tooltips:notrecruitedtankman/tankmen_bp21_10/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_10_HOWTOGETINFO = '#tooltips:notrecruitedtankman/tankmen_bp21_10/howToGetInfo'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_11_LABEL = '#tooltips:notrecruitedtankman/tankmen_bp21_11/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_11_DESC = '#tooltips:notrecruitedtankman/tankmen_bp21_11/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_11_HOWTOGETINFO = '#tooltips:notrecruitedtankman/tankmen_bp21_11/howToGetInfo'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_12_LABEL = '#tooltips:notrecruitedtankman/tankmen_bp21_12/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_12_DESC = '#tooltips:notrecruitedtankman/tankmen_bp21_12/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_12_HOWTOGETINFO = '#tooltips:notrecruitedtankman/tankmen_bp21_12/howToGetInfo'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_13_LABEL = '#tooltips:notrecruitedtankman/tankmen_bp21_13/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_13_DESC = '#tooltips:notrecruitedtankman/tankmen_bp21_13/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_13_HOWTOGETINFO = '#tooltips:notrecruitedtankman/tankmen_bp21_13/howToGetInfo'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_14_LABEL = '#tooltips:notrecruitedtankman/tankmen_bp21_14/label'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_14_DESC = '#tooltips:notrecruitedtankman/tankmen_bp21_14/desc'
+    NOTRECRUITEDTANKMAN_TANKMEN_BP21_14_HOWTOGETINFO = '#tooltips:notrecruitedtankman/tankmen_bp21_14/howToGetInfo'
     ELEN_SUMMARY_RANK_ENUM: tuple
     ELEN_SUMMARY_PARAM_ALL_ALL_HEADER_ENUM: tuple
     ELEN_SUMMARY_PARAM_ALL_ALL_BODY_ENUM: tuple

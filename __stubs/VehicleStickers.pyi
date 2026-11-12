@@ -9,6 +9,7 @@ import weakref as weakref
 import typing as typing
 import math as math
 from collections import namedtuple as namedtuple
+from itertools import chain as chain
 from future.utils import viewvalues as viewvalues
 import BigWorld as BigWorld
 import CGF as CGF
@@ -313,7 +314,10 @@ class VehicleStickers(object):
     def _createComponentSlots(cls, vehicleDesc, showEmblemsOnGun, modelsSet):
         ...
     @classmethod
-    def _filterClanEmblems(cls, emblemSlots, modelsSet):
+    def _hasModelsSetClanSlots(cls, vehicleDesc, modelsSet):
+        ...
+    @classmethod
+    def _filterClanEmblems(cls, emblemSlots, modelsSet, skipDefault=False):
         ...
     @classmethod
     def _createGunSlots(cls, vehicleDesc, modelsSet):

@@ -703,19 +703,6 @@ html[lang=ja] .Button_base__size-large_83da852e .Button_content__fontAligned_661
   left: 0;
 }/* stylelint-disable selector-no-qualifying-type */
 /* stylelint-disable selector-no-qualifying-type */
-.NotificationWrapper_6fe65b7 {
-  display: flex;
-  overflow: hidden;
-  position: absolute;
-}/* stylelint-disable selector-no-qualifying-type */
-/* stylelint-disable selector-no-qualifying-type */
-.TruncateText_dcb41d92 {
-  max-width: 100%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}/* stylelint-disable selector-no-qualifying-type */
-/* stylelint-disable selector-no-qualifying-type */
 .Tooltip_6d997cee {
   display: flex;
   position: absolute;
@@ -727,4 +714,17 @@ html[lang=ja] .Button_base__size-large_83da852e .Button_content__fontAligned_661
   border-image-slice: 24 fill;
   border-image-width: 24rem;
   position: relative;
+}/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable selector-no-qualifying-type */
+.NotificationWrapper_6fe65b7 {
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+}/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable selector-no-qualifying-type */
+.TruncateText_dcb41d92 {
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }

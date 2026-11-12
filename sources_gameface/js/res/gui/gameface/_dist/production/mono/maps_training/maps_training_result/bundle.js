@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  A as a,C as s,D as t,F as n,G as i,Y as r,_ as l,at as o,b as d,et as c,f as _,g as m,it as u,m as g,nt as p,r as b,w as f
+  A as a,C as s,D as t,F as n,G as i,Y as r,_ as l,at as o,b as d,et as c,f as _,g as m,it as u,m as g,nt as p,t as b,w as f
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";

@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  $ as a,$n as t,$t as s,A as r,An as n,Ar as i,At as o,B as l,Bn as c,Br as d,Bt as _,Cn as u,Cr as m,Ct as p,D as h,Dn as b,Dr as f,Dt as g,E as v,En as x,Er as w,Et as C,F as y,Fn as S,Fr as j,Ft as I,G as N,Gn as k,Gr as P,H as B,Hn as A,Hr as E,Ht as T,I as L,Ir as D,Jn as O,Jr as W,Jt as V,K as M,Kn as z,Kr as $,L as F,Ln as H,Lr as U,M as G,Mn as q,Mr as K,Mt as Z,N as X,Nn as J,Nr as Q,Nt as Y,O as ee,On as ae,Or as te,Ot as se,P as re,Pn as ne,Pr as ie,Pt as oe,Q as le,Qn as ce,Qt as de,R as _e,Rn as ue,Rr as me,Rt as pe,S as he,Sn as be,Sr as fe,St as ge,T as ve,Tn as xe,Tr as we,Tt as Ce,U as ye,Un as Se,Ur as je,Ut as Ie,V as Ne,Vn as ke,Vr as Pe,Vt as Re,W as Be,Wn as Ae,Wr as Ee,Xr as Te,Y as Le,Yn as De,Yr as Oe,Z as We,Zn as Ve,Zr as Me,Zt as ze,_ as $e,_n as Fe,_r as He,_t as Ue,a as Ge,ai as qe,an as Ke,ar as Ze,at as Xe,b as Je,bn as Qe,br as Ye,bt as ea,c as aa,ci as ta,cn as sa,cr as ra,ct as na,d as ia,di as oa,dr as la,dt as ca,ei as da,en as _a,er as ua,et as ma,f as pa,fn as ha,ft as ba,g as fa,gn as ga,gr as va,gt as xa,h as wa,hn as Ca,hr as ya,ht as Sa,i as ja,in as Ia,ir as Na,it as ka,j as Pa,jn as Ra,jr as Ba,jt as Aa,k as Ea,kn as Ta,kr as La,kt as Da,li as Oa,ln as Wa,lt as Va,m as Ma,mn as za,mt as $a,nr as Fa,nt as Ha,o as Ua,oi as Ga,on as qa,or as Ka,ot as Za,p as Xa,pn as Ja,pt as Qa,qn as Ya,qr as et,qt as at,ri as tt,rn as st,rt,s as nt,si as it,sr as ot,st as lt,ti as ct,tn as dt,tr as _t,tt as ut,u as mt,ui as pt,ur as ht,ut as bt,v as ft,vn as gt,vr as vt,vt as xt,wn as wt,wr as Ct,wt as yt,x as St,xn as jt,y as It,yn as Nt,yr as kt,yt as Pt,z as Rt,zn as Bt,zt as At
+  $ as a,$n as t,$t as s,A as r,An as n,Ar as i,At as o,B as l,Bn as c,Br as d,Cn as _,Cr as u,Ct as m,D as p,Dn as h,Dr as b,Dt as f,E as g,En as v,Er as x,Et as w,F as C,Fn as y,Fr as S,Ft as j,G as I,Gn as N,Gr as k,Gt as P,H as B,Hn as A,Hr as E,Ht as T,I as L,Ir as D,It as O,Jn as W,Jr as V,K as M,Kn as z,Kr as $,Kt as F,L as H,Ln as U,Lr as G,Lt as q,M as K,Mn as Z,Mr as X,Mt as J,N as Y,Nn as Q,Nr as ee,Nt as ae,O as te,On as se,Or as re,Ot as ne,P as ie,Pn as oe,Pr as le,Pt as ce,Q as de,Qn as _e,R as ue,Rn as me,Rr as pe,Rt as he,S as be,Sn as fe,Sr as ge,St as ve,T as xe,Tn as we,Tr as Ce,Tt as ye,U as Se,Un as je,Ur as Ie,Ut as Ne,V as ke,Vn as Pe,Vr as Re,Vt as Be,W as Ae,Wn as Ee,Wr as Te,Wt as Le,Xr as De,Xt as Oe,Y as We,Yn as Ve,Yr as Me,Z as ze,Zn as $e,Zr as Fe,_ as He,_n as Ue,_r as Ge,_t as qe,a as Ke,ai as Ze,an as Xe,ar as Je,at as Ye,b as Qe,bn as ea,br as aa,bt as ta,c as sa,ci as ra,cn as na,cr as ia,ct as oa,d as la,di as ca,dr as da,dt as _a,ei as ua,en as ma,er as pa,et as ha,f as ba,fn as fa,ft as ga,g as va,gn as xa,gr as wa,gt as Ca,h as ya,hn as Sa,hr as ja,ht as Ia,i as Na,in as ka,ir as Pa,it as Ra,j as Ba,jn as Aa,jr as Ea,jt as Ta,k as La,kn as Da,kr as Oa,kt as Wa,li as Va,ln as Ma,lt as za,m as $a,mn as Fa,mt as Ha,nr as Ua,nt as Ga,o as qa,oi as Ka,on as Za,or as Xa,ot as Ja,p as Ya,pn as Qa,pt as et,qn as at,qr as tt,ri as st,rn as rt,rt as nt,s as it,si as ot,sr as lt,st as ct,ti as dt,tn as _t,tr as ut,tt as mt,u as pt,ui as ht,ur as bt,ut as ft,v as gt,vn as vt,vr as xt,vt as wt,wn as Ct,wr as yt,wt as St,x as jt,xn as It,y as Nt,yn as kt,yr as Pt,yt as Rt,z as Bt,zn as At
 }
 from"../chunks/lib.js";
 import"../chunks/global.js";
@@ -13,7 +13,7 @@ import{
 }
 from"../chunks/vendor.js";
 import{
-  a as Kt,c as Zt,d as Xt,f as Jt,l as Qt,n as Yt,o as es,p as as,r as ts,t as ss
+  a as Kt,c as Zt,d as Xt,f as Jt,l as Yt,n as Qt,o as es,p as as,r as ts,t as ss
 }
 from"../chunks/utils.js";
 import{
@@ -32,7 +32,7 @@ import{
   n as cs,t as ds
 }
 from"../chunks/constants.js";
-var _s=e(ta(),1),us=De(),ms=(0,_s.createContext)({
+var _s=e(ra(),1),us=Ve(),ms=(0,_s.createContext)({
   currentValue:0,prevValue:0,setCurrentValue:e=>{},
   setPrevValue:e=>{},
   delta:0,setDelta:e=>{},
@@ -55,45 +55,45 @@ function hs({
     value:b,children:e
   })
 }
-var bs="BuyButtons_ce6c20b6",fs="BuyButtons_button_8a617f11",gs=oa.resolve("strings"),vs=({
-  isWalletAvailable:e,purchaseAbortedCount:a,onAccept:t,onCancel:r,className:n
+var bs="BuyButtons_ce6c20b6",fs="BuyButtons_button_8a617f11",gs=ca.resolve("strings"),vs=({
+  isWalletAvailable:e,purchaseAbortedCount:a,onAccept:t,onCancel:s,className:r
 })=>{
-  const i=z({
-    buttonSize:s.medium
+  const n=z({
+    buttonSize:ye.medium
   },{
     large:{
-      buttonSize:s.large
+      buttonSize:ye.large
     }
   }),{
-    maxValueAchieved:o,setMaxValueAchieved:l,levelsToBuy:c
-  }=ps(),d=x();
+    maxValueAchieved:i,setMaxValueAchieved:o,levelsToBuy:l
+  }=ps(),c=v();
   (0,_s.useEffect)(()=>{
-    l(!1)
-  },[a,l]);
-  const _=Se(()=>{
-    !e||o||d.isRunning||(l(!0),d.run(t,20*c))
+    o(!1)
+  },[a,o]);
+  const d=je(()=>{
+    !e||i||c.isRunning||(o(!0),c.run(t,20*l))
   });
   return(e=>{
     const a=(0,_s.useCallback)(a=>{
       a.altKey||e()
     },[e]);
-    H(ie.ENTER,a)
-  })(_),(0,us.jsxs)("div",{
-    className:Ga(bs,n),children:[(0,us.jsx)(ze,{
-      theme:_a.primary,size:i.buttonSize,className:fs,onClick:_,disabled:!e,children:gs.readOrEmpty("battle_pass.battlePassBuyView.confirm.btnBuy")
-    }),(0,us.jsx)(ze,{
-      theme:_a.secondary,size:i.buttonSize,className:fs,onClick:r,children:gs.readOrEmpty("battle_pass.battlePassBuyView.btnCancel")
+    U(le.ENTER,a)
+  })(d),(0,us.jsxs)("div",{
+    className:Ka(bs,r),children:[(0,us.jsx)(St,{
+      theme:w.primary,size:n.buttonSize,className:fs,onClick:d,disabled:!e,children:gs.readOrEmpty("battle_pass.battlePassBuyView.confirm.btnBuy")
+    }),(0,us.jsx)(St,{
+      theme:w.secondary,size:n.buttonSize,className:fs,onClick:s,children:gs.readOrEmpty("battle_pass.battlePassBuyView.btnCancel")
     })]
   })
 },
 xs={
   base:"Title_df1cd9e2",chapter:"Title_chapter_4c7a1992",base__transparentChapterName:"Title_base__transparentChapterName_2e63cf3",subTitle:"Title_subTitle_2bbdc239",fadeInWithScale:"Title_fadeInWithScale_2e63cf3",slideUp:"Title_slideUp_2e63cf3",blink:"Title_blink_2e63cf3",scale:"Title_scale_2e63cf3",rotate:"Title_rotate_2e63cf3",windowIn:"Title_windowIn_2e63cf3",fadeOut:"Title_fadeOut_2e63cf3",fadeIn:"Title_fadeIn_2e63cf3"
 },
-ws=oa.resolve("strings"),Cs=({
+ws=ca.resolve("strings"),Cs=({
   chapter:e,subTitle:a,className:t,type:s="default"
 })=>(0,us.jsxs)("div",{
-  className:Ga(xs.base,xs[`base__${s}`],t),children:[(0,us.jsx)("span",{
-    className:xs.chapter,children:(0,us.jsx)(ea,{
+  className:Ka(xs.base,xs[`base__${s}`],t),children:[(0,us.jsx)("span",{
+    className:xs.chapter,children:(0,us.jsx)(ta,{
       text:ws.readOrEmpty("battle_pass.battlePassBuyLevels.chapter"),binding:{
         name:ws.readOrEmpty(`battle_pass.chapter.fullName.c_${e}`)
       }
@@ -101,14 +101,14 @@ ws=oa.resolve("strings"),Cs=({
   }),(0,us.jsx)("span",{
     className:xs.subTitle,children:a
   })]
-}),[ys,Ss]=Fe()(({
+}),[ys,Ss]=Ue()(({
   observableModel:e
 })=>{
   const a={
     root:e.object(),rewards:e.arrayClone("rewards.items")
   },
-  t=ga(()=>w(a.rewards.get(),d),{
-    equals:me
+  t=xa(()=>x(a.rewards.get(),d),{
+    equals:pe
   });
   return{
     ...a,computes:{
@@ -125,23 +125,23 @@ ws=oa.resolve("strings"),Cs=({
 var Is="Delta_7e5549",Ns="Delta_outside_b28c01e5",ks="Delta_outside__increase_91391b24",Ps="Delta_inside_b1b3a5c5",Rs="Delta_inside__increase_fcd871c4",Bs=(0,_s.memo)((0,_s.forwardRef)(function({
   from:e,step:t,growAnimationConfig:s,shrinkAnimationConfig:r,classNames:i,className:o,steps:l,onState:c,...d
 },_){
-  const u=(0,_s.useRef)(null),m=rt(),[p,h]=n(()=>({
+  const u=(0,_s.useRef)(null),m=nt(),[p,h]=n(()=>({
     width:0
   })),[b,f]=n(()=>({
     width:0
   })),[g,v]=n(()=>({
     x:0,width:0
   })),[x,...w]=l,[C,y]=(0,_s.useState)(w),[S,j]=(0,_s.useState)(x??"done"),I=(m.value-e)/m.maxValue,N=a(I);
-  ma("delta");
-  const k=Se(c??Pe);
+  ha("delta");
+  const k=je(c??Re);
   (0,_s.useEffect)(()=>k(S),[S,k]);
-  const P=Se(()=>{
+  const P=je(()=>{
     const[e,...a]=C;
     e?(j(e),y(a)):j("done")
-  }),R=Se(()=>{
+  }),R=je(()=>{
     const a=u.current?.parentElement;
     if(!a)return;
-    const t=et(a.offsetWidth),s=Math.max(m.value,e),r=e/m.maxValue,n=(s-e)/m.maxValue,i=Math.round(t*r),o=Math.round(t*n);
+    const t=tt(a.offsetWidth),s=Math.max(m.value,e),r=e/m.maxValue,n=(s-e)/m.maxValue,i=Math.round(t*r),o=Math.round(t*n);
     v.start({
       x:i,width:o,immediate:!0
     })
@@ -162,7 +162,7 @@ var Is="Delta_7e5549",Ns="Delta_outside_b28c01e5",ks="Delta_outside__increase_91
       to:{
         width:100
       },
-      config:s??ut,onRest:P,onStart:()=>N({
+      config:s??mt,onRest:P,onStart:()=>N({
         step:S
       })
     })),"shrinking"===S&&(h.set({
@@ -174,23 +174,23 @@ var Is="Delta_7e5549",Ns="Delta_outside_b28c01e5",ks="Delta_outside__increase_91
       to:{
         width:0
       },
-      config:r??ut,onRest:P,onStart:()=>N({
+      config:r??mt,onRest:P,onStart:()=>N({
         step:S
       })
     }))
-  },[S,h,f,s,r,P,N]),(0,us.jsxs)(Ta.div,{
-    ...d,ref:za([_,u]),className:Ga(o,Is),style:{
+  },[S,h,f,s,r,P,N]),(0,us.jsxs)(Da.div,{
+    ...d,ref:Fa([_,u]),className:Ka(o,Is),style:{
       transform:g.x.to(e=>`translateX(${e}rem)`),width:g.width.to(e=>`${e}rem`)
     },
-    children:[(0,us.jsxs)(Ta.div,{
+    children:[(0,us.jsxs)(Da.div,{
       style:{
         width:b.width.to(e=>`${e}%`)
       },
-      className:Ga(i?.outside,Ns,I>0&&ks),children:[(0,us.jsx)(Ta.div,{
+      className:Ka(i?.outside,Ns,I>0&&ks),children:[(0,us.jsx)(Da.div,{
         style:{
           width:p.width.to(e=>`${e}%`)
         },
-        className:Ga(i?.inside,Ps,I>0&&Rs)
+        className:Ka(i?.inside,Ps,I>0&&Rs)
       }),d.children]
     }),d.children]
   })
@@ -203,13 +203,13 @@ Ds=function({
 }){
   const o=(0,_s.useRef)(!1),l=(0,_s.useRef)(null),[c,d]=(0,_s.useState)(!1),_=(0,_s.useRef)(null),u=(0,_s.useRef)(null),m=(0,_s.useRef)(null),p=(0,_s.useRef)(null),{
     percentage:h,maxValue:b,setValue:f,value:g,status:v
-  }=rt(),{
-    setCurrentValue:x,setPrevValue:w,setHasMoved:C,levelsCount:y,levelsToBuy:S,setLevelsToBuy:I,levelsPassed:N
+  }=nt(),{
+    setCurrentValue:x,setPrevValue:w,setHasMoved:C,levelsCount:y,levelsToBuy:j,setLevelsToBuy:I,levelsPassed:N
   }=ps(),{
     controls:k
   }=Ss(),P=function(e,a){
-    const t=be(),s=a??"controlled-progress-bar:pointer";
-    return Se(({
+    const t=fe(),s=a??"controlled-progress-bar:pointer";
+    return je(({
       event:a,diff:r=0
     })=>{
       if(!e)return"grab"===a?t.play("pointerGrab",{
@@ -222,7 +222,7 @@ Ds=function({
         target:s
       }):void 0
     })
-  }(t,r),R=(0,_s.useRef)(N),B=Math.round(b/y*1e3)/1e3,A=N/y*b,E=A+B,T=100*h,L=Se(()=>d(!1));
+  }(t,r),R=(0,_s.useRef)(N),B=Math.round(b/y*1e3)/1e3,A=N/y*b,E=A+B,T=100*h,L=je(()=>d(!1));
   (0,_s.useEffect)(()=>{
     const e=R.current,a=Math.max(0,N-e);
     let t;
@@ -237,7 +237,7 @@ Ds=function({
       l.current&&cancelAnimationFrame(l.current)
     }
   },[N,y,b,f,A,x,w,B]);
-  const O=Se(e=>{
+  const O=je(e=>{
     if(!_.current)return;
     C(!0);
     const a=_.current.getBoundingClientRect(),t=e.clientX-a.left,s=Math.max(0,Math.min(1,t/a.width))*b,r=Math.round(s/B)*B,n=Math.max(r,E);
@@ -250,31 +250,31 @@ Ds=function({
   }(0,_s.useEffect)(()=>{
     u.current&&(u.current.style.left=`${T}%`)
   },[T]),(0,_s.useEffect)(()=>{
-    if(c)return(new D).add(U(window,"mousemove",e=>O(e))).add(U(window,"mouseup",e=>{
+    if(c)return(new D).add(G(window,"mousemove",e=>O(e))).add(G(window,"mouseup",e=>{
       O(e),L()
     })).dispose
   },[c,O,L]);
   const V=e=>Math.min(Math.max(e,E),b);
-  return H(j.ARROW_LEFT,()=>{
+  return U(S.ARROW_LEFT,()=>{
     if(o.current||c||a)return;
     o.current=!0;
     const e=V(g-B);
     f(e),x(e),m.current=e-A,I(Math.round((e-A)*y/100))
-  }),H(j.ARROW_RIGHT,()=>{
+  }),U(S.ARROW_RIGHT,()=>{
     if(o.current||c||a)return;
     o.current=!0;
     const e=V(g+B);
     f(e),x(e),m.current=e-A,I(Math.round((e-A)*y/100))
   }),(0,_s.useEffect)(()=>{
     const e=e=>{
-      e.code!==j.ARROW_LEFT&&e.code!==j.ARROW_RIGHT||(o.current=!1)
+      e.code!==S.ARROW_LEFT&&e.code!==S.ARROW_RIGHT||(o.current=!1)
     };
     return window.addEventListener("keyup",e),()=>window.removeEventListener("keyup",e)
   },[]),(0,_s.useEffect)(()=>{
-    k.changeSelectedLevels(S)
-  },[S,k]),"disabled"===v?null:(0,us.jsxs)("div",{
-    ref:_,className:Ga(As,n),onMouseDown:W,onClick:O,children:[(0,us.jsx)("div",{
-      ref:u,className:Ga(Es,e===Ls.down&&Ts,i?.pointer),onMouseDown:e=>{
+    k.changeSelectedLevels(j)
+  },[j,k]),"disabled"===v?null:(0,us.jsxs)("div",{
+    ref:_,className:Ka(As,n),onMouseDown:W,onClick:O,children:[(0,us.jsx)("div",{
+      ref:u,className:Ka(Es,e===Ls.down&&Ts,i?.pointer),onMouseDown:e=>{
         e.stopPropagation(),P({
           event:"grab"
         }),W()
@@ -298,16 +298,16 @@ var Os="LevelSlider_dbac30ca",Ws="LevelSlider_step_fb995ce2",Vs="LevelSlider_com
     className:Os,style:{
       width:22*s+"rem"
     },
-    children:(0,us.jsxs)(We,{
-      size:Ha.large,value:js(o,s),maxValue:Fs,maxValueAchieved:n,children:[(0,us.jsx)(We.Fill,{}),(0,us.jsx)(Ds,{
+    children:(0,us.jsxs)(ze,{
+      size:Ga.large,value:js(o,s),maxValue:Fs,maxValueAchieved:n,children:[(0,us.jsx)(ze.Fill,{}),(0,us.jsx)(Ds,{
         maxValueAchieved:n,setMaxValueAchieved:i
-      }),(0,us.jsx)(We.DynamicIndicator,{
-        className:Ga(t===Fs&&$s,zs),staticIndicatorsRefs:e,position:le.above,transformCurrentValue:e=>function(e,a){
+      }),(0,us.jsx)(ze.DynamicIndicator,{
+        className:Ka(t===Fs&&$s,zs),staticIndicatorsRefs:e,position:de.above,transformCurrentValue:e=>function(e,a){
           const t=E(0,100,e);
           return Math.floor(t/100*a)
         }(e,l)
-      }),(0,us.jsx)(We.NumberIndicators,{
-        position:le.above,count:l,classNames:{
+      }),(0,us.jsx)(ze.NumberIndicators,{
+        position:de.above,count:l,classNames:{
           step:Ws,completed:Vs,stepClassNames:{
             label:Ms
           }
@@ -324,11 +324,11 @@ Us="RewardsList_61e5d0fd",Gs="RewardsList_reward_110a9a1e",qs="RewardsList_rewar
     levelsToBuy:t
   }=ps();
   return(0,_s.useEffect)(()=>{
-    Ka(Ee,0)
+    Xa(Te,0)
   },[t]),(0,us.jsx)("div",{
-    className:Us,children:w(a,(e,a)=>(0,us.jsx)("div",{
-      className:Gs,"data-id":`${e.id}_${e.bigIcon}_${a}`,children:(0,us.jsx)(N,{
-        ...Kt(e,Le.S180x135),classNames:{
+    className:Us,children:x(a,(e,a)=>(0,us.jsx)("div",{
+      className:Gs,"data-id":`${e.id}_${e.bigIcon}_${a}`,children:(0,us.jsx)(I,{
+        ...Kt(e,We.S180x135),classNames:{
           info:qs
         }
       })
@@ -342,23 +342,23 @@ Xs=Ot(()=>{
     model:e
   }=Ss(),a=e.computes.getRewards().length,{
     api:t
-  }=ba(),[s,r]=xt(t);
+  }=ga(),[s,r]=wt(t);
   return(0,_s.useEffect)(()=>{
     t.recalculateContent()
   },[a,t]),(0,us.jsxs)("div",{
     className:Zs.base,children:[(0,us.jsx)(Hs,{}),(0,us.jsxs)("div",{
       className:Zs.rewards,children:[(0,us.jsx)("div",{
-        className:Ga(Zs.mask,Zs[`mask__${bt(s,r)}`]),children:(0,us.jsx)(na,{
+        className:Ka(Zs.mask,Zs[`mask__${ft(s,r)}`]),children:(0,us.jsx)(oa,{
           children:(0,us.jsx)(Ks,{})
         })
-      }),(0,us.jsx)(ca,{
+      }),(0,us.jsx)(_a,{
         classNames:{
           base:Zs.scrollBar
         }
       })]
     })]
   })
-}),Js="Footer_9d3d3a12",Qs="Footer_currency_9b510c1c",Ys="Footer_footerLabel_e28c9ab3",er="Footer_currencyIcon_cfcb6dcf",ar=oa.resolve("strings"),tr=()=>{
+}),Js="Footer_9d3d3a12",Ys="Footer_currency_9b510c1c",Qs="Footer_footerLabel_e28c9ab3",er="Footer_currencyIcon_cfcb6dcf",ar=ca.resolve("strings"),tr=()=>{
   const{
     currentValue:e,prevValue:a,levelPrice:t,levelsCount:s,setLevelsToBuy:r,levelsToBuy:n,levelsPassed:i
   }=ps(),o=z({
@@ -372,26 +372,26 @@ Xs=Ot(()=>{
     const t=Math.round(a*s/100),n=Math.round(e*s/100);
     r(n===t?1:n-i)
   },[a,e,s,r,i]),(0,us.jsxs)("div",{
-    className:Js,children:[(0,us.jsx)(V,{
+    className:Js,children:[(0,us.jsx)(ma,{
       text:ar.pluralOrEmpty("battle_pass.battlePassBuyLevels.levelsSelected",n),upgradeLegacy:!0,params:{
         count:n
       },
-      className:Ys
+      className:Qs
     }),(0,us.jsx)(l,{
       classNames:{
-        base:Qs,icon:er
+        base:Ys,icon:er
       },
-      type:ye.gold,size:o.currencySize,reverse:!0,children:n*t
+      type:Se.gold,size:o.currencySize,reverse:!0,children:n*t
     })]
   })
 },
-sr="App_848b5de0",rr="App_background_d5285348",nr="App_shadow_b96f6299",ir="App_content_3a6c6ebb",or="App_contentContainer_dc3584c8",lr="App_footer_7b1985",cr="App_bottomLip_64987100",dr="App_title_536f5f20",_r=oa.resolve("strings"),ur=Ot(()=>{
+sr="App_848b5de0",rr="App_background_d5285348",nr="App_shadow_b96f6299",ir="App_content_3a6c6ebb",or="App_contentContainer_dc3584c8",lr="App_footer_7b1985",cr="App_bottomLip_64987100",dr="App_title_536f5f20",_r=ca.resolve("strings"),ur=Ot(()=>{
   const{
     model:e,controls:a
   }=Ss(),{
     isWalletAvailable:t,levelsPassed:s,levelsTotal:r,chapterID:n,levelPrice:i,purchaseAbortedCount:o
-  }=e.root.get(),l=p();
-  S(l.goBack),ue(j.SPACE,l.goBack);
+  }=e.root.get(),l=m();
+  y(l.goBack),me(S.SPACE,l.goBack);
   const c={
     backgroundImage:`url(${ns(R.images.gui.maps.icons.battlePass.backgrounds.chapter_general,n)})`
   };
@@ -405,7 +405,7 @@ sr="App_848b5de0",rr="App_background_d5285348",nr="App_shadow_b96f6299",ir="App_
         className:ir,children:[(0,us.jsx)(Cs,{
           chapter:n,subTitle:_r.readOrEmpty("battle_pass.battlePassBuyView.descr"),className:dr
         }),(0,us.jsx)("div",{
-          className:or,children:(0,us.jsx)(lt,{
+          className:or,children:(0,us.jsx)(ct,{
             children:(0,us.jsx)(Xs,{})
           })
         }),(0,us.jsxs)("div",{
@@ -423,29 +423,29 @@ sr="App_848b5de0",rr="App_background_d5285348",nr="App_shadow_b96f6299",ir="App_
     rootId:R.aliases.battle_pass.BuyLevels("resId")
   },
   children:(0,us.jsx)(ur,{})
-}),[pr,hr]=Fe()(({
+}),[pr,hr]=Ue()(({
   observableModel:e
 })=>{
   const a={
     levels:e.object(),nowRewards:e.array("nowRewards.items"),futureRewards:e.array("futureRewards.items")
   },
-  t=ga(()=>a.nowRewards.get(),{
-    equals:me
-  }),s=ga(()=>a.futureRewards.get(),{
-    equals:me
+  t=xa(()=>a.nowRewards.get(),{
+    equals:pe
+  }),s=xa(()=>a.futureRewards.get(),{
+    equals:pe
   });
   return{
     ...a,computes:{
       nowRewards:t,futureRewards:s
     }
   }
-},Pe),br={
+},Re),br={
   base:"GroupTitle_eaeb27ea",iconContainer:"GroupTitle_iconContainer_53d16b22",icon:"GroupTitle_icon_fd08ab04",fadeInWithScale:"GroupTitle_fadeInWithScale_bdc8a0f5",slideUp:"GroupTitle_slideUp_bdc8a0f5",blink:"GroupTitle_blink_bdc8a0f5",scale:"GroupTitle_scale_bdc8a0f5",rotate:"GroupTitle_rotate_bdc8a0f5",windowIn:"GroupTitle_windowIn_bdc8a0f5",fadeOut:"GroupTitle_fadeOut_bdc8a0f5",fadeIn:"GroupTitle_fadeIn_bdc8a0f5"
 },
-fr=oa.resolve("images"),gr="checked",vr="locked",xr="x32",wr="x48",Cr="x96",yr=({
+fr=ca.resolve("images"),gr="checked",vr="locked",xr="x32",wr="x48",Cr="x96",yr=({
   type:e,className:a="",title:t=""
 })=>{
-  const s=Ya(z({
+  const s=at(z({
     iconSize:xr
   },{
     medium:{
@@ -453,7 +453,7 @@ fr=oa.resolve("images"),gr="checked",vr="locked",xr="x32",wr="x48",Cr="x96",yr=(
     }
   }).iconSize,Cr),r=fr.readOrEmpty(`battlePass.buy.rewards.${e}_${s}`);
   return(0,us.jsxs)("div",{
-    className:Ga(br.base,br[`base__${e}`],a),children:[(0,us.jsx)("div",{
+    className:Ka(br.base,br[`base__${e}`],a),children:[(0,us.jsx)("div",{
       className:br.iconContainer,children:(0,us.jsx)("div",{
         className:br.icon,style:{
           backgroundImage:`url(${r})`
@@ -467,9 +467,9 @@ fr=oa.resolve("images"),gr="checked",vr="locked",xr="x32",wr="x48",Cr="x96",yr=(
 Sr="GroupRewards_46776305",jr="GroupRewards_item_17e76f62",Ir="GroupRewards_title_a5115b64",Nr=({
   rewards:e,className:a
 })=>(0,us.jsx)("div",{
-  className:Ga(Sr,a),children:w(e,(e,a)=>(0,us.jsx)("div",{
+  className:Ka(Sr,a),children:x(e,(e,a)=>(0,us.jsx)("div",{
     className:jr,children:(0,us.jsx)(L,{
-      ...Kt(e,sa.Big,!0),classNames:{
+      ...Kt(e,na.Big,!0),classNames:{
         title:Ir
       }
     })
@@ -477,7 +477,7 @@ Sr="GroupRewards_46776305",jr="GroupRewards_item_17e76f62",Ir="GroupRewards_titl
 }),kr="RewardsBlock_479e00eb",Pr="RewardsBlock_title_677ec3f0",Rr="RewardsBlock_rewards_e9af771e",Br=({
   type:e,rewards:a,className:t="",title:s=""
 })=>(0,us.jsxs)("div",{
-  className:Ga(kr,t),children:[(0,us.jsx)(yr,{
+  className:Ka(kr,t),children:[(0,us.jsx)(yr,{
     type:e,className:Pr,title:s
   }),(0,us.jsx)(Nr,{
     rewards:a,className:Rr
@@ -485,25 +485,25 @@ Sr="GroupRewards_46776305",jr="GroupRewards_item_17e76f62",Ir="GroupRewards_titl
 }),Ar={
   base:"Content_690d4e59",base__hasScroll:"Content_base__hasScroll_d4326fda",mask:"Content_mask_3c273268",mask__top:"Content_mask__top_49c2b256",mask__bottom:"Content_mask__bottom_73ebbe0b",mask__both:"Content_mask__both_5a3cae0c",content:"Content_4089e099",rewardsBlock:"Content_rewardsBlock_da09528a",scrollBar:"Content_scrollBar_1436f72c",fadeInWithScale:"Content_fadeInWithScale_da09528a",slideUp:"Content_slideUp_da09528a",blink:"Content_blink_da09528a",scale:"Content_scale_da09528a",rotate:"Content_rotate_da09528a",windowIn:"Content_windowIn_da09528a",fadeOut:"Content_fadeOut_da09528a",fadeIn:"Content_fadeIn_da09528a"
 },
-Er=oa.resolve("strings"),Tr=Ot(({
+Er=ca.resolve("strings"),Tr=Ot(({
   className:e
 })=>{
   const{
     model:a
   }=hr(),t=a.computes.nowRewards(),s=a.computes.futureRewards(),{
     api:r
-  }=ba();
-  y(r);
-  const[n,i]=(0,_s.useState)(!1),[o,l]=xt(r),c=(0,_s.useCallback)(()=>{
+  }=ga();
+  C(r);
+  const[n,i]=(0,_s.useState)(!1),[o,l]=wt(r),c=(0,_s.useCallback)(()=>{
     const[e,a]=r.getBounds();
     i(e!==a)
   },[r]);
   return(0,_s.useEffect)(()=>(r.events.on("resizeHandled",c),()=>{
     r.events.off("resizeHandled",c)
   }),[r.events,c]),(0,us.jsxs)("div",{
-    className:Ga(Ar.base,n&&Ar.base__hasScroll,e),children:[(0,us.jsx)(na,{
+    className:Ka(Ar.base,n&&Ar.base__hasScroll,e),children:[(0,us.jsx)(oa,{
       classNames:{
-        content:Ar.content,wrapper:Ga(Ar.mask,Ar[`mask__${bt(o,l)}`])
+        content:Ar.content,wrapper:Ka(Ar.mask,Ar[`mask__${ft(o,l)}`])
       },
       children:(0,us.jsxs)("div",{
         className:Ar.rewardsBlock,children:[t.length>0&&(0,us.jsx)(Br,{
@@ -512,7 +512,7 @@ Er=oa.resolve("strings"),Tr=Ot(({
           type:vr,rewards:s,title:Er.readOrEmpty("battle_pass.battlePassBuyView.reward.titleFutureRewards")
         })]
       })
-    }),(0,us.jsx)(ca,{
+    }),(0,us.jsx)(_a,{
       classNames:{
         base:Ar.scrollBar
       }
@@ -524,9 +524,9 @@ Er=oa.resolve("strings"),Tr=Ot(({
   }=hr(),{
     chapterID:a
   }=e.levels.get(),[t,s]=(0,_s.useState)(!1);
-  S(p().goBack),(0,_s.useEffect)(()=>{
+  y(m().goBack),(0,_s.useEffect)(()=>{
     (async()=>{
-      await Qt(),s(!0)
+      await Yt(),s(!0)
     })()
   },[]);
   const r=ns(R.images.gui.maps.icons.battlePass.backgrounds.chapter_general,a);
@@ -535,7 +535,7 @@ Er=oa.resolve("strings"),Tr=Ot(({
       className:Or,style:{
         backgroundImage:`url(${r})`
       }
-    }),t&&(0,us.jsx)(lt,{
+    }),t&&(0,us.jsx)(ct,{
       children:(0,us.jsx)(Tr,{
         className:Dr
       })
@@ -544,41 +544,41 @@ Er=oa.resolve("strings"),Tr=Ot(({
 }),Vr={
   base__x60x60:"Emblem_base__x60x60_d8756e36",base__x100x100:"Emblem_base__x100x100_547cf3ad",base__x160x160:"Emblem_base__x160x160_c9c06954",base__x200x200:"Emblem_base__x200x200_2ddeb5ee",base__x240x240:"Emblem_base__x240x240_308c1aa9",base__x360x360:"Emblem_base__x360x360_98f20cf9",shield:"Emblem_shield_451cf2c9",icon:"Emblem_icon_73d84087",shield__x74x74:"Emblem_shield__x74x74_a298d905",shield__x120x120:"Emblem_shield__x120x120_c8aa5234",shield__x200x200:"Emblem_shield__x200x200_f1ed9db0",shield__x260x260:"Emblem_shield__x260x260_ef1c262b",shield__x300x300:"Emblem_shield__x300x300_7c6d6f97",shield__x456x456:"Emblem_shield__x456x456_c818292e",icon__x28x28:"Emblem_icon__x28x28_6ea3e635",icon__x48x48:"Emblem_icon__x48x48_f2526f88",icon__x60x60:"Emblem_icon__x60x60_628dbf9a",icon__x80x80:"Emblem_icon__x80x80_34079478",icon__x100x100:"Emblem_icon__x100x100_e8181a63",icon__x120x120:"Emblem_icon__x120x120_c8aa5234",icon__x160x160:"Emblem_icon__x160x160_aec06e5c",fadeInWithScale:"Emblem_fadeInWithScale_9b4d607c",slideUp:"Emblem_slideUp_9b4d607c",blink:"Emblem_blink_9b4d607c",scale:"Emblem_scale_9b4d607c",rotate:"Emblem_rotate_9b4d607c",windowIn:"Emblem_windowIn_9b4d607c",fadeOut:"Emblem_fadeOut_9b4d607c",fadeIn:"Emblem_fadeIn_9b4d607c"
 },
-Mr="x100x100",zr="x160x160",$r="x200x200",Fr="x240x240",Hr="x360x360",Ur="x74x74",Gr="x120x120",qr="x200x200",Kr="x260x260",Zr="x300x300",Xr="x456x456",Jr="x600x600",Qr="x912x912",Yr="x28x28",en="x48x48",an="x60x60",tn="x80x80",sn="x100x100",rn="x120x120",nn="x160x160",on="x240x240",ln="x320x320",cn=oa.resolve("images"),dn=function({
+Mr="x100x100",zr="x160x160",$r="x200x200",Fr="x240x240",Hr="x360x360",Ur="x74x74",Gr="x120x120",qr="x200x200",Kr="x260x260",Zr="x300x300",Xr="x456x456",Jr="x600x600",Yr="x912x912",Qr="x28x28",en="x48x48",an="x60x60",tn="x80x80",sn="x100x100",rn="x120x120",nn="x160x160",on="x240x240",ln="x320x320",cn=ca.resolve("images"),dn=function({
   iconSize:e,shieldSize:a,containerSize:t,chapterID:s,bpPurchased:r,className:n=""
 }){
-  const i=r?"purchased":"basic",o=String(s).slice(-1),l=a===Ur?Gr:a===Gr?Kr:a===qr?Xr:a===Kr||a===Zr?Jr:Qr,c=e===Yr?an:e===en?sn:e===an?rn:e===tn?nn:e===sn||e===rn?on:ln,d=cn.readOrEmpty(`battlePass.emblem.shield.c_${s}.${i}.${Ya(a,l)}`,"silent")||cn.readOrEmpty(`battlePass.emblem.shield.default.${i}.${a}`),_=cn.readOrEmpty(`battlePass.emblem.icon.c_${s}.${i}.${Ya(e,c)}`,"silent")||cn.readOrEmpty(`battlePass.emblem.icon.default_${o}.${i}.${e}`);
+  const i=r?"purchased":"basic",o=String(s).slice(-1),l=a===Ur?Gr:a===Gr?Kr:a===qr?Xr:a===Kr||a===Zr?Jr:Yr,c=e===Qr?an:e===en?sn:e===an?rn:e===tn?nn:e===sn||e===rn?on:ln,d=cn.readOrEmpty(`battlePass.emblem.shield.c_${s}.${i}.${at(a,l)}`,"silent")||cn.readOrEmpty(`battlePass.emblem.shield.default.${i}.${a}`),_=cn.readOrEmpty(`battlePass.emblem.icon.c_${s}.${i}.${at(e,c)}`,"silent")||cn.readOrEmpty(`battlePass.emblem.icon.default_${o}.${i}.${e}`);
   return(0,us.jsxs)("div",{
-    className:Ga(Vr.base,Vr[`base__${t}`],n),children:[(0,us.jsx)("div",{
-      className:Ga(Vr.shield,Vr[`shield__${a}`]),style:{
+    className:Ka(Vr.base,Vr[`base__${t}`],n),children:[(0,us.jsx)("div",{
+      className:Ka(Vr.shield,Vr[`shield__${a}`]),style:{
         backgroundImage:`url(${d})`
       }
     }),(0,us.jsx)("div",{
-      className:Ga(Vr.icon,Vr[`icon__${e}`]),style:{
-        backgroundImage:`url(${s>0?_:cn.readOrEmpty(`battlePass.emblem.icon.not_chosen.${Ya(e,an)}`)})`
+      className:Ka(Vr.icon,Vr[`icon__${e}`]),style:{
+        backgroundImage:`url(${s>0?_:cn.readOrEmpty(`battlePass.emblem.icon.not_chosen.${at(e,an)}`)})`
       }
     })]
   })
 },
-[_n,un]=Fe()(({
+[_n,un]=Ue()(({
   observableModel:e
 })=>{
   const a={
     root:e.object(),main:e.primitives(["state","shopOfferDiscount","isShopOfferAvailable","isWalletAvailable"]),rewards:e.array("rewards"),chapters:e.array("chapters"),package:e.array("package")
   },
-  t=ga(()=>a.rewards.get().topPriorityRewards.items,{
-    equals:me
-  }),s=ga(()=>a.rewards.get().prevTopPriorityRewards.items,{
-    equals:me
-  }),r=ga(()=>a.rewards.get().nowRewards.items,{
-    equals:me
-  }),n=ga(()=>a.rewards.get().futureRewards.items,{
-    equals:me
-  }),i=ga(()=>a.package.get().starterPackRewards.items,{
-    equals:me
-  }),o=ga(()=>kt(a.chapters.get(),({
+  t=xa(()=>a.rewards.get().topPriorityRewards.items,{
+    equals:pe
+  }),s=xa(()=>a.rewards.get().prevTopPriorityRewards.items,{
+    equals:pe
+  }),r=xa(()=>a.rewards.get().nowRewards.items,{
+    equals:pe
+  }),n=xa(()=>a.rewards.get().futureRewards.items,{
+    equals:pe
+  }),i=xa(()=>a.package.get().starterPackRewards.items,{
+    equals:pe
+  }),o=xa(()=>Pt(a.chapters.get(),({
     isExtra:e
-  })=>!e)),l=ga(()=>{
+  })=>!e)),l=xa(()=>{
     const{
       chapterID:e
     }=a.package.get(),t=o();
@@ -591,7 +591,7 @@ Mr="x100x100",zr="x160x160",$r="x200x200",Fr="x240x240",Hr="x360x360",Ur="x74x74
         chapterID:e
       })=>e)],amount:t.length
     }
-  }),c=ga(e=>Ye(a.chapters.get(),({
+  }),c=xa(e=>aa(a.chapters.get(),({
     hasStarterPack:a,chapterID:t
   })=>a&&t===e)?.hasStarterPack);
   return{
@@ -603,20 +603,20 @@ Mr="x100x100",zr="x160x160",$r="x200x200",Fr="x240x240",Hr="x360x360",Ur="x74x74
   model:e,externalModel:a
 })=>({
   shopOffer:a.createCallbackNoArgs("onShopOfferClick"),buy:a.createCallbackNoArgs("onBuyClick"),togglePurchaseWithLevels:a.createCallbackNoArgs("onChangePurchaseWithLevels"),closeClick:a.createCallbackNoArgs("onShopOfferClick"),showRewardsClick:a.createCallbackNoArgs("onShowRewardsClick")
-})),mn="PurchaseBlock_fa4dd8be",pn="PurchaseBlock_button_3b8b9877",hn="PurchaseBlock_previousPrice_1e77a9b2",bn="PurchaseBlock_currentPrice_c4a7499d",fn="PurchaseBlock_currency_a51b98a4",gn="PurchaseBlock_actionLip_63994768",vn=oa.resolve("strings"),xn=Ot(function({
+})),mn="PurchaseBlock_fa4dd8be",pn="PurchaseBlock_button_3b8b9877",hn="PurchaseBlock_previousPrice_1e77a9b2",bn="PurchaseBlock_currentPrice_c4a7499d",fn="PurchaseBlock_currency_a51b98a4",gn="PurchaseBlock_actionLip_63994768",vn=ca.resolve("strings"),xn=Ot(function({
   isPriceUpdateAnimation:e
 }){
   const{
     model:a,controls:t
   }=un(),{
-    isWalletAvailable:r
+    isWalletAvailable:s
   }=a.root.get(),{
-    price:n,prevPrice:i
-  }=a.package.get(),o=z({
-    currencySize:B.medium,buttonSize:s.small
+    price:r,prevPrice:n
+  }=a.package.get(),i=z({
+    currencySize:B.medium,buttonSize:ye.small
   },{
     medium:{
-      currencySize:B.extraLarge,buttonSize:s.large
+      currencySize:B.extraLarge,buttonSize:ye.large
     }
   });
   return(0,us.jsxs)("div",{
@@ -627,17 +627,17 @@ Mr="x100x100",zr="x160x160",$r="x200x200",Fr="x240x240",Hr="x360x360",Ur="x74x74
         classNames:{
           base:fn
         },
-        type:ye.gold,size:o.currencySize,children:i
+        type:Se.gold,size:i.currencySize,children:n
       })
     }):(0,us.jsx)("div",{
       className:bn,children:(0,us.jsx)(l,{
         classNames:{
           base:fn
         },
-        type:ye.gold,size:o.currencySize,children:n
+        type:Se.gold,size:i.currencySize,children:r
       })
-    }),(0,us.jsx)(ze,{
-      theme:_a.primary,size:o.buttonSize,className:pn,onClick:t.buy,disabled:!r,"data-test-id":"buyButton",children:vn.readOrEmpty("battle_pass.battlePassBuyView.confirm.btnBuy")
+    }),(0,us.jsx)(St,{
+      theme:w.primary,size:i.buttonSize,className:pn,onClick:t.buy,disabled:!s,"data-test-id":"buyButton",children:vn.readOrEmpty("battle_pass.battlePassBuyView.confirm.btnBuy")
     })]
   })
 }),wn="DiscountIcon_932f671c",Cn="DiscountIcon_icon_655d7c11",yn="DiscountIcon_highlight_75d6adf";
@@ -645,14 +645,14 @@ function Sn({
   className:e=""
 }){
   return(0,us.jsxs)("div",{
-    className:Ga(wn,e),children:[(0,us.jsx)("div",{
+    className:Ka(wn,e),children:[(0,us.jsx)("div",{
       className:Cn
     }),(0,us.jsx)("div",{
       className:yn
     })]
   })
 }
-var jn="Logos_1ed97e35",In="Logos_logoWrapper_826e9a4f",Nn="Logos_logo_ada5f291",kn="Logos_starterPack_f4dabb81",Pn=oa.resolve("images"),Rn=e=>{
+var jn="Logos_1ed97e35",In="Logos_logoWrapper_826e9a4f",Nn="Logos_logo_ada5f291",kn="Logos_starterPack_f4dabb81",Pn=ca.resolve("images"),Rn=e=>{
   const a=String(e).slice(-1);
   return Pn.readOrEmpty(`battlePass.emblem.icon.c_${e}.purchased.${nn}`,"silent")||Pn.readOrEmpty(`battlePass.emblem.icon.default_${a}.purchased.${nn}`)
 },
@@ -668,7 +668,7 @@ var An=Ot(function({
     chapterIDs:t,amount:s
   }=a.shopOfferChapters();
   return(0,us.jsxs)("div",{
-    className:Ga(jn,e),children:[t.map((e,a)=>(0,us.jsx)("div",{
+    className:Ka(jn,e),children:[t.map((e,a)=>(0,us.jsx)("div",{
       className:In,style:{
         zIndex:t.length-a
       },
@@ -677,7 +677,7 @@ var An=Ot(function({
           backgroundImage:`url(${Rn(e)})`
         }
       })
-    },e)),Boolean(s)&&(0,us.jsx)(ea,{
+    },e)),Boolean(s)&&(0,us.jsx)(ta,{
       classMix:kn,text:Bn.packsAmount(),binding:{
         amount:s
       }
@@ -689,40 +689,40 @@ var $n=Ot(function({
 }){
   const{
     model:a,controls:t
-  }=un(),r=a.computes.regularChapters(),n=Se(()=>{
+  }=un(),s=a.computes.regularChapters(),r=je(()=>{
     t.shopOffer()
-  }),i=z({
-    buttonSize:s.small
+  }),n=z({
+    buttonSize:ye.small
   },{
     medium:{
-      buttonSize:s.large
+      buttonSize:ye.large
     }
   });
   return(0,us.jsxs)("div",{
-    className:Ga(En,e),children:[Boolean(r.length)&&(0,us.jsx)(An,{
+    className:Ka(En,e),children:[Boolean(s.length)&&(0,us.jsx)(An,{
       className:Tn
     }),(0,us.jsxs)("div",{
-      className:Ln,children:[(0,us.jsx)(V,{
+      className:Ln,children:[(0,us.jsx)(ma,{
         upgradeLegacy:!0,className:Dn,text:zn.headline(),params:{
-          count:r.length
+          count:s.length
         }
       }),(0,us.jsx)(Sn,{
         className:On
       })]
-    }),(0,us.jsx)(V,{
+    }),(0,us.jsx)(ma,{
       upgradeLegacy:!0,className:Wn,text:zn.title()
-    }),(0,us.jsx)(V,{
+    }),(0,us.jsx)(ma,{
       upgradeLegacy:!0,className:Vn,text:zn.description()
-    }),(0,us.jsx)(ze,{
-      size:i.buttonSize,onClick:n,className:Mn,children:zn.buy()
+    }),(0,us.jsx)(St,{
+      size:n.buttonSize,onClick:r,className:Mn,children:zn.buy()
     })]
   })
 }),Fn="AnimatedReward_1789d927",Hn=({
   children:e,animationConfig:a,className:t
 })=>{
   const s=n(a);
-  return(0,us.jsx)(Ta.div,{
-    style:s,className:Ga(Fn,t),children:e
+  return(0,us.jsx)(Da.div,{
+    style:s,className:Ka(Fn,t),children:e
   })
 },
 Un={
@@ -742,42 +742,42 @@ Gn=(e,a,t)=>({
     a()
   },
   reset:t
-}),qn=oa.resolve("strings"),Kn=Ot(({
+}),qn=ca.resolve("strings"),Kn=Ot(({
   isCheckboxAnimationActive:e,isPrevious:a=!1,className:t
 })=>{
   const{
-    model:r
+    model:s
   }=un(),{
-    chapterID:i,isPurchaseWithLevels:o
-  }=r.package.get(),l=r.computes.nowRewards().length+r.computes.futureRewards().length-r.computes.topPriorityRewards().length,c=r.computes.topPriorityRewards(),d=r.computes.prevTopPriorityRewards(),_=a?d:c,u=l>0,m=()=>{
-    Te.sound(R.sounds.bp_reward())
+    chapterID:r,isPurchaseWithLevels:i
+  }=s.package.get(),o=s.computes.nowRewards().length+s.computes.futureRewards().length-s.computes.topPriorityRewards().length,l=s.computes.topPriorityRewards(),c=s.computes.prevTopPriorityRewards(),d=a?c:l,_=o>0,u=()=>{
+    De.sound(R.sounds.bp_reward())
   },
   {
-    breakpoint:h
-  }=O(),b=h.weight<Ve.medium.weight?sa.Small:sa.Big,f=n(Gn(6,m)),g=p();
+    breakpoint:p
+  }=W(),h=p.weight<$e.medium.weight?na.Small:na.Big,b=n(Gn(6,u)),f=m();
   return(0,us.jsxs)("div",{
-    className:Ga(Un.base,t),children:[(0,us.jsx)("div",{
-      className:Un.descriptionText,children:a!==o?qn.readOrEmpty("battle_pass.battlePassBuyView.confirm.descriptionCheckboxChecked"):qn.readOrEmpty("battle_pass.battlePassBuyView.confirm.description")
+    className:Ka(Un.base,t),children:[(0,us.jsx)("div",{
+      className:Un.descriptionText,children:a!==i?qn.readOrEmpty("battle_pass.battlePassBuyView.confirm.descriptionCheckboxChecked"):qn.readOrEmpty("battle_pass.battlePassBuyView.confirm.description")
     }),(0,us.jsxs)("div",{
       className:Un.rewardsWrapper,children:[(0,us.jsx)("div",{
-        className:Ga(Un.priorityRewards,u&&Un.priorityRewards__rewardsButtonVisible),children:w(_,(e,t)=>a?(0,_s.createElement)(L,{
-          ...Kt(e,b),key:`${e.name}_${t}`
+        className:Ka(Un.priorityRewards,_&&Un.priorityRewards__rewardsButtonVisible),children:x(d,(e,t)=>a?(0,_s.createElement)(L,{
+          ...Kt(e,h),key:`${e.name}_${t}`
         }):(0,us.jsx)(Hn,{
-          animationConfig:Gn(t,m),children:(0,us.jsx)(L,{
-            ...Kt(e,b)
+          animationConfig:Gn(t,u),children:(0,us.jsx)(L,{
+            ...Kt(e,h)
           })
         },`${e.name}_${t}`))
-      }),u&&(0,us.jsx)(Ta.div,{
-        style:f,children:(0,us.jsx)("div",{
-          className:Un.buttonWrapper,children:(0,us.jsx)(ze,{
-            theme:_a.secondary,size:s.large,className:Ga(Un.rewardBtn,e&&Un.rewardBtn__currentRewardsAnimation),classNames:{
+      }),_&&(0,us.jsx)(Da.div,{
+        style:b,children:(0,us.jsx)("div",{
+          className:Un.buttonWrapper,children:(0,us.jsx)(St,{
+            theme:w.secondary,size:ye.large,className:Ka(Un.rewardBtn,e&&Un.rewardBtn__currentRewardsAnimation),classNames:{
               content:Un.buttonContent
             },
-            onClick:()=>g.push(os.battlePass.buyPassRewards,{
-              packageID:i
-            }),children:(0,us.jsx)(ea,{
+            onClick:()=>f.push(os.battlePass.buyPassRewards,{
+              packageID:r
+            }),children:(0,us.jsx)(ta,{
               text:qn.readOrEmpty("battle_pass.battlePassBuyView.btnRewards"),binding:{
-                count:l
+                count:o
               },
               classMix:Un.text
             })
@@ -789,38 +789,38 @@ Gn=(e,a,t)=>({
 }),Zn={
   base:"StarterPack_231839be",presentLogo:"StarterPack_presentLogo_cb1c6f84",presentLogo__x36x36:"StarterPack_presentLogo__x36x36_15fc148b",presentLogo__x52x52:"StarterPack_presentLogo__x52x52_f480a652",equalLogo:"StarterPack_equalLogo_407c8a9c",rewardsWrapper:"StarterPack_rewardsWrapper_bf86c609",rewards:"StarterPack_rewards_231839be",fadeInWithScale:"StarterPack_fadeInWithScale_e09c33a3",slideUp:"StarterPack_slideUp_e09c33a3",blink:"StarterPack_blink_e09c33a3",scale:"StarterPack_scale_e09c33a3",rotate:"StarterPack_rotate_e09c33a3",windowIn:"StarterPack_windowIn_e09c33a3",fadeOut:"StarterPack_fadeOut_e09c33a3",fadeIn:"StarterPack_fadeIn_e09c33a3"
 },
-Xn=oa.resolve("strings"),Jn="x36x36",Qn="x52x52",Yn=Ot(function({
+Xn=ca.resolve("strings"),Jn="x36x36",Yn="x52x52",Qn=Ot(function({
   starterPackRewards:e,presentSize:a,rewardSize:t,classNames:s
 }){
   return(0,us.jsxs)("div",{
     className:Zn.base,children:[(0,us.jsx)("div",{
-      className:Ga(Zn.presentLogo,Zn[`presentLogo__${a}`],s?.presentLogo)
+      className:Ka(Zn.presentLogo,Zn[`presentLogo__${a}`],s?.presentLogo)
     }),(0,us.jsx)("div",{
-      className:Ga(Zn.equalLogo,s?.equalLogo),children:Xn.readOrEmpty("battle_pass.progression.footer.starter_pack.equal")
+      className:Ka(Zn.equalLogo,s?.equalLogo),children:Xn.readOrEmpty("battle_pass.progression.footer.starter_pack.equal")
     }),(0,us.jsx)("div",{
       className:Zn.rewardsWrapper,children:(0,us.jsx)("div",{
-        className:Zn.rewards,children:w(e,(e,a)=>(0,us.jsx)(L,{
+        className:Zn.rewards,children:x(e,(e,a)=>(0,us.jsx)(L,{
           ...Kt(e,t),className:s?.reward
         },`reward_${e.name}_${a}`))
       })
     })]
   })
-}),ei="StarterPack_packDescription_e09c33a3",ai="StarterPack_purchaseText_67051b2",ti="StarterPack_presentLogo_f1509f42",si="StarterPack_equalLogo_4d2bea9f",ri=oa.resolve("strings"),ni=Ot(function(){
+}),ei="StarterPack_packDescription_e09c33a3",ai="StarterPack_purchaseText_67051b2",ti="StarterPack_presentLogo_f1509f42",si="StarterPack_equalLogo_4d2bea9f",ri=ca.resolve("strings"),ni=Ot(function(){
   const{
     model:e
   }=un(),a=e.computes.starterPackRewards(),{
     breakpoint:t
-  }=O(),s=t.weight<Ve.medium.weight?sa.Small:sa.Big;
+  }=W(),s=t.weight<$e.medium.weight?na.Small:na.Big;
   return(0,us.jsxs)(us.Fragment,{
-    children:[(0,us.jsx)(V,{
+    children:[(0,us.jsx)(ma,{
       text:ri.readOrEmpty("battle_pass.battlePassBuyView.confirm.starterPack.description"),upgradeLegacy:!0,params:{
         purchaseText:(0,us.jsx)("span",{
           className:ai,children:ri.readOrEmpty("battle_pass.battlePassBuyView.confirm.starterPack.purchaseText")
         })
       },
       className:ei
-    }),(0,us.jsx)(Yn,{
-      starterPackRewards:a,presentSize:Qn,rewardSize:s,classNames:{
+    }),(0,us.jsx)(Qn,{
+      starterPackRewards:a,presentSize:Yn,rewardSize:s,classNames:{
         presentLogo:ti,equalLogo:si
       }
     })]
@@ -828,19 +828,19 @@ Xn=oa.resolve("strings"),Jn="x36x36",Qn="x52x52",Yn=Ot(function({
 }),ii={
   base:"PassContent_1cb8450b",contentWrapper:"PassContent_contentWrapper_6bd43d6a",contentWrapper__noShopOffer:"PassContent_contentWrapper__noShopOffer_3c8d5049",content:"PassContent_content_c067e9cf",emblem:"PassContent_emblem_bf66736c",chapterInfo:"PassContent_chapterInfo_3efcc8f4",chapterName:"PassContent_chapterName_b21f7a0e",check:"PassContent_check_a557a239",checkIcon:"PassContent_checkIcon_2ddd3576",checkboxLabel:"PassContent_checkboxLabel_968825b",previousRewards:"PassContent_previousRewards_3344ac4c",fadeOut:"PassContent_fadeOut_f51cf613",content__rewardsUpdateAnimation:"PassContent_content__rewardsUpdateAnimation_f51cf613",currentRewards:"PassContent_currentRewards_cc1995e8",fadeIn:"PassContent_fadeIn_f51cf613",checkbox:"PassContent_checkbox_a0d760a8",starterPack:"PassContent_starterPack_bcf3e072",offerBack:"PassContent_offerBack_a71885da",offerWrapper:"PassContent_offerWrapper_e8393a4",offer:"PassContent_offer_d09e2495",fadeInWithScale:"PassContent_fadeInWithScale_f51cf613",slideUp:"PassContent_slideUp_f51cf613",blink:"PassContent_blink_f51cf613",scale:"PassContent_scale_f51cf613",rotate:"PassContent_rotate_f51cf613",windowIn:"PassContent_windowIn_f51cf613"
 },
-oi=oa.resolve("strings"),li=oa.resolve("images"),ci=Ot(()=>{
+oi=ca.resolve("strings"),li=ca.resolve("images"),ci=Ot(()=>{
   const[e,a]=(0,_s.useState)(!1),t=(0,_s.useRef)(!1),{
     model:s,controls:r
   }=un(),{
     chapterID:n,remainingLevelsCount:i,isPurchaseWithLevels:o
-  }=s.package.get(),l=s.computes.hasStarterPackInChapter(n),c=s.main.isShopOfferAvailable.get(),d=p();
-  ue(ie.ESCAPE,()=>d.goBack());
+  }=s.package.get(),l=s.computes.hasStarterPackInChapter(n),c=s.main.isShopOfferAvailable.get(),d=m();
+  me(le.ESCAPE,()=>d.goBack());
   const _=(()=>{
     const e=String(n).slice(-1),a=`battlePass.backgrounds.chapter_general.c_${n}`,t=`battlePass.backgrounds.chapter_general.default_${e}`;
     return li.readOrEmpty(a,"silent")||li.readOrEmpty(t)
   })();
   (0,_s.useEffect)(()=>{
-    if(t.current)return a(!0),Ka(()=>{
+    if(t.current)return a(!0),Xa(()=>{
       a(!1)
     },300);
     t.current=!0
@@ -860,7 +860,7 @@ oi=oa.resolve("strings"),li=oa.resolve("images"),ci=Ot(()=>{
       backgroundImage:`url(${_})`
     },
     children:[(0,us.jsx)("div",{
-      className:Ga(ii.contentWrapper,!c&&ii.contentWrapper__noShopOffer,e&&ii.contentWrapper__rewardsUpdateAnimation),children:(0,us.jsxs)("div",{
+      className:Ka(ii.contentWrapper,!c&&ii.contentWrapper__noShopOffer,e&&ii.contentWrapper__rewardsUpdateAnimation),children:(0,us.jsxs)("div",{
         className:ii.content,children:[(0,us.jsx)("div",{
           className:ii.emblem,children:(0,us.jsx)(dn,{
             iconSize:u.iconSize,shieldSize:u.shieldSize,containerSize:u.containerSize,bpPurchased:!0,chapterID:n
@@ -869,11 +869,11 @@ oi=oa.resolve("strings"),li=oa.resolve("images"),ci=Ot(()=>{
           className:ii.chapterInfo,children:[(0,us.jsx)("div",{
             className:ii.chapterName,children:oi.readOrEmpty(`battle_pass.chapter.fullName.c_${n}`)
           }),i>0&&(0,us.jsx)("div",{
-            className:ii.checkbox,children:(0,us.jsx)(X,{
+            className:ii.checkbox,children:(0,us.jsx)(Y,{
               checked:o,onCheckedChange:r.togglePurchaseWithLevels,classNames:{
                 checkIcon:ii.checkIcon,check:ii.check
               },
-              "data-test-id":"buyLevelsCheckbox",children:(0,us.jsx)(V,{
+              "data-test-id":"buyLevelsCheckbox",children:(0,us.jsx)(ma,{
                 text:oi.pluralOrEmpty("battle_pass.battlePassBuyView.confirm.checkbox.stage",i),upgradeLegacy:!0,params:{
                   stagesNumber:i
                 },
@@ -947,62 +947,62 @@ _i=Ot(()=>{
     opacity:1,transform:"translateY(0rem)"
   },
   config:{
-    duration:t,easing:qe.easeInOutCubic
+    duration:t,easing:Ze.easeInOutCubic
   },
   delay:e
-}),hi=oa.resolve("images"),bi=oa.resolve("videos"),[fi,gi]=Fe()(({
+}),hi=ca.resolve("images"),bi=ca.resolve("videos"),[fi,gi]=Ue()(({
   observableModel:e
 })=>{
   const a=e.array("chapters"),t={
-    root:e.object(),selectedChapterID:ya.box(0),prevChapterIndex:ya.box(0),chapters:a
+    root:e.object(),selectedChapterID:ja.box(0),prevChapterIndex:ja.box(0),chapters:a
   },
-  s=ga(()=>i(a.get(),({
+  s=xa(()=>i(a.get(),({
     isExtra:e
-  })=>e)),r=ga(()=>i(a.get(),({
+  })=>e)),r=xa(()=>i(a.get(),({
     chapterState:e
-  })=>e===Jt.Active)),n=ga(()=>vt(a.get(),({
+  })=>e===Jt.Active)),n=xa(()=>xt(a.get(),({
     chapterState:e
-  })=>e===Jt.Completed)),o=ga(e=>Ye(a.get(),a=>a.chapterID===e),{
-    equals:me
-  }),l=ga(e=>{
-    const t=Ye(a.get(),a=>a.chapterID===e);
+  })=>e===Jt.Completed)),o=xa(e=>aa(a.get(),a=>a.chapterID===e),{
+    equals:pe
+  }),l=xa(e=>{
+    const t=aa(a.get(),a=>a.chapterID===e);
     return{
       levelProgression:t?.levelProgression||0,currentLevel:t?.currentLevel||0
     }
-  }),c=ga(()=>kt(t.chapters.get(),e=>!e.isExtra),{
-    equals:me
-  }),d=ga(()=>kt(t.chapters.get(),e=>!e.isExtra&&!e.isPostProgression),{
-    equals:me
-  }),_=ga(()=>kt(c(),e=>e.chapterState===Jt.Completed).length,{
-    equals:me
-  }),u=ga(()=>kt(t.chapters.get(),e=>e.isExtra)),m=ga(()=>kt(t.chapters.get(),e=>e.isPostProgression)),p=[2],h=ga(()=>{
-    const e=Ye(t.chapters.get(),({
+  }),c=xa(()=>Pt(t.chapters.get(),e=>!e.isExtra),{
+    equals:pe
+  }),d=xa(()=>Pt(t.chapters.get(),e=>!e.isExtra&&!e.isPostProgression),{
+    equals:pe
+  }),_=xa(()=>Pt(c(),e=>e.chapterState===Jt.Completed).length,{
+    equals:pe
+  }),u=xa(()=>Pt(t.chapters.get(),e=>e.isExtra)),m=xa(()=>Pt(t.chapters.get(),e=>e.isPostProgression)),p=[2],h=xa(()=>{
+    const e=aa(t.chapters.get(),({
       chapterID:e
     })=>e===t.selectedChapterID.get());
-    return e||Ct(t.chapters.get(),t.prevChapterIndex.get())
+    return e||yt(t.chapters.get(),t.prevChapterIndex.get())
   },{
-    equals:me
-  }),b=ga(()=>{
+    equals:pe
+  }),b=xa(()=>{
     const{
       timeLeft:e,isExtra:a
     }=h();
-    return a?tt(e).days<3:tt(e).days<20
+    return a?st(e).days<3:st(e).days<20
   },{
-    equals:me
-  }),f=ga(()=>[...s()?u():[],...d(),...m()]),g=ga(()=>{
+    equals:pe
+  }),f=xa(()=>[...s()?u():[],...d(),...m()]),g=xa(()=>{
     const e=[];
-    return w(f(),a=>{
+    return x(f(),a=>{
       const t=String(a.chapterID).slice(-1),s=`battlePass.backgrounds.chapter_choice.c_${a.chapterID}`,r=`battlePass.backgrounds.chapter_choice.default_${t}`,n=`battle_pass.chapter_choice.c_${a.chapterID}.idle`;
       e.push({
         chapter:a.chapterID,mainBg:hi.readOrEmpty(s,"silent")||hi.readOrEmpty(r),idleBg:bi.readOrEmpty(n,"silent")||""
       })
     }),e
   },{
-    equals:me
+    equals:pe
   });
   return{
     ...t,computes:{
-      getChapterById:o,getProgressionInfoByChapterId:l,hasExtra:s,hasActive:r,detailedTimer:b,isCompleted:n,regularChapters:c,extraChapters:u,regularChaptersCompleteCount:_,chaptersLineInfo:()=>te(c(),(e,{
+      getChapterById:o,getProgressionInfoByChapterId:l,hasExtra:s,hasActive:r,detailedTimer:b,isCompleted:n,regularChapters:c,extraChapters:u,regularChaptersCompleteCount:_,chaptersLineInfo:()=>re(c(),(e,{
         chapterID:a,chapterState:t
       },s)=>(p.includes(s+1)||e.push({
         chapterID:a,chapterState:t
@@ -1012,11 +1012,11 @@ _i=Ot(()=>{
 },({
   externalModel:e,model:a,cleanup:t
 })=>{
-  const s=ht(e=>{
+  const s=bt(e=>{
     a.selectedChapterID.set(e)
-  }),r=ht(e=>{
+  }),r=bt(e=>{
     a.prevChapterIndex.set(e)
-  }),n=va(()=>a.root.get().selectedChapter,e=>{
+  }),n=wa(()=>a.root.get().selectedChapter,e=>{
     s(e),r(e)
   },{
     fireImmediately:!0
@@ -1036,7 +1036,7 @@ _i=Ot(()=>{
 function xi({
   src:e,style:a
 }){
-  const t=(0,_s.useRef)(null),[s,r]=J(()=>{
+  const t=(0,_s.useRef)(null),[s,r]=Q(()=>{
     const e=t.current;
     return!e||(!e.getCachedKeyframes()?.length||(e.goToAndPlay(0),!1))
   });
@@ -1045,7 +1045,7 @@ function xi({
     return()=>{
       e&&(e.domRef.src="")
     }
-  },[t]),(0,us.jsx)(G,{
+  },[t]),(0,us.jsx)(K,{
     src:e,style:a,className:vi,ref:t,autoplay:!0,loop:!0
   })
 }
@@ -1058,23 +1058,23 @@ var wi="Background_d1f724bf",Ci="Background_mainBg_b8b64d56",yi="Background_idle
     mainBg:i,idleBg:o
   }=r.computes.backgrounds()[a],{
     width:l,height:c
-  }=Ae(),d=Xt(l,c,ae(),o);
+  }=Ee(),d=Xt(l,c,se(),o);
   return(0,us.jsxs)("div",{
-    className:wi,children:[(0,us.jsx)(Ta.div,{
-      className:Ga(Ci,s?.main),style:{
+    className:wi,children:[(0,us.jsx)(Da.div,{
+      className:Ka(Ci,s?.main),style:{
         ...e,backgroundImage:`url(${i})`,zIndex:a===t?3:a===n?2:1,transform:e.x.to(e=>`translateX(${e}rem)`)
       }
     }),a===t&&o&&(0,us.jsx)("div",{
-      className:Ga(yi,s?.idle),children:(0,us.jsx)(xi,{
+      className:Ka(yi,s?.idle),children:(0,us.jsx)(xi,{
         src:o,style:d
       })
     })]
   })
-}),ji=(Y.assault,Y.universal,Y.break,Y.sniper,Y.scout,Y.support,T.lightTank,T.mediumTank,T.heavyTank,T["AT-SPG"],T.SPG,Na(1,12,d),"vehicle_types"),Ii="nations",Ni="levels",ki={
-  heavy_tank:o,medium_tank:Z,light_tank:Aa,at_spg:se
+}),ji=(O.assault,O.universal,O.break,O.sniper,O.scout,O.support,P.lightTank,P.mediumTank,P.heavyTank,P["AT-SPG"],P.SPG,Pa(1,12,d),"vehicle_types"),Ii="nations",Ni="levels",ki={
+  heavy_tank:ae,medium_tank:j,light_tank:ce,at_spg:Ta
 };
 function Pi(e,a){
-  return"isCommonProgression"===e&&(a.status!==C.UNSUITABLE_TO_QUEUE&&a.bpProgress<a.maxBpScore)
+  return"isCommonProgression"===e&&(a.status!==Wa.UNSUITABLE_TO_QUEUE&&a.bpProgress<a.maxBpScore)
 }
 function Ri(e,a,t,s){
   switch(a){
@@ -1091,7 +1091,7 @@ function Ri(e,a,t,s){
   }
 }
 var Bi={
-  [Ni]:(e,a)=>!e.levels||e.levels.includes(`level_${a.level}`),[Ii]:(e,a)=>!e.nations||e.nations.includes(Pa(a.nationId)),[ji]:(e,a)=>!e.vehicle_types||e.vehicle_types.includes(a.type)
+  [Ni]:(e,a)=>!e.levels||e.levels.includes(`level_${a.level}`),[Ii]:(e,a)=>!e.nations||e.nations.includes(Ba(a.nationId)),[ji]:(e,a)=>!e.vehicle_types||e.vehicle_types.includes(a.type)
 };
 function Ai(e,a,t){
   let s=!1;
@@ -1099,11 +1099,11 @@ function Ai(e,a,t){
   for(const n of r)if("rented"!==n){
     if(!Ri(r,n,a,t))return!1
   }else s=!0;
-  if(!s&&At(a)&&!t?.fromWotPlus)return!1;
+  if(!s&&T(a)&&!t?.fromWotPlus)return!1;
   if(t&&e.battle_pass&&e.battle_pass.length>0)for(const n of e.battle_pass)if(!Pi(n,t))return!1;
   for(const n of Object.keys(e))if(n in Bi&&!Bi[n](e,a))return!1;
   return((e,a)=>{
-    const t=Da(a.role);
+    const t=J(a.role);
     let s=!1;
     for(const r of Object.keys(ki))if(r in e&&(s=!0,e[r].some(e=>e.includes(t))))return!0;
     return!s
@@ -1131,12 +1131,12 @@ function Li(e,a){
 }
 function Di(e,a,t,s){
   if(t.favorite!==s.favorite)return t.favorite?-1:1;
-  const r=e[Pa(t.nationId)]??0,n=e[Pa(s.nationId)]??0;
+  const r=e[Ba(t.nationId)]??0,n=e[Ba(s.nationId)]??0;
   if(r!==n)return r-n;
   const i=a[t.type]??0,o=a[s.type]??0;
   return i!==o?i-o:t.level!==s.level?t.level-s.level:t.premium!==s.premium?t.premium?1:-1:t.shortName.localeCompare(s.shortName)
 }
-var[Oi,Wi]=Fe("FilterVehiclesProvider")(({
+var[Oi,Wi]=Ue("FilterVehiclesProvider")(({
   observableModel:e,readByPath:a
 })=>{
   function t(e){
@@ -1151,21 +1151,21 @@ var[Oi,Wi]=Fe("FilterVehiclesProvider")(({
   }=t(a("filters")),n={
     ...e.primitives(["defaultFilters"])
   },
-  i=Ca.structural(()=>t(n.defaultFilters.get())),o={
-    ...e.primitives(["carouselRowCount"]),filters:ya.box(r,{
+  i=Sa.structural(()=>t(n.defaultFilters.get())),o={
+    ...e.primitives(["carouselRowCount"]),filters:ja.box(r,{
       deep:!1
-    }),searchName:ya.box(s?.[0]??""),nations:e.arrayClone("nationsOrder")
+    }),searchName:ja.box(s?.[0]??""),nations:e.arrayClone("nationsOrder")
   };
   return{
     ...o,computes:{
-      hasFilters:Ca.primitive(()=>!ce.structural(i(),o.filters.get())||o.searchName.get().length>0),nations:()=>o.nations.get(),nationToIndex:Ca.shallow(()=>o.nations.get().reduce((e,a,t)=>(e[a]=t,e),{})),default:i
+      hasFilters:Sa.primitive(()=>!_e.structural(i(),o.filters.get())||o.searchName.get().length>0),nations:()=>o.nations.get(),nationToIndex:Sa.shallow(()=>o.nations.get().reduce((e,a,t)=>(e[a]=t,e),{})),default:i
     }
   }
 },({
   cleanup:e,model:a,externalModel:t
 })=>{
   const s=t.createCallback(e=>e,"onSaveFilter");
-  return e(la(()=>{
+  return e(da(()=>{
     var e,t;
     e=a.filters.get(),t=a.searchName.get(),s({
       filters:JSON.stringify({
@@ -1173,31 +1173,31 @@ var[Oi,Wi]=Fe("FilterVehiclesProvider")(({
       })
     })
   })),{
-    reset:ht(()=>{
+    reset:bt(()=>{
       a.filters.set(a.computes.default()),a.searchName.set("")
-    }),search:ht(e=>{
+    }),search:bt(e=>{
       a.searchName.set(e)
-    }),change:ht(e=>{
+    }),change:bt(e=>{
       a.filters.set(Li(a.filters.get(),e))
     }),carouselTypeChange:t.createCallback(e=>({
       rowCount:e
     }),"onCarouselTypeChange")
   }
-}),Vi=[T.lightTank,T.mediumTank,T.heavyTank,T["AT-SPG"],T.SPG].reduce((e,a,t)=>(e[a]=t,e),{}),[Mi,zi]=Fe("VehicleStatisticsProvider")(({
+}),Vi=[P.lightTank,P.mediumTank,P.heavyTank,P["AT-SPG"],P.SPG].reduce((e,a,t)=>(e[a]=t,e),{}),[Mi,zi]=Ue("VehicleStatisticsProvider")(({
   observableModel:e
 })=>{
-  const a=e.dict("statistics"),t=Ca.structural(e=>a.get(e));
+  const a=e.dict("statistics"),t=Sa.structural(e=>a.get(e));
   return{
-    ids:Ca.primitive(()=>a.keys),get:t
+    ids:Sa.primitive(()=>a.keys),get:t
   }
-}),[$i,Fi]=Fe("VehiclesProvider")(({
+}),[$i,Fi]=Ue("VehiclesProvider")(({
   observableModel:e
 })=>{
   const a={
     vehicles:e.dictRef("vehicles")
   };
   return{
-    get:Ca.structural(e=>{
+    get:Sa.structural(e=>{
       if(-1===e)return;
       const t=a.vehicles.get(e);
       if(!t)return void console.error(`Error getting vehicle with id: ${e}`);
@@ -1210,9 +1210,9 @@ var[Oi,Wi]=Fe("FilterVehiclesProvider")(({
         }
       }(t);
       return{
-        ...s,imageKey:pe(s.name)
+        ...s,imageKey:Be(s.name)
       }
-    }),has:Ca.primitive(e=>Boolean(a.vehicles.get(e))),ids:Ca.shallow(()=>[...a.vehicles.keys.values()]),amount:Ca.primitive(()=>a.vehicles.length),list:Ca.shallow(()=>{
+    }),has:Sa.primitive(e=>Boolean(a.vehicles.get(e))),ids:Sa.shallow(()=>[...a.vehicles.keys.values()]),amount:Sa.primitive(()=>a.vehicles.length),list:Sa.shallow(()=>{
       let e=[];
       for(const[s,r]of a.vehicles.entries())try{
         e.push(JSON.parse(r.get()))
@@ -1222,14 +1222,14 @@ var[Oi,Wi]=Fe("FilterVehiclesProvider")(({
       return e
     })
   }
-},Pe,{
+},Re,{
   useRequires:()=>({
     statistics:zi()
   })
-}),[Hi,Ui]=Fe("MyVehiclesProvider")(e=>{
-  const a=e.requires.statistic.model.ids,t=Ca.structural(t=>{
+}),[Hi,Ui]=Ue("MyVehiclesProvider")(e=>{
+  const a=e.requires.statistic.model.ids,t=Sa.structural(t=>{
     if(a().has(t))return e.requires.vehicles.model.get(t)
-  }),s=Ca.shallow(()=>{
+  }),s=Sa.shallow(()=>{
     const t=[];
     for(const s of a().values()){
       const a=e.requires.vehicles.model.get(s);
@@ -1238,15 +1238,15 @@ var[Oi,Wi]=Fe("FilterVehiclesProvider")(({
     return t
   });
   return{
-    get:t,getAll:s,amount:Ca.primitive(()=>s().length),ids:a
+    get:t,getAll:s,amount:Sa.primitive(()=>s().length),ids:a
   }
-},Pe,{
+},Re,{
   useRequires:()=>({
     vehicles:Fi(),statistic:zi()
   })
-}),Gi=oa.resolve("strings"),qi=Fa(ua+_t),Ki=()=>`${Date.now().toString(16)}_${qi(3)}`;
+}),Gi=ca.resolve("strings"),qi=Ua(pa+ut),Ki=()=>`${Date.now().toString(16)}_${qi(3)}`;
 function Zi(e,a,t=1){
-  const s=Be(a,{
+  const s=Ae(a,{
     count:t
   });
   return e.has(s)?Zi(e,a,t+1):s
@@ -1259,10 +1259,10 @@ function Xi(e="",a=[]){
 var Ji=e=>({
   type:"ok",value:e
 });
-function Qi(e){
+function Yi(e){
   if("ok"===e.type)return e.value
 }
-var Yi="delete",eo="import",ao=Tt({
+var Qi="delete",eo="import",ao=Tt({
   title:Dt(),createdAt:Lt(Ut(),Ht(),$t(0)),modifiedAt:Lt(Ut(),Ht(),$t(0)),list:zt(Lt(Ut(),Ht()))
 }),to=Lt(Dt(),Ft(e=>e.length>0?e:void 0)),so="new",ro="existing",[no,io,{
   Context:oo
@@ -1272,27 +1272,27 @@ var Yi="delete",eo="import",ao=Tt({
   title:Dt()
 }),Tt({
   titles:Lt(zt(Dt()),Ft(e=>new Set(e)))
-}),Fe("PlaylistsProvider")(({
+}),Ue("PlaylistsProvider")(({
   requires:e,observableModel:a
 })=>{
   const s=a.dict("storage"),r=a.primitives(["selectedID","enabled","dirtyEdit"]),n=e.filters.model.computes.default,i={
-    vehicles:e.vehicles.model,myVehicles:e.myVehicles.model,enabled:r.enabled,selectedID:r.selectedID,nationsOrder:e.filters.model.nations,filters:ya.box(n(),{
+    vehicles:e.vehicles.model,myVehicles:e.myVehicles.model,enabled:r.enabled,selectedID:r.selectedID,nationsOrder:e.filters.model.nations,filters:ja.box(n(),{
       deep:!1
-    }),searchName:ya.box("",{
+    }),searchName:ja.box("",{
       deep:!1
     }),edit:{
-      initial:ya.box(void 0,{
+      initial:ja.box(void 0,{
         deep:!1
       }),dirty:r.dirtyEdit
     }
   },
-  o=Ca.shallow(()=>s.keys),l=Ca.primitive(()=>qt(to,i.selectedID.get())),c=Ca.structural(e=>{
+  o=Sa.shallow(()=>s.keys),l=Sa.primitive(()=>qt(to,i.selectedID.get())),c=Sa.structural(e=>{
     try{
       const a=s.get(e);
       if(!a)return Ji(void 0);
       const t=qt(ao,JSON.parse(a)),r=new Set;
-      for(const e of t.list)if(Re[e]){
-        const a=Re[e].find(e=>Boolean(i.myVehicles.get(e.toString())));
+      for(const e of t.list)if(Le[e]){
+        const a=Le[e].find(e=>Boolean(i.myVehicles.get(e.toString())));
         r.add(a??e)
       }else r.add(e);
       return Ji({
@@ -1306,22 +1306,22 @@ var Yi="delete",eo="import",ao=Tt({
       }
     }
     var a,t
-  }),d=Ca.shallow(()=>Q(o().values()).map(e=>c(e)).filter(e=>"ok"===e.type&&void 0!==e.value).map(e=>e.value.title).reduce((e,a)=>e.add(a),new Set)),_=Ca.primitive(e=>{
+  }),d=Sa.shallow(()=>ee(o().values()).map(e=>c(e)).filter(e=>"ok"===e.type&&void 0!==e.value).map(e=>e.value.title).reduce((e,a)=>e.add(a),new Set)),_=Sa.primitive(e=>{
     const a=c(e);
     if("ok"!==a.type||void 0===a.value)throw new Error(`Can't get playlist by id ${e}`);
     return a.value
-  }),u=Ca.structural(e=>{
+  }),u=Sa.structural(e=>{
     const a=c(e);
     if("ok"===a.type&&void 0!==a.value)return{
       id:e,...a.value
     }
-  }),m=Ca.shallow(()=>Q(o().values()).map(e=>u(e)).filter(e=>void 0!==e).toArray().sort((e,a)=>e.title.localeCompare(a.title)).map(e=>e.id)),p=Ca.primitive(()=>{
+  }),m=Sa.shallow(()=>ee(o().values()).map(e=>u(e)).filter(e=>void 0!==e).toArray().sort((e,a)=>e.title.localeCompare(a.title)).map(e=>e.id)),p=Sa.primitive(()=>{
     const e=l();
     if(e)return u(e)
-  }),h=Ca.shallow(()=>{
+  }),h=Sa.shallow(()=>{
     const a=e.filters.model.computes.nationToIndex();
-    return Ba(e.myVehicles.model.getAll(),(e,t)=>Di(a,Vi,e,t))
-  }),b=Ca.primitive(e=>{
+    return Ea(e.myVehicles.model.getAll(),(e,t)=>Di(a,Vi,e,t))
+  }),b=Sa.primitive(e=>{
     const a=u(e),s=g();
     if(void 0===a||0===a.list.length)return;
     const r=new Set(a.list);
@@ -1329,10 +1329,10 @@ var Yi="delete",eo="import",ao=Tt({
       const e=Number(s[n]?.id);
       if(t(e)&&r.has(e))return n
     }
-  }),f=Ca.primitive(()=>!1===ce.structural(n(),i.filters.get())||i.searchName.get().length>0),g=Ca.shallow(()=>{
+  }),f=Sa.primitive(()=>!1===_e.structural(n(),i.filters.get())||i.searchName.get().length>0),g=Sa.shallow(()=>{
     const a=i.filters.get(),t=h(),s=i.searchName.get();
     return t.filter(t=>!!Ei(s,t)&&Ai(a,t,e.statistic.model.get(t.id)))
-  }),v=Ca.primitive(a=>Boolean(e.statistic.model.get(a)?.elite)),x=Ca.shallow(a=>e.vehicles.model.get(a)?.imageKey),w=Ca.primitive(()=>g().length),C=Ca.shallow(()=>p()?.list.map(i.vehicles.get));
+  }),v=Sa.primitive(a=>Boolean(e.statistic.model.get(a)?.elite)),x=Sa.shallow(a=>e.vehicles.model.get(a)?.imageKey),w=Sa.primitive(()=>g().length),C=Sa.shallow(()=>p()?.list.map(i.vehicles.get));
   return{
     ...i,current:p,titles:d,currentId:l,byIdUnsafe:_,byId:c,byIdFull:u,filtered:g,filteredAmount:w,defaultFilters:n,hasFilters:f,vehicleImage:x,currentVehicles:C,ids:o,sortedIds:m,isElite:v,firstAddedVehicleIndexByPlaylistId:b
   }
@@ -1345,7 +1345,7 @@ var Yi="delete",eo="import",ao=Tt({
     id:e
   }),"onSelect");
   return{
-    filters:ra({
+    filters:ia({
       update:a=>{
         e.filters.set(Li(e.filters.get(),a))
       },
@@ -1355,7 +1355,7 @@ var Yi="delete",eo="import",ao=Tt({
       search:a=>e.searchName.set(a),change:a=>{
         e.filters.set(Li(e.filters.get(),a))
       }
-    }),create:ht(a=>{
+    }),create:bt(a=>{
       const{
         id:s=Ki(),vehicleIds:r=[],skipRedirect:n=!1
       }=a??{};
@@ -1369,7 +1369,7 @@ var Yi="delete",eo="import",ao=Tt({
         value:e
       }),"onSetDirtyEdit")
     },
-    select:ht((a="")=>{
+    select:bt((a="")=>{
       e.selectedID.set(a),s(a)
     }),save:a.createCallback(e=>({
       id:e
@@ -1377,12 +1377,12 @@ var Yi="delete",eo="import",ao=Tt({
       id:e
     }),"onDiscard"),goToAboutVehicle:a.createCallback(e=>({
       intCD:e
-    }),"onGoToAboutVehicle"),openImport:a.createCallback(ht(()=>({
+    }),"onGoToAboutVehicle"),openImport:a.createCallback(bt(()=>({
       type:eo,params:JSON.stringify({
         titles:Array.from(e.titles().values())
       })
     })),"openImportConfirm"),openDeleteConfirm:a.createCallback((e,a)=>({
-      id:e,type:Yi,params:JSON.stringify({
+      id:e,type:Qi,params:JSON.stringify({
         title:a
       })
     }),"openDeleteConfirm")
@@ -1391,35 +1391,35 @@ var Yi="delete",eo="import",ao=Tt({
   useRequires:()=>({
     vehicles:Fi(),myVehicles:Ui(),filters:Wi(),statistic:zi()
   })
-})),lo="pending",co="readyToSelect",_o="disabled",[uo,mo]=Fe("VehiclesInventoryProvider")(e=>{
-  const a=e.observableModel.primitives(["freeSlotsCount","defaultSlotPrice","slotPrice","slotPriceCurrency","recoverableVehicleCount","currentVehicleIntCD","currentVehicleInventoryId","hasDiscont","bpEntityValid","bpStatus","telecomRentStatus"]),t=ya.box([],{
+})),lo="pending",co="readyToSelect",_o="disabled",[uo,mo]=Ue("VehiclesInventoryProvider")(e=>{
+  const a=e.observableModel.primitives(["freeSlotsCount","defaultSlotPrice","slotPrice","slotPriceCurrency","recoverableVehicleCount","currentVehicleIntCD","currentVehicleInventoryId","hasDiscont","bpEntityValid","bpStatus","telecomRentStatus"]),t=ja.box([],{
     deep:!1
   }),s={
     intCD:a.currentVehicleIntCD,inventoryId:a.currentVehicleInventoryId
   },
-  r=Ca.shallow(()=>{
+  r=Sa.shallow(()=>{
     const a=s.intCD.get();
     return e.requires.vehicles.model.get(a)
-  }),n=Ca.shallow(a=>{
+  }),n=Sa.shallow(a=>{
     if(void 0===a)return;
     const t=s.intCD.get();
     return-1===t?e.requires.vehicles.model.get(a):e.requires.vehicles.model.get(t)
-  }),i=Ca.shallow(()=>{
+  }),i=Sa.shallow(()=>{
     const a=s.intCD.get();
     return e.requires.statistic.model.get(a)
-  }),o=Ca.primitive(()=>-1!==s.intCD.get()),l=Ca.shallow(e=>f(e,e=>c.get(String(e)))),c=e.requires.myVehicles.model,d=Ca.structural(()=>e.requires.vehicles.model.list().filter(e=>e.rent.isRented)),_=Ca.primitive(()=>e.requires.vehicles.model.list().some(a=>{
+  }),o=Sa.primitive(()=>-1!==s.intCD.get()),l=Sa.shallow(e=>b(e,e=>c.get(String(e)))),c=e.requires.myVehicles.model,d=Sa.structural(()=>e.requires.vehicles.model.list().filter(e=>e.rent.isRented)),_=Sa.primitive(()=>e.requires.vehicles.model.list().some(a=>{
     const t=e.requires.statistic.model.get(a.vehicleId);
     if(t)return"inPrebattle"===t.status
-  })),u=Ca.primitive(()=>{
+  })),u=Sa.primitive(()=>{
     const a=[...c.getAll()],t=e.requires.filters.model.computes.nationToIndex();
     return a.sort((e,a)=>Di(t,Vi,e,a)),a
   });
-  return e.cleanup(la(()=>{
+  return e.cleanup(da(()=>{
     const a=e.requires.filters.model.filters.get(),s=e.requires.filters.model.searchName.get(),r=e.requires.playlists?.model.current(),n=c.ids(),i=(r?l(r.list):u()).filter(t=>!1!==n.has(t.id)&&(!!Ai(a,t,e.requires.statistic.model.get(t.id))&&Ei(s,t)));
-    He(()=>t.set(i))
+    Ge(()=>t.set(i))
   })),{
     vehicles:e.requires.myVehicles.model,vehicle:n,selectedVehicle:r,isVehicleSelected:o,selectedVehicleStatistics:i,accumulateByIds:l,rentVehiclesList:d,prebattleModeActive:_,current:{
-      intCD:a.currentVehicleIntCD,inventoryId:a.currentVehicleInventoryId,amount:Ca.primitive(()=>t.get().length),list:()=>t.get(),ids:Ca.shallow(()=>t.get().map(e=>e.id)),playlist:e.requires.playlists?e.requires.playlists.model.current:()=>{}
+      intCD:a.currentVehicleIntCD,inventoryId:a.currentVehicleInventoryId,amount:Sa.primitive(()=>t.get().length),list:()=>t.get(),ids:Sa.shallow(()=>t.get().map(e=>e.id)),playlist:e.requires.playlists?e.requires.playlists.model.current:()=>{}
     },
     slots:{
       free:a.freeSlotsCount,price:{
@@ -1442,37 +1442,37 @@ var Yi="delete",eo="import",ao=Tt({
   })
 }),[po,ho,{
   Context:bo
-}]=Fe("ManageableVehiclePlaylistsModel")(e=>{
+}]=Ue("ManageableVehiclePlaylistsModel")(e=>{
   const a={
     ...e.observableModel.primitives({
       intCD:"vehicleId"
-    }),displayedVehicleId:ya.box(-1),changesInPlaylistSelection:ya.set(new Set)
+    }),displayedVehicleId:ja.box(-1),changesInPlaylistSelection:ja.set(new Set)
   },
-  t=Ca.shallow(()=>e.requires.playlists.model.sortedIds().reduce((a,t)=>{
+  t=Sa.shallow(()=>e.requires.playlists.model.sortedIds().reduce((a,t)=>{
     const s=e.requires.playlists.model.byIdFull(t);
     return s?a.push(s):console.warn(`Missing playlist data for id = ${t}`),a
-  },[])),s=Ca.structural(()=>t().map(({
+  },[])),s=Sa.structural(()=>t().map(({
     id:e,title:t,list:s
   })=>{
     const r=s.includes(a.displayedVehicleId.get());
     return{
       id:e,title:t,selected:a.changesInPlaylistSelection.has(e)?!r:r
     }
-  },[])),r=Ca.primitive(()=>0===s().length);
-  return e.cleanup(la(()=>{
-    a.displayedVehicleId.get(),t(),He(()=>a.changesInPlaylistSelection.clear())
+  },[])),r=Sa.primitive(()=>0===s().length);
+  return e.cleanup(da(()=>{
+    a.displayedVehicleId.get(),t(),Ge(()=>a.changesInPlaylistSelection.clear())
   })),{
     ...a,computeds:{
-      playlistItems:s,isVehiclePlaylistsEmpty:r,vehicle:Ca.shallow(()=>{
+      playlistItems:s,isVehiclePlaylistsEmpty:r,vehicle:Sa.shallow(()=>{
         const t=a.displayedVehicleId.get(),s=e.requires.vehicles.model.get(t),r=e.requires.vehicleStatistics.model.get(t);
         if(void 0!==s&&void 0!==r)return{
           ...s,elite:r.elite
         }
-      }),empty:Ca.primitive(()=>-1===a.vehicleId.get()),sortedPlaylists:t,hasChanges:Ca.primitive(()=>a.changesInPlaylistSelection.size>0),enabled:Ca.primitive(()=>e.requires.playlists.model.enabled.get())
+      }),empty:Sa.primitive(()=>-1===a.vehicleId.get()),sortedPlaylists:t,hasChanges:Sa.primitive(()=>a.changesInPlaylistSelection.size>0),enabled:Sa.primitive(()=>e.requires.playlists.model.enabled.get())
     }
   }
 },e=>({
-  setDisplayedVehicleId:ht(a=>{
+  setDisplayedVehicleId:bt(a=>{
     e.model.displayedVehicleId.set(a)
   }),reset:e.externalModel.createCallbackNoArgs("onReset"),selectVehicle:e.externalModel.createCallback(e=>({
     id:e
@@ -1481,19 +1481,19 @@ var Yi="delete",eo="import",ao=Tt({
       vehicleIds:a
     })
   },
-  togglePlaylist:ht(a=>{
+  togglePlaylist:bt(a=>{
     e.model.changesInPlaylistSelection.has(a)?e.model.changesInPlaylistSelection.delete(a):e.model.changesInPlaylistSelection.add(a)
-  }),save:ht(()=>{
+  }),save:bt(()=>{
     const a=e.model.displayedVehicleId.get(),t=e.requires.playlists.model.currentId();
     for(const s of e.model.changesInPlaylistSelection){
-      const t=Qi(e.requires.playlists.model.byId(s));
+      const t=Yi(e.requires.playlists.model.byId(s));
       if(!t)return void console.warn(`Missing playlist data for id = ${s}`);
       e.requires.playlists.controls.edit.sendModify(s,{
         ...t,modifiedAt:Date.now(),list:t.list.includes(a)?t.list.filter(e=>e!==a):[...t.list,a]
       }),e.requires.playlists.controls.save(s)
     }
     e.requires.playlists.controls.select(t)
-  }),cancel:ht(()=>{
+  }),cancel:bt(()=>{
     e.model.changesInPlaylistSelection.clear()
   })
 }),{
@@ -1526,14 +1526,14 @@ var Yi="delete",eo="import",ao=Tt({
       })]
     })]
   })]
-}),vo="Buttons_937965ba",xo="Buttons_right_268130b5",wo="Buttons_button_aeef4019",Co="Buttons_button__create_61690fd8",yo="Buttons_icon_378ba619",So=oa.resolve("strings"),jo=Ot(function(){
+}),vo="Buttons_937965ba",xo="Buttons_right_268130b5",wo="Buttons_button_aeef4019",Co="Buttons_button__create_61690fd8",yo="Buttons_icon_378ba619",So=ca.resolve("strings"),jo=Ot(function(){
   const{
     model:e,controls:a
   }=ho();
   return(0,us.jsxs)("div",{
-    className:Ga(vo),children:[(0,us.jsx)(F,{
-      body:So.readOrEmpty("playlists.managaeble_playlists.buttons.create.tooltipBody"),children:(0,us.jsx)(ze,{
-        className:Ga(wo,Co),theme:ze.themes.secondary,size:ze.sizes.extraSmall,autoAlignContent:!1,onClick:()=>{
+    className:Ka(vo),children:[(0,us.jsx)(H,{
+      body:So.readOrEmpty("playlists.managaeble_playlists.buttons.create.tooltipBody"),children:(0,us.jsx)(St,{
+        className:Ka(wo,Co),theme:St.themes.secondary,size:St.sizes.extraSmall,autoAlignContent:!1,onClick:()=>{
           a.goToCreatePlaylist([e.displayedVehicleId.get()]),a.reset()
         },
         children:(0,us.jsx)(go,{
@@ -1541,18 +1541,18 @@ var Yi="delete",eo="import",ao=Tt({
         })
       })
     }),(0,us.jsxs)("div",{
-      className:xo,children:[(0,us.jsx)(ze,{
-        className:wo,theme:ze.themes.secondary,size:ze.sizes.extraSmall,onClick:()=>{
+      className:xo,children:[(0,us.jsx)(St,{
+        className:wo,theme:St.themes.secondary,size:St.sizes.extraSmall,onClick:()=>{
           a.cancel(),a.reset()
         },
-        children:(0,us.jsx)(Ie,{
+        children:(0,us.jsx)(F,{
           text:So.readOrEmpty("playlists.managaeble_playlists.buttons.cancel.title")
         })
-      }),(0,us.jsx)(ze,{
-        className:wo,theme:ze.themes.primary,size:ze.sizes.extraSmall,disabled:!e.computeds.hasChanges(),onClick:()=>{
+      }),(0,us.jsx)(St,{
+        className:wo,theme:St.themes.primary,size:St.sizes.extraSmall,disabled:!e.computeds.hasChanges(),onClick:()=>{
           a.save(),a.reset()
         },
-        children:(0,us.jsx)(Ie,{
+        children:(0,us.jsx)(F,{
           text:So.readOrEmpty("playlists.managaeble_playlists.buttons.save.title")
         })
       })]
@@ -1565,13 +1565,13 @@ var Yi="delete",eo="import",ao=Tt({
     controls:s
   }=ho();
   return(0,us.jsxs)("div",{
-    className:Ga(No,t&&Po),children:[(0,us.jsx)("div",{
+    className:Ka(No,t&&Po),children:[(0,us.jsx)("div",{
       className:Io
-    }),(0,us.jsx)(X,{
-      checked:t,onCheckedChange:()=>s.togglePlaylist(e),size:re.small,className:ko,classNames:{
+    }),(0,us.jsx)(Y,{
+      checked:t,onCheckedChange:()=>s.togglePlaylist(e),size:ie.small,className:ko,classNames:{
         label:Bo,check:Ro
       },
-      children:(0,us.jsx)(Ie,{
+      children:(0,us.jsx)(F,{
         text:a
       })
     })]
@@ -1581,16 +1581,16 @@ var Yi="delete",eo="import",ao=Tt({
     model:e
   }=ho(),a=e.computeds.playlistItems();
   return(0,us.jsxs)("div",{
-    className:Eo,children:[(0,us.jsx)(Va,{
+    className:Eo,children:[(0,us.jsx)(za,{
       classNames:{
         wrapper:To,content:Lo
       },
-      children:w(a,({
+      children:x(a,({
         id:e,title:a,selected:t
       })=>(0,us.jsx)(Ao,{
         id:e,title:a,checked:t
       },e))
-    }),(0,us.jsx)(ca,{
+    }),(0,us.jsx)(_a,{
       classNames:{
         base:Do
       }
@@ -1601,25 +1601,25 @@ var Yi="delete",eo="import",ao=Tt({
     model:e
   }=ho(),a=e.computeds.vehicle();
   if(void 0===a)return null;
-  const t=Da(a.role);
-  return(0,us.jsxs)(yt,{
-    children:[(0,us.jsx)(yt.Level,{
+  const t=J(a.role);
+  return(0,us.jsxs)(f,{
+    children:[(0,us.jsx)(f.Level,{
       value:a.level,className:Vo
-    }),_(a.type)&&(0,us.jsx)(yt.Type,{
-      size:yt.Type.sizes.x24x24,className:Mo,type:a.type,premium:a.elite
-    }),(0,us.jsx)(Ie,{
+    }),Ne(a.type)&&(0,us.jsx)(f.Type,{
+      size:f.Type.sizes.x24x24,className:Mo,type:a.type,premium:a.elite
+    }),(0,us.jsx)(F,{
       text:a.fullName,className:Wo
-    }),"without_role"!==t&&(0,us.jsx)(yt.Role,{
-      size:yt.Role.sizes.x16x16,roleKey:t
+    }),"without_role"!==t&&(0,us.jsx)(f.Role,{
+      size:f.Role.sizes.x16x16,roleKey:t
     })]
   })
-}),$o="Styles_display_f2930fa3",Fo="Styles_header_dcb2494f",Ho="Styles_body_504cd01f",Uo="Styles_title_ece3f15e",Go=oa.resolve("strings");
+}),$o="Styles_display_f2930fa3",Fo="Styles_header_dcb2494f",Ho="Styles_body_504cd01f",Uo="Styles_title_ece3f15e",Go=ca.resolve("strings");
 function qo({
   className:e
 }){
-  return(0,us.jsxs)(Ea.Header,{
-    className:Ga(Fo,e),children:[(0,us.jsx)(Ea.Title,{
-      className:Uo,children:(0,us.jsx)(Ie,{
+  return(0,us.jsxs)(La.Header,{
+    className:Ka(Fo,e),children:[(0,us.jsx)(La.Title,{
+      className:Uo,children:(0,us.jsx)(F,{
         text:Go.readOrEmpty("playlists.managaeble_playlists.header.title")
       })
     }),(0,us.jsx)(zo,{})]
@@ -1628,56 +1628,56 @@ function qo({
 function Ko({
   className:e
 }){
-  return(0,us.jsxs)(Ea.Body,{
-    className:Ga(Ho,e),children:[(0,us.jsx)(Ea.Divider,{}),(0,us.jsx)(lt,{
+  return(0,us.jsxs)(La.Body,{
+    className:Ka(Ho,e),children:[(0,us.jsx)(La.Divider,{}),(0,us.jsx)(ct,{
       children:(0,us.jsx)(Oo,{})
-    }),(0,us.jsx)(Ea.Divider,{}),(0,us.jsx)(jo,{})]
+    }),(0,us.jsx)(La.Divider,{}),(0,us.jsx)(jo,{})]
   })
 }
 var Zo=(0,_s.memo)(function({
   vehicleId:e,tipSize:a,className:t,children:s,...r
 }){
-  return(0,us.jsxs)(Ea.Display,{
-    ...r,className:Ga($o,t),children:[(0,us.jsx)(Ea.Tip,{
+  return(0,us.jsxs)(La.Display,{
+    ...r,className:Ka($o,t),children:[(0,us.jsx)(La.Tip,{
       size:a
-    }),(0,us.jsx)(Ea.Close,{}),s]
+    }),(0,us.jsx)(La.Close,{}),s]
   })
 }),Xo=Ot(({
   children:e
 })=>{
-  const a=r(),t=Bt(),s=x(),n=b(),{
+  const a=r(),t=At(),s=v(),n=h(),{
     model:i,controls:o
-  }=ho(),l=i.vehicleId.get(),c=i.displayedVehicleId.get(),[d,_]=(0,_s.useState)(!1),[u,m]=(0,_s.useState)(!1),p=Se(()=>{
+  }=ho(),l=i.vehicleId.get(),c=i.displayedVehicleId.get(),[d,_]=(0,_s.useState)(!1),[u,m]=(0,_s.useState)(!1),p=je(()=>{
     m(!0),a.open(),s.run(()=>m(!1),250)
-  }),h=Se(()=>{
+  }),b=je(()=>{
     m(!0),a.close(),s.run(()=>{
       _(!0),o.setDisplayedVehicleId(-1),n.run(()=>{
         m(!1),_(!1)
       })
     },250)
-  }),f=Se(()=>{
+  }),f=je(()=>{
     _(!0),o.setDisplayedVehicleId(l),n.run(()=>_(!1))
   });
   (0,_s.useEffect)(()=>{
-    t||i.computeds.empty()||a.opened||(o.reset(),h())
+    t||i.computeds.empty()||a.opened||(o.reset(),b())
   },[a.opened]);
-  const g=Se(()=>{
-    n.isRunning||(a.opened||s.isRunning||l===c?a.opened||-1===l||-1===c?a.opened&&-1===l&&-1!==c&&h():s.isRunning||p():f())
+  const g=je(()=>{
+    n.isRunning||(a.opened||s.isRunning||l===c?a.opened||-1===l||-1===c?a.opened&&-1===l&&-1!==c&&b():s.isRunning||p():f())
   });
-  return(0,_s.useEffect)(g,[g,l,c,a.opened,u,d]),ke(()=>{
+  return(0,_s.useEffect)(g,[g,l,c,a.opened,u,d]),Pe(()=>{
     i.computeds.empty()||o.reset()
   }),e
-}),Jo=e=>`manageable-vehicle-playlists-model-${e}`,Qo=Ot(function({
+}),Jo=e=>`manageable-vehicle-playlists-model-${e}`,Yo=Ot(function({
   children:e,position:a,freeSpaceRem:t,tipSize:s
 }){
   const{
     model:r,controls:n
-  }=ho(),i=r.displayedVehicleId.get(),o=gt("rem"),l=r.vehicleId.get(),c=r.computeds.isVehiclePlaylistsEmpty(),d=k(l);
+  }=ho(),i=r.displayedVehicleId.get(),o=vt("rem"),l=r.vehicleId.get(),c=r.computeds.isVehiclePlaylistsEmpty(),d=N(l);
   return(0,_s.useEffect)(()=>{
     c&&-1===d&&-1!==l&&(n.goToCreatePlaylist([l]),n.reset())
-  },[d,l,c,n]),c?null:(0,us.jsx)(Ea,{
+  },[d,l,c,n]),c?null:(0,us.jsx)(La,{
     id:Jo(i),children:(0,us.jsxs)(Xo,{
-      children:[(0,us.jsx)(Ea.Portal,{
+      children:[(0,us.jsx)(La.Portal,{
         paddingsRem:o,position:a,freeSpaceRem:t,closeOnAnchorMove:!0,children:-1!==i&&(0,us.jsxs)(Zo,{
           vehicleId:i,tipSize:s,children:[(0,us.jsx)(qo,{}),(0,us.jsx)(Ko,{})]
         },i)
@@ -1685,7 +1685,7 @@ var Zo=(0,_s.memo)(function({
     })
   })
 });
-var Yo=e(it(),1),el="emptySlot",al="left",tl="right",sl="both",rl="none",nl=189,il=245,ol={
+var Qo=e(ot(),1),el="emptySlot",al="left",tl="right",sl="both",rl="none",nl=189,il=245,ol={
   default:{
     single:nl,double:nl
   },
@@ -1706,7 +1706,7 @@ function pl({
   children:e,selected:a,disabled:t,empty:s
 }){
   return(0,us.jsxs)("div",{
-    "data-name":"Content",className:Ga(cl,s&&ml,a&&ul,t&&_l),children:[e,t&&(0,us.jsx)("div",{
+    "data-name":"Content",className:Ka(cl,s&&ml,a&&ul,t&&_l),children:[e,t&&(0,us.jsx)("div",{
       className:dl
     })]
   })
@@ -1716,11 +1716,11 @@ var hl="Slot_977dd8f1",bl="Slot_base__wrapper_ae3081b5",fl="Slot_base__disabled_
 }){
   const i=t||void 0===n.onClick;
   return(0,us.jsx)("div",{
-    ...n,"data-name":"Slot",className:Ga(hl,s&&xl,a&&wl,t&&fl,i&&gl,bl,r),children:(0,us.jsxs)("div",{
+    ...n,"data-name":"Slot",className:Ka(hl,s&&xl,a&&wl,t&&fl,i&&gl,bl,r),children:(0,us.jsxs)("div",{
       className:vl,children:[(0,us.jsx)(pl,{
         selected:a,disabled:t,empty:i,children:e
       }),a&&(0,us.jsx)("div",{
-        className:Ga(Cl,yl)
+        className:Ka(Cl,yl)
       }),(0,us.jsx)("div",{
         className:Cl
       })]
@@ -1738,76 +1738,76 @@ Nl="ActionCards_wrapper_690d669a",kl="ActionCards_text_cdbc926",Pl="ActionCards_
 Ol=Ot(function({
   type:e
 }){
-  const a=mo(),t=a.model.slots.price.currency.get(),s=a.model.slots.price.value.get(),r=a.model.slots.free.get(),n=a.model.slots.recover.get(),i=a.model.slots.discount.get(),o=a.model.telecomRentStatus.get();
+  const a=mo(),t=a.model.slots.price.currency.get(),r=a.model.slots.price.value.get(),n=a.model.slots.free.get(),i=a.model.slots.recover.get(),o=a.model.slots.discount.get(),c=a.model.telecomRentStatus.get();
   if(e===jl.buySlot)return(0,us.jsx)("div",{
-    className:Tl,children:(0,us.jsx)(Rt,{
-      type:Ne.currency,size:B.extraSmall,enabled:i,classNames:{
+    className:Tl,children:(0,us.jsx)(Bt,{
+      type:ke.currency,size:B.extraSmall,enabled:o,classNames:{
         icon:Ll
       },
       children:(0,us.jsx)(l,{
         type:t,size:B.extraSmall,reverse:!0,classNames:{
-          base:Ga(Rl,Bl),icon:El
+          base:Ka(Rl,Bl),icon:El
         },
-        children:s
+        children:r
       })
     })
   });
   if(e===jl.rentTank){
-    const e=Dl[o];
-    return e?(0,us.jsx)(at,{
+    const e=Dl[c];
+    return e?(0,us.jsx)(s,{
       className:kl,upgradeLegacy:!0,path:e
     }):null
   }
   return(0,us.jsxs)("div",{
-    className:Rl,children:[e===jl.buyTank&&(0,us.jsx)(at,{
+    className:Rl,children:[e===jl.buyTank&&(0,us.jsx)(s,{
       upgradeLegacy:!0,path:"menu.tankCarousel.vehicleStates.buyTankEmptyCount",params:{
-        count:r
-      }
-    }),e===jl.restoreTank&&(0,us.jsx)(at,{
-      upgradeLegacy:!0,path:"menu.tankCarousel.vehicleStates.restoreTankCount",params:{
         count:n
+      }
+    }),e===jl.restoreTank&&(0,us.jsx)(s,{
+      upgradeLegacy:!0,path:"menu.tankCarousel.vehicleStates.restoreTankCount",params:{
+        count:i
       }
     })]
   })
 });
 function Wl({
-  type:e,width:a,height:t,doubleRow:s,className:r
+  type:e,width:a,height:t,doubleRow:r,className:n
 }){
-  const n=mo(),i=be(),o=n.model.slots.price.value.get(),l=n.model.slots.price.defaultValue.get(),c=n.model.slots.discount.get();
-  n.model.telecomRentStatus.get();
-  const d=oa.resolve("strings"),_=Ya(`hangar.carousel.actionCards.x48x48.${e}`,`hangar.carousel.actionCards.x96x96.${e}`),m=u({
-    header:d.readOrEmpty(`tooltips.tanks_carousel.${Il[e]}.header`),body:d.readOrEmpty(`tooltips.tanks_carousel.${Il[e]}.body`)
-  }),p=wt("actionSlotPrice",(0,_s.useMemo)(()=>[[o],[l]],[o,l]),(0,_s.useMemo)(()=>({
-    disabled:!c
-  }),[c])),h=c&&Il[e]===Il.buySlot?p:m;
+  const i=mo(),o=fe(),l=i.model.slots.price.value.get(),c=i.model.slots.price.defaultValue.get(),d=i.model.slots.discount.get();
+  i.model.telecomRentStatus.get();
+  const u=ca.resolve("strings"),m=at(`hangar.carousel.actionCards.x48x48.${e}`,`hangar.carousel.actionCards.x96x96.${e}`),p=_({
+    header:u.readOrEmpty(`tooltips.tanks_carousel.${Il[e]}.header`),body:u.readOrEmpty(`tooltips.tanks_carousel.${Il[e]}.body`)
+  }),h=Ct("actionSlotPrice",(0,_s.useMemo)(()=>[[l],[c]],[l,c]),(0,_s.useMemo)(()=>({
+    disabled:!d
+  }),[d])),b=d&&Il[e]===Il.buySlot?h:p;
   return(0,us.jsx)(Sl,{
-    ...h,className:r,style:{
+    ...b,className:n,style:{
       width:void 0!==a?`${a}px`:void 0,height:void 0!==t?`${t}px`:void 0
     },
     "data-test-id":e,onClick:function(a){
-      h.onClick(),i.play("click",{
+      b.onClick(),o.play("click",{
         target:"vehicle:action-cards",original:a
       });
       const t={
-        [jl.buySlot]:n.controls.buySlot,[jl.buyTank]:n.controls.goBuyVehicle,[jl.restoreTank]:n.controls.goRecoverVehicle,[jl.rentTank]:n.controls.selectTelecomRentalVehicle
+        [jl.buySlot]:i.controls.buySlot,[jl.buyTank]:i.controls.goBuyVehicle,[jl.restoreTank]:i.controls.goRecoverVehicle,[jl.rentTank]:i.controls.selectTelecomRentalVehicle
       }[e];
       if("function"!=typeof t)return console.error(`Unknown action type ${e} in ${Wl.name} handleClick`);
       t()
     },
     onMouseEnter:function(e){
-      h.onMouseEnter(e),i.play("mouse-enter",{
+      b.onMouseEnter(e),o.play("mouse-enter",{
         target:"vehicle:action-cards",original:e
       })
     },
     children:(0,us.jsxs)("div",{
-      className:Ga(Nl,s&&Pl),children:[(0,us.jsx)(I,{
+      className:Ka(Nl,r&&Pl),children:[(0,us.jsx)(he,{
         className:Al,path:`hangar.carousel.actionCards.x32x32.${e}`,adaptive:{
           medium:{
-            path:_
+            path:m
           }
         }
       }),(0,us.jsx)("div",{
-        className:kl,children:(0,us.jsx)(at,{
+        className:kl,children:(0,us.jsx)(s,{
           path:`menu.tankCarousel.vehicleStates.${e}`
         })
       }),(0,us.jsx)(Ol,{
@@ -1819,16 +1819,16 @@ function Wl({
 var Vl="54033",Ml="50705",zl="56833",$l="51201",Fl={
   [Vl]:"alpha",[Ml]:"alpha",[$l]:"super",[zl]:"super"
 },
-Hl="ammoNotFull",Ul="crewNotFull",Gl="exploded",ql="destroyed",Kl="damaged",Zl="rentable",Xl="rentableAgain",Jl="rentalIsOver",Ql="tooHeavy",Yl="unsuitableToQueue",ec="unsuitableToUnit",ac="inPrebattle",tc="battle",sc="wot_plus_exclusive_vehicle_disabled",rc={
-  [Hl]:"ammo",[Ul]:"crew",[Gl]:"repair",[ql]:"repair",[Kl]:"repair",[Zl]:"rental",[Xl]:"rental",[Jl]:"rental",[Ql]:"notSuitable",[Yl]:"notSuitable",[ec]:"notSuitable",[ac]:"inPlatoon",[tc]:"inBattle",[sc]:"notSuitable"
+Hl="ammoNotFull",Ul="crewNotFull",Gl="exploded",ql="destroyed",Kl="damaged",Zl="rentable",Xl="rentableAgain",Jl="rentalIsOver",Yl="tooHeavy",Ql="unsuitableToQueue",ec="unsuitableToUnit",ac="inPrebattle",tc="battle",sc="wot_plus_exclusive_vehicle_disabled",rc={
+  [Hl]:"ammo",[Ul]:"crew",[Gl]:"repair",[ql]:"repair",[Kl]:"repair",[Zl]:"rental",[Xl]:"rental",[Jl]:"rental",[Yl]:"notSuitable",[Ql]:"notSuitable",[ec]:"notSuitable",[ac]:"inPlatoon",[tc]:"inBattle",[sc]:"notSuitable"
 };
 function nc(e,a,t){
-  return!(!e||"disabled"===a||!t)&&(t.status!==Yl&&t.maxBpScore>0)
+  return!(!e||"disabled"===a||!t)&&(t.status!==Ql&&t.maxBpScore>0)
 }
 function ic(e){
   return e>2
 }
-var[oc,lc,cc]=Fe()(({
+var[oc,lc,cc]=Ue()(({
   observableModel:e
 })=>({
   ...e.primitives(["isCrystalEarnEnabled","isDailyMultipliedXpEnabled","isInfiniteAmmo"])
@@ -1842,18 +1842,18 @@ function mc({
   className:e,doubleRow:a,state:t="inactive",isCornerHidden:s=!1
 }){
   return"inactive"===t?null:(0,us.jsxs)("div",{
-    className:Ga(_c.base,t&&uc[t],a&&_c.base__double,e),children:[(0,us.jsx)("div",{
+    className:Ka(_c.base,t&&uc[t],a&&_c.base__double,e),children:[(0,us.jsx)("div",{
       className:_c.glow
     }),!s&&(0,us.jsx)("div",{
       className:_c.corner
     }),(0,us.jsx)("div",{
       className:_c.arrow
     }),[_c.triangle__1,_c.triangle__2,_c.triangle__3].map(e=>(0,us.jsx)("div",{
-      className:Ga(_c.triangle,e)
+      className:Ka(_c.triangle,e)
     },e))]
   })
 }
-var pc="Background_1089bc1c",hc="Background_wotPlus_3cf6035a",bc="Background_crystal_6112fa42",fc="Background_bpBonus_cf76872",gc="Background_multiplier_284cda6c",vc="Background_flag_beb58b8",xc="Background_base__double_26effab7",wc="Background_flag__active_de322c1b",Cc="Background_vehicle_23ef6e2b",yc="Background_vehicle__dimmed_7f14a6c7",Sc="Background_crystal__limit_61072361",jc=de("Favorite","Background_favorite_d98f92cc",{
+var pc="Background_1089bc1c",hc="Background_wotPlus_3cf6035a",bc="Background_crystal_6112fa42",fc="Background_bpBonus_cf76872",gc="Background_multiplier_284cda6c",vc="Background_flag_beb58b8",xc="Background_base__double_26effab7",wc="Background_flag__active_de322c1b",Cc="Background_vehicle_23ef6e2b",yc="Background_vehicle__dimmed_7f14a6c7",Sc="Background_crystal__limit_61072361",jc=Oe("Favorite","Background_favorite_d98f92cc",{
   variants:{
     active:{
       true:"Background_favorite__active_7f14a6c7"
@@ -1863,23 +1863,23 @@ var pc="Background_1089bc1c",hc="Background_wotPlus_3cf6035a",bc="Background_cry
 function Ic({
   nationId:e,selected:a,active:t,className:s
 }){
-  return(0,us.jsx)(I,{
-    className:Ga(vc,a||t&&wc,s),path:`hangar.carousel.cards.flags.x400x300.${Pa(e)}`,position:"top left"
+  return(0,us.jsx)(he,{
+    className:Ka(vc,a||t&&wc,s),path:`hangar.carousel.cards.flags.x400x300.${Ba(e)}`,position:"top left"
   })
 }
 var Nc=Ot(function({
   vehicle:e,statistic:a,validBP:t,doubleRow:s,classNames:r
 }){
-  const n=dc()?.model,i=n?.isCrystalEarnEnabled.get()??!0,o=(Ct(a?.numberOfCrystalEarned??[],1)??0)<=(Ct(a?.numberOfCrystalEarned??[],0)??0),l=a?.proBoostActive,c=a?.fromWotPlus,d=i&&e.crystalEarning&&!c,_=k(l),u=(n?.isDailyMultipliedXpEnabled.get()??!0)&&ic(Number(a?.bonusMultiplier)),m=(0,_s.useMemo)(()=>l?!1===_?"activating":"active":_?"deactivating":"inactive",[l,_]);
+  const n=dc()?.model,i=n?.isCrystalEarnEnabled.get()??!0,o=(yt(a?.numberOfCrystalEarned??[],1)??0)<=(yt(a?.numberOfCrystalEarned??[],0)??0),l=a?.proBoostActive,c=a?.fromWotPlus,d=i&&e.crystalEarning&&!c,_=N(l),u=(n?.isDailyMultipliedXpEnabled.get()??!0)&&ic(Number(a?.bonusMultiplier)),m=(0,_s.useMemo)(()=>l?!1===_?"activating":"active":_?"deactivating":"inactive",[l,_]);
   return(0,us.jsxs)(us.Fragment,{
     children:[c&&(0,us.jsx)("div",{
-      className:Ga(hc,r?.wotPlus)
+      className:Ka(hc,r?.wotPlus)
     }),(0,us.jsx)(mc,{
       state:m,className:r?.proBoostIcon,doubleRow:s,isCornerHidden:d
     }),d&&(0,us.jsx)("div",{
-      className:Ga(bc,o&&Sc,r?.crystal)
+      className:Ka(bc,o&&Sc,r?.crystal)
     }),a?.bpSpecial&&t&&(0,us.jsx)("div",{
-      className:Ga(fc,r?.bpBonus)
+      className:Ka(fc,r?.bpBonus)
     }),u&&(0,us.jsx)("div",{
       className:gc
     })]
@@ -1889,10 +1889,10 @@ function kc({
   vehicle:e,validBP:a,dimmed:t,active:s,statistic:r,selected:n,doubleRow:i,...o
 }){
   return(0,us.jsxs)("div",{
-    ...o,className:Ga(pc,i&&xc,o.className),children:[(0,us.jsx)(Ic,{
+    ...o,className:Ka(pc,i&&xc,o.className),children:[(0,us.jsx)(Ic,{
       nationId:e.nationId,active:s,selected:n
-    }),(0,us.jsx)(h,{
-      className:Ga(Cc,(r?.status&&"undamaged"!==r.status||t)&&yc),name:e.name
+    }),(0,us.jsx)(p,{
+      className:Ka(Cc,(r?.status&&"undamaged"!==r.status||t)&&yc),name:e.name
     }),(0,us.jsx)(Nc,{
       vehicle:e,statistic:r,validBP:a,doubleRow:i
     }),(0,us.jsx)(jc,{
@@ -1900,21 +1900,21 @@ function kc({
     })]
   })
 }
-var Pc="Bonuses_8169b4b3",Rc="Bonuses_bonus_91f120c3",Bc="Bonuses_bonus__active_2364401e",Ac="Bonuses_bonusIcon_b65fb47f",Ec="Bonuses_bonusValue_322db074",Tc="Bonuses_bonusValue__highlighted_4bcc07c6",Lc="Bonuses_rent_ea11a7e4",Dc="Bonuses_base__double_ca1cd57b",Oc="Bonuses_icon_3991db74",Wc="Bonuses_text_a556857c",Vc=oa.resolve("strings");
+var Pc="Bonuses_8169b4b3",Rc="Bonuses_bonus_91f120c3",Bc="Bonuses_bonus__active_2364401e",Ac="Bonuses_bonusIcon_b65fb47f",Ec="Bonuses_bonusValue_322db074",Tc="Bonuses_bonusValue__highlighted_4bcc07c6",Lc="Bonuses_rent_ea11a7e4",Dc="Bonuses_base__double_ca1cd57b",Oc="Bonuses_icon_3991db74",Wc="Bonuses_text_a556857c",Vc=ca.resolve("strings");
 function Mc({
   bonusMultiplier:e,vehicleId:a,restBonusEnabled:t,className:s,classNames:r
 }){
-  const n=ic(e),i=xe({
+  const n=ic(e),i=we({
     resId:R.aliases.hangar.shared.VehiclesStatistics("resId"),contentId:R.views.mono.rest_bonus.tooltips.rest_bonus_tooltip("resId"),args:{
       intCD:a
     },
     disabled:!t
   });
   return(0,us.jsxs)("div",{
-    className:Ga(Rc,-1!==e&&Bc,s),...i,children:[(0,us.jsx)("div",{
-      className:Ga(Ac,r?.icon)
+    className:Ka(Rc,-1!==e&&Bc,s),...i,children:[(0,us.jsx)("div",{
+      className:Ka(Ac,r?.icon)
     }),(0,us.jsx)("div",{
-      className:Ga(Ec,r?.value,n&&Tc),children:`${Vc.readOrEmpty("common.multiplierSmall")}${e}`
+      className:Ka(Ec,r?.value,n&&Tc),children:`${Vc.readOrEmpty("common.multiplierSmall")}${e}`
     })]
   })
 }
@@ -1923,9 +1923,9 @@ var zc=Ot(function({
 }){
   const r=dc()?.model.isDailyMultipliedXpEnabled.get()??!0;
   return(0,us.jsxs)("div",{
-    ...s,className:Ga(Pc,t&&Dc,s.className),children:[r&&a&&(0,us.jsx)(Mc,{
+    ...s,className:Ka(Pc,t&&Dc,s.className),children:[r&&a&&(0,us.jsx)(Mc,{
       bonusMultiplier:a.bonusMultiplier,vehicleId:e.vehicleId,restBonusEnabled:a.restBonusEnabled
-    }),(0,us.jsx)(v.ShortCounter,{
+    }),(0,us.jsx)(g.ShortCounter,{
       time:e.rent.leftTime,wins:e.rent.leftWins,battles:e.rent.leftBattles,classNames:{
         base:Lc,icon:Oc,text:Wc
       }
@@ -1934,8 +1934,8 @@ var zc=Ot(function({
 }),$c={
   base:"Information_dd628d50",info:"Information_info_b2948982",details:"Information_details_e5340a0c",base__double:"Information_base__double_6e8d4f26",text:"Information_text_a2b2c19b",text__level:"Information_text__level_e5a9014e",text__premium:"Information_text__premium_741ebb2f",truncatedText:"Information_truncatedText_ede7ae03",battlePass:"Information_battlePass_63749625",battlePass__bonus:"Information_battlePass__bonus_6e8d4f26",battlePass__active:"Information_battlePass__active_960b5eed",bpPoints:"Information_bpPoints_21ee2e63",points:"Information_points_b67585b1",points__slash:"Information_points__slash_b8c7004e",bpShadow:"Information_bpShadow_4248ba9f",bpIcon:"Information_bpIcon_a622154",prestige:"Information_prestige_95cc4ef2",prestige__active:"Information_prestige__active_960b5eed",identifier:"Information_identifier_1bcd619a",identifier__changeNation:"Information_identifier__changeNation_665b13a2",identifier__alpha:"Information_identifier__alpha_6e8d4f26",identifier__super:"Information_identifier__super_46b1ed0d",identifier__rent:"Information_identifier__rent_1fba5dce",identifierIcon:"Information_identifierIcon_3636b34b",identifierIcon__alpha:"Information_identifierIcon__alpha_ddf4d235",identifierIcon__super:"Information_identifierIcon__super_34b8f5c2",identifierIcon__changeNation:"Information_identifierIcon__changeNation_dfee83c8",fadeInWithScale:"Information_fadeInWithScale_6e8d4f26",slideUp:"Information_slideUp_6e8d4f26",blink:"Information_blink_6e8d4f26",scale:"Information_scale_6e8d4f26",rotate:"Information_rotate_6e8d4f26",windowIn:"Information_windowIn_6e8d4f26",fadeOut:"Information_fadeOut_6e8d4f26",fadeIn:"Information_fadeIn_6e8d4f26"
 },
-Fc=de("VehicleName",{
-  element:e=>(0,us.jsx)(yt.Name,{
+Fc=Oe("VehicleName",{
+  element:e=>(0,us.jsx)(f.Name,{
     ...e
   }),className:$c.text,cva:{
     variants:{
@@ -1948,13 +1948,13 @@ Fc=de("VehicleName",{
 function Hc({
   statistic:e,vehicle:a,className:t,status:s
 }){
-  const r=oa.resolve("views"),n=oa.resolve("aliases"),i=oa.resolve("strings"),o=xe({
+  const r=ca.resolve("views"),n=ca.resolve("aliases"),i=ca.resolve("strings"),o=we({
     resId:n.read(e=>e.hangar.shared.VehiclesStatistics("resId")),contentId:r.read(e=>"paused"!==s?e.mono.battle_pass.tooltips.vehicle_bp_points("resId"):e.mono.battle_pass.tooltips.on_pause("resId")),args:{
       intCD:a?.vehicleId
     }
   });
   return(0,us.jsxs)("div",{
-    className:Ga($c.battlePass,e.maxBpScore>0&&$c.battlePass__active,e.bpSpecial&&$c.battlePass__bonus,t),onMouseEnter:function(e){
+    className:Ka($c.battlePass,e.maxBpScore>0&&$c.battlePass__active,e.bpSpecial&&$c.battlePass__bonus,t),onMouseEnter:function(e){
       o?.onMouseEnter(e)
     },
     onMouseLeave:function(e){
@@ -1962,11 +1962,11 @@ function Hc({
     },
     children:[(0,us.jsxs)("div",{
       className:$c.bpPoints,children:[(0,us.jsx)("div",{
-        className:$c.points,children:Oa.formatNumber("integral",e.bpProgress)
+        className:$c.points,children:Va.formatNumber("integral",e.bpProgress)
       }),(0,us.jsx)("div",{
-        className:Ga($c.points,$c.points__slash),children:i.readOrEmpty("common.common.slash")
+        className:Ka($c.points,$c.points__slash),children:i.readOrEmpty("common.common.slash")
       }),(0,us.jsx)("div",{
-        className:$c.points,children:Oa.formatNumber("integral",e.maxBpScore)
+        className:$c.points,children:Va.formatNumber("integral",e.maxBpScore)
       }),(0,us.jsx)("div",{
         className:$c.bpShadow
       })]
@@ -1979,12 +1979,12 @@ function Uc({
   statistic:e,elite:a,vehicle:t,selected:s,classNames:r,className:n
 }){
   return(0,us.jsxs)("div",{
-    className:Ga($c.details,n),children:[e&&(0,us.jsx)(yt.Prestige,{
-      level:e.prestigeLevel,grade:e.prestigeGrade,type:e.prestigeType,direction:oe.left,className:Ga($c.prestige,s&&$c.prestige__active,r?.prestige)
-    }),(0,us.jsx)(yt.Level,{
-      className:Ga($c.text,$c.text__level,r?.level),value:t.level
-    }),_(t.type)&&(0,us.jsx)(yt.Type,{
-      type:t.type,premium:a||e?.elite,size:yt.Type.sizes.x24x24,className:r?.type
+    className:Ka($c.details,n),children:[e&&(0,us.jsx)(f.Prestige,{
+      level:e.prestigeLevel,grade:e.prestigeGrade,type:e.prestigeType,direction:q.left,className:Ka($c.prestige,s&&$c.prestige__active,r?.prestige)
+    }),(0,us.jsx)(f.Level,{
+      className:Ka($c.text,$c.text__level,r?.level),value:t.level
+    }),Ne(t.type)&&(0,us.jsx)(f.Type,{
+      type:t.type,premium:a||e?.elite,size:f.Type.sizes.x24x24,className:r?.type
     })]
   })
 }
@@ -1993,12 +1993,12 @@ function Gc({
 }){
   const s=Fl[e.id],r=e.nationChangeAvailable,n=e.rent.leftTime>0||e.rent.leftWins>0||e.rent.leftBattles>0;
   return(0,us.jsxs)("div",{
-    className:Ga($c.identifier,$c[`identifier__${s}`],r&&$c.identifier__changeNation,n&&$c.identifier__rent,a),children:[(0,us.jsx)(Fc,{
-      className:t?.name,premium:e.premium,children:(0,us.jsx)(Ie,{
+    className:Ka($c.identifier,$c[`identifier__${s}`],r&&$c.identifier__changeNation,n&&$c.identifier__rent,a),children:[(0,us.jsx)(Fc,{
+      className:t?.name,premium:e.premium,children:(0,us.jsx)(F,{
         className:$c.truncatedText,text:e.shortName
       })
     }),(s||r)&&(0,us.jsx)("div",{
-      className:Ga($c.identifierIcon,$c[`identifierIcon__${s}`],r&&$c.identifierIcon__changeNation,t?.icon)
+      className:Ka($c.identifierIcon,$c[`identifierIcon__${s}`],r&&$c.identifierIcon__changeNation,t?.icon)
     })]
   })
 }
@@ -2007,9 +2007,9 @@ var qc=Ot(function({
 }){
   const n=mo(),i=n.model.bpState.active.get(),o=n.model.bpState.status.get();
   return(0,us.jsxs)("div",{
-    ...r,className:Ga($c.base,s&&$c.base__double,r.className),children:[a&&nc(i,o,a)&&(0,us.jsx)(Hc,{
+    ...r,className:Ka($c.base,s&&$c.base__double,r.className),children:[a&&nc(i,o,a)&&(0,us.jsx)(Hc,{
       vehicle:e,statistic:a,status:o
-    }),(0,us.jsxs)(yt,{
+    }),(0,us.jsxs)(f,{
       className:$c.info,children:[(0,us.jsx)(Uc,{
         vehicle:e,statistic:a,selected:t
       }),(0,us.jsx)(Gc,{
@@ -2020,17 +2020,17 @@ var qc=Ot(function({
 }),Kc={
   base:"Overlay_ef16c91",alert:"Overlay_alert_db4a0e15",alertIcon:"Overlay_alertIcon_3d7c077a",base__double:"Overlay_base__double_3c7155a",alertText:"Overlay_alertText_ca764641",alertText__light:"Overlay_alertText__light_bece984e",fadeInWithScale:"Overlay_fadeInWithScale_3c7155a",slideUp:"Overlay_slideUp_3c7155a",blink:"Overlay_blink_3c7155a",scale:"Overlay_scale_3c7155a",rotate:"Overlay_rotate_3c7155a",windowIn:"Overlay_windowIn_3c7155a",fadeOut:"Overlay_fadeOut_3c7155a",fadeIn:"Overlay_fadeIn_3c7155a"
 };
-de("Disable",Kc.disable);
+Oe("Disable",Kc.disable);
 function Zc({
   status:e,classNames:a,className:t
 }){
-  const s=oa.resolve("images"),r=Ya(`hangar.carousel.cards.alerts.${rc[e]}`,`hangar.carousel.cards.alerts.${rc[e]}_upscale`),n=Ya("hangar.carousel.cards.alerts.notSuitable","hangar.carousel.cards.alerts.notSuitable_upscale"),i=e===tc||e===ac;
+  const r=ca.resolve("images"),n=at(`hangar.carousel.cards.alerts.${rc[e]}`,`hangar.carousel.cards.alerts.${rc[e]}_upscale`),i=at("hangar.carousel.cards.alerts.notSuitable","hangar.carousel.cards.alerts.notSuitable_upscale"),o=e===tc||e===ac;
   return(0,us.jsxs)("div",{
-    className:Ga(Kc.alert,t),children:[(0,us.jsx)(I,{
-      className:Ga(Kc.alertIcon,a?.icon),path:s.has(r)?r:n
-    }),(0,us.jsx)(at,{
-      upgradeLegacy:!0,className:Ga(Kc.alertText,i&&Kc.alertText__light,a?.text),path:`menu.tankCarousel.vehicleStates.${e}`,params:{
-        icon:(0,us.jsx)(I,{
+    className:Ka(Kc.alert,t),children:[(0,us.jsx)(he,{
+      className:Ka(Kc.alertIcon,a?.icon),path:r.has(n)?n:i
+    }),(0,us.jsx)(s,{
+      upgradeLegacy:!0,className:Ka(Kc.alertText,o&&Kc.alertText__light,a?.text),path:`menu.tankCarousel.vehicleStates.${e}`,params:{
+        icon:(0,us.jsx)(he,{
           path:"library.premium_small",width:34,height:16
         })
       }
@@ -2042,21 +2042,21 @@ function Xc({
 }){
   const r="undamaged"!==e.status;
   return r||t?(0,us.jsx)("div",{
-    ...s,className:Ga(Kc.base,a&&Kc.base__double,s.className),children:r&&(0,us.jsx)(Zc,{
+    ...s,className:Ka(Kc.base,a&&Kc.base__double,s.className),children:r&&(0,us.jsx)(Zc,{
       status:e.status
     })
   }):null
 }
-var Jc="Card_e79008fd",Qc="Card_base__double_f8b7f334",Yc="Card_content_a6141b08",ed="Card_border_e9cb9a85",ad=oa.resolve("views"),td=oa.resolve("aliases"),sd=Ot(function({
+var Jc="Card_e79008fd",Yc="Card_base__double_f8b7f334",Qc="Card_content_a6141b08",ed="Card_border_e9cb9a85",ad=ca.resolve("views"),td=ca.resolve("aliases"),sd=Ot(function({
   vehicleId:e,selected:a=!1,doubleRow:t,children:s,concurrent:r,...n
 }){
-  const i=mo(),o=Fi().model.get(e),l=zi().model.get(e),c=be(),d=i.model.current.inventoryId.get(),_=i.model.prebattleModeActive(),u=i.model.bpState.active.get(),m=i.model.bpState.status.get(),p=_&&!a;
+  const i=mo(),o=Fi().model.get(e),l=zi().model.get(e),c=fe(),d=i.model.current.inventoryId.get(),_=i.model.prebattleModeActive(),u=i.model.bpState.active.get(),m=i.model.bpState.status.get(),p=_&&!a;
   if(!o||!l)return(0,us.jsx)(Sl,{
     ...n
   });
   const h=r?rd:kc;
   return(0,us.jsxs)(Sl,{
-    ...n,className:Ga(!p&&"vehicle-card",n.className),selected:a,"data-test-id":`vehicleCard-${e}`,onMouseEnter:function(e){
+    ...n,className:Ka(!p&&"vehicle-card",n.className),selected:a,"data-test-id":`vehicleCard-${e}`,onMouseEnter:function(e){
       c.play("mouse-enter",{
         target:"vehicle-card",original:e
       }),n.onMouseEnter?.(e)
@@ -2087,9 +2087,9 @@ function rd(e){
 function nd({
   vehicle:e,statistic:a,selected:t,doubleRow:s,concurrent:r,disableContextMenu:n,locked:i
 }){
-  const[o,l]=(0,_s.useState)(r),[,c]=(0,_s.useTransition)(),d=Qe("vehicle",(0,_s.useMemo)(()=>({
+  const[o,l]=(0,_s.useState)(r),[,c]=(0,_s.useTransition)(),d=ea("vehicle",(0,_s.useMemo)(()=>({
     inventoryId:e?.inventoryId
-  }),[e?.inventoryId])),_=xe({
+  }),[e?.inventoryId])),_=we({
     resId:td.read(e=>e.hangar.shared.VehiclesInventory("resId")),contentId:ad.read(e=>e.mono.hangar.vehicle_tooltip("resId")),args:_s.useMemo(()=>({
       inventoryId:e?.inventoryId
     }),[e?.inventoryId])
@@ -2097,8 +2097,8 @@ function nd({
   return(0,_s.useEffect)(()=>{
     o&&c(()=>l(!1))
   },[o]),o?null:(0,us.jsxs)("div",{
-    ..._,...!n&&d,className:Ga(Jc,s&&Qc),children:[(0,us.jsxs)("div",{
-      className:Yc,children:[(0,us.jsx)(qc,{
+    ..._,...!n&&d,className:Ka(Jc,s&&Yc),children:[(0,us.jsxs)("div",{
+      className:Qc,children:[(0,us.jsx)(qc,{
         vehicle:e,selected:t,statistic:a,doubleRow:s
       }),(0,us.jsx)(zc,{
         vehicle:e,statistic:a,doubleRow:s
@@ -2129,7 +2129,7 @@ function ld({
   slotId:e,width:a,currentVehicleId:t,double:s,className:r
 }){
   const n=function(e){
-    const a=fo(),t=Boolean(a&&a.model.computeds.enabled()),s=!a||a.model.computeds.isVehiclePlaylistsEmpty(),r=Se(()=>{
+    const a=fo(),t=Boolean(a&&a.model.computeds.enabled()),s=!a||a.model.computeds.isVehiclePlaylistsEmpty(),r=je(()=>{
       t&&!s&&a.model.vehicleId.get()===e&&a.controls.reset()
     });
     return(0,_s.useMemo)(()=>{
@@ -2139,11 +2139,11 @@ function ld({
     },[s,t,r,e])
   }(Number(e));
   return void 0===e?null:e in jl?(0,us.jsx)(Wl,{
-    className:Ga(ed,r),type:e,width:a,doubleRow:s
+    className:Ka(ed,r),type:e,width:a,doubleRow:s
   }):"emptySlot"===e?(0,us.jsx)(od,{
-    className:Ga(ed,r),width:a
+    className:Ka(ed,r),width:a
   }):(0,us.jsx)(sd,{
-    ...n,vehicleId:e,selected:e===t,doubleRow:s,className:Ga(ed,r),style:{
+    ...n,vehicleId:e,selected:e===t,doubleRow:s,className:Ka(ed,r),style:{
       width:a
     }
   })
@@ -2153,7 +2153,7 @@ function cd({
 }){
   return void 0===e?null:(0,us.jsx)("div",{
     className:id.doubleSlots,children:e.map((e,s)=>(0,us.jsx)(ld,{
-      ...t,slotId:e,className:Ga(id.slot__double,a?.slot)
+      ...t,slotId:e,className:Ka(id.slot__double,a?.slot)
     },s))
   })
 }
@@ -2163,11 +2163,11 @@ var dd={
 function _d({
   direction:e,className:a,...t
 }){
-  return(0,us.jsx)(ze,{
+  return(0,us.jsx)(St,{
     ...t,classNames:{
-      base:Ga(dd.button,dd[`button__${e}`],a),background:dd.background,border:dd.border,overlay:dd.overlay,content:dd.content
+      base:Ka(dd.button,dd[`button__${e}`],a),background:dd.background,border:dd.border,overlay:dd.overlay,content:dd.content
     },
-    theme:ze.themes.secondary,size:ze.sizes.small,autoAlignContent:!1,soundTarget:"carousel:arrow_button",children:(0,us.jsx)(I,{
+    theme:St.themes.secondary,size:St.sizes.small,autoAlignContent:!1,soundTarget:"carousel:arrow_button",children:(0,us.jsx)(he,{
       path:"hangar.carousel.buttonArrow",className:dd.icon
     })
   })
@@ -2190,7 +2190,7 @@ function pd({
 }){
   const s=(0,_s.useRef)(null),[r,n]=(0,_s.useState)(!1),{
     applyScroll:i,animationScroll:o,disabled:l
-  }=a,[c,d]=xt(a),_=c||l,u=d||l;
+  }=a,[c,d]=wt(a),_=c||l,u=d||l;
   function m(a){
     function t(){
       i(o.scrollPosition.get()+a*e)
@@ -2202,11 +2202,11 @@ function pd({
   }
   return(0,us.jsxs)("div",{
     className:ud.navButtonWrapper,children:[(0,us.jsx)(_d,{
-      direction:_d.direction.left,onMouseDown:md(()=>m(-1)),onMouseUp:p,onMouseLeave:p,className:Ga(ud.navButton,ud.navButton__left,_&&ud.navButton__hidden)
+      direction:_d.direction.left,onMouseDown:md(()=>m(-1)),onMouseUp:p,onMouseLeave:p,className:Ka(ud.navButton,ud.navButton__left,_&&ud.navButton__hidden)
     }),(0,us.jsx)("div",{
-      className:Ga(ud.mask,ud[`mask__${ll(c,d)}`]),children:t
+      className:Ka(ud.mask,ud[`mask__${ll(c,d)}`]),children:t
     }),(0,us.jsx)(_d,{
-      direction:_d.direction.right,onMouseDown:md(()=>m(1)),onMouseUp:p,onMouseLeave:p,className:Ga(ud.navButton,ud.navButton__right,u&&ud.navButton__hidden)
+      direction:_d.direction.right,onMouseDown:md(()=>m(1)),onMouseUp:p,onMouseLeave:p,className:Ka(ud.navButton,ud.navButton__right,u&&ud.navButton__hidden)
     })]
   })
 }
@@ -2219,19 +2219,19 @@ function gd({
 }){
   const{
     animationScroll:o,applyScroll:l,setDisabled:c
-  }=e,d=Sa(e,$a.horizontal,void 0,{
+  }=e,d=Ia(e,Ha.horizontal,void 0,{
     gapBeforeStart:5
   });
   return(0,_s.useEffect)(()=>{
     i?.(d.type===bd)
   },[d.type,i]),(0,_s.useEffect)(()=>{
     c(n)
-  },[n,c]),(0,_s.useEffect)(()=>ot(()=>{
+  },[n,c]),(0,_s.useEffect)(()=>lt(()=>{
     d.type===fd&&o.scrollPosition.idle&&l(o.scrollPosition.get())
   }),[o.scrollPosition,d,l]),(0,us.jsx)("div",{
-    className:Ga(hd.base,t),children:(0,us.jsxs)(xa,{
+    className:Ka(hd.base,t),children:(0,us.jsxs)(Ca,{
       className:s?.base,classNames:{
-        wrapper:Ga(hd.areaWrapper,s?.wrapper),content:Ga(hd.areaContent,s?.content)
+        wrapper:Ka(hd.areaWrapper,s?.wrapper),content:Ka(hd.areaContent,s?.content)
       },
       children:[a,r]
     })
@@ -2240,19 +2240,19 @@ function gd({
 var vd="CarouselSkeleton_1ac002e3",xd="CarouselSkeleton_content_b18f8dd7",wd="CarouselSkeleton_scroll_badf82c7";
 function Cd(e){
   return(0,us.jsx)("div",{
-    ...e,className:Ga(xd,e.className)
+    ...e,className:Ka(xd,e.className)
   })
 }
 function yd({
   api:e,widthElement:a,totalElements:t,disabled:s,onDraggingState:r,renderElement:n,classNames:i
 }){
   return(0,us.jsx)("div",{
-    className:Ga(vd,i?.base),children:(0,us.jsx)(pd,{
-      api:e,itemWidth:a,children:(0,us.jsx)(ve,{
-        api:e,elementWidth:a-W(1),direction:"horizontal",totalElements:t,wrappers:{
+    className:Ka(vd,i?.base),children:(0,us.jsx)(pd,{
+      api:e,itemWidth:a,children:(0,us.jsx)(xe,{
+        api:e,elementWidth:a-V(1),direction:"horizontal",totalElements:t,wrappers:{
           Content:Cd
         },
-        className:Ga(wd,i?.scroll),renderScroll:a=>(0,us.jsx)(gd,{
+        className:Ka(wd,i?.scroll),renderScroll:a=>(0,us.jsx)(gd,{
           ...a,api:e,disabled:s,onDraggingState:r,children:a.children
         }),renderElement:e=>n?n(e):(0,us.jsx)(od,{
           className:i?.element,width:a
@@ -2279,7 +2279,7 @@ function jd({
 }){
   const t=function(e){
     const a=z(ol.default,ol.breakpoints);
-    return W(2===e?a.double:a.single)
+    return V(2===e?a.double:a.single)
   }(a),[s,r]=(0,_s.useState)({
     carouselRows:0,cardWidth:0,visibleSlots:0
   });
@@ -2298,7 +2298,7 @@ function jd({
 var Id="Carousel_draggingOverlay_2ac699b0",Nd="Carousel_9b3e04da",kd="Carousel_base__visible_24d53d12",Pd="Carousel_card_5449ec9a",Rd="Carousel_card__inactive_c59331d9",Bd=(Ot(function(){
   const e=fo(),[a,t]=(0,_s.useState)(!1),{
     api:s
-  }=Pt(),r=mo(),n=Wi().model.carouselRowCount.get(),i=r.model.prebattleModeActive(),o=r.model.telecomRentStatus.get(),l=r.model.current.ids(),c=r.model.current.list(),d=r.model.selectedVehicle()?.id,{
+  }=Rt(),r=mo(),n=Wi().model.carouselRowCount.get(),i=r.model.prebattleModeActive(),o=r.model.telecomRentStatus.get(),l=r.model.current.ids(),c=r.model.current.list(),d=r.model.selectedVehicle()?.id,{
     currentIndex:_
   }=function(e,a){
     return(0,_s.useMemo)(()=>{
@@ -2310,8 +2310,8 @@ var Id="Carousel_draggingOverlay_2ac699b0",Nd="Carousel_9b3e04da",kd="Carousel_b
         currentIndex:t,currentPosition:t>=0?t+1:-1
       }
     },[e,a])
-  }(l,d),u=k(d),m=r.model.slots.recover.get(),{
-    carouselRows:p,cardWidth:h,visibleSlots:f
+  }(l,d),u=N(d),m=r.model.slots.recover.get(),{
+    carouselRows:p,cardWidth:b,visibleSlots:f
   }=jd({
     api:s,carouselRows:n
   }),{
@@ -2323,7 +2323,7 @@ var Id="Carousel_draggingOverlay_2ac699b0",Nd="Carousel_9b3e04da",kd="Carousel_b
   },[w]));
   var w;
   (0,_s.useEffect)(()=>{
-    const e=A(500,!0,()=>Oe.contextMenu.hide(0,oa.resolve("aliases").read(e=>e.common.contextMenu.Backport("resId"))));
+    const e=A(500,!0,()=>Me.contextMenu.hide(0,ca.resolve("aliases").read(e=>e.common.contextMenu.Backport("resId"))));
     return s.events.on("change",e),()=>{
       e.cancel(),s.events.off("change",e)
     }
@@ -2336,7 +2336,7 @@ var Id="Carousel_draggingOverlay_2ac699b0",Nd="Carousel_9b3e04da",kd="Carousel_b
         n&&e.applyScroll(0,{
           immediate:!0
         });
-        const c=t-W(1),d=l,_=l+o,u=c*Math.floor(a/s),m=u+c,p=u-Math.floor(o/c)/2*c;
+        const c=t-V(1),d=l,_=l+o,u=c*Math.floor(a/s),m=u+c,p=u-Math.floor(o/c)/2*c;
         if(u>d&&m<_)return i.current&&r&&i.current-r!==0&&e.applyScroll(p,{
           immediate:!0
         }),void(i.current=r);
@@ -2346,33 +2346,33 @@ var Id="Carousel_draggingOverlay_2ac699b0",Nd="Carousel_9b3e04da",kd="Carousel_b
       }
       return o(),(new D).add(e.events.on("resizeHandled",o)).add(e.events.on("recalculateContent",o)).dispose
     },[a,e,t,s,n,r])
-  }(s,_,h,p,l.length,f>g),function(e,a,t,s,r){
+  }(s,_,b,p,l.length,f>g),function(e,a,t,s,r){
     const n=2===s;
     function i(s){
       t(-1!==e?a[e+s].inventoryId:a[0].inventoryId)
     }
     const o=[{
-      key:ie.ARROW_DOWN,blockKey:!n||e%s===s-1||e===a.length-1,action:()=>i(1)
+      key:le.ARROW_DOWN,blockKey:!n||e%s===s-1||e===a.length-1,action:()=>i(1)
     },{
-      key:ie.ARROW_UP,blockKey:!n||e%s===0,action:()=>i(-1)
+      key:le.ARROW_UP,blockKey:!n||e%s===0,action:()=>i(-1)
     },{
-      key:ie.ARROW_LEFT,blockKey:n?e<s:0===e,action:()=>i(-s)
+      key:le.ARROW_LEFT,blockKey:n?e<s:0===e,action:()=>i(-s)
     },{
-      key:ie.ARROW_RIGHT,blockKey:n?e>a.length-(s+1):e===a.length-1,action:()=>i(s)
+      key:le.ARROW_RIGHT,blockKey:n?e>a.length-(s+1):e===a.length-1,action:()=>i(s)
     },{
-      key:ie.HOME,blockKey:0===a.length,action:()=>t(a[0].inventoryId)
+      key:le.HOME,blockKey:0===a.length,action:()=>t(a[0].inventoryId)
     },{
-      key:ie.END,blockKey:0===a.length,action:()=>t(a[a.length-1].inventoryId)
+      key:le.END,blockKey:0===a.length,action:()=>t(a[a.length-1].inventoryId)
     }];
     for(const{
       key:l,blockKey:c,action:d
     }of o){
-      const e=r||c?ie.NONE:l;
-      ue(e,d)
+      const e=r||c?le.NONE:l;
+      me(e,d)
     }
   }(_,c,r.controls.select,p,0===l.length||i);
   const C=function(e,a){
-    const[t,s]=(0,_s.useState)(0===a),r=b();
+    const[t,s]=(0,_s.useState)(0===a),r=h();
     return(0,_s.useEffect)(()=>{
       if(t||0===a)return s(!0);
       function n(){
@@ -2387,31 +2387,31 @@ var Id="Carousel_draggingOverlay_2ac699b0",Nd="Carousel_9b3e04da",kd="Carousel_b
     e&&e.model.computeds.enabled()&&d!==u&&e.controls.reset()
   },[d,u,e]),(0,us.jsxs)(us.Fragment,{
     children:[(0,us.jsx)(yd,{
-      api:s,widthElement:h,totalElements:2===p?x.length:v.length,disabled:f>g,onDraggingState:t,classNames:{
-        base:Ga(Nd,C&&kd),element:Ga(Pd,a&&Rd)
+      api:s,widthElement:b,totalElements:2===p?x.length:v.length,disabled:f>g,onDraggingState:t,classNames:{
+        base:Ka(Nd,C&&kd),element:Ka(Pd,a&&Rd)
       },
       renderElement:e=>{
-        const t=Ga(Pd,a&&Rd);
-        return 2===p?(0,us.jsx)(ee,{
+        const t=Ka(Pd,a&&Rd);
+        return 2===p?(0,us.jsx)(te,{
           failure:()=>(0,us.jsx)(od,{
-            className:t,width:h
+            className:t,width:b
           }),children:(0,us.jsx)(cd,{
-            chunkedSlots:x[e],currentVehicleId:d,width:h,classNames:{
+            chunkedSlots:x[e],currentVehicleId:d,width:b,classNames:{
               slot:t
             },
             double:!0
           },e)
-        }):(0,us.jsx)(ee,{
+        }):(0,us.jsx)(te,{
           failure:()=>(0,us.jsx)(od,{
-            className:t,width:h
+            className:t,width:b
           }),children:(0,us.jsx)(ld,{
-            slotId:v[e],currentVehicleId:d,width:h,className:t,double:!1
+            slotId:v[e],currentVehicleId:d,width:b,className:t,double:!1
           },v[e]??e)
         })
       }
-    }),e&&e.model.computeds.enabled()&&(0,us.jsx)(Qo,{
+    }),e&&e.model.computeds.enabled()&&(0,us.jsx)(Yo,{
       freeSpaceRem:0,tipSize:"32rem"
-    }),Yo.createPortal(a&&(0,us.jsx)("div",{
+    }),Qo.createPortal(a&&(0,us.jsx)("div",{
       className:Id
     }),document.body)]
   })
@@ -2419,10 +2419,10 @@ var Id="Carousel_draggingOverlay_2ac699b0",Nd="Carousel_9b3e04da",kd="Carousel_b
   text:e,videoSrc:a,className:t="",classNames:s
 }){
   return(0,us.jsxs)("div",{
-    className:Ga(Bd,t),children:[(0,us.jsx)("div",{
-      className:Ga(Ad,s?.activeText),children:e
-    }),(0,us.jsx)(G,{
-      className:Ga(Ed,s?.idleVideo),src:a,autoplay:!0,loop:!0
+    className:Ka(Bd,t),children:[(0,us.jsx)("div",{
+      className:Ka(Ad,s?.activeText),children:e
+    }),(0,us.jsx)(K,{
+      className:Ka(Ed,s?.idleVideo),src:a,autoplay:!0,loop:!0
     })]
   })
 },
@@ -2431,7 +2431,7 @@ function Wd({
   children:e,selected:a,disabled:t
 }){
   return(0,us.jsx)("div",{
-    className:Ga(Ld,a&&Od,t&&Dd),children:e
+    className:Ka(Ld,a&&Od,t&&Dd),children:e
   })
 }
 var Vd="Slot_750e4447",Md="Slot_base__disabled_440d6866",zd="Slot_content_27d2b58",$d="Slot_base__active_71f19f5c",Fd="Slot_base__selected_71f19f5c",Hd="Slot_selected_302eadc9",Ud="Slot_selected__border_e2a17304";
@@ -2439,11 +2439,11 @@ function Gd({
   children:e,selected:a=!1,disabled:t=!1,active:s=!1,className:r,...n
 }){
   return(0,us.jsx)("div",{
-    ...n,className:Ga(Vd,s&&$d,a&&Fd,t&&Md,r),children:(0,us.jsxs)("div",{
+    ...n,className:Ka(Vd,s&&$d,a&&Fd,t&&Md,r),children:(0,us.jsxs)("div",{
       className:zd,children:[(0,us.jsx)(Wd,{
         selected:a,disabled:t,children:e
       }),a&&(0,us.jsx)("div",{
-        className:Ga(Hd,Ud)
+        className:Ka(Hd,Ud)
       }),(0,us.jsx)("div",{
         className:Hd
       })]
@@ -2503,42 +2503,42 @@ var qd="regular",Kd="postprogression",Zd="extra",Xd=(e,a)=>e?Zd:a?Kd:qd,Jd={
     }
   }
 },
-Qd={
+Yd={
   base:"Status_d06498e2",icon:"Status_icon_1af01ceb",base__done:"Status_base__done_35b9a31c",base__locked:"Status_base__locked_35b9a31c",line:"Status_line_324edf86",shadow:"Status_shadow_75136b3b",glowInner:"Status_glowInner_3e65d7dc",blur:"Status_blur_fe6f30fc",glowBig:"Status_glowBig_156fcd01",fadeInWithScale:"Status_fadeInWithScale_35b9a31c",slideUp:"Status_slideUp_35b9a31c",blink:"Status_blink_35b9a31c",scale:"Status_scale_35b9a31c",rotate:"Status_rotate_35b9a31c",windowIn:"Status_windowIn_35b9a31c",fadeOut:"Status_fadeOut_35b9a31c",fadeIn:"Status_fadeIn_35b9a31c"
 },
-Yd=({
+Qd=({
   type:e,className:a
 })=>(0,us.jsxs)("div",{
-  className:Ga(Qd.base,Qd[`base__${e}`],a),children:[(0,us.jsx)("div",{
-    className:Qd.glowBig
+  className:Ka(Yd.base,Yd[`base__${e}`],a),children:[(0,us.jsx)("div",{
+    className:Yd.glowBig
   }),(0,us.jsx)("div",{
-    className:Qd.line
+    className:Yd.line
   }),(0,us.jsx)("div",{
-    className:Qd.shadow
+    className:Yd.shadow
   }),(0,us.jsx)("div",{
-    className:Qd.glowInner
+    className:Yd.glowInner
   }),(0,us.jsx)("svg",{
-    width:"42",height:"42",viewBox:"0 0 42 42",className:Qd.blur,children:(0,us.jsx)("g",{
+    width:"42",height:"42",viewBox:"0 0 42 42",className:Yd.blur,children:(0,us.jsx)("g",{
       children:(0,us.jsx)("circle",{
         cx:"21",cy:"21",r:"3"
       })
     })
   }),(0,us.jsx)("div",{
-    className:Ga(Qd.icon)
+    className:Ka(Yd.icon)
   })]
 }),e_="UnlockedState_d8033d83",a_="UnlockedState_stages_ef0d6acd",t_="UnlockedState_mainStage_286ea378",s_="UnlockedState_additionalStage_83045438",r_="UnlockedState_cycleText_5b49e844",n_=R.strings.battle_pass.chapterChoice,i_=function({
   currentLevel:e,cyclesCompletedCount:a,maxLevel:t
 }){
   const s=(e-1)%t;
   return(0,us.jsxs)("div",{
-    className:e_,children:[(0,us.jsx)(ea,{
+    className:e_,children:[(0,us.jsx)(ta,{
       classMix:r_,text:n_.postprogression.unlocked.cycle(),binding:{
         cycle:a+1
       }
     }),(0,us.jsxs)("div",{
       className:a_,children:[(0,us.jsx)("span",{
         className:t_,children:`${s}`
-      }),(0,us.jsx)(ea,{
+      }),(0,us.jsx)(ta,{
         classMix:s_,text:n_.stages.additional(),binding:{
           level:t
         }
@@ -2557,7 +2557,7 @@ o_="PostprogressionInfo_f8fcfc44",l_="PostprogressionInfo_lockedText_c823728d",c
     currentLevel:s,cyclesCompletedCount:r,maxLevel:n
   }=t,i=a.computes.regularChapters().length-1!==a.computes.regularChaptersCompleteCount();
   return(0,us.jsx)("div",{
-    className:o_,children:i?(0,us.jsx)(V,{
+    className:o_,children:i?(0,us.jsx)(ma,{
       className:l_,text:c_.postprogression.locked(),params:{
         count:a.computes.regularChapters().length-1
       }
@@ -2570,8 +2570,8 @@ o_="PostprogressionInfo_f8fcfc44",l_="PostprogressionInfo_lockedText_c823728d",c
 }){
   return(0,us.jsx)(us.Fragment,{
     children:e?(0,us.jsx)("div",{
-      className:Ga(__,u_),children:m_.stages.complete.improved()
-    }):(0,us.jsx)(ea,{
+      className:Ka(__,u_),children:m_.stages.complete.improved()
+    }):(0,us.jsx)(ta,{
       classMix:__,text:m_.stages.complete.unimproved(),binding:{
         count:a
       }
@@ -2584,7 +2584,7 @@ h_="UncompletedState_9e8c0393",b_="UncompletedState_mainStage_5808557f",f_="Unco
   return(0,us.jsxs)("div",{
     className:h_,children:[(0,us.jsx)("span",{
       className:b_,children:""+(e-1)
-    }),(0,us.jsx)(ea,{
+    }),(0,us.jsx)(ta,{
       classMix:f_,text:g_.stages.additional(),binding:{
         level:a
       }
@@ -2613,14 +2613,14 @@ x_="RegularInfo_46f7818d",w_="RegularInfo_uncomplete_854e3542",C_=(R.strings.bat
 })),y_={
   base:"CardInfo_7298ebd2",base__postprogression:"CardInfo_base__postprogression_f10eeba",infoIcon:"CardInfo_infoIcon_fe2dde8d",infoIcon__x60x60:"CardInfo_infoIcon__x60x60_69dd0923",infoIcon__x80x80:"CardInfo_infoIcon__x80x80_39f83cbc",infoIcon__x120x120:"CardInfo_infoIcon__x120x120_a47141e5",infoDescription:"CardInfo_infoDescription_af2ed432",chapterName:"CardInfo_chapterName_91c4f3ea",chapterName__bought:"CardInfo_chapterName__bought_a3ef657b",fadeInWithScale:"CardInfo_fadeInWithScale_8e8a9c2",slideUp:"CardInfo_slideUp_8e8a9c2",blink:"CardInfo_blink_8e8a9c2",scale:"CardInfo_scale_8e8a9c2",rotate:"CardInfo_rotate_8e8a9c2",windowIn:"CardInfo_windowIn_8e8a9c2",fadeOut:"CardInfo_fadeOut_8e8a9c2",fadeIn:"CardInfo_fadeIn_8e8a9c2"
 },
-S_=oa.resolve("images"),j_=oa.resolve("strings"),I_=R.strings.battle_pass.chapterChoice,N_=Ot(function({
+S_=ca.resolve("images"),j_=ca.resolve("strings"),I_=R.strings.battle_pass.chapterChoice,N_=Ot(function({
   chapterID:e,className:a=""
 }){
   const{
     model:t
   }=gi(),{
     breakpoint:s
-  }=O(),r=t.computes.getChapterById(e),n=z({
+  }=W(),r=t.computes.getChapterById(e),n=z({
     iconSize:an
   },{
     large:{
@@ -2629,7 +2629,7 @@ S_=oa.resolve("images"),j_=oa.resolve("strings"),I_=R.strings.battle_pass.chapte
     extraLarge:{
       iconSize:rn
     }
-  }),i=Ya(n.iconSize,nn);
+  }),i=at(n.iconSize,nn);
   if(!r)return;
   const{
     isBought:o,isPostProgression:l,isExtra:c
@@ -2638,8 +2638,8 @@ S_=oa.resolve("images"),j_=oa.resolve("strings"),I_=R.strings.battle_pass.chapte
     return S_.readOrEmpty(`battlePass.emblem.icon.c_${e}.${o?"purchased":"basic"}.${i}`,"silent")||S_.readOrEmpty(`battlePass.emblem.icon.default_${a}.${o?"purchased":"basic"}.${i}`)
   })();
   return(0,us.jsxs)("div",{
-    className:Ga(y_.base,l&&y_.base__postprogression),children:[(0,us.jsx)("div",{
-      className:Ga(y_.infoIcon,y_[`infoIcon__${n.iconSize}`]),style:{
+    className:Ka(y_.base,l&&y_.base__postprogression),children:[(0,us.jsx)("div",{
+      className:Ka(y_.infoIcon,y_[`infoIcon__${n.iconSize}`]),style:{
         backgroundImage:`url(${_})`
       }
     }),(0,us.jsxs)("div",{
@@ -2647,7 +2647,7 @@ S_=oa.resolve("images"),j_=oa.resolve("strings"),I_=R.strings.battle_pass.chapte
         "--card-width":Jd[d][s.name].cardWidth
       },
       children:[(0,us.jsx)("div",{
-        className:Ga(y_.chapterName,o&&y_.chapterName__bought),children:l?I_.postprogression.name():j_.readOrEmpty(`battle_pass.chapter.fullName.c_${e}`)
+        className:Ka(y_.chapterName,o&&y_.chapterName__bought),children:l?I_.postprogression.name():j_.readOrEmpty(`battle_pass.chapter.fullName.c_${e}`)
       }),l?(0,us.jsx)(d_,{
         chapterID:e
       }):(0,us.jsx)(C_,{
@@ -2658,29 +2658,29 @@ S_=oa.resolve("images"),j_=oa.resolve("strings"),I_=R.strings.battle_pass.chapte
 }),k_={
   base:"CardTemplate_664f5f0d",bg:"CardTemplate_bg_e653648c",reward:"CardTemplate_reward_4b474b06",base__paused:"CardTemplate_base__paused_5ee959db",base__notStarted:"CardTemplate_base__notStarted_5ee959db",base__completed:"CardTemplate_base__completed_5ee959db",base__selected:"CardTemplate_base__selected_5ee959db",progressBar:"CardTemplate_progressBar_9b805b48",progressBar__active:"CardTemplate_progressBar__active_5ddba882",progressBarBg:"CardTemplate_progressBarBg_5ee959db",info:"CardTemplate_info_b6b5a8af",status:"CardTemplate_status_4dbaa00d",fadeInWithScale:"CardTemplate_fadeInWithScale_5ee959db",slideUp:"CardTemplate_slideUp_5ee959db",blink:"CardTemplate_blink_5ee959db",scale:"CardTemplate_scale_5ee959db",rotate:"CardTemplate_rotate_5ee959db",windowIn:"CardTemplate_windowIn_5ee959db",fadeOut:"CardTemplate_fadeOut_5ee959db",fadeIn:"CardTemplate_fadeIn_5ee959db"
 },
-P_=oa.resolve("images"),R_=(e,a=!1)=>e===Jt.Completed?he.done:a?he.locked:void 0,B_=Ot(function({
+P_=ca.resolve("images"),R_=(e,a=!1)=>e===Jt.Completed?be.done:a?be.locked:void 0,B_=Ot(function({
   chapterID:e,classNames:a={}
 }){
   const{
     model:t
   }=gi(),{
     breakpoint:s
-  }=O(),r=t.computes.getChapterById(e);
+  }=W(),r=t.computes.getChapterById(e);
   if(!r)return;
   const{
     chapterState:n,isExtra:i,isPostProgression:o,currentLevel:l,maxLevel:c
   }=r,d=Xd(i,o),_=e===t.selectedChapterID.get(),u=t.computes.regularChapters().length-1!==t.computes.regularChaptersCompleteCount()&&o,m=String(e).slice(-1),p=P_.readOrEmpty(`battlePass.chapter_choice.card_bg.c_${e}`,"silent")||P_.readOrEmpty(`battlePass.chapter_choice.card_bg.default_${m}`),h=P_.readOrEmpty(`battlePass.chapter_choice.tanks.c_${e}`,"silent")||P_.readOrEmpty(`battlePass.chapter_choice.tanks.default_${m}`);
   return(0,us.jsxs)("div",{
-    className:Ga(k_.base,k_[`base__${n}`],_&&k_.base__selected),children:[(0,us.jsx)("div",{
+    className:Ka(k_.base,k_[`base__${n}`],_&&k_.base__selected),children:[(0,us.jsx)("div",{
       className:k_.bg,style:{
         backgroundImage:`url(${p})`
       }
     }),(0,us.jsx)("div",{
-      className:Ga(k_.reward,a.reward),style:{
+      className:Ka(k_.reward,a.reward),style:{
         backgroundImage:`url(${h})`,width:Jd[d][s.name].rewardWidth,height:Jd[d][s.name].rewardHeight
       }
-    }),n!==Jt.Completed&&!o&&(0,us.jsx)(St,{
-      value:l,maxValue:c,size:"small",className:Ga(k_.progressBar,n===Jt.Active&&k_.progressBar__active),classNames:{
+    }),n!==Jt.Completed&&!o&&(0,us.jsx)(jt,{
+      value:l,maxValue:c,size:"small",className:Ka(k_.progressBar,n===Jt.Active&&k_.progressBar__active),classNames:{
         background:k_.progressBarBg
       }
     }),(0,us.jsx)("div",{
@@ -2688,7 +2688,7 @@ P_=oa.resolve("images"),R_=(e,a=!1)=>e===Jt.Completed?he.done:a?he.locked:void 0
         chapterID:e
       })
     }),R_(n,u)&&(0,us.jsx)("div",{
-      className:k_.status,children:(0,us.jsx)(Yd,{
+      className:k_.status,children:(0,us.jsx)(Qd,{
         type:R_(n,u)
       })
     })]
@@ -2703,22 +2703,22 @@ E_=R.strings.battle_pass.chapterChoice,T_=Ot(function({
     model:a,controls:t
   }=gi(),{
     breakpoint:s
-  }=O(),r=a.computes.getChapterById(e);
+  }=W(),r=a.computes.getChapterById(e);
   if(!r)return;
   const{
     chapterState:n,isPostProgression:i,isExtra:o
   }=r,l=a.selectedChapterID.get(),c=a.computes.selectedChapter(),d=a.computes.sortedChapters().indexOf(c),_=Xd(o,i);
   return(0,us.jsxs)("div",{
-    className:Ga(A_.base,o&&A_.base__extra),children:[n===Jt.Active&&(0,us.jsx)(Td,{
+    className:Ka(A_.base,o&&A_.base__extra),children:[n===Jt.Active&&(0,us.jsx)(Td,{
       text:i?E_.activeChapter.postprogression.text():E_.activeChapter.text(),videoSrc:R.videos.battle_pass.chapter_choice.activeAnimation(),className:A_.active,classNames:{
         idleVideo:A_[`idleVideo__${i?Kd:qd}`]
       }
     }),(0,us.jsx)(Gd,{
       selected:l===e,active:n===Jt.Active,onClick:()=>{
-        e!==l&&(t.setPrevChapterIndex(d),t.setSelectedChapterID(e),t.onChapterSelect(e),Te.sound(R.sounds.bp_select_chapter()))
+        e!==l&&(t.setPrevChapterIndex(d),t.setSelectedChapterID(e),t.onChapterSelect(e),De.sound(R.sounds.bp_select_chapter()))
       },
       onMouseEnter:()=>{
-        Te.sound(R.sounds.bp_highlight_02())
+        De.sound(R.sounds.bp_highlight_02())
       },
       className:A_.slot,style:{
         width:Jd[_][s.name].cardWidth,height:Jd[_][s.name].cardHeight
@@ -2736,14 +2736,14 @@ D_=Ot(function(){
     model:e,controls:a
   }=gi(),[t,s]=(0,_s.useState)(!1),{
     api:r
-  }=Pt(),{
+  }=Rt(),{
     animationScroll:n,applyScroll:i,getBounds:o
-  }=r,l=e.computes.selectedChapter(),c=e.computes.sortedChapters(),d=c.indexOf(l),_=Sa(r,$a.horizontal,void 0,{
+  }=r,l=e.computes.selectedChapter(),c=e.computes.sortedChapters(),d=c.indexOf(l),_=Ia(r,Ha.horizontal,void 0,{
     gapBeforeStart:5
-  }),[u,m]=xt(r);
+  }),[u,m]=wt(r);
   (0,_s.useEffect)(()=>{
     l&&a.setSelectedChapterID(l.chapterID)
-  },[a,l]),(0,_s.useEffect)(()=>ot(()=>{
+  },[a,l]),(0,_s.useEffect)(()=>lt(()=>{
     "idle"===_.type&&n.scrollPosition.idle&&i(n.scrollPosition.get())
   }),[n.scrollPosition,i,_.type]),(0,_s.useEffect)(()=>{
     const e=c.indexOf(l),[a,t]=o();
@@ -2752,95 +2752,95 @@ D_=Ot(function(){
     s("dragging"===_.type)
   },[_.type]),(0,_s.useEffect)(()=>{
     const e=(e,a,t)=>{
-      !1===(Za(a.get(),t)&&Za(a.goal,t))&&e.stopPropagation()
+      !1===(Ja(a.get(),t)&&Ja(a.goal,t))&&e.stopPropagation()
     };
     return r.events.on("mouseWheel",e),()=>{
       r.events.off("mouseWheel",e)
     }
   },[r]);
   const p=(e,t)=>{
-    Ze(void 0!==c[e]),a.setSelectedChapterID(c[e].chapterID),a.onChapterSelect(c[e].chapterID),e!==t&&a.setPrevChapterIndex(t)
+    Je(void 0!==c[e]),a.setSelectedChapterID(c[e].chapterID),a.onChapterSelect(c[e].chapterID),e!==t&&a.setPrevChapterIndex(t)
   };
-  return ue(ie.ARROW_RIGHT,()=>{
+  return me(le.ARROW_RIGHT,()=>{
     p(d<c.length-1?d+1:d,d)
-  }),ue(ie.ARROW_LEFT,()=>{
+  }),me(le.ARROW_LEFT,()=>{
     p(d>0?d-1:d,d)
   }),(0,us.jsxs)("div",{
     className:L_.base,children:[(0,us.jsx)("div",{
-      className:Ga(L_.mask,L_[`mask__${ll(u,m)}`]),children:(0,us.jsx)(xa,{
+      className:Ka(L_.mask,L_[`mask__${ll(u,m)}`]),children:(0,us.jsx)(Ca,{
         classNames:{
           wrapper:L_.scrollWrapper
         },
         children:(0,us.jsx)("div",{
-          className:Ga(L_.cardsWrapper,t&&L_.cardsWrapper__inactive),children:w(c,(e,a)=>(0,us.jsx)(T_,{
+          className:Ka(L_.cardsWrapper,t&&L_.cardsWrapper__inactive),children:x(c,(e,a)=>(0,us.jsx)(T_,{
             chapterID:e.chapterID
           },`${e.chapterID}_${a}`))
         })
       })
-    }),(0,us.jsx)(Ue,{
+    }),(0,us.jsx)(qe,{
       classNames:{
         base:L_.scrollBar
       }
     })]
   })
-}),O_="ButtonsGroup_6fd5782",W_="ButtonsGroup_button_17bae557",V_=oa.resolve("strings"),M_=Ot(function(){
-  const e=p(),{
+}),O_="ButtonsGroup_6fd5782",W_="ButtonsGroup_button_17bae557",V_=ca.resolve("strings"),M_=Ot(function(){
+  const e=m(),{
     model:a,controls:t
-  }=gi(),r=a.computes.selectedChapter(),{
-    breakpoint:n
-  }=O(),i=n.weight>=Ve.large.weight?s.large:s.medium;
-  return ue(ie.SPACE,()=>{
-    r?.isPostProgression?e.push(os.battlePass.postProgression,{}):e.push(os.battlePass.progression,{
-      chapterID:r?.chapterID
+  }=gi(),s=a.computes.selectedChapter(),{
+    breakpoint:r
+  }=W(),n=r.weight>=$e.large.weight?ye.large:ye.medium;
+  return me(le.SPACE,()=>{
+    s?.isPostProgression?e.push(os.battlePass.postProgression,{}):e.push(os.battlePass.progression,{
+      chapterID:s?.chapterID
     })
   }),(0,us.jsxs)("div",{
-    className:O_,children:[r?.isPostProgression?(0,us.jsx)(ze,{
-      onClick:()=>e.push(os.battlePass.postProgression,{}),className:W_,size:i,"data-test-id":"toPostProgression",children:V_.readOrEmpty("battle_pass.chapterChoice.chapterInfo.buttons.toPostProgression")
-    }):(0,us.jsx)(ze,{
+    className:O_,children:[s?.isPostProgression?(0,us.jsx)(St,{
+      onClick:()=>e.push(os.battlePass.postProgression,{}),className:W_,size:n,"data-test-id":"toPostProgression",children:V_.readOrEmpty("battle_pass.chapterChoice.chapterInfo.buttons.toPostProgression")
+    }):(0,us.jsx)(St,{
       onClick:()=>e.push(os.battlePass.progression,{
-        chapterID:r?.chapterID
-      }),className:W_,size:i,"data-test-id":"toChapter",children:V_.readOrEmpty("battle_pass.chapterChoice.chapterInfo.buttons.toChapter")
-    }),0!==r?.tankmenScreenID&&(0,us.jsx)(ze,{
+        chapterID:s?.chapterID
+      }),className:W_,size:n,"data-test-id":"toChapter",children:V_.readOrEmpty("battle_pass.chapterChoice.chapterInfo.buttons.toChapter")
+    }),0!==s?.tankmenScreenID&&(0,us.jsx)(St,{
       onClick:()=>{
-        void 0!==r?.chapterID&&t.showTankmen(r?.chapterID)
+        void 0!==s?.chapterID&&t.showTankmen(s?.chapterID)
       },
-      className:W_,theme:_a.secondary,size:i,"data-test-id":"toCrewMembers",children:V_.readOrEmpty("battle_pass.chapterChoice.chapterInfo.buttons.toCrewMembers")
+      className:W_,theme:w.secondary,size:n,"data-test-id":"toCrewMembers",children:V_.readOrEmpty("battle_pass.chapterChoice.chapterInfo.buttons.toCrewMembers")
     })]
   })
-}),z_="Deadline_d8216f12",$_="Deadline_timerIcon_cda81cf2",F_="Deadline_timerLabel_218217e0",H_=oa.resolve("strings"),U_=Me,G_=Ot(function(){
+}),z_="Deadline_d8216f12",$_="Deadline_timerIcon_cda81cf2",F_="Deadline_timerLabel_218217e0",H_=ca.resolve("strings"),U_=Fe,G_=Ot(function(){
   const{
     model:e
   }=gi(),{
     expireTime:a,timeLeft:t
   }=e.computes.selectedChapter(),s=e.computes.detailedTimer();
   return(0,us.jsx)("div",{
-    className:z_,children:s?(0,us.jsx)(ea,{
+    className:z_,children:s?(0,us.jsx)(ta,{
       text:H_.readOrEmpty("battle_pass.chapterChoice.chapterInfo.deadline.time"),binding:{
-        endTime:(0,us.jsx)(It,{
-          start:t,size:Je.x48x48,classNames:{
+        endTime:(0,us.jsx)(Nt,{
+          start:t,size:Qe.x48x48,classNames:{
             icon:$_,label:F_
           }
         },t)
       }
-    }):(0,us.jsx)(ea,{
+    }):(0,us.jsx)(ta,{
       text:H_.readOrEmpty("battle_pass.chapterChoice.chapterInfo.deadline.date"),binding:{
-        endDate:U_(a,pt.DayMonthFull)
+        endDate:U_(a,ht.DayMonthFull)
       }
     })
   })
 }),q_={
   base:"PreviewButton_8d85fd92",base__x100x100:"PreviewButton_base__x100x100_40f65925",base__x120x120:"PreviewButton_base__x120x120_eabae7e5",base__x140x140:"PreviewButton_base__x140x140_592ecabc",base__hovered:"PreviewButton_base__hovered_6f70d99a",fadeInWithScale:"PreviewButton_fadeInWithScale_22577403",slideUp:"PreviewButton_slideUp_22577403",blink:"PreviewButton_blink_22577403",scale:"PreviewButton_scale_22577403",rotate:"PreviewButton_rotate_22577403",windowIn:"PreviewButton_windowIn_22577403",fadeOut:"PreviewButton_fadeOut_22577403",fadeIn:"PreviewButton_fadeIn_22577403"
 },
-K_="x100x100",Z_="x120x120",X_="x140x140",J_=oa.resolve("images"),Q_=function({
+K_="x100x100",Z_="x120x120",X_="x140x140",J_=ca.resolve("images"),Y_=function({
   iconSize:e,onClick:a,onMouseEnter:t,onMouseLeave:s,soundHover:r="",soundClick:n="",className:i=""
 }){
-  const[o,l]=(0,_s.useState)(!1),c=J_.readOrEmpty(`battlePass.icons.previewButton.${Ya(e,X_)}`);
+  const[o,l]=(0,_s.useState)(!1),c=J_.readOrEmpty(`battlePass.icons.previewButton.${at(e,X_)}`);
   return(0,us.jsx)("div",{
-    className:Ga(q_.base,o&&q_.base__hovered,q_[`base__${e}`],i),onClick:e=>{
-      a?.(e),n&&Te.sound(n)
+    className:Ka(q_.base,o&&q_.base__hovered,q_[`base__${e}`],i),onClick:e=>{
+      a?.(e),n&&De.sound(n)
     },
     onMouseEnter:()=>{
-      l(!0),t?.(),r&&Te.sound(r)
+      l(!0),t?.(),r&&De.sound(r)
     },
     onMouseLeave:()=>{
       l(!1),s?.()
@@ -2850,15 +2850,15 @@ K_="x100x100",Z_="x120x120",X_="x140x140",J_=oa.resolve("images"),Q_=function({
     }
   })
 },
-Y_={
+Q_={
   base:"InGarage_66bdf5dd",base__x24x24:"InGarage_base__x24x24_79818dbf",base__x32x32:"InGarage_base__x32x32_839c6a2c",base__x48x48:"InGarage_base__x48x48_19be1254",base__x80x80:"InGarage_base__x80x80_c3a1d174",fadeInWithScale:"InGarage_fadeInWithScale_2e055df1",slideUp:"InGarage_slideUp_2e055df1",blink:"InGarage_blink_2e055df1",scale:"InGarage_scale_2e055df1",rotate:"InGarage_rotate_2e055df1",windowIn:"InGarage_windowIn_2e055df1",fadeOut:"InGarage_fadeOut_2e055df1",fadeIn:"InGarage_fadeIn_2e055df1"
 },
-eu="x24x24",au="x32x32",tu="x48x48",su="x80x80",ru=oa.resolve("images"),nu=function({
+eu="x24x24",au="x32x32",tu="x48x48",su="x80x80",ru=ca.resolve("images"),nu=function({
   iconSize:e,className:a=""
 }){
   const t=ru.readOrEmpty(`battlePass.icons.inGarage.${e}`);
   return(0,us.jsx)("div",{
-    className:Ga(Y_.base,Y_[`base__${e}`],a),style:{
+    className:Ka(Q_.base,Q_[`base__${e}`],a),style:{
       backgroundImage:`url(${t})`
     }
   })
@@ -2866,14 +2866,14 @@ eu="x24x24",au="x32x32",tu="x48x48",su="x80x80",ru=oa.resolve("images"),nu=funct
 iu={
   vehicleWrapper:"SubTitle_vehicleWrapper_c315a83c",styleWrapper:"SubTitle_styleWrapper_59988398",style:"SubTitle_style_c315a83c",vehicleStyle:"SubTitle_vehicleStyle_1b9867d2",postProgression:"SubTitle_postProgression_c315a83c",crew:"SubTitle_crew_f25c78a4",styleLevel:"SubTitle_styleLevel_c315a83c",styleName:"SubTitle_styleName_cab7080b",attachmentsSet:"SubTitle_attachmentsSet_c3439b6f",vehicle:"SubTitle_vehicle_947ca1b3",vehicleLevel:"SubTitle_vehicleLevel_c315a83c",vehicleName:"SubTitle_vehicleName_c315a83c",inGarage__style:"SubTitle_inGarage__style_b8f6084a",inGarage__vehicle:"SubTitle_inGarage__vehicle_1cb9fdfb",fadeInWithScale:"SubTitle_fadeInWithScale_c315a83c",slideUp:"SubTitle_slideUp_c315a83c",blink:"SubTitle_blink_c315a83c",scale:"SubTitle_scale_c315a83c",rotate:"SubTitle_rotate_c315a83c",windowIn:"SubTitle_windowIn_c315a83c",fadeOut:"SubTitle_fadeOut_c315a83c",fadeIn:"SubTitle_fadeIn_c315a83c"
 },
-ou=oa.resolve("strings"),lu="vehicle",cu="style",du=Ot(function(){
+ou=ca.resolve("strings"),lu="vehicle",cu="style",du=Ot(function(){
   const{
     model:e
   }=gi(),a=e.computes.selectedChapter(),{
     breakpoint:{
       weight:t
     }
-  }=O(),s=e=>e===lu?t<Ve.large.weight?Ce.x64x64:Ce.x96x96:e===cu?t<Ve.large.weight?Ce.x24x24:Ce.x48x48:void 0,r=e=>e===lu?t>=Ve.large.weight?su:t>=Ve.medium.weight?tu:au:e===cu?t>=Ve.large.weight?au:eu:au,n={
+  }=W(),s=e=>e===lu?t<$e.large.weight?ne.x64x64:ne.x96x96:e===cu?t<$e.large.weight?ne.x24x24:ne.x48x48:void 0,r=e=>e===lu?t>=$e.large.weight?su:t>=$e.medium.weight?tu:au:e===cu?t>=$e.large.weight?au:eu:au,n={
     level:iu.vehicleLevel,name:iu.vehicleName
   },
   i={
@@ -2886,52 +2886,52 @@ ou=oa.resolve("strings"),lu="vehicle",cu="style",du=Ot(function(){
   return(()=>{
     switch(c){
       case as.Vehicle:return(0,us.jsxs)("div",{
-        className:iu.vehicleWrapper,children:[(0,us.jsx)(ea,{
+        className:iu.vehicleWrapper,children:[(0,us.jsx)(ta,{
           classMix:iu.vehicle,text:ou.readOrEmpty("battle_pass.chapterChoice.vehicle.reward.subTitle"),binding:{
             vehicleName:(0,us.jsx)(rs,{
               ...l,vehicleTypeIconSize:s(lu),classNames:n
             })
           }
         }),d&&(0,us.jsx)(nu,{
-          iconSize:r(lu),className:Ga(iu.inGarage,iu.inGarage__vehicle)
+          iconSize:r(lu),className:Ka(iu.inGarage,iu.inGarage__vehicle)
         })]
       });
-      case as.VehicleStyle:return(0,us.jsx)(ea,{
+      case as.VehicleStyle:return(0,us.jsx)(ta,{
         classMix:iu.vehicleStyle,text:ou.readOrEmpty("battle_pass.chapterChoice.vehicleStyle.reward.subTitle"),binding:{
           styleName:o
         }
       });
       case as.Style:return(0,us.jsxs)("div",{
-        className:iu.styleWrapper,children:[(0,us.jsx)(ea,{
+        className:iu.styleWrapper,children:[(0,us.jsx)(ta,{
           classMix:iu.style,text:ou.readOrEmpty("battle_pass.chapterChoice.stylePreview.reward.subTitle"),binding:{
             vehicleName:(0,us.jsx)(rs,{
               ...l,vehicleTypeIconSize:s(cu),classNames:i
             })
           }
         }),d&&(0,us.jsx)(nu,{
-          iconSize:r(cu),className:Ga(iu.inGarage,iu.inGarage__style)
+          iconSize:r(cu),className:Ka(iu.inGarage,iu.inGarage__style)
         })]
       });
-      case as.Tankman:return(0,us.jsx)(ea,{
+      case as.Tankman:return(0,us.jsx)(ta,{
         classMix:iu.crew,text:ou.readOrEmpty("battle_pass.chapterChoice.crewMember.reward.subTitle")
       });
       case as.AttachmentsSet:return(0,us.jsx)("span",{
         className:iu.attachmentsSet,children:ou.readOrEmpty(`quests.bonusName.attachments_set.${_}`)
       });
-      case as.PostProgression:return(0,us.jsx)(ea,{
+      case as.PostProgression:return(0,us.jsx)(ta,{
         classMix:iu.postProgression,text:ou.readOrEmpty("battle_pass.chapterChoice.eliteCircuit.reward.subTitle")
       });
       default:return""
     }
   })()
-}),_u="Title_vehicleStyleWrapper_5727057f",uu="Title_postProgression_2e63cf3",mu="Title_crew_ace25966",pu="Title_vehicle_c974ddd5",hu="Title_vehicleStyle_e7d39a46",bu="Title_attachmentsSet_7b3dafcc",fu="Title_style_2e63cf3",gu="Title_level_2e63cf3",vu="Title_name_93838a06",xu="Title_inGarage_1c4370bb",wu=oa.resolve("strings"),Cu=Ot(function(){
+}),_u="Title_vehicleStyleWrapper_5727057f",uu="Title_postProgression_2e63cf3",mu="Title_crew_ace25966",pu="Title_vehicle_c974ddd5",hu="Title_vehicleStyle_e7d39a46",bu="Title_attachmentsSet_7b3dafcc",fu="Title_style_2e63cf3",gu="Title_level_2e63cf3",vu="Title_name_93838a06",xu="Title_inGarage_1c4370bb",wu=ca.resolve("strings"),Cu=Ot(function(){
   const{
     model:e
   }=gi(),a=e.computes.selectedChapter(),{
     breakpoint:{
       weight:t
     }
-  }=O(),s=t<Ve.large.weight?Ce.x64x64:Ce.x96x96,r=t>=Ve.large.weight?su:t>=Ve.medium.weight?tu:au,n={
+  }=W(),s=t<$e.large.weight?ne.x64x64:ne.x96x96,r=t>=$e.large.weight?su:t>=$e.medium.weight?tu:au,n={
     level:gu,name:vu
   };
   if(!a)return;
@@ -2940,11 +2940,11 @@ ou=oa.resolve("strings"),lu="vehicle",cu="style",du=Ot(function(){
   }=a;
   return function(){
     switch(l){
-      case as.Vehicle:return(0,us.jsx)(ea,{
+      case as.Vehicle:return(0,us.jsx)(ta,{
         classMix:pu,text:wu.readOrEmpty("battle_pass.chapterChoice.vehicle.reward.title")
       });
       case as.VehicleStyle:return(0,us.jsxs)("div",{
-        className:_u,children:[(0,us.jsx)(ea,{
+        className:_u,children:[(0,us.jsx)(ta,{
           classMix:hu,text:wu.readOrEmpty("battle_pass.chapterChoice.vehicleStyle.reward.title"),binding:{
             vehicleName:(0,us.jsx)(rs,{
               ...o,vehicleTypeIconSize:s,classNames:n
@@ -2954,18 +2954,18 @@ ou=oa.resolve("strings"),lu="vehicle",cu="style",du=Ot(function(){
           iconSize:r,className:xu
         })]
       });
-      case as.Style:return(0,us.jsx)(ea,{
+      case as.Style:return(0,us.jsx)(ta,{
         classMix:fu,text:wu.readOrEmpty("battle_pass.chapterChoice.stylePreview.reward.title"),binding:{
           styleName:i
         }
       });
-      case as.Tankman:return(0,us.jsx)(ea,{
-        classMix:mu,text:we(d,wu.readOrEmpty("battle_pass.common.comma"))
+      case as.Tankman:return(0,us.jsx)(ta,{
+        classMix:mu,text:Ce(d,wu.readOrEmpty("battle_pass.common.comma"))
       });
       case as.AttachmentsSet:return(0,us.jsx)("span",{
         className:bu,children:wu.readOrEmpty("battle_pass.finalReward.attachmentsSet.title")
       });
-      case as.PostProgression:return(0,us.jsx)(ea,{
+      case as.PostProgression:return(0,us.jsx)(ta,{
         classMix:uu,text:wu.readOrEmpty("battle_pass.chapterChoice.eliteCircuit.reward.title")
       });
       default:return""
@@ -2984,7 +2984,7 @@ ou=oa.resolve("strings"),lu="vehicle",cu="style",du=Ot(function(){
       previewButton:X_
     }
   }),s=e.computes.selectedChapter();
-  Ze(void 0!==s);
+  Je(void 0!==s);
   const{
     chapterID:r,finalRewardType:n
   }=s,i=(0,_s.useCallback)(e=>{
@@ -2992,7 +2992,7 @@ ou=oa.resolve("strings"),lu="vehicle",cu="style",du=Ot(function(){
   },[a,r]),o=[as.Style,as.Vehicle,as.VehicleStyle,as.AttachmentsSet].includes(n);
   return(0,us.jsxs)("div",{
     className:yu,children:[o&&(0,us.jsx)("div",{
-      className:ju,children:(0,us.jsx)(Q_,{
+      className:ju,children:(0,us.jsx)(Y_,{
         iconSize:t.previewButton,onClick:i,soundHover:R.sounds.bp_highlight_02(),soundClick:R.sounds.play()
       })
     }),(0,us.jsxs)("div",{
@@ -3002,7 +3002,7 @@ ou=oa.resolve("strings"),lu="vehicle",cu="style",du=Ot(function(){
 }),Nu={
   base:"ChapterInfo_583787",deadline:"ChapterInfo_deadline_df593065",info:"ChapterInfo_info_50f38f5c",chapterName:"ChapterInfo_chapterName_2e84101e",chapterName__bougth:"ChapterInfo_chapterName__bougth_4015ed41",finalReward__vehicleStyle:"ChapterInfo_finalReward__vehicleStyle_9092be9e",finalReward__vehicle:"ChapterInfo_finalReward__vehicle_8f1be3b9",finalReward__style:"ChapterInfo_finalReward__style_939c7d1e",finalReward__attachmentsSet:"ChapterInfo_finalReward__attachmentsSet_71da8196",finalReward__tankman:"ChapterInfo_finalReward__tankman_939c7d1e",finalReward__postProgression:"ChapterInfo_finalReward__postProgression_42299b8a",buttonsGroup__vehicleStyle:"ChapterInfo_buttonsGroup__vehicleStyle_32e73b60",buttonsGroup__vehicle:"ChapterInfo_buttonsGroup__vehicle_19a07e37",buttonsGroup__style:"ChapterInfo_buttonsGroup__style_939c7d1e",buttonsGroup__attachmentsSet:"ChapterInfo_buttonsGroup__attachmentsSet_99acb72a",buttonsGroup__tankman:"ChapterInfo_buttonsGroup__tankman_939c7d1e",buttonsGroup__postProgression:"ChapterInfo_buttonsGroup__postProgression_d83fdc7a",emblem:"ChapterInfo_emblem_b1fd21e1",fadeInWithScale:"ChapterInfo_fadeInWithScale_939c7d1e",slideUp:"ChapterInfo_slideUp_939c7d1e",blink:"ChapterInfo_blink_939c7d1e",scale:"ChapterInfo_scale_939c7d1e",rotate:"ChapterInfo_rotate_939c7d1e",windowIn:"ChapterInfo_windowIn_939c7d1e",fadeOut:"ChapterInfo_fadeOut_939c7d1e",fadeIn:"ChapterInfo_fadeIn_939c7d1e"
 },
-ku=oa.resolve("strings"),Pu=Ot(function(){
+ku=ca.resolve("strings"),Pu=Ot(function(){
   const{
     model:e
   }=gi(),a=e.computes.selectedChapter(),t=z({
@@ -3017,7 +3017,7 @@ ku=oa.resolve("strings"),Pu=Ot(function(){
     extraLarge:{
       iconSize:nn,shieldSize:Xr,containerSize:Hr
     }
-  }),s=Ra(mi.length,mi.map(e=>{
+  }),s=Aa(mi.length,mi.map(e=>{
     const{
       delay:a,diff:t,duration:s
     }=Object.values(e)[0];
@@ -3031,36 +3031,36 @@ ku=oa.resolve("strings"),Pu=Ot(function(){
     chapterID:n,isBought:i,finalRewardType:o
   }=a;
   return(0,us.jsxs)("div",{
-    className:Nu.base,children:[(0,us.jsx)(Ta.div,{
+    className:Nu.base,children:[(0,us.jsx)(Da.div,{
       style:r.emblem,children:(0,us.jsx)(dn,{
         iconSize:t.iconSize,shieldSize:t.shieldSize,containerSize:t.containerSize,bpPurchased:i,chapterID:n,className:Nu.emblem
       })
     }),(0,us.jsxs)("div",{
-      className:Nu.info,children:[(0,us.jsx)(Ta.div,{
+      className:Nu.info,children:[(0,us.jsx)(Da.div,{
         style:r.deadline,children:(0,us.jsx)("div",{
           className:Nu.deadline,children:(0,us.jsx)(G_,{})
         })
-      }),(0,us.jsx)(Ta.div,{
-        style:r.chapterName,children:(0,us.jsx)(Ie,{
-          className:Ga(Nu.chapterName,i&&Nu.chapterName__bougth),text:ku.readOrEmpty(`battle_pass.chapter.fullName.c_${n}`)
+      }),(0,us.jsx)(Da.div,{
+        style:r.chapterName,children:(0,us.jsx)(F,{
+          className:Ka(Nu.chapterName,i&&Nu.chapterName__bougth),text:ku.readOrEmpty(`battle_pass.chapter.fullName.c_${n}`)
         })
-      }),(0,us.jsx)(Ta.div,{
+      }),(0,us.jsx)(Da.div,{
         style:r.finalReward,children:(0,us.jsx)("div",{
-          className:Ga(Nu.finalReward,Nu[`finalReward__${o}`]),children:(0,us.jsx)(Iu,{})
+          className:Ka(Nu.finalReward,Nu[`finalReward__${o}`]),children:(0,us.jsx)(Iu,{})
         })
-      }),(0,us.jsx)(Ta.div,{
+      }),(0,us.jsx)(Da.div,{
         style:r.buttonsGroup,children:(0,us.jsx)("div",{
-          className:Ga(Nu.buttonsGroup,Nu[`buttonsGroup__${o}`]),children:(0,us.jsx)(M_,{})
+          className:Ka(Nu.buttonsGroup,Nu[`buttonsGroup__${o}`]),children:(0,us.jsx)(M_,{})
         })
       })]
     })]
   })
-}),Ru="FreeBpPoints_13635b90",Bu="FreeBpPoints_pointsBlock_de8d94dc",Au="FreeBpPoints_points_cd1a8292",Eu="FreeBpPoints_icon_e6968e4a",Tu="FreeBpPoints_text_74f25e3",Lu=oa.resolve("strings"),Du=Ot(function(){
+}),Ru="FreeBpPoints_13635b90",Bu="FreeBpPoints_pointsBlock_de8d94dc",Au="FreeBpPoints_points_cd1a8292",Eu="FreeBpPoints_icon_e6968e4a",Tu="FreeBpPoints_text_74f25e3",Lu=ca.resolve("strings"),Du=Ot(function(){
   const{
     model:e
   }=gi(),{
     freePoints:a
-  }=e.root.get(),t=u({
+  }=e.root.get(),t=_({
     header:Lu.readOrEmpty("battle_pass.chapterChoice.freePoints.tooltip.header"),body:Lu.readOrEmpty("battle_pass.chapterChoice.freePoints.tooltip.body")
   }),s=z({
     iconSize:""
@@ -3075,10 +3075,10 @@ ku=oa.resolve("strings"),Pu=Ot(function(){
   return(0,us.jsxs)("div",{
     className:Ru,...t,children:[(0,us.jsxs)("div",{
       className:Bu,children:[(0,us.jsx)("div",{
-        className:Au,children:(0,us.jsx)(qa,{
+        className:Au,children:(0,us.jsx)(Za,{
           value:a
         })
-      }),(0,us.jsx)(I,{
+      }),(0,us.jsx)(he,{
         className:Eu,path:`battlePass.chapter_choice.freePoints${s.iconSize}`
       })]
     }),(0,us.jsx)("div",{
@@ -3090,18 +3090,18 @@ ku=oa.resolve("strings"),Pu=Ot(function(){
     model:e,controls:a
   }=gi(),{
     onViewLoaded:t
-  }=a,s=e.computes.selectedChapter(),r=e.prevChapterIndex.get(),i=e.computes.sortedChapters().indexOf(s),[o,l]=(0,_s.useState)(i),[c,d]=(0,_s.useState)(!1),_=p();
-  ue(ie.ESCAPE,()=>{
+  }=a,s=e.computes.selectedChapter(),r=e.prevChapterIndex.get(),i=e.computes.sortedChapters().indexOf(s),[o,l]=(0,_s.useState)(i),[c,d]=(0,_s.useState)(!1),_=m();
+  me(le.ESCAPE,()=>{
     _.goBack()
-  }),(0,_s.useEffect)(()=>ot(()=>{
+  }),(0,_s.useEffect)(()=>lt(()=>{
     c||(t(),d(!0))
   }),[c,t]);
-  const[u,m]=Ra(e.computes.backgrounds().length,e=>({
+  const[u,p]=Aa(e.computes.backgrounds().length,e=>({
     x:0,opacity:e===i?1:0,config:{
-      duration:400,easing:qe.easeOutQuint
+      duration:400,easing:Ze.easeOutQuint
     }
   })),h=.1*viewEnv.getViewSizeRem().width,b=(0,_s.useCallback)((e,a)=>{
-    m.start(t=>t===e?{
+    p.start(t=>t===e?{
       from:{
         x:a*h,opacity:0,zIndex:3
       },
@@ -3110,7 +3110,7 @@ ku=oa.resolve("strings"),Pu=Ot(function(){
       },
       reset:!0
     }:{}),l(e)
-  },[m,h]);
+  },[p,h]);
   (0,_s.useEffect)(()=>{
     b(i,r<i?1:-1)
   },[r,i,b]);
@@ -3122,13 +3122,13 @@ ku=oa.resolve("strings"),Pu=Ot(function(){
       opacity:1,transform:"scale(1)"
     },
     config:{
-      duration:500,easing:qe.easeInOutCubic
+      duration:500,easing:Ze.easeInOutCubic
     },
     delay:e
   }))());
   return(0,us.jsx)(us.Fragment,{
     children:c&&(0,us.jsxs)("div",{
-      className:Ou,children:[(0,us.jsx)(Ta.div,{
+      className:Ou,children:[(0,us.jsx)(Da.div,{
         className:Wu,style:v,children:(0,us.jsxs)(us.Fragment,{
           children:[u.map((e,a)=>(0,us.jsx)(Si,{
             style:e,i:a,index:o,classNames:{
@@ -3138,12 +3138,12 @@ ku=oa.resolve("strings"),Pu=Ot(function(){
             className:zu
           })]
         })
-      }),e.root.get().freePoints>0&&(0,us.jsx)(Ta.div,{
+      }),e.root.get().freePoints>0&&(0,us.jsx)(Da.div,{
         className:$u,style:g,children:(0,us.jsx)(Du,{})
       }),(0,us.jsx)("div",{
         className:Fu,children:(0,us.jsx)(Pu,{})
-      },s?.chapterID),(0,us.jsx)(Ta.div,{
-        className:Hu,style:f,children:(0,us.jsx)(Qa,{
+      },s?.chapterID),(0,us.jsx)(Da.div,{
+        className:Hu,style:f,children:(0,us.jsx)(et,{
           children:(0,us.jsx)(D_,{})
         })
       })]
@@ -3166,9 +3166,9 @@ Ku=function(e){
   return e.None="",e.Small="s",e.Medium="m",e
 }({}),Ju=function(e){
   return e.Border="border",e.Background="bg",e.Icon="icon",e.None="",e
-}({}),Qu=function(e){
+}({}),Yu=function(e){
   return e.Hover="Hover",e.Disabled="Disabled",e.Triggered="Triggered",e.None="",e
-}({}),Yu={
+}({}),Qu={
   base:"Background_8e48022f",bg:"Background_bg_fcef4881",bgDisabled:"Background_bgDisabled_26effab7",bgHover:"Background_bgHover_32967f75",base__big:"Background_base__big_26effab7",base__hovered:"Background_base__hovered_26effab7",fadeInWithScale:"Background_fadeInWithScale_26effab7",slideUp:"Background_slideUp_26effab7",blink:"Background_blink_26effab7",scale:"Background_scale_26effab7",rotate:"Background_rotate_26effab7",windowIn:"Background_windowIn_26effab7",fadeOut:"Background_fadeOut_26effab7",fadeIn:"Background_fadeIn_26effab7"
 },
 em=({
@@ -3176,20 +3176,20 @@ em=({
 })=>{
   const{
     breakpoint:r
-  }=O(),n=r.weight>=Ve.medium.weight?Xu.Medium:Xu.Small;
+  }=W(),n=r.weight>=$e.medium.weight?Xu.Medium:Xu.Small;
   return(0,us.jsx)("div",{
-    className:Ga(Yu.base,Yu[`base__${e}`],Yu[`base__${e}${s}`],a&&Yu.base__hovered),children:t?(0,us.jsx)("div",{
-      className:Yu.bgDisabled,style:{
-        backgroundImage:qu(s,Ju.Background,Qu.Disabled,e,n)
+    className:Ka(Qu.base,Qu[`base__${e}`],Qu[`base__${e}${s}`],a&&Qu.base__hovered),children:t?(0,us.jsx)("div",{
+      className:Qu.bgDisabled,style:{
+        backgroundImage:qu(s,Ju.Background,Yu.Disabled,e,n)
       }
     }):(0,us.jsxs)(us.Fragment,{
       children:[(0,us.jsx)("div",{
-        className:Yu.bg,style:{
-          backgroundImage:qu(s,Ju.Background,Qu.None,e,n)
+        className:Qu.bg,style:{
+          backgroundImage:qu(s,Ju.Background,Yu.None,e,n)
         }
       }),(0,us.jsx)("div",{
-        className:Yu.bgHover,style:{
-          backgroundImage:qu(s,Ju.Background,Qu.Hover,e,n)
+        className:Qu.bgHover,style:{
+          backgroundImage:qu(s,Ju.Background,Yu.Hover,e,n)
         }
       })]
     })
@@ -3203,20 +3203,20 @@ tm=({
 })=>{
   const{
     breakpoint:n
-  }=O(),i=n.weight>=Ve.medium.weight?Xu.Medium:Xu.Small;
+  }=W(),i=n.weight>=$e.medium.weight?Xu.Medium:Xu.Small;
   return(0,us.jsx)("div",{
-    className:Ga(am.base,am[`base__${e}`],a&&am.base__hovered),children:s?(0,us.jsx)("div",{
-      className:Ga(am.borderDisabled,am[`borderDisabled__${e}`]),style:{
-        backgroundImage:qu(r,Ju.Border,Qu.Disabled,e,i)
+    className:Ka(am.base,am[`base__${e}`],a&&am.base__hovered),children:s?(0,us.jsx)("div",{
+      className:Ka(am.borderDisabled,am[`borderDisabled__${e}`]),style:{
+        backgroundImage:qu(r,Ju.Border,Yu.Disabled,e,i)
       }
     }):(0,us.jsxs)(us.Fragment,{
       children:[(0,us.jsx)("div",{
         className:am.border,style:{
-          backgroundImage:qu(t?Ku.Collection:r,Ju.Border,Qu.None,e,i)
+          backgroundImage:qu(t?Ku.Collection:r,Ju.Border,Yu.None,e,i)
         }
       }),(0,us.jsx)("div",{
         className:am.borderHover,style:{
-          backgroundImage:qu(r,Ju.Border,Qu.Hover,e,i)
+          backgroundImage:qu(r,Ju.Border,Yu.Hover,e,i)
         }
       })]
     })
@@ -3229,13 +3229,13 @@ rm=({
   state:e,count:a,size:t,maxCount:s=0
 })=>{
   switch(e){
-    case im.InProgress:return(0,us.jsx)(ea,{
+    case im.InProgress:return(0,us.jsx)(ta,{
       text:`${a||0} / ${s}`
     });
     case im.Completed:return(0,us.jsx)("div",{
-      className:Ga(sm.base,sm[`base__${t}`])
+      className:Ka(sm.base,sm[`base__${t}`])
     });
-    default:return(0,us.jsx)(qa,{
+    default:return(0,us.jsx)(Za,{
       format:"integral",value:a
     })
   }
@@ -3248,7 +3248,7 @@ im=function(e){
 }({}),om=({
   size:e,count:a,maxCount:t,state:s="",isLocked:r=!1,disabled:n=!1
 })=>(0,us.jsx)("div",{
-  className:Ga(nm.base,nm[`base__${e}`],r&&nm.base__locked,n&&nm.base__disabled),children:(0,us.jsx)(rm,{
+  className:Ka(nm.base,nm[`base__${e}`],r&&nm.base__locked,n&&nm.base__disabled),children:(0,us.jsx)(rm,{
     state:s,size:e,count:a,maxCount:t
   })
 }),lm={
@@ -3267,10 +3267,10 @@ dm=({
 })=>{
   const{
     breakpoint:n
-  }=O(),i=n.weight>=Ve.medium.weight?Xu.Medium:Xu.Small;
+  }=W(),i=n.weight>=$e.medium.weight?Xu.Medium:Xu.Small;
   return(0,us.jsx)("div",{
-    className:Ga(lm.base,lm[`base__${e}`],lm[`base__${cm(a,t,s)}`]),style:{
-      backgroundImage:qu(r,Ju.Icon,Qu.None,e,r===Ku.Collection?Xu.None:i)
+    className:Ka(lm.base,lm[`base__${e}`],lm[`base__${cm(a,t,s)}`]),style:{
+      backgroundImage:qu(r,Ju.Icon,Yu.None,e,r===Ku.Collection?Xu.None:i)
     }
   })
 },
@@ -3287,7 +3287,7 @@ um=(e,a)=>{
 mm=({
   size:e,title:a,isHover:t,disabled:s=!1,isGold:r=!1
 })=>(0,us.jsx)("div",{
-  className:Ga(_m.base,_m[`base__${e}`],_m[`base__${um(s,t)}`],r&&_m.base__gold),children:a
+  className:Ka(_m.base,_m[`base__${e}`],_m[`base__${um(s,t)}`],r&&_m.base__gold),children:a
 }),pm={
   base:"ChoiceAward_edd74108",base__big:"ChoiceAward_base__big_ca77c409",base__disabled:"ChoiceAward_base__disabled_991de9d",base__hasAppearAnimation:"ChoiceAward_base__hasAppearAnimation_aeaea71d",baseAppear:"ChoiceAward_baseAppear_3f034cd8",shine:"ChoiceAward_shine_2a2a93bd",shine_small_s:"ChoiceAward_shine_small_s_3f034cd8",shine_small_m:"ChoiceAward_shine_small_m_3f034cd8",shine_big_s:"ChoiceAward_shine_big_s_3f034cd8",shine_big_m:"ChoiceAward_shine_big_m_3f034cd8",shine__left:"ChoiceAward_shine__left_9adf4b0f",shine__right:"ChoiceAward_shine__right_872a6406",arrow:"ChoiceAward_arrow_e556b329",blinkShape:"ChoiceAward_blinkShape_4cbfbe8c",blink:"ChoiceAward_blink_d3e21e1f",blinker:"ChoiceAward_blinker_3f034cd8",fadeInWithScale:"ChoiceAward_fadeInWithScale_3f034cd8",slideUp:"ChoiceAward_slideUp_3f034cd8",scale:"ChoiceAward_scale_3f034cd8",rotate:"ChoiceAward_rotate_3f034cd8",windowIn:"ChoiceAward_windowIn_3f034cd8",fadeOut:"ChoiceAward_fadeOut_3f034cd8",fadeIn:"ChoiceAward_fadeIn_3f034cd8"
 },
@@ -3295,12 +3295,12 @@ hm=R.strings.battle_pass.awardsWidget,bm=({
   count:e,disabled:a=!1,onClick:t,size:s
 })=>{
   const[r,n]=(0,_s.useState)(!1),i=1===e?hm.title.awardSingle():hm.title.awardMultiple(),o=a?hm.description.awardDisabled():hm.description.award(),l=(0,_s.useCallback)(()=>{
-    a||(Te.click(),t())
+    a||(De.click(),t())
   },[a,t]);
-  return(0,us.jsx)(F,{
+  return(0,us.jsx)(H,{
     body:o,isEnabled:Boolean(o),children:(0,us.jsxs)("div",{
-      className:Ga(pm.base,pm[`base__${s}`],a?pm.base__disabled:pm.base__hasAppearAnimation),onMouseEnter:()=>{
-        Te.sound(R.sounds.bp_highlight_02()),n(!0)
+      className:Ka(pm.base,pm[`base__${s}`],a?pm.base__disabled:pm.base__hasAppearAnimation),onMouseEnter:()=>{
+        De.sound(R.sounds.bp_highlight_02()),n(!0)
       },
       onMouseLeave:()=>{
         n(!1)
@@ -3317,9 +3317,9 @@ hm=R.strings.battle_pass.awardsWidget,bm=({
         size:s,isHover:r,title:i,disabled:a,isGold:!0
       }),!a&&(0,us.jsxs)(us.Fragment,{
         children:[(0,us.jsx)("div",{
-          className:Ga(pm.shine,pm.shine__left)
+          className:Ka(pm.shine,pm.shine__left)
         }),(0,us.jsx)("div",{
-          className:Ga(pm.shine,pm.shine__right)
+          className:Ka(pm.shine,pm.shine__right)
         }),(0,us.jsx)("div",{
           className:pm.arrow
         }),(0,us.jsx)("div",{
@@ -3338,16 +3338,16 @@ gm=R.strings.battle_pass.awardsWidget,vm=({
   count:e,onClick:a,size:t
 })=>{
   const[s,r]=(0,_s.useState)(!1);
-  return(0,us.jsx)(F,{
+  return(0,us.jsx)(H,{
     body:gm.description.coin(),isEnabled:Boolean(gm.description.coin()),children:(0,us.jsxs)("div",{
-      className:Ga(fm.base,fm[`base__${t}`]),onMouseEnter:()=>{
-        Te.sound(R.sounds.bp_highlight_02()),r(!0)
+      className:Ka(fm.base,fm[`base__${t}`]),onMouseEnter:()=>{
+        De.sound(R.sounds.bp_highlight_02()),r(!0)
       },
       onMouseLeave:()=>{
         r(!1)
       },
       onClick:()=>{
-        Te.click(),a()
+        De.click(),a()
       },
       children:[(0,us.jsx)(tm,{
         size:t,isHover:s
@@ -3369,13 +3369,13 @@ xm={
 wm=R.strings.battle_pass.awardsWidget,Cm=({
   count:e,maxCount:a,newItemsCount:t,hasTrigger:s,size:r,onClick:n
 })=>{
-  const[i,o]=(0,_s.useState)(!1),l=a===e,c=r===Zu.Small&&s,d=l?wm.description.collectionCompleted():wm.description.collection(),_=Se(()=>{
-    Te.click(),n()
+  const[i,o]=(0,_s.useState)(!1),l=a===e,c=r===Zu.Small&&s,d=l?wm.description.collectionCompleted():wm.description.collection(),_=je(()=>{
+    De.click(),n()
   });
-  return(0,us.jsx)(F,{
+  return(0,us.jsx)(H,{
     body:d,isEnabled:Boolean(d),children:(0,us.jsxs)("div",{
-      className:Ga(xm.base,xm[`base__${r}`]),onMouseEnter:()=>{
-        Te.sound(R.sounds.bp_highlight_02()),o(!0)
+      className:Ka(xm.base,xm[`base__${r}`]),onMouseEnter:()=>{
+        De.sound(R.sounds.bp_highlight_02()),o(!0)
       },
       onMouseLeave:()=>{
         o(!1)
@@ -3391,7 +3391,7 @@ wm=R.strings.battle_pass.awardsWidget,Cm=({
       }),(0,us.jsx)(mm,{
         size:r,isHover:i,title:wm.title.collection()
       }),t>0&&(0,us.jsx)("div",{
-        className:xm.bubble,children:(0,us.jsx)(ft,{
+        className:xm.bubble,children:(0,us.jsx)(gt,{
           size:"small"
         })
       })]
@@ -3405,13 +3405,13 @@ Sm=R.strings.battle_pass.awardsWidget,jm=({
   onClick:e,size:a,tankmenScreenID:t
 })=>{
   const[s,r]=(0,_s.useState)(!1),n=Sm.description.commander(),i=R.images.gui.maps.icons.battlePass.awards_widget.$dyn(`commander_icon_small_${t}`)||R.images.gui.maps.icons.battlePass.awards_widget.commander_icon_small();
-  return(0,us.jsx)(F,{
+  return(0,us.jsx)(H,{
     body:n,isEnabled:Boolean(n),children:(0,us.jsxs)("div",{
-      className:Ga(ym.base,ym[`base__${a}`],s&&ym.base__hover),onMouseEnter:()=>{
-        Te.sound(R.sounds.bp_highlight_02()),r(!0)
+      className:Ka(ym.base,ym[`base__${a}`],s&&ym.base__hover),onMouseEnter:()=>{
+        De.sound(R.sounds.bp_highlight_02()),r(!0)
       },
       onMouseLeave:()=>r(!1),onClick:()=>{
-        Te.click(),e()
+        De.click(),e()
       },
       children:[(0,us.jsx)(tm,{
         size:a,isHover:s
@@ -3434,16 +3434,16 @@ Nm=R.strings.battle_pass.awardsWidget,km=({
   count:e,onClick:a,size:t
 })=>{
   const[s,r]=(0,_s.useState)(!1);
-  return(0,us.jsx)(F,{
+  return(0,us.jsx)(H,{
     body:Nm.description.taler(),children:(0,us.jsxs)("div",{
-      className:Ga(Im.base,Im[`base__${t}`],s&&Im.base__hover),onMouseEnter:()=>{
-        Te.sound(R.sounds.bp_highlight_02()),r(!0)
+      className:Ka(Im.base,Im[`base__${t}`],s&&Im.base__hover),onMouseEnter:()=>{
+        De.sound(R.sounds.bp_highlight_02()),r(!0)
       },
       onMouseLeave:()=>{
         r(!1)
       },
       onClick:()=>{
-        Te.click(),a()
+        De.click(),a()
       },
       children:[(0,us.jsx)(tm,{
         size:t,isHover:s
@@ -3466,16 +3466,16 @@ Rm=R.strings.battle_pass.awardsWidget,Bm=({
   count:e,onClick:a,size:t
 })=>{
   const[s,r]=(0,_s.useState)(!1),n=Boolean(e),i=n?Ku.Ticket:void 0;
-  return(0,us.jsx)(F,{
+  return(0,us.jsx)(H,{
     body:Rm.description.ticket(),isEnabled:Boolean(Rm.description.ticket()),children:(0,us.jsxs)("div",{
-      className:Ga(Pm.base,Pm[`base__${t}`],n&&Pm.base__hasAppearAnimation),onMouseEnter:()=>{
-        Te.sound(R.sounds.bp_highlight_02()),r(!0)
+      className:Ka(Pm.base,Pm[`base__${t}`],n&&Pm.base__hasAppearAnimation),onMouseEnter:()=>{
+        De.sound(R.sounds.bp_highlight_02()),r(!0)
       },
       onMouseLeave:()=>{
         r(!1)
       },
       onClick:()=>{
-        Te.click(),a()
+        De.click(),a()
       },
       children:[(0,us.jsx)(tm,{
         size:t,isHover:s,type:i
@@ -3489,9 +3489,9 @@ Rm=R.strings.battle_pass.awardsWidget,Bm=({
         size:t,isHover:s,title:Rm.title.ticket(),isGold:n
       }),n&&(0,us.jsxs)(us.Fragment,{
         children:[(0,us.jsx)("div",{
-          className:Ga(Pm.shine,Pm.shine__left)
+          className:Ka(Pm.shine,Pm.shine__left)
         }),(0,us.jsx)("div",{
-          className:Ga(Pm.shine,Pm.shine__right)
+          className:Ka(Pm.shine,Pm.shine__right)
         }),(0,us.jsx)("div",{
           className:Pm.arrow
         }),(0,us.jsx)("div",{
@@ -3503,13 +3503,13 @@ Rm=R.strings.battle_pass.awardsWidget,Bm=({
     })
   })
 },
-[Am,Em]=Fe()(({
+[Am,Em]=Ue()(({
   observableModel:e,externalModel:a
 })=>{
   const t={
     root:e.object(),collectionEntryPoint:e.object("collectionEntryPoint")
   },
-  s=ga(e=>{
+  s=xa(e=>{
     const{
       talerCount:s,notChosenRewardCount:r,bpcoinCount:n,ticketsCount:i,isChooseRewardsEnabled:o,tankmenScreenID:l,isTalerEnabled:c,isBpCoinEnabled:d,isTicketsEnabled:_
     }=t.root.get(),{
@@ -3589,8 +3589,8 @@ Dm=Ot(({
     model:t
   }=Em();
   return(0,us.jsx)("div",{
-    className:Ga(Tm.base,Tm[`base__${e}`],a?.base),children:w(t.computes.awardsList(e),e=>e.condition&&(0,us.jsx)("div",{
-      className:Ga(Tm.award,a?.award),children:Lm(e.type,e.props)
+    className:Ka(Tm.base,Tm[`base__${e}`],a?.base),children:x(t.computes.awardsList(e),e=>e.condition&&(0,us.jsx)("div",{
+      className:Ka(Tm.award,a?.award),children:Lm(e.type,e.props)
     },e.type))
   })
 }),Om=({
@@ -3602,14 +3602,14 @@ Dm=Ot(({
   children:(0,us.jsx)(Dm,{
     size:a,classNames:s
   })
-}),[Wm,Vm]=Fe()(({
+}),[Wm,Vm]=Ue()(({
   observableModel:e
 })=>{
   const a={
     root:e.object(),nowRewards:e.array("rewards.nowRewards.items")
   },
-  t=ga(()=>a.nowRewards.get(),{
-    equals:me
+  t=xa(()=>a.nowRewards.get(),{
+    equals:pe
   });
   return{
     ...a,computes:{
@@ -3640,14 +3640,14 @@ qm=R.strings.battle_pass.holidayFinalScreen,Km=Ot(()=>{
     state:r,finalRewardType:n
   }=e.root.get(),i=r===Mm;
   return(0,us.jsx)("div",{
-    className:Ga(Gm.base,Gm[`base__${r}`]),children:(0,us.jsxs)("div",{
+    className:Ka(Gm.base,Gm[`base__${r}`]),children:(0,us.jsxs)("div",{
       className:Gm.controls,children:[(0,us.jsx)("div",{
         className:Gm.label,children:i?(0,us.jsx)("div",{
           className:Gm.text,children:qm.selectableRewardsState.label()
         }):(0,us.jsx)(Um,{})
       }),(0,us.jsx)("div",{
-        className:Gm.buttonWrapper,children:(0,us.jsx)(wa,{
-          size:fa.medium,mixClass:Gm.button,onClick:()=>{
+        className:Gm.buttonWrapper,children:(0,us.jsx)(ya,{
+          size:va.medium,mixClass:Gm.button,onClick:()=>{
             i?t():s()
           },
           children:(()=>{
@@ -3664,12 +3664,12 @@ qm=R.strings.battle_pass.holidayFinalScreen,Km=Ot(()=>{
 }),Zm="Divider_3683d6e2",Xm="Divider_divider__right_24d5147b",Jm=({
   isRight:e=!1
 })=>(0,us.jsx)("div",{
-  className:Ga(Zm,e&&Xm)
-}),Qm="Title_ec301c01",Ym="Title_text_65e6762b",ep=({
+  className:Ka(Zm,e&&Xm)
+}),Ym="Title_ec301c01",Qm="Title_text_65e6762b",ep=({
   text:e
 })=>(0,us.jsxs)("div",{
-  className:Qm,children:[(0,us.jsx)(Jm,{}),(0,us.jsx)("div",{
-    className:Ym,children:e
+  className:Ym,children:[(0,us.jsx)(Jm,{}),(0,us.jsx)("div",{
+    className:Qm,children:e
   }),(0,us.jsx)(Jm,{
     isRight:!0
   })]
@@ -3687,7 +3687,7 @@ tp=R.strings.battle_pass.holidayFinalScreen.buyState,sp=e=>({
     duration:400
   },
   onStart:()=>{
-    Te.sound(R.sounds.bp_reward())
+    De.sound(R.sounds.bp_reward())
   }
 }),rp=Ot(()=>{
   const{
@@ -3696,14 +3696,14 @@ tp=R.strings.battle_pass.holidayFinalScreen.buyState,sp=e=>({
     chapterID:t,finalRewardType:s
   }=e.root.get(),{
     showPreviewVehicle:r
-  }=a,i=p(),o=e.computes.rewardList(),l=s===as.Vehicle,{
+  }=a,i=m(),o=e.computes.rewardList(),l=s===as.Vehicle,{
     breakpoint:{
       weight:c
     }
-  }=O(),d=c<=Ve.small.weight?sa.Small:sa.Big,_=o.length>9?[...La(o,0,9)]:o,u=n(sp(_.length)),m=o.length-_.length;
+  }=W(),d=c<=$e.small.weight?na.Small:na.Big,_=o.length>9?[...Oa(o,0,9)]:o,u=n(sp(_.length)),p=o.length-_.length;
   return(0,us.jsxs)("div",{
     className:ap.base,children:[l&&(0,us.jsx)("div",{
-      className:ap.preview,children:(0,us.jsx)(Ma,{
+      className:ap.preview,children:(0,us.jsx)($a,{
         type:"preview",onClick:r
       })
     }),(0,us.jsxs)("div",{
@@ -3716,21 +3716,21 @@ tp=R.strings.battle_pass.holidayFinalScreen.buyState,sp=e=>({
       }),(0,us.jsx)("div",{
         className:ap.description,children:tp.description()
       }),(0,us.jsx)("div",{
-        className:ap.visibleRewards,children:w(_,(e,a)=>(0,us.jsx)(Hn,{
+        className:ap.visibleRewards,children:x(_,(e,a)=>(0,us.jsx)(Hn,{
           animationConfig:sp(a),children:(0,us.jsx)(L,{
             ...Kt(e,d),className:ap.reward
           })
         },`${e.item}_${a}`))
-      }),m>0&&(0,us.jsx)(Ta.div,{
-        style:u,children:(0,us.jsx)(wa,{
-          type:$e.ghost,size:fa.medium,mixClass:ap.rewardButton,onClick:()=>{
+      }),p>0&&(0,us.jsx)(Da.div,{
+        style:u,children:(0,us.jsx)(ya,{
+          type:He.ghost,size:va.medium,mixClass:ap.rewardButton,onClick:()=>{
             i.push(os.battlePass.buyPassRewards,{
               chapterID:t
             })
           },
-          children:(0,us.jsx)(ea,{
+          children:(0,us.jsx)(ta,{
             text:tp.moreRewards(),binding:{
-              count:m
+              count:p
             }
           })
         })
@@ -3760,8 +3760,8 @@ op=Ot(()=>(0,us.jsx)(pr,{
     }),(0,us.jsx)("div",{
       className:_p,children:hp.description()
     }),(0,us.jsx)("div",{
-      className:up,children:(0,us.jsxs)(wa,{
-        type:$e.main,size:fa.medium,mixClass:mp,onClick:a,children:[(0,us.jsx)("div",{
+      className:up,children:(0,us.jsxs)(ya,{
+        type:He.main,size:va.medium,mixClass:mp,onClick:a,children:[(0,us.jsx)("div",{
           className:pp
         }),hp.tankmenButton()]
       })
@@ -3785,13 +3785,13 @@ op=Ot(()=>(0,us.jsx)(pr,{
     model:e
   }=Vm(),{
     isSeasonEndingSoon:a,chapterID:t
-  }=e.root.get(),s=p();
+  }=e.root.get(),s=m();
   return(0,us.jsxs)("div",{
     className:gp,children:[(0,us.jsx)("div",{
       className:vp
     }),(0,us.jsx)("div",{
-      className:xp,children:(0,us.jsxs)(wa,{
-        type:$e.main,size:fa.medium,mixClass:wp,onClick:()=>{
+      className:xp,children:(0,us.jsxs)(ya,{
+        type:He.main,size:va.medium,mixClass:wp,onClick:()=>{
           s.push(os.battlePass.buyPass,{
             chapterID:t
           })
@@ -3818,18 +3818,18 @@ Rp=R.strings.battle_pass,Bp=Ot(()=>{
     model:t
   }=Vm(),{
     state:s,chapterID:r
-  }=t.root.get(),n=p();
+  }=t.root.get(),n=m();
   return(0,_s.useEffect)(()=>{
     (async()=>{
-      await Qt(),a(!0)
+      await Yt(),a(!0)
     })()
-  },[]),ue(ie.ESCAPE,()=>n.goBack()),(0,us.jsxs)("div",{
-    className:Ga(Pp.base,Pp[`base__${s}`]),children:[(0,us.jsx)("div",{
+  },[]),me(le.ESCAPE,()=>n.goBack()),(0,us.jsxs)("div",{
+    className:Ka(Pp.base,Pp[`base__${s}`]),children:[(0,us.jsx)("div",{
       className:Pp.background
     }),e&&(0,us.jsxs)("div",{
       className:Pp.additionalAnimation,children:[(0,us.jsxs)("div",{
         className:Pp.header,children:[(0,us.jsx)(kp,{
-          title:(0,us.jsx)(ea,{
+          title:(0,us.jsx)(ta,{
             text:Rp.holidayFinalScreen.chapter(),binding:{
               chapterName:Rp.chapter.fullNameUppercased.$num(r)
             }
@@ -3850,7 +3850,7 @@ Rp=R.strings.battle_pass,Bp=Ot(()=>{
   },
   children:(0,us.jsx)(Bp,{})
 }),Ep=1e3,Tp={
-  ...mt,withStack:!0,type:Xa.Simple,delta:{
+  ...pt,withStack:!0,type:Ya.Simple,delta:{
     duration:500,delay:300
   },
   line:{
@@ -3858,11 +3858,11 @@ Rp=R.strings.battle_pass,Bp=Ot(()=>{
   }
 },
 Lp={
-  ...pa,line:{
-    ...pa.line,bgColorFinished:"#000000"
+  ...ba,line:{
+    ...ba.line,bgColorFinished:"#000000"
   },
   pattern:{
-    ...pa.pattern,bgImageFinished:pa.bgImageBase
+    ...ba.pattern,bgImageFinished:ba.bgImageBase
   }
 },
 Dp=function(e){
@@ -3894,25 +3894,25 @@ Wp=function(e){
 }({}),Fp={
   "--small-card-width":"140rem","--small-current-card-width":"224rem","--medium-card-width":"220rem","--medium-current-card-width":"340rem","--extra-large-card-width":"276rem"
 },
-Hp=(e,a=!1)=>a?e<Ve.medium.weight?224:340:e<Ve.medium.weight?140:e<Ve.extraLarge.weight?220:276,[Up,Gp]=Fe()(({
+Hp=(e,a=!1)=>a?e<$e.medium.weight?224:340:e<$e.medium.weight?140:e<$e.extraLarge.weight?220:276,[Up,Gp]=Ue()(({
   observableModel:e
 })=>{
   const a={
-    root:e.object(),levels:e.array("levels"),chapters:e.array("chapters"),animationStep:ya.box(Dp.Idle)
+    root:e.object(),levels:e.array("levels"),chapters:e.array("chapters"),animationStep:ja.box(Dp.Idle)
   },
-  t=ga(e=>{
-    const t=a.levels.get(),s=K(t,e-1);
+  t=xa(e=>{
+    const t=a.levels.get(),s=X(t,e-1);
     s||console.warn(`level info not found for number: ${e}`);
     const r=t.length;
     return{
       ...s,maxLevel:r,isFirstLevel:1===e,isLastLevel:e===r
     }
-  }),s=ga(e=>{
+  }),s=xa(e=>{
     const a=t(e);
-    return w(a.rewards,e=>({
+    return x(a.rewards,e=>({
       ...e
     }))
-  }),r=ga(e=>{
+  }),r=xa(e=>{
     const{
       currentLevel:s,currentLevelPoints:r,previousLevel:n,postProgressionStatus:i
     }=a.root.get(),o=a.animationStep.get();
@@ -3921,39 +3921,39 @@ Hp=(e,a=!1)=>a?e<Ve.medium.weight?224:340:e<Ve.medium.weight?140:e<Ve.extraLarge
       levelPoints:l,maxLevel:c
     }=t(e);
     return e<s||s===c&&r===l*c?Wp.COMPLETED:e===s&&(i!==$p.Locked||r>0)?Wp.IN_PROGRESS:Wp.NOT_STARTED
-  }),n=ga(e=>{
+  }),n=xa(e=>{
     const{
       postProgressionStatus:t
     }=a.root.get(),s=r(e);
     return{
       cardStatus:s,isDisabled:t!==$p.Unlocked&&s===Wp.NOT_STARTED
     }
-  }),o=ga(()=>d()?u().length&&m()&&p()?Vp.ExtraChapter:_()?Vp.PurchasingIP:void 0:Vp.NotAvailable,{
-    equals:me
-  }),l=ga(()=>kt(a.chapters.get(),e=>e.isRegular),{
-    equals:me
-  }),c=ga(()=>kt(a.chapters.get(),e=>e.isRegular&&e.chapterStatus===zp.Completed).length,{
-    equals:me
-  }),d=ga(()=>c()===l().length),_=ga(()=>i(a.chapters.get(),e=>!e.isBattlePassPurchased)),u=ga(()=>kt(a.chapters.get(),e=>!e.isRegular)),m=ga(()=>i(u(),e=>e.chapterStatus!==zp.Active)),p=ga(()=>i(u(),e=>e.chapterStatus!==zp.Completed)),h=ga(()=>{
+  }),o=xa(()=>d()?u().length&&m()&&p()?Vp.ExtraChapter:_()?Vp.PurchasingIP:void 0:Vp.NotAvailable,{
+    equals:pe
+  }),l=xa(()=>Pt(a.chapters.get(),e=>e.isRegular),{
+    equals:pe
+  }),c=xa(()=>Pt(a.chapters.get(),e=>e.isRegular&&e.chapterStatus===zp.Completed).length,{
+    equals:pe
+  }),d=xa(()=>c()===l().length),_=xa(()=>i(a.chapters.get(),e=>!e.isBattlePassPurchased)),u=xa(()=>Pt(a.chapters.get(),e=>!e.isRegular)),m=xa(()=>i(u(),e=>e.chapterStatus!==zp.Active)),p=xa(()=>i(u(),e=>e.chapterStatus!==zp.Completed)),h=xa(()=>{
     const{
       currentLevel:e,currentLevelPoints:t
     }=a.root.get(),s=e-1;
-    return te(a.levels.get(),(e,{
+    return re(a.levels.get(),(e,{
       levelPoints:a
     },r)=>r<s?e+a:r===s?e+t:e,0)
-  }),b=ga(()=>te(a.levels.get(),(e,{
+  }),b=xa(()=>re(a.levels.get(),(e,{
     levelPoints:a
-  })=>e+a,0)),f=ga(()=>{
+  })=>e+a,0)),f=xa(()=>{
     const{
       currentLevel:e,currentLevelPoints:t,previousLevel:s,previousLevelPoints:r
     }=a.root.get();
     return e!==s||t!==r
-  }),g=ga(()=>{
+  }),g=xa(()=>{
     const{
       cyclesCompletedCount:e,previousCyclesCompletedCount:t
     }=a.root.get();
     return e>t
-  }),v=ga(e=>{
+  }),v=xa(e=>{
     const{
       currentLevel:s,currentLevelPoints:r,previousLevel:n,previousLevelPoints:i,postProgressionStatus:o
     }=a.root.get(),l=a.animationStep.get(),{
@@ -3967,28 +3967,28 @@ Hp=(e,a=!1)=>a?e<Ve.medium.weight?224:340:e<Ve.medium.weight?140:e<Ve.extraLarge
     return{
       progressValue:[Dp.FillProgressMax,Dp.RunCycle].includes(l)?h:b(s,r,c),previousProgressValue:l===Dp.ResetProgress?0:b(n,i,_,f),maxProgressValue:h
     }
-  }),x=ga(()=>{
-    const e=kt(u(),e=>(e.chapterStatus===zp.Active||e.chapterStatus===zp.Completed)&&!e.isBattlePassPurchased);
-    return e.length>0?e:kt(a.chapters.get(),e=>!e.isBattlePassPurchased)
+  }),w=xa(()=>{
+    const e=Pt(u(),e=>(e.chapterStatus===zp.Active||e.chapterStatus===zp.Completed)&&!e.isBattlePassPurchased);
+    return e.length>0?e:Pt(a.chapters.get(),e=>!e.isBattlePassPurchased)
   });
   return{
     ...a,computes:{
-      footerState:o,regularChapters:l,completedRegularChaptersCount:c,extraChapters:u,cardStates:n,levelInfo:t,levelRewards:s,currentPointsInChapter:h,totalPointsInChapter:b,progressChanged:f,cycleChanged:g,getProgressValues:v,chaptersForPurchase:x
+      footerState:o,regularChapters:l,completedRegularChaptersCount:c,extraChapters:u,cardStates:n,levelInfo:t,levelRewards:s,currentPointsInChapter:h,totalPointsInChapter:b,progressChanged:f,cycleChanged:g,getProgressValues:v,chaptersForPurchase:w
     }
   }
 },({
   model:e,externalModel:a
 })=>({
-  openPointsInfo:a.createCallbackNoArgs("onOpenPointsInfo"),openInfoPage:a.createCallbackNoArgs("onOpenInfoPage"),setAnimationStep:ht(a=>e.animationStep.set(a)),handleProgressAchieved:a.createCallbackNoArgs("onProgressAchieved"),handleCycleCompleted:a.createCallbackNoArgs("onCycleCompleted")
-})),qp="Highlight_ec6e9d0b",Kp="Highlight_inner_fc05a4f9",Zp="Highlight_side_ffdc7ad0",Xp="Highlight_side__left_48f019cc",Jp="Highlight_side__right_7a86ef2a",Qp=(0,_s.memo)(()=>(0,us.jsxs)("div",{
+  openPointsInfo:a.createCallbackNoArgs("onOpenPointsInfo"),openInfoPage:a.createCallbackNoArgs("onOpenInfoPage"),setAnimationStep:bt(a=>e.animationStep.set(a)),handleProgressAchieved:a.createCallbackNoArgs("onProgressAchieved"),handleCycleCompleted:a.createCallbackNoArgs("onCycleCompleted")
+})),qp="Highlight_ec6e9d0b",Kp="Highlight_inner_fc05a4f9",Zp="Highlight_side_ffdc7ad0",Xp="Highlight_side__left_48f019cc",Jp="Highlight_side__right_7a86ef2a",Yp=(0,_s.memo)(()=>(0,us.jsxs)("div",{
   className:qp,children:[(0,us.jsx)("div",{
-    className:Ga(Zp,Xp)
+    className:Ka(Zp,Xp)
   }),(0,us.jsx)("div",{
     className:Kp
   }),(0,us.jsx)("div",{
-    className:Ga(Zp,Jp)
+    className:Ka(Zp,Jp)
   })]
-})),Yp="Background_3985f66b",eh="Background_default_7c7472e5",ah="Background_base__first_26effab7",th="Background_base__last_26effab7",sh="Background_disabled_aebb7525",rh=Ot(({
+})),Qp="Background_3985f66b",eh="Background_default_7c7472e5",ah="Background_base__first_26effab7",th="Background_base__last_26effab7",sh="Background_disabled_aebb7525",rh=Ot(({
   level:e
 })=>{
   const{
@@ -3999,21 +3999,21 @@ Hp=(e,a=!1)=>a?e<Ve.medium.weight?224:340:e<Ve.medium.weight?140:e<Ve.extraLarge
     cardStatus:r,isDisabled:n
   }=a.computes.cardStates(e);
   return(0,us.jsxs)("div",{
-    className:Ga(Yp,t&&ah,s&&th),children:[(0,us.jsx)("div",{
+    className:Ka(Qp,t&&ah,s&&th),children:[(0,us.jsx)("div",{
       className:eh
     }),n&&(0,us.jsx)("div",{
       className:sh
-    }),r===Wp.IN_PROGRESS&&(0,us.jsx)(Qp,{})]
+    }),r===Wp.IN_PROGRESS&&(0,us.jsx)(Yp,{})]
   })
 }),nh={
   base:"CardRewards_178a6e14",base__completed:"CardRewards_base__completed_434ea7b1",rewards:"CardRewards_rewards_db8e5858",rewards__2:"CardRewards_rewards__2_32a806d4",base__inProgress:"CardRewards_base__inProgress_35611a2f",rewards__3:"CardRewards_rewards__3_6ac4c499",reward:"CardRewards_reward_8562c98f",rewards__1:"CardRewards_rewards__1_35611a2f",fadeInWithScale:"CardRewards_fadeInWithScale_35611a2f",slideUp:"CardRewards_slideUp_35611a2f",blink:"CardRewards_blink_35611a2f",scale:"CardRewards_scale_35611a2f",rotate:"CardRewards_rotate_35611a2f",windowIn:"CardRewards_windowIn_35611a2f",fadeOut:"CardRewards_fadeOut_35611a2f",fadeIn:"CardRewards_fadeIn_35611a2f"
 },
-ih=ga(e=>{
+ih=xa(e=>{
   const{
     item:a,name:t,value:s,overlayType:r,tooltipId:n,tooltipContentId:i
   }=e;
   return{
-    name:a||t,smallImage:st(e,sa.Big),bigImage:st(e,sa.S180x135),special:r,value:s,valueType:Ke(t),tooltipArgs:Ia({
+    name:a||t,smallImage:rt(e,na.Big),bigImage:rt(e,na.S180x135),special:r,value:s,valueType:Xe(t),tooltipArgs:ka({
       tooltipId:n
     },Number(i),{
       ignoreShowDelay:!0
@@ -4030,13 +4030,13 @@ ih=ga(e=>{
     breakpoint:{
       weight:n
     }
-  }=O(),i=n<Ve.medium.weight,o=1===s.length,l=((e,a)=>a?e?sa.Big:sa.S180x135:e?sa.Small:sa.Big)(i,o),c=e=>i||!o?e.smallImage:e.bigImage;
+  }=W(),i=n<$e.medium.weight,o=1===s.length,l=((e,a)=>a?e?na.Big:na.S180x135:e?na.Small:na.Big)(i,o),c=e=>i||!o?e.smallImage:e.bigImage;
   return(0,us.jsx)("div",{
-    className:Ga(nh.base,nh[`base__${r}`],a),children:(0,us.jsx)("div",{
-      className:Ga(nh.rewards,nh[`rewards__${s.length}`]),children:w(s,(e,a)=>{
+    className:Ka(nh.base,nh[`base__${r}`],a),children:(0,us.jsx)("div",{
+      className:Ka(nh.rewards,nh[`rewards__${s.length}`]),children:x(s,(e,a)=>{
         const t=ih(e);
         return(0,us.jsx)("div",{
-          className:Ga(nh.reward),children:(0,us.jsx)(L,{
+          className:Ka(nh.reward),children:(0,us.jsx)(L,{
             size:l,image:c(t),...t
           })
         },`reward__${t.name}${a}`)
@@ -4049,7 +4049,7 @@ ih=ga(e=>{
 ch=({
   position:e
 })=>(0,us.jsx)("div",{
-  className:Ga(lh.base,lh[`base__${e}`]),children:(0,us.jsx)("div",{
+  className:Ka(lh.base,lh[`base__${e}`]),children:(0,us.jsx)("div",{
     className:lh.inner
   })
 }),dh={
@@ -4073,7 +4073,7 @@ _h=Ot(({
     to:{
       stageOpacity:0
     },
-    delay:0,onStart:()=>Te.sound(R.sounds.bp_current_phase()),config:{
+    delay:0,onStart:()=>De.sound(R.sounds.bp_current_phase()),config:{
       duration:750,easing:ts
     }
   }),{
@@ -4090,22 +4090,22 @@ _h=Ot(({
     }
   });
   return(0,_s.useEffect)(()=>{
-    if(l)return Ka(()=>{
+    if(l)return Xa(()=>{
       o(!0)
     },100)
   },[l]),(0,us.jsx)("div",{
-    className:Ga(dh.base,dh[`base__${r}`],a),children:l?(0,us.jsxs)(us.Fragment,{
+    className:Ka(dh.base,dh[`base__${r}`],a),children:l?(0,us.jsxs)(us.Fragment,{
       children:[c&&(0,us.jsxs)(us.Fragment,{
         children:[(0,us.jsx)("div",{
           className:dh.glow
-        }),(0,us.jsx)(Ta.div,{
+        }),(0,us.jsx)(Da.div,{
           style:{
             opacity:_
           },
           className:dh.animatedGlow
         })]
       }),(0,us.jsxs)("div",{
-        className:dh.numberInProgress,children:[e,(0,us.jsx)(Ta.div,{
+        className:dh.numberInProgress,children:[e,(0,us.jsx)(Da.div,{
           style:{
             opacity:d,transform:d.to([0,1],[2.5,1]).to(e=>`translate(-50%, -50%) scale(${e})`)
           },
@@ -4121,9 +4121,9 @@ _h=Ot(({
 }),uh="CompletedStatus_1b62e1b4",mh="CompletedStatus_base__showAnimation_8334d234",ph="CompletedStatus_base__hideAnimation_5e0caacf",hh="CompletedStatus_icon_6277c5c1",bh="CompletedStatus_iconGlow_2dfae495",fh=({
   shouldAppear:e
 })=>(0,us.jsxs)("div",{
-  className:Ga(uh,e?mh:ph),children:[(0,us.jsx)("div",{
+  className:Ka(uh,e?mh:ph),children:[(0,us.jsx)("div",{
     className:bh
-  }),(0,us.jsx)(F,{
+  }),(0,us.jsx)(H,{
     body:R.strings.battle_pass.tooltips.completed.got(),children:(0,us.jsx)("div",{
       className:hh
     })
@@ -4139,14 +4139,14 @@ vh=Ot(({
   }=Gp(),{
     currentLevelPoints:n,previousLevelPoints:i
   }=r.root.get();
-  return(0,us.jsx)(_e,{
+  return(0,us.jsx)(ue,{
     ignoreShowDelay:!0,contentId:R.views.mono.battle_pass.tooltips.bp_points("resId"),children:(0,us.jsxs)("div",{
-      className:Ga(gh.base,a&&gh.base__appear,t&&gh.base__disappear,s),children:[(0,us.jsx)("div",{
-        className:Ga(gh.value,gh.value__current),children:t?i:n
+      className:Ka(gh.base,a&&gh.base__appear,t&&gh.base__disappear,s),children:[(0,us.jsx)("div",{
+        className:Ka(gh.value,gh.value__current),children:t?i:n
       }),(0,us.jsx)("div",{
         className:gh.divider,children:"/"
       }),(0,us.jsx)("div",{
-        className:Ga(gh.value,gh.value__total),children:e
+        className:Ka(gh.value,gh.value__total),children:e
       }),(0,us.jsx)("div",{
         className:gh.icon
       })]
@@ -4165,11 +4165,11 @@ vh=Ot(({
   return(0,_s.useEffect)(()=>{
     if(i===Dp.RunCycle)return void u(!1);
     const a=i===Dp.FillProgressMax,t=i===Dp.ResetProgress;
-    return _?void 0:Ka(()=>{
+    return _?void 0:Xa(()=>{
       u(!!a||c)
     },(t?500:0)+100*e)
   },[i,_,c,e]),(0,us.jsxs)("div",{
-    className:Ga(xh,a),children:[c&&_&&(0,us.jsx)(fh,{
+    className:Ka(xh,a),children:[c&&_&&(0,us.jsx)(fh,{
       shouldAppear:_
     }),d&&(0,us.jsx)(vh,{
       className:wh,totalLevelPoints:n,shouldAppear:l,shouldDisappear:o
@@ -4189,7 +4189,7 @@ Sh=Ot(({
     cardStatus:n
   }=a.computes.cardStates(e),i=!s&&n===Wp.IN_PROGRESS,o=!r&&a.computes.cardStates(e+1).cardStatus!==Wp.IN_PROGRESS;
   return(0,us.jsxs)("div",{
-    className:Ga(yh.base,yh[`base__${n}`]),style:Fp,children:[(0,us.jsx)(rh,{
+    className:Ka(yh.base,yh[`base__${n}`]),style:Fp,children:[(0,us.jsx)(rh,{
       level:e
     }),(0,us.jsx)(_h,{
       className:yh.stage,level:e
@@ -4200,7 +4200,7 @@ Sh=Ot(({
     }),(0,us.jsx)("div",{
       className:yh.points,children:e*t
     }),s&&(0,us.jsx)("div",{
-      className:Ga(yh.points,yh.points__initial),children:0
+      className:Ka(yh.points,yh.points__initial),children:0
     }),i&&(0,us.jsx)(ch,{
       position:Mp.left
     }),o&&(0,us.jsx)(ch,{
@@ -4214,7 +4214,7 @@ Sh=Ot(({
     chapterID:t
   }=e.root.get();
   return(0,us.jsx)("div",{
-    className:jh,children:w(a,({
+    className:jh,children:x(a,({
       level:e
     },a)=>(0,us.jsx)(Sh,{
       level:e
@@ -4223,10 +4223,10 @@ Sh=Ot(({
 }),Nh="ExtraChapter_51af81b2",kh="ExtraChapter_wrapper_1111764a",Ph="ExtraChapter_border_1fc38ae",Rh="ExtraChapter_base__hover_d6a2f84c",Bh="ExtraChapter_bg_6bfbbfc5",Ah="ExtraChapter_widget_ba8b2337",Eh="ExtraChapter_title_4965d60",Th="ExtraChapter_description_1a9020c",Lh="ExtraChapter_content_7e770f3c",Dh=R.strings.battle_pass.postProgressionView.footer.extraChapter,Oh=Ot(()=>{
   const{
     model:e
-  }=Gp(),a=e.computes.extraChapters()[0]?.chapterID,[t,s]=(0,_s.useState)(!1),r=p();
+  }=Gp(),a=e.computes.extraChapters()[0]?.chapterID,[t,s]=(0,_s.useState)(!1),r=m();
   return a?(0,us.jsxs)("div",{
-    className:Ga(Nh,t&&Rh),onMouseOver:e=>{
-      e.stopPropagation(),s(!0),Te.sound(R.sounds.highlight())
+    className:Ka(Nh,t&&Rh),onMouseOver:e=>{
+      e.stopPropagation(),s(!0),De.sound(R.sounds.highlight())
     },
     onMouseOut:()=>{
       s(!1)
@@ -4234,7 +4234,7 @@ Sh=Ot(({
     onClick:()=>{
       r.push(os.battlePass.progression,{
         chapterID:a
-      }),Te.sound(R.sounds.play())
+      }),De.sound(R.sounds.play())
     },
     children:[(0,us.jsxs)("div",{
       className:kh,children:[(0,us.jsx)("div",{
@@ -4255,40 +4255,40 @@ Sh=Ot(({
 }),Wh="NotAvailable_e1e3731d",Vh="NotAvailable_background_a3edbc06",Mh="NotAvailable_content_94110074",zh="NotAvailable_button_149fb125",$h="NotAvailable_description_6cafdd55",Fh="NotAvailable_completedCount_8450f150",Hh=R.strings.battle_pass.postProgressionView.footer,Uh=Ot(()=>{
   const{
     model:e
-  }=Gp(),a=p(),{
+  }=Gp(),a=m(),{
     chapterID:t
   }=e.root.get(),s=e.computes.completedRegularChaptersCount(),r=e.computes.regularChapters().length;
   return(0,us.jsxs)("div",{
     className:Wh,children:[(0,us.jsx)("div",{
       className:Vh
     }),(0,us.jsxs)("div",{
-      className:Mh,children:[(0,us.jsx)(ea,{
+      className:Mh,children:[(0,us.jsx)(ta,{
         classMix:$h,text:Hh.description.text(),binding:{
           completedChapters:(0,us.jsx)("span",{
             className:Fh,children:s
           }),chaptersAmount:r
         }
-      }),(0,us.jsx)(wa,{
-        type:$e.ghost,size:fa.medium,mixClass:zh,onClick:()=>a.push(os.battlePass.chapterChoice,{
+      }),(0,us.jsx)(ya,{
+        type:He.ghost,size:va.medium,mixClass:zh,onClick:()=>a.push(os.battlePass.chapterChoice,{
           selectedChapter:t
         }),children:Hh.button.text()
       })]
     })]
   })
-}),Gh="PurchasingIp_349aa5c4",qh="PurchasingIp_wrapper_2ff2079e",Kh="PurchasingIp_border_78bb5b9b",Zh="PurchasingIp_base__hover_e6cc332b",Xh="PurchasingIp_bg_345ee932",Jh="PurchasingIp_blink_990fb4a0",Qh="PurchasingIp_text_4355bb8a",Yh="PurchasingIp_button_b213818",eb="PurchasingIp_content_b09e9d85",ab=R.strings.battle_pass.postProgressionView.footer.purchaseIP,tb=Ot(()=>{
+}),Gh="PurchasingIp_349aa5c4",qh="PurchasingIp_wrapper_2ff2079e",Kh="PurchasingIp_border_78bb5b9b",Zh="PurchasingIp_base__hover_e6cc332b",Xh="PurchasingIp_bg_345ee932",Jh="PurchasingIp_blink_990fb4a0",Yh="PurchasingIp_text_4355bb8a",Qh="PurchasingIp_button_b213818",eb="PurchasingIp_content_b09e9d85",ab=R.strings.battle_pass.postProgressionView.footer.purchaseIP,tb=Ot(()=>{
   const{
     model:e
-  }=Gp(),a=p(),[t,s]=(0,_s.useState)(!1);
+  }=Gp(),a=m(),[t,s]=(0,_s.useState)(!1);
   return(0,us.jsxs)("div",{
-    className:Ga(Gh,t&&Zh),onMouseOver:e=>{
-      e.stopPropagation(),s(!0),Te.sound(R.sounds.highlight())
+    className:Ka(Gh,t&&Zh),onMouseOver:e=>{
+      e.stopPropagation(),s(!0),De.sound(R.sounds.highlight())
     },
     onMouseOut:()=>{
       s(!1)
     },
     onClick:()=>{
       const t=e.computes.chaptersForPurchase();
-      Te.sound(R.sounds.play()),a.push(os.battlePass.buyPass,{
+      De.sound(R.sounds.play()),a.push(os.battlePass.buyPass,{
         chapterID:t[0]?.chapterID
       })
     },
@@ -4299,9 +4299,9 @@ Sh=Ot(({
         className:Jh
       }),(0,us.jsxs)("div",{
         className:eb,children:[(0,us.jsx)("div",{
-          className:Qh,children:R.strings.battle_pass.postProgressionView.footer.purchaseIP.banner.text()
-        }),(0,us.jsx)(wa,{
-          type:$e.main,size:fa.medium,mixClass:Yh,children:ab.button.text()
+          className:Yh,children:R.strings.battle_pass.postProgressionView.footer.purchaseIP.banner.text()
+        }),(0,us.jsx)(ya,{
+          type:He.main,size:va.medium,mixClass:Qh,children:ab.button.text()
         })]
       })]
     }),(0,us.jsx)("div",{
@@ -4315,7 +4315,7 @@ Sh=Ot(({
     model:a
   }=Gp(),t=a.computes.footerState();
   return(0,us.jsx)("div",{
-    className:Ga(sb,e),children:(()=>{
+    className:Ka(sb,e),children:(()=>{
       switch(t){
         case Vp.NotAvailable:return(0,us.jsx)(Uh,{});
         case Vp.PurchasingIP:return(0,us.jsx)(tb,{});
@@ -4329,9 +4329,9 @@ Sh=Ot(({
 })=>{
   const{
     postProgressionStatus:a,endDate:t
-  }=Gp().model.root.get(),s=a===$p.Locked,r=a===$p.Paused,n=Me(t,pt.DayMonthFull);
+  }=Gp().model.root.get(),s=a===$p.Locked,r=a===$p.Paused,n=Fe(t,ht.DayMonthFull);
   return(0,us.jsxs)("div",{
-    className:Ga(nb,e),children:[(0,us.jsx)("div",{
+    className:Ka(nb,e),children:[(0,us.jsx)("div",{
       className:ib
     }),(0,us.jsxs)("div",{
       className:ob,children:[!s&&(0,us.jsxs)(us.Fragment,{
@@ -4340,7 +4340,7 @@ Sh=Ot(({
         }),(0,us.jsx)("div",{
           className:cb
         })]
-      }),(0,us.jsx)(ea,{
+      }),(0,us.jsx)(ta,{
         classMix:lb,text:bb.headline.deadline(),binding:{
           endDate:n
         }
@@ -4370,7 +4370,7 @@ Sh=Ot(({
     cyclesCompletedCount:r,previousCyclesCompletedCount:n
   }=s.root.get(),i=s.animationStep.get(),o=r!==n&&[Dp.Idle,Dp.FillProgressMax].includes(i);
   return(0,us.jsxs)("div",{
-    className:Ga(gb,e),ref:a,children:[(0,us.jsx)("div",{
+    className:Ka(gb,e),ref:a,children:[(0,us.jsx)("div",{
       className:vb,children:(0,us.jsx)("div",{
         className:xb
       })
@@ -4379,7 +4379,7 @@ Sh=Ot(({
         className:Cb,children:[(0,us.jsx)("span",{
           children:Ib.cyclesCompleted()
         }),(0,us.jsx)("span",{
-          className:Ga(yb,t&&Sb,o&&jb),children:r
+          className:Ka(yb,t&&Sb,o&&jb),children:r
         },`cyclesCompletedCount-${t}`)]
       }):Ib.cyclicalProgression()
     })]
@@ -4401,24 +4401,24 @@ Bb=Ot(({
     breakpoint:{
       weight:i
     }
-  }=O(),o=ae(),[l,c]=(0,_s.useState)({
+  }=W(),o=se(),[l,c]=(0,_s.useState)({
     [Pb]:"0%"
   });
-  return ne(()=>{
+  return oe(()=>{
     const e=r.current?.getBoundingClientRect()??Rb,a=n.current?.getBoundingClientRect().left??0,t=15*o,s=100*(a-e.left-t)/e.width;
     c({
       [Pb]:`${s}%`
     })
   },[r.current,n.current,i,o,s]),(0,us.jsxs)("div",{
-    className:Ga(kb.base,e),style:l,children:[(0,us.jsx)("div",{
+    className:Ka(kb.base,e),style:l,children:[(0,us.jsx)("div",{
       className:kb.arrow
     }),(0,us.jsxs)("div",{
-      className:Ga(kb.contour,kb[`contour__${o}x`]),ref:r,children:[(0,us.jsx)("div",{
-        className:Ga(kb.border,kb.border__vertical)
+      className:Ka(kb.contour,kb[`contour__${o}x`]),ref:r,children:[(0,us.jsx)("div",{
+        className:Ka(kb.border,kb.border__vertical)
       }),(0,us.jsx)("div",{
-        className:Ga(kb.border,kb.border__horizontal)
+        className:Ka(kb.border,kb.border__horizontal)
       }),a&&Array(5).fill(void 0).map((e,a)=>(0,us.jsx)("div",{
-        className:Ga(kb.bar,kb[`bar__state${a+1}`])
+        className:Ka(kb.bar,kb[`bar__state${a+1}`])
       },`bar-${a}`))]
     }),(0,us.jsx)(Nb,{
       className:kb.labelContainer,labelRef:n,shouldRun:a
@@ -4433,7 +4433,7 @@ Bb=Ot(({
     breakpoint:{
       weight:l
     }
-  }=O(),{
+  }=W(),{
     progressValue:c,previousProgressValue:d,maxProgressValue:_
   }=e.computes.getProgressValues(l),u=e.computes.progressChanged();
   (0,_s.useEffect)(()=>{
@@ -4442,20 +4442,20 @@ Bb=Ot(({
       case Dp.RunCycle:return void a.handleCycleCompleted()
     }
   },[s,a]),(0,_s.useEffect)(()=>{
-    if(u&&s===Dp.Idle)return Ka(()=>{
+    if(u&&s===Dp.Idle)return Xa(()=>{
       a.handleProgressAchieved()
     },Ep)
   },[s,a,u]);
-  const m=(0,_s.useRef)(aa());
+  const m=(0,_s.useRef)(sa());
   return(0,us.jsxs)("div",{
     className:Ab,style:{
       "--progress-line-width":`${_}rem`
     },
     children:[(0,us.jsx)("div",{
       className:Eb
-    }),(0,us.jsx)(_e,{
+    }),(0,us.jsx)(ue,{
       contentId:R.views.mono.battle_pass.tooltips.bp_points("resId"),children:(0,us.jsx)("div",{
-        className:Ga(Tb,o&&Lb),children:(0,us.jsx)(nt,{
+        className:Ka(Tb,o&&Lb),children:(0,us.jsx)(it,{
           api:m,value:c,deltaFrom:d,maxValue:_,disabled:o,animationSettings:Tp,theme:Lp,className:Db
         })
       })
@@ -4471,9 +4471,9 @@ Bb=Ot(({
   }=Gp().controls;
   return(0,us.jsx)("div",{
     className:e,children:(0,us.jsxs)("div",{
-      className:Vb,children:[(0,us.jsx)(Ua,{
+      className:Vb,children:[(0,us.jsx)(qa,{
         caption:Mb.aboutBattlePass(),type:"info",onClick:a
-      }),(0,us.jsx)(Ua,{
+      }),(0,us.jsx)(qa,{
         caption:Mb.howToEarnPoints(),type:"info",onClick:t
       })]
     })
@@ -4483,18 +4483,18 @@ Bb=Ot(({
     model:e,controls:a
   }=Gp(),{
     chapterID:t
-  }=e.root.get(),s=e.animationStep.get(),r=e.computes.cycleChanged(),n=p();
+  }=e.root.get(),s=e.animationStep.get(),r=e.computes.cycleChanged(),n=m();
   (0,_s.useEffect)(()=>{
     if(s!==Dp.Idle){
       const{
         nextStep:e,delay:t
       }=Op[s];
-      return Ka(()=>{
+      return Xa(()=>{
         a.setAnimationStep(e)
       },t)
     }
     r&&a.setAnimationStep(Dp.FillProgressMax)
-  },[s,a,r]),ue(ie.ESCAPE,()=>n.goBack());
+  },[s,a,r]),me(le.ESCAPE,()=>n.goBack());
   const i=`url(${ns(Xb,t)})`;
   return(0,us.jsxs)("div",{
     className:$b,style:{
@@ -4516,12 +4516,12 @@ Bb=Ot(({
       className:Zb
     })]
   })
-}),Qb=()=>(0,us.jsx)(Up,{
+}),Yb=()=>(0,us.jsx)(Up,{
   options:{
     rootId:R.aliases.battle_pass.PostProgression("resId")
   },
   children:(0,us.jsx)(Jb,{})
-}),Yb=function(e){
+}),Qb=function(e){
   return e.Active="active",e.Paused="paused",e.Completed="completed",e.NotStarted="notStarted",e
 }({}),ef=function(e){
   return e.NoAction="noAction",e.Buy="buy",e.BuyLevel="buyLevel",e.ActivateChapter="activateChapter",e
@@ -4537,77 +4537,77 @@ Bb=Ot(({
   return e.back="back",e.forward="forward",e
 }({}),of=function(e){
   return e.Default="default",e.Gray="gray",e
-}({}),lf=[Yb.Active,Yb.Completed],[cf,df]=Fe()(({
+}({}),lf=[Qb.Active,Qb.Completed],[cf,df]=Ue()(({
   observableModel:e
 })=>{
   const a={
     root:e.object(),levels:e.array("levels.items"),widget3dStyle:e.object("widget3dStyle"),widget3dStyleVehicleInfo:e.object("widget3dStyle.vehicleInfo"),widgetFinalRewards:e.object("widgetFinalRewards"),vehicleInfo:e.object("widgetFinalRewards.vehicleInfo"),freeTankmanInfo:e.array("widgetFinalRewards.tankmanInfo.free"),paidTankmanInfo:e.array("widgetFinalRewards.tankmanInfo.paid"),styleInfo:e.object("widgetFinalRewards.styleInfo"),vehicleInfoFromStyle:e.object("widgetFinalRewards.styleInfo.vehicleInfo"),attachmentsSetInfo:e.object("widgetFinalRewards.attachmentsSetInfo"),freeFinalRewards:e.array("freeFinalRewards"),paidFinalRewards:e.array("paidFinalRewards"),starterPackRewards:e.array("starterPackRewards.items")
   },
-  t=ga(()=>w(a.freeFinalRewards.get(),d),{
-    equals:me
-  }),s=ga(()=>w(a.paidFinalRewards.get(),d),{
-    equals:me
-  }),r=ga(()=>w(a.starterPackRewards.get(),d),{
-    equals:me
-  }),n=ga(()=>a.root.get().chapterType===af.HOLIDAY),i=ga(()=>({
+  t=xa(()=>x(a.freeFinalRewards.get(),d),{
+    equals:pe
+  }),s=xa(()=>x(a.paidFinalRewards.get(),d),{
+    equals:pe
+  }),r=xa(()=>x(a.starterPackRewards.get(),d),{
+    equals:pe
+  }),n=xa(()=>a.root.get().chapterType===af.HOLIDAY),i=xa(()=>({
     freeFinalRewards:Zt(t()),...s().length&&{
       paidFinalRewards:Zt(s())
     }
-  })),o=ga(()=>{
+  })),o=xa(()=>{
     const{
       freeFinalRewards:e,paidFinalRewards:a
     }=i();
     return!(!a&&e.mainReward===ss.progressiveStyle)
-  }),l=ga(()=>a.root.get().chapterType===af.EXTRA),c=ga(()=>!(n()||l()),{
-    equals:me
-  }),_=ga(e=>e?a.paidTankmanInfo.get():a.freeTankmanInfo.get()),u=ga(e=>{
-    const t=a.levels.get(),s=K(t,e-1);
+  }),l=xa(()=>a.root.get().chapterType===af.EXTRA),c=xa(()=>!(n()||l()),{
+    equals:pe
+  }),_=xa(e=>e?a.paidTankmanInfo.get():a.freeTankmanInfo.get()),m=xa(e=>{
+    const t=a.levels.get(),s=X(t,e-1);
     return s||console.warn(`level info not found for number: ${e}`),{
       ...s,maxLevel:t.length
     }
-  }),p=ga((e,a)=>{
-    const t=u(e);
-    return w(a?t.freeRewardItems.items:t.paidRewardItems.items,e=>({
+  }),p=xa((e,a)=>{
+    const t=m(e);
+    return x(a?t.freeRewardItems.items:t.paidRewardItems.items,e=>({
       ...e
     }))
-  }),h=ga(()=>{
+  }),h=xa(()=>{
     const{
       freePointsInLevel:e,currentPointsInLevel:t,chapterState:s,hasExtra:r
     }=a.root.get();
     return{
-      current:lf.includes(s)||r?t:e,total:u(1)?.levelPoints
+      current:lf.includes(s)||r?t:e,total:m(1)?.levelPoints
     }
-  }),b=ga((e,t)=>{
+  }),b=xa((e,t)=>{
     const{
       chapterState:s,currentLevel:r,potentialLevel:n,currentPointsInChapter:i,freePointsInChapter:o
     }=a.root.get(),{
       levelPoints:l,maxLevel:c
-    }=u(e),d=t?o:i,_=t?n:r;
-    return e<_||_===c&&d===l*c?sf.COMPLETED:e===_&&(s!==Yb.NotStarted||d>0)?sf.IN_PROGRESS:sf.NOT_STARTED
-  }),f=ga((e,t,s,r)=>{
+    }=m(e),d=t?o:i,_=t?n:r;
+    return e<_||_===c&&d===l*c?sf.COMPLETED:e===_&&(s!==Qb.NotStarted||d>0)?sf.IN_PROGRESS:sf.NOT_STARTED
+  }),f=xa((e,t,s,r)=>{
     const{
       currentLevel:n,currentPointsInLevel:i
     }=a.root.get();
     return((n-1)*e+i/r*t)/s
-  }),g=ga(()=>m(a.levels.get(),e=>"number"==typeof e.levelPoints)?.levelPoints),v=ga((e,a)=>{
+  }),g=xa(()=>u(a.levels.get(),e=>"number"==typeof e.levelPoints)?.levelPoints),v=xa((e,a)=>{
     const{
       needTakeFree:t,needTakePaid:s
-    }=u(e);
+    }=m(e);
     return a?s:t
-  }),x=ga((e,t)=>{
+  }),w=xa((e,t)=>{
     const{
       isBattlePassPurchased:s,chapterState:r
-    }=a.root.get(),n=u(e),i=b(e,!1);
+    }=a.root.get(),n=m(e),i=b(e,!1);
     return{
       cardStatus:{
         current:i,potential:b(e,!0)
       },
-      isRare:n.isRare&&i!==sf.IN_PROGRESS,isDisabled:t&&!s||r!==Yb.Active&&i===sf.NOT_STARTED
+      isRare:n.isRare&&i!==sf.IN_PROGRESS,isDisabled:t&&!s||r!==Qb.Active&&i===sf.NOT_STARTED
     }
   });
   return{
     ...a,computes:{
-      getFreeFinalRewards:t,getPaidFinalRewards:s,regularBattlePass:c,getFinalRewardTankmanInfo:_,currentLevelPoints:h,levelInfo:u,levelRewardItems:p,getCurrentWidth:f,getTotalLevelPoints:g,isRewardNeedTake:v,cardStates:x,isLayoutWithExtraWidget:o,getFinalRewardsDescription:i,getStarterPackRewards:r
+      getFreeFinalRewards:t,getPaidFinalRewards:s,regularBattlePass:c,getFinalRewardTankmanInfo:_,currentLevelPoints:h,levelInfo:m,levelRewardItems:p,getCurrentWidth:f,getTotalLevelPoints:g,isRewardNeedTake:v,cardStates:w,isLayoutWithExtraWidget:o,getFinalRewardsDescription:i,getStarterPackRewards:r
     }
   }
 },({
@@ -4622,14 +4622,14 @@ Bb=Ot(({
   })=>({
     level:e
   }),"onTakeClick"),finishAnimation:e.createCallbackNoArgs("onFinishedAnimation")
-})),_f="AttachmentsSetDescription_title_be2f4c09",uf="AttachmentsSetDescription_name_30b7f496",mf=oa.resolve("strings"),pf=Ot(()=>{
+})),_f="AttachmentsSetDescription_title_be2f4c09",uf="AttachmentsSetDescription_name_30b7f496",mf=ca.resolve("strings"),pf=Ot(()=>{
   const{
     model:e,controls:a
   }=df(),{
     attachmentsSetName:t
   }=e.attachmentsSetInfo.get();
   return(0,us.jsxs)(us.Fragment,{
-    children:[(0,us.jsx)(Ma,{
+    children:[(0,us.jsx)($a,{
       type:"preview",size:"normal",onClick:a.openPreview
     }),(0,us.jsx)("span",{
       className:_f,children:mf.readOrEmpty("battle_pass.finalReward.attachmentsSet.title")
@@ -4649,25 +4649,25 @@ Bb=Ot(({
   }=s.get(),{
     battleQuest:n
   }=a.get(),[i,o]=(0,_s.useState)(!1),l=(0,_s.useRef)(null),d=(0,_s.useCallback)(async()=>{
-    await Qt();
+    await Yt();
     const e=l.current;
     e&&o(e.scrollWidth>e.offsetWidth)
   },[]);
   return c(()=>(d(),engine.on("clientResized",d),()=>{
     engine.off("clientResized",d)
   })),(0,us.jsxs)(us.Fragment,{
-    children:[e===ss.style&&(0,us.jsx)(ea,{
+    children:[e===ss.style&&(0,us.jsx)(ta,{
       classMix:hf,text:wf.vehicleSubTitle(),binding:{
         styleName:t.get().styleName
       }
-    }),e===ss.battleQuest&&(0,us.jsx)(_e,{
+    }),e===ss.battleQuest&&(0,us.jsx)(ue,{
       contentId:R.views.mono.battle_pass.tooltips.random_quest("resId"),args:{
         tokenID:n
       },
       children:(0,us.jsxs)("div",{
         className:bf,children:[(0,us.jsx)("div",{
           className:ff,children:(0,us.jsx)("div",{
-            className:Ga(gf,i&&vf),ref:l,children:(0,us.jsx)(ea,{
+            className:Ka(gf,i&&vf),ref:l,children:(0,us.jsx)(ta,{
               text:wf.styleSubTitle(),binding:{
                 vehicleName:r
               }
@@ -4695,29 +4695,29 @@ Bb=Ot(({
     base:Af,level:Tf,name:Ef,typeIcon:Lf
   };
   return(0,us.jsxs)(us.Fragment,{
-    children:[(0,us.jsx)(Ma,{
+    children:[(0,us.jsx)($a,{
       type:"preview",size:"normal",onClick:i.openPreview
     }),(0,us.jsx)("div",{
-      className:Ga(yf,!d&&Sf),children:d?Df.style3DTitle():Df.styleTitle()
-    }),(0,us.jsx)(ea,{
-      classMix:Ga(jf,!d&&If),text:Df.styleName(),binding:{
+      className:Ka(yf,!d&&Sf),children:d?Df.style3DTitle():Df.styleTitle()
+    }),(0,us.jsx)(ta,{
+      classMix:Ka(jf,!d&&If),text:Df.styleName(),binding:{
         styleName:l
       }
     }),!d&&(0,us.jsxs)("div",{
-      className:Nf,children:[(0,us.jsx)(ea,{
+      className:Nf,children:[(0,us.jsx)(ta,{
         classMix:kf,text:Df.forLabel(),binding:{
           vehicleName:(0,us.jsx)(rs,{
-            ...s.get(),classNames:_,vehicleTypeIconSize:Ce.x24x24
+            ...s.get(),classNames:_,vehicleTypeIconSize:ne.x24x24
           })
         }
-      }),c&&(0,us.jsx)(F,{
+      }),c&&(0,us.jsx)(H,{
         body:Df.inHangarTooltip(),children:(0,us.jsx)("div",{
           className:Pf
         })
       })]
     }),e&&(0,us.jsx)(Cf,{
       additionalReward:e
-    }),a&&!o&&(0,us.jsx)(_e,{
+    }),a&&!o&&(0,us.jsx)(ue,{
       contentId:R.views.mono.battle_pass.tooltips.lock_icon("resId"),children:(0,us.jsxs)("div",{
         className:Rf,children:[(0,us.jsx)("div",{
           className:Bf
@@ -4730,10 +4730,10 @@ Bb=Ot(({
 }),Wf="Skills_12e25c21",Vf="Skills_skill_d5e5036d",Mf="Skills_zeroSkill_8baec091",zf="Skills_glow_b87093c6",$f="Skills_zeroSkillIcon_f9fb247",Ff="Skills_skillIcon_2a4ffd3a",Hf="Skills_skillIcon__specificPerk_9fedba",Uf="Skills_divider_5189f326",Gf="Skills_light_dc85d289",qf=({
   skills:e,className:a=""
 })=>{
-  const t=fe(e,e=>e.isZero);
+  const t=ge(e,e=>e.isZero);
   return(0,us.jsxs)("div",{
-    className:Ga(Wf,a),children:[w(e,(e,a)=>(0,us.jsxs)("div",{
-      className:Vf,children:[(0,us.jsx)(_e,{
+    className:Ka(Wf,a),children:[x(e,(e,a)=>(0,us.jsxs)("div",{
+      className:Vf,children:[(0,us.jsx)(ue,{
         contentId:R.views.mono.battle_pass.tooltips.crew_member_skill("resId"),args:{
           name:e.name,isZero:e.isZero,hasZeroPerk:void 0!==t
         },
@@ -4745,7 +4745,7 @@ Bb=Ot(({
               className:$f
             })]
           }),(0,us.jsx)("div",{
-            className:Ga(Ff,"new_skill"!==e.name&&Hf),style:{
+            className:Ka(Ff,"new_skill"!==e.name&&Hf),style:{
               backgroundImage:`url('R.images.gui.maps.icons.battlePass.tankman.perks.icon_perk_${e.name}')`
             }
           })]
@@ -4770,33 +4770,33 @@ Zf=R.strings.battle_pass.progression.extraChapterWidget,Xf=(()=>{
   groupName:e
 })=>{
   const[a,t]=(0,_s.useState)(!1),s=(0,_s.useCallback)(()=>{
-    a||(Te.sound(R.sounds.play()),Te.sound(e),t(!0))
+    a||(De.sound(R.sounds.play()),De.sound(e),t(!0))
   },[a,e]);
   return(0,_s.useEffect)(()=>{
-    a&&Ka(()=>{
+    a&&Xa(()=>{
       t(!1)
     },Xf.totalDuration)
-  },[a]),(0,us.jsx)(F,{
+  },[a]),(0,us.jsx)(H,{
     body:Zf.voiceoverTooltip(),children:(0,us.jsxs)("div",{
-      className:Ga(Kf.base,a&&Kf.base__animate),onClick:s,onMouseEnter:()=>{
-        Te.sound(R.sounds.bp_highlight())
+      className:Ka(Kf.base,a&&Kf.base__animate),onClick:s,onMouseEnter:()=>{
+        De.sound(R.sounds.bp_highlight())
       },
       style:{
         "--animation-duration":`${Xf.duration}ms`,"--animation-iteration-count":Xf.iterationCount
       },
       children:[(0,us.jsx)("div",{
-        className:Ga(Kf.icon,Kf.icon__speaker)
+        className:Ka(Kf.icon,Kf.icon__speaker)
       }),(0,us.jsx)("div",{
-        className:Ga(Kf.icon,Kf.icon__wave0)
+        className:Ka(Kf.icon,Kf.icon__wave0)
       }),(0,us.jsx)("div",{
-        className:Ga(Kf.icon,Kf.icon__wave1)
+        className:Ka(Kf.icon,Kf.icon__wave1)
       }),(0,us.jsx)("div",{
-        className:Ga(Kf.icon,Kf.icon__wave2)
+        className:Ka(Kf.icon,Kf.icon__wave2)
       })]
     })
   })
 },
-Qf="TankmanDescription_title_6b604eaf",Yf="TankmanDescription_title__noVoice_132efc49",eg="TankmanDescription_name_9f802b92",ag="TankmanDescription_skills_8507fe1b",tg="TankmanDescription_skill_2e650973",sg="TankmanDescription_skill__paidReward_f372df77",rg="TankmanDescription_description_4c6b2a1b",ng="TankmanDescription_lockIcon_7b9909c0",ig="TankmanDescription_lockText_e8d2d84c",og="TankmanDescription_showCommander_392de842",lg="TankmanDescription_close_b105aa08",cg=R.strings.battle_pass.progression.extraChapterWidget,dg=R.strings.battle_pass.awardsWidget.description.commander(),_g=Ot(({
+Yf="TankmanDescription_title_6b604eaf",Qf="TankmanDescription_title__noVoice_132efc49",eg="TankmanDescription_name_9f802b92",ag="TankmanDescription_skills_8507fe1b",tg="TankmanDescription_skill_2e650973",sg="TankmanDescription_skill__paidReward_f372df77",rg="TankmanDescription_description_4c6b2a1b",ng="TankmanDescription_lockIcon_7b9909c0",ig="TankmanDescription_lockText_e8d2d84c",og="TankmanDescription_showCommander_392de842",lg="TankmanDescription_close_b105aa08",cg=R.strings.battle_pass.progression.extraChapterWidget,dg=R.strings.battle_pass.awardsWidget.description.commander(),_g=Ot(({
   isPaidReward:e
 })=>{
   const{
@@ -4812,14 +4812,14 @@ Qf="TankmanDescription_title_6b604eaf",Yf="TankmanDescription_title__noVoice_132
     children:[i&&(0,us.jsx)(Jf,{
       groupName:l
     }),(0,us.jsx)("div",{
-      className:Ga(Qf,!i&&Yf),children:cg.tankman()
+      className:Ka(Yf,!i&&Qf),children:cg.tankman()
     }),(0,us.jsx)("div",{
       className:eg,children:n
     }),o.length>0&&(0,us.jsx)("div",{
       className:ag,children:(0,us.jsx)(qf,{
-        skills:o,className:Ga(tg,e&&sg)
+        skills:o,className:Ka(tg,e&&sg)
       })
-    }),e&&!r&&(0,us.jsx)(_e,{
+    }),e&&!r&&(0,us.jsx)(ue,{
       contentId:R.views.mono.battle_pass.tooltips.lock_icon("resId"),children:(0,us.jsxs)("div",{
         className:rg,children:[(0,us.jsx)("div",{
           className:ng
@@ -4827,10 +4827,10 @@ Qf="TankmanDescription_title_6b604eaf",Yf="TankmanDescription_title__noVoice_132
           className:ig,children:cg.labelWithBP()
         })]
       })
-    }),Boolean(s)&&!_&&(0,us.jsx)(F,{
+    }),Boolean(s)&&!_&&(0,us.jsx)(H,{
       body:dg,isEnabled:Boolean(dg),children:(0,us.jsx)("div",{
-        className:og,children:(0,us.jsx)(wa,{
-          type:$e.ghost,size:fa.small,mixClass:lg,onClick:t.showTankmen,children:cg.commanderVoices()
+        className:og,children:(0,us.jsx)(ya,{
+          type:He.ghost,size:va.small,mixClass:lg,onClick:t.showTankmen,children:cg.commanderVoices()
         })
       })
     })]
@@ -4840,11 +4840,11 @@ Qf="TankmanDescription_title_6b604eaf",Yf="TankmanDescription_title__noVoice_132
 })=>{
   const a=(e=>{
     const a=e=>e.toString().padStart(2,"0");
-    return`${e.days?da(R.strings.common.duration.days(),{
+    return`${e.days?ua(R.strings.common.duration.days(),{
       days:e.days
     }):""} ${a(e.hours)} : ${a(e.minutes)} : ${a(e.seconds)}`
-  })(tt(Nt(e,1)));
-  return(0,us.jsx)(F,{
+  })(st(kt(e,1)));
+  return(0,us.jsx)(H,{
     body:R.strings.battle_pass.progression.extraChapterWidget.timer(),children:(0,us.jsxs)("div",{
       className:ug,children:[(0,us.jsx)("div",{
         className:pg
@@ -4861,9 +4861,9 @@ Qf="TankmanDescription_title_6b604eaf",Yf="TankmanDescription_title__noVoice_132
 fg="VehicleInfo_f8a1a53e",gg="VehicleInfo_type_f9fe252e",vg=({
   vehicleLvl:e,vehicleName:a,vehicleType:t,isElite:s,classNames:r
 })=>(0,us.jsxs)("div",{
-  className:Ga(fg,r?.base),children:[Yt(e),(0,us.jsx)("div",{
-    className:Ga(gg,r?.type),style:{
-      backgroundImage:`url(${R.images.gui.maps.icons.vehicleTypes.big.$dyn(`${ct(t)}${s?"_elite":""}`)})`
+  className:Ka(fg,r?.base),children:[Qt(e),(0,us.jsx)("div",{
+    className:Ka(gg,r?.type),style:{
+      backgroundImage:`url(${R.images.gui.maps.icons.vehicleTypes.big.$dyn(`${dt(t)}${s?"_elite":""}`)})`
     }
   }),a]
 }),xg={
@@ -4883,16 +4883,16 @@ wg=R.strings.battle_pass.progression.extraChapterWidget,Cg=Ot(({
     breakpoint:{
       weight:u
     }
-  }=O(),{
+  }=W(),{
     isBattlePassPurchased:m,seasonNum:p
   }=s.get(),h=r.getPaidFinalRewards().length,b={
     backgroundImage:`url(R.images.gui.maps.icons.flags.c_600x450.${_})`
   },
-  f=u>Ve.medium.weight?14:12,g=l.length>f?c:l,v=wg.tank.description.$num(p);
+  f=u>$e.medium.weight?14:12,g=l.length>f?c:l,v=wg.tank.description.$num(p);
   return(0,us.jsxs)(us.Fragment,{
     children:[(0,us.jsx)("div",{
-      className:Ga(xg.vehicleBg,!h&&xg.vehicleBg__description),style:b
-    }),(0,us.jsx)(Ma,{
+      className:Ka(xg.vehicleBg,!h&&xg.vehicleBg__description),style:b
+    }),(0,us.jsx)($a,{
       type:"preview",size:"normal",onClick:n.openPreview
     }),(0,us.jsx)("div",{
       className:xg.vehicleCaption,children:wg.vehicleCaption()
@@ -4902,14 +4902,14 @@ wg=R.strings.battle_pass.progression.extraChapterWidget,Cg=Ot(({
       },
       vehicleLvl:d,vehicleName:g,vehicleType:i,isElite:o
     }),!h&&v&&(0,us.jsx)("div",{
-      className:xg.description,children:(0,us.jsx)(ea,{
+      className:xg.description,children:(0,us.jsx)(ta,{
         text:v
       })
     }),e&&(0,us.jsx)("div",{
       className:xg.rewardLabel,children:(0,us.jsx)(Cf,{
         additionalReward:e
       })
-    }),a&&!m&&(0,us.jsx)(_e,{
+    }),a&&!m&&(0,us.jsx)(ue,{
       contentId:R.views.mono.battle_pass.tooltips.lock_icon("resId"),children:(0,us.jsxs)("div",{
         className:xg.rewardDescription,children:[(0,us.jsx)("div",{
           className:xg.rewardLockIcon
@@ -4922,8 +4922,8 @@ wg=R.strings.battle_pass.progression.extraChapterWidget,Cg=Ot(({
 }),yg="Separator_da94a3ab",Sg="Separator_separatorBg_79e9a0f1",jg=({
   classNames:e
 })=>(0,us.jsx)("div",{
-  className:Ga(yg,e?.base),children:(0,us.jsx)("div",{
-    className:Ga(Sg,e?.separatorBg)
+  className:Ka(yg,e?.base),children:(0,us.jsx)("div",{
+    className:Ka(Sg,e?.separatorBg)
   })
 }),Ig="ExtraChapterWidget_3f5dd2c5",Ng="ExtraChapterWidget_widgetWrapper_df1761bd",kg="ExtraChapterWidget_base__freeSingleReward_3f5dd2c5",Pg="ExtraChapterWidget_glow_ea30fd08",Rg="ExtraChapterWidget_content_7571cec7",Bg="ExtraChapterWidget_content__left_2a162beb",Ag="ExtraChapterWidget_content__singleReward_d0c77a05",Eg="ExtraChapterWidget_separatorBg_58fe9583",Tg="ExtraChapterWidget_timer_92648812",Lg=[ss.style,ss.attachmentsSet],Dg={
   [ss.tankman]:_g,[ss.vehicle]:Cg,[ss.style]:Of,[ss.attachmentsSet]:pf
@@ -4948,11 +4948,11 @@ Wg=Ot(()=>{
     freeFinalRewards:s,paidFinalRewards:r
   }=a.getFinalRewardsDescription(),n=a.regularBattlePass(),i=!r&&Lg.includes(s.mainReward??"");
   return(0,us.jsxs)("div",{
-    className:Ga(Ig,i&&kg),children:[(0,us.jsxs)("div",{
+    className:Ka(Ig,i&&kg),children:[(0,us.jsxs)("div",{
       className:Ng,children:[(0,us.jsx)("div",{
         className:Pg
       }),(0,us.jsx)("div",{
-        className:Ga(Rg,!r&&Ag),children:Og(s,{
+        className:Ka(Rg,!r&&Ag),children:Og(s,{
           isPaidReward:!1
         })
       }),r&&(0,us.jsxs)(us.Fragment,{
@@ -4961,7 +4961,7 @@ Wg=Ot(()=>{
             separatorBg:Eg
           }
         }),(0,us.jsx)("div",{
-          className:Ga(Rg,Bg),children:Og(r,{
+          className:Ka(Rg,Bg),children:Og(r,{
             isPaidReward:!0
           })
         })]
@@ -4975,46 +4975,46 @@ Wg=Ot(()=>{
 }),Vg={
   base:"Footer_ab6b29ea",light:"Footer_light_3b6e1ce3",light__red:"Footer_light__red_944d6c45",light__green:"Footer_light__green_9e6310c0",buttonWrapper:"Footer_buttonWrapper_bdb4b046",starterAndButton:"Footer_starterAndButton_2f4854e4",button:"Footer_button_9e575f35",labelContainer:"Footer_labelContainer_ae5572d4",label:"Footer_label_e76dc882",label__buy:"Footer_label__buy_8b13ea86",days:"Footer_days_9ed2f711",points:"Footer_points_58964618",status:"Footer_status_9143122e",info:"Footer_info_5836cdb1",infoHover:"Footer_infoHover_63796a67",blink:"Footer_blink_106ec98e",move:"Footer_move_4308958a",fadeInWithScale:"Footer_fadeInWithScale_4308958a",slideUp:"Footer_slideUp_4308958a",scale:"Footer_scale_4308958a",rotate:"Footer_rotate_4308958a",windowIn:"Footer_windowIn_4308958a",fadeOut:"Footer_fadeOut_4308958a",fadeIn:"Footer_fadeIn_4308958a"
 },
-Mg=oa.resolve("strings"),zg=(e,a)=>e?a?Mg.readOrEmpty("battle_pass.progression.activatePausedExtraChapterDescr"):Mg.readOrEmpty("battle_pass.progression.activateExtraChapterDescr"):Mg.readOrEmpty("battle_pass.progression.activateChapterDescr"),$g=Ot(()=>{
+Mg=ca.resolve("strings"),zg=(e,a)=>e?a?Mg.readOrEmpty("battle_pass.progression.activatePausedExtraChapterDescr"):Mg.readOrEmpty("battle_pass.progression.activateExtraChapterDescr"):Mg.readOrEmpty("battle_pass.progression.activateChapterDescr"),$g=Ot(()=>{
   const{
     model:e,controls:a
-  }=df(),t=p(),{
+  }=df(),t=m(),{
     actionType:s,chapterType:r,hasExtra:n,isSeasonEndingSoon:i,freePointsInChapter:o,currentPointsInChapter:l,chapterState:c,timeLeft:d,chapterID:_,isStarterPack:u
-  }=e.root.get(),m=r===af.EXTRA,h=r===af.HOLIDAY,b=c===Yb.Paused,f=o-l,g=s===ef.ActivateChapter&&f>0,v=s!==ef.ActivateChapter&&i,x=u?Mg.readOrEmpty("battle_pass.progression.battlePassBuyDescrStarterPack"):h?Mg.readOrEmpty("battle_pass.progression.battlePassBuyHolidayDescr"):Mg.readOrEmpty("battle_pass.progression.battlePassBuyDescr"),{
+  }=e.root.get(),p=r===af.EXTRA,h=r===af.HOLIDAY,b=c===Qb.Paused,f=o-l,g=s===ef.ActivateChapter&&f>0,v=s!==ef.ActivateChapter&&i,x=u?Mg.readOrEmpty("battle_pass.progression.battlePassBuyDescrStarterPack"):h?Mg.readOrEmpty("battle_pass.progression.battlePassBuyHolidayDescr"):Mg.readOrEmpty("battle_pass.progression.battlePassBuyDescr"),{
     buyBtnLabel:w,tooltip:C,label:y,warning:S,buttonType:j,lightColor:I,route:N,params:k
   }=(e=>{
     switch(e){
       case ef.Buy:return{
-        buyBtnLabel:Mg.readOrEmpty("battle_pass.progression.battlePassBuyBtn"),tooltip:Mg.readOrEmpty("battle_pass.tooltips.footerBuyBtn.battlePass.descr"),label:x,warning:Mg.readOrEmpty("battle_pass.progression.seasonEndingDescr"),buttonType:$e.main,lightColor:"red",route:os.battlePass.buyPass,params:{
+        buyBtnLabel:Mg.readOrEmpty("battle_pass.progression.battlePassBuyBtn"),tooltip:Mg.readOrEmpty("battle_pass.tooltips.footerBuyBtn.battlePass.descr"),label:x,warning:Mg.readOrEmpty("battle_pass.progression.seasonEndingDescr"),buttonType:He.main,lightColor:"red",route:os.battlePass.buyPass,params:{
           chapterID:_
         }
       };
       case ef.BuyLevel:return{
-        buyBtnLabel:Mg.readOrEmpty("battle_pass.progression.episodeBuyBtn"),tooltip:h?Mg.readOrEmpty("battle_pass.tooltips.footerBuyBtn.episode.holidayDescr"):Mg.readOrEmpty("battle_pass.tooltips.footerBuyBtn.episode.descr"),label:Mg.readOrEmpty("battle_pass.progression.episodeBuyDescr"),warning:Mg.readOrEmpty("battle_pass.progression.seasonEndingDescr"),buttonType:$e.main,lightColor:"",route:os.battlePass.buyLevels,params:{
+        buyBtnLabel:Mg.readOrEmpty("battle_pass.progression.episodeBuyBtn"),tooltip:h?Mg.readOrEmpty("battle_pass.tooltips.footerBuyBtn.episode.holidayDescr"):Mg.readOrEmpty("battle_pass.tooltips.footerBuyBtn.episode.descr"),label:Mg.readOrEmpty("battle_pass.progression.episodeBuyDescr"),warning:Mg.readOrEmpty("battle_pass.progression.seasonEndingDescr"),buttonType:He.main,lightColor:"",route:os.battlePass.buyLevels,params:{
           chapterID:_
         }
       };
       case ef.ActivateChapter:return{
-        buyBtnLabel:Mg.readOrEmpty("battle_pass.progression.activateChapter"),tooltip:Mg.readOrEmpty("battle_pass.tooltips.footerBuyBtn.activateChapter.descr"),label:zg(m,b),warning:Mg.readOrEmpty("battle_pass.progression.freePointsDescr"),buttonType:$e.primary,lightColor:"green",route:"",params:{}
+        buyBtnLabel:Mg.readOrEmpty("battle_pass.progression.activateChapter"),tooltip:Mg.readOrEmpty("battle_pass.tooltips.footerBuyBtn.activateChapter.descr"),label:zg(p,b),warning:Mg.readOrEmpty("battle_pass.progression.freePointsDescr"),buttonType:He.primary,lightColor:"green",route:"",params:{}
       };
       default:return{
-        buyBtnLabel:"",tooltip:"",label:"",warning:"",buttonType:$e.ghost,lightColor:"green",route:"",params:{}
+        buyBtnLabel:"",tooltip:"",label:"",warning:"",buttonType:He.ghost,lightColor:"green",route:"",params:{}
       }
     }
   })(s),P=g||v?S:y,R=(e=>{
-    const a=tt(e);
+    const a=st(e);
     switch(!0){
-      case a.days>=1:return(0,us.jsx)(ea,{
+      case a.days>=1:return(0,us.jsx)(ta,{
         text:Mg.readOrEmpty("battle_pass.status.timeLeft.days"),binding:{
           day:a.days
         }
       });
-      case a.hours>=1:return(0,us.jsx)(ea,{
+      case a.hours>=1:return(0,us.jsx)(ta,{
         text:Mg.readOrEmpty("battle_pass.status.timeLeft.hours"),binding:{
           hour:a.hours
         }
       });
-      case a.minutes>=1:return(0,us.jsx)(ea,{
+      case a.minutes>=1:return(0,us.jsx)(ta,{
         text:Mg.readOrEmpty("battle_pass.status.timeLeft.min"),binding:{
           min:a.minutes
         }
@@ -5029,7 +5029,7 @@ Mg=oa.resolve("strings"),zg=(e,a)=>e?a?Mg.readOrEmpty("battle_pass.progression.a
   return(0,us.jsxs)("div",{
     className:Vg.base,children:[!u&&(0,us.jsxs)(us.Fragment,{
       children:[(0,us.jsx)("div",{
-        className:Ga(Vg.light,Vg[`light__${I}`])
+        className:Ka(Vg.light,Vg[`light__${I}`])
       }),(0,us.jsxs)("div",{
         className:Vg.labelContainer,children:[b&&(0,us.jsx)("div",{
           className:Vg.status,children:Mg.readOrEmpty("battle_pass.progression.footer.status.paused")
@@ -5041,7 +5041,7 @@ Mg=oa.resolve("strings"),zg=(e,a)=>e?a?Mg.readOrEmpty("battle_pass.progression.a
           children:[(0,us.jsx)("div",{
             className:Vg.points,children:f
           }),(0,us.jsx)("div",{
-            className:Vg.info,children:(0,us.jsx)(F,{
+            className:Vg.info,children:(0,us.jsx)(H,{
               header:Mg.readOrEmpty("battle_pass.tooltips.progression.freePoints.header"),body:n?Mg.readOrEmpty("battle_pass.tooltips.progression.freePoints.bodyExceptExtra"):Mg.readOrEmpty("battle_pass.tooltips.progression.freePoints.body"),children:(0,us.jsx)("div",{
                 className:Vg.infoHover
               })
@@ -5053,36 +5053,36 @@ Mg=oa.resolve("strings"),zg=(e,a)=>e?a?Mg.readOrEmpty("battle_pass.progression.a
       className:Vg.buttonWrapper,children:u?(0,us.jsxs)("div",{
         className:Vg.starterAndButton,"data-test-id":`${s}ButtonWithSeasonData`,children:[(0,us.jsxs)(us.Fragment,{
           children:[(0,us.jsx)("div",{
-            className:Ga(Vg.label,Vg.label__buy),children:(0,us.jsx)(ea,{
+            className:Ka(Vg.label,Vg.label__buy),children:(0,us.jsx)(ta,{
               text:P
             })
           }),v&&(0,us.jsx)("div",{
             className:Vg.days,children:R
           })]
-        }),(0,us.jsx)(F,{
-          body:C,children:(0,us.jsxs)(wa,{
-            type:j,size:fa.medium,mixClass:Vg.button,onClick:A,children:[v&&(0,us.jsx)("div",{
+        }),(0,us.jsx)(H,{
+          body:C,children:(0,us.jsxs)(ya,{
+            type:j,size:va.medium,mixClass:Vg.button,onClick:A,children:[v&&(0,us.jsx)("div",{
               className:Vg.blink
             }),w]
           })
-        }),(0,us.jsx)(Yn,{
-          starterPackRewards:B,presentSize:Jn,rewardSize:sa.Small
+        }),(0,us.jsx)(Qn,{
+          starterPackRewards:B,presentSize:Jn,rewardSize:na.Small
         })]
-      }):(0,us.jsx)(F,{
-        body:C,children:(0,us.jsxs)(wa,{
-          type:j,size:fa.medium,mixClass:Vg.button,onClick:A,children:[v&&(0,us.jsx)("div",{
+      }):(0,us.jsx)(H,{
+        body:C,children:(0,us.jsxs)(ya,{
+          type:j,size:va.medium,mixClass:Vg.button,onClick:A,children:[v&&(0,us.jsx)("div",{
             className:Vg.blink
           }),w]
         })
       })
     })]
   })
-}),Fg="Header_d6c7a62a",Hg="Header_labels_73a63da7",Ug="Header_title_46bb5059",Gg="Header_chapterWrapper_ec40e5cf",qg="Header_chapterText_b2d85aee",Kg="Header_titleText_593dd9b2",Zg="Header_chapterStatus_9c15353a",Xg="Header_date_dc70e297",Jg="Header_titleButtons_7521b3e5",Qg="Header_titleButton_d86731f6",Yg="Header_logo_46c0cb85",ev="Header_awards_f810fc3a",av="Header_emblem_c890a2dc",tv="Header_emblem__isChapterNotChosen_8aa33950",sv=R.strings.battle_pass,rv=Ot(()=>{
+}),Fg="Header_d6c7a62a",Hg="Header_labels_73a63da7",Ug="Header_title_46bb5059",Gg="Header_chapterWrapper_ec40e5cf",qg="Header_chapterText_b2d85aee",Kg="Header_titleText_593dd9b2",Zg="Header_chapterStatus_9c15353a",Xg="Header_date_dc70e297",Jg="Header_titleButtons_7521b3e5",Yg="Header_titleButton_d86731f6",Qg="Header_logo_46c0cb85",ev="Header_awards_f810fc3a",av="Header_emblem_c890a2dc",tv="Header_emblem__isChapterNotChosen_8aa33950",sv=R.strings.battle_pass,rv=Ot(()=>{
   const{
     controls:e,model:a
   }=df(),{
     chapterID:t,chapterState:s,seasonNum:r,expireTime:n,isBattlePassPurchased:i,timeLeft:o,chapterType:l
-  }=a.root.get(),c=[Yb.NotStarted,Yb.Paused],d=(_=s)===Yb.Paused?sv.progression.header.paused():_===Yb.NotStarted?sv.progression.header.inactive():void 0;
+  }=a.root.get(),c=[Qb.NotStarted,Qb.Paused],d=(_=s)===Qb.Paused?sv.progression.header.paused():_===Qb.NotStarted?sv.progression.header.inactive():void 0;
   var _;
   const u=l===af.EXTRA,m=l===af.HOLIDAY,p=Math.trunc(o/86400),h=String(sv.chapter.fullName.$num(t)),b=M(sv.progression.seasonEndingTooltip(),{
     day:p
@@ -5094,29 +5094,29 @@ Mg=oa.resolve("strings"),zg=(e,a)=>e?a?Mg.readOrEmpty("battle_pass.progression.a
     medium:{
       iconSize:tn,shieldSize:qr,containerSize:zr
     }
-  }),v=Ie;
+  }),v=F;
   return(0,us.jsxs)("div",{
     className:Fg,children:[(0,us.jsx)("div",{
-      className:Yg,children:(0,us.jsx)("div",{
-        className:Ga(av,c.includes(s)&&tv),children:(0,us.jsx)(dn,{
+      className:Qg,children:(0,us.jsx)("div",{
+        className:Ka(av,c.includes(s)&&tv),children:(0,us.jsx)(dn,{
           iconSize:g.iconSize,shieldSize:g.shieldSize,containerSize:g.containerSize,bpPurchased:i,chapterID:t,className:av
         })
       })
     }),(0,us.jsx)("div",{
       className:Hg,children:(0,us.jsxs)("div",{
-        className:Ug,children:[(0,us.jsx)(F,{
+        className:Ug,children:[(0,us.jsx)(H,{
           body:b,isEnabled:Boolean(o),children:(0,us.jsx)("div",{
-            className:Xg,children:u?(0,us.jsx)(ea,{
+            className:Xg,children:u?(0,us.jsx)(ta,{
               text:sv.progression.season.end.special(),binding:{
-                endTime:Me(n,pt.DayMonthFull)
+                endTime:Fe(n,ht.DayMonthFull)
               }
-            }):m?(0,us.jsx)(ea,{
+            }):m?(0,us.jsx)(ta,{
               text:sv.progression.season.end.special(),binding:{
-                endTime:Me(n,pt.DayMonthFullTime)
+                endTime:Fe(n,ht.DayMonthFullTime)
               }
-            }):(0,us.jsx)(ea,{
+            }):(0,us.jsx)(ta,{
               text:sv.progression.season.end.normal(),binding:{
-                seasonNum:Yt(r),seasonName:String(sv.season.fullName.$num(r)),endDate:Me(n,pt.DayMonthFull)
+                seasonNum:Qt(r),seasonName:String(sv.season.fullName.$num(r)),endDate:Fe(n,ht.DayMonthFull)
               }
             })
           })
@@ -5132,11 +5132,11 @@ Mg=oa.resolve("strings"),zg=(e,a)=>e?a?Mg.readOrEmpty("battle_pass.progression.a
           })]
         }),(0,us.jsxs)("div",{
           className:Jg,children:[(0,us.jsx)("div",{
-            className:Qg,children:(0,us.jsx)(Ua,{
+            className:Yg,children:(0,us.jsx)(qa,{
               caption:u||m?sv.progression.aboutExtra():sv.progression.about(),type:"info",onClick:e.openAbout
             })
           }),(0,us.jsx)("div",{
-            className:Qg,children:(0,us.jsx)(Ua,{
+            className:Yg,children:(0,us.jsx)(qa,{
               caption:sv.progression.howToEarnPoints.title(),type:"info",onClick:e.openInfo
             })
           })]
@@ -5163,14 +5163,14 @@ cv=({
   onClick:e,direction:a,type:t=of.Default,className:s,tooltipBody:r
 })=>{
   const n=(0,_s.useCallback)(()=>{
-    Te.sound(R.sounds.highlight())
+    De.sound(R.sounds.highlight())
   },[]),i=(0,_s.useCallback)(()=>{
-    Te.sound(R.sounds.bp_slide()),e()
+    De.sound(R.sounds.bp_slide()),e()
   },[e]);
-  return(0,us.jsx)(F,{
+  return(0,us.jsx)(H,{
     body:r,children:(0,us.jsx)("div",{
-      className:Ga(lv.base,lv[`base__${t}`],s),onClick:i,onMouseEnter:n,children:(0,us.jsx)("div",{
-        className:Ga(lv.icon,lv[`icon__${a}`],2===P()&&lv.icon__4k)
+      className:Ka(lv.base,lv[`base__${t}`],s),onClick:i,onMouseEnter:n,children:(0,us.jsx)("div",{
+        className:Ka(lv.icon,lv[`icon__${a}`],2===k()&&lv.icon__4k)
       })
     })
   })
@@ -5178,7 +5178,7 @@ cv=({
 dv="Bookmark_1a260409",_v="Bookmark_container_5cba29f3",uv="Bookmark_container__start_f008a523",mv="Bookmark_container__wide_16a4de6e",pv="Bookmark_textWrapper_985290f6",hv="Bookmark_withTooltip_ef0470d4",bv="Bookmark_text_7877afbc",fv="Bookmark_text__basic_9271b9b6",gv="Bookmark_text__premium_49218d9e",vv="Bookmark_text__single_8125f23e",xv="Bookmark_text__wide_3f764b56",wv="Bookmark_text__disappeared_68a02d91",Cv="Bookmark_textInner_8a053178",yv="Bookmark_leftTextLine_efb7ffd5",Sv="Bookmark_rightTextLine_c747efe3",jv=({
   isWide:e,isDecorated:a
 })=>(0,us.jsxs)("div",{
-  className:Ga(bv,vv,e&&xv),children:[a&&(0,us.jsx)("div",{
+  className:Ka(bv,vv,e&&xv),children:[a&&(0,us.jsx)("div",{
     className:yv
   }),(0,us.jsx)("div",{
     className:Cv,children:R.strings.battle_pass.progression.postProgressionDescr()
@@ -5199,14 +5199,14 @@ dv="Bookmark_1a260409",_v="Bookmark_container_5cba29f3",uv="Bookmark_container__
       return 0
     }
   }));
-  const l=(0,us.jsx)(ea,{
+  const l=(0,us.jsx)(ta,{
     text:R.strings.battle_pass.tooltips.postProgress.body(),binding:{
       chapterStep:r
     }
   });
   return(0,us.jsx)("div",{
-    className:Ga(dv,n),ref:o,children:(0,us.jsx)("div",{
-      className:Ga(_v,e&&mv,!e&&uv),children:e?(0,us.jsx)(F,{
+    className:Ka(dv,n),ref:o,children:(0,us.jsx)("div",{
+      className:Ka(_v,e&&mv,!e&&uv),children:e?(0,us.jsx)(H,{
         body:t,header:s,isEnabled:"string"==typeof t,children:(0,us.jsx)("div",{
           className:hv,children:(0,us.jsx)(jv,{
             isWide:e,isDecorated:!0
@@ -5214,17 +5214,17 @@ dv="Bookmark_1a260409",_v="Bookmark_container_5cba29f3",uv="Bookmark_container__
         })
       }):(0,us.jsxs)(us.Fragment,{
         children:[(0,us.jsx)("div",{
-          className:pv,children:(0,us.jsx)(F,{
+          className:pv,children:(0,us.jsx)(H,{
             header:R.strings.battle_pass.tooltips.postProgress.header(),body:l,children:(0,us.jsx)(jv,{
               isWide:e
             })
           })
-        }),(0,us.jsx)(_e,{
+        }),(0,us.jsx)(ue,{
           contentId:R.views.mono.battle_pass.tooltips.lock_icon("resId"),children:(0,us.jsx)("div",{
-            className:Ga(bv,gv),children:R.strings.battle_pass.progression.premiumProgressionDescr()
+            className:Ka(bv,gv),children:R.strings.battle_pass.progression.premiumProgressionDescr()
           })
         }),(0,us.jsx)("div",{
-          className:Ga(bv,fv,a&&wv),children:R.strings.battle_pass.progression.baseProgressionDescr()
+          className:Ka(bv,fv,a&&wv),children:R.strings.battle_pass.progression.baseProgressionDescr()
         })]
       })
     })
@@ -5232,9 +5232,9 @@ dv="Bookmark_1a260409",_v="Bookmark_container_5cba29f3",uv="Bookmark_container__
 }),Nv="LoupeButton_d966f396",kv="LoupeButton_icon_bfb9d784",Pv="LoupeButton_iconHover_22ab079c",Rv="LoupeButton_hoverArea_fa5a9428",Bv=({
   onClick:e,hoverAreaClasses:a
 })=>{
-  const t=(0,_s.useCallback)(()=>Te.sound(R.sounds.highlight()),[]),s=(0,_s.useCallback)(()=>{
-    Te.sound(R.sounds.play()),e()
-  },[e]),r=Ga(Rv,a);
+  const t=(0,_s.useCallback)(()=>De.sound(R.sounds.highlight()),[]),s=(0,_s.useCallback)(()=>{
+    De.sound(R.sounds.play()),e()
+  },[e]),r=Ka(Rv,a);
   return(0,us.jsxs)("div",{
     className:Nv,onClick:s,onMouseEnter:t,children:[(0,us.jsx)("div",{
       className:kv
@@ -5249,7 +5249,7 @@ Av="VehicleInfo_c9c556fb",Ev="VehicleInfo_prefix_da97ceb4",Tv="VehicleInfo_type_
   vehicleLvl:e,vehicleName:a,vehicleType:t,isElite:s
 })=>{
   const r=(0,_s.useMemo)(()=>{
-    const e=ct(t);
+    const e=dt(t);
     return{
       backgroundImage:`url(${R.images.gui.maps.icons.vehicleTypes.big.$dyn(`${e}${s?"_elite":""}`)})`
     }
@@ -5257,7 +5257,7 @@ Av="VehicleInfo_c9c556fb",Ev="VehicleInfo_prefix_da97ceb4",Tv="VehicleInfo_type_
   return(0,us.jsxs)("div",{
     className:Av,children:[(0,us.jsx)("div",{
       className:Ev,children:Lv.forVehicle()
-    }),Yt(e),(0,us.jsx)("div",{
+    }),Qt(e),(0,us.jsx)("div",{
       className:Tv,style:r
     }),a]
   })
@@ -5274,7 +5274,7 @@ Av="VehicleInfo_c9c556fb",Ev="VehicleInfo_prefix_da97ceb4",Tv="VehicleInfo_type_
     breakpoint:{
       weight:_
     }
-  }=O(),u=es(a,d,((e,a)=>2!==a?e<=Ve.small.weight?"_small":"_medium":"")(_,viewEnv.getScale())),m=(0,us.jsx)(ea,{
+  }=W(),u=es(a,d,((e,a)=>2!==a?e<=$e.small.weight?"_small":"_medium":"")(_,viewEnv.getScale())),m=(0,us.jsx)(ta,{
     text:qv.currentStyle(),binding:{
       name:c
     }
@@ -5282,10 +5282,10 @@ Av="VehicleInfo_c9c556fb",Ev="VehicleInfo_prefix_da97ceb4",Tv="VehicleInfo_type_
     n.open3dStylePreview(a)
   },[n,a]);
   return(0,us.jsxs)("div",{
-    className:Ga(Ov,o===Yb.Completed&&Vv),ref:e,children:[!l&&t&&(0,us.jsx)("div",{
+    className:Ka(Ov,o===Qb.Completed&&Vv),ref:e,children:[!l&&t&&(0,us.jsx)("div",{
       className:Wv,children:qv.titleNoChapterSelected()
     }),(0,us.jsxs)("div",{
-      className:Ga(Mv,s&&Hv),onMouseEnter:()=>r(!0),onMouseLeave:()=>r(!1),children:[!l&&1===a&&(0,us.jsx)("div",{
+      className:Ka(Mv,s&&Hv),onMouseEnter:()=>r(!0),onMouseLeave:()=>r(!1),children:[!l&&1===a&&(0,us.jsx)("div",{
         className:zv
       }),(0,us.jsx)("div",{
         className:$v,style:u
@@ -5318,7 +5318,7 @@ Av="VehicleInfo_c9c556fb",Ev="VehicleInfo_prefix_da97ceb4",Tv="VehicleInfo_type_
   });
   (0,_s.useEffect)(()=>{
     if(u)return;
-    const e=g.current!==c,a=e?n:r,d=s+(h.length-1)*t,_=Ct(h,a-1),m=r<=h.length?r-1:h.length-1,b=Ct(h,m)?.levelPoints;
+    const e=g.current!==c,a=e?n:r,d=s+(h.length-1)*t,_=yt(h,a-1),m=r<=h.length?r-1:h.length-1,b=yt(h,m)?.levelPoints;
     if(!b)return;
     const f=Zv({
       level:r,levelWidth:t,currentLevelWidth:s,pointsInLevel:i,totalPointsInLevel:b,currentLevel:p
@@ -5330,7 +5330,7 @@ Av="VehicleInfo_c9c556fb",Ev="VehicleInfo_prefix_da97ceb4",Tv="VehicleInfo_type_
     })
   },[u,t,s,r,n,l,o,i,c,p,h]);
   const y=(0,_s.useMemo)(()=>({
-    ...mt,withStack:!0,type:Xa.Simple,delta:{
+    ...pt,withStack:!0,type:Ya.Simple,delta:{
       duration:400,delay:300
     },
     line:{
@@ -5339,46 +5339,46 @@ Av="VehicleInfo_c9c556fb",Ev="VehicleInfo_prefix_da97ceb4",Tv="VehicleInfo_type_
   }),[]);
   return(0,_s.useEffect)(()=>{
     const e=p!==n||i!==o;
-    if(!m&&(e||l===c))return e&&-1===g.current?Ka(()=>{
+    if(!m&&(e||l===c))return e&&-1===g.current?Xa(()=>{
       f(Xv)
     },700):void 0;
     f(Xv)
   },[l,c,m]),(0,_s.useEffect)(()=>{
-    if(m)return ot(()=>{
+    if(m)return lt(()=>{
       a&&a()
     })
-  },[a,m]),(0,us.jsx)(nt,{
+  },[a,m]),(0,us.jsx)(it,{
     animationSettings:y,deltaFrom:v,value:w,maxValue:x||void 0,api:e,theme:d
   },b)
-}),Qv={
+}),Yv={
   base:"Progression_1b76c395",base__isLayoutWithExtraWidget:"Progression_base__isLayoutWithExtraWidget_61efd8f5",scrollWrapper:"Progression_scrollWrapper_5d6c50f7",wrapper:"Progression_wrapper_2d700f2",section__last:"Progression_section__last_36865a6",divider:"Progression_divider_875ac4ce",dividerContent:"Progression_dividerContent_32563f87",dividerText:"Progression_dividerText_9f28ff3a",progressContainer:"Progression_progressContainer_bf13204b",progress:"Progression_progress_f2c8d04a",progress__inactive:"Progression_progress__inactive_884002f1",progressBackground:"Progression_progressBackground_58b1a303",progressBackground__disabled:"Progression_progressBackground__disabled_bbabdc5",progressBackground__finished:"Progression_progressBackground__finished_335b0244",decor:"Progression_decor_158cf9e5",decorBackground:"Progression_decorBackground_da5971de",decor__left:"Progression_decor__left_61efd8f5",row:"Progression_row_2b2744bc",row__basic:"Progression_row__basic_db90f79e",bookmark:"Progression_bookmark_adda18c9",bookmark__start:"Progression_bookmark__start_e45cdc98",bookmarkLeftFixed:"Progression_bookmarkLeftFixed_87985cd2",bookmarkLeftFixed__active:"Progression_bookmarkLeftFixed__active_3d829e66",bookmarkLeftResponsive:"Progression_bookmarkLeftResponsive_f380dd1b",bookmarkBackground:"Progression_bookmarkBackground_3695986",scrollToButton:"Progression_scrollToButton_b51d1a4f",scrollToButton__visible:"Progression_scrollToButton__visible_750807fe",scrollToButton__forward:"Progression_scrollToButton__forward_f3d60cf3",scrollToButton__backward:"Progression_scrollToButton__backward_d30703b1",arrowButton:"Progression_arrowButton_fe2d3e38",progressionToButton:"Progression_progressionToButton_277ce88b",progressionToButton__hidden:"Progression_progressionToButton__hidden_43581710",progressionToButton__back:"Progression_progressionToButton__back_defa3226",progressionToButton__forward:"Progression_progressionToButton__forward_d0ad294b",shadow:"Progression_shadow_aeeafbe",shadow__left:"Progression_shadow__left_7a5e7f90",shadow__right:"Progression_shadow__right_b09b06b4",additionalShadow:"Progression_additionalShadow_19983a68",additionalShadow__active:"Progression_additionalShadow__active_3d829e66",scrollBarPosition:"Progression_scrollBarPosition_31bb147f",fadeInWithScale:"Progression_fadeInWithScale_61efd8f5",slideUp:"Progression_slideUp_61efd8f5",blink:"Progression_blink_61efd8f5",scale:"Progression_scale_61efd8f5",rotate:"Progression_rotate_61efd8f5",windowIn:"Progression_windowIn_61efd8f5",fadeOut:"Progression_fadeOut_61efd8f5",fadeIn:"Progression_fadeIn_61efd8f5"
 },
-Yv=R.strings.battle_pass.tooltips.progression.freePoints,ex=Ot(({
+Qv=R.strings.battle_pass.tooltips.progression.freePoints,ex=Ot(({
   progressApi:e,freePointsApi:a,levelWidth:t,currentLevelWidth:s,progressChange:r
 })=>{
   const{
     model:n
   }=df(),{
     chapterState:i,currentLevel:o,previousLevel:l,currentPointsInLevel:c,previousPointsInLevel:d,currentPointsInChapter:_,previousPointsInChapter:u,freePointsInLevel:m,freePointsInChapter:p,previousFreePointsInChapter:h,previousFreePointsInLevel:b,potentialLevel:f,previousPotentialLevel:g
-  }=n.root.get(),v=n.levels.get(),x=ae(),w=(i===Yb.NotStarted||i===Yb.Paused)&&p-_>0,C=n.computes.getTotalLevelPoints();
+  }=n.root.get(),v=n.levels.get(),x=se(),w=(i===Qb.NotStarted||i===Qb.Paused)&&p-_>0,C=n.computes.getTotalLevelPoints();
   if(!C)return;
   const y=n.computes.getCurrentWidth(t,s,x,C),S=_>=v.length*C,j={
-    "--progress-line-base":pa.line.bgColorBase,"--progress-line-disabled":pa.line.bgColorDisabled,"--progress-line-finished":pa.line.bgColorFinished
+    "--progress-line-base":ba.line.bgColorBase,"--progress-line-disabled":ba.line.bgColorDisabled,"--progress-line-finished":ba.line.bgColorFinished
   };
   return(0,us.jsxs)("div",{
-    className:Qv.progressContainer,children:[w&&(0,us.jsx)(F,{
-      header:Yv.header(),body:Yv.body(),children:(0,us.jsx)("div",{
-        className:Qv.progress,children:(0,us.jsx)(Jv,{
-          api:a,progressChange:r,levelWidth:t,currentLevelWidth:s,level:f,previousLevel:g,currentPointsInLevel:m,previousPointsInLevel:b,currentPointsInChapter:p,previousPointsInChapter:h,theme:ia
+    className:Yv.progressContainer,children:[w&&(0,us.jsx)(H,{
+      header:Qv.header(),body:Qv.body(),children:(0,us.jsx)("div",{
+        className:Yv.progress,children:(0,us.jsx)(Jv,{
+          api:a,progressChange:r,levelWidth:t,currentLevelWidth:s,level:f,previousLevel:g,currentPointsInLevel:m,previousPointsInLevel:b,currentPointsInChapter:p,previousPointsInChapter:h,theme:la
         })
       })
     }),(0,us.jsx)("div",{
-      className:Ga(Qv.progressBackground,S&&Qv.progressBackground__finished),style:{
+      className:Ka(Yv.progressBackground,S&&Yv.progressBackground__finished),style:{
         width:`${y}rem`,...j
       }
-    }),(0,us.jsx)(_e,{
+    }),(0,us.jsx)(ue,{
       contentId:R.views.mono.battle_pass.tooltips.bp_points("resId"),children:(0,us.jsx)("div",{
-        className:Ga(Qv.progress,w&&Qv.progress__inactive),children:(0,us.jsx)(Jv,{
+        className:Ka(Yv.progress,w&&Yv.progress__inactive),children:(0,us.jsx)(Jv,{
           api:e,levelWidth:t,currentLevelWidth:s,level:o,previousLevel:l,currentPointsInLevel:c,previousPointsInLevel:d,currentPointsInChapter:_,previousPointsInChapter:u,progressChange:r
         })
       })
@@ -5399,25 +5399,25 @@ Yv=R.strings.battle_pass.tooltips.progression.freePoints,ex=Ot(({
     }
   })(s.current,a);
   return(0,us.jsxs)("div",{
-    className:Ga(ax,a&&sx),children:[(0,us.jsx)("div",{
+    className:Ka(ax,a&&sx),children:[(0,us.jsx)("div",{
       className:tx
     }),n&&(0,us.jsx)("div",{
       className:ux
     }),s.current===sf.IN_PROGRESS&&(0,us.jsxs)("div",{
       className:mx,children:[(0,us.jsx)("div",{
-        className:Ga(hx,bx)
+        className:Ka(hx,bx)
       }),!a&&(0,us.jsx)("div",{
         className:px
       }),(0,us.jsx)("div",{
-        className:Ga(hx,fx)
+        className:Ka(hx,fx)
       })]
     }),r&&(0,us.jsxs)("div",{
       className:rx,children:[(0,us.jsx)("div",{
-        className:Ga(ix,ox,i&&cx,s.current===sf.COMPLETED&&_x),style:{
+        className:Ka(ix,ox,i&&cx,s.current===sf.COMPLETED&&_x),style:{
           backgroundImage:gx("left")
         }
       }),(0,us.jsx)("div",{
-        className:Ga(ix,lx,!i&&dx,s.current===sf.COMPLETED&&_x),style:{
+        className:Ka(ix,lx,!i&&dx,s.current===sf.COMPLETED&&_x),style:{
           backgroundImage:gx("right")
         }
       }),s.current===sf.NOT_STARTED&&(0,us.jsx)("div",{
@@ -5437,7 +5437,7 @@ wx=R.strings.battle_pass.progression,Cx=Ot(({
     chapterState:o
   }=r.root.get(),[l,c]=(0,_s.useState)(!1),{
     cardStatus:d
-  }=r.computes.cardStates(e,!1),_=r.computes.isRewardNeedTake(e,!1)||r.computes.isRewardNeedTake(e,!0),u=r.computes.levelInfo(e).maxLevel===e,m=d.current===sf.IN_PROGRESS,p=o===Yb.NotStarted||o===Yb.Paused,h=d.current===sf.COMPLETED&&!_&&!t,{
+  }=r.computes.cardStates(e,!1),_=r.computes.isRewardNeedTake(e,!1)||r.computes.isRewardNeedTake(e,!0),u=r.computes.levelInfo(e).maxLevel===e,m=d.current===sf.IN_PROGRESS,p=o===Qb.NotStarted||o===Qb.Paused,h=d.current===sf.COMPLETED&&!_&&!t,{
     stageOpacity:b
   }=n({
     from:{
@@ -5446,7 +5446,7 @@ wx=R.strings.battle_pass.progression,Cx=Ot(({
     to:{
       stageOpacity:0
     },
-    delay:0,onStart:()=>Te.sound(R.sounds.bp_current_phase()),config:{
+    delay:0,onStart:()=>De.sound(R.sounds.bp_current_phase()),config:{
       duration:750,easing:ts
     }
   }),{
@@ -5463,14 +5463,14 @@ wx=R.strings.battle_pass.progression,Cx=Ot(({
     }
   });
   return(0,_s.useEffect)(()=>{
-    if(s&&m)return Ka(()=>{
+    if(s&&m)return Xa(()=>{
       c(!0),i.finishLevelsAnimation()
     },a+100)
   },[s,m,a]),(0,us.jsxs)("div",{
-    className:Ga(xx.base,xx[`base__${d.current}`],h&&xx.base__rewardTaken),children:[m&&!p&&(0,us.jsxs)(us.Fragment,{
+    className:Ka(xx.base,xx[`base__${d.current}`],h&&xx.base__rewardTaken),children:[m&&!p&&(0,us.jsxs)(us.Fragment,{
       children:[(0,us.jsx)("div",{
         className:xx.glow
-      }),(0,us.jsx)(Ta.div,{
+      }),(0,us.jsx)(Da.div,{
         style:{
           opacity:f
         },
@@ -5480,7 +5480,7 @@ wx=R.strings.battle_pass.progression,Cx=Ot(({
       className:xx.iconFinal
     }),m?(0,us.jsxs)(us.Fragment,{
       children:[(0,us.jsxs)("div",{
-        className:xx.numberInProgress,children:[e,(0,us.jsx)(Ta.div,{
+        className:xx.numberInProgress,children:[e,(0,us.jsx)(Da.div,{
           style:{
             opacity:b,transform:b.to([0,1],[2.5,1]).to(e=>`translate(-50%, -50%) scale(${e})`)
           },
@@ -5512,7 +5512,7 @@ wx=R.strings.battle_pass.progression,Cx=Ot(({
   return(0,us.jsxs)("div",{
     className:yx,children:[u&&(0,us.jsx)(Gt,{
       ...s,nodeRef:r,classNames:d,onExited:t,children:(0,us.jsx)("div",{
-        ref:r,className:Ga(Sx,c&&jx)
+        ref:r,className:Ka(Sx,c&&jx)
       })
     }),m&&(0,us.jsx)(Gt,{
       ...s,nodeRef:n,classNames:u?_:{},
@@ -5528,11 +5528,11 @@ wx=R.strings.battle_pass.progression,Cx=Ot(({
     exit:Ox,exitActive:Wx,exitDone:Vx
   };
   return(0,us.jsxs)("div",{
-    className:Ga(Lx,e&&Dx),children:[(0,us.jsx)(Gt,{
+    className:Ka(Lx,e&&Dx),children:[(0,us.jsx)(Gt,{
       in:!e,nodeRef:s,timeout:rw,classNames:r,onExited:a,children:(0,us.jsx)("div",{
         ref:s,children:t
       })
-    }),(0,us.jsx)(F,{
+    }),(0,us.jsx)(H,{
       body:nw.tooltips.completed.got(),children:(0,us.jsx)("div",{
         className:Mx
       })
@@ -5550,14 +5550,14 @@ Fx=Ot(()=>{
   }=df(),{
     current:a,total:t
   }=e.currentLevelPoints();
-  return(0,us.jsx)(_e,{
+  return(0,us.jsx)(ue,{
     ignoreShowDelay:!0,contentId:R.views.mono.battle_pass.tooltips.bp_points("resId"),children:(0,us.jsxs)("div",{
       className:$x.base,children:[(0,us.jsx)("div",{
-        className:Ga($x.value,$x.value__current),children:a
+        className:Ka($x.value,$x.value__current),children:a
       }),(0,us.jsx)("div",{
         className:$x.divider,children:"/"
       }),(0,us.jsx)("div",{
-        className:Ga($x.value,$x.value__total),children:t
+        className:Ka($x.value,$x.value__total),children:t
       }),(0,us.jsx)("div",{
         className:$x.icon
       })]
@@ -5588,7 +5588,7 @@ Fx=Ot(()=>{
     })]
   })
 },
-Xx="Status_5c99d05d",Jx="Status_base__inProgress_21b2f358",Qx="Status_iconContainer_7da53d2b",Yx="Status_iconInner_9a38fa07",ew="Status_iconGlow_e61b8bfb",aw="Status_iconGlow__completed_1ceaf83f",tw="Status_iconGlow__hidden_5ce2d06a",sw="Status_pointsWrapper_6042cf48",rw=1500,nw=R.strings.battle_pass,iw=R.views.mono.battle_pass,ow=Ot(({
+Xx="Status_5c99d05d",Jx="Status_base__inProgress_21b2f358",Yx="Status_iconContainer_7da53d2b",Qx="Status_iconInner_9a38fa07",ew="Status_iconGlow_e61b8bfb",aw="Status_iconGlow__completed_1ceaf83f",tw="Status_iconGlow__hidden_5ce2d06a",sw="Status_pointsWrapper_6042cf48",rw=1500,nw=R.strings.battle_pass,iw=R.views.mono.battle_pass,ow=Ot(({
   isPremium:e,playCompleteAnimation:a,playUnlockAnimation:t,completeAnimationDelay:s=0,unlockAnimationDelay:r=0,baseTimeout:n=0,playUnlockAnimationSound:i=!0,playCompleteAnimationSound:o=!0,onAnimationDone:l,initialAnimationDelay:c,completedDuration:d,level:_
 })=>{
   const{
@@ -5596,14 +5596,14 @@ Xx="Status_5c99d05d",Jx="Status_base__inProgress_21b2f358",Qx="Status_iconContai
   }=df(),{
     cardStatus:m,isDisabled:p
   }=u.computes.cardStates(_,e),h=u.computes.isRewardNeedTake(_,e),[b,f]=(0,_s.useState)(!1),[g,v]=(0,_s.useState)(!1),[x,w]=(0,_s.useState)(!0),[C,y]=(0,_s.useState)(!1),S=m.current===sf.COMPLETED&&!h&&!p,j=p&&e||S||t,I=!e&&m.current===sf.IN_PROGRESS&&m.potential!==sf.COMPLETED,N=()=>{
-    o&&Te.sound(rf.IMPROVED_REWARD),f(!0)
+    o&&De.sound(rf.IMPROVED_REWARD),f(!0)
   };
-  (0,_s.useEffect)(()=>t?Ka(()=>{
-    w(!1),i&&!C&&(m.current===sf.IN_PROGRESS?Te.sound(rf.UNLOCK_BIG):Te.sound(rf.UNLOCK_SMALL))
-  },c+r):a?(v(!0),Ka(()=>{
+  (0,_s.useEffect)(()=>t?Xa(()=>{
+    w(!1),i&&!C&&(m.current===sf.IN_PROGRESS?De.sound(rf.UNLOCK_BIG):De.sound(rf.UNLOCK_SMALL))
+  },c+r):a?(v(!0),Xa(()=>{
     v(!1),N()
   },c+s)):void(g&&v(!1)),[t,a,g]),(0,_s.useEffect)(()=>{
-    if(a&&C)return Ka(()=>{
+    if(a&&C)return Xa(()=>{
       N()
     },s)
   },[a,C]);
@@ -5614,26 +5614,26 @@ Xx="Status_5c99d05d",Jx="Status_base__inProgress_21b2f358",Qx="Status_iconContai
     in:x,timeout:rw+n
   };
   return(0,us.jsxs)("div",{
-    className:Ga(Xx,m.current===sf.IN_PROGRESS&&Jx),style:{
+    className:Ka(Xx,m.current===sf.IN_PROGRESS&&Jx),style:{
       "--animation-duration":`${d}ms`
     },
     children:[j&&(0,us.jsxs)("div",{
-      className:Qx,children:[(!a&&S||b&&!h)&&(0,us.jsx)(zx,{
+      className:Yx,children:[(!a&&S||b&&!h)&&(0,us.jsx)(zx,{
         completedIn:b,handleCompleteGlowAnimationExited:()=>{
           g&&v(!1)
         },
         children:(0,us.jsx)("div",{
-          className:Ga(ew,aw,g&&tw)
+          className:Ka(ew,aw,g&&tw)
         })
-      }),!a&&!t&&p&&e&&(0,us.jsx)(_e,{
+      }),!a&&!t&&p&&e&&(0,us.jsx)(ue,{
         isEnabled:e,contentId:iw.tooltips.lock_icon("resId"),children:(0,us.jsx)("div",{
           children:(0,us.jsx)(Tx,{
             level:_,baseUnlockProps:P,playUnlockAnimation:t,handleUnlockAnimationExited:k
           })
         })
-      }),t&&!C&&(0,us.jsx)(_e,{
+      }),t&&!C&&(0,us.jsx)(ue,{
         contentId:iw.tooltips.lock_icon("resId"),children:(0,us.jsxs)("div",{
-          className:Yx,children:[(0,us.jsx)(Tx,{
+          className:Qx,children:[(0,us.jsx)(Tx,{
             level:_,baseUnlockProps:P,playUnlockAnimation:t,handleUnlockAnimationExited:k
           }),m.current===sf.IN_PROGRESS&&(0,us.jsx)(Zx,{
             baseUnlockProps:P
@@ -5647,12 +5647,12 @@ Xx="Status_5c99d05d",Jx="Status_base__inProgress_21b2f358",Qx="Status_iconContai
 }),lw={
   base:"Rewards_70f08a68",base__column:"Rewards_base__column_a9c4b33d",base__inProgress:"Rewards_base__inProgress_d0a3b9e5",reward:"Rewards_reward_3ab9772c",base__tripleDefault:"Rewards_base__tripleDefault_405577a5",reward__0:"Rewards_reward__0_405577a5",reward__2:"Rewards_reward__2_ab1f8587",base__reverse:"Rewards_base__reverse_405577a5",base__tripleInProgress:"Rewards_base__tripleInProgress_405577a5",reward__1:"Rewards_reward__1_804d2a62",base__single:"Rewards_base__single_405577a5",shine:"Rewards_shine_353df8a9",base__animated:"Rewards_base__animated_405577a5",fadeIn:"Rewards_fadeIn_405577a5",rewardInner:"Rewards_rewardInner_cdaabcb1",changeReward:"Rewards_changeReward_405577a5",staticShine:"Rewards_staticShine_6885b0f2",explosion:"Rewards_explosion_20cd9d55",preview:"Rewards_preview_4455ca2",iconButton:"Rewards_iconButton_1f79ae3",fadeInWithScale:"Rewards_fadeInWithScale_405577a5",slideUp:"Rewards_slideUp_405577a5",blink:"Rewards_blink_405577a5",scale:"Rewards_scale_405577a5",rotate:"Rewards_rotate_405577a5",windowIn:"Rewards_windowIn_405577a5",fadeOut:"Rewards_fadeOut_405577a5"
 },
-cw=ga(e=>{
+cw=xa(e=>{
   const{
     item:a,name:t,value:s,overlayType:r,tooltipId:n,tooltipContentId:i,id:o,icon:l
   }=e;
   return{
-    id:o,icon:l,name:a||t,smallImage:st(e,sa.Big),bigImage:st(e,sa.S180x135),special:r,value:s,valueType:Ke(t),tooltipArgs:Ia({
+    id:o,icon:l,name:a||t,smallImage:rt(e,na.Big),bigImage:rt(e,na.S180x135),special:r,value:s,valueType:Xe(t),tooltipArgs:ka({
       tooltipId:n
     },Number(i),{
       ignoreShowDelay:!0
@@ -5665,33 +5665,33 @@ cw=ga(e=>{
     breakpoint:{
       weight:s
     }
-  }=O(),{
+  }=W(),{
     model:r,controls:n
   }=df(),{
     cardStatus:i
   }=r.computes.cardStates(a,e),o=r.computes.isRewardNeedTake(a,e),l=r.computes.levelRewardItems(a,!0),c=r.computes.levelRewardItems(a,!1),d=e?c:l,[_,u]=(0,_s.useState)(d),m=i.current===sf.IN_PROGRESS,p=(0,_s.useRef)(!1);
   (0,_s.useEffect)(()=>{
-    if(p.current)return Ka(()=>u(d),1e3);
+    if(p.current)return Xa(()=>u(d),1e3);
     p.current=!0
   },[d,p]);
   return(0,us.jsx)("div",{
-    className:Ga(lw.base,m&&lw.base__inProgress,e&&lw.base__reverse,t&&lw.base__animated,1===d.length&&lw.base__single,2===d.length&&lw.base__column,3===d.length&&(m?lw.base__tripleInProgress:lw.base__tripleDefault)),children:w(_,(e,a)=>{
-      const r=cw(e),i=r.name.includes(Wa.StyleProgressToken)||r.name.includes(Wa.BattlePassSelectToken),l=o&&i||t,{
+    className:Ka(lw.base,m&&lw.base__inProgress,e&&lw.base__reverse,t&&lw.base__animated,1===d.length&&lw.base__single,2===d.length&&lw.base__column,3===d.length&&(m?lw.base__tripleInProgress:lw.base__tripleDefault)),children:x(_,(e,a)=>{
+      const r=cw(e),i=r.name.includes(Ma.StyleProgressToken)||r.name.includes(Ma.BattlePassSelectToken),l=o&&i||t,{
         size:c,image:_
       }=(e=>{
-        const a=s<Ve.medium.weight;
+        const a=s<$e.medium.weight;
         return d.length>1?a?{
-          size:sa.Small,image:e.smallImage
+          size:na.Small,image:e.smallImage
         }:{
-          size:sa.Big,image:e.smallImage
+          size:na.Big,image:e.smallImage
         }:a?{
-          size:sa.Big,image:e.smallImage
+          size:na.Big,image:e.smallImage
         }:{
-          size:sa.S180x135,image:e.bigImage
+          size:na.S180x135,image:e.bigImage
         }
       })(r);
       return(0,us.jsxs)("div",{
-        className:Ga(lw.reward,lw[`reward__${a}`]),children:[l&&(0,us.jsx)("div",{
+        className:Ka(lw.reward,lw[`reward__${a}`]),children:[l&&(0,us.jsx)("div",{
           className:lw.shine
         }),t&&(0,us.jsxs)(us.Fragment,{
           children:[(0,us.jsx)("div",{
@@ -5702,7 +5702,7 @@ cw=ga(e=>{
         }),(0,us.jsx)(L,{
           size:c,image:_,className:lw.rewardInner,...r
         }),r.icon===ss.style&&(0,us.jsx)("div",{
-          className:lw.preview,children:(0,us.jsx)(Ma,{
+          className:lw.preview,children:(0,us.jsx)($a,{
             type:"preview",size:"normal",className:lw.iconButton,onClick:()=>n.onStyleBonusPreview(r.id)
           })
         })]
@@ -5718,7 +5718,7 @@ cw=ga(e=>{
     cardStatus:r,isDisabled:n
   }=s.computes.cardStates(e,t),i=s.computes.isRewardNeedTake(e,t),o=r.current===sf.COMPLETED&&!i&&!n&&!a;
   return(0,us.jsx)("div",{
-    className:Ga(_w,o&&uw),children:(0,us.jsx)(dw,{
+    className:Ka(_w,o&&uw),children:(0,us.jsx)(dw,{
       levelNum:e,isPremium:t,hasAnimation:a
     })
   })
@@ -5739,14 +5739,14 @@ cw=ga(e=>{
     breakpoint:{
       weight:S
     }
-  }=O(),j=S<=Ve.small.weight?fa.extraSmall:fa.small,I=(0,_s.useRef)(f),N=I.current;
+  }=W(),j=S<=$e.small.weight?va.extraSmall:va.small,I=(0,_s.useRef)(f),N=I.current;
   (0,_s.useEffect)(()=>{
     I.current=f
   }),(0,_s.useEffect)(()=>{
     if(N&&!f){
-      const e=Ka(()=>{
+      const e=Xa(()=>{
         w(!1),o()
-      },1800),a=Ka(()=>{
+      },1800),a=Xa(()=>{
         y(!1)
       },2300);
       return w(!0),y(!0),()=>{
@@ -5773,7 +5773,7 @@ cw=ga(e=>{
     return C&&(f=0,l=1800,b=Boolean(v)),a===d-1&&(i=t),{
       baseTimeout:m,playCompleteAnimation:b,playCompleteAnimationSound:b,playUnlockAnimation:p,playUnlockAnimationSound:h,unlockAnimationDelay:o,onAnimationDone:i,completeAnimationDelay:l,stageAnimationDelay:u,initialAnimationDelay:f
     }
-  })(),P=Se(()=>{
+  })(),P=je(()=>{
     l({
       level:a
     })
@@ -5782,13 +5782,13 @@ cw=ga(e=>{
     className:pw,children:[!e&&(0,us.jsxs)(us.Fragment,{
       children:[(0,us.jsx)(Cx,{
         stepNumber:a,stageAnimationDelay:k.stageAnimationDelay,isRewardAnimationActive:x,showLevelsAnimations:r
-      }),R&&(0,us.jsx)(F,{
+      }),R&&(0,us.jsx)(H,{
         isEnabled:B,body:jw.btnRewardsUnavailable(),children:(0,us.jsxs)("div",{
           className:bw,children:[!B&&(0,us.jsx)("div",{
             className:fw
           }),(0,us.jsx)("div",{
-            className:Ga(gw,B&&vw),children:(0,us.jsxs)(wa,{
-              type:$e.ghost,size:j,disabled:B,onClick:P,mixClass:Ga(xw,B&&ww),children:[!B&&(0,us.jsx)("div",{
+            className:Ka(gw,B&&vw),children:(0,us.jsxs)(ya,{
+              type:He.ghost,size:j,disabled:B,onClick:P,mixClass:Ka(xw,B&&ww),children:[!B&&(0,us.jsx)("div",{
                 className:Cw
               }),(0,us.jsx)("div",{
                 className:yw,children:jw.takeReward()
@@ -5811,13 +5811,13 @@ cw=ga(e=>{
 kw=({
   position:e,isPremium:a=!1,isRare:t=!1,status:s
 })=>(0,us.jsx)("div",{
-  className:Ga(Nw.base,Nw[`base__${s}`],Nw[`base__${e}`],t&&Nw.base__rare,a&&Nw.base__premium),children:(0,us.jsx)("div",{
+  className:Ka(Nw.base,Nw[`base__${s}`],Nw[`base__${e}`],t&&Nw.base__rare,a&&Nw.base__premium),children:(0,us.jsx)("div",{
     className:Nw.inner
   })
 }),Pw={
   base:"Card_83a2cdb2",base__inProgress:"Card_base__inProgress_cc79557f",base__nonPremium:"Card_base__nonPremium_43e4be2f",totalPoints:"Card_totalPoints_c960ba66",totalPoints__default:"Card_totalPoints__default_86462962",totalPoints__final:"Card_totalPoints__final_b0d756a8",progressShadow:"Card_progressShadow_e0bd1d",fadeInWithScale:"Card_fadeInWithScale_f4c22d1c",slideUp:"Card_slideUp_f4c22d1c",blink:"Card_blink_f4c22d1c",scale:"Card_scale_f4c22d1c",rotate:"Card_rotate_f4c22d1c",windowIn:"Card_windowIn_f4c22d1c",fadeOut:"Card_fadeOut_f4c22d1c",fadeIn:"Card_fadeIn_f4c22d1c"
 },
-Rw=(e,a,t,s)=>e===sf.COMPLETED?100:e!==sf.IN_PROGRESS||a!==Yb.NotStarted&&a!==Yb.Paused?0:100*t/s,Bw=Ot(({
+Rw=(e,a,t,s)=>e===sf.COMPLETED?100:e!==sf.IN_PROGRESS||a!==Qb.NotStarted&&a!==Qb.Paused?0:100*t/s,Bw=Ot(({
   isPremium:e,stepNumber:a,maxLevels:t,maxVisibleCards:s,showBuyAnimations:r,showLevelsAnimations:n,onAnimationDone:i,levelRef:o
 })=>{
   const{
@@ -5853,15 +5853,15 @@ Rw=(e,a,t,s)=>e===sf.COMPLETED?100:e!==sf.IN_PROGRESS||a!==Yb.NotStarted&&a!==Yb
     "--small-card-width":"140rem","--small-current-card-width":"224rem","--big-card-width":"220rem","--big-current-card-width":"340rem"
   };
   return(0,us.jsxs)("div",{
-    className:Ga(Pw.base,Pw[`base__${_.current}`],!e&&Pw.base__nonPremium),ref:v,style:S,children:[(0,us.jsx)(vx,{
+    className:Ka(Pw.base,Pw[`base__${_.current}`],!e&&Pw.base__nonPremium),ref:v,style:S,children:[(0,us.jsx)(vx,{
       level:a,isPremium:e
     }),(0,us.jsx)(Iw,{
       isPremium:e,stepNumber:a,maxVisibleCards:s,showLevelsAnimations:n,showBuyAnimations:r,onFinalAnimationDone:i
     }),e&&(0,us.jsxs)(us.Fragment,{
       children:[(0,us.jsx)("div",{
-        className:Ga(Pw.totalPoints,Pw.totalPoints__default),children:x
+        className:Ka(Pw.totalPoints,Pw.totalPoints__default),children:x
       }),b&&(0,us.jsx)("div",{
-        className:Ga(Pw.totalPoints,Pw.totalPoints__final),children:t*m
+        className:Ka(Pw.totalPoints,Pw.totalPoints__final),children:t*m
       })]
     }),p&&(0,us.jsx)("div",{
       className:Pw.progressShadow,style:y
@@ -5883,7 +5883,7 @@ Rw=(e,a,t,s)=>e===sf.COMPLETED?100:e!==sf.IN_PROGRESS||a!==Yb.NotStarted&&a!==Yb
   },
   b=Boolean(n&&s&&d),f=Boolean(n&&_),g=(s,r,n)=>s===r?e:s===n?t:a;
   return(0,us.jsx)("div",{
-    className:Ga(Qv.row,!s&&Qv.row__basic),children:w(u,(e,a)=>(0,us.jsx)(Bw,{
+    className:Ka(Yv.row,!s&&Yv.row__basic),children:x(u,(e,a)=>(0,us.jsx)(Bw,{
       showBuyAnimations:b&&!m,showLevelsAnimations:f,levelRef:g(e.level,l,c),stepNumber:e.level,isPremium:s,maxLevels:u.length,maxVisibleCards:n,onAnimationDone:h
     },`${o}_${r}_${a}`))
   })
@@ -5894,7 +5894,7 @@ Rw=(e,a,t,s)=>e===sf.COMPLETED?100:e!==sf.IN_PROGRESS||a!==Yb.NotStarted&&a!==Yb
     model:o
   }=df(),{
     currentLevel:l,currentPointsInLevel:c,showLevelsAnimations:d
-  }=o.root.get(),_=o.computes.isLayoutWithExtraWidget(),u=o.levels.get(),m=(0,_s.useRef)(aa()),p=(0,_s.useRef)(aa());
+  }=o.root.get(),_=o.computes.isLayoutWithExtraWidget(),u=o.levels.get(),m=(0,_s.useRef)(sa()),p=(0,_s.useRef)(sa());
   i.current.moveProgressBars=e=>{
     m.current.update(e),p.current.update(e)
   };
@@ -5913,9 +5913,9 @@ Rw=(e,a,t,s)=>e===sf.COMPLETED?100:e!==sf.IN_PROGRESS||a!==Yb.NotStarted&&a!==Yb
     breakpoint:{
       weight:g
     }
-  }=O();
+  }=W();
   return(0,_s.useEffect)(()=>{
-    Qt().then(()=>{
+    Yt().then(()=>{
       const e=f();
       if(e){
         const a=Math.floor((viewEnv.getClientSizeRem().width-e.currentLevelWidth)/e.levelWidth)+1;
@@ -5925,24 +5925,24 @@ Rw=(e,a,t,s)=>e===sf.COMPLETED?100:e!==sf.IN_PROGRESS||a!==Yb.NotStarted&&a!==Yb
       }
     })
   },[g,f,u.length,l,c]),(0,_s.useEffect)(()=>{
-    d&&Te.sound(R.sounds.bp_progress_bar_start())
+    d&&De.sound(R.sounds.bp_progress_bar_start())
   },[d]),(0,_s.useEffect)(()=>{
     s&&s()
   },[l,c,s]),(0,us.jsxs)("div",{
-    className:Qv.wrapper,children:[!_&&(0,us.jsxs)(us.Fragment,{
+    className:Yv.wrapper,children:[!_&&(0,us.jsxs)(us.Fragment,{
       children:[(0,us.jsx)(Kv,{
         widget3dStyleRef:r,level:1,isShowTitle:!0
       }),(0,us.jsx)("div",{
-        className:Ga(Qv.decor,Qv.decor__left),children:(0,us.jsx)("div",{
-          className:Qv.decorBackground
+        className:Ka(Yv.decor,Yv.decor__left),children:(0,us.jsx)("div",{
+          className:Yv.decorBackground
         })
       }),(0,us.jsx)("div",{
-        className:Qv.bookmarkBackground,ref:n,children:(0,us.jsx)(Iv,{
-          isDisappeared:!0,mixClass:Qv.bookmarkLeftResponsive
+        className:Yv.bookmarkBackground,ref:n,children:(0,us.jsx)(Iv,{
+          isDisappeared:!0,mixClass:Yv.bookmarkLeftResponsive
         })
       })]
     }),(0,us.jsxs)("div",{
-      className:Qv.section,children:[(0,us.jsx)(Aw,{
+      className:Yv.section,children:[(0,us.jsx)(Aw,{
         sectionKey:"baseCard",currentCardRef:e,freeProgressionCutCardRef:a,potentialLevelCardRef:t,maxVisibleCards:d?h.maxCardsShown:0,currentLevel:l
       }),(0,us.jsx)(ex,{
         progressApi:m,freePointsApi:p,progressChange:s,...h
@@ -5951,8 +5951,8 @@ Rw=(e,a,t,s)=>e===sf.COMPLETED?100:e!==sf.IN_PROGRESS||a!==Yb.NotStarted&&a!==Yb
       })]
     }),!_&&(0,us.jsxs)(us.Fragment,{
       children:[(0,us.jsx)("div",{
-        className:Qv.decor,children:(0,us.jsx)("div",{
-          className:Qv.decorBackground
+        className:Yv.decor,children:(0,us.jsx)("div",{
+          className:Yv.decorBackground
         })
       }),(0,us.jsx)(Kv,{
         level:4
@@ -5971,7 +5971,7 @@ Lw=R.strings.battle_pass.progression,Dw=["dragStart","dragEnd","dragging"],Ow=Ot
     currentLevel:s,isBattlePassPurchased:r,showBuyAnimations:n,showLevelsAnimations:i
   }=a.root.get(),o=(0,_s.useRef)({
     moveProgressBars:()=>{}
-  }),l=(0,_s.useRef)(null),c=(0,_s.useRef)(null),d=(0,_s.useRef)(null),_=(0,_s.useRef)(null),u=(0,_s.useRef)(null),m=(0,_s.useRef)(null),p=(0,_s.useRef)(null),h=(0,_s.useRef)(0),b=a.computes.isLayoutWithExtraWidget(),[f,g]=(0,_s.useState)("hidden"),[v,x]=(0,_s.useState)("hidden"),[w,C]=(0,_s.useState)(!1),[y,S]=(0,_s.useState)(void 0),j=Ge(),{
+  }),l=(0,_s.useRef)(null),c=(0,_s.useRef)(null),d=(0,_s.useRef)(null),_=(0,_s.useRef)(null),u=(0,_s.useRef)(null),m=(0,_s.useRef)(null),p=(0,_s.useRef)(null),h=(0,_s.useRef)(0),b=a.computes.isLayoutWithExtraWidget(),[f,g]=(0,_s.useState)("hidden"),[v,x]=(0,_s.useState)("hidden"),[w,C]=(0,_s.useState)(!1),[y,S]=(0,_s.useState)(void 0),j=Ke(),{
     animationScroll:{
       scrollPosition:I
     },
@@ -6095,21 +6095,21 @@ Lw=R.strings.battle_pass.progression,Dw=["dragStart","dragEnd","dragging"],Ow=Ot
   $=e=>{
     D(I.goal),W(),S(e?.type)
   };
-  return(0,_s.useEffect)(()=>ot(()=>{
+  return(0,_s.useEffect)(()=>lt(()=>{
     i?N(O(),{
       immediate:!0
     }):r&&n&&N(O())
   }),[N,O,r,n,i]),(0,_s.useEffect)(()=>{
     const e=async()=>{
       const e=R(),a=I.goal;
-      await Qt();
+      await Yt();
       const t=R(),s=l.current,[,r]=j.getBounds(),n=.25*s.offsetWidth,i=t&&e&&t!==e?a*t/e:a;
       D(i),N(i>r-n?r:i)
     };
     return engine.on("clientResized",e),()=>{
       engine.off("clientResized",e)
     }
-  },[]),(0,_s.useEffect)(()=>Ka(()=>V(c),700),[s]),(0,_s.useEffect)(()=>{
+  },[]),(0,_s.useEffect)(()=>Xa(()=>V(c),700),[s]),(0,_s.useEffect)(()=>{
     if(((e="")=>Dw.includes(e))(y))return void e("dragStart"===y);
     const a=()=>{
       y||D(I.goal)
@@ -6125,39 +6125,39 @@ Lw=R.strings.battle_pass.progression,Dw=["dragStart","dragEnd","dragging"],Ow=Ot
     }
   },[k,D,e,I.goal,y]),(0,us.jsxs)(us.Fragment,{
     children:[(0,us.jsx)("div",{
-      className:Ga(Qv.bookmark,Qv.bookmark__start),children:(0,us.jsx)(Iv,{
-        chapterStep:t.length,mixClass:Ga(Qv.bookmarkLeftFixed,w&&Qv.bookmarkLeftFixed__active)
+      className:Ka(Yv.bookmark,Yv.bookmark__start),children:(0,us.jsx)(Iv,{
+        chapterStep:t.length,mixClass:Ka(Yv.bookmarkLeftFixed,w&&Yv.bookmarkLeftFixed__active)
       })
     }),(0,us.jsx)("div",{
-      className:Qv.scrollWrapper,ref:l,onClick:$,onMouseLeave:W,onWheel:$,children:(0,us.jsx)(ja.Horizontal.Area.Default,{
+      className:Yv.scrollWrapper,ref:l,onClick:$,onMouseLeave:W,onWheel:$,children:(0,us.jsx)(Na.Horizontal.Area.Default,{
         api:L,barClassNames:{
-          base:Qv.scrollBarPosition
+          base:Yv.scrollBarPosition
         },
         onDrag:$,children:(0,us.jsx)(Ew,{
           api:o,currentCardRef:c,freeProgressionCutCardRef:m,potentialLevelCardRef:d,separatorRef:p,widget3dStyleLeftRef:_,shadowLipRef:u,onProgressChanged:$
         })
       })
     }),(0,us.jsx)("div",{
-      className:Ga(Qv.scrollToButton,Qv.scrollToButton__backward,"hidden"!==v&&Qv.scrollToButton__visible),children:(0,us.jsx)(cv,{
-        onClick:()=>M(v),direction:nf.back,className:Qv.arrowButton,...z(v)
+      className:Ka(Yv.scrollToButton,Yv.scrollToButton__backward,"hidden"!==v&&Yv.scrollToButton__visible),children:(0,us.jsx)(cv,{
+        onClick:()=>M(v),direction:nf.back,className:Yv.arrowButton,...z(v)
       })
     }),(0,us.jsx)("div",{
-      className:Ga(Qv.scrollToButton,Qv.scrollToButton__forward,"hidden"!==f&&Qv.scrollToButton__visible),children:(0,us.jsx)(cv,{
-        onClick:()=>M(f),direction:nf.forward,className:Qv.arrowButton,...z(f)
+      className:Ka(Yv.scrollToButton,Yv.scrollToButton__forward,"hidden"!==f&&Yv.scrollToButton__visible),children:(0,us.jsx)(cv,{
+        onClick:()=>M(f),direction:nf.forward,className:Yv.arrowButton,...z(f)
       })
     })]
   })
 }),Ww=Ot(()=>{
   const{
     model:e
-  }=df(),a=e.computes.isLayoutWithExtraWidget(),[t,s]=(0,_s.useState)(!1),r=Ga(Qv.additionalShadow,t&&Qv.additionalShadow__active);
+  }=df(),a=e.computes.isLayoutWithExtraWidget(),[t,s]=(0,_s.useState)(!1),r=Ka(Yv.additionalShadow,t&&Yv.additionalShadow__active);
   return(0,us.jsxs)("div",{
-    className:Ga(Qv.base,a&&Qv.base__isLayoutWithExtraWidget),children:[(0,us.jsx)("div",{
-      className:Ga(Qv.shadow,Qv.shadow__left),children:(0,us.jsx)("div",{
+    className:Ka(Yv.base,a&&Yv.base__isLayoutWithExtraWidget),children:[(0,us.jsx)("div",{
+      className:Ka(Yv.shadow,Yv.shadow__left),children:(0,us.jsx)("div",{
         className:r
       })
     }),(0,us.jsx)("div",{
-      className:Ga(Qv.shadow,Qv.shadow__right),children:(0,us.jsx)("div",{
+      className:Ka(Yv.shadow,Yv.shadow__right),children:(0,us.jsx)("div",{
         className:r
       })
     }),(0,us.jsx)(Ow,{
@@ -6173,9 +6173,9 @@ Lw=R.strings.battle_pass.progression,Dw=["dragStart","dragEnd","dragging"],Ow=Ot
     }
   }=df(),{
     chapterType:t,chapterID:s,actionType:r,isPaused:n
-  }=e.get(),i=a.isLayoutWithExtraWidget(),o=t===af.EXTRA,l=r!==ef.NoAction,c=Ga(Fw,i&&Hw);
+  }=e.get(),i=a.isLayoutWithExtraWidget(),o=t===af.EXTRA,l=r!==ef.NoAction,c=Ka(Fw,i&&Hw);
   return(0,us.jsxs)("div",{
-    className:Ga(Vw,i&&Mw,o&&zw),style:is(s),children:[!n&&(0,us.jsx)("div",{
+    className:Ka(Vw,i&&Mw,o&&zw),style:is(s),children:[!n&&(0,us.jsx)("div",{
       className:c,children:(0,us.jsx)(Ww,{})
     }),(0,us.jsx)("div",{
       className:$w,children:(0,us.jsx)(rv,{})
@@ -6190,18 +6190,18 @@ Lw=R.strings.battle_pass.progression,Dw=["dragStart","dragEnd","dragging"],Ow=Ot
     model:e,controls:a
   }=df(),{
     showReplaceRewardsAnimations:t
-  }=e.root.get(),s=p();
-  return ue(ie.ESCAPE,()=>s.goBack()),(0,_s.useEffect)(()=>{
+  }=e.root.get(),s=m();
+  return me(le.ESCAPE,()=>s.goBack()),(0,_s.useEffect)(()=>{
     const e=()=>{
       document.body.style.height=window.innerHeight-innerHeight%2+"px"
     };
     return window.addEventListener("resize",e),e(),()=>{
       window.removeEventListener("resize",e),document.body.style.height="auto"
     }
-  },[]),(0,_s.useEffect)(()=>ot(()=>{
+  },[]),(0,_s.useEffect)(()=>lt(()=>{
     a.viewLoad()
   }),[]),(0,_s.useEffect)(()=>{
-    t&&Te.sound(R.sounds.bp_pick_up_award())
+    t&&De.sound(R.sounds.bp_pick_up_award())
   },[t]),(0,us.jsx)("div",{
     className:Kw,children:(0,us.jsx)(qw,{})
   })
@@ -6210,41 +6210,41 @@ Lw=R.strings.battle_pass.progression,Dw=["dragStart","dragEnd","dragging"],Ow=Ot
     rootId:R.aliases.battle_pass.Progression("resId")
   },
   children:(0,us.jsx)(Zw,{})
-}),Jw="App_811b056b",Qw="App_mainView_54c70e4",Yw=Ot(()=>{
+}),Jw="App_811b056b",Yw="App_mainView_54c70e4",Qw=Ot(()=>{
   const{
     location:e
-  }=p(),a=q(e,{
+  }=m(),a=Z(e,{
     from:{
       opacity:0
     },
     enter:{
       opacity:1,config:{
-        duration:150,easing:qe.easeInQuad
+        duration:150,easing:Ze.easeInQuad
       },
       delay:150
     }
   });
   return(0,us.jsx)(_s.Suspense,{
     fallback:(0,us.jsx)("div",{}),children:(0,us.jsx)("div",{
-      className:Jw,children:a((e,a)=>(0,us.jsx)(Ta.div,{
-        className:Qw,style:e,children:(0,us.jsxs)(Xe,{
-          children:[(0,us.jsx)(ka,{
+      className:Jw,children:a((e,a)=>(0,us.jsx)(Da.div,{
+        className:Yw,style:e,children:(0,us.jsxs)(Ye,{
+          children:[(0,us.jsx)(Ra,{
             path:os.battlePass.progression,component:Xw
-          }),(0,us.jsx)(ka,{
+          }),(0,us.jsx)(Ra,{
             path:os.battlePass.chapterChoice,component:Gu
-          }),(0,us.jsx)(ka,{
-            path:os.battlePass.postProgression,component:Qb
-          }),(0,us.jsx)(ka,{
+          }),(0,us.jsx)(Ra,{
+            path:os.battlePass.postProgression,component:Yb
+          }),(0,us.jsx)(Ra,{
             path:os.battlePass.buyPass,component:ui
-          }),(0,us.jsx)(ka,{
+          }),(0,us.jsx)(Ra,{
             path:os.battlePass.buyPassRewards,component:ui
-          }),(0,us.jsx)(ka,{
+          }),(0,us.jsx)(Ra,{
             path:os.battlePass.buyLevels,component:mr
-          }),(0,us.jsx)(ka,{
+          }),(0,us.jsx)(Ra,{
             path:os.battlePass.buyLevelsRewards,component:mr
-          }),(0,us.jsx)(ka,{
+          }),(0,us.jsx)(Ra,{
             path:os.battlePass.holidayFinal,component:Ap
-          }),(0,us.jsx)(ka,{
+          }),(0,us.jsx)(Ra,{
             path:os.battlePass.tankmenScreen,component:ls
           })]
         })
@@ -6252,6 +6252,6 @@ Lw=R.strings.battle_pass.progression,Dw=["dragStart","dragEnd","dragging"],Ow=Ot
     })
   })
 });
-ha((new Ja).add(dt).add(jt).addWithProps(ge,{
+fa((new Qa).add(_t).add(It).addWithProps(ve,{
   context:"model.router"
-}).render((0,us.jsx)(Yw,{}))).then(()=>$(document.getElementById("root"))).then(()=>je());
+}).render((0,us.jsx)(Qw,{}))).then(()=>$(document.getElementById("root"))).then(()=>Ie());

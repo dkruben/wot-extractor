@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  Aa as a,Ar as t,At as s,Ba as r,Bi as n,C as i,Cn as l,D as o,Di as c,E as d,Ea as m,Ei as u,Er as f,Et as _,F as p,Fr as h,Gr as b,Gt as v,Ha as g,I as x,Ii as y,Jn as N,Jr as j,Pa as w,Pr as I,Qr as S,R as C,Ra as P,Ri as T,Rr as D,S as B,Si as A,Sr as V,T as k,U as E,Ut as z,Va as H,Vr as O,Wa as F,Wt as X,Xt as G,_ as $,_n as L,_r as M,b as W,bi as K,ci as q,cn as U,en as Z,fo as Y,gi as J,gn as Q,ha as ee,hn as ae,ho as te,ii as se,in as re,jr as ne,jt as ie,kr as le,li as oe,lo as ce,lr as de,ma as me,mi as ue,mo as fe,mr as _e,oi as pe,or as he,pi as be,pn as ve,qa as ge,qt as xe,rn as ye,sn as Ne,so as je,sr as we,to as Ie,uo as Re,ur as Se,v as Ce,va as Pe,vn as Te,vt as De,w as Be,wa as Ae,wr as Ve,wt as ke,x as Ee,xa as ze,xi as He,xr as Oe,y as Fe,yi as Xe,yn as Ge,yo as $e,zi as Le,zr as Me
+  Aa as a,Ar as t,At as s,Ba as r,Bi as n,Cn as i,Di as l,Ea as o,Ei as c,Er as d,Et as m,F as u,Fr as f,Gr as _,Gt as p,Ha as h,I as b,Ii as v,Jn as g,Jr as x,Pa as y,Pr as N,Qr as j,R as w,Ra as I,Ri as S,Rr as C,Si as P,Sr as T,U as D,Ut as B,Va as A,Vr as V,Wa as k,Wt as E,Xt as z,_ as H,_n as O,_r as F,bi as X,c as G,ci as $,cn as L,d as M,en as W,f as K,fo as q,g as U,gi as Z,gn as Y,h as J,ha as Q,hn as ee,ho as ae,ii as te,in as se,jr as re,jt as ne,kr as ie,l as le,li as oe,lo as ce,lr as de,m as me,ma as ue,mi as fe,mo as _e,mr as pe,oi as he,or as be,p as ve,pi as ge,pn as xe,qa as ye,qt as Ne,rn as je,sn as we,so as Ie,sr as Re,to as Se,u as Ce,uo as Pe,ur as Te,v as De,va as Be,vn as Ae,vt as Ve,wa as ke,wr as Ee,wt as ze,xa as He,xi as Oe,xr as Fe,yi as Xe,yn as Ge,yo as $e,zi as Le,zr as Me
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
@@ -19,7 +19,7 @@ var qe=function(e){
 }({});
 function Ze(e){
   return function(a){
-    return e(oe(()=>ue(a)))
+    return e(oe(()=>fe(a)))
   }
 }
 var Ye={
@@ -101,7 +101,7 @@ function Gt(e,a){
     recordsItemsDetails:t,baseValue:s,premiumValue:r,currencyType:n,paramName:i
   }=function(e){
     return{
-      paramName:e.paramName,currencyType:e.currencyType,baseValue:e.baseValue,premiumValue:e.premiumValue,recordsItemsDetails:Ae(e.detailedItemRecords,(e,a)=>(e[a.itemName]=a.itemValue,e),{})
+      paramName:e.paramName,currencyType:e.currencyType,baseValue:e.baseValue,premiumValue:e.premiumValue,recordsItemsDetails:ke(e.detailedItemRecords,(e,a)=>(e[a.itemName]=a.itemValue,e),{})
     }
   }(e),l=a?r:s,o=l>=0?l:0;
   return{
@@ -115,27 +115,27 @@ function $t(e){
 }
 function Lt(e){
   return{
-    labelKey:e.labelKey,paramValueType:e.paramValueType,value:ze(e?.value??[],e=>e)
+    labelKey:e.labelKey,paramValueType:e.paramValueType,value:He(e?.value??[],e=>e)
   }
 }
 function Mt(e){
   return{
     ...Lt({
-      label:e.label,labelKey:e.labelKey,paramValueType:e.paramValueType,value:ze(e.value,e=>e)
-    }),details:ze(e.details,e=>Lt(e))
+      label:e.label,labelKey:e.labelKey,paramValueType:e.paramValueType,value:He(e.value,e=>e)
+    }),details:He(e.details,e=>Lt(e))
   }
 }
 function Wt(e){
   return{
-    isGeneralInfo:e.isGeneralInfo,objectivesReached:e.objectivesReached,objectivesDestroyed:e.objectivesDestroyed,zoneCaptured:e.zoneCaptured,detailedStatistics:ze(e.detailedStatistics,Mt),vehicle:e.vehicle.longName?{
-      ...N(e.vehicle),longName:e.vehicle.longName
+    isGeneralInfo:e.isGeneralInfo,objectivesReached:e.objectivesReached,objectivesDestroyed:e.objectivesDestroyed,zoneCaptured:e.zoneCaptured,detailedStatistics:He(e.detailedStatistics,Mt),vehicle:e.vehicle.longName?{
+      ...g(e.vehicle),longName:e.vehicle.longName
     }:null
   }
 }
 function Kt(e){
-  const a=ee(e.vehiclesStats,e=>e.isGeneralInfo)?.detailedStatistics??[],t=ee(a,e=>e.labelKey===Ot.TeamHitsDamage)?.value,s=void 0!==t?Pe(t,0):0,r=e.efficiencyValues.kills-s;
+  const a=Q(e.vehiclesStats,e=>e.isGeneralInfo)?.detailedStatistics??[],t=Q(a,e=>e.labelKey===Ot.TeamHitsDamage)?.value,s=void 0!==t?Be(t,0):0,r=e.efficiencyValues.kills-s;
   return{
-    personal:e.isPersonal,squadIndex:e.squadIndex,rank:e.rank,respawns:e.respawns,achievements:ze(e.achievements,$t),account:De(e.userNames),vehicles:ze(e.vehiclesStats,Wt),efficiencyValues:{
+    personal:e.isPersonal,squadIndex:e.squadIndex,rank:e.rank,respawns:e.respawns,achievements:He(e.achievements,$t),account:Ve(e.userNames),vehicles:He(e.vehiclesStats,Wt),efficiencyValues:{
       ...(n=e?.efficiencyValues,{
         damageDealt:n?.damageDealt,kills:n?.kills,earnedXp:n?.earnedXp
       }),subtractedAlliesKills:r
@@ -160,7 +160,7 @@ function as(e){
   return e.groupID===Zt?Zt:e.groupID===Yt?Yt:e.groupID===Jt?Jt:(console.error(`Achievement ${e.name} with a group ${e.groupID} is not detected`),Qt)
 }
 function ts(e){
-  return m(e,(e,a)=>{
+  return o(e,(e,a)=>{
     const t=as(e),s=as(a),r=es.indexOf(t),n=es.indexOf(s);
     return t!==s?r-n:function(e,a){
       const t=Ut.readOrEmpty(`achievements.${e.name}`),s=Ut.readOrEmpty(`achievements.${a.name}`);
@@ -182,7 +182,7 @@ function _s({
 }){
   return!(a||!e)&&(t===us||null===t)
 }
-var[ps,hs]=Se()(e=>{
+var[ps,hs]=Te()(e=>{
   const{
     observableModel:a,cleanup:t
   }=e,s={
@@ -195,26 +195,26 @@ var[ps,hs]=Se()(e=>{
     vehiclesFinancialStats:a.arrayClone("financialReport.vehiclesFinancialStats")
   },
   r={
-    battleInfo:a.transform(Ft,"battleInfo"),allPlayersDictionary:be.box({}),personalEfficiency:{
-      opened:be.box(!1),achievements:a.transform(e=>ts(ze(e,$t)),"achievements"),statistics:{
-        details:be.box([])
+    battleInfo:a.transform(Ft,"battleInfo"),allPlayersDictionary:ge.box({}),personalEfficiency:{
+      opened:ge.box(!1),achievements:a.transform(e=>ts(He(e,$t)),"achievements"),statistics:{
+        details:ge.box([])
       }
     },
     teamsStatistic:{
-      allies:be.box([]),enemies:be.box([]),sorting:be.box({
+      allies:ge.box([]),enemies:ge.box([]),sorting:ge.box({
         column:qe.Player,sortDirection:Ue.Desc
-      }),selectedRow:be.box(),selectedVehicle:be.box(null)
+      }),selectedRow:ge.box(),selectedVehicle:ge.box(null)
     },
     user:{
-      names:be.box()
+      names:ge.box()
     }
   };
   Ze(t)(()=>{
     const e={};
-    r.teamsStatistic.allies.set(ze(s.teamsStatistic.allies.get(),a=>{
+    r.teamsStatistic.allies.set(He(s.teamsStatistic.allies.get(),a=>{
       const t=Kt(a);
       return e[t.account.username]=t,t
-    })),r.teamsStatistic.enemies.set(ze(s.teamsStatistic.enemies.get(),a=>{
+    })),r.teamsStatistic.enemies.set(He(s.teamsStatistic.enemies.get(),a=>{
       const t=Kt(a);
       return e[t.account.username]=t,t
     }));
@@ -235,24 +235,24 @@ var[ps,hs]=Se()(e=>{
     return e&&function({
       anyPremium:e,credits:a,xp:t
     }){
-      const s=ee(a,e=>e.paramName===Qa),r=ee(t,e=>e.paramName===wa),n=[];
+      const s=Q(a,e=>e.paramName===Qa),r=Q(t,e=>e.paramName===wa),n=[];
       return s&&n.push(Gt(s,e)),r&&n.push(Gt(r,e)),n
     }({
       anyPremium:s.hasAnyPremium.get(),credits:e.credits.total,xp:e.xp.total
     })
   }),i=de.shallow(()=>{
-    const e=ee(r.teamsStatistic.allies.get(),e=>e.personal);
+    const e=Q(r.teamsStatistic.allies.get(),e=>e.personal);
     return Le(void 0!==e,"Personal info is not found"),e
   }),l=de.shallow(()=>{
     const e=r.teamsStatistic.selectedRow.get();
     if(void 0===e)return;
     const a=(e.team===cs?r.teamsStatistic.allies:r.teamsStatistic.enemies).get();
-    return ee(a,a=>a.account.username===e.username)
+    return Q(a,a=>a.account.username===e.username)
   }),o=de.shallow(()=>{
     const e=r.allPlayersDictionary.get();
-    return Ae(s.personalEfficiency.details.get(),(a,t)=>{
+    return ke(s.personalEfficiency.details.get(),(a,t)=>{
       const s=function(e){
-        return Ae(e.personalEfficiencyItems,(e,a)=>{
+        return ke(e.personalEfficiencyItems,(e,a)=>{
           switch(a.paramType){
             case"spotted":return e.spotted=a.value,e;
             case"targetKills":return e.killed=a.value,e;
@@ -279,7 +279,7 @@ var[ps,hs]=Se()(e=>{
         })
       }(t);
       if(function(e){
-        return u.structural(e,qt)
+        return c.structural(e,qt)
       }(s))return a;
       const r=e[t.userName];
       return Le(void 0!==r,`Such enemy ${t.userName} is not found`),a.push({
@@ -298,17 +298,17 @@ var[ps,hs]=Se()(e=>{
   const t=e.createCallback(e=>e,"teamStats.onStatsSorted");
   return{
     close:e.createCallbackNoArgs("onClose"),teamEfficiency:{
-      sort:q(e=>{
+      sort:$(e=>{
         a.teamsStatistic.sorting.set(e),t(e)
-      }),selectRow:q(e=>{
+      }),selectRow:$(e=>{
         const t=a.teamsStatistic.selectedRow.get();
         t?.team!==e?.team||t?.username!==e?.username?(a.teamsStatistic.selectedRow.set(e),a.teamsStatistic.selectedVehicle.set(null)):a.teamsStatistic.selectedRow.set(void 0)
-      }),selectVehicle:q(e=>{
+      }),selectVehicle:$(e=>{
         a.teamsStatistic.selectedVehicle.set(e)
       })
     }
   }
-}),bs=e(Y(),1),vs=He(),gs="initial",xs="first",ys="second",Ns="third",js=ce.cubicBezier(.33,0,.25,1),ws=400,Is=(0,bs.createContext)(null);
+}),bs=e(q(),1),vs=Oe(),gs="initial",xs="first",ys="second",Ns="third",js=ce.cubicBezier(.33,0,.25,1),ws=400,Is=(0,bs.createContext)(null);
 function Rs(){
   const e=(0,bs.useContext)(Is);
   if(null===e)throw new Error("You can use the animation context hooks only with the AnimationProvider component");
@@ -317,7 +317,7 @@ function Rs(){
 function Ss({
   children:e
 }){
-  const[a,t]=(0,bs.useState)(gs),[s,r]=(0,bs.useState)(new Set),n=le(),i=M(),l=Me(),o=Me(),c=Me(),d=Me(),m=Me(),u=(0,bs.useCallback)(function(e){
+  const[a,t]=(0,bs.useState)(gs),[s,r]=(0,bs.useState)(new Set),n=ie(),i=F(),l=Me(),o=Me(),c=Me(),d=Me(),m=Me(),u=(0,bs.useCallback)(function(e){
     t(e)
   },[t]);
   (0,bs.useEffect)(()=>{
@@ -334,7 +334,7 @@ function Ss({
           duration:ws,easing:js
         },
         onRest:()=>{
-          t(ys),r(e=>y(e,xs))
+          t(ys),r(e=>v(e,xs))
         }
       });
       case ys:return c.start({
@@ -342,7 +342,7 @@ function Ss({
           duration:ws,easing:js
         },
         onRest:()=>{
-          r(e=>y(e,ys))
+          r(e=>v(e,ys))
         }
       }),void n.run(()=>{
         t(Ns),n.clear()
@@ -358,7 +358,7 @@ function Ss({
           duration:ws,easing:js
         },
         onRest:()=>{
-          r(e=>y(e,Ns))
+          r(e=>v(e,Ns))
         }
       });
       break;
@@ -375,32 +375,32 @@ function Ss({
 var Cs="BattleInfo_d5226211",Ps="BattleInfo_group_962f81f6";
 var Ts=(e,a)=>e>0?a>0?"minutesAndSeconds":"minutesOnly":"secondsOnly",Ds=(0,bs.forwardRef)(function(e,a){
   return(0,vs.jsx)("div",{
-    ...e,"data-name":"BattleInfo",ref:a,className:Re(Cs,e.className)
+    ...e,"data-name":"BattleInfo",ref:a,className:Pe(Cs,e.className)
   })
 });
 Ds.Arena=function({
   arenaName:e,scenario:a,finishReason:t,className:s
 }){
-  return(0,vs.jsx)(l,{
+  return(0,vs.jsx)(i,{
     path:"fl_post_battle_results.battleInfo.arena",params:{
       arenaName:e,scenario:a,finishReason:t
     },
-    className:Re(Ps,s)
+    className:Pe(Ps,s)
   })
 },
 Ds.StartTime=({
   battleStartTime:e,battleDuration:a,className:t
 })=>{
-  const[s,r]=Ie(je(a),["m","s"]);
-  return(0,vs.jsx)(l,{
+  const[s,r]=Se(Ie(a),["m","s"]);
+  return(0,vs.jsx)(i,{
     path:"fl_post_battle_results.battleInfo.time",params:{
-      date:fe.formatDateTime(te.ShortDate,e),time:fe.formatDateTime(te.ShortTime,e),duration:(0,vs.jsx)(l,{
+      date:_e.formatDateTime(ae.ShortDate,e),time:_e.formatDateTime(ae.ShortTime,e),duration:(0,vs.jsx)(i,{
         path:`fl_post_battle_results.battleInfo.timeLeft.${Ts(Number(s),Number(r))}`,params:{
           minutes:s,seconds:r
         }
       })
     },
-    className:Re(Ps,t)
+    className:Pe(Ps,t)
   })
 };
 var Bs="Divider_80a19f4b";
@@ -408,7 +408,7 @@ function As({
   classNames:e
 }){
   return(0,vs.jsx)("div",{
-    className:Re(Bs,e?.base),children:(0,vs.jsx)(Te,{
+    className:Pe(Bs,e?.base),children:(0,vs.jsx)(Ae,{
       className:e?.image,width:"100%",height:"100%",path:"post_battle.row_divider",fit:"cover"
     })
   })
@@ -419,12 +419,12 @@ var Vs="Header_content_b9e0be90",ks="Header_title_91e5448a",Es="Header_divider_e
   const n=$e.resolve("strings");
   return(0,vs.jsxs)(Hs,{
     ...s,ref:r,children:[(0,vs.jsxs)("div",{
-      className:Re(Vs,t?.content),children:[(0,vs.jsx)("div",{
-        className:Re(ks,t?.title),children:fe.toUpperCase(n.readOrEmpty(e))
+      className:Pe(Vs,t?.content),children:[(0,vs.jsx)("div",{
+        className:Pe(ks,t?.title),children:_e.toUpperCase(n.readOrEmpty(e))
       }),a]
     }),(0,vs.jsx)(As,{
       classNames:{
-        base:Re(Es,t?.divider),image:zs
+        base:Pe(Es,t?.divider),image:zs
       }
     })]
   })
@@ -443,7 +443,7 @@ function Ms(e,a){
 }
 function Ws(e){
   return{
-    paramName:e.paramName,currencyType:e.currencyType,baseValue:e.baseValue,premiumValue:e.premiumValue,recordsItemsDetails:Ae(e.detailedItemRecords,(e,a)=>(e[a.itemName]=a.itemValue,e),{})
+    paramName:e.paramName,currencyType:e.currencyType,baseValue:e.baseValue,premiumValue:e.premiumValue,recordsItemsDetails:ke(e.detailedItemRecords,(e,a)=>(e[a.itemName]=a.itemValue,e),{})
   }
 }
 function Ks(e,a){
@@ -452,7 +452,7 @@ function Ks(e,a){
   return[t,s]
 }
 function qs(e,a){
-  const t=ze(e.earned,Ws),s=ze(e.expenses,Ws),r=ze(e.total,Ws),n=[Qa,st],i=[Ua,tt],[l,o]=Ks(r,e=>n.includes(e.paramName)),[c,d]=Ks([...t,...l],e=>i.includes(e.paramName));
+  const t=He(e.earned,Ws),s=He(e.expenses,Ws),r=He(e.total,Ws),n=[Qa,st],i=[Ua,tt],[l,o]=Ks(r,e=>n.includes(e.paramName)),[c,d]=Ks([...t,...l],e=>i.includes(e.paramName));
   return{
     records:[...d,...s].sort(a),total:(m=[...o,...c],m.filter(e=>{
       const a=Boolean(e.premiumValue||e.baseValue),t=ht.has(e.paramName);
@@ -504,9 +504,9 @@ function Qs(e,a){
 }
 function er(e,a){
   return(t=function(e,a){
-    const t=me(a,e=>dt.has(e.paramName),e=>Zs({
+    const t=ue(a,e=>dt.has(e.paramName),e=>Zs({
       freeXp:e
-    })),s=ze(e,e=>ct.has(e.paramName)?Zs({
+    })),s=He(e,e=>ct.has(e.paramName)?Zs({
       xp:e
     }):Zs({
       xp:e,freeXp:Js(e,a)
@@ -520,7 +520,7 @@ function er(e,a){
 }
 function ar(e,a){
   return(t=function(e,a){
-    return ze(e,e=>mt.has(e.paramName)?Ys({
+    return He(e,e=>mt.has(e.paramName)?Ys({
       credits:e
     }):Ys({
       credits:e,gold:Qs(e,a)
@@ -564,11 +564,11 @@ function rr({
     earned:a.earned,expenses:a.expenses,total:a.total
   }))
 }
-var[nr,ir]=Se()(({
+var[nr,ir]=Te()(({
   observableModel:e
 })=>{
   const a={
-    ...e.primitives(["hasAnyPremium","hasWotPlus"],"financialReport"),vehiclesFinancialStats:e.arrayClone("financialReport.vehiclesFinancialStats"),selectedVehicle:be.box(null)
+    ...e.primitives(["hasAnyPremium","hasWotPlus"],"financialReport"),vehiclesFinancialStats:e.arrayClone("financialReport.vehiclesFinancialStats"),selectedVehicle:ge.box(null)
   },
   t=de.primitive(()=>{
     const e=a.selectedVehicle.get();
@@ -618,21 +618,21 @@ var[nr,ir]=Se()(({
 },({
   model:e
 })=>({
-  selectVehicle:q(a=>{
+  selectVehicle:$(a=>{
     e.selectedVehicle.set(a)
   })
 })),lr="ListItem_received_ffdc3010",or="ListItem_separator_71797768",cr="ListItem_label_4ab3c391",dr="ListItem_label__withIcon_c2381aa",mr="ListItem_labelIcon_acb0da4",ur=Ge("ListItem","ListItem_bcdaabbd"),fr=(0,bs.forwardRef)(({
   labelKey:e,children:a,classNames:t,params:s,labelIconPath:r,...n
-},i)=>{
+},l)=>{
   const o=$e.resolve("images");
   return(0,vs.jsxs)(ur,{
-    ...n,ref:i,"data-test-id":`${e}`,children:[(0,vs.jsxs)("div",{
-      className:Re(cr,void 0!==r&&dr,t?.label),children:[void 0!==r&&(0,vs.jsx)("div",{
+    ...n,ref:l,"data-test-id":`${e}`,children:[(0,vs.jsxs)("div",{
+      className:Pe(cr,void 0!==r&&dr,t?.label),children:[void 0!==r&&(0,vs.jsx)("div",{
         style:{
           backgroundImage:`url(${o.readOrEmpty(r)})`
         },
-        className:Re(mr,t?.icon)
-      }),(0,vs.jsx)(l,{
+        className:Pe(mr,t?.icon)
+      }),(0,vs.jsx)(i,{
         upgradeLegacy:!0,path:e,params:s
       })]
     }),(0,vs.jsxs)("div",{
@@ -654,9 +654,9 @@ gr=({
     ...t,labelKey:vr[r],classNames:{
       label:br,...t.classNames
     },
-    children:(0,vs.jsx)(_,{
+    children:(0,vs.jsx)(m,{
       reverse:!0,type:"crystal",size:s.small,children:(0,vs.jsx)("div",{
-        className:Re(_r,n<0&&hr,a&&pr),children:fe.formatNumber("integral",n)
+        className:Pe(_r,n<0&&hr,a&&pr),children:_e.formatNumber("integral",n)
       })
     })
   }):(console.error(`Parameter name "${r}" is not valid for bonds`),null)
@@ -694,17 +694,17 @@ var Tr="Header_cbd845ec",Dr="Header_content_a63fb46c",Br="Header_title_7b852a7",
     model:s
   }=ir(),r=s.hasAnyPremium.get();
   return(0,vs.jsx)(Os,{
-    ...a,ref:t,className:Re(Tr,e),title:"battle_results.details.credits",children:(0,vs.jsxs)("div",{
+    ...a,ref:t,className:Pe(Tr,e),title:"battle_results.details.credits",children:(0,vs.jsxs)("div",{
       className:Dr,children:[(0,vs.jsx)("div",{
-        className:Re(Br,!r&&Ar),children:(0,vs.jsx)(l,{
+        className:Pe(Br,!r&&Ar),children:(0,vs.jsx)(i,{
           path:"battle_results.common.details.noPremTitle"
         })
       }),(0,vs.jsxs)("div",{
-        className:Re(Br,r&&Ar,Vr),children:[(0,vs.jsx)("div",{
-          className:kr,children:(0,vs.jsx)(Te,{
+        className:Pe(Br,r&&Ar,Vr),children:[(0,vs.jsx)("div",{
+          className:kr,children:(0,vs.jsx)(Ae,{
             width:32,height:32,path:"post_battle.wot_premium_32x32"
           })
-        }),(0,vs.jsx)(l,{
+        }),(0,vs.jsx)(i,{
           path:"battle_results.getPremiumPopover.prem"
         })]
       })]
@@ -730,10 +730,10 @@ var Tr="Header_cbd845ec",Dr="Header_content_a63fb46c",Br="Header_title_7b852a7",
 Hr="IncomeStatement_c4136bc5",Or="IncomeStatement_verticalBar_5fb90511",Fr="IncomeStatement_scrollWrapper_ce2dde41",Xr="IncomeStatement_scrollContent_31153602",Gr="IncomeStatement_scrollContent__initialized_ce1144d0",$r=Ge("CreditsIncomeStatement"),Lr=({
   children:e
 })=>{
-  const a=zr(U().api);
-  return(0,vs.jsx)(re,{
+  const a=zr(L().api);
+  return(0,vs.jsx)(se,{
     classNames:{
-      wrapper:Fr,content:Re(Xr,a&&Gr)
+      wrapper:Fr,content:Pe(Xr,a&&Gr)
     },
     children:e
   })
@@ -741,10 +741,10 @@ Hr="IncomeStatement_c4136bc5",Or="IncomeStatement_verticalBar_5fb90511",Fr="Inco
 Mr=(0,bs.forwardRef)(({
   children:e,className:a,scrollable:t,...s
 },r)=>(0,vs.jsx)($r,{
-  className:Re(Hr,a),...s,ref:r,children:t?(0,vs.jsxs)(ye,{
+  className:Pe(Hr,a),...s,ref:r,children:t?(0,vs.jsxs)(je,{
     children:[(0,vs.jsx)(Lr,{
       children:e
-    }),(0,vs.jsx)(Ne,{
+    }),(0,vs.jsx)(we,{
       classNames:{
         base:Or
       }
@@ -754,21 +754,21 @@ Mr=(0,bs.forwardRef)(({
   formatter:e,value:a,modifier:t,currency:s,classNames:r,iconPath:n
 })=>{
   if(void 0===a)return null;
-  const i=t===xt||a<0;
+  const l=t===xt||a<0;
   return(0,vs.jsxs)("div",{
-    className:Re(Wr,r?.base),children:[(0,vs.jsxs)("div",{
-      className:Re(Kr,i&&qr,r?.value),"data-test-id":`${s}`,children:[We(t).with(gt,()=>(0,vs.jsx)(l,{
+    className:Pe(Wr,r?.base),children:[(0,vs.jsxs)("div",{
+      className:Pe(Kr,l&&qr,r?.value),"data-test-id":`${s}`,children:[We(t).with(gt,()=>(0,vs.jsx)(i,{
         path:"common.multiplierSmall"
-      })).with(vt,()=>(0,vs.jsx)(l,{
+      })).with(vt,()=>(0,vs.jsx)(i,{
         path:"common.multiplierSmall"
-      })).with(xt,()=>(0,vs.jsx)(l,{
+      })).with(xt,()=>(0,vs.jsx)(i,{
         path:"common.multiplierSmall"
-      })).with(Nt,()=>(0,vs.jsx)(l,{
+      })).with(Nt,()=>(0,vs.jsx)(i,{
         path:"common.plus"
-      })).otherwise(()=>null),e(a,s),t===yt&&(0,vs.jsx)(l,{
+      })).otherwise(()=>null),e(a,s),t===yt&&(0,vs.jsx)(i,{
         path:"common.common.percent"
       })]
-    }),n&&(0,vs.jsx)(Te,{
+    }),n&&(0,vs.jsx)(Ae,{
       width:24,height:24,path:n
     })]
   })
@@ -787,15 +787,15 @@ var on=({
   credits:e,gold:a,modifier:t,inactive:s=!1,total:r,paramName:n,wotPlusActive:i
 })=>{
   function l(e,a){
-    return"aogasFactor"===n?fe.formatReal("fractional",e):fe.formatNumber("gold"===a?"gold":"integral",e)
+    return"aogasFactor"===n?_e.formatReal("fractional",e):_e.formatNumber("gold"===a?"gold":"integral",e)
   }
   return(0,vs.jsxs)("div",{
-    className:Re(Zr,s&&Yr),children:[(0,vs.jsx)("div",{
-      className:Re(Jr,en,ln({
+    className:Pe(Zr,s&&Yr),children:[(0,vs.jsx)("div",{
+      className:Pe(Jr,en,ln({
         paramName:n,wotPlusActive:i,value:e
       })&&Qr),children:(0,vs.jsx)(Ur,{
         formatter:l,value:e,currency:ta,modifier:t,classNames:{
-          value:Re(sn,r&&rn)
+          value:Pe(sn,r&&rn)
         },
         iconPath:zt(ta,n)
       })
@@ -804,9 +804,9 @@ var on=({
         className:tn
       })
     }),(0,vs.jsx)("div",{
-      className:Re(Jr,0===a&&Qr),children:(0,vs.jsx)(Ur,{
+      className:Pe(Jr,0===a&&Qr),children:(0,vs.jsx)(Ur,{
         value:a,currency:sa,modifier:t,classNames:{
-          value:Re(sn,nn,r&&rn)
+          value:Pe(sn,nn,r&&rn)
         },
         formatter:l,iconPath:zt(sa,n)
       })
@@ -831,7 +831,7 @@ _n=Ke(({
   const m=d?.referralFactor,u=d?.bonusFactor,f=un[i],_=Bt[et](e,n);
   return(0,vs.jsx)(fr,{
     ...t,labelIconPath:fn[i],labelKey:`battle_results.details.calculations.${f}`,classNames:{
-      label:Re(dn,"wotPlusBonusCredits"===i&&mn)
+      label:Pe(dn,"wotPlusBonusCredits"===i&&mn)
     },
     params:{
       ...m&&{
@@ -856,7 +856,7 @@ _n=Ke(({
     model:r
   }=ir(),n=r.computes.credits();
   return(0,vs.jsx)(Mr,{
-    ...t,ref:s,className:Re(pn,a&&hn,e),scrollable:a,children:ze(n.records,e=>(0,vs.jsx)(_n,{
+    ...t,ref:s,className:Pe(pn,a&&hn,e),scrollable:a,children:He(n.records,e=>(0,vs.jsx)(_n,{
       record:e,className:bn
     },e.paramName))
   })
@@ -876,7 +876,7 @@ _n=Ke(({
 })),wn="Credits_68f91d81",In="Credits_base__scroll_759f08f3",Rn=Ge("Credits"),Sn=(0,bs.forwardRef)(({
   scrollable:e,className:a,...t
 },s)=>(0,vs.jsx)(Rn,{
-  ...t,ref:s,className:Re(wn,e&&In,a)
+  ...t,ref:s,className:Pe(wn,e&&In,a)
 }));
 Sn.Header=Er,Sn.Item=_n,Sn.Total=jn,Sn.IncomeStatement=vn;
 var Cn=(0,bs.forwardRef)((e,a)=>(0,vs.jsx)(Os,{
@@ -899,18 +899,18 @@ var Xn=({
 })=>{
   function l(a){
     switch(e){
-      case ma:return fe.formatReal("woZeroDigits",a);
-      case nt:return fe.formatReal("fractional",a);
-      default:return fe.formatNumber("integral",a)
+      case ma:return _e.formatReal("woZeroDigits",a);
+      case nt:return _e.formatReal("fractional",a);
+      default:return _e.formatNumber("integral",a)
     }
   }
   return(0,vs.jsxs)("div",{
-    className:Re(Pn,r&&Tn),children:[(0,vs.jsx)("div",{
-      className:Re(Dn,An,Fn({
+    className:Pe(Pn,r&&Tn),children:[(0,vs.jsx)("div",{
+      className:Pe(Dn,An,Fn({
         wotPlusActive:i,paramName:e,value:a
       })&&Bn),children:(0,vs.jsx)(Ur,{
         value:a,currency:"xp",modifier:On(e,a)?s:void 0,formatter:l,classNames:{
-          value:Re(En,n&&zn)
+          value:Pe(En,n&&zn)
         },
         iconPath:zt("xp",e)
       })
@@ -919,11 +919,11 @@ var Xn=({
         className:kn
       })
     }),(0,vs.jsx)("div",{
-      className:Re(Dn,Fn({
+      className:Pe(Dn,Fn({
         wotPlusActive:i,paramName:e,value:t
       })&&Bn),children:(0,vs.jsx)(Ur,{
         value:t,currency:aa,modifier:On(e,t)?s:void 0,formatter:l,classNames:{
-          value:Re(En,Hn,n&&zn)
+          value:Pe(En,Hn,n&&zn)
         },
         iconPath:zt(aa,e)
       })
@@ -937,7 +937,7 @@ Kn={
   [Na]:"subscription.wot_plus_32x32",[Va]:"subscription.wot_plus_32x32"
 },
 qn=new Set([Na,Va]),Un=()=>(0,vs.jsx)("span",{
-  className:Ln,children:(0,vs.jsx)(l,{
+  className:Ln,children:(0,vs.jsx)(i,{
     path:"battle_results.details.calculations.maximum"
   })
 }),Zn=Ke(({
@@ -961,7 +961,7 @@ qn=new Set([Na,Va]),Un=()=>(0,vs.jsx)("span",{
       }
     },
     classNames:{
-      label:Re($n,qn.has(e)&&Mn)
+      label:Pe($n,qn.has(e)&&Mn)
     },
     children:(0,vs.jsxs)("div",{
       className:Gn,children:[(0,vs.jsx)(Xn,{
@@ -978,7 +978,7 @@ qn=new Set([Na,Va]),Un=()=>(0,vs.jsx)("span",{
     model:r
   }=ir(),n=r.computes.experience();
   return(0,vs.jsx)(Mr,{
-    ...t,ref:s,className:Re(Yn,a&&Jn,e),scrollable:a,children:ze(n.records,e=>(0,vs.jsx)(Zn,{
+    ...t,ref:s,className:Pe(Yn,a&&Jn,e),scrollable:a,children:He(n.records,e=>(0,vs.jsx)(Zn,{
       record:e,className:Qn
     },e.paramName))
   })
@@ -998,7 +998,7 @@ qn=new Set([Na,Va]),Un=()=>(0,vs.jsx)("span",{
 })),ii="Experience_a014c8c",li="Experience_base__scroll_f75d07c6",oi=Ge("Experience"),ci=(0,bs.forwardRef)(({
   scrollable:e,className:a,...t
 },s)=>(0,vs.jsx)(oi,{
-  ...t,ref:s,className:Re(ii,e&&li,a)
+  ...t,ref:s,className:Pe(ii,e&&li,a)
 }));
 ci.Header=Cn,ci.Item=Zn,ci.Total=ni,ci.IncomeStatement=ei;
 var di={
@@ -1009,17 +1009,17 @@ mi=[25,25],ui=function({
 }){
   const{
     api:s
-  }=U(),[r,i]=ve(s,mi),{
+  }=L(),[r,i]=xe(s,mi),{
     opened:l,close:o
-  }=L();
+  }=O();
   return(0,bs.useEffect)(()=>{
     if(l)return n(()=>n(s.recalculateContent))
-  },[l,s.recalculateContent]),(0,vs.jsx)(re,{
-    className:Re(di.area,!r&&di.area__begin,!i&&di.area__end),classNames:{
+  },[l,s.recalculateContent]),(0,vs.jsx)(se,{
+    className:Pe(di.area,!r&&di.area__begin,!i&&di.area__end),classNames:{
       content:di.scrollContent
     },
     children:a.map(a=>(0,vs.jsx)("div",{
-      className:Re(di.base,a.id===t&&di.base__selected),children:(0,vs.jsxs)(Z,{
+      className:Pe(di.base,a.id===t&&di.base__selected),children:(0,vs.jsxs)(W,{
         className:di.button,onClick:()=>{
           o(),e(a.id)
         },
@@ -1028,9 +1028,9 @@ mi=[25,25],ui=function({
         }),(0,vs.jsxs)("div",{
           className:di.itemLabelWrapper,children:[(0,vs.jsx)("div",{
             className:di.selectIcon
-          }),a.level&&(0,vs.jsx)(G,{
+          }),a.level&&(0,vs.jsx)(z,{
             value:a.level,className:di.vehicleLevel
-          }),a.type&&(0,vs.jsx)(xe,{
+          }),a.type&&(0,vs.jsx)(Ne,{
             type:a.type,size:"x24x24",className:di.vehicleGap
           }),(0,vs.jsx)("div",{
             className:di.vehicleName,children:a.label
@@ -1041,16 +1041,16 @@ mi=[25,25],ui=function({
   })
 },
 fi=function(e){
-  return(0,vs.jsx)(Q.Portal,{
+  return(0,vs.jsx)(Y.Portal,{
     position:"bottom",children:(0,vs.jsx)(Xe,{
-      children:(0,vs.jsxs)(Q.Display,{
-        "data-name":"playlist-dropdown-content",className:di.popover,children:[(0,vs.jsx)(Q.Tip,{
+      children:(0,vs.jsxs)(Y.Display,{
+        "data-name":"playlist-dropdown-content",className:di.popover,children:[(0,vs.jsx)(Y.Tip,{
           position:"top",size:"80rem",offset:"120rem"
         }),(0,vs.jsx)("div",{
-          className:di.list,children:(0,vs.jsxs)(ye,{
+          className:di.list,children:(0,vs.jsxs)(je,{
             children:[(0,vs.jsx)(ui,{
               ...e
-            }),(0,vs.jsx)(Ne,{
+            }),(0,vs.jsx)(we,{
               classNames:{
                 base:di.bar
               }
@@ -1062,8 +1062,8 @@ fi=function(e){
   })
 },
 _i="Trigger_9cdafb94",pi="Trigger_arrow_8ee677b2",hi="Trigger_arrow__opened_38ae933",bi="Trigger_arrowWrapper_68451ace",vi=function(e){
-  const a=M(),t=L();
-  return(0,vs.jsx)(Q.Trigger,{
+  const a=F(),t=O();
+  return(0,vs.jsx)(Y.Trigger,{
     children:s=>(0,vs.jsx)(vs.Fragment,{
       children:(0,vs.jsxs)("div",{
         ...s,onMouseEnter:e=>{
@@ -1078,7 +1078,7 @@ _i="Trigger_9cdafb94",pi="Trigger_arrow_8ee677b2",hi="Trigger_arrow__opened_38ae
         },
         className:_i,children:[e.children,(0,vs.jsx)("div",{
           className:bi,children:(0,vs.jsx)("div",{
-            className:Re(pi,t.opened&&hi)
+            className:Pe(pi,t.opened&&hi)
           })
         })]
       })
@@ -1088,15 +1088,15 @@ _i="Trigger_9cdafb94",pi="Trigger_arrow_8ee677b2",hi="Trigger_arrow__opened_38ae
 gi="VehicleSelector_vehicleName_ff1d26ec",xi="VehicleSelector_vehicleLevel_9e1a557b",yi="VehicleSelector_vehicleGap_250d0374",Ni="VehicleSelector_label_14dee5e6",ji=function(e){
   const{
     value:a
-  }=e,t=ee(e.options,e=>e.id===a);
-  return(0,vs.jsxs)(Q,{
+  }=e,t=Q(e.options,e=>e.id===a);
+  return(0,vs.jsxs)(Y,{
     children:[(0,vs.jsx)(fi,{
       ...e
     }),(0,vs.jsx)(vi,{
       children:(0,vs.jsxs)("div",{
-        className:Ni,children:[t?.level&&(0,vs.jsx)(G,{
+        className:Ni,children:[t?.level&&(0,vs.jsx)(z,{
           value:t.level,className:xi
-        }),t?.type&&(0,vs.jsx)(xe,{
+        }),t?.type&&(0,vs.jsx)(Ne,{
           type:t.type,size:"x24x24",className:yi
         }),(0,vs.jsx)("div",{
           className:gi,children:t.label
@@ -1111,7 +1111,7 @@ wi="FinancialReportVehicleSelector_c6ca6e82",Ii=Ke(function(){
   }=ir(),s=a.vehiclesFinancialStats.get(),r=a.selectedVehicle.get();
   return(0,vs.jsx)("div",{
     className:wi,children:(0,vs.jsx)(ji,{
-      options:ze(s,({
+      options:He(s,({
         vehicle:a,isGeneralInfo:t
       })=>t?{
         id:null,label:e.readOrEmpty("fl_post_battle_results.battleInfo.all_from_battle")
@@ -1125,7 +1125,7 @@ wi="FinancialReportVehicleSelector_c6ca6e82",Ii=Ke(function(){
 })=>{
   const[a,t]=(0,bs.useState)({
     credits:!1,experience:!1
-  }),s=(0,bs.useRef)(null),r=(0,bs.useRef)(null),n=(0,bs.useRef)(null),i=J({
+  }),s=(0,bs.useRef)(null),r=(0,bs.useRef)(null),n=(0,bs.useRef)(null),i=Z({
     margin:18
   },{
     medium:{
@@ -1138,7 +1138,7 @@ wi="FinancialReportVehicleSelector_c6ca6e82",Ii=Ke(function(){
       margin:30
     }
   });
-  return se(s,(0,bs.useCallback)(()=>{
+  return te(s,(0,bs.useCallback)(()=>{
     if(!s.current||!r.current||!n.current)return;
     const{
       height:e
@@ -1206,7 +1206,7 @@ var Hi={
 function Oi({
   children:e,achievements:a,springsProps:t
 }){
-  const[s,r]=(0,bs.useState)(new Set),[n,i]=(0,bs.useState)(void 0),[l,o]=O(a.length,()=>({
+  const[s,r]=(0,bs.useState)(new Set),[n,i]=(0,bs.useState)(void 0),[l,o]=V(a.length,()=>({
     from:{
       ...Hi,...t?.from
     },
@@ -1224,15 +1224,15 @@ var Fi={
 Xi=(0,bs.forwardRef)(function({
   achievement:e,index:a,width:t,height:s,classNames:r
 },n){
-  const i=V({
+  const i=T({
     args:(0,bs.useMemo)(()=>({
       tooltipId:e.tooltipId,tooltipArgs:e.tooltipArgs
     }),[e.tooltipId,e.tooltipArgs])
-  }),l=M(),{
+  }),l=F(),{
     hoverIndex:o,setHoverIndex:c
   }=zi();
   return(0,vs.jsx)("div",{
-    ...i,ref:n,className:Re(Fi.base,Fi[`base__${is(a,o)}`],r?.achievement),onMouseEnter:function(e){
+    ...i,ref:n,className:Pe(Fi.base,Fi[`base__${is(a,o)}`],r?.achievement),onMouseEnter:function(e){
       l.play("mouse-enter",{
         original:e,target:"achievements:achievement"
       }),i.onMouseEnter(e),c(a)
@@ -1245,8 +1245,8 @@ Xi=(0,bs.forwardRef)(function({
         backgroundImage:`url(${R.images.frontline.gui.maps.icons.ranks.c_256x256.$dyn(e.iconName)})`,width:t,height:s
       },
       className:Fi.icon
-    }):(0,vs.jsx)(Te,{
-      width:t,height:s,path:`achievement.x240x240.${e.iconName}`,className:Re(Fi.icon,r?.icon)
+    }):(0,vs.jsx)(Ae,{
+      width:t,height:s,path:`achievement.x240x240.${e.iconName}`,className:Pe(Fi.icon,r?.icon)
     },e.iconName)
   })
 }),Gi="GroupedAchievements_4b56acae",$i="GroupedAchievements_rankGroup_74be9c12",Li="GroupedAchievements_othersGroup_d0fdb9a6",Mi="GroupedAchievements_animatedAchievement_f3a3b8f8",Wi="GroupedAchievements_achievement_977416af",Ki="GroupedAchievements_achievement__notInteractive_76fcea70",qi=(0,bs.memo)(function({
@@ -1255,23 +1255,23 @@ Xi=(0,bs.forwardRef)(function({
   const o=(0,bs.useRef)(null),{
     springs:c,achievements:d,completedAnimationIndexes:m,hoverIndex:u
   }=zi();
-  return b(()=>{
+  return _(()=>{
     if(null===o.current)return;
-    const a=o.current.offsetWidth+Math.floor(t/e.length*2),r=g(i);
+    const a=o.current.offsetWidth+Math.floor(t/e.length*2),r=h(i);
     l(s,a<r?Math.floor((r-a)/2):0)
   },[e.length,r,i,l]),(0,vs.jsx)("div",{
     style:{
       paddingLeft:t,paddingRight:t
     },
-    className:Li,children:ze(e,(t,s)=>{
+    className:Li,children:He(e,(t,s)=>{
       const i=d.length-a-s-1;
-      return(0,vs.jsx)(h.div,{
+      return(0,vs.jsx)(f.div,{
         ref:0===s?o:void 0,className:Mi,style:{
           ...c[i],zIndex:a+s===u?e.length+1:e.length-s
         },
         children:(0,vs.jsx)(Xi,{
           classNames:{
-            achievement:Re(Wi,!1===m.has(i)&&Ki)
+            achievement:Pe(Wi,!1===m.has(i)&&Ki)
           },
           achievement:t,width:r,height:n,index:a+s
         })
@@ -1285,15 +1285,15 @@ Xi=(0,bs.forwardRef)(function({
     springs:s,achievements:r,completedAnimationIndexes:n,hoverIndex:i
   }=zi();
   return(0,vs.jsx)("div",{
-    className:$i,children:ze(e,(l,o)=>{
+    className:$i,children:He(e,(l,o)=>{
       const c=r.length-o-1;
-      return(0,vs.jsx)(h.div,{
+      return(0,vs.jsx)(f.div,{
         className:Mi,style:{
           ...s[c],zIndex:o===i?e.length+1:e.length-o
         },
         children:(0,vs.jsx)(Xi,{
           classNames:{
-            achievement:Re(Wi,!n.has(c)&&Ki)
+            achievement:Pe(Wi,!n.has(c)&&Ki)
           },
           achievement:l,width:a,height:t,index:o
         })
@@ -1303,7 +1303,7 @@ Xi=(0,bs.forwardRef)(function({
 }),Zi=(0,bs.memo)(function({
   className:e
 }){
-  const a=J({
+  const a=Z({
     rank:{
       width:"120rem",height:"120rem",maxContainerWidth:120
     },
@@ -1330,7 +1330,7 @@ Xi=(0,bs.forwardRef)(function({
   }),{
     achievements:t
   }=zi(),s=(0,bs.useMemo)(()=>function(e){
-    return Ae(e,(e,a)=>(as(a)===Zt?e.rank.push(a):e.others.push(a),e),{
+    return ke(e,(e,a)=>(as(a)===Zt?e.rank.push(a):e.others.push(a),e),{
       [ls]:[],[os]:[]
     })
   }(t),[t]),[r,n]=(0,bs.useState)(()=>({
@@ -1341,7 +1341,7 @@ Xi=(0,bs.forwardRef)(function({
     }))
   },[n]);
   return 0===t.length?null:(0,vs.jsxs)("div",{
-    className:Re(Gi,e),children:[s.rank.length>0&&(0,vs.jsx)(Ui,{
+    className:Pe(Gi,e),children:[s.rank.length>0&&(0,vs.jsx)(Ui,{
       achievements:s.rank,medalWidth:a.rank.width,medalHeight:a.rank.height
     }),s.others.length>0&&(0,vs.jsx)(qi,{
       group:os,achievements:s.others,medalWidth:a.others.width,medalHeight:a.others.height,maxContainerWidth:a.others.maxContainerWidth,startIndex:s.rank.length,updateGroupIndent:i,indent:r.others
@@ -1351,7 +1351,7 @@ Xi=(0,bs.forwardRef)(function({
 function tl({
   symbol:e,step:a,delay:t,first:s,handleFirstRest:r
 }){
-  const[n,i]=(0,bs.useState)(!1),[l,o]=D(()=>({
+  const[n,i]=(0,bs.useState)(!1),[l,o]=C(()=>({
     from:{
       y:0,opacity:0
     }
@@ -1377,8 +1377,8 @@ function tl({
   },[a,o,n,t,d]),(0,vs.jsxs)("div",{
     className:Ji,children:[(0,vs.jsx)("div",{
       className:Qi,children:e
-    }),(0,vs.jsx)(h.div,{
-      style:l,className:el,children:T(0,d+1,t=>c?(0,vs.jsx)("div",{
+    }),(0,vs.jsx)(f.div,{
+      style:l,className:el,children:S(0,d+1,t=>c?(0,vs.jsx)("div",{
         children:t
       },t):(0,vs.jsx)("div",{
         style:{
@@ -1392,10 +1392,10 @@ function tl({
 var sl=(0,bs.memo)(function({
   value:e,readyToAnimate:a,className:t,handleAnimationFinished:s,type:r
 }){
-  const[n,i]=o(),l=(0,bs.useMemo)(()=>e.split(""),[e]),c=(0,bs.useCallback)(()=>s(r),[s,r]);
+  const[n,i]=De(),l=(0,bs.useMemo)(()=>e.split(""),[e]),o=(0,bs.useCallback)(()=>s(r),[s,r]);
   return(0,vs.jsx)("div",{
-    ref:n,className:Re(Yi,t),children:l.map((t,s)=>(0,vs.jsx)(tl,{
-      first:0===s,handleFirstRest:c,delay:200*(l.length-s),symbol:t,step:i.type===d.measured&&a?i.size.height:0
+    ref:n,className:Pe(Yi,t),children:l.map((t,s)=>(0,vs.jsx)(tl,{
+      first:0===s,handleFirstRest:o,delay:200*(l.length-s),symbol:t,step:i.type===H.measured&&a?i.size.height:0
     },`${e}-${s}`))
   })
 }),rl="Currency_10720e2d",nl="Currency_icon_4d923f64",il="Currency_icon__visible_9c676b12",ll="Currency_value_54c8fc6b",ol={
@@ -1405,12 +1405,12 @@ cl=Object.keys(ol);
 function dl({
   type:e,value:a,size:t,visibleIfZero:s,readyToAnimate:r,handleAnimationFinished:n
 }){
-  return(e=>cl.includes(e))(e)?0!==a||s?(0,vs.jsx)(_,{
+  return(e=>cl.includes(e))(e)?0!==a||s?(0,vs.jsx)(m,{
     reverse:!0,type:ol[e],size:t,className:rl,classNames:{
-      icon:Re(nl,r&&il)
+      icon:Pe(nl,r&&il)
     },
     children:(0,vs.jsx)(sl,{
-      className:ll,readyToAnimate:r,type:e,handleAnimationFinished:n,value:fe.formatNumber(e===ie.gold?"gold":"integral",a)
+      className:ll,readyToAnimate:r,type:e,handleAnimationFinished:n,value:_e.formatNumber(e===ne.gold?"gold":"integral",a)
     })
   }):null:(console.error(`There is no such currency in the template literal: ${e}`),null)
 }
@@ -1419,9 +1419,9 @@ var ml=Ge("Currencies","Currencies_5b11a533"),ul=Ke(function({
 }){
   const[a,t]=(0,bs.useState)(!1),[r,n]=(0,bs.useState)(new Set),{
     model:i
-  }=hs(),l=i.computes.earnedCurrencies(),o=pe(l),c=M(),{
+  }=hs(),l=i.computes.earnedCurrencies(),o=he(l),c=F(),{
     step:d
-  }=Rs(),m=J({
+  }=Rs(),m=Z({
     value:s.medium
   },{
     medium:{
@@ -1447,10 +1447,10 @@ var ml=Ge("Currencies","Currencies_5b11a533"),ul=Ke(function({
     })
   },[l,c,r]);
   const u=(0,bs.useCallback)(function(e){
-    n(a=>y(a,e))
+    n(a=>v(a,e))
   },[]);
   return(0,vs.jsx)(ml,{
-    className:e,children:ze(l,e=>(0,vs.jsx)(dl,{
+    className:e,children:He(l,e=>(0,vs.jsx)(dl,{
       readyToAnimate:a,size:m.value,handleAnimationFinished:u,...e
     },e.type))
   })
@@ -1465,7 +1465,7 @@ function hl({
 }){
   const a=$e.resolve("videos");
   return(0,vs.jsx)("div",{
-    className:fl,children:(0,vs.jsx)(E,{
+    className:fl,children:(0,vs.jsx)(D,{
       loop:!0,autoplay:!0,className:_l,src:a.read(pl({
         status:e
       }))
@@ -1476,9 +1476,9 @@ var bl="account",vl="vehicle",gl="targetKills",xl="damageDealt",yl="damageBlocke
   [gl]:"library.crossed_tank",[xl]:"library.cross_with_gap",[yl]:"library.blocked",[Nl]:"library.double_target",[jl]:"library.arrow_with_fading",[wl]:"library.eyebrow",[Il]:"library.gear_with_gap"
 };
 var Sl={
-  behaviour:B.contentResponsive,minSize:"0rem",maxSize:"1000rem"
+  behaviour:ve.contentResponsive,minSize:"0rem",maxSize:"1000rem"
 },
-Cl=(A.extraSmall,B.static,A.medium,B.static,A.large,B.static,A.extraLarge,B.static,A.extraSmall,B.static,A.medium,B.static,A.large,B.static,A.extraLarge,B.static,(0,bs.createContext)(null));
+Cl=(P.extraSmall,ve.static,P.medium,ve.static,P.large,ve.static,P.extraLarge,ve.static,P.extraSmall,ve.static,P.medium,ve.static,P.large,ve.static,P.extraLarge,ve.static,(0,bs.createContext)(null));
 function Pl(){
   const e=(0,bs.useContext)(Cl);
   if(null===e)throw new Error("You can use the personal efficiency hooks only with the PersonalEfficiency widget component");
@@ -1502,20 +1502,20 @@ function Ol({
 }){
   const{
     iconsConfig:s
-  }=Pl(),r=f({
+  }=Pl(),r=d({
     contentId:$e.resolve("views").read(e=>a===Il?e.mono.post_battle.tooltips.critical_damage("resId"):e.lobby.tooltips.BattleResultsStatsTooltipView("resId")),args:{
       paramType:a
     }
-  }),n=Ae(e.table.getRowModel().rows,(e,t)=>{
-    const s=t.getValue(a),r=c(s)?s:s.value;
+  }),n=ke(e.table.getRowModel().rows,(e,t)=>{
+    const s=t.getValue(a),r=l(s)?s:s.value;
     return e+(a===wl&&r>0?1:r)
   },0),i=s[a]??"";
   return(0,vs.jsx)("div",{
-    className:Re(Dl,t),children:(0,vs.jsxs)("div",{
+    className:Pe(Dl,t),children:(0,vs.jsxs)("div",{
       ...r,className:Vl,children:[(0,vs.jsx)("div",{
-        className:El,children:fe.formatNumber("integral",n)
+        className:El,children:_e.formatNumber("integral",n)
       }),(0,vs.jsx)("div",{
-        className:kl,children:(0,vs.jsx)(Te,{
+        className:kl,children:(0,vs.jsx)(Ae,{
           width:"100%",height:"100%",path:i
         })
       })]
@@ -1543,7 +1543,7 @@ var Xl="IconCell_99b0caec",Gl=((0,bs.memo)(function({
 }){
   const{
     iconsConfig:r
-  }=Pl(),n=f({
+  }=Pl(),n=d({
     contentId:$e.resolve("views").read(e=>e.lobby.tooltips.BattleResultsStatsTooltipView("resId")),args:(0,bs.useMemo)(()=>({
       userName:t,paramType:a
     }),[a,t])
@@ -1551,20 +1551,20 @@ var Xl="IconCell_99b0caec",Gl=((0,bs.memo)(function({
   if(0===e)return null;
   const i=r[a]??"";
   return(0,vs.jsx)("div",{
-    ...n,className:Re(Xl,s),children:(0,vs.jsx)(Te,{
+    ...n,className:Pe(Xl,s),children:(0,vs.jsx)(Ae,{
       width:"32rem",height:"32rem",path:i
     })
   })
 }),"NumberCell_c62bf499"),$l=((0,bs.memo)(function({
   value:e,userName:a,name:t,className:s
 }){
-  const r=f({
+  const r=d({
     contentId:$e.resolve("views").read(e=>t===Il?e.mono.post_battle.tooltips.critical_damage("resId"):e.lobby.tooltips.BattleResultsStatsTooltipView("resId")),args:(0,bs.useMemo)(()=>({
       userName:a,paramType:t
     }),[t,a])
   });
   return 0===e?null:(0,vs.jsx)("div",{
-    ...r,className:Re(Gl,s),children:fe.formatNumber("integral",e)
+    ...r,className:Pe(Gl,s),children:_e.formatNumber("integral",e)
   })
 }),{
   "media-wrapper":"NumberWithCounterCell_media-wrapper_f75bc9d5",root:"NumberWithCounterCell_root_f75bc9d5",base:"NumberWithCounterCell_f729c44",counter:"NumberWithCounterCell_counter_8bb0eb59",counter__hidden:"NumberWithCounterCell_counter__hidden_468e7d52",counterValue:"NumberWithCounterCell_counterValue_566cc1fa",roundedCount:"NumberWithCounterCell_roundedCount_c97dad37"
@@ -1572,16 +1572,16 @@ var Xl="IconCell_99b0caec",Gl=((0,bs.memo)(function({
 function Ll({
   count:e
 }){
-  const a=Ve({
+  const a=Ee({
     body:e.toString()
   }),t=function(e,a){
     return e<a?e:Math.floor(e/1e3)
   }(e,1e3);
   return(0,vs.jsx)("div",{
     className:$l.counterValue,children:t===e?e:(0,vs.jsx)("div",{
-      ...a,className:$l.roundedCount,children:(0,vs.jsx)(l,{
+      ...a,className:$l.roundedCount,children:(0,vs.jsx)(i,{
         path:"common.numberAbbrev",params:{
-          value:fe.formatNumber("integral",Math.min(t,99))
+          value:_e.formatNumber("integral",Math.min(t,99))
         }
       })
     })
@@ -1591,7 +1591,7 @@ function Ll({
 }){
   const{
     iconsConfig:n
-  }=Pl(),i=f({
+  }=Pl(),i=d({
     contentId:$e.resolve("views").read(e=>e.lobby.tooltips.BattleResultsStatsTooltipView("resId")),args:(0,bs.useMemo)(()=>({
       userName:s,paramType:t
     }),[t,s])
@@ -1599,8 +1599,8 @@ function Ll({
   if(0===e&&0===a)return null;
   const l=n[t]??"";
   return(0,vs.jsxs)("div",{
-    ...i,className:Re($l.base,r),children:[e>0&&fe.formatNumber("integral",e),(0,vs.jsxs)("div",{
-      className:Re($l.counter,0===a&&$l.counter__hidden),children:[(0,vs.jsx)(Te,{
+    ...i,className:Pe($l.base,r),children:[e>0&&_e.formatNumber("integral",e),(0,vs.jsxs)("div",{
+      className:Pe($l.counter,0===a&&$l.counter__hidden),children:[(0,vs.jsx)(Ae,{
         className:$l.icon,width:"32rem",height:"32rem",path:l
       }),a>=2&&(0,vs.jsx)(Ll,{
         count:a
@@ -1608,49 +1608,49 @@ function Ll({
     })]
   })
 });
-var Ml="Index_align_5032d1bf",Wl="Index_align__right_9d371d4f",Kl=k();
+var Ml="Index_align_5032d1bf",Wl="Index_align__right_9d371d4f",Kl=U();
 function ql(){
   return[Kl.accessor("killed",{
     id:gl,header:e=>(0,vs.jsx)(Fl,{
-      info:e,name:gl,className:Re(Bl,Al)
+      info:e,name:gl,className:Pe(Bl,Al)
     }),enableSorting:!1,meta:{
-      column:Sl,className:Re(Ml,Wl)
+      column:Sl,className:Pe(Ml,Wl)
     }
   }),Kl.accessor("damageDealt",{
     id:xl,header:e=>(0,vs.jsx)(Fl,{
       info:e,name:xl,className:Bl
     }),enableSorting:!1,meta:{
-      className:Re(Ml,Wl),column:Sl
+      className:Pe(Ml,Wl),column:Sl
     }
   }),Kl.accessor("damageBlockedByArmor",{
     id:yl,header:e=>(0,vs.jsx)(Fl,{
       info:e,name:yl,className:Bl
     }),enableSorting:!1,meta:{
-      className:Re(Ml,Wl),column:Sl
+      className:Pe(Ml,Wl),column:Sl
     }
   }),Kl.accessor("damageAssisted",{
     id:Nl,header:e=>(0,vs.jsx)(Fl,{
       info:e,name:Nl,className:Bl
     }),enableSorting:!1,meta:{
-      className:Re(Ml,Wl),column:Sl
+      className:Pe(Ml,Wl),column:Sl
     }
   }),Kl.accessor("damageAssistedStun",{
     id:jl,header:e=>(0,vs.jsx)(Fl,{
       info:e,name:jl,className:Bl
     }),enableSorting:!1,meta:{
-      className:Re(Ml,Wl),column:Sl
+      className:Pe(Ml,Wl),column:Sl
     }
   }),Kl.accessor("spotted",{
     id:wl,header:e=>(0,vs.jsx)(Fl,{
       info:e,name:wl,className:Bl
     }),enableSorting:!1,meta:{
-      className:Re(Ml,Wl),column:Sl
+      className:Pe(Ml,Wl),column:Sl
     }
   }),Kl.accessor("criticalDamage",{
     id:Il,header:e=>(0,vs.jsx)(Fl,{
       info:e,name:Il,className:Bl
     }),enableSorting:!1,meta:{
-      className:Re(Ml,Wl),column:Sl
+      className:Pe(Ml,Wl),column:Sl
     }
   })]
 }
@@ -1659,24 +1659,24 @@ var Ul="TableHeader_row_a81d3e65",Zl=(0,bs.memo)(function({
 }){
   const{
     table:a
-  }=Ee();
-  return(0,vs.jsx)(Fe.Header,{
-    className:e?.base,children:ze(a.getHeaderGroups(),(a,t)=>(0,vs.jsx)(Fe.Row,{
-      className:Re(Ul,e?.row),children:ze(a.headers,(a,s)=>(0,vs.jsx)(Fe.Cell,{
+  }=K();
+  return(0,vs.jsx)(Ce.Header,{
+    className:e?.base,children:He(a.getHeaderGroups(),(a,t)=>(0,vs.jsx)(Ce.Row,{
+      className:Pe(Ul,e?.row),children:He(a.headers,(a,s)=>(0,vs.jsx)(Ce.Cell,{
         onClick:a.column.getToggleSortingHandler(),className:e?.cell,cell:{
-          ...a,rowIndex:t,index:s,tablePart:i.header
+          ...a,rowIndex:t,index:s,tablePart:me.header
         },
-        children:!a.isPlaceholder&&Be(a.column.columnDef.header,a.getContext())
+        children:!a.isPlaceholder&&J(a.column.columnDef.header,a.getContext())
       },a.id))
     },a.id))
   })
 }),Yl=function({
   data:e,config:a,className:t
 }){
-  const s=K();
+  const s=X();
   return(0,vs.jsx)(Tl,{
-    children:(0,vs.jsx)(W,{
-      data:e,columns:a,enableMultiRowSelection:!1,getRowId:e=>e.account.username,children:(0,vs.jsx)(Fe,{
+    children:(0,vs.jsx)(M,{
+      data:e,columns:a,enableMultiRowSelection:!1,getRowId:e=>e.account.username,children:(0,vs.jsx)(Ce,{
         className:t,children:(0,vs.jsx)(Zl,{})
       },s.breakpoint.name)
     })
@@ -1687,20 +1687,20 @@ Jl="PersonalEfficiency_messagesPanel_d1b1fa0b",Ql="PersonalEfficiency_message_d7
     model:e
   }=hs(),a=e.computes.personalEfficiency(),t=e.battleInfo.get().finishReasonClarification,s=$e.resolve("strings"),{
     personalEfficiencyRef:r
-  }=Rs(),[n]=D(()=>({
+  }=Rs(),[n]=C(()=>({
     from:{
       opacity:0
     },
     ref:r
   })),i=(0,bs.useMemo)(ql,[]);
-  return 0===a.length?(0,vs.jsxs)(h.div,{
+  return 0===a.length?(0,vs.jsxs)(f.div,{
     style:n,className:Jl,children:[""!==t&&(0,vs.jsx)("div",{
       className:Ql,children:s.readOrEmpty(`battle_results.finish.clarification.${t}`)
     }),(0,vs.jsx)("div",{
       className:Ql,children:s.readOrEmpty("battle_results.common.battleEfficiency.noEfficiency")
     })]
   }):(0,vs.jsx)("div",{
-    className:eo,children:(0,vs.jsxs)(h.div,{
+    className:eo,children:(0,vs.jsxs)(f.div,{
       style:n,children:[""!==t&&(0,vs.jsx)("div",{
         className:to,onClick:e=>e.stopPropagation(),children:(0,vs.jsx)("div",{
           className:Ql,children:s.readOrEmpty(`battle_results.finish.clarification.${t}`)
@@ -1716,16 +1716,16 @@ Jl="PersonalEfficiency_messagesPanel_d1b1fa0b",Ql="PersonalEfficiency_message_d7
 no=Ge("Overview",ro.base),io=Ke(function({
   className:e
 }){
-  const a=$e.resolve("strings"),t=M(),{
+  const a=$e.resolve("strings"),t=F(),{
     model:s
   }=hs(),r=s.personalEfficiency.achievements.get(),{
     step:n,battleStatusRef:i,earnedCurrenciesRef:l
-  }=Rs(),[o]=D(()=>({
+  }=Rs(),[o]=C(()=>({
     from:{
       opacity:0,y:"-10rem"
     },
     ref:i
-  })),[c]=D(()=>({
+  })),[c]=C(()=>({
     from:{
       opacity:0,y:"-10rem"
     },
@@ -1745,7 +1745,7 @@ no=Ge("Overview",ro.base),io=Ke(function({
           onRest(){
             t.play("achievementAppeared",{
               target:"overview"
-            }),m(e=>y(e,s))
+            }),m(e=>v(e,s))
           }
         }
       }),d.start(t=>({
@@ -1756,23 +1756,23 @@ no=Ge("Overview",ro.base),io=Ke(function({
     }
   },[n,d,m,t,r.length]),(0,vs.jsxs)(no,{
     className:e,children:[(0,vs.jsx)("div",{
-      className:Re(ro.background,u&&ro[`background__${u}`])
+      className:Pe(ro.background,u&&ro[`background__${u}`])
     }),(0,vs.jsx)("div",{
       className:ro.cornerShadow
     }),(0,vs.jsx)("div",{
-      className:Re(ro.bottomGradient,u&&ro[`bottomGradient__${u}`])
+      className:Pe(ro.bottomGradient,u&&ro[`bottomGradient__${u}`])
     }),(0,vs.jsxs)("div",{
-      className:Re(ro.info,0===r.length&&ro.info__withoutMedals),children:[(0,vs.jsx)(hl,{
+      className:Pe(ro.info,0===r.length&&ro.info__withoutMedals),children:[(0,vs.jsx)(hl,{
         status:u
       }),(0,vs.jsx)("div",{
-        className:ro.statusWrapper,children:(0,vs.jsx)(h.div,{
+        className:ro.statusWrapper,children:(0,vs.jsx)(f.div,{
           style:o,className:ro.status,children:(0,vs.jsx)("div",{
-            className:ro.statusText,"data-test-id":"winStatus",children:fe.toUpperCase(a.readOrEmpty(`battle_results.status.${u}`))
+            className:ro.statusText,"data-test-id":"winStatus",children:_e.toUpperCase(a.readOrEmpty(`battle_results.status.${u}`))
           })
         })
       }),(0,vs.jsx)(Zi,{
         className:ro.achievements
-      }),(0,vs.jsx)(h.div,{
+      }),(0,vs.jsx)(f.div,{
         style:c,className:ro.currencies,children:(0,vs.jsx)(ul,{})
       })]
     }),(0,vs.jsx)(so,{})]
@@ -1790,7 +1790,7 @@ no=Ge("Overview",ro.base),io=Ke(function({
   classNames:e,className:a,...t
 },s){
   return(0,vs.jsx)("div",{
-    ...t,ref:s,className:Re(oo,e?.base,a),children:(0,vs.jsx)(Te,{
+    ...t,ref:s,className:Pe(oo,e?.base,a),children:(0,vs.jsx)(Ae,{
       className:e?.image,width:"100%",height:"100%",path:"post_battle.row_divider",fit:"cover"
     })
   })
@@ -1803,11 +1803,11 @@ function uo(e,a){
 var fo=(0,bs.forwardRef)(function({
   achievement:e,achievementsLength:a,index:t,hoverIndex:s,setHoverIndex:r,...n
 },i){
-  const l=M(),o=V({
+  const l=F(),o=T({
     args:{
       tooltipId:e.tooltipId,tooltipArgs:e.tooltipArgs
     }
-  }),c=J({
+  }),c=Z({
     width:"48rem",height:"48rem",path:`achievement.c_48x48.${e.iconName}`
   },{
     medium:{
@@ -1815,7 +1815,7 @@ var fo=(0,bs.forwardRef)(function({
     }
   });
   return(0,vs.jsx)("div",{
-    ...n,...o,className:Re(mo.achievement,mo[`achievement__${uo(t,s)}`]),style:{
+    ...n,...o,className:Pe(mo.achievement,mo[`achievement__${uo(t,s)}`]),style:{
       zIndex:t===s?a+1:a-t
     },
     onMouseEnter:function(e){
@@ -1826,43 +1826,43 @@ var fo=(0,bs.forwardRef)(function({
     onMouseLeave:()=>{
       o.onMouseLeave(),r(void 0)
     },
-    children:(0,vs.jsx)(Te,{
+    children:(0,vs.jsx)(Ae,{
       ref:i,className:mo.achievementIcon,...c
     },e.iconName)
   })
 }),_o=Ke(function({
   team:e,account:a,vehicles:t,achievements:s,squadIndex:r,personal:n
 }){
-  const i=$e.resolve("strings"),[o,c]=(0,bs.useState)(void 0),{
+  const l=$e.resolve("strings"),[o,c]=(0,bs.useState)(void 0),{
     model:d,controls:m
-  }=hs(),u=d.teamsStatistic.selectedVehicle.get(),f=d.computes.personalInfo(),_=J({
+  }=hs(),u=d.teamsStatistic.selectedVehicle.get(),f=d.computes.personalInfo(),_=Z({
     width:"230rem",height:"184rem"
   },{
     medium:{
       width:"290rem",height:"232rem"
     }
-  }),p=Ve({
-    header:i.readOrEmpty("tooltips.anonymizer.teamStats.header").replace("%(name)s",a.username),body:i.readOrEmpty("tooltips.anonymizer.teamStats.body")
+  }),p=Ee({
+    header:l.readOrEmpty("tooltips.anonymizer.teamStats.header").replace("%(name)s",a.username),body:l.readOrEmpty("tooltips.anonymizer.teamStats.body")
   }),h=_s({
     personal:n,platoonType:fs(e,f.squadIndex,r),anonymizer:a.anonymizer
   });
   return(0,vs.jsxs)("div",{
     className:mo.header,children:[(0,vs.jsx)("div",{
-      className:mo.vehicleImageWrapper,children:u?(0,vs.jsx)(ke,{
+      className:mo.vehicleImageWrapper,children:u?(0,vs.jsx)(ze,{
         name:u,width:_.width,height:_.height
-      }):(0,vs.jsx)(ke.UnknownVehicleImage,{
+      }):(0,vs.jsx)(ze.UnknownVehicleImage,{
         width:_.width,height:_.height
       })
     }),(0,vs.jsxs)("div",{
-      className:mo.info,children:[(0,vs.jsxs)(Ce,{
-        className:mo.accountInfo,children:[""!==a.badge&&(0,vs.jsx)(Ce.Badge,{
-          className:mo.accountInfoGap,size:Ce.Badge.sizes.x48x48,badgeId:a.badge
-        }),(0,vs.jsx)(Ce.Name,{
-          className:Re(mo.accountName,mo.accountInfoGap),children:(0,vs.jsx)(ae,{
+      className:mo.info,children:[(0,vs.jsxs)(le,{
+        className:mo.accountInfo,children:[""!==a.badge&&(0,vs.jsx)(le.Badge,{
+          className:mo.accountInfoGap,size:le.Badge.sizes.x48x48,badgeId:a.badge
+        }),(0,vs.jsx)(le.Name,{
+          className:Pe(mo.accountName,mo.accountInfoGap),children:(0,vs.jsx)(ee,{
             text:h?a.fakeUsername:a.username
           })
-        }),""!==a.clanAbbreviation&&!h&&(0,vs.jsx)(Ce.ClanTag,{
-          className:mo.clanAbbreviation,children:(0,vs.jsx)(l,{
+        }),""!==a.clanAbbreviation&&!h&&(0,vs.jsx)(le.ClanTag,{
+          className:mo.clanAbbreviation,children:(0,vs.jsx)(i,{
             path:"common.clanTag",params:{
               abbrev:a.clanAbbreviation
             },
@@ -1870,25 +1870,25 @@ var fo=(0,bs.forwardRef)(function({
               start:"{",end:"}"
             }
           })
-        }),0!==a.igrType&&(0,vs.jsx)(Ce.IgrIcon,{
-          size:Ce.IgrIcon.sizes.x64x28,className:mo.accountInfoGap
-        }),""!==a.suffixBadge&&(0,vs.jsx)(Ce.Stripe,{
-          size:Ce.Stripe.sizes.regular,badgeId:a.suffixBadge,className:mo.accountInfoGap
-        }),a.anonymizer&&(0,vs.jsx)(Ce.AnonymizerIcon,{
-          ...p,size:Ce.AnonymizerIcon.sizes.x32x32,className:mo.anonymizerIcon
+        }),0!==a.igrType&&(0,vs.jsx)(le.IgrIcon,{
+          size:le.IgrIcon.sizes.x64x28,className:mo.accountInfoGap
+        }),""!==a.suffixBadge&&(0,vs.jsx)(le.Stripe,{
+          size:le.Stripe.sizes.regular,badgeId:a.suffixBadge,className:mo.accountInfoGap
+        }),a.anonymizer&&(0,vs.jsx)(le.AnonymizerIcon,{
+          ...p,size:le.AnonymizerIcon.sizes.x32x32,className:mo.anonymizerIcon
         })]
       }),(0,vs.jsx)("div",{
         className:mo.vehicle,children:(0,vs.jsx)(ji,{
-          options:ze(t,({
+          options:He(t,({
             vehicle:e,isGeneralInfo:a
           })=>a||!e?{
-            id:null,label:i.readOrEmpty("fl_post_battle_results.battleInfo.all_from_battle")
+            id:null,label:l.readOrEmpty("fl_post_battle_results.battleInfo.all_from_battle")
           }:{
             id:e.techName,label:e.name,level:e.tier,type:e.type
           }),onSelect:m.teamEfficiency.selectVehicle,value:u
         })
       }),0!==s.length&&(0,vs.jsx)("div",{
-        className:mo.achievements,children:ze(ts(s),(e,a)=>(0,vs.jsx)(fo,{
+        className:mo.achievements,children:He(ts(s),(e,a)=>(0,vs.jsx)(fo,{
           index:a,hoverIndex:o,setHoverIndex:c,achievement:e,achievementsLength:s.length
         },e.name))
       })]
@@ -1903,8 +1903,8 @@ var fo=(0,bs.forwardRef)(function({
 }),vo="Value_798a6cdd",go="Value_separator_798a6cdd",xo=$e.resolve("strings");
 function yo(e,a){
   switch(e){
-    case Ht.Integer:return fe.formatNumber("integral",a);
-    case Ht.Float:return fe.formatReal("fractional",a);
+    case Ht.Integer:return _e.formatNumber("integral",a);
+    case Ht.Float:return _e.formatReal("fractional",a);
     default:return a
   }
 }
@@ -1912,11 +1912,11 @@ var No=Ge("StatisticsValue",vo),jo=(0,bs.forwardRef)(function({
   labelKey:e,value:a,type:t,valueSeparatorKey:s="common.common.slash",className:r,classNames:n,...i
 },l){
   return(0,vs.jsx)(No,{
-    ...i,ref:l,className:Re(n?.base,r),children:ze(a,(r,i)=>(0,vs.jsxs)(bs.Fragment,{
+    ...i,ref:l,className:Pe(n?.base,r),children:He(a,(r,i)=>(0,vs.jsxs)(bs.Fragment,{
       children:[(0,vs.jsx)("div",{
-        className:Re(0===r&&n?.zeroValue,r<0&&n?.negativeValue),children:yo(t,r)
+        className:Pe(0===r&&n?.zeroValue,r<0&&n?.negativeValue),children:yo(t,r)
       }),i<a.length-1&&(0,vs.jsxs)("div",{
-        className:Re(go,n?.separator),children:[" ",xo.readOrEmpty(s)," "]
+        className:Pe(go,n?.separator),children:[" ",xo.readOrEmpty(s)," "]
       })]
     },`${e}_value_${i}`))
   })
@@ -1924,14 +1924,14 @@ var No=Ge("StatisticsValue",vo),jo=(0,bs.forwardRef)(function({
 function Do({
   children:e,scrollbarProps:a,scrollAreaProps:t
 }){
-  const s=zr(U().api);
+  const s=zr(L().api);
   return(0,vs.jsxs)(vs.Fragment,{
-    children:[(0,vs.jsx)(re,{
+    children:[(0,vs.jsx)(se,{
       ...t,classNames:{
-        ...t?.classNames,content:Re(wo,s&&Io,t?.classNames?.content)
+        ...t?.classNames,content:Pe(wo,s&&Io,t?.classNames?.content)
       },
       children:e
-    }),(0,vs.jsx)(Ne,{
+    }),(0,vs.jsx)(we,{
       ...a
     })]
   })
@@ -1940,7 +1940,7 @@ var Bo=(0,bs.forwardRef)(function({
   scrollbarProps:e,scrollAreaProps:a,...t
 },s){
   return(0,vs.jsx)(Co,{
-    ...t,ref:s,children:(0,vs.jsx)(ye,{
+    ...t,ref:s,children:(0,vs.jsx)(je,{
       children:(0,vs.jsx)(Do,{
         ...t,scrollbarProps:e,scrollAreaProps:a
       })
@@ -1955,11 +1955,11 @@ function Mo({
   const s=(0,bs.useRef)(null),[r,i]=(0,bs.useState)(0),l=e+a,o=(0,bs.useCallback)(()=>{
     const e=s.current;
     if(null!==e){
-      const a=e.getBoundingClientRect().width,t=H(a);
+      const a=e.getBoundingClientRect().width,t=A(a);
       i(Math.floor(t/l))
     }
   },[l]);
-  return I(o,[s.current,l,o]),(0,bs.useEffect)(()=>n(o),[o]),(0,vs.jsx)("div",{
+  return N(o,[s.current,l,o]),(0,bs.useEffect)(()=>n(o),[o]),(0,vs.jsx)("div",{
     ref:s,className:$o,children:Array.from({
       length:r
     }).map((a,s)=>(0,vs.jsx)("div",{
@@ -1990,9 +1990,9 @@ function qo({
       }),(0,vs.jsx)(Bo.Separator,{
         className:ko,children:(0,vs.jsx)(Mo,{})
       }),(0,vs.jsx)("div",{
-        className:Re(Oo,!a&&Fo),children:Ko(a)
+        className:Pe(Oo,!a&&Fo),children:Ko(a)
       })]
-    },e)),ze(e,e=>(0,vs.jsxs)(bs.Fragment,{
+    },e)),He(e,e=>(0,vs.jsxs)(bs.Fragment,{
       children:[(0,vs.jsxs)(Bo.Item,{
         className:Eo,children:[(0,vs.jsx)(Bo.Label,{
           className:Ho,labelKey:`battle_results.team.stats.labels_${e.labelKey}`
@@ -2004,8 +2004,8 @@ function qo({
           },
           labelKey:e.labelKey,value:e.value,type:e.paramValueType
         })]
-      }),void 0!==e.details&&ze(e.details,e=>(0,vs.jsxs)(Bo.Item,{
-        className:Re(Eo,Go),children:[(0,vs.jsx)(Bo.Label,{
+      }),void 0!==e.details&&He(e.details,e=>(0,vs.jsxs)(Bo.Item,{
+        className:Pe(Eo,Go),children:[(0,vs.jsx)(Bo.Label,{
           className:Ho,labelKey:`battle_results.team.stats.labels_${e.labelKey}`
         }),(0,vs.jsx)(Bo.Separator,{
           className:ko,children:(0,vs.jsx)(Mo,{})
@@ -2030,11 +2030,11 @@ var Uo="EfficiencyDetails_efficiencyDetails__allies_20b1febc",Zo="EfficiencyDeta
 }){
   const{
     model:t,controls:s
-  }=hs(),r=t.teamsStatistic.selectedVehicle.get(),n=t.computes.efficiencyDetails(),i=(0,bs.useMemo)(()=>ee(n?.vehicles??[],e=>r?e.vehicle?.techName===r:e.isGeneralInfo),[r,n?.vehicles]),l=M(),o=(0,bs.useRef)(null);
+  }=hs(),r=t.teamsStatistic.selectedVehicle.get(),n=t.computes.efficiencyDetails(),i=(0,bs.useMemo)(()=>Q(n?.vehicles??[],e=>r?e.vehicle?.techName===r:e.isGeneralInfo),[r,n?.vehicles]),l=F(),o=(0,bs.useRef)(null);
   return(0,bs.useEffect)(()=>{
-    const e=ge.down(([,e])=>{
+    const e=ye.down(([,e])=>{
       "outside"===e&&s.teamEfficiency.selectRow(void 0)
-    }),a=w(window,"click",e=>{
+    }),a=y(window,"click",e=>{
       if(o.current){
         const{
           clientX:a,clientY:t
@@ -2059,7 +2059,7 @@ var Uo="EfficiencyDetails_efficiencyDetails__allies_20b1febc",Zo="EfficiencyDeta
       classNames:{
         base:Yo,image:Jo
       }
-    }),(0,vs.jsx)(Te,{
+    }),(0,vs.jsx)(Ae,{
       className:Qo,width:"24rem",height:"24rem",path:"library.close",onMouseEnter:()=>{
         l.play("mouse-enter",{
           target:"team-efficiency:efficiency-details:close"
@@ -2076,19 +2076,19 @@ var Uo="EfficiencyDetails_efficiencyDetails__allies_20b1febc",Zo="EfficiencyDeta
   account:e,team:a,platoon:t,className:s,classNames:r,...n
 }){
   const{
-    model:i
-  }=hs(),o=i.computes.personalInfo(),c=_s({
+    model:l
+  }=hs(),o=l.computes.personalInfo(),c=_s({
     personal:o.account.username===e.username,platoonType:fs(a,o.squadIndex,t),anonymizer:e.anonymizer
   });
-  return(0,vs.jsxs)(Ce,{
-    ...n,className:Re(mc,s),children:[""!==e.badge&&(0,vs.jsx)(Ce.Badge,{
-      size:Ce.Badge.sizes.x24x24,badgeId:e.badge,className:Re(_c,r?.badge)
-    }),(0,vs.jsx)(Ce.Name,{
-      className:Re(uc,r?.username),children:(0,vs.jsx)(ae,{
+  return(0,vs.jsxs)(le,{
+    ...n,className:Pe(mc,s),children:[""!==e.badge&&(0,vs.jsx)(le.Badge,{
+      size:le.Badge.sizes.x24x24,badgeId:e.badge,className:Pe(_c,r?.badge)
+    }),(0,vs.jsx)(le.Name,{
+      className:Pe(uc,r?.username),children:(0,vs.jsx)(ee,{
         text:c?e.fakeUsername:e.username
       })
-    }),""!==e.clanAbbreviation&&!c&&(0,vs.jsx)(Ce.ClanTag,{
-      className:Re(fc,r?.clanAbbreviation),children:(0,vs.jsx)(l,{
+    }),""!==e.clanAbbreviation&&!c&&(0,vs.jsx)(le.ClanTag,{
+      className:Pe(fc,r?.clanAbbreviation),children:(0,vs.jsx)(i,{
         path:"common.clanTag",params:{
           abbrev:e.clanAbbreviation
         },
@@ -2096,104 +2096,104 @@ var Uo="EfficiencyDetails_efficiencyDetails__allies_20b1febc",Zo="EfficiencyDeta
           start:"{",end:"}"
         }
       })
-    }),0!==e.igrType&&(0,vs.jsx)(Ce.IgrIcon,{
-      size:Ce.IgrIcon.sizes.x34x16,className:Re(hc,r?.igrIcon)
-    }),""!==e.suffixBadge&&(0,vs.jsx)(Ce.Stripe,{
-      size:Ce.Stripe.sizes.default,badgeId:e.suffixBadge,className:bc,classNames:r?.suffixBadge
-    }),e.anonymizer&&(0,vs.jsx)(Ce.AnonymizerIcon,{
-      size:Ce.AnonymizerIcon.sizes.x24x24,className:Re(pc,r?.anonymizerIcon)
+    }),0!==e.igrType&&(0,vs.jsx)(le.IgrIcon,{
+      size:le.IgrIcon.sizes.x34x16,className:Pe(hc,r?.igrIcon)
+    }),""!==e.suffixBadge&&(0,vs.jsx)(le.Stripe,{
+      size:le.Stripe.sizes.default,badgeId:e.suffixBadge,className:bc,classNames:r?.suffixBadge
+    }),e.anonymizer&&(0,vs.jsx)(le.AnonymizerIcon,{
+      size:le.AnonymizerIcon.sizes.x24x24,className:Pe(pc,r?.anonymizerIcon)
     })]
   })
 }),gc="AchievementsCell_achievementCell_e9bf973c",xc="AchievementsCell_achievementsAmount_349c209a";
 function yc({
   achievements:e
 }){
-  const a=$e.resolve("strings"),t=Ve({
-    body:ze(ts(e),e=>a.readOrEmpty(`achievements.${e.name}`)).join("\n")
+  const a=$e.resolve("strings"),t=Ee({
+    body:He(ts(e),e=>a.readOrEmpty(`achievements.${e.name}`)).join("\n")
   }),s=e.length;
   return 0===s?null:(0,vs.jsxs)("div",{
-    ...t,className:gc,children:[(0,vs.jsx)(Te,{
+    ...t,className:gc,children:[(0,vs.jsx)(Ae,{
       path:"library.medal",width:"32rem",height:"32rem"
     }),(0,vs.jsx)("div",{
-      className:xc,children:fe.formatNumber("integral",s)
+      className:xc,children:_e.formatNumber("integral",s)
     })]
   })
 }
 var Nc={
-  behaviour:B.static,size:"32rem"
+  behaviour:ve.static,size:"32rem"
 },
 jc={
-  behaviour:B.static,size:"294rem"
+  behaviour:ve.static,size:"294rem"
 },
 wc={
-  behaviour:B.static,size:"392rem"
+  behaviour:ve.static,size:"392rem"
 },
 Ic={
-  behaviour:B.static,size:"496rem"
+  behaviour:ve.static,size:"496rem"
 },
 Rc={
-  behaviour:B.static,size:"40rem"
+  behaviour:ve.static,size:"40rem"
 },
 Sc={
-  behaviour:B.static,size:"60rem"
+  behaviour:ve.static,size:"60rem"
 },
 Cc={
-  behaviour:B.static,size:"56rem"
+  behaviour:ve.static,size:"56rem"
 },
 Pc={
-  behaviour:B.static,size:"60rem"
+  behaviour:ve.static,size:"60rem"
 },
 Tc={
-  behaviour:B.static,size:"80rem"
+  behaviour:ve.static,size:"80rem"
 },
 Dc={
-  behaviour:B.static,size:"40rem"
+  behaviour:ve.static,size:"40rem"
 },
 Bc={
-  behaviour:B.static,size:"60rem"
+  behaviour:ve.static,size:"60rem"
 },
 Ac={
-  behaviour:B.static,size:"56rem"
+  behaviour:ve.static,size:"56rem"
 },
 Vc={
-  behaviour:B.static,size:"60rem"
+  behaviour:ve.static,size:"60rem"
 },
 kc={
-  behaviour:B.static,size:"80rem"
+  behaviour:ve.static,size:"80rem"
 },
 Ec={
-  behaviour:B.static,size:"40rem"
+  behaviour:ve.static,size:"40rem"
 },
 zc={
-  behaviour:B.static,size:"56rem"
+  behaviour:ve.static,size:"56rem"
 },
 Hc={
-  behaviour:B.static,size:"40rem"
+  behaviour:ve.static,size:"40rem"
 },
 Oc={
   [sc]:{
-    [A.extraSmall]:Nc,[A.medium]:Nc,[A.large]:Nc,[A.extraLarge]:Nc
+    [P.extraSmall]:Nc,[P.medium]:Nc,[P.large]:Nc,[P.extraLarge]:Nc
   },
   [rc]:{
-    [A.extraSmall]:jc,[A.medium]:wc,[A.large]:wc,[A.extraLarge]:Ic
+    [P.extraSmall]:jc,[P.medium]:wc,[P.large]:wc,[P.extraLarge]:Ic
   },
   [nc]:{
-    [A.extraSmall]:Rc,[A.medium]:Sc,[A.large]:Sc,[A.extraLarge]:Sc
+    [P.extraSmall]:Rc,[P.medium]:Sc,[P.large]:Sc,[P.extraLarge]:Sc
   },
   [ic]:{
-    [A.extraSmall]:Cc,[A.medium]:Pc,[A.large]:Pc,[A.extraLarge]:Tc
+    [P.extraSmall]:Cc,[P.medium]:Pc,[P.large]:Pc,[P.extraLarge]:Tc
   },
   [lc]:{
-    [A.extraSmall]:Dc,[A.medium]:Bc,[A.large]:Bc,[A.extraLarge]:Bc
+    [P.extraSmall]:Dc,[P.medium]:Bc,[P.large]:Bc,[P.extraLarge]:Bc
   },
   [oc]:{
-    [A.extraSmall]:Ac,[A.medium]:Vc,[A.large]:Vc,[A.extraLarge]:kc
+    [P.extraSmall]:Ac,[P.medium]:Vc,[P.large]:Vc,[P.extraLarge]:kc
   },
   [cc]:{
-    [A.extraSmall]:Ec,[A.medium]:zc,[A.large]:zc,[A.extraLarge]:zc
+    [P.extraSmall]:Ec,[P.medium]:zc,[P.large]:zc,[P.extraLarge]:zc
   },
   [dc]:{
-    [A.extraSmall]:Hc,[A.medium]:Hc,[A.large]:Hc,[A.extraLarge]:Hc
+    [P.extraSmall]:Hc,[P.medium]:Hc,[P.large]:Hc,[P.extraLarge]:Hc
   }
 },
 Fc={
@@ -2208,16 +2208,16 @@ $c={
 Lc=(0,bs.forwardRef)(function({
   name:e,team:a,column:t,className:s,...r
 },n){
-  const i=t.getIsSorted(),l=$e.resolve("strings"),o=Ve({
+  const i=t.getIsSorted(),l=$e.resolve("strings"),o=Ee({
     header:l.readOrEmpty(`battle_results.team.${$c[e]}.header`),body:l.readOrEmpty(`battle_results.team.${$c[e]}.body`)
   }),c=e===rc,d=Xc.includes(e);
   return(0,vs.jsx)("div",{
-    ...r,...o,ref:n,className:Re(Fc.headerCell,c?Fc.headerCell__text:Fc.headerCell__icon,i&&Fc[`headerCell__${i}`],s),children:c?l.readOrEmpty(`battle_results.team.stats.${a}`):d?(0,vs.jsx)("div",{
+    ...r,...o,ref:n,className:Pe(Fc.headerCell,c?Fc.headerCell__text:Fc.headerCell__icon,i&&Fc[`headerCell__${i}`],s),children:c?l.readOrEmpty(`battle_results.team.stats.${a}`):d?(0,vs.jsx)("div",{
       style:{
         backgroundImage:`url(${R.images.frontline.gui.maps.icons.postBattleResults.$dyn(Gc[e])})`
       },
       className:Fc.icon
-    }):(0,vs.jsx)(Te,{
+    }):(0,vs.jsx)(Ae,{
       path:Gc[e],className:Fc.icon
     })
   })
@@ -2226,7 +2226,7 @@ function Wc({
   value:e,className:a,showZero:t=!0
 }){
   return!1===t&&0===e?null:(0,vs.jsx)("div",{
-    className:Re(Mc,a),children:fe.formatNumber("integral",e)
+    className:Pe(Mc,a),children:_e.formatNumber("integral",e)
   })
 }
 var Kc={
@@ -2244,10 +2244,10 @@ Uc=Ke(function({
   if(null===s)return null;
   const r=qc[s];
   return(0,vs.jsxs)("div",{
-    className:Kc.platoon,children:[(0,vs.jsx)(Te,{
+    className:Kc.platoon,children:[(0,vs.jsx)(Ae,{
       path:r,width:"32rem",height:"32rem"
     }),(0,vs.jsx)("div",{
-      className:Re(Kc.platoonText,Kc[`platoonText__${s}`]),children:e
+      className:Pe(Kc.platoonText,Kc[`platoonText__${s}`]),children:e
     })]
   })
 }),Zc="RankCell_5390b3e9";
@@ -2264,7 +2264,7 @@ function Yc({
 var Jc="EfficiencyTable_efficiencyTable__allies_b2f99733",Qc="EfficiencyTable_efficiencyTable__enemies_1ba35ae7",ed="EfficiencyTable_header_412b5b7b",ad="EfficiencyTable_rowsWrapper_da034938",td="EfficiencyTable_efficiencyTable_e622a43e",sd="EfficiencyTable_alignLeft_a52cfd11",rd="EfficiencyTable_alignRight_46cf6a64",nd="EfficiencyTable_table_f467cc44",id="EfficiencyTable_tableBody_5b14613b",ld="EfficiencyTable_scrollBar_f4e5aa11",od="EfficiencyTable_scrollAreaContent_4fa5a5ab",cd="EfficiencyTable_mask_8fbe6740",dd={
   "media-wrapper":"TableBodyRow_media-wrapper_5ecfc9f2",root:"TableBodyRow_root_5ecfc9f2",tableBodyRow:"TableBodyRow_tableBodyRow_be19874",tableBodyRow__selected:"TableBodyRow_tableBodyRow__selected_9cd5fe77",selectedRowTail:"TableBodyRow_selectedRowTail_595bad28",selectedRowTail__enemies:"TableBodyRow_selectedRowTail__enemies_15d3ff4e",rowDivider:"TableBodyRow_rowDivider_7f22c0ad",rowDividerImage:"TableBodyRow_rowDividerImage_9c09afd1",accountInfo:"TableBodyRow_accountInfo_5ecfc9f2",numberValue:"TableBodyRow_numberValue_8b5b22c7",tableBodyRow__personalSquad:"TableBodyRow_tableBodyRow__personalSquad_5ecfc9f2",tableBodyRow__personal:"TableBodyRow_tableBodyRow__personal_5ecfc9f2",accountName:"TableBodyRow_accountName_4ede8694",tableBodyRow__teamKiller:"TableBodyRow_tableBodyRow__teamKiller_5ecfc9f2",clanAbbreviation:"TableBodyRow_clanAbbreviation_5ecfc9f2",selectedOverlay:"TableBodyRow_selectedOverlay_7f267587",selectedOverlayDivider:"TableBodyRow_selectedOverlayDivider_35a0f807",selectedOverlayDivider__bottom:"TableBodyRow_selectedOverlayDivider__bottom_20b949b4",selectedOverlayImage:"TableBodyRow_selectedOverlayImage_9c09afd1"
 },
-md=k(),ud=(e,a,t)=>{
+md=U(),ud=(e,a,t)=>{
   const s=e.getValue("account"),r=e.getValue("squadIndex");
   return _s({
     personal:a.account.username===s.username,platoonType:fs(t,a.squadIndex,r),anonymizer:s.anonymizer
@@ -2276,7 +2276,7 @@ fd=({
   const s=(t,s)=>((e,a,t,s)=>{
     const r=ud(e,t,s),n=ud(a,t,s);
     return r.localeCompare(n)
-  })(t,s,a,e),r="small"===t?A.extraSmall:t;
+  })(t,s,a,e),r="small"===t?P.extraSmall:t;
   return[md.accessor("squadIndex",{
     id:sc,header:e=>(0,vs.jsx)(Lc,{
       name:sc,column:e.column
@@ -2355,15 +2355,15 @@ function vd({
 }){
   const{
     table:a
-  }=Ee(),t=M();
-  return(0,vs.jsxs)(Fe.Header,{
+  }=K(),t=F();
+  return(0,vs.jsxs)(Ce.Header,{
     className:e,children:[(0,vs.jsx)(co,{
       classNames:{
         base:pd,image:hd
       }
-    }),ze(a.getHeaderGroups(),(e,a)=>(0,vs.jsx)(Fe.Row,{
-      className:_d,children:ze(e.headers,(e,s)=>{
-        return(0,vs.jsx)(Fe.Cell,{
+    }),He(a.getHeaderGroups(),(e,a)=>(0,vs.jsx)(Ce.Row,{
+      className:_d,children:He(e.headers,(e,s)=>{
+        return(0,vs.jsx)(Ce.Cell,{
           onClick:(r=e.column.getToggleSortingHandler(),function(e){
             r?.(e),t.play("click",{
               original:e,target:"team-efficiency:efficiency-table:header:cell"
@@ -2371,9 +2371,9 @@ function vd({
           }),onMouseEnter:e=>t.play("mouse-enter",{
             target:"team-efficiency:efficiency-table:header:cell",original:e
           }),cell:{
-            ...e,rowIndex:a,index:s,tablePart:i.header
+            ...e,rowIndex:a,index:s,tablePart:me.header
           },
-          className:bd,children:!e.isPlaceholder&&Be(e.column.columnDef.header,e.getContext())
+          className:bd,children:!e.isPlaceholder&&J(e.column.columnDef.header,e.getContext())
         },e.id);
         var r
       })
@@ -2385,13 +2385,13 @@ function Rd({
   className:e,short:a
 }){
   return(0,vs.jsxs)("div",{
-    className:Re(gd,!a&&xd,e),children:[(0,vs.jsx)(co,{
+    className:Pe(gd,!a&&xd,e),children:[(0,vs.jsx)(co,{
       classNames:{
         base:jd,image:Id
       }
     }),(0,vs.jsx)(co,{
       classNames:{
-        base:Re(jd,wd),image:Id
+        base:Pe(jd,wd),image:Id
       }
     }),(0,vs.jsx)("div",{
       className:yd
@@ -2404,42 +2404,42 @@ var Sd="personal",Cd="personalSquad",Pd="none",Td=Ke(function({
   row:e,team:a,rowIndex:s,scrollbarVisible:r
 }){
   const{
-    model:n,controls:l
-  }=hs(),o=M(),c=t(t=>{
-    t.stopPropagation(),o.play("click",{
+    model:n,controls:i
+  }=hs(),l=F(),o=t(t=>{
+    t.stopPropagation(),l.play("click",{
       original:t,target:"team-efficiency:efficiency-table:body:row"
-    }),l.teamEfficiency.selectRow({
+    }),i.teamEfficiency.selectRow({
       team:a,username:e.original.account.username
     })
-  },[l.teamEfficiency,e.original.account.username,o,a],20),d=n.teamsStatistic.selectedRow.get(),m=n.computes.personalInfo(),u=m.account.username===e.original.account.username?Sd:fs(a,m.squadIndex,e.original.squadIndex)===ms?Cd:Pd,f=e.original.account.teamKiller,_=d?.team===a&&d.username===e.original.account.username,p=_e({
+  },[i.teamEfficiency,e.original.account.username,l,a],20),c=n.teamsStatistic.selectedRow.get(),d=n.computes.personalInfo(),m=d.account.username===e.original.account.username?Sd:fs(a,d.squadIndex,e.original.squadIndex)===ms?Cd:Pd,u=e.original.account.teamKiller,f=c?.team===a&&c.username===e.original.account.username,_=pe({
     args:{
       databaseID:e.original.databaseId
     }
   });
-  return(0,vs.jsxs)(Fe.Row,{
-    ...u!==Sd&&p,onMouseEnter:e=>o.play("mouse-enter",{
+  return(0,vs.jsxs)(Ce.Row,{
+    ...m!==Sd&&_,onMouseEnter:e=>l.play("mouse-enter",{
       target:"team-efficiency:efficiency-table:body:row",original:e
-    }),className:Re(dd.tableBodyRow,_&&dd.tableBodyRow__selected,u!==Pd&&dd[`tableBodyRow__${u}`],f&&dd.tableBodyRow__teamKiller),onClick:c,children:[(0,vs.jsxs)("div",{
+    }),className:Pe(dd.tableBodyRow,f&&dd.tableBodyRow__selected,m!==Pd&&dd[`tableBodyRow__${m}`],u&&dd.tableBodyRow__teamKiller),onClick:o,children:[(0,vs.jsxs)("div",{
       className:dd.selectedOverlay,children:[(0,vs.jsx)(co,{
         classNames:{
           base:dd.selectedOverlayDivider,image:dd.selectedOverlayImage
         }
       }),(0,vs.jsx)(co,{
         classNames:{
-          base:Re(dd.selectedOverlayDivider,dd.selectedOverlayDivider__bottom),image:dd.selectedOverlayImage
+          base:Pe(dd.selectedOverlayDivider,dd.selectedOverlayDivider__bottom),image:dd.selectedOverlayImage
         }
       }),(0,vs.jsx)(Rd,{
-        short:r&&a===cs,className:Re(dd.selectedRowTail,dd[`selectedRowTail__${a}`])
+        short:r&&a===cs,className:Pe(dd.selectedRowTail,dd[`selectedRowTail__${a}`])
       })]
     }),(0,vs.jsx)(co,{
       classNames:{
         base:dd.rowDivider,image:dd.rowDividerImage
       }
-    }),ze(e.getVisibleCells(),(e,a)=>(0,vs.jsx)(Fe.Cell,{
+    }),He(e.getVisibleCells(),(e,a)=>(0,vs.jsx)(Ce.Cell,{
       cell:{
-        ...e,rowIndex:s,index:a,tablePart:i.body
+        ...e,rowIndex:s,index:a,tablePart:me.body
       },
-      children:Be(e.column.columnDef.cell,e.getContext())
+      children:J(e.column.columnDef.cell,e.getContext())
     },e.id))]
   })
 });
@@ -2448,9 +2448,9 @@ function Dd({
 }){
   const{
     table:a
-  }=Ee(),{
+  }=K(),{
     api:t
-  }=U(),s=ne(),r=(0,bs.useRef)(null),[n,i]=(0,bs.useState)(!1),[l,o]=D(()=>({
+  }=L(),s=re(),r=(0,bs.useRef)(null),[n,i]=(0,bs.useState)(!1),[l,o]=C(()=>({
     from:{
       maskSize:"100% 100%"
     }
@@ -2474,19 +2474,19 @@ function Dd({
     return t.events.on("recalculateContent",e),t.events.on("rest",e),t.events.on("change",e),t.events.on("resizeHandled",e),e(),()=>{
       t.events.off("recalculateContent",e),t.events.off("rest",e),t.events.off("change",e),t.events.off("resizeHandled",e)
     }
-  },[t,s,o]),(0,vs.jsxs)(Fe.Body,{
-    className:id,children:[(0,vs.jsx)(h.div,{
-      className:cd,style:l,children:(0,vs.jsx)(re,{
+  },[t,s,o]),(0,vs.jsxs)(Ce.Body,{
+    className:id,children:[(0,vs.jsx)(f.div,{
+      className:cd,style:l,children:(0,vs.jsx)(se,{
         classNames:{
           content:od
         },
         children:(0,vs.jsx)("div",{
-          ref:r,className:ad,children:ze(a.getRowModel().rows,(a,t)=>(0,vs.jsx)(Td,{
+          ref:r,className:ad,children:He(a.getRowModel().rows,(a,t)=>(0,vs.jsx)(Td,{
             row:a,rowIndex:t,team:e,scrollbarVisible:n
           },a.id))
         })
       })
-    }),(0,vs.jsx)(Ne,{
+    }),(0,vs.jsx)(we,{
       classNames:{
         base:ld
       }
@@ -2509,7 +2509,7 @@ Vd=Ke(({
     model:s,controls:r
   }=hs(),n=s.computes.personalInfo(),i=s.teamsStatistic.sorting.get(),l=(0,bs.useMemo)(()=>[{
     id:Ad[i.column],desc:i.sortDirection===Ue.Desc
-  }],[i.column,i.sortDirection]),o=K().breakpoint.name,c=(0,bs.useCallback)(e=>{
+  }],[i.column,i.sortDirection]),o=X().breakpoint.name,c=(0,bs.useCallback)(e=>{
     const a=(e instanceof Function?e(l):e)[0]??{
       id:nc,desc:!0
     };
@@ -2519,12 +2519,12 @@ Vd=Ke(({
   },[l,r.teamEfficiency]),d=(0,bs.useMemo)(()=>fd({
     team:e,personalInfo:n,breakpointName:o
   }),[e,o,n]);
-  return Le($(o),`Such breakpoint ${o} is not supported`),(0,vs.jsx)(W,{
+  return Le(G(o),`Such breakpoint ${o} is not supported`),(0,vs.jsx)(M,{
     columns:d,data:a,enableMultiRowSelection:!1,enableSortingRemoval:!1,sorting:l,onSortingChange:c,getRowId:e=>e.account.username,enableSorting:!0,children:(0,vs.jsx)(Bd,{
-      team:e,className:t,children:(0,vs.jsxs)(Fe,{
+      team:e,className:t,children:(0,vs.jsxs)(Ce,{
         className:nd,children:[(0,vs.jsx)(vd,{
           className:ed
-        }),(0,vs.jsx)(ye,{
+        }),(0,vs.jsx)(je,{
           children:(0,vs.jsx)(Dd,{
             team:e
           })
@@ -2541,13 +2541,13 @@ Vd=Ke(({
   return(0,vs.jsx)(Fd,{
     className:e,children:(0,vs.jsxs)("div",{
       className:kd,children:[(0,vs.jsx)(tc,{
-        team:ds,className:Re(Hd,r?.team===ds&&Od)
+        team:ds,className:Pe(Hd,r?.team===ds&&Od)
       }),(0,vs.jsx)(Vd,{
-        data:t,team:cs,className:Re(Ed,r?.team===ds&&zd)
+        data:t,team:cs,className:Pe(Ed,r?.team===ds&&zd)
       }),(0,vs.jsx)(tc,{
-        team:cs,className:Re(Hd,r?.team===cs&&Od)
+        team:cs,className:Pe(Hd,r?.team===cs&&Od)
       }),(0,vs.jsx)(Vd,{
-        data:s,team:ds,className:Re(Ed,r?.team===cs&&zd)
+        data:s,team:ds,className:Pe(Ed,r?.team===cs&&zd)
       })]
     })
   })
@@ -2558,26 +2558,26 @@ $d=Ge("PostBattle",Gd.base),Ld=Ge("PostBattleNavigation",Gd.navigation);
 function Md(){
   const{
     active:e
-  }=C();
+  }=w();
   return(0,vs.jsxs)("div",{
     className:Gd[`content__${e}`],children:[(0,vs.jsx)(lo,{
-      className:Re(Gd.tab,Gd.tab__overview)
+      className:Pe(Gd.tab,Gd.tab__overview)
     }),(0,vs.jsx)(Xd,{
-      className:Re(Gd.tab,Gd.tab__teamScore)
+      className:Pe(Gd.tab,Gd.tab__teamScore)
     }),(0,vs.jsx)(ki,{
-      className:Re(Gd.tab,Gd.tab__financialReport)
+      className:Pe(Gd.tab,Gd.tab__financialReport)
     })]
   })
 }
 var Wd=Ke(function(){
   const e=$e.resolve("strings"),{
     battleInfoRef:t,navigationRef:s,completedSteps:r
-  }=Rs(),[n]=D(()=>({
+  }=Rs(),[n]=C(()=>({
     from:{
       opacity:0,y:"-10rem"
     },
     ref:s
-  })),[i]=D(()=>({
+  })),[i]=C(()=>({
     from:{
       opacity:0
     },
@@ -2586,28 +2586,28 @@ var Wd=Ke(function(){
     model:l,controls:o
   }=hs(),c=l.battleInfo.get(),{
     active:d
-  }=C();
-  return j(a.ESCAPE,o.close),S(()=>{
+  }=w();
+  return x(a.ESCAPE,o.close),j(()=>{
     function e(e){
-      e.altKey||e.shiftKey||e.ctrlKey||F.tooltip.hideAll()
+      e.altKey||e.shiftKey||e.ctrlKey||k.tooltip.hideAll()
     }
     return document.addEventListener("keydown",e),()=>{
       document.removeEventListener("keydown",e)
     }
   }),(0,vs.jsxs)($d,{
-    className:Re(Gd.base,Gd[`base__${d}`]),children:[(0,vs.jsx)(Md,{}),(0,vs.jsx)(h.div,{
+    className:Pe(Gd.base,Gd[`base__${d}`]),children:[(0,vs.jsx)(Md,{}),(0,vs.jsx)(f.div,{
       style:n,children:(0,vs.jsx)(Ld,{
-        className:!r.has(ys)&&Gd.navigation__disabled,children:(0,vs.jsxs)(p.Switcher,{
-          className:Gd.switcher,children:[(0,vs.jsx)(p.Tab,{
-            tabId:Ye.overview,children:fe.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.battleResults"))
-          }),(0,vs.jsx)(p.Tab,{
-            tabId:Ye.teamScore,children:fe.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.teamEfficiency"))
-          }),(0,vs.jsx)(p.Tab,{
-            tabId:Ye.financialReport,children:fe.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.financialReport"))
+        className:!r.has(ys)&&Gd.navigation__disabled,children:(0,vs.jsxs)(u.Switcher,{
+          className:Gd.switcher,children:[(0,vs.jsx)(u.Tab,{
+            tabId:Ye.overview,children:_e.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.battleResults"))
+          }),(0,vs.jsx)(u.Tab,{
+            tabId:Ye.teamScore,children:_e.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.teamEfficiency"))
+          }),(0,vs.jsx)(u.Tab,{
+            tabId:Ye.financialReport,children:_e.toUpperCase(e.readOrEmpty("battle_results.battleResult.navigation.financialReport"))
           })]
         })
       })
-    }),c&&(0,vs.jsx)(h.div,{
+    }),c&&(0,vs.jsx)(f.div,{
       className:Gd.info,style:i,children:(0,vs.jsxs)(Ds,{
         children:[(0,vs.jsx)(Ds.Arena,{
           arenaName:c.arenaName,scenario:c.scenario,finishReason:c.finishReason
@@ -2619,19 +2619,19 @@ var Wd=Ke(function(){
   })
 });
 function Kd(){
-  const e=X(),{
+  const e=E(),{
     size:a
-  }=J({
-    size:x.small
+  }=Z({
+    size:b.small
   },{
     large:{
-      size:x.medium
+      size:b.medium
     },
     extraLarge:{
-      size:x.large
+      size:b.large
     }
   });
-  return(0,vs.jsx)(p,{
+  return(0,vs.jsx)(u,{
     theme:"primary",size:a,active:ea(e.location),onActiveChange:a=>{
       a in Ye?e.push(Qe[a]):console.error(`Invalid tab ID: ${a}`)
     },
@@ -2640,7 +2640,7 @@ function Kd(){
     })
   })
 }
-var qd=Oe({
+var qd=Fe({
   click:{
     "expandable-overlay":"yes","expandable-overlay:hint-key":"yes","managable-bonus:apply-button":"yes","managable-bonus:premium-info-button":"yes","overview:total-personal-efficiency":"yes","team-efficiency:efficiency-table:header:cell":"tabs"
   },
@@ -2672,8 +2672,8 @@ var qd=Oe({
     "mission-progress:bubble":"gui_pbs_notification_bubble"
   }
 });
-he((new we).add(ps).addWithProps(v,{
+be((new Re).add(ps).addWithProps(p,{
   soundsOverrides:qd
-}).addWithProps(z,{
+}).addWithProps(B,{
   context:"model.router"
-}).render((0,vs.jsx)(Kd,{}))).then(()=>r(document.getElementById("root"))).then(()=>P());
+}).render((0,vs.jsx)(Kd,{}))).then(()=>r(document.getElementById("root"))).then(()=>I());

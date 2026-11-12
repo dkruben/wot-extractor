@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  $t as s,Aa as a,Cn as r,Fr as t,Gt as o,H as n,Ha as i,Hr as l,Ir as c,Kr as d,Rr as m,Va as u,Wr as g,c as p,cr as f,d as _,fo as h,g as v,gi as x,h as w,l as b,lr as y,or as j,qr as S,u as P,uo as N,ur as C,xi as k,yo as A
+  $t as s,Aa as a,Cn as r,D as t,E as o,Fr as n,Gt as i,H as l,Ha as c,Hr as d,Ir as m,Kr as u,Rr as g,T as p,Va as f,Wr as _,b as h,cr as v,fo as x,gi as w,lr as b,or as y,qr as j,uo as S,ur as P,w as N,xi as C,y as k,yo as A
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
@@ -20,12 +20,12 @@ import{
   t as M
 }
 from"../chunks/custom_reward.js";
-var O=e(h(),1),E={
+var O=e(x(),1),E={
   from:{
-    y:i(-40),opacity:0
+    y:c(-40),opacity:0
   },
   config:{
-    duration:400,easing:g.easeOutSine
+    duration:400,easing:_.easeOutSine
   }
 },
 F={
@@ -39,7 +39,7 @@ I={
     opacity:0,transform:"scale(0.8)"
   },
   config:{
-    duration:400,easing:g.easeOutCubic
+    duration:400,easing:_.easeOutCubic
   }
 },
 L={
@@ -55,10 +55,10 @@ $={
 },
 q={
   from:{
-    y:i(-10),opacity:0
+    y:c(-10),opacity:0
   },
   config:{
-    duration:350,easing:g.easeOutSine
+    duration:350,easing:_.easeOutSine
   }
 },
 H={
@@ -72,7 +72,7 @@ T={
     opacity:1
   },
   config:{
-    duration:300,easing:g.easeOutSine
+    duration:300,easing:_.easeOutSine
   }
 },
 W={
@@ -87,21 +87,21 @@ D={
 },
 G={
   from:{
-    opacity:0,y:i(40)
+    opacity:0,y:c(40)
   },
   to:{
     opacity:1,y:0
   },
   delay:1200,config:{
-    duration:120,easing:g.easeOutCubic
+    duration:120,easing:_.easeOutCubic
   }
 },
 U={
   from:{
-    y:u(60),transform:"translateX(50%)",opacity:0
+    y:f(60),transform:"translateX(50%)",opacity:0
   },
   config:{
-    duration:400,easing:g.easeOutSine
+    duration:400,easing:_.easeOutSine
   }
 },
 K={
@@ -120,7 +120,7 @@ X={
     transform:"scale(1)",opacity:1
   },
   config:{
-    duration:280,easing:g.easeInOutSine
+    duration:280,easing:_.easeInOutSine
   }
 },
 J={
@@ -133,7 +133,7 @@ Y={
     y:0
   },
   config:{
-    duration:300,easing:g.easeInOutSine
+    duration:300,easing:_.easeInOutSine
   }
 },
 Z="initial",ee="rank",se="rewards",ae=(e,s=!1)=>{
@@ -142,13 +142,13 @@ Z="initial",ee="rank",se="rewards",ae=(e,s=!1)=>{
     level:a,levelProgress:r?100*r:s?100:0
   }
 },
-[re,te]=C()(({
+[re,te]=P()(({
   observableModel:e
 })=>{
   const s={
     ...e.primitives(["rank","prevProgress","currProgress","achievedPoints","amountRewardsToClaim","maxLevel","isMaxLevel"]),rewards:e.arrayClone("rewards")
   },
-  a=y.primitive(()=>{
+  a=b.primitive(()=>{
     const e=[],a=s.prevProgress.get(),r=s.currProgress.get();
     if(r>a){
       let s=a,t=s===Math.ceil(s)?s+1:Math.ceil(s);
@@ -174,12 +174,12 @@ Z="initial",ee="rank",se="rewards",ae=(e,s=!1)=>{
   externalModel:e
 })=>({
   claimRewards:e.createCallbackNoArgs("onClaimRewards"),continue:e.createCallbackNoArgs("onContinue"),close:e.createCallbackNoArgs("onClose"),introStartsPlaying:e.createCallbackNoArgs("onIntroStartsPlaying"),ribbonStartsPlaying:e.createCallbackNoArgs("onRibbonStartsPlaying"),progressBarAnimationStart:e.createCallbackNoArgs("onProgressBarAnimationStart"),progressBarAnimationComplete:e.createCallbackNoArgs("onProgressBarAnimationComplete")
-})),oe=k(),ne=(0,O.createContext)(null),ie=z(function({
+})),oe=C(),ne=(0,O.createContext)(null),ie=z(function({
   children:e
 }){
   const{
     model:s,controls:a
-  }=te(),r=x({
+  }=te(),r=w({
     progressionShift:78
   },{
     medium:{
@@ -191,13 +191,13 @@ Z="initial",ee="rank",se="rewards",ae=(e,s=!1)=>{
     extraLarge:{
       progressionShift:0
     }
-  }),[t,o]=(0,O.useState)(Z),[n,l]=(0,O.useState)(0),[c,d]=m(()=>E),[u,g]=m(()=>q),[p,f]=m(()=>T),[_,h]=m(()=>I),[v,w]=m(()=>Y),b=s.prevProgress.get(),y=s.currProgress.get(),j=n+1<s.computes.progressionSequence().length,S=s.isMaxLevel.get(),P=ae(y,!0).level>=s.maxLevel.get(),N=(0,O.useCallback)(e=>{
-    j?l(e=>e+1):g.start(H),e&&t===ee&&(f.start({
+  }),[t,o]=(0,O.useState)(Z),[n,i]=(0,O.useState)(0),[l,d]=g(()=>E),[m,u]=g(()=>q),[p,f]=g(()=>T),[_,h]=g(()=>I),[v,x]=g(()=>Y),b=s.prevProgress.get(),y=s.currProgress.get(),j=n+1<s.computes.progressionSequence().length,S=s.isMaxLevel.get(),P=ae(y,!0).level>=s.maxLevel.get(),N=(0,O.useCallback)(e=>{
+    j?i(e=>e+1):u.start(H),e&&t===ee&&(f.start({
       ...W,onRest:()=>{
         a.ribbonStartsPlaying(),o(se)
       }
     }),!P&&h.start($))
-  },[f,h,g,a,j,t,P]);
+  },[f,h,u,a,j,t,P]);
   return(0,O.useEffect)(()=>{
     switch(t){
       case Z:d.start({
@@ -209,18 +209,18 @@ Z="initial",ee="rank",se="rewards",ae=(e,s=!1)=>{
         }
       }),h.start(L);
       break;
-      case ee:(y===b||S)&&g.start(H);
+      case ee:(y===b||S)&&u.start(H);
       break;
-      case se:g.start(H),f.start(D),w.start((e=r.progressionShift,{
+      case se:u.start(H),f.start(D),x.start((e=r.progressionShift,{
         to:{
-          y:i(e)
+          y:c(e)
         }
       }))
     }
     var e
-  },[d,f,h,w,g,a,t,r.progressionShift,y,b,S]),(0,oe.jsx)(ne.Provider,{
+  },[d,f,h,x,u,a,t,r.progressionShift,y,b,S]),(0,oe.jsx)(ne.Provider,{
     value:{
-      animationStep:t,progressionStepIndex:n,contentStyle:c,footerStyle:u,switchContentStyle:p,glowStyle:_,progressionStyle:v,progressAnimFinished:N
+      animationStep:t,progressionStepIndex:n,contentStyle:l,footerStyle:m,switchContentStyle:p,glowStyle:_,progressionStyle:v,progressAnimFinished:N
     },
     children:e
   })
@@ -228,25 +228,25 @@ Z="initial",ee="rank",se="rewards",ae=(e,s=!1)=>{
   animationStep:e,className:r
 }){
   const{
-    model:t,controls:o
-  }=te(),n=t.amountRewardsToClaim.get(),i=n>0&&e===se;
-  return S(a.ENTER,()=>{
-    i?o.claimRewards():e!==Z&&o.continue()
+    model:t,controls:n
+  }=te(),i=t.amountRewardsToClaim.get(),l=i>0&&e===se;
+  return j(a.ENTER,()=>{
+    l?n.claimRewards():e!==Z&&n.continue()
   },!0),(0,oe.jsxs)("div",{
-    className:N(le,r),children:[i&&(0,oe.jsxs)("div",{
+    className:S(le,r),children:[l&&(0,oe.jsxs)("div",{
       className:ce,children:[(0,oe.jsx)(s,{
-        size:s.sizes.medium,className:de,onClick:o.claimRewards,children:ge.readOrEmpty("fl_post_battle_rewards.buttons.selectRewards")
+        size:s.sizes.medium,className:de,onClick:n.claimRewards,children:ge.readOrEmpty("fl_post_battle_rewards.buttons.selectRewards")
       }),(0,oe.jsx)("div",{
-        className:me,children:(0,oe.jsx)(b.Root,{
-          children:(0,oe.jsx)(b.Value,{
-            value:n,size:P.medium,classNames:{
+        className:me,children:(0,oe.jsx)(p.Root,{
+          children:(0,oe.jsx)(p.Value,{
+            value:i,size:o.medium,classNames:{
               valueContainer:ue
             }
           })
         })
       })]
     }),(0,oe.jsx)(s,{
-      theme:i?s.themes.secondary:s.themes.primary,size:s.sizes.medium,className:de,onClick:o.continue,children:ge.readOrEmpty("fl_post_battle_rewards.buttons.continue")
+      theme:l?s.themes.secondary:s.themes.primary,size:s.sizes.medium,className:de,onClick:n.continue,children:ge.readOrEmpty("fl_post_battle_rewards.buttons.continue")
     })]
   })
 }),fe="Header_ee5a2d07",_e="Header_title_b0bc13e7",he="Header_subTitle_1eae830c",ve=z(function({
@@ -256,7 +256,7 @@ Z="initial",ee="rank",se="rewards",ae=(e,s=!1)=>{
     model:a
   }=te(),t=ae(a.currProgress.get(),!0).level,o=a.rank.get();
   return(0,oe.jsx)("div",{
-    className:N(fe,s),children:e===se?(0,oe.jsx)(r,{
+    className:S(fe,s),children:e===se?(0,oe.jsx)(r,{
       path:"fl_post_battle_rewards.header.tier",params:{
         value:t
       },
@@ -278,7 +278,7 @@ Z="initial",ee="rank",se="rewards",ae=(e,s=!1)=>{
     if(!e||!s)return;
     const a=l-i;
     if(e.style.left=100*Math.max(0,l-Math.max(0,a))+"%",e.style.width=100*Math.abs(a)+"%",s.style.width="0%",0!=a){
-      const e=new c({
+      const e=new m({
         ...r,from:{
           ...r?.from,width:0
         },
@@ -294,18 +294,18 @@ Z="initial",ee="rank",se="rewards",ae=(e,s=!1)=>{
       }
     }
   },[r,i,l]),(0,oe.jsxs)("div",{
-    ...t,ref:f([o]),className:N(t.className,xe),children:[(0,oe.jsx)("div",{
+    ...t,ref:v([o]),className:S(t.className,xe),children:[(0,oe.jsx)("div",{
       className:we,ref:n
     }),t.children]
   })
 }),ye="Progression_c5ec1889",je="Progression_info_75a8001c",Se="Progression_label_61efd8f5",Pe="Progression_labelNext_731b04f",Ne="Progression_labelExp_10c8b821",Ce="Progression_experience_e617c990",ke="Progression_expIcon_92aafc1a",Re="Progression_levelUpWrapper_cc381f42",Ae="Progression_levelUpGlow_7f4b7336",ze="Progression_progressBar_dd1ebb38",Be="Progression_background_f33388bc",Ve="Progression_delta_5ede6d36",Me=z(function({
-  prevProgress:e,currentProgress:s,isProgressAllowed:a,progressAnimFinished:o,className:i
+  prevProgress:e,currentProgress:s,isProgressAllowed:a,progressAnimFinished:t,className:o
 }){
   const{
-    model:l,controls:c
-  }=te(),[d,u]=(0,O.useState)(!0),[p,f]=m(()=>Q),_=(0,O.useMemo)(()=>({
+    model:i,controls:c
+  }=te(),[d,m]=(0,O.useState)(!0),[u,p]=g(()=>Q),f=(0,O.useMemo)(()=>({
     delay:d?800:450,config:{
-      duration:2e3,easing:g.easeOutQuad
+      duration:2e3,easing:_.easeOutQuad
     },
     onStart:()=>{
       c.progressBarAnimationStart()
@@ -313,15 +313,15 @@ Z="initial",ee="rank",se="rewards",ae=(e,s=!1)=>{
     onRest:()=>{
       c.progressBarAnimationComplete();
       const e=100===ae(s,!0).levelProgress;
-      o(e),e&&(u(!1),f.start({
+      t(e),e&&(m(!1),p.start({
         ...X,onRest:()=>{
-          f.start(J)
+          p.start(J)
         }
       }))
     }
-  }),[c,s,o,d,f]),h=s===e?ae(s).levelProgress:ae(s,!0).levelProgress,v=l.achievedPoints.get();
+  }),[c,s,t,d,p]),h=s===e?ae(s).levelProgress:ae(s,!0).levelProgress,v=i.achievedPoints.get();
   return(0,oe.jsxs)("div",{
-    className:N(ye,i),children:[(0,oe.jsxs)("div",{
+    className:S(ye,o),children:[(0,oe.jsxs)("div",{
       className:je,children:[(0,oe.jsx)("div",{
         className:Se,children:ae(e).level
       }),v>0&&(0,oe.jsxs)("div",{
@@ -334,18 +334,18 @@ Z="initial",ee="rank",se="rewards",ae=(e,s=!1)=>{
           className:Ne
         })]
       }),(0,oe.jsx)("div",{
-        className:Re,children:(0,oe.jsx)(t.div,{
-          style:p,className:Ae
+        className:Re,children:(0,oe.jsx)(n.div,{
+          style:u,className:Ae
         })
       }),(0,oe.jsx)("div",{
         className:Pe,children:ae(e).level+1
       })]
-    }),(0,oe.jsx)(n,{
+    }),(0,oe.jsx)(l,{
       size:"full",value:ae(e).levelProgress,maxValue:100,className:ze,classNames:{
         background:Be
       },
       children:a&&(0,oe.jsx)(be,{
-        initPrevValue:ae(e).levelProgress,initValue:h,initMaxValue:100,animationProps:_,className:Ve
+        initPrevValue:ae(e).levelProgress,initValue:h,initMaxValue:100,animationProps:f,className:Ve
       })
     })]
   })
@@ -357,7 +357,7 @@ function Ee({
     style:{
       backgroundImage:`url(${R.images.frontline.gui.maps.icons.ranks.c_256x256.$dyn(`rank_${e}`)})`
     },
-    className:N(Oe,s)
+    className:S(Oe,s)
   })
 }
 var Fe="Rewards_200712a6",Ie="Rewards_ribbon_ecf8c7f4",Le="Rewards_base__maxLevel_405577a5",$e="Rewards_rewardsContainer_f10b31ca",qe="Rewards_reward_31975416",He=A.resolve("views"),Te=A.resolve("strings"),We=A.resolve("images"),De=z(function({
@@ -365,38 +365,38 @@ var Fe="Rewards_200712a6",Ie="Rewards_ribbon_ecf8c7f4",Le="Rewards_base__maxLeve
 }){
   const{
     model:s
-  }=te(),a=x({
-    rewardSize:w.Small,badgeSize:B.x190
+  }=te(),a=w({
+    rewardSize:N.Small,badgeSize:B.x190
   },{
     medium:{
-      rewardSize:w.Big,badgeSize:B.x270
+      rewardSize:N.Big,badgeSize:B.x270
     },
     large:{
       badgeSize:B.x320
     }
-  }),r=s.rewards.get(),o=ae(s.currProgress.get(),!0).level,n=o>=s.maxLevel.get(),i=Math.min(r.length,6),c=`${We.readOrEmpty(`quests.bonuses.${a.rewardSize}.default`)}`,d=_(Te.readOrEmpty("tooltips.quests.awards.additional.bottom"),{
+  }),r=s.rewards.get(),t=ae(s.currProgress.get(),!0).level,o=t>=s.maxLevel.get(),i=Math.min(r.length,6),l=`${We.readOrEmpty(`quests.bonuses.${a.rewardSize}.default`)}`,c=h(Te.readOrEmpty("tooltips.quests.awards.additional.bottom"),{
     count:r.length-6+1
-  }),u={
+  }),m={
     contentId:He.read(e=>e.lobby.tooltips.AdditionalRewardsTooltip("resId")),args:{
       showCount:6
     }
   },
-  g=l(i,G),[f,h]=m(()=>U);
+  u=d(i,G),[p,f]=g(()=>U);
   return(0,O.useEffect)(()=>{
-    h.start(K)
-  },[h]),(0,oe.jsxs)("div",{
-    className:N(Fe,n&&Le,e),children:[(0,oe.jsx)(t.div,{
-      style:f,className:Ie
+    f.start(K)
+  },[f]),(0,oe.jsxs)("div",{
+    className:S(Fe,o&&Le,e),children:[(0,oe.jsx)(n.div,{
+      style:p,className:Ie
     }),(0,oe.jsx)(V,{
-      level:o,size:a.badgeSize
+      level:t,size:a.badgeSize
     }),(0,oe.jsx)("div",{
-      className:$e,children:g.map((e,s)=>{
-        const o=r[s];
-        return(0,oe.jsx)(t.div,{
-          style:e,children:r.length>6&&s+1===6?(0,oe.jsx)(p,{
-            name:"more",image:c,size:a.rewardSize,value:d,tooltipArgs:u,className:qe
-          }):o?(0,oe.jsx)(M,{
-            ...o,rewardSize:a.rewardSize,className:qe
+      className:$e,children:u.map((e,s)=>{
+        const t=r[s];
+        return(0,oe.jsx)(n.div,{
+          style:e,children:r.length>6&&s+1===6?(0,oe.jsx)(k,{
+            name:"more",image:l,size:a.rewardSize,value:c,tooltipArgs:m,className:qe
+          }):t?(0,oe.jsx)(M,{
+            ...t,rewardSize:a.rewardSize,className:qe
           }):null
         },s)
       })
@@ -406,43 +406,43 @@ var Fe="Rewards_200712a6",Ie="Rewards_ribbon_ecf8c7f4",Le="Rewards_base__maxLeve
   const{
     model:e,controls:s
   }=te();
-  d(s.close);
+  u(s.close);
   const{
-    animationStep:a,progressionStepIndex:r,contentStyle:o,footerStyle:n,switchContentStyle:i,glowStyle:l,progressionStyle:c,progressAnimFinished:m
+    animationStep:a,progressionStepIndex:r,contentStyle:o,footerStyle:i,switchContentStyle:l,glowStyle:c,progressionStyle:d,progressAnimFinished:m
   }=(()=>{
     const e=(0,O.useContext)(ne);
     if(!e)throw new Error("useAnimation must be used within an AnimationProvider");
     return e
-  })(),u=e.computes.progressionSequence(),g=e.isMaxLevel.get(),p=e.maxLevel.get(),f=u[r];
+  })(),g=e.computes.progressionSequence(),p=e.isMaxLevel.get(),f=e.maxLevel.get(),_=g[r];
   return(0,oe.jsxs)("div",{
-    className:Ge,children:[(0,oe.jsx)(v,{
+    className:Ge,children:[(0,oe.jsx)(t,{
       onClose:s.close,className:Ue
-    }),(0,oe.jsxs)(t.div,{
+    }),(0,oe.jsxs)(n.div,{
       style:o,className:Ke,children:[(0,oe.jsx)(ve,{
         animationStep:a,className:Qe
       }),(0,oe.jsxs)("div",{
         className:Xe,children:[(0,oe.jsx)("div",{
-          className:Je,children:(0,oe.jsx)(t.div,{
-            style:l,className:Ye
+          className:Je,children:(0,oe.jsx)(n.div,{
+            style:c,className:Ye
           })
-        }),(0,oe.jsx)(t.div,{
-          style:i,children:a===se?(0,oe.jsx)(De,{}):(0,oe.jsx)(Ee,{
+        }),(0,oe.jsx)(n.div,{
+          style:l,children:a===se?(0,oe.jsx)(De,{}):(0,oe.jsx)(Ee,{
             rank:e.rank.get(),className:Ze
           })
-        }),f&&!g&&f.from<p&&(0,oe.jsx)(t.div,{
-          style:c,children:(0,oe.jsx)(Me,{
-            prevProgress:f.from,currentProgress:f.to,isProgressAllowed:a!==Z,progressAnimFinished:m
+        }),_&&!p&&_.from<f&&(0,oe.jsx)(n.div,{
+          style:d,children:(0,oe.jsx)(Me,{
+            prevProgress:_.from,currentProgress:_.to,isProgressAllowed:a!==Z,progressAnimFinished:m
           })
         })]
-      }),(0,oe.jsx)(t.div,{
-        style:n,children:(0,oe.jsx)(pe,{
+      }),(0,oe.jsx)(n.div,{
+        style:i,children:(0,oe.jsx)(pe,{
           animationStep:a,className:es
         })
       })]
     })]
   })
 });
-j((0,oe.jsx)(o,{
+y((0,oe.jsx)(i,{
   children:(0,oe.jsx)(re,{
     children:(0,oe.jsx)(ie,{
       children:(0,oe.jsx)(ss,{})

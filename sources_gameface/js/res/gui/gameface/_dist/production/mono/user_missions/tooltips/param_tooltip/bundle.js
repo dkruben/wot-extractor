@@ -15,11 +15,11 @@ from"../../chunks/divider.js";
 import{
   t as S
 }
-from"../../chunks/helpers.js";
+from"../../chunks/spec_conditions.js";
 import{
   t as D
 }
-from"../../chunks/spec_conditions.js";
+from"../../chunks/helpers.js";
 var O=e(a(),1),[T,E]=i()(({
   observableModel:s
 })=>{
@@ -81,7 +81,7 @@ function J(){
 var K="Index_d037ad5c",Q=s({
   SpecConditionsTooltipParamsSchema:()=>V,default:()=>X
 }),V=x({
-  specConditions:y(S)
+  specConditions:y(D)
 }),W=M(k(V));
 function X(){
   const{
@@ -90,7 +90,7 @@ function X(){
   return(0,U.jsx)(t,{
     children:(0,U.jsx)(t.Decorator,{
       children:(0,U.jsx)("div",{
-        className:K,children:(0,U.jsx)(D,{
+        className:K,children:(0,U.jsx)(S,{
           specConditions:s
         })
       })

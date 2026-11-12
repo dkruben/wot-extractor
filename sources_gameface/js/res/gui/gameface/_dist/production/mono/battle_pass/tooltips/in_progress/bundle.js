@@ -4,7 +4,7 @@ import{
 }
 from"../../chunks/rolldown-runtime.js";
 import{
-  I as s,It as a,Vr as t,Yn as o,_n as l,an as r,bt as n,ci as i,cn as d,f as c,fn as _,l as m,ln as b,n as h,ni as u,oi as p,pn as x,ri as f,rn as w,sn as g,tn as P,un as j,xt as N
+  I as s,Vr as a,Yn as t,_n as o,an as l,bt as r,ci as n,cn as i,f as d,fn as c,l as _,ln as m,n as b,ni as h,oi as u,pn as p,ri as x,rn as f,sn as w,tn as g,un as P,xt as j,zt as N
 }
 from"../../chunks/lib.js";
 import"../../chunks/global.js";
@@ -23,7 +23,7 @@ from"../../chunks/types.js";
 import{
   t as T
 }
-from"../../chunks/separator.js";
+from"../../chunks/icon_text_block.js";
 import{
   a as y,i as B,n as C,r as E,t as S
 }
@@ -31,17 +31,17 @@ from"../../chunks/per_battle_points_table.js";
 import{
   t as O
 }
-from"../../chunks/icon_text_block.js";
-var W=e(i(),1),L=function(e){
+from"../../chunks/separator.js";
+var W=e(n(),1),L=function(e){
   return e.COMMON="common",e.EXTRA="extra",e.HOLIDAY="holiday",e.POST_PROGRESSION="postProgression",e
-}({}),[M,H]=l()(({
+}({}),[M,H]=o()(({
   observableModel:e
 })=>({
   root:e.object(),rewardPoints:e.array("rewardPoints"),battleRoyaleRewardPoints:e.array("battleRoyaleRewardPoints"),rewardsCommon:e.array("rewardsCommon"),rewardsElite:e.array("rewardsElite")
-}),t),A="Rewards_3f324c43",U=o(),D=({
+}),a),A="Rewards_3f324c43",U=t(),D=({
   className:e="",children:s=null
 })=>(0,U.jsx)("div",{
-  className:p(A,e),children:s
+  className:u(A,e),children:s
 }),G="ClaimInfo_63bb6cbd",$="ClaimInfo_unlock_c22806f7",F=R.strings.battle_pass.tooltips.claimRewards,Y=v(({
   className:e=""
 })=>{
@@ -51,14 +51,14 @@ var W=e(i(),1),L=function(e){
     notChosenRewardCount:a
   }=s.root.get();
   return(0,U.jsx)("div",{
-    className:p(G,e),children:(0,U.jsx)(O,{
+    className:u(G,e),children:(0,U.jsx)(T,{
       icon:R.images.gui.maps.icons.battlePass.tooltips.bow_small(),text:F[a>1?"multiple":"c_1"](),className:$
     })
   })
 }),V=(0,W.memo)(({
   header:e,points:s,columnClassMix:a,hasAdditionalPoints:t
 })=>(0,U.jsxs)("div",{
-  className:p(y.pointsColumn,a),children:[(0,U.jsx)("div",{
+  className:u(y.pointsColumn,a),children:[(0,U.jsx)("div",{
     className:y.tableHeader,children:e
   }),s.map((e,s)=>(0,U.jsx)("div",{
     className:y.label,children:(0,U.jsx)(E,{
@@ -73,7 +73,7 @@ z=R.strings.battle_pass.tooltips.pointsTable,X=({
 })=>{
   const a=(0,W.useMemo)(()=>e.soloMode.map(({
     value:e
-  })=>(0,U.jsx)(n,{
+  })=>(0,U.jsx)(r,{
     text:z.places(),binding:{
       place:e.place
     }
@@ -81,7 +81,7 @@ z=R.strings.battle_pass.tooltips.pointsTable,X=({
     value:e
   })=>e),[e]),o=(0,W.useMemo)(()=>e.squadMode.map(({
     value:e
-  },s)=>(0,U.jsx)(n,{
+  },s)=>(0,U.jsx)(r,{
     text:s>0?z.places():z.place(),binding:{
       place:e.place
     }
@@ -117,8 +117,8 @@ K=v(()=>{
   }:{};
   return(0,U.jsxs)("div",{
     className:J.base,children:[(0,U.jsx)("div",{
-      className:p(J.modeIcon,J[`modeIcon__${t}`]),style:o
-    }),(0,U.jsx)(n,{
+      className:u(J.modeIcon,J[`modeIcon__${t}`]),style:o
+    }),(0,U.jsx)(r,{
       text:R.strings.battle_pass.tooltips.inProgress.getPointsFrom(),binding:{
         battleType:(0,U.jsx)("div",{
           className:J.highlight,children:`${R.strings.battle_pass.tooltips.inProgress.$dyn(t)}`
@@ -136,21 +136,21 @@ se=R.strings.battle_pass.tooltips.pointsTable,ae=R.strings.battle_pass.tooltips.
   const{
     model:e
   }=H(),{
-    battleType:s,isWotPlusShown:t
-  }=e.root.get(),o=e.rewardPoints.get(),l=e.battleRoyaleRewardPoints.get(),r=s===I.BATTLE_ROYALE,n=null!==Z.inProgress.playGame.$dyn(s)?(0,U.jsx)(O,{
+    battleType:s,isWotPlusShown:a
+  }=e.root.get(),t=e.rewardPoints.get(),o=e.battleRoyaleRewardPoints.get(),l=s===I.BATTLE_ROYALE,r=null!==Z.inProgress.playGame.$dyn(s)?(0,U.jsx)(T,{
     icon:R.images.gui.maps.icons.battleTypes.$dyn(ee[s]),text:Z.inProgress.playGame.$dyn(s),className:Q.playGame
   }):null;
   return(0,U.jsxs)(U.Fragment,{
     children:[(0,U.jsx)("div",{
-      className:Q.header,children:te.includes(s)?(0,U.jsx)(K,{}):n
+      className:Q.header,children:te.includes(s)?(0,U.jsx)(K,{}):r
     }),(0,U.jsx)(S,{
-      mixClass:Q.perBattlePointsTable,separatorRows:r?l.soloMode:o.items,children:r?(0,U.jsx)(X,{
-        rewardPoints:l,hasAdditionalPoints:t
+      mixClass:Q.perBattlePointsTable,separatorRows:l?o.soloMode:t.items,children:l?(0,U.jsx)(X,{
+        rewardPoints:o,hasAdditionalPoints:a
       }):(0,U.jsx)(C,{
-        rewardPoints:o,hasAdditionalPoints:t,hasDraw:s!==I.FRONTLINE,topPlace:(oe.includes(s)?ae:se).topPlace(),battleType:s
+        rewardPoints:t,hasAdditionalPoints:a,hasDraw:s!==I.FRONTLINE,topPlace:(oe.includes(s)?ae:se).topPlace(),battleType:s
       })
-    }),t&&(0,U.jsxs)("div",{
-      className:Q.footer,children:[(0,U.jsx)(a,{
+    }),a&&(0,U.jsxs)("div",{
+      className:Q.footer,children:[(0,U.jsx)(N,{
         width:32,height:32,src:R.images.gui.maps.icons.battlePass.tooltips.plus_logo(),className:Q.footerIcon
       }),(0,U.jsx)("div",{
         className:Q.extraPointsDivider
@@ -171,7 +171,7 @@ se=R.strings.battle_pass.tooltips.pointsTable,ae=R.strings.battle_pass.tooltips.
   }=s.root.get();
   return(0,U.jsx)("div",{
     className:re,children:(0,U.jsx)("div",{
-      className:p(e,ne),children:(0,U.jsxs)("div",{
+      className:u(e,ne),children:(0,U.jsxs)("div",{
         className:de,children:[(0,U.jsx)("div",{
           className:ie
         }),(0,U.jsx)("div",{
@@ -200,7 +200,7 @@ se=R.strings.battle_pass.tooltips.pointsTable,ae=R.strings.battle_pass.tooltips.
 }),we="Points_967b0112",Re="Points_pointsCurrent_b498b3a9",ge="Points_pointsMax_2f7dc8fa",Pe="Points_pointsIcon_615fd6e8",je=({
   currentPoints:e,maxPoints:s,className:a=""
 })=>(0,U.jsxs)("div",{
-  className:p(we,a),children:[(0,U.jsx)("div",{
+  className:u(we,a),children:[(0,U.jsx)("div",{
     className:Re,children:e
   }),"/",(0,U.jsx)("div",{
     className:ge,children:s
@@ -216,36 +216,36 @@ se=R.strings.battle_pass.tooltips.pointsTable,ae=R.strings.battle_pass.tooltips.
     currentPoints:t,maxPoints:o
   }=a.root.get();
   return(0,U.jsxs)("div",{
-    className:p(Ne,s),children:[(0,U.jsx)("div",{
-      className:ve,children:(0,U.jsx)(m,{
-        value:t,maxValue:o,theme:c,disabled:e
+    className:u(Ne,s),children:[(0,U.jsx)("div",{
+      className:ve,children:(0,U.jsx)(_,{
+        value:t,maxValue:o,theme:d,disabled:e
       })
     }),(0,U.jsx)(je,{
       maxPoints:o,currentPoints:t,className:ke
     })]
   })
-}),Te=(Date.now(),g.getRegionalDateTime,g.getFormattedDateTime,"ExpireTime_d2bc0e02"),ye="ExpireTime_light_ff99b79d",Be="ExpireTime_icon_8036e60f",Ce="ExpireTime_value_6d799e0c",Ee=v(()=>{
+}),Te=(Date.now(),w.getRegionalDateTime,w.getFormattedDateTime,"ExpireTime_d2bc0e02"),ye="ExpireTime_light_ff99b79d",Be="ExpireTime_icon_8036e60f",Ce="ExpireTime_value_6d799e0c",Ee=v(()=>{
   const{
     model:e
   }=H(),{
     expireTime:s
-  }=e.root.get(),a=((e,s=!0)=>e.days>7&&s?N(R.strings.common.duration.days(),{
+  }=e.root.get(),a=((e,s=!0)=>e.days>7&&s?j(R.strings.common.duration.days(),{
     days:e.days
-  }):e.days>=1?0===e.hours?N(R.strings.common.duration.days(),{
+  }):e.days>=1?0===e.hours?j(R.strings.common.duration.days(),{
     days:e.days
-  }):`${N(R.strings.common.duration.days(),{
+  }):`${j(R.strings.common.duration.days(),{
     days:e.days
-  })} ${N(R.strings.common.duration.hours(),{
+  })} ${j(R.strings.common.duration.hours(),{
     hours:e.hours
-  })}`:e.hours>=1?0===e.minutes?N(R.strings.common.duration.hours(),{
+  })}`:e.hours>=1?0===e.minutes?j(R.strings.common.duration.hours(),{
     hours:e.hours
-  }):`${N(R.strings.common.duration.hours(),{
+  }):`${j(R.strings.common.duration.hours(),{
     hours:e.hours
-  })} ${N(R.strings.common.duration.minutes(),{
+  })} ${j(R.strings.common.duration.minutes(),{
     minutes:e.minutes
-  })}`:N(R.strings.common.duration.minutes(),{
+  })}`:j(R.strings.common.duration.minutes(),{
     minutes:e.minutes||1
-  }))(f(s),!1);
+  }))(x(s),!1);
   return(0,U.jsxs)("div",{
     className:Te,children:[(0,U.jsx)("div",{
       className:ye
@@ -269,7 +269,7 @@ se=R.strings.battle_pass.tooltips.pointsTable,ae=R.strings.battle_pass.tooltips.
   return(0,U.jsxs)("div",{
     className:Se,children:[(0,U.jsxs)("div",{
       className:Oe,children:[(0,U.jsx)("div",{
-        className:We,children:s&&(0,U.jsx)(n,{
+        className:We,children:s&&(0,U.jsx)(r,{
           text:R.strings.battle_pass.tooltips.inProgress.chapter(),binding:{
             name:R.strings.battle_pass.chapter.fullName.$dyn(`c_${s}`)
           }
@@ -280,12 +280,12 @@ se=R.strings.battle_pass.tooltips.pointsTable,ae=R.strings.battle_pass.tooltips.
 }),Me={
   base:"RewardsBlock_a66e0ba7",nextRewards:"RewardsBlock_nextRewards_580b2817",rewardsList:"RewardsBlock_rewardsList_bd0e0d04",rewardsList__locked:"RewardsBlock_rewardsList__locked_d962e74b",reward:"RewardsBlock_reward_ba99e1fe",reward__shiftUp:"RewardsBlock_reward__shiftUp_c85a723b",reward__styleUpgrade:"RewardsBlock_reward__styleUpgrade_5feff608",reward__wide:"RewardsBlock_reward__wide_6b8de2f3",reward__next:"RewardsBlock_reward__next_37ab73ce",reward__single:"RewardsBlock_reward__single_56d6a3b7",lockIcon:"RewardsBlock_lockIcon_b3ad9975",overlay:"RewardsBlock_overlay_adaa44ea",fadeInWithScale:"RewardsBlock_fadeInWithScale_5feff608",slideUp:"RewardsBlock_slideUp_5feff608",blink:"RewardsBlock_blink_5feff608",scale:"RewardsBlock_scale_5feff608",rotate:"RewardsBlock_rotate_5feff608",windowIn:"RewardsBlock_windowIn_5feff608",fadeOut:"RewardsBlock_fadeOut_5feff608",fadeIn:"RewardsBlock_fadeIn_5feff608"
 },
-He=[j.PROGRESSION_STYLE_UPGRADED_1,j.PROGRESSION_STYLE_UPGRADED_2,j.PROGRESSION_STYLE_UPGRADED_3,j.PROGRESSION_STYLE_UPGRADED_4],Ae=({
+He=[P.PROGRESSION_STYLE_UPGRADED_1,P.PROGRESSION_STYLE_UPGRADED_2,P.PROGRESSION_STYLE_UPGRADED_3,P.PROGRESSION_STYLE_UPGRADED_4],Ae=({
   label:e,isLocked:a=!1,rewards:{
     items:t
   }
 })=>{
-  const o=t.length>1&&t.length%2==1,l=1===t.length,n=2===t.length,i=l?d.S180x135:d.Small,c=t.every(({
+  const o=t.length>1&&t.length%2==1,r=1===t.length,n=2===t.length,d=r?i.S180x135:i.Small,c=t.every(({
     value:e
   })=>{
     const s=Number(e.value);
@@ -297,13 +297,13 @@ He=[j.PROGRESSION_STYLE_UPGRADED_1,j.PROGRESSION_STYLE_UPGRADED_2,j.PROGRESSION_
         className:Me.lockIcon
       }),e]
     }),(0,U.jsx)("div",{
-      className:p(Me.rewardsList,a&&Me.rewardsList__locked),children:t.map((e,a)=>{
+      className:u(Me.rewardsList,a&&Me.rewardsList__locked),children:t.map((e,a)=>{
         const t=((e,s)=>({
-          name:e.item||e.name,image:w(e,s),special:e.overlayType,value:e.value,valueType:r(e.name)
-        }))(e.value,i),d=t.name===b.Attachment,_=t.special&&He.includes(t.special);
+          name:e.item||e.name,image:f(e,s),special:e.overlayType,value:e.value,valueType:l(e.name)
+        }))(e.value,d),i=t.name===m.Attachment,_=t.special&&He.includes(t.special);
         return(0,W.createElement)(s,{
-          ...t,size:i,key:`${t.name}_${a}`,className:p(!n&&Me.reward,a>0&&Me.reward__next,_&&Me.reward__styleUpgrade,c&&!o&&Me.reward__wide,o&&a%2==1&&Me.reward__shiftUp,l&&Me.reward__single),classNames:{
-            overlay:p(!d&&l&&Me.overlay)
+          ...t,size:d,key:`${t.name}_${a}`,className:u(!n&&Me.reward,a>0&&Me.reward__next,_&&Me.reward__styleUpgrade,c&&!o&&Me.reward__wide,o&&a%2==1&&Me.reward__shiftUp,r&&Me.reward__single),classNames:{
+            overlay:u(!i&&r&&Me.overlay)
           }
         })
       })
@@ -324,11 +324,11 @@ Ue="InProgressContent_a8ca87b2",De="InProgressContent_content_524dcedb",Ge="InPr
         }),(0,U.jsx)(Ae,{
           label:Ye.inProgress.improvedReward(),rewards:l,isLocked:!a
         })]
-      }),!r&&!a&&(0,U.jsx)(O,{
+      }),!r&&!a&&(0,U.jsx)(T,{
         icon:R.images.gui.maps.icons.battlePass.progression.icon_lock_current_small(),text:Ye.unlockBattlePass(),className:$e
       })]
     }),(0,U.jsx)(le,{}),n&&(0,U.jsxs)(U.Fragment,{
-      children:[(0,U.jsx)(T,{}),(0,U.jsx)(Y,{
+      children:[(0,U.jsx)(O,{}),(0,U.jsx)(Y,{
         className:Fe
       })]
     }),r&&(0,U.jsx)(he,{})]
@@ -336,23 +336,23 @@ Ue="InProgressContent_a8ca87b2",De="InProgressContent_content_524dcedb",Ge="InPr
 }),qe="Header_71860ac",ze="Header_name_1aee0b18",Xe=R.strings.battle_pass.tooltips.inProgress.postProgression,Je=({
   className:e=""
 })=>(0,U.jsxs)("div",{
-  className:p(qe,e),children:[(0,U.jsx)("div",{
+  className:u(qe,e),children:[(0,U.jsx)("div",{
     className:ze,children:Xe.header()
   }),(0,U.jsx)(fe,{}),(0,U.jsx)(Ie,{})]
 }),Ke={
   base:"RewardsBlock_f8eba448",ribbon:"RewardsBlock_ribbon_63a6acee",rewards:"RewardsBlock_rewards_259e5467",reward__big:"RewardsBlock_reward__big_6e09459f",fadeInWithScale:"RewardsBlock_fadeInWithScale_5feff608",slideUp:"RewardsBlock_slideUp_5feff608",blink:"RewardsBlock_blink_5feff608",scale:"RewardsBlock_scale_5feff608",rotate:"RewardsBlock_rotate_5feff608",windowIn:"RewardsBlock_windowIn_5feff608",fadeOut:"RewardsBlock_fadeOut_5feff608",fadeIn:"RewardsBlock_fadeIn_5feff608"
 },
 Qe=(e,s)=>({
-  name:e.item||e.name,image:w(e,s),special:e.overlayType,value:e.value,valueType:r(e.name)
+  name:e.item||e.name,image:f(e,s),special:e.overlayType,value:e.value,valueType:l(e.name)
 }),Ze=({
   rewards:{
     items:e
   },
   className:a=""
 })=>{
-  const t=e.length<3?d.S180x135:d.Big;
+  const t=e.length<3?i.S180x135:i.Big;
   return(0,U.jsxs)("div",{
-    className:p(Ke.base,a),children:[(0,U.jsx)("div",{
+    className:u(Ke.base,a),children:[(0,U.jsx)("div",{
       className:Ke.ribbon
     }),(0,U.jsx)("div",{
       className:Ke.rewards,children:e.map((e,a)=>(0,U.jsx)(s,{
@@ -372,13 +372,13 @@ es="PostProgressionContent_61673cb3",ss="PostProgressionContent_header_d2b5683d"
       className:ss
     }),(0,U.jsx)(Ze,{
       rewards:e.rewardsCommon.get(),className:ts
-    }),(0,U.jsx)(le,{}),(t||!s)&&(0,U.jsx)(T,{}),(0,U.jsxs)("div",{
+    }),(0,U.jsx)(le,{}),(t||!s)&&(0,U.jsx)(O,{}),(0,U.jsxs)("div",{
       className:as,children:[t&&(0,U.jsx)(Y,{
-        className:p(s&&os)
-      }),t&&!s&&(0,U.jsx)(T,{
+        className:u(s&&os)
+      }),t&&!s&&(0,U.jsx)(O,{
         className:ls
       }),!s&&(0,U.jsx)("div",{
-        children:(0,U.jsx)(O,{
+        children:(0,U.jsx)(T,{
           icon:R.images.gui.maps.icons.battlePass.progression.icon_lock_current_small(),text:ns.unlockBattlePassForPostProgression(),className:rs
         })
       })]
@@ -390,10 +390,10 @@ es="PostProgressionContent_61673cb3",ss="PostProgressionContent_header_d2b5683d"
   }=H(),{
     chapterType:s
   }=e.root.get(),a=s===L.POST_PROGRESSION?(0,U.jsx)(is,{}):(0,U.jsx)(Ve,{});
-  return(0,U.jsx)(h,{
-    children:(0,U.jsx)(h.Decorator,{
+  return(0,U.jsx)(b,{
+    children:(0,U.jsx)(b.Decorator,{
       children:a
     })
   })
 });
-_((new x).add(P).addWithProps(M,{}).render((0,U.jsx)(ds,{})));
+c((new p).add(g).addWithProps(M,{}).render((0,U.jsx)(ds,{})));

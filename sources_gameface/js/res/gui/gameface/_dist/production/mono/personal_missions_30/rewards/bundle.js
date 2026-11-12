@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  $t as a,At as s,B as r,Bt as t,Ct as n,D as i,E as o,Et as l,Ft as d,G as c,Ht as _,K as m,Kt as u,L as p,Lt as h,O as b,Q as g,R as w,T as v,U as f,X as R,an as y,at as N,bt as x,cn as O,ct as T,en as j,et as I,ft as S,gt as A,in as E,ln as P,lt as H,m as C,mt as k,nn as V,on as $,ot as M,pt as B,q as W,rn as L,tn as z,tt as D,w as G,xt as K
+  $t as a,At as s,B as r,Bt as t,Ct as n,Et as i,F as o,Ft as l,G as d,Ht as c,I as _,K as m,Kt as u,L as p,Lt as h,M as b,N as g,P as w,Q as v,R as f,U as R,X as y,an as N,at as x,bt as O,cn as j,ct as T,en as I,et as S,ft as A,gt as P,in as E,j as H,ln as C,lt as k,mt as V,nn as M,on as $,ot as B,pt as W,q as L,rn as z,tn as D,tt as G,xt as K
 }
 from"../chunks/lib.js";
 import"../chunks/global.js";
@@ -13,17 +13,17 @@ import{
 }
 from"../chunks/vendor.js";
 import{
-  a as U,i as F,r as Y
+  a as F,i as U,r as Y
 }
 from"../chunks/helpers.js";
 import{
   t as Q
 }
 from"../chunks/style_bonus_model.js";
-var X=e(O(),1),J=e=>()=>{
+var X=e(j(),1),J=e=>()=>{
   const{
     steps:a,autoStart:s=!0
-  }=e,r=(0,X.useRef)(null),t=(0,X.useRef)("idle"),n=(0,X.useRef)([]),i=A(),o=N(),l=M(),d=(0,X.useMemo)(()=>{
+  }=e,r=(0,X.useRef)(null),t=(0,X.useRef)("idle"),n=(0,X.useRef)([]),i=P(),o=x(),l=B(),d=(0,X.useMemo)(()=>{
     const e=a[Symbol.iterator](),s=()=>{
       const a=e.next();
       if(a.done)return t.current="end",void i.trigger("end");
@@ -53,21 +53,21 @@ var X=e(O(),1),J=e=>()=>{
       }
     }
   },[o,i,l,a]);
-  return k(()=>{
+  return V(()=>{
     s&&d.start()
   }),d
 },
-Z=new Set([i.Small,i.Big]),ee=e=>({
+Z=new Set([o.Small,o.Big]),ee=e=>({
   index:e.index,name:e.name,image:a=>((e,a)=>{
     switch(e.name){
       case"customizations":return"projectionDecal"===e.icon?`R.images.gui.maps.icons.quests.bonuses.${a}.${e.icon}`:Z.has(a)?`R.images.gui.maps.icons.quests.bonuses.${a}.style`:`R.images.gui.maps.icons.personal_missions_30.rewards.${a}.style_${e.icon}`;
       case Q:return Z.has(a)?`R.images.gui.maps.icons.quests.bonuses.${a}.style_3d`:`R.images.gui.maps.icons.personal_missions_30.rewards.${a}.style_3d_${e.icon}`;
       case"attachment":return`R.images.gui.maps.vehicles.attachments.${a}.${e.icon}`;
-      default:return G(e,a)
+      default:return b(e,a)
     }
-  })(e,a),value:e.value,label:e.label,icon:e.icon,valueType:o(e.name),tooltipArgs:v({
-    [F]:e.tooltipId
-  },P.resolve("views").read(e=>e.common.tooltip_window.backport_tooltip_content.BackportTooltipContent("resId")))
+  })(e,a),value:e.value,label:e.label,icon:e.icon,valueType:w(e.name),tooltipArgs:g({
+    [U]:e.tooltipId
+  },C.resolve("views").read(e=>e.common.tooltip_window.backport_tooltip_content.BackportTooltipContent("resId")))
 }),ae=16/9,se=(e,a)=>{
   const s=e/a;
   return{
@@ -75,18 +75,18 @@ Z=new Set([i.Small,i.Big]),ee=e=>({
   }
 },
 re={
-  gui_random_reward_appear:D("gui_random_reward_appear"),gui_hangar_simple_execution_screen:D("gui_hangar_simple_execution_screen"),vid_pm_o08_s15:D("vid_pm_o08_s15"),vid_pm_o09_s15:D("vid_pm_o09_s15"),vid_pm_o10_s15:D("vid_pm_o10_s15"),vid_pm_o11_s15:D("vid_pm_o11_s15"),vid_pm_resume:D("vid_pm_resume"),vid_pm_pause:D("vid_pm_pause"),stopIntro:D("vid_pm_stop")
+  gui_random_reward_appear:G("gui_random_reward_appear"),gui_hangar_simple_execution_screen:G("gui_hangar_simple_execution_screen"),vid_pm_o08_s15:G("vid_pm_o08_s15"),vid_pm_o09_s15:G("vid_pm_o09_s15"),vid_pm_o10_s15:G("vid_pm_o10_s15"),vid_pm_o11_s15:G("vid_pm_o11_s15"),vid_pm_resume:G("vid_pm_resume"),vid_pm_pause:G("vid_pm_pause"),stopIntro:G("vid_pm_stop")
 },
-[te,ne]=g()(({
+[te,ne]=v()(({
   observableModel:e
 })=>{
   const a={
     root:e.object(),vehicle:e.object("vehicle"),rewards:e.transform(e=>t(e,ee),"rewards")
   },
-  s=d.box(!1),r=R.model(()=>{
+  s=l.box(!1),r=y.model(()=>{
     const e=a.root.get().type;
-    return e===U.OPERATION||e===U.VEHICLE_PART?[]:h(a.rewards.get(),(e,a)=>a<4)
-  }),n=R.model(()=>a.root.get().type===U.OPERATION?a.rewards.get():h(a.rewards.get(),(e,a)=>a>=4));
+    return e===F.OPERATION||e===F.VEHICLE_PART?[]:h(a.rewards.get(),(e,a)=>a<4)
+  }),n=y.model(()=>a.root.get().type===F.OPERATION?a.rewards.get():h(a.rewards.get(),(e,a)=>a>=4));
   return{
     ...a,introVideoPlaying:s,computes:{
       mainRegularRewards:r,additionalRewards:n
@@ -158,7 +158,7 @@ var ye=J({
   return(0,ie.jsx)(fe.Provider,{
     value:a,children:e
   })
-}),Te=J({
+}),je=J({
   steps:[{
     name:de,delay:200
   },{
@@ -170,10 +170,10 @@ var ye=J({
   },{
     name:ge,delay:200
   }],autoStart:!1
-}),je=q(function({
+}),Te=q(function({
   children:e
 }){
-  const a=Te();
+  const a=je();
   return(0,ie.jsx)(fe.Provider,{
     value:a,children:e
   })
@@ -186,10 +186,10 @@ var ye=J({
     type:s,nextOperationName:r
   }=a.root.get();
   switch(!0){
-    case s===U.OPERATION:return(0,ie.jsx)(je,{
+    case s===F.OPERATION:return(0,ie.jsx)(Te,{
       children:e
     });
-    case s===U.OPERATION_WITH_HONORS&&Boolean(r):return(0,ie.jsx)(Oe,{
+    case s===F.OPERATION_WITH_HONORS&&Boolean(r):return(0,ie.jsx)(Oe,{
       children:e
     });
     default:return(0,ie.jsx)(Ne,{
@@ -201,19 +201,19 @@ var Se=q(function({
   reward:e,onAnimationStart:a,onAnimationEnd:s,index:r,className:t
 }){
   const{
-    model:o
+    model:i
   }=ne(),{
     type:l
-  }=o.root.get(),d=I(),{
+  }=i.root.get(),d=S(),{
     breakpoint:c
-  }=x(),_=function(e,a){
-    return e===U.OPERATION?i.Big:Y(a,n.medium)?i.Small:i.Big
-  }(l,c.weight),[m,u]=H(()=>({
+  }=O(),_=function(e,a){
+    return e===F.OPERATION?o.Big:Y(a,n.medium)?o.Small:o.Big
+  }(l,c.weight),[m,u]=k(()=>({
     from:{
       transform:"translateY(20rem)",opacity:0,pointerEvents:"none"
     },
     config:{
-      duration:400,easing:y.easeOutCirc
+      duration:400,easing:N.easeOutCirc
     },
     onStart:()=>{
       d.play("gui_random_reward_appear",{
@@ -232,19 +232,19 @@ var Se=q(function({
       p.events.off("change",e)
     }
   },[p.events,u,r]),(0,ie.jsx)(T.div,{
-    className:t,style:m,children:(0,ie.jsx)(C,{
+    className:t,style:m,children:(0,ie.jsx)(H,{
       ...e,size:_,image:e.image(_)
     },r)
   })
-}),Ae="AdditionalRewards_ffae6df",Ee="AdditionalRewards_title_2d8eb236",Pe="AdditionalRewards_list_81a45598",He="AdditionalRewards_reward_ed90708c",Ce=q(function(e){
+}),Ae="AdditionalRewards_ffae6df",Pe="AdditionalRewards_title_2d8eb236",Ee="AdditionalRewards_list_81a45598",He="AdditionalRewards_reward_ed90708c",Ce=q(function(e){
   const{
     model:a
   }=ne(),s=Re();
   return(0,ie.jsxs)("div",{
     className:$(Ae,e.className),children:[(0,ie.jsx)(r,{
-      path:"personal_missions_30.rewards.additional",className:Ee
+      path:"personal_missions_30.rewards.additional",className:Pe
     }),(0,ie.jsx)("div",{
-      className:Pe,children:t(a.computes.additionalRewards(),(e,a,r)=>(0,ie.jsx)(Se,{
+      className:Ee,children:t(a.computes.additionalRewards(),(e,a,r)=>(0,ie.jsx)(Se,{
         index:a,reward:e,onAnimationEnd:()=>a===r.length-1&&s.resume(),className:He
       },a))
     })]
@@ -255,14 +255,14 @@ var Se=q(function({
 Ve={
   base:ke.button,content:ke.text
 },
-$e=q(function(e){
+Me=q(function(e){
   const{
     model:a,controls:s
   }=ne(),{
     type:r,nextOperationName:t,buttonDisabled:i,buttonVisible:o
   }=a.root.get(),{
     breakpoint:l
-  }=x(),d=Y(l.weight,n.medium)?w.small:w.medium,c=I(),_=P.resolve("strings");
+  }=O(),d=Y(l.weight,n.medium)?f.small:f.medium,c=S(),_=C.resolve("strings");
   function m(){
     c.play("stopIntro",{
       target:"CloseButton"
@@ -271,7 +271,7 @@ $e=q(function(e){
   return(0,ie.jsxs)("div",{
     className:$(ke.base,ke[`base__${r}`],e.className),children:[(()=>{
       switch(!0){
-        case r===U.VEHICLE_PART:case r===U.OPERATION_WITH_HONORS&&Boolean(t):return o&&(0,ie.jsx)(p,{
+        case r===F.VEHICLE_PART:case r===F.OPERATION_WITH_HONORS&&Boolean(t):return o&&(0,ie.jsx)(p,{
           theme:"primary",size:d,onClick:()=>{
             c.play("stopIntro",{
               target:"CloseButton"
@@ -279,10 +279,10 @@ $e=q(function(e){
           },
           disabled:i,classNames:Ve,children:_.readOrEmpty("personal_missions_30.rewards.buttons.goToOperation")
         });
-        case r===U.CAMPAIGN_WITH_HONORS:case r===U.OPERATION_WITH_HONORS&&!t:return(0,ie.jsx)(p,{
+        case r===F.CAMPAIGN_WITH_HONORS:case r===F.OPERATION_WITH_HONORS&&!t:return(0,ie.jsx)(p,{
           theme:"primary",size:d,onClick:m,classNames:Ve,children:_.readOrEmpty("personal_missions_30.rewards.buttons.confirm")
         });
-        case r===U.OPERATION:return(0,ie.jsx)(p,{
+        case r===F.OPERATION:return(0,ie.jsx)(p,{
           theme:"primary",size:d,onClick:()=>{
             c.play("stopIntro",{
               target:"CloseButton"
@@ -294,17 +294,17 @@ $e=q(function(e){
       }
     })(),(()=>{
       switch(!0){
-        case r===U.OPERATION_WITH_HONORS&&Boolean(t):case r===U.OPERATION:return(0,ie.jsx)(p,{
+        case r===F.OPERATION_WITH_HONORS&&Boolean(t):case r===F.OPERATION:return(0,ie.jsx)(p,{
           theme:"secondary",size:d,onClick:m,classNames:Ve,children:_.readOrEmpty("personal_missions_30.rewards.buttons.close")
         });
-        case r===U.VEHICLE_PART:return(0,ie.jsx)(p,{
+        case r===F.VEHICLE_PART:return(0,ie.jsx)(p,{
           theme:o?"secondary":"primary",size:d,onClick:m,classNames:Ve,children:_.readOrEmpty("personal_missions_30.rewards.buttons.close")
         });
         default:return null
       }
     })()]
   })
-}),Me={
+}),$e={
   base:"VehicleName_cce06ab3",base__24x24:"VehicleName_base__24x24_e43b4676",base__24x24_metal:"VehicleName_base__24x24_metal_af74305d",base__48x48:"VehicleName_base__48x48_e43b4676",base__64x64:"VehicleName_base__64x64_a079d4e3",base__83x74:"VehicleName_base__83x74_1dd2aae1",vehicleTypeContainer:"VehicleName_vehicleTypeContainer_1421b13d",base__60x54:"VehicleName_base__60x54_e43b4676",vehicleType:"VehicleName_vehicleType_5ec4137d"
 },
 Be="64x64",We="80x80",Le="83x74",ze="180x135",De=e=>{
@@ -318,13 +318,13 @@ Be="64x64",We="80x80",Le="83x74",ze="180x135",De=e=>{
 Ge=(0,X.memo)(function({
   name:e,tier:a,type:s,size:r=Be,isPremium:t=!1,className:n
 }){
-  const i=`${j(s)}${t?"_elite":""}`;
+  const o=`${I(s)}${t?"_elite":""}`;
   return(0,ie.jsxs)("div",{
-    className:$(Me.base,Me[`base__${r}`],n),children:[(0,ie.jsx)("div",{
-      children:l(a)
+    className:$($e.base,$e[`base__${r}`],n),children:[(0,ie.jsx)("div",{
+      children:i(a)
     }),(0,ie.jsx)("div",{
-      className:Me.vehicleTypeContainer,children:(0,ie.jsx)(f,{
-        path:`${De(r)}.${i}`,className:Me.vehicleType
+      className:$e.vehicleTypeContainer,children:(0,ie.jsx)(R,{
+        path:`${De(r)}.${o}`,className:$e.vehicleType
       })
     }),(0,ie.jsx)("div",{
       children:e
@@ -333,12 +333,12 @@ Ge=(0,X.memo)(function({
 }),Ke={
   base:"Header_a3ec173b",subTitle:"Header_subTitle_fcc90c2d",fadeIn:"Header_fadeIn_65f475ba",up:"Header_up_65f475ba",title:"Header_title_63b15d15",honorsBack:"Header_honorsBack_6ebc07c1",vehicleName:"Header_vehicleName_17df3d4c",upScale:"Header_upScale_65f475ba",rotate:"Header_rotate_65f475ba"
 },
-qe=new Set([U.OPERATION_WITH_HONORS,U.CAMPAIGN_WITH_HONORS]),Ue=new Set([U.VEHICLE_PART,U.OPERATION_WITH_HONORS,U.CAMPAIGN_WITH_HONORS]),Fe=q(function(e){
+qe=new Set([F.OPERATION_WITH_HONORS,F.CAMPAIGN_WITH_HONORS]),Fe=new Set([F.VEHICLE_PART,F.OPERATION_WITH_HONORS,F.CAMPAIGN_WITH_HONORS]),Ue=q(function(e){
   const{
     model:a
   }=ne(),{
     type:s,operationName:t,campaignName:n
-  }=a.root.get(),i=a.vehicle.get(),o=P.resolve("intl"),l=Re(),d=I();
+  }=a.root.get(),i=a.vehicle.get(),o=C.resolve("intl"),l=Re(),d=S();
   return(0,X.useEffect)(()=>{
     const e=e=>{
       e.name===de&&d.play("gui_hangar_simple_execution_screen",{
@@ -347,11 +347,11 @@ qe=new Set([U.OPERATION_WITH_HONORS,U.CAMPAIGN_WITH_HONORS]),Ue=new Set([U.VEHIC
     };
     return l.events.on("change",e),()=>l.events.off("change",e)
   },[l.events,d]),(0,ie.jsxs)("div",{
-    className:$(Ke.base,Ke[`base__${s}`],e.classname),children:[qe.has(s)&&(0,ie.jsx)(f,{
+    className:$(Ke.base,Ke[`base__${s}`],e.classname),children:[qe.has(s)&&(0,ie.jsx)(R,{
       path:"personal_missions_30.rewards.honors_title_back",className:Ke.honorsBack
-    }),Ue.has(s)&&(0,ie.jsx)(r,{
+    }),Fe.has(s)&&(0,ie.jsx)(r,{
       path:`personal_missions_30.rewards.subTitle.${s}`,params:{
-        name:s===U.CAMPAIGN_WITH_HONORS?n:t
+        name:s===F.CAMPAIGN_WITH_HONORS?n:t
       },
       className:Ke.subTitle
     }),(0,ie.jsx)(r,{
@@ -359,23 +359,23 @@ qe=new Set([U.OPERATION_WITH_HONORS,U.CAMPAIGN_WITH_HONORS]),Ue=new Set([U.VEHIC
         name:o.toUpperCase(t)
       },
       className:Ke.title
-    }),s===U.OPERATION&&(0,ie.jsx)(Ge,{
+    }),s===F.OPERATION&&(0,ie.jsx)(Ge,{
       name:i.vehicleShortName,type:i.vehicleType,tier:i.vehicleLvl,isPremium:i.isElite,className:Ke.vehicleName
     })]
   })
 }),Ye={
   base:"RegularMainReward_d1a37b82",image:"RegularMainReward_image_ca63a3d4",fadeIn:"RegularMainReward_fadeIn_54e4f800",upScale:"RegularMainReward_upScale_54e4f800",label:"RegularMainReward_label_a21d4175",info:"RegularMainReward_info_59fd3db8",base__attachment:"RegularMainReward_base__attachment_54e4f800",base__style_3d:"RegularMainReward_base__style_3d_54e4f800",up:"RegularMainReward_up_54e4f800",rotate:"RegularMainReward_rotate_54e4f800"
 };
-var Qe=new Set([b.BattleBadge,b.PremiumPlus,b.Customizations,Q,"attachment"]);
+var Qe=new Set([_.BattleBadge,_.PremiumPlus,_.Customizations,Q,"attachment"]);
 function Xe({
   reward:e
 }){
   const{
     breakpoint:a
-  }=x(),s=(t=a.weight,Y(t,n.large)?i.S296x222:i.S400x300);
+  }=O(),s=(t=a.weight,Y(t,n.large)?o.S296x222:o.S400x300);
   var t;
   return(0,ie.jsxs)("div",{
-    className:$(Ye.base,Ye[`base__${e.name}`]),children:[(0,ie.jsx)(C,{
+    className:$(Ye.base,Ye[`base__${e.name}`]),children:[(0,ie.jsx)(H,{
       ...e,size:s,image:e.image(s),classNames:{
         image:Ye.image,info:Ye.info
       }
@@ -390,9 +390,9 @@ function Xe({
 }
 var Je="VehiclePart_15b78928",Ze="VehiclePart_image_f33361cd",ea="VehiclePart_label_5cfdac0";
 function aa(e){
-  const a=P.resolve("strings");
+  const a=C.resolve("strings");
   return(0,ie.jsxs)("div",{
-    className:Je,children:[(0,ie.jsx)(f,{
+    className:Je,children:[(0,ie.jsx)(R,{
       path:`personal_missions_30.vehicle_detail.c_1200x450.${e.id}`,width:720,height:270,adaptive:{
         large:{
           width:1200,height:450
@@ -407,12 +407,12 @@ function aa(e){
 var sa={
   base:"MainRewards_9aca825a",ribbonWrapper:"MainRewards_ribbonWrapper_30eeaba3",ribbon:"MainRewards_ribbon_7f79f96d",fadeIn:"MainRewards_fadeIn_56da68ed",up:"MainRewards_up_56da68ed",list:"MainRewards_list_597b951b",rays:"MainRewards_rays_466e2f66",rotate:"MainRewards_rotate_56da68ed",base__operationWithHonors:"MainRewards_base__operationWithHonors_56da68ed",base__campaignWithHonors:"MainRewards_base__campaignWithHonors_56da68ed",upScale:"MainRewards_upScale_56da68ed"
 },
-ra=[U.OPERATION_WITH_HONORS,U.CAMPAIGN_WITH_HONORS],ta=q(function(e){
+ra=[F.OPERATION_WITH_HONORS,F.CAMPAIGN_WITH_HONORS],ta=q(function(e){
   const{
     model:a
   }=ne(),{
     type:s,vehicleDetailName:r
-  }=a.root.get(),n=I(),i=Re(),o=ra.includes(s)?"ribbon_gold":"ribbon";
+  }=a.root.get(),n=S(),i=Re(),o=ra.includes(s)?"ribbon_gold":"ribbon";
   return(0,X.useEffect)(()=>{
     const e=e=>{
       e.name===me&&n.play("gui_random_reward_appear",{
@@ -422,7 +422,7 @@ ra=[U.OPERATION_WITH_HONORS,U.CAMPAIGN_WITH_HONORS],ta=q(function(e){
     return i.events.on("change",e),()=>i.events.off("change",e)
   },[i.events,n]),(0,ie.jsxs)("div",{
     className:$(sa.base,e.className,sa[`base__${s}`]),children:[(0,ie.jsx)("div",{
-      className:sa.ribbonWrapper,children:s!==U.VEHICLE_PART&&(0,ie.jsx)(f,{
+      className:sa.ribbonWrapper,children:s!==F.VEHICLE_PART&&(0,ie.jsx)(R,{
         path:`personal_missions_30.rewards.${o}_small`,width:1366,height:356,adaptive:{
           medium:{
             path:`personal_missions_30.rewards.${o}_medium`,width:1600,height:417
@@ -449,18 +449,18 @@ ra=[U.OPERATION_WITH_HONORS,U.CAMPAIGN_WITH_HONORS],ta=q(function(e){
 da={
   8:12,9:13,10:12,11:14
 },
-ca=P.resolve("videos"),_a=q(function(){
+ca=C.resolve("videos"),_a=q(function(){
   const{
     model:e,controls:s
   }=ne(),{
     operationId:r
-  }=e.root.get(),t=e.introVideoPlaying.get(),n=I(),i=(0,X.useRef)(null),[o,l]=(0,X.useState)([]),d=Re(),{
+  }=e.root.get(),t=e.introVideoPlaying.get(),n=S(),i=(0,X.useRef)(null),[o,l]=(0,X.useState)([]),c=Re(),{
     screenWidthRem:_,screenHeightRem:m
-  }=x(),[p,h]=S(()=>{
+  }=O(),[p,h]=A(()=>{
     const e=i.current?.getCachedKeyframes();
     return!e?.length||(l(e),!1)
   });
-  k(()=>{
+  V(()=>{
     s.setIntroVideoPlaying(!0);
     const e=a(e=>{
       e?n.play("vid_pm_pause"):n.play("vid_pm_resume")
@@ -473,7 +473,7 @@ ca=P.resolve("videos"),_a=q(function(){
   return(({
     enabled:e,syncFrame:s,soundStartedTimestamp:r,playerRef:t
   })=>{
-    const n=(0,X.useRef)(0),i=(0,X.useRef)(0),[o,l]=(0,X.useState)(!1),d=N();
+    const n=(0,X.useRef)(0),i=(0,X.useRef)(0),[o,l]=(0,X.useState)(!1),d=x();
     (0,X.useEffect)(()=>{
       if(!e||o)return;
       if(null===t.current||void 0===r||void 0===s)return;
@@ -481,10 +481,10 @@ ca=P.resolve("videos"),_a=q(function(){
         e?n.current=Date.now():i.current=i.current+Date.now()-n.current
       }),_=t.current.onKeyframes(e=>{
         if(e.time>=s){
-          const e=u(Date.now()-r-i.current,z,E),a=Math.ceil(e);
+          const e=u(Date.now()-r-i.current,D,E),a=Math.ceil(e);
           d.run(()=>{
             t.current?.goToAndPlay(a),l(!0)
-          },u(a-e,V,L))
+          },u(a-e,M,z))
         }
       });
       return()=>{
@@ -496,12 +496,12 @@ ca=P.resolve("videos"),_a=q(function(){
   }),(0,ie.jsxs)("div",{
     className:na,children:[(0,ie.jsx)("div",{
       className:ia
-    }),(0,ie.jsx)(c,{
+    }),(0,ie.jsx)(d,{
       ref:i,src:ca.readOrEmpty(`personal_missions_30.rewards_screen.operation_${r}`),autoplay:!0,isPrebufferKeyframes:Boolean(o.length),style:se(_,m),onPlay:()=>{
         void 0===b&&(g(Date.now()),n.play(`vid_pm_o${r.toString().padStart(2,"0")}_s15`))
       },
       onEnded:()=>{
-        t&&(d.start(),s.setIntroVideoPlaying(!1),s.disableVideoOverlaySound()),i.current?.goToAndPlay(la[r]??0)
+        t&&(c.start(),s.setIntroVideoPlaying(!1),s.disableVideoOverlaySound()),i.current?.goToAndPlay(la[r]??0)
       },
       className:oa
     })]
@@ -514,8 +514,8 @@ ua=q(function(){
     model:e,controls:a
   }=ne(),{
     type:s,vehicleDetailName:t,nextOperationName:n
-  }=e.root.get(),i=e.computes.mainRegularRewards().length>0||Boolean(t),o=e.computes.additionalRewards().length>0,l=I();
-  B(_.ESCAPE,()=>{
+  }=e.root.get(),i=e.computes.mainRegularRewards().length>0||Boolean(t),o=e.computes.additionalRewards().length>0,l=S();
+  W(c.ESCAPE,()=>{
     e.introVideoPlaying.get()||(l.play("stopIntro"),a.close())
   });
   const d=Re();
@@ -523,8 +523,8 @@ ua=q(function(){
     i||d.stepsToSkip.current.push(...we),o||d.stepsToSkip.current.push(...ve)
   },[d.stepsToSkip,o,i]);
   return(0,ie.jsxs)("div",{
-    ref:d.rootRef,className:$(ma.base,ma[`base__${s}`]),children:[s===U.OPERATION?(0,ie.jsx)(_a,{}):(0,ie.jsx)(f,{
-      path:"personal_missions_30.rewards.backgrounds."+(s===U.VEHICLE_PART?"vehiclePart":"withHonors"),fit:"cover",className:ma.background
+    ref:d.rootRef,className:$(ma.base,ma[`base__${s}`]),children:[s===F.OPERATION?(0,ie.jsx)(_a,{}):(0,ie.jsx)(R,{
+      path:"personal_missions_30.rewards.backgrounds."+(s===F.VEHICLE_PART?"vehiclePart":"withHonors"),fit:"cover",className:ma.background
     }),(0,ie.jsx)("div",{
       className:ma.closeButtonWrapper,children:(0,ie.jsx)("div",{
         onClick:e=>{
@@ -539,25 +539,25 @@ ua=q(function(){
         },
         className:ma.closeButton
       })
-    }),(0,ie.jsx)(Fe,{}),(0,ie.jsx)("div",{
+    }),(0,ie.jsx)(Ue,{}),(0,ie.jsx)("div",{
       className:ma.rewardsContainer,children:i&&(0,ie.jsx)(ta,{
         className:ma.main
       })
     }),o&&(0,ie.jsx)(Ce,{
       className:ma.additional
-    }),s===U.OPERATION_WITH_HONORS&&(0,ie.jsx)(r,{
+    }),s===F.OPERATION_WITH_HONORS&&(0,ie.jsx)(r,{
       path:"personal_missions_30.rewards.operationUnlocked",params:{
         name:n
       },
       className:ma.nextOperation
     }),(0,ie.jsx)("div",{
       className:ma.divider
-    }),(0,ie.jsx)($e,{
+    }),(0,ie.jsx)(Me,{
       className:ma.buttons
     })]
   })
 });
-W((0,ie.jsx)(te,{
+L((0,ie.jsx)(te,{
   children:(0,ie.jsx)(m,{
     soundsOverrides:re,children:(0,ie.jsx)(Ie,{
       children:(0,ie.jsx)(ua,{})

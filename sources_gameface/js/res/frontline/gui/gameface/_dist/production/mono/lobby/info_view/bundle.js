@@ -4,7 +4,7 @@ import{
 }
 from"../chunks/rolldown-runtime.js";
 import{
-  $a as s,Cn as a,Fi as i,G as l,Gt as r,Kr as n,d as t,g as o,in as c,or as _,rn as d,sn as g,ur as p,wn as f,xa as m,xi as u,yo as x
+  $a as s,Cn as a,D as i,Fi as l,G as r,Gt as n,Kr as t,b as o,in as c,or as _,rn as d,sn as g,ur as p,wn as f,xa as m,xi as u,yo as x
 }
 from"../chunks/lib.js";
 import"../chunks/_wg-global-styles.js";
@@ -14,7 +14,7 @@ import{
 from"../chunks/vendor.js";
 var j=[{
   header:"fl_info_page.addons.cellRent.header",text:"fl_info_page.addons.cellRent.text_9",binding:{
-    vehiclesLevel:i(8)
+    vehiclesLevel:l(8)
   }
 },{
   header:"fl_info_page.addons.cellTime.header",text:"fl_info_page.addons.cellTime.text"
@@ -220,12 +220,12 @@ var[fe,me]=p()(({
 })),ue="GeneralInfo_contentWrapper_4c37eb45",xe="GeneralInfo_wrapper_38584321",ve="GeneralInfo_cellHeader_11ccb279",he="GeneralInfo_cell_db2c72d7",je="GeneralInfo_cellTitle_a42b02aa",be="GeneralInfo_cellDescription_6f635451",Ne="GeneralInfo_icon_c0644ea3",Ce="GeneralInfo_row_2e8d4ae8",Ie=h(function(){
   const{
     model:e
-  }=me(),a=Math.round((e.endTimestamp.get()-e.startTimestamp.get())/s),l=((e,s=3)=>{
+  }=me(),a=Math.round((e.endTimestamp.get()-e.startTimestamp.get())/s),i=((e,s=3)=>{
     const a=[];
     for(let i=0;i<e.length;i+=s)a.push(e.slice(i,i+s));
     return a
-  })(((e,s,a,l)=>{
-    const r=i(9),n=i(8),o=[{
+  })(((e,s,a,i)=>{
+    const r=l(9),n=l(8),t=[{
       image:R.images.frontline.gui.maps.icons.about.epic(),header:{
         value:"fl_info_page.main.cellFrontline.header"
       },
@@ -242,21 +242,21 @@ var[fe,me]=p()(({
         value:"fl_info_page.main.cellReserves.text"
       }
     }];
-    return a&&o.push({
+    return a&&t.push({
       image:R.images.frontline.gui.maps.icons.about.scenarios(),header:{
         value:"fl_info_page.main.cellScenarios.header"
       },
       text:{
         value:"fl_info_page.main.cellScenarios.text"
       }
-    }),s&&o.push({
+    }),s&&t.push({
       image:R.images.frontline.gui.maps.icons.about.battlepass(),header:{
         value:"fl_info_page.main.cellPass.header"
       },
       text:{
         value:"fl_info_page.main.cellPass.text"
       }
-    }),o.push({
+    }),t.push({
       image:R.images.frontline.gui.maps.icons.about.level_8(),header:{
         value:"fl_info_page.main.cellLevels.header",binding:{
           vehiclesLevel:n
@@ -267,18 +267,18 @@ var[fe,me]=p()(({
           vehiclesLevel:n
         }
       }
-    }),o.push({
+    }),t.push({
       image:R.images.frontline.gui.maps.icons.about.episodic(),header:{
         value:"fl_info_page.main.cellDuration.header"
       },
       text:{
         value:"fl_info_page.main.cellDuration.text",binding:{
-          days:t(R.strings.fl_common.day(l),{
-            duration:l
+          days:o(R.strings.fl_common.day(i),{
+            duration:i
           })
         }
       }
-    }),e&&o.push({
+    }),e&&t.push({
       image:R.images.frontline.gui.maps.icons.about.level_9(),header:{
         value:"fl_info_page.main.cellLevel9.header",binding:{
           vehiclesLevel:r
@@ -289,14 +289,14 @@ var[fe,me]=p()(({
           vehiclesLevel:r
         }
       }
-    }),o
+    }),t
   })(e.isNinthLevelEnabled.get(),e.isBattlePassAvailable.get(),e.isRandomReservesModeEnabled.get(),a));
   return(0,y.jsx)(k,{
     children:(0,y.jsxs)("div",{
       className:ue,children:[(0,y.jsx)(S,{
         path:"fl_info_page.main.sectionHeader"
       }),(0,y.jsx)("div",{
-        className:xe,children:m(l,(e,s)=>(0,y.jsx)("div",{
+        className:xe,children:m(i,(e,s)=>(0,y.jsx)("div",{
           className:Ce,children:m(e,({
             image:e,header:s,text:a
           },i)=>(0,y.jsxs)("div",{
@@ -334,14 +334,14 @@ var[fe,me]=p()(({
       }),(0,y.jsx)("div",{
         className:ye,children:m(s,({
           text:e,list:s,header:a,image:i
-        },r)=>(0,y.jsxs)("div",{
+        },l)=>(0,y.jsxs)("div",{
           className:ke,children:[(0,y.jsx)("div",{
             className:Te,style:{
               backgroundImage:`url(${i})`
             }
           }),(0,y.jsx)($,{
             className:Pe,path:a
-          }),m(e,(e,s)=>(0,y.jsx)(l,{
+          }),m(e,(e,s)=>(0,y.jsx)(r,{
             classMix:we,text:Fe.readOrEmpty(e)
           },`rule-text-${s}`)),(0,y.jsx)("div",{
             className:Se,children:m(s??[],(e,s)=>(0,y.jsxs)("div",{
@@ -352,7 +352,7 @@ var[fe,me]=p()(({
               },s)]
             },`rule-list-${s}`))
           })]
-        },`rule-${r}`))
+        },`rule-${l}`))
       }),(0,y.jsxs)("div",{
         className:Be,children:[(0,y.jsxs)("div",{
           className:Ge,children:[(0,y.jsx)($,{
@@ -503,7 +503,7 @@ function Rs(){
       }),(0,y.jsx)("div",{
         className:js,children:m(Is,({
           label:e,cells:s,icon:a
-        },l)=>(0,y.jsxs)("div",{
+        },i)=>(0,y.jsxs)("div",{
           className:hs,children:[(0,y.jsxs)("div",{
             className:bs,children:[(0,y.jsx)("div",{
               className:Ns,style:null!==a?{
@@ -515,11 +515,11 @@ function Rs(){
           }),s&&s.map((e,s)=>(0,y.jsx)("div",{
             className:bs,children:e&&(0,y.jsx)(L,{
               path:Number.isInteger(e)?"fl_info_page.reserveCategories.progression.tableCell":e,params:{
-                level:i(e),levelNext:i(e+1)
+                level:l(e),levelNext:l(e+1)
               }
             })
           },`cell_${s}`))]
-        },`column_${l}`))
+        },`column_${i}`))
       }),(0,y.jsx)(L,{
         className:Cs,path:"fl_info_page.reserveCategories.levelUpNote"
       })]
@@ -591,11 +591,11 @@ function Os(){
 var Us="InfoView_1674491c",qs="InfoView_closeButton_d5207903",Ks="InfoView_wrapper_392acbfc",Zs="InfoView_scrollWrapper_28fa2dbb",zs="InfoView_title_ced11487",Js="InfoView_subtitle_d7af0e7d",Qs="InfoView_accentText_df59f6b6",Xs="InfoView_scrollContent_9a303e94",Ys="InfoView_scrollContentWrapper_24a3123",ea=x.resolve("intl"),sa=x.resolve("strings"),aa=h(function(){
   const{
     controls:e,model:s
-  }=me(),i=s.isBattlePassAvailable.get(),{
-    start:l,end:r
+  }=me(),l=s.isBattlePassAvailable.get(),{
+    start:r,end:n
   }=ea.formatRange(s.startTimestamp.get(),s.endTimestamp.get());
-  return n(e.close),(0,y.jsxs)("div",{
-    className:Us,children:[(0,y.jsx)(o,{
+  return t(e.close),(0,y.jsxs)("div",{
+    className:Us,children:[(0,y.jsx)(i,{
       className:qs,onClose:e.close
     }),(0,y.jsxs)("div",{
       className:Ks,children:[(0,y.jsx)(a,{
@@ -603,9 +603,9 @@ var Us="InfoView_1674491c",qs="InfoView_closeButton_d5207903",Ks="InfoView_wrapp
       }),(0,y.jsx)(f,{
         text:ea.toLowerCase(sa.readOrEmpty("datetime_formats.dateRange.stringDivider")),className:Js,params:{
           start:(0,y.jsx)("div",{
-            className:Qs,children:l
-          }),end:(0,y.jsx)("div",{
             className:Qs,children:r
+          }),end:(0,y.jsx)("div",{
+            className:Qs,children:n
           })
         },
         upgradeLegacy:!0,split:!0
@@ -614,8 +614,8 @@ var Us="InfoView_1674491c",qs="InfoView_closeButton_d5207903",Ks="InfoView_wrapp
           children:[(0,y.jsx)(c,{
             className:Ys,children:(0,y.jsxs)("div",{
               className:Xs,children:[(0,y.jsx)(Ie,{}),(0,y.jsx)(ps,{}),(0,y.jsx)(Ds,{}),(0,y.jsx)(pe,{}),(0,y.jsx)(Ve,{}),(0,y.jsx)(as,{}),(0,y.jsx)(Os,{}),(0,y.jsx)(V,{
-                withDivider:i
-              }),i&&(0,y.jsx)(ee,{})]
+                withDivider:l
+              }),l&&(0,y.jsx)(ee,{})]
             })
           }),(0,y.jsx)(g,{})]
         })
@@ -624,7 +624,7 @@ var Us="InfoView_1674491c",qs="InfoView_closeButton_d5207903",Ks="InfoView_wrapp
   })
 });
 window.requestAnimationFrame(()=>{
-  _((0,y.jsx)(r,{
+  _((0,y.jsx)(n,{
     children:(0,y.jsx)(fe,{
       children:(0,y.jsx)(aa,{})
     })

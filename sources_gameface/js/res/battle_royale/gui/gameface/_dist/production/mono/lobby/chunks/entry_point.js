@@ -4,24 +4,24 @@ import{
 }
 from"./rolldown-runtime.js";
 import{
-  $r as t,Fn as s,Gt as o,Lr as n,Mn as r,Nn as a,W as i,Xr as c,Yr as l,ei as d,ni as u,nn as m,qr as p,ti as g,ur as h,v as b,xt as f,y as x
+  $r as t,D as s,Fn as o,Gt as n,L as r,Lr as a,Mn as i,Nn as c,O as l,Xr as d,Yr as u,ei as m,ni as p,nn as g,qr as h,ti as b,ur as f,xt as x
 }
 from"./lib.js";
 import{
   i as y,n as v,t as _
 }
 from"./vendor.js";
-var N=e(l()),w=function(e){
+var N=e(u()),w=function(e){
   return e.Common="common",e.Rare="rare",e.Epic="epic",e
 }({});
-var E=class extends c{
+var E=class extends d{
   root;
   prefix;
   constructor(e,t){
     super(),this.root=e,this.prefix=t
   }
   readOr(e,t,s="silent"){
-    const o=g(this.prefix,e),n=function(e,t){
+    const o=b(this.prefix,e),n=function(e,t){
       const s=t.split(".");
       if(window.R&&window.R.sounds){
         const t=s[s.length-1];
@@ -34,15 +34,15 @@ var E=class extends c{
       }
       throw new Error("R class with images field is not defined")
     }(this.root,o);
-    return void 0===n?("silent"!==s&&d(`Resource not found: ${o}`,s),t()):n
+    return void 0===n?("silent"!==s&&m(`Resource not found: ${o}`,s),t()):n
   }
   readOrEmpty(e,t="warn"){
     return this.readOr(e,()=>"",t)
   }
 },
 I="lootbox_images",O="lootbox_sounds";
-u.register(I,_(()=>new t(window.R.images)).singleton()),u.register(O,_(()=>new E(window.R.sounds)).singleton());
-var j=u.resolve(I),$=u.resolve("videos"),C=u.resolve(O),P=u.resolve("strings"),M=(e,t)=>{
+p.register(I,_(()=>new t(window.R.images)).singleton()),p.register(O,_(()=>new E(window.R.sounds)).singleton());
+var j=p.resolve(I),$=p.resolve("videos"),C=p.resolve(O),P=p.resolve("strings"),M=(e,t)=>{
   switch(e){
     case R.images:return j.readOrEmpty(t,"silent");
     case R.videos:return $.readOrEmpty(t,"silent");
@@ -136,7 +136,7 @@ L=(e,t)=>{
   return s(e,t)
 };
 function S(e,t){
-  const s=B[f(e)],o=s?.COMMON?L(A.COMMON,s.COMMON):A.COMMON;
+  const s=B[x(e)],o=s?.COMMON?L(A.COMMON,s.COMMON):A.COMMON;
   if(!t)return o;
   const n=s?L(A[t],s[t]):A[t],r=Object.keys(n).filter(e=>e in o);
   if(r.length>0)throw new Error(`[getConfig] Name conflict in "${e}.${String(t)}": keys [${r.join(", ")}] exist in both componentConfig and commonConfig.`);
@@ -217,13 +217,13 @@ z=(e,t)=>Object.keys(e).reduce((s,o)=>{
     entryHover:"gui_lb_icon_hover"
   }
 },
-W=function(e){
+Y=function(e){
   return e.Boxes="boxes",e.Empty="empty",e
-}({}),[Y,F]=o()(({
+}({}),[W,F]=n()(({
   observableModel:e
 })=>{
   const t=e.object().get().eventName,s={
-    root:e.object(),style:h.box(S(t,T.EntryPoint)),resources:h.box(z(H,t))
+    root:e.object(),style:f.box(S(t,T.EntryPoint)),resources:f.box(z(H,t))
   },
   o=v(()=>{
     const{
@@ -244,28 +244,28 @@ W=function(e){
   return s=e,U(o=t)?o:U(s)?s:o||s;
   var s,o
 },
-X="video",Z=(w.Common,w.Common,w.Rare,w.Rare,"Glow_2571a3a9"),J="Glow_base__hover_bba0fce1",K="Glow_video_2d774833",Q="Glow_img_90334d0",ee=a(),te=y(function({
+X="video",Z=(w.Common,w.Common,w.Rare,w.Rare,"Glow_2571a3a9"),J="Glow_base__hover_bba0fce1",K="Glow_video_2d774833",Q="Glow_img_90334d0",ee=c(),te=y(function({
   hover:e=!1,className:t
 }){
   const{
-    model:s
+    model:o
   }=F(),{
-    images:o,videos:n
-  }=s.resources.get(),r=s.style.get(),a=((e,t)=>{
+    images:n,videos:r
+  }=o.resources.get(),a=o.style.get(),i=((e,t)=>{
     const s=q(e,t);
     return{
       src:s,type:s.split(":")[0]
     }
-  })(o.shine,n.glow);
+  })(n.shine,r.glow);
   return(0,ee.jsx)("div",{
-    className:p(Z,e&&J,t),style:{
-      "--opacity-initial":r.shine.opacity.initial,"--opacity-hover":r.shine.opacity.hover
+    className:h(Z,e&&J,t),style:{
+      "--opacity-initial":a.shine.opacity.initial,"--opacity-hover":a.shine.opacity.hover
     },
-    children:a.type===X?(0,ee.jsx)(b,{
-      loop:!0,autoplay:!0,className:K,src:a.src
+    children:i.type===X?(0,ee.jsx)(s,{
+      loop:!0,autoplay:!0,className:K,src:i.src
     }):(0,ee.jsx)("div",{
       className:Q,style:{
-        backgroundImage:`url(${a.src})`
+        backgroundImage:`url(${i.src})`
       }
     })
   })
@@ -274,7 +274,7 @@ function oe({
   image:e,brightness:t,disabled:s,className:o,...n
 }){
   return(0,ee.jsx)("div",{
-    ...n,className:p(se,o),style:{
+    ...n,className:h(se,o),style:{
       backgroundImage:`url(${e})`,filter:s?"brightness(.8) saturate(.5)":`brightness(${t})`
     }
   })
@@ -284,7 +284,7 @@ function re({
   count:e,text:t,maxText:s,className:o
 }){
   return(0,ee.jsx)("div",{
-    className:p(ne,o),children:e<1e3?(0,ee.jsx)(i,{
+    className:h(ne,o),children:e<1e3?(0,ee.jsx)(r,{
       text:t,params:{
         count:e
       },
@@ -301,50 +301,50 @@ ie=y(function({
   const{
     model:t
   }=F(),{
-    breakpoint:o
-  }=r(),{
+    breakpoint:s
+  }=i(),{
     texts:n
   }=t.resources.get(),{
-    boxesCount:a,eventExpireTime:i
-  }=t.root.get(),c=t.computes.getState(),l=o.weight>s.small.weight?x.size.x32x32:x.size.x24x24,d=259200>=i,u=d||c===W.Empty;
+    boxesCount:r,eventExpireTime:a
+  }=t.root.get(),c=t.computes.getState(),d=s.weight>o.small.weight?l.size.x32x32:l.size.x24x24,u=259200>=a,m=u||c===Y.Empty;
   return(0,ee.jsxs)("div",{
-    className:p(ae.base,e),children:[u&&(0,ee.jsx)("div",{
-      className:p(ae.additional,c!==W.Boxes&&ae.additional__center),children:d?(0,ee.jsx)(x,{
+    className:h(ae.base,e),children:[m&&(0,ee.jsx)("div",{
+      className:h(ae.additional,c!==Y.Boxes&&ae.additional__center),children:u?(0,ee.jsx)(l,{
         className:ae.timer,classNames:{
           label:ae.timerLabel
         },
-        start:i,size:l
+        start:a,size:d
       }):(0,ee.jsx)("div",{
         className:ae.text,children:n.boxes
       })
-    }),c===W.Boxes&&(0,ee.jsx)(re,{
-      className:ae.counter,maxText:n.maxBoxesCount,count:a,text:n.boxesCount
+    }),c===Y.Boxes&&(0,ee.jsx)(re,{
+      className:ae.counter,maxText:n.maxBoxesCount,count:r,text:n.boxesCount
     })]
   })
 }),ce="App_bdab25ef",le="App_content_3d13e94c",de="App_base__disabled_0",ue="App_glow_29445b0",me="App_wrapper_4cc053c3",pe="App_info_be3fbaea",ge="App_icon_879c8615";
 var he=y(function(){
-  const e=u.resolve("sounds"),t=u.resolve("aliases"),s=u.resolve("views"),o=m({
+  const e=p.resolve("sounds"),t=p.resolve("aliases"),s=p.resolve("views"),o=g({
     resId:t.read(e=>e.hangar.shared.LootboxEntryPoint("resId")),contentId:s.read(e=>e.mono.lootbox.tooltips.entry_point("resId"))
-  }),[r,a]=(0,N.useState)(!1),{
+  }),[n,r]=(0,N.useState)(!1),{
     model:i,controls:c
   }=F(),{
     isEnabled:l
   }=i.root.get(),d=i.computes.getState(),{
-    images:g,videos:h,sounds:b
-  }=i.resources.get(),f=i.style.get(),x=r?1+f.icon[`${d}IconBrightness`]:1,y=d===W.Empty?g.iconEmpty:g.iconGold;
+    images:u,videos:m,sounds:b
+  }=i.resources.get(),f=i.style.get(),x=n?1+f.icon[`${d}IconBrightness`]:1,y=d===Y.Empty?u.iconEmpty:u.iconGold;
   return(0,ee.jsx)("div",{
-    className:p(ce,!l&&de),children:(0,ee.jsx)("div",{
+    className:h(ce,!l&&de),children:(0,ee.jsx)("div",{
       className:le,...o,children:(0,ee.jsxs)("div",{
         className:me,onClick:function(){
           e.play("yes1"),c.showLanding()
         },
         onMouseEnter:function(){
-          n.sound(b.entryHover),a(!0)
+          a.sound(b.entryHover),r(!0)
         },
-        onMouseLeave:()=>a(!1),children:[(0,ee.jsx)(ie,{
+        onMouseLeave:()=>r(!1),children:[(0,ee.jsx)(ie,{
           className:pe
-        }),d===W.Boxes&&l&&(0,ee.jsx)(te,{
-          className:ue,hover:r
+        }),d===Y.Boxes&&l&&(0,ee.jsx)(te,{
+          className:ue,hover:n
         }),(0,ee.jsx)(oe,{
           disabled:!l,image:y,brightness:x,className:ge
         })]
@@ -353,8 +353,8 @@ var he=y(function(){
   })
 });
 function be(){
-  const e=u.resolve("aliases").read(e=>e.hangar.shared.LootboxEntryPoint("resId"));
-  return(0,ee.jsx)(Y,{
+  const e=p.resolve("aliases").read(e=>e.hangar.shared.LootboxEntryPoint("resId"));
+  return(0,ee.jsx)(W,{
     options:(0,N.useMemo)(()=>({
       rootId:e
     }),[e]),children:(0,ee.jsx)(he,{})
