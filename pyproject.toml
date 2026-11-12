@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "World of Tanks Source Extractor & Decompiler (Driftkings)"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = ["wgus>=0.0.12"]
 
 [project.scripts]
 wot-extractor = "wot_extractor.cli:main"

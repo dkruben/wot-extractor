@@ -1,6 +1,6 @@
 # wot-extractor
 
-A Python 3 tool (standard library only) that extracts, decompiles and documents the **World of Tanks** client
+A Python 3 tool that extracts, decompiles and documents the **World of Tanks** client
 (EU and Common Test) into independent source trees, for analysis, API lookup and Python, ActionScript/Scaleform
 and Gameface mod development.
 
@@ -24,6 +24,7 @@ decision, result and limitation.
 - `gameface` — formatted HTML/CSS/JS (verified token by token and with `node --check`), webpack, views and
   probable links to Python.
 - `stubs` — `.pyi` stubs containing only information verified in the code (for VS Code/Pylance).
+- `updates` — consults WGUS for available patch chains without downloading or applying patches.
 - `update` / `verify` / `report` — incremental update, integrity check, global report.
 - `index` / `search` / `compare` — API index (SQLite FTS5), search and EU ↔ CT comparison.
 - `purge` / `clean` — remove what is not part of the game and delete intermediates already processed.
@@ -40,7 +41,9 @@ The game install is always read-only; nothing extracted is ever executed.
 ## Usage
 
 ```powershell
+py -3.11 -m pip install -e .           # install the CLI and the WGUS dependency
 .\wot-extractor.cmd detect
+.\wot-extractor.cmd updates --realm EU
 .\wot-extractor.cmd update                 # extract/update and process everything, EU and CT
 .\wot-extractor.cmd search BarracksView
 .\wot-extractor.cmd compare
@@ -48,3 +51,5 @@ py -3 -m unittest discover -s tests -t .   # tests
 ```
 
 Configuration: copy `wot_extractor.example.toml` to `wot_extractor.toml`.
+The `updates` command requires an internet connection to `wgus-woteu.wargaming.net`. It only reports
+patch chains; it does not download or apply them.

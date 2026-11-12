@@ -3,36 +3,43 @@
 from __future__ import annotations
 
 import argparse
+import asyncio
 import json
 import os
 import sys
 import time
 from pathlib import Path
+from xml.etree import ElementTree
+
+import aiohttp
+from pydantic import ValidationError
 
 from . import TOOL_NAME, __version__
-from .config import ConfigError, load_config
-from .constants import PROFILES, SUPPORTED_REALMS
-from .detect import DetectionResult, detect
 from .actionscript import ASOptions, ASResult, find_ffdec, run_actionscript
 from .actionscript.rabcdasm import find_rabcdasm
-from .gameface import GFOptions, GFResult, find_node, run_gameface
-from .stubs import StubOptions, StubResult, find_python27, run_stubs
 from .apiindex import build_index
 from .apiindex import search as api_search
 from .compare import compare_realms
+from .config import ConfigError, load_config
+from .constants import PROFILES, SUPPORTED_REALMS
+from .decompile import (BACKENDS, DEFAULT_CHAIN, BackendError,
+                        DecompileOptions, DecompileResult, find_toolchain,
+                        run_decompile)
+from .detect import ClientInstall, DetectionResult, detect
+from .extract import (ExtractOptions, ExtractResult, Filters, ManifestError,
+                      run_extract)
+from .extract.plan import TREES
+from .gameface import GFOptions, GFResult, find_node, run_gameface
+from .logutil import setup_logging
 from .maintenance import update as upd
-from .maintenance.purge import run_purge
 from .maintenance.clean import KINDS as CLEAN_KINDS
 from .maintenance.clean import run_clean
+from .maintenance.purge import run_purge
 from .maintenance.report import write_report
 from .maintenance.update import STEPS as UPDATE_STEPS
 from .maintenance.verify import VerifyOptions, run_verify
-from .decompile import (BACKENDS, DEFAULT_CHAIN, BackendError, DecompileOptions, DecompileResult, find_toolchain,
-                        run_decompile)
-from .extract import ExtractOptions, ExtractResult, Filters, ManifestError, run_extract
-from .extract.plan import TREES
-from .logutil import setup_logging
 from .safety import ProtectedPathError, WriteGuard
+from .stubs import StubOptions, StubResult, find_python27, run_stubs
 
 EXIT_INTERRUPTED = 130
 
@@ -184,6 +191,12 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--no-system", action="store_true", help="ignorar Game Center, registo e pesquisa nos discos")
     p.add_argument("--dry-run", action="store_true", help="so detetar e mostrar o que a extracao faria")
 
+    p = sub.add_parser("updates", help="consultar atualizacoes disponiveis no WGUS (nao descarrega patches)")
+    p.add_argument("--realm", type=_realm_arg, default="ALL", help="EU, CT ou all (omissao)")
+    p.add_argument("--path", type=Path, help="caminho manual da instalacao (exige --realm EU|CT)")
+    p.add_argument("--host", default="wgus-woteu.wargaming.net", help="servidor WGUS")
+    p.add_argument("--no-system", action="store_true", help="ignorar Game Center, registo e pesquisa nos discos")
+
     p = sub.add_parser("verify", help="verificar a arvore (hashes, saidas, orfaos) e se a instalacao mudou")
     p.add_argument("--realm", type=_realm_arg, default="ALL", help="EU, CT ou all (omissao)")
     p.add_argument("--path", type=Path, help="caminho da instalacao a comparar (omissao: o do manifesto/detecao)")
@@ -272,6 +285,8 @@ def main(argv: list[str] | None = None) -> int:
         return cmd_stubs(args, cfg)
     if args.command == "update":
         return cmd_update(args, cfg)
+    if args.command == "updates":
+        return cmd_updates(args, cfg)
     if args.command == "verify":
         return cmd_verify(args, cfg)
     if args.command == "report":
@@ -384,6 +399,81 @@ def cmd_extract(args, cfg) -> int:
             return EXIT_INTERRUPTED
         if not result.dry_run and not result.consistent:
             code = EXIT_FAIL
+    return code
+
+
+async def _query_updates(host: str, install: ClientInstall):
+    from wgus import get_metadata, get_patches_chains
+
+    game_info = install.game_info
+    if not game_info or not game_info.game_id:
+        raise ValueError("game_info.xml nao contem o identificador do jogo")
+    if not game_info.part_versions:
+        raise ValueError("game_info.xml nao contem versoes instaladas dos componentes")
+
+    metadata = await get_metadata(host, game_info.game_id)
+    client_type = install.app_type or metadata.predefined_section.client_types.default
+    if metadata.predefined_section.client_types.get(client_type) is None:
+        raise ValueError(f"tipo de cliente desconhecido pelo WGUS: {client_type}")
+
+    chains = await get_patches_chains(
+        host,
+        game_info.game_id,
+        versions=game_info.part_versions,
+        query={"client_type": client_type},
+        meta=metadata,
+    )
+    return metadata, chains, client_type
+
+
+def cmd_updates(args, cfg) -> int:
+    realms = list(SUPPORTED_REALMS) if args.realm == "ALL" else [args.realm]
+    overrides = {}
+    if args.path:
+        if args.realm == "ALL":
+            print("--path exige --realm EU ou --realm CT", file=sys.stderr)
+            return EXIT_USAGE
+        overrides[args.realm] = args.path
+
+    detection = detect(cfg, realms, overrides, deep=False, use_system=not args.no_system)
+    code = EXIT_OK
+    for realm in realms:
+        install = detection.selected.get(realm)
+        if install is None:
+            print(f"[{realm}] instalacao nao encontrada: {detection.errors.get(realm, '?')}", file=sys.stderr)
+            code = EXIT_FAIL
+            continue
+
+        print(f"[{realm}] Instalado: {install.version_number or '?'} ({install.game_info.game_id if install.game_info else 'sem game_id'})")
+        if install.game_info and install.game_info.part_versions:
+            versions = ", ".join(f"{part}={version}" for part, version in sorted(install.game_info.part_versions.items()))
+            print(f"  Versoes dos componentes: {versions}")
+        try:
+            metadata, result, client_type = asyncio.run(_query_updates(args.host, install))
+        except (aiohttp.ClientError, asyncio.TimeoutError, ElementTree.ParseError, ValidationError, ValueError) as exc:
+            print(f"[{realm}] Erro ao consultar WGUS: {exc}", file=sys.stderr)
+            code = EXIT_FAIL
+            continue
+
+        print(f"  Servidor: {args.host} | cliente: {client_type} | metadata: {metadata.version}")
+        if result.meta_need_update:
+            print("  O WGUS indica que os metadados do cliente precisam ser atualizados.")
+        if not any(chain.patches for chain in result.patches_chain):
+            if result.meta_need_update:
+                print("  WGUS nao retornou uma cadeia de patches; verifique os metadados do cliente.\n")
+            else:
+                print(f"  Sem patches pendentes. Versao publicada: {result.version_name}\n")
+            continue
+
+        print(f"  Versao publicada: {result.version_name}")
+        for chain in result.patches_chain:
+            if not chain.patches:
+                continue
+            size = sum(file.size for patch in chain.patches for file in patch.files)
+            targets = ", ".join(dict.fromkeys(patch.version_to for patch in chain.patches))
+            print(f"  Cadeia {chain.type}: {len(chain.patches)} patch(es), destino(s) {targets}, "
+                  f"{_human(size)} em arquivos de patch")
+        print("  Nenhum patch foi descarregado ou aplicado.\n")
     return code
 
 

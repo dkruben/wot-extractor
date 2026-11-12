@@ -1,3 +1,4 @@
+import asyncio
 import contextlib
 import io
 import json
@@ -5,8 +6,11 @@ import os
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
+from unittest.mock import AsyncMock, patch
 
-from wot_extractor.cli import EXIT_FAIL, EXIT_NOT_IMPLEMENTED, EXIT_OK, EXIT_USAGE, main
+from wot_extractor.cli import (EXIT_FAIL, EXIT_NOT_IMPLEMENTED, EXIT_OK,
+                               EXIT_USAGE, _query_updates, main)
 
 from .helpers import make_install
 
@@ -57,6 +61,60 @@ class CliTests(unittest.TestCase):
         self.assertEqual(code, EXIT_FAIL)
         self.assertIn("NAO ENCONTRADO", out)
 
+    def test_updates_reports_wgus_patch_chains(self):
+        install = SimpleNamespace(
+            version_number="2.4.1.1",
+            game_info=SimpleNamespace(game_id="WOT.EU.PRODUCTION", part_versions={"client": "2.4.1.24120"}),
+        )
+        metadata = SimpleNamespace(version="123")
+        fake_patch = SimpleNamespace(
+            version_to="2.4.1.2",
+            files=[SimpleNamespace(size=1024)],
+        )
+        result = SimpleNamespace(
+            meta_need_update=False,
+            version_name="2.4.1.2",
+            patches_chain=[SimpleNamespace(type="incremental", patches=[fake_patch])],
+        )
+        detection = SimpleNamespace(selected={"EU": install}, errors={})
+        with patch("wot_extractor.cli.detect", return_value=detection), patch(
+            "wot_extractor.cli._query_updates", new=AsyncMock(return_value=(metadata, result, "hd"))
+        ) as query:
+            code, out, err = run(["updates", "--realm", "EU", "--no-system"])
+
+        self.assertEqual(code, EXIT_OK, err)
+        self.assertIn("Cadeia incremental", out)
+        self.assertIn("1.0 KB em arquivos de patch", out)
+        self.assertIn("Nenhum patch foi descarregado ou aplicado", out)
+        query.assert_awaited_once()
+
+    def test_query_updates_uses_installed_part_versions(self):
+        client_type = SimpleNamespace(parts=[])
+        metadata = SimpleNamespace(
+            version="123",
+            predefined_section=SimpleNamespace(
+                client_types=SimpleNamespace(default="hd", get=lambda value: client_type if value == "hd" else None)
+            ),
+        )
+        chains = object()
+        install = SimpleNamespace(
+            app_type="hd",
+            game_info=SimpleNamespace(game_id="WOT.EU.PRODUCTION", part_versions={"client": "2.4.1.24120"}),
+        )
+        with patch("wgus.get_metadata", new=AsyncMock(return_value=metadata)), patch(
+            "wgus.get_patches_chains", new=AsyncMock(return_value=chains)
+        ) as get_chains:
+            result = asyncio.run(_query_updates("wgus-woteu.wargaming.net", install))
+
+        self.assertEqual(result, (metadata, chains, "hd"))
+        get_chains.assert_awaited_once_with(
+            "wgus-woteu.wargaming.net",
+            "WOT.EU.PRODUCTION",
+            versions={"client": "2.4.1.24120"},
+            query={"client_type": "hd"},
+            meta=metadata,
+        )
+
     def test_extract_dry_run_and_real(self):
         code, out, _ = run(["extract", "--no-system", "--realm", "EU", "--path", str(self.eu), "--dry-run"])
         self.assertEqual(code, EXIT_OK, out)
@@ -91,7 +149,7 @@ class CliTests(unittest.TestCase):
         from wot_extractor.cli import PLANNED, build_parser
         self.assertEqual(PLANNED, {})  # todos os comandos do readme estao implementados
         sub = next(a for a in build_parser()._actions if a.dest == "command")
-        for cmd in ("detect", "extract", "decompile", "gameface", "actionscript", "stubs", "update", "verify",
+        for cmd in ("detect", "extract", "decompile", "gameface", "actionscript", "stubs", "update", "updates", "verify",
                     "report"):
             self.assertIn(cmd, sub.choices)
         for cmd in ("verify", "report"):  # sem manifesto: erro claro, nao "nao implementado"
