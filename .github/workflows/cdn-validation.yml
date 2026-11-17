@@ -1,0 +1,79 @@
+name: Real CDN validation
+
+on:
+  push:
+    branches: [automation/cdn-validation]
+    paths:
+      - .github/workflows/cdn-validation.yml
+      - scripts/validate_cdn_output.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cdn-validation-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  scripts:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        include:
+          - realm: EU
+            host: wgus-woteu.wargaming.net
+          - realm: CT
+            host: wgus-eu.wargaming.net
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: project
+      # External research engine; pinned and executed, not vendored into our tool.
+      - uses: actions/checkout@v4
+        with:
+          repository: unicum-gg/wot.build
+          ref: 1832f2ff545a2950867fa698296c92315752bf81
+          path: engine
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.9.16'
+      - name: Install extraction and Python decompilation tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full xdelta3 rdiff
+          python -m pip install 'uncompyle6==3.8.0' 'xdis==6.0.5' polib
+          cd engine
+          npm ci --no-audit --no-fund
+      - name: Fetch and decompile the real scripts package
+        working-directory: engine
+        env:
+          WOTSRC_PYTHON: python
+          REALM: ${{ matrix.realm }}
+          WGUS_HOST: ${{ matrix.host }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p ../evidence
+          npm run sources -- --host "$WGUS_HOST" --guid "WOT.${REALM}.PRODUCTION" --only scripts --out ../output 2>&1 | tee ../evidence/generator.log
+      - name: Validate generated files and record hashes
+        env:
+          REALM: ${{ matrix.realm }}
+        run: python project/scripts/validate_cdn_output.py output evidence --realm "$REALM"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cdn-validation-${{ matrix.realm }}
+          path: |
+            output/
+            evidence/
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: error

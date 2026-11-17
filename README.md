@@ -53,3 +53,16 @@ py -3 -m unittest discover -s tests -t .   # tests
 Configuration: copy `wot_extractor.example.toml` to `wot_extractor.toml`.
 The `updates` command requires an internet connection to `wgus-woteu.wargaming.net`. It only reports
 patch chains; it does not download or apply them.
+
+## GitHub layout and CDN validation
+
+The repository opens on `EU`; `CT` contains Common Test sources and `main`
+contains the tool. Published branches use `sources/`, `sources-as3/` and
+`_stubs/`, with the decoded XML and Gameface outputs retained separately.
+Local extraction folders keep their existing names; the publication layer
+maps them when building commits.
+
+See [GitHub publication and the real CDN test](docs/GITHUB_LAYOUT.md).
+The isolated Actions experiment downloads and decompiles the actual EU and CT
+scripts package without an installed game. It saves artifacts and never
+overwrites the published source branches.
