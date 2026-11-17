@@ -9,6 +9,7 @@ import stat
 import zipfile
 
 from .config import Config
+from .cdn_regions import CDN_REGIONS, require_region
 from .extract.writer import save_json_atomic
 from .gameface import GFOptions, find_node, run_gameface
 
@@ -20,6 +21,7 @@ def wanted_member(name: str) -> bool:
 
 
 def import_package(archive: Path, output: Path, realm: str, container: str) -> int:
+    require_region(realm)
     output = output.resolve()
     manifest_path = output / 'manifest.json'
     manifest = json.loads(manifest_path.read_text(encoding='utf-8')) if manifest_path.exists() else {
@@ -63,6 +65,7 @@ def import_package(archive: Path, output: Path, realm: str, container: str) -> i
 
 
 def process(output: Path, realm: str, evidence: Path, jobs: int = 2) -> dict:
+    require_region(realm)
     output = output.resolve()
     if output.name != 'wot_src_' + realm:
         raise ValueError('Expected an isolated wot_src_<REALM> directory')
@@ -109,11 +112,11 @@ if __name__ == '__main__':
     imp.add_argument('archive', type=Path)
     imp.add_argument('output', type=Path)
     imp.add_argument('--container', required=True)
-    imp.add_argument('--realm', choices=['EU', 'CT'], required=True)
+    imp.add_argument('--realm', choices=list(CDN_REGIONS), required=True)
     run = sub.add_parser('process')
     run.add_argument('output', type=Path)
     run.add_argument('evidence', type=Path)
-    run.add_argument('--realm', choices=['EU', 'CT'], required=True)
+    run.add_argument('--realm', choices=list(CDN_REGIONS), required=True)
     run.add_argument('--jobs', type=int, default=2)
     args = parser.parse_args()
     if args.command == 'import':

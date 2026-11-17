@@ -7,7 +7,15 @@ on:
       - .github/workflows/cdn-validation.yml
       - scripts/validate_cdn_output.py
       - scripts/check_python27_syntax.py
+      - scripts/cdn_matrix.py
+      - src/wot_extractor/cdn_regions.py
+      - src/wot_extractor/data/wg_realms.json
   workflow_dispatch:
+    inputs:
+      regions:
+        description: ALL or comma-separated EU,CT,NA,ASIA,CN (RU/LESTA excluded)
+        default: ALL
+        required: true
 
 permissions:
   contents: read
@@ -17,18 +25,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  targets:
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.regions.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: regions
+        env:
+          REGIONS: ${{ inputs.regions || 'NA,ASIA,CN' }}
+        run: python3 scripts/cdn_matrix.py --regions "$REGIONS"
   scripts:
+    needs: targets
     runs-on: ubuntu-22.04
     timeout-minutes: 45
     strategy:
       fail-fast: false
-      max-parallel: 1
-      matrix:
-        include:
-          - realm: EU
-            host: wgus-woteu.wargaming.net
-          - realm: CT
-            host: wgus-eu.wargaming.net
+      max-parallel: 3
+      matrix: ${{ fromJSON(needs.targets.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -59,11 +73,12 @@ jobs:
           WOTSRC_PYTHON: python
           REALM: ${{ matrix.realm }}
           WGUS_HOST: ${{ matrix.host }}
+          WGUS_GUID: ${{ matrix.guid }}
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p ../evidence
-          npm run sources -- --host "$WGUS_HOST" --guid "WOT.${REALM}.PRODUCTION" --only scripts --out ../output 2>&1 | tee ../evidence/generator.log
+          npm run sources -- --host "$WGUS_HOST" --guid "$WGUS_GUID" --only scripts --out ../output 2>&1 | tee ../evidence/generator.log
       - name: Validate generated files and record hashes
         env:
           REALM: ${{ matrix.realm }}

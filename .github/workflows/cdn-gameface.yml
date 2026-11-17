@@ -8,7 +8,15 @@ on:
       - scripts/cdn_gameface.ts
       - src/wot_extractor/cdn_gameface.py
       - src/wot_extractor/gameface/**
+      - scripts/cdn_matrix.py
+      - src/wot_extractor/cdn_regions.py
+      - src/wot_extractor/data/wg_realms.json
   workflow_dispatch:
+    inputs:
+      regions:
+        description: ALL or comma-separated EU,CT,NA,ASIA,CN (RU/LESTA excluded)
+        default: ALL
+        required: true
 
 permissions:
   contents: read
@@ -18,17 +26,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  targets:
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.regions.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: regions
+        env:
+          REGIONS: ${{ inputs.regions || 'NA,ASIA,CN' }}
+        run: python3 scripts/cdn_matrix.py --regions "$REGIONS"
   gameface:
+    needs: targets
     runs-on: ubuntu-22.04
     timeout-minutes: 60
     strategy:
       fail-fast: false
-      matrix:
-        include:
-          - realm: EU
-            host: wgus-woteu.wargaming.net
-          - realm: CT
-            host: wgus-eu.wargaming.net
+      max-parallel: 3
+      matrix: ${{ fromJSON(needs.targets.outputs.matrix) }}
     env:
       PYTHONPATH: ${{ github.workspace }}/project/src
     steps:
@@ -62,7 +77,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p ../evidence
-          npx tsx cdn_gameface.ts --realm "$REALM" --host "$WGUS_HOST" --out "../output/wot_src_${REALM}" --evidence ../evidence 2>&1 | tee ../evidence/acquisition.log
+          npx tsx cdn_gameface.ts --realm "$REALM" --host "$WGUS_HOST" --regions-file ../project/src/wot_extractor/data/wg_realms.json --out "../output/wot_src_${REALM}" --evidence ../evidence 2>&1 | tee ../evidence/acquisition.log
       - name: Generate and validate sources_gameface with our processor
         env:
           REALM: ${{ matrix.realm }}

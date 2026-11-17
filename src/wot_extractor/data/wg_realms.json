@@ -1,0 +1,7 @@
+{
+  "EU": {"host": "wgus-woteu.wargaming.net", "guid": "WOT.EU.PRODUCTION"},
+  "CT": {"host": "wgus-eu.wargaming.net", "guid": "WOT.CT.PRODUCTION"},
+  "NA": {"host": "wgus-wotna.wargaming.net", "guid": "WOT.NA.PRODUCTION"},
+  "ASIA": {"host": "wgus-wotasia.wargaming.net", "guid": "WOT.ASIA.PRODUCTION"},
+  "CN": {"host": "wgus-cn360.wggames.cn", "guid": "WOT.CN.PRODUCTION"}
+}

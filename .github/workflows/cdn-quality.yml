@@ -7,11 +7,18 @@ on:
     paths:
       - .github/workflows/cdn-quality.yml
       - scripts/check_python27_syntax.py
+      - scripts/cdn_matrix.py
+      - src/wot_extractor/cdn_regions.py
+      - src/wot_extractor/data/wg_realms.json
   workflow_dispatch:
     inputs:
       run_id:
         description: Completed Real CDN validation run ID
         default: '44057785201'
+        required: true
+      regions:
+        description: Regions present in that artifact run (RU/LESTA excluded)
+        default: EU,CT
         required: true
 
 permissions:
@@ -19,13 +26,23 @@ permissions:
   actions: read
 
 jobs:
+  targets:
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.regions.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: regions
+        env:
+          REGIONS: ${{ inputs.regions || 'EU,CT' }}
+        run: python3 scripts/cdn_matrix.py --regions "$REGIONS"
   syntax:
+    needs: targets
     runs-on: ubuntu-22.04
     timeout-minutes: 10
     strategy:
       fail-fast: false
-      matrix:
-        realm: [EU, CT]
+      matrix: ${{ fromJSON(needs.targets.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v4
         with:

@@ -15,3 +15,6 @@ wot-extractor = "wot_extractor.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+wot_extractor = ["data/*.json"]

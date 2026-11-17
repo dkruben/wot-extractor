@@ -3,9 +3,14 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
+from wot_extractor.cdn_regions import CDN_REGIONS, require_region
 
 
 def validate(output, evidence, realm):
+    require_region(realm)
     output, evidence = Path(output), Path(evidence)
     marker = output / '.version_name'
     if not marker.is_file() or not marker.read_text().strip():
@@ -36,6 +41,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('output', type=Path)
     parser.add_argument('evidence', type=Path)
-    parser.add_argument('--realm', choices=['EU', 'CT'], required=True)
+    parser.add_argument('--realm', choices=list(CDN_REGIONS), required=True)
     args = parser.parse_args()
     validate(args.output, args.evidence, args.realm)
