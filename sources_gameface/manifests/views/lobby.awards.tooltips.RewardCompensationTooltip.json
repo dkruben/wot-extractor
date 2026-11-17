@@ -1,0 +1,60 @@
+{
+  "rid": "R.views.lobby.awards.tooltips.RewardCompensationTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "RewardCompensationTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "RewardCompensationTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RewardCompensationTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RewardCompensationTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/awards/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/awards/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/awards/tooltips/RewardCompensationTooltip/RewardCompensationTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": []
+}

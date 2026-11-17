@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.094857 -0.138863 -0.110770</min>
+		<max>0.091090 0.204329 1.630816</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/german/G08_Pz38t/crash/lod4/Gun_04</nodelessVisual>
+</root>

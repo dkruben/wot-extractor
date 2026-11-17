@@ -1,0 +1,17 @@
+from __future__ import absolute_import
+from frameworks.wulf import ViewModel
+from frameworks.wulf.view.view import ViewSettings
+from gui.impl.gen import R
+from gui.impl.pub import ViewImpl
+from story_mode.uilogging.story_mode.loggers import NewbieEntryPointTooltipLogger
+
+class NewbieBannerTooltip(ViewImpl):
+
+    def __init__(self):
+        super(NewbieBannerTooltip, self).__init__(ViewSettings(R.views.story_mode.mono.lobby.tooltips.newbie_banner_tooltip(), model=ViewModel()))
+        self._uiLogger = NewbieEntryPointTooltipLogger()
+        self._uiLogger.start()
+
+    def _finalize(self):
+        self._uiLogger.stop()
+        super(NewbieBannerTooltip, self)._finalize()

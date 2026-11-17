@@ -1,0 +1,61 @@
+{
+  "rid": "R.views.lobby.vehicle_preview.buying_panel.StyleBuyingPanel",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "StyleBuyingPanel",
+  "dir": "gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel",
+  "feature": null,
+  "files": [
+    {
+      "name": "StyleBuyingPanel.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "StyleBuyingPanel.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "StyleBuyingPanel.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/vehicle_preview/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/vehicle_preview/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.css",
+      "key": "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.js",
+      "key": "res/gui/gameface/_dist/production/lobby/vehicle_preview/buying_panel/StyleBuyingPanel/StyleBuyingPanel.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": []
+}

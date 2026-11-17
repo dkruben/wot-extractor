@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/japan/J27_O_I_120/crash/lod4/Gun_01</nodelessVisual>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.238661 -0.415124 -1.096369</min>
+		<max>0.238661 0.304140 4.521927</max>
+	</visibilityBox>
+</root>

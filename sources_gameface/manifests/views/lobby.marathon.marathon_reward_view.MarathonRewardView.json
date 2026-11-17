@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.lobby.marathon.marathon_reward_view.MarathonRewardView",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "MarathonRewardView",
+  "dir": "gui/unbound/views/lobby/marathon",
+  "feature": null,
+  "files": [
+    {
+      "name": "marathon_reward_view.unbound",
+      "effective": "res/gui/unbound/views/lobby/marathon/marathon_reward_view.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/marathon/marathon_reward_view.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

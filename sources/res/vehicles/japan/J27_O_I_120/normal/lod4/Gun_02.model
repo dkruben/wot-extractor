@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J27_O_I_120/normal/lod4/Gun_02</nodefullVisual>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.235952 -0.415123 -0.169299</min>
+		<max>0.235951 0.304140 3.854445</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.lobby.blueprints.fragments_balance_content.FragmentsBalanceContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "FragmentsBalanceContent",
+  "dir": "gui/unbound/views/lobby/blueprints",
+  "feature": null,
+  "files": [
+    {
+      "name": "fragments_balance_content.unbound",
+      "effective": "res/gui/unbound/views/lobby/blueprints/fragments_balance_content.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/blueprints/fragments_balance_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

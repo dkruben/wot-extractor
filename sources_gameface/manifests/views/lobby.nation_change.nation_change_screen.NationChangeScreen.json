@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.lobby.nation_change.nation_change_screen.NationChangeScreen",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "NationChangeScreen",
+  "dir": "gui/unbound/views/lobby/nation_change",
+  "feature": null,
+  "files": [
+    {
+      "name": "nation_change_screen.unbound",
+      "effective": "res/gui/unbound/views/lobby/nation_change/nation_change_screen.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/nation_change/nation_change_screen.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

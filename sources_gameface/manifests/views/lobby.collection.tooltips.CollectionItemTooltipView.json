@@ -1,0 +1,60 @@
+{
+  "rid": "R.views.lobby.collection.tooltips.CollectionItemTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "CollectionItemTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "CollectionItemTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CollectionItemTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "CollectionItemTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/collection/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/collection/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/collection/tooltips/CollectionItemTooltipView/CollectionItemTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": []
+}

@@ -1,0 +1,63 @@
+{
+  "rid": "R.views.battle.prebattle.PrebattleHintsView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "PrebattleHintsView",
+  "dir": "gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView",
+  "feature": null,
+  "files": [
+    {
+      "name": "PrebattleHintsView.css",
+      "effective": "res/gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView/PrebattleHintsView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView/PrebattleHintsView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PrebattleHintsView.html",
+      "effective": "res/gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView/PrebattleHintsView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView/PrebattleHintsView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PrebattleHintsView.js",
+      "effective": "res/gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView/PrebattleHintsView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView/PrebattleHintsView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView/PrebattleHintsView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView/PrebattleHintsView.css",
+      "key": "res/gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView/PrebattleHintsView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView/PrebattleHintsView.js",
+      "key": "res/gui/gameface/_dist/production/battle/prebattle/PrebattleHintsView/PrebattleHintsView.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lib/battle/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/battle/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "off:screenResized",
+    "on:Ready",
+    "on:screenResized",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": []
+}

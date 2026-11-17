@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.lobby.reward_window.twitch_reward_window_content.TwitchRewardWindowContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "TwitchRewardWindowContent",
+  "dir": "gui/unbound/views/lobby/reward_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "twitch_reward_window_content.unbound",
+      "effective": "res/gui/unbound/views/lobby/reward_window/twitch_reward_window_content.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/reward_window/twitch_reward_window_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

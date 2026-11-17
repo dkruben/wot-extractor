@@ -1,0 +1,59 @@
+{
+  "rid": "R.views.lobby.achievements.tooltips.WOTPRMainTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "WOTPRMainTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "WOTPRMainTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip/WOTPRMainTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip/WOTPRMainTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "WOTPRMainTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip/WOTPRMainTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip/WOTPRMainTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "WOTPRMainTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip/WOTPRMainTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip/WOTPRMainTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip/WOTPRMainTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/achievements/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/achievements/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip/WOTPRMainTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip/WOTPRMainTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip/WOTPRMainTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/tooltips/WOTPRMainTooltip/WOTPRMainTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated"
+  ],
+  "child_views": [],
+  "commands": []
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.404916 -0.147694 -0.844443</min>
+		<max>0.404916 0.144268 1.467844</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G63_PzI_ausf_C/crash/lod1/Gun_06</parent>
+	<extent>32.000000</extent>
+	<nodelessVisual>vehicles/german/G63_PzI_ausf_C/crash/lod0/Gun_06</nodelessVisual>
+</root>

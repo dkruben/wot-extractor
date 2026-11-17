@@ -1,0 +1,4 @@
+{
+  "note": "O id R.views de cada view vem dos gui/gen_resources/*_layouts.json (mapeamento oficial do jogo). As ligacoes ao Python (que classes/ViewModels usam a view) sao PROVAVEIS: deduzidas pelas referencias R.views no Python descompilado e pelo ViewModel.",
+  "links": {}
+}

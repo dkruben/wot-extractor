@@ -1,0 +1,63 @@
+{
+  "rid": "R.views.mono.lootbox.tooltips.box_compensation",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "box_compensation",
+  "dir": "gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation",
+  "feature": null,
+  "files": [
+    {
+      "name": "box_compensation.css",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation/box_compensation.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation/box_compensation.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "box_compensation.html",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation/box_compensation.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation/box_compensation.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/divider.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/divider.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/shield.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/shield.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation/box_compensation.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation/box_compensation.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/box_compensation/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

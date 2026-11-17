@@ -1,0 +1,62 @@
+{
+  "rid": "R.views.mono.post_battle.random",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "random",
+  "dir": "gui/gameface/_dist/production/mono/post_battle/random",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/random/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/random/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/post_battle/random/bundle.js"
+    },
+    {
+      "name": "random.css",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/random/random.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/random/random.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "random.html",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/random/random.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/random/random.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/random/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/random/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/random/random.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/random/random.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "additionalBonus.onPremiumXpBonusApplied",
+    "additionalBonus.onShowDetails",
+    "onClose",
+    "onOpenMissions",
+    "playerSatisfaction.onSatisfactionRatingSelected",
+    "teamStats.onStatsSorted"
+  ]
+}

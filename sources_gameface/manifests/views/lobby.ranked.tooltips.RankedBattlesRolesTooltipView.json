@@ -1,0 +1,61 @@
+{
+  "rid": "R.views.lobby.ranked.tooltips.RankedBattlesRolesTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "RankedBattlesRolesTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "RankedBattlesRolesTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RankedBattlesRolesTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "RankedBattlesRolesTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/ranked/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/ranked/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/ranked/tooltips/RankedBattlesRolesTooltipView/RankedBattlesRolesTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": []
+}
