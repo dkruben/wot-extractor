@@ -80,3 +80,27 @@ All raw and generated hashes were verified in the downloaded artifact. The
 1,886 raw files also present in the existing local extracted tree had identical
 SHA-256; the remaining ten imported files were not present in that comparison
 tree. Existing published content was not replaced.
+
+## Real CT result and final validation
+
+The same run successfully generated CT version `2.4.2.5518`, with the same
+1,896 imported resources, 1,854 successful processing results, 488 views and
+2,857 generated files. There were no partial or failed processing results in
+either region. Original and generated artifact hashes were checked for CT too.
+
+| Measurement | EU | CT |
+| --- | --- | --- |
+| Fetched response-body bytes | 4,926,565,956 | 4,865,674,990 |
+| Exact-range requests | 37 | 25 |
+| Acquisition/reconstruction | 3m 36s | 9m 02s |
+| Gameface processing | 30s | 30s |
+| Complete GitHub job | 4m 44s | 10m 08s |
+
+The acquisition cost is a cold-run measurement with no persistent package
+cache. A future scheduled publisher should reuse unchanged input resources
+and avoid reconstructing unchanged packages on every check.
+
+All 165 local unit tests passed, including importer isolation/conflict checks
+and a fixture processed through the real Gameface engine. The experiment
+preserves the complete existing `sources_gameface` trees in EU and CT; its
+base-GUI artifacts are not used to replace those trees or discard mode output.
