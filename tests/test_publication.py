@@ -7,6 +7,23 @@ from wot_extractor.publication import commit_publication, reference_tree
 
 
 class PublicationTests(unittest.TestCase):
+    def test_fresh_game_output_retains_the_manual_actions_entry_point(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            repo, source = root / 'repo', root / 'game'
+            subprocess.run(['git', 'init', '-q', str(repo)], check=True)
+            workflow = repo / '.github/workflows/cdn-regions.yml'
+            workflow.parent.mkdir(parents=True)
+            workflow.write_text('manual workflow')
+            subprocess.run(['git', '-C', str(repo), 'add', '.'], check=True)
+            subprocess.run(['git', '-C', str(repo), '-c', 'user.name=Test', '-c', 'user.email=test@example.com',
+                            'commit', '-qm', 'Actions entry point'], check=True)
+            source.mkdir()
+            (source / 'README.md').write_text('fresh extraction')
+            tree = reference_tree(repo / '.git', source)
+            actual = subprocess.check_output(['git', '-C', str(repo), 'show', tree + ':.github/workflows/cdn-regions.yml'])
+            self.assertEqual(actual, b'manual workflow')
+
     def test_migration_preserves_blobs_and_does_not_move_working_files(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)

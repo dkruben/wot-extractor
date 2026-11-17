@@ -47,6 +47,21 @@ def reference_tree(git_dir: Path, source: Path | None = None) -> str:
                 blob = _git(git_dir, 'hash-object', '-w', '--stdin', data=content).strip()
                 header = b' '.join((mode, blob, stage))
             mapped.append(header + b'\t' + target + b'\0')
+        if source is not None:
+            # Source branches open on EU. Retain the manual Actions entry point
+            # when publishing fresh game output; its implementation lives on main.
+            path = b'.github/workflows/cdn-regions.yml'
+            if path not in seen:
+                try:
+                    row = _git(git_dir, 'ls-tree', '-z', 'HEAD', '--', path.decode()).rstrip(b'\0')
+                except subprocess.CalledProcessError:
+                    row = b''  # initial publication has no HEAD yet
+                if row:
+                    header, name = row.split(b'\t', 1)
+                    mode, kind, blob = header.split()
+                    if kind != b'blob':
+                        raise ValueError('Actions entry point must be a file')
+                    mapped.append(mode + b' ' + blob + b' 0\t' + name + b'\0')
         _git(git_dir, 'read-tree', '--empty', env=env)
         _git(git_dir, 'update-index', '-z', '--index-info', env=env, data=b''.join(mapped))
         return _git(git_dir, 'write-tree', env=env).decode().strip()

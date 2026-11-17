@@ -74,3 +74,7 @@ incomplete modules, so scheduled production publication remains disabled.
 [The Gameface CDN experiment](docs/CDN_GAMEFACE.md) additionally reconstructs
 base GUI packages and runs our existing processor to generate
 `sources_gameface/` on GitHub, with formatting and original-file integrity checks.
+
+The [WG regional catalog and manual CDN runs](docs/WG_REGIONS.md) cover
+**EU, CT, NA, ASIA and CN**. RU and Lesta targets are excluded. Regional
+publication records the source baseline and the validated CDN additions.

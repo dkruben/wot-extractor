@@ -17,6 +17,11 @@ on:
         description: ALL or comma-separated EU,CT,NA,ASIA,CN (RU/LESTA excluded)
         default: ALL
         required: true
+  workflow_call:
+    inputs:
+      regions:
+        type: string
+        required: true
 
 permissions:
   contents: read
@@ -32,6 +37,8 @@ jobs:
       matrix: ${{ steps.regions.outputs.matrix }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'push' && github.ref || 'main' }}
       - id: regions
         env:
           REGIONS: ${{ inputs.regions || 'NA,ASIA,CN' }}
@@ -48,6 +55,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           path: project
+          ref: ${{ github.event_name == 'push' && github.ref || 'main' }}
       # External research engine; pinned and executed, not vendored into our tool.
       - uses: actions/checkout@v4
         with:

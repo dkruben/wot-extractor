@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import http from 'node:http';
 import { createCdnFetch } from '../scripts/cdn_fetch.mjs';
 
 test('reassembles exact ranges across chunks and retries a truncated body', async () => {
@@ -37,4 +38,21 @@ test('rejects a changed object size between chunks', async () => {
   }, { chunkBytes: 4, attempts: 1, log: () => {} });
   const result = await client.fetch('http://example.test/archive', { headers: { Range: 'bytes=0-7' } });
   await assert.rejects(result.arrayBuffer(), /Invalid range/);
+});
+
+test('times out a response that stalls after sending headers and partial data', async () => {
+  const server = http.createServer((request, response) => {
+    response.writeHead(206, { 'Content-Range': 'bytes 0-3/4', 'Content-Length': '4' });
+    response.write('a');
+  });
+  await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+  try {
+    const client = createCdnFetch(fetch, { timeoutMs: 50, attempts: 1, log: () => {} });
+    await assert.rejects(client.fetch(`http://127.0.0.1:${server.address().port}/archive`,
+      { headers: { Range: 'bytes=0-3' } }), /abort|timeout/i);
+    assert.equal(client.metrics.failedRequests, 1);
+  } finally {
+    server.closeAllConnections();
+    await new Promise(resolve => server.close(resolve));
+  }
 });
