@@ -8,10 +8,10 @@ each commit corresponds to one client version.
 |---|---|
 | `sources/` | game files (`res`, `res_mods`) with their original paths; the `.py` files are **decompiled** code from the `.pyc` files (first line `wot-extractor: codigo DESCOMPILADO`) |
 | `sources_xml/` | BigWorld binary XML **decoded** to text |
-| `sources_as/scripts/` | ActionScript 3 code **decompiled** by FFDec (or declarations only, marked as such) |
-| `sources_as/swf/` | catalog of each SWF (classes, symbols, imports) and `catalog.json` (class → SWF) |
+| `sources-as3/scripts/` | ActionScript 3 code **decompiled** by FFDec (or declarations only, marked as such) |
+| `sources-as3/swf/` | catalog of each SWF (classes, symbols, imports) and `catalog.json` (class → SWF) |
 | `sources_gameface/` | Gameface HTML/CSS/JS **formatted** (not the original source code), analyses and views (`VIEWS.md`) |
-| `__stubs/` | `.pyi` stubs generated only from information verified in the code (VS Code/Pylance: `python.analysis.stubPath`) |
+| `_stubs/` | `.pyi` stubs generated only from information verified in the code (VS Code/Pylance: `python.analysis.stubPath`) |
 | `REPORT.md` | extraction summary: what was recovered and what is only partial |
 
 The `.pyc`, binary XML and SWF files that were already processed are not included (see `REPORT.md`).
