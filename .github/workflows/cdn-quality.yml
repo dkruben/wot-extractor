@@ -1,0 +1,60 @@
+name: Inspect real CDN artifact quality
+
+on:
+  push:
+    branches: [automation/cdn-quality]
+    paths:
+      - .github/workflows/cdn-quality.yml
+      - scripts/check_python27_syntax.py
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: Completed Real CDN validation run ID
+        default: '44057785201'
+        required: true
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  syntax:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        realm: [EU, CT]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: project
+      - uses: actions/download-artifact@v4
+        with:
+          name: cdn-validation-${{ matrix.realm }}
+          path: result
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          run-id: ${{ inputs.run_id || '44057785201' }}
+      - name: Compile all unmarked modules using the Python 2.7 parser
+        run: |
+          docker run --rm -v "$PWD:/work" -w /work python:2.7.18-slim \
+            python project/scripts/check_python27_syntax.py result/output result/evidence
+      - name: Write quality summary
+        run: |
+          python3 - <<'PY'
+          import json, os
+          data = json.load(open('result/evidence/syntax.json'))
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as f:
+              f.write('## {realm}: {version}\n\n'.format(**data))
+              f.write('- Python 2.7 syntax passed: {passed}\n'.format(**data))
+              f.write('- Syntax errors: {}\n'.format(len(data['syntax_errors'])))
+              f.write('- Already marked partial/failed: {marked_partial_or_failed}\n'.format(**data))
+              f.write('- Ready for publication without incomplete modules: {}\n'.format(data['publication_ready']))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cdn-quality-${{ matrix.realm }}
+          path: result/evidence/
+          retention-days: 14
+          if-no-files-found: error

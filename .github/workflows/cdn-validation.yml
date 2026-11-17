@@ -6,6 +6,7 @@ on:
     paths:
       - .github/workflows/cdn-validation.yml
       - scripts/validate_cdn_output.py
+      - scripts/check_python27_syntax.py
   workflow_dispatch:
 
 permissions:
@@ -67,6 +68,10 @@ jobs:
         env:
           REALM: ${{ matrix.realm }}
         run: python project/scripts/validate_cdn_output.py output evidence --realm "$REALM"
+      - name: Check Python 2.7 syntax without executing game code
+        run: |
+          docker run --rm -v "$PWD:/work" -w /work python:2.7.18-slim \
+            python project/scripts/check_python27_syntax.py output evidence
       - uses: actions/upload-artifact@v4
         if: always()
         with:
