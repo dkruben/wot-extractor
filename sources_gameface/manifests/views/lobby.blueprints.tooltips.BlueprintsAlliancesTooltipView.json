@@ -1,0 +1,61 @@
+{
+  "rid": "R.views.lobby.blueprints.tooltips.BlueprintsAlliancesTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "BlueprintsAlliancesTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "BlueprintsAlliancesTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView/BlueprintsAlliancesTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView/BlueprintsAlliancesTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BlueprintsAlliancesTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView/BlueprintsAlliancesTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView/BlueprintsAlliancesTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "BlueprintsAlliancesTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView/BlueprintsAlliancesTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView/BlueprintsAlliancesTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView/BlueprintsAlliancesTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/blueprints/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/blueprints/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView/BlueprintsAlliancesTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView/BlueprintsAlliancesTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView/BlueprintsAlliancesTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/blueprints/tooltips/BlueprintsAlliancesTooltipView/BlueprintsAlliancesTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": []
+}

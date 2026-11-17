@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.405999 -0.132628 0.046865</min>
+		<max>0.398350 0.147811 1.473066</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G63_PzI_ausf_C/normal/lod4/Gun_06</nodefullVisual>
+</root>

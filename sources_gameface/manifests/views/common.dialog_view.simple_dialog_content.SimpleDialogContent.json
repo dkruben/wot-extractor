@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.common.dialog_view.simple_dialog_content.SimpleDialogContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "SimpleDialogContent",
+  "dir": "gui/unbound/views/common/dialog_view",
+  "feature": null,
+  "files": [
+    {
+      "name": "simple_dialog_content.unbound",
+      "effective": "res/gui/unbound/views/common/dialog_view/simple_dialog_content.unbound",
+      "all": [
+        "res/gui/unbound/views/common/dialog_view/simple_dialog_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

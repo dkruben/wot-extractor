@@ -1,0 +1,1 @@
+{"key":"res/gui/gameface/scripts/migration-ui/src/ts/entrypoint.ts","source":"sources/res/gui/gameface/scripts/migration-ui/src/ts/entrypoint.ts","kind":"ts_source","bytes":1733,"encoding":"utf-8","lines":57,"imports":["../bindings","../core","effect","path"],"exports":["migrateEntrypoint"]}

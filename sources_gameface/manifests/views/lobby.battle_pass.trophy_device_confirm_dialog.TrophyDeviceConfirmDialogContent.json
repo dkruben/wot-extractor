@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.lobby.battle_pass.trophy_device_confirm_dialog.TrophyDeviceConfirmDialogContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "TrophyDeviceConfirmDialogContent",
+  "dir": "gui/unbound/views/lobby/battle_pass",
+  "feature": null,
+  "files": [
+    {
+      "name": "trophy_device_confirm_dialog.unbound",
+      "effective": "res/gui/unbound/views/lobby/battle_pass/trophy_device_confirm_dialog.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/battle_pass/trophy_device_confirm_dialog.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

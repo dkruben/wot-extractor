@@ -1,0 +1,67 @@
+{
+  "rid": "R.views.lobby.platoon.subViews.TiersLimit",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "TiersLimit",
+  "dir": "gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit",
+  "feature": null,
+  "files": [
+    {
+      "name": "TiersLimit.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "TiersLimit.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "TiersLimit.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/platoon/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/platoon/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.css",
+      "key": "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.js",
+      "key": "res/gui/gameface/_dist/production/lobby/platoon/subViews/TiersLimit/TiersLimit.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged",
+    "trigger:subView:destroy"
+  ],
+  "child_views": [
+    "common.tooltip_window.simple_tooltip_content",
+    "common.tooltip_window.tooltip_window.TooltipWindow",
+    "lobby.platoon.AlertTooltip",
+    "lobby.platoon.SettingsPopover"
+  ],
+  "commands": []
+}

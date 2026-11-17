@@ -1,0 +1,59 @@
+{
+  "rid": "R.views.mono.battle_pass.tooltips.bptaler",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "bptaler",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler",
+  "feature": null,
+  "files": [
+    {
+      "name": "bptaler.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bptaler.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bundle.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/separator.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/separator.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bptaler.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bptaler/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

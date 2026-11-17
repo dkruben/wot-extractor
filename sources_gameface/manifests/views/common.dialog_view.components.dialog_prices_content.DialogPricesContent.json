@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.common.dialog_view.components.dialog_prices_content.DialogPricesContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "DialogPricesContent",
+  "dir": "gui/unbound/views/common/dialog_view/components",
+  "feature": null,
+  "files": [
+    {
+      "name": "dialog_prices_content.unbound",
+      "effective": "res/gui/unbound/views/common/dialog_view/components/dialog_prices_content.unbound",
+      "all": [
+        "res/gui/unbound/views/common/dialog_view/components/dialog_prices_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

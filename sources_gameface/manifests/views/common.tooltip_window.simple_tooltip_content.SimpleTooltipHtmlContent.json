@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.common.tooltip_window.simple_tooltip_content.SimpleTooltipHtmlContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "SimpleTooltipHtmlContent",
+  "dir": "gui/unbound/views/common/tooltip_window",
+  "feature": null,
+  "files": [
+    {
+      "name": "simple_tooltip_content.unbound",
+      "effective": "res/gui/unbound/views/common/tooltip_window/simple_tooltip_content.unbound",
+      "all": [
+        "res/gui/unbound/views/common/tooltip_window/simple_tooltip_content.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.lobby.tooltips.clans.ClanShortInfoTooltipContent",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "ClanShortInfoTooltipContent",
+  "dir": "gui/unbound/views/lobby/tooltips",
+  "feature": null,
+  "files": [
+    {
+      "name": "clans.unbound",
+      "effective": "res/gui/unbound/views/lobby/tooltips/clans.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/tooltips/clans.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

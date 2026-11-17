@@ -1,0 +1,1 @@
+import{r}from"./rolldown-runtime.js";import{ft as o}from"./lib.js";import{r as s}from"./resources.js";import{t as i}from"./divider.js";var e={images:{divider:"common.noise"}},m=r(o(),1);function t({eventName:r,...o}){const{images:t}=s(e,r);return(0,m.jsx)(i,{...o,src:t.divider})}export{t};

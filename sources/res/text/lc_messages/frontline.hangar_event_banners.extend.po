@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "event/EpicBattlesEntryPoint/finished/description"
+msgstr "选择您的奖励"
+
+msgid "event/EpicBattlesEntryPoint/inProgress/description"
+msgstr "奔赴战场吧！"
+
+msgid "event/EpicBattlesEntryPoint/intro/description"
+msgstr "投身大规模战斗！"
+
+msgid "event/EpicBattlesEntryPoint/title"
+msgstr "前线模式"

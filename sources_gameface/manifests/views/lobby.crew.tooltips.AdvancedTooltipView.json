@@ -1,0 +1,60 @@
+{
+  "rid": "R.views.lobby.crew.tooltips.AdvancedTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "AdvancedTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "AdvancedTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView/AdvancedTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView/AdvancedTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "AdvancedTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView/AdvancedTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView/AdvancedTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "AdvancedTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView/AdvancedTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView/AdvancedTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView/AdvancedTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/crew/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/crew/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView/AdvancedTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView/AdvancedTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView/AdvancedTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/crew/tooltips/AdvancedTooltipView/AdvancedTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": []
+}

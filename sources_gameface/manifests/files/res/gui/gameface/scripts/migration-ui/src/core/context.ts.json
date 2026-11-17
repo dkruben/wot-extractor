@@ -1,0 +1,1 @@
+{"key":"res/gui/gameface/scripts/migration-ui/src/core/context.ts","source":"sources/res/gui/gameface/scripts/migration-ui/src/core/context.ts","kind":"ts_source","bytes":118,"encoding":"utf-8","lines":4,"imports":["effect"],"exports":["AppContext"]}

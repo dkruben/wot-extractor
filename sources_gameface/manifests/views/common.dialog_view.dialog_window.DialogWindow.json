@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.common.dialog_view.dialog_window.DialogWindow",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "DialogWindow",
+  "dir": "gui/unbound/views/common/dialog_view",
+  "feature": null,
+  "files": [
+    {
+      "name": "dialog_window.unbound",
+      "effective": "res/gui/unbound/views/common/dialog_view/dialog_window.unbound",
+      "all": [
+        "res/gui/unbound/views/common/dialog_view/dialog_window.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

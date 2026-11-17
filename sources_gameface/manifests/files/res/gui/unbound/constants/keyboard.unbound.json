@@ -1,0 +1,1 @@
+{"key":"res/gui/unbound/constants/keyboard.unbound","source":"sources/res/gui/unbound/constants/keyboard.unbound","kind":"unbound","bytes":207,"encoding":"utf-8","defs":[{"kind":"constant","name":"KEYBOARD"}],"generated_from":null,"generated":false,"names":["ALT_LEFT","DOWN","ENTER","ESCAPE","KEYBOARD","PAGE_DOWN","PAGE_UP","SPACE","constant","def"]}

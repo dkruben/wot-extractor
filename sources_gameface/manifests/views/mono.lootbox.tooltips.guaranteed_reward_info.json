@@ -1,0 +1,55 @@
+{
+  "rid": "R.views.mono.lootbox.tooltips.guaranteed_reward_info",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "guaranteed_reward_info",
+  "dir": "gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "guaranteed_reward_info.css",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "guaranteed_reward_info.html",
+      "effective": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.css",
+      "key": "res/gui/gameface/_dist/production/mono/lootbox/tooltips/guaranteed_reward_info/guaranteed_reward_info.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

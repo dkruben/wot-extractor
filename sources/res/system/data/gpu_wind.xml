@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<enabled>true</enabled>
+	<grassInfluence>
+		0.5
+		<!--BW_String-->
+	</grassInfluence>
+</root>

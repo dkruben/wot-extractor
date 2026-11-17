@@ -1,0 +1,55 @@
+{
+  "rid": "R.views.mono.battle_pass.tooltips.bpcoin",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "bpcoin",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin",
+  "feature": null,
+  "files": [
+    {
+      "name": "bpcoin.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bpcoin.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bundle.js"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bpcoin.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/bpcoin/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

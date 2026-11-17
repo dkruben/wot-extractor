@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.268247 0.018833 -1.352613</min>
+		<max>1.192397 1.179610 1.381698</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/chinese/Ch01_Type59/crash/lod4/Turret_01</nodefullVisual>
+</root>

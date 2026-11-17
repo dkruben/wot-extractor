@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "event/Comp7EntryPoint/inProgress/description"
+msgstr "主宰战场！"
+
+msgid "event/Comp7EntryPoint/intro/description"
+msgstr "展示您的战斗技巧！"
+
+msgid "event/Comp7EntryPoint/title"
+msgstr "天梯战"
+
+msgid "event/Comp7OLSEntryPoint/title"
+msgstr "OLS赛季7"
+
+msgid "event/Comp7TournamentEntryPoint/finished/description"
+msgstr "冠军诞生！"
+
+msgid "event/Comp7TournamentEntryPoint/in_live/description"
+msgstr "即刻观看直播！"
+
+msgid "event/Comp7TournamentEntryPoint/intro/description"
+msgstr "精彩不容错过！"
+
+msgid "event/Comp7TournamentEntryPoint/timer/text"
+msgstr "距后续比赛开启还有"
+
+msgid "event/Comp7WCIEntryPoint/title"
+msgstr "2026WCI"

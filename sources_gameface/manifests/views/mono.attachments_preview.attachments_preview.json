@@ -1,0 +1,51 @@
+{
+  "rid": "R.views.mono.attachments_preview.attachments_preview",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "attachments_preview",
+  "dir": "gui/gameface/_dist/production/mono/attachments_preview/attachments_preview",
+  "feature": null,
+  "files": [
+    {
+      "name": "attachments_preview.css",
+      "effective": "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "attachments_preview.html",
+      "effective": "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.css",
+      "key": "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/attachments_preview.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/attachments_preview/attachments_preview/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/attachments_preview/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/attachments_preview/chunks/lib.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

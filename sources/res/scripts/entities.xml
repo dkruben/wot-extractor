@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ClientServerEntities>
+		<Account/>
+		<Avatar/>
+		<ArenaInfo/>
+		<ClientSelectableObject/>
+		<HangarVehicle/>
+		<Vehicle/>
+		<AreaDestructibles/>
+		<OfflineEntity/>
+		<Flock/>
+		<FlockExotic/>
+		<Login/>
+		<DetachedTurret/>
+		<DebugDrawEntity/>
+		<ClientSelectableCameraObject/>
+		<ClientSelectableCameraVehicle/>
+		<ClientSelectableWebLinksOpener/>
+		<ClientSelectableEasterEgg/>
+		<EmptyEntity/>
+		<LimitedVisibilityEntity/>
+		<HeroTank/>
+		<PlatoonTank/>
+		<PlatoonLighting/>
+		<SectorBase/>
+		<Sector/>
+		<DestructibleEntity/>
+		<StepRepairPoint/>
+		<ProtectionZone/>
+		<TeamInfo/>
+		<AvatarInfo/>
+		<ArenaObserverInfo/>
+		<AreaOfEffect/>
+		<AttackBomber/>
+		<AttackArtilleryFort/>
+		<PersonalDeathZone/>
+		<ClientSelectableRankedObject/>
+		<SimulatedVehicle/>
+		<ClientSelectableHangarsSwitcher/>
+		<StaticDeathZone/>
+		<BasicMine/>
+		<NetworkEntity/>
+	</ClientServerEntities>
+</root>

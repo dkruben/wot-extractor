@@ -1,0 +1,65 @@
+{
+  "rid": "R.views.lobby.achievements.dialogs.EditConfirm",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "EditConfirm",
+  "dir": "gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm",
+  "feature": null,
+  "files": [
+    {
+      "name": "EditConfirm.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm/EditConfirm.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm/EditConfirm.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "EditConfirm.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm/EditConfirm.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm/EditConfirm.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "EditConfirm.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm/EditConfirm.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm/EditConfirm.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm/EditConfirm.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/achievements/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/achievements/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm/EditConfirm.css",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm/EditConfirm.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm/EditConfirm.js",
+      "key": "res/gui/gameface/_dist/production/lobby/achievements/dialogs/EditConfirm/EditConfirm.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": [
+    "onAccept",
+    "onCancel",
+    "onClose"
+  ]
+}

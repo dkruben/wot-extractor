@@ -1,0 +1,60 @@
+{
+  "rid": "R.views.lobby.common.tooltips.SimpleIconTooltip",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "SimpleIconTooltip",
+  "dir": "gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip",
+  "feature": null,
+  "files": [
+    {
+      "name": "SimpleIconTooltip.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip/SimpleIconTooltip.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip/SimpleIconTooltip.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SimpleIconTooltip.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip/SimpleIconTooltip.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip/SimpleIconTooltip.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "SimpleIconTooltip.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip/SimpleIconTooltip.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip/SimpleIconTooltip.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip/SimpleIconTooltip.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/common/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/common/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip/SimpleIconTooltip.css",
+      "key": "res/gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip/SimpleIconTooltip.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip/SimpleIconTooltip.js",
+      "key": "res/gui/gameface/_dist/production/lobby/common/tooltips/SimpleIconTooltip/SimpleIconTooltip.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": []
+}

@@ -1,0 +1,56 @@
+{
+  "rid": "R.views.mono.lobby.veh_skill_tree.dialogs.alternate_configuration",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "alternate_configuration",
+  "dir": "gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration",
+  "feature": null,
+  "files": [
+    {
+      "name": "alternate_configuration.css",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration/alternate_configuration.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration/alternate_configuration.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "alternate_configuration.html",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration/alternate_configuration.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration/alternate_configuration.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration/bundle.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration/alternate_configuration.css",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration/alternate_configuration.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/dialogs/alternate_configuration/bundle.js"
+    }
+  ],
+  "engine": [],
+  "child_views": [
+    "lobby.veh_post_progression.tooltip.SetupTooltipView"
+  ],
+  "commands": [
+    "onAffirmate",
+    "onClose"
+  ]
+}

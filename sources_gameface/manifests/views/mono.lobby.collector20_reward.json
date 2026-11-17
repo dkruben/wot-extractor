@@ -1,0 +1,54 @@
+{
+  "rid": "R.views.mono.lobby.collector20_reward",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "collector20_reward",
+  "dir": "gui/gameface/_dist/production/mono/lobby/collector20_reward",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/collector20_reward/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/collector20_reward/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/lobby/collector20_reward/bundle.js"
+    },
+    {
+      "name": "collector20_reward.css",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/collector20_reward/collector20_reward.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/collector20_reward/collector20_reward.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "collector20_reward.html",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/collector20_reward/collector20_reward.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/collector20_reward/collector20_reward.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/collector20_reward/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/collector20_reward/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/collector20_reward/collector20_reward.css",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/collector20_reward/collector20_reward.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onAnimationEnded",
+    "onClose"
+  ]
+}

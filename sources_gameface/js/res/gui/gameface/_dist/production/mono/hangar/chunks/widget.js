@@ -1,0 +1,124 @@
+/* wot-extractor: JavaScript FORMATADO a partir de sources/res/gui/gameface/_dist/production/mono/hangar/chunks/widget.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
+import{
+  r as e
+}
+from"./rolldown-runtime.js";
+import{
+  Ba as s,C as t,Ii as a,Ka as o,Pi as n,Ra as r,Ua as i,Va as c,cr as l,eo as d,gr as m,hr as p,i as g,lo as u,mi as _,n as h,no as x,qa as b,r as f,t as v,xi as T,xr as N
+}
+from"./lib.js";
+var w=function(e){
+  return e.News="news",e.ShopPromo="shopPromo",e.None="none",e
+}({});
+w.News,w.News,w.ShopPromo,Math.floor(Date.now()/1e3);
+var y={
+  getter:m({
+    type:w.News,description:"Watch very interesting video, with very long, very very interesting and meaningful description!",isVideo:!0,image:"https://pie-webbrg-cdn-stg.wgcdn.co/dcont/fb/image/whats_new_475x230_2.png"
+  }),controls:()=>a(n("onClick","onClose"))
+},
+[C,j]=p("TeaserModel")(({
+  observableModel:e
+})=>e.primitives(["type","postCounter","description","text","isVideo","finishTime","image"]),({
+  externalModel:e
+})=>({
+  onClick:e.createCallbackNoArgs("onClick"),onClose:e.createCallbackNoArgs("onClose")
+})),k=e(x(),1),W={
+  imageWrapper:"Teaser_imageWrapper_901f1116",vignette:"Teaser_vignette_32737740",base:"Teaser_a2a96284",base__video:"Teaser_base__video_3d4fdb7e",contentWrapper:"Teaser_contentWrapper_b44f0d64",image:"Teaser_image_41628c29",base__newsType:"Teaser_base__newsType_3d4fdb7e",base__shopPromoType:"Teaser_base__shopPromoType_3d4fdb7e",title:"Teaser_title_f8c387e3",counter:"Teaser_counter_6afc9955",closeButton:"Teaser_closeButton_c46a88df",text:"Teaser_text_8e0a588c",bottomContent:"Teaser_bottomContent_eb7878d6",description:"Teaser_description_f7e0ddfc",extendedText:"Teaser_extendedText_286b5b73",countdown:"Teaser_countdown_40e45fc1"
+},
+M=e(_(),1),B="Teaser:Base",P=l(function({
+  className:e,classNames:a
+}){
+  const{
+    model:n,controls:l
+  }=j(),m=n.type.get()||w.News,p=n.postCounter.get(),_=n.text.get(),x=n.description.get(),y=n.finishTime.get(),C=n.isVideo.get(),P=n.image.get(),E=N(),S=u.resolve("strings");
+  const V=(0,k.useCallback)(e=>{
+    e.stopPropagation(),l.onClose()
+  },[l]),[$,A]=(0,k.useState)(null);
+  (0,k.useLayoutEffect)(()=>{
+    let e;
+    const t=r(b(y||0),o());
+    if(!y||t<=0)return void A(null);
+    const a=Math.floor(c.seconds(t)),n=i(b(y),s(1))?f.Extended:f.Long;
+    if(A({
+      duration:a,style:n
+    }),n===f.Extended){
+      const t=r(b(a+1),s(1));
+      e=setTimeout(()=>A(e=>({
+        ...e,style:f.Long
+      })),Math.min(t,T))
+    }
+    return()=>{
+      e&&(clearTimeout(e),e=void 0)
+    }
+  },[y]);
+  const[I,L]=(0,k.useState)(null),[q,z]=(0,k.useState)(!1);
+  return(0,k.useEffect)(()=>{
+    const e=new Image;
+    return e.src=P,e.onload=()=>{
+      L({
+        path:P,height:e.height,width:e.width
+      }),z(!0)
+    },
+    e.onerror=()=>{
+      z(!0)
+    },
+    ()=>{
+      e.src="",L(null)
+    }
+  },[P]),q?(0,M.jsxs)("div",{
+    className:d(W.base,W[`base__${m}Type`],C&&W.base__video,e),onClick:function(e){
+      E.play("click",{
+        target:B,original:e
+      }),l.onClick()
+    },
+    onMouseEnter:function(e){
+      E.play("mouse-enter",{
+        target:B,original:e
+      })
+    },
+    children:[(0,M.jsx)("div",{
+      className:d(W.contentWrapper,a?.contentWrapper),children:(0,M.jsx)("div",{
+        className:d(W.imageWrapper,a?.imageWrapper),children:I&&(0,M.jsx)("div",{
+          className:d(W.image,a?.image),style:{
+            backgroundImage:`url(${I.path})`,height:`${I.height}rem`,width:`${I.width}rem`
+          }
+        })
+      })
+    }),(0,M.jsx)("div",{
+      className:d(W.vignette,a?.vignette)
+    }),(0,M.jsxs)("div",{
+      className:d(W.contentWrapper,a?.contentWrapper),children:[(0,M.jsxs)("div",{
+        className:d(W.title,a?.title),children:[S.readOrEmpty("menu.promo.teaser.title"),Boolean(p)&&p>0&&(0,M.jsx)(g,{
+          className:d(W.counter,a?.counter),value:p,size:"small"
+        })]
+      }),(0,M.jsx)(v,{
+        type:"close",side:"right",classNames:{
+          base:d(W.closeButton,a?.closeButton)
+        },
+        onClick:V,caption:""
+      }),_&&(0,M.jsx)("div",{
+        className:d(W.text,a?.text),children:_
+      }),(x||$)&&(0,M.jsxs)("div",{
+        className:W.bottomContent,children:[x&&(0,M.jsx)("div",{
+          className:d(W.description,a?.description),children:(0,M.jsx)(t,{
+            classMix:W.extendedText,text:x,isTruncationAvailable:!0
+          })
+        }),$&&(0,M.jsx)(h,{
+          className:d(W.countdown,a?.countdown),...$
+        })]
+      })]
+    })]
+  }):null
+});
+function E({
+  className:e,classNames:s,...t
+}){
+  return(0,M.jsx)(C,{
+    ...t,mode:"real",mocks:y,children:(0,M.jsx)(P,{
+      className:e,classNames:s
+    })
+  })
+}
+export{
+  E as default
+};
