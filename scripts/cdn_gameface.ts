@@ -7,6 +7,7 @@ import { execFileSync } from 'node:child_process';
 import { SparseArchive } from './lib/archive.js';
 import { drainPatches, recipes, rebuildPackage } from './lib/patched.js';
 import { resolveClient } from './lib/wgus.js';
+import { installCdnFetch } from './cdn_fetch.mjs';
 
 const value = (name: string) => {
   const index = process.argv.indexOf(name);
@@ -25,35 +26,7 @@ if (!target || target.host !== host || !/^WOT\.[A-Z]+\.PRODUCTION$/.test(target.
 }
 const wanted = (name: string) => /^res\/packages\/(gui-part\d+|scripts)\.pkg$/.test(name);
 
-const metrics = { requests: 0, bodyBytes: 0, rangeRequests: 0 };
-const nativeFetch = globalThis.fetch;
-globalThis.fetch = async (...args: Parameters<typeof fetch>) => {
-  const response = await nativeFetch(...args);
-  const range = new Headers(args[1]?.headers).get('Range');
-  metrics.requests++;
-  if (range) {
-    const expected = /^bytes=(\d+)-(\d+)$/.exec(range);
-    const actual = /^bytes (\d+)-(\d+)\/(\d+)$/.exec(response.headers.get('Content-Range') ?? '');
-    if (!expected || !actual || response.status !== 206 || expected[1] !== actual[1] || expected[2] !== actual[2]) {
-      await response.body?.cancel();
-      throw new Error(`CDN did not honor exact range ${range}: ${response.status}`);
-    }
-    metrics.rangeRequests++;
-  }
-  const originalBuffer = response.arrayBuffer.bind(response);
-  response.arrayBuffer = async () => {
-    const buffer = await originalBuffer();
-    metrics.bodyBytes += buffer.byteLength;
-    return buffer;
-  };
-  const originalText = response.text.bind(response);
-  response.text = async () => {
-    const text = await originalText();
-    metrics.bodyBytes += Buffer.byteLength(text);
-    return text;
-  };
-  return response;
-};
+const metrics = installCdnFetch();
 
 async function main() {
   if (fs.existsSync(out)) throw new Error('Output must be a new isolated directory');

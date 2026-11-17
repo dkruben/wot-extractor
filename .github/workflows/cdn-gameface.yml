@@ -6,6 +6,7 @@ on:
     paths:
       - .github/workflows/cdn-gameface.yml
       - scripts/cdn_gameface.ts
+      - scripts/cdn_fetch.mjs
       - src/wot_extractor/cdn_gameface.py
       - src/wot_extractor/gameface/**
       - scripts/cdn_matrix.py
@@ -69,6 +70,7 @@ jobs:
           cd engine
           npm ci --no-audit --no-fund
           cp ../project/scripts/cdn_gameface.ts ./cdn_gameface.ts
+          cp ../project/scripts/cdn_fetch.mjs ./cdn_fetch.mjs
       - name: Reconstruct GUI packages and import real Gameface resources
         working-directory: engine
         env:

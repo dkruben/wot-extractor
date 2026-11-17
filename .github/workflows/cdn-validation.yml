@@ -7,6 +7,7 @@ on:
       - .github/workflows/cdn-validation.yml
       - scripts/validate_cdn_output.py
       - scripts/check_python27_syntax.py
+      - scripts/cdn_fetch.mjs
       - scripts/cdn_matrix.py
       - src/wot_extractor/cdn_regions.py
       - src/wot_extractor/data/wg_realms.json
@@ -74,6 +75,9 @@ jobs:
           REALM: ${{ matrix.realm }}
           WGUS_HOST: ${{ matrix.host }}
           WGUS_GUID: ${{ matrix.guid }}
+          NODE_OPTIONS: --import=${{ github.workspace }}/project/scripts/cdn_fetch.mjs
+          WG_CDN_FETCH_AUTO: '1'
+          WG_CDN_METRICS_PATH: ${{ github.workspace }}/evidence/cdn-transfer.json
         shell: bash
         run: |
           set -euo pipefail
