@@ -70,3 +70,7 @@ overwrites the published source branches.
 [The real EU and CT experiment](docs/CDN_TEST_RESULTS.md) completed on GitHub
 on 2026-11-17. The download path worked; the syntax inspection identified
 incomplete modules, so scheduled production publication remains disabled.
+
+[The Gameface CDN experiment](docs/CDN_GAMEFACE.md) additionally reconstructs
+base GUI packages and runs our existing processor to generate
+`sources_gameface/` on GitHub, with formatting and original-file integrity checks.
