@@ -1,0 +1,81 @@
+name: Real CDN Gameface validation
+
+on:
+  push:
+    branches: [automation/cdn-gameface]
+    paths:
+      - .github/workflows/cdn-gameface.yml
+      - scripts/cdn_gameface.ts
+      - src/wot_extractor/cdn_gameface.py
+      - src/wot_extractor/gameface/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cdn-gameface-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  gameface:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - realm: EU
+            host: wgus-woteu.wargaming.net
+          - realm: CT
+            host: wgus-eu.wargaming.net
+    env:
+      PYTHONPATH: ${{ github.workspace }}/project/src
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: project
+      - uses: actions/checkout@v4
+        with:
+          repository: unicum-gg/wot.build
+          ref: 1832f2ff545a2950867fa698296c92315752bf81
+          path: engine
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install archive tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full xdelta3 rdiff
+          cd engine
+          npm ci --no-audit --no-fund
+          cp ../project/scripts/cdn_gameface.ts ./cdn_gameface.ts
+      - name: Reconstruct GUI packages and import real Gameface resources
+        working-directory: engine
+        env:
+          REALM: ${{ matrix.realm }}
+          WGUS_HOST: ${{ matrix.host }}
+        run: |
+          set -euo pipefail
+          mkdir -p ../evidence
+          npx tsx cdn_gameface.ts --realm "$REALM" --host "$WGUS_HOST" --out "../output/wot_src_${REALM}" --evidence ../evidence 2>&1 | tee ../evidence/acquisition.log
+      - name: Generate and validate sources_gameface with our processor
+        env:
+          REALM: ${{ matrix.realm }}
+        run: |
+          set -euo pipefail
+          python -u -m wot_extractor.cdn_gameface process "output/wot_src_${REALM}" evidence --realm "$REALM" --jobs 2 2>&1 | tee evidence/processing.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cdn-gameface-${{ matrix.realm }}
+          path: |
+            output/
+            evidence/
+          include-hidden-files: true
+          retention-days: 7
+          if-no-files-found: error
