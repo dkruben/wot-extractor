@@ -66,3 +66,7 @@ See [GitHub publication and the real CDN test](docs/GITHUB_LAYOUT.md).
 The isolated Actions experiment downloads and decompiles the actual EU and CT
 scripts package without an installed game. It saves artifacts and never
 overwrites the published source branches.
+
+[The real EU and CT experiment](docs/CDN_TEST_RESULTS.md) completed on GitHub
+on 2026-11-17. The download path worked; the syntax inspection identified
+incomplete modules, so scheduled production publication remains disabled.

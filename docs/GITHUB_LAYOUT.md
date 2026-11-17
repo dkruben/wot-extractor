@@ -61,3 +61,11 @@ The workflow has read-only repository permissions and no scheduled trigger;
 it cannot replace EU or CT content. A production workflow needs separate
 coverage and quality checks, reusable downloads, preloading validation and a
 publication step before scheduling is enabled.
+
+The syntax check runs in a CPython 2.7.18 container on the GitHub runner. It
+records unmarked syntax errors as well as the decompiler's explicit failures.
+`cdn-quality.yml` can inspect the artifacts of an existing experiment without
+repeating the downloads and decompilation. Its success means the inspection
+finished; inspect `publication_ready` in `syntax.json` before publication.
+
+See [the measured EU and CT results](CDN_TEST_RESULTS.md).
