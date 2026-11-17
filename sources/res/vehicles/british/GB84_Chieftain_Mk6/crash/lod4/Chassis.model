@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.712643 0.001319 -3.594055</min>
+		<max>1.703284 1.276502 3.544677</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB84_Chieftain_Mk6/crash/lod4/Chassis</nodefullVisual>
+</root>

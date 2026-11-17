@@ -1,0 +1,160 @@
+/* wot-extractor: JavaScript FORMATADO a partir de sources/res/gui/gameface/_dist/production/mono/seniority_awards/chunks/easings.js. So foram alterados espacos e quebras de linha (verificado token a token e pelo node --check). NAO e o codigo-fonte original: o webpack/minificador encurtou nomes e removeu comentarios. */
+import{
+  n as e
+}
+from"./rolldown-runtime.js";
+import{
+  A as r,D as t,E as a,I as s,K as o,O as i,bt as n,et as d,nt as c,rt as l,tt as w,xt as u
+}
+from"./lib.js";
+import{
+  t as m
+}
+from"./category.js";
+var _="SeniorityAwardsViewFooter_ee5e4688",p="SeniorityAwardsViewFooter_description_ad1f38e5",y="SeniorityAwardsViewFooter_buttonHolder_b0449970",h="SeniorityAwardsViewFooter_button_925ad150",v="SeniorityAwardsViewFooter_buttonWrapper_3ea3a32b",x="SeniorityAwardsViewFooter_glow_40376564",b=l(),g="seniority_awards.rewardsView",j=({
+  moreReardsCount:e=0,isGotoHangarAvailable:s=!1,hasMoreRewards:o,isShopAvailable:n,onShowMoreClick:d,onAcceptClick:l,onGotoHangarBtnClick:w
+})=>{
+  const m=u.resolve("strings"),j=c({
+    value:t.medium
+  },{
+    large:{
+      value:t.large
+    }
+  });
+  return(0,b.jsx)("div",{
+    className:_,children:o?(0,b.jsx)("div",{
+      className:y,children:(0,b.jsx)(a,{
+        className:h,size:j.value,onClick:d,theme:i.primary,soundTarget:"rewards-view:button",children:e>0?(0,b.jsx)(r,{
+          text:m.readOrEmpty(`${g}.moreRewardsWithCountBtn`),params:{
+            count:e
+          },
+          upgradeLegacy:!0
+        }):m.readOrEmpty(`${g}.moreRewardsBtn`)
+      })
+    }):(0,b.jsxs)(b.Fragment,{
+      children:[n&&(0,b.jsx)("div",{
+        className:p,children:m.readOrEmpty(`${g}.exchangeCoins`)
+      }),(0,b.jsxs)("div",{
+        className:y,children:[(0,b.jsxs)("div",{
+          className:v,children:[n&&(0,b.jsx)("div",{
+            className:x
+          }),(0,b.jsx)(a,{
+            className:h,size:j.value,onClick:l,theme:i.primary,soundTarget:"rewards-view:button",children:n?m.readOrEmpty(`${g}.gotoRewardsBtn`):m.readOrEmpty(`${g}.applyBtn`)
+          })]
+        }),s&&(0,b.jsx)("div",{
+          className:v,children:(0,b.jsx)(a,{
+            size:j.value,onClick:w,theme:i.secondary,soundTarget:"rewards-view:button",children:m.readOrEmpty(`${g}.gotoHangarBtn`)
+          })
+        })]
+      })]
+    })
+  })
+},
+S=e(s(),1),T=e(n(),1);
+function V({
+  resId:e,contentId:r,decoratorId:t,disabled:a,args:s,onShowTooltip:i,onHideTooltip:n
+}){
+  const c=o({
+    resId:e,contentId:r,decoratorId:t,disabled:a,args:s,showDelay:400
+  }),l=(0,T.useRef)(0),[w,u]=(0,T.useState)(!1);
+  return d(()=>clearTimeout(l.current)),{
+    ...c,onMouseEnter:e=>{
+      c.onMouseEnter?.(e),l.current&&clearTimeout(l.current),l.current=window.setTimeout(()=>{
+        u(!0),i?.()
+      },400)
+    },
+    onMouseLeave:()=>{
+      c.onMouseLeave?.(),l.current&&(clearTimeout(l.current),l.current=0),w&&n?.(),u(!1)
+    }
+  }
+}
+function N(e){
+  return V({
+    ...e,contentId:u.resolve("views").read(e=>e.common.tooltip_window.backport_tooltip_content.BackportTooltipContent("resId"))
+  })
+}
+var H="HeaderButton_a376d13c",f="HeaderButton_caption_915bc256",A="HeaderButton_icon_b123e86b",E=({
+  onShowTooltip:e,onHideTooltip:r
+})=>{
+  const t=u.resolve("strings"),a=V({
+    contentId:u.resolve("views").read(e=>e.mono.seniority_awards.tooltips.seniority_tooltip("resId")),onShowTooltip:e,onHideTooltip:r
+  });
+  return(0,b.jsxs)("div",{
+    className:H,...a,children:[(0,b.jsx)("div",{
+      className:f,children:t.readOrEmpty("seniority_awards.rewardsView.info")
+    }),(0,b.jsx)("div",{
+      className:A
+    })]
+  })
+},
+B="SeniorityAwardsViewHeader_699fc570",C="SeniorityAwardsViewHeader_titleBox_dddc842b",k="SeniorityAwardsViewHeader_light_23331022",I="SeniorityAwardsViewHeader_line_eb9e2523",O="SeniorityAwardsViewHeader_line__inverted_fd812922",M="SeniorityAwardsViewHeader_square_67a0fdc5",L="SeniorityAwardsViewHeader_title_5cda5632",F="SeniorityAwardsViewHeader_subTitle_55b48fc7",R="SeniorityAwardsViewHeader_rank_ba17e17",$={
+  primary:"primary",secondary:"secondary"
+},
+G=({
+  type:e=$.primary,category:t,maxCategory:a,onShowTooltip:s,onHideTooltip:o
+})=>{
+  const i=u.resolve("strings");
+  return(0,b.jsxs)("div",{
+    className:B,children:[(0,b.jsxs)("div",{
+      className:C,children:[(0,b.jsx)("div",{
+        className:k
+      }),(0,b.jsx)("div",{
+        className:I,children:(0,b.jsx)("div",{
+          className:M
+        })
+      }),(0,b.jsx)("div",{
+        className:L,children:i.readOrEmpty("seniority_awards.rewardsView.title")
+      }),(0,b.jsx)("div",{
+        className:(0,S.default)(I,O),children:(0,b.jsx)("div",{
+          className:M
+        })
+      })]
+    }),(()=>{
+      switch(e){
+        case $.primary:return(0,b.jsxs)(b.Fragment,{
+          children:[(0,b.jsx)(r,{
+            className:F,text:i.readOrEmpty("seniority_awards.rewardsView.subTitle.text"),params:{
+              rank:(0,b.jsx)("span",{
+                className:R,children:i.readOrEmpty(`seniority_awards.rewardsView.subTitle.rank.${m(t,a)}`)
+              })
+            },
+            upgradeLegacy:!0
+          }),(0,b.jsx)(E,{
+            onShowTooltip:s,onHideTooltip:o
+          })]
+        });
+        case $.secondary:return(0,b.jsx)("div",{
+          className:F,children:i.readOrEmpty("seniority_awards.rewardsView.selection.received")
+        });
+        default:console.error("Unexpected seniority awards header type")
+      }
+    })()]
+  })
+},
+z="seniority_awards",q="seniority_awards_vehicle_selection",D=function(e){
+  return e.RewardsScreen="sa_rewards_screen",e.VehicleSelectionView="sa_vehicle_selection_view",e
+}({}),W=function(e){
+  return e.GoToShopButton="goto_shop_button",e.ShowMoreButton="show_more_button",e.ConfirmButton="confirm_button",e.GoToHangarButton="goto_hangar_button",e.CloseButton="close_button",e.SelectButton="select_button",e.VehicleTabButton="vehicle_tab_button",e.VehicleTooltip="vehicle_tooltip",e.SeniorityAwardsTooltip="seniority_awards_tooltip",e
+}({}),K={
+  pending:"pending",success:"success",error:"error"
+},
+U=(e,r=0)=>{
+  const[t,a]=(0,T.useState)(K.pending),s=w(e=>a(e),[],r),o=(0,T.useCallback)(()=>{
+    s(K.success)
+  },[s]),i=(0,T.useCallback)(()=>{
+    s(K.error)
+  },[s]);
+  return(0,T.useLayoutEffect)(()=>{
+    const r=new Image;
+    return r.src=e,r.addEventListener("load",o),r.addEventListener("error",i),()=>{
+      r.removeEventListener("load",o),r.removeEventListener("error",i)
+    }
+  },[e,o,i]),t
+},
+J=e=>--e*e*e+1,P=e=>Math.sqrt(1-Math.pow(e-1,2)),Q=e=>{
+  const r=2.5949095;
+  return e<.5?Math.pow(2*e,2)*(7.189819*e-r)/2:(Math.pow(2*e-2,2)*(3.5949095*(2*e-2)+r)+2)/2
+};
+export{
+  U as a,W as c,$ as d,N as f,K as i,D as l,Q as n,z as o,j as p,P as r,q as s,J as t,G as u
+};

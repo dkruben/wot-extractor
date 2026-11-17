@@ -1,0 +1,1 @@
+{"key":"res/gui/gameface/scripts/migration-ui/eslint.config.mjs","source":"sources/res/gui/gameface/scripts/migration-ui/eslint.config.mjs","kind":"js","bytes":376,"encoding":"utf-8","tokens":55,"license":null,"r_views":[],"r_other":{},"r_other_examples":{},"engine":[],"viewEnv":[],"commands":[],"urls":[],"names":["configs","error","globals","node","off","recommended"]}

@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.lobby.blueprints.blueprint_screen.blueprint_screen.BlueprintScreen",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "BlueprintScreen",
+  "dir": "gui/unbound/views/lobby/blueprints/blueprint_screen",
+  "feature": null,
+  "files": [
+    {
+      "name": "blueprint_screen.unbound",
+      "effective": "res/gui/unbound/views/lobby/blueprints/blueprint_screen/blueprint_screen.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/blueprints/blueprint_screen/blueprint_screen.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

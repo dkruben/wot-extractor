@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.lobby.progressive_reward.progressive_reward_award.ProgressiveRewardAward",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "ProgressiveRewardAward",
+  "dir": "gui/unbound/views/lobby/progressive_reward",
+  "feature": null,
+  "files": [
+    {
+      "name": "progressive_reward_award.unbound",
+      "effective": "res/gui/unbound/views/lobby/progressive_reward/progressive_reward_award.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/progressive_reward/progressive_reward_award.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

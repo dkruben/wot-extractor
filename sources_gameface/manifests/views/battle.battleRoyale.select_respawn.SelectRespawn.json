@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.battle.battleRoyale.select_respawn.SelectRespawn",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "SelectRespawn",
+  "dir": "gui/unbound/views/battle/battleRoyale",
+  "feature": null,
+  "files": [
+    {
+      "name": "select_respawn.unbound",
+      "effective": "res/gui/unbound/views/battle/battleRoyale/select_respawn.unbound",
+      "all": [
+        "res/gui/unbound/views/battle/battleRoyale/select_respawn.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.lobby.ranked.ranked_year_award.RankedYearAward",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "RankedYearAward",
+  "dir": "gui/unbound/views/lobby/ranked",
+  "feature": null,
+  "files": [
+    {
+      "name": "ranked_year_award.unbound",
+      "effective": "res/gui/unbound/views/lobby/ranked/ranked_year_award.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/ranked/ranked_year_award.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

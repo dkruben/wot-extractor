@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>
+			-1.7699 -0.0650873 -3.35283
+			<!--BW_String-->
+		</min>
+		<max>
+			1.76941 1.27902 3.18452
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G118_VK4503/crash/lod4/Chassis</nodefullVisual>
+</root>

@@ -1,0 +1,22 @@
+{
+  "rid": "R.views.lobby.missions.missions_tab_bar_view.MissionsTabBarView",
+  "rid_source": "sources/res/gui/gen_resources/unbound_layouts.json (mapeamento oficial)",
+  "impl": "unbound",
+  "entrance": "MissionsTabBarView",
+  "dir": "gui/unbound/views/lobby/missions",
+  "feature": null,
+  "files": [
+    {
+      "name": "missions_tab_bar_view.unbound",
+      "effective": "res/gui/unbound/views/lobby/missions/missions_tab_bar_view.unbound",
+      "all": [
+        "res/gui/unbound/views/lobby/missions/missions_tab_bar_view.unbound"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

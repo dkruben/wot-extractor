@@ -1,0 +1,38 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "event/Comp7EntryPoint/inProgress/description"
+msgstr "Show them who's boss!"
+
+msgid "event/Comp7EntryPoint/intro/description"
+msgstr "Prove your skill!"
+
+msgid "event/Comp7EntryPoint/title"
+msgstr "ONSLAUGHT"
+
+msgid "event/Comp7OLSEntryPoint/title"
+msgstr "OLS SEASON 7"
+
+msgid "event/Comp7TournamentEntryPoint/finished/description"
+msgstr "Champion crowned!"
+
+msgid "event/Comp7TournamentEntryPoint/in_live/description"
+msgstr "Watch LIVE now!"
+
+msgid "event/Comp7TournamentEntryPoint/intro/description"
+msgstr "Don't miss the action!"
+
+msgid "event/Comp7TournamentEntryPoint/timer/text"
+msgstr "More matches in"
+
+msgid "event/Comp7WCIEntryPoint/title"
+msgstr "WCI'26"

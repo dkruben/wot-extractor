@@ -1,0 +1,1 @@
+{"key":"res/gui/unbound/constants/mouse.unbound","source":"sources/res/gui/unbound/constants/mouse.unbound","kind":"unbound","bytes":90,"encoding":"utf-8","defs":[{"kind":"constant","name":"MOUSE"}],"generated_from":null,"generated":false,"names":["LEFT","MIDDLE","MOUSE","RIGHT","constant","def"]}

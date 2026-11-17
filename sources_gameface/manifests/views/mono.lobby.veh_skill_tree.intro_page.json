@@ -1,0 +1,53 @@
+{
+  "rid": "R.views.mono.lobby.veh_skill_tree.intro_page",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "intro_page",
+  "dir": "gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page/bundle.js"
+    },
+    {
+      "name": "intro_page.css",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page/intro_page.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page/intro_page.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "intro_page.html",
+      "effective": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page/intro_page.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page/intro_page.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page/intro_page.css",
+      "key": "res/gui/gameface/_dist/production/mono/lobby/veh_skill_tree/intro_page/intro_page.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": [
+    "onClose"
+  ]
+}

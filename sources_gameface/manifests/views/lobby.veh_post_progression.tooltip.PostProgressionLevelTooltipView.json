@@ -1,0 +1,61 @@
+{
+  "rid": "R.views.lobby.veh_post_progression.tooltip.PostProgressionLevelTooltipView",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "PostProgressionLevelTooltipView",
+  "dir": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView",
+  "feature": null,
+  "files": [
+    {
+      "name": "PostProgressionLevelTooltipView.css",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.css",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PostProgressionLevelTooltipView.html",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.html",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.html"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "PostProgressionLevelTooltipView.js",
+      "effective": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.js",
+      "all": [
+        "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js",
+      "key": "res/gui/gameface/_dist/production/lib/lobby/veh_post_progression/vendors.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.css",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.js",
+      "key": "res/gui/gameface/_dist/production/lobby/veh_post_progression/tooltip/PostProgressionLevelTooltipView/PostProgressionLevelTooltipView.js"
+    },
+    {
+      "virtual": "gui/gameface/styles/default.css",
+      "key": "res/gui/gameface/styles/default.css"
+    }
+  ],
+  "engine": [
+    "call:PlaySound",
+    "call:SetRTPCGlobal",
+    "on:Ready",
+    "on:self.onPaddingsUpdated",
+    "on:viewEnv.onDataChanged"
+  ],
+  "child_views": [],
+  "commands": []
+}

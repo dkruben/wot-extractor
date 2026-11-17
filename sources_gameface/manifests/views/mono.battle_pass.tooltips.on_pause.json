@@ -1,0 +1,55 @@
+{
+  "rid": "R.views.mono.battle_pass.tooltips.on_pause",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "on_pause",
+  "dir": "gui/gameface/_dist/production/mono/battle_pass/tooltips/on_pause",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/on_pause/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/on_pause/bundle.js"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "on_pause.css",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/on_pause/on_pause.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/on_pause/on_pause.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "on_pause.html",
+      "effective": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/on_pause/on_pause.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/on_pause/on_pause.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/on_pause/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/on_pause/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/battle_pass/tooltips/on_pause/on_pause.css",
+      "key": "res/gui/gameface/_dist/production/mono/battle_pass/tooltips/on_pause/on_pause.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}

@@ -1,0 +1,117 @@
+/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable selector-no-qualifying-type */
+.Index_5445f3cc {
+  font-size: 18rem;
+  font-weight: 400;
+  line-height: 1.3em;
+  max-width: 368rem;
+  padding: 18rem 20rem 20rem;
+  color: #8e867d;
+}/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable selector-no-qualifying-type */
+.Index_90f55192 {
+  display: flex;
+  align-items: center;
+  width: 418rem;
+  padding: 14rem 20rem 18rem;
+}
+
+.Index_icon_34abf7ef {
+  margin-right: 16rem;
+}
+
+.Index_content_5ed2b549 {
+  flex-shrink: 1;
+}
+
+.Index_header_9401c879 {
+  font-size: 22rem;
+  font-weight: 700;
+  line-height: 1.3em;
+  color: var(--color-general-primary);
+  font-weight: 400;
+}
+.Index_header__indent_b9f70ad6 {
+  margin-bottom: 3rem;
+}
+
+.Index_description_4caa1a84 {
+  font-size: 18rem;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: var(--color-general-tertiary);
+  line-height: 1.1;
+}/* stylelint-disable selector-no-qualifying-type */
+/* stylelint-disable selector-no-qualifying-type */
+.Index_ba2db44b {
+  display: flex;
+  flex-direction: column;
+  max-width: 320rem;
+  padding: 14rem 20rem 18rem;
+}
+
+.Index_title_fabe856f {
+  font-size: 20rem;
+  font-weight: 700;
+  line-height: 1.3em;
+  margin-bottom: 3rem;
+  color: var(--color-general-primary);
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.Index_body_4b34d6f2 {
+  font-size: 18rem;
+  font-weight: 400;
+  line-height: 1.3em;
+  color: var(--color-general-tertiary);
+  line-height: 20rem;
+}
+
+.Index_separator_f978f784 {
+  align-self: center;
+  width: 280rem;
+  height: 9rem;
+  margin: 4rem 0 8rem;
+  background: url(R.images.gui.maps.icons.hangar.vehicleMenu.tooltip_separator) center/contain no-repeat;
+}
+
+.Index_hotKeyWrapper_1f3c2c43 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Index_keyButton_b1d24a48 {
+  margin-top: 1rem;
+  color: rgba(var(--color-general-primary-rgb), 0.6);
+  text-shadow: 0 0 0 transparent;
+  pointer-events: none;
+}
+
+.Index_keyButtonBackground_52a570a {
+  opacity: 0;
+}
+
+.Index_keyButtonContent_d40e5707 {
+  display: flex;
+  justify-content: center;
+  width: 16rem;
+  height: 16rem;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 14rem;
+}
+
+.Index_keyButtonBorder_da0d61a1 {
+  opacity: 0.4;
+}
+
+.Index_hotKeyTitle_34425e04 {
+  font-size: 16rem;
+  font-weight: 400;
+  line-height: 1.3em;
+  flex: 1;
+  margin-left: 0.5em;
+  color: var(--color-general-tertiary);
+  line-height: 18rem;
+}

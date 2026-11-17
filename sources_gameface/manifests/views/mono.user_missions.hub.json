@@ -1,0 +1,61 @@
+{
+  "rid": "R.views.mono.user_missions.hub",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "hub",
+  "dir": "gui/gameface/_dist/production/mono/user_missions/hub",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/hub/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/hub/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/user_missions/hub/bundle.js"
+    },
+    {
+      "name": "hub.css",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/hub/hub.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/hub/hub.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "hub.html",
+      "effective": "res/gui/gameface/_dist/production/mono/user_missions/hub/hub.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/user_missions/hub/hub.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/hub/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/hub/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/user_missions/hub/hub.css",
+      "key": "res/gui/gameface/_dist/production/mono/user_missions/hub/hub.css"
+    }
+  ],
+  "engine": [
+    "off:clientResized",
+    "on:clientResized"
+  ],
+  "child_views": [],
+  "commands": [
+    "onContentLayoutChanged",
+    "onTabChange"
+  ]
+}

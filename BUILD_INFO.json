@@ -1,0 +1,62 @@
+{
+  "realm": "ASIA",
+  "version": "2.4.1.5513",
+  "reference_sources": {
+    "repository": "https://github.com/izeberg/wot-src.git",
+    "commit": "773da45244d66d04fa765dddc1b14e486c0b1733"
+  },
+  "generated_here": {
+    "scope": "base-gui-and-scripts; game modes excluded",
+    "gameface_counts": {
+      "candidates": 1894,
+      "selected": 1854,
+      "to_process": 1854,
+      "not_processed_due_to_limit": 0,
+      "resumed_from_journal": 0,
+      "processed": {
+        "success": 1854
+      },
+      "unchanged": {},
+      "totals": {
+        "success": 1854
+      },
+      "kinds": {
+        "typings": 1,
+        "html": 454,
+        "css": 528,
+        "js": 665,
+        "ts_source": 16,
+        "unbound": 190
+      },
+      "formatted": 511,
+      "node_checked_ok": 511,
+      "assets": 40,
+      "views": 488,
+      "python_links": {
+        "sem-analise": 488
+      }
+    },
+    "all_original_hashes_preserved": true
+  },
+  "python_syntax_inspection": {
+    "realm": "ASIA",
+    "marked_partial_or_failed": 16,
+    "parser": "2.7.18 (default, Apr 20 2020, 19:34:11) \n[GCC 8.3.0]",
+    "version": "2.4.1.5513",
+    "syntax_errors": [
+      {
+        "file": "sources/res/scripts/common/persistent_data_cache_common/types.py",
+        "error": "invalid syntax (types.py, line 5)"
+      },
+      {
+        "file": "sources/res/scripts/common/site-packages/typing-3.10.0.0/test_typing.py",
+        "error": "invalid syntax (test_typing.py, line 389)"
+      }
+    ],
+    "passed": 8660,
+    "publication_ready": false
+  },
+  "gameface_run": "https://github.com/dkruben/wot-extractor/actions/runs/44196392534",
+  "python_run": "https://github.com/dkruben/wot-extractor/actions/runs/44195860099",
+  "note": "Python/AS3/reference stubs are an attributed upstream snapshot; Gameface base GUI was rebuilt from CDN. No claim of complete independent regeneration."
+}

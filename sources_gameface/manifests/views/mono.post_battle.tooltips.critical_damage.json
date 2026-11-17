@@ -1,0 +1,55 @@
+{
+  "rid": "R.views.mono.post_battle.tooltips.critical_damage",
+  "rid_source": "sources/res/gui/gen_resources/gameface_layouts.json (mapeamento oficial)",
+  "impl": "gameface",
+  "entrance": "critical_damage",
+  "dir": "gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage",
+  "feature": null,
+  "files": [
+    {
+      "name": "bundle.js",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/bundle.js",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/bundle.js"
+      ],
+      "formatted": "sources_gameface/js/res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/bundle.js"
+    },
+    {
+      "name": "critical_damage.css",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.css",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.css"
+      ],
+      "formatted": null
+    },
+    {
+      "name": "critical_damage.html",
+      "effective": "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.html",
+      "all": [
+        "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.html"
+      ],
+      "formatted": null
+    }
+  ],
+  "dependencies": [
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/chunks/global.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/chunks/global.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/chunks/lib.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/chunks/lib.css"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/bundle.js",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/bundle.js"
+    },
+    {
+      "virtual": "gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.css",
+      "key": "res/gui/gameface/_dist/production/mono/post_battle/tooltips/critical_damage/critical_damage.css"
+    }
+  ],
+  "engine": [],
+  "child_views": [],
+  "commands": []
+}
