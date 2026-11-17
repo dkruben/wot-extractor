@@ -1,4 +1,5 @@
 name: Inspect real CDN artifact quality
+run-name: Python 2.7 quality of CDN run ${{ inputs.run_id || '44057785201' }}
 
 on:
   push:
