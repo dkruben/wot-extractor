@@ -1,0 +1,29 @@
+name: Validate selected WG regions
+
+on:
+  workflow_dispatch:
+    inputs:
+      regions:
+        description: ALL or comma-separated EU,CT,NA,ASIA,CN (RU/LESTA excluded)
+        default: ALL
+        required: true
+      kind:
+        description: Which CDN profiles to validate
+        type: choice
+        default: both
+        options: [both, python, gameface]
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    if: inputs.kind == 'both' || inputs.kind == 'python'
+    uses: dkruben/wot-extractor/.github/workflows/cdn-validation.yml@main
+    with:
+      regions: ${{ inputs.regions }}
+  gameface:
+    if: inputs.kind == 'both' || inputs.kind == 'gameface'
+    uses: dkruben/wot-extractor/.github/workflows/cdn-gameface.yml@main
+    with:
+      regions: ${{ inputs.regions }}
