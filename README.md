@@ -9,8 +9,11 @@ and Gameface mod development.
 | `main` | the tool (this branch, MIT licence) |
 | [`EU`](../../tree/EU) | EU client, extracted and decompiled |
 | [`CT`](../../tree/CT) | Common Test client, extracted and decompiled |
+| [`NA`](../../tree/NA) | North America reference snapshot + CDN Gameface |
+| [`ASIA`](../../tree/ASIA) | Asia reference snapshot + CDN Gameface |
+| [`CN`](../../tree/CN) | China reference snapshot + CDN Gameface |
 
-The content of the `EU` and `CT` branches comes from the game client and belongs to Wargaming; it is published
+The content of the `EU`, `CT`, `NA`, `ASIA` and `CN` branches comes from the game client and belongs to its rights holders; it is published
 only as a reference for mod development. See [`docs/DEVELOPMENT.md`](docs/DEVELOPMENT.md) for every technical
 decision, result and limitation.
 

@@ -1,7 +1,9 @@
 # GitHub publication and real CDN test
 
 The repository opens on `EU`, like the reference `izeberg/wot-src` repository.
-`CT` holds Common Test sources and `main` holds this extraction tool.
+`CT` holds Common Test sources, `NA`, `ASIA` and `CN` hold attributed regional
+reference snapshots with CDN Gameface, and `main` holds this extraction tool.
+RU/Lesta branches are excluded. See [regional provenance and test results](WG_REGIONS.md).
 
 ## Published source branches
 
@@ -61,6 +63,11 @@ The workflow has read-only repository permissions and no scheduled trigger;
 it cannot replace EU or CT content. A production workflow needs separate
 coverage and quality checks, reusable downloads, preloading validation and a
 publication step before scheduling is enabled.
+
+The default EU branch now has a small `cdn-regions.yml` dispatch entry point,
+calling the implementation on `main`. It selects region(s) and Python/Gameface
+profiles without replacing source content. This file is preserved when the
+local publisher builds a fresh EU source snapshot.
 
 The syntax check runs in a CPython 2.7.18 container on the GitHub runner. It
 records unmarked syntax errors as well as the decompiler's explicit failures.

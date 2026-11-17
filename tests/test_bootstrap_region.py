@@ -17,14 +17,15 @@ class BootstrapTests(unittest.TestCase):
             subprocess.run(['git', 'init', '-q', str(base)], check=True)
             subprocess.run(['git', '-C', str(base), 'remote', 'add', 'origin', 'https://github.com/izeberg/wot-src.git'], check=True)
             for name, content in {'.version_name': 'test-version', 'sources/mode.py': 'mode = 1',
-                                  'sources-as3/a.as': 'AS3', '_stubs/a.pyi': 'stub', 'README.md': 'upstream'}.items():
+                                  'sources-as3/a.as': 'AS3', '_stubs/a.pyi': 'stub', 'README.md': 'upstream',
+                                  '.gitattributes': 'sources/** text eol=lf\nsources_gameface/** text eol=lf\n'}.items():
                 target = base / name
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_text(content)
             subprocess.run(['git', '-C', str(base), 'add', '.'], check=True)
             subprocess.run(['git', '-C', str(base), '-c', 'user.name=Test', '-c', 'user.email=test@example.com',
                             'commit', '-qm', 'Baseline'], check=True)
-            raw, generated = b'<html>game</html>', b'view documentation'
+            raw, generated = b'<html>game</html>\r\n', b'view documentation\r\n'
             artifact = root / 'gameface.zip'
             summary = dict(realm='NA', version='test-version', scope='base-gui test',
                            all_original_hashes_preserved=True,

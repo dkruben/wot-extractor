@@ -10,16 +10,16 @@ from pathlib import Path, PurePosixPath
 import subprocess
 import sys
 import tempfile
+import time
 import zipfile
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'src'))
 from wot_extractor.cdn_regions import require_region
-from wot_extractor.extract.writer import write_atomic
 
 
 def safe_path(name):
     value = PurePosixPath(name)
-    if value.is_absolute() or '..' in value.parts or '.git' in value.parts or ':' in name or '\\' in name or str(value) != name:
+    if value.is_absolute() or '..' in value.parts or '.git' in value.parts or ':' in name or '\\' in name or '\n' in name or '\r' in name or str(value) != name:
         raise ValueError('Unsafe artifact path: ' + name)
     return value
 
@@ -71,6 +71,8 @@ def bootstrap(realm, baseline, artifact, git_dir, python_evidence, gameface_run,
         head = subprocess.run(['git', '--git-dir=' + str(git_dir), 'rev-parse', '--verify', 'HEAD'], capture_output=True)
         if head.returncode == 0:
             raise ValueError('Publication repository already has a branch; bootstrap never overwrites it')
+        git('config', 'core.autocrlf', 'false')
+        git('config', 'core.safecrlf', 'false')
 
         # Transfer trees/blobs only: the baseline may be shallow. Starting a new
         # attributed root commit avoids pretending to own or pushing its history.
@@ -121,26 +123,80 @@ licence from the tooling branch is granted for game files.
 
         with tempfile.TemporaryDirectory(prefix='wot-region-bootstrap-') as temporary:
             root = Path(temporary)
-            overlay = root / 'overlay'
-            overlay.mkdir()
-            env = dict(os.environ, GIT_INDEX_FILE=str(root / 'index'),
+            env = dict(os.environ,
                        GIT_AUTHOR_NAME='dkruben', GIT_AUTHOR_EMAIL='20760582+dkruben@users.noreply.github.com',
                        GIT_COMMITTER_NAME='dkruben', GIT_COMMITTER_EMAIL='20760582+dkruben@users.noreply.github.com')
-            git('read-tree', upstream_tree, env=env)
-            for name, expected in payload.items():
-                data = archive.read(prefix + name)
-                if hashlib.sha256(data).hexdigest() != expected:
-                    raise ValueError('Artifact SHA-256 mismatch: ' + name)
-                write_atomic(overlay.joinpath(*safe_path(name).parts), data)
-            write_atomic(overlay / 'README.md', readme.encode('utf-8'))
-            write_atomic(overlay / 'BUILD_INFO.json', (json.dumps(provenance, indent=2) + '\n').encode('utf-8'))
+            seed = git('commit-tree', upstream_tree, data=b'Internal attributed baseline seed\n', env=env).decode().strip()
+            temporary_ref = 'refs/wot-bootstrap/' + realm
             names = list(payload) + ['README.md', 'BUILD_INFO.json']
-            git('--work-tree=' + str(overlay), 'add', '-f', '--pathspec-from-file=-', '--pathspec-file-nul',
-                data=b''.join(n.encode('utf-8') + b'\0' for n in names), env=env)
-            tree = git('write-tree', env=env).decode().strip()
+            # Stream blobs into one pack. Thousands of loose-object fsyncs are
+            # expensive on Windows; fast-import also bypasses all text filters.
+            marks = root / 'marks'
+            importer = subprocess.Popen(['git', '--git-dir=' + str(git_dir), 'fast-import', '--quiet', '--done',
+                                         '--export-marks=' + marks.as_posix()],
+                                        stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            expected_git = {}
+            try:
+                for number, name in enumerate(names, 1):
+                    if name == 'README.md':
+                        data = readme.encode('utf-8')
+                    elif name == 'BUILD_INFO.json':
+                        data = (json.dumps(provenance, indent=2) + '\n').encode('utf-8')
+                    else:
+                        data = archive.read(prefix + name)
+                        if hashlib.sha256(data).hexdigest() != payload[name]:
+                            raise ValueError('Artifact SHA-256 mismatch: ' + name)
+                    expected_git[number] = hashlib.sha1(('blob ' + str(len(data)) + '\0').encode() + data).hexdigest().encode()
+                    importer.stdin.write(('blob\nmark :' + str(number) + '\ndata ' + str(len(data)) + '\n').encode())
+                    importer.stdin.write(data)
+                    importer.stdin.write(b'\n')
+                message = b'Internal validated regional overlay\n'
+                importer.stdin.write(('commit ' + temporary_ref + '\ncommitter dkruben <20760582+dkruben@users.noreply.github.com> ' + str(int(time.time())) + ' +0000\ndata ' + str(len(message)) + '\n').encode())
+                importer.stdin.write(message)
+                importer.stdin.write(('from ' + seed + '\n').encode())
+                for number, name in enumerate(names, 1):
+                    importer.stdin.write(('M 100644 :' + str(number) + ' ' + json.dumps(name, ensure_ascii=False) + '\n').encode('utf-8'))
+                importer.stdin.write(b'\n')
+                importer.stdin.write(b'done\n')
+                importer.stdin.close()
+                error = importer.stderr.read()
+                importer.stderr.close()
+                importer.stdout.read()
+                importer.stdout.close()
+                if importer.wait():
+                    raise RuntimeError('Blob import failed: ' + error.decode(errors='replace'))
+            except BaseException:
+                if importer.poll() is None:
+                    importer.kill()
+                    importer.wait()
+                for pipe in [importer.stdin, importer.stdout, importer.stderr]:
+                    if pipe and not pipe.closed:
+                        pipe.close()
+                raise
+            imported = {int(mark[1:]): blob for mark, blob in (row.split() for row in marks.read_bytes().splitlines())}
+            if imported != expected_git:
+                raise RuntimeError('Blob import did not preserve every artifact byte')
+            # Fast-import updates trees lazily, without walking a 220k-file
+            # index or re-writing every unchanged baseline directory.
+            temporary_commit = git('rev-parse', temporary_ref).decode().strip()
+            tree = git('rev-parse', temporary_ref + '^{tree}').decode().strip()
+            def tree_entries(raw):
+                return dict(row.split(b'\t', 1)[::-1] for row in raw.split(b'\0') if row)
+            original = tree_entries(upstream('ls-tree', '-r', '-z', 'HEAD'))
+            published = tree_entries(git('ls-tree', '-r', '-z', tree))
+            overrides = {name.encode('utf-8') for name in names}
+            if set(published) != set(original) | overrides:
+                raise RuntimeError('Publication unexpectedly added or removed baseline paths')
+            for number, name in enumerate(names, 1):
+                if published[name.encode('utf-8')].split()[-1] != expected_git[number]:
+                    raise RuntimeError('Publication changed artifact bytes: ' + name)
+            for name, entry in original.items():
+                if name not in overrides and published[name] != entry:
+                    raise RuntimeError('Publication changed a baseline file: ' + name.decode('utf-8'))
             commit = git('commit-tree', tree, data=('v.' + baseline_version + ' — initial ' + realm + ' reference and CDN Gameface\n').encode('utf-8'), env=env).decode().strip()
             git('update-ref', 'refs/heads/' + realm, commit, '0' * 40)
             git('symbolic-ref', 'HEAD', 'refs/heads/' + realm)
+            git('update-ref', '-d', temporary_ref, temporary_commit)
             git('config', 'remote.origin.url', 'https://github.com/dkruben/wot-extractor.git')
             git('config', 'remote.origin.fetch', '+refs/heads/*:refs/remotes/origin/*')
             print(json.dumps({'realm': realm, 'version': baseline_version, 'commit': commit,
