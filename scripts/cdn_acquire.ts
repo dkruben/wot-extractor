@@ -16,7 +16,9 @@ const discoveryPath = flag('--discovery');
 const cache = flag('--cache');
 const evidence = flag('--evidence');
 const discovery = JSON.parse(fs.readFileSync(discoveryPath, 'utf8'));
-const regions = JSON.parse(fs.readFileSync(flag('--regions-file'), 'utf8'));
+const catalogPath = process.argv.includes('--regions-file') ? flag('--regions-file') :
+  execFileSync('python', ['-c', 'from wot_extractor.cdn_regions import CATALOG_PATH; print(CATALOG_PATH)'], { encoding: 'utf8' }).trim();
+const regions = JSON.parse(fs.readFileSync(catalogPath, 'utf8'));
 if (!Object.hasOwn(regions, discovery.realm) || regions[discovery.realm].guid !== discovery.guid ||
     regions[discovery.realm].host !== discovery.host || !discovery.release_ready) {
   throw new Error('Catalogued WG active-install plan required; RU/LESTA and ambiguous chains are excluded');
