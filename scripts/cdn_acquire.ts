@@ -20,6 +20,15 @@ if (discovery.realm !== 'EU' || discovery.guid !== 'WOT.EU.PRODUCTION' || !disco
   throw new Error('EU active-install plan required; ambiguous/preload chains cannot be published');
 }
 const metrics = installCdnFetch();
+// Keep the archive library's disk writes bounded as well as its HTTP reads.
+// A source-bearing package can be several GB even when we retain few members.
+const fill = SparseArchive.prototype.fill;
+SparseArchive.prototype.fill = async function(start: number, length: number) {
+  const chunk = 32 * 1024 * 1024;
+  for (let offset = 0; offset < length; offset += chunk) {
+    await fill.call(this, start + offset, Math.min(chunk, length - offset));
+  }
+};
 const work = path.join(cache, 'acquisition-work');
 fs.mkdirSync(work, { recursive: true });
 fs.mkdirSync(evidence, { recursive: true });

@@ -221,6 +221,14 @@ def export_candidate(cache, destination, discovery_path, code_hash):
             path.unlink()  # break hardlink before changing generated metadata
             save_json_atomic(path, rewrite(data), indent=None)
             outputs[name] = digest(path.read_bytes())
+        elif name in {'sources_gameface/VIEWS.md', '_stubs/README.md'}:
+            path = destination / name
+            data = path.read_text(encoding='utf-8').replace('sources_as/', 'sources-as3/').replace('__stubs/', '_stubs/')
+            for original, partial in partials.items():
+                data = data.replace(original, partial)
+            path.unlink()
+            write_atomic(path, data.encode('utf-8'))
+            outputs[name] = digest(path.read_bytes())
     def text(name, data):
         write_atomic(destination / name, data.encode('utf-8'))
         outputs[name] = digest(data.encode('utf-8'))

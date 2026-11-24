@@ -8,11 +8,36 @@ import zipfile
 from unittest.mock import patch
 
 from wot_extractor.cdn_acquire import active_packages, assemble, discover, import_package, safe_name, validate_package
-from wot_extractor.cdn_pipeline import quality
+from wot_extractor.cdn_pipeline import export_candidate, quality, verify_candidate
 from wot_extractor.cdn_publish import unpack
 
 
 class IndependentPipelineTests(unittest.TestCase):
+    def test_export_labels_partial_code_and_rewrites_generated_links_only(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            out = root / 'work/wot_src_EU'
+            (out / 'sources/res/scripts').mkdir(parents=True)
+            (out / 'sources/res/scripts/a.pyc').write_bytes(b'original bytecode')
+            (out / 'sources/res/scripts/a.py').write_text('partial code')
+            (out / 'sources_gameface').mkdir()
+            doc = '[Python](../sources/res/scripts/a.py)'
+            (out / 'sources_gameface/VIEWS.md').write_text(doc)
+            (out / 'sources_gameface/index.json').write_text(json.dumps({'python': 'sources/res/scripts/a.py'}))
+            record = {'tree': 'res', 'path': 'scripts/a.pyc', 'sha256': 'input', 'decompiled': {'status': 'partial', 'output': 'sources/res/scripts/a.py'}}
+            manifest = {'entries': {'res/scripts/a.pyc': record}, 'acquisition': {'fingerprint': 'fp', 'scope': 'test', 'packages': []}}
+            (out / 'manifest.json').write_text(json.dumps(manifest))
+            (out / 'QUALITY.json').write_text(json.dumps({'ready': True}))
+            (root / 'discovery.json').write_text(json.dumps({'fingerprint': 'fp', 'release_ready': True, 'version': 'test'}))
+            destination = root / 'candidate'
+            export_candidate(root, destination, root / 'discovery.json', 'code')
+            self.assertTrue(verify_candidate(destination)['quality']['ready'])
+            self.assertFalse((destination / 'sources/res/scripts/a.py').exists())
+            self.assertEqual((destination / 'sources/res/scripts/a.py.partial').read_text(), 'partial code')
+            self.assertEqual((destination / 'sources/res/scripts/a.pyc').read_bytes(), b'original bytecode')
+            self.assertIn('a.py.partial', (destination / 'sources_gameface/VIEWS.md').read_text())
+            self.assertEqual((out / 'sources_gameface/VIEWS.md').read_text(), doc)
+
     def test_install_and_preload_are_never_flattened_together(self):
         metadata = b'<root><version>1</version><predefined_section><client_types><type id="sd"><client_parts><client_part id="client"/><client_part id="sdcontent"/><client_part id="locale"/></client_parts></type></client_types><default_language>en</default_language><chain_id>test</chain_id></predefined_section></root>'
         def item(part, start, end, name):
