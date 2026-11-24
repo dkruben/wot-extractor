@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+set -euo pipefail
+exec docker run --rm -i --network none -v "$GITHUB_WORKSPACE:$GITHUB_WORKSPACE" -w "$PWD" wot-python27 python "$@"

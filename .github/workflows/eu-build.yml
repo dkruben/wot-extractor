@@ -1,0 +1,163 @@
+name: Independent EU source build
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Publication branch
+        default: candidate/EU
+        type: choice
+        options: [candidate/EU, EU]
+      publish:
+        description: Publish only after quality validation
+        type: boolean
+        default: false
+  workflow_call:
+    inputs:
+      target:
+        type: string
+        default: candidate/EU
+      publish:
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: eu-independent-build
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 330
+    outputs:
+      ready: ${{ steps.gate.outputs.ready }}
+      expected_head: ${{ steps.target.outputs.head }}
+    env:
+      PYTHONPATH: ${{ github.workspace }}/project/src
+    steps:
+      - id: target
+        env:
+          TARGET: ${{ inputs.target }}
+        run: |
+          [[ "$TARGET" == 'EU' || "$TARGET" == 'candidate/EU' ]]
+          HEAD=$(git ls-remote "https://github.com/$GITHUB_REPOSITORY.git" "refs/heads/$TARGET" | cut -f1)
+          echo "head=$HEAD" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: project
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        id: fallback
+        with:
+          python-version: '3.9.16'
+      - run: python -m pip install uncompyle6==3.9.3 xdis==6.1.7 spark-parser==1.8.9 click==7.1.2 six==1.16.0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install polib==1.2.0
+      - name: Lock active installation separately from preload
+        run: |
+          mkdir -p evidence
+          python -m wot_extractor.cdn_acquire discover evidence/discovery.json
+          git -C project rev-parse HEAD > evidence/generator.txt
+      - uses: actions/cache/restore@v4
+        with:
+          path: .cdn-cache
+          key: eu-source-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: eu-source-v1-
+      - uses: actions/checkout@v4
+        with:
+          repository: unicum-gg/wot.build
+          ref: 1832f2ff545a2950867fa698296c92315752bf81
+          path: engine
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - name: Install pinned processing tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full xdelta3 rdiff
+          docker build -t wot-python27 -f project/scripts/python27.Dockerfile project/scripts
+          chmod +x project/scripts/python27-container
+          curl --fail --location --retry 3 -o ffdec.zip https://github.com/jindrapetrik/jpexs-decompiler/releases/download/version26.2.1/ffdec_26.2.1.zip
+          unzip -q ffdec.zip -d ffdec
+          cd engine
+          npm ci --no-audit --no-fund
+          cp ../project/scripts/cdn_acquire.ts ../project/scripts/cdn_fetch.mjs .
+      - name: Acquire active source packages from CDN
+        working-directory: engine
+        run: |
+          set -euo pipefail
+          npx tsx cdn_acquire.ts --discovery ../evidence/discovery.json --cache ../.cdn-cache --evidence ../evidence 2>&1 | tee ../evidence/acquisition.log
+      - name: Process Python XML AS3 stubs and all Gameface modes
+        env:
+          FALLBACK: ${{ steps.fallback.outputs.python-path }}
+        run: |
+          set -euo pipefail
+          python -u -m wot_extractor.cdn_pipeline process .cdn-cache --code-hash "$(cat evidence/generator.txt)" --python27 "$GITHUB_WORKSPACE/project/scripts/python27-container" --python3 "$FALLBACK" --ffdec "$GITHUB_WORKSPACE/ffdec/ffdec.jar" 2>&1 | tee evidence/processing.log
+      - name: Export independently generated candidate
+        run: |
+          python -m wot_extractor.cdn_pipeline export .cdn-cache candidate --discovery evidence/discovery.json --code-hash "$(cat evidence/generator.txt)"
+          tar -czf candidate.tar.gz -C candidate .
+      - id: gate
+        name: Verify candidate and quality policy
+        run: |
+          python -m wot_extractor.cdn_pipeline verify candidate
+          echo 'ready=true' >> "$GITHUB_OUTPUT"
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: .cdn-cache
+          key: eu-source-v1-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eu-build-evidence
+          path: |
+            evidence/
+            .cdn-cache/quality.json
+            .cdn-cache/work/wot_src_EU/*report.json
+          include-hidden-files: true
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eu-source-candidate
+          path: candidate.tar.gz
+          retention-days: 7
+          if-no-files-found: ignore
+  publish:
+    needs: build
+    if: inputs.publish && needs.build.outputs.ready == 'true'
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+    env:
+      PYTHONPATH: ${{ github.workspace }}/project/src
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: project
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/download-artifact@v4
+        with:
+          name: eu-source-candidate
+          path: artifact
+      - name: Verify locked release again and publish without force
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET: ${{ inputs.target }}
+          REPOSITORY: ${{ github.repository }}
+          EXPECTED_HEAD: ${{ needs.build.outputs.expected_head }}
+        run: |
+          gh auth setup-git
+          python -m wot_extractor.cdn_publish artifact/candidate.tar.gz publication --branch "$TARGET" --repository "$REPOSITORY" --expected-head "$EXPECTED_HEAD"

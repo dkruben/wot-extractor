@@ -246,6 +246,8 @@ class _Runner:
                    "markers": resp.get("markers", 0), "code_lines": resp.get("code_lines", 0),
                    "cookie": resp.get("cookie"), "elapsed": round(time.perf_counter() - t0, 3),
                    "timeout": bool(resp.get("timeout")), "crash": bool(resp.get("crash"))}
+            if resp.get("repair"):
+                att["verified_repair"] = resp["repair"]
             if "source" in resp and status != "failed":
                 att["source"] = base64.b64decode(resp["source"])
             attempts.append(att)
@@ -363,6 +365,8 @@ def _run_locked(cfg, realm, opts, res, tc, chain, sig, versions, manifest_path, 
                    "error": best["error"] or None, "markers": best["markers"] or None,
                    "code_lines": best["code_lines"], "elapsed": round(sum(a["elapsed"] for a in attempts), 3),
                    "attempts": [{k: a[k] for k in ("backend", "tool", "status", "error")} for a in attempts]}
+            if best.get("verified_repair"):
+                new["verified_repair"] = best["verified_repair"]
             if best["backend"] != chain[0]:
                 res.fallback_used += 1
         for a in attempts:

@@ -27,11 +27,13 @@ import ast
 import base64
 import io
 import json
+import marshal
 import re
 import sys
 import threading
 import time
 import traceback
+import types
 
 PY2 = sys.version_info[0] == 2
 FAIL_MARKER = b"--- This code section failed: ---"
@@ -102,6 +104,32 @@ def _validate(src, name):
         return "SyntaxError: %s (linha %s)" % (exc.msg, exc.lineno)
     except (ValueError, TypeError, MemoryError, RecursionError if not PY2 else RuntimeError) as exc:
         return "%s: %s" % (type(exc).__name__, exc)
+
+
+def _repair_ellipsis(src, data, name):
+    """Accept a decompiler ellipsis repair only if it recreates the input bytecode.
+
+    Python 2 cannot spell an Ellipsis constant outside a subscript as `...`.
+    Nothing is executed, and any other change in constants/opcodes rejects it.
+    """
+    if not PY2 or b"..." not in src:
+        return None
+    def same(left, right):
+        if type(left) is not type(right):
+            return False
+        if isinstance(left, types.CodeType):
+            fields = ("co_code", "co_argcount", "co_nlocals", "co_flags", "co_names", "co_varnames", "co_freevars", "co_cellvars")
+            return all(getattr(left, f) == getattr(right, f) for f in fields) and same(left.co_consts, right.co_consts)
+        if isinstance(left, tuple):
+            return len(left) == len(right) and all(same(a, b) for a, b in zip(left, right))
+        return left == right
+    try:
+        original = marshal.loads(data[8:])
+        candidate = re.sub(br"(?<!\.)\.\.\.(?!\.)", b"Ellipsis", src)
+        rebuilt = compile(candidate, name, "exec", 0, True)
+        return candidate if same(original, rebuilt) else None
+    except Exception:
+        return None
 
 
 def _decompile(data, name):
@@ -175,6 +203,12 @@ def handle_decompile(req):
         res["error"] = error
     if req.get("validate"):
         res["syntax_error"] = _run_in_big_stack(_validate, src, name[:-1] if name.endswith("c") else name)
+        if res["syntax_error"]:
+            repaired = _repair_ellipsis(src, data, name)
+            if repaired is not None:
+                src = repaired
+                res["syntax_error"] = None
+                res["repair"] = "Ellipsis literal; input bytecode verified"
     res["source"] = _b64e(src)
     res["elapsed"] = round(time.time() - t0, 3)
     return res

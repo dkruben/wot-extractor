@@ -1,0 +1,21 @@
+name: EU source pipeline
+on:
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Publication branch
+        type: choice
+        options: [candidate/EU, EU]
+        default: candidate/EU
+      publish:
+        description: Publish after validation
+        type: boolean
+        default: false
+permissions:
+  contents: write
+jobs:
+  eu:
+    uses: dkruben/wot-extractor/.github/workflows/eu-build.yml@main
+    with:
+      target: ${{ inputs.target || 'candidate/EU' }}
+      publish: ${{ inputs.publish || false }}

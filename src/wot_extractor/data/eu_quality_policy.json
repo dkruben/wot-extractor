@@ -1,0 +1,152 @@
+{
+  "schema": 1,
+  "baseline": "Existing EU extraction quality, reviewed before independent CDN generation",
+  "minimum": {
+    "packages": 80,
+    "python_modules": 10000,
+    "as3_classes": 10000,
+    "gameface_views": 600
+  },
+  "known_issues": {
+    "actionscript:res/fort_rush/gui/flash/battle.swf": {
+      "input_sha256": "337d990b692c19899489c357511476f07290a5fed1e621aa86ee8135277388ed",
+      "status": "partial",
+      "reason": "2 linha(s) com fluxo nao reconstruido (§§)"
+    },
+    "actionscript:res/fort_rush/gui/flash/fortRushBattleVehicleMarkersApp.swf": {
+      "input_sha256": "5cf3201a491187841063eed3090899813e78df78fbea1cdc7508ab3e5edc1ad6",
+      "status": "partial",
+      "reason": "2 linha(s) com fluxo nao reconstruido (§§)"
+    },
+    "actionscript:res/gui/flash/battle.swf": {
+      "input_sha256": "46e12e07d5e759c451acaf6f321f999e71d7de25131abef617bea8941b0a4833",
+      "status": "partial",
+      "reason": "2 linha(s) com fluxo nao reconstruido (§§)"
+    },
+    "actionscript:res/gui/flash/battleVehicleMarkersApp.swf": {
+      "input_sha256": "5515382a677ccc8635d7068a4851093358fe82e8a9a17c4ea7e4bd291ea66f72",
+      "status": "partial",
+      "reason": "2 linha(s) com fluxo nao reconstruido (§§)"
+    },
+    "actionscript:res/gui/flash/swc/gui_battle-1.0-SNAPSHOT.swc": {
+      "input_sha256": "f2bed8e3d5dc242f0676b6ff3b5d27ec8f2baf169ec99cbedfffe4aeac501492",
+      "status": "partial",
+      "reason": "2 linha(s) com fluxo nao reconstruido (§§)"
+    },
+    "actionscript:res/halloween/gui/flash/battle.swf": {
+      "input_sha256": "5fdf55be1bf0ac6ca3e7e1d6374e9386cd4289a462bc3a3621827f4b2116111e",
+      "status": "partial",
+      "reason": "2 linha(s) com fluxo nao reconstruido (§§)"
+    },
+    "actionscript:res/halloween/gui/flash/halloweenBattleVehicleMarkersApp.swf": {
+      "input_sha256": "16387a71ceb17efe87a18b695cf600dd9c7d14f9ca69512ae7c8c73dc2bee1b7",
+      "status": "partial",
+      "reason": "2 linha(s) com fluxo nao reconstruido (§§)"
+    },
+    "actionscript:res/last_stand/gui/flash/battle.swf": {
+      "input_sha256": "25f6af5d461f1405e77e9ceabc29b6cd5746815df2f6993e933c0347f59e6c5e",
+      "status": "partial",
+      "reason": "2 linha(s) com fluxo nao reconstruido (§§)"
+    },
+    "actionscript:res/last_stand/gui/flash/lastStandBattleVehicleMarkersApp.swf": {
+      "input_sha256": "2b2daf80f356bcd4acd3285897a6944b2b639c02fc459b64e9dfa4988124b706",
+      "status": "partial",
+      "reason": "2 linha(s) com fluxo nao reconstruido (§§)"
+    },
+    "decompiled:res/scripts/client/gui/impl/battle/postmortem_panel/postmortem_panel_view.pyc": {
+      "input_sha256": "3e9a4ec55731cb31e7b9f7d5d48b237c9fbf84130bf6007c1f82f5de2ba05c84",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 55)"
+    },
+    "decompiled:res/scripts/client/gui/impl/lobby/battle_results/states.pyc": {
+      "input_sha256": "65c1080f84fa256b515bf5691ce10c45e890d006ba9475bc6f8f471a0d01ddb4",
+      "status": "failed",
+      "reason": "AttributeError: 'SyntaxTree' object has no attribute 'pattr'"
+    },
+    "decompiled:res/scripts/client/gui/impl/lobby/hangar/base/proto_states.pyc": {
+      "input_sha256": "f903475a8e50752b54f1fa1320a3820182171c54062d0565c0606720d7f09ba5",
+      "status": "failed",
+      "reason": "AttributeError: 'SyntaxTree' object has no attribute 'pattr'"
+    },
+    "decompiled:res/scripts/client/gui/impl/lobby/hangar/playlists_states.pyc": {
+      "input_sha256": "ab99d37eeaabc97065f5b1f5f7bba18d2ef78ee8fdd48502d836c689b1ff57ac",
+      "status": "failed",
+      "reason": "AttributeError: 'SyntaxTree' object has no attribute 'pattr'"
+    },
+    "decompiled:res/scripts/client/gui/impl/lobby/personal_missions_30/views_helpers.pyc": {
+      "input_sha256": "a8059b637dba4eb755d796b8956ec9343b10fe461c210a75fdb4a9e189be5e5a",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 272)"
+    },
+    "decompiled:res/scripts/client/gui/impl/lobby/tank_setup/interactors/opt_device.pyc": {
+      "input_sha256": "4dff83cf47ea4a76b7b8f9211bc11a17536f6fb3a1713412240834eb69e8980b",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 207)"
+    },
+    "decompiled:res/scripts/client/gui/lootbox_system/base/bonuses_packers.pyc": {
+      "input_sha256": "f3e48191a082abb97ceac875d5c09a4105872d32f2e6891c67d11391c7d5e8bb",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 124)"
+    },
+    "decompiled:res/scripts/client/gui/mods/mod__.pyc": {
+      "input_sha256": "2e509a287269704ccd75db57a9db01d6e5e424aaafdb3e7ceb3f4b8118190136",
+      "status": "failed",
+      "reason": "AssertionError: (em scanner2.py:628, next_except_jump)"
+    },
+    "decompiled:res/scripts/client/gui/shared/utils/requesters/ItemsRequester.pyc": {
+      "input_sha256": "876acafef2b15339832f81794ed00eef261ab99dd105918a1c1f14f3b8fd49dc",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 661)"
+    },
+    "decompiled:res/scripts/client/helpers/__init__.pyc": {
+      "input_sha256": "9fdd74f5d7fe0512905168f0a02888530d23e680ea00bafbf74b12f3e56626e1",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 174)"
+    },
+    "decompiled:res/scripts/client/messenger/gui/Scaleform/view/lobby/antispam_message.pyc": {
+      "input_sha256": "5f6c7d8312853f22acbb0d137a7f05a630b9aa02e3e52ee61e6686c5e1b2c848",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 15)"
+    },
+    "decompiled:res/scripts/common/UnitRoster.pyc": {
+      "input_sha256": "9419f01f54d1c9a5c85c461d493b4e086d6cf3bb510d508b0f636e9a9bd8e296",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 436)"
+    },
+    "decompiled:res/scripts/common/cgf_demo/test_movers.pyc": {
+      "input_sha256": "1cd92c3de231df212d84253e41a85d9ed5507990f4b6941203ae551b602f122e",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 18)"
+    },
+    "decompiled:res/scripts/common/live_crc.pyc": {
+      "input_sha256": "a291fb5d2bdecb0415c69bc6075c458d777f74e7574aef3619a5a4a5e31008bc",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 323)"
+    },
+    "decompiled:res/scripts/common/persistent_data_cache_common/types.pyc": {
+      "input_sha256": "e4b964e4492aa27dead958bff976ccb95851f3cec8f6647dffcc742f9ddd3bd8",
+      "status": "partial",
+      "reason": "sintaxe: SyntaxError: invalid syntax (linha 10)"
+    },
+    "decompiled:res/scripts/common/serializable_types/customizations/customization_outfit.pyc": {
+      "input_sha256": "1dbdba7d2431f15d66b30b8e0fa1c1dbd01669550fabcea6d86eb92aa546afad",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 56)"
+    },
+    "decompiled:res/scripts/common/serialization/component_xml_deserializer.pyc": {
+      "input_sha256": "5a4e734323015966bb7096db9473a3a90693c31d048073d932b2339f875f17c7",
+      "status": "partial",
+      "reason": "descompilador: SourceWalkerError: Deparsing stopped due to parse error; sintaxe: SyntaxError: invalid syntax (linha 31)"
+    },
+    "decompiled:res/scripts/common/site-packages/typing-3.10.0.0/test_typing.pyc": {
+      "input_sha256": "bfedfbe35fdd3aab2e4267edef1c02a9adbdb0f7e81b868e0e7e8bf9a5c60679",
+      "status": "partial",
+      "reason": "sintaxe: SyntaxError: invalid syntax (linha 394)"
+    },
+    "actionscript:res/story_mode/gui/flash/storyModeBattleVehicleMarkersApp.swf": {
+      "input_sha256": "9861b64295c3a8990b83869d0391781f16523e1429ea0d1520b714303adc02ff",
+      "status": "partial",
+      "reason": "2 linha(s) com fluxo nao reconstruido (§§)"
+    }
+  }
+}
