@@ -1,0 +1,44 @@
+name: Update WG regional sources
+on:
+  workflow_dispatch:
+    inputs:
+      regions:
+        description: Comma-separated EU,CT,NA,ASIA,CN or ALL; RU/LESTA excluded
+        default: CT,NA,ASIA,CN
+        required: true
+      publish:
+        description: Update regional branches after all quality checks
+        type: boolean
+        default: true
+      warm_test:
+        description: Verify cached replay produces identical source files
+        type: boolean
+        default: true
+permissions:
+  contents: write
+jobs:
+  targets:
+    runs-on: ubuntu-22.04
+    outputs:
+      matrix: ${{ steps.regions.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - id: regions
+        env:
+          REGIONS: ${{ inputs.regions }}
+        run: python3 scripts/cdn_matrix.py --regions "$REGIONS"
+  update:
+    needs: targets
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix: ${{ fromJSON(needs.targets.outputs.matrix) }}
+    uses: dkruben/wot-extractor/.github/workflows/eu-build.yml@main
+    with:
+      realm: ${{ matrix.realm }}
+      target: ${{ matrix.realm }}
+      publish: ${{ inputs.publish }}
+      warm_test: ${{ inputs.warm_test }}

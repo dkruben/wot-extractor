@@ -236,13 +236,13 @@ def assemble(plan_path, cache_root, code_hash):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
-    d = sub.add_parser('discover'); d.add_argument('output', type=Path)
+    d = sub.add_parser('discover'); d.add_argument('output', type=Path); d.add_argument('--realm', default='EU')
     a = sub.add_parser('active'); a.add_argument('paths', type=Path)
     i = sub.add_parser('import'); i.add_argument('archive', type=Path); i.add_argument('destination', type=Path); i.add_argument('--container', required=True); i.add_argument('--fingerprint', required=True)
     v = sub.add_parser('validate'); v.add_argument('destination', type=Path); v.add_argument('--fingerprint', required=True)
     args = parser.parse_args()
     if args.command == 'discover':
-        result = discover(); save_json_atomic(args.output, result)
+        result = discover(args.realm); save_json_atomic(args.output, result)
         print(json.dumps({k: result[k] for k in ['realm', 'version', 'fingerprint', 'release_ready']}))
     elif args.command == 'active': print(json.dumps(active_packages(args.paths)))
     elif args.command == 'import': import_package(args.archive, args.destination, args.container, args.fingerprint)

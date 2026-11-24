@@ -9,10 +9,33 @@ from unittest.mock import patch
 
 from wot_extractor.cdn_acquire import active_packages, assemble, discover, import_package, safe_name, validate_package
 from wot_extractor.cdn_pipeline import export_candidate, quality, verify_candidate
-from wot_extractor.cdn_publish import unpack
+from wot_extractor.cdn_publish import publish, unpack
 
 
 class IndependentPipelineTests(unittest.TestCase):
+    def test_publication_rejects_cross_region_artifacts_and_lesta(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            with patch('wot_extractor.cdn_publish.unpack', return_value={'realm': 'EU'}), patch('wot_extractor.cdn_publish.discover') as discovery:
+                with self.assertRaisesRegex(ValueError, 'region'):
+                    publish(root / 'artifact', root / 'publication', 'NA', 'test/repo', '')
+                discovery.assert_not_called()
+            for branch in ['RU', 'PT_RU', 'candidate/RU', 'LESTA']:
+                with self.assertRaises(ValueError):
+                    publish(root / 'artifact', root / branch.replace('/', '-'), branch, 'test/repo', '')
+
+    def test_export_keeps_each_regional_namespace(self):
+        for realm in ['CT', 'NA', 'ASIA', 'CN']:
+            with self.subTest(realm=realm), tempfile.TemporaryDirectory() as td:
+                root = Path(td)
+                out = root / 'work' / ('wot_src_' + realm)
+                out.mkdir(parents=True)
+                (out / 'manifest.json').write_text(json.dumps({'realm': realm, 'entries': {}, 'acquisition': {'fingerprint': 'fp', 'scope': 'test', 'packages': []}}))
+                (out / 'QUALITY.json').write_text(json.dumps({'ready': True}))
+                (root / 'discovery.json').write_text(json.dumps({'realm': realm, 'fingerprint': 'fp', 'release_ready': True, 'version': 'test'}))
+                export_candidate(root, root / 'candidate', root / 'discovery.json', 'code')
+                self.assertEqual(verify_candidate(root / 'candidate')['realm'], realm)
+
     def test_export_labels_partial_code_and_rewrites_generated_links_only(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)

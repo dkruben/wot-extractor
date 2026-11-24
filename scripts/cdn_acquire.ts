@@ -16,8 +16,10 @@ const discoveryPath = flag('--discovery');
 const cache = flag('--cache');
 const evidence = flag('--evidence');
 const discovery = JSON.parse(fs.readFileSync(discoveryPath, 'utf8'));
-if (discovery.realm !== 'EU' || discovery.guid !== 'WOT.EU.PRODUCTION' || !discovery.release_ready) {
-  throw new Error('EU active-install plan required; ambiguous/preload chains cannot be published');
+const regions = JSON.parse(fs.readFileSync(flag('--regions-file'), 'utf8'));
+if (!Object.hasOwn(regions, discovery.realm) || regions[discovery.realm].guid !== discovery.guid ||
+    regions[discovery.realm].host !== discovery.host || !discovery.release_ready) {
+  throw new Error('Catalogued WG active-install plan required; RU/LESTA and ambiguous chains are excluded');
 }
 const metrics = installCdnFetch();
 // Keep the archive library's disk writes bounded as well as its HTTP reads.

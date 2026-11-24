@@ -14,6 +14,7 @@ import tarfile
 from .actionscript.engine import ASOptions, run_actionscript
 from .actionscript.ffdec import find_ffdec
 from .cdn_acquire import assemble, digest, discover, safe_name
+from .cdn_regions import require_region
 from .config import Config
 from .decompile.engine import DecompileOptions, run_decompile
 from .extract.writer import save_json_atomic, write_atomic
@@ -87,7 +88,9 @@ def verify_work_integrity(out):
 
 def process(cache, code_hash, python27, python3, ffdec):
     cache = Path(cache).resolve()
-    previous = cache / 'work/wot_src_EU'
+    realm = json.loads((cache / 'plan.json').read_text())['realm']
+    require_region(realm)
+    previous = cache / 'work' / ('wot_src_' + realm)
     if previous.exists() and not verify_work_integrity(previous):
         if previous.parent != cache / 'work':
             raise ValueError('Unsafe processing reset')
@@ -106,14 +109,14 @@ def process(cache, code_hash, python27, python3, ffdec):
     save_json_atomic(out / 'xml_report.json', decoded.to_dict())
     del manifest
     print('Decompiling and validating Python 2.7', flush=True)
-    py = run_decompile(cfg, 'EU', DecompileOptions(jobs=2, python27=cfg.python27, python3=cfg.python3), progress=progress)
+    py = run_decompile(cfg, realm, DecompileOptions(jobs=2, python27=cfg.python27, python3=cfg.python3), progress=progress)
     if py.interrupted:
         raise RuntimeError('Python processing interrupted')
     ff, error = find_ffdec(cfg.ffdec, heap='4g')
     if ff is None:
         raise RuntimeError(error)
     print('Decompiling all active SWF/SWC, including game modes', flush=True)
-    actionscript = run_actionscript(cfg, 'EU', ASOptions(jobs=2, heavy_jobs=1, assets=False, asasm='none'),
+    actionscript = run_actionscript(cfg, realm, ASOptions(jobs=2, heavy_jobs=1, assets=False, asasm='none'),
                                    progress=progress, ff=ff)
     if actionscript.interrupted:
         raise RuntimeError('AS3 processing interrupted')
@@ -121,12 +124,12 @@ def process(cache, code_hash, python27, python3, ffdec):
     interp, error = find_python27(cfg.python27, out)
     if interp is None:
         raise RuntimeError(error)
-    stubs = run_stubs(cfg, 'EU', StubOptions(jobs=2), progress=progress, interp=interp, interp_label=interp.label())
+    stubs = run_stubs(cfg, realm, StubOptions(jobs=2), progress=progress, interp=interp, interp_label=interp.label())
     node, label = find_node()
     if not node:
         raise RuntimeError('Node is required')
     print('Processing Gameface for all active modes, with Python links', flush=True)
-    gf = run_gameface(cfg, 'EU', GFOptions(jobs=2, links=True), progress=progress, node=node, node_label=label)
+    gf = run_gameface(cfg, realm, GFOptions(jobs=2, links=True), progress=progress, node=node, node_label=label)
     reports = {'python': py.to_report(), 'actionscript': actionscript.to_report(), 'stubs': stubs.to_report(), 'gameface': gf.to_report()}
     manifest = json.loads((out / 'manifest.json').read_text())
     import polib
@@ -164,10 +167,14 @@ def export_candidate(cache, destination, discovery_path, code_hash):
     cache, destination = Path(cache).resolve(), Path(destination).resolve()
     if destination.exists():
         raise ValueError('Candidate destination must be new')
-    out = cache / 'work/wot_src_EU'
+    discovery = json.loads(Path(discovery_path).read_text())
+    realm = discovery.get('realm', 'EU')
+    require_region(realm)
+    out = cache / 'work' / ('wot_src_' + realm)
     manifest = json.loads((out / 'manifest.json').read_text())
     review = json.loads((out / 'QUALITY.json').read_text())
-    discovery = json.loads(Path(discovery_path).read_text())
+    if manifest.get('realm', realm) != realm:
+        raise ValueError('Candidate region does not match its acquisition')
     if manifest['acquisition']['fingerprint'] != discovery['fingerprint'] or not discovery['release_ready']:
         raise ValueError('Candidate does not match its locked active-release plan')
     destination.mkdir(parents=True)
@@ -232,7 +239,7 @@ def export_candidate(cache, destination, discovery_path, code_hash):
     def text(name, data):
         write_atomic(destination / name, data.encode('utf-8'))
         outputs[name] = digest(data.encode('utf-8'))
-    info = {'realm': 'EU', 'version': discovery['version'], 'independently_generated': True,
+    info = {'realm': realm, 'version': discovery['version'], 'independently_generated': True,
             'acquisition_fingerprint': discovery['fingerprint'], 'generator_code_hash': code_hash,
             'scope': manifest['acquisition']['scope'], 'packages': manifest['acquisition']['packages'],
             'quality': review, 'source_parts': ['client', 'sdcontent', 'locale'],
@@ -242,7 +249,7 @@ def export_candidate(cache, destination, discovery_path, code_hash):
     text('.gitattributes', '* -text\n')
     text('BUILD_INFO.json', json.dumps(info, indent=2) + '\n')
     text('QUALITY.json', json.dumps(review, indent=2) + '\n')
-    text('README.md', '# World of Tanks EU — ' + discovery['version'] + '\n\n'
+    text('README.md', '# World of Tanks ' + realm + ' — ' + discovery['version'] + '\n\n'
          'Generated independently from the WG update CDN by [our pipeline](../../tree/main).\n\n'
          '`sources/`: client text and Python; `sources_xml/`: decoded packed XML; '
          '`sources-as3/`: decompiled SWF/SWC; `_stubs/`: static inferred API stubs; '
@@ -270,8 +277,9 @@ def verify_candidate(root):
         if name.split('/')[0] not in allowed or digest((root / name).read_bytes()) != expected:
             raise ValueError('Invalid candidate file: ' + name)
     info = json.loads((root / 'BUILD_INFO.json').read_text())
-    if info['realm'] != 'EU' or not info['independently_generated']:
-        raise ValueError('EU independent candidate required')
+    require_region(info['realm'])
+    if not info['independently_generated']:
+        raise ValueError('Independent WG candidate required')
     if not info['quality']['ready']:
         raise ValueError('Quality gate rejected this candidate')
     return info

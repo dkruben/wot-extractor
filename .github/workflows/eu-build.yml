@@ -1,12 +1,16 @@
-name: Independent EU source build
+name: Independent WG regional source build
 on:
   workflow_dispatch:
     inputs:
+      realm:
+        description: WG region
+        type: choice
+        options: [EU, CT, NA, ASIA, CN]
+        default: EU
       target:
         description: Publication branch
         default: candidate/EU
-        type: choice
-        options: [candidate/EU, EU]
+        type: string
       publish:
         description: Publish only after quality validation
         type: boolean
@@ -17,6 +21,9 @@ on:
         default: true
   workflow_call:
     inputs:
+      realm:
+        type: string
+        default: EU
       target:
         type: string
         default: candidate/EU
@@ -29,7 +36,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: eu-independent-build
+  group: wg-independent-build-${{ inputs.realm }}
   cancel-in-progress: false
 jobs:
   build:
@@ -41,12 +48,14 @@ jobs:
       code_sha: ${{ steps.source.outputs.sha }}
     env:
       PYTHONPATH: ${{ github.workspace }}/project/src
+      REALM: ${{ inputs.realm }}
     steps:
       - id: target
         env:
           TARGET: ${{ inputs.target }}
         run: |
-          [[ "$TARGET" == 'EU' || "$TARGET" == 'candidate/EU' ]]
+          [[ "$REALM" =~ ^(EU|CT|NA|ASIA|CN)$ ]]
+          [[ "$TARGET" == "$REALM" || "$TARGET" == "candidate/$REALM" ]]
           HEAD=$(git ls-remote "https://github.com/$GITHUB_REPOSITORY.git" "refs/heads/$TARGET" | cut -f1)
           echo "head=$HEAD" >> "$GITHUB_OUTPUT"
       - uses: actions/checkout@v4
@@ -67,14 +76,16 @@ jobs:
         id: source
         run: |
           mkdir -p evidence
-          python -m wot_extractor.cdn_acquire discover evidence/discovery.json
+          python -m wot_extractor.cdn_acquire discover evidence/discovery.json --realm "$REALM"
           git -C project rev-parse HEAD > evidence/generator.txt
           echo "sha=$(cat evidence/generator.txt)" >> "$GITHUB_OUTPUT"
       - uses: actions/cache/restore@v4
         with:
           path: .cdn-cache
-          key: eu-source-v1-${{ github.run_id }}-${{ github.run_attempt }}
-          restore-keys: eu-source-v1-
+          key: wg-source-v1-${{ inputs.realm }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            wg-source-v1-${{ inputs.realm }}-
+            ${{ inputs.realm == 'EU' && 'eu-source-v1-' || 'no-legacy-cache-' }}
       - uses: actions/checkout@v4
         with:
           repository: unicum-gg/wot.build
@@ -103,7 +114,7 @@ jobs:
         working-directory: engine
         run: |
           set -euo pipefail
-          npx tsx cdn_acquire.ts --discovery ../evidence/discovery.json --cache ../.cdn-cache --evidence ../evidence 2>&1 | tee ../evidence/acquisition.log
+          npx tsx cdn_acquire.ts --discovery ../evidence/discovery.json --regions-file ../project/src/wot_extractor/data/wg_realms.json --cache ../.cdn-cache --evidence ../evidence 2>&1 | tee ../evidence/acquisition.log
       - name: Process Python XML AS3 stubs and all Gameface modes
         env:
           FALLBACK: ${{ steps.fallback.outputs.python-path }}
@@ -127,7 +138,7 @@ jobs:
           set -euo pipefail
           mkdir -p evidence/warm
           cd engine
-          npx tsx cdn_acquire.ts --discovery ../evidence/discovery.json --cache ../.cdn-cache --evidence ../evidence/warm 2>&1 | tee ../evidence/warm/acquisition.log
+          npx tsx cdn_acquire.ts --discovery ../evidence/discovery.json --regions-file ../project/src/wot_extractor/data/wg_realms.json --cache ../.cdn-cache --evidence ../evidence/warm 2>&1 | tee ../evidence/warm/acquisition.log
           cd ..
           python -c "import json; p=json.load(open('.cdn-cache/plan.json')); assert p['packages_rebuilt'] == 0 and p['package_cache_hits'] == p['package_count'], p"
           python -u -m wot_extractor.cdn_pipeline process .cdn-cache --code-hash "$(cat evidence/generator.txt)" --python27 "$GITHUB_WORKSPACE/project/scripts/python27-container" --python3 "$FALLBACK" --ffdec "$GITHUB_WORKSPACE/ffdec/ffdec.jar" 2>&1 | tee evidence/warm/processing.log
@@ -138,21 +149,21 @@ jobs:
         if: always()
         with:
           path: .cdn-cache
-          key: eu-source-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          key: wg-source-v1-${{ inputs.realm }}-${{ github.run_id }}-${{ github.run_attempt }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: eu-build-evidence
+          name: wg-build-evidence-${{ inputs.realm }}
           path: |
             evidence/
             .cdn-cache/quality.json
-            .cdn-cache/work/wot_src_EU/*report.json
+            .cdn-cache/work/wot_src_${{ inputs.realm }}/*report.json
           include-hidden-files: true
           retention-days: 14
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: eu-source-candidate
+          name: wg-source-candidate-${{ inputs.realm }}
           path: candidate.tar.gz
           retention-days: 7
           if-no-files-found: ignore
@@ -175,7 +186,7 @@ jobs:
           python-version: '3.11'
       - uses: actions/download-artifact@v4
         with:
-          name: eu-source-candidate
+          name: wg-source-candidate-${{ inputs.realm }}
           path: artifact
       - name: Verify locked release again and publish without force
         env:

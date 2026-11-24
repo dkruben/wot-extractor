@@ -11,6 +11,7 @@ import tarfile
 
 from .cdn_acquire import discover, safe_name
 from .cdn_pipeline import verify_candidate
+from .cdn_regions import require_region
 
 
 def unpack(archive, destination):
@@ -39,15 +40,19 @@ def unpack(archive, destination):
 
 
 def publish(archive, workspace, branch, repository, expected_head):
-    if branch not in ('EU', 'candidate/EU') or not re.fullmatch(r'[\w.-]+/[\w.-]+', repository):
-        raise ValueError('Only EU and candidate/EU publication are supported')
+    realm = branch.removeprefix('candidate/')
+    require_region(realm)
+    if branch not in (realm, 'candidate/' + realm) or not re.fullmatch(r'[\w.-]+/[\w.-]+', repository):
+        raise ValueError('Only catalogued WG regional branches are supported')
     workspace = Path(workspace).resolve()
     if workspace.exists():
         raise ValueError('Publication workspace must be new')
     workspace.mkdir(parents=True)
     candidate = workspace / 'candidate'
     info = unpack(archive, candidate)
-    current = discover('EU')
+    if info['realm'] != realm:
+        raise ValueError('Artifact region does not match the target branch')
+    current = discover(realm)
     if not current['release_ready'] or current['fingerprint'] != info['acquisition_fingerprint']:
         raise ValueError('WG active installation changed during the build; rebuild required')
     checkout = workspace / 'checkout'
@@ -98,7 +103,7 @@ def publish(archive, workspace, branch, repository, expected_head):
         return
     git('config', 'user.name', 'github-actions[bot]')
     git('config', 'user.email', '41898282+github-actions[bot]@users.noreply.github.com')
-    git('commit', '-m', 'Generate EU sources ' + info['version'] + ' directly from WG CDN')
+    git('commit', '-m', 'Generate ' + realm + ' sources ' + info['version'] + ' directly from WG CDN')
     git('push', 'origin', 'HEAD:refs/heads/' + branch)
     print('Published', branch, git('rev-parse', 'HEAD'))
 
