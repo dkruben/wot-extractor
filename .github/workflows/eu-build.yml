@@ -11,6 +11,10 @@ on:
         description: Publish only after quality validation
         type: boolean
         default: false
+      warm_test:
+        description: Replay acquisition and processing from cache
+        type: boolean
+        default: true
   workflow_call:
     inputs:
       target:
@@ -19,6 +23,9 @@ on:
       publish:
         type: boolean
         default: false
+      warm_test:
+        type: boolean
+        default: true
 permissions:
   contents: read
 concurrency:
@@ -112,6 +119,21 @@ jobs:
         run: |
           python -m wot_extractor.cdn_pipeline verify candidate
           echo 'ready=true' >> "$GITHUB_OUTPUT"
+      - name: Prove cached acquisition and processing reproduce the candidate
+        if: inputs.warm_test
+        env:
+          FALLBACK: ${{ steps.fallback.outputs.python-path }}
+        run: |
+          set -euo pipefail
+          mkdir -p evidence/warm
+          cd engine
+          npx tsx cdn_acquire.ts --discovery ../evidence/discovery.json --cache ../.cdn-cache --evidence ../evidence/warm 2>&1 | tee ../evidence/warm/acquisition.log
+          cd ..
+          python -c "import json; p=json.load(open('.cdn-cache/plan.json')); assert p['packages_rebuilt'] == 0 and p['package_cache_hits'] == p['package_count'], p"
+          python -u -m wot_extractor.cdn_pipeline process .cdn-cache --code-hash "$(cat evidence/generator.txt)" --python27 "$GITHUB_WORKSPACE/project/scripts/python27-container" --python3 "$FALLBACK" --ffdec "$GITHUB_WORKSPACE/ffdec/ffdec.jar" 2>&1 | tee evidence/warm/processing.log
+          python -m wot_extractor.cdn_pipeline export .cdn-cache warm-candidate --discovery evidence/discovery.json --code-hash "$(cat evidence/generator.txt)"
+          python -m wot_extractor.cdn_pipeline verify warm-candidate
+          cmp candidate/PUBLICATION_MANIFEST.json warm-candidate/PUBLICATION_MANIFEST.json
       - uses: actions/cache/save@v4
         if: always()
         with:
