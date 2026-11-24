@@ -91,7 +91,7 @@ jobs:
           unzip -q ffdec.zip -d ffdec
           cd engine
           npm ci --no-audit --no-fund
-          cp ../project/scripts/cdn_acquire.ts ../project/scripts/cdn_fetch.mjs .
+          cp ../project/scripts/cdn_acquire.ts ../project/scripts/cdn_fetch.mjs ../project/scripts/cdn_package_cache.mjs .
       - name: Acquire active source packages from CDN
         working-directory: engine
         run: |

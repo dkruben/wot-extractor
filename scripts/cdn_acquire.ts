@@ -1,11 +1,11 @@
 // Run inside the separately checked-out pinned archive engine.
 import fs from 'node:fs';
 import path from 'node:path';
-import crypto from 'node:crypto';
 import { execFileSync, spawnSync } from 'node:child_process';
 import { SparseArchive, type Block } from './lib/archive.js';
 import { applyDelta, deltaTarget } from './lib/delta.js';
 import { installCdnFetch } from './cdn_fetch.mjs';
+import { fingerprint, recipeKey, legacyRecipeKey } from './cdn_package_cache.mjs';
 
 const flag = (name: string) => {
   const index = process.argv.indexOf(name), value = process.argv[index + 1];
@@ -40,7 +40,6 @@ const loose = new Map<string, Source>();
 const archives: SparseArchive[] = [];
 const pkgName = (name: string) => /^res\/packages\/[^/]+\.pkg$/.test(name);
 const looseName = (name: string) => !/^(?:_service|win64|res\/cef)\//.test(name) && !name.startsWith('res/packages/') && /\.(xml|txt|def|mo|py|json|js|css|html|ts|unbound)$/i.test(name);
-const fingerprint = (value: unknown) => crypto.createHash('sha256').update(JSON.stringify(value)).digest('hex');
 let cacheHits = 0, rebuilt = 0;
 
 async function read(source: Source, folder: string) {
@@ -91,8 +90,21 @@ async function main() {
   for (const name of active) {
     const recipe = packages.get(name);
     if (!recipe) throw new Error(`Active package is missing from locked chains: ${name}`);
-    const signature = fingerprint({ schema: 1, base: recipe.base.identity, deltas: recipe.deltas.map(d => d.identity) });
+    // A republished install may have new URLs/versions while most package blocks
+    // are byte-identical. Reuse the archive's package CRC and packed size, not
+    // the release-wide torrent identity. Missing CRCs retain conservative keys.
+    const signature = recipeKey(recipe);
     const destination = path.join(cache, 'packages', signature);
+    const legacySignature = legacyRecipeKey(recipe);
+    const legacy = path.join(cache, 'packages', legacySignature);
+    if (!fs.existsSync(destination) && fs.existsSync(legacy) &&
+        spawnSync('python', ['-m', 'wot_extractor.cdn_acquire', 'validate', legacy, '--fingerprint', legacySignature], { stdio: 'ignore' }).status === 0) {
+      const marker = path.join(legacy, 'package.json');
+      const manifest = JSON.parse(fs.readFileSync(marker, 'utf8'));
+      manifest.fingerprint = signature;
+      fs.writeFileSync(marker, JSON.stringify(manifest));
+      fs.renameSync(legacy, destination);
+    }
     const valid = spawnSync('python', ['-m', 'wot_extractor.cdn_acquire', 'validate', destination, '--fingerprint', signature], { stdio: 'ignore' }).status === 0;
     if (valid) {
       cacheHits++;
