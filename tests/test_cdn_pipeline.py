@@ -5,13 +5,28 @@ import tarfile
 import tempfile
 import unittest
 import zipfile
+from unittest.mock import patch
 
-from wot_extractor.cdn_acquire import active_packages, assemble, import_package, safe_name, validate_package
+from wot_extractor.cdn_acquire import active_packages, assemble, discover, import_package, safe_name, validate_package
 from wot_extractor.cdn_pipeline import quality
 from wot_extractor.cdn_publish import unpack
 
 
 class IndependentPipelineTests(unittest.TestCase):
+    def test_install_and_preload_are_never_flattened_together(self):
+        metadata = b'<root><version>1</version><predefined_section><client_types><type id="sd"><client_parts><client_part id="client"/><client_part id="sdcontent"/><client_part id="locale"/></client_parts></type></client_types><default_language>en</default_language><chain_id>test</chain_id></predefined_section></root>'
+        def item(part, start, end, name):
+            return f'<patch><part>{part}</part><version_from>{start}</version_from><version_to>{end}</version_to><files><file><name>{name}</name><size>10</size></file></files><torrent><hash>hash</hash></torrent></patch>'
+        active = ''.join(item(p, '0', '1', p + '.wgpkg') for p in ['client', 'sdcontent', 'locale'])
+        future = item('client', '1', '2', 'future.wgpkg')
+        response = f'<root><web_seeds><url>https://cdn.example/</url></web_seeds><version_name>active</version_name><patches_chain type="install">{active}</patches_chain><patches_chain type="preload">{future}</patches_chain></root>'.encode()
+        with patch('urllib.request.urlopen', side_effect=[io.BytesIO(metadata), io.BytesIO(response)]):
+            result = discover()
+        self.assertTrue(result['release_ready'])
+        self.assertEqual(result['chain_types'], ['install', 'preload'])
+        self.assertEqual(result['chains']['client'][0]['to'], '1')
+        self.assertNotIn('future.wgpkg', str(result['chains']))
+
     def test_cache_verifies_bytes_and_preserves_package_precedence(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
@@ -47,6 +62,8 @@ class IndependentPipelineTests(unittest.TestCase):
         self.assertFalse(quality(manifest, reports, policy)['ready'])
         record['sha256'] = 'known'
         record['decompiled']['status'] = 'failed'
+        self.assertFalse(quality(manifest, reports, policy)['ready'])
+        record.pop('decompiled')
         self.assertFalse(quality(manifest, reports, policy)['ready'])
 
     def test_artifact_rejects_traversal_and_links(self):

@@ -31,6 +31,7 @@ jobs:
     outputs:
       ready: ${{ steps.gate.outputs.ready }}
       expected_head: ${{ steps.target.outputs.head }}
+      code_sha: ${{ steps.source.outputs.sha }}
     env:
       PYTHONPATH: ${{ github.workspace }}/project/src
     steps:
@@ -56,10 +57,12 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install polib==1.2.0
       - name: Lock active installation separately from preload
+        id: source
         run: |
           mkdir -p evidence
           python -m wot_extractor.cdn_acquire discover evidence/discovery.json
           git -C project rev-parse HEAD > evidence/generator.txt
+          echo "sha=$(cat evidence/generator.txt)" >> "$GITHUB_OUTPUT"
       - uses: actions/cache/restore@v4
         with:
           path: .cdn-cache
@@ -142,7 +145,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ needs.build.outputs.code_sha }}
           path: project
           persist-credentials: false
       - uses: actions/setup-python@v5

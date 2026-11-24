@@ -27,9 +27,17 @@ RANK = {'partial': 1, 'failed': 2, 'unsupported': 3}
 
 def quality(manifest, reports, policy):
     problems, accepted = [], []
+    for phase, report in reports.items():
+        if report.get('interrupted') or report.get('counts', {}).get('not_processed_due_to_limit'):
+            problems.append({'phase': phase, 'key': 'incomplete processing pass'})
     for key, record in manifest['entries'].items():
         for phase in ['decompiled', 'actionscript', 'decoded']:
             state = record.get(phase) or {}
+            required = ((phase == 'decompiled' and record.get('category') == 'python_bytecode') or
+                        (phase == 'actionscript' and record.get('category') == 'scaleform') or
+                        (phase == 'decoded' and record.get('validation') == 'packed'))
+            if required and state.get('status') not in {'success', 'extracted', *RANK}:
+                problems.append({'phase': phase, 'key': key, 'status': 'missing processing result'})
             if state.get('status') not in RANK:
                 continue
             issue = {'phase': phase, 'key': key, 'input_sha256': record['sha256'],
